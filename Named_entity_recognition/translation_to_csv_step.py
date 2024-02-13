@@ -126,6 +126,7 @@ def get_annotations(files_extracted, extracted_directory_path, final_directory_p
                                 # index_note=index_text+"."+str(index_note)
                                 # attributes = note.attrs  # Retrieve the attributes of each <note> element
                                 attributes = list(note.attrs.items())
+                                print (attributes)
                                 attributes_names = list(note.attrs.keys())
 
                                 if len(attributes) >= 9 and len(attributes) > 2:

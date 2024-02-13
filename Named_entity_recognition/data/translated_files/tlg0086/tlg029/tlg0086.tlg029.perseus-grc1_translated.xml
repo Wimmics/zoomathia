@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI.2>
+ <teiHeader type="text">
+  <fileDesc>
+   <titleStmt>
+    <title>
+     Economics (Greek). Machine readable text
+    </title>
+    <author>
+     Aristotle
+    </author>
+    <sponsor>
+     Perseus Project, Tufts University
+    </sponsor>
+    <principal>
+     Gregory Crane
+    </principal>
+    <respStmt>
+     <resp>
+      Prepared under the supervision of
+     </resp>
+     <name>
+      Lisa Cerrato
+     </name>
+     <name>
+      William Merrill
+     </name>
+     <name>
+      Elli Mylonas
+     </name>
+     <name>
+      David Smith
+     </name>
+    </respStmt>
+    <funder n="org:AnnCPB">
+     The Annenberg CPB/Project
+    </funder>
+   </titleStmt>
+   <extent>
+    About 71Kb
+   </extent>
+   <publicationStmt>
+    <publisher>
+     Trustees of Tufts University
+    </publisher>
+    <pubPlace>
+     Medford, MA
+    </pubPlace>
+    <authority>
+     Perseus Project
+    </authority>
+   </publicationStmt>
+   <notesStmt>
+    <note anchored="yes" place="unspecified">
+     Text was scanned at St. Olaf Spring, 1992.
+    </note>
+   </notesStmt>
+   <sourceDesc>
+    <biblStruct>
+     <monogr>
+      <author>
+       Aristotle
+      </author>
+      <title>
+       Aristotle in 23 Volumes, Vol. 18
+      </title>
+      <imprint>
+       <publisher>
+        Harvard University Press, Cambridge, Mass., London
+       </publisher>
+       <date>
+        1935
+       </date>
+      </imprint>
+     </monogr>
+    </biblStruct>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(\\w+)" replacementPattern="#xpath(/tei:TEI.2/tei:text/tei:body/tei:div[@n=\'$1\'])">
+     <p>
+      This pointer pattern extracts bekker page
+     </p>
+     <p lang="it">
+      Questo modello di puntatore estrae la pagina bekker
+     </p>
+     <p lang="en">
+      This pointer pattern extracts bekker page
+     </p>
+    </cRefPattern>
+   </refsDecl>
+   <refsDecl doctype="TEI.2">
+    <state unit="book"/>
+    <state unit="section"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language id="greek" usage="100">
+     Greek
+    </language>
+    <language id="la">
+     Latin
+    </language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change>
+    <date>
+     June, 1993
+    </date>
+    <respStmt>
+     <name>
+      wpm
+     </name>
+     <resp>
+      (n/a)
+     </resp>
+    </respStmt>
+    <item>
+     Tagged in conformance with Prose.g dtd.
+    </item>
+   </change>
+   <change>
+    <date>
+     Aug, 1993
+    </date>
+    <respStmt>
+     <name>
+      wpm
+     </name>
+     <resp>
+      (n/a)
+     </resp>
+    </respStmt>
+    <item>
+     Made the cardbreaks in Bk 3 same as english
+    </item>
+   </change>
+   <change>
+    <date>
+     5/27/09
+    </date>
+    <respStmt>
+     <name>
+      RS
+     </name>
+     <resp>
+      (n/a)
+     </resp>
+    </respStmt>
+    <item>
+     $Log: aristot.econ_gk.xml,v $
+					Revision 1.2  2011-01-13 03:38:24  gcrane
+					more refinements making these files SDL compatible
+
+					Revision 1.1  2011-01-01 21:59:46  gcrane
+					QUOTE tags added
+					DEL tags added
+					ADD tags added
+					GAP entities added
+
+					Revision 1.2  2010/06/16 19:18:48  rsingh04
+					cleaned up bad place tags in a few texts and cleaned up the document format
+
+					Revision 1.1  2009/10/09 19:49:17  rsingh04
+					more reorganizing of texts module by collection
+					
+					Revision 1.1  2009/10/08 19:12:40  rsingh04
+					began reorganizing texts module by collection.  created separate work directory in texts module to keep hopper files separate from in progress files
+					
+					Revision 1.4  2009/05/27 15:55:14  rsingh04
+					added cvs log keyword
+    </item>
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text n="urn:cts:greekLit:tlg0086.tlg029.perseus-grc1" xml:lang="grc">
+  
+   <div n="1343a" type="bekker page">
+    <p>
+     <milestone n="1" unit="Book"/>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ἡ οἰκονομικὴ καὶ πολιτικὴ διαφέρει οὐ μόνον τοσοῦτον ὅσον οἰκία καὶ πόλις ʽταῦτα μὲν γὰρ αὐταῖς  ἐστι τὰ ὑποκείμενἀ, ἀλλὰ καὶ ὅτι ἡ μὲν πολιτικὴ ἐκ πολλῶν  ἀρχόντων ἐστίν, ἡ οἰκονομικὴ δὲ μοναρχία.
+     <milestone ed="P" unit="para"/>
+     ἔνιαι μὲν οὖν τῶν τεχνῶν διῄρηνται, καὶ οὐ τῆς αὐτῆς ἐστι  ποιῆσαι καὶ χρήσασθαι τῷ ποιηθέντι, ὥσπερ λύρᾳ καὶ αὐλοῖς·  τῆς δὲ πολιτικῆς ἐστι καὶ πόλιν ἐξ ἀρχῆς συστήσασθαι καὶ  ὑπαρχούσῃ χρήσασθαι καλῶς· ὥστε δῆλον ὅτι καὶ τῆς οἰκονομικῆς ἂν εἴη καὶ κτήσασθαι οἶκον καὶ χρήσασθαι αὐτῷ.
+     <milestone ed="P" unit="para"/>
+     πόλις μὲν οὖν οἰκιῶν πλῆθός ἐστι καὶ χώρας καὶ κτημάτων αὔταρκες πρὸς τὸ εὖ ζῆν. φανερὸν δέ· ὅταν γὰρ μὴ δυνατοὶ ὦσι τούτου τυγχάνειν, διαλύεται καὶ ἡ κοινωνία. ἔτι  δὲ ἕνεκα τούτου συνέρχονται. οὗ δὲ ἕνεκα ἕκαστόν ἐστι καὶ γέγονε, καὶ ἡ οὐσία αὐτοῦ τυγχάνει αὕτη οὖσα.
+     <milestone ed="P" unit="para"/>
+     ὥστε δῆλον ὅτι πρότερον γενέσει ἡ οἰκονομικὴ πολιτικῆς ἐστι. καὶ γὰρ τὸ ἔργον. μόριον γὰρ οἰκία πόλεώς ἐστιν.
+     <milestone ed="P" unit="para"/>
+     σκεπτέον οὖν περὶ τῆς οἰκονομικῆς καὶ τί τὸ ἔργον αὐτῆς.
+     <milestone ed="P" unit="para"/>
+     μέρη δὲ οἰκίας ἄνθρωπός τε καὶ κτῆσίς ἐστιν. ἐπεὶ δὲ  πρῶτον ἐν τοῖς ἐλαχίστοις ἡ φύσις
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἑκάστου θεωρεῖται, καὶ  περὶ οἰκίας ἂν ὁμοίως ἔχοι. ὥστε καθʼ Ἡσίοδον δέοι ἂν ὑπάρχειν
+     <cit>
+      <quote type="verse">
+       <l met="dactylic">
+        οἶκον μὲν πρώτιστα γυναῖκά τε
+        <del>
+         βοῦν τʼ ἀροτῆρα.
+        </del>
+       </l>
+       <l lang="it">
+        In una casa dove le donne sono le prime ad arare.
+       </l>
+       <l lang="en">
+        In a house where women are the first to do the ploughing.
+       </l>
+      </quote>
+      <bibl n="Hes. WD 405">
+       ηες. ωδ 405
+      </bibl>
+     </cit>
+     <milestone ed="P" unit="para"/>
+     τὸ μὲν γὰρ τῆς τροφῆς πρῶτον, τὸ δὲ τῶν ἐλευθέρων. ὥστε δέοι ἂν τὰ περὶ τὴν τῆς γυναικὸς ὁμιλίαν οἰκονομήσασθαι καλῶς· τοῦτο δέ ἐστι τὸ ποίαν τινὰ δεῖ ταύτην εἶναι  παρασκευάσαι.
+     <milestone ed="P" unit="para"/>
+     κτήσεως δὲ πρώτη ἐπιμέλεια ἡ κατὰ φύσιν. κατὰ  φύσιν δὲ γεωργικὴ προτέρα, καὶ δεύτεραι ὅσαι ἀπὸ τῆς γῆς,  οἷον μεταλλευτικὴ καὶ εἴ τις ἄλλη τοιαύτη. ἡ δὲ γεωργικὴ μάλιστα, ὅτι δικαία· οὐ γὰρ ἀπʼ ἀνθρώπων, οὔθʼ ἑκόντων, ὥσπερ καπηλεία καὶ αἱ μισθαρνικαί, οὔτʼ ἀκόντων,  ὥσπερ αἱ πολεμικαί. ἔτι δὲ καὶ τῶν κατὰ φύσιν· φύσει  γὰρ ἀπὸ τῆς μητρὸς ἡ τροφὴ πᾶσίν ἐστιν,
+    </p>
+    <p lang="it">
+     l'economico e il politico differiscono non solo in quanto sono sudditi case e città, ma anche perché il politico è di molti signori, mentre l'economico è una monarchia. è solo a causa delle arti che sono divisi, e non di questo sei poeta e utile al poeta, come della lira e delle corti; ma anche della politica sei città fin dal principio sei stato stabilito e ce n'è un buon uso; tanto che anche dell'economia, se lo fossi, acquisteresti anche una casa e useresti stare a se stesso. una città con una moltitudine di case, e di terre e possedimenti autarchici verso la terra della vita. Ovviamente quando succedono quelli che non sono forti così, anche la società si disgrega. ma per questo si uniscono. e al quale c'è un unico evento, e la sua essenza si verifica in questo momento, quindi sembra che prima che nasca l'economia della politica. e il lavoro. perché una casa è una città. Quindi pensa all’economia e qual è il suo lavoro. ma le parti di una casa sono uomini e bestie. ma primo tra gli ultimi Così viene considerata la natura di ciascuno e la casa risuona in modo simile. sicché, secondo Esiodone, esiste il timore reverenziale
+
+In una casa dove le donne sono le prime ad arare.
+
+
+CIAO. di 405
+
+per l'io del cibo innanzitutto, ma della gratuità. affinché tu sia ben preparato al discorso della donna; a questo ti stai preparando. di acquisizione, ma di primo affidamento o per natura. ma per natura prioritarie quelle agricole, e secondariamente quelle della terra, alcune minerarie ed altre di tal genere. ma quella agricola, appunto, perché è giusta, perché non è degli uomini, né di quelli che sono, come la cupidigia e i mercenari, né di quelli che sono, come i soldati. ma anche di loro secondo natura: infatti quando viene dalla madre, il cibo è tutto ciò che c'è,
+    </p>
+    <p lang="en">
+     the economic and the political differ not only in so far as houses and cities are the subjects, but also because the political is of many lords, while the economic is a monarchy. it is only because of the arts that they are divided, and it is not of this that you are a poet and of use to the poet, as of the lyre and of the courts; but of politics you are also a city from the beginning you were established and there is a good use; so that even of the economy, if you were, you would also acquire a house and use stay to himself. a city with a multitude of houses, and of land and estates autarchic towards the land of life. Obviously, when those who are not strong like this happen, the society also breaks up. but because of this they come together. and to which there is one and one event, and the essence of it occurs at this time. So it seems that before the economy of politics is born. and the work. because a house is a city. So think about the economy and what its work is. but parts of a house are man and beast. but first among the least s the nature of each is considered, and about the house if similarly echoes. so that, according to Hesiodon, awe exists
+
+In a house where women are the first to do the ploughing.
+
+
+hi. od 405
+
+for the me of the food first, but of the free. so that you will be well prepared for the woman's speech; this is what you are preparing for. of acquisition, but first custody or by nature. but by nature an agricultural priority, and secondly those of the earth, some mining and others of that kind. but the agricultural one, in fact, because it is just, for it is not of men, nor of those who are, like the cupidity and the mercenaries, nor of those who are, like the soldiers. but also of them according to nature: for when it comes from the mother, food is all there is,
+    </p>
+   </div>
+   <div n="1343b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ὥστε καὶ  τοῖς ἀνθρώποις ἀπὸ τῆς γῆς.
+     <milestone ed="P" unit="para"/>
+     πρὸς δὲ τούτοις καὶ πρὸς ἀνδρίαν  συμβάλλεται μεγάλα· οὐ γὰρ ὥσπερ αἱ βάναυσοι τὰ  σώματα ἀχρεῖα ποιοῦσιν, ἀλλὰ δυνάμενα θυραυλεῖν καὶ  πονεῖν, ἔτι δὲ δυνάμενα κινδυνεύειν πρὸς τοὺς πολεμίους·  μόνων γὰρ τούτων τὰ κτήματα ἔξω τῶν ἐρυμάτων ἐστίν.
+     <milestone ed="P" unit="para"/>
+     τῶν δὲ περὶ τοὺς ἀνθρώπους ἡ περὶ γυναῖκα πρώτη  ἐπιμέλεια· κοινωνία γὰρ φύσει τῷ θήλει καὶ τῷ ἄρρενι  μάλιστά ἐστιν. ὑπόκειται γὰρ ἡμῖν ἐν ἄλλοις ὅτι πολλὰ  τοιαῦτα ἡ φύσις ἐφίεται ἀπεργάζεσθαι, ὥσπερ καὶ τῶν  ζῴων ἕκαστον· ἀδύνατον δὲ τὸ θῆλυ ἄνευ τοῦ ἄρρενος ἢ τὸ  ἄρρεν ἄνευ τοῦ θήλεος ἀποτελεῖν τοῦτο· ὥστʼ ἐξ ἀνάγκης αὐτῶν ἡ κοινωνία συνέστηκεν.
+     <milestone ed="P" unit="para"/>
+     ἐν μὲν οὖν τοῖς ἄλλοις ζῴοις ἀλόγως τοῦτο ὑπάρχει, καὶ ἐφʼ ὅσον μετέχουσι τῆς φύσεως, ἐπὶ  τοσοῦτον, καὶ τεκνοποιίας μόνον χάριν· ἐν δὲ τοῖς ἡμέροις  καὶ φρονιμωτέροις διήρθρωται μᾶλλον ʽφαίνονται γὰρ  μᾶλλον βοήθειαι γινόμεναι καὶ εὔνοιαι καὶ συνεργίαι ἀλλήλοισ̓, ἐν ἀνθρώπῳ δὲ μάλιστα, ὅτι οὐ μόνον τοῦ εἶναι ἀλλὰ καὶ τοῦ εὖ
+     <milestone ed="Bekker" n="20" unit="line"/>
+     εἶναι συνεργὰ ἀλλήλοις τὸ θῆλυ καὶ τὸ  ἄρρεν ἐστί. καὶ ἡ τῶν τέκνων κτῆσις οὐ λειτουργίας ἕνεκεν  τῇ φύσει μόνον οὖσα τυγχάνει ἀλλὰ καὶ ὠφελείας· ἃ  γὰρ ἂν δυνάμενοι εἰς ἀδυνάτους πονήσωσι, πάλιν κομίζονται παρὰ δυναμένων ἀδυνατοῦντες ἐν τῷ γήρᾳ.
+     <milestone ed="P" unit="para"/>
+     ἅμα δὲ  καὶ ἡ φύσις ἀναπληροῖ ταύτῃ τῇ περιόδῳ τὸ ἀεὶ εἶναι,  ἐπεὶ κατʼ ἀριθμὸν οὐ δύναται, ἀλλὰ κατὰ τὸ εἶδος. οὕτω προῳκονόμηται ὑπὸ τοῦ θείου ἑκατέρου ἡ φύσις, τοῦ τε  ἀνδρὸς καὶ τῆς γυναικός, πρὸς τὴν κοινωνίαν. διείληπται  γὰρ τῷ μὴ ἐπὶ ταὐτὰ πάντα χρήσιμον ἔχειν τὴν δύναμιν, ἀλλʼ ἔνια μὲν ἐπὶ τἀναντία, εἰς ταὐτὸν δὲ συντείνοντα·  τὸ μὲν γὰρ ἰσχυρότερον τὸ δʼ ἀσθενέστερον ἐποίησεν,
+    </p>
+    <p lang="it">
+     così anche per le persone della terra. Ma per questi e per gli uomini è molto; poiché non rendono immondo il loro corpo come gli animali, ma gemono e soffrono con forza, e con forza sono in pericolo di guerra; perché solo questi hanno i loro possedimenti fuori del territorio deserti. Ma per quanto riguarda gli uomini, la prima preoccupazione riguarda le donne, perché la società è la natura sia della donna che del uomo. Poiché negli altri dipende da noi che molte di queste cose siano consentite alla natura, così come a ciascun animale; ed è impossibile che la femmina senza il maschio o il maschio senza la femmina formino il corpo; così che da fu costituita la società della necessità. mentre questo dunque esiste negli altri animali, e in quanto partecipano della natura, in questo solo per amore della procreazione; ma nei giorni e nei più saggi è piuttosto strutturato, poiché sembrano piuttosto aiutarsi, favorirsi e cooperare l'uno con l'altro, ma nell'uomo, non solo è, ma è anche partner l'uno dell'altro, la femmina e il maschio È maschio. e la creazione dei figli non è una funzione dovuta alla natura, ma solo allora avviene, ma anche un beneficio, perché se i forti soffrono nei deboli, nella vecchiaia diventano di nuovo deboli. Ma se anche in questo periodo la natura è insoddisfatta, è perché non può in numero, ma in natura. così la natura dell'uomo e della donna è preparata da quella divina per la società. infatti è inteso che non ha potere su tutto ciò che è utile, ma solo sull'opposizione, e in questa concomitanza;
+    </p>
+    <p lang="en">
+     so also to the people from the earth. But to these and to men it is a great deal; for they do not make their bodies unclean like the brutes, but they groan and ache with strength, and with strength they are in danger of war; for only these have their estates outside the deserts. But concerning men, the first preoccupation is concerning women, for society is the nature of both the female and the male. for it is subject to us in others that many such things nature is allowed to work, as well as to each animal; and it is impossible for the female without the male or the male without the female to form the body; so that out of necessity society was assembled. whereas, therefore, this exists in the other animals, and in so far as they partake of nature, on this one, and only for the sake of procreation; but in the days and the wiser it is rather structured, for rather they seem to be helping and favoring and cooperating with each other, but in man , that not only is it, but it is also a partner of each other, the female and the male He is male. and the creation of children is not a function due to nature only then it happens but also a benefit; for if the strong suffer in the weak, they again become weak in old age. But if nature is also unfulfilled in this period, it is, because it cannot in number, but in kind. thus the nature of man and woman is prepared by the divine one for society. for it is understood that he does not have power over all that is useful, but only over opposition, and in this concurrence;
+    </p>
+   </div>
+   <div n="1344a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ἵνα  τὸ μὲν φυλακτικώτερον ᾖ διὰ τὸν φόβον, τὸ δʼ ἀμυντικώτερον διὰ τὴν ἀνδρίαν, καὶ τὸ μὲν πορίζῃ τὰ ἔξωθεν,  τὸ δὲ σῴζῃ τὰ ἔνδον· καὶ πρὸς τὴν ἐργασίαν τὸ μὲν δυνάμενον ἑδραῖον εἶναι, πρὸς δὲ τὰς ἔξωθεν θυραυλίας ἀσθενές, τὸ  δὲ πρὸς μὲν τὰς ἡσυχίας χεῖρον, πρὸς δὲ τὰς κινήσεις ὑγιεινόν· καὶ περὶ τέκνων τὴν μὲν γένεσιν κοινήν, τὴν δὲ ὠφέλειαν  ἴδιον· τῶν μὲν γὰρ τὸ θρέψαι, τῶν δὲ τὸ παιδεῦσαί ἐστιν.
+     <milestone ed="P" unit="para"/>
+     πρῶτον μὲν οὖν νόμοι πρὸς γυναῖκα, καὶ τὸ μὴ ἀδικεῖν· οὕτως γὰρ ἂν οὐδʼ αὐτὸς ἀδικοῖτο. τοῦθʼ ὑφηγεῖται δὲ
+     <del>
+      ὃ
+     </del>
+     καὶ ὁ κοινὸς νόμος, καθάπερ οἱ Πυθαγόρειοι λέγουσιν, ὥσπερ ἱκέτιν καὶ ἀφʼ ἑστίας ἠγμένην ὡς ἥκιστα δεῖν
+     <del>
+      δοκεῖν
+     </del>
+     ἀδικεῖν· ἀδικία δὲ ἀνδρὸς αἱ θύραζε συνουσίαι γιγνόμεναι.
+     <milestone ed="P" unit="para"/>
+     περὶ δὲ ὁμιλίας μήθʼ ὥστε δεῖσθαι
+     <add>
+      μηθὲν
+     </add>
+     μήθʼ ὡς  ἀπόντος ἀδυνατεῖν ἡσυχάζειν, ἀλλʼ οὕτως ἐθίζειν ὥστε ἱκανῶς ἔχειν παρόντος καὶ μὴ παρόντος. εὖ δʼ ἔχει καὶ τὸ τοῦ Ἡσιόδου.
+     <cit>
+      <quote type="verse">
+       <l met="dactylic">
+        παρθενικὴν δὲ γαμεῖν, ἵνα ἤθεα κεδνὰ διδάξῃς.
+       </l>
+       <l lang="it">
+        ma si scopano una vergine, così te lo insegno io.
+       </l>
+       <l lang="en">
+        but they fuck a virgin, so that I would teach you this.
+       </l>
+      </quote>
+      <bibl n="Hes. WD 699">
+       ηες. ωδ 699
+      </bibl>
+     </cit>
+     αἱ γὰρ ἀνομοιότητες τῶν ἠθῶν ἥκιστα φιλικόν.
+     <milestone ed="P" unit="para"/>
+     περὶ δὲ  κοσμήσεως, ὥσπερ οὐδὲ τὰ ἤθη δεῖ
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἀλαζονευομένους ἀλλήλοις πλησιάζειν, οὕτως οὐδὲ τὰ σώματα. ἡ δὲ διὰ τῆς κοσμήσεως οὐδὲν διαφέρουσά ἐστι τῆς τῶν τραγῳδῶν ἐν τῇ  σκευῇ πρὸς ἀλλήλους ὁμιλία.
+     <milestone ed="P" unit="para"/>
+     τῶν δὲ κτημάτων πρῶτον μὲν καὶ ἀναγκαιότατον τὸ  βέλτιστον καὶ οἰκονομικώτατον· τοῦτο δὲ ἦν ἄνθρωπος. διὸ  δεῖ πρῶτον δούλους παρασκευάζεσθαι σπουδαίους. δούλων  δὲ εἴδη δύο, ἐπίτροπος καὶ ἐργάτης. ἐπεὶ δὲ ὁρῶμεν ὅτι  αἱ παιδεῖαι ποιούς τινας ποιοῦσι τοὺς νέους, ἀναγκαῖον καὶ παρασκευασάμενον τρέφειν οἷς τὰ ἐλευθέρια τῶν ἔργων  προστακτέον.
+     <milestone ed="P" unit="para"/>
+     ὁμιλία δὲ πρὸς δούλους ὡς μήτε ὑβρίζειν ἐᾶν  μήτε ἀνιᾶν, καὶ τοῖς μὲν ἐλευθεριωτέροις τιμῆς μεταδιδόναι, τοῖς δʼ ἐργάταις τροφῆς πλῆθος. καὶ ἐπειδὴ ἡ τοῦ  οἴνου πόσις καὶ τοὺς ἐλευθέρους ὑβριστὰς ποιεῖ, καὶ πολλὰ  ἔθνη ἀπέχεται καὶ τῶν ἐλευθέρων, οἷον Καρχηδόνιοι ἐπὶ  στρατιᾶς, φανερὸν ὅτι τούτου ἢ μηδὲν ἢ ὀλιγάκις μεταδοτέον.
+     <milestone ed="P" unit="para"/>
+     ὄντων δὲ τριῶν, ἔργου καὶ κολάσεως καὶ τροφῆς, τὸ μὲν  μήτε κολάζεσθαι, μήτʼ ἐργάζεσθαι, τροφὴν δʼ ἔχειν, ὕβριν  ἐμποιεῖ·
+    </p>
+    <p lang="it">
+     sì che è più protettivo contro la paura, e più difensivo per virilità, e che distrugge l'esterno, e preserva l'interno; tengono la quiete delle mani, ma i movimenti sono sani; e quanto ai figli, non generano li hanno in comune, ma il vantaggio è lo stesso; questo non è ingiusto. E questo è ciò che dice la legge comune, come dicono i Pitagorici, come se i mendicanti, e dal focolare, divenuti come una spina, fossero visti come ingiusti; ma l'ingiustizia di un uomo è il rapporto che avviene. ma quanto a parlare, sono abituati a farsi vedere, sono abituati a tacere quando sono assenti, ma sono così abituati che possono avere sia il presente che il non-presente. quindi non ha nemmeno quello di Esiodo.
+
+ma si scopano una vergine, così te lo insegno io.
+
+CIAO. di 699
+  poiché le dissomiglianze degli spiriti non sono amichevoli. ma riguardo all'ornamento, non alla morale vedere avvicinarsi gli altri arroganti, quindi non i corpi. ma per la decorazione non è diverso dal discorso dei canti nel vaso tra loro. E dei possedimenti, il primo e il più necessario, il migliore e il più economico: questi era un uomo. vedendo i primi servi diventare grandi. e ci sono due specie di servi, il commissario e l'operaio. ma vediamo che i figli dei quali sono quelli che sono giovani, sono nutriti in modo necessario e preparato da coloro ai quali è ingiunta la libertà delle opere. si parla agli schiavi come se non insultassero né loro né altri, e a coloro che sono più liberi si impartisce onore, a coloro che non lavorano una moltitudine di cibo. e poiché il bevitore di vino insulta anche i liberi, e molte nazioni tollerano anche i liberi, che sono Cartaginesi nell'esercito, è evidente che nulla o poco gli viene trasmesso. Ma dei tre esseri, lavoro e inferno e cibo, se non vai all'inferno, non lavori, non hanno cibo, si comportano da infernali;
+    </p>
+    <p lang="en">
+     so that it is more protective against fear, and more defensive through manliness, and that it destroys the outside, and preserves the inside; they hold the quietness of the hands, but the movements are healthy; and as for children, they do not beget them in common, but the benefit is the same; This is not unfair. And this is what the common law says, as the Pythagoreans say, as if the beggars, and from the hearth, who have become like a thorn, are seen to be unjust; but the injustice of a man is the intercourse that takes place. but as for speaking, they are accustomed to be seen; they are accustomed to be silent when they are absent, but they are so accustomed that they are able to have both present and non-present. so it doesn't have that of Hesiod either.
+
+but they fuck a virgin, so that I would teach you this.
+
+hi. od 699
+  for the dissimilarities of the spirits are not friendly. but about adornment, as not the morals seeing arrogant others approach, so not the bodies. but for the decoration it is no different from the speech of the songs in the vessel to each other. And of the estates, first and most necessary, the best and most economical; this was a man. by seeing first servants are made great. and there are two kinds of servants, a commissioner and a laborer. but we see that the children of whom are those who are young, they are nourished in a necessary and prepared manner by whom the freedom of works is enjoined. speech to the slaves as if they did not insult them or others, and to those who are freer honor is imparted, to those who do not work a multitude of food. and because the drinker of wine reviles even the free, and many nations tolerate even the free, who are Carthaginians in the army, it is evident that nothing or a little is transmitted to him. But of the three beings, work and hell and food, if you don't go to hell, you don't work, they don't have food, they act like hell;
+    </p>
+   </div>
+   <div n="1344b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     τὸ δὲ ἔργα μὲν ἔχειν καὶ κολάσεις, τροφὴν δὲ  μή, βίαιον καὶ ἀδυναμίαν ποιεῖ. λείπεται δὴ ἔργα παρέχειν καὶ τροφὴν ἱκανήν· ἀμίσθων γὰρ οὐχ οἷόν τε ἄρχειν, δούλῳ δὲ μισθὸς τροφή.
+     <milestone ed="P" unit="para"/>
+     ὥσπερ δὲ καὶ τοῖς ἄλλοις  ὅταν μὴ γίγνηται τοῖς βελτίοσι βέλτιον μηδὲ ἆθλα ᾖ  ἀρετῆς καὶ κακίας, γίγνονται χείρους, οὕτω καὶ περὶ οἰκέτας. διόπερ δεῖ ποιεῖσθαι σκέψιν καὶ διανέμειν τε καὶ ἀνιέναι  κατʼ ἀξίαν ἕκαστα, καὶ τροφὴν καὶ ἐσθῆτα καὶ ἀργίαν  καὶ κολάσεις, λόγῳ καὶ ἔργῳ μιμουμένους τὴν τῶν ἰατρῶν  δύναμιν ἐν φαρμάκου λόγῳ, προσθεωροῦντας ὅτι ἡ τροφὴ  οὐ φάρμακον διὰ τὸ συνεχές.
+     <milestone ed="P" unit="para"/>
+     γένη δὲ ἂν εἴη πρὸς τὰ ἔργα βέλτιστα μήτε δειλὰ  μήτε ἀνδρῖα ἄγαν. ἀμφότερα γὰρ ἀδικοῦσι. καὶ γὰρ οἱ ἄγαν  δειλοὶ οὐχ ὑπομένουσι καὶ οἱ θυμοειδεῖς οὐκ εὔαρχοι.
+     <milestone ed="P" unit="para"/>
+     χρὴ δὲ καὶ τέλος ὡρίσθαι πᾶσιν· δίκαιον γὰρ καὶ συμφέρον  τὴν ἐλευθερίαν κεῖσθαι ἆθλον· βούλονται γὰρ πονεῖν, ὅταν ᾖ ἆθλον καὶ ὁ χρόνος ὡρισμένος. δεῖ δὲ καὶ ἐξομηρεύειν ταῖς  τεκνοποιίαις· καὶ μὴ κτᾶσθαι ὁμοεθνεῖς πολλούς, ὥσπερ καὶ  ἐν ταῖς πόλεσιν· καὶ τὰς θυσίας καὶ τὰς ἀπολαύσεις μᾶλλον τῶν δούλων ἕνεκα ποιεῖσθαι ἢ τῶν ἐλευθέρων·
+     <milestone ed="Bekker" n="20" unit="line"/>
+     πλείονα  γὰρ ἔχουσιν οὗτοι οὗπερ ἕνεκα τὰ τοιαῦτα ἐνομίσθη.
+     <milestone ed="P" unit="para"/>
+     εἴδη δὲ τοῦ οἰκονόμου τέτταρα ἃ δεῖ ἔχειν περὶ τὰ  χρήματα. καὶ γὰρ τὸ κτᾶσθαι δυνατὸν χρὴ εἶναι καὶ  φυλάττειν· εἰ δὲ μή, οὐδὲν ὄφελος τοῦ κτᾶσθαι· τῷ γὰρ  ἠθμῷ ἀντλεῖν τοῦτʼ ἔστιν, καὶ ὁ λεγόμενος τετρημένος πίθος.  ἔτι δὲ καὶ εἶναι κοσμητικὸν τῶν ὑπαρχόντων καὶ χρηστικόν· τούτων γὰρ ἕνεκα κἀκείνων δεόμεθα.
+     <milestone ed="P" unit="para"/>
+     διῃρῆσθαι δὲ δεῖ  τούτων ἕκαστον, καὶ πλείω τὰ κάρπιμα εἶναι τῶν  ἀκάρπων, καὶ τὰς ἐργασίας οὕτω νενεμῆσθαι, ὅπως μὴ ἅμα  κινδυνεύσωσιν ἅπασιν. πρὸς δὲ φυλακὴν τοῖς τε Περσικοῖς  συμφέρει χρῆσθαι καὶ τοῖς Λακωνικοῖς. καὶ ἡ Ἀττικὴ δὲ  οἰκονομία χρήσιμος· ἀποδιδόμενοι γὰρ ὠνοῦνται, καὶ ἡ τοῦ  ταμιείου θέσις οὐκ ἔστιν ἐν ταῖς μικροτέραις οἰκονομίαις.
+     <milestone ed="P" unit="para"/>
+     Περσικὰ δὲ ἦν τὸ πάντα τετάχθαι, καὶ πάντʼ ἐφορᾶν  αὐτόν, καθʼ ὃ ἔλεγε Δίων περὶ Διονυσίου· οὐδεὶς γὰρ ἐπιμελεῖται ὁμοίως τῶν ἀλλοτρίων καὶ τῶν οἰκείων, ὥστε ὅσα  ἐνδέχεται,
+    </p>
+    <p lang="it">
+     ma le opere non hanno inferni, né cibo, poeti violenti e deboli. in mancanza di lavoro, provvedono anche al cibo sufficiente, perché chi non ha salario non ha autorità, ma il salario è cibo per il servo. e quanto agli altri, quando i migliori non diventano i migliori, né di virtù né di vizio, diventano mani, così anche di pietà. poiché vede il pensiero e la distribuzione e ogni cosa di valore ciascuno, e il cibo e la bellezza e le vacanze e gli inferni, con la ragione e con il lavoro imitando con la ragione il potere dei medici in medicina, considerando che il cibo non è medicina per il continuo. Geni, ma se siete bravi nelle opere, non siate codardi, né uomini arroganti. perché entrambi sono ingiusti. E perché i codardi non sono pazienti, e i codardi non sono leader. ma c'è un tempo e una fine per tutto; perché la giustizia e l'interesse della libertà sono uomini; perché vogliono soffrire, quando c'è un uomo e il tempo è fissato. e badate anche che rendano straniere le nascite; e non ci siano molti concittadini, come anche nelle città; e i sacrifici e i più per i piaceri degli schiavi che per quelli dei liberi, poiché ne hanno più di uno, si pensa. Ma anche i quattro dell'amministratore che vede per i soldi. e perché sia ​​forte, bisogna anche custodirlo; altrimenti non ne trae alcun vantaggio, perché per l'anima questo è, e la cosiddetta passione trita. ma è anche cosmetico di quelli esistenti e utilitaristico, poiché abbiamo uno di questi e uno di quelli. Ma li guardi ciascuno, e accanto a lui i frutti sono quelli degli infruttuosi, e le fatiche saranno tali che non periscano se sono in pericolo. ma ai Persiani conviene che i Laconi siano imprigionati. E l'economia attica è utile, perché sono pagati, e la posizione del tesoriere non è nelle piccole economie. Ma tutto era persiano, e lo portavano sempre, come disse Dione di Dionisio, perché nessuno si prende cura degli stranieri e delle persone allo stesso modo, per quanto può,
+    </p>
+    <p lang="en">
+     but the works have no hells, no food, violent and weak poets. lacking work, they also provide sufficient food, for the wageless have no authority, but wages are food for the servant. and as to the others, when the best do not become the best, neither of virtue nor vice, they become hands, so also of pity. for he sees thought and distribution and everything in value each, and food and beauty and holiday and hells, by reason and by work imitating the power of physicians in medicine by reason, considering that food is not medicine for the continuous. Geni, but if you are good at works, do not be cowards, nor men who are arrogant. because both are unjust. And because cowards are not patient, and cowards are not leaders. but there is a time and an end to all; for justice and the interest of freedom are men; for they want to suffer, when there is a man and the time is appointed. and see also that they make the births foreign; and there shall not be many fellow-citizens, as also in the cities; and the sacrifices and the for the pleasures of the slaves rather than those of the free, for they have more than one, it is thought. But also the steward's fours that he sees about the money. and for it to be strong, it is also to be guarded; if not, there is no benefit to it, for to the soul this is, and the so-called trite passion. but it is also cosmetic of the existing ones and utilitarian, for we have one of these and one of those. But let him see each one of them, and next to him the fruits are those of the unfruitful, and the labors will be such that they will not perish if they are in danger. but for the Persians it is convenient for the Laconians to be imprisoned. And the Attic economy is useful, because they are paid, and the position of the treasurer is not in the small economies. But everything was Persian, and they always wore it, as Dion said about Dionysius, for no one takes care of strangers and people alike, as much as he can,
+    </p>
+   </div>
+   <div n="1345a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     διʼ ἑαυτοῦ ποιεῖσθαι χρὴ τὴν ἐπιμέλειαν.  καὶ τὸ τοῦ Πέρσου καὶ τὸ τοῦ Λίβυος ἀπόφθεγμα εὖ ἂν ἔχοι. ὁ μὲν γὰρ ἐρωτηθεὶς τί μάλιστα ἵππον πιαίνει,
+     <quote>
+      ὁ τοῦ δεσπότου ὀφθαλμός
+     </quote>
+     ἔφη· ὁ δὲ Λίβυς ἐρωτηθεὶς ποία κόπρος  ἀρίστη,
+     <quote>
+      τὰ τοῦ δεσπότου ἴχνη
+     </quote>
+     ἔφη.
+     <milestone ed="P" unit="para"/>
+     ἐπισκεπτέον οὖν τὰ  μὲν αὐτόν, τὰ δὲ τὴν γυναῖκα, ὡς ἑκατέροις διαιρεῖται τὰ  ἔργα τῆς οἰκονομίας. καὶ τοῦτο ποιητέον ἐν μικραῖς οἰκονομίαις ὀλιγάκις, ἐν δʼ ἐπιτροπευομέναις πολλάκις. οὐ γὰρ  οἷόν τε μὴ καλῶς ὑποδεικνύντος καλῶς μιμεῖσθαι, οὔτʼ ἐν  τοῖς ἄλλοις, οὔτʼ ἐν ἐπιτροπείᾳ, ὡς ἀδύνατον μὴ ἐπιμελῶν δεσποτῶν ἐπιμελεῖς εἶναι τοὺς ἐφεστῶτας.
+     <milestone ed="P" unit="para"/>
+     ἐπεὶ δὲ ταῦτα  καὶ καλὰ πρὸς ἀρετὴν καὶ ὠφέλιμα πρὸς οἰκονομίαν,  ἐγείρεσθαι χρὴ πρότερον δεσπότας οἰκετῶν καὶ καθεύδειν  ὕστερον· καὶ μηδέποτε ἀφύλακτον οἰκίαν εἶναι, ὥσπερ  πόλιν· ὅσα τε δεῖ ποιεῖν μήτε νυκτὸς μήτε ἡμέρας παριέναι·  τό τε διανίστασθαι νύκτωρ· τοῦτο γὰρ καὶ πρὸς ὑγίειαν  καὶ οἰκονομίαν καὶ φιλοσοφίαν χρήσιμον.
+     <milestone ed="P" unit="para"/>
+     ἐν μὲν οὖν ταῖς  μικραῖς κτήσεσιν ὁ Ἀττικὸς τρόπος τῆς διαθέσεως τῶν ἐπικαρπιῶν χρήσιμος·
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἐν δὲ ταῖς μεγάλαις, διαμερισθέντων  καὶ τῶν πρὸς ἐνιαυτὸν καὶ τῶν κατὰ μῆνα δαπανωμένων,  ὁμοίως δὲ καὶ περὶ σκευῶν χρήσεως τῶν καθʼ ἡμέραν καὶ  τῶν ὀλιγάκις, ταῦτα παραδοτέον τοῖς ἐφεστῶσιν. ἐπὶ τούτοις  καὶ τὴν ἐπίσκεψιν αὐτῶν διά τινος χρόνου ποιητέον,  ἵνα μὴ λανθάνῃ τὸ σῳζόμενον καὶ τὸ ἐλλεῖπον.
+     <milestone ed="P" unit="para"/>
+     οἰκίαν δὲ  πρός τε τὰ κτήματα ἀποβλέποντα κατασκευαστέον καὶ πρὸς ὑγίειαν καὶ πρὸς εὐημερίαν αὐτῶν· λέγω δὲ κτήματα  μέν, οἷον καρποῖς καὶ ἐσθῆτι ποία συμφέρει, καὶ τῶν καρπῶν ποία ξηροῖς καὶ ποία ὑγροῖς, καὶ τῶν ἄλλων κτημάτων ποία ἐμψύχοις καὶ ποία ἀψύχοις, καὶ δούλοις καὶ  ἐλευθέροις, καὶ γυναιξὶ καὶ ἀνδράσι, καὶ ξένοις καὶ ἀστοῖς.  καὶ πρὸς εὐημερίαν δὲ καὶ πρὸς ὑγίειαν δεῖ εἶναι, εὔπνουν  μὲν τοῦ θέρους, εὐήλιον δὲ τοῦ χειμῶνος.
+     <milestone ed="P" unit="para"/>
+     εἴη δʼ ἂν ἡ τοιαύτη  κατάβορρος οὖσα καὶ μὴ ἰσοπλατής. δοκεῖ δὲ καὶ ἐν ταῖς  μεγάλαις οἰκονομίαις χρήσιμος εἶναι θυρωρός, ὃς ἂν ᾖ  ἄχρηστος τῶν ἄλλων ἔργων, πρὸς τὴν σωτηρίαν τῶν εἰσφερομένων καὶ ἐκφερομένων.
+    </p>
+    <p lang="it">
+     per se stesso lo fa attraverso la cura. E la citazione persiana e libica, se le avete. infatti quando mi fu chiesto cosa avesse catturato l'ippopotamo, l'occhio del despota tacque; ma Tito Livio, quando gli fu chiesto quale sterco fosse eccellente, le impronte del despota tacquero. Consideriamo allora l'uomo e la donna, poiché i compiti dell'economia sono divisi tra loro. e questo si faceva un po' nelle piccole economie, molto nelle commissioni. poiché nessuno che non sia ben segnalato è ben imitato, né dagli altri, né nella commissione, poiché i despoti impossibili e indifferenti sono i badanti degli efestiti. e sopra queste, buone alla virtù e utili all'economia, si levò come despota prima di case e poi di sede; e non è mai una casa incustodita, come una città; qualunque cosa veda, né notte né giorno, egli vi dimora, restate la notte, perché questo è anche per la salute e per l'economia e la filosofia. mentre i piccoli possedimenti erano il modo atttico di disporre dei frutti utili; ma quanto a quelli grandi, divisi tra quelli per sé e quelli spesi al mese, e similmente anche per gli utensili di uso quotidiano e quelli piccoli, questi siano da consegnare agli efesti. tuttavia, e la loro visita per il tempo del poeta, affinché ciò che è vivo e ciò che manca non sia nascosto. ma quanto ai possedimenti che aspettano di essere costruiti, e alla loro salute e benessere, mi dico dei poderi, che sono fruttuosi e che sono favorevoli, e dei frutti che sono secchi e che sono umidi, e degli altri possedimenti che sono animati e che sono inanimati, schiavi e liberi, donne e uomini, stranieri e cittadini. e per la prosperità e la salute, ecco, dormono sotto il sole d'estate e sotto il sole d'inverno. Se un pendio così ripido non è livellato. ma dimostra che anche nelle grandi economie il facchino è utile, se in altri lavori è inutile, per la salvezza di chi viene portato dentro e di chi viene portato fuori.
+    </p>
+    <p lang="en">
+     for himself it is done through care. And the Persian and the Libyan quote, if you have them. for when I was asked what indeed the hippopotamus caught, the despot's eye was silent; but Livy, when asked what dung was excellent, the despot's footprints were silent. Consider then the man, and the woman, as the tasks of the economy are divided among each. and this was done in small economies a little, in commissions a lot. for no one who is not well pointed out is well imitated, neither by others, nor in the commission, as the impossible, uncaring despots are the carers of the ephestites. and upon these, both good to virtue and beneficial to economy, he rose up as first a despot of houses and later of a seat; and he is never an unguarded house, like a city; whatever he sees, neither night nor day, he dwells in it. stay night, for this is also for health and useful economics and philosophy. while the small possessions were the Attic way of disposing of the fruits useful; but as for the big ones, divided between those for himself and those spent per month, and similarly also about utensils for daily use and small ones, these should be handed over to the ephestians. nevertheless, and their visit for the time of the poet, so that what is alive and what is missing is not hidden. but as for the estates looking to be built, and for their health and well-being, I say estates to me, which is fruitful and which is favorable, and of the fruits which are dry and which are wet, and of the other estates which are animate and which are inanimate, and slaves and free, both women and men, and strangers and citizens. and for prosperity and for health, behold, they sleep in the summer sun, and in the winter sun. If such a steep slope is not level. but he proves that even in great economies a porter is useful, if he is useless in other works, for the salvation of those who are brought in and those who are taken out.
+    </p>
+   </div>
+   <div n="1345b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     πρὸς εὐχρηστίαν δὲ σκευῶν τὸ Λακωνικόν· χρὴ γὰρ ἓν ἕκαστον ἐν τῇ αὑτοῦ χώρᾳ κεῖσθαι· οὕτω γὰρ ἂν ἕτοιμον ὂν οὐ ζητοῖτο.
+    </p>
+    <p lang="it">
+     ma per comodità prepara quello Laconico, perché un prestito è sempre in quel paese, quindi se è pronto non verrà chiesto.
+    </p>
+    <p lang="en">
+     but for ease of use he prepares the Laconic one, for a loan is always in that country, so if it is ready, it will not be asked for.
+    </p>
+    <milestone n="2" unit="Book"/>
+    <p>
+    </p>
+    <p lang="it">
+    </p>
+    <p lang="en">
+    </p>
+   </div>
+   <div n="1345b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="7" unit="Line"/>
+     <milestone ed="P" unit="para"/>
+     τὸν οἰκονομεῖν μέλλοντά τι κατὰ τρόπον τῶν τε  τόπων, περὶ οὓς ἂν πραγματεύηται, μὴ ἀπείρως ἔχειν, καὶ τῇ  φύσει εὐφυῆ εἶναι καὶ τῇ προαιρέσει φιλόπονόν τε καὶ  δίκαιον· ὅ τι γὰρ ἂν ἀπῇ τούτων τῶν μερῶν, πολλὰ διαμαρτήσεται περὶ τὴν πραγματείαν ἣν μεταχειρίζεται.
+     <milestone ed="P" unit="para"/>
+     οἰκονομίαι δέ εἰσι τέσσαρες, ὡς ἐν τύπῳ διελέσθαι ʽτὰς γὰρ  ἄλλας εἰς τοῦτο ἐμπιπτούσας εὑρήσομεν̓, βασιλική σατραπική πολιτική ἰδιωτική.
+     <milestone ed="P" unit="para"/>
+     τούτων δὲ μεγίστη μὲν καὶ ἁπλουστάτη ἡ βασιλική,
+     <gap/>
+     , ποικιλωτάτη δὲ καὶ ῥᾴστη ἡ πολιτική, ἐλαχίστη δὲ καὶ ποικιλωτάτη ἡ ἰδιωτική. ἐπικοινωνεῖν μὲν τὰ πολλὰ ἀλλήλαις ἀναγκαῖόν ἐστιν· ὅσα δὲ μάλιστα διʼ αὐτῶν ἑκάστῃ συμβαίνει, ταῦτα ἐπισκεπτέον ἡμῖν ἐστιν.
+     <milestone ed="P" unit="para"/>
+     πρῶτον μὲν τοίνυν τὴν βασιλικὴν ἴδωμεν. ἔστι δὲ αὕτη  δυναμένη μὲν τὸ καθόλου,
+     <milestone ed="Bekker" n="20" unit="line"/>
+     εἴδη δὲ ἔχουσα τέσσαρα· περὶ  νόμισμα, περὶ τὰ ἐξαγώγιμα, περὶ τὰ εἰσαγώγιμα, περὶ τὰ ἀναλώματα.
+     <milestone ed="P" unit="para"/>
+     τούτων δὲ ἕκαστον
+     <del>
+      μὲν
+     </del>
+     περὶ
+     <gap/>
+     τὸ νόμισμα  λέγω ποῖον καὶ πότε τίμιον ἢ εὔωνον ποιητέον, περὶ δὲ  τὰ ἐξαγώγιμα καὶ εἰσαγώγιμα πότε καὶ τίνα παρὰ τῶν σατραπῶν ἐν τῇ ταγῇ ἐκλαβόντι αὐτῷ λυσιτελήσει διατίθεσθαι, περὶ δὲ τὰ ἀναλώματα τίνα περιαιρετέον καὶ  πότε, καὶ πότερον δοτέον νόμισμα εἰς τὰς δαπάνας ἢ ἃ τῷ νομίσματι ὤνια.
+     <milestone ed="P" unit="para"/>
+     δεύτερον δὲ τὴν σατραπικήν. ἔστι δὲ  ταύτης εἴδη ἓξ τῶν προσόδων ἀπὸ γῆς, ἀπὸ τῶν ἐν τῇ  χώρᾳ ἰδίων γινομένων, ἀπὸ ἐμπορίων, ἀπὸ τελῶν, ἀπὸ  βοσκημάτων, ἀπὸ τῶν ἄλλων.
+     <milestone ed="P" unit="para"/>
+     αὐτῶν δὲ τούτων πρώτη  μὲν καὶ κρατίστη ἡ ἀπὸ τῆς γῆς ʽαὕτη δέ ἐστιν ἣν οἱ μὲν ἐκφόριον, οἱ δὲ δεκάτην προσαγορεύουσιν̓, δευτέρα δὲ ἡ ἀπὸ  τῶν ἰδίων γινομένη, οὗ μὲν χρυσίον, οὗ δὲ ἀργύριον, οὗ δὲ  χαλκός, οὗ δὲ ὁπόσα δύναται γίνεσθαι, τρίτη δὲ καὶ ἡ ἀπὸ  τῶν ἐμπορίων
+    </p>
+    <p lang="it">
+     l'economia dell'avvenire, la quale, a seconda dei luoghi di cui si tratta, non ha infinito, ed è intelligente per natura, ed è diligente e giusta nella sua scelta, poiché qualunque cosa venga da queste parti, si lamenta molto degli affari di cui si occupa. economia e questi quattro, come è stato scelto dalla stampa ʽperché ne abbiamo trovati altri che cadevano in questa politica privata satrapica reale. ma di queste la più grande e la più semplice è la basilica, e la più varia e complessa è la politica, e la più piccola e varia è la privata. È necessario che comunichino tra loro, ma ciò che accade attraverso ognuno di loro, questo è ciò che dobbiamo visitare. Prima di tutto vediamo la basilica. E non aveva alcun potere, perché avevo quattro cose: sulla valuta, sulle esportazioni, sulle importazioni, sulle provviste. ma per ciascuno di questi, della moneta, dico chi e quando fu poeta onesto o giusto, ma delle cose esportabili e importabili, talvolta e stagno che i satrapi in campo Se gli chiederò di servire sarò pronto, ma per l'elemosina verrà a trovarmi e quando, e poi darà una moneta per le spese o qualunque sia la moneta. in secondo luogo, la satrapia. E questo è lo stesso tipo di entrate della terra, di ciò che si fa in campagna, del commercio, delle tasse, dei pascoli, delle altre. E di questi, il primo, e lo stato, viene dalla terra, è quello che esorcizzano, ma richiedono una decima, e il secondo è quello che è fatto di loro, d'oro, d'argento e di rame e ciò che può essere prodotto, e il terzo dal commercio
+    </p>
+    <p lang="en">
+     the economy of the future, which according to the manner of the places, about which it deals, has no infinity, and it is intelligent by nature, and it is diligent and just in its choice, for whatever it is from these parts, it complains a lot about the business it deals with. economy and these four, as in the press was chosen ʽbecause we found others falling into this, royal satrapic private policy. but of these the greatest and simplest is the basilica, and the most diverse and complex is politics, and the smallest and most diverse is private. It is necessary for them to communicate with each other, but what happens through each one of them, that is what we must visit. First of all, let's see the basilica. And she was not empowered at all, because I had four things: about currency, about exports, about imports, about provisions. but for each of these, about the coin, I say who and when was an honest or fair poet, but about the exportable and importable things, sometimes and tin than the satraps in the field If I ask him to serve, I will be ready, but for the alms, he will visit and when, and then he will give a coin for the expenses or whatever the coin is. secondly, the satrapy. And this is the same type of revenue from land, from what is done in the country, from trade, from fees, from pastures, from the others. And of these, the first, and the state, is from the earth, ʽit is that which they exorcise, but they command a tithe, and the second is that which is made of their own, of gold, and of silver, and of copper, and of what can be made, and the third is from commerce
+    </p>
+   </div>
+   <div n="1346a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     τετάρτη δὲ καὶ ἡ ἀπὸ τῶν κατὰ γῆν  τε καὶ ἀγοραίων τελῶν γινομένη, πέμπτη δὲ ἡ ἀπὸ τῶν βοσκημάτων, ἐπικαρπία τε καὶ δεκάτη καλουμένη, ἕκτη δὲ ἡ  ἀπὸ τῶν ἄλλων, ἐπικεφάλαιόν τε καὶ χειρωνάξιον προσαγορευομένη.
+     <milestone ed="P" unit="para"/>
+     τρίτον δὲ τὴν πολιτικήν. ταύτης δὲ κρατίστη  μὲν πρόσοδος ἡ ἀπὸ τῶν ἰδίων ἐν τῇ χώρᾳ γινομένων,  εἶτα ἡ ἀπὸ τῶν ἐμπορίων καὶ διαγωγῶν, εἶτα ἡ ἀπὸ τῶν  ἐγκυκλίων.
+     <milestone ed="P" unit="para"/>
+     τέταρτον δὲ καὶ τελευταῖον τὴν ἰδιωτικήν.  αὕτη δέ ἐστιν ἀνώμαλος μὲν διὰ τὸ δεῖν μὴ πρὸς ἕνα σκοπὸν οἰκονομεῖν, ἐλαχίστη δὲ διὰ τὸ καὶ τὰς προσόδους καὶ  τὰ ἀναλώματα βραχέα γίνεσθαι. αὐτῆς δὲ ταύτης κρατίστη μὲν πρόσοδος ἡ ἀπὸ γῆς γινομένη, δευτέρα δὲ ἡ ἀπὸ  τῶν ἄλλων ἐγκλημάτων, τρίτη δὲ ἡ ἀπὸ ἀργυρίου. χωρὶς δὲ τούτων ὃ πάσαις μὲν ἐπικοινωνεῖται ταῖς οἰκονομίαις  καὶ προσήκει σκοπεῖν αὐτὸ μὴ παρέργως, μάλιστα δὲ  ταύτῃ, τὸ τἀναλώματα μὴ μείζω τῶν προσόδων γίνεσθαι.
+     <milestone ed="P" unit="para"/>
+     ἐπεὶ τοίνυν τὰς διαιρέσεις εἰρήκαμεν, μετὰ τοῦτο πάλιν νοητέον ἡμῖν, ἡ σατραπεία, περὶ ἣν ἂν πραγματευώμεθα, ἢ πόλις, πότερον ἃ πάντα ἄρτι διειλόμεθα
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἢ τὰ  μέγιστα τούτων εἰ δυνατὴ φέρειν ἐστί,
+     <gap/>
+     τούτοις χρηστέον· μετὰ δὲ τοῦτο ποῖαι τῶν προσόδων ἢ τὸ παράπαν οὐκ  εἰσί, δυναταὶ δʼ εἰσὶ γενέσθαι, ἢ μικραὶ νῦν οὖσαι μείζους οἷαί  τινες κατασκευασθῆναι, ἢ τῶν ἀναλωμάτων τῶν νῦν  ἀναλουμένων, τίνα τε καὶ πόσα περιαιρεθέντα
+     <add>
+      τὰ
+     </add>
+     ὅλα μηθὲν  βλάψει.
+     <milestone ed="P" unit="para"/>
+     τὰ μὲν οὖν περὶ τὰς οἰκονομίας τε καὶ τὰ μέρη τὰ  τούτων εἰρήκαμεν· ὅσα δέ τινες τῶν πρότερον πεπράγασιν  εἰς πόρον χρημάτων ἢ  τεχνικῶς τι διῴκησαν, ἃ ὑπελαμβάνομεν ἀξιόλογα αὐτῶν εἶναι, συναγηόχαμεν. οὐδὲ γὰρ ταύτην τὴν ἱστορίαν ἀχρεῖον ὑπολαμβάνομεν εἶναι. ἔστι  γὰρ ὅτε τούτων ἐφαρμόσει τοῖς οἷα ἂν αὐτὸς πραγματεύηται.
+     <milestone ed="P" unit="para"/>
+     Κύψελος ὁ Κορίνθιος εὐξάμενος τῷ Διί, ἐὰν κύριος  γένηται τῆς πόλεως, τὰ ὄντα Κορινθίοις πάντα ἀναθήσειν,  ἐκέλευσεν αὐτοὺς ἀπογράψασθαι.
+    </p>
+    <p lang="it">
+     e il quarto proviene dalla terra e dalle quote di mercato, il quinto dai pascoli, dai frutti e il decimo viene chiamato, e il sesto viene dagli altri, il capitale e il valore manuale sono vietati. in terzo luogo, la politica. E questo era tenuto con rendita, o dalle vicende proprie del paese, o dai mercanti e trasportatori, o dalle circolari. e il quarto ed ultimo quello privato. questo è anormale solo perché non risparmiano per uno scopo, e soprattutto perché sia ​​le rendite che le rendite diventano brevi. e di questa fu arrestato il medesimo con una rendita, quella di terra, la seconda quella degli altri delitti, e la terza quella d'argento. ma senza queste cose le finanze non si comunicano e a questo bisogna puntare, non a caso, e infatti le uscite non saranno inferiori alle entrate. su queste divisioni siamo entrati, dopo questo a noi nuovamente intelligibile, la satrapia, di cui se ci occupiamo, o città, dopo la quale dividiamo il i più grandi di questi, se è possibile portarli, questi servono; ma dopo questo, quale delle rendite o del parapan non è, non sei forte, non sei nato, oppure i piccoli ora sono i maggiori che si stanno costruendo, o le proporzioni di quelle ormai consumate, e quanto tutto è diviso, non fanno male. Per quanto riguarda l'economia, abbiamo incluso anche le parti di questa; e cosa hanno fatto i primi in termini monetari o cosa hanno gestito tecnicamente, cosa ci impegniamo ad essere degno di loro, abbiamo consultato. Dopotutto, non accettiamo questa storia per niente. Infatti applichi queste cose a coloro con cui tratta.
+    </p>
+    <p lang="en">
+     and the fourth is from the land and market dues, the fifth is from the pastures, the fruits and the tenth is called, and the sixth is from the others, the capital and hand-worth is forbidden. thirdly, politics. And this one was kept with annuity, either from the own happenings in the country, or from the merchants and carriers, or from the circulars. and fourth and lastly the private one. this one is abnormal only because they do not save for one purpose, and least of all because both the annuities and the annuities become short. and of this, the same one was arrested with an annuity, the one made of land, the second one, the one from the other crimes, and the third one, the one made of silver. but without these things, the finances are not communicated and it is necessary to aim at this, not surprisingly, and in fact, the expenditure will not be less than the income. on these divisions we entered, after this again intelligible to us, the satrapia, about which if we deal, or city, after which we divide the the greatest of these, if it is possible to bring them, these are useful; but after this, which of the incomes or the parapan is not, you are not strong, you are not born, or the small ones now are the greater ones that are being built, or the proportions of the now consumed ones, and how much everything is divided. do no harm. As for the economy, we also included the parts of these; and what the former did in terms of money or technically what they managed, which we undertake to be worthy of them, we consulted. After all, we do not accept this history for nothing. For let him then apply these things to those whom he deals with.
+    </p>
+   </div>
+   <div n="1346b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ἀπογραψαμένων δὲ τούτων τὸ δέκατον μέρος παρʼ ἑκάστου ἔλαβε, τοῖς δὲ λοιποῖς ἐκέλευσεν ἐργάζεσθαι. περιελθόντος δὲ τοῦ ἐνιαυτοῦ τὸ  αὐτὸ τοῦτο ἐποίησεν, ὥστε συνέβαινεν ἐν δέκα ἔτεσι κεῖνόν τε  ἅπαντα ἔχειν, ἅπερ ἀνιέρωσεν, τούς τε Κορινθίους ἕτερα  κεκτῆσθαι.
+     <milestone ed="P" unit="para"/>
+     Λύγδαμις Νάξιος ἐκβαλὼν φυγάδας, ἐπειδὴ τὰ κτήματα αὐτῶν οὐθεὶς ἠθέλησεν ἀλλʼ ἢ βραχέος ἀγοράζειν,  αὐτοῖς τοῖς φυγάσιν ἀπέδοτο. τά τε ἀναθήματα, ὅσα ἦν  αὐτῶν ἔν τισιν ἐργαστηρίοις ἡμίεργα ἀνακείμενα, ἐπώλει  τοῖς τε φυγάσι καὶ τῶν ἄλλων τῷ βουλομένῳ ὥστʼ ἐπιγραφῆναι τὸ τοῦ πριαμένου ὄνομα.
+     <milestone ed="P" unit="para"/>
+     Βυζάντιοι δὲ δεηθέντες χρημάτων τὰ τεμένη τὰ δημόσια ἀπέδοντο, τὰ μὲν κάρπιμα χρόνον τινά, τὰ δὲ  ἄκαρπα ἀεννάως· τά τε θιασωτικὰ καὶ τὰ πατριωτικὰ  ὡσαύτως, καὶ ὅσα ἐν χωρίοις ἰδιωτικοῖς ἦν· ὠνοῦντο γὰρ  πολλοῦ ὧν ἦν καὶ τὸ ἄλλο κτῆμα. τοῖς δὲ θιασώταις  ἕτερα χωρία, τὰ δημόσια, ὅσα ἦν περὶ τὸ γυμνάσιον ἢ  τὴν ἀγορὰν ἢ τὸν λιμένα,
+     <milestone ed="Bekker" n="20" unit="line"/>
+     τούς τε τόπους τοὺς ἀγοραίους, ἐν  οἷς ἐπώλει τίς τι· καὶ τῆς θαλάττης τὴν ἁλιείαν, καὶ τὴν  τῶν ἁλῶν ἁλ
+     <del>
+      ατ
+     </del>
+     οπωλίαν, τῶν τʼ ἐργαζομένων θαυματοποιῶν  καὶ μάντεων καὶ φαρμακοπωλῶν καὶ τῶν ἄλλων τῶν τοιουτοτρόπων
+     <gap/>
+     · τὸ τρίτον δὲ μέρος τοῦ ἐργαζομένου ἀποτελεῖν ἔταξαν. τῶν τε νομισμάτων τὴν καταλλαγὴν ἀπέδοντο μιᾷ  τραπέζῃ, ἑτέρῳ δὲ οὐκ ἦν οὐθενὶ οὔτε ἀποδόσθαι ἑτέρῳ οὔτε  πρίασθαι παρʼ ἑτέρου· εἰ δὲ μή, στέρησις ἦν.
+     <milestone ed="P" unit="para"/>
+     ὄντος δὲ νόμου  αὐτοῖς μὴ εἶναι πολίτην ὃς ἂν μὴ ἐξ ἀστῶν ἀμφοτέρων  ᾖ, χρημάτων δεηθέντες ἐψηφίσαντο τὸν ἐξ ἑνὸς ὄντα ἀστοῦ  καταβαλόντα μνᾶς τριάκοντα εἶναι πολίτην.
+     <milestone ed="P" unit="para"/>
+     ἐν σιτοδείᾳ  δὲ γενόμενοι καὶ ἀποροῦντες χρημάτων κατήγαγον τὰ πλοῖα  τὰ ἐκ τοῦ Πόντου· χρόνου δὲ γενομένου, τῶν ἐμπόρων ἀγανακτούντων, ἐτέλουν αὐτοῖς τόκους ἐπιδεκάτους, τοῖς δʼ ὠνουμένοις τι ἔταξαν χωρὶς τῆς τιμῆς διδόναι τὸ ἐπιδέκατον.
+    </p>
+    <p lang="it">
+     Di quelli che si iscrissero, ricevette la decima parte di ciascuno, ma per il resto scelse di lavorare. Ma quando vennero da lui, fecero la stessa cosa, proprio come era successo in dieci anni. Lygdamis Naxius mise fuori fugadas, perché nessuno voleva i loro possedimenti ma li comprò allo scoperto, furono restituiti ai fuggitivi. gli votivi, che erano semicotti nelle loro officine, li vendette ai fuggiaschi e gli altri al bulumene affinché vi fosse scritto il nome di colui che era stato preso. Ma i Bizantini, a corto di soldi, distrussero i templi pubblici, quelli che davano frutto a lungo, ma quelli che non portavano frutto; quelli religiosi e quelli anche patriottici, e quelli che erano nei villaggi privati, perché odiavano molto dove c'erano anche altre proprietà. e ad essi sono dedicati altri luoghi, quelli pubblici, quello che c'era intorno alla palestra o al mercato o al porto, i luoghi dove i mercanti vendono le cose, e la pesca della spiaggia, e la vendita del sale n, degli taumaturghi e degli indovini e dei farmacisti e degli altri indovini; e la terza parte dell'operaio fu compiuta. il catalogo delle monete fu dato ad una banca, ma all'altra non c'era nulla, né fu dato all'altra, né fu allegato all'altra, altrimenti era una privazione. trenta sono cittadini. ma essendo nati nel grano e avendo denaro, fecero uscire le navi dal Ponto; ma quando fu il momento, i mercanti indignati, addebitarono loro gli interessi delle decime a coloro che non avevano ricevuto ciò che avevano ordinato senza il pagamento prezzo, diede la decima.
+    </p>
+    <p lang="en">
+     Of those who were registered, he received the tenth part of each, but to the rest he chose to work. But when they came to him, they did the same thing, just as it happened in ten years. Lygdamis Naxius put out fugadas, because no one wanted their estates but bought them short, they were given back to the fugitives. the votives, which were half-baked in their workshops, he sold to the fugitives and to the others to the bulumene so that the name of the one who had been taken was inscribed. But the Byzantines, strapped for money, destroyed the public temples, those that bore fruit for a long time, but those that bore no fruit; those that were religious and those that were patriotic as well, and those that were in private villages, because they hated a lot where there was other property as well. and to them other places are dedicated, the public ones, what was around the gymnasium or the market or the port, the places where the marketers sell things, and the fishing of the beach, and the sale of salt n, of the workers of miracle workers and diviners and druggists and of the other soothsayers; and the third part of the worker was done. the catalog of the coins was given to one bank, but to the other there was nothing, nor was it given to the other, nor was it attached to the other; if not, it was a deprivation. one Citizens who have paid more than thirty are citizens. but being born in wheat, and having money, they brought forth the ships from the Pontus; but when the time was done, the merchants being indignant, they charged them interest of tithes, to those who were not paid what they had ordered without the price, he gave the tithe.
+    </p>
+   </div>
+   <div n="1347a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     <milestone ed="P" unit="para"/>
+     μετοίκων δέ τινων ἐπιδεδανεικότων ἐπὶ κτήμασιν, οὐκ οὔσης αὐτοῖς ἐγκτήσεως ἐψηφίσαντο τὸ τρίτον μέρος  εἰσφέροντα τοῦ δανείου τὸν βουλόμενον κυρίως ἔχειν τὸ κτῆμα.
+     <milestone ed="P" unit="para"/>
+     Ἱππίας
+     <del>
+      ὁ
+     </del>
+     Ἀθηναῖος τὰ ὑπερέχοντα τῶν ὑπερῴων εἰς  τὰς δημοσίας ὁδοὺς καὶ τοὺς ἀναβαθμοὺς καὶ τὰ προφράγματα καὶ τὰς θύρας τὰς ἀνοιγομένας ἔξω ἐπώλησεν·  ὠνοῦντο οὖν ὧν ἦν τὰ κτήματα, καὶ συνελέγη χρήματα οὕτω  συχνά.
+     <milestone ed="P" unit="para"/>
+     τό τε νόμισμα τὸ ὂν Ἀθηναίοις ἀδόκιμον ἐποίησε,  τάξας δὲ τιμὴν ἐκέλευσε πρὸς αὑτὸν ἀνακομίζειν· συνελθόντων δὲ ἐπὶ τῷ κόψαι ἕτερον χαρακτῆρα, ἐξέδωκε τὸ  αὐτὸ ἀργύριον.
+     <milestone ed="P" unit="para"/>
+     ὅσοι τε τριηραρχεῖν ἢ φυλαρχεῖν ἢ χορηγεῖν ἤ τινα εἰς ἑτέραν λειτουργίαν τοιαύτην ἤμελλον δαπανᾶν, τίμημα τάξας μέτριον ἐκέλευσε τὸν βουλόμενον ἀποτίσαντα τοῦτο ἐγγράφεσθαι εἰς τοὺς λελειτουργηκότας.
+     <milestone ed="P" unit="para"/>
+     τῇ τε  ἱερείᾳ τῇ τῆς Ἀθηνᾶς τῆς ἐν ἀκροπόλει ὑπὲρ τοῦ ἀποθανόντος φέρειν χοίνικα κριθῶν καὶ πυρῶν ἑτέραν καὶ ὀβολόν, καὶ  ὅτῳ ἂν παιδάριον γένηται, τὸ αὐτὸ τοῦτο.
+     <milestone ed="P" unit="para"/>
+     Ἀθηναῖοι δὲ οἱ ἐν Ποτιδαίᾳ οἰκοῦντες δεόμενοι χρημάτων εἰς τὸν πόλεμον ἀπογράψασθαι ἅπασι συνέταξαν  τὰς οὐσίας,
+     <milestone ed="Bekker" n="20" unit="line"/>
+     μὴ ἁθρόας εἰς τὸν αὑτοῦ δῆμον ἕκαστον, ἀλλὰ  κατὰ κτῆμα ἐν ᾧ τόπῳ ἕκαστον εἴη, ἵνα οἱ πένητες δύνωνται ὑποτιμᾶσθαι· ὅτῳ δὲ μὴ ἦν κτῆμα μηθέν, τὸ σῶμα  διμναῖον τιμήσασθαι. ἀπὸ τούτων οὖν εἰσέφερον τὸ ἐπιγραφὲν ἕκαστος σῷον τῇ πόλει.
+     <milestone ed="P" unit="para"/>
+     <add>
+      Σωσίπολις
+     </add>
+     Ἀντισσαῖος
+     <del>
+      δέ
+     </del>
+     , δεηθείσης τῆς πόλεως χρημάτων,  εἰθισμένων
+     <del>
+      δὲ
+     </del>
+     αὐτῶν λαμπρῶς ἄγειν Διονύσια, ἐν οἷς ἄλλα  τε πολλὰ ἀνήλισκον ἐξ ἐνιαυτοῦ παρασκευάζοντες καὶ ἱερεῖα  πολυτελῆ, ὑπογύου δὲ οὔσης ταύτης τῆς ἑορτῆς, ἔπεισεν  αὐτοὺς τῷ μὲν Διονύσῳ εὔξασθαι ἐς νέωτα ἀποδώσειν διπλάσια, ταῦτα δὲ συναγαγόντας ἀποδόσθαι. συνελέγη οὖν  αὐτοῖς χρήματα οὐκ ὀλίγα πρὸς τὴν χρείαν.
+     <milestone ed="P" unit="para"/>
+     Λαμψακηνοὶ δὲ προσδοκίμων οὐσῶν τριηρῶν πολλῶν  πρὸς αὐτούς, ὄντος μεδίμνου τῶν ἀλφίτων τετραδράχμου, προσέταξαν τοῖς ἀγοραίοις πωλεῖν ἑξάδραχμον, καὶ  τοῦ ἐλαίου τὸν χοᾶ ὄντα δραχμῶν
+     <add>
+      τριῶν
+     </add>
+     , τεττάρων καὶ  τριωβόλου, τοῦ τε οἴνου καὶ τῶν ἄλλων ὡσαύτως. τὴν μὲν οὖν ἀρχαίαν τιμὴν ἐλάμβανεν ὁ ἰδιώτης,
+    </p>
+    <p lang="it">
+     dei comproprietari e di coloro che hanno ipoteche sull'immobile, nemmeno per queste acquisizioni ha votato il terzo debitore, colui che possiede principalmente l'immobile. Ippia ateniese vendette il surplus delle strade maestre nelle pubbliche vie e le scale e le transenne e le porte che erano aperte verso l'esterno; poi li vendette dove erano i possedimenti, e così spesso si riscosse denaro. Gli Ateniesi si rifiutarono di coniare la moneta, ma egli gli mandò un prezzo da riscuotere; e quando raccolsero sulla moneta un altro carattere, emise lo stesso argento. Coloro che sono trierarchi o tutori o padrini o che lo spenderanno in futuro in altra funzione, prezzo di classe moderata, eleggono colui che regge, questo sarà scritto tra i liturgisti. Alla sacerdotessa di Atena nella cittadella , porta per i defunti cirripedi di orzo e legna da ardere. E se nasce un bambino, lo stesso. E bisogna registrare gli Ateniesi residenti a Potidea, che hanno debiti per la guerra così redigevano l'essenziale, non sommariamente per ciascuno, ma secondo lo stato in cui si trovava ciascuno, affinché i penitenti fossero svalutati; ma se non era stato uno stato, veniva onorato il corpo di entrambi. Di questi, dunque, portarono l'iscrizione a ciascuno di loro in città.
+E Antissio di Sosipoli, avendo bisogno del denaro della città, e ad esso abituato, Dionisia visse brillantemente, dove c'erano molti altri minori di sua creazione e un prete lussuoso, e anche il figlio della stessa festa, li persuase a darsi a Dioniso, e a darsi al giovane, il doppio, detratto questo fruttò. perciò per loro fu raccolto denaro, non sufficiente al bisogno. Ma i Lampsakiani, aspettandosi da loro tre dracme di denaro, essendo la metà dei tetradracmi, ordinarono ai mercanti di vendere un esadramma, l'olio per tre dracme, quattro dracme e tre dracme, il vino e le altre cose allo stesso modo. l'allora antico onore veniva ricevuto dall'individuo,
+    </p>
+    <p lang="en">
+     of co-sharers and of those who have mortgages on the estate, not even for these acquisitions did the third party paying the loan, the one who mainly owns the estate, vote. Hippias the Athenian sold the surplus of the highways in the public streets and the steps and the barriers and the doors that were open to the outside; then they were sold where the estates were, and money was collected so often. The Athenians refused to mint the coin, but he sent a price to him to collect; and when they gathered on the coin another character, he issued the same silver. Those who are trierarchs or guardians or sponsors or who spend it in another function in the future, a price of a moderate class, elect the one who is in charge, this shall be written among the liturgists. To the priestess of Athena in the citadel, bring for the deceased barnacles of barley and firewood And if a child is born, the same. And the Athenians living in Potidaea, owing money for the war, must be registered thus they drew up the essentials, not in sum to each one, but according to the estate in which place each one was, so that the penitents might be depreciated; but if it was not an estate, the body of both was honored. Of these, therefore, they brought the inscription to each of them in the city.
+And Antissius of Sosipolis, being in need of the money of the city, and having become accustomed to it, Dionysia lived brilliantly, where there were many other minors of his own making and a luxurious priest, and also the son of the same festival, he persuaded them to give himself to Dionysus, and to give himself to the youth. twice as much, deducting this yielded. therefore money was collected for them, not enough for the need. But the Lampsakians, expecting three drachmas of money from them, being the middle of the tetradrachms, ordered the merchants to sell one hexadrachm, and of the oil for three drachmas, four drachmas, and three drachmas, of the wine and of the other things likewise. the then ancient honor was received by the individual,
+    </p>
+   </div>
+   <div n="1347b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     τὸ δὲ πλέον ἡ  πόλις, καὶ εὐπόρησε χρημάτων.
+     <milestone ed="P" unit="para"/>
+     Ἡρακλεῶται πέμποντες ναῦς τετταράκοντα ἐπὶ τοὺς  ἐν Βοσπόρῳ τυράννους, οὐκ εὐπορούμενοι χρημάτων παρὰ  τῶν ἐμπόρων συνηγόρασαν τόν τε σῖτον πάντα καὶ τὸ  ἔλαιον καὶ τὸν οἶνον καὶ τὴν ἄλλην ἀγοράν χρόνου διισταμένου ἐν ᾧ ἔμελλον ἀποδώσειν τὴν τιμήν. τοῖς δὲ δὴ  ἐμπόροις καλῶς εἶχε μὴ κοτυλίζειν, ἀλλʼ ἁθρόα τὰ φορτία  πεπρᾶσθαι, ἐκεῖνοί τε διδόντες διʼ ἄλλην οὐ μισθὸν παρῆγον
+     <del>
+      ἀλλὰ
+     </del>
+     τὴν ἀγορὰν ἐν ὁλκάσι,
+     <add>
+      καὶ
+     </add>
+     ἄνδρα ταμίαν ἐπέστησαν ἐφʼ ἑκάστῃ τῶν νεῶν. ἀφικομένων δʼ εἰς τὴν πολεμίαν αὐτῶν ἠγόραζον οἱ στρατιῶται παρὰ τούτων ἅπαντα.  πρότερον
+     <add>
+      οὖν
+     </add>
+     συνελέγη ἀργύριον ἤ ἐδίδοσαν οἱ στρατηγοὶ  πάλιν τὸν μισθόν, ὥστε συνέβαινε ταὐτὸ
+     <del>
+      τὸ
+     </del>
+     ἀργύριον δίδοσθαι ἕως εἰς οἶκον ἀπῆλθον.
+     <milestone ed="P" unit="para"/>
+     Λακεδαιμόνιοι Σαμίων δεηθέντων χρήματα αὐτοῖς εἰς  τὴν κάθοδον δοῦναι, ἐψηφίσαντο μίαν ἡμέραν καὶ αὐτοὺς  καὶ τοὺς οἰκέτας καὶ τὰ ὑποζύγια νηστεῦσαι, ὅσον δὲ ἐδαπάνα ἕκαστος, τοσοῦτον δοῦναι τοῖς Σαμίοις.
+     <milestone ed="Bekker" n="20" unit="line"/>
+     <milestone ed="P" unit="para"/>
+     Χαλκηδόνιοι δέ, ξένων ἐν τῇ πόλει συχνῶν παρʼ  αὐτοῖς γινομένων, ὀφείλοντες αὐτοῖς μισθὸν οὐκ ἠδύναντο  διαλῦσαι. ἀνήγγειλαν οὖν, εἴ τις τῶν πολιτῶν ἢ μετοίκων σῦλον ἔχει κατὰ πόλεως ἢ ἰδιώτου καὶ βούλεται λαβεῖν,  ἀπογράψασθαι. ἀπογραψαμένων δὲ συχνῶν, τὰ πλοῖα τὰ  πλέοντα εἰς τὸν Πόντον ἐσύλων μετὰ προφάσεως εὐλόγου.  ἔταξαν δὲ χρόνον ἐν ᾧ λόγον ὑπὲρ αὐτῶν ἔφασαν ποιήσασθαι. συλλεγέντων δὲ χρημάτων συχνῶν, τοὺς μὲν  στρατιώτας ἀπήλλαξαν, ὑπὲρ δὲ τῶν σύλων διεδικάσαντο.  τοῖς δὲ μὴ δικαίως συληθεῖσιν ἡ πόλις ἀπὸ τῶν προσόδων  ἀπεδίδου.
+     <milestone ed="P" unit="para"/>
+     Κυζικηνοὶ δὲ στασιάσαντες πρὸς ἀλλήλους, ἐπικρατήσαντος τοῦ δήμου, τῶν δὲ πλουσίων συνειλημμένων, ὀφείλοντες χρήματα στρατιώταις ἐψηφίσαντο μὴ θανατῶσαι τοὺς  συνειλημμένους, ἀλλὰ χρήματα πραξαμένους φυγαδεῦσαι.
+     <milestone ed="P" unit="para"/>
+     Χῖοι δέ, νόμου ὄντος αὐτοῖς ἀπογράφεσθαι τὰ χρέα  εἰς τὸ δημόσιον, δεηθέντες χρημάτων
+    </p>
+    <p lang="it">
+     ma ora la città, e ha lasciato in eredità denaro. Eracle, mandando quaranta navi contro i tiranni del Bosforo, tutti coloro che avevano denaro tranne i mercanti, congiurò per comprare per lungo tempo tutto il grano, l'olio, il vino e gli altri beni, in cui avrebbero pagato il tributo in il futuro. Ma i mercanti non volevano arrendersi, ma quando i carichi furono pronti, quegli uomini con due denti non produssero altro salario se non l'acquisto in Olkasi, e per ciascuno dei giovani fu nominato un cassiere maschio. Quando arrivarono in guerra, i soldati comprarono tutto loro malgrado. in precedenza, se si raccoglieva l'argento, oppure i generali davano di nuovo lo stipendio, così accadeva che gli veniva dato l'argento fino al ritorno a casa. Gli Spartani di Samia, avendo dato loro del denaro nel cathodon, votarono per un giorno e digiunarono sia le donne che gli sposi, e quanto ciascuno aveva speso, altrettanto diede ai Sami.
+I calcedoniani, stranieri in città spesso più di questi, sono in debito Questi salari non vengono sciolti. Hanno annunciato quindi che se c'è un comune o un privato che possiede la proprietà dei cittadini o dei residenti e vuole impossessarsene, verrà registrato. ma spesso cancellate, le navi che salpano per Ponton ritornano con una prefazione di buon auspicio. Ma fissarono un orario in cui parlarono di loro. ma quando spesso il denaro veniva raccolto, i soldati venivano licenziati e tentavano di ottenere il denaro. Ma a coloro che non saranno arrestati giustamente la città cederà dalle rendite. Ma i Cyziken, ribellandosi l'uno contro l'altro, il sovrano della città, e i ricchi arrestati, che dovevano soldi ai soldati, votarono non per uccidere gli arrestati, ma per fuggire quando il denaro fosse stato preso. Coloro che, per legge, cancellano i loro debiti verso il pubblico, vincolati dal denaro
+    </p>
+    <p lang="en">
+     but now the city, and it bequeathed money. Heracles, sending forty ships against the tyrants on the Bosphorus, no one who had money but the merchants, conspired to buy all the wheat and the oil and the wine and the other goods for a long time, in which they would pay the tribute in the future. But the merchants did not want to lie down, but when the loads were ready, those two-toothed men did not produce any wages but the purchase in olkasi, and a male cashier was appointed for each of the youths. When they arrived in their war, the soldiers bought everything in spite of them. previously, if silver was collected, or the generals gave the salary again, so it happened that silver was given until he went home. The Lacedaemonians of Samia having given money to them in the cathodon, they voted for a day and they fasted both the women and the bridegrooms, and as much as each one had spent, he gave that much to the Samians.
+Chalcedonians, strangers in the city ofttimes than these, owe These wages are not dissolved. They announced, therefore, that if there is a city or a private person who owns the citizens' or residents' property and wants to take it, it will be registered. but oft written off, the ships sailing to Ponton return with a preface of auspiciousness. But they set a time in which they spoke about them. but when the money was often collected, the soldiers were dismissed, and they tried for the money. But to those who are not justly arrested, the city will yield from the revenues. But the Cyzikens, rebelling against each other, the ruler of the town, and the rich arrested, owing money to the soldiers, voted not to kill the arrested, but to flee when the money was taken. Those who, by law, shall write off their debts to the public, bound by money
+    </p>
+   </div>
+   <div n="1348a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ἐψηφίσαντο τοὺς  ὀφείλοντας μὲν ἀποδοῦναι τῇ πόλει τὰ δάνεια, τὴν δὲ  πόλιν ἐκ τῶν προσόδων τοὺς τόκους τοῖς δεδανεικόσι καταφέρειν, ἕως ἂν καὶ τὸ ἀρχαῖον εὐπορήσωσιν.
+     <milestone ed="P" unit="para"/>
+     Μαύσωλος ὁ Καρίας τύραννος, πέμποντος βασιλέως  πρὸς αὐτὸν ἐπὶ τῷ τοὺς φόρους δοῦναι, συναγαγὼν τοὺς  εὐπορωτάτους ἐν τῇ χώρᾳ ἔλεγεν ὅτι ὁ βασιλεὺς αἰτεῖ τοὺς  φόρους, αὐτὸς δὲ οὐκ εὐπορεῖται. κατασκευαστοὶ δʼ ἄνδρες  αὐτῷ εὐθέως ἐπηγγέλλοντο ὅσον εἰσοίσει ἕκαστος. τούτων δὲ  τοῦτο πραξάντων, οἱ εὐπορώτεροι τὰ μὲν αἰσχυνόμενοι τὰ  δὲ φοβούμενοι πολλῷ τούτων
+     <add>
+      πλείω
+     </add>
+     ἐπηγγέλλοντο καὶ εἰσέφερον.
+     <milestone ed="P" unit="para"/>
+     πάλιν δεηθεὶς χρημάτων ἐξεκκλησιάσας τοῖς Μυλασσεῦσιν ἔλεγεν ὅτι μητρόπολις οὖσα ἡ πόλις αὐτοῦ  αὕτη ἀτείχιστός ἐστιν, ὁ δὲ βασιλεὺς ἐπʼ αὐτὸν στρατεύει. ἐκέλευσεν οὖν τοὺς Μυλασσεῖς φέρειν ἕκαστον ὅτι πλεῖστα χρήματα, φάσκων αὐτοὺς τοῖς νῦν εἰσενεχθεῖσι καὶ τὰ λοιπὰ  σῴζειν. εἰσενεχθέντων δὲ πολλῶν τὰ μὲν χρήματα εἶχε,  τὸ δὲ τεῖχος οὐκ ἔφη τὸν θεὸν
+     <add>
+      ἐᾶν
+     </add>
+     ἐν τῷ παρόντι οἰκοδομεῖν.
+     <milestone ed="P" unit="para"/>
+     Κόνδαλος Μαυσώλου ὕπαρχος, ὁπότε διαπορευομένῳ  αὐτῷ διὰ τῆς χώρας προσενέγκοι τις πρόβατον
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἢ ὗν ἢ  μόσχον, ἀπογραψάμενος τὸν δόντα καὶ τὸν χρόνον, ἀπαγαγόντα εἰς οἶκον ἐκέλευε τρέφειν ἕως ἂν ἐπανέλθοι·  ὁπότε δὲ δοκοίη χρόνος ἱκανὸς εἶναι, αὐτό τε τὸ τραφὲν  καὶ τὴν ἐπικαρπίαν λογισάμενος ἀπῄτει.  τῶν τε δένδρων  τὰ ὑπερέχοντα ἢ πίπτοντα εἰς τὰς ὁδοὺς τὰς βασιλικὰς  ἐπώλει ὡς τὰς ἐπικαρπίας.
+     <milestone ed="P" unit="para"/>
+     τῶν δὲ στρατιωτῶν εἴ τις τελευτήσειε, διαπύλιον ἀπῄτει δραχμὴν τοῦ σώματος· ἅμα τε  οὖν ἐντεῦθεν καὶ ἀργύριον ἐλάμβανεν, ἅμα τε οἱ ἡγεμόνες  οὐ παρεκρούοντο αὐτόν, πότε τετελεύτηκεν ὁ στρατιώτης.
+     <milestone ed="P" unit="para"/>
+     τούς  τε Λυκίους ὁρῶν ἀγαπῶντας τὸ τρίχωμα φορεῖν, ἔφησε γράμματα ἥκειν παρὰ βασιλέως, κόμας ἀποστεῖλαι εἰς προκόμια, προστετάχθαι οὖν αὐτῷ ὑπὸ Μαυσώλου ἀποκεῖραι αὐτούς.  ἔφησεν οὖν, εἰ βούλονται ἐπικεφάλαιον τακτὸν αὐτῷ δοῦναι, μεταπέμψασθαι ἐκ τῆς Ἑλλάδος κόμην, οἱ δὲ ἀσμένως  ἔδοσαν ὃ ᾔτει, καὶ συνελέγη χρήματα πολλὰ ἀπὸ ὄχλου πολλοῦ.
+     <milestone ed="P" unit="para"/>
+     Ἀριστοτέλης Ῥόδιος ἄρχων Φωκαίας, ἀπορῶν χρημάτων, ὁρῶν στάσεις οὔσας δύο τῶν Φωκαίων, λόγους ἐποιήσατο  πρὸς τὴν ἑτέραν στάσιν ἐν ἀπορρήτοις,
+    </p>
+    <p lang="it">
+     votarono affinché i debitori restituissero i prestiti alla città, e alla città dagli affitti, gli interessi ai Dedanekosi, finché prosperò anche quella antica. Mausolo tiranno di Caria, quando il re lo mandò a pagare le tasse, convocò i nobili del paese, dissero che il re chiede le tasse, ma non dà. Per lui furono costruiti 4 uomini, e fu assunto direttamente fintanto che ognuno era in forma. E quelli che avevano fatto questo, i più ricchi, temendo e temendo la moltitudine di queste cose, ne presero possesso e lo portarono. di nuovo, dopo aver inviato denaro ai Milassesi, dissero che la città di questa città non aveva mura e che il re era accampato contro di essa. Allora ordinò ai Mylassiani di portarli ciascuno perché avevano molto denaro, vincolandoli al presente e risparmiando il resto. ma fece entrare il denaro di molti, ma il muro non lasciò il dio che si trova nell'attuale edificio. Sovrano di Kondalos Mausolus, che allora viaggiava con lui d I predicatori del paese allevavano loro una pecora o un vitello, contando i denti e il tempo, e portandoli a casa, li nutrivano fino al ritorno; poi, se il tempo è sufficiente, si conterebbero questo cibo e il frutto. degli alberi, quelli che rimangono o cadono per strada, i reali li vendono come sottoprodotti. E dei soldati, se li avesse finiti, avrebbe mandato una dracma del cadavere per la battaglia; ma poi avrebbero ricevuto anche dell'argento, se i capi non lo avessero respinto, quando il soldato avesse finito. i Lici, che amano portare i capelli, lasciarono lì delle lettere per il re, e le mandarono alla procomia, proteggendosi poi da Mausolo, le portano via. Perciò disse che, se lo avessero fatto, gli sarebbe stato mandato dalla Grecia, ma loro diedero volentieri quello che avevano, e da una grande folla fu raccolto molto denaro. Aristotele Ῥodius dei principi focesi, bisognosi di denaro, degli atteggiamenti di due focesi qualsiasi, ragioni per cui parlò all'altra parte in sono in segreto,
+    </p>
+    <p lang="en">
+     they voted for the debtors to return the loans to the city, and to the city from the rents, the interest to the Dedanekosi, until they prospered even the ancient one. Mausolus the tyrant of Caria, when the king sent to him to pay the taxes, called together the nobles of the country, they said that the king begs the taxes, but he does not give. 4 men were built for him, and he was directly engaged as long as each one was fit. And those who had done this, the wealthier ones, fearing and fearing the multitude of these things, took possession of it and brought it. again, when they had sent money to the Mylassesians, they said that the city of this city is unwalled, and the king is encamping against it. So he ordered the Mylassians to bring each one because they had a lot of money, binding them to the present and saving the rest. but he had the money of many entered into, but the wall did not leave the god who is in the present building. Kondalos Mausolus ruler, then traveling with him d The country's preachers would herd them a sheep or a calf, counting the teeth and the time, and taking them home, they would feed them until they returned; then, if the time is sufficient, this food and the fruit should be counted. of the trees, those that are left over or fall on the streets, the royals sell as by-products. And of the soldiers, if he had finished them, he would send a drachma of the body through the battle; but then they would also receive silver, if the rulers did not repulse him, when the soldier was finished. the Lycians, who love to wear their hair, left letters there for the king, and sent them to the procomia, protect himself then from Mausolus, take them away. He therefore said, if they will, he will be sent to him from Greece, but they willingly gave what he had, and a lot of money was collected from a large crowd. Aristotle Ῥodius of the Phocaean princes, in need of money, of the attitudes of any two of the Phocaeans, reasons he spoke to the other side in they are in secret,
+    </p>
+   </div>
+   <div n="1348b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     φάσκων αὑτῷ  διδόναι χρήματα τοὺς ἑτέρους ἐφʼ ᾧ αὐτοῖς τὰ πράγματα  ἐγκλῖναι, αὐτὸς δὲ μᾶλλον βούλεσθαι παρὰ τούτων λαβεῖν  καὶ τὰ περὶ τὴν πόλιν τούτοις διοικεῖν παραδοῦναι. ἀκούσαντες δὲ ταῦτα εὐθέως τὰ χρήματα οἱ παρόντες πορίσαντες ὅσα ἐκέλευσεν ἔδωκαν. ὁ δὲ τοῖς ἑτέροις πάλιν  ἔδειξεν ἃ εἰληφὼς εἴη παρὰ τῶν ἑτέρων· οἱ δὲ καὶ αὐτοὶ  ἔφασαν οὐκ ἐλάττω δώσειν. λαβὼν δὲ παρʼ ἀμφοτέρων  κατήλλαξεν αὐτοὺς πρὸς ἀλλήλους.
+     <milestone ed="P" unit="para"/>
+     τοῖς τε πολίταις κατιδὼν οὔσας δίκας πολλὰς, καὶ μεγάλας ἐκ πολλοῦ χρόνου  ἀδικίας τουτοῖς διὰ πολέμου, δικαστήριον καθίσας προεῖπεν,  ὅσοι ἂν μὴ δικάσωνται χρόνῷ ὃν ἐθηκε, μηκέτι εἶναι  ὑπὲρ τῶν προτέρων ἐγκλημάτων κρίσεις. τότε δὴ παραβόλιον  πολλῶν δικῶν καὶ τὰς ἐκκλήτους μετʼ ἐπιτιμίων ἐφʼ  αὑτὸν ποιούμενος καὶ παρʼ ἑκατέρων ἀργύριον διʼ ἑτέρων  λαμβάνων, συνήγαγεν οὐκ ὀλίγα χρήματα.
+     <milestone ed="P" unit="para"/>
+     Κλαζομένιοι δʼ ἐν σιτοδείᾳ ὄντες χρημάτων τε ἀποροῦντες ἐψηφίσαντο, παρʼ οἷς ἔλαιόν ἐστι τῶν ἰδιωτῶν, δανεῖσαι τῇ πόλει ἐπὶ τόκῳ· γίνεται δὲ πολὺς οὗτος ὁ καρπὸς  ἐν τῇ χώρᾳ αὐτῶν.
+     <milestone ed="Bekker" n="20" unit="line"/>
+     δανεισάντων δὲ μισθωσάμενοι πλοῖα  ἀπέστειλαν εἰς τὰ ἐμπόρια, ὅθεν αὐτοῖς ἧκε σῖτος, ὑποθήκης  γενομένης τῆς τοῦ ἐλαίου τιμῆς.
+     <milestone ed="P" unit="para"/>
+     ὀφείλοντές  στρατιώταις  μισθὸν εἴκοσι τάλαντα καὶ οὐ
+     <add>
+      δοῦναι
+     </add>
+     δυνάμενοι τόκον ἔφερον τοῖς  ἡγεμόσι τέτταρα τάλαντα τοῦ ἐνιαυτοῦ· ἐπεὶ δὲ τοῦ μὲν  ἀρχαίου ἀπέκοπτον οὐθέν, ἀεὶ δὲ μάτην ἐδαπάνων, νόμισμα  ἔκοψαν σιδηροῦν εἰς ἀργυρίου λόγον εἴκοσι ταλάντων, εἶτα  διδόντες τοῖς εὐπορωτάτοις ἐν τῇ πόλει κατὰ λόγον ἑκάστῳ  ἀργύριον παρʼ ἐκείνων ἔλαβον ἴσον. οἵ τε οὖν ἰδιῶται εἶχον  εἰς τὰς καθʼ ἡμέραν χρείας ἀναλίσκειν καὶ ἡ πόλις τοῦ  χρέους ἀπηλλάγη. δεύτερον δὲ ἐκ τῶν προσόδων ἐκείνοις  τόν τε τόκον κατέφερον
+     <add>
+      καὶ
+     </add>
+     ἀεὶ διαιροῦντες ἑκάστῳ πρὸς  μέρος διεδίδοσαν, τοὺς δὲ σιδηροῦς ἐκομίζοντο.
+     <milestone ed="P" unit="para"/>
+     Σηλυβριανοὶ δὲ δεηθέντες χρημάτων, νόμου ὄντος αὐτοῖς  σίτου μὴ ἐξάγειν
+     <gap/>
+     ἐν λιμῷ γενομένοις, ἐκείνοις δὲ  ὑπάρχοντος σίτου παλαιοῦ, ἐψηφίσαντο τῇ πόλει παραδοῦναι τοὺς ἰδιώτας τὸν σῖτον τῆς τεταγμένης τιμῆς,
+    </p>
+    <p lang="it">
+     lui stesso dà denaro agli altri quando le cose gli sono favorevoli, ma preferisce piuttosto che siano loro a prendere, e affida gli affari della città ai responsabili. Ma sentendo ciò direttamente, i presenti che trovarono il denaro diedero quello che volevano. Ma mostrò di nuovo agli altri ciò che aveva ricevuto rispetto agli altri, e anche loro mangiarono e non diedero di meno. Ma quando li ricevette entrambi, se li indirizzarono l'uno all'altro. Hai giudicato molti dei tuoi cittadini e hai fatto loro una grande ingiustizia attraverso la guerra. poi la parabola di molti processi e dell'ecclesiastico con gli onori dati da lui e più argento per gli altri che ricevevano, raccolse non poco denaro. I Clazomeni, che sono nel campo di grano e hanno bisogno di denaro, hanno votato che, qualunque olio appartenga ai privati, lo si presti alla città a interesse; e questo frutto diventa molto abbondante nel loro paese. ma avendo noleggiato navi, le mandarono ai mercanti, da dove ricevettero il grano, ipotecato sul prezzo dell'olio. I soldati che dovevano venti talenti di salario e non sembravano poter pagare gli interessi, portarono ai governatori quattro talenti degli stessi; e sopra l'antico tagliato, ma non pagarono, coniarono una moneta di ferro sotto forma di venti talenti d'argento: è una città secondo ciascuna ragione per cui ricevettero argento in confronto a quelli. sicché quelli che erano privati ​​ebbero nei loro debiti giornalieri analizzati e la città fu liberata dai debiti. e in secondo luogo, dai profitti presero l'interesse e, dividendolo in ciascuna parte, lo distribuirono e guadagnarono il ferro. Ma gli abitanti di Silivria, vincolati dal denaro, erano obbligati per legge a non esportare verso di loro il grano nato in una carestia, ma coloro che avevano grano esistente nell'antichità, votarono alla città per consegnare ai privati ​​il ​​grano a prezzo fisso ,
+    </p>
+    <p lang="en">
+     he himself gives money to others when things are favorable to them, but he rather prefers that they take, and hands over the affairs of the city to those in charge. But hearing this directly, those present who found the money gave whatever they wanted. But he again showed the others what he had received than the others, and they also ate and did not give less. But when he received both of them, he addressed them to each other. You have judged many of your citizens, and you have done great injustice to them through war. then the parable of many lawsuits and the ecclesiastes with honors being given by him and more silver for others receiving, he collected not a little money. The Clazomenians, who are in the field of wheat and are in need of money, have voted that, whatever oil belongs to private individuals, you lend it to the city at interest; and this fruit becomes very abundant in their country. but having hired ships, they sent to the merchants, from where they received wheat, mortgaged for the price of the oil. The soldiers who owed twenty talents of wages and did not seem to be able to pay interest, brought to the governors four talents of the same; and on top of the ancient cut off, but they did not pay, they minted a coin of iron in the form of twenty talents of silver. It is a city according to each reason they received silver in comparison with those. so that those who were private had in their daily debts analyzed and the city of debt was freed. and secondly, from the profits, they took the interest and, dividing it to each part, distributed it, and they earned the iron. But the people of Silivria, bound by money, were bound by law not to export wheat to them born in a famine, but those who had existing wheat of old, voted to the city to deliver to the private individuals the wheat of the fixed price,
+    </p>
+   </div>
+   <div n="1349a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ὑπολειπόμενον ἕκαστον  ἐνιαυτοῦ τροφήν· εἶτα ἐξαγωγὴν ἔδωκαν  τῷ βουλομένῳ, τάξαντες τιμὴν ἣν ἐδόκει καλῶς ἔχειν αὐτοῖς.
+     <milestone ed="P" unit="para"/>
+     Ἀβυδηνοὶ δέ, διὰ στασιασμὸν τῆς χώρας ἀργοῦ γενομένης, καὶ τῶν μετοίκων οὐ προϊεμένων αὐτοῖς οὐδὲν διὰ  τὸ καὶ ἔτι ὀφείλειν, ἐψηφίσαντο τὸν βουλόμενον τοῖς γεωργοῖς δανείζειν, ὡς ἐργάσωνται, ὡς πρώτοις αὐτοῖς ἐσομένης τῆς κομιδῆς ἐκ τοῦ καρποῦ, τοῖς δὲ ἄλλοις ἐκ τῶν  λειπομένων.
+     <milestone ed="P" unit="para"/>
+     Ἐφέσιοι δεηθέντες χρημάτων νόμον ἔθεντο μὴ φορεῖν  χρυσὸν τὰς γυναῖκας, ὅσον δὲ νῦν ἔχουσι δανεῖσαι τῇ  πόλει.
+     <milestone ed="P" unit="para"/>
+     τῶν τε κιόνων
+     <add>
+      τισὶ
+     </add>
+     τῶν ἐν τῷ νεῷ τάξαντες ἀργύριον  ὃ δεῖ καταβαλεῖν εἴων ἐπιγράφεσθαι τὸ ὄνομα τοῦ δόντος  τὸ ἀργύριον ὡς ἀνατεθεικότος.
+     <milestone ed="P" unit="para"/>
+     Διονύσιος Συρακούσιος βουλόμενος χρήματα συναγαγεῖν, ἐκκλησίαν ποιήσας ἔφησεν ἑωρακέναι τὴν Δήμητραν,  καὶ κελεύειν τὸν τῶν γυναικῶν κόσμον εἰς τὸ ἱερὸν ἀποκομίζειν. αὐτὸς μὲν οὖν τῶν παρʼ αὑτῷ γυναικῶν τὸν κόσμον  τοῦτο πεποιηκέναι· ἠξίου δὲ καὶ τοὺς ἄλλους, μή τι μήνιμα  παρὰ τῆς θεοῦ γένηται· τὸν δὲ μὴ τοῦτο ποιήσαντα ἔνοχον  ἔφησεν ἱεροσυλίας ἔσεσθαι.
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἀνενεγκάντων δὲ πάντων ἃ εἶχον διά τε τὴν θεὸν καὶ διʼ ἐκεῖνον, θύσας τῇ θεῷ τὸν κόσμον  ἀπηνέγκατο ὡς παρὰ τῆς θεοῦ δεδανεισμένος. προελθόντος δὲ  χρόνου καὶ τῶν γυναικῶν πάλιν φορουσῶν, ἐκέλευσε τὴν βουλομένην χρυσοφορεῖν τάγμα τι ἀνατιθέναι ἐν τῷ ἱερῷ.
+     <milestone ed="P" unit="para"/>
+     τριηρεῖς τε ναυπηγεῖσθαι μέλλων ᾔδει ὅτι δεήσοιτο χρημάτων.  ἐκκλησίαν οὖν συναγαγὼν ἔφη πόλιν αὑτῷ τινα προδίδοσθαι,  εἰς ἣν δεῖσθαι χρημάτων, ἠξίου τε αὑτῷ τοὺς πολίτας εἰσενέγκαι δύο στατῆρας ἕκαστον· οἳ δʼ εἰσήνεγκαν. διαλιπὼν δὲ δύο  ἢ τρεῖς ἡμέρας, ὡς διημαρτηκὼς τῆς πράξεως, ἐπαινέσας αὐτοὺς ἀπέδωκεν ἑκάστῳ ὃ εἰσήνεγκαν. ποιήσας δὲ τοῦτο  ἀνεκτήσατο τοὺς πολίτας. εἶτα πάλιν
+     <gap/>
+     οἰόμενοι ἀπολήψεσθαι  εἰσήνεγκαν· ὃ δὲ λαβὼν εἶχεν εἰς τὴν ναυπηγίαν.
+     <milestone ed="P" unit="para"/>
+     οὐκ  εὐπορῶν δὲ ἀργυρίου νόμισμα ἔκοψε καττιτέρου, καὶ συναγαγὼν ἐκκλησίαν πολλὰ τοῦ κεκομμένου νομίσματος ὑπερεῖπεν· οἳ δὲ ἐψηφίσαντο καὶ μὴ βουλόμενοι ἕκαστος ὃ ἂν  εἵλετο ἔχειν ὡς ἀργυροῦν ἀλλὰ μὴ καττιτέρινον.
+    </p>
+    <p lang="it">
+     ciascuno di loro aveva del cibo avanzato e lo diedero a colui che lo aveva mangiato, dando loro un prezzo che fosse loro conveniente. Gli abitanti di Abyden, a causa della ribellione del paese avvenuta negli ultimi tempi, e degli abitanti, che non avevano ricevuto nulla da loro a causa dei loro debiti, votarono che prestassero ai contadini, mentre lavorano , come i primi a pagare il raccolto dal frutto, e agli altri da ciò che restava. Le donne di Efeso erano obbligate dalla legge a non indossare oro, ma ora devono dei soldi alla città. delle colonne, quelle della nuova, ritte in argento, che vede, e è iscritto il nome di colui che ha dato l'argento, come antiteista. Dionigi di Siracusa, volendo raccogliere denaro, lasciò la chiesa della poetessa con Demetra, e imprigionò nel santuario il mondo delle donne. Egli dunque da donne come lui fece questo mondo falso; e anche dagli altri non nasce altro messaggio che da Dio; e chi non fece questo si rese colpevole di sacrilegio. esesthéi.Ma senza offrire tutto ciò che avevano per Dio e per lui, avete sacrificato a Dio il mondo, costretti come se fosse un debito verso Dio. e quando venne il momento che le donne li indossassero di nuovo, elesse l'ordine vestito d'oro che sorge nel santuario. tre anni e si stanno costruendo le future navi, vede che ha bisogno di soldi. ἕκλησίαν οὖν συναγαὼν ἔφι πολιν ὑτῷ tina πριδοσται, εἣν εῦσθαι soldi, ἠξιου te ὑτῷ τοὴς politas eisenegai due staṆras ὕcaston; Ma dopo due o tre giorni, mentre protestavi per l'atto, li lodavi e restituivi a ciascuno ciò che aveva fatto. Ma perché i cittadini hanno tollerato tutto ciò? Lo disse di nuovo quando vide che era scomparso, ma quello che aveva fatto era nel cantiere navale. Ma nessuno dei ricchi tagliava una moneta d'argento, e della moneta coniata che avanzava portava in chiesa molta; e ciò che veniva votato e non ascoltato, ciascuno aveva ciò che voleva come argento, ma non una moneta.
+    </p>
+    <p lang="en">
+     each of them having food left over; then they gave it to the one who had eaten it, giving them a price that was good enough for them. The people of Abyden, because of the rebellion of the country, which had been of late occurrence, and of the inhabitants, who had not received anything from them because of what they owed, voted that they should lend to the farmers, as they work, as the first to pay the harvest from the fruit, and to the others from what was left. The Ephesian women were bound by the law not to wear gold, but now they owe money to the city. of the pillars, those of the new one, standing in silver, which he sees, and the name of the one who gave the silver, as an antitheist, is inscribed. Dionysius of Syracuse, wanting to collect money, left the church of the poetess with Demeter, and imprisoned the world of women in the sanctuary. He, therefore, of women like him made this world false; and the others also, no message but from God is born; and he who did not make this was guilty of sacrilege esesthei. But without offering everything they had for God and for him, you sacrificed to God the world, compelled as if it were a debt to God. and when the time had come for the women to wear them again, he elected the gold-clad order that rises in the sanctuary. three years and future ships are being built, he sees that he needs money. ἕκλησίαν οὖν συναγαὼν ἔφι πολιν ὑτῷ tina πριδοσται, εἣν εῦσθαι money, ἠξιου te ὑτῷ τοὴς politas eisenegai two staṆras ὕcaston; But after two or three days, as you protested the act, you praised them and returned to each one what they had done. But why did the citizens tolerate this? He said again when he saw that he had disappeared, but what he had done was in the shipyard. But none of the rich ones cut a silver coin, and brought to the church a lot of the minted coin that was left over; and what was voted and not heard, each one had what he wanted as silver, but not a coin.
+    </p>
+   </div>
+   <div n="1349b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     <milestone ed="P" unit="para"/>
+     πάλιν τε  δεηθεὶς χρημάτων ἠξίου τοὺς πολίτας εἰσενεγκεῖν  αὑτῷ· οἳ δʼ οὐκ ἔφασαν ἔχειν. ἐξενέγκας οὖν τὰ σκεύη τὰ παρʼ  αὑτοῦ ἐπώλει, ὡς δὴ διʼ ἀπορίαν τοῦτο ποιῶν· ἀγοραζόντων  δὲ Συρακουσίων ἀπεγράφετο τί ἕκαστος ἀγοράσειεν· ἐπεὶ  δὲ τὴν τιμὴν κατέβαλον, ἐκέλευσε τὸ σκεῦος ἀναφέρειν  ἕκαστον ὃ ἠγόρασεν.
+     <milestone ed="P" unit="para"/>
+     τῶν τε πολιτῶν διὰ τὰς εἰσφορὰς οὐ  τρεφόντων βοσκήματα, εἶπεν ὅτι ἱκανὰ ἦν αὑτῷ πρὸς τοσοῦτον· τοὺς οὖν νῦν τι κτησαμένους ἀτελεῖς ἔσεσθαι. πολλῶν  δὲ ταχὺ κτησαμένων πολλὰ βοσκήματα, ὡς ἀτελῆ ἑξόντων,  ἐπεὶ καιρὸν ᾤετο εἶναι, τιμήσασθαι κελεύσας ἐπέβαλε  τέλος. οἱ οὖν πολῖται ἀγανακτήσαντες ἐπὶ τῷ ἐξηπατῆσθαι, σφάζοντες ἐπώλουν. ὡς δὲ πρὸς τοῦτο ἔταξε σφάζεσθαι  ὅσα δεῖ τῆς ἡμέρας, οἱ δὲ πάλιν ἱερόθυτα ἐποίουν· ὁ δὲ  ἀπεῖπε θῆλυ μὴ θύειν.
+     <milestone ed="P" unit="para"/>
+     πάλιν τε δεηθεὶς χρημάτων ἐκέλευσεν ἀπογράψασθαι
+     <del>
+      χρημάτων
+     </del>
+     πρὸς αὑτὸν ὅσοι οἶκοί  εἰσιν ὀρφανικοί. ἀπογραψαμένων δὲ ἄλλων τὰ τούτων  χρήματα ἀπεχρᾶτο, ἕως ἕκαστος εἰς ἡλικίαν ἔλθοι.
+     <milestone ed="P" unit="para"/>
+     Ῥήγιόν τε καταλαβών, ἐκκλησίαν συναγαγὼν εἶπε διότι δικαίως μὲν ἂν ἐξανδραποδισθεῖεν ὑπʼ αὐτοῦ,
+     <milestone ed="Bekker" n="20" unit="line"/>
+     νῦν μέντοι τὰ  εἰς τὸν πόλεμον ἀνηλωμένα χρήματα κομισάμενος καὶ  ὑπὲρ ἑκάστου σώματος τρεῖς μνᾶς ἀφήσειν αὐτούς. οἱ δὲ  Ῥηγῖνοι ὅσα ποτʼ ἦν αὐτοῖς ἀποκεκρυμμένα ἐμφανῆ  ἐποίουν καὶ οἱ ἄποροι παρὰ τῶν εὐπορωτέρων καὶ παρὰ  τῶν ξένων δανειζόμενοι ἐπόρισαν ἃ ἐκέλευσε χρήματα.  λαβὼν δὲ ταῦτα παρʼ αὐτῶν τά τε σώματα πάντα οὐδὲν  ἧττον ἀπέδοτο τά τε σκεύη, ἃ τότε ἦν ἀποκεκρυμμένα,  ἐμφανῆ ἅπαντα ἔλαβε.
+     <milestone ed="P" unit="para"/>
+     δανεισάμενός τε παρὰ τῶν πολιτῶν χρήματα ἐπʼ ἀποδόσει, ὡς ἀπῄτουν αὐτόν, ἐκέλευσεν  ἀναφέρειν ὅσον ἔχει τις ἀργύριον πρὸς αὐτόν· εἰ δὲ μή,  θάνατον ἔταξε τὸ ἐπιτίμιον. ἀνενεχθέντος δὲ τοῦ ἀργυρίου,  ἐπικόψας χαρακτῆρα ἐξέδωκε τὴν δραχμὴν δύο δυναμένην  δραχμὰς καὶ τό τε ὀφειλόμενον πρότερον
+     <gap/>
+     ἀνήνεγκαν  πρὸς αὐτόν.
+     <milestone ed="P" unit="para"/>
+     εἰς Τυρρηνίαν τε πλεύσας ναυσὶν ἑκατόν, ἔλαβεν ἐκ τοῦ τῆς Λευκοθέας ἱεροῦ χρυσίον τε καὶ ἀργύριον  πολὺ καὶ τὸν ἄλλον κόσμον οὐκ ὀλίγον. εἰδὼς δὲ ὅτι καὶ  οἱ ναῦται πολλὰ ἔχουσι,
+    </p>
+    <p lang="it">
+     ancora una volta hai chiesto ai cittadini denaro di valore; essi non l'hanno mangiato. Vendette dunque le navi accanto a lui, come se non fosse per la domanda di chi si trattasse; ma i compratori di Siracusa annotarono ciò che ciascuno aveva comprato; e quando fu pagato il prezzo, ordinò che la nave riferisse a ciascuno quello che aveva comprato. dei cittadini a causa dei contributi che non alimentano i pascoli, ha detto che gli bastava a questo; quelli che sono adesso ciò che è stato acquisito sono incompleti. ma di molti che acquistarono in fretta molti pascoli, poiché erano incompleti, al momento attuale, pose fine all'onore dei pastori. Il popolo allora, indignato per la fuga, lo massacrò e lo vendette. ma per questo ordinò di massacrare tutto ciò che vedeva durante la giornata, ma di nuovo compiono sacrifici sacrificali; ma chi ha lasciato una femmina non deve essere sacrificato. ma quando altri furono cancellati, il loro denaro fu sprecato, finché ciascuno di loro non raggiunse la maggiore età. Signore, ho capito, disse il capo della sinagoga perché giustamente per essere sconfitto da lui, ora sia pagato il denaro raccolto in guerra e per ciascun corpo tre uomini siano lasciati andare. Ma il popolo di Rhegine, qualunque cosa fosse loro nascosta, viveva, e i bisognosi, prendendo in prestito denaro dai più ricchi e dagli stranieri, cercavano ciò che aveva scelto. Ma quando ricevette da loro tutti questi corpi, non restituì nessuno dei vasi, che allora erano nascosti, ricevette tutto. Prendendo in prestito denaro dai cittadini in cambio, se lo mandavano, scelse di riferirgli quanto argento aveva, altrimenti ne ordinò la morte. ma avendo condonato l'argento, emise la dracma di due forti dracme, e gli fu pagato il dovuto precedente. Con cento navi salpasti per la Tirrenia e ricevesti da Lefcotea molto oro e argento, e non poco dall'altro mondo. ma visto che anche i marinai hanno molto,
+    </p>
+    <p lang="en">
+     again, you asked the citizens for money of value; they did not eat it. He therefore sold the vessels next to him, as if it were not because of whose question it was; but the buyers of Syracuse wrote down what each one had bought; and when the price was paid, he ordered the vessel to report to each one what he had bought. of the citizens because of the contributions that do not feed pastures, he said that it was enough for him to this one; those who are now what have been acquired are incomplete. but of many who quickly acquired many pastures, as they were incomplete, at the time it is, he put an end to the honor of the shepherds. The people then, indignant at the escape, slaughtered and sold. but as for this he ordered to slaughter whatever he sees of the day, but they again perform sacrificial sacrifices; but he who left a female should not be sacrificed. but when others were written off, their money was wasted, until each of them came of age. O Lord, I understand, the synagogue leader said because rightly to be defeated by him, now let the money raised in the war be paid and for each body three men let them go. But the people of Rhegine, whatever was hidden from them, lived, and the needy, borrowing money from the wealthiest and from foreigners, sought what he had chosen. But when he received all these bodies from them, he did not return any of the vessels, which were then hidden, he received everything. Borrowing money from the citizens on return, if they sent him, he chose to report to him what silver he had, but if not, he ordered death. but having forgiven the silver, he issued the drachma of two strong drachmae, and the previous due was paid to him. You sailed to Tyrrhenia in a hundred ships, and received from Lefkothea a great deal of gold and silver, and not a little of the other world. but seeing that the sailors also have a lot,
+    </p>
+   </div>
+   <div n="1350a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     κήρυγμα ἐποιήσατο τὰ ἡμίσεα  ὧν ἔχει ἕκαστος ἀναφέρειν πρὸς αὑτόν, τὰ δʼ ἡμίσεα  ἔχειν τὸν λαβόντα· τῷ δὲ μὴ ἀνενέγκαντι θάνατον ἔταξε τὸ  ἐπιτίμιον. ὑπολαβόντες δὲ οἱ ναῦται ἀνενεγκόντες τὰ ἡμίσεα  τὰ κατάλοιπα ἔχειν, ἀδεῶς ἀνήνεγκαν· ὃ δʼ ἐπείπερ ἐκεῖνα  ἔλαβεν, ἐκέλευσε πάλιν τὰ ἡμίσεα ἀναφέρειν.
+     <milestone ed="P" unit="para"/>
+     Μενδαῖοι δὲ τὰ μὲν ἀπὸ λιμένων καὶ τῶν ἄλλων  τελῶν αὐτοῖς προσπορευόμενα ἐχρῶντο εἰς διοίκησιν τῆς  πόλεως, τὰ δὲ ἀπὸ τῆς γῆς καὶ οἰκιῶν τέλη οὐκ ἔπραττον,  ἀλλʼ ἀνέγραφον τοὺς ἔχοντας· ὁπότε δὲ δεηθεῖεν χρημάτων,  ἀπεδίδοσαν
+     <add>
+      οι
+     </add>
+     ὀφείλοντες· ἐκέρδαινον οὖν τὸν παρεληλυθότα χρόνον ἀτόκοις τοῖς χρήμασιν ἀποκεχρημένοι.
+     <milestone ed="P" unit="para"/>
+     πολεμοῦντες
+     <add>
+      τὲ
+     </add>
+     πρὸς Ὀλυνθίους καὶ δεόμενοι χρημάτων, ὄντων αὐτοῖς  ἀνδραπόδων, ἐψηφίσαντο καταλειπομένων ἑνὶ ἑκάστῳ θήλεος  καὶ ἄρρενος τὰ ἄλλα ἀποδόσθαι τῇ πόλει, ὡς ἐκδανεῖσαι τοὺς  ἰδιώτας χρήματα.
+     <milestone ed="P" unit="para"/>
+     Καλλίστρατος ἐν Μακεδονίᾳ πωλουμένου  τοῦ ἐλλιμενίου ὡς ἐπὶ τὸ πολὺ εἴκοσι ταλάντων, ἐποίησεν εὑρεῖν τὸ διπλάσιον· κατιδὼν γὰρ ὠνουμένους τοὺς εὐπορωτέρους  ἀεὶ διὰ τὸ δεῖν ταλαντιαίους καθιστάναι τοὺς ἐγγύους τῶν εἴκοσι ταλάντων,
+     <milestone ed="Bekker" n="20" unit="line"/>
+     προεκήρυξεν ὠνεῖσθαι τὸν βουλόμενον καὶ  τοὺς ἐγγύους καθιστάναι τοῦ τρίτου μέρους καὶ καθʼ ὁπόσον  ἕκαστος δύνηται πείθειν. Τιμόθεος Ἀθηναῖος πολεμῶν πρὸς Ὀλυνθίους καὶ ἀπορούμενος ἀργυρίου, κόψας χαλκὸν διεδίδου τοῖς στρατιώταις.  ἀγανακτούντων δὲ τῶν στρατιωτῶν ἔφη αὐτοῖς τοὺς ἐμπόρους τε καὶ ἀγοραίους ἅπαντα ὡσαύτως πωλήσειν. τοῖς δʼ  ἐμπόροις προεῖπεν, ὃν ἄν τις λάβῃ χαλκόν, τούτου πάλιν  ἀγοράζειν τά τʼ ἐκ τῆς χώρας ὤνια καὶ τὰ ἐκ τῶν λειῶν  ἀγόμενα· ὃς δʼ ἂν περιλειφθῇ αὐτοῖς χαλκός, πρὸς αὐτὸν  ἀναφέροντας ἀργύριον λαμβάνειν.
+     <milestone ed="P" unit="para"/>
+     περὶ Κέρκυραν δὲ πολεμῶν καὶ ἀπόρως διακείμενος καὶ τῶν στρατιωτῶν αἰτούντων τοὺς μισθοὺς καὶ ἀπειθούντων αὐτῷ καὶ πρὸς τοὺς ὑπεναντίους φασκόντων ἀποπορεύεσθαι, ἐκκλησίαν συναγαγὼν  ἔφησεν οὐ δύνασθαι διὰ τοὺς χειμῶνας παραγενέσθαι αὑτῷ  ἀργύριον, ἐπεὶ τοσαύτην εἶναι περὶ αὑτὸν εὐπορίαν, ὥστε τὴν  προδεδομένην τριμήνου σιταρχίαν δωρεὰν αὐτοῖς διδόναι·
+    </p>
+    <p lang="it">
+     predicò le metà di cui ciascuno gli ha riferito, le due metà hanno il destinatario; ma a colui che non causò la morte ordinò il castigo. ma i marittimi che ricevono e non si lamentano hanno la metà del resto, non si sono lamentati per niente. Ma i Mendei usarono il denaro dei porti e le altre quote che spettavano loro per l'amministrazione della città, ma non riscuotevano le quote delle terre e delle case, ma registravano i proprietari. combattendo contro gli Olinti e dando loro denaro, essendo dei furfanti, fu votato che si lasciasse una femmina e un maschio a ciascuno, il resto fosse dato alla città, come si presta denaro ai privati. Callistrato, in Macedonia, avendo venduto gli Elleni per ben venti talenti, ne fece trovare il doppio; I rappresentanti dei venti talenti vengono costituiti come rappresentanti dei venti talenti, e i rappresentanti del terzo vengono costituiti come rappresentanti del terzo e nella misura in cui ciascuno può essere convinto. Timoteo di Atene, combattendo contro gli Olinti e avendo bisogno di argento, tagliò il rame e lo distribuì ai soldati. Ma quando i soldati si indignarono, disse ai mercanti e agli acquirenti di vendere tutto allo stesso modo. Avvertì i mercanti che se avessero ricevuto rame, avrebbero riacquistato da lui i tessuti della campagna e i beni semplici; se non avessero avuto rame, avrebbero ricevuto argento riferendosi a lui. Ma riguardo a Corfù, essendovi guerre e questua, e i soldati che chiedevano la loro paga e minacciavano lui, e gli avversari che fuggivano, radunò una chiesa e disse che non gli era possibile produrre argento durante gli inverni, perché si tratta di quell'euforia, tanto che ha dato loro il grano trimestrale pre-dato ·
+    </p>
+    <p lang="en">
+     he preached the halves of which each one has reported to him, the two halves have the recipient; but to the one who did not cause death he ordered the punishment. but the seafarers receiving and not complaining have half the remainder, they did not complain for nothing. But the Mendaeans used the money from the ports and the other dues that accrued to them for the administration of the city, but they did not collect the dues from the land and houses, but registered the owners. money denied. fighting against the Olynthians and giving money to them, being scumbags, it was voted that one female and one male should be left to each, the rest to be given to the city, as you lend money to private individuals. Callistratus, in Macedonia, having sold the Hellene for as much as twenty talents, made to find twice as much; The proxies of the twenty talents are made to be the proxies of the twenty talents, and the proxies of the third party are made to be the proxies of the third party and in so far as each one is able to be convinced. Timotheus of Athens, fighting against the Olynthians and in need of silver, cut copper and distributed it to the soldiers. But when the soldiers were indignant, he told the merchants and buyers to sell everything in the same way. He warned the merchants that if they received copper, they would buy from him again the woven goods from the country and the plain goods; if they did not have copper, they would receive silver by referring to him. But about Corfu, there being wars and begging, and the soldiers asking for their wages and threatening him, and to the adversaries who were fleeing, he gathered a church and said that it was not possible for him to produce silver during the winters, because this is about that euphoria, so that he gave them the pre-given quarterly grain ·
+    </p>
+   </div>
+   <div n="1350b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     οἱ  δὲ ὑπολαβόντες οὐκ ἄν ποτε προέσθαι τοσαῦτα χρήματα τὸν Τιμόθεον αὐτοῖς, εἰ μὴ τῇ ἀληθείᾳ προσδόκιμα ἦν τὰ  χρήματα πρὸς αὐτόν, ἡσυχίαν εἶχον ὑπὲρ τῶν μισθῶν  ἕως ἐκεῖνος διῳκήσατο ἃ ἐβούλετο.
+     <milestone ed="P" unit="para"/>
+     Σάμον δὲ πολιορκῶν  τοὺς καρποὺς καὶ τὰ ἐπὶ τῶν ἀγρῶν ἀπεδίδοτο αὐτοῖς  τοῖς Σαμίοις, ὥστε εὐπόρησε χρημάτων εἰς μισθοὺς τοῖς  στρατιώταις.  τῶν τε ἐπιτηδείων ἐπεὶ σπάνις ἦν ἐν τῷ στρατοπέδῳ διὰ τοὺς ἀφικνουμένους, ἀπηγόρευσε μὴ πωλεῖν σῖτον ἀληλεσμένον μηδὲ μέτρον ἔλασσον ἢ μέδιμνον, μηδὲ τῶν  ὑγρῶν μηθὲν ἔλαττον ἢ μετρητήν. οἱ μὲν οὖν ταξίαρχοί τε  καὶ λοχαγοὶ ἀγοράζοντες ἀθρόα διεδίδοσαν τοῖς στρατιώταις, οἱ δὲ εἰσαφικνούμενοι ἦγον αὑτοῖς τὰ ἐπιτήδεια·  ὁπότε δὲ ἀπαλλάττοιντο, εἴ τι περίλοιπον εἴη αὐτοῖς, ἐπώλουν. ὥστε συνέβαινεν εὐπορεῖσθαι τοὺς στρατιώτας τῶν  ἐπιτηδείων.
+     <milestone ed="P" unit="para"/>
+     Διδάλης Πέρσης ἔχων στρατιώτας τὰ μὲν καθʼ ἡμέραν  πορίζειν ἐδύνατο ἐκ τῆς πολεμίας αὐτοῖς, νόμισμα δὲ οὐκ  ἔχων διδόναι, ἀπαιτούμενος δέ, χρόνου γενομένου οὗ ὤφειλε,  τεχνάζει τοιόνδε.
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἐκκλησίαν συναγαγὼν ἔφη οὐκ ἀπορεῖσθαι χρημάτων, ἀλλʼ εἶναι αὑτῷ ἐν χωρίῳ τινί, λέγων ἐν  ᾧ εἴη. καὶ ἀναζεύξας ἐβάδιζεν ἐπʼ αὐτό· εἶτα, ὡς ἐγγὺς  τοῦ χωρίου ἐγένετο, προελθὼν εἰς αὐτὸ ἔλαβεν ἐκ τῶν ἐνόντων ἱερῶν ὅσος ἐνῆν κοῖλος ἄργυρος· εἶτʼ ἐπισκευάσας τὰς  ἡμιόνους ὡς ἀγούσας ἀργύριον παραφαινούσας τε ταῦτα  ἐβάδιζεν. ἰδόντες δὲ οἱ στρατιῶται καὶ νομίσαντες ἅπαντα  εἶναι ἄργυρον τὰ ἀγόμενα, ἐθάρρησαν ὡς κομιούμενοι τὸν  μισθόν. ὁ δὲ ἔφη δεῖν εἰς Ἀμισὸν ἐλθόντας ἐπισημήνασθαι·  ἦν δʼ εἰς τὴν Ἀμισὸν ὁδὸς πολλῶν τε ἡμερῶν καὶ χειμέριος· τὸν δὴ χρόνον τοῦτον ἀπεχρᾶτο τῷ στρατοπέδῳ τὰ  ἐπιτήδεια μόνον διδούς.
+     <milestone ed="P" unit="para"/>
+     τούς
+     <add>
+      τε
+     </add>
+     τεχνίτας τοὺς ἐν τῷ στρατοπέδῳ αὐτὸς εἶχε καὶ τοὺς καπήλους τοὺς μεταβαλλομένους  τι· ἄλλῳ δὲ οὐκ ἦν οὐθενὶ οὐθὲν τούτων ποιεῖν.
+     <milestone ed="P" unit="para"/>
+     Χαβρίας Ἀθηναῖος Ταῲ τῷ Αἰγυπτίων βασιλεῖ ἐκστρατεύοντι καὶ δεομένῳ χρημάτων συνεβούλευε τῶν τε  ἱερῶν τινα καὶ τῶν ἱερέων τὸ πλῆθος φάναι πρὸς τοὺς  ἱερεῖς δεῖν παραλυθῆναι διὰ τὴν δαπάνην.
+    </p>
+    <p lang="it">
+     Ma gli appaltatori, se Timoteo avesse mai portato loro così tanti soldi, se davvero non si aspettava il denaro da lui, avevano pace riguardo al salario finché non avesse fatto quello che voleva. Ma Samone, mentre assediava le messi e i campi, li diede ai Sami, così che donò denaro come salario ai soldati. della te epitideia sui rari che stava nell'accampamento per chi arrivava, proibiva di vendere il grano raccolto, né una misura di grasso o di mezzo, né una misura di liquidi, né un grasso né un metro. I generali di brigata e i capitani, dopo aver acquistato le somme, le distribuirono ai soldati, e quelli che erano arrivati, diedero loro le provviste, e poi si sbarazzarono di ciò che era rimasto loro e lo vendettero. guarda caso, fece prosperare i soldati dei cortei funebri. Didalis di Persia, che ha soldati, porta loro ogni giorno ciò che può dalla guerra, ma Didone non ha soldi, ed essendo richiesto, al momento dell'evento a cui è debitore, escogita. Ci sono soldi, ma è nel villaggio di Tini, dice in ᾧ heii. e marciarono su di esso, e quando fu vicino al villaggio, vi si avvicinò e prese dai sacerdoti che erano lì quello che era un pezzo d'argento cavo. Ma vedendo i soldati e pensando che tutto fosse d'argento, si incoraggiarono come se ricevessero la loro paga. Ma partì per Amison, arrivando ad Amison a metà mese. Il viaggio fino ad Amison era di una lunga giornata, ed era inverno. Durante questo periodo, trascorse solo due giorni nell'accampamento. Aveva nell'accampamento gli artigiani e i cappelli, quelli cambiati, ma per il resto di questi uomini non c'era nulla. Cavria l'ateniese venne in una campagna dal re egiziano e, dato del denaro, si consultò sulle cose sacre e sulla moltitudine di sacerdoti, vedono che i sacerdoti sono paralizzati dalle spese.
+    </p>
+    <p lang="en">
+     But the contractors, if Timotheus ever brought this much money to them, if the money was not really expected from him, they had peace about the wages until he did whatever he wanted. But when Samon was besieging the crops and the fields, he gave them to the Samians, so that he donated money for wages to the soldiers. of the te epitideia on rares he was in the camp for those who arrived, he forbade not to sell the harvested wheat, not a measure of fat or medium, not a measure of liquids, not a fat or a meter. The brigadier-generals and captains, having bought the sums, distributed them to the soldiers, and those who had arrived, gave them the supplies, and then they got rid of whatever was left for them, and sold it. as it happened, he prospered the soldiers of the funeral processions. Didalis of Persia, who has soldiers, daily brings what he can from the war to them, but Dido has no money, and being in demand, at the time of the event to which he owes, he contrives. There is money, but he is in the village of Tini, saying in ᾧ heii. and they marched on it, and when he was near the village, he came to it and took from the priests who were there what was a hollow piece of silver. But seeing the soldiers and thinking that everything was silver, they encouraged themselves as if they were receiving their wages. But he left to Amison, coming to Amison in the middle of the month. It was a long day's journey to Amison, and it was a winter. During this time, he only spent two days in the camp. He had the artisans in the camp, and the hats, the changed ones, but otherwise there was nothing of these men. Chavrias the Athenian came to the Egyptian king on a campaign, and given money he consulted about the sacred things and the multitude of priests. they see the priests is paralyzed by the expense.
+    </p>
+   </div>
+   <div n="1351a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ἀκούσαντες δὲ  οἱ ἱερεῖς καὶ τὸ ἱερὸν παρʼ αὑτοῖς ἕκαστοι βουλόμενοι  εἶναι, καὶ ἴδια αὐτοῖς οἱ ἱερεῖς ἐδίδοσαν χρήματα. ἐπεὶ δὲ παρὰ  πάντων εἰλήφει, προστάξαι αὐτοῖς ἐκέλευσεν εἰς μὲν τὸ  ἱερὸν καὶ εἰς αὑτὸν τῆς δαπάνης ἧς πρότερον ἐποιοῦντο τὸ  δέκατον μέρος ποιεῖσθαι, τὰ δὲ λοιπὰ αὑτῷ δανεῖσαι, ἕως  ὁ πόλεμος ὁ πρὸς βασιλέα διαλυθῇ.
+     <milestone ed="P" unit="para"/>
+     ἀπʼ οἰκίας δὲ ἑκάστης κελεῦσαι ἅπαντας εἰσενέγκαι τάξαντα ὃ δεῖ, καὶ ἀπὸ  τοῦ σώματος ὡσαύτως· τοῦ σίτου τε πωλουμένου χωρὶς τῆς τιμῆς διδόναι τὸν πωλοῦντα καὶ ὠνούμενον ἀπὸ τῆς ἀρτάβης τὸν ὀβολόν· ἀπό τῶν πλοίων τε καὶ ἐργαστηρίων  καὶ τῶν ἄλλην τινὰ ἐργασίαν εχόντων τῆς ἐργασίας μέρος  τὸ δέκατον κελεῦσαι ἀποτελεῖν.
+     <milestone ed="P" unit="para"/>
+     ἐκστρατεύειν δʼ αὐτῷ μέλλοντι ἐκ τῆς χώρας, εἴ τίς τι ἔχει ἄσημον ἀργύριον ἢ  χρυσίον, κελεῦσαι ἐνέγκαι πρὸς αὑτόν· ἐνεγκάντων δὲ τῶν  πλείστων, ἐκέλευσε τούτῳ μὲν ἐκεῖνον χρῆσθαι, τοὺς δὲ δανείσαντας συστῆσαι τοῖς νομάρχαις, ὥστʼ ἐκ τῶν φόρων  αὐτοῖς ἀποδοῦναι.
+     <milestone ed="P" unit="para"/>
+     Ἰφικράτης Ἀθηναῖος, Κότυος συναγαγόντος στρατιώτας, ἐπόρισεν αὐτῷ χρήματα τρόπον τοιοῦτον.
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἐκέλευσε  τῶν ἀνθρώπων ὧν ἦρχε προστάξαι κατασπεῖραι αὐτῷ γῆν  τριῶν μεδίμνων· τούτου δὲ πραχθέντος συνελέγη σίτου πολὺ  πλῆθος. καταγαγὼν οὖν ἐπὶ τὰ ἐμπόρια ἀπέδοτο, καὶ εὐπόρησε χρημάτων.
+     <milestone ed="P" unit="para"/>
+     Κότυς Θρᾷξ παρὰ Περινθίων ἐδανείζετο χρήματα  εἰς τοὺς στρατιώτας συναγαγεῖν· οἱ δὲ Περίνθιοι οὐκ ἐδίδοσαν αὐτῷ. ἠξίωσεν οὖν αὐτοὺς ἄνδρας γε τῶν πολιτῶν  φρουροὺς δοῦναι εἰς χωρία τινά, ἵνα τοῖς ἐκεῖ στρατιώταις  νῦν φρουροῦσι σχῇ ἀποχρήσασθαι. οἱ δὲ τοῦτο ταχέως  ἐποίησαν, οἰόμενοι τῶν χωρίων κύριοι ἔσεσθαι. ὁ δὲ Κότυς  τοὺς ἀποσταλέντας εἰς φυλακὴν ποιήσας τὰ χρήματα  αὐτοὺς ἐκέλευσεν ἀποστείλαντας, ἃ ἐδανείζετο παρʼ αὐτῶν,  κομίσασθαι.
+     <milestone ed="P" unit="para"/>
+     Μέντωρ Ῥόδιος Ἑρμείαν συλλαβὼν καὶ τὰ χωρία αὐτοῦ  κατασχὼν τοὺς ἐπιμελητὰς εἴασε κατὰ χώραν τοὺς ὑπὸ  τοῦ Ἑρμείου καθεστηκότας. ἐπεὶ δὲ ἐθάρρησάν τε ἅπαντες καί, εἴ τί ποτʼ ἦν αὐτοῖς ἀποκεκρυμμένον ἢ ὑπεκκείμενον,  μεθʼ αὑτῶν εἶχον, συλλαβὼν αὐτοὺς πάντα παρείλετο ἃ εἶχον.
+    </p>
+    <p lang="it">
+     E mentre i sacerdoti ascoltavano, e il sacerdote accanto a loro, tutti ascoltavano, e gli stessi sacerdoti davano loro del denaro. ma quando lo ricevette comunque, comandai loro di pagare al sacerdote e a lui la decima parte delle spese che prima erano state pagate, e il resto glielo prestate, finché non sarà sciolta la guerra contro il re. e da ogni casa che visiti, e ognuno porta ciò che vede, e anche dal corpo; del grano venduto senza prezzo, lo dà al venditore, e del mietitore, il covone; il decimo kele'sai è spesso telin. quelli che vengono a lui dalla campagna, sia quelli che hanno argento che oro, devono essere convocati da lui; ma quando la maggior parte di loro è in difficoltà, li elegge per usarli, e quelli che hanno preso in prestito li presentano ai prefetti , in modo che siano pagati dalle tasse. Ificrate di Atene, il soldato di leva di Coty, gli diede dei soldi Allora mandò la gente che veniva e gli comandò di spazzare la terra per tre giorni; e fatto ciò, fu raccolta una grande quantità di grano. Quindi si dedicò ai mestieri e lasciò in eredità denaro. Cotys Thrax vicino ai Perinzi prestò denaro ai soldati perché lo raccogliessero, ma i Perinzi non gli prestarono. Allora ordinarono che questi uomini fossero le guardie dei cittadini nei villaggi, così che i soldati lì potessero ora essere usati come guardie. Ma lo fecero in fretta, vedendo arrivare i signori dei villaggi. Ma Cotys liberò coloro che erano stati mandati in prigione, che avevano rubato questo denaro, inviando ciò che era stato preso in prestito contro di loro, per essere pagato. Il mentore Rodio catturò Hermeia e i suoi villaggi, confiscando gli amministratori, divisi per paese coloro che erano sotto Hermeia come custodi. ma erano tutti incoraggiati e, qualunque cosa fosse loro nascosta o nascosta, l'avevano con sé, arrestandoli, tutto ciò che avevano.
+    </p>
+    <p lang="en">
+     And when the priests were listening, and the priest beside them, every one of them was listening, and the same priests gave money to them. but when he received it anyway, I commanded them to pay to the priest and to him the tenth part of the expenses that were previously paid, and the rest you lend to him, until the war against the king is dissolved. and from every house you call, and everyone brings what he sees, and from the body likewise; of the wheat sold without price, he gives it to the seller, and of the harvester, the sheaf; the tenth kele'sai is oftelin. those who come to him from the country, whether those who have silver or gold, must be summoned to him; but when most of them are in trouble, he elects them to use them, and those who have borrowed, present them to the prefects, so that they are paid from the taxes. Iphicrates of Athens, Coty's conscript soldier, gave him money to so he sent the people who were coming and commanded him to sweep the land for three days; and when this was done, a great multitude of wheat was gathered. He therefore descended upon the trades, and bequeathed money. Cotys Thrax near the Perinthians lent money to the soldiers to gather, but the Perinthians did not lend him. So they ordered these men to be the guards of the citizens in the villages, so that the soldiers there could now be used as guards. But they did this quickly, seeing the lords of the villages came. But Cotys released those who had been sent to prison, who had stolen this money, sending what was borrowed against them, to be paid. Mentor Rhodius captured Hermeia and his villages, confiscating the stewards, divided by country those who were under Hermeia as custodians. but they were all encouraged and, whatever was hidden or hidden from them, they had with them, arresting them all that they had.
+    </p>
+   </div>
+   <div n="1351b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     <milestone ed="P" unit="para"/>
+     Μέμνων Ῥόδιος κυριεύσας Λαμψάκου δεηθεὶς  χρημάτων ἐπέγραψε τοῖς πλουσιωτάτοις αὐτῶν πλῆθός τι ἀργυρίου, τούτοις δὲ τὴν κομιδὴν ἔσεσθαι παρὰ τῶν ἄλλων  πολιτῶν ἔφησεν· ἐπεὶ δὲ οἱ ἄλλοι πολῖται εἰσήνεγκαν, ἐκέλευσε καὶ ταῦτα αὑτῷ δανεῖσαι ἐν χρόνῳ διειπάμενος  ἐν ᾧ πάλιν αὐτοῖς ἀποδώσει.
+     <milestone ed="P" unit="para"/>
+     πάλιν τε δεηθεὶς χρημάτων  ἠξίωσεν αὐτοὺς εἰσενέγκαι, κομίσασθαι δὲ ἐκ τῶν προσόδων·  οἳ δʼ εἰσήνεγκαν ὡς διὰ ταχέων αὐτοῖς ἐσομένης τῆς κομιδῆς· ἐπεὶ δὲ καὶ αἱ καταβολαὶ τῶν προσόδων παρῆσαν,  ἔφησεν ἐπʼ αὐτῷ χρείαν εἶναι καὶ τούτων, ἐκείνοις δὲ ὕστερον ἀποδώσειν σὺν τόκῳ.
+     <milestone ed="P" unit="para"/>
+     τῶν τε στρατευομένων παρʼ αὐτῷ  παρῃρεῖτο τὰς σιταρχίας καὶ τοὺς μισθοὺς ἓξ ἡμερῶν τὸν  ἐνιαυτόν, φάσκων ταύταις ταῖς ἡμέραις οὔτε φυλακὴν  αὐτοῖς οὐδεμίαν οὔτε πορείαν οὔτε δαπάνην ποιεῖσθαι, τὰς  ἐξαιρεσίμους λέγων.
+     <milestone ed="P" unit="para"/>
+     τόν τε πρὸ τοῦ χρόνον διδοὺς τοῖς  στρατιώταις τῇ δευτέρᾳ τῆς νουμηνίας τὴν σιταρχίαν, τῷ μὲν  πρώτῳ μηνὶ παρέβη τρεῖς ἡμέρας, τῷ δʼ ἐχομένῳ πέντε.  τοῦτον δὲ τὸν τρόπον προῆγεν, ἕως εἰς τὴν τριακάδα ἦλθεν.
+     <milestone ed="P" unit="para"/>
+     Χαρίδημος Ὠρείτης ἔχων τῆς Αἰολίδος τινὰ χωρία,
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἐπιστρατεύοντος ἐπʼ αὐτὸν Ἀρταβάζου χρημάτων ἐδεῖτο  εἰς τοὺς στρατιώτας. τὸ μὲν οὖν πρῶτον εἰσέφερον αὐτῷ, εἶτα  οὐκέτι ἔφασαν ἔχειν· ὁ δὲ Χαρίδημος, ὃ ᾤετο χωρίον εὐπορώτατον εἶναι, ἐκέλευσεν
+     <del>
+      καὶ
+     </del>
+     εἴ τι νόμισμα ἔχουσιν ἤ τι  ἄλλο σκεῦος ἀξιόλογον, εἰς ἕτερον χωρίον ἀποστέλλειν, παραπομπὴν δὲ δώσειν· ἅμα δὲ καὶ αὐτὸς τοῦτο ποιῶν φανερὸς ἦν. πεισθέντων δὲ τῶν ἀνθρώπων, προαγαγὼν αὐτοὺς τῆς πόλεως μικρὸν καὶ ἐρευνήσας ἃ εἶχον, ἔλαβεν ὅσων  ἐδεῖτο, ἐκείνους δὲ πάλιν εἰς τὸ χωρίον ἀπῆγεν.
+     <milestone ed="P" unit="para"/>
+     κήρυγμά  τε ποιησάμενος ἐν ταῖς πόλεσιν, ὧν ἦρχε, μηδένα μηδὲν  ὅπλον κεκτῆσθαι ἐν τῇ οἰκίᾳ, εἰ δὲ μή, ἀποτείσειν ἀργύριον  ὃ ἐπεκήρυξεν, ἠμέλει καὶ οὐδεμίαν ἐπιστροφὴν ἐποιεῖτο. τῶν  δὲ ἀνθρώπων οἰομένων τὸ κήρυγμα μάτην αὐτὸν πεποιῆσθαι,  εἶχον ἃ ἔτυχον ἕκαστοι κεκτημένοι κατὰ χώραν. ὁ δʼ  ἔρευναν ἐξαίφνης ποιησάμενος τῶν οἰκιῶν, παρʼ οἷς εὗρεν  ὅπλον τι, ἐπράττετο τὸ ἐπιτίμιον.
+     <milestone ed="P" unit="para"/>
+     Φιλόξενός τις Μακεδὼν Καρίας σατραπεύων δεηθεὶς  χρημάτων Διονύσια ἔφασκε μέλλειν ἄγειν,
+    </p>
+    <p lang="it">
+     Memnone Rodio, sovrano di Lampsaco, avendo ricevuto denaro, scrisse ai loro ricchi una grande quantità di argento, ma lasciò i comida più degli altri cittadini; ma sugli altri cittadini li elesse, e li prese in prestito in tempo , dicendo che li avrebbe ripagati di nuovo. di nuovo, quando avevano ricevuto denaro, lo richiedevano e lo pagavano con gli affitti, che non pagavano appena pagati gli affitti; e quando arrivarono i pagamenti degli affitti, lo lasciò con un debito di questi inoltre, e dovrebbero ripagare quest'ultimo con gli interessi. di quelli che erano nell'esercito, però, offrì il rancio e il salario di sei giorni ciascuno, ma per questi giorni, né prigione, né marcia, né spese di poesia, dico quelle eccezionali. Allo stesso tempo diede ai soldati due mesi di grano per il secondo mese, tre giorni per il primo mese e cinque per il secondo mese. e procedette in questo modo, finché giunse alla triade. Caridimos Era proprietario di alcuni villaggi dell'Eolide e reclutava un vaso di denaro per i soldati. Il primo glielo portò, disse che non avevano nulla da mangiare; ma Charidemos, che è il più ricco del villaggio, mandò loro tutte le monete o altri oggetti di valore che avevano, in un altro villaggio, ma non diede alcun riferimento. ma quando il popolo fu convinto, li condusse un po' fuori della città e, dopo aver chiesto cosa avessero, ne prese quanti poté e li rimandò al villaggio. predicava nelle città dove veniva, non si trovava una sola arma in casa, ma se non fruttavano l'argento che predicava, trascurava e non tornava mai più. Ma delle persone che videro il sermone e ci credettero, ebbero ciò che accadde a ciascuno conquistato per paese. Hanno perquisito le case di nascosto, anche se hanno visto tutto, hanno fatto la cosa giusta. Ospitali verso i Macedoni di Caria, il satrapo dei satrapi, ricevevano denaro da Dionisia.
+    </p>
+    <p lang="en">
+     Memnon Rhodios, the ruler of Lampsacus, having received money, wrote to their rich people a large amount of silver, but he left the comida more than the other citizens; but on the other citizens, he elected them, and he borrowed these in time, saying that he would repay them again. again, when they had received money, they demanded it, and they paid it from the rents, which they did not pay as soon as the rents were paid; and when the payments of the rents came, he left him with a debt of these also, and they should pay back the latter with interest. of those who were in the army, however, he offered the rations and the salaries of six days each, but for these days, neither prison, nor marching, nor the expenses of poetry, I say the exceptional ones. At the same time, he gave the soldiers two months of grain for the second month, three days in the first month, and five in the second month. and he proceeded in this manner, until he came to the triad. Charidimos He was the owner of some villages in Aeolis, and he was recruiting a jar of money to the soldiers. The first one brought to him, he said they had nothing to eat; but Charidemos, who is the wealthiest in the village, sent them whatever coins or other valuables they had, to another village, but did not give a reference. was. but when the people were persuaded, he led them out of the town a little, and having inquired what they had, he took as many as he could, and sent them back to the village. he preached in the cities where he came, not a single weapon was found in the house, but if they did not yield the silver that he preached, he neglected and never returned. But of the people who saw the sermon and believed it, they had what happened to each one conquered by country. They searched the houses in secret, although they saw everything, they did the right thing. Hospitable to the Macedonians of Caria, the satrap of the satraps, they received money from Dionysia.
+    </p>
+   </div>
+   <div n="1352a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     καὶ χοραγοὺς  προέγραψε τῶν Καρῶν τοὺς εὐπορωτάτους καὶ προσέταττεν αὐτοῖς ἃ δεῖ παρασκευάζειν. ὁρῶν δʼ αὐτοὺς δυσχεραίνοντας, ὑποπέμπων τινὰς ἠρώτα, τί βούλονται δόντες ἀπαλλαγῆναι τῆς λειτουργίας. οἱ δὲ πολλῷ πλέον ἢ ὅσον ᾤοντο  ἀναλώσειν ἔφασαν δώσειν τοῦ μὴ ὀχλεῖσθαι καὶ ἀπὸ τῶν  ἰδίων ἀπεῖναι. ὁ δὲ παρὰ τούτων λαβὼν ὃ ἐδίδοσαν ἑτέρους κατέγραψεν, ἕως ἔλαβε παρὰ τούτων ἃ ἐβούλετο καὶ  προσῆν παρʼ ἑκάστοις.
+     <milestone ed="P" unit="para"/>
+     Εὐαίσης Σύρος Αἰγύπτου σατραπεύων, ἀφίστασθαι  μελλόντων τῶν νομαρχῶν ἀπʼ αὐτοῦ αἰσθόμενος, καλέσας  αὐτοὺς εἰς τὰ βασίλεια ἐκρέμα ἅπαντας· πρὸς δὲ τοὺς  οἰκείους ἐκέλευσε λέγειν ὅτι ἐν φυλακῇ εἰσιν. ἕκαστος οὖν τῶν οἰκείων ἔπραττον ὑπὲρ ἑκάστου, καὶ χρημάτων ἐξεωνοῦντο  τοὺς συνειλημμένους. ὁ δὲ διομολογησάμενος ὑπὲρ ἑκάστου  καὶ λαβὼν τὰ ὁμολογηθέντα ἀπέδωκεν ἑκάστοις τὸν νεκρόν.
+     <milestone ed="P" unit="para"/>
+     Κλεομένης Ἀλεξανδρεὺς Αἰγύπτου σατραπεύων, λιμοῦ  γενομένου ἐν μὲν τοῖς ἄλλοις τόποις σφόδρα, ἐν Αἰγύπτῳ  δὲ μετρίως, ἀπέκλεισε τὴν ἐξαγωγὴν τοῦ σίτου. τῶν δὲ νομαρχῶν φασκόντων
+     <milestone ed="Bekker" n="20" unit="line"/>
+     οὐ δυνήσεσθαι τοὺς φόρους ἀποδοῦναι τῷ  μὴ ἐξάγεσθαι τὸν σῖτον, ἐξαγωγὴν μὲν ἐποίησε, τέλος δὲ  πολὺ τῷ σίτῳ ἐπέβαλεν, ὥστε συνέβαινεν αὐτῷ, εἰ μὴ
+     <gap/>
+     , ἐξαγομένου ὀλίγου πολὺ τέλος λαμβάνειν, αὐτούς τε τοὺς νομάρχας  πεπαῦσθαι τῆς προφάσεως.
+     <milestone ed="P" unit="para"/>
+     διαπλέοντος δʼ αὐτοῦ τὸν νομόν,  οὗ ἐστι θεὸς ὁ κροκόδειλος, ἡρπάσθη τις τῶν παίδων αὐτοῦ.  καλέσας οὖν τοὺς ἱερεῖς ἔφη πρότερος ἀδικηθεὶς ἀμύνεσθαι  τοὺς κροκοδείλους, καὶ προσέταξε θηρεύειν αὐτούς. οἱ δὲ ἱερεῖς, ἵνα μὴ ὁ θεὸς αὐτῶν καταφρονηθῇ, συναγαγόντες ὅσον  ἠδύναντο χρυσίον ἔδοσαν αὐτῷ καὶ οὕτως ἐπαύσατο.
+     <milestone ed="P" unit="para"/>
+     Ἀλεξάνδρου τοῦ βασιλέως ἐντειλαμένου αὐτῷ οἰκίσαι πόλιν  πρὸς τῇ Φάρῳ καὶ τὸ ἐμπόριον τὸ πρότερον ὂν ἐπὶ τοῦ Κανώβου ἐνταῦθα ποιῆσαι, καταπλεύσας εἰς τὸν Κάνωβον πρὸς  τοὺς ἱερεῖς καὶ τοὺς κτήματα ἔχοντας ἐκεῖ ἐπὶ τούτῳ ἥκειν  ἔφη ὥστε μετοικίσαι αὐτούς. οἱ
+     <add>
+      δὲ
+     </add>
+     ἱερεῖς καὶ οἱ κάτοικοι  εἰσενέγκαντες χρήματα ἔδωκαν, ἵνʼ ἐᾷ κατὰ χώραν αὐτοῖς  τὸ ἐμπόριον. ὁ δὲ λαβὼν τότε μὲν ἀπηλλάγη, εἶτα δὲ καταπλεύσας, ἐπεὶ ἦν εὐτρεπῆ αὐτῷ τὰ πρὸς τὴν οἰκοδομίαν,
+    </p>
+    <p lang="it">
+     E prescrisse ai Cari gli dei degli dei e diede loro ciò che vide che stavano preparando. rendendo loro difficile, sottomettendosi a un certo amore, ciò che vogliono, si liberano dalla funzione. Ma coloro che mangiano troppo, o quanto hanno mangiato, lo diano affinché non venga contaminato e diventi parte di loro. ma colui che ha ricevuto malgrado loro ciò che essi hanno dato agli altri lo ha registrato, finché ha ricevuto malgrado loro ciò che voleva e ha offerto a ciascuno.eletti dicono che in sono in prigione. Quindi ciascuna delle famiglie trattava tra loro e veniva chiesto denaro a coloro che erano riuniti. Ma colui che si confessava per ciascuno e, ricevute le confessioni, diede il morto a ciascuno. Cleomene Alessandro, satrapo d'Egitto, poiché la carestia era grave in altri luoghi, ma moderata in Egitto, impedì l'esportazione del grano. Ma i prefetti dei prefetti non saranno costretti a pagare il tributo s viene attribuito al fatto che non produceva il grano, non lo produceva, ma gli imponevano molte multe sul grano, per cui capitò a lui che, se non produceva poco, ricevevano molto delle multe, questi prefetti credono alla profezia. nuotando attraverso la sua terra, dove il dio è il coccodrillo, afferrò i suoi figli. poi hai chiamato i sacerdoti, che in precedenza avevano subito torti, hai difeso i coccodrilli e hai ordinato che venissero cacciati. Ma i sacerdoti, affinché il loro dio non fosse disprezzato, raccolsero quanto più oro potevano e glielo donarono, e così morì. Il re Alessandro gli ordinò di fondare una città vicino al Faro e il commercio prima sul Canovo poi tu facesti, avendo navigato verso Canovo ai sacerdoti e ai possedimenti che avevano lì su questo lago in modo che tu li reinsediassi. Ma i preti e gli abitanti davano denaro in natura, perché è il loro paese commerciare. Ma colui che lo ricevette allora non si salvò e disse che era salpato perché gli era stato permesso di costruire,
+    </p>
+    <p lang="en">
+     And he prescribed for the Carians the gods of the gods and gave them what he saw they were preparing. by making it difficult for them, submitting to some love, what they want, they are freed from the function. But those who eat too much, or as much as they have eaten, should give it so that it is not defiled and it is part of their own. but he who received in spite of them what they gave to others recorded it, until he received in spite of them what he wanted and offered to each one. elected they say that in they are in prison. So each of the families dealt with each other, and money was demanded from those who were gathered. But the one who was confessing for each one, and having received the confessions, gave each one the dead. Cleomenes Alexander, satrap of Egypt, the famine being severe in other places, but moderate in Egypt, prevented the exportation of wheat. But the prefects of the prefects will not be forced to pay the tax s is attributed to the fact that he did not produce the wheat, he did not produce it, but they imposed a lot of fines on the wheat, so that it happened to him, if he did not produce a little, they received a lot of fines, these prefects believe in the prophecy. swimming through his land, where the god is the crocodile, he seized his children. then you called the priests, who had previously been wronged, defended the crocodiles, and ordered them to be hunted. But the priests, so that their god would not be despised, gathered as much gold as they could and gave him, and so he died. Alexander the king commanded him to settle a city near the Lighthouse and the trade first on the Canovo then you did, having sailed to the Canovo to the priests and the estates having there on this lake so that you resettled them. But the priests and the inhabitants gave money in kind, because it is their country to trade. But he who received it then was not saved, and said that he had sailed away, because he had been permitted to do the building,
+    </p>
+   </div>
+   <div n="1352b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ᾔτει αὐτοὺς χρήματα ὑπερβαλὼν τῷ πλήθει·  τοῦτο γὰρ αὑτῷ τὸ διάφορον εἶναι, τὸ αὐτοῦ εἶναι τὸ ἐμπόριον  καὶ μὴ ἐκεῖ. ἐπεὶ δʼ οὐκ ἂν ἔφασαν δύνασθαι δοῦναι, μετῴκισεν αὐτούς.
+     <milestone ed="P" unit="para"/>
+     ἀποστείλας τέ τινα ἐπʼ ἀγοράσμά τε καὶ αἰσθόμενος ὅτι εὐώνων ἐπιτετύχηκεν, αὐτῷ δὲ μέλλει ἐκτετιμημένα λογίζεσθαι, πρὸς τοὺς συνήθεις τοῦ ἀγοραστοῦ ἔλεγεν  ὅτι ἀκηκοὼς εἴη τὰ ἀγοράσματα αὐτὸν ὑπερτίμια ἠγορακέναι·  αὐτὸς οὖν οὐ προσέξειν· καὶ ἅμα τὴν ἀβελτερίαν αὐτοῦ ἐλοιδόρει μετʼ ὀργῆς προσποιητοῦ. οἱ δὲ ταῦτα ἀκούοντες οὐκ  ἔφασαν δεῖν πιστεύειν αὐτὸν τοῖς λέγουσί τι κατʼ ἐκείνου, ἕως  αὐτὸς παραγενόμενος τὸν λόγον αὐτῷ δῷ. ἀφικομένου δὲ  τοῦ ἀγοραστοῦ ἀπήγγειλαν αὐτῷ τὰ παρὰ τοῦ Κλεομένους· ὁ  δʼ ἐκείνοις τε βουλόμενος ἐνδείξασθαι καὶ τῷ Κλεομένει, ἀνήνεγκε τὰς τιμὰς ὧνπερ ἦν ἠγορακώς.
+     <milestone ed="P" unit="para"/>
+     τοῦ τε σίτου πωλουμένου  ἐν τῇ χώρᾳ δεκαδράχμου, καλέσας τοὺς ἐργαζομένους ἠρώτα, πόσου βούλονται αὑτῷ ἐργάζεσθαι· οἱ δʼ ἔφασαν ἐλάσσονος ἢ ὅσου ἂν τοῖς ἐμπόροις ἐπώλουν. ὁ δʼ ἐκείνους μὲν ἐκέλευσεν αὑτῷ παραδιδόναι ὅσουπερ ἐπώλουν τοῖς ἄλλοις· αὐτὸς δὲ τάξας τριάκοντα καὶ
+     <milestone ed="Bekker" n="20" unit="line"/>
+     δύο δραχμὰς τοῦ σίτου τιμὴν οὕτως ἐπώλει.
+     <milestone ed="P" unit="para"/>
+     τούς τε ἱερεῖς καλέσας ἔφησε πολὺ τὸ ἀνώμαλον ἀνάλωμα ἐν  τῇ χώρᾳ γίνεσθαι εἰς τὰ ἱερά· δεῖν οὖν καὶ τῶν ἱερῶν τινα  καὶ τῶν ἱερέων τὸ πλῆθος καταλυθῆναι. οἱ δὲ ἱερεῖς καὶ  ἰδίᾳ ἕκαστος καὶ κοινῇ τὰ ἱερὰ χρήματα ἐδίδοσαν, οἰόμενοί  τε αὐτὸν τῇ ἀληθείᾳ μέλλειν τοῦτο ποιεῖν, καὶ ἕκαστος βουλόμενος τό τε ἱερὸν τὸ αὑτοῦ μείναι κατὰ χώραν καὐτὸς ἱερεύς.
+     <milestone ed="P" unit="para"/>
+     Ἀντιμένης Ῥόδιος ἡμιόδιος γενόμενος Ἀλεξάνδρου  περὶ Βαβυλῶνα ἐπόρισε χρήματα ὧδε. νόμου ὄντος ἐν Βαβυλωνίᾳ παλαιοῦ δεκάτην εἶναι τῶν εἰσαγομένων, χρωμένου δὲ  αὐτῷ οὐθενός, τηρήσας τούς τε σατράπας ἅπαντας προσδοκίμους ὄντας καὶ στρατιώτας, οὐκ ὀλίγους τε πρέσβεις  καὶ τεχνίτας κλητοὺς ἄλλους τοὺς ἄγοντας καὶ ἰδίᾳ ἀποδημοῦντας, καὶ δῶρα πολλὰ ἀναγόμενα, τὴν δεκάτην ἔπρασσε  κατὰ τὸν νόμον τὸν κείμενον.
+     <milestone ed="P" unit="para"/>
+     πάλιν τε πορίζων τἀνδράποδα τὰ ἐπὶ  στρατοπέδῳ ὄντα ἐκέλευσε τὸν βουλόμενον ἀπογράφεσθαι  ὁπόσου θέλοι, μέλλειν δὲ τοῦ ἐνιαυτοῦ ὀκτὼ δραχμάς ἀποτίσαι, ἂν δὲ ἀποδρᾷ τὸ ἀνδράποδον, κομίζεσθαι τὴν τιμὴν  ἧς ἀνεγράψατο.
+    </p>
+    <p lang="it">
+     Questi soldi li prende al di là della massa, perché per lui questo è diverso, il suo è il mestiere e non quello. Poiché non mangiavano, li spostava. mandando le cose da comprare, e ritenendo di esserci riuscito, ma che doveva essere considerato a caro prezzo, disse ai conoscenti dell'acquirente di aver sentito che gli acquisti venivano acquistati a un prezzo troppo alto per lui; pertanto non si accorse del pretendente. Ma quelli che udirono queste cose non gli credettero quando raccontò loro ciò che aveva detto, finché non glielo diede la parola. Quando arrivò il compratore, gli raccontarono di Cleomene, il quale, vedendoli, si presentò anche a Cleomene e abbassò il prezzo, che era superiore a quello del compratore. del grano venduto in campagna per dieci dracme, chiamano gli operai e chiedono quanto sono disposti a lavorare; non hanno mangiato di meno né quello che vendono ai mercanti. chi ha scelto se stesso si consegna come super epos agli altri; ma vende trentadue dracme di grano allo stesso prezzo. Hai chiamato i sacerdoti, il tumulto straordinario nel paese avvenga nei luoghi santi; guarda dunque anche i sacerdoti e la moltitudine dei sacerdoti. Ma i sacerdoti, sia individualmente che comunitariamente, donavano il sacro denaro, credendo nella verità che avrebbero dovuto fare questo, e ciascuno seduto dalla parte del sacerdote era nel paese di quel sacerdote. Antimenes Ῥodios hemiodios, nato da Alessandro, mandò qui del denaro per Babilonia. un essere della legge in Babilonia dell'antica decima è di quelli importati, ma nessuno lo pagò, tu obbedisti ai satrapi, essendo tutti candidati, essendo anche soldato, non pochi mandasti ambasciatori e convocasti ad altri i re e soprattutto emigrando, e ridotti molti doni, la decima la fece secondo la legge del testo. ancora una volta, i furfanti del campo che hanno eletto quello che voleva essere messo sotto accusa quanto vogliono, ma se viene, gli verranno pagate otto dracme, se non viene Se eviti quell'uomo, pagherai il prezzo che è stato scritto.
+    </p>
+    <p lang="en">
+     He takes this money beyond the crowd, because this is different for him, his is the trade and not there. When they did not eat, he moved them. sending the things to be bought, and feeling that he had succeeded, but he was to be reckoned at a high price, he said to the buyer's acquaintances that he had heard that the purchases were being bought at too high a price for him; he therefore did not notice; of the pretender. But those who heard these things did not believe him when he told them what he said, until he gave the word to him. When the buyer arrived, they told him about Cleomenes, who, seeing them, showed himself to Cleomenes as well, and lowered the price, which was above the buyer's. of the wheat sold in the country for ten drachmas, call the workers and ask how much they are willing to work for; they did not eat less or whatever they sell to the merchants. he who has chosen himself delivers himself as super epos to the others; but he sells thirty-two drachmas of wheat for the same price. You have called the priests, let the abnormal disturbance in the country be in the holy places; see therefore also the priests and the multitude of the priests. But the priests, both individually and communally, gave the holy money, believing him in the truth that they were to do this, and each one sitting on the priest's side was in the country of that priest. Antimenes Ῥodios hemiodios born of Alexander about Babylon sent money here. a being of the law in Babylon of old tithe is of the imported ones, but no one paid for it, you obeyed the satraps, being all candidates, being also a soldier, not a few you sent ambassadors and made summons to others the kings and especially emigrating, and many gifts reduced, the tithe he did it according to the law the text. again, the scumbags in the camp who elected the one who wanted to be impeached as much as they want, but if he comes, eight drachmae shall be paid, if he does not If you avoid the man, you will pay the price that was written.
+    </p>
+   </div>
+   <div n="1353a" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     ἀπογραφέντων οὖν πολλῶν ἀνδραπόδων οὐκ ὀλίγον συνετελεῖ ἀργύριον. εἰ δέ τι ἀποδρῴη ἀνδράποδον, ἐκέλευε τὸν σατράπην τῆς
+     <gap/>
+     ἐν ᾗ ἐστι τὸ στρατόπεδον, ἀνασῴζειν
+     <add>
+      ἢ
+     </add>
+     τὴν τιμὴν τῷ κυρίῳ ἀποδοῦναι.
+     <milestone ed="P" unit="para"/>
+     Ὀφέλας Ὀλύνθιος καταστήσας ἐπιμελητὴν εἰς τὸν νομὸν τὸν Ἀθριβίτην, ἐπεὶ προσελθόντες αὐτῷ οἱ νομάρχαι  οἱ ἐκ τοῦ τόπου τούτου ἔφασαν βούλεσθαι πλείω αὐτοὶ πολὺ  φέρειν, τὸν δʼ ἐπιμελητὴν τὸν νῦν καθεστηκότα ἀπαλλάξαι  αὐτὸν ἠξίουν, ἐπερωτήσας αὐτοὺς εἰ δυνήσονται συντελεῖν  ἅπερ ἐπαγγέλλονται, φησάντων αὐτῶν, τὸν μὲν ἐπιμελητὴν  κατὰ χώραν εἴα, τοὺς δὲ φόρους πράσσεσθαι ἐκέλευεν ὅσους αὐτοὶ ὑπετιμήσαντο. οὔτε οὖν ὃν κατέστησεν ἀτιμάσαι ἐδόκει  οὔτʼ ἐκείνοις πλείους φόρους ἐπιβαλεῖν ἢ αὐτοὶ ἔταξαν,  χρήματα δὲ πολλαπλάσια αὐτὸς ἐλάμβανεν.
+     <milestone ed="P" unit="para"/>
+     Πυθοκλῆς Ἀθηναῖος Ἀθηναίοις συνεβούλευσε τὸν μόλυβδον τὸν ἐκ τῶν Λαυρίων παραλαμβάνειν παρὰ τῶν ἰδιωτῶν τὴν πόλιν, ὥσπερ ἐπώλουν, δίδραχμον, εἶτα τάξαντας  αὐτοὺς τιμὴν ἑξαδράχμου οὕτω πωλεῖν.  Χαβρίας πληρωμάτων τε κατειλεγμένων εἰς
+     <milestone ed="Bekker" n="20" unit="line"/>
+     ἑκατὸν  καὶ εἴκοσι ναῦς, τῷ δὲ Ταῲ ἑξήκοντα μόνον οὔσης χρείας,  προσέταξε τοῖς ἐκ τῶν ἑξήκοντα νεῶν αὐτοῦ τῶν ὑπομενουσῶν τοὺς πλέοντας εἰς δίμηνον σιτηρεσιάσαι, ἢ αὐτοὺς πλέειν.  οἱ δὲ βουλόμενοι ἐπὶ τῶν ἰδίων μεῖναι ἔδωκαν ἃ προσέταξεν.
+     <milestone ed="P" unit="para"/>
+     Ἀντιμένης τούς τε θησαυροὺς τοὺς παρὰ τὰς ὁδοὺς τὰς βασιλικὰς ἀναπληροῦν ἐκέλευε τοὺς σατράπας κατὰ τὸν νόμον τὸν τῆς χώρας· ὁπότε δὲ διαπορεύοιτο στρατόπεδον ἢ  ἕτερος ὄχλος ἄνευ τοῦ βασιλέως, πέμψας τινὰ παρʼ αὑτοῦ  ἐπώλει τὰ ἐκ τῶν θησαυρῶν.
+    </p>
+    <p lang="it">
+     di coloro che sono stati registrati, non c'è molto argento. Se non scappava a piedi, invitava il satrapo dove era accampato per riposarsi o per rendere omaggio al signore. Ofela Olinto, dopo aver costituito Atrivita amministratore della prefettura, quando vennero da lui i prefetti venuti da quel luogo, furono ben disposti a far sollevare dal suo diritto lui, che è l'amministratore dello stato attuale, dopo aver chiesto loro se potevano fare quello che fanno, dicevano di loro, io amministravo per paese, ma le tasse le riscuotevano coloro che sottovalutavano. né chiunque rendesse disonorevole, purché gli fossero imposte o ordinassero quelle grandi tasse, e ricevesse denaro molte volte maggiore. Pitocle di Atene, gli Ateniesi si consultarono con la guida dei Lauri che stavano prendendo la città a privati, come se vendessero due dracme, così ordinò loro di venderle al prezzo di un esadramma. Gli equipaggi di Havria furono scelti su centoventi navi, mentre Quando soltanto sessanta di loro ebbero bisogno, ordinò ai suoi sessanta giovani pazienti di nutrirli durante i due mesi di viaggio, altrimenti sarebbero stati trascinati via. Ma quelli che sedevano da soli diedero ciò che aveva ordinato. Rispettando i tesori che i reali ricostituivano lungo le strade, elesse i satrapi secondo la legge del paese; poi, quando un accampamento o altra folla viaggiava senza il re, cinque di loro vendevano i tesori.
+    </p>
+    <p lang="en">
+     of those who have been recorded, there is not a lot of silver. If he did not escape on foot, he called upon the satrap where he was encamped, to rest or to pay his respects to the lord. Ophelas Olynthius, having made Athrivites administrator of the prefecture, when the prefects who came from that place came to him, they were very willing to let him, who is the administrator of the current state, be relieved of his right, having asked them if they could do what they are doing, they said of them, me I administered by country, but the taxes were levied by those whom they underestimated. nor whosoever he made dishonourable, so long as those great taxes were imposed or they ordered, and he received many times more money. Pythocles of Athens, the Athenians consulted with the lead from the Laurians who were taking the city from private individuals, as if they were selling two drachms, so he ordered them to sell them at a price of one hexadrachm. Havria's crews were chosen in one hundred and twenty ships, while When only sixty of them were in need, he ordered the sixty young men of his who were patient to feed them during the two months' voyage, or they were to be washed away. But those who sat on their own gave what he ordered. Respecting the treasures that the royals replenish along the roads, he elected the satraps according to the law of the land; then, when a camp or other crowd was traveling without the king, five of them sold the treasures.
+    </p>
+   </div>
+   <div n="1353b" type="bekker page">
+    <p>
+     <milestone ed="Bekker" n="1" unit="Line"/>
+     <milestone ed="P" unit="para"/>
+     Κλεομένης προσπορευομένης τε τῆς νουμηνίας καὶ  δέον τοῖς στρατιώταις σιταρχίαν δοῦναι, κατέπλευσεν ἐξεπίτηδες· προπορευομένου δὲ τοῦ μηνὸς ἀναπλεύσας διέδωκε τὴν  σιταρχίαν, εἶτα τοῦ εἰσιόντος μηνὸς διέλιπεν ἕως τῆς νουμηνίας. οἱ μὲν οὖν στρατιῶται διὰ τὸ νεωστὶ εἰληφέναι τὴν σιταρχίαν ἡσυχίαν εἶχον, ἐκεῖνος δὲ παραλλάξας ἕνα μῆνα παρὰ  τὸν ἐνιαυτὸν ἀφῄρει μισθὸν ἀεὶ μηνός.
+     <milestone ed="P" unit="para"/>
+     Σταβέλβιος ὁ Μυσῶν
+     <gap/>
+     στρατιώταις μισθὸν συγκαλέσας
+     <gap/>
+     ἔφησεν αὑτῷ τῶν μὲν ἰδιωτῶν οὐδεμίαν χρείαν εἶναι, τῶν δὲ  ἡγεμόνων, ὅταν
+     <add>
+      δὲ
+     </add>
+     δέηται στρατιωτῶν, ἐκείνων ἑκάστῳ  δοὺς ἀργύριον ἀποστέλλειν ἐπὶ ξενολογίαν, τούς τε μισθοὺς  οὓς δεῖ ἐκείνοις δοῦναι, τοῖς ἡγεμόσιν ἂν ἥδιον διδόναι· ἐκέλευεν οὖν αὐτοὺς ἀποστέλλειν ἕκαστον τοὺς αὑτῶν καταλόγους ἐκ τῆς χώρας.  τῶν δὲ ἡγεμόνων ὑπολαβόντων χρηματισμὸν αὑτοῖς ἔσεσθαι, ἀπέστειλαν τοὺς στρατιώτας, καθάπερ  ἐκεῖνος προσέταξε. διαλιπὼν δὲ ὀλίγον χρόνον καὶ συναγαγὼν αὐτοὺς οὔτε αὐλητὴν ἄνευ χοροῦ οὔτε ἡγεμόνας ἄνευ ἰδιωτῶν οὐδὲν ἔφη χρησίμους εἶναι· ἐκέλευεν οὖν αὐτοὺς ἀπαλλάττεσθαι ἐκ τῆς χώρας.
+     <milestone ed="Bekker" n="20" unit="line"/>
+     <milestone ed="P" unit="para"/>
+     Διονύσιος τά ἱερὰ περιπορευόμενος, εἰ μὲν τράπεζαν  ἴδοι παρακειμένην χρυσῆν ἢ ἀργυρᾶν, ἀγαθοῦ δαίμονος κελεύσας ἐγχέαι ἐκέλευεν ἀφαιρεῖν, ὅσα δὲ τῶν ἀγαλμάτων  φιάλην εἶχε προτετακότα, εἴπας ἂν ὅτι δέχομαι, ἐξαιρεῖν  ἐκέλευε. τά θʼ ἱμάτια τά τε χρυσᾶ καὶ τοὺς στεφάνους
+     <add>
+      τοὺς
+     </add>
+     <gap/>
+     περιῄρει τῶν ἀγαλμάτων φάσκων αὐτὸς καὶ κουφότερα καὶ  εὐωδέστερα δοῦναι· εἶτα ἱμάτια μὲν λευκά, στεφάνους δὲ  λευκοΐνους περιετίθει.
+    </p>
+    <p lang="it">
+     Cleomene, alla vigilia della numinia, dopo aver dato il rancio ai soldati, salpò apposta; ma prima che la luna salpasse, distribuì le razioni, così che l'ultimo mese passò fino alla numinia. Quelli dunque che sono nell'esercito per la giovinezza, hanno ricevuto il grano in pace, ma chi è stato risparmiato per un mese, invece di se stesso, riceverà la paga di un mese. Il soldato misio Stavelbio ha lasciato un salario di convocazione ai privati, non ce n'è bisogno, ma ai governatori, quando servono soldati, mandano ciascuno una moneta d'argento sulla xenologia. Se Dio dà, elegge, allora li mandano ciascuno di questi cataloghi dal paese. Quanto ai governanti che ricevevano denaro da loro, mandarono i soldati, come aveva comandato. ma dopo che è passato un po' di tempo e li ha riuniti, né una corte senza danze né un sovrano senza soldati servono a nulla; viene espulso dal paese.
+Dionigi, girando per i santuari, se vedeva dell'oro o dell'argento steso su un tavolo, il demone buono della cella, voleva portarselo via, ma quanto alle bottiglie delle statue che aveva in carico, diceva che accetto , voleva escludere. le loro vesti d'oro e le loro corone
+ circonda le statue delle fascine e sembra più sordo e dolce, indossa vesti bianche, e porta corone bianche.
+    </p>
+    <p lang="en">
+     Cleomenes, on the eve of the numinia, and having given the soldiers rations, set sail on purpose; but before the moon, having set sail, he distributed the rations, so that the last month passed until the numinia. Those who, therefore, are in the army for the sake of youth, have received the wheat in peace, but he who has been spared for a month, instead of himself, will receive a month's wages. Stavelbius the Mysian soldier left a convocation salary to private individuals, there is no need for it, but to the governors, when soldiers are required, they each send a silver coin on xenology. If God gives; he elects, then they send them each of these catalogs from the country. As for the rulers who received money from them, they sent the soldiers, as he commanded. but after a little time has passed and he has brought them together, neither a court without a dance nor a ruler without privates is of any use; he is expelled from the country.
+Dionysius, walking around the sanctuaries, if he saw gold or silver lying on a table, the good demon of the cell, he wanted to take it away, but as for the bottles of the statues he had in charge, he said that I accept, he wanted to exclude. their golden garments and their crowns
+ he surrounds the statues of fascines and looks more deaf and sweet; he wears white clothes, and he wears white crowns.
+    </p>
+   </div>
+  
+ </text>
+</TEI.2>

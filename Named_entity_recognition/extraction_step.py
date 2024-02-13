@@ -51,7 +51,6 @@ def annotate_texts(directory_path, target_path):
                         for ent in english_NER.ents:
                             if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
                                 translated_element_en = bs_content.new_tag("note")
-                                print(translated_element_en)
                                 translated_element_en["type"] = "automatic"
                                 translated_element_en["source"] = "Wikidata"
                                 translated_element_en[ent.label_] = ent.text
