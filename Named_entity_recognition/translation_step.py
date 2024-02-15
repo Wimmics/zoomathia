@@ -68,7 +68,7 @@ def main_translation(files, directory_path, translated_data_path):
         element_to_translate = []
 
         if os.path.isfile(file_path):
-            with open(file_path, 'r') as file:
+            with open(file_path, 'r', encoding='UTF-8') as file:
                 # Read the XML file
                 content = file.read()
                 bs_content = bs(content, "xml")

@@ -11,7 +11,7 @@ from Named_entity_recognition.annotation_wikidata import get_NER_from_wikidata
 
 
 def annotate_texts(directory_path, target_path):
-    lang_use_for_extraction = ["en"]#, "it"]
+    lang_use_for_extraction = ["en", "it"]
     element_to_extract = []
     for subdir, _, files in os.walk(directory_path):
         for file_name in files:
@@ -33,7 +33,7 @@ def annotate_texts(directory_path, target_path):
                 requests_per_delay = 1000
 
                 # Delay in seconds
-                delay_duration = 60 * 5  # 1 minute
+                delay_duration = 60 * 6  # 1 minute
                 i = 0
                 for lg in lang_use_for_extraction:
                     # print(lg)
