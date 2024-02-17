@@ -32,8 +32,8 @@ def annotate_texts(directory_path, target_path):
                 # Number of requests before introducing a delay
                 requests_per_delay = 1000
 
-                # Delay in seconds
-                delay_duration = 60 * 6  # 1 minute
+                # Delay in seconds0
+                delay_duration = 60 * 0  # 1 minute
                 i = 0
                 for lg in lang_use_for_extraction:
                     # print(lg)

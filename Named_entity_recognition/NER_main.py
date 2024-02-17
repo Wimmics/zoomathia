@@ -6,7 +6,7 @@ from Named_entity_recognition.translation_to_csv_step import main_transformation
 
 # Obtenez le chemin du répertoire du script
 repertoire_script = os.path.dirname(os.path.abspath(__file__))
-nom_dossier = "tlg0062/tlg054"
+nom_dossier = "phi0975"
 
 # path for the original data
 original_data = os.path.join(repertoire_script, "data/original_files/" + nom_dossier)
@@ -53,7 +53,7 @@ file_name_tobe_delete = ".DS_Store"
 if file_name_tobe_delete in files:
     files.remove(".DS_Store")
 
-main_translation(files, original_directory_path, target_directory_path)
+#main_translation(files, original_directory_path, target_directory_path)
 print("files_translated")
 
 # List all files in the directory
@@ -74,4 +74,4 @@ file_name_tobe_delete = ".DS_Store"
 if file_name_tobe_delete in files:
     files.remove(".DS_Store")
 
-#main_transformation_to_csv(files_extracted, extracted_directory_path, final_directory_path,"textpart")#poem")
+main_transformation_to_csv(files_extracted, extracted_directory_path, final_directory_path,"poem")#poem, section", chapter)
