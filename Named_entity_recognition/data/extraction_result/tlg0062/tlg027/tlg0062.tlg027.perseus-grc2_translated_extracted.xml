@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ 
+  <tei xmlns="http://www.tei-c.org/ns/1.0">
+   <teiheader type="text">
+    <filedesc>
+     <titlestmt>
+      <title>
+       De sacrificiis
+      </title>
+      <title type="sub">
+       Machine readable text
+      </title>
+      <author n="Plut.">
+       Lucian
+      </author>
+      <editor n="Loeb" role="editor">
+       A. M. Harmon
+      </editor>
+      <sponsor>
+       Perseus Project, Tufts University
+      </sponsor>
+      <principal>
+       Gregory Crane
+      </principal>
+      <respstmt>
+       <resp>
+        Prepared under the supervision of
+       </resp>
+       <name>
+        Lisa Cerrato
+       </name>
+       <name>
+        William Merrill
+       </name>
+       <name>
+        Elli Mylonas
+       </name>
+       <name>
+        David Smith
+       </name>
+      </respstmt>
+      <funder n="org:NEH">
+       The National Endowment for the Humanities
+      </funder>
+      <funder n="org:Google">
+       Google Digital Humanities Awards Program
+      </funder>
+     </titlestmt>
+     <extent>
+     </extent>
+     <publicationstmt>
+      <publisher>
+       Trustees of Tufts University
+      </publisher>
+      <pubplace>
+       Medford, MA
+      </pubplace>
+      <authority>
+       Perseus Project
+      </authority>
+     </publicationstmt>
+     <sourcedesc>
+      <listbibl>
+       <biblstruct>
+        <monogr>
+         <author>
+          Lucian
+         </author>
+         <title>
+          Works
+         </title>
+         <respstmt>
+          <resp>
+           with an English Translation by
+          </resp>
+          <name>
+           A. M. Harmon
+          </name>
+         </respstmt>
+         <imprint>
+          <pubplace>
+           Cambridge, MA
+          </pubplace>
+          <publisher>
+           Harvard University Press
+          </publisher>
+          <pubplace>
+           London
+          </pubplace>
+          <publisher>
+           William Heinemann Ltd.
+          </publisher>
+          <date>
+           1921
+          </date>
+         </imprint>
+         <biblscope type="volume">
+          3
+         </biblscope>
+        </monogr>
+       </biblstruct>
+      </listbibl>
+     </sourcedesc>
+    </filedesc>
+    <encodingdesc>
+     <refsdecl n="CTS">
+      <crefpattern matchpattern="(\\w+)" n="section" replacementpattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n=\'$1\'])">
+       <p>
+        This pointer pattern extracts section
+       </p>
+       <p lang="it">
+        Questo modello di puntatore estrae la sezione
+       </p>
+       <p lang="en">
+        This pointer pattern extracts section
+       </p>
+      </crefpattern>
+     </refsdecl>
+     <editorialdecl>
+      <correction method="silent">
+       <p>
+        optical character recognition
+       </p>
+       <p lang="it">
+        riconoscimento ottico dei caratteri
+        <note DBPEDIA_ENT="riconoscimento ottico dei caratteri" category="" end="8" lang="it" link="http://it.dbpedia.org/resource/Riconoscimento_ottico_dei_caratteri" score="1.0" source="DBpedia" start="7" type="automatic">
+        </note>
+       </p>
+       <p lang="en">
+        optical character recognition
+        <note DBPEDIA_ENT="optical character recognition" category="" end="8" lang="en" link="http://dbpedia.org/resource/Optical_character_recognition" score="1.0" source="DBpedia" start="7" type="automatic">
+        </note>
+       </p>
+      </correction>
+     </editorialdecl>
+     <refsdecl>
+      <refstate unit="section">
+      </refstate>
+     </refsdecl>
+    </encodingdesc>
+    <profiledesc>
+     <langusage>
+      <language ident="greek">
+       Greek
+      </language>
+     </langusage>
+    </profiledesc>
+   </teiheader>
+   <text xml:lang="grc">
+    <div n="urn:cts:greekLit:tlg0062.tlg027.perseus-grc2" type="edition">
+     <pb n="v.3.p.154">
+     </pb>
+     <div n="1" subtype="section" type="textpart">
+      <p>
+       ἃ μὲν γὰρ ἐν ταῖς θυσίαις οἱ μάταιοι πράττουσι καὶ ταῖς ἑορταῖς καὶ
+                        προσόδοις τῶν θεῶν καὶ ἃ αἰτοῦσι καὶ ἃ εὔχονται καὶ ἃ γιγνώσκουσι περὶ
+                        αὐτῶν, οὐκ οἶδα εἴ τις οὕτως κατηφής ἐστι καὶ λελυπημένος ὅστις οὐ γελάσεται
+                        τὴν ἀβελτερίαν· ἐπιβλέψας τῶν δρωμένων. καὶ πολύ γε, οἶμαι, πρότερον τοῦ
+                        γελᾶν πρὸς ἑαυτὸν ἐξετάσει πότερον εὐσεβεῖς αὐτοὺς χρὴ καλεῖν ἢ τοὐναντίον
+                        θεοῖς ἐχθροὺς καὶ κακοδαίμονας, οἵ γε οὕτω ταπεινὸν καὶ ἀγεννὲς τὸ θεῖον
+                        ὑπειλήφασιν ὥστε εἶναι ἀνθρώπων ἐνδεὲς καὶ κολακευόμενον ἥδεσθαι καὶ
+                        ἀγανακτεῖν ἀμελούμενον. τὰ γοὺν Αἰτωλικὰ πάθη καὶ τὰς τῶν Καλυδωνίων
+                        συμφορὰς καὶ τοὺς τοσούτους φόνους καὶ τὴν Μελεάγρου διάλυσιν, πάντα ταῦτα
+                        ἔργα φασὶν εἶναι τῆς Ἀρτέμιδος μεμψιμοιρούσης ὅτι μὴ παρελήφθη πρὸς τὴν
+                        θυσίαν ὑπὸ τοῦ Οἰνέως· οὕτως ἄρα βαθέως καθίκετο αὐτῆς ἡ τῶν ἱερείων διαφορά
+                        καί μοι δοκῶ ὁρᾶν αὐτὴν ἐν τῷ οὐρανῷ τότε μόνην τῶν ἄλλων θεῶν εἰς Οἰνέως
+                        πεπορευμένων, δεινὰ ποιοῦσαν καὶ σχετλιάζουσαν οἵας ἑορτῆς ἀπολειφθήσεται.
+       <pb n="v.3.p.156">
+       </pb>
+      </p>
+      <p lang="it">
+       per ciò che non c'è nei sacrifici che fanno invano e nelle feste e
+                        i doni degli dei e cosa chiedono, cosa desiderano e cosa sanno
+                        di loro non li ho visti così cupi, chi non ride è anche triste
+                        l'abelteriano; hai supervisionato le azioni. e molto prima
+                        ridono di se stessi esaminando chi li adora quando chiamano o il contrario
+                        dei nemici e demone malvagio, che è quindi umile e non nato il dio
+                        presumere che sia un essere umano e lusingato di venire e
+                        negligente indignato. le antiche passioni etoliche e quelle dei Caledoni
+                        calamità e simili omicidi e la dissoluzione di Meleagro, tutto questo
+                        le opere d'arte sono di Artemis mepsimourisus perché non è stata portata al
+                        sacrificio sotto Oineos; come punizione la differenza dei preti
+                        e cerco di vederla nel cielo allora sola tra gli altri dei di Eneo
+                        di coloro che viaggiavano, soffrivano e bestemmiavano ogni volta che la festa veniva abolita.
+       <note DBPEDIA_ENT="Caledoni" category="" end="694" lang="it" link="http://it.dbpedia.org/resource/Caledoni" score="0.9999999998211706" source="DBpedia" start="691" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Meleagro" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="774" lang="it" link="http://it.dbpedia.org/resource/Meleagro" score="0.9999999990888" source="DBpedia" start="771" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       for what is not in the sacrifices they do in vain and in the feasts and
+                        bounties of the gods and what they ask and what they wish and what they know about
+                        of them, I have not seen them so gloomy, he who does not laugh is also sad
+                        the abelterian; you oversaw the actions. and much earlier than that
+                        they laugh at themselves examine who worships them when they call or the opposite
+                        enemy gods and evil demon, who is thus humble and unborn the god
+                        to assume that he is a human being and flattered to come and
+                        indignant negligent. the old Aetolian passions and those of the Caledonians
+                        calamity and such murders and the dissolution of Meleagro, all these
+                        works of art are of Artemis mepsimourisus because she was not taken to the
+                        sacrifice under Oineos; as her punishment the difference of the priests
+                        and I try to see her in the sky then alone of the other gods in Oeneos
+                        of those who traveled, they were suffering and blaspheming whenever the holiday was abolished.
+       <note DBPEDIA_ENT="demon" category="" end="530" lang="en" link="http://dbpedia.org/resource/Demon" score="0.9998944909806564" source="DBpedia" start="527" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Artemis" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="897" lang="en" link="http://dbpedia.org/resource/Artemis" score="0.9999975599569308" source="DBpedia" start="894" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="2" subtype="section" type="textpart">
+      <p>
+       τοὺς δʼ αὖ Αἰθίοπας καὶ μακαρίους καὶ τρισευδαίμονας εἴποι τις ἄν, εἴ γε
+                        ἀπομνημονεύει τὴν χάριν αὐτοῖς ὁ Ζεὺς ἣν πρὸς αὐτὸν ἐπεδείξαντο δώδεκα ἑξῆς
+                        ἡμέρας ἑστιάσαντες, καὶ ταῦτα ἐπαγόμενον καὶ τοὺς ἄλλους θεούς. οὕτως οὐδέν,
+                        ὡς ἔοικεν, ἀμισθὶ ποιοῦσιν ὧν ποιοῦσιν, ἀλλὰ πωλοῦσιν τοῖς ἀνθρώποις τἀγαθά,
+                        καὶ ἔνεστι πρίασθαι παρʼ αὐτῶν τὸ μὲν ὑγιαίνειν, εἰ τύχοι, βοϊδίου, τὸ δὲ
+                        πλουτεῖν βοῶν τεττάρων, τὸ δὲ βασιλεύειν ἑκατόμβης, τὸ δὲ σῶον ἐπανελθεῖν ἐξ
+                        Ἰλίου εἰς Πύλον ταύρων ἐννέα, καὶ τὸ ἐκ τῆς Αὐλίδος εἰς Ἴλιον διαπλεῦσαι
+                        παρθένου βασιλικῆς. ἡ μὲν γὰρ Ἑκάβη τὸ μὴ ἁλῶναι τὴν πόλιν τότε ἐπρίατο παρὰ
+                        τῆς Ἀθηνᾶς βοῶν δώδεκα καὶ πέπλου. εἰκάζειν δὲ χρὴ πολλὰ εἶναι ἀλεκτρυόνος
+                        καὶ στεφάνου καὶ λιβανωτοῦ μόνου παρʼ αὐτοῖς ὤνια.
+      </p>
+      <p lang="it">
+       Gli Etiopi, beati e benedetti, dissero loro se, sì,
+                        Zeus ricorda il favore mostratogli dai dodici
+                        concentrandosi sul giorno, e questi e gli altri dei furono scacciati. quindi niente
+                        come ἔiken, fanno quello che fanno senza essere pagati, ma vendono beni alla gente,
+                        e c'era tra loro un prete che fu guarito, se per caso, da un toro, ma
+                        essere ricco con la ricchezza di quattro, regnare su centomila ed essere salvato da
+                        Ilio al Pilone nove tori, e dall'Aulis a Ilio navighi
+                        basilico vergine. perché in quel tempo non disturbavo la città
+                        di Atena con dodici voci e un velo. ma ipotizzano che sia un alectrione
+                        e accanto a loro solo una ghirlanda e un turibolo.
+       <note DBPEDIA_ENT="Zeus" category="" end="85" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="0.9999999999399733" source="DBpedia" start="83" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="basilico" category="DBpedia:Species" end="652" lang="it" link="http://it.dbpedia.org/resource/Ocimum_basilicum" score="0.9999999768608634" source="DBpedia" start="649" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Atena" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="742" lang="it" link="http://it.dbpedia.org/resource/Atena" score="0.9999596511404828" source="DBpedia" start="739" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="turibolo" category="" end="876" lang="it" link="http://it.dbpedia.org/resource/Turibolo" score="0.9999999999998863" source="DBpedia" start="873" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       The Ethiopians, blessed and blessed, said to them if, yes,
+                        Zeus remembers the favor shown to him by twelve
+                        focusing on the day, and these and the other gods were driven away. so nothing
+                        as ἔiken, they do what they do without pay, but they sell goods to the people,
+                        and there was a priest among them that they were healed, if by chance, of a bull, but
+                        to be rich with the wealth of four, and to reign a hundred thousand, and to be saved from
+                        Ilio to Pylon nine bulls, and from the Aulis to Ilio you sail
+                        virgin basil. because I did not disturb the city at that time
+                        of Athena with twelve voices and a veil. but they speculate that he is an alectryon
+                        and a wreath and a censer alone beside them.
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="92" lang="en" link="http://dbpedia.org/resource/Zeus" score="0.9999999999617444" source="DBpedia" start="90" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="city" category="" end="725" lang="en" link="http://dbpedia.org/resource/City" score="0.913513020454637" source="DBpedia" start="722" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Athena" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="770" lang="en" link="http://dbpedia.org/resource/Athena" score="0.9999999999996589" source="DBpedia" start="767" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="veil" category="" end="802" lang="en" link="http://dbpedia.org/resource/Veil" score="0.9999927080861942" source="DBpedia" start="799" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="alectryon" category="Wikidata:Q95074,Wikidata:Q24229398,Wikidata:Q15410431,DUL:Agent,DBpedia:FictionalCharacter,DBpedia:Agent,DBpedia:MythologicalFigure" end="841" lang="en" link="http://dbpedia.org/resource/Alectryon_(mythology)" score="0.7032772276399946" source="DBpedia" start="838" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="censer" category="" end="894" lang="en" link="http://dbpedia.org/resource/Censer" score="0.9293771851960818" source="DBpedia" start="891" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="3" subtype="section" type="textpart">
+      <p>
+       ταῦτά γε, οἶμαι, καὶ ὁ Χρύσης ἐπιστάμενος ἅτε ἱερεὺς ὢν καὶ γέρων καὶ τὰ
+                        θεῖα σοφός, ἐπειδὴ ἄπρακτος ἀπῄει παρὰ τοῦ Ἀγαμέμνονος, ὡς ἂν καὶ
+                        προδανείσας τῷ Ἀπόλλωνι τὴν χάριν δικαιολογεῖται καὶ ἀπαιτεῖ τὴν ἀμοιβὴν καὶ
+                        μόνον οὐκ ὀνειδίζει λέγων,
+       <q type="unspecified">
+        ὦ βέλτιστε Ἄπολλον, ἐγὼ μέν
+                            σου τὸν νεὼν τέως ἀστεφάνωτον ὄντα πολλάκις ἐστεφάνωσα, καὶ τοσαῦτά σοι
+                            μηρία ταύρων τε καὶ αἰγῶν ἔκαυσα ἐπὶ τῶν βωμῶν, σὺ δὲ ἀμελεῖς μου
+                            τοιαῦτα πεπονθότος καὶ παρʼ οὐδὲν τίθεσαι ʼτὸν εὐεργέτην.
+       </q>
+       τοιγαροῦν
+                        οὕτω κατεδυσώπησεν αὐτὸν ἐκ τῶν λόγων, ὥστε ἁρπασάμενος τὰ τόξα
+       <pb n="v.3.p.158">
+       </pb>
+       καὶ ἐπὶ τοῦ ναυστάθμου καθίσας ἑαυτὸν κατετόξευσε τῷ
+                        λοιμῷ τοὺς Ἀχαιοὺς αὐταῖς ἡμιόνοις καὶ κυσίν.
+      </p>
+      <p lang="it">
+       queste cose, io sono, e Crise, che si crede sacerdote, è anche lui un vecchio e il
+                        zia saggia, perché morì senza azione davanti ad Agamennone, anche se
+                        hai già prestato il favore ad Apollo, sei giustificato e chiedi la ricompensa e
+                        solo che non esita a dire: "Apollo ottimale", ho detto
+                            Molte volte ho incoronato il tuo essere giovane, prima senza corona, e questo per te
+                            Ho bruciato sugli altari le cosce dei tori e dei capri, ma tu mi trascuri
+                            Così triste e nonostante nulla, ti fidi del benefattore. loro litigano
+                        tanto lo costernò dalle parole, tanto che, afferrati gli archi e seduto sul naustatmus, si lanciò al
+                        una piaga sugli Achei questi halfling e Cisine.
+       <note PER="Agamennone" end="172" lang="it" link="https://www.wikidata.org/wiki/Q128176" score="0.7097" source="Wikidata" start="162" type="automatic">
+       </note>
+       <note PER="Apollo" end="243" lang="it" link="https://www.wikidata.org/wiki/Q37340" score="0.612" source="Wikidata" start="237" type="automatic">
+       </note>
+       <note PER="Apollo" end="345" lang="it" link="https://www.wikidata.org/wiki/Q37340" score="0.612" source="Wikidata" start="339" type="automatic">
+       </note>
+       <note LOC="Achei" end="850" lang="it" link="https://www.wikidata.org/wiki/Q191962" score="0.7931" source="Wikidata" start="845" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Crise" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="33" lang="it" link="http://it.dbpedia.org/resource/Crise" score="1.0" source="DBpedia" start="31" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Agamennone" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="165" lang="it" link="http://it.dbpedia.org/resource/Agamennone" score="0.9999999999996589" source="DBpedia" start="162" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="240" lang="it" link="http://it.dbpedia.org/resource/Apollo" score="0.9999999997708073" source="DBpedia" start="237" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="342" lang="it" link="http://it.dbpedia.org/resource/Apollo" score="0.9999999997708073" source="DBpedia" start="339" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Achei" category="" end="848" lang="it" link="http://it.dbpedia.org/resource/Achei" score="0.9999999996103952" source="DBpedia" start="845" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="halfling" category="" end="861" lang="it" link="http://it.dbpedia.org/resource/Halfling" score="0.9999999992371613" source="DBpedia" start="858" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       these things, I am, and Chrysis, who is believed to be a priest, is also an old man and the
+                        wise aunt, because he died without action before Agamemnon, even though
+                        you have already lent Apollo the favor, you are justified and demand the reward and
+                        only he does not hesitate to say, ``Optimal Apollo,'' I said
+                            I have crowned your young, previously uncrowned being many times, and this much to you
+                            I burned the thighs of bulls and goats on the altars, but you neglect me
+                            So sad and in spite of nothing, you trust the benefactor. they fight
+                        so he dismayed him from the words, so that seizing the bows and sitting on the naustatmus, he launched himself at the
+                        a plague on the Achaeans these halflings and Cysines.
+       <note DBPEDIA_ENT="Chrysis" category="" end="33" lang="en" link="http://dbpedia.org/resource/Chrysis_(wasp)" score="0.95509041248824" source="DBpedia" start="31" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Agamemnon" category="" end="175" lang="en" link="http://dbpedia.org/resource/Agamemnon" score="0.9999999008526337" source="DBpedia" start="172" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="244" lang="en" link="http://dbpedia.org/resource/Apollo" score="0.9999837352318631" source="DBpedia" start="241" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="374" lang="en" link="http://dbpedia.org/resource/Apollo" score="0.9999837352318631" source="DBpedia" start="371" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="plague" category="Wikidata:Q12136,DBpedia:Disease" end="872" lang="en" link="http://dbpedia.org/resource/Bubonic_plague" score="0.9124303315400055" source="DBpedia" start="869" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="halflings" category="" end="901" lang="en" link="http://dbpedia.org/resource/Halfling" score="1.0" source="DBpedia" start="898" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="4" subtype="section" type="textpart">
+      <p>
+       ἐπεὶ δὲ ἅπαξ τοῦ Ἀπόλλωνος ἐμνήσθην, βούλομαι καὶ τὰ ἄλλα εἰπεῖν, ἃ περὶ
+                        αὐτοῦ οἱ σοφοὶ τῶν ἀνθρώπων λέγουσιν, οὐχ ὅσα περὶ τοὺς ἔρωτας ἐδυστύχησεν
+                        οὐδὲ τοῦ Ὑακίνθου τὸν φόνον οὐδὲ τῆς Δάφνης τὴν ὑπεροψίαν, ἀλλʼ ὅτι καὶ
+                        καταγνωσθεὶς ἐπὶ τῷ τῶν Κυκλώπων θανάτῳ καὶ ἐξοστρακισθεὶς διὰ τοῦτο ἐκ τοῦ
+                        οὐρανοῦ, ἐπέμφθη εἰς τὴν γῆν ἀνθρωπίνῃ χρησόμενος τῇ τύχῃ· ὅτε δὴ καὶ
+                        ἐθήτευσεν ἐν Θετταλίᾳ παρὰ Ἀδμήτῳ καὶ ἐν Φρυγίᾳ παρὰ Λαομέδοντι, παρὰ τούτῳ
+                        μέν γε οὐ μόνος ἀλλὰ μετὰ τοῦ Ποσειδῶνος, ἀμφότεροι πλινθεύοντες ὑπʼ ἀπορίας
+                        καὶ ἐργαζόμενοι τὸ τεῖχος· καὶ οὐδὲ ἐντελῆ τὸν μισθὸν ἐκομίσαντο παρὰ τοῦ
+                        Φρυγός, ἀλλὰ προσώφειλεν αὐτοῖς πλέον ἢ τριάκοντα, φασί, δραχμὰς Τρωϊκάς.
+      </p>
+      <p lang="it">
+       ma dopo che si è parlato di Apollo, voglio che parlino anche gli altri, che ne dite?
+                        i saggi degli uomini gli dicono non che hanno fallito nelle relazioni amorose
+                        né l'omicidio di Giacinto né l'arroganza di Dafne, ma perché
+                        condannato alla morte dei Ciclopi e quindi ostracizzato
+                        del cielo, venne sulla terra un uomo che fu usato dalla fortuna; poi
+                        tuttavia prestò servizio in Thetalia sotto Admeto e in Frigia sotto Laomedonte
+                        Non vado da solo ma con Poseidone, entrambi tremanti di meraviglia
+                        e lavorando sul muro, e non ricevevano per questo il salario intero
+                        Frigi, ma doveva loro più di trenta, fassi, dracme di Troia.
+       <note PER="Apollo" end="41" lang="it" link="https://www.wikidata.org/wiki/Q37340" score="0.6208" source="Wikidata" start="35" type="automatic">
+       </note>
+       <note ORG="Ciclopi" end="336" lang="it" link="https://www.wikidata.org/wiki/Q128430" score="0.6742" source="Wikidata" start="329" type="automatic">
+       </note>
+       <note PER="Admeto" end="525" lang="it" link="https://www.wikidata.org/wiki/Q192109" score="0.6227" source="Wikidata" start="519" type="automatic">
+       </note>
+       <note LOC="Frigia" end="537" lang="it" link="https://www.wikidata.org/wiki/Q32579" score="0.7552" source="Wikidata" start="531" type="automatic">
+       </note>
+       <note LOC="Laomedonte
+                        " end="579" lang="it" link="https://www.wikidata.org/wiki/Q332324" score="0.9581" source="Wikidata" start="544" type="automatic">
+       </note>
+       <note PER="Poseidone" end="612" lang="it" link="https://www.wikidata.org/wiki/Q41127" score="0.8048" source="Wikidata" start="603" type="automatic">
+       </note>
+       <note LOC="Frigi" end="767" lang="it" link="https://www.wikidata.org/wiki/Q149386" score="0.7798" source="Wikidata" start="762" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="37" lang="it" link="http://it.dbpedia.org/resource/Apollo" score="1.0" source="DBpedia" start="35" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Dafne" category="" end="265" lang="it" link="http://it.dbpedia.org/resource/Famiglia_Duck" score="0.9702637889936595" source="DBpedia" start="262" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Ciclopi" category="" end="332" lang="it" link="http://it.dbpedia.org/resource/Ciclopi" score="0.9999999999828333" source="DBpedia" start="329" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Admeto" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="522" lang="it" link="http://it.dbpedia.org/resource/Admeto_(mitologia)" score="0.9728850764335408" source="DBpedia" start="519" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Laomedonte" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="547" lang="it" link="http://it.dbpedia.org/resource/Laomedonte" score="1.0" source="DBpedia" start="544" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Poseidone" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="606" lang="it" link="http://it.dbpedia.org/resource/Poseidone" score="0.9999999999961346" source="DBpedia" start="603" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="salario" category="" end="726" lang="it" link="http://it.dbpedia.org/resource/Salario" score="0.9965616836444635" source="DBpedia" start="723" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Frigi" category="" end="765" lang="it" link="http://it.dbpedia.org/resource/Frigia" score="0.9662170978797119" source="DBpedia" start="762" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="dracme" category="" end="809" lang="it" link="http://it.dbpedia.org/resource/Dracma" score="0.9997506443803779" source="DBpedia" start="806" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Troia" category="" end="819" lang="it" link="http://it.dbpedia.org/resource/Troia" score="0.9999122219307861" source="DBpedia" start="816" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       but after Apollo has been mentioned, I want the others to speak as well, what about
+                        the wise of men say to him, not that they have failed in love affairs
+                        neither the murder of Iacinthus nor the arrogance of Daphne, but because
+                        condemned to the death of the Cyclops and thus ostracized from
+                        of heaven, came to the earth a man who was used by fortune; then
+                        served in Thetalia under Admetus and in Phrygia under Laomedon, nevertheless
+                        I do not go alone but with Poseidon, both cringing in wonder
+                        and working on the wall, and they did not receive a full wage for it
+                        Phrygians, but he owed them more than thirty, fassi, drachmas of Troy.
+       <note ORG="Apollo" end="23" lang="en" link="https://www.wikidata.org/wiki/Q37340" score="0.7922" source="Wikidata" start="17" type="automatic">
+       </note>
+       <note ORG="Cyclops" end="343" lang="en" link="https://www.wikidata.org/wiki/Q128430" score="0.8654" source="Wikidata" start="336" type="automatic">
+       </note>
+       <note ORG="Admetus" end="514" lang="en" link="https://www.wikidata.org/wiki/Q192109" score="0.8782" source="Wikidata" start="507" type="automatic">
+       </note>
+       <note ORG="Phrygia" end="529" lang="en" link="https://www.wikidata.org/wiki/Q32579" score="0.9061" source="Wikidata" start="522" type="automatic">
+       </note>
+       <note PERSON="Laomedon" end="544" lang="en" link="https://www.wikidata.org/wiki/Q977461" score="0.8912" source="Wikidata" start="536" type="automatic">
+       </note>
+       <note PERSON="Poseidon" end="618" lang="en" link="https://www.wikidata.org/wiki/Q906633" score="0.718" source="Wikidata" start="610" type="automatic">
+       </note>
+       <note NORP="Phrygians" end="770" lang="en" link="https://www.wikidata.org/wiki/Q149386" score="0.893" source="Wikidata" start="761" type="automatic">
+       </note>
+       <note GPE="Troy" end="830" lang="en" link="https://www.wikidata.org/wiki/Q186587" score="0.6387" source="Wikidata" start="826" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="19" lang="en" link="http://dbpedia.org/resource/Apollo" score="0.9999998925982312" source="DBpedia" start="17" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Daphne" category="" end="265" lang="en" link="http://dbpedia.org/resource/Daphne" score="0.9999897709004916" source="DBpedia" start="262" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Cyclops" category="" end="339" lang="en" link="http://dbpedia.org/resource/Cyclopes" score="1.0" source="DBpedia" start="336" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Admetus" category="" end="510" lang="en" link="http://dbpedia.org/resource/Admetus_of_Pherae" score="0.99999999999784" source="DBpedia" start="507" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Phrygia" category="" end="525" lang="en" link="http://dbpedia.org/resource/Phrygia" score="0.9999999081773054" source="DBpedia" start="522" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Laomedon" category="" end="539" lang="en" link="http://dbpedia.org/resource/Laomedon_of_Troy" score="1.0" source="DBpedia" start="536" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Poseidon" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="613" lang="en" link="http://dbpedia.org/resource/Poseidon" score="1.0" source="DBpedia" start="610" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Phrygians" category="" end="764" lang="en" link="http://dbpedia.org/resource/Phrygians" score="0.9999924317829609" source="DBpedia" start="761" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="drachmas" category="DBpedia:Currency" end="817" lang="en" link="http://dbpedia.org/resource/Greek_drachma" score="1.0" source="DBpedia" start="814" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Troy" category="" end="829" lang="en" link="http://dbpedia.org/resource/Troy" score="1.0" source="DBpedia" start="826" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="5" subtype="section" type="textpart">
+      <p>
+       ἢ γὰρ οὐ ταῦτα σεμνολογοῦσιν οἱ ποιηταὶ περὶ τῶν θεῶν καὶ πολὺ τούτων
+                        ἱερώτερα περί τε Ἡφαίστου καὶ Προμηθέως καὶ Κρόνου καὶ Ῥέας καὶ σχεδὸν ὅλης
+                        τῆς τοῦ Διὸς οἰκίας; καὶ ταῦτα παρακαλέσαντες τὰς Μούσας συνῳδοὺς ἐν ἀρχῇ
+                        τῶν ἐπῶν, ὑφʼ ὧν δὴ ἔνθεοι γενόμενοι, ὡς τὸ εἰκός, ᾅδουσιν ὡς ὁ μὲν Κρόνος
+                        ἐπειδὴ τάχιστα ἐξέτεμε τὸν πατέρα τὸν Οὐρανόν, ἐβασίλευσέν τε ἐν αὐτῷ καὶ τὰ
+                        τέκνα κατήσθιεν ὥσπερ ὁ Ἀργεῖος Θυέστης ὕστερον· ὁ δὲ Ζεὺς ˘ κλαπεὶς ὑπὸ τῆς
+                        Ῥέας ὑποβαλομένης τὸν λίθον εἰς τὴν Κρήτην ἐκτεθεὶς ὑπʼ αἰγὸς ἀνετράφη
+                        καθάπερ ὁ Τήλεφος
+       <pb n="v.3.p.160">
+       </pb>
+       ὑπὸ ἐλάφου καὶ ὁ Πέρσης Κῦρος ὁ
+                        πρότερος ὑπὸ τῆς κυνός, εἶτʼ ἐξελάσας τὸν πατέρα καὶ εἰς τὸ δεσμωτήριον
+                        καταβαλὼν αὐτὸς ἔσχε τὴν ἀρχὴν ἔγημε δὲ πολλὰς μὲν καὶ ἄλλας, ὑστάτην δὲ τὴν
+                        ἀδελφὴν κατὰ τοὺς Περσῶν καὶ Ἀσσυρίων νόμους· ἐρωτικὸς δὲ ὢν καὶ εἰς τὰ
+                        ἀφροδίσια ἐκκεχυμένος ˘ ῥᾳδίως ἐνέπλησε παίδων τὸν οὐρανόν, . τοὺς μὲν ἐξ
+                        ὁμοτίμων ποιησάμενος, ἐνίους δὲ νόθους ἐκ τοῦ θνητοῦ καὶ ἐπιγείου γένους,
+                        ἄρτι μὲν ὁ γεννάδας γενόμενος χρυσός, ἄρτι δὲ ταῦρος ἢ κύκνος ἢ ἀετός, καὶ
+                        ὅλως ποικιλώτερος αὐτοῦ Πρωτέως· μόνην δὲ τὴν Ἀθηνᾶν ἔφυσεν ἐκ τῆς ἑαυτοῦ
+                        κεφαλῆς ὑπʼ αὐτὸν ἀτεχνῶς τὸν ἐγκέφαλον συλλαβών τὸν μὲν γὰρ Διόνυσον
+                        ἡμιτελῆ, φασίν, ἐκ τῆς μητρὸς ἔτι καιομένης ἁρπάσας ἐν τῷ μηρῷ φέρων
+                        κατώρυξε κᾆτα ἐξέτεμεν τῆς ὠδῖνος ἐνστάσης.
+      </p>
+      <p lang="it">
+       Oppure non è questo ciò che i poeti intendono degli dei e di molti di loro
+                        più sacro su Efesto e Prometeo e Saturno e Rea e quasi tutti
+                        della casa di Zeus? e questi in principio supplicavano le Muse
+                        della terra, affinché coloro che non nascono come dei, come gli eikos, si vestiranno come Saturno
+                        perché abbiamo scomunicato subito il padre del Cielo, ha regnato in lui e il
+                        ai bambini piace sempre l'argivo Tieste, ma Zeus le deruba
+                        Ῥæa, dopo aver posto la pietra a Creta, la espose a una capra
+                        e Telephos sotto un cervo e il persiano Kyros the
+                        prima da sotto il segugio, se fai uscire il padre di prigione
+                        quando ha pagato da principio, siamo diventati tanti, l'uno e l'altro, e hanno trovato il
+                        fratello secondo i Persiani e gli Assiri n spalle; ma è anche erotico
+                        emanando afrodisiacamente ˘ ῥᾳδως riempì il cielo di bambini, . quelli miei
+                        dei poeti onorevoli, ma degli ingiusti della razza mortale e mortale,
+                        quanto più dell'oro calvo, e quanto più un toro o un cigno o un'aquila, e
+                        tutti più diversi del suo Proteo; ma solo Atena soffiò da se stesso
+                        della testa sotto di lui ingenuamente le sillabe dell'encefalo il me perché Dioniso
+                        Incompleto
+                        Ha abbattuto gli ᾆta exetemen degli ḍdinos instasis.
+       <note DBPEDIA_ENT="Efesto" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="122" lang="it" link="http://it.dbpedia.org/resource/Efesto" score="1.0" source="DBpedia" start="119" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Prometeo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="131" lang="it" link="http://it.dbpedia.org/resource/Prometeo" score="0.9999999999997726" source="DBpedia" start="128" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="208" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="205" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Muse" category="" end="252" lang="it" link="http://it.dbpedia.org/resource/Teatro_delle_Muse" score="0.9995705263894913" source="DBpedia" start="249" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Tieste" category="" end="537" lang="it" link="http://it.dbpedia.org/resource/Tieste" score="1.0" source="DBpedia" start="534" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="548" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="545" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Creta" category="Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:PopulatedPlace" end="620" lang="it" link="http://it.dbpedia.org/resource/Creta" score="0.9999999950973688" source="DBpedia" start="617" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="fai" category="Wikidata:Q349,Wikidata:Q1914636,Http://www.ontologydesignpatterns.org/ont/d0.owl#Activity,DBpedia:Activity,DBpedia:Sport" end="777" lang="it" link="http://it.dbpedia.org/resource/Federazione_calcistica_dell'Irlanda" score="0.7058136060575493" source="DBpedia" start="774" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Persiani" category="" end="966" lang="it" link="http://it.dbpedia.org/resource/I_Persiani" score="0.947246400937577" source="DBpedia" start="963" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Assiri" category="" end="981" lang="it" link="http://it.dbpedia.org/resource/Assiria" score="1.0" source="DBpedia" start="978" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="aquila" category="DBpedia:Species" end="1300" lang="it" link="http://it.dbpedia.org/resource/Aquila" score="0.9999848854925786" source="DBpedia" start="1296" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Proteo" category="" end="1360" lang="it" link="http://it.dbpedia.org/resource/Orestea" score="0.6845021449725729" source="DBpedia" start="1356" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Atena" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="1376" lang="it" link="http://it.dbpedia.org/resource/Atena" score="0.999999999994543" source="DBpedia" start="1372" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="encefalo" category="" end="1480" lang="it" link="http://it.dbpedia.org/resource/Encefalo" score="0.8035525557987326" source="DBpedia" start="1476" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       Or is this not what the poets mean about the gods and many of them
+                        more sacred about Hephaestus and Prometheus and Saturn and Rhea and almost all
+                        of the house of Zeus? and these, supplicating the Muses in the beginning
+                        of the earth, so that those who are not born as gods, like the eikos, will dress like Saturn
+                        because we quickly excommunicated the father Heaven, reigned in him and the
+                        children always like the Argive Thyestes later; but Zeus ˘ stolen from her
+                        Ῥæa, having laid the stone on Crete, exposed it to a goat
+                        and Telephos under a deer and the Persian Kyros the
+                        first from under the hound, if you let the father out of prison
+                        when he paid the beginning, we became many, one and another, and they found the
+                        brother according to the Persians and Assyrians n shoulders; but he is also erotic
+                        aphrodisiacally emanating ˘ ῥᾳδως filled the sky with children, . those of me
+                        of the honorable poets, but of the unrighteous of the mortal and mortal race,
+                        how much more than the bald born gold, and how much more a bull or a swan or an eagle, and
+                        all more diverse than his Proteus; but Athena alone he blew from himself
+                        of the head under him artlessly the encephalon syllables the me because Dionysus
+                        Incomplete
+                        He brought down the ᾆta exetemen of the ḍdinos instasis.
+       <note DBPEDIA_ENT="Hephaestus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="119" lang="en" link="http://dbpedia.org/resource/Hephaestus" score="1.0" source="DBpedia" start="116" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Prometheus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="134" lang="en" link="http://dbpedia.org/resource/Prometheus" score="1.0" source="DBpedia" start="131" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Saturn" category="Wikidata:Q634,Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:CelestialBody,DBpedia:Planet" end="149" lang="en" link="http://dbpedia.org/resource/Saturn" score="0.999999817112342" source="DBpedia" start="146" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Rhea" category="Wikidata:Q12136,DBpedia:Disease" end="160" lang="en" link="http://dbpedia.org/resource/Diarrhea" score="0.9880234736387397" source="DBpedia" start="157" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="220" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="217" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Muses" category="" end="254" lang="en" link="http://dbpedia.org/resource/Muses" score="1.0" source="DBpedia" start="251" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Saturn" category="Wikidata:Q634,Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:CelestialBody,DBpedia:Planet" end="387" lang="en" link="http://dbpedia.org/resource/Saturn" score="0.999999817112342" source="DBpedia" start="384" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="excommunicated" category="" end="437" lang="en" link="http://dbpedia.org/resource/Excommunication" score="0.9999910575044971" source="DBpedia" start="434" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Heaven" category="" end="463" lang="en" link="http://dbpedia.org/resource/Heaven" score="0.9999961104832136" source="DBpedia" start="460" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Argive" category="Wikidata:Q3455524,Schema:Place,Schema:AdministrativeArea,DBpedia:Region,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:AdministrativeRegion" end="543" lang="en" link="http://dbpedia.org/resource/Argos,_Peloponnese" score="0.9995871854660119" source="DBpedia" start="540" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Thyestes" category="" end="550" lang="en" link="http://dbpedia.org/resource/Thyestes" score="1.0" source="DBpedia" start="547" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="570" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="567" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Crete" category="Wikidata:Q23442,Schema:Place,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Island" end="647" lang="en" link="http://dbpedia.org/resource/Crete" score="0.999817375203827" source="DBpedia" start="644" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="goat" category="" end="670" lang="en" link="http://dbpedia.org/resource/Goat" score="0.9999868757395863" source="DBpedia" start="667" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Telephos" category="" end="703" lang="en" link="http://dbpedia.org/resource/Telephus" score="1.0" source="DBpedia" start="700" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="deer" category="" end="720" lang="en" link="http://dbpedia.org/resource/Deer" score="0.9998653136778456" source="DBpedia" start="717" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Persian" category="Wikidata:Q315,Schema:Language,DBpedia:Language" end="733" lang="en" link="http://dbpedia.org/resource/Persian_language" score="0.7745295929516256" source="DBpedia" start="730" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Persians" category="Wikidata:Q6256,Schema:Place,Schema:Country,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Country" end="992" lang="en" link="http://dbpedia.org/resource/Achaemenid_Empire" score="0.9936278439240015" source="DBpedia" start="989" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Assyrians" category="Wikidata:Q6256,Schema:Place,Schema:Country,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Country" end="1006" lang="en" link="http://dbpedia.org/resource/Assyria" score="0.9893264658039177" source="DBpedia" start="1002" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="swan" category="" end="1348" lang="en" link="http://dbpedia.org/resource/Swan" score="0.9991404467140318" source="DBpedia" start="1344" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="eagle" category="Wikidata:Q729,Wikidata:Q19088,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Bird" end="1359" lang="en" link="http://dbpedia.org/resource/Eagle" score="0.8836858723951612" source="DBpedia" start="1355" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Athena" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="1433" lang="en" link="http://dbpedia.org/resource/Athena" score="1.0" source="DBpedia" start="1429" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Dionysus" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1563" lang="en" link="http://dbpedia.org/resource/Dionysius_of_Halicarnassus" score="1.0" source="DBpedia" start="1559" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="6" subtype="section" type="textpart">
+      <p>
+       ὅμοια δὲ τούτοις καὶ περὶ τῆς Ἥρας ᾄδουσιν, ἄνευ τῆς πρὸς τὸν ἄνδρα ὁμιλίας
+                        ὑπηνέμιον αὐτὴν παῖδα γεννῆσαι τὸν Ἥφαιστον, οὐ μάλα εὐτυχῆ τοῦτον, ἀλλὰ
+                        βάναυσον καὶ χαλκέα καὶ πυρίτην, ἐν καπνῷ τὸ πᾶν βιοῦντα καὶ σπινθήρων
+                        ἀνάπλεων οἷα δὴ καμινευτήν, καὶ οὐδὲ ἄρτιον τὼ πόδε· χωλευθῆναι γὰρ αὐτὸν
+                        ἀπὸ τοῦ πτώματος, ὁπότε ἐρρίφη ὑπὸ τοῦ Διὸς ἐξ οὐρανοῦ, καὶ εἴ γε μὴ οἱ
+                        Λήμνιοι καλῶς ποιοῦντες ἔτι φερόμενον αὐτὸν ὑπεδέξαντο, κἂν ἐτεθνήκει ἡμῖν ὁ
+                        Ἥφαιστος ὥσπερ ὁ Ἀστυάναξ ἀπὸ τοῦ πύργου καταπεσών.
+       <pb n="v.3.p.162">
+       </pb>
+       Καίτοι τὰ μὲν Ἡφαίστου μέτρια· τὸν δὲ Προμηθέα τίς οὐκ οἶδεν οἷα ἔπαθεν,
+                        διότι καθʼ ὑπερβολὴν φιλάνθρωπος ἦν; καὶ γὰρ αὖ καὶ τοῦτον εἰς τὴν Σκυθίαν
+                        ἀγαγὼν ὁ Ζεὺς ἀνεσταύρωσεν ἐπὶ τοῦ Καυκάσου, τὸν ἀετὸν αὐτῷ παρακαταστήσας
+                        τὸ ἧπαρ ὁσημέραι κολάψοντα.
+      </p>
+      <p lang="it">
+       E parimenti parlano della donna, senza parlare all'uomo.
+                        lascia che questo bambino dia alla luce Efesto, non felice, ma
+                        brutale e rame e pirite, in fumo tutti gli esseri viventi e scintille
+                        Non indosso nulla che non bruci, e non indosso il piede, perché si sporca.
+                        dal cadavere, quindi cadde da Zeus dal cielo, e lasciò che il
+                        Limnios, che sono coloro che lo hanno accettato, anche se il
+                        Fiero come Astianatte dalla torre dei tiranni.
+                        Dicono che Efesto sia moderato, ma Prometeo non vide ciò che soffrì,
+                        perché era eccessivamente filantropico? E per questo anche in Scizia
+                        quando Zeus crocifisse sul Caucaso, l'aquila che aveva
+                        l'Ἣpar dorme durante il giorno.
+       <note DBPEDIA_ENT="dia" category="Wikidata:Q43229,Wikidata:Q24229398,Wikidata:Q176799,DUL:SocialPerson,DUL:Agent,Schema:Organization,DBpedia:Organisation,DBpedia:Agent,DBpedia:MilitaryUnit" end="117" lang="it" link="http://it.dbpedia.org/resource/Direzione_Investigativa_Antimafia" score="0.9958182565009345" source="DBpedia" start="114" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Efesto" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="131" lang="it" link="http://it.dbpedia.org/resource/Efesto" score="1.0" source="DBpedia" start="128" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="rame" category="" end="188" lang="it" link="http://it.dbpedia.org/resource/Rame" score="0.9999999914390401" source="DBpedia" start="185" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="pirite" category="Wikidata:Q7946,DUL:ChemicalObject,DBpedia:ChemicalSubstance,DBpedia:Mineral" end="195" lang="it" link="http://it.dbpedia.org/resource/Pirite" score="0.999999999984766" source="DBpedia" start="192" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="401" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="398" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Astianatte" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="553" lang="it" link="http://it.dbpedia.org/resource/Astianatte" score="1.0" source="DBpedia" start="550" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Efesto" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="624" lang="it" link="http://it.dbpedia.org/resource/Efesto" score="1.0" source="DBpedia" start="621" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Prometeo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="648" lang="it" link="http://it.dbpedia.org/resource/Prometeo" score="1.0" source="DBpedia" start="645" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Scizia" category="" end="768" lang="it" link="http://it.dbpedia.org/resource/Scizia" score="0.9999999998900648" source="DBpedia" start="765" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="806" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="803" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Caucaso" category="" end="826" lang="it" link="http://it.dbpedia.org/resource/Caucaso" score="0.9999998468406492" source="DBpedia" start="823" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="l'aquila" category="DBpedia:Species" end="835" lang="it" link="http://it.dbpedia.org/resource/Aquila" score="0.9968424790810004" source="DBpedia" start="832" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       And likewise they speak of the woman, without speaking to the man.
+                        let this child give birth to Hephaestus, not a happy one, but
+                        brutal and copper and pyrite, in smoke all living things and sparks
+                        I don't wear anything that doesn't burn, and I don't wear the foot, because it makes it dirty.
+                        from the corpse, therefore it fell from Zeus from heaven, and let the
+                        Limnios, who are those who have accepted him, even if the
+                        As fierce as Astyanax from the tower of tyrants.
+                        They say that Hephaestus is moderate, but Prometheus did not see what he suffered,
+                        because he was excessively philanthropic? And because of this also in Scythia
+                        when Zeus crucified on the Caucasus, the eagle that had
+                        the Ἣpar is asleep during the day.
+       <note DBPEDIA_ENT="Hephaestus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="130" lang="en" link="http://dbpedia.org/resource/Hephaestus" score="1.0" source="DBpedia" start="127" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="copper" category="" end="198" lang="en" link="http://dbpedia.org/resource/Copper" score="0.9982677756238126" source="DBpedia" start="195" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="pyrite" category="Wikidata:Q7946,DUL:ChemicalObject,DBpedia:ChemicalSubstance,DBpedia:Mineral" end="209" lang="en" link="http://dbpedia.org/resource/Pyrite" score="1.0" source="DBpedia" start="206" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="438" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="435" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Astyanax" category="" end="587" lang="en" link="http://dbpedia.org/resource/Astyanax" score="1.0" source="DBpedia" start="584" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hephaestus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="661" lang="en" link="http://dbpedia.org/resource/Hephaestus" score="1.0" source="DBpedia" start="658" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Prometheus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="689" lang="en" link="http://dbpedia.org/resource/Prometheus" score="1.0" source="DBpedia" start="686" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Scythia" category="" end="824" lang="en" link="http://dbpedia.org/resource/Scythia" score="0.9999788290686261" source="DBpedia" start="821" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="861" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="858" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Caucasus" category="" end="883" lang="en" link="http://dbpedia.org/resource/Caucasus" score="0.9747437211997929" source="DBpedia" start="880" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="eagle" category="Wikidata:Q729,Wikidata:Q19088,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Bird" end="897" lang="en" link="http://dbpedia.org/resource/Eagle" score="0.9983008858806547" source="DBpedia" start="894" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="7" subtype="section" type="textpart">
+      <p>
+       οὗτος μὲν οὖν ἐξετέλεσε τὴν καταδίκην. ἡ Ῥέα δὲ — χρὴ γὰρ ἴσως καὶ ταῦτα
+                        εἰπεῖν — πῶς οὐκ ἀσχημονεῖ καὶ δεινὰ ποιεῖ, γραῦς μὲν ἤδη καὶ ἔξωρος οὖσα
+                        καὶ τοσούτων μήτηρ θεῶν, παιδεραστοῦσα δὲ ἔτι καὶ ζηλοτυποῦσα καὶ τὸν Ἄττιν
+                        ἐπὶ τῶν λεόντων περιφέρουσα, καὶ ταῦτα μηκέτι χρήσιμον εἶναι δυνάμενον; ὥστε
+                        πῶς ἂν ἔτι μέμφοιτό τις ἢ τῇ Ἀφροδίτῃ ὅτι μοιχεύεται, ἢ τῇ Σελήνῃ πρὸς τὸν
+                        Ἐνδυμίωνα κατιούσῃ πολλάκις ἐκ μέσης τῆς ὁδοῦ;
+      </p>
+      <p lang="it">
+       Ha quindi eseguito la sentenza. Ma Rhea - perché forse anche questi
+                        dicono: come non è brutto e doloroso, scrivimi adesso e all'estero allora
+                        e tante divinità madri, ma ero amante dei bambini e gelosa anche di Attin
+                        sui leoni che volteggiano, e questo modello utile è forte? in modo che
+                        come se li accusassi o ad Afrodite per aver commesso adulterio, o a Selene per
+                        Endimione è sceso molte volte dal centro della strada?
+       <note PER="Attin
+                        " end="295" lang="it" link="https://www.wikidata.org/wiki/Q877989" score="0.9596" source="Wikidata" start="265" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Attin" category="Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:PopulatedPlace" end="268" lang="it" link="http://it.dbpedia.org/resource/Attin" score="0.9999972169456515" source="DBpedia" start="265" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Afrodite" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="419" lang="it" link="http://it.dbpedia.org/resource/Afrodite" score="1.0" source="DBpedia" start="416" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="adulterio" category="" end="446" lang="it" link="http://it.dbpedia.org/resource/Adulterio" score="1.0" source="DBpedia" start="443" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Endimione" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="496" lang="it" link="http://it.dbpedia.org/resource/Endimione" score="1.0" source="DBpedia" start="493" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       He therefore carried out the sentence. But Rhea - because maybe even these
+                        they say - how is it not ugly and painful, write me now and abroad then
+                        and so many mother gods, but I was child-loving and jealous of Attin too
+                        on the lions circling, and is this useful model strong? in order that
+                        how if I accuse them either to Aphrodite for committing adultery, or to Selene for
+                        Did Endymion come down many times from the middle of the road?
+       <note PERSON="Attin" end="270" lang="en" link="https://www.wikidata.org/wiki/Q877989" score="0.8393" source="Wikidata" start="265" type="automatic">
+       </note>
+       <note PERSON="Aphrodite" end="433" lang="en" link="https://www.wikidata.org/wiki/Q35500" score="0.7366" source="Wikidata" start="424" type="automatic">
+       </note>
+       <note PERSON="Selene" end="471" lang="en" link="https://www.wikidata.org/wiki/Q131585" score="0.7054" source="Wikidata" start="465" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Rhea" category="" end="52" lang="en" link="http://dbpedia.org/resource/Greater_rhea" score="0.6544307006914359" source="DBpedia" start="50" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Attin" category="Wikidata:Q486972,Schema:Place,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Settlement" end="268" lang="en" link="http://dbpedia.org/resource/Attin" score="0.9999994627334865" source="DBpedia" start="265" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Aphrodite" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="427" lang="en" link="http://dbpedia.org/resource/Aphrodite" score="0.9999999999678835" source="DBpedia" start="424" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="adultery" category="" end="452" lang="en" link="http://dbpedia.org/resource/Adultery" score="0.9994401127127113" source="DBpedia" start="449" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Selene" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="468" lang="en" link="http://dbpedia.org/resource/Selene" score="0.9999999999999432" source="DBpedia" start="465" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Endymion" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="507" lang="en" link="http://dbpedia.org/resource/Tuxedo_Mask" score="0.9922954175314225" source="DBpedia" start="504" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="8" subtype="section" type="textpart">
+      <p>
+       φέρε δὲ ἤδη τούτων ἀφέμενοι τῶν λόγων εἰς αὐτὸν ἀνέλθωμεν τὸν οὐρανὸν
+                        ποιητικῶς ἀναπτάμενοι κατὰ τὴν αὐτὴν Ὁμήρῳ καὶ Ἡσιόδῳ ὁδὸν καὶ θεασώμεθα
+                        ὅπως διακεκόσμηται τὰ ἄνω. καὶ ὅτι μὲν χαλκοῦς ἐστιν τὰ ἔξω, καὶ πρὸ ἡμῶν
+                        τοῦ, Ὁμήρου λέγοντος ἠκούσαμεν ὑπερβάντι δὲ καὶ ἀνακύψαντι μικρὸν εἰς τὸ ἄνω
+                        καὶ ἀτεχνῶς ἐπὶ τοῦ νώτου γενομένῳ φῶς τε λαμπρότερον φαίνεται καὶ ἥλιος
+                        καθαρώτερος καὶ ἄστρα διαυγέστερα καὶ τὸ πᾶν ἡμέρα καὶ χρυσοῦν τὸ δάπεδον.
+                        εἰσιόντων δὲ πρῶτα μὲν οἰκοῦσιν αἱ Ὧραι· πυλωροῦσι γάρ· ἔπειτα δʼ ἡ Ἶρις καὶ
+                        ὁ Ἑρμῆς ὄντες ὑπηρέται καὶ ἀγγελιαφόροι τοῦ Διός, ἑξῆς δὲ τοῦ Ἡφαίστου τὸ
+                        χαλκεῖον ἀνάμεστον ἁπάσης τέχνης, μετὰ δὲ αἱ τῶν θεῶν
+       <pb n="v.3.p.164">
+       </pb>
+       οἰκίαι καὶ τοῦ Διὸς τὰ βασίλεια, ταῦτα πάντα περικαλλῆ τοῦ Ἡφαίστου
+                        κατασκευάσαντος.
+      </p>
+      <p lang="it">
+       ma ora, lasciando queste parole, ascendiamo a quel cielo
+                        svolgendosi poeticamente lungo lo stesso percorso di Omero ed Esiodo e vediamo
+                        come sopra è decorato. e che l'esterno è come il rame, e per noi
+                        abbiamo sentito Homer parlare, ma si è alzato un po' più in alto
+                        e artificialmente sulla luce nata dal sud, anche il sole appare più luminoso
+                        più pulite e le stelle più chiare e ogni giorno dorano il pavimento.
+                        ma se prima gli dei abitassero con me;
+                        Hermes è il servo e messaggero di Zeus, e accanto a Efesto il
+                        il bronzo tra tutte le arti, ma poi quelle degli dei
+                        le case e i regni di Zeus, tutto intorno a Efesto
+                        produttore.
+       <note PER="Omero" end="146" lang="it" link="https://www.wikidata.org/wiki/Q6691" score="0.8017" source="Wikidata" start="141" type="automatic">
+       </note>
+       <note PER="Esiodo" end="156" lang="it" link="https://www.wikidata.org/wiki/Q44233" score="0.7807" source="Wikidata" start="150" type="automatic">
+       </note>
+       <note PER="Zeus" end="664" lang="it" link="https://www.wikidata.org/wiki/Q34201" score="0.7431" source="Wikidata" start="660" type="automatic">
+       </note>
+       <note PER="Efesto" end="684" lang="it" link="https://www.wikidata.org/wiki/Q44384" score="0.7862" source="Wikidata" start="678" type="automatic">
+       </note>
+       <note PER="Zeus" end="814" lang="it" link="https://www.wikidata.org/wiki/Q34201" score="0.7431" source="Wikidata" start="810" type="automatic">
+       </note>
+       <note PER="Efesto" end="838" lang="it" link="https://www.wikidata.org/wiki/Q44384" score="0.7862" source="Wikidata" start="832" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Omero" category="" end="144" lang="it" link="http://it.dbpedia.org/resource/Omero" score="1.0" source="DBpedia" start="141" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Esiodo" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="153" lang="it" link="http://it.dbpedia.org/resource/Esiodo" score="1.0" source="DBpedia" start="150" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="rame" category="" end="243" lang="it" link="http://it.dbpedia.org/resource/Rame" score="0.9999951833685867" source="DBpedia" start="240" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Homer" category="" end="299" lang="it" link="http://it.dbpedia.org/resource/Omero" score="0.9996024347917855" source="DBpedia" start="296" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hermes" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="629" lang="it" link="http://it.dbpedia.org/resource/Ermes" score="0.9999999999986358" source="DBpedia" start="626" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="663" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="0.9999999999996589" source="DBpedia" start="660" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Efesto" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="681" lang="it" link="http://it.dbpedia.org/resource/Efesto" score="1.0" source="DBpedia" start="678" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="813" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="0.9999999999996589" source="DBpedia" start="810" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Efesto" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="835" lang="it" link="http://it.dbpedia.org/resource/Efesto" score="1.0" source="DBpedia" start="832" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       but now, leaving these words, let us ascend to that heaven
+                        poetically unfolding along the same path of Homer and Hesiod and we see
+                        as the above is decorated. and that the outside is like copper, and to us
+                        we heard Homer speaking, but he rose up a little higher
+                        and artificially on the south born light, the sun also appears brighter
+                        cleaner and stars clearer and every day and they gild the floor.
+                        but if first the gods dwell with me;
+                        Hermes is the servant and messenger of Zeus, and next to Hephaestus the
+                        bronze among all art, but after that those of the gods
+                        the houses and kingdoms of Zeus, all these around Hephaestus
+                        manufacturer.
+       <note GPE="Homer" end="139" lang="en" link="https://www.wikidata.org/wiki/Q6691" score="0.8372" source="Wikidata" start="134" type="automatic">
+       </note>
+       <note GPE="Hesiod" end="150" lang="en" link="https://www.wikidata.org/wiki/Q44233" score="0.9128" source="Wikidata" start="144" type="automatic">
+       </note>
+       <note GPE="Hermes" end="616" lang="en" link="https://www.wikidata.org/wiki/Q41484" score="0.8207" source="Wikidata" start="610" type="automatic">
+       </note>
+       <note PERSON="Zeus" end="653" lang="en" link="https://www.wikidata.org/wiki/Q34201" score="0.8789" source="Wikidata" start="649" type="automatic">
+       </note>
+       <note ORG="Hephaestus" end="677" lang="en" link="https://www.wikidata.org/wiki/Q44384" score="0.8919" source="Wikidata" start="667" type="automatic">
+       </note>
+       <note PERSON="Zeus" end="816" lang="en" link="https://www.wikidata.org/wiki/Q34201" score="0.8789" source="Wikidata" start="812" type="automatic">
+       </note>
+       <note ORG="Hephaestus" end="845" lang="en" link="https://www.wikidata.org/wiki/Q44384" score="0.8919" source="Wikidata" start="835" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Homer" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q36180,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Writer" end="137" lang="en" link="http://dbpedia.org/resource/Homer" score="0.9999999909130111" source="DBpedia" start="134" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hesiod" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q36180,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Writer" end="147" lang="en" link="http://dbpedia.org/resource/Hesiod" score="0.9987962390426016" source="DBpedia" start="144" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="copper" category="" end="245" lang="en" link="http://dbpedia.org/resource/Copper" score="0.9999949467711309" source="DBpedia" start="242" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Homer" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q36180,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Writer" end="296" lang="en" link="http://dbpedia.org/resource/Homer" score="0.9999999909130111" source="DBpedia" start="293" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hermes" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="613" lang="en" link="http://dbpedia.org/resource/Hermes" score="1.0" source="DBpedia" start="610" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="652" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="649" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hephaestus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="670" lang="en" link="http://dbpedia.org/resource/Hephaestus" score="1.0" source="DBpedia" start="667" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="815" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="812" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hephaestus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="838" lang="en" link="http://dbpedia.org/resource/Hephaestus" score="1.0" source="DBpedia" start="835" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="9" subtype="section" type="textpart">
+      <p>
+       <q type="unspecified">
+        οἱ δὲ θεοὶ πὰρ Ζηνὶ καθήμενοι —
+       </q>
+       πρέπει γάρ, οἶμαι,
+                        ἄνω· ὄντα μεγαληγορεῖν — ἀποσκοποῦσιν εἰς τὴν γῆν καὶ πάντῃ περιβλέπουσιν
+                        ἐπικύπτοντες εἴ ποθεν ὄψονται πῦρ ἀναπτόμενον ἢ ἀναφερομένην κνῖσαν
+       <q type="unspecified">
+        ἑλισσομένην περὶ καπνῷ.
+       </q>
+       κἂν μὲν θύῃ τις,
+                        εὐωχοῦνται πάντες ἐπικεχηνότες τῷ καπνῷ καὶ τὸ αἷμα πίνοντες τοῖς βωμοῖς
+                        προσχεόμενον ˘ ὥσπερ αἱ μυῖαι· ἢν δὲ οἰκοσιτῶσιν, νέκταρ καὶ ἀμβροσία τὸ
+                        δεῖπνον. πάλαι μὲν οὖν καὶ ἄνθρωποι συνειστιῶντο καὶ συνέπινον αὐτοῖς, ὁ
+                        Ἰξίων καὶ ὁ Τάνταλος· ἐπεὶ δὲ ἦσαν ὑβρισταὶ καὶ λάλοι, ἐκεῖνοι μὲν ἔτι καὶ
+                        νῦν κολάζονται, ἄβατος δὲ τῷ θνητῷ γένει καὶ ἀπόρρητος ὁ οὐρανός.
+      </p>
+      <p lang="it">
+       Ma gli dei sono seduti - deve essere, lo sono,
+                        in alto; esseri di grande statura: mirano alla terra e vigilano sempre
+                        che si verifica, dove si vede un incendio che brucia o viene segnalato un incendio che brucia attorno al fumo. anche se li odia,
+                        benedici tutti coloro che supplicano al fumo e bevono il sangue sugli altari
+                        offerti come i muscoli; ma se nutrono, nettare e ambrosia li
+                        assonnato Una volta anche le persone vivevano insieme e vivevano insieme a loro, i
+                        Issione e Tantalo; e c'erano insulti e pettegolezzi, quelli senza anni e
+                        ora sono all'inferno, ma il paradiso è nascosto alla nascita mortale.
+       <note DBPEDIA_ENT="mirano" category="Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:PopulatedPlace" end="116" lang="it" link="http://it.dbpedia.org/resource/Mirano" score="0.9999942369036119" source="DBpedia" start="113" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="muscoli" category="" end="445" lang="it" link="http://it.dbpedia.org/resource/Muscolo" score="0.9974511026580556" source="DBpedia" start="442" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="nettare" category="" end="469" lang="it" link="http://it.dbpedia.org/resource/Ghiandola_nettarifera" score="0.6146305711796894" source="DBpedia" start="466" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Issione" category="Wikidata:Q3863,Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:CelestialBody,DBpedia:Asteroid" end="622" lang="it" link="http://it.dbpedia.org/resource/28978_Ixion" score="0.9997980508510069" source="DBpedia" start="619" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Tantalo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="632" lang="it" link="http://it.dbpedia.org/resource/Tantalo" score="0.9999999999947704" source="DBpedia" start="629" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       But the gods are seated - must be, I am,
+                        above; beings of great stature - they aim at the earth and always watch
+                        occuring, where a fire is seen burning or a fire is reported burning around smoke. even if he hates them,
+                        bless all those supplicating to the smoke and drinking the blood at the altars
+                        offered as the muscles; but if they feed, nectar and ambrosia the
+                        sleepy Once upon a time, people also lived together and lived together with them, the
+                        Ixion and Tantalus; and there were insults and gossips, those without years and
+                        now they are in hell, but heaven is hidden from mortal birth.
+       <note DBPEDIA_ENT="nectar" category="" end="446" lang="en" link="http://dbpedia.org/resource/Nectar" score="0.9999997345201802" source="DBpedia" start="443" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Ixion" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="604" lang="en" link="http://dbpedia.org/resource/Ixion" score="0.9999999999928946" source="DBpedia" start="601" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Tantalus" category="" end="614" lang="en" link="http://dbpedia.org/resource/Tantalus" score="1.0" source="DBpedia" start="611" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="10" subtype="section" type="textpart">
+      <p>
+       τοιοῦτος ὁ βίος τῶν θεῶν. τοιγαροῦν καὶ οἱ ἄνθρωποι συνῳδὰ τούτοις καὶ
+                        ἀκόλουθα περὶ τὰς θρησκείας ἐπιτηδεύουσιν. καὶ πρῶτον μὲν ὕλας ἀπετέμοντο
+                        καὶ ὄρη ἀνέθεσαν καὶ ὄρνεα καθιέρωσαν καὶ φυτὰ ἐπεφήμισαν ἑκάστῳ θεῷ. μετὰ
+                        δὲ νειμάμενοι κατὰ ἔθνη σέβουσι καὶ πολίτας αὐτῶν ἀποφαίνουσιν, ὁ μὲν Δελφὸς
+                        τὸν Ἀπόλλω καὶ ὁ Δήλιος, ὁ δὲ Ἀθηναῖος τὴν Ἀθηνᾶν — μαρτυρεῖται γοῦν τὴν
+                        οἰκειότητα τῷ ὀνόματι — καὶ τὴν Ἥραν ὁ Ἀργεῖος καὶ ὁ Μυγδόνιος τὴν Ῥέαν καὶ
+                        τὴν Ἀφροδίτην ὁ Πάφιος. οἱ δʼ αὖ Κρῆτες οὐ γενέσθαι παρʼ αὐτοῖς οὐδὲ
+                        τραφῆναι μόνον τὸν Δία λέγουσιν, ἀλλὰ καὶ τάφον αὐτοῦ δεικνύουσιν· καὶ ἡμεῖς
+                        ἄρα τοσοῦτον ἠπατήμεθα χρόνον οἰόμενοι
+       <pb n="v.3.p.166">
+       </pb>
+       τὸν Δία βροντᾶν
+                        τε καὶ ὕειν καὶ τὰ ἄλλα πάντα ἐπιτελεῖν, ὁ δὲ ἐλελήθει πάλαι τεθνεὼς παρὰ
+                        Κρησὶ τεθαμμένος.
+      </p>
+      <p lang="it">
+       tale è la vita degli dei. anche il popolo combatte insieme a loro
+                        seguendo la religione fingono. e prima di tutto con una spalla mancante
+                        E assegnarono montagne e stabilirono aquile e piante a ciascun dio. Dopo
+                        ma divisi in nazioni, rispettano e dichiarano cittadino quello di Delfi
+                        Apollo e Delios e Athenaios Atena - è testimoniato che il
+                        familiarità con il nome - e Argeios e Mygdonius chiamavano Æran e
+                        Afrodite Paphios. I dʼaὖ Cretesi non nasceranno senza di loro
+                        solo Zeus viene nutrito, dicono, ma indicano anche la sua tomba; e noi
+                        così passiamo tanto tempo a sognare Zeus tuonante
+                        questi e quelli e il resto avvengono sempre, ma colui che parla prima
+                        La crisi è stata sepolta.
+       <note DBPEDIA_ENT="Delfi" category="" end="359" lang="it" link="http://it.dbpedia.org/resource/Delfi" score="0.9951525538769634" source="DBpedia" start="356" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="389" lang="it" link="http://it.dbpedia.org/resource/Apollo" score="0.9999999998917701" source="DBpedia" start="386" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Atena" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="417" lang="it" link="http://it.dbpedia.org/resource/Atena" score="0.9999875100767318" source="DBpedia" start="414" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Afrodite" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="561" lang="it" link="http://it.dbpedia.org/resource/Afrodite" score="1.0" source="DBpedia" start="558" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="652" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="0.9999999999979536" source="DBpedia" start="649" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="778" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="0.9999999999979536" source="DBpedia" start="775" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       such is the life of the gods. the people also fight together with them
+                        following about religion they pretend. and first of all, with a cutaway
+                        And they assigned mountains and established eagles and plants to each god. after
+                        but divided into nations, they respect and declare their citizens, the one at Delphi
+                        Apollo and Delios, and Athenaios Athena - it is witnessed that the
+                        familiarity with the name - and Argeios and Mygdonius called Æran and
+                        Aphrodite Paphios. The dʼ aὖ Cretans will not be born apart from them
+                        only Zeus is fed, they say, but they also point to his tomb; and we
+                        so we spend so much time dreaming of Zeus thundering
+                        these and those and the rest always come to pass, but the one who speaks before
+                        Crises was buried.
+       <note ORG="Delphi" end="387" lang="en" link="https://www.wikidata.org/wiki/Q75459" score="0.7356" source="Wikidata" start="381" type="automatic">
+       </note>
+       <note ORG="Apollo" end="418" lang="en" link="https://www.wikidata.org/wiki/Q37340" score="0.6599" source="Wikidata" start="412" type="automatic">
+       </note>
+       <note ORG="Mygdonius" end="556" lang="en" link="https://www.wikidata.org/wiki/Q3309873" score="0.9074" source="Wikidata" start="547" type="automatic">
+       </note>
+       <note NORP="Cretans" end="633" lang="en" link="https://www.wikidata.org/wiki/Q34374" score="0.6681" source="Wikidata" start="626" type="automatic">
+       </note>
+       <note PERSON="Zeus" end="700" lang="en" link="https://www.wikidata.org/wiki/Q34201" score="0.74" source="Wikidata" start="696" type="automatic">
+       </note>
+       <note PERSON="Zeus" end="824" lang="en" link="https://www.wikidata.org/wiki/Q34201" score="0.74" source="Wikidata" start="820" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Delphi" category="" end="384" lang="en" link="http://dbpedia.org/resource/Delphi" score="0.9675889327434981" source="DBpedia" start="381" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="415" lang="en" link="http://dbpedia.org/resource/Apollo" score="0.9999990259775783" source="DBpedia" start="412" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Athenaios" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q36180,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Writer" end="438" lang="en" link="http://dbpedia.org/resource/Athenaeus" score="1.0" source="DBpedia" start="435" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Athena" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="448" lang="en" link="http://dbpedia.org/resource/Athena" score="0.9999999999998863" source="DBpedia" start="445" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Mygdonius" category="" end="550" lang="en" link="http://dbpedia.org/resource/Jaghjagh_River" score="0.9999999997719442" source="DBpedia" start="547" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Aphrodite" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="600" lang="en" link="http://dbpedia.org/resource/Aphrodite" score="0.9999999999796501" source="DBpedia" start="597" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="699" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="696" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="823" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="820" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="11" subtype="section" type="textpart">
+      <p>
+       ἔπειτα δὲ ναοὺς ἐγείραντες ἵνα αὐτοῖς μὴ ἄοικοι μηδὲ ἀνέστιοι δῆθεν ὦσιν,
+                        εἰκόνας αὐτοῖς ἀπεικάζουσιν παρακαλέσαντες ἢ Πραξιτέλην ἢ Πολύκλειτον ἢ
+                        Φειδίαν, οἱ δὲ οὐκ οἶδʼ ὅπου ˘ ἰδόντες ἀναπλάττουσι γενειήτην μὲν τὸν Δία,
+                        παῖδα δὲ εἰς ἀεὶ τὸν Ἀπόλλωνα καὶ τὸν. Ἑρμῆν ὑπηνήτην καὶ τὸν Ποσειδῶνα
+                        κυανοχαίτην καὶ γλαυκῶπιν τὴν Ἀθηνᾶν. ὅμως δʼ οὖν οἱ παριόντες εἰς τὸν νεὼν
+                        οὔτε τὸν ἐξ Ἰνδῶν ἐλέφαντα ἔτι οἴονται ὁρᾶν οὔτε τὸ ἐκ τῆς Θρᾴκης
+                        μεταλλευθὲν χρυσίον ἀλλʼ αὐτὸν τὸν Κρόνου καὶ Ῥέας, εἰς τὴν γῆν ὑπὸ Φειδίου
+                        μετῳκισμένον καὶ τὴν Πισαίων ἐρημίαν ἐπισκοπεῖν κεκελευσμένον, ἀγαπῶντα εἰ
+                        διὰ πέντε ὅλων ἐτῶν θύσει τις αὐτῷ πάρεργον Ὀλυμπίων.
+      </p>
+      <p lang="it">
+       ma disse a coloro che erigevano i templi, affinché davanti a loro non si vedessero né i disabitati né i malati,
+                        immagine a loro fingendosi supplicanti o Prassitele o Policleto o
+                        Fidia, ma coloro che non hanno visto dove vedono, riproducono la generazione con Zeus,
+                        ma gioca nel sacro Apollo e nel. Hermes sostenne Poseidone
+                        Atena aveva i capelli blu ed era glauca. ma guarda dunque quelli presenti nel nuovo
+                        né l’elefante dell’India che si vede, né quello della Tracia
+                        oro estratto ma Saturno e Rea, nella terra sotto Fidio
+                        trasmigrò e visitò il deserto pisano con carezzevole, amorevole
+                        per cinque anni interi gli sacrificò i modelli di Olimpia.
+       <note PER="Prassitele" end="194" lang="it" link="https://www.wikidata.org/wiki/Q105290" score="0.7948" source="Wikidata" start="184" type="automatic">
+       </note>
+       <note PER="Zeus" end="318" lang="it" link="https://www.wikidata.org/wiki/Q34201" score="0.7556" source="Wikidata" start="314" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Prassitele" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="187" lang="it" link="http://it.dbpedia.org/resource/Prassitele" score="1.0" source="DBpedia" start="184" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Policleto" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="200" lang="it" link="http://it.dbpedia.org/resource/Policleto" score="1.0" source="DBpedia" start="197" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Fidia" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="236" lang="it" link="http://it.dbpedia.org/resource/Fidia" score="1.0" source="DBpedia" start="233" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="317" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="314" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="366" lang="it" link="http://it.dbpedia.org/resource/Apollo" score="1.0" source="DBpedia" start="363" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hermes" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="380" lang="it" link="http://it.dbpedia.org/resource/Ermes" score="0.9999999968406428" source="DBpedia" start="377" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Poseidone" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="396" lang="it" link="http://it.dbpedia.org/resource/Poseidone" score="1.0" source="DBpedia" start="393" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Atena" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="430" lang="it" link="http://it.dbpedia.org/resource/Atena" score="0.9999999988533546" source="DBpedia" start="427" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="India" category="Wikidata:Q6256,Schema:Place,Schema:Country,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Country" end="557" lang="it" link="http://it.dbpedia.org/resource/India" score="0.9997962680362493" source="DBpedia" start="554" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Tracia" category="" end="592" lang="it" link="http://it.dbpedia.org/resource/Tracia" score="0.9999999752941452" source="DBpedia" start="589" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Olimpia" category="" end="840" lang="it" link="http://it.dbpedia.org/resource/Olimpia" score="1.0" source="DBpedia" start="837" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       but he said to those who were erecting temples, so that to them neither the uninhabited nor the sick should be seen,
+                        image to them pretending to be supplicants or Praxiteles or Polycletos or
+                        Phidias, but those who have not seen where they see, reproduce the generation with Zeus,
+                        but play in the hallowed Apollo and the. Hermes supported Poseidon
+                        Athena was blue-haired and glaucous. but see, then, those present in the new
+                        nor the elephant from India that is seen nor the one from Thrace
+                        mined gold but Saturn and Rhea, in the earth under Pheidius
+                        transmigrated and visited the desert of Pisa with caressing, loving
+                        for five whole years he sacrificed to him the paragons of Olympia.
+       <note PERSON="Phidias" end="253" lang="en" link="https://www.wikidata.org/wiki/Q177302" score="0.9165" source="Wikidata" start="246" type="automatic">
+       </note>
+       <note PERSON="Zeus" end="333" lang="en" link="https://www.wikidata.org/wiki/Q34201" score="0.8789" source="Wikidata" start="329" type="automatic">
+       </note>
+       <note ORG="Apollo" end="390" lang="en" link="https://www.wikidata.org/wiki/Q37340" score="0.7922" source="Wikidata" start="384" type="automatic">
+       </note>
+       <note GPE="Hermes" end="406" lang="en" link="https://www.wikidata.org/wiki/Q41484" score="0.8207" source="Wikidata" start="400" type="automatic">
+       </note>
+       <note GPE="India" end="578" lang="en" link="https://www.wikidata.org/wiki/Q668" score="0.7048" source="Wikidata" start="573" type="automatic">
+       </note>
+       <note GPE="Thrace" end="615" lang="en" link="https://www.wikidata.org/wiki/Q41741" score="0.8773" source="Wikidata" start="609" type="automatic">
+       </note>
+       <note PERSON="Saturn" end="661" lang="en" link="https://www.wikidata.org/wiki/Q193" score="0.6692" source="Wikidata" start="655" type="automatic">
+       </note>
+       <note PERSON="Rhea" end="670" lang="en" link="https://www.wikidata.org/wiki/Q108419" score="0.631" source="Wikidata" start="666" type="automatic">
+       </note>
+       <note ORG="Pisa" end="768" lang="en" link="https://www.wikidata.org/wiki/Q922329" score="0.8689" source="Wikidata" start="764" type="automatic">
+       </note>
+       <note PRODUCT="Olympia" end="881" lang="en" link="https://www.wikidata.org/wiki/Q38888" score="0.7987" source="Wikidata" start="874" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Praxiteles" category="" end="197" lang="en" link="http://dbpedia.org/resource/Praxiteles" score="1.0" source="DBpedia" start="194" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Phidias" category="" end="249" lang="en" link="http://dbpedia.org/resource/Phidias" score="1.0" source="DBpedia" start="246" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="332" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="329" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Apollo" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="387" lang="en" link="http://dbpedia.org/resource/Apollo" score="0.9999999999633928" source="DBpedia" start="384" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hermes" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="403" lang="en" link="http://dbpedia.org/resource/Hermes" score="1.0" source="DBpedia" start="400" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Poseidon" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="420" lang="en" link="http://dbpedia.org/resource/Poseidon" score="1.0" source="DBpedia" start="417" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Athena" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="453" lang="en" link="http://dbpedia.org/resource/Athena" score="1.0" source="DBpedia" start="450" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="glaucous" category="DBpedia:Colour" end="480" lang="en" link="http://dbpedia.org/resource/Glaucous" score="0.9871348022646683" source="DBpedia" start="477" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="elephant" category="" end="562" lang="en" link="http://dbpedia.org/resource/Elephant" score="0.9462773478232428" source="DBpedia" start="559" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Thrace" category="" end="612" lang="en" link="http://dbpedia.org/resource/Thrace" score="0.9137840639229233" source="DBpedia" start="609" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Saturn" category="Wikidata:Q634,Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:CelestialBody,DBpedia:Planet" end="658" lang="en" link="http://dbpedia.org/resource/Saturn" score="0.9999995444394941" source="DBpedia" start="655" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Rhea" category="Wikidata:Q12136,DBpedia:Disease" end="669" lang="en" link="http://dbpedia.org/resource/Diarrhea" score="0.7024019028796966" source="DBpedia" start="666" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Pisa" category="Wikidata:Q486972,Schema:Place,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Settlement" end="767" lang="en" link="http://dbpedia.org/resource/Pisa" score="0.9048967544844255" source="DBpedia" start="764" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Olympia" category="Wikidata:Q41176,DBpedia:Building,DBpedia:ArchitecturalStructure,DBpedia:Venue" end="877" lang="en" link="http://dbpedia.org/resource/Olympia_London" score="0.9809757148018934" source="DBpedia" start="874" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="12" subtype="section" type="textpart">
+      <p>
+       θέμενοι δὲ βωμοὺς καὶ προρρήσεις καὶ περιρραντήρια προσάγουσι τὰς θυσίας,
+                        βοῦν μὲν ἀροτῆρα ὁ γεωργός, ἄρνα δὲ ὁ ποιμὴν καὶ αἶγα ὁ αἰπόλος, ὁ δέ τις
+                        λιβανωτὸν ἢ πόπανον, ὁ δὲ πένης ἱλάσατο τὸν θεὸν κύσας μόνον τὴν ἑαυτοῦ
+                        δεξιάν.˘ ἀλλʼ οἵ γε θύοντες — ἐπʼ ἐκείνους γὰρ ἐπάνειμι — στεφανώσαντες τὸ
+                        ζῷον καὶ πολύ γε πρότερον ἐξετάσαντες εἰ ἐντελὲς εἴη, ἵνα μηδὲ τῶν ἀχρήστων
+                        τι κατασφάττωσιν, προσάγουσι τῷ βωμῷ καὶ φονεύουσιν ἐν ὀφθαλμοῖς τοῦ θεοῦ
+                        γοερόν τι μυκώμενον καὶ ὡς τὸ εἰκὸς εὐφημοῦν καὶ ἡμίφωνον ἤδη τῇ θυσίᾳ
+                        ἐπαυλοῦν. τίς οὐκ
+       <pb n="v.3.p.168">
+       </pb>
+       ἂν εἰκάσειεν ἥδεσθαι ταῦτα ὁρῶντας
+                        τοὺς θεούς;
+      </p>
+      <p lang="it">
+       e dopo aver eretto altari, profezie e incensieri, offrono sacrifici,
+                        il contadino ara, ma il pastore e la capra rifiutano, e il
+                        incenso o incenso, ma la penna salvò al dio solo i suoi
+                        a destra. ˘ ἀλλʼ οἵ ge thyontes - su quelli per il vento - a coronamento del
+                        vita e molto tempo fa esaminandola nella sua interezza, in modo che non ci fosse nulla di inutile
+                        cosa realizzano, portano all'altare e uccidono agli occhi di Dio
+                        belli e ammuffiti e come se esultassero e fossero già sommessi al sacrificio
+                        ritardano. tis οὐκ Ἀκασιεν ἥδεσται ταῶτα ἐρίντα
+                        gli dei;
+       <note DBPEDIA_ENT="incenso" category="" end="186" lang="it" link="http://it.dbpedia.org/resource/Incenso" score="0.9999999999913598" source="DBpedia" start="183" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="incenso" category="" end="196" lang="it" link="http://it.dbpedia.org/resource/Incenso" score="0.9999999999913598" source="DBpedia" start="193" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="vento" category="" end="317" lang="it" link="http://it.dbpedia.org/resource/Vento" score="0.9998750771722335" source="DBpedia" start="314" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Dio" category="" end="550" lang="it" link="http://it.dbpedia.org/resource/Dio" score="0.9914298614786011" source="DBpedia" start="547" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       and having set up altars and prophecies and censers, they offer the sacrifices,
+                        the farmer plows, but the shepherd and the goat refuse, and the
+                        frankincense or incense, but the pen saved the god only his own
+                        on the right. ˘ ἀλλʼ οἵ ge thyontes — on those for the wind — crowning the
+                        life and long ago examining it in its entirety, so that none of the useless
+                        what do they accomplish, bring to the altar and kill in the eyes of God
+                        beautiful and moldy and as if they were exulting and half-voiced already at the sacrifice
+                        they delay. tis οὐκ Ἀκασιεν ἥδεσται ταῶτα ἐρίντα
+                        the gods;
+       <note DBPEDIA_ENT="shepherd" category="" end="140" lang="en" link="http://dbpedia.org/resource/Shepherd" score="0.9999964839944789" source="DBpedia" start="137" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="goat" category="" end="157" lang="en" link="http://dbpedia.org/resource/Goat" score="0.9999999868704778" source="DBpedia" start="154" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="frankincense" category="" end="202" lang="en" link="http://dbpedia.org/resource/Frankincense" score="0.9999999999989768" source="DBpedia" start="199" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="incense" category="" end="218" lang="en" link="http://dbpedia.org/resource/Incense" score="0.9999813225902311" source="DBpedia" start="215" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="God" category="" end="557" lang="en" link="http://dbpedia.org/resource/Names_of_God_in_Judaism" score="0.9998125923582208" source="DBpedia" start="554" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="13" subtype="section" type="textpart">
+      <p>
+       καὶ τὸ μὲν πρόγραμμά φησι μὴ παριέναι εἰς τὸ εἴσω τῶν περιρραντηρίων ὅστις
+                        μὴ καθαρός ἐστιν . τὰς χεῖρας· ὁ δὲ ἱερεὺς αὐτὸς ἕστηκεν ᾑμαγμένος καὶ ὥσπερ
+                        ὁ Κύκλωψ ἐκεῖνος ἀνατέμνων καὶ τὰ ἔγκατα ἐξαιρῶν καὶ καρδιουλκῶν καὶ τὸ αἷμα
+                        τῷ βωμῷ περιχέων καὶ τί γάρ οὐκ εὐσεβὲς ἐπιτελῶν; ἐπὶ πᾶσι δὲ πῦρ ἀνακαύσας
+                        ἐπέθηκε φέρων αὐτῇ δορᾷ τὴν αἶγα καὶ αὐτοῖς ἐρίοις τὸ πρόβατον ἡ δὲ κνῖσα
+                        θεσπέσιος καὶ ἱεροπρεπὴς χωρεῖ ἄνω καὶ εἰς αὐτὸν τὸν οὐρανὸν ἠρέμα
+                        διασκίδναται. ὁ μέν γε Σκύθης πάσας τὰς θυσίας ἀφεὶς καὶ ἡγησάμενος ταπεινὰς
+                        αὐτοὺς τοὺς ἀνθρώπους τῇ Ἀρτέμιδι παρίστησι καὶ οὕτως ποιῶν ἀρέσκει τὴν
+                        θεόν.
+      </p>
+      <p lang="it">
+       e il programma non entra negli allegati that
+                        Non è pulito. mani; ma questo prete era stregato e come
+                        Ciclope, quel dissettore, e il sangue
+                        All'altare ti circondi e perché non lo compi devotamente? Ma non hai ascoltato nessun fuoco
+                        Arrivò portando la pelle di capra su di lei e le pecore dall'altra parte, ma Knisa
+                        atto solenne e sacro sopra e nello stesso cielo
+                        è fatto a pezzi. il sovrano scita che ha rinunciato a tutti i sacrifici ed è un umile sovrano
+                        presenta questi uomini ad Artemide e chi le piace
+                        Dio
+       <note DBPEDIA_ENT="Ciclope" category="" end="159" lang="it" link="http://it.dbpedia.org/resource/Ciclopi" score="0.9999999994697646" source="DBpedia" start="156" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Artemide" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="660" lang="it" link="http://it.dbpedia.org/resource/Artemide" score="0.9999996794646736" source="DBpedia" start="657" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Dio" category="" end="708" lang="it" link="http://it.dbpedia.org/resource/Dio" score="0.9943668977848203" source="DBpedia" start="705" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       and the program does not fit inside the enclosures that
+                        He is not clean. hands; but this priest was bewitched and as
+                        Cyclops, that dissector, and the blood
+                        To the altar you surround yourself and why do you not perform devoutly? But you did not listen to any fire
+                        He came, carrying the goat's skin on her, and the sheep on the other side, but Knisa
+                        solemn and sacred fit above and in the same heaven
+                        is torn apart. the Scythian ruler who has given up all sacrifices and is a humble ruler
+                        present these men to Artemis, and so whom she pleases
+                        god
+       <note DBPEDIA_ENT="Cyclops" category="" end="175" lang="en" link="http://dbpedia.org/resource/Cyclopes" score="1.0" source="DBpedia" start="172" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="goat" category="" end="391" lang="en" link="http://dbpedia.org/resource/Goat" score="0.9999998616774615" source="DBpedia" start="388" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Artemis" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="686" lang="en" link="http://dbpedia.org/resource/Artemis" score="0.9999997280436134" source="DBpedia" start="683" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="14" subtype="section" type="textpart">
+      <p>
+       ταῦτα μὲν δὴ ἴσως μέτρια καὶ τὰ ὑπʼ Ἀσσυρίων γιγνόμενα καὶ ὑπὸ Φρυγῶν καὶ
+                        Λυδῶν, ʼ ἢν δʼ εἰς τὴν Αἴγυπτον ἔλθῃς, τότε δὴ τότε ὄψει πολλὰ τὰ σεμνὰ καὶ
+                        ὡς ἀληθῶς ἄξια τοῦ οὐρανοῦ, κριοπρόσωπον μὲν τὸν Δία, κυνοπρόσωπον δὲ τὸν
+                        βέλτιστον Ἑρμῆν καὶ τὸν Πᾶνα ὅλον τράγον καὶ ἶβίν τινα καὶ κροκόδειλον
+                        ἕτερον καὶ πίθηκον. εἰ δʼ ἐθέλεις καὶ ταῦτα δαήμεναι, ὄφρʼ εὖ εἰδῇς, ἀκούσῃ
+                        πολλῶν σοφιστῶν καὶ γραμματέων καὶ προφητῶν ἐξυρημένων διηγουμένων, —
+                        πρότερον δέ, φησὶν ὁ λόγος,
+       <q type="unspecified">
+        θύρας δʼ ἐπίθεσθε
+                            βέβηλοι
+       </q>
+       <pb n="v.3.p.170">
+       </pb>
+       — ὡς ἄρα ὑπὸ τὸν πόλεμον ˘ καὶ τῶν γιγάντων τὴν
+                        ἐπανάστασιν οἱ θεοὶ φοβηθέντες ἧκον εἰς τὴν Αἴγυπτον ὡς δὴ ἐνταῦθα λησόμενοι
+                        τοὺς πολεμίους· εἶθʼ ὁ μὲν αὐτῶν ὑπέδυ τράγον, ὁ δὲ κριὸν ὑπὸ τοῦ δέους, ὁ
+                        δὲ θηρίον ἢ ὄρνεον διὸ δὴ εἰσέτι καὶ νῦν φυλάττεσθαι τὰς τότε μορφὰς τοῖς
+                        θεοῖς. ταῦτα γὰρ ἀμέλει ἐν τοῖς ἀδύτοις ἀπόκειται γραφέντα πλεῖον ἢ πρὸ ἐτῶν
+                        μυρίων.
+      </p>
+      <p lang="it">
+       questi, forse non moderatamente, e quelli fatti sotto gli Assiri e sotto i Frigi e
+                        Lidi, se venite in Egitto, non guardate molti modesti e
+                        come veramente degno del paradiso, faccia d'uomo con Zeus, ma faccia di cane
+                        Soprattutto, Hermes e Pana, tutti i draghi, le creature viventi e i coccodrilli
+                        un altro e una scimmia. se non vuoi anche tu queste cose, se le sai, ascolta
+                        di molti sofisti e scribi e profeti oratori scomunicati, —
+                        per prima cosa, lascia che la parola venga pronunciata, attacca la porta
+                            profano
+ — come quindi sotto la guerra˘ e dei giganti
+                        gli dei, terrorizzati, tornarono in Egitto come se non fossero stati dimenticati lì
+                        i guerrieri; quello sotto di loro è un drago, e l'ariete sotto il timore reverenziale, il
+                        Ma non essere una bestia o un uccello, e ora stai proteggendo il quando li guardi
+                        di Dio. per queste cose trascura tra quelle che non appartengono a quelle scritte più o prima di lui
+                        miriadi
+       <note DBPEDIA_ENT="Assiri" category="" end="67" lang="it" link="http://it.dbpedia.org/resource/Assiria" score="1.0" source="DBpedia" start="65" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Lidi" category="" end="117" lang="it" link="http://it.dbpedia.org/resource/Lidia" score="0.9999757462833442" source="DBpedia" start="114" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Egitto" category="" end="136" lang="it" link="http://it.dbpedia.org/resource/Antico_Egitto" score="0.9416225412734223" source="DBpedia" start="133" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="" end="250" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="247" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hermes" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="311" lang="it" link="http://it.dbpedia.org/resource/Ermes" score="0.9999999999997726" source="DBpedia" start="308" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="coccodrilli" category="DBpedia:Species" end="366" lang="it" link="http://it.dbpedia.org/resource/Crocodylia" score="0.9646893978123084" source="DBpedia" start="363" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="sofisti" category="" end="512" lang="it" link="http://it.dbpedia.org/resource/Sofistica" score="1.0" source="DBpedia" start="509" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="scribi" category="" end="522" lang="it" link="http://it.dbpedia.org/resource/Scriba" score="1.0" source="DBpedia" start="519" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Egitto" category="" end="801" lang="it" link="http://it.dbpedia.org/resource/Antico_Egitto" score="0.9416225412734223" source="DBpedia" start="798" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="uccello" category="DBpedia:Species" end="1018" lang="it" link="http://it.dbpedia.org/resource/Aves" score="0.9999999999995453" source="DBpedia" start="1014" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Dio" category="" end="1097" lang="it" link="http://it.dbpedia.org/resource/Dio" score="0.9999503823767039" source="DBpedia" start="1093" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       these, perhaps not moderately, and those made under the Assyrians and under the Phrygians and
+                        Lydians, if you come to Egypt, then don't then look at many modest and
+                        as truly worthy of heaven, man-faced with Zeus, but dog-faced
+                        Best of all, Hermes and Pana, all the dragons and living creatures and crocodiles
+                        another and a monkey. if you don't want these things too, if you know, listen
+                        of many sophists and scribes and prophets excommunicated orators, —
+                        first, let the word be spoken, attack the door
+                            profane
+ — as thus under the war ˘ and of the giants
+                        the gods, terrified, returned to Egypt as if they had not been forgotten there
+                        the warriors; the one under them is a dragon, and the ram under the awe, the
+                        But do not be a beast or a bird, and now you are guarding the when you look at them
+                        gods. for these things he neglects among those who do not belong to those who were written more or before him
+                        myriads
+       <note DBPEDIA_ENT="Phrygians" category="" end="89" lang="en" link="http://dbpedia.org/resource/Phrygians" score="0.9999999483518436" source="DBpedia" start="87" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Lydians" category="" end="128" lang="en" link="http://dbpedia.org/resource/Lydians" score="0.9518751631475104" source="DBpedia" start="125" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Egypt" category="" end="152" lang="en" link="http://dbpedia.org/resource/Ancient_Egypt" score="0.9994960347498327" source="DBpedia" start="149" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="265" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="262" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Hermes" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="322" lang="en" link="http://dbpedia.org/resource/Hermes" score="1.0" source="DBpedia" start="319" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Pana" category="" end="333" lang="en" link="http://dbpedia.org/resource/Pana_language" score="0.9986313537575127" source="DBpedia" start="330" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="excommunicated" category="" end="559" lang="en" link="http://dbpedia.org/resource/Excommunication" score="0.9964085130390878" source="DBpedia" start="556" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Egypt" category="" end="794" lang="en" link="http://dbpedia.org/resource/Ancient_Egypt" score="0.9994960347498327" source="DBpedia" start="791" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="dragon" category="" end="902" lang="en" link="http://dbpedia.org/resource/Dragon" score="0.9998018373046654" source="DBpedia" start="899" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="bird" category="" end="992" lang="en" link="http://dbpedia.org/resource/Bird" score="0.9999996703008354" source="DBpedia" start="989" type="automatic">
+       </note>
+      </p>
+     </div>
+     <div n="15" subtype="section" type="textpart">
+      <p>
+       αἱ δὲ θυσίαι καὶ παρʼ ἐκείνοις αἱ αὐταί, πλὴν ὅτι πενθοῦσι τὸ ἱερεῖον καὶ
+                        κόπτονται περιστάντες ἤδη πεφονευμένον. οἱ δὲ καὶ θάπτουσι μόνον
+                        ἀποσφάξαντες. ὁ μὲν γὰρ Ἆπις, ὁ μέγιστος αὐτοῖς θεός, ἐὰν ἀποθάνῃ, τίς οὕτω
+                        περὶ πολλοῦ ποιεῖται τὴν κόμην ὅστις οὐκ ἀπεξύρησε καὶ ψιλὸν ˘ ἐπὶ τῆς
+                        κεφαλῆς τὸ πένθος ἐπεδείξατο, κἂν τὸν Νίσου ἔχῃ πλόκαμον τὸν πορφυροῦν; ἔστι
+                        δὲ ὁ Ἆπις ἐξ ἀγέλης θεός, ἐπὶ τῷ προτέρῳ χειροτονούμενος ὡς πολὺ καλλίων καὶ
+                        σεμνότερος τῶν ἰδιωτῶν Βοῶν. ταῦτα οὕτω γιγνόμενα καὶ ὑπὸ τῶν πολλῶν
+                        πιστευόμενα δεῖσθαί μοι δοκεῖ τοῦ μὲν ἐπιτιμήσοντος οὐδενός, Ἡρακλείτου δέ
+                        τινος ἢ Δημοκρίτου, τοῦ μὲν γελασομένου τὴν ἄγνοιαν αὐτῶν, τοῦ δὲ τὴν ἄνοιαν
+                        ὀδυρουμένου.
+      </p>
+      <p lang="it">
+       E i sacrifici sono gli stessi, tranne che il prete e
+                        ci sono casi in cui sta già morendo. e si limitano a seppellire
+                        macellai. poiché se muore, il dio più grande per loro,
+                        si parla molto dell'uomo che non ha speso un solo centesimo per lei
+                        del capo era rappresentato il lutto, ma Nisso ha un mantello purpureo? ἔστι
+                        e il dio della mandria, Opis, essendo ordinato sul davanti come molto bello e
+                        più modesto dei Boa privati. queste cose vengono fatte così e da molti
+                        Le superstizioni in cui credo non mi mettono alla prova con nessuno che mi stima, Eraclito
+                        di Democrito, che non rideva della loro ignoranza, ma della loro follia
+                        di sofferenza
+       <note PER="Eraclito" end="730" lang="it" link="https://www.wikidata.org/wiki/Q41155" score="0.7833" source="Wikidata" start="722" type="automatic">
+       </note>
+       <note PER="Democrito" end="767" lang="it" link="https://www.wikidata.org/wiki/Q41980" score="0.7805" source="Wikidata" start="758" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="purpureo" category="" end="407" lang="it" link="http://it.dbpedia.org/resource/Porpora" score="0.9999999999159854" source="DBpedia" start="404" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="modesto" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q43115,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Cleric,DBpedia:Animal,DBpedia:Saint" end="552" lang="it" link="http://it.dbpedia.org/resource/Modesto_e_Crescenzia" score="0.999682056520127" source="DBpedia" start="549" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Eraclito" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="725" lang="it" link="http://it.dbpedia.org/resource/Eraclito" score="1.0" source="DBpedia" start="722" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Democrito" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="761" lang="it" link="http://it.dbpedia.org/resource/Democrito" score="0.9999999999747615" source="DBpedia" start="758" type="automatic">
+       </note>
+      </p>
+      <p lang="en">
+       And the sacrifices are the same, except that the priest and
+                        there are instances of him already dying. and they only bury
+                        butchers. for if he dies, the greatest god to them,
+                        much is said of the man who has not spent a single penny on her
+                        of the head the mourning was shown, but Nissus has a purple cloak? ἔστι
+                        and the god of the herd, Opis, being ordained on the front as very beautiful and
+                        more modest than the private Boas. these things being done like this and by the many
+                        Believed superstitions test me of none who esteems me, Heraclitus
+                        of Democritus, who did not laugh at their ignorance, but at their insanity
+                        of suffering
+       <note DBPEDIA_ENT="Opis" category="" end="464" lang="en" link="http://dbpedia.org/resource/Nymphai_Hyperboreioi" score="0.9999220989398352" source="DBpedia" start="461" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Heraclitus" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="708" lang="en" link="http://dbpedia.org/resource/Heraclitus" score="0.9999999999994316" source="DBpedia" start="705" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="Democritus" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="746" lang="en" link="http://dbpedia.org/resource/Democritus" score="1.0" source="DBpedia" start="743" type="automatic">
+       </note>
+       <note DBPEDIA_ENT="insanity" category="" end="809" lang="en" link="http://dbpedia.org/resource/Insanity" score="0.8868397920387193" source="DBpedia" start="806" type="automatic">
+       </note>
+      </p>
+     </div>
+    </div>
+   </text>
+  </tei>
+ 
+

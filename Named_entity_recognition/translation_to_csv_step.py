@@ -3,7 +3,7 @@ import pandas as pd
 from bs4 import BeautifulSoup as bs
 
 
-def get_matadata(files_extracted, directory_path, final_directory_path):
+def get_matadata_with_translation(files_extracted, directory_path, final_directory_path):
     latin_list = []
     balise=['p','l']
 
@@ -17,7 +17,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                 content = file.read()
                 bs_content = bs(content, "lxml")
 
-                for item in bs_content.find_all("tei"):  # ("tei"):
+                for item in bs_content.find_all("tei.2"):  # ("tei"):
                     title = item.find('title').text
                     author = item.find('author').text
                     if item.find('editor') is not None:
@@ -28,7 +28,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div',type="book")
+                div_books = bs_content.find_all('div1',type="book")
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -38,7 +38,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                     div_id_header = ''.join([str(content) for content in div if isinstance(content, str)])
 
                    # print("div_id_header: ",div_id_header)
-                    div_chapter = bs_content.find_all('div')
+                    div_chapter = bs_content.find_all('div2')
                     for div_c in div_chapter:
                         div_id_c = div_c.get('n')
                         div_id_c_header = ''.join([str(content) for content in div_c if isinstance(content, str)])
@@ -92,6 +92,101 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                                                  "latin_text", "italian_text", "english_text"])  # "sponsor"
                 # Save the DataFrame to a CSV file
                 file_name, file_extension = os.path.splitext(os.path.basename(file.name))
+                file_path = os.path.join(final_directory_path, file_name + "_metadata_with_translations.csv")
+                print(file_name)
+                print(file_path)
+                df.to_csv(file_path, index=False)
+                print("done")
+
+
+def get_matadata(files_extracted, directory_path, final_directory_path):
+    latin_list = []
+    balise=['p','l']
+
+    for file_name in files_extracted:
+        file_path = os.path.join(directory_path, file_name)
+
+        if os.path.isfile(file_path):
+            with open(file_path, 'r') as file:
+                # Read the XML file
+                data = []
+                content = file.read()
+                bs_content = bs(content, "lxml")
+
+                for item in bs_content.find_all("tei.2"):  # ("tei"):
+                    title = item.find('title').text
+                    author = item.find('author').text
+                    if item.find('editor') is not None:
+                        if (item.find('editor').text is not None):
+                            editor = item.find('editor').text
+                    if item.find('sponsor') is not None:
+                        if (item.find('sponsor').text is not None):
+                            sponsor = item.find('sponsor').text
+                    date = item.find('date').text
+
+                div_books = bs_content.find_all('div1',type="book")
+                # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
+                italian_div_to_p_mapping = {}
+                english_div_to_p_mapping = {}
+                latin_div_to_p_mapping = {}
+                for div in div_books:
+                    div_id = div.get('n')
+                    div_id_header = ''.join([str(content) for content in div if isinstance(content, str)])
+
+                   # print("div_id_header: ",div_id_header)
+                    div_chapter = bs_content.find_all('div2')
+                    for div_c in div_chapter:
+                        div_id_c = div_c.get('n')
+                        div_id_c_header = ''.join([str(content) for content in div_c if isinstance(content, str)])
+                        print(div_id_c)
+                    #for element in div.find_all(balise,{'lang': "it"}):
+                     #   italian_p_elements = div.find_all((element), {'lang': "it"})
+                      #  if italian_p_elements:
+                       #     italian_div_to_p_mapping[div_id] = [p.text.strip() for p in italian_p_elements]
+                   # if div.find_all(('l'), {'lang': "it"}):
+                    #    italian_p_elements = div.find_all(('l'), {'lang': "it"})
+                     #   if italian_p_elements:
+                      #      italian_div_to_p_mapping[div_id] = [p.text.strip() for p in italian_p_elements]
+
+                    #if div.find_all(('p'), {'lang': "it"}):
+                        italian_p_elements = div_c.find_all((['p', 'l']), {'lang': "it"})
+                        if italian_p_elements:
+                               italian_div_to_p_mapping[div_id] = [p.text.strip() for p in italian_p_elements]
+
+                    # 'l', {'lang': "it"}
+                   # if italian_p_elements:
+                        #italian_div_to_p_mapping[div_id] = [p.text.strip() for p in italian_p_elements]
+
+                        english_p_elements=( div_c.find_all((['p', 'l']), {'lang': "en"}))
+                        if english_p_elements:
+                            english_div_to_p_mapping[div_id] = [p.text.strip() for p in english_p_elements]
+
+                        latin_p_elements = div_c.find_all((['p', 'l']), {'lang': None})
+                        if latin_p_elements:
+                            latin_div_to_p_mapping[div_id] = [p.text.strip() for p in latin_p_elements]
+
+                        for (latin_key, latin_value), (italian_key, italian_value), (english_key, english_value) in zip(
+                            latin_div_to_p_mapping.items(), italian_div_to_p_mapping.items(),
+                            english_div_to_p_mapping.items()):
+
+                            for index, (latin, italian, english) in enumerate(zip(latin_value, italian_value, english_value)):
+                                index_text =str(int(float(index + 1))) #str(latin_key) + "." + str(int(float(index + 1)))
+                                data.append([str((title).replace("\n", "")).replace(" ", ""),
+                                         str((author).replace("\n", "")).replace(" ", ""),
+                                         str((editor).replace("\n", "")).replace(" ", ""),
+                                         str((date).replace("\n", "")).replace(" ", ""),
+                                         str((div_id).replace("\n", "")).replace(" ", ""),
+                                         str((div_id_header).replace("\n", "")).replace(" ", ""),
+
+                                         str((div_id_c).replace("\n", "")).replace(" ", ""),
+                                         str((div_id_c_header).replace("\n", "")).replace(" ", ""),
+
+                                         str((index_text).replace("\n", "")).replace(" ", ""), latin])  # str((sponsor).replace("\n","")).replace(" ","")
+                           # print(data)
+                df = pd.DataFrame(data, columns=["work_title", "author", "editor", "date", "bookid","booktitle","key_div","title_chapter","index_paragraph",
+                                                 "latin_text"])  # "sponsor"
+                # Save the DataFrame to a CSV file
+                file_name, file_extension = os.path.splitext(os.path.basename(file.name))
                 file_path = os.path.join(final_directory_path, file_name + "_metadata.csv")
                 print(file_name)
                 print(file_path)
@@ -111,12 +206,12 @@ def get_annotations(files_extracted, extracted_directory_path, final_directory_p
                 data_wikidata = []
                 content = file.read()
                 bs_content = bs(content, "lxml")
-                for item in bs_content.find_all("tei"):
+                for item in bs_content.find_all("tei.2"):
                     title = item.find('title').text
-                div_books = bs_content.find_all('div', type="book")
+                div_books = bs_content.find_all('div1', type="book")
                 for div_b in div_books:
                     div_book_id = div_b.get('n')
-                    div_elements = div_b.find_all('div', type=div_type)  # e <div> element
+                    div_elements = div_b.find_all('div2', type=div_type)  # e <div> element
                     for div in div_elements:
                         div_id = div.get('n')
                         print(div_id)
@@ -190,4 +285,5 @@ def get_annotations(files_extracted, extracted_directory_path, final_directory_p
 
 def main_transformation_to_csv(files_extracted, extracted_directory_path, final_directory_path, div_type):
     get_matadata(files_extracted, extracted_directory_path, final_directory_path)
+    get_matadata_with_translation(files_extracted, extracted_directory_path, final_directory_path)
     get_annotations(files_extracted, extracted_directory_path, final_directory_path, div_type)
