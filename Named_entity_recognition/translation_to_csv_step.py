@@ -17,7 +17,7 @@ def get_matadata_with_translation(files_extracted, directory_path, final_directo
                 content = file.read()
                 bs_content = bs(content, "lxml")
 
-                for item in bs_content.find_all("tei.2"):  # ("tei"):
+                for item in bs_content.find_all("tei"):  # ("tei"):
                     title = item.find('title').text
                     author = item.find('author').text
                     if item.find('editor') is not None:
@@ -28,7 +28,7 @@ def get_matadata_with_translation(files_extracted, directory_path, final_directo
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div1',type="book")
+                div_books = bs_content.find_all('div',subtype="book")
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -38,7 +38,7 @@ def get_matadata_with_translation(files_extracted, directory_path, final_directo
                     div_id_header = ''.join([str(content) for content in div if isinstance(content, str)])
 
                    # print("div_id_header: ",div_id_header)
-                    div_chapter = bs_content.find_all('div2')
+                    div_chapter = bs_content.find_all('div')
                     for div_c in div_chapter:
                         div_id_c = div_c.get('n')
                         div_id_c_header = ''.join([str(content) for content in div_c if isinstance(content, str)])
@@ -113,7 +113,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                 content = file.read()
                 bs_content = bs(content, "lxml")
 
-                for item in bs_content.find_all("tei.2"):  # ("tei"):
+                for item in bs_content.find_all("tei"):  # ("tei"):
                     title = item.find('title').text
                     author = item.find('author').text
                     if item.find('editor') is not None:
@@ -124,7 +124,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div1',type="book")
+                div_books = bs_content.find_all('div',subtype="book")
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -134,7 +134,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                     div_id_header = ''.join([str(content) for content in div if isinstance(content, str)])
 
                    # print("div_id_header: ",div_id_header)
-                    div_chapter = bs_content.find_all('div2')
+                    div_chapter = bs_content.find_all('div')
                     for div_c in div_chapter:
                         div_id_c = div_c.get('n')
                         div_id_c_header = ''.join([str(content) for content in div_c if isinstance(content, str)])
@@ -206,12 +206,12 @@ def get_annotations(files_extracted, extracted_directory_path, final_directory_p
                 data_wikidata = []
                 content = file.read()
                 bs_content = bs(content, "lxml")
-                for item in bs_content.find_all("tei.2"):
+                for item in bs_content.find_all("tei"):
                     title = item.find('title').text
-                div_books = bs_content.find_all('div1', type="book")
+                div_books = bs_content.find_all('div', subtype="book")
                 for div_b in div_books:
                     div_book_id = div_b.get('n')
-                    div_elements = div_b.find_all('div2', type=div_type)  # e <div> element
+                    div_elements = div_b.find_all('div', subtype=div_type)  # e <div> element
                     for div in div_elements:
                         div_id = div.get('n')
                         print(div_id)
