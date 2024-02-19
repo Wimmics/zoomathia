@@ -308,7 +308,7 @@ def get_matadata_with_translation_with_1div(files_extracted, directory_path, fin
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div',type="section")
+                div_books = bs_content.find_all('div',subtype="fabula")
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -385,7 +385,7 @@ def get_matadata_with1_div(files_extracted, directory_path, final_directory_path
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div',type="section")
+                div_books = bs_content.find_all('div',subtype="fabula")
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -449,7 +449,7 @@ def get_annotations_with1_div(files_extracted, extracted_directory_path, final_d
                 bs_content = bs(content, "lxml")
                 for item in bs_content.find_all("tei"):
                     title = item.find('title').text
-                div_books = bs_content.find_all('div', type="section")
+                div_books = bs_content.find_all('div', subtype="fabula")
                 for div_b in div_books:
                     div_book_id = div_b.get('n')
                     # latin_p_elements = div.find_all('l', {'lang': None})
