@@ -17,7 +17,7 @@ def get_matadata_with_translation(files_extracted, directory_path, final_directo
                 content = file.read()
                 bs_content = bs(content, "lxml")
 
-                for item in bs_content.find_all("tei.2"):  # ("tei"):
+                for item in bs_content.find_all("tei"):  # ("tei"):
                     title = item.find('title').text
                     author = item.find('author').text
                     if item.find('editor') is not None:
@@ -28,7 +28,7 @@ def get_matadata_with_translation(files_extracted, directory_path, final_directo
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div1',type="book")
+                div_books = bs_content.find_all('div',subtype="book")
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -38,7 +38,7 @@ def get_matadata_with_translation(files_extracted, directory_path, final_directo
                     div_id_header = ''.join([str(content) for content in div if isinstance(content, str)])
 
                    # print("div_id_header: ",div_id_header)
-                    div_chapter = bs_content.find_all('div2')
+                    div_chapter = bs_content.find_all('div')
                     for div_c in div_chapter:
                         div_id_c = div_c.get('n')
                         div_id_c_header = ''.join([str(content) for content in div_c if isinstance(content, str)])
@@ -113,7 +113,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                 content = file.read()
                 bs_content = bs(content, "lxml")
 
-                for item in bs_content.find_all("tei.2"):  # ("tei"):
+                for item in bs_content.find_all("tei"):  # ("tei"):
                     title = item.find('title').text
                     author = item.find('author').text
                     if item.find('editor') is not None:
@@ -124,7 +124,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div1',type="book")
+                div_books = bs_content.find_all('div',subtype="book")
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -134,7 +134,7 @@ def get_matadata(files_extracted, directory_path, final_directory_path):
                     div_id_header = ''.join([str(content) for content in div if isinstance(content, str)])
 
                    # print("div_id_header: ",div_id_header)
-                    div_chapter = bs_content.find_all('div2')
+                    div_chapter = bs_content.find_all('div')
                     for div_c in div_chapter:
                         div_id_c = div_c.get('n')
                         div_id_c_header = ''.join([str(content) for content in div_c if isinstance(content, str)])
@@ -206,12 +206,12 @@ def get_annotations(files_extracted, extracted_directory_path, final_directory_p
                 data_wikidata = []
                 content = file.read()
                 bs_content = bs(content, "lxml")
-                for item in bs_content.find_all("tei.2"):
+                for item in bs_content.find_all("tei"):
                     title = item.find('title').text
-                div_books = bs_content.find_all('div1', type="book")
+                div_books = bs_content.find_all('div', subtype="book")
                 for div_b in div_books:
                     div_book_id = div_b.get('n')
-                    div_elements = div_b.find_all('div2', type=div_type)  # e <div> element
+                    div_elements = div_b.find_all('div', subtype=div_type)  # e <div> element
                     for div in div_elements:
                         div_id = div.get('n')
                         print(div_id)
@@ -297,17 +297,17 @@ def get_annotations_go_to_section(files_extracted, extracted_directory_path, fin
                 data_wikidata = []
                 content = file.read()
                 bs_content = bs(content, "lxml")
-                for item in bs_content.find_all("tei.2"):
+                for item in bs_content.find_all("tei"):
                     title = item.find('title').text
-                div_books = bs_content.find_all('div1', type="book")
+                div_books = bs_content.find_all('div', subtype="book")
                 for div_b in div_books:
                     div_book_id = div_b.get('n')
-                    div_elements = div_b.find_all('div2', type=div_type)  # e <div> element
+                    div_elements = div_b.find_all('div', subtype="chapter")  # e <div> element
                     for div in div_elements:
                         div_id = div.get('n')
                         print(div_id)
 
-                        div_section = div.find_all('div3', type="section")  # e <div> element
+                        div_section = div.find_all('div', type="section")  # e <div> element
                         for div_s in div_section:
                             div_id_s = div_s.get('n')
                             print("section: ",div_id_s)
@@ -323,7 +323,7 @@ def get_annotations_go_to_section(files_extracted, extracted_directory_path, fin
                                     index_text = str(manual_index) #str(div_id) + "." + str(manual_index)
                                     print("div, text: ", div_id_s, index_text)
 
-                                note_elements = p.find_all('note')  # Find all <note> elements within the <p> element
+                                note_elements = p.find_all('note',type="automatic")  # Find all <note> elements within the <p> element
                                 if note_elements:
                                     for index_note, note in enumerate(note_elements):
                                         # index_note=index_text+"."+str(index_note)
@@ -379,7 +379,11 @@ def get_annotations_go_to_section(files_extracted, extracted_directory_path, fin
 def get_matadata_with_translation_with_1div(files_extracted, directory_path, final_directory_path):
     latin_list = []
     balise=['p','l']
-
+    title = " "
+    author = " "
+    editor = " "
+    sponsor = " "
+    date = " "
     for file_name in files_extracted:
         file_path = os.path.join(directory_path, file_name)
 
@@ -390,8 +394,9 @@ def get_matadata_with_translation_with_1div(files_extracted, directory_path, fin
                 content = file.read()
                 bs_content = bs(content, "lxml")
 
-                for item in bs_content.find_all("tei"):  # ("tei"):
+                for item in bs_content.find_all(["tei","tei.2"]):  # ("tei"):
                     title = item.find('title').text
+                    print (title)
                     author = item.find('author').text
                     if item.find('editor') is not None:
                         if (item.find('editor').text is not None):
@@ -401,7 +406,7 @@ def get_matadata_with_translation_with_1div(files_extracted, directory_path, fin
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div',subtype="fabula")
+                div_books = bs_content.find_all(['div1','div'])
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -456,7 +461,11 @@ def get_matadata_with_translation_with_1div(files_extracted, directory_path, fin
 def get_matadata_with1_div(files_extracted, directory_path, final_directory_path):
     latin_list = []
     balise=['p','l']
-
+    title = " "
+    author =" "
+    editor = " "
+    sponsor = " "
+    date =" "
     for file_name in files_extracted:
         file_path = os.path.join(directory_path, file_name)
 
@@ -467,7 +476,7 @@ def get_matadata_with1_div(files_extracted, directory_path, final_directory_path
                 content = file.read()
                 bs_content = bs(content, "lxml")
 
-                for item in bs_content.find_all("tei"):  # ("tei"):
+                for item in bs_content.find_all(["tei","tei.2"]):  # ("tei"):
                     title = item.find('title').text
                     author = item.find('author').text
                     if item.find('editor') is not None:
@@ -478,7 +487,7 @@ def get_matadata_with1_div(files_extracted, directory_path, final_directory_path
                             sponsor = item.find('sponsor').text
                     date = item.find('date').text
 
-                div_books = bs_content.find_all('div',subtype="fabula")
+                div_books = bs_content.find_all(['div1','div'])
                 # Associer chaque 'div' à une liste de 'p' en fonction de la valeur de l'attribut 'data-attr' et attribuer un index
                 italian_div_to_p_mapping = {}
                 english_div_to_p_mapping = {}
@@ -530,6 +539,7 @@ def get_matadata_with1_div(files_extracted, directory_path, final_directory_path
 
 def get_annotations_with1_div(files_extracted, extracted_directory_path, final_directory_path, div_type):
     latin_list = []
+    title = " "
     for file_name in files_extracted:
         file_path = os.path.join(extracted_directory_path, file_name)
 
@@ -540,9 +550,9 @@ def get_annotations_with1_div(files_extracted, extracted_directory_path, final_d
                 data_wikidata = []
                 content = file.read()
                 bs_content = bs(content, "lxml")
-                for item in bs_content.find_all("tei"):
+                for item in bs_content.find_all(["tei","tei.2"]):
                     title = item.find('title').text
-                div_books = bs_content.find_all('div', subtype="fabula")
+                div_books = bs_content.find_all(['div1','div'])
                 for div_b in div_books:
                     div_book_id = div_b.get('n')
                     # latin_p_elements = div.find_all('l', {'lang': None})
@@ -559,7 +569,7 @@ def get_annotations_with1_div(files_extracted, extracted_directory_path, final_d
                                 index_text = str(manual_index) #str(div_id) + "." + str(manual_index)
                                 print("div, text: ", div_b, index_text)
 
-                        note_elements = p.find_all('note')  # Find all <note> elements within the <p> element
+                        note_elements = p.find_all('note', type="automatic")  # Find all <note> elements within the <p> element
                         if note_elements:
                                 for index_note, note in enumerate(note_elements):
                                     # index_note=index_text+"."+str(index_note)
@@ -614,11 +624,11 @@ def get_annotations_with1_div(files_extracted, extracted_directory_path, final_d
 
 
 def main_transformation_to_csv(files_extracted, extracted_directory_path, final_directory_path, div_type):
-    get_matadata(files_extracted, extracted_directory_path, final_directory_path)
-    get_matadata_with_translation(files_extracted, extracted_directory_path, final_directory_path)
-   # get_annotations(files_extracted, extracted_directory_path, final_directory_path, div_type)
-    get_annotations_go_to_section(files_extracted, extracted_directory_path, final_directory_path, div_type)
-    #get_matadata_with_translation_with_1div(files_extracted, extracted_directory_path, final_directory_path)
-    #get_matadata_with1_div(files_extracted, extracted_directory_path, final_directory_path)
-    #get_annotations_with1_div(files_extracted, extracted_directory_path, final_directory_path, div_type)
+     #get_matadata(files_extracted, extracted_directory_path, final_directory_path)
+ #   get_matadata_with_translation(files_extracted, extracted_directory_path, final_directory_path)
+    #get_annotations(files_extracted, extracted_directory_path, final_directory_path, div_type)
+    #get_annotations_go_to_section(files_extracted, extracted_directory_path, final_directory_path, div_type)
+    get_matadata_with_translation_with_1div(files_extracted, extracted_directory_path, final_directory_path)
+    get_matadata_with1_div(files_extracted, extracted_directory_path, final_directory_path)
+    get_annotations_with1_div(files_extracted, extracted_directory_path, final_directory_path, div_type)
 

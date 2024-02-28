@@ -1,6 +1,7 @@
 import os
 from bs4 import BeautifulSoup as bs
 from deep_translator import GoogleTranslator
+from tqdm import tqdm
 
 
 def split_and_translate(text, lang_target, max_chunk_length=1000):
@@ -20,13 +21,13 @@ def split_and_translate(text, lang_target, max_chunk_length=1000):
 def translate_text_using_deep_translator(bs_content, balises):
     print(balises)
     for balise in balises:
-        for element in bs_content.find_all(balise):
+        for element in tqdm(bs_content.find_all(balise)):
             # print(element)
             original_text = element.text
             # print(original_text)
             if original_text:
                 translated_text_en = split_and_translate(original_text, "en")  # translator.translate(original_text)
-                print(translated_text_en)
+                #print(translated_text_en)
                 translated_text_it = split_and_translate(original_text,
                                                          "it")  # translate_large_text(original_text, translator_it)
                 # create new element for english translation
