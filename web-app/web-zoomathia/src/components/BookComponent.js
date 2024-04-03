@@ -28,7 +28,7 @@ const BookPage = () => {
             }
             setTitle(`${title}`)
             setParagraphs(paras)
-            setCurrentBookUri(e.target.selectedOptions[0].id)
+            setCurrentBookUri(uri)
         }
         callForData()
     }, [currentLang])
