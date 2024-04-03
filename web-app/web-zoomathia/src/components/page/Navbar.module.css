@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #363537;
+    margin-bottom: 1.4rem;
+    font-weight: bold;
+}
+
+@keyframes logo-slide {
+
+    0%,
+    100% {
+        background-position: 100%;
+    }
+
+    50% {
+        background-position: 0%;
+    }
+}
+
+.logo-box {
+    background-image: url("../../../public/zoomathia.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10%;
+    padding: 50px;
+    animation: logo-slide 10s infinite;
+}
+
+.menu-box {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.menu-box a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0px;
+    padding: 1.5rem;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /*vertical-align: middle;*/
+}
+
+.menu-box a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: 0.5s;
+}

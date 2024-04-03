@@ -1,0 +1,72 @@
+.box-content * {
+    transition: 0.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+p {
+    margin: 0
+}
+
+.select-lang {
+    margin: auto;
+}
+
+.selection-input {
+    margin: auto;
+    width: 50rem;
+}
+
+.box-content {
+    margin: auto;
+    width: 85%;
+    box-shadow: 0 0 5px;
+    padding: 15px;
+    background-color: white;
+}
+
+.input-search {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.input-search label {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0.2rem 0;
+}
+
+.input-search input {
+    text-align: left;
+    margin: auto;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 25%;
+}
+
+.selected-book-title h2 {
+    text-align: center;
+    background-color: #363537;
+    color: white;
+    padding: 0.5rem;
+    margin: 0.8rem 0 0 0;
+    font-size: 2rem;
+}
+
+.button-search {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 20rem;
+    margin: 1rem auto 0 auto;
+    border: grey thin solid;
+}
+
+.button-search:hover {
+    background-color: rgb(124, 168, 255);
+}
+
+.not-found {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+}
