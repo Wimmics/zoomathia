@@ -14,11 +14,11 @@ const BookPage = () => {
     const [currentLang, setCurrentLang] = useState('en')
 
     const getParagraph = useCallback((e) => {
-        console.log(e.target.value)
+        const uri = e.target.selectedOptions[0].id
         const paras = []
         setParagraphs([])
         const callForData = async () => {
-            const data = await fetch(`http://localhost:3001/getParagraphs?uri=${e.target.value}`).then(response => response.json())
+            const data = await fetch(`http://localhost:3001/getParagraphs?uri=${uri}`).then(response => response.json())
             let title = ''
             for (const paragraph of data) {
                 title = paragraph.title
@@ -28,7 +28,7 @@ const BookPage = () => {
             }
             setTitle(`${title}`)
             setParagraphs(paras)
-            setCurrentBookUri(e.target.id)
+            setCurrentBookUri(e.target.selectedOptions[0].id)
         }
         callForData()
     }, [currentLang])
