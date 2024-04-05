@@ -14,7 +14,7 @@ const SelectComponent = (props) => {
             const lang = []
             const data_lang = await fetch("http://localhost:3001/getLanguageConcept").then(response => response.json())
             for (const language of data_lang) {
-                lang.push(<option key={language.value} onClick={changeLanguage} value={language.value}>{language.value}</option>)
+                lang.push(<option key={language.value} value={language.value}>{language.value}</option>)
             }
             setLangs(lang)
         }
@@ -33,7 +33,7 @@ const SelectComponent = (props) => {
         </div>
         <div className={styles["concept-lang"]}>
             <label>Lang</label>
-            <select className={styles["select-lang"]}>
+            <select className={styles["select-lang"]} onChange={changeLanguage}>
                 {langs}
             </select>
         </div>

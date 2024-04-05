@@ -1,0 +1,35 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>.
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>.
+PREFIX schema:  <http://schema.org/> .
+
+SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_conso WHERE {
+  ?annotation1 a oa:Annotation;
+              oa:hasBody ?animal;
+              oa:hasTarget ?target1.
+  ?target1 oa:hasSource ?paragraph;
+     oa:hasSelector ?selector.
+    
+  ?selector oa:exact ?mention_animal.
+
+  ?animal a skos:Concept;
+       skos:prefLabel ?name_animal;
+       skos:broader+ ?animal_generique.
+    
+  ?animal_generique a skos:Concept;
+       skos:prefLabel ?name_animal_generique.
+
+  ?annotation2 oa:hasBody ?conso;
+        oa:hasTarget ?target2.
+  ?target2 oa:hasSource ?paragraph;
+      oa:hasSelector ?selector2.
+  ?selector2 oa:exact ?mention_conso.
+
+  ?conso skos:prefLabel ?name_conso;
+     	            skos:broader+ ?conso_generique.
+  ?conso_generique skos:prefLabel "animal in human nourishing"@en.
+
+  FILTER (str(?name_animal_generique) in ("BIRD","BIRD WITH CLAW","BIRD WITH TOES","WATERBIRD","NIGHT BIRD","MIGRATORY BIRD", "PALMIPED BIRD")).
+  FILTER (lang(?name_animal) = "en").
+  FILTER (lang(?name_conso) = "en")
+}
+ORDER BY ?paragraph
