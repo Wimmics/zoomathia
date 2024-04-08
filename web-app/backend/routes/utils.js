@@ -34,7 +34,7 @@ const readTemplate = (template, id) => {
  * @returns {string} SPARQL query string
  */
 const getCompetenciesQuestion = (file) => {
-    let queryTpl = fs.readFileSync('queries/' + file, 'utf8');
+    let queryTpl = fs.readFileSync(`queries/${file}`, 'utf8');
     return queryTpl;
 }
 
