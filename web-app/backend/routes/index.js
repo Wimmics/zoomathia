@@ -370,6 +370,7 @@ router.get("/getQC", async (req, res) => {
   const response = {
     query: query,
     results: result,
+    spo: fs.readFileSync(`queries/qc${req.query.id}_spo.rq`, 'utf8'),
     table: {
       columns: result.head.vars,
       data: data
