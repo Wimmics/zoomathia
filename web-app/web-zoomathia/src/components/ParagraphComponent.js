@@ -26,7 +26,7 @@ const ParagraphDisplay = (props) => {
     useEffect(() => {
         const callForData = async () => {
             const conceptsList = []
-            const data = await fetch(`http://localhost:3001/getConcepts?uri=${props.uri}&lang=${props.lang}`).then(response => response.json())
+            const data = await fetch(`${process.env.BACKEND_URL}getConcepts?uri=${props.uri}&lang=${props.lang}`).then(response => response.json())
             for (const annotation of data) {
                 conceptsList.push(
                     <li
