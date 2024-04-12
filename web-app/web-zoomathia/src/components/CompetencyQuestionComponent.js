@@ -11,10 +11,6 @@ const CompetencyQuestionComponent = () => {
     const [goal, setGoal] = useState("")
     const [iframe, setIframe] = useState(<></>)
 
-    const toSPOQuery = (query, s, p, o) => {
-        return query.replace(s, "?s").replace(p, "?p").replace(o, "?o")
-    }
-
     const updateTable = useCallback((e) => {
         const file = e.target.selectedOptions[0].getAttribute("id")
         const title = e.target.selectedOptions[0].label
@@ -72,7 +68,7 @@ const CompetencyQuestionComponent = () => {
             setGoal("My goal")
             setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"
-                src={`${process.env.REACT_APP_LDVIZ_URL}ldviz?url=http://localhost:8080/sparql&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
+                src={`${process.env.REACT_APP_LDVIZ_URL}ldviz?url=${process.env.REACT_APP_CORESE_URL}&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
             //src={`http://dataviz.i3s.unice.fr/ldviz?url=http://54.36.123.165:8890/sparql&query=${encodeURIComponent(data.spo)}`}
             >
             </iframe>)
@@ -95,7 +91,7 @@ const CompetencyQuestionComponent = () => {
     }, [setOptions])
 
     return <div className={styles["box-content"]}>
-        <h2>Select a competency question</h2>
+        <h2 key="titre_competence">Select a competency question</h2>
         <select onChange={updateTable}>
             {options}
         </select>
