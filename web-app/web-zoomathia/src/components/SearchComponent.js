@@ -22,7 +22,7 @@ const SearchComponent = () => {
             if (input === '') {
                 return []
             } else {
-                const data = await fetch(`${process.env.BACKEND_URL}searchConcepts?input=${input}&lang=${currentLang}`).then(response => response.json())
+                const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}searchConcepts?input=${input}&lang=${currentLang}`).then(response => response.json())
                 for (const concept of data) {
                     retrieved_concept.push({ value: concept.uri, label: `${concept.label} @${currentLang}` })
                 }
@@ -39,7 +39,7 @@ const SearchComponent = () => {
             const book_found = {}
 
             const data = await fetch(
-                `${process.env.BACKEND_URL}getParagraphsWithConcepts`,
+                `${process.env.REACT_APP_BACKEND_URL}getParagraphsWithConcepts`,
                 {
                     method: 'POST',
                     headers: { 'content-type': 'application/json' },

@@ -12,7 +12,7 @@ const SelectComponent = (props) => {
     useEffect(() => {
         const callForData = async () => {
             const lang = []
-            const data_lang = await fetch(`${process.env.BACKEND_URL}getLanguageConcept`).then(response => response.json())
+            const data_lang = await fetch(`${process.env.REACT_APP_BACKEND_URL}getLanguageConcept`).then(response => response.json())
             for (const language of data_lang) {
                 lang.push(<option key={language.value} value={language.value}>{language.value}</option>)
             }

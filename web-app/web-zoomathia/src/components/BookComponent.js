@@ -18,7 +18,7 @@ const BookPage = () => {
         const paras = []
         setParagraphs([])
         const callForData = async () => {
-            const data = await fetch(`${process.env.BACKEND_URL}getParagraphs?uri=${uri}`).then(response => response.json())
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getParagraphs?uri=${uri}`).then(response => response.json())
             let title = ''
             for (const paragraph of data) {
                 title = paragraph.title
@@ -38,7 +38,7 @@ const BookPage = () => {
         const callForData = async (e) => {
             const paras = []
             const data = await fetch(
-                `${process.env.BACKEND_URL}getParagraphWithConcept`,
+                `${process.env.REACT_APP_BACKEND_URL}getParagraphWithConcept`,
                 {
                     method: 'POST',
                     headers: { 'content-type': 'application/json' },
@@ -66,7 +66,7 @@ const BookPage = () => {
             if (input === '') {
                 return []
             } else {
-                const data = await fetch(`${process.env.BACKEND_URL}searchConcepts?input=${input}&lang=${currentLang}`).then(response => response.json())
+                const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}searchConcepts?input=${input}&lang=${currentLang}`).then(response => response.json())
                 for (const concept of data) {
                     retrieved_concept.push({ value: concept.uri, label: `${concept.label}@${currentLang}` })
                 }
@@ -79,7 +79,7 @@ const BookPage = () => {
     const getBookList = useCallback((e) => {
         let bookList = [<option></option>];
         const callForData = async () => {
-            const data = await fetch(`${process.env.BACKEND_URL}getBookList?title=${e.target.value}`).then(response => response.json())
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getBookList?title=${e.target.value}`).then(response => response.json())
             for (const book of data) {
                 bookList.push(<option key={book.uri} id={book.uri} number={book.id}>{book.id}</option>)
             }
@@ -98,7 +98,7 @@ const BookPage = () => {
     const getWorks = useCallback((e) => {
         const workList = [<option></option>]
         const callForData = async () => {
-            const data = await fetch(`${process.env.BACKEND_URL}getWorks?author=${e.target.value}`).then(response => response.json())
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks?author=${e.target.value}`).then(response => response.json())
             for (const work of data) {
                 workList.push(<option value={work.uri}>{work.title}</option>)
             }
@@ -117,7 +117,7 @@ const BookPage = () => {
     useLayoutEffect(() => {
         const author_response = [<option></option>]
         const callForData = async () => {
-            const data = await fetch(`${process.env.BACKEND_URL}getAuthors`).then(response => response.json())
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getAuthors`).then(response => response.json())
             for (const author of data) {
                 author_response.push(<option key={author.name} name={author.name}>{author.name}</option>)
             }

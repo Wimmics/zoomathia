@@ -65,14 +65,14 @@ const CompetencyQuestionComponent = () => {
                     }
                 ]
             }`
-            const data = await fetch(`${process.env.BACKEND_URL}getQC?id=${file}`).then(response => response.json())
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
             setTitle(title)
             setColumns(data.table.columns)
             setData(data.table.data)
             setGoal("My goal")
             setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"
-                src={`${process.env.LDVIZ_URL}ldviz?url=http://localhost:8080/sparql&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
+                src={`${process.env.REACT_APP_LDVIZ_URL}ldviz?url=http://localhost:8080/sparql&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
             //src={`http://dataviz.i3s.unice.fr/ldviz?url=http://54.36.123.165:8890/sparql&query=${encodeURIComponent(data.spo)}`}
             >
             </iframe>)
@@ -82,7 +82,7 @@ const CompetencyQuestionComponent = () => {
 
     useEffect(() => {
         const callForData = async () => {
-            const data = await fetch(`${process.env.BACKEND_URL}qcList`).then(response => response.json())
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}qcList`).then(response => response.json())
             const optionsList = [<option></option>]
             for (const row of data) {
                 optionsList.push(<option key={row.id} id={row.id} data={row.file}>QC{row.id} - {row.title}</option>)
