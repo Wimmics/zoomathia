@@ -19,7 +19,7 @@ const SelectComponent = (props) => {
             setLangs(lang)
         }
         callForData()
-    }, [changeLanguage])
+    }, [setLangs, changeLanguage])
 
     return <section className={styles["input-search"]}>
         <div className={styles["concept-input"]}>

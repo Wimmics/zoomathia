@@ -85,7 +85,7 @@ const BookPage = () => {
             }
             //setBooks(bookList)
             setBooks(<section className={styles["book-section"]}>
-                <h2>Select book</h2>
+                <h2 key="book">Select book</h2>
                 <select onChange={getParagraph}>
                     {bookList}
                 </select>
@@ -103,7 +103,7 @@ const BookPage = () => {
                 workList.push(<option value={work.uri}>{work.title}</option>)
             }
             setWorks(<section>
-                <h2>Work</h2>
+                <h2 key="work">Work</h2>
                 <select onChange={getBookList}>
                     {workList}
                 </select>
@@ -123,7 +123,7 @@ const BookPage = () => {
             }
 
             setAuthorList(<section className={styles["author-section"]}>
-                <h2>Author</h2>
+                <h2 key="author">Author</h2>
                 <select onChange={getWorks}>
                     {author_response}
                 </select>
