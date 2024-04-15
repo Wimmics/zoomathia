@@ -31,9 +31,27 @@
 	];
 	
 	rr:predicateObjectMap [
+		rr:predicate oa:start;
+		rr:objectMap [
+			xrr:reference "$.start";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate oa:end;
+		rr:objectMap [
+			xrr:reference "$.end";
+			rr:termType rr:Literal;
+			rr:datatype xsd:integer;
+		];
+	];
+	
+	rr:predicateObjectMap [
 		rr:predicate oa:exact;
 		rr:objectMap [
-			xrr:reference "$.text";
+			xrr:reference "$.paragraph_text";
 			rr:termType rr:Literal;
 			rr:datatype xsd:string;
 		];
@@ -52,7 +70,7 @@
 	
 	rr:predicateObjectMap [
 		rr:predicate oa:hasSource;
-		rr:objectMap [ rr:template "http://www.zoomathia.com/{$.name}/{$.chapter}/{$.paragraph}"; ];
+		rr:objectMap [ rr:template "http://www.zoomathia.com/Pline/historia_naturalis/{$.chapter}/{$.paragraph_id}"; ];
 	];
 	rr:predicateObjectMap [
 		rr:predicate oa:hasSelector;
@@ -62,21 +80,47 @@
 		];
 	].
 
-<#Anno>
+<#Anno_concept>
 	a rr:TripleMap;
 	xrr:logicalSource [
-		xrr:query """db.Annotation.find()""";
+		xrr:query """db.Annotation.find({"concept_type" : "Concept"})""";
 	];
 	
 	rr:subjectMap [
-		rr:template "http://www.zoomathia.com/annotation/sha1({$.id}_{$.concept}_{$.chapter}_{$.paragraph})";
+		rr:template "http://www.zoomathia.com/annotation/Pline_historia_naturalis_{$.chapter}_{$.paragraph_id}_{$.annotation_id}";
 		rr:class oa:Annotation;
 	];
 	
 	rr:predicateObjectMap [
 		rr:predicate oa:hasBody;
 		rr:objectMap [
-			rr:template "https://opentheso.huma-num.fr/?idc={$.concept}&idt=th310";
+			rr:template "https://opentheso.huma-num.fr/?idc={$.concept_id}&idt=th310";
+		];
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate oa:hasTarget;
+		rr:objectMap [
+			rr:template "TargetBlankNode{$._id}";
+			rr:termType rr:BlankNode;
+		];
+	].
+
+<#Anno_collection>
+	a rr:TripleMap;
+	xrr:logicalSource [
+		xrr:query """db.Annotation.find({"concept_type" : "Collection"})""";
+	];
+	
+	rr:subjectMap [
+		rr:template "http://www.zoomathia.com/annotation/Pline_historia_naturalis_{$.chapter}_{$.paragraph_id}_{$.annotation_id}";
+		rr:class oa:Annotation;
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate oa:hasBody;
+		rr:objectMap [
+			rr:template "https://opentheso.huma-num.fr/?idg={$.concept_id}&idt=th310";
 		];
 	];
 	
