@@ -1,0 +1,4024 @@
+@prefix schema:  <http://schema.org/> .
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dce:     <http://purl.org/dc/elements/1.1/> .
+@prefix fabio:   <http://purl.org/spar/fabio/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:    <http://purl.org/vocab/frbr/core#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix oa:      <http://www.w3.org/ns/oa#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<http://www.zoomathia.com/annotation/19b9ad1202808e806c79d2f88b1b2f38a9e11208>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "esadecimale"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d2d3124668e842d84fb754354760f4b79d8b380e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Trojan horse"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d50bab2c01714148eeef75744a68bd25b2981edc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Alcathous"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/53642cf210b3a840d9e344dd6bce04755079268f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c4d89e5cafe5a6a29965a7b6425f27b6033dba19>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtN3ODhrk9YN&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Polluce"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1a19874ab68da18aa3d27873478f13ca24453494>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Troia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd8fef084a490d3ead206864e5a29b482111a5ba>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thallon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ac1a9a631c6abf81c6ee7728aa5187bad264fb9b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ca501a5a4427d7453cbb87be26ca8b63279ccbb1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtEG5eAkeX6Y&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nestor"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a594ab1d9403b7597b30f41073f4b0ab4e078a82>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ninfa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e3799267a23fcca50f6da8e14ba3ca85352dac36>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105204&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trachea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1db027d950b9c1243e321fc8fa2f16a3b5d2fa9c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105721&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Greece"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed713cbaa2a4717312f60a2004359b7a16f04af1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q178641&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Peleus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f311e4cf1eb47be26ff16e3b8edb946f8163b499>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Alki"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8ddff8f465454d0be27b74fe2b7d8cbd5934d6ea>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8dcce8f8f5c0b8b238e8bf398dabdd73606d5cf5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Antilochus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a39d8af27be8032265d952c84d0a6e32e64024bc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "multitudes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_24/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2b94b60df2912d1a5ec83d371229250b72b451d1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "abate"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/52ad92e599909b99e1cab80d22eb2d9784b022a1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cubiti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7c22792cfb86d38c265c8a67bceee210b8316cf9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orecchio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_32/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e34bd2e8d7b74438a9384b0eb26a7170b9788c2f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a982bbd1d877f2358d66a62e896906aa1127f508>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q1139470&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Procri"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0a29f33578be5640b53c4753fb32a85efa3e2205>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q175821&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "micron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_23/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a0916e7103a2257978b5dbf53750573ec27a4383>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtId0TMGAa0F&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "linen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/458fc4b9ac868557643ee08e98c40140c04d3fe6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bianco"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_22/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/50d9e1b6a980f430146539432b64010114fcbec3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_8/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b9f19f8d06e5b24c982e277be0c7def62fca38c5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Siria"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc218cc32406ddc50f87e1d2f38bda2ed2e65e13>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9a50dd4b076fa8a023b5aa19b4dbcd23aa41a0ae>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5af0d6df61daaa6fd9bd4570a59c8178bd27b42d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q330584&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Amphiaraus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/27e1b1cf81e71222dcfc6049d092cc8a1fcbd3dc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0d29422ea4109bb7b143d1ff839becec1890c071>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cephalus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/11413183b287906237e27c45f008ef2279401fc8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_3/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3b4f779d4dd3bc68d2a0f8eae5b048862d8684bf>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105830&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pirro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/afe810b9da604b2def5b606b1d73075ee0f0b22e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/643ae05092720cf9937d2e9cd0504c86fd81afdf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f926b36ea320287d67cc64967ad9e38b26ef27e1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/53fc02eb827a0a81776d9c8a626fedd3a07773c4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtPV8p7jpDYV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Medes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4f2894f2b71c5725baaaeef0e2956709e5899fb2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sofista"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/40d6cd5076f93041a898f21bea5883ba441fedb9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Fedra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8116185d76849d88048489f1204f50740a2b0109>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q1448901&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mount Pangaion"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a25ec5828884b08f37ad447fd45c0f766260ab4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q5760&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thebes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9c8c79647491f9b74635fb1c7a4ba657ec680332>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q674319&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Macaone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a250a44836c1450a1a6f329618bc56d29e24f98>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Menesteo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c21660b0b551f1bb3408a46ecb011680f6c5228b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtdmfakaGaWn&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Macaone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c5d82ab398361d66d49ffeefc196f69e075bf8dc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q39503&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/22b48c2f1d1b0f617fa53415c12ec55deb1e8577>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sofisti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d3eeb65cbc1c4b8e0e0221518a2e8cfe14b6732e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q15611&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ef56569b9192c10975b868395317a53c85a5743d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqVxjbmIO0s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Apollo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/78c0af06bbb34fd608e5eafc6e7c6294bf1a5fd1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_20/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cd671ec025dd943202188aa05643f3f0664cba42>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/550edfe99735e78092f1ca073782465d4a82cbc3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "porpax"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3a4575643a02fb63db510f4f40f3cd0d6614edeb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "telling stories"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2c1997c09d87b7e424d1b4a0be32f950971014ff>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMr3tb79bV8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e1d21d462e54d5d1e75803856936e4b2fc34ebe5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqLZQfNL3xA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Castor"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/df4bd0e7d2d53c03b59b91285d2e6eb729fa98a8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Procris"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c6c4752dba770a6e88d522b3c99c26f9bfc8f5c0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtPV8p7jpDYV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Medes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/eab6f7e0c89e4d22f4fad89778de3a852b6c8bfb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/96da66a886d37cdcbaee38d80cfb60c01c5b6ad2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Menesteo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7c482cbdf98d07d9ca3a202c7bf3fab8a1eaf1f8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d248350995f8577a32aead0354af65d8038f0883>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/415e0e8559ef191b56ead497083b3a2ff968c1e0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ileus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/12ec604afa05e7d7307dfe2a0543327a8348ca90>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_3/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d39604eec4c4350de9a2cb9aa9145449fc4dc151>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Troia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5c2b275b17a54efa6b9410b1aebf425785ccfce0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Carthaginian"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9359300e81f1d6fc7a5a854c53b8d60cb1f477ab>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a1b16daad76f974fefe979cadc340a8fea567630>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7314e2208fdfb92c41f0d3e2ded8ccc82fa55de5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Diomede"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/540e28ce8277bdbad067ba06b0a66af9cd30694b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/01ffb9fbc4c6d474eea93c230aa3d87a2a0d5b36>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e7481b7c525efb15c210d1529957c9677dd24768>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlymenxjbtZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Achilles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/709f0f6e9857b77d2b9d1dcd3cc79d748d19868d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Hippolytus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3faf78a3e70a42b819fe2b7958d9230f25f4e3c2>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtN3ODhrk9YN&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Polydeuces"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2cd0328fcf0733f61ba460afc8dcc82892a688ef>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Kephalos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/21c9d4cedc6dbda458d6ae3c83f10f8ccdd06aac>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "resisti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d6e8768b45edda74e5a5dd566f1556af4cba9d94>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q781867&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Menesteo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5c453bca8a92dc3dddf2b4b600c8d6bfbc2e3a52>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtHEc4SsdjMV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "hook"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/88f14ddfc1f6dbe34276eeb864e647a255564ca5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/620b6511296c58cce6f8095dc18df7f6ed945708>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q201582&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5cbbf4d24e617b0249306fc019cc843474c527d3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Palamede"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/803ed3e4958f79c13f5458ae869489c71601b452>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "meteora"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6769f641c65dc9b87b2b7dc30242a24eabc0c6f1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Macedonia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1036960448e5577ad932ac8798874aaffba5864a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9eb7590c495aef7c1e950f1e4e7b97c7b4bd7ad4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anime"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4f903591d2cd89f2e9fbe033ad10a17de82b1faa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Podaleirius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/24713a37c4597bfe6cd06d8fce8993bc80441ab0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtrA8yMmtqP9&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Telamone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5231a23e9683e1736a5a671cddecfa77337b7999>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mutation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7cb7d7822bcf864f895379b0f680f6d78c832413>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt8xRNTo2aQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Peleus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3be9d91e71ab35c1ff89172a77cf77b24b588e8b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Odysseus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4c357f617cf0acd95fb488a04e2d67dd283b87c7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q373916&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nymph"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ee6be4c4f1ada0d7e721023b1f0705559d1e0f58>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "creep"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/db557ec0ae34effc260f841fd880eb5af6d1d6ed>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Hippolytus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8b3bfe3f0c765ed4e61c495cbcacf55c356864c0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt5RnEvxdOiq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Diomedes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3c421089026ae1b3a7c8d4cb47a03b62603edd55>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/aef1a18dd2b1e24717dc9460ee7e184a97239a69>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "elemosina"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f15856828f0569bcb2cc7965825d37fa9896b3cd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ebb20c26b207fb02034bbfa6293fdcb49e7ae920>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105204&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trachea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_30/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/03a48f5cb9eb60ce7b905a5df5b97f327da5a50c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/402a935f4cc07315b74fa9d99370087f7c1a0f97>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_8/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7005d971f938e3867e9bfedc339652ab965cdcf4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5896e76d36c95a4ce2dcf69a0ef121c639f4d155>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/063ba3f42cf3fcc4f564286a4a80c59751beb9a0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Palamedes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2f86276ff8b9665e54f185f3e2087488077e896a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_22/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a2a2035c8738d9dac8a44687881da309803ba2e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/68fba5f5c55a2bea1c1c4dbe4d04d12021bd23bb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q1071946&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Podaleirius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/166cda2b098fa7c2dc7c2fc6e56b58ebd5680ca4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e6369f9a8368966c5b9f6cadc7e966823aa8d7ac>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cretan"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/68cd2d18922e080030cccc12d92cb9bd9bdae73c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cefalo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4849b125fac109e978655aee9ed6d46aba6381b8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105721&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Greece"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9241da8f7815f3d1a6e80f5ba8cb4cca192ab597>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_25/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/543414285dfc7104dca4c3e5f9465f2d2a494691>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nissa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d1530bb269c354a0376a0d295c2da139725a1e6e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2b8a7fbd32170cf1a1775064bde9ffc9000e55fd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4dce7530f3aa100569698c28a298a9aca615e21d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105140&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "collo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_30/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/50a888398c0d3291620ad34210d7d443ad928f29>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cd1eb4032c2a93e22c72ad6f41db35bae909b457>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cartagine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/94ef51b456524bb1df77d5cdabe778027e0da429>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q80344&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9c8cce3b35ababc7287cdf7404df020d13768faf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Slaughter"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/feb4b6daa9670c9a180c306f290e8eb0af034dbc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt8xRNTo2aQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Peleo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ec09e755724ad66a4bd5738df09f5729fd54ec17>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/16f0cba661da3144627077794bad5a02dc573c34>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q577552&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Antiloco"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/11e63b5b27b73f518667f710dd61e5ecbf1f6a73>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "avampiede"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/875e710c4976e8b5ef8b855b027e92d7d612860b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_3/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e301f8d1367e53e52a50c9ed1fc8841a888e5a33>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sofisti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/76719cd2fea41589d17e564ba380cb37db236757>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "foreste"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b0761b8b63747a2c519684498bfca24798079bfd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/77d1262e6cbf2c65bca9f5868ff924ea1e90b90f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt8xRNTo2aQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Peleus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b80cc7b900a04aadf54d68a252f2acbcb30e499e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsADFJXaeAZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aeneas"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ac0a9dcb0561cded6186dda892a4f7b03f975a44>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtAWl3eAUQlA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "milk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9a63b13c952d7c9f6b6e44baa59f17a87e535a7e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4c4572be547b6eaa7aa694abba2af3ada8dc091c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q781867&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Menesteo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/45c9f17b69918dd049025641b22c0380d8569c74>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "hexadecimal"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f250bf561c5aadc96ffb18cb716969cdc61953b0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/697d50778c399f054e98beee1b8aebdb47d89a03>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sofisti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/116217a06cc6471b4c8fcf041986a364111d68ec>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtdmfakaGaWn&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Macaone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd9d39242f89621fba0cc2530446bc75b70aa4a4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/61d061935ef2af9365f4fc301b707a1fd6ef66eb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teseo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/dc2dd5385cbcf2262bc4574d771d9fffed6210a8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "imperfetto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/52321642884bce9bb605414e322b6d6d1de0affc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5d98cfc84c6a42b689a1ac199e0cf1077c9a20a7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/85a98d92610a9f4fe754ccffb87279173b716ec2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "micron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_23/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c269ca28b87a51af5856381b274d7e609b6941ed>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/23773ceeabe7e84943c8a2aa9e5d9261e0fdbac5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pene"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4bf4523651e5a5c814990233ca912b59c38afcec>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBz4rMTHBN2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Meleager"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/eb64b4bf599373c62230714f996ad133d4b9c9ed>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBz4rMTHBN2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Meleagro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/41df5e179ebc864bb4d7deaa806759e937c03bef>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mestor"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4a7b248df2ff781d95608fe1a72d0c1f58351b58>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sofisti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5d9f6f0a0c06ea35fc3c10627ed06d04bbe9daf5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "inode"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/567a3abae0055d0935037d74cbce92b227b3b8b2>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtEG5eAkeX6Y&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nestor"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5339b5b775fa6515788d9e344f1daed6ab00aa4e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Amphiaraus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/52d1cdae1a4468cce0f3ddc305516dffc937a0fb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "petali"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/98bbe6bf220926f8808d9ba455eba867dea239ee>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/568b745d5980fdc2b354031d9af1b886e371b17a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q508755&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aether"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e792fa48074036b47c915b625e12aa8d0dc79edc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8e14f8caa564d6a0df452360b67f6e63c361d9b9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "homonym"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed326f23d1a3e52efaa1a0e77bd5dcd3a647ac64>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Tebe"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8edf50d0315dd7342e4db0af67c92172bee6817a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Esione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/14680e5c4c45687c8ec8ad71ae024894e266f412>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q208256&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Diomede"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5e69990c3bd1fea4abde4de86373244fbe0bc353>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ace04c081ab81209a4479a96f99de6de0237acb9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/23cfd98a11420eb3561739e42a893b37a7c822d7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlymenxjbtZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Achilles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6c85c88010b80a544f970f9d5669abfa50b3ce22>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lanciano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4224fd8b70c0e67190815b0a665cc4da436e4df9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vanga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd8c4dfa0ea66862c1c6c0b53282514a7c9e66e3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b85068a7ceeab5bf4e56e3ba565b62e6caeb4efc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q178641&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Peleo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0927fdd3d573763ea65bd7b0faf6fb5a1bde513f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1cc550524914dbe843898f3519888021d0a39fbe>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Diomede"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/811c88ace9bfa596d1ac904b93cacf654ecfdac3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMr3tb79bV8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/30b2a18513e55b1856700bfbea84f567502e67a5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Amphiaraus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7f85e74c3926c3afbd733262f245498621d8d63f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtId0TMGAa0F&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "linen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/73323fe8a3f6c2692e74b0c534be8eee31dc1737>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_23/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0a26f926e8f2005d866d4a69f68120241cc23328>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5637d279d4cc87e328e065e8276b3bf6aa0a9c54>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q622319&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mysia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7878d3dab72ceaf4ea8b78048d1e949e4a99aa1c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "squame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b052a4e788ec9940d046ebf3c6389fd386344d39>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q7071272&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nyssa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3c8541d4068cf5caee11ea0966b4bc74945fc50d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9807aaf7b50b555b438a42314d15f60b959812e6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "napes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/484706497071fb1a8b0d96df6ed40c6127cbf959>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7dd6db4cb64c3bc6c4aeddcdcf9382f80ea94668>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bow"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fbceae9afde222df8d28416a9bba6afe066fec22>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed79cf01a34aafd0bc9847c7a5eaa6e26e1fa90a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/306959bb0efbae69aea5a5c7c9c191217b623bfa>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_8/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3324b229eb5bcd055e9c39f2ece1d6690bac1ab4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lengths"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_2/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/92ed1179e218773a23453a732b39b13077bff101>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c303b0085fd878c9acde4d0a2c0e2f5e2f053c03>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105204&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trachea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/24877a915cd7222da1811f0e1682b0ac95bffc05>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107101&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sardine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/42eca9a551688b630c790f8fff675cb3b99eef4c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107826&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Syria"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e74add159d07bd60b3fb352bcc0d5c25ba757a0e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtN3ODhrk9YN&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Polydeuces"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/72d1170e0dd3874307c03406adc0d62d03c3b674>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105721&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Greece"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a9c6345e30954ae040ae2e9af4d47300cd11c4d2>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlymenxjbtZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Achilles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4b5b9e40684bab44193f3154ce740127ae6273d0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Troia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/921ee1c6162b10755da24e3bdc429e0393926621>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "eruzione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d7cfc1b970338971679e341959d33dd5c6e3934b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105721&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Greece"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e1766d5daeac48b9e01cb5b3642cc43cd4fe4a27>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMr3tb79bV8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/67f48199e621ddaba0f9aabcbc31f3c9868a5d69>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Melanion"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/63c3ca96c16d1b2e9a2d680963a68daaca97e18c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ombra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_3/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f10e07585dfe3c7cb1bbe15b5b0b8d4ba7a76bb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tricomi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4ffbe29e46b379957658b9172cfe6596c3d11520>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105140&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "collo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/450740cc28dc98d3c21c988fced8659d5d63d889>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q13415123&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Syria"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b5b88e085fcf1728b1743bca968ea29287af4b70>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orecchio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fb4874590985d1fe12e6a74efc648afa9d7e0617>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "uomini malvagi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5009bbb4dd823c6c0e0493c32830be5abbdc6e7c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBz4rMTHBN2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Meleagro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4574a9eaf810f9eddf1725dd9053c176d41905b7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q82732&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Enea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7b5f6c900ba154105a985993aa16c98c637c13fa>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtehcdFO1A8L&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theseus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4595a1d11da458b75510827a0ca11cf60f708e72>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tua"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e7a9909c457edd5551b3b7b9a96d57aaae3ad71d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c82a8da1b17c5e6387ba4d1cc2d13d847649ce5b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Antiloco"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/583d493e2cc0542e8542d4c44c158009d3df8bad>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/06df1b01952431bf0a760cfbf493a9057159711e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/50299aadb5399dc3ea9844e248c904ec89525fb2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1996895de86e9c510b5286be2cd7d06ed8daa9d1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ba15c5878e97abf9c192a3639ca0955c38fbb555>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Palamedes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ccc65df2c67bd0052562da1f1a6168e12af947a7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsADFJXaeAZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Enea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/601b5d4c97512c8e3cfe237c317aadb60cd7625e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt5RnEvxdOiq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Diomedes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/afb77cff374dcc426328c2d84bb28f44a12df568>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "filosofia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/59b92938c5a95450c733465646cabadf7099aa32>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ad97db8a5c77bb1358cc826ae64adfaec6b6e822>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsADFJXaeAZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Enea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6d6a171714096bba488b15020944ee7d7a4711bc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Odysseus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d72271d8e84bce1e30a4a40aa09fcce07af83edc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Misia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d36ae6d326d38046a6945cd43e97cf3c7bc84303>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9b19f534c0f4620fc5a020307254b8938874d551>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "eunuchi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc0f91fadb3e15e170984fe15238261e04ffc257>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a5ab1276593282865e5793e3809e89f2eb0f836c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_3/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8622176e6b7274139db35adeca1482e0afab401d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtId0TMGAa0F&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "linen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/84e87719cc9eea7ba91b71043b1af2d382da95cc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Troy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fef91db4fc2c2df729d53b9f45253b25a2629797>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d2e61e72b11c69b6a3af33e4815defc6d6084170>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c16d0b5dc159dee41107b09575815916f732f1d1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pene"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd864f89007967a9bb91006a07f06ac88c4b4050>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ff34fec1542e6f05682e2e8b586346448c33a378>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7d7d6489b42614872fefccb576708ab03bf96c04>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "combinata"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/67208f447333b5324dfb1cbd49464614ab10dce1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q331327&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Telamon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/88b36bb6043182b1a1ab8763cf786dea8c439942>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "great spirit"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_8/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9e36a428986f4e76b0b4ac1daff19855be0dc31f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "archy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_20/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2f001533483d552f67aedbe7f4108dec7797f8b9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "estuaries"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ca4248939504191b2f526d16baa7f773f9d4bd36>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc9100229fa72eacae11960cde94104849588329>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f76113fd68f66a4cb5aa80c7153d480d041b594e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q643504&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Kephalos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/88b29d1de3a57f9cd0ed82cffa34f2fee22f7aa8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bow"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/24efaf36eabf8617eb1f2bc1196cb66da30ba375>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bow"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9ff3e3bd6290598b852147e4f893f19c050c7400>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/970f4644d14b2455c5216dd709503427b7e13aea>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtgRnEUIaGpP&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Rhea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/21ec0b4b36836bf6a5a19de77a21fb930743ba3a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt8xRNTo2aQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Peleo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e67118be619b2fa7d899237a8d6162c4ba7689f8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Podaleirius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1e445662e8008a9e35b3d4ee4cade72cf4b2b57d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "avrai"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1d04b14a60d3c2325c34928cb3c248f0a481c8dc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ed"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f382463aa9aa4a5cd515ca9d5e1b11bb4cdf875>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrttovThTDLvj&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Phaedra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/50ed4f34a05a8a791c82ab56bd5461f7b55731bc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSqoNWd8rFi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Eracle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8efefb1c407dfeaaa29d2bdd9a74e148c00c3cb2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "afar"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0636a8808efd57707c094fa2f84b60e0ece1a160>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q330584&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Amphiaraus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9e1610461173e8e59437acb8a1ff0d4bf80aa6f7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107870&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thebes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/891bd343189f0c88b72779b3103f75e1e8765bc6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f7fcfdff6a6d754cfa6540b2f81ecc69f977052e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9fa7ddeefed49bacbafa0dc8dbb6e24e72c6991b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q1320718&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teseo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/255651321c18b616ae4eea58124ff7178a0b91e0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3dd53779c5a146c3ef8d1418224f08507ad71b7f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3IoiNLgS3W&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Asclepio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c89f7387ce2d26650db22142d87f50bdca13beb8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c73ac3c32578fdca3abc8e20080dca09e5447e0d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q81734&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Macedonia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6ba6ebe71004be3375db22b12f24f84954350862>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0a265fe5c34304f1004222b8fa5b071e44dd3643>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105204&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trachea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_30/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/937a690e9ec8385fc59cf467e576f9d76a8df03e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Go"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/54e28b1a0377149f3ee7d4e19f4a4a819778fd7a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q330584&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anfiarao"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a38f9aec8a742b6b5fc5f5245cc2a246d136728>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqLZQfNL3xA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Castor"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bce7ad78db0136e2110113e0ede601eb994e02c8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q539051&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Greeks"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d2c44c507e94d6b2ac575053cd5016944336b3fb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q183417&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/eeccd193d630a126c1d7ff475ee22a9d4dce9498>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9487a1700a5d72e56b7545cec559823778b370bd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "arazzi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f11f52d4bef1ee4f507f2ba28fac55708a0f9ffc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b9e69b0335a12c985412e1f089409c16bc819092>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olimpo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a0422c1bd7b0c361215880c55cc99a592e95d066>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "genus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_3/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/815ac9a981909fc1c51b409637f231e85f777cfa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_8/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/80807a481bd8357bfa074b54148a635f80d195c5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1f0b2de1ec1505366acd2fb9d9d5810ab60bfcee>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Palamede"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c1c1162f7a52c066a5413ebd0ece24428cfab904>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqVxjbmIO0s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Apollo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a089c6206cfea0e4fd9cab24220baba97bb44e0b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cambiano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd00edd0f057b5e60d9a7d021b6dd64439fe4fb4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4cc42ce89071da32e04ecfbc23142311a35badda>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "abbot"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0818dcc408025a677003ee2f9c34c26a74b1882d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/397315973006c18ddf38f726a56c6f9c6d090d48>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBz4rMTHBN2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Meleager"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7c6b968a493961a626e2e1e2623e7147efde2895>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bow"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9d7ab384e4679abd923903fa2a704cb58caec9db>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/efaf8123f2fa69b35e819d7ead9413e8bdbba1ec>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_23/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/15008dba8a51a1dc892e880966ec1791015e362e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q781867&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Menestheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/952c6207df48fc541d333a7d9ff718edbad995d3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nerve"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e69eda14baa1d8862c7130f6724b4d1c777b41ee>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q15611&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a5921ab49a805aa3fe8dfd1334e91a9b1a070fe9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q41746&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Achilles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5484417a7e9689aa0b81e28583c0b24c21f5702b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sofisti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/64617a7cc39015e744ce9631859d4b0765e7762f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "uomini malvagi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4c5bdb47eaac49568f205691337fb6643d77e3c9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3003039617f32dc54d5fc7901bda85b822d8328d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtPV8p7jpDYV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Medi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fc8f023d3f8c65cf36f160daa00694967407b09b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3392d6dc408b43633551f3771a1f1ccd6b4585f6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "monsone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1bda01fe82f313f2bf61a48c8cc2374a0b29573b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nyssa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/41aed2b69198dfc615dfd68fd7739e767b610213>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3jcrAaRENB&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "goat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2847289dc7fa39e0e444d799e632ee1e7fa80b07>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vanga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/824e547c9b338aafeb8c82081b0be0abcd7d252a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd95c597c52c4c7d1eef65b0e98960b3c7ec5c53>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/39f5099197a1d084ba25714995344ce13265d55b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Menestheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/71ada7bae15555624ae2d1a96db7927655d7cbbd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrthfL6xAv1h6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mysia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/217639ae01188ded36ee660593988e0a8bebe90a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Atalanti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/31765a92057ed9039ee9988750c157d4a5d98501>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q4771767&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Antheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f6f976a5740b52f6de05809104826f97a35624cb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "monsoon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/32fbf84af5bfea6f2b91d54bb0d602467ab88d04>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/aeb4f9a4fcd66bf04a4bae543551cbcd54928bb6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtAWl3eAUQlA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "milk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/46c1a8dfa540e7269b2da15a3cc28914b9280eb9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Porpax"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0bc65b41293a1e1193ccae0c0da6fd856c70f4ea>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMT8ixMvcsY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anfiarao"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/54f43a52025f6162ac89f1e2c1fe90a502d1d089>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fai"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/27e9f30344b3f0218726aef56df3bd25815b3c76>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orsi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8b09cf795544539f79a3106231de6591ca5957df>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/66c2d93aef74b1078ad3b9887fc6121e6533f959>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtAWl3eAUQlA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "milk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3d14cd2b42bece1d434633f751514a4ed5203151>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "scapola"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f13d1b65f73b376e56db970c2b060c474fc989c3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/33d774e7950c7732a16f14868dfa1ac1aea1e519>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q86750451&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Kephalos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/57e6ef60f92619184d950a3bdb872bc8f189633b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q4450528&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thallon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d3d8ec444ecc7cc51a2fc251e8e825be8461b1ca>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqVxjbmIO0s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Apollo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/da46e3be4bfe44361e3aebb3aad13df173f4d1ae>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chara"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e976bf80273274d05ef1c72a0f9f876a25ba4a5c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Troy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b6f3e38afedf60874c59c54992879e28c9b2a1fb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "generi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/36953ecfec5f8e5462026036e53f4633466f996d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/911ea99687e3c1a853f8b4dcb97477921d53d69e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Menestheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c1c24e23a77ea92330cb9c81bc10469152e92df1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtEwe45BzSEb&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "eros"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2b701fac37b46cb023a6c880afbb2b050549f64c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q321541&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Meleagro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6d0415a21b802b54f22b1ada4f1889a8456a5d9e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/849f646af5db1f3defd34c00c890cb5d500323f5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMr3tb79bV8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/029b151ee7075b25a567c46a4f8e7fa91beb6f10>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105661&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "full moon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9b9d862b32e35267b5ac2104326bc9d46fde9801>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "moderano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/22404679d5e3f6144bc4b78d0fb7742f99dd773a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/138fe60798cacfdd25d541393ca4c8e7e9a2c9ee>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtrA8yMmtqP9&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Telamon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a6d52c5d6b746f2ff3691bdb6e1963bb118d295d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4wrucLoNrB&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ulisse"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/64714a7421f72e0a6aa797de687a62929b208c0d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Atalanti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/863fdfbdcac1026d9be2425db02a1cd80fbdf42f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/aeeec38b37d3c1c6bf7beb57a042c0392bee7bc4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orsi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3b572b60c83944ba972fd9168e4dfd390ca0384c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q674319&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Machaon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4ca237583f7cad321154481c51010e390a411284>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3IoiNLgS3W&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Asclepius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3e8f7e8b48a866c2b62a0292265db690f3c0b188>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/61f530d7205a4c3703074616263a94e5b5defb14>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/06f2e61df14816af385c14e8266047b22a143d41>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "torace"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_30/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f579a643760d82193fa55718636f8cebd49201e8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtxtshYU7cye&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chiron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e5b8f02f89cf86c32b14f3d292295431ff7c17f5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/26b16dfd076c1aaf7868b188f6858969e80ac092>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "snatch"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/94bbc455a9eeb192a2a558b4d269793b8ae39d4b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "stout"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e8ed280166c2e52da1e7ef748ebfe77f82f3fc6b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q331327&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Telamone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e701d91ec6f86805b68aa9b49af84def49726275>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c54d818f5df3fa6855cc7c6e96b06c04648ccc4f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsADFJXaeAZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aeneas"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/295682db2051e5bad353405beeed454ae61f24a4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "baritono"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_30/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9620f2ada7ff15d31dd506fbeb2b2c23b98a1b09>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=5012&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "stella"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/05baa384116c30e4f39c108ba930fbfe63221a24>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anca"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0a85f0f8c731d1100e630bb6522efae2d28c7187>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q183417&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chirone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0a9a702bf3357ebbacce53ac5e3d3826542c3d02>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4wrucLoNrB&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ulisse"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5938dd79b05fe885f14f00bd803b69a342bc91a6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mount Pangaion"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c3df4bf14e52edb2ac70e8d4b263b26c2ee4a241>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105721&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Greece"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bba88ef5cb050e6091ee604028db6d65dde5b1ad>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q82732&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aeneas"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2512b4da5c7b62965de940b240e63ee369a76fd6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "squame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0166df566a46b4c581ee5aac74befa4a5df0f2cb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqVxjbmIO0s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Apollo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b2fc53ffa251bed3daba4f8dd8a7cc1cbf16db35>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "trail"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a7b99fa49cf38842a3233c56968f57b134775520>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/63a7461867375df0defefd1c8a4a74c73c4848ae>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q8735&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Medes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bf3b3899989f5d2f154ba4065b4b13d37342f91f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nymph"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a88bc00a4402959e47167d2c335d251bc1fc6469>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed04f58a332c4d77c2183a8f49959b53334ee71d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Wisdom"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/932c4c3ddfde49474481d106bbe50c3aa554d343>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_12/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a380e7342d04a9da5bf41c9dce365b1a21401847>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSqoNWd8rFi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Heracles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cf58d7f3a07bea52a1452a559cfd3d5202b80eab>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q674319&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Machaon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/61a178c428c53dc5202ea32a2852106e5c8bfc03>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Styrax"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_7/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a512db5348ef5a5f19a43eab0f828f40e861fcc5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Procri"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c790cea2d565f9ab86ddaa44dd3501ba7e04c454>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "parachute"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_28/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/376a99584348c7cbdbd35805279a660cde4ad245>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_4/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/90f6c9492f366d9db5986150d6afad34601189a1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt79UPv80jQF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/45e97484870ba5141185755fb721a09bc12154ff>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nerve"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c5edf8b8e69f16c2b3848882bcccf43a6e1ddb63>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3IoiNLgS3W&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Asclepius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1c208ac32e0f6a62233cd6159cb0751921f60423>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q108419&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Rhea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/de4af10de82a809593e545cf28c35cd2f9e24149>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=https://www.wikidata.org/wiki/Q178641&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Peleo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_1/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cb65f2fc92ce5aec3089e2cd01b9781deb72574e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/aadfa224ac3e18cd7a3ab0e0d855915834399239>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cambiano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_6/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1eb8f6882847db22292e4b8299896d629ed794c8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bow"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_5/section_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3c3c621f5f1328eb4b71c9cfba5907ac505a6fcb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMr3tb79bV8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_9/section_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/da43b065dfa4732777de751cebae25f9b426612b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Macedonia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_11/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a3ca8f383e1aa486346d80263e782f3706da883>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "buttress"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8b538302a1ffff208b95d2c2d89f2300d0a09a9f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtOl4a3UUtiu&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lepre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_3/section_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/60f2a04685d407141ffec55bcb4f955d67e01bfa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "peccato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_13/section_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/220174bf29bc54f98b6a8a6b8ce3da4be7e7a298>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Macellazione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/OnHuntingfromMinorWorks(Greek).Machinereadabletext/chapter_10/section_16/1>
+              ] .

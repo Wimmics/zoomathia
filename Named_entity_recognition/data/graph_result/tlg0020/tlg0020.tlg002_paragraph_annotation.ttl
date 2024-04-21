@@ -1,0 +1,3857 @@
+@prefix schema:  <http://schema.org/> .
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dce:     <http://purl.org/dc/elements/1.1/> .
+@prefix fabio:   <http://purl.org/spar/fabio/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:    <http://purl.org/vocab/frbr/core#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix oa:      <http://www.w3.org/ns/oa#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<http://www.zoomathia.com/annotation/8af5e61aec6362fca9c74e4e99cd699527a4b9c3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cavaliere tracio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/398>
+              ] .
+
+<http://www.zoomathia.com/annotation/a48de099c104fc3a5993120dbcad9f91a4eb9864>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/168>
+              ] .
+
+<http://www.zoomathia.com/annotation/4fa3b4d7514cb63f615d38f7d6795168bea3cd95>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/527>
+              ] .
+
+<http://www.zoomathia.com/annotation/3f29c0fd12f61a5b8445ad71e9adc0cde5144170>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/469>
+              ] .
+
+<http://www.zoomathia.com/annotation/67666b92ac84f96e8caf12e1a8bc3d06a9e990d9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/a275375c075d67afd4f544666bad7625d82259d4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107531&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "flower"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/458>
+              ] .
+
+<http://www.zoomathia.com/annotation/31b61b481a150f752f23d7d630139e7e587cc652>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsPauzzRS5z&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "miele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/116>
+              ] .
+
+<http://www.zoomathia.com/annotation/bd6e62852f65b1b87c5440222bdc1dce5ac73a06>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aleppo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/146>
+              ] .
+
+<http://www.zoomathia.com/annotation/3dd4da10326e7835a63a34f723cfa02afea44f63>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cloud"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/533>
+              ] .
+
+<http://www.zoomathia.com/annotation/4213ec3a830825daf3b6f48a1fdedab1cdbea030>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/362>
+              ] .
+
+<http://www.zoomathia.com/annotation/ef646c6ef54e28fd65c3b1a6fc00e9d42648ee80>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wild boar"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/622>
+              ] .
+
+<http://www.zoomathia.com/annotation/c8552bd90154a894eab49415e1c47ea43725d234>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6GNEPkImi8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Atena"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/58>
+              ] .
+
+<http://www.zoomathia.com/annotation/cac56f3244b59f082cada4136736f9930a89fa6e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtDbhnfUpMWA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Prometheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/39>
+              ] .
+
+<http://www.zoomathia.com/annotation/c96a4987a3bfe3cadc293f8ec42c0932f3dbbece>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "peccato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/154>
+              ] .
+
+<http://www.zoomathia.com/annotation/c1f3405fabc7985ead2135d4a772521c786a9977>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107029&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Arion"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/484>
+              ] .
+
+<http://www.zoomathia.com/annotation/58a8af0afed8fe8ecb7fe8b512043c7641d79e6a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fuck"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/552>
+              ] .
+
+<http://www.zoomathia.com/annotation/ea6555fd34abaf327f73f2a1d4bbe7a4a1e38f52>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mar Nero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/501>
+              ] .
+
+<http://www.zoomathia.com/annotation/31d759861c4feca066053582045220c834c0ac15>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtDr6Oi6lHM6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pane"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/346>
+              ] .
+
+<http://www.zoomathia.com/annotation/cb4cccbd7063653672ede57e9c9c451eb76053d5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "kourou"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/618>
+              ] .
+
+<http://www.zoomathia.com/annotation/46d64d3aa1bbaded93fcce1b10697d98e14f1183>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fai"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/559>
+              ] .
+
+<http://www.zoomathia.com/annotation/fdc84ea42c8e6c6894f6dcd0cbbc9263330a5f88>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olimpia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/88>
+              ] .
+
+<http://www.zoomathia.com/annotation/2edc10b1ed4826591c89157ab115fe615de492d6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/84>
+              ] .
+
+<http://www.zoomathia.com/annotation/a9863e65c4077d21eb23718d9c2169ce15a78bb4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Neikea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/4e2b0c98c895a3b222aecd6ed9c9c3af47609966>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/64>
+              ] .
+
+<http://www.zoomathia.com/annotation/2f9a45a0b5c77b26e9db5c11b82e6050b40ead9e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/138>
+              ] .
+
+<http://www.zoomathia.com/annotation/7a7fd82250f25a01e92eccf1c2e2acd381564d42>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/296>
+              ] .
+
+<http://www.zoomathia.com/annotation/43de7b7f8140c74f6bae200ac8195f062cb4c3f9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "axona"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/332>
+              ] .
+
+<http://www.zoomathia.com/annotation/88fbea0c3582d1bd8ca9ab5f4c23852519058c21>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tng"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/403>
+              ] .
+
+<http://www.zoomathia.com/annotation/3689fa12ac3baffce9258e66376f63add08b0951>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "aloe"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/472>
+              ] .
+
+<http://www.zoomathia.com/annotation/11311a9e3bc3c99de5a0325ba12b92790fe0cebd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3ifEZTTSF2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Saturn"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/89>
+              ] .
+
+<http://www.zoomathia.com/annotation/b462a207e489e2903c063f09edcd8133c26ebfeb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/588>
+              ] .
+
+<http://www.zoomathia.com/annotation/49bd66ab4671585f9a5aa9ce2687c61f40d9be13>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/527>
+              ] .
+
+<http://www.zoomathia.com/annotation/c9bd85001edaa922dec7c400ba7ba5946c330453>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Vita utile"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/392>
+              ] .
+
+<http://www.zoomathia.com/annotation/70a097bf94ed5f05e2e457cf957a1c7de12fb4f3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/597>
+              ] .
+
+<http://www.zoomathia.com/annotation/026b71c4251bb8dab748c16c034458b3a60a50af>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ox"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/465>
+              ] .
+
+<http://www.zoomathia.com/annotation/42aba1097aa0262664637f4811438970ec807a7b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtFEYiYAd0oX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Achei"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/513>
+              ] .
+
+<http://www.zoomathia.com/annotation/d74c6adcf916ae61fecc2102180ca558e42574f9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/7>
+              ] .
+
+<http://www.zoomathia.com/annotation/2eb685cd8df456670354b5688af6403e585e32cc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrthX6AbS1ezc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Oedipus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/131>
+              ] .
+
+<http://www.zoomathia.com/annotation/6c5d7ba2a385886bf336e6018f17224514f631b0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cloro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/587>
+              ] .
+
+<http://www.zoomathia.com/annotation/7adee48a93776ffeed8024eefcef5d9375118f86>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/613>
+              ] .
+
+<http://www.zoomathia.com/annotation/29e33dcb818e80346a6362f15a348afeb8958434>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105140&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "collo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/642>
+              ] .
+
+<http://www.zoomathia.com/annotation/f7bcc645f0e5e7846b7f1b7488570f83010c44c8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/64>
+              ] .
+
+<http://www.zoomathia.com/annotation/c60e2318d1894427105f86e4628c32736ff209e5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anissa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/500>
+              ] .
+
+<http://www.zoomathia.com/annotation/6f8cd73ba6ddfc8d326b14141a330ea0a209b440>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=108411&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Athens"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/51>
+              ] .
+
+<http://www.zoomathia.com/annotation/99acad1b5b681f2ee6e501a17904e9b07f309671>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMoSyxvhdn9&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rudder"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/496>
+              ] .
+
+<http://www.zoomathia.com/annotation/6d0ebe74161f97b04777ab107f62041ab1db6fa4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pandionis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/447>
+              ] .
+
+<http://www.zoomathia.com/annotation/b51775c78640e5a09681010799830791e3ca25dd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/302>
+              ] .
+
+<http://www.zoomathia.com/annotation/40a18b0d74bc4c9e4d124e2e19d82d0709483b00>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Algea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/157>
+              ] .
+
+<http://www.zoomathia.com/annotation/a586434003c3ee9a6d2f205cc534d9dd3f850026>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wheat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/476>
+              ] .
+
+<http://www.zoomathia.com/annotation/2703312cdd691fa5e824466462b516341d5b759e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMoabnLELjx&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cratere"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/118>
+              ] .
+
+<http://www.zoomathia.com/annotation/36bf221897408a9c28e9cb53abcbeabf018592e0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=108411&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Athens"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/51>
+              ] .
+
+<http://www.zoomathia.com/annotation/f00b126e25e969f7f385296f712a20b4335fb347>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtRmvjGjzyOO&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cinghiale"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/622>
+              ] .
+
+<http://www.zoomathia.com/annotation/9d2f901f5e49d29bff0a1394ea1d91e9c59ddfc3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/414>
+              ] .
+
+<http://www.zoomathia.com/annotation/88e8ebc949d7222d761a929632f900e21d166a6c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/444>
+              ] .
+
+<http://www.zoomathia.com/annotation/f0e63f3bd580e2822c18478163c9bb6e25182b90>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtRmvjGjzyOO&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cinghiale"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/622>
+              ] .
+
+<http://www.zoomathia.com/annotation/bd7532c91b4047b509c2e986705d725b9fecb527>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/606>
+              ] .
+
+<http://www.zoomathia.com/annotation/4531843217222a8b51f545e677677b177207fdc2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tanta"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/183>
+              ] .
+
+<http://www.zoomathia.com/annotation/5f36cad9ec25938151e02521aceebc5f9882b6b6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/137>
+              ] .
+
+<http://www.zoomathia.com/annotation/a0ea9835595f6fe8995388a291bd91259b712795>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Troia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/515>
+              ] .
+
+<http://www.zoomathia.com/annotation/ba9407ae0577ee71f1a6df3704255a5d91a77376>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fuck"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/552>
+              ] .
+
+<http://www.zoomathia.com/annotation/c84b4f2322523c26f0be4ac13147ade43e04392e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107029&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Arion"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/480>
+              ] .
+
+<http://www.zoomathia.com/annotation/8386c7da5aca72155b51a2348048fec0ff08f78e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Lygra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/76>
+              ] .
+
+<http://www.zoomathia.com/annotation/59206519f83bbf526e1888f50e6d7beb302ca550>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tng"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/403>
+              ] .
+
+<http://www.zoomathia.com/annotation/3220bd9bf2b3f58fac4b14510b7468fe2dfef066>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Elpis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/77>
+              ] .
+
+<http://www.zoomathia.com/annotation/1110a2d3aaa12c2064351c78eb38aff139e13341>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pythium"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/79>
+              ] .
+
+<http://www.zoomathia.com/annotation/f3fff1825bf1c52c9317218254fa639c75ba4d49>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "metionina"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/216>
+              ] .
+
+<http://www.zoomathia.com/annotation/28cc088672681d8f598ef1f5b706acba8a995f77>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nerve"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/428>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc78fc54f4e7671685583c64154ed9bbd20301cd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/141>
+              ] .
+
+<http://www.zoomathia.com/annotation/5c05562da47e88b3e25b0a83baa80a832b2bf4e0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto1JDYSQe8s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Afrodite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/409>
+              ] .
+
+<http://www.zoomathia.com/annotation/0335024123dcc699c4326b02ba664a103919147a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/371>
+              ] .
+
+<http://www.zoomathia.com/annotation/cdac360b2590380f66e12ba6a85a03e6390261ab>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107103&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiades"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/450>
+              ] .
+
+<http://www.zoomathia.com/annotation/5f7ec3fb561aab7ab1aeb59186612eb93a580c95>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thracian horseman"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/398>
+              ] .
+
+<http://www.zoomathia.com/annotation/b2e4df9b6684121c9fa07f8269aee8d12e2ebfcc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Respirazione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/397>
+              ] .
+
+<http://www.zoomathia.com/annotation/8390076475178069b330729ae1910441b44f14de>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=5012&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "stella"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/326>
+              ] .
+
+<http://www.zoomathia.com/annotation/82ca1b84fbcbaffad707990ea701b56fd3459620>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/262>
+              ] .
+
+<http://www.zoomathia.com/annotation/dfb21260ec388a9accf101d3a4bdd55189922ae1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/121>
+              ] .
+
+<http://www.zoomathia.com/annotation/1c3f561950fbc7190afa9bf7027582b61f78b742>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "doi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/281>
+              ] .
+
+<http://www.zoomathia.com/annotation/78f14d2a9165b42444581ee755ee3d54e090626f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "broadband"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/155>
+              ] .
+
+<http://www.zoomathia.com/annotation/2684d7dfb2b2da3b181a67ca7381b9030e8a1759>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtKzAS725Sqc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nyx"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/14>
+              ] .
+
+<http://www.zoomathia.com/annotation/54329c8e7b21acf6f1960c825816ac791b9f97ab>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "messi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/646>
+              ] .
+
+<http://www.zoomathia.com/annotation/eab270c04f62fc8a4821a91497782147d7ced39a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "banda larga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/155>
+              ] .
+
+<http://www.zoomathia.com/annotation/88767e08cf7be462a257c44286c0d0cadff2bfff>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/65>
+              ] .
+
+<http://www.zoomathia.com/annotation/35d6d1bd7f0dd48ddbc34002c24653d2342b3d8d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olimpia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/70>
+              ] .
+
+<http://www.zoomathia.com/annotation/664c97d2e4cfd125750d48f3a75186158f80e361>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pythium"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/79>
+              ] .
+
+<http://www.zoomathia.com/annotation/078a0b445f8e49663fd245626a06f76230dd8257>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/127>
+              ] .
+
+<http://www.zoomathia.com/annotation/e1accc6af9af1ff2b2b8c40fae55f9a5cfcfdb21>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/222>
+              ] .
+
+<http://www.zoomathia.com/annotation/63654155b4c02b5bef43e0a977dc6eabb85323ed>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/476>
+              ] .
+
+<http://www.zoomathia.com/annotation/7c89760471dd1c70bf8745ed23024f6237b4e949>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtDbhnfUpMWA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Prometeo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/39>
+              ] .
+
+<http://www.zoomathia.com/annotation/50167ab79a4c746c90fe85fad639216bcecc17b4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsPauzzRS5z&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "honey"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/116>
+              ] .
+
+<http://www.zoomathia.com/annotation/8b6b20160742cea98855a46462e4a3fec96e1be3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/533>
+              ] .
+
+<http://www.zoomathia.com/annotation/19b522b7bbf1432708ab6432880c1ca39ed513a9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Clytus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/68>
+              ] .
+
+<http://www.zoomathia.com/annotation/f0080052a83f511a02ee439494821bc64bb758df>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/7>
+              ] .
+
+<http://www.zoomathia.com/annotation/02ef2bfca01867c0c0d529d9d046f8583d75e080>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/464>
+              ] .
+
+<http://www.zoomathia.com/annotation/3886fd91080be9732ffddb9f73fd95f5eb315d4c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "allos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/375>
+              ] .
+
+<http://www.zoomathia.com/annotation/212b4eb9f613299ee43215b08b75353d0fbf1547>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqVxjbmIO0s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Apollo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/607>
+              ] .
+
+<http://www.zoomathia.com/annotation/d780c5a48ac63cf37a9a57e6991ea80caba14c22>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/310>
+              ] .
+
+<http://www.zoomathia.com/annotation/16b67d8adc3a5dd23fc5917ea2a95abc5c6fbd3b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "verga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/187>
+              ] .
+
+<http://www.zoomathia.com/annotation/a22b9aff6b62f6bf2780eda8341718b95d744025>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/237>
+              ] .
+
+<http://www.zoomathia.com/annotation/31457b4a5b5497dcf297428f13f2e3f4478485ba>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/120>
+              ] .
+
+<http://www.zoomathia.com/annotation/23b72780d8a9f071132eab3ddb3321d928d0ebb4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "honeysuckle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/53>
+              ] .
+
+<http://www.zoomathia.com/annotation/ebeef15052a27070c5607800b078f727d776e072>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/120>
+              ] .
+
+<http://www.zoomathia.com/annotation/37ed738f8ec81cf12cbca147ef3763dad571e7b0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrttvE2YZwZu6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/410>
+              ] .
+
+<http://www.zoomathia.com/annotation/c81fc6f7b741410627902c59ec9472912041e8d6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bianco"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/420>
+              ] .
+
+<http://www.zoomathia.com/annotation/f0d46b72a7860309ff12817260afea86c00c9bdc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ragni"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/372>
+              ] .
+
+<http://www.zoomathia.com/annotation/7de1a77586f287aa1ebf48bff6867cf86e21a0be>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/546>
+              ] .
+
+<http://www.zoomathia.com/annotation/f524166c71f58fa2d2cc325e9dec2e8b8e2fc36d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107870&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thebes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/130>
+              ] .
+
+<http://www.zoomathia.com/annotation/82d4e3fa996568811c3df99873409272a777dba7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "elica"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/354>
+              ] .
+
+<http://www.zoomathia.com/annotation/39b4d12ebfa2a3ad82b1ba4b148f805da8082e96>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/121>
+              ] .
+
+<http://www.zoomathia.com/annotation/32385c660bd63da0eeceb6346ef4c5f68cb7f9e9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtS5RNOMy4IJ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Poseidon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/526>
+              ] .
+
+<http://www.zoomathia.com/annotation/bedb3febde77cbd2f15fae6f5e12c45a5c0fd07a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtdFxBZmK6cr&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Medea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/44>
+              ] .
+
+<http://www.zoomathia.com/annotation/170a7332c25b2d01cb84a4c03bbce7b8d5eab26b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "hymn"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/522>
+              ] .
+
+<http://www.zoomathia.com/annotation/65b2fdb5f97ecaa022f98d19da4c2d04166cb1cf>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto1JDYSQe8s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Afrodite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/52>
+              ] .
+
+<http://www.zoomathia.com/annotation/d737674783f4a35bc496115267c65d1053e9ab29>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtRmvjGjzyOO&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "boar"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/622>
+              ] .
+
+<http://www.zoomathia.com/annotation/b72181759f8ed5d25a73a4847708e8497744e1ee>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=106059&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sirius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/326>
+              ] .
+
+<http://www.zoomathia.com/annotation/57c38ad610cba9c2f2d3969606eb4b99f813e537>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "squalo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/627>
+              ] .
+
+<http://www.zoomathia.com/annotation/b84ff82fec19306c5bc5ddfd36014b3526d6f953>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/490>
+              ] .
+
+<http://www.zoomathia.com/annotation/3e2582021b92a8d3bfdcee4abb297161e1481696>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/65>
+              ] .
+
+<http://www.zoomathia.com/annotation/f6ee53d1e1977f00d7199e1bcd46fdc8064d1754>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/508>
+              ] .
+
+<http://www.zoomathia.com/annotation/1918a5752be0da75bcd64b501f0a1fdbbabcc102>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtDEPs1Xszll&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Leto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/607>
+              ] .
+
+<http://www.zoomathia.com/annotation/47c7f866ab79d138149b0af0c9fe7ced34505ab3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Clito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/68>
+              ] .
+
+<http://www.zoomathia.com/annotation/55b53db1a60d7ee75b3127ecb7481ae62b1d0db2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "declination"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/207>
+              ] .
+
+<http://www.zoomathia.com/annotation/a645f5c4dbe9b065ec122f124a0db07c9227255a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/84>
+              ] .
+
+<http://www.zoomathia.com/annotation/679c991b51b5ce77dc1afe28b32d36808d472a2e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "copper"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/387>
+              ] .
+
+<http://www.zoomathia.com/annotation/3fbe75a08a3e6d24a25029558ce177c8105986a0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Algea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/585>
+              ] .
+
+<http://www.zoomathia.com/annotation/d73c116675a91c7fb2d68e30461d1f5084cb4d7a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/84>
+              ] .
+
+<http://www.zoomathia.com/annotation/268419d0e4e60facc33df76a269b9c20dc8daaa0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/149>
+              ] .
+
+<http://www.zoomathia.com/annotation/38b150c05d28d5ea93dd8290ae2f42d01f11bf51>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtRtsryigJK4&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Demeter"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/634>
+              ] .
+
+<http://www.zoomathia.com/annotation/41f0735799f55777340c8cdefddc85ce5b31f6b5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/189>
+              ] .
+
+<http://www.zoomathia.com/annotation/ace10e1d1b152d34089dcdd03527090ba2b2562b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/541>
+              ] .
+
+<http://www.zoomathia.com/annotation/8e978425339b60466f99f74e80c4de2c8cebe659>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ode"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/147>
+              ] .
+
+<http://www.zoomathia.com/annotation/bf54fd6e3893da3ee3ffa2757545d01c7f9133eb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/606>
+              ] .
+
+<http://www.zoomathia.com/annotation/7b129aac9785a259c539acb361c54ab4348245cf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olvios"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/651>
+              ] .
+
+<http://www.zoomathia.com/annotation/1c183ca5262adec2e7296a6624f3be894ec0f73c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Demetrius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/237>
+              ] .
+
+<http://www.zoomathia.com/annotation/7af5fa8927a88f2845570e2c70e4e021c127ea85>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sirio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/462>
+              ] .
+
+<http://www.zoomathia.com/annotation/340a4ce1ffc8df34a97195b0558715fafb87b40f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto1JDYSQe8s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aphrodite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/52>
+              ] .
+
+<http://www.zoomathia.com/annotation/dc0de55ba3d82cec88255164df374081d79480e0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlhd2RDccsa&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ariani"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/163>
+              ] .
+
+<http://www.zoomathia.com/annotation/7641aa7235b04081d6cdb57e853c14457e16f8fb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olimpia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/103>
+              ] .
+
+<http://www.zoomathia.com/annotation/e61ed7a617e135ddb38d6b127b375e995c7ae05e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "house full"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/473>
+              ] .
+
+<http://www.zoomathia.com/annotation/380782a78b2991f5f1198a82982d296b3d0490b1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Gesù"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/568>
+              ] .
+
+<http://www.zoomathia.com/annotation/775cdae2bab5b2c105b28aa6af3e90afd5b2027f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105342&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "carnivorous"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/465>
+              ] .
+
+<http://www.zoomathia.com/annotation/ddb298376e10177d6491003951a15fe0a612ff67>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/505>
+              ] .
+
+<http://www.zoomathia.com/annotation/f9e27f215f649f1c0a650595a17c4165dde21145>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/70>
+              ] .
+
+<http://www.zoomathia.com/annotation/1c9aabb348a953030338a07a2a142372451952ad>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "donnola"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/481>
+              ] .
+
+<http://www.zoomathia.com/annotation/ec136e1e3b11e18f5be6190b1357bcc3a3469f17>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "methionine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/216>
+              ] .
+
+<http://www.zoomathia.com/annotation/db111d4fd46452ff2426f78f423c63d374a06eb5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Calcide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/516>
+              ] .
+
+<http://www.zoomathia.com/annotation/e1a427464e62b72b2dd5b4b6f4ebf1e5a82aae59>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bouzin"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/440>
+              ] .
+
+<http://www.zoomathia.com/annotation/f1d58a54c74b9af2db2dc2e867b9aef90b7bfca6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/407>
+              ] .
+
+<http://www.zoomathia.com/annotation/5effd2faa22b14158979dabb7dc4da80f5ec279d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/499>
+              ] .
+
+<http://www.zoomathia.com/annotation/7b92847cdf6c9928a1b994a84fe13a28a2dbe3e5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/206>
+              ] .
+
+<http://www.zoomathia.com/annotation/9c7dfcaadc5f4d471f9f70a9460f5b6d688a3494>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/135>
+              ] .
+
+<http://www.zoomathia.com/annotation/37385a14874df1a0b97f8b21553dc289d0c9d225>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "demon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/247>
+              ] .
+
+<http://www.zoomathia.com/annotation/91985b97d4078fa454e7195dd8fc4a46e66fac3a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Lygra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/157>
+              ] .
+
+<http://www.zoomathia.com/annotation/fb3534cc1afd3a7858f1614a3293ecfa9e2dfdde>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtDbhnfUpMWA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Prometheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/69>
+              ] .
+
+<http://www.zoomathia.com/annotation/940ec67028bf6ef306bcf536f04bb80a8355f85e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/84>
+              ] .
+
+<http://www.zoomathia.com/annotation/851c4f2e9d0d11d37d05a9e59074b815cfc72c44>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/222>
+              ] .
+
+<http://www.zoomathia.com/annotation/075783bbbe994ae19ac8598f502184e54a47c4a1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSSKvohY3hl&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Gaia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/130>
+              ] .
+
+<http://www.zoomathia.com/annotation/83a1d53d9f7ec6a11d08bf748086c764881efb63>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/15a1a1422b663e066bf05e780035d0469f832c61>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "boxwood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/284>
+              ] .
+
+<http://www.zoomathia.com/annotation/6324dea55c51b3b28ac8adcb1e99ab1266d5ae95>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/503>
+              ] .
+
+<http://www.zoomathia.com/annotation/b96bb4bd2ac2461e0eb325b823a3e55c1942fe14>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/65>
+              ] .
+
+<http://www.zoomathia.com/annotation/41fae8927c6369ea6320c6e8db03ed4ae77a4f29>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtKzAS725Sqc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nyx"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/14>
+              ] .
+
+<http://www.zoomathia.com/annotation/9bfaccfc5a842b9daf4b7be39e7989d4e0a10af0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/181>
+              ] .
+
+<http://www.zoomathia.com/annotation/3b4f25b2b3d2e58bc27d2f61efdd64ad9b47d01c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "legge di Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/84>
+              ] .
+
+<http://www.zoomathia.com/annotation/14775f453b2ef778b8d09a46ff1d1b3c16f6e854>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "amakan"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/356>
+              ] .
+
+<http://www.zoomathia.com/annotation/91ad78eded580863383410dd3bb19a5894446905>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ira di Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/22>
+              ] .
+
+<http://www.zoomathia.com/annotation/eedb4a85c7aad484da2f68b52670776d8a39edf6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/328>
+              ] .
+
+<http://www.zoomathia.com/annotation/6ec6a9e7daf714f944f09c52268227ee63f46ecc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "helix"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/354>
+              ] .
+
+<http://www.zoomathia.com/annotation/4e71bb8ca33df190e10ad1398a94f8d542daeabb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aedos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/157>
+              ] .
+
+<http://www.zoomathia.com/annotation/1d120a9b4268a71de519a9c5699bfd27e5b8b665>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/460>
+              ] .
+
+<http://www.zoomathia.com/annotation/d24281d48bdf7bbf0547e442195821a083137221>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/387>
+              ] .
+
+<http://www.zoomathia.com/annotation/10071b2fa8a02321c8acd02789f19758b34ba3ba>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6GNEPkImi8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Athena"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/58>
+              ] .
+
+<http://www.zoomathia.com/annotation/f5a141058fabd93db5778807d971304cb8f50d39>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "foglie"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/329>
+              ] .
+
+<http://www.zoomathia.com/annotation/885ebb650aeb3963f91a5e7399265b9df961bc87>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/302>
+              ] .
+
+<http://www.zoomathia.com/annotation/7ac265c05eb6950faa5370977ebe99797bdb966d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt7T5gZSoZg6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "aratro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/344>
+              ] .
+
+<http://www.zoomathia.com/annotation/d9fd4e0681bb129d60276ae0018b68964a4530be>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Neikea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/1ad7c24e6cc787d2730df1a095c8f3aa5b0ff751>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/505>
+              ] .
+
+<http://www.zoomathia.com/annotation/afe52c4ee9f12c8230816156d431e788aac6f1cb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "elica"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/626>
+              ] .
+
+<http://www.zoomathia.com/annotation/6f32d3fd17ee0975f939c10f2fd847ff3a07dcb0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "declinazione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/207>
+              ] .
+
+<http://www.zoomathia.com/annotation/0ddf66056c2eb82a16c4dd7e3c78c7471227656f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Atika"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/56>
+              ] .
+
+<http://www.zoomathia.com/annotation/1b2dcf904bd83edf5c4f2c24b501fe9c2ba4eda8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/111>
+              ] .
+
+<http://www.zoomathia.com/annotation/4e08c82cb722bca470e8d82f28b6247379dccd39>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=106059&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sirius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/462>
+              ] .
+
+<http://www.zoomathia.com/annotation/4434dcd7814ca1a73be383328f71d3fdcc262dfe>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "androgino"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/621>
+              ] .
+
+<http://www.zoomathia.com/annotation/b5755e691d0de7f5cf59f7b1119f7c6eea55d427>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/43>
+              ] .
+
+<http://www.zoomathia.com/annotation/7f16aba0c63fb05ea7e39798463c45cc80b13563>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ponton"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/644>
+              ] .
+
+<http://www.zoomathia.com/annotation/4c3915b7a91f8effb00bdf136fcbdd1b7f35c76c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtNmxI5XbWsY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "arpa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/451>
+              ] .
+
+<http://www.zoomathia.com/annotation/be97df23359c434049013693ba05240d12fabf19>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fallow"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/352>
+              ] .
+
+<http://www.zoomathia.com/annotation/b749f072f41570cb9346d98cbe767262d8f94654>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "terena"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/410>
+              ] .
+
+<http://www.zoomathia.com/annotation/43838337f1b1b2f455cea42a7f0d4814631fa865>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/29>
+              ] .
+
+<http://www.zoomathia.com/annotation/da10795ec2ac710033576d6634e570ffab8de9ff>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/202>
+              ] .
+
+<http://www.zoomathia.com/annotation/0f9e6bfc7f3be73ec083cb6944b84aa04a50659a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/22>
+              ] .
+
+<http://www.zoomathia.com/annotation/0990583852821adb31e975b9c31b9cbb043c3cf2>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMoSyxvhdn9&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rudder"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/36>
+              ] .
+
+<http://www.zoomathia.com/annotation/87ea45a3122a306f14ebe68fb9f802b31c1fbb51>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Arione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/484>
+              ] .
+
+<http://www.zoomathia.com/annotation/b172d9f81d90f274ae5d9c157e8010dc528f2cc3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/499>
+              ] .
+
+<http://www.zoomathia.com/annotation/b606f3f23e55c7a2854b18ffa781bda021f8de3d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/226>
+              ] .
+
+<http://www.zoomathia.com/annotation/778bfe47a3a5b01cf3f9cce95d2d5b54e51fc745>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqVxjbmIO0s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Apollo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/607>
+              ] .
+
+<http://www.zoomathia.com/annotation/9085ac2df91127b30a3f0190766e32d64b65056b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "human law"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/218>
+              ] .
+
+<http://www.zoomathia.com/annotation/0ecb3e09ee6c6a52332ab25b61e4739ec2e51ece>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/493>
+              ] .
+
+<http://www.zoomathia.com/annotation/c26dcbaf27a39a5e639f6268ac01886e95dea578>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtGYtuX6F7A0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nemesis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/157>
+              ] .
+
+<http://www.zoomathia.com/annotation/621470f1b7b646c880954b50e20399f1bc0a9ec7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "demon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/163>
+              ] .
+
+<http://www.zoomathia.com/annotation/5876a8bc2950bbda5468dc8f8e69f8e4e6050838>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ethos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/54>
+              ] .
+
+<http://www.zoomathia.com/annotation/250395cb2d554d1c2794fd7489af32696ba57b26>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/219>
+              ] .
+
+<http://www.zoomathia.com/annotation/0bc9637e7d22ce129a116807b51b4099afe6ff0f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/121>
+              ] .
+
+<http://www.zoomathia.com/annotation/0bd9f4d05c630ba911432bbb1ffb252f594f12ea>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/596>
+              ] .
+
+<http://www.zoomathia.com/annotation/6ff2e4d79763fdfdbe1c12367b842de0e74a85a5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Europa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/189>
+              ] .
+
+<http://www.zoomathia.com/annotation/df76bfea7fa7fd4608192672adfb3e78a4aa864f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "chthon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/449>
+              ] .
+
+<http://www.zoomathia.com/annotation/aca0f292c7ad33a8b5959ff5a962bdbd69f256cc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/450>
+              ] .
+
+<http://www.zoomathia.com/annotation/2a31b741fd14b5c3072fa904fa1fb33a49bc43c7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtT0E6aoJ7pS&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Epimeteo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/68>
+              ] .
+
+<http://www.zoomathia.com/annotation/6613060e913639c34db732e86c89ed133a38cdd6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "caprifoglio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/53>
+              ] .
+
+<http://www.zoomathia.com/annotation/850545db5896cd10ade7775ed5db984907afd995>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ombra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/467>
+              ] .
+
+<http://www.zoomathia.com/annotation/8c5c0aec1b3557da2b3055f0a044022e41db004d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olimpo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/372>
+              ] .
+
+<http://www.zoomathia.com/annotation/aacfb6dc20fa32cd085f7daf81f36a209cb71828>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtGYtuX6F7A0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nemesis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/157>
+              ] .
+
+<http://www.zoomathia.com/annotation/0e0b1d733fa0f47c9ebacee022f49409fe44f3b2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "petali"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/423>
+              ] .
+
+<http://www.zoomathia.com/annotation/ae12daec409e3a7598fe17131a8fb4489ef58011>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "famine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/316>
+              ] .
+
+<http://www.zoomathia.com/annotation/4b55e610e5586c38c0cb83cc9cb07259ef856f5a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtNmxI5XbWsY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "harp"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/451>
+              ] .
+
+<http://www.zoomathia.com/annotation/94a4f6cad92c789d9fdfa0f5e56d457e7de2c51a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Kronia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/191>
+              ] .
+
+<http://www.zoomathia.com/annotation/139ced6b55024cdfd070dadf5c27bd8d764ec9ce>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/135>
+              ] .
+
+<http://www.zoomathia.com/annotation/b69c68a6b9ba000cd4fc89c8b3eff4fbb57c98a0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "androgino"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/617>
+              ] .
+
+<http://www.zoomathia.com/annotation/fa3fabbf67cf574397bbc073f771da7d8bd4c752>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/251>
+              ] .
+
+<http://www.zoomathia.com/annotation/3bc469ae40cf5748847d94e1310854513fca9e94>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pandoran"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/65>
+              ] .
+
+<http://www.zoomathia.com/annotation/4715329f390af0a87791909f4d6051c201dff551>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/43>
+              ] .
+
+<http://www.zoomathia.com/annotation/458df8171be10fad0f98ac73e2540f13a42c6503>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ragno"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/612>
+              ] .
+
+<http://www.zoomathia.com/annotation/1a8c5ff9c334562c0d835e9897b3231f9ae3fabb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "virgola mobile"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/304>
+              ] .
+
+<http://www.zoomathia.com/annotation/71e522f6c43ab6ccaa3d4a7949a4cddb1d1ea094>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/127>
+              ] .
+
+<http://www.zoomathia.com/annotation/181652608028f9b1c9eade3e43c23e48dabcd934>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pallade"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/61>
+              ] .
+
+<http://www.zoomathia.com/annotation/45978efb34efe9a67857212a2a754d1d70384e6b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cloud"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/353>
+              ] .
+
+<http://www.zoomathia.com/annotation/d80097136cb34f8cd27c1055b6015fa952c7b178>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/390>
+              ] .
+
+<http://www.zoomathia.com/annotation/34b67bf9d7db481952c26acf9129b59273e49d1a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Troy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/515>
+              ] .
+
+<http://www.zoomathia.com/annotation/67a0bc6e59979173b7210b73f78692008257c958>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "atar"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/51>
+              ] .
+
+<http://www.zoomathia.com/annotation/83dd6f7851c238a952d3f8e80ecd56414854856c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "helix"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/626>
+              ] .
+
+<http://www.zoomathia.com/annotation/6fa8372364968fe664871f00f675f29f670e2926>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/444>
+              ] .
+
+<http://www.zoomathia.com/annotation/7ebd8e3ebe7b31a82cf32b3649cd015fe4047a12>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3jcrAaRENB&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "goat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/405>
+              ] .
+
+<http://www.zoomathia.com/annotation/1c6c6c23f85436ec5807e3e8acdd03fea8d21a8b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mar Nero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/501>
+              ] .
+
+<http://www.zoomathia.com/annotation/58a35f3cf57011ef7de122f4071fb2ecb22c5b0d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/597>
+              ] .
+
+<http://www.zoomathia.com/annotation/c5c294d628fe6fe19a7cdfec395344efa09bef1a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/499>
+              ] .
+
+<http://www.zoomathia.com/annotation/013ec7f02bcbce708db7c1d99f58910a8078e8b7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/41>
+              ] .
+
+<http://www.zoomathia.com/annotation/8850914b184f1aa9336785c05a0ce7fe69372dca>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/189>
+              ] .
+
+<http://www.zoomathia.com/annotation/1b95fae454091366c41938e8c0b90d713974d164>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/490>
+              ] .
+
+<http://www.zoomathia.com/annotation/a59814a523c037cf940842156656574bfb931ed9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "famine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/510>
+              ] .
+
+<http://www.zoomathia.com/annotation/ff9867eee48b5f328693b0372db8b111b53c780b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/533>
+              ] .
+
+<http://www.zoomathia.com/annotation/553740f973fd9fd2c6b373587b2c2d9f7fa67946>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/68>
+              ] .
+
+<http://www.zoomathia.com/annotation/12c0c497442811c94916cd58ec5097835c4ec16b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Neikea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/5384483cce60f9eb809a8ad8d4903491f10e97a0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Atene"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/51>
+              ] .
+
+<http://www.zoomathia.com/annotation/a46381aeb7e3859875d5d09087f51cdf1cf85132>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ascetic"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/429>
+              ] .
+
+<http://www.zoomathia.com/annotation/33ae7a433b0f8cac2c89090f9bb82843f07187a6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/310>
+              ] .
+
+<http://www.zoomathia.com/annotation/245dd0127825bb92651ec711844ecc37198a374b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cloud"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/436>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd0b9a716367bf31a56dc745c49893e0607c8179>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "patri"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/205>
+              ] .
+
+<http://www.zoomathia.com/annotation/a74090d3c9320b81fba9b515729188035658cdeb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105198&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "poison"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/339>
+              ] .
+
+<http://www.zoomathia.com/annotation/19404420e68a7a96eb4c286c6d5e8a7d0f3dbe00>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtahVia37cgW&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "maggese"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/352>
+              ] .
+
+<http://www.zoomathia.com/annotation/649305ac94570c6fe58e2803e840e249cb9b3070>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/137>
+              ] .
+
+<http://www.zoomathia.com/annotation/6c8d60e1a0401a6fd7cc596b7e72b4b75352a59e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tua"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/104>
+              ] .
+
+<http://www.zoomathia.com/annotation/d35759e2471ced247875d58002ea151dfdf77caf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/213>
+              ] .
+
+<http://www.zoomathia.com/annotation/c0c137bbb065008d3263e431c11f966a62d2b590>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "messia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/638>
+              ] .
+
+<http://www.zoomathia.com/annotation/558cde776707239e198ded2b1cba2eacc36b7477>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Algea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/585>
+              ] .
+
+<http://www.zoomathia.com/annotation/06cfa2d5d653f406965610fc8ac72cec007926ee>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=106059&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sirius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/480>
+              ] .
+
+<http://www.zoomathia.com/annotation/ab69533bc64c70ab38e47dca07a461666ddb002c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olimpo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/155>
+              ] .
+
+<http://www.zoomathia.com/annotation/10cecd8a9e971e24609c82da5a9b203ba89632aa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "favole"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/153>
+              ] .
+
+<http://www.zoomathia.com/annotation/9a9f9c0f78f9bc626887c1687a24fac717378b30>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/383>
+              ] .
+
+<http://www.zoomathia.com/annotation/4903c875315c79a40c401239c9ba844bae90a3de>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "stami"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/423>
+              ] .
+
+<http://www.zoomathia.com/annotation/9439f28dafd38247524ecaf67cb7d2b83b8ce292>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/493>
+              ] .
+
+<http://www.zoomathia.com/annotation/23002f849e73a9c42deabb4865000b391842c1ee>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ponton"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/534>
+              ] .
+
+<http://www.zoomathia.com/annotation/e6cb65dd37dbf67142ade0d594cc144654b73e79>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiadi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/484>
+              ] .
+
+<http://www.zoomathia.com/annotation/9b250832f580ee18d89910f4cb73db726deacaa3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtFEYiYAd0oX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Achei"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/513>
+              ] .
+
+<http://www.zoomathia.com/annotation/2e3d558ce1b62482afe50fc6386ef53bb6e83120>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "North wind"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/407>
+              ] .
+
+<http://www.zoomathia.com/annotation/2aee4374daecb90f1eef6c1c02772c129d19c62b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/532>
+              ] .
+
+<http://www.zoomathia.com/annotation/47978db16747bd351df4220754484eae84c69d14>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "forty years old"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/345>
+              ] .
+
+<http://www.zoomathia.com/annotation/767f2ad5a046863de52910e855fe8f94534e4480>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/41>
+              ] .
+
+<http://www.zoomathia.com/annotation/c18172cc87c85139f477acecedda071d7f7cc896>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/189>
+              ] .
+
+<http://www.zoomathia.com/annotation/4bbcf50717980c5cf2f753b4f11dc540bf1b8db9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sirio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/326>
+              ] .
+
+<http://www.zoomathia.com/annotation/def869763657e5d5069313a592bd254003b21d24>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "multitudes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/299>
+              ] .
+
+<http://www.zoomathia.com/annotation/ac12b378d0d662adcd10940829c0990a4c239ca7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "squalo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/476>
+              ] .
+
+<http://www.zoomathia.com/annotation/d95cd4b70dcbf47be794a84c70d15b7c623cdb42>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Lygra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/40>
+              ] .
+
+<http://www.zoomathia.com/annotation/b3858adb18a91ae5cf10d35cb3ccca161c3afcc1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Iadi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/484>
+              ] .
+
+<http://www.zoomathia.com/annotation/8d48a0e6827d29172f96e5ae6b346d069a40f880>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/388>
+              ] .
+
+<http://www.zoomathia.com/annotation/4777c8b931d29e08c63e04dfa5701b2608ec3e4a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "arura"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/137>
+              ] .
+
+<http://www.zoomathia.com/annotation/b5e8b2a44bd52e16688a0c190fd1f599ee3224cf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "messiah"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/638>
+              ] .
+
+<http://www.zoomathia.com/annotation/c8047161619ccaaf64311bf6ce1ac19a147e8120>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Jesus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/568>
+              ] .
+
+<http://www.zoomathia.com/annotation/0b3246c9eae179126aa96192db3c7ac832ec683d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/193>
+              ] .
+
+<http://www.zoomathia.com/annotation/d1c47b764d2ce023c213955c5430e3f410d1304f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "esercito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/194>
+              ] .
+
+<http://www.zoomathia.com/annotation/c9e9b5d67bc61beed3a92d734bb1e3386f36b392>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlSEevAHx0F&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "alce"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/158>
+              ] .
+
+<http://www.zoomathia.com/annotation/73c9ad8961a3fc8b5c788e29b164d50ad1a04d21>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto1JDYSQe8s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aphrodite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/409>
+              ] .
+
+<http://www.zoomathia.com/annotation/06da60d158d712eb12c320e7ff6fc9a29a7f952c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "candle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/36>
+              ] .
+
+<http://www.zoomathia.com/annotation/26738d465aa27a8778174abee2eb6fc24d687c0f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/304>
+              ] .
+
+<http://www.zoomathia.com/annotation/8b1fb4ba8a703cc2a2cb9a4e292360cf27fdddfc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/466>
+              ] .
+
+<http://www.zoomathia.com/annotation/8c6d437e6fab5c238feec20f6370f2d33e00bdde>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "poligamia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/520>
+              ] .
+
+<http://www.zoomathia.com/annotation/1729e0d8aa5a8d8dc3fbf1d18977c2af2e686b5a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=108565&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "parrot"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/368>
+              ] .
+
+<http://www.zoomathia.com/annotation/711717587891c90a0d265cd0fea5c714eab9cba4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/38>
+              ] .
+
+<http://www.zoomathia.com/annotation/34168aa0b0ddb311ff85f61f5fc7f453890396b8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/532>
+              ] .
+
+<http://www.zoomathia.com/annotation/143908b4c63f305885b46ea1a21cc80f7590984f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dionysus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/484>
+              ] .
+
+<http://www.zoomathia.com/annotation/f8d3ca1dc8b49871389b6b2b9c43606d7504c9ff>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/38>
+              ] .
+
+<http://www.zoomathia.com/annotation/a193459a47c0598701a01433fc1b8c2a289a593b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiadi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/450>
+              ] .
+
+<http://www.zoomathia.com/annotation/55e6a91b51885cfd04a5e0a0b279084b60f1b40c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/499>
+              ] .
+
+<http://www.zoomathia.com/annotation/c92497c92b694aa3105a94e96264834b8e59a510>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olimpia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/193>
+              ] .
+
+<http://www.zoomathia.com/annotation/b9e8ed55b012e0672159c57edd6c99499abc33c8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ti amo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/640>
+              ] .
+
+<http://www.zoomathia.com/annotation/4d7e51d28a8618e4e0836c6a027f12673390de83>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "stia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/71>
+              ] .
+
+<http://www.zoomathia.com/annotation/c3e3df707683df649e7961cb239114e75555f1ac>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/328>
+              ] .
+
+<http://www.zoomathia.com/annotation/17e991b250ffc20f97ea7d05f3013edf045f921b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympias"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/103>
+              ] .
+
+<http://www.zoomathia.com/annotation/fda18c5cb0a369687f51079c7a332728c972b0c4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ios"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/480>
+              ] .
+
+<http://www.zoomathia.com/annotation/199cfbe1247327353c35768954f65f67881582a7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "floating point"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/304>
+              ] .
+
+<http://www.zoomathia.com/annotation/7ae6acddffb0dc92bc1fe0d39e298ffdee0d9e7f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107103&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiades"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/488>
+              ] .
+
+<http://www.zoomathia.com/annotation/aab1c68fca105830926bdfb19e26b1082a06b410>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Demetrius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/26>
+              ] .
+
+<http://www.zoomathia.com/annotation/3748948dd245f142310195102661dc06f3d10b44>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "erba"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/477>
+              ] .
+
+<http://www.zoomathia.com/annotation/13a2df3d7194119779d634bf5f5dc6278cc8d24e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "etica"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/467>
+              ] .
+
+<http://www.zoomathia.com/annotation/a1a6a87f7a37d494a2c1fc77199be3d2efe946c9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Tithes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/628>
+              ] .
+
+<http://www.zoomathia.com/annotation/0867839a0b0b93ee9eb802c8c9a4ada482667bd2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bad breath"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/396>
+              ] .
+
+<http://www.zoomathia.com/annotation/c46a731d7f6e457407e123256371e6c588b0b39d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtdFxBZmK6cr&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Medea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/44>
+              ] .
+
+<http://www.zoomathia.com/annotation/fc9110ff7929886c049c273efa54ed4f044689db>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105620&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "plague"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/638>
+              ] .
+
+<http://www.zoomathia.com/annotation/36cd4671c32774af104cb119a7b7a2cd89c46142>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "corn"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/371>
+              ] .
+
+<http://www.zoomathia.com/annotation/e524cc6f04e89a32460c18cd5872f81d00f45490>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "genus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/102>
+              ] .
+
+<http://www.zoomathia.com/annotation/a611a8f9c88f7b954273cc4648432a576d8d01a9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fortune teller"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/581>
+              ] .
+
+<http://www.zoomathia.com/annotation/96bbc2503e1b0f52106e4f2c4528a6d2c896f9ba>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aleppo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/146>
+              ] .
+
+<http://www.zoomathia.com/annotation/d6bb0560110ffc4a2bf1fc675fd43a2133525cde>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/262>
+              ] .
+
+<http://www.zoomathia.com/annotation/78c0dbd7ee3a8257263b4b14a7b45d3355f64cc5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Elpis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/77>
+              ] .
+
+<http://www.zoomathia.com/annotation/9a49eec78d4e6794e4558373ee2475ee03c365a0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "avrai"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/208>
+              ] .
+
+<http://www.zoomathia.com/annotation/c247b3f44b4306637b9c2e04581d3fbee556851d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107103&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiades"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/484>
+              ] .
+
+<http://www.zoomathia.com/annotation/1949459b8622d02453becf0933b73d6d4afa861f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/138>
+              ] .
+
+<http://www.zoomathia.com/annotation/1e745034c068375b6683039f2c68625862ba9306>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/226>
+              ] .
+
+<http://www.zoomathia.com/annotation/23840010d363cb3803dba68b5a4cd014e93a6c45>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Olympias"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/88>
+              ] .
+
+<http://www.zoomathia.com/annotation/367f63a1c13646b74dfa05fb4034823d944272bb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "coma"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/504>
+              ] .
+
+<http://www.zoomathia.com/annotation/baad2c492e30adfd8ce49a369165d61119f02a08>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soffiano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/489>
+              ] .
+
+<http://www.zoomathia.com/annotation/e5f41ac1b3b2aca6e6369e630345fe04939a48b1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Hyades"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/484>
+              ] .
+
+<http://www.zoomathia.com/annotation/669cf9693e6d952897aa78b5b538aea88a3cb01d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtT0E6aoJ7pS&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Epimetheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/68>
+              ] .
+
+<http://www.zoomathia.com/annotation/4cd0414cf3268e47c38f185cd313ec6416de571e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtRtsryigJK4&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Demeter"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/307>
+              ] .
+
+<http://www.zoomathia.com/annotation/a444f1af95b42429b15bcfef51deb9b9acd2d198>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/168>
+              ] .
+
+<http://www.zoomathia.com/annotation/354873de950583bc15aff58c092db056059c5e65>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/189>
+              ] .
+
+<http://www.zoomathia.com/annotation/2cc75501291fe2889fa6dd318c7a50d1f75977e1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zefiro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/468>
+              ] .
+
+<http://www.zoomathia.com/annotation/dda166a34bc556c7cf9882210237e1fd32800795>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/179>
+              ] .
+
+<http://www.zoomathia.com/annotation/60cc145657407f3ab989c82accf6299c71139e70>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Chalkida"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/516>
+              ] .
+
+<http://www.zoomathia.com/annotation/50b5711a1596d14ba9b0089c4ea39fb281423dbf>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3ifEZTTSF2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Saturn"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/137>
+              ] .
+
+<http://www.zoomathia.com/annotation/e797999d3e9f5605337f6163cdbcf11b2df218e6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/128>
+              ] .
+
+<http://www.zoomathia.com/annotation/9c4edb5b650a11bea61c800f0c92057b0e4b040e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/448>
+              ] .
+
+<http://www.zoomathia.com/annotation/05db69f070d9ec3556f3fb9e67233e60856c70b6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/181>
+              ] .
+
+<http://www.zoomathia.com/annotation/0b4d68b29027c9459c4d9ee7ffd5039926a7b7e8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/141>
+              ] .
+
+<http://www.zoomathia.com/annotation/d1a9db979e593d93c98f44b3d26f76faf9189f16>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/499>
+              ] .
+
+<http://www.zoomathia.com/annotation/dbe00f8e9fb24fcbe059125a9204a496919e9f0f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/296>
+              ] .
+
+<http://www.zoomathia.com/annotation/40456c4dc7d30bfb61f24ee36c91077954a9669a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107362&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sweat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/229>
+              ] .
+
+<http://www.zoomathia.com/annotation/349431b21533fd2024693f9327e9a3be2a8834d0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtS5RNOMy4IJ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Poseidone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/526>
+              ] .
+
+<http://www.zoomathia.com/annotation/5bddf2c6feffea2766a980255953657c8e6f4ffb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Neikea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/f75edacd440a7c3128173f60a1e754040c18946d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtDbhnfUpMWA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Prometeo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/69>
+              ] .
+
+<http://www.zoomathia.com/annotation/da12c79da2666e3b491ea996c63635460fced0be>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/284>
+              ] .
+
+<http://www.zoomathia.com/annotation/e9fbe04a180a9056bdc0732ef19d0e5d3ae19877>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/111>
+              ] .
+
+<http://www.zoomathia.com/annotation/6fcb1a702178bc2458618239fc4dd8897c957e16>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/22>
+              ] .
+
+<http://www.zoomathia.com/annotation/0ae8b1346c9d15a12442e352d19bbe0c96ac0c9c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "famine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/192>
+              ] .
+
+<http://www.zoomathia.com/annotation/ffaadffcac52c03064a45237c23de6d86947f8e8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/202>
+              ] .
+
+<http://www.zoomathia.com/annotation/9aafbf25a972d502ba899ff7a82d6a761679cb2e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "eterni"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/582>
+              ] .
+
+<http://www.zoomathia.com/annotation/0f750f429a1c44638d972cada5ba57e49db15f92>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Atika"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/205>
+              ] .
+
+<http://www.zoomathia.com/annotation/276d459b7edfa5b04184da7d8eff8145debdc6d0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "androgynous"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/617>
+              ] .
+
+<http://www.zoomathia.com/annotation/314d262f3c91ec12776a1baddf87d12120b50b1e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/503>
+              ] .
+
+<http://www.zoomathia.com/annotation/185f11ad5104bfd8359bc7b713b7db1494aed9f1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "famine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/237>
+              ] .
+
+<http://www.zoomathia.com/annotation/da6ce0609e8e5880cc4248221ea802c48e115edc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Kronia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/191>
+              ] .
+
+<http://www.zoomathia.com/annotation/f40c21925e3518032532961e1e02247197ce9506>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/237>
+              ] .
+
+<http://www.zoomathia.com/annotation/12d01367e4e35950d41bb92ed799561468e0ec97>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "In silenzio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/96>
+              ] .
+
+<http://www.zoomathia.com/annotation/396b8c86f05fecbb0b9ae35eecedf3b40dc860d7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cloud"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/493>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a2f379dab8e036cd4e1477fc37dd1da3b9075a4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "thread"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/612>
+              ] .
+
+<http://www.zoomathia.com/annotation/ce1f2796ad1d0b1e9f146a936a6d5fc23d4a1ad2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Glaucopide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/58>
+              ] .
+
+<http://www.zoomathia.com/annotation/f171a076fb58ec09741e9ec6cc8afec340ddabbe>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "medicine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/380>
+              ] .
+
+<http://www.zoomathia.com/annotation/4f79803ece0e28efb8b46df44d7f7185c63d61cb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiadi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/488>
+              ] .
+
+<http://www.zoomathia.com/annotation/296d311df2f91e28241fe2da83b723153b762d49>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "erto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/447>
+              ] .
+
+<http://www.zoomathia.com/annotation/fa3bf31f497926b18360adbf6e205f142350c7a6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtAWl3eAUQlA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "milk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/464>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f210ed9759f3960d3e6b99afff8bb3f614ce214>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "melassa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/464>
+              ] .
+
+<http://www.zoomathia.com/annotation/a07d9aa69e177cf9e1bf571f81125a6a9b591432>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zephyrus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/468>
+              ] .
+
+<http://www.zoomathia.com/annotation/df23de94b6aa44f7b46ae377f73a91397189650e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pion"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/304>
+              ] .
+
+<http://www.zoomathia.com/annotation/8308f79b93eac7e5e2bddec8d78d50962d10c7e3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtiz8ndVfKcX&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Persia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/22>
+              ] .
+
+<http://www.zoomathia.com/annotation/7d7eabb51cfc8636303b01c7cd4340b7de5c580c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/128>
+              ] .
+
+<http://www.zoomathia.com/annotation/e53894ebae52efee8d9e86769c327937872f8898>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/383>
+              ] .
+
+<http://www.zoomathia.com/annotation/23187dcd774095d110250339bcd9b82a9ca360b9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "androgynous"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/621>
+              ] .
+
+<http://www.zoomathia.com/annotation/f0cdf7bb76b9a1cdd7937e1cf9d7823c328ba4ed>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/200>
+              ] .
+
+<http://www.zoomathia.com/annotation/e09de1268b3951a71eb21b59b27fbf7befab7104>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/572>
+              ] .
+
+<http://www.zoomathia.com/annotation/64202c2a02ac9dfee8e0b34e545df9fc8985ebf8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "meze"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/402>
+              ] .
+
+<http://www.zoomathia.com/annotation/76990084df9aab898a4b70acfa54edaa49ff9e1a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "kourou"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/WorksandDays(Greek).Machinereadabletext/None_urn:cts:greekLit:tlg0020.tlg002.perseus-grc2/618>
+              ] .

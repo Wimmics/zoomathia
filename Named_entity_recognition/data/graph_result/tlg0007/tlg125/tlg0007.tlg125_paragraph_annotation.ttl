@@ -1,0 +1,3577 @@
+@prefix schema:  <http://schema.org/> .
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dce:     <http://purl.org/dc/elements/1.1/> .
+@prefix fabio:   <http://purl.org/spar/fabio/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:    <http://purl.org/vocab/frbr/core#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix oa:      <http://www.w3.org/ns/oa#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<http://www.zoomathia.com/annotation/61452c5e72d61d663c2bff94a140f3fd1d7da8cb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105920&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "oregano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3341526c67b9eed380d83e8a1f46aec84c0921fa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "parallasse"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/8c07922284a93cb86bbb3e71d48d0e133ff57263>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtepvW8S9Ma2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Plato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd5778d1e3fafa7d2e75f381db0af9b82f8abdd6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Platone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/dd907190dd8f02660e4f0652969140cfd8ee8177>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "molluscs"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/153be6c775dad62a67b36ffd98bf89fb4ea32c86>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/1db113bea2879170f00e13fc81fe03f821b152d5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrte9SAbeF3Ny&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anaxagoras"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ce4c41c8733fd39bdb7e03e06e7df93e752764fa>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrttvE2YZwZu6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/6be25a42722db39f5f6df8e418a46cdeff5793bf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/5128872fe3aae83a6a4a7541bbc2526879e343fc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/89d3ecab486ec5d8e894c5fc5695751cdf9c796e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d3a3e96059ba6a48764d73d19c4bae4f787170f8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dionysus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e7186541221e2633e68d54ea0637757434200f77>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105312&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "beekeeper"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_35/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3426bc01ea4289d464997653b388d313bdd6fefd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ombra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/c538f57848390ff7e584fb93601b6d2bb1adbcec>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rende"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/bfe6f7a6f6ee8b9ac5eb0dcf051952800702b8cf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zefiro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc5a53131bd46167c8ddefd516e93f6d35130d7f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polmonite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/3cd0fd4af2fb858c7a88381ab2f71d72254165ec>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt0XEPl4RxQ4&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Latona"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/1fab1a3f04df8b1e34f9edcb1af07be20c8c8a9a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/57715d91bc37a0baa37510b939d81ba77774005b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mollusco"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2bf2fb62c3f7ba5a3223a4c361c4726b83ab8801>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto1JDYSQe8s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Afrodite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3e5df6d860ae4f4d7d7415813fe03aa1bebbebf4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105920&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "oregano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/578e2027cc8592c20b5095a04be281d14b3d3acc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "thalatta"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/9f2821f04aefeda6e513fd6e3896ee3749354514>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105189&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bile"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/2089948c9d755ff0b7bb5252c2ff24d7df1b2b23>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "barley"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_15/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/edf105392aeaf9ec518c95eaec87b69a9f291eb8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f7b109136ba1aa5902b133b151af669452740584>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/af5e8e78877cda9d58def3c5c0f3e1d57fdb713c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/997d101fb4cd1f69fa990c7c22bec8c4db8218fe>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anassagora"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ef91962bf18b7ae37bd12227786eb363aa0a3fb2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anassagora"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d56e2b5d33b5c8d4f3425201a1f75c4bf9f1e70e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "feces"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/99858e85b71d08b6993a66745e14a0e1d76d43d4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtZlexym34KZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theophrastus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/1e56668dad26f724a47d73b4fb3ad0461e745bd6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/029ecd189f6b9abf6a93f5000548353f909f14cd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtkVLPxLyPF0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Jupiter"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/85e7b31a4909c948064b0e77e6d09c0ca2d277b0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/0ea95c4aec326c8d281ab5d7e31eef81555e725a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "peccato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/df439b08266e5bbdd691e06ebbbe7fe4a237ff8d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtaO1Rsn1iPp&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tartaruga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/1a290afe2b77bfe608935a577e13ebfeef185b3f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orzo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/9e85f65813faeb2eb3f60b448849cf203f2ed2d4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt8GovjVWOR1&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mnesitheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/506d2cd0ae69f8586109ce2b11ebc9d7ee9b1bbd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Platone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7f6f70b7ea9d3ac4241fe363265519af5e78e23d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyxtG19a4FR&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "saddle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_29/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/0357711970ce9ebb3f514df72969dcf27d9f24a1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "girini"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/4411894a661254da27a3592d71ecb72ae488b243>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "formiche"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d6d5e58b101056cee713561f04f86fc4375a17ad>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teocrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/af8935ca0ca1538cf8e104ac6d77eeb125afbc8c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/8c071fc0c0abf68aff45f5f781e821808be4ff64>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ombra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2949b0f8f6e1d37d048c92339b67b5577b4258bb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "scorched earth"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/90318f7053c4cb40c35366940d145ab4a83295b2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/69b102b578225a4e1a98bad9925829eb36eb7789>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zefiro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e1dd6922dcd4e840d2d5a4766a3f6d9d480b7db1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/44ef4b1c030d58896348d26d2072c744dc234c2e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0107f66ca8158a0cf7537168315909993a7d8a8d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/94ba51cfee08a2e90404a4308724f6b6c6a48e0e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Moon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/37c6cc5df98585e7ad9ccc01e700805460bb58d4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt0XEPl4RxQ4&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Latona"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/60c730c3922c4cad9873effdce0f01b293cd15af>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "astringent"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/46b417d3890e914abb080db09ddea0a568279853>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrty1af1lU8Dc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/df38a3f4c8f4c518273754b2df08458e87b6c432>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wheat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b7169d7c88db46a2de09f6009ea25a1b69385d20>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "granchi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/9dbfb6db01a491ecaac1dd5f334d6ff457199265>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/45e8d72b4ebfe0b6ee468b5d11f48821c0f355c7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "typhus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/54334fcdc4048c522b81232a9f9493dbfa6d2f04>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cipro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d3554d658438b2fdcc69dfc7746a505d86f30db9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt7JJ9aFjqzG&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Heraclitus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/6770987fed8bf1c5b86661d633e9ed09b9d0231c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "écus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/3f60524a1193ae97d21f386846536a66ee4c801a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/c7400221e14bd58b729c1a1cedfd543620f34795>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107531&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "flower"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/7fc811d9da526f703d9e96daed26192dbe6e5b42>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "copper"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/2280a12ef9af90af81c4c5a0c2561745b311a67b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyGevE2o8IL&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindar"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/603bc2ef998319e0d7688e4776382bb39b0b7ee6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "corn"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/436a04f14b1332a5400e7e5b7c74cccb8dd64fcc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sicilia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_4/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a12cec72acec44e72cb48a47570f3b53cac47972>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/271c4f4140255ff3041d49cf9c0c155b84bec24b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3FRD0w3Ufd&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pluto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b98e3dc028bc103d5f6fca92e2ad121d236e40a5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "simile"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/2be7ac549a569bbb763b5bb7c54db7f7db23b7a4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "molluschi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fefe2ad0e12a286205dbc53decee1ac9a7b5775d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sicilia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/0abf86943dc6bb26800acdc88ce89c1f5c835145>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "acquedotto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0d57d61dc00da2eefcb449fef3c76e40a6ea2748>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105195&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "semen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_30/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e41a7afc53635f727269fc0107553eb84333f524>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtQ7qygpEb2I&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Juno"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/e2e5a36b5f9e8e976a17a9b0e101825e8f64e3d8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sperm"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/99b3754caa91514d76658cc21eb28bee1620ccfb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b2e8c61c2539ac9a3d0d7d8fdcdf9d641e3a7732>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ida"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/c69198b03cbdff8fafb4fff099173134d4867717>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto44p1SaKFn&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "argilla"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f03e416e376d86c0cb79247c9d80f8b7c70c9d82>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/89857dd2251bb838b4cc32f25f115b129baa7716>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/85a8734634263eaa56f7645994d688c9dd6c24f4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtihlJWfvH4v&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/13a7a2c3ec4b26073506b2be862264a0c7964bb6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Alkman"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3cd87f2c28f525054dcee346eb377ecd3392329a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e3b9de32845655336c978ec657e7aa2e2b045fd3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtaO1Rsn1iPp&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tartaruga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b2458bd0e3de4083e5576fc3dfdb6fa37f41c263>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b6d81d8dac285ad8b875bfc574841e9bdbf808e2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pneumonia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/b455f93fbaaa5051531f393032d40c51076ceeaa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "scroto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/af1163bbbeb6f66d534840186344221774fbf40a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/aab98074bd7489bf88414ffca44cfca7b48b3193>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "écus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/0a79ceeea1828fe6e22997055ed4df07884810fe>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pioni"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_30/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2b00e4c04d24d13e22f365487a67c586ba4146e0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Euodia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/9ed79658aa323b72fcd87584fdc1e0b516aa60bc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Alkman"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/cee9bf7c6b9432bb9c7027e5f83b7fddee5ae9a6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "candle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/dee86db41b16bb617ba254545dd8e400453fb3b8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pangaion"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/9f055f840471d42d2062e1fa224bc0d906a8ba62>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "erba"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d09f5a7ec05a9aebf78b25451cae06802ecaf3a3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Antipatro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/0ad138de9a8b3fcdc21af618ab81bfafb9b38298>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/a437a1370cc2ade97500747fc1b1a584bcf89c9b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto44p1SaKFn&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "clay"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/c2423001ee154ffd2f25d507e327450ecd6dd9c5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_35/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/5bc4d0576f0ec4b561bcc7c8bee33e491d795f1c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lago"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/848832ed2bb7e95568546e8a044bec9ab53c7a40>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Alkman"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/8e00246d627ef9526a875e20f2df7cfddd5db21a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "formiche"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/ac7a57fe524da7df1490998ad34843fdfbfd78ec>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=108042&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vulture"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/8dd43e2b266bbbe57aa3f7d47d19fd3c40ade597>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "symbiont"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_8/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/56eed9534f63c9cefcdf53080a6bf780d8f7eb6b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "formiche"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b7e1deff70fe9f33de728db778e03da3431c2e5b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/08e65eeda1ca1cbc21b6c85b703b22224dfcd1f9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orzo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/48a51ae0e64e2704e0734053ddf1b54ccacd7bab>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teofrasto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e5ac547d49570b605f79479912b9322fc8476069>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105620&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "plague"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/0c5508dda4bb96236d3c4f73a1aedb5845c6c349>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "umidità"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/63774ecfd3126b3baddab7fc9976587b03d40af9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Eraclito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/8956dbf48fa87499e86eec1947934b14d305aa19>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/85ac3e5132466bc6b0de0338e3a64ac6c79530de>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Platone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/a680caf1a8062c103522d3cfca636c6fa5fab78e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "genus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/72ad236e2fb1d60efb5d2f1a02f1e2dcfe5c6d39>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_35/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fbeb801c0c2bf2cf9aa66ca4fbdacb7b845c55fb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sauce"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_33/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/02f0a5c242604e432a2547383ffe2ba74611a7ae>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2ff2adb64e076318d8c54f32fbcc16a7af30ba64>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wheat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/bdc434447c1981a20ce36298dddf77267470336b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "adulterio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed16d4a6fb05055b8d94d9480e1a465d9de73467>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrte9SAbeF3Ny&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anaxagoras"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/47f0efd7b2f0155df40884f872a56e71aeabe152>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "spirito vitale"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_35/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/54bb695fa9ea76bccc22866121d846657082edd3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ersa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4c4e298ab5bcbc89c67f36ef92978fbb8d1f1aa7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fai"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_9/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a333f40f6146aec1afbdee13ad5d93a09d0c5632>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtZlexym34KZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theophrastus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/24b099af1927707dc28fe257e879434b0f8eec3f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "écus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/5>
+              ] .
+
+<http://www.zoomathia.com/annotation/7e0e85ef9d6434ff132c019605771ef6517cc8bf>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c4fb670697942f3e0e3f36c4a67d9af991845e17>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ombra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d194d2e22497967870206a03853b64880c35d41c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c05706c24ce9e638f5353550e757002e33b90cda>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt5nTYoQ2SHR&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Homer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/392edbd0fe6b1c6b43cd52dbaa64cf957b29f36e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_9/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/43cdfefa7e971b2b8c71b55a3d2aa02fd7cbe895>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olfatto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/defbf0203607ea8973086ccbe14a9b7646f1d346>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3628767807099b055d257eb17776f1f9ca1b9c10>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theognis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c2c27c3e4b49c1ff153092f44760b2dc7a7ab990>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teofrasto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/dbc55a70f2bf6eed82b053d1a37a79b7717d2126>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtepvW8S9Ma2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Plato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/36cf38f8d2377fdfa940b78a01d36efa12c58f39>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Platone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/27ab11cf7cca1e32d1856384b375542c2e81f8f6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_25/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7975df82a8708a7132b5294a9bad99e60f56bb45>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polyp"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/69354bd2b3c0d13409f1d9909b2d4e2c6dec5a92>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teofrasto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/faaad4c57c1ac29302cfd088b18a075ca322ea0c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/deb18e81dd7cddecffb61f409e4dbc38591a7cd3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107792&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sicily"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_4/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f3114d340936085db1545e1c91cf25a15a83b673>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/73757959cab7b94c191820d9d54ae7e20d9efed5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "granchi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/852cf21cd2ec19345749838f4b88a1ba1fdda7c9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ff8e0431e6824227292b9697cf297807db02053f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "angers"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/cd5e956096d1aeea86d836be9ef8c67fe9ba191a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "thryon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/3cd7ba74a96f54ed18a5efe4b29c7012c2582793>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrttvE2YZwZu6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/47fc7612935da9517928ed05917599722f62ffe8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "elica"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/72d17b107b62440a4a62e034b1e186909d23ce10>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cambiano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/3c1553898c1bf5e63319f3c806c4c5a7a4f779ba>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mirra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_25/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/efa9f8f83ebd47b3e6004ad7a1ad5ce32fdf768d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/8c6ba6c13a9bce2bec785ab16dd65ee37e9f0a57>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3FRD0w3Ufd&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Plutone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3350ec9716b1d4caac5ce8b1908d7db16e146b28>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "spiga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2bf84ff81850aef23f04b7193b906fd26962a178>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrty1af1lU8Dc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/43592449bf6a4a664b164a248bf801f556cb3da7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/88a42c043860f7e28915881dadf0d93f3e187e9f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtZlexym34KZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theophrastus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3f2a1206fd035a6366fd01fc697ecae945c84a24>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/c5bbfc98ded8aa4f62f39c0a7885e45dcad17a7d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f425427f3d805d8f0732df9a0d7fec4742a7251>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "parallax"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/33883373e1d4ba053ec7dc24d97991257619d693>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zephyr"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/6a91ff819ce92a1c1431f5f71e8411401fc0fe45>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2e0c25a5230990c3135c3e89d6de46271bf5a907>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polyp"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/097e38d7ec7ab8325c450f26a01037d9507f6f07>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Tracia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/546624f943f41d240bbe9acf15bc6ea60fca13e0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "multitudes"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/bb99d9f8651d7405ffce8e97f9e189e2ff897f00>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4183433877b3972b19c33a866ee24795e41ebb9b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "erisipela"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_6/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a8273cb466d84e12eaf69364af6783a8871b1285>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mollusk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b95538862cc27e901c84a649027b47256f56392d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Alkman"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/064a27a46543436f1c73db8e7a09e48353de47ae>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teocrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/e38301bc99c091d892ee59d2cf3c52d098565ef9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/6939f405169db7fd935c49783b8927db23c5db5a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "barley"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/61cd2e4616f8f353cdfa0bd1fed854462623ed85>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7b288a13c72e565c1bd5e9de2e3ccf2c6d78676d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "thalatta"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4b1d4d7b52bd2675f8f3971d5028d909b3946ff7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt5nTYoQ2SHR&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Homer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/258d4818f2907c935f0fa5d0fd47fb5ced3bc58c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "girini"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/45f5498fe0aa7d5495d35da72f2b97ab4fb93131>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/c68d9acddde1a2d157cfe514473fb85788d0880e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/91c3c69c6043fd4956bcb1b0788a8ad867e69d8e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/021fde26327e58fb6abc69c3d5dd307e78230f6f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dry rub"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/03c75a978d70224b9b19ce8b3d90cbb33991e4df>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtihlJWfvH4v&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/74e28e7b2d846cb6716ad05eb19f9e14aa645298>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "headache"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/11a6fb1e888ad3d07539253ec18aa0a64d146fbb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "umidità"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/20fd45080f15ddb3a21c9944696ca8b1202898e4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theognis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/79c3c19f14e45ebb5e9c663d09a9ad1a92989b17>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrttvE2YZwZu6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a0870cfbdc5dd5469f6a95070beaf1abf590b49d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "erysipelas"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_6/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/02069e1c12d968779f8823bd479810c52dd4edfb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtTGUpmg2VWl&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theocritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/54384fb8950b3c3c8df371a386683747a1d885d4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sperma"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bbc20b555df44d660e510bfea8de387a24c2b2ef>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "uva"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_27/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/70988aa9da5e608b6454d3631e0c464789d02cc5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/bd3d7d3cba1be1ffa1764025ed1ba86ed6ac64b2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "chiari"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/0b541d2322bb674cde934295aee949702db8cc27>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "urina"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b7a5fe6b7d7cee75de3405d2958b2fdfa8763520>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtZlexym34KZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theophrastus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/9e9a180f5f14e405a447510c30304c033327ad62>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtId0TMGAa0F&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "linen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_28/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/5d9f13c1d5263b294f37788423d054b0f8c6c506>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "limo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/38310736c97ef7a18337d1b200e8f0628b036a49>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107792&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sicily"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/909c0b8c70cc8bcfb2e0063e9d59103d5c1115b4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "oracolo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7b6e2ac83b35f9f0dd04e430f59baab5014c782e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orzo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7e6097da83474636af091544323c0d7647ed4f9d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "barley"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/1a703765e6861334d9c44ed6bba549bfcb55a5fd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "myrrh"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_25/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a1ab688154291a67883f96d0de7662346e2e72af>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/a6ae654869ab37d6641de08cb759e6d9cad7ad9b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105189&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bile"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/0fa34614669647b2df1e8b59914076a286fdfcb4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3471cb6824f6bcbd4e09dbb9d7701de18e66238f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aetna"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/cecc36076ad700a37aca553e4221e987fd8a9046>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sordità"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_9/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/bc2865bce05f54984cbb717ab209ed110a0104fe>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtepvW8S9Ma2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Plato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7411abc54b27d8ec446c0cba09743c13c7ef487a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Eraclito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/4f3fec1d9ddbe94bb5417e999edac35e1dd6ea57>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtLieaANMAud&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d6b9c751ca6b96dbaab55e5906a2a5cfc7555c36>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ad036045e086844632a8882ebb76c61ca3c4a9e5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Lina"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_28/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4e2c1c0df87615ef5e11ab76820044fbad9c1c6a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/84325786cbce6a80beb8f7e1fbee82c6bc1a76eb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyGevE2o8IL&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindaro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/7f5a5fb487442ea1efa963fca754658640146358>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/d868431400a0df6ed314e0d461b3d2e025fdea2c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zefiro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fe90655ae4274c80b808a5a90364e0687b11e943>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105189&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bile"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d3e1cc41b4f09e774f4a59cca971104c9b5c4f0a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=108399&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grape"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_27/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/5764489a54ca05cf427d5f066c2ce6d54ac7e963>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/ce4c323bab97a7c51aa96129847903e599900cd0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2ce49fb562d1e1a9e44d72e64506e9d2d7275c47>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rende"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_33/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/47cd5db17b2dc7606a26a417b3e3b870ca2e72dd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107842&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cyprus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e6a095c858e53095bf70b8b4e8e4795748fcb96b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "syncopation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/5c828cb9f9616775494c84edba3880118b81595b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teofrasto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4a23070352042f5c5d1c39ac34fb3bcf3dd0118a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtZlexym34KZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theophrastus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/79115d8bbfdc76fcc8770c077f2790854c8550d5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teofrasto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/57d3eaf0018de248d321051cd644e52a25bce325>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Corinne"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fe6418dcc24a5691c0f55058d63c596b20f8a918>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/0db94943cde7ea8038088471fcdb62b8feda13b1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtihlJWfvH4v&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/50e87a59bf14550fc002f5e5171f0bcd0533d2e6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/05712ef77db032e7bd160e467f82efa16cc053c4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt7JJ9aFjqzG&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Heraclitus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/f261840a38330bde6238c1d1776db878e8a8dacb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orzo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/02c36ca0afa5aaa08e93c5f666df4c0903aac1ad>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto1JDYSQe8s&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Afrodite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3b9125ea36404636f5ea0e6ffc2e148f1b6cda0c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/75c3d08ad1c850dd349e7423fe9898f74384b26a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grande causa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/7168bfa414fc798e9b94ba5f4bbc567d8c2ef817>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rende"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/edde216942d2f0b39d434b484217e63ca8358dda>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtTfl4OjWga7&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dioniso"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7f58dc704058d01dfbca50bcbd9089209892640a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "adultery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/9adfbe615ccf07f7b281a33990ad91d32879d485>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyGevE2o8IL&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindaro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c0e70ec7e8e596348110fc58cc0d27c754e2c89c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zephyrus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e9854505789f1be2c94cbeeb5463551519663002>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b98f33a3e8623456dfa8c39e51f5e0aaeb259287>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtepvW8S9Ma2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Plato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/841256a893cd14dd8d12aae4b7e7c8843cde2aa6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/85623b43bd8b4a24c3d1ec942d04530211c37bb3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cinghiali"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3680350c56d83580ce93d396cd79d0aae4098128>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teognide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/4c271a1f3bd7de4d1307d43d0a8c1db9e30721b6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_28/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f3c578d3d6a37cbf7f920a16edb07578884477a6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMr3tb79bV8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/6bc4760bab9878b57aed06fbb124bea01deef72b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtYdJwXpuL9x&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lama"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/925cc4539936ceea0f108e56eaecb8270285233a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtMr3tb79bV8&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wood"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/369008510ef12070be4df790c412e9acd8b10398>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/0d47404e01eafef03f5a4ddfbb55de83ec37f7a8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "petrolio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/21731b054f970ad5b2ae67ee3ae76ab97e5b76a7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "molluscs"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e728174e34ec5c8afebccdf40ab9ec36986a81b9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/e711149ffbdc414e248da77324a8a1787ae20d74>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105704&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "red sea"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/e3e26af6ed9f73633957dd9bd09cf013d4e72e02>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fe612b39c177c71d25eb38dca0da504e7b566ff2>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtZlexym34KZ&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Theophrastus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f6d129494ded993e83277b3155684ea4db4a07d1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mar Rosso"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/fbe6dfc11f66fea4d2a729b2cbf481f88d55a0fc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_11/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ff7e28a468e3600fdb3cac6362114a5c58885713>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b07e358abc618cac7e3995ba6e59e99daddaf6ac>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zante"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/77e67eb0f76d643b5bcdea55f7e457bbd527c6a0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto44p1SaKFn&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "argilla"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/b799cadaf17ee9448e3fe737e405c64889411e80>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105195&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "semen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_6/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/cf03ae034f432502ec953212f62249c6b36b9168>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "umidità"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_4/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2b75b37b4d31f0b200064f32227dfdf3dd9e6d3b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/47734bcaf26418fe3bcdcef828ee6c4728d29c27>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sincope"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/1caf98c8b348d4ae8b280078f53a1834c208d98b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/61344853f953f013b1ceea2481e20362728dcbb9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dionysius"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/75f2f2a67d9e760ee8d64402e5c0b7109a83c649>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "barley"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0207c4994abe5accb16dac6c10506e83eb516ea3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "grossolano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4806bb7d1dde379a1b47f113a2f6333a7ef1d1db>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtimN4n6ddLx&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dorians"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f960140d0685a78eb7f72775ccbc2549f7c24bd9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105408&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "urine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/c4e7ef33dd1813ee97b9bf6f6dcd7bcf198c82fc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "erba"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/1405331cb13149a5ddf33cd92d84ebf8d351527d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "astringent"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/6367b7744ff9d3b78e1cf70d9d6917cdbaa1a8fe>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_35/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2625c9eac488ee171e51ba9614163c62b123c346>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_27/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fcfe62a5e332e52773c6d0dc9db60c14430b9a65>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Antipater"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/cbf1f7d6490cd92c937ac3e5fd72dd01a3e7f281>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "girini"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/17f03f80657438f6d25d058733cbb7d52b8d777a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105926&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "chameleon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c19bac803a9c06537c05b81ac4d706a37b03b1be>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107820&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thrace"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/da7d3811eb69ef6d71036728c2b452cd23652b8a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4vKMQQ6elk&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orzo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_15/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/511d860d78bfe40bcce17036fe99f8ce134cbaa0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ersa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/54c694c3fb650cbb219837d6233d2333145285bf>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d8f71490542f3bfe6b2349c1dbcfb11eb8dc6a88>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "gli abissi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/6bbef76aa6967d8ca9e590d9354db948a08738c4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "aqueduct"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1cde15336463bf5682a0694ab07faa1ac4ddf59b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/476d57b2d3dc94f4c8af648826726be7f0f78595>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyGevE2o8IL&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindaro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/6d5f506f619fd04d52c2bb89059845017dc7e103>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7fc52fcdd74dd3318cdee9dd87ea8eb7c76d7422>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "epipoli"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_6/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd8f607d79a794a64513cf517b5fcb82103bdb4f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vento"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_6/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/6a6ff2c5575e94ee7082e69056a0d57f74499141>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/1edce6bf684411496b83e4e5e9b7a67cef9833d6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindarus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/e385849425b66ca765a3387fd244a800709c9f9d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105189&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bile"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_1/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/9425809d32e8f6698c54c0909eee9eeb3a309581>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/f6f0ba776e48af95eff4396fe65589691ea2c9cc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e2f586706a85ec8ad4be6153b38d3303b0a8e55f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soffiano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_12/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/92ca3d8a73409bbd6a77957253eb0b8b09cb3298>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtQ7qygpEb2I&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Giunone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/a1db2992afc77e2c7370579903288c245e2e923d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtQ7qygpEb2I&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Giunone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/95815253da80ae295a38b77d7cfe25a4d97b1adc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107820&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Thrace"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fe5f817a17f9dde03473c4fb047a5fb017a03763>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lees"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_27/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a324b1b2bd6630ffcbb03a1cc990f5546a5985b6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtId0TMGAa0F&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "linen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_13/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/aa9b85c6c97c066892b66970623e800789adbeac>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt8GovjVWOR1&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mnesitheus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/4029d762d179daa00d3a6aff55523b159e1d0737>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ether"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_29/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/1aecdcf592bc04381cf61d22b02c537e7a9f1a5e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtBWawwFyKfi&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "deer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_20/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed1aacf190e24cca692bc8b8dc044b509f5dbb53>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "drying agent"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/60dc844657a18db49cf7162525c7f4a53f18fd7d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b73f42a307f2d838e507efb395cbd65d0dc478bb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Teofrasto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/e2ebce305a4fb9ed3398468d8266907302eff72f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt6ccLQhgjJq&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Aristotle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7d8f0b087e39073645e554381601f87880b82d21>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "salinity"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/99470e99483000c102bb905ae5f5ac2184f71ef0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zefiro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/693068f552a44dad1d44e243f6c526109254723d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sexual intercourse"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a2dbac1ef280fe3ecbc6aec4c742053d4a4e2f4f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtAWl3eAUQlA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "milk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/732a1c9df94a13ac01cf230524f43094303af2d8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyGevE2o8IL&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindaro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/a2642909d6ecdb838682919a6ad6bb111d69c92f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Etna"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_23/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a18382f10bbcf1199e7853a0c65367de81f608bd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "scrotum"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e372860438d7ed826bb9ea0fa53f5d60b61f0144>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/a0f14c6093dfb9de73d86edcf64365a886d4e62f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "acaro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_30/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/74dc3175037139bcb5499644c512fa9c3337338f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polipi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/71af834a3c3ff4e7b189d1ac3b70ef2ead8fbbdb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtkVLPxLyPF0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Giove"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_38/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/e64e47e3624426637d9152125bfcac464c60bb13>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_30/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ef9703bdafcfe9ca7a21580e23748e6705afe1d9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "helix"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c081469a169562e2d1e78b64cec24e176468b2f0>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_35/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/0098bdbed73ea561b680093aad2aa04ef589dfc8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "avvoltoio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_26/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/6acfb86dbad7f8400c8bfd454fa5f6f88c17b11e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "hemlock"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_35/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e0746556b8cd1f1698f071675c23bbda6cdd1e54>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/c5bab8c4456916b77c2824538c4d412f87329a35>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt5nTYoQ2SHR&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Homer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_5/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/e8650e6beeb1f6f3f5b288158faaf3ea8631c4a6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lago"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/32c851bdc928c955e0578010405cbc3eb9274c82>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "silt"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_39/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b80d606c79dabc070e644f12ed161e9e06f861e8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_31/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/e3e2e33e30603889970d7de44e7dfa1872a38582>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ether"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_29/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b98ea0600daad3d7e6d341646caa190cf2ac6eec>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cambiano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/c34dc97f3de80be41e68fff8f146b7d56cbf8e4e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyGevE2o8IL&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pindar"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/32293f61b0a32ff8360b401a131c81c12add5fd3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ersa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_24/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b93c13f8140853e5638926e0331c98e81f9ef8b3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "molluschi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_18/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/16f0e4b008e3b47463188a8e3e9c5c8eb60e9288>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "spiga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_14/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/74b03a43039977f8c9b742f97417339ec7c58422>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/fb1458e9a1bbe78f2c00c6f0f4f11f55a9487eec>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_36/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/dadebfba3f176cb966f3b09e7b31c6c1c173f89b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt5nTYoQ2SHR&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Homer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_34/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b659aff626aa09314b2be655ac8bc0d280ab8274>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "peste"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/0893931bb0a61509a3c6c6dcf242934fe8bdb48e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "insect"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_37/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/9d58e6d278aa42b272aa836dcff3977f5f245ec9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polyp"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_19/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/50d9403f25f468c1ac65859f9eeb8c56f01fd667>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrto44p1SaKFn&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "clay"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/QuaestionesNaturales/chapter_16/1>
+              ] .
