@@ -1,0 +1,77 @@
+.paragraph-section {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    min-height: 10rem;
+}
+
+.id-paragraph {
+    text-align: center;
+    user-select: none;
+    padding: 5px 25px;
+    min-height: 100%;
+    width: 3%;
+}
+
+.id-paragraph>p {
+    text-align: center;
+    color: grey;
+}
+
+.text-paragraph {
+    min-height: 100%;
+    padding: 5px 25px;
+    border-left: grey thin solid;
+    width: 75%;
+}
+
+.text-paragraph>p {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.concept-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    min-height: min-content;
+    max-height: min-content;
+    width: 15%;
+    user-select: none;
+}
+
+.concept-list p {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: white;
+    background-color: #363537;
+    padding: 0.15rem;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.concept-list ul {
+    min-width: 100%;
+    max-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.concept-list li {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    border: black thin solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.concept-list li:hover {
+    max-height: min-content;
+    background-color: rgb(124, 168, 255);
+    cursor: pointer;
+
+}

@@ -1,0 +1,19 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema:  <http://schema.org/>
+
+SELECT DISTINCT ?s ?o ("length of pregnancy" as ?p) ("fst" as ?style1) ("snd" as ?style2) WHERE {
+  ?annotation1 oa:hasBody ?animal;
+             oa:hasTarget [ oa:hasSource ?s;
+                            oa:hasSelector [ oa:exact ?mention_animal]].
+  ?animal skos:prefLabel ?o.
+  ?animal_collection a skos:Collection;
+       skos:prefLabel "Zoonyms"@en;
+       skos:member ?animal.
+
+  ?annotation2 oa:hasBody ?pregnancy;
+               oa:hasTarget [oa:hasSource ?s;
+                             oa:hasSelector [ oa:exact ?mention_pregnancy]].
+  ?pregnancy skos:prefLabel "length of pregnancy"@en.
+  FILTER (lang(?o) = "en")
+}

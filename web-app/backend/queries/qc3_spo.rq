@@ -1,0 +1,26 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema:  <http://schema.org/>
+
+SELECT DISTINCT ?p ?s ?o ("fst" as ?style1) ("snd" as ?style2) WHERE {
+  ?annotation1 a oa:Annotation;
+              oa:hasBody ?animal;
+              oa:hasTarget [oa:hasSource ?p;
+                            oa:hasSelector [oa:exact ?mention1]].
+  ?animal a skos:Concept;
+       skos:prefLabel ?s.
+  ?animal_collection a skos:Collection;
+       skos:prefLabel "Zoonyms"@en;
+       skos:member ?animal.
+
+  ?annotation2 a oa:Annotation;
+              oa:hasBody ?use;
+              oa:hasTarget [oa:hasSource ?p;
+                            oa:hasSelector [oa:exact ?mention2]].
+  ?use skos:prefLabel ?o;
+	skos:broader+ ?use_generique.
+  ?use_generique skos:prefLabel "medical use of animal"@en.  
+  
+  FILTER (lang(?s) = "en")
+  FILTER (lang(?o) = "en")
+}

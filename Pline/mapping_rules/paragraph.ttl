@@ -19,61 +19,94 @@
 <#paragraph>
 	a rr:TripleMap;
 	xrr:logicalSource [
-		xrr:query """db.Paragraphe.find()""";
+		xrr:query """db.Paragraph.find()""";
 	];
 	
 	rr:subjectMap [
-		rr:template "http://www.zoomathia.com/{$.name}/{$.chapter}/{$.paragraph_number}";
+		rr:template "http://www.zoomathia.com/{$.author}/{$.uri}/{$.chapter}/{$.paragraph_number}";
+		rr:class schema:Paragraph;
 	];
 	
 	rr:predicateObjectMap [
 		rr:predicate schema:isPartOf;
 		rr:objectMap [
-			rr:template "http://www.zoomathia.com/{$.name}/{$.chapter}";
+			rr:template "http://www.zoomathia.com/{$.author}/{$.uri}/{$.chapter}";
 		];
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate rdf:value;
+		rr:predicate schema:identifier;
+		rr:objectMap [
+			xrr:reference "$.paragraph_number";
+			rr:datatype xsd:integer;
+		];
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate schema:text;
 		rr:objectMap [
 			xrr:reference "$.paragraphe_text";
+			rr:datatype xsd:string;
 		];
 	].
 
 <#chapter>
 	a rr:TripleMap;
 	xrr:logicalSource [
-		xrr:query """db.Paragraphe.find()""";
+		xrr:query """db.Paragraph.find()""";
 	];
 	
 	rr:subjectMap [
-		rr:template "http://www.zoomathia.com/{$.name}/{$.chapter}";
-		rr:class schema:Chapter;
+		rr:template "http://www.zoomathia.com/{$.author}/{$.uri}/{$.chapter}";
+		rr:class schema:Book;
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate rdf:value;
+		rr:predicate schema:identifier;
 		rr:objectMap [
 			xrr:reference "$.chapter";
+			rr:datatype xsd:integer;
 		];
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate schema:isPartOf;
+		rr:predicate schema:title;
 		rr:objectMap [
-			rr:template "http://www.zoomathia.com/{$.name}";
+			xrr:reference "$.title";
+			rr:datatype xsd:string;
+		];
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate schema:hasPart;
+		rr:objectMap [
+			rr:template "http://www.zoomathia.com/{$.author}/{$.uri}/{$.chapter}/{$.paragraph_number}";
 		];
 	].
 
 <#book>
 	a rr:TripleMap;
 	xrr:logicalSource [
-		xrr:query """db.Paragraphe.find()""";
+		xrr:query """db.Paragraph.find()""";
 	];
 	
 	rr:subjectMap [
-		rr:template "http://www.zoomathia.com/{$.name}";
-		rr:class schema:Book;
+		rr:template "http://www.zoomathia.com/{$.author}/{$.uri}";
+		rr:class schema:CreativeWork;
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate schema:title;
+		rr:objectMap [
+			xrr:reference "$.oeuvre";
+		];
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate schema:hasPart;
+		rr:objectMap [
+			rr:template "http://www.zoomathia.com/{$.author}/{$.uri}/{$.chapter}";
+		];
 	];
 	
 	rr:predicateObjectMap [
