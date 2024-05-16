@@ -2,6 +2,7 @@ import spacy
 
 
 def get_NER_from_dbpedia(element,lg):
+    #print("dbpedia_extraction")
     nlp = spacy.blank(lg)
     #nlp.add_pipe('dbpedia_spotlight')
     #nlp.add_pipe('dbpedia_spotlight', config={'types': 'DBpedia:Place', 'confidence': 0.6})
