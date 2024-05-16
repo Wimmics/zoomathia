@@ -5,7 +5,7 @@ from Named_entity_recognition.translation_to_csv_step import main_transformation
 
 # Obtenez le chemin du répertoire du script
 repertoire_script = os.path.dirname(os.path.abspath(__file__))
-nom_dossier = "tlg0032/tlg014"
+nom_dossier = "tlg0024/tlg001"
 
 # path for the original data
 original_data = os.path.join(repertoire_script, "data/original_files/" + nom_dossier)
