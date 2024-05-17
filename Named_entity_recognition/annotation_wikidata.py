@@ -2,6 +2,7 @@ import spacy
 
 
 def get_NER_from_wikidata(element, lg):
+   # print("wikidata_extraction")
     if lg == "en":
         nlp_model = spacy.load("en_core_web_sm")
         nlp_model.add_pipe("entityfishing")

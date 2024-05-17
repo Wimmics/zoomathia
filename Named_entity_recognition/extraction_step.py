@@ -7,7 +7,7 @@ from tqdm import tqdm
 import time
 
 from Named_entity_recognition.annotation_dbpedia import get_NER_from_dbpedia
-from Named_entity_recognition.annotation_wikidata import get_NER_from_wikidata
+#from Named_entity_recognition.annotation_wikidata import get_NER_from_wikidata
 
 
 def annotate_texts(directory_path, target_path):
@@ -45,22 +45,22 @@ def annotate_texts(directory_path, target_path):
                             print(f"Pausing for {delay_duration} seconds...")
                             time.sleep(delay_duration)
                         # else:
-                        english_NER = get_NER_from_wikidata(element, lg)
+                        #english_NER = get_NER_from_wikidata(element, lg)
                         english_DBpedia_NER = get_NER_from_dbpedia(element, lg)
 
-                        for ent in english_NER.ents:
-                            if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
-                                translated_element_en = bs_content.new_tag("note")
-                                translated_element_en["type"] = "automatic"
-                                translated_element_en["source"] = "Wikidata"
-                                translated_element_en[ent.label_] = ent.text
-                                translated_element_en["start"] = ent.start_char
-                                translated_element_en["end"] = ent.end_char
-                                translated_element_en["lang"] = lg
-                                translated_element_en["score"] = ent._.nerd_score
-                                if ent._.url_wikidata is not None:
-                                    translated_element_en["link"] = ent._.url_wikidata
-                                element.append(translated_element_en)
+                        #for ent in english_NER.ents:
+                         #   if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
+                          #      translated_element_en = bs_content.new_tag("note")
+                           #     translated_element_en["type"] = "automatic"
+                            #    translated_element_en["source"] = "Wikidata"
+                             #   translated_element_en[ent.label_] = ent.text
+                              #  translated_element_en["start"] = ent.start_char
+                               # translated_element_en["end"] = ent.end_char
+                               # translated_element_en["lang"] = lg
+                               #translated_element_en["score"] = ent._.nerd_score
+                                #if ent._.url_wikidata is not None:
+                                 #   translated_element_en["link"] = ent._.url_wikidata
+                                #element.append(translated_element_en)
 
                         Dbpedia_category_list_to_filter = ["DBpedia:MusicalWork", "DBpedia:MusicalArtist",
                                                            "Schema:MusicGroup",
