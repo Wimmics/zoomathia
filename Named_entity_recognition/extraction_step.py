@@ -22,7 +22,7 @@ def annotate_texts(directory_path, target_path):
                     print(file_name)
                     # Read the XML file
                     content = file.read()
-                    bs_content = bs(content, "lxml")
+                    bs_content = bs(content, "lxml-xml")
                     if bs_content.find_all("p"):
                         element_to_extract.append("p")
                     if bs_content.find_all("l"):
@@ -54,6 +54,8 @@ def annotate_texts(directory_path, target_path):
                            #     translated_element_en["type"] = "automatic"
                             #    translated_element_en["source"] = "Wikidata"
                              #   translated_element_en[ent.label_] = ent.text
+                                #translated_element_en["mention"] = ent.text
+                               #translated_element_en["category"] = ent.label_
                               #  translated_element_en["start"] = ent.start_char
                                # translated_element_en["end"] = ent.end_char
                                # translated_element_en["lang"] = lg
@@ -82,7 +84,8 @@ def annotate_texts(directory_path, target_path):
                                     translated_element_en = bs_content.new_tag("note")
                                     translated_element_en["type"] = "automatic"
                                     translated_element_en["source"] = "DBpedia"
-                                    translated_element_en[ent.label_] = ent.text
+                                   # translated_element_en[ent.label_] = ent.text
+                                    translated_element_en["mention"] = ent.text
                                     surface_form = ent._.dbpedia_raw_result['@offset']
                                     offset = int(ent._.dbpedia_raw_result['@offset'])
                                     translated_element_en["start"] = offset
@@ -97,9 +100,9 @@ def annotate_texts(directory_path, target_path):
                 # Use the prettify() method to obtain the prettified XML content
                 prettified_xml = bs_content.prettify()
                 # Remove the <html> and <body> tags
-                prettified_xml = prettified_xml.replace('<html>', '').replace('</html>', '').replace('<body>',
-                                                                                                     '').replace(
-                    '</body>', '')
+               # prettified_xml = prettified_xml.replace('<html>', '').replace('</html>', '').replace('<body>',
+                #                                                                                     '').replace(
+                 #   '</body>', '')
                 # checking if the directory demo_folder
                 # exist or not.
                 file_name, file_extension = os.path.splitext(os.path.basename(file.name))
