@@ -51,8 +51,8 @@ def write_xml_with_translation(bs_content, file, target_directory):
     # Use the prettify() method to obtain the prettified XML content
     prettified_xml = bs_content.prettify()
     # Remove the <html> and <body> tags
-    prettified_xml = prettified_xml.replace('<html>', '').replace('</html>', '').replace('<body>', '').replace(
-        '</body>', '')
+    #prettified_xml = prettified_xml.replace('<html>', '').replace('</html>', '').replace('<body>', '').replace(
+     #   '</body>', '')
 
     # Write the updated XML to a new file
     file_name, file_extension = os.path.splitext(os.path.basename(file.name))
@@ -72,7 +72,7 @@ def main_translation(files, directory_path, translated_data_path):
             with open(file_path, 'r', encoding='UTF-8') as file:
                 # Read the XML file
                 content = file.read()
-                bs_content = bs(content, "xml")
+                bs_content = bs(content, "lxml-xml")
                 if bs_content.find_all("p"):
                     element_to_translate.append("p")
                 if bs_content.find_all("l"):
