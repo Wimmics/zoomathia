@@ -2,7 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?p ?s ?o ("fst" as ?style1) ("snd" as ?style2) WHERE {
+SELECT DISTINCT ?p ?s ?o (?s as ?date) (?o as ?type) (?p as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
   ?annotation1 oa:hasBody ?animal; 
                oa:hasTarget [oa:hasSource ?p;
                              oa:hasSelector [oa:exact ?mention_animal]].

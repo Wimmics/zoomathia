@@ -28,6 +28,11 @@ const qcs = [{
     file: "qc7.rq",
     title: "Quelles sont les expérimentations faites sur les animaux ?",
     goal: "Cette question permet aux chercheurs de recenser les différentes expérimentations effectuées dans l'antiquité afin de les comparer aux connaissances modernes."
+}, {
+    id: 12,
+    file: "qc12.rq",
+    title: "Quels sont les oiseaux qui sont consommés (gastronomie) ?",
+    goal: ""
 }
 ]
 

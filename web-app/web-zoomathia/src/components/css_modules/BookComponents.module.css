@@ -16,7 +16,6 @@ h1 {
     margin: auto;
     width: 85%;
     box-shadow: 0 0 5px;
-    padding: 15px;
     background-color: white;
 }
 
@@ -43,18 +42,15 @@ button {
     background-color: rgb(124, 168, 255);
 }
 
-select {
+.select-field {
     font-size: 1.2rem;
-    padding: 0.5rem;
-    background-color: white;
-    box-shadow: 0px 0px 1px;
-    border: none;
-    width: 15rem;
+    width: fit-content;
     text-align: center;
 }
 
 select option {
-    text-align: center;
+    text-align: left;
+    width: fit-content;
 }
 
 .book-section {

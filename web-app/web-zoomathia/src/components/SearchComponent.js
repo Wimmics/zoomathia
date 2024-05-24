@@ -1,5 +1,5 @@
 import styles from "./css_modules/SearchComponent.module.css"
-import { useState, useCallback } from "react"
+import { useState, useCallback, useRef } from "react"
 import ParagraphDisplay from './ParagraphComponent'
 import SelectComponent from './SelectComponent'
 
@@ -15,6 +15,7 @@ const BookSection = (props) => {
 const SearchComponent = () => {
     const [paragraphs, setParagraphs] = useState([])
     const [currentLang, setCurrentLang] = useState("en")
+    const controllerRef = useRef(null)
 
     const searchConcepts = async (input) => {
         const retrieved_concept = []
@@ -38,53 +39,66 @@ const SearchComponent = () => {
             const paras = []
             const book_found = {}
 
-            const data = await fetch(
-                `${process.env.REACT_APP_BACKEND_URL}getParagraphsWithConcepts`,
-                {
-                    method: 'POST',
-                    headers: { 'content-type': 'application/json' },
-                    body: JSON.stringify({ concepts: e })
-                }).then(response => response.json())
-
-            for (const paragraph of data) {
-                if (!book_found.hasOwnProperty(paragraph.bookUri)) {
-                    book_found[paragraph.bookUri] = {
-                        author: paragraph.author,
-                        id: paragraph.bookId,
-                        paragraphs: [],
-                        title: paragraph.title
+            if (controllerRef.current) {
+                controllerRef.current.abort()
+            }
+            controllerRef.current = new AbortController()
+            const signal = controllerRef.current.signal
+            try {
+                const data = await fetch(
+                    `${process.env.REACT_APP_BACKEND_URL}getParagraphsWithConcepts`,
+                    {
+                        method: 'POST',
+                        headers: { 'content-type': 'application/json' },
+                        body: JSON.stringify({ concepts: e }),
+                        signal
+                    }).then(response => response.json())
+                console.log(data)
+                for (const paragraph of data) {
+                    if (!book_found.hasOwnProperty(paragraph.bookUri)) {
+                        book_found[paragraph.bookUri] = {
+                            author: paragraph.author,
+                            id: paragraph.bookId,
+                            paragraphs: [],
+                            title: paragraph.title
+                        }
                     }
+                    book_found[paragraph.bookUri]['paragraphs'].push(
+                        <ParagraphDisplay
+                            key={paragraph.id}
+                            id={paragraph.id}
+                            text={paragraph.text}
+                            uri={paragraph.uri}
+                            lang={currentLang}
+                        />
+                    )
                 }
-                book_found[paragraph.bookUri]['paragraphs'].push(
-                    <ParagraphDisplay
-                        key={paragraph.id}
-                        id={paragraph.id}
-                        text={paragraph.text}
-                        uri={paragraph.uri}
-                        lang={currentLang}
-                    />
-                )
-            }
-            for (const key of Object.keys(book_found)) {
-                paras.push(
-                    <BookSection
-                        key={key}
-                        paragraphs={book_found[key].paragraphs}
-                        uri={key}
-                        id={book_found[key]['id']}
-                        title={`${book_found[key]['title']} - ${book_found[key]["author"]}`}
-                    />
-                )
-            }
-            if (data.length === 0) {
-                setParagraphs([])
-                setParagraphs(<section className={styles["not-found"]}>
-                    <p>No result for concepts label</p>
-                </section>
-                )
-            } else {
-                setParagraphs([])
-                setParagraphs(paras)
+                for (const key of Object.keys(book_found)) {
+                    paras.push(
+                        <BookSection
+                            key={key}
+                            paragraphs={book_found[key].paragraphs}
+                            uri={key}
+                            id={book_found[key]['id']}
+                            title={`${book_found[key]['title']} - ${book_found[key]["author"]}`}
+                        />
+                    )
+                }
+                if (data.length === 0) {
+                    setParagraphs([])
+                    setParagraphs(<section className={styles["not-found"]}>
+                        <p>No result for concepts label</p>
+                    </section>
+                    )
+                } else {
+                    setParagraphs([])
+                    setParagraphs(paras)
+                }
+            } catch (e) {
+                if (e.namme === "abort") {
+                    console.log(e)
+                }
+
             }
         }
         callForData(e)
