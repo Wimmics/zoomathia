@@ -1,0 +1,101 @@
+@prefix xrr: <http://i3s.unice.fr/xr2rml#> .
+@prefix rr:  <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl:    <http://www.w3.org/2002/07/owl#>.
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix zoo:     <http://www.zoomathia/2024/zoo#> .
+@prefix oa:     <http://www.w3.org/ns/oa#>.
+
+
+   
+<#Selector>
+  
+  xrr:logicalSource [
+    xrr:query """db.Annotation.find()""";
+  ];
+  
+  rr:subjectMap [ 
+    rr:template "SelectorBlankNode{$._id}" ;
+    rr:termType rr:BlankNode;
+    rr:class oa:TextPositionSelector;
+	rr:class oa:TextQuoteSelector;  
+];
+  
+  rr:predicateObjectMap [
+    rr:predicate oa:exact;
+    rr:objectMap [
+      xrr:reference "$.mention";
+      rr:termType rr:Literal;
+      rr:datatype xsd:string;
+    ];
+  ].
+
+<#Target>
+  
+  xrr:logicalSource [
+    xrr:query """db.Annotation.find()""";
+  ];
+  
+  rr:subjectMap [
+    rr:template "TargetBlankNode{$._id}";
+    rr:termType rr:BlankNode;
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate oa:hasSource;
+    rr:objectMap [ rr:template "http://www.zoomathia.com/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id}"; ];
+  ];
+  rr:predicateObjectMap [
+    rr:predicate oa:hasSelector;
+    rr:objectMap [
+      rr:template "SelectorBlankNode{$._id}";
+      rr:termType rr:BlankNode;
+    ];
+  ].
+
+<#Anno>
+	a rr:TripleMap;
+	xrr:logicalSource [
+		xrr:query """db.Annotation.find()""";
+	];
+	
+	rr:subjectMap [
+		rr:template "http://www.zoomathia.com/annotation/sha1({$._id}/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id})";
+		rr:class oa:Annotation;
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate oa:hasBody;
+		rr:objectMap [
+		 rr:template "https://opentheso.huma-num.fr/{$.mention_without_space}";
+		];
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate oa:hasTarget;
+		rr:objectMap [
+			rr:template "TargetBlankNode{$._id}";
+			rr:termType rr:BlankNode;
+		];
+	].
+	
+<#paragraph>
+	a rr:TripleMap;
+	
+	xrr:logicalSource [
+		xrr:query """db.Annotation.find()""";
+	];
+	
+	rr:subjectMap [
+		rr:template "http://www.zoomathia.com/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id}";
+		rr:class zoo:Paragraph;
+	];
+	
+	rr:predicateObjectMap [
+		rr:predicate zoo:hasAnnotation;
+		rr:objectMap [
+		 rr:template "http://www.zoomathia.com/annotation/sha1({$._id}/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id})";
+		];
+	].
