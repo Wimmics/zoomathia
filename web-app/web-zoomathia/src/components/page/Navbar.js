@@ -1,5 +1,5 @@
 import styles from './Navbar.module.css'
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return <>
@@ -8,10 +8,10 @@ const Navbar = () => {
 
             </div>
             <div className={styles["menu-box"]}>
-                <Link to='/' >Home</Link>
-                <Link to='/ExploreTheCorpus'>Explore the corpus</Link>
-                <Link to='/ExploreAWork'>Explore a work</Link>
-                <Link to='/CompetencyQuestion'>Competency question</Link>
+                <NavLink to='/' activeClassName='active'>Home</NavLink>
+                <NavLink to='/ExploreTheCorpus' activeClassName='active'>Explore the corpus</NavLink>
+                <NavLink to='/ExploreAWork' activeClassName='active'>Explore a work</NavLink>
+                <NavLink to='/CompetencyQuestion' activeClassName='active'>Competency question</NavLink>
             </div>
         </nav>
 
