@@ -2,7 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/> 
 
-SELECT DISTINCT ?s ?o ("technical use" as ?p) (?o as ?date) (?o as ?type) (?s as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
+SELECT DISTINCT ?s ?o ("technical use" as ?p) (?o as ?date) (?o as ?type) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?s)) as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
 ?annotation1 a oa:Annotation;
               oa:hasBody ?animal;
               oa:hasTarget [ oa:hasSource ?s;

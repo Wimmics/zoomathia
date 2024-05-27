@@ -3,7 +3,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix zoo:     <http://www.zoomathia/2024/zoo#> 
 
 SELECT DISTINCT (?paragraph as ?p) (?name_animal as ?s) (?name_relation as ?type)
- (?name_anthro as ?o) (?name_anthro as ?date) (?paragraph as ?url) 
+ (?name_anthro as ?o) (?name_anthro as ?date) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?paragraph)) as ?url) 
  (CONCAT(?name_animal, " - ", ?name_relation, " - ", ?name_anthro) as ?label) ("fst" as ?style1) ("snd" as ?style2)   WHERE {
   ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;
