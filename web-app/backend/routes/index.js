@@ -121,11 +121,10 @@ const getWorksFromAuthor = (author) => {
     (schema:title|zoo:title) ?title.
 
     filter(str(?author) = "${author}")
-  }ORDER BY ?title
-  `
+  }ORDER BY ?title`
 }
 
-router.get('/getWorks', async (req, res) => {
+router.get('/getWorksFromAuthors', async (req, res) => {
   console.log("Get works from author")
   const response = []
   const result = await executeSPARQLRequest(endpoint, getWorksFromAuthor(req.query.author))
@@ -134,6 +133,30 @@ router.get('/getWorks', async (req, res) => {
       uri: elt.oeuvre.value,
       title: elt.title.value,
       author: req.query.author
+    })
+  }
+  res.status(200).json(response)
+})
+
+const getWorks = () => {
+  return `prefix schema: <http://schema.org/>
+  prefix zoo:     <http://www.zoomathia/2024/zoo#>
+
+  SELECT ?oeuvre ?title ?author WHERE {
+    ?oeuvre (zoo:author|schema:author) ?author;
+    (schema:title|zoo:title) ?title.
+  }ORDER BY ?title`
+}
+
+router.get('/getWorks', async (req, res) => {
+  console.log("Get works from author")
+  const response = []
+  const result = await executeSPARQLRequest(endpoint, getWorks())
+  for (const elt of result.results.bindings) {
+    response.push({
+      uri: elt.oeuvre.value,
+      title: elt.title.value,
+      author: elt.author.value
     })
   }
   res.status(200).json(response)

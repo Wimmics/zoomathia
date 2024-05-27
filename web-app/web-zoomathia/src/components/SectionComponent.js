@@ -48,7 +48,6 @@ const SectionComponent = (props) => {
                     setSectionParagraph(paragraphs)
 
                 } else {
-                    console.log(signal)
                     // Autant de Section que d'enfant pour cette section
                     const sections = []
                     const children = await fetch(
@@ -59,7 +58,6 @@ const SectionComponent = (props) => {
                     for (const elt of children) {
                         sections.push(<SectionComponent uri={elt.uri} sectionTitle={elt.title} controller={props.controller} />)
                     }
-                    console.log(childType[childType.length - 1])
                     setSectionParagraph(sections)
                 }
             } catch (e) {
