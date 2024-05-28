@@ -1,7 +1,10 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_conso  WHERE {
+SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_conso 
+(CONCAT("http://127.0.0.1:3002/Work?uri=",str(?paragraph)) as ?url) (?animal as ?date) (?animal_generique as ?type)
+(?paragraph as ?p) (?name_animal as ?s) (?name_conso as ?o) WHERE {
   ?annotation1 a oa:Annotation;
               oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;

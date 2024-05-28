@@ -16,7 +16,6 @@ h1 {
     margin: auto;
     width: 85%;
     box-shadow: 0 0 5px;
-    padding: 15px;
     background-color: white;
 }
 
@@ -30,31 +29,25 @@ button {
     outline: inherit;
 }
 
-.author-section {
+.select-field-section {
     text-align: center;
+    width: 45%;
 }
 
-.author-section button {
-    margin: auto;
-    width: 150px;
-    padding: 15px;
-    border-radius: 5px;
-    border: grey thin solid;
-    background-color: rgb(124, 168, 255);
+.select-field-section>* {
+    width: 100%;
+    margin: 20px auto;
 }
 
-select {
+.select-field {
     font-size: 1.2rem;
-    padding: 0.5rem;
-    background-color: white;
-    box-shadow: 0px 0px 1px;
-    border: none;
-    width: 15rem;
+    width: 100%;
     text-align: center;
 }
 
 select option {
-    text-align: center;
+    text-align: left;
+    width: fit-content;
 }
 
 .book-section {
@@ -77,15 +70,6 @@ select option {
 .book-section div {
     display: flex;
     flex-direction: row;
-}
-
-.book-section button {
-    margin: auto;
-    width: 150px;
-    padding: 15px;
-    border-radius: 5px;
-    border: grey thin solid;
-    background-color: rgb(124, 168, 255);
 }
 
 .book-section button:hover {

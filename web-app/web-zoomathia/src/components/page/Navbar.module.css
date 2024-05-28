@@ -4,18 +4,9 @@
     background-color: #363537;
     margin-bottom: 1.4rem;
     font-weight: bold;
-}
-
-@keyframes logo-slide {
-
-    0%,
-    100% {
-        background-position: 100%;
-    }
-
-    50% {
-        background-position: 0%;
-    }
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .logo-box {
@@ -25,7 +16,6 @@
     background-position: center;
     width: 10%;
     padding: 50px;
-    animation: logo-slide 10s infinite;
 }
 
 .menu-box {

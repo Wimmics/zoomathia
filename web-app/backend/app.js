@@ -41,6 +41,17 @@ app.use(function (req, res, next) {
   next(createError(404));
 });
 
+app.use((req, res, next) => {
+  const abortController = new AbortController();
+  req.signal = abortController.signal;
+
+  req.on('abort', () => {
+    console.log("Request aborted by client")
+  });
+
+  next();
+})
+
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development

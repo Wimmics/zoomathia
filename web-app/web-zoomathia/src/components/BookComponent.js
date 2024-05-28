@@ -1,64 +1,32 @@
-import { useLayoutEffect, useState, useCallback } from 'react'
+import { useLayoutEffect, useState, useCallback, useRef } from 'react'
 import styles from "./css_modules/BookComponents.module.css"
 import ParagraphDisplay from './ParagraphComponent'
 import SelectComponent from './SelectComponent'
+import Select from 'react-select'
+import SectionComponent from './SectionComponent'
 
 const BookPage = () => {
-
     const [books, setBooks] = useState([])
-    const [paragraphs, setParagraphs] = useState([])
+    const [sections, setSections] = useState([])
     const [title, setTitle] = useState()
-    const [currentBookUri, setCurrentBookUri] = useState('')
+
     const [authorList, setAuthorList] = useState([])
-    const [works, setWorks] = useState([]);
+    const [worksList, setWorks] = useState([]);
+    const [author, setAuthor] = useState('')
+    const [work, setWork] = useState('')
     const [currentLang, setCurrentLang] = useState('en')
+    const controller = useRef(null)
 
-    const getParagraph = useCallback((e) => {
-        const uri = e.target.selectedOptions[0].id
-        const paras = []
-        setParagraphs([])
-        const callForData = async () => {
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getParagraphs?uri=${uri}`).then(response => response.json())
-            let title = ''
-            for (const paragraph of data) {
-                title = paragraph.title
-                paras.push(
-                    <ParagraphDisplay key={paragraph.id} id={paragraph.id} text={paragraph.text} uri={paragraph.uri} lang={currentLang} />
-                )
-            }
-            setTitle(`${title}`)
-            setParagraphs(paras)
-            setCurrentBookUri(uri)
+    const getChildPart = useCallback((e) => {
+        setSections([])
+        if (controller.current) {
+            controller.current.abort()
         }
-        callForData()
-    }, [currentLang])
-
-    const postParagraphWithConcepts = useCallback((e) => {
-
-        const callForData = async (e) => {
-            const paras = []
-            const data = await fetch(
-                `${process.env.REACT_APP_BACKEND_URL}getParagraphWithConcept`,
-                {
-                    method: 'POST',
-                    headers: { 'content-type': 'application/json' },
-                    body: JSON.stringify({ uri: currentBookUri, concepts: e })
-                }).then(response => response.json())
-
-            for (const paragraph of data) {
-                paras.push(<ParagraphDisplay key={paragraph.id} id={paragraph.id} text={paragraph.text} uri={paragraph.uri} lang={currentLang} />)
-            }
-
-            if (paras.length === 0) {
-                setParagraphs(<p className={styles["no-result"]}>No paragraphs</p>)
-            } else {
-                setParagraphs([])
-                setParagraphs(paras)
-            }
-
-        }
-        callForData(e)
-    }, [currentBookUri, currentLang, setParagraphs])
+        controller.current = new AbortController()
+        const uri = e.value
+        const title = e.label
+        setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controller} />)
+    }, [])
 
     const searchConcepts = async (input) => {
         const retrieved_concept = []
@@ -76,67 +44,104 @@ const BookPage = () => {
         return await callForData(input)
     }
 
-    const getBookList = useCallback((e) => {
-        let bookList = [<option></option>];
+    const getBook = useCallback((e) => {
+        let bookList = [{ value: '', label: '' }];
+        setBooks([])
+        if (controller.current) {
+            controller.current.abort("Canceling Fetch: Work has changed...")
+        }
+        controller.current = new AbortController()
+        setWork({ label: e.label, value: e.value })
+
+        if (author.label !== e.author) {
+            setAuthor({ label: e.author, value: e.value })
+        }
+
         const callForData = async () => {
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getBookList?title=${e.target.value}`).then(response => response.json())
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getBookList?title=${e.value}`
+            ).then(response => response.json())
             for (const book of data) {
-                bookList.push(<option key={book.uri} id={book.uri} number={book.id}>{book.id}</option>)
+                bookList.push({ value: book.uri, label: book.title, id: book.id, number: book.id })
             }
-            //setBooks(bookList)
-            setBooks(<section className={styles["book-section"]}>
+
+            setBooks(<section>
                 <h2 key="book">Select book</h2>
-                <select onChange={getParagraph}>
-                    {bookList}
-                </select>
+                <Select className={styles["select-field"]} onChange={getChildPart} options={bookList} selectedValue={{ value: '', label: '' }} />
             </section>)
+            setTitle(`${e.author} - ${e.label}`)
         }
 
         callForData()
-    }, [getParagraph])
+    }, [getChildPart])
 
     const getWorks = useCallback((e) => {
-        const workList = [<option></option>]
+        const workList = [{ label: '', value: '' }]
+        let urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorksFromAuthors?author=${e.value}`
+
+        if (controller.current) {
+            controller.current.abort("Canceling Fetch: Author has changed...")
+        }
+        controller.current = new AbortController()
         const callForData = async () => {
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks?author=${e.target.value}`).then(response => response.json())
-            for (const work of data) {
-                workList.push(<option value={work.uri}>{work.title}</option>)
+            setWorks([{ label: '', value: '' }])
+            setBooks([])
+            if (e.value === '') {
+                urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorks`
             }
-            setWorks(<section>
-                <h2 key="work">Work</h2>
-                <select onChange={getBookList}>
-                    {workList}
-                </select>
-            </section>)
+
+            const data = await fetch(urlRequest)
+                .then(response => response.json())
+                .catch(e => { console.log(e) })
+            for (const work of data) {
+                workList.push({ value: work.uri, label: work.title, author: work.author })
+            }
+            setWorks(workList)
+            setWork({ label: '', value: '' })
+            setAuthor({ label: e.label, value: e.value })
         }
         callForData()
-    }, [getBookList])
+
+
+    }, [controller, setAuthor])
 
 
 
     useLayoutEffect(() => {
-        const author_response = [<option></option>]
-        const callForData = async () => {
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getAuthors`).then(response => response.json())
-            for (const author of data) {
-                author_response.push(<option key={author.name} name={author.name}>{author.name}</option>)
-            }
 
-            setAuthorList(<section className={styles["author-section"]}>
-                <h2 key="author">Author</h2>
-                <select onChange={getWorks}>
-                    {author_response}
-                </select>
-            </section>)
+        const author_response = [{ label: '', value: '' }]
+        const work_response = [{ label: '', value: '' }]
+
+        const callForData = async () => {
+
+            const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getAuthors`
+            ).then(response => response.json()).catch(e => { console.log(e) })
+            for (const author of data_author) {
+                author_response.push({ value: author.name, label: author.name })
+            }
+            setAuthorList(author_response)
+
+            const data_works = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
+            ).then(response => response.json())
+                .catch(e => { console.log(e) })
+            for (const work of data_works) {
+                work_response.push({ value: work.uri, label: work.title, author: work.author })
+            }
+            setWorks(work_response)
         }
+
         callForData()
-    }, [getWorks, postParagraphWithConcepts])
+    }, [])
 
     return <div className={styles["box-content"]}>
         <header className={styles["selection-section"]}>
-            {authorList}
-            {works}
-            {books}
+            <section key="author" className={styles["select-field-section"]}>
+                <h2 key="author">Author</h2>
+                <Select id="author-select" className={styles["select-field"]} onChange={getWorks} options={authorList} value={author} selectedValue={author} />
+            </section>
+            <section key="work" className={styles["select-field-section"]}>
+                <h2 key="work">Work</h2>
+                <Select id="work-select" className={styles["select-field"]} onChange={getBook} options={worksList} value={work} selectedValue={work} />
+            </section>
         </header>
 
 
@@ -144,15 +149,12 @@ const BookPage = () => {
             <h2>{title}</h2>
         </header>
 
-        {currentBookUri !== '' ? <SelectComponent
-            key={currentBookUri}
-            execute_effect={postParagraphWithConcepts}
-            filter_title="Filter paragraph with concept"
-            load={searchConcepts}
-            setLanguage={setCurrentLang}
-        /> : <></>}
-        {paragraphs}
+        {books}
+        {sections}
+
     </div>
 }
 
 export default BookPage;
+
+
