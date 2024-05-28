@@ -1,209 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-
- 
-  <tei.2>
-   <teiheader type="text">
-    <filedesc>
-     <titlestmt>
-      <title>
-       De esu carnium II
-      </title>
-      <title type="sub">
-       Machine readable text
-      </title>
-      <author n="Plut.">
+<TEI.2>
+ <teiHeader type="text">
+  <fileDesc>
+   <titleStmt>
+    <title>
+     De esu carnium II
+    </title>
+    <title type="sub">
+     Machine readable text
+    </title>
+    <author n="Plut.">
+     Plutarch
+    </author>
+    <editor n="Teubner" role="editor">
+     Gregorius N. Bernardakis
+    </editor>
+    <sponsor>
+     Perseus Project, Tufts University
+    </sponsor>
+    <principal>
+     Gregory Crane
+    </principal>
+    <respStmt>
+     <resp>
+      Prepared under the supervision of
+     </resp>
+     <name>
+      Lisa Cerrato
+     </name>
+     <name>
+      William Merrill
+     </name>
+     <name>
+      Elli Mylonas
+     </name>
+     <name>
+      David Smith
+     </name>
+    </respStmt>
+    <funder n="org:NEH">
+     The National Endowment for the Humanities
+    </funder>
+   </titleStmt>
+   <extent/>
+   <publicationStmt>
+    <publisher>
+     Trustees of Tufts University
+    </publisher>
+    <pubPlace>
+     Medford, MA
+    </pubPlace>
+    <authority>
+     Perseus Project
+    </authority>
+   </publicationStmt>
+   <sourceDesc>
+    <biblStruct>
+     <analytic/>
+     <monogr>
+      <author>
        Plutarch
       </author>
-      <editor n="Teubner" role="editor">
+      <title>
+       Moralia
+      </title>
+      <editor role="editor">
        Gregorius N. Bernardakis
       </editor>
-      <sponsor>
-       Perseus Project, Tufts University
-      </sponsor>
-      <principal>
-       Gregory Crane
-      </principal>
-      <respstmt>
-       <resp>
-        Prepared under the supervision of
-       </resp>
-       <name>
-        Lisa Cerrato
-       </name>
-       <name>
-        William Merrill
-       </name>
-       <name>
-        Elli Mylonas
-       </name>
-       <name>
-        David Smith
-       </name>
-      </respstmt>
-      <funder n="org:NEH">
-       The National Endowment for the Humanities
-      </funder>
-     </titlestmt>
-     <extent>
-     </extent>
-     <publicationstmt>
-      <publisher>
-       Trustees of Tufts University
-      </publisher>
-      <pubplace>
-       Medford, MA
-      </pubplace>
-      <authority>
-       Perseus Project
-      </authority>
-     </publicationstmt>
-     <sourcedesc>
-      <biblstruct>
-       <analytic>
-       </analytic>
-       <monogr>
-        <author>
-         Plutarch
-        </author>
-        <title>
-         Moralia
-        </title>
-        <editor role="editor">
-         Gregorius N. Bernardakis
-        </editor>
-        <imprint>
-         <pubplace>
-          Leipzig
-         </pubplace>
-         <publisher>
-          Teubner
-         </publisher>
-         <date>
-          1895
-         </date>
-        </imprint>
-        <biblscope type="volume">
-         6
-        </biblscope>
-       </monogr>
-      </biblstruct>
-     </sourcedesc>
-    </filedesc>
-    <encodingdesc>
-     <editorialdecl>
-      <normalization>
-       <p>
-        Notes are not included.
-       </p>
-       <p lang="it">
-        Le note non sono incluse.
-       </p>
-       <p lang="en">
-        Notes are not included.
-       </p>
-      </normalization>
-      <correction method="silent">
-       <p>
-        optical character recognition
-       </p>
-       <p lang="it">
-        riconoscimento ottico dei caratteri
-        <note DBPEDIA_ENT="riconoscimento ottico dei caratteri" category="" end="8" lang="it" link="http://it.dbpedia.org/resource/Riconoscimento_ottico_dei_caratteri" score="1.0" source="DBpedia" start="7" type="automatic">
-        </note>
-       </p>
-       <p lang="en">
-        optical character recognition
-        <note DBPEDIA_ENT="optical character recognition" category="" end="8" lang="en" link="http://dbpedia.org/resource/Optical_character_recognition" score="1.0" source="DBpedia" start="7" type="automatic">
-        </note>
-       </p>
-      </correction>
-     </editorialdecl>
-     <refsdecl doctype="TEI.2">
-      <state unit="section">
-      </state>
-     </refsdecl>
-     <refsdecl doctype="TEI.2">
-      <state n="chunk" unit="stephpage">
-      </state>
-     </refsdecl>
-    </encodingdesc>
-    <profiledesc>
-     <langusage>
-      <language id="greek">
-       Greek
-      </language>
-     </langusage>
-    </profiledesc>
-    <revisiondesc>
-     <change>
-      <date>
-       5/10
-      </date>
-      <respstmt>
-       <name>
-        RS
-       </name>
-       <resp>
-       </resp>
-      </respstmt>
-      <item>
-       tagged and parsed
-      </item>
-     </change>
-    </revisiondesc>
-   </teiheader>
-   <text>
-    <pb id="v.6.p.111">
-    </pb>
-    <milestone id="stephpage-966d" n="966d" unit="stephpage">
-    </milestone>
-    <div1 n="1" type="section">
+      <imprint>
+       <pubPlace>
+        Leipzig
+       </pubPlace>
+       <publisher>
+        Teubner
+       </publisher>
+       <date>
+        1895
+       </date>
+      </imprint>
+      <biblScope type="volume">
+       6
+      </biblScope>
+     </monogr>
+    </biblStruct>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <editorialDecl>
+    <normalization>
      <p>
-      επὶ τὰ ἕωλοι τῆς σαρκοφαγίοις προσφάτους ἡμᾶς ὁ λόγος παρακαλεῖ ταῖς τε διανοίαις καὶ ταῖς
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      προθυμίαις γενέσθαι. χαλεπὸν μὲν γάρ, ὥσπερ ὁ Κάτων ἔφησε, λέγειν πρὸς γαστέρας ὦτα μὴ ἐχούσας· καὶ πέποται ὁ τῆς συνηθείας κυκεών, ὥσπερ ὁ τῆς
-      <milestone id="stephpage-966e" n="966e" unit="stephpage">
-      </milestone>
-      Κίρκης
-      <quote rend="blockquote">
-       ὠδίνας ὀδύνας κυκεὼν ἀπάτας τε γόους τε·
-      </quote>
-      <milestone n="10" unit="tlnum">
-      </milestone>
-      καὶ τὸ ἄγκιστρον ἐκβάλλειν τῆς σαρκοφαγίας ὡς
+      Notes are not included.
+     </p>
+     <p lang="it">
+      Le note non sono incluse.
+     </p>
+     <p lang="en">
+      Notes are not included.
+     </p>
+    </normalization>
+    <correction method="silent">
+     <p>
+      optical character recognition
+     </p>
+     <p lang="it">
+      riconoscimento ottico dei caratteri
+      <note category="" end="8" lang="it" link="http://it.dbpedia.org/resource/Riconoscimento_ottico_dei_caratteri" mention="riconoscimento ottico dei caratteri" score="1.0" source="DBpedia" start="7" type="automatic"/>
+     </p>
+     <p lang="en">
+      optical character recognition
+      <note category="" end="8" lang="en" link="http://dbpedia.org/resource/Optical_character_recognition" mention="optical character recognition" score="1.0" source="DBpedia" start="7" type="automatic"/>
+     </p>
+    </correction>
+   </editorialDecl>
+   <refsDecl doctype="TEI.2">
+    <state unit="section"/>
+   </refsDecl>
+   <refsDecl doctype="TEI.2">
+    <state n="chunk" unit="stephpage"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language id="greek">
+     Greek
+    </language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change>
+    <date>
+     5/10
+    </date>
+    <respStmt>
+     <name>
+      RS
+     </name>
+     <resp/>
+    </respStmt>
+    <item>
+     tagged and parsed
+    </item>
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <pb id="v.6.p.111"/>
+   <milestone id="stephpage-966d" n="966d" unit="stephpage"/>
+   <div1 n="1" type="section">
+    <p>
+     επὶ τὰ ἕωλοι τῆς σαρκοφαγίοις προσφάτους ἡμᾶς ὁ λόγος παρακαλεῖ ταῖς τε διανοίαις καὶ ταῖς
+     <milestone n="5" unit="tlnum"/>
+     προθυμίαις γενέσθαι. χαλεπὸν μὲν γάρ, ὥσπερ ὁ Κάτων ἔφησε, λέγειν πρὸς γαστέρας ὦτα μὴ ἐχούσας· καὶ πέποται ὁ τῆς συνηθείας κυκεών, ὥσπερ ὁ τῆς
+     <milestone id="stephpage-966e" n="966e" unit="stephpage"/>
+     Κίρκης
+     <quote rend="blockquote">
+      ὠδίνας ὀδύνας κυκεὼν ἀπάτας τε γόους τε·
+     </quote>
+     <milestone n="10" unit="tlnum"/>
+     καὶ τὸ ἄγκιστρον ἐκβάλλειν τῆς σαρκοφαγίας ὡς
 ἐμπεπηγμένον τῇ φιληδονίᾳ καὶ διαπεπαρμένον οὐ
 ῥᾴδιόν ἐστιν. ἐπεὶ καλῶς εἶχεν, ὥσπερ Αἰγύπτιοι τῶν νεκρῶν τὴν κοιλίαν ἐξελόντες καὶ πρὸς τὸν
 ἥλιον ἀνασχίζοντες ἐκβάλλουσιν ὡς αἰτίαν ἁπάντων
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      ὧν ὁ ἄνθρωπος; ἥμαρτεν, οὕτως ἡμᾶς ἑαυτῶν τὴν γαστριμαργίαν καὶ μιαιφονίαν ἐκτεμόντας ἁγνεῦσαι τὸν λοιπὸν βίον ἐπεὶ ἥ γε γαστὴρ οὐ μιαιφόνον ἐστὶν ἀλλὰ μιαινόμενον ἀπὸ τῆς ἀκρασίας. οὐ μὴν ἀλλʼ εἰ καὶ ἀδύνατον νὴ Δία διὰ τὴν συνήθειαν τὸ
-      <pb id="v.6.p.112">
-      </pb>
-      <milestone id="stephpage-996f" n="996f" unit="stephpage">
-      </milestone>
-      ἀναμάρτητον, αἰσχυνόμενοι τῷ ἁμαρτάνοντι χρησόμεθα διὰ τὸν λόγον, ἐδόμεθα σάρκας, ἀλλὰ πεινῶντες
+     <milestone n="15" unit="tlnum"/>
+     ὧν ὁ ἄνθρωπος; ἥμαρτεν, οὕτως ἡμᾶς ἑαυτῶν τὴν γαστριμαργίαν καὶ μιαιφονίαν ἐκτεμόντας ἁγνεῦσαι τὸν λοιπὸν βίον ἐπεὶ ἥ γε γαστὴρ οὐ μιαιφόνον ἐστὶν ἀλλὰ μιαινόμενον ἀπὸ τῆς ἀκρασίας. οὐ μὴν ἀλλʼ εἰ καὶ ἀδύνατον νὴ Δία διὰ τὴν συνήθειαν τὸ
+     <pb id="v.6.p.112"/>
+     <milestone id="stephpage-996f" n="996f" unit="stephpage"/>
+     ἀναμάρτητον, αἰσχυνόμενοι τῷ ἁμαρτάνοντι χρησόμεθα διὰ τὸν λόγον, ἐδόμεθα σάρκας, ἀλλὰ πεινῶντες
 οὐ τρυφῶντες· ἀναιρήσομεν ζῷον, ἀλλʼ
 οἰκτείροντες καὶ ἀλγοῦντες, οὐχ ὑβρίζοντες οὐδὲ
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      βασανίζοντες· οἷα νῦν πολλὰ δρῶσιν οἱ μὲν εἰς
-      <milestone id="stephpage-997a" n="997a" unit="stephpage">
-      </milestone>
-      σφαγὴν ὑῶν ὠθοῦντες ὀβελοὺς διαπύρους, ἵνα τῇ βαφῇ τοῦ σιδήρου περισβεννύμενον τὸ αἷμα καὶ διαχεόμενον τὴν σάρκα θρύψῃ καὶ μαλάξῃ· οἱ δʼ
+     <milestone n="5" unit="tlnum"/>
+     βασανίζοντες· οἷα νῦν πολλὰ δρῶσιν οἱ μὲν εἰς
+     <milestone id="stephpage-997a" n="997a" unit="stephpage"/>
+     σφαγὴν ὑῶν ὠθοῦντες ὀβελοὺς διαπύρους, ἵνα τῇ βαφῇ τοῦ σιδήρου περισβεννύμενον τὸ αἷμα καὶ διαχεόμενον τὴν σάρκα θρύψῃ καὶ μαλάξῃ· οἱ δʼ
 οὔθασι συῶν ἐπιτόκων ἐναλλόμενοι καὶ λακτίζοντες,
-      <milestone n="10" unit="tlnum">
-      </milestone>
-      ἵνʼ αἷμα καὶ γάλα καὶ λύθρον ἐμβρύων ὁμοῦ συμφθαρέντων
+     <milestone n="10" unit="tlnum"/>
+     ἵνʼ αἷμα καὶ γάλα καὶ λύθρον ἐμβρύων ὁμοῦ συμφθαρέντων
 ἐν ὠδῖσιν ἀναδεύσαντες, ὦ Ζεῦ καθάρσιε, φάγωσι τοῦ ζῴου τὸ μάλιστα φλεγμαῖνον ἄλλοι γεράνων ὄμματα καὶ κύκνων ἀπορράψαντες καὶ
 ἀποκλείσαντες ἐν σκότει πιαίνουσιν, ἀλλοκότοις
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      μίγμασι καὶ καρυκείαις τισὶν αὐτῶν τὴν σάρκα
+     <milestone n="15" unit="tlnum"/>
+     μίγμασι καὶ καρυκείαις τισὶν αὐτῶν τὴν σάρκα
 ὀψοποιοῦντες.
-     </p>
-     <p lang="it">
-      nelle feste dei nostri recenti carnivori, la parola supplica gli intelletti e il
+    </p>
+    <p lang="it">
+     nelle feste dei nostri recenti carnivori, la parola interpella gli intelletti e il
  i desideri si avverano. halepon me gar, come diceva Catone, dicono a gaster, guarda, non ce l'avevi;
 Circe
 ὠdinas ὀodynas kykeὼn apatas te gous te;
@@ -214,40 +194,31 @@ Coloro che cercano il sole come causa di tutto
 
 dov'è l'uomo? peccatori, in questo modo, tagliandoci il ventre e la subitaneità, purificate il resto della vita sul ventre, non all'improvviso, ma all'improvviso, dall'acrasia. Non solo, ma è anche impossibile per Zeus a causa dell'abitudine
 
- senza peccato, siamo abituati dalla parola al peccato, siamo fatti carne, ma affamati
-niente pittori; disfiamo la vita, altrimenti
+ senza peccato, siamo dediti al peccato, siamo usati per la parola, ci è stata data carne, ma affamati
+niente pittori; disponiamo la vita, altrimenti
 amaro e doloroso, per nulla imprecante
  aguzzini; dove ora fanno molte cose
  macellazione ὑ di frecce infuocate infuocate, sì che il sangue, imbrattato della tintura del ferro e permeante la carne, stritola e impasta;
-senza che questi tassi di interesse si alternino e sussultino,
+non più di questi tassi di interesse, che si alternano e si susseguono,
 
 sicché sangue e latte e riscatto dei feti di colui che si corrompe
-con vesti svolazzanti, o Zeus, purifica, divorando la bestia, anzi altre selle di gru fiammeggianti e cigni che succhiano e
+nelle vesti svolazzanti, o Zeus purifica, divorando l'animale, infatti gli altri selle di gru fiammeggianti e cigni che succhiano e
 escluso che nel buio vengano catturati, gli alieni
  miscela e condimenti della loro carne
 ossessionante.
-      <note DBPEDIA_ENT="Catone" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="143" lang="it" link="http://it.dbpedia.org/resource/Marco_Porcio_Catone_Uticense" score="0.9853691746011902" source="DBpedia" start="140" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Circe" category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="192" lang="it" link="http://it.dbpedia.org/resource/Circe" score="1.0" source="DBpedia" start="189" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="lanciano" category="Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:PopulatedPlace" end="242" lang="it" link="http://it.dbpedia.org/resource/Lanciano" score="0.9999993903347371" source="DBpedia" start="239" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="carnivoro" category="" end="261" lang="it" link="http://it.dbpedia.org/resource/Carnivoro" score="0.6096535048839663" source="DBpedia" start="258" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Zeus" category="" end="679" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="676" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="peccato" category="" end="715" lang="it" link="http://it.dbpedia.org/resource/Peccato" score="0.9999999994467998" source="DBpedia" start="712" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="peccato" category="" end="755" lang="it" link="http://it.dbpedia.org/resource/Peccato" score="0.9999999994467998" source="DBpedia" start="752" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="ferro" category="" end="1011" lang="it" link="http://it.dbpedia.org/resource/Ferro" score="0.9999999973092599" source="DBpedia" start="1007" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Zeus" category="" end="1215" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="1211" type="automatic">
-      </note>
-     </p>
-     <p lang="en">
-      on the feasts of our recent carnivores, the word begs the intellects and the
- wishes happen. halepon me gar, as Cato said, they say to a gaster, look, you didn't have it;
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="145" lang="it" link="http://it.dbpedia.org/resource/Marco_Porcio_Catone_Uticense" mention="Catone" score="0.9748540232859693" source="DBpedia" start="142" type="automatic"/>
+     <note category="Wikidata:Q95074,Wikidata:Q24229398,DUL:Agent,DBpedia:Agent,DBpedia:FictionalCharacter" end="194" lang="it" link="http://it.dbpedia.org/resource/Circe" mention="Circe" score="1.0" source="DBpedia" start="191" type="automatic"/>
+     <note category="Schema:Place,DBpedia:Place,DBpedia:Location,DBpedia:PopulatedPlace" end="244" lang="it" link="http://it.dbpedia.org/resource/Lanciano" mention="lanciano" score="0.9999998639552906" source="DBpedia" start="241" type="automatic"/>
+     <note category="" end="263" lang="it" link="http://it.dbpedia.org/resource/Carnivoro" mention="carnivoro" score="0.8996997052172075" source="DBpedia" start="260" type="automatic"/>
+     <note category="" end="681" lang="it" link="http://it.dbpedia.org/resource/Zeus" mention="Zeus" score="1.0" source="DBpedia" start="678" type="automatic"/>
+     <note category="" end="717" lang="it" link="http://it.dbpedia.org/resource/Peccato" mention="peccato" score="0.9999999960971309" source="DBpedia" start="714" type="automatic"/>
+     <note category="" end="742" lang="it" link="http://it.dbpedia.org/resource/Peccato" mention="peccato" score="0.9999999960971309" source="DBpedia" start="739" type="automatic"/>
+     <note category="" end="1031" lang="it" link="http://it.dbpedia.org/resource/Ferro" mention="ferro" score="0.9999999989038315" source="DBpedia" start="1027" type="automatic"/>
+     <note category="" end="1246" lang="it" link="http://it.dbpedia.org/resource/Zeus" mention="Zeus" score="1.0" source="DBpedia" start="1242" type="automatic"/>
+    </p>
+    <p lang="en">
+     on the feasts of our recent carnivores, the word pleads with the intellects and the
+ wishes happen. halepon me gar, as Cato said, they say to gaster, look, you didn't have it;
 Circe
 ὠdinas ὀodynas kykeὼn apatas te gous te;
  and they throw out the hook of carnivore as
@@ -257,227 +228,183 @@ Those who seek the sun as the cause of everything
 
 where the man? sinners, in this way, by cutting off our own stomach and suddenness, you purify the rest of life on the stomach, not suddenly, but suddenly, by the acrasia. Not only that, but it is also impossible for Zeus because of the habit
 
- without sin, we are used by the word to sin, we are given flesh, but hungry
+ without sin, we are devoted to sinning, we are used for the word, we are given flesh, but hungry
 no painers; let's undo life, otherwise
 bitter and painful, not cursing at all
  tormentors; where now they are doing many things
  slaughter ὑ of burning arrows of fire, so that the blood smeared with the dye of iron and permeating the flesh crushes and kneads;
-without these interest rates alternating and kicking,
+no more than these interest rates, alternating and kicking,
 
 so that blood and milk and the ransom of the fetuses of the one who is corrupted
-in robes fluttering, O Zeus cleanse, devouring the beast indeed others flaming cranes' saddles and swans sucking and
+in robes fluttering, O Zeus cleanse, devouring the animal the in fact others flaming cranes' saddles and swans sucking and
 excluding in the dark they are caught, aliens
  mixture and seasonings of their flesh
 obsessing.
-      <note DBPEDIA_ENT="Cato" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="121" lang="en" link="http://dbpedia.org/resource/Cato_the_Younger" score="0.9858054591127231" source="DBpedia" start="118" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="gaster" category="" end="146" lang="en" link="http://dbpedia.org/resource/Gaster_(insect_anatomy)" score="0.997034581357942" source="DBpedia" start="143" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Circe" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="180" lang="en" link="http://dbpedia.org/resource/Circe" score="1.0" source="DBpedia" start="177" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="hook" category="" end="251" lang="en" link="http://dbpedia.org/resource/Refrain" score="0.7423365855079384" source="DBpedia" start="248" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="carnivore" category="" end="259" lang="en" link="http://dbpedia.org/resource/Carnivore" score="0.9999999957169621" source="DBpedia" start="256" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="acrasia" category="" end="620" lang="en" link="http://dbpedia.org/resource/Akrasia" score="1.0" source="DBpedia" start="617" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="674" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="671" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="dye" category="" end="981" lang="en" link="http://dbpedia.org/resource/Dye" score="0.9999888406514057" source="DBpedia" start="978" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="iron" category="" end="988" lang="en" link="http://dbpedia.org/resource/Iron" score="0.9981641715802119" source="DBpedia" start="985" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="milk" category="" end="1112" lang="en" link="http://dbpedia.org/resource/Water_buffalo" score="0.6778274313718641" source="DBpedia" start="1108" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="1198" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="1194" type="automatic">
-      </note>
-     </p>
-    </div1>
-    <div1 n="2" type="section">
-     <p>
-      ἐξ ὧν καὶ μάλιστα δῆλόν ἐστιν, ὡς οὐ διὰ τροφὴν οὐδὲ χρείαν οὐδʼ ἀναγκαίως ἀλλʼ ὑπὸ
-      <milestone id="stephpage-997b" n="997b" unit="stephpage">
-      </milestone>
-      κόρου καὶ ὕβρεως καὶ πολυτελείας ἡδονὴν πεποίηνται
-      <milestone n="20" unit="tlnum">
-      </milestone>
-      τὴν ἀνομίαν· εἶθʼ ὥσπερ ἔρως ἐν γυναιξὶν κόρον ἡδονῆς οὐκ ἐχούσαις, ἀποπειρώμενος πάντα καὶ
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="128" lang="en" link="http://dbpedia.org/resource/Cato_the_Younger" mention="Cato" score="0.9816602230863214" source="DBpedia" start="125" type="automatic"/>
+     <note category="" end="151" lang="en" link="http://dbpedia.org/resource/Gaster_(insect_anatomy)" mention="gaster" score="0.997034581357942" source="DBpedia" start="148" type="automatic"/>
+     <note category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="185" lang="en" link="http://dbpedia.org/resource/Circe" mention="Circe" score="1.0" source="DBpedia" start="182" type="automatic"/>
+     <note category="" end="264" lang="en" link="http://dbpedia.org/resource/Carnivore" mention="carnivore" score="0.9999999981264409" source="DBpedia" start="261" type="automatic"/>
+     <note category="" end="625" lang="en" link="http://dbpedia.org/resource/Akrasia" mention="acrasia" score="1.0" source="DBpedia" start="622" type="automatic"/>
+     <note category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="679" lang="en" link="http://dbpedia.org/resource/Zeus" mention="Zeus" score="1.0" source="DBpedia" start="676" type="automatic"/>
+     <note category="" end="1008" lang="en" link="http://dbpedia.org/resource/Dye" mention="dye" score="0.9999886441388705" source="DBpedia" start="1004" type="automatic"/>
+     <note category="" end="1015" lang="en" link="http://dbpedia.org/resource/Iron" mention="iron" score="0.998139806573128" source="DBpedia" start="1011" type="automatic"/>
+     <note category="" end="1144" lang="en" link="http://dbpedia.org/resource/Water_buffalo" mention="milk" score="0.78252124805023" source="DBpedia" start="1140" type="automatic"/>
+     <note category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="1230" lang="en" link="http://dbpedia.org/resource/Zeus" mention="Zeus" score="1.0" source="DBpedia" start="1226" type="automatic"/>
+    </p>
+   </div1>
+   <div1 n="2" type="section">
+    <p>
+     ἐξ ὧν καὶ μάλιστα δῆλόν ἐστιν, ὡς οὐ διὰ τροφὴν οὐδὲ χρείαν οὐδʼ ἀναγκαίως ἀλλʼ ὑπὸ
+     <milestone id="stephpage-997b" n="997b" unit="stephpage"/>
+     κόρου καὶ ὕβρεως καὶ πολυτελείας ἡδονὴν πεποίηνται
+     <milestone n="20" unit="tlnum"/>
+     τὴν ἀνομίαν· εἶθʼ ὥσπερ ἔρως ἐν γυναιξὶν κόρον ἡδονῆς οὐκ ἐχούσαις, ἀποπειρώμενος πάντα καὶ
 πλανώμενος ἀκολασταίνων ἐξέπεσεν εἰς τὰ ἄρρητα·
 οὕτως αἱ περὶ τὴν ἐδωδὴν ἀκρασίαι τὸ φυσικὸν παρελθοῦσαι καὶ ἀναγκαῖον τέλος ἐν ὠμότητι καὶ
-      <milestone n="25" unit="tlnum">
-      </milestone>
-      παρανομίᾳ ποικίλλουσι τὴν ὄρεξιν. συννοσεῖ γὰρ ἀλλήλοις τὰ αἰσθητήρια καὶ συναναπείθεται καὶ
-      <pb id="v.6.p.113">
-      </pb>
-      συνακολασταίνει μὴ κρατοῦντα τῶν φυσικῶν μέτρων.
+     <milestone n="25" unit="tlnum"/>
+     παρανομίᾳ ποικίλλουσι τὴν ὄρεξιν. συννοσεῖ γὰρ ἀλλήλοις τὰ αἰσθητήρια καὶ συναναπείθεται καὶ
+     <pb id="v.6.p.113"/>
+     συνακολασταίνει μὴ κρατοῦντα τῶν φυσικῶν μέτρων.
 οὕτως ἀκοὴ νοσήσασα μουσικὴν διέφθειρεν, ἀφʼ ἧς
-      <milestone id="stephpage-997c" n="997c" unit="stephpage">
-      </milestone>
-      τὸ θρυπτόμενον καὶ ἐκλυόμενον αἰσχρὰς ποθεῖ ψηλαφήσεις
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      καὶ γυναικώδεις γαργαλισμούς. ταῦτα τὴν
+     <milestone id="stephpage-997c" n="997c" unit="stephpage"/>
+     τὸ θρυπτόμενον καὶ ἐκλυόμενον αἰσχρὰς ποθεῖ ψηλαφήσεις
+     <milestone n="5" unit="tlnum"/>
+     καὶ γυναικώδεις γαργαλισμούς. ταῦτα τὴν
 ὄψιν ἐδίδαξε μὴ πυρρίχαις χαίρειν μηδὲ χειρονομίαις μηδʼ ὀρχήμασι γλαφυροῖς μηδʼ ἀγάλμασι καὶ γραφαῖς, ἀλλὰ φόνον καὶ θάνατον ἀνθρώπων καὶ
 τραύματα καὶ μάχας θέαμα ποιεῖσθαι πολυτελέστατον.
-      <milestone n="10" unit="tlnum">
-      </milestone>
-      οὕτως ἕπονται παρανόμοις τραπέζαις συνουσίαι
+     <milestone n="10" unit="tlnum"/>
+     οὕτως ἕπονται παρανόμοις τραπέζαις συνουσίαι
 ἀκρατεῖς, ἀφροδισίοις αἰσχροῖς ἀκροάσεις ἄμουσοι, μέλεσι καὶ ἀκούσμασιν ἀναισχύντοις θέατρα ἔκφυλα, θεάμασιν ἀνημέροις ἀπάθεια πρὸς ἀνθρώπους καὶ ὠμότης. διὰ τοῦτο διέταττεν ὁ θεῖος· Λυκοῦργος
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      ἐν ταῖς τρισὶ ῥήτραις τὸ ἀπὸ πρίονος καὶ πελέκεως γίγνεσθαι τὰ θυρώματα τῶν οἰκιῶν καὶ τὰς ἐρέψεις,
-      <milestone id="stephpage-997d" n="997d" unit="stephpage">
-      </milestone>
-      ἄλλο δʼ ὄργανον μηδὲν προσφέρεσθαι, οὐ πολεμῶν δήπου τερέτροις καὶ σκεπάρνοις καὶ ὅσα λεπτουργεῖν πέφυκεν ἀλλʼ εἰδὼς ὅτι διὰ τοιούτων ἔργων οὐκ
-      <milestone n="20" unit="tlnum">
-      </milestone>
-      εἰσοίσεις κλινίδιον ἐπίχρυσον οὐδὲ τολμήσεις εἰς οἰκίαν λιτὴν ἀργυρᾶς εἰσενεγκεῖν τραπέζας καὶ δάπιδας ἁλουργοὺς καὶ λίθους πολυτελεῖς· ἀλλʼ ἕπεται οἰκίᾳ καὶ κλίνῃ καὶ τραπέζῃ καὶ κύλικι τοιαύτῃ δεῖπνον ἀφελὲς καὶ ἄριστον δημοτικόν, ἀρχῇ δὲ
-      <milestone n="25" unit="tlnum">
-      </milestone>
-      μοχθηρᾶς διαίτης
-      <pb id="v.6.p.114">
-      </pb>
-      <quote rend="blockquote">
-       ἄθηλος ἵππῳ πῶλος ὣς ἅμα τρέχει
-      </quote>
-      πᾶσα τρυφὴ καὶ πολυτέλεια.
-     </p>
-     <p lang="it">
-      donde è, infatti, delon, in quanto non per il cibo, né per il bisogno, né necessariamente, ma sotto
+     <milestone n="15" unit="tlnum"/>
+     ἐν ταῖς τρισὶ ῥήτραις τὸ ἀπὸ πρίονος καὶ πελέκεως γίγνεσθαι τὰ θυρώματα τῶν οἰκιῶν καὶ τὰς ἐρέψεις,
+     <milestone id="stephpage-997d" n="997d" unit="stephpage"/>
+     ἄλλο δʼ ὄργανον μηδὲν προσφέρεσθαι, οὐ πολεμῶν δήπου τερέτροις καὶ σκεπάρνοις καὶ ὅσα λεπτουργεῖν πέφυκεν ἀλλʼ εἰδὼς ὅτι διὰ τοιούτων ἔργων οὐκ
+     <milestone n="20" unit="tlnum"/>
+     εἰσοίσεις κλινίδιον ἐπίχρυσον οὐδὲ τολμήσεις εἰς οἰκίαν λιτὴν ἀργυρᾶς εἰσενεγκεῖν τραπέζας καὶ δάπιδας ἁλουργοὺς καὶ λίθους πολυτελεῖς· ἀλλʼ ἕπεται οἰκίᾳ καὶ κλίνῃ καὶ τραπέζῃ καὶ κύλικι τοιαύτῃ δεῖπνον ἀφελὲς καὶ ἄριστον δημοτικόν, ἀρχῇ δὲ
+     <milestone n="25" unit="tlnum"/>
+     μοχθηρᾶς διαίτης
+     <pb id="v.6.p.114"/>
+     <quote rend="blockquote">
+      ἄθηλος ἵππῳ πῶλος ὣς ἅμα τρέχει
+     </quote>
+     πᾶσα τρυφὴ καὶ πολυτέλεια.
+    </p>
+    <p lang="it">
+     donde è, infatti, delon, in quanto non per il cibo, né per il bisogno, né necessariamente, ma sotto
  Sono convinti della gioia della gloria, dell'orgoglio e del lusso
- iniquità; era come l'amore in una donna che non avesse la corona del piacere, tentando sempre e
+ iniquità; era come l'amore in una donna che non avevi la corona del piacere, cercando sempre e
 vagando indomito cadde nell'ineffabile;
 quindi le parole sull'edos akrasia, il passato naturale e necessario, finiscono in omote e
- variare illegalmente l'appetito. poiché i sensi coesistono tra loro e sono convinti insieme
+ variare illegalmente l'appetito. poiché i sensi coesistono tra loro e sono anche convinti insieme
  coniugi senza mantenere misure fisiche.
-quindi il mio udito era influenzato dalla musica corrotta, afʼ ἧs
+quindi, il mio udito è stato influenzato dalla musica corrotta, a causa tua
 
 il pus secreto e secreto brama la palpazione
  e solletico femminile. Questo
-vedi, insegnò a non ardere di gioia, né a fare gesti, né a gridare, né a gridare, né a scrivere, ma a uccidere e uccidere la gente, e
-i traumi e lo spettacolo della battaglia sono poeticamente polytelestaton.
+Guarda, ti ha insegnato a non ardere di gioia, a non fare gesti, a non gridare, a non gridare, a non scrivere, ma a uccidere e uccidere la gente e
+i traumi e lo spettacolo della battaglia sono politestaton.
 
 segue quindi un rapporto sessuale illecito
-sfrenato, afrodisiaci, afrodisiaci, udienze sfacciate, ascolto senza vergogna e ascolto di teatri, guardare Mostri apatia verso le persone e vergogna. per questo decretò lo zio Licurgo
+sfrenato, afrodisiaci, afrodisiaci, ascolto senza vergogna, ascolto senza vergogna, teatro senza vergogna, spettacolo Mostri apatia verso le persone e vergogna. per questo decretò lo zio Licurgo
 
 nelle tre rihetras, le porte delle case e i portici sono fatti con sega e scalpello,
 
-nessun altro strumento fu offerto, nessun combattimento nella terra dei terretros e delle segrete e tutti i dettagli svanirono, ma sapendo che per tali opere non
- entri in un letto dorato, non osi entrare in una casa di poca argento, c'è un tavolo e un pavimento d'argento e pietre lussuose; ma nella casa accanto e letto e tavolo e tazza di una cena popolare così semplice ed eccellente, ma il inizio
+nessun altro strumento fu offerto, nessun combattimento nella città dei terretros e delle segrete e tutti i dettagli svanirono, ma visto che per tali opere non
+ entri in un letto dorato, non osi entrare in una casa di poca argento, c'è un tavolo e un pavimento d'argento e pietre lussuose, ma nella casa accanto e letto e tavolo e tazza di una cena locale così semplice ed eccellente, ma il inizio
 
 dieta viziosa
 
 Athletic Horse sta finendo quanto lusso e lusso.
-      <note DBPEDIA_ENT="indomito" category="Wikidata:Q11446,Schema:Product,DBpedia:MeanOfTransportation,DBpedia:Ship" end="281" lang="it" link="http://it.dbpedia.org/resource/Indomito_(cacciatorpediniere_1913)" score="0.8434058666747478" source="DBpedia" start="278" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="pus" category="Wikidata:Q12136,DBpedia:Disease" end="608" lang="it" link="http://it.dbpedia.org/resource/Infiammazione_purulenta" score="1.0" source="DBpedia" start="605" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="afrodisiaci" category="" end="944" lang="it" link="http://it.dbpedia.org/resource/Afrodisiaco" score="1.0" source="DBpedia" start="941" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="afrodisiaci" category="" end="957" lang="it" link="http://it.dbpedia.org/resource/Afrodisiaco" score="1.0" source="DBpedia" start="954" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="apatia" category="" end="1050" lang="it" link="http://it.dbpedia.org/resource/Indifferenza" score="0.9999999996418865" source="DBpedia" start="1046" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Licurgo" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1112" lang="it" link="http://it.dbpedia.org/resource/Licurgo" score="0.8099749304128991" source="DBpedia" start="1108" type="automatic">
-      </note>
-     </p>
-     <p lang="en">
-      whence it is, in fact, delon, as not for food, nor need, nor necessarily, but under
+     <note category="Wikidata:Q11446,Schema:Product,DBpedia:MeanOfTransportation,DBpedia:Ship" end="280" lang="it" link="http://it.dbpedia.org/resource/Indomito_(cacciatorpediniere_1913)" mention="indomito" score="0.8434058666747478" source="DBpedia" start="277" type="automatic"/>
+     <note category="" end="615" lang="it" link="http://it.dbpedia.org/resource/Ferrovia_del_Tua" mention="tua" score="0.9999986932875242" source="DBpedia" start="612" type="automatic"/>
+     <note category="Wikidata:Q12136,DBpedia:Disease" end="623" lang="it" link="http://it.dbpedia.org/resource/Infiammazione_purulenta" mention="pus" score="1.0" source="DBpedia" start="620" type="automatic"/>
+     <note category="" end="957" lang="it" link="http://it.dbpedia.org/resource/Afrodisiaco" mention="afrodisiaci" score="1.0" source="DBpedia" start="954" type="automatic"/>
+     <note category="" end="970" lang="it" link="http://it.dbpedia.org/resource/Afrodisiaco" mention="afrodisiaci" score="1.0" source="DBpedia" start="967" type="automatic"/>
+     <note category="" end="1032" lang="it" link="http://it.dbpedia.org/resource/Teatro" mention="teatro" score="0.9999999710155412" source="DBpedia" start="1028" type="automatic"/>
+     <note category="" end="1073" lang="it" link="http://it.dbpedia.org/resource/Indifferenza" mention="apatia" score="0.9999999999783995" source="DBpedia" start="1069" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1135" lang="it" link="http://it.dbpedia.org/resource/Licurgo_di_Atene" mention="Licurgo" score="0.9946892537362719" source="DBpedia" start="1131" type="automatic"/>
+    </p>
+    <p lang="en">
+     whence it is, in fact, delon, as not for food, nor need, nor necessarily, but under
  They are convinced of the joy of glory and pride and luxury
  iniquity; it was like love in a woman that you did not have the crown of pleasure, always trying and
 wandering untamed he fell into the ineffable;
-thus the words about the edos akrasia the natural past and necessary end in omote and
- illegally varying the appetite. for the senses co-exist with each other and are convinced together
+so the words about the edos akrasia the natural past and necessary end in omote and
+ illegally varying the appetite. for the senses co-exist with each other and are convinced together as well
  consorts without keeping physical measures.
-thus, my hearing was affected by corrupt music, afʼ ἧs
+thus, my hearing was affected by corrupt music, because of you
 
 the secreted and secreted pus craves palpation
  and feminine tickles. this
-see, he taught not to blaze with joy, nor to make gestures, nor to shout, nor to shout, nor to write, but to kill and kill people, and
-traumas and the spectacle of battle are poetically polytelestaton.
+Look, he taught you not to blaze with joy, not to make gestures, not to shout, not to shout, not to write, but to kill and kill people and
+traumas and the spectacle of battle are polytelestaton.
 
 thus follows illicit sexual intercourse
-unrestrained, aphrodisiacs, aphrodisiacs, unabashed hearings, unashamed listening and listening to theaters, watching You show apathy towards people and shame. for this the uncle Lykourgos decreed
+unrestrained, aphrodisiacs, aphrodisiacs, unabashed listening, unashamed listening, unabashed theater, spectacle You show apathy towards people and shame. for this the uncle Lykourgos decreed
 
 in the three rihetras, the doors of the houses and the porches are made from a saw and a chisel,
 
-no other instrument was offered, no fighting in the land of terretros and coverts and all the details fell away, but knowing that for such works no
- you enter a gilded bed, you dare not enter a house of little silver, there is a table and floor of silver and luxurious stones; but in the next house and bed and table and cup of such a simple and excellent folk supper, but the beginning
+no other instrument was offered, no fighting in the city of terretros and coverts and all the details fell away, but seeing that for such works no
+ you enter a gilded bed, you dare not enter a house of little silver, there is a table and floor of silver and luxurious stones; but in the next house and bed and table and cup of such a simple and excellent local supper, but the beginning
 
 vicious dieter
 
 Athletic Horse is running out how much luxury and luxury.
-      <note DBPEDIA_ENT="akrasia" category="" end="332" lang="en" link="http://dbpedia.org/resource/Akrasia" score="1.0" source="DBpedia" start="329" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="pus" category="Wikidata:Q12136,DBpedia:Disease" end="615" lang="en" link="http://dbpedia.org/resource/Pus" score="1.0" source="DBpedia" start="612" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="palpation" category="" end="626" lang="en" link="http://dbpedia.org/resource/Palpation" score="1.0" source="DBpedia" start="623" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="sexual intercourse" category="" end="888" lang="en" link="http://dbpedia.org/resource/Sexual_intercourse" score="1.0" source="DBpedia" start="885" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Lykourgos" category="" end="1087" lang="en" link="http://dbpedia.org/resource/Lycurgus_of_Athens" score="1.0" source="DBpedia" start="1083" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="chisel" category="" end="1195" lang="en" link="http://dbpedia.org/resource/Chisel" score="1.0" source="DBpedia" start="1191" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="coverts" category="" end="1278" lang="en" link="http://dbpedia.org/resource/Covert_feather" score="1.0" source="DBpedia" start="1274" type="automatic">
-      </note>
-     </p>
-    </div1>
-    <div1 n="3" type="section">
-     <p>
-      ποῖον οὖν οὐ πολυτελὲς δεῖπνον, εἰς ὃ οὐ
+     <note category="" end="330" lang="en" link="http://dbpedia.org/resource/Akrasia" mention="akrasia" score="1.0" source="DBpedia" start="327" type="automatic"/>
+     <note category="Wikidata:Q12136,DBpedia:Disease" end="629" lang="en" link="http://dbpedia.org/resource/Pus" mention="pus" score="1.0" source="DBpedia" start="626" type="automatic"/>
+     <note category="" end="640" lang="en" link="http://dbpedia.org/resource/Palpation" mention="palpation" score="1.0" source="DBpedia" start="637" type="automatic"/>
+     <note category="" end="895" lang="en" link="http://dbpedia.org/resource/Sexual_intercourse" mention="sexual intercourse" score="0.9999999999997726" source="DBpedia" start="892" type="automatic"/>
+     <note category="" end="1089" lang="en" link="http://dbpedia.org/resource/Lycurgus_of_Athens" mention="Lykourgos" score="1.0" source="DBpedia" start="1085" type="automatic"/>
+     <note category="" end="1197" lang="en" link="http://dbpedia.org/resource/Chisel" mention="chisel" score="1.0" source="DBpedia" start="1193" type="automatic"/>
+     <note category="" end="1258" lang="en" link="http://dbpedia.org/resource/City" mention="city" score="0.9687538287848226" source="DBpedia" start="1254" type="automatic"/>
+     <note category="" end="1280" lang="en" link="http://dbpedia.org/resource/Covert_feather" mention="coverts" score="1.0" source="DBpedia" start="1276" type="automatic"/>
+    </p>
+   </div1>
+   <div1 n="3" type="section">
+    <p>
+     ποῖον οὖν οὐ πολυτελὲς δεῖπνον, εἰς ὃ οὐ
 θανατοῦταί τι ἔμψυχον; μικρὸν ἀνάλωμα ἡγούμεθα
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      <milestone id="stephpage-997e" n="997e" unit="stephpage">
-      </milestone>
-      ψυχήν; οὔπω λέγω τάχα μητρὸς ἢ πατρὸς ἢ φίλου τινὸς ἢ παιδός, ὡς ἔλεγεν Ἐμπεδοκλῆς· ἀλλʼ αἰσθήσεώς
+     <milestone n="5" unit="tlnum"/>
+     <milestone id="stephpage-997e" n="997e" unit="stephpage"/>
+     ψυχήν; οὔπω λέγω τάχα μητρὸς ἢ πατρὸς ἢ φίλου τινὸς ἢ παιδός, ὡς ἔλεγεν Ἐμπεδοκλῆς· ἀλλʼ αἰσθήσεώς
 γε μετέχουσαν, ὄψεως ἀκοῆς, φαντασίας συνέσεως, ἣν ἐπὶ κτήσει τοῦ οἰκείου καὶ φυγῇ τάλλοτρίου παρὰ τῆς φύσεως ἕκαστον εἴληχε. σκόπει
-      <milestone n="10" unit="tlnum">
-      </milestone>
-      δʼ ἡμᾶς πότεροι βέλτιον ἐξημεροῦσι τῶν φιλοσόφων,
+     <milestone n="10" unit="tlnum"/>
+     δʼ ἡμᾶς πότεροι βέλτιον ἐξημεροῦσι τῶν φιλοσόφων,
 οἱ καὶ τέκνα καὶ φίλους καὶ πατέρας καὶ γυναῖκας ἐσθίειν κελεύοντες ὡς ἀποθανόντας, ἢ Πυθαγόρας καὶ Ἐμπεδοκλῆς ἐθίζοντες εἶναι καὶ πρὸς· τὰ ἄλλα
 μέρη δικαίους. σὺ μὲν καταγελᾷς τοῦ τὸ πρόβατον
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      μὴ ἐσθίοντος· ἀλλʼ ἡμεῖς γε, φήσουσι, θεασάμενοι τοῦ πατρὸς τεθνηκότος ἢ τῆς μητρὸς ἀποτεμόντα
-      <milestone id="orgpage-997f" n="997f" unit="stephpage">
-      </milestone>
-      μερίδας καὶ τῶν φίλων ἀποπεμπόμενον τοῖς μὴ παροῦσι, τοὺς δὲ παρόντας καλοῦντα καὶ παρατιθέντα τῶν σαρκῶν ἀφειδῶς, μή τι γελάσωμεν; ἀλλὰ
-      <milestone n="20" unit="tlnum">
-      </milestone>
-      καὶ νῦν ἴσως ἁμαρτάνομεν, ὅταν ἁψώμεθα τῶν βιβλίων τούτων, μὴ καθαιρόμενοι χεῖρας καὶ ὄψεις
+     <milestone n="15" unit="tlnum"/>
+     μὴ ἐσθίοντος· ἀλλʼ ἡμεῖς γε, φήσουσι, θεασάμενοι τοῦ πατρὸς τεθνηκότος ἢ τῆς μητρὸς ἀποτεμόντα
+     <milestone id="orgpage-997f" n="997f" unit="stephpage"/>
+     μερίδας καὶ τῶν φίλων ἀποπεμπόμενον τοῖς μὴ παροῦσι, τοὺς δὲ παρόντας καλοῦντα καὶ παρατιθέντα τῶν σαρκῶν ἀφειδῶς, μή τι γελάσωμεν; ἀλλὰ
+     <milestone n="20" unit="tlnum"/>
+     καὶ νῦν ἴσως ἁμαρτάνομεν, ὅταν ἁψώμεθα τῶν βιβλίων τούτων, μὴ καθαιρόμενοι χεῖρας καὶ ὄψεις
 καὶ πόδας καὶ ἀκοάς, εἰ μὴ νὴ Δία ἐκείνων καθαρμὸς
-      <milestone id="stephpage-998a" n="998a" unit="stephpage">
-      </milestone>
-      ἐστι τὸ περὶ τούτων διαλέγεσθαι “ποτίμῳ λόγῳ” ὥς φησιν ὁ Πλάτων “ἁλμυρὰν ἀκοὴν
-      <pb id="v.6.p.115">
-      </pb>
-      ἀποκλυζομένους.” εἰ δὲ θείη τις τὰ βιβλία παρʼ ἄλληλα καὶ
+     <milestone id="stephpage-998a" n="998a" unit="stephpage"/>
+     ἐστι τὸ περὶ τούτων διαλέγεσθαι “ποτίμῳ λόγῳ” ὥς φησιν ὁ Πλάτων “ἁλμυρὰν ἀκοὴν
+     <pb id="v.6.p.115"/>
+     ἀποκλυζομένους.” εἰ δὲ θείη τις τὰ βιβλία παρʼ ἄλληλα καὶ
 τοὺς λόγους, ἐκεῖνα μὲν Σκύθαις φιλοσοφεῖσθαι καὶ
 Σογδιανοῖς καὶ Μελαγχλαίνοις, περὶ ὧν Ἡρόδοτος
 ἱστορῶν ἀπιστεῖται τὰ δὲ Πυθαγόρου καὶ Ἐμπεδοκλέους
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      δόγματα νόμοι τῶν παλαιῶν ἦσαν Ἑλλήνων
+     <milestone n="5" unit="tlnum"/>
+     δόγματα νόμοι τῶν παλαιῶν ἦσαν Ἑλλήνων
 καὶ αἱ ἄπυροι δίαιται.
-      <gap>
-      </gap>
-      ὅτι πρὸς τὰ ἄλογα ζῷα δίκαιον ἡμῖν οὐδὲν ἔστι.
-     </p>
-     <p lang="it">
-      Chi, quindi, non è una cena lussuosa, alla quale non lo è
+     <gap/>
+     ὅτι πρὸς τὰ ἄλογα ζῷα δίκαιον ἡμῖν οὐδὲν ἔστι.
+    </p>
+    <p lang="it">
+     Chi, quindi, non è una cena lussuosa, alla quale non lo è
 Quale anima viene uccisa? abbiamo una piccola differenza
 
- anima? Non parlo come una madre o un padre o un amico o un figlio, come diceva Empedocle; ma con il sentimento
-Hanno partecipato, in termini di udito, immaginazione e comprensione, che si è conclusa con l'acquisizione della casa e la fuga di un tallotrio contro la natura di ciascuno. intende
+ anima? Non parlo come una madre o un padre o un amico o un figlio, come diceva Empedocle, ma con il sentimento;
+Hanno partecipato, in termini di udito, immaginazione e comprensione, che si è concluso con l'acquisizione della casa e la fuga di un tallotrio contro la natura di ciascuno. intende
 
 siamo i migliori domatori dei filosofi,
-i figli e gli amici, e il padre e la moglie, che si calunniano come morti, o Pitagora ed Empedocle che ubriacano; anche gli altri sono
+i figli e gli amici, e il padre e la moglie, si calunniano come morti, o Pitagora ed Empedocle inebriano anche gli altri;
 parti legali. ti prendi gioco delle pecore
 
 non di lui, ma di noi, siamo, vedendo il padre della nazione o la madre dell'erede
- porzione e gli amici vengono mandati agli assenti, e i presenti vengono invitati e rinunciano con parsimonia alla carne, perché dovremmo ridere? Ma
+ porzione e gli amici vengono mandati via a coloro che non sono presenti, e coloro che sono presenti sono invitati e sacrificati con parsimonia nella carne, perché dovremmo ridere? Ma
  e ora forse pecchiamo, quando pecchiamo da questi libri, non purificando le nostre mani e il nostro volto
 e i tuoi piedi e le tue orecchie, se non Zeus, li purifica
  È per questi che vieni scelto "per una buona ragione", per così dire Platone "udito salato
@@ -487,26 +414,18 @@ le ragioni, quelle con la filosofia scitica e
 Sogdiani e Melanchlaini, secondo Erodoto
 storici, ma non si crede a quelli di Pitagora ed Empedocle
  le dottrine e le leggi degli antichi erano greche
-e le diete senza fuoco. perché non c'è giustizia per noi con i cavalli.
-      <note DBPEDIA_ENT="Empedocle" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="205" lang="it" link="http://it.dbpedia.org/resource/Empedocle" score="1.0" source="DBpedia" start="202" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Empedocle" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="549" lang="it" link="http://it.dbpedia.org/resource/Empedocle" score="1.0" source="DBpedia" start="546" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Zeus" category="" end="1020" lang="it" link="http://it.dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="1016" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Platone" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1108" lang="it" link="http://it.dbpedia.org/resource/Platone" score="1.0" source="DBpedia" start="1104" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="filosofia" category="" end="1229" lang="it" link="http://it.dbpedia.org/resource/Filosofia_greca" score="0.9993335846606918" source="DBpedia" start="1225" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Sogdiani" category="" end="1249" lang="it" link="http://it.dbpedia.org/resource/Sogdiana" score="1.0" source="DBpedia" start="1245" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Erodoto" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1282" lang="it" link="http://it.dbpedia.org/resource/Erodoto" score="1.0" source="DBpedia" start="1278" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Empedocle" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1339" lang="it" link="http://it.dbpedia.org/resource/Empedocle" score="1.0" source="DBpedia" start="1335" type="automatic">
-      </note>
-     </p>
-     <p lang="en">
-      Who, then, is not a luxurious dinner, to which he is not
+e le diete senza fuoco.  perché non c'è giustizia per noi nei confronti dei cavalli.
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="205" lang="it" link="http://it.dbpedia.org/resource/Empedocle" mention="Empedocle" score="1.0" source="DBpedia" start="202" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="546" lang="it" link="http://it.dbpedia.org/resource/Empedocle" mention="Empedocle" score="1.0" source="DBpedia" start="543" type="automatic"/>
+     <note category="" end="1043" lang="it" link="http://it.dbpedia.org/resource/Zeus" mention="Zeus" score="1.0" source="DBpedia" start="1039" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1131" lang="it" link="http://it.dbpedia.org/resource/Platone" mention="Platone" score="1.0" source="DBpedia" start="1127" type="automatic"/>
+     <note category="" end="1252" lang="it" link="http://it.dbpedia.org/resource/Filosofia_greca" mention="filosofia" score="0.9990682327196162" source="DBpedia" start="1248" type="automatic"/>
+     <note category="" end="1272" lang="it" link="http://it.dbpedia.org/resource/Sogdiana" mention="Sogdiani" score="1.0" source="DBpedia" start="1268" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1305" lang="it" link="http://it.dbpedia.org/resource/Erodoto" mention="Erodoto" score="1.0" source="DBpedia" start="1301" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1362" lang="it" link="http://it.dbpedia.org/resource/Empedocle" mention="Empedocle" score="1.0" source="DBpedia" start="1358" type="automatic"/>
+    </p>
+    <p lang="en">
+     Who, then, is not a luxurious dinner, to which he is not
 What soul is killed? we have a small difference
 
  soul? I do not speak like a mother or a father or a friend or a child, as Empedocles said; but by feeling
@@ -517,103 +436,82 @@ the children and friends, and father and wife, slandering themselves as if dead,
 legal parties. you make fun of the sheep
 
 not of him, but of us, let us be, seeing the father of the nation or the mother of the heir
- portion and the friends being sent away to those who are not present, and those who are present being invited and giving up the flesh sparingly, why should we laugh? but
+ portion and the friends being sent away to those who are not present, and those who are present being invited and given up of the flesh sparingly, why should we laugh? but
  and now perhaps we sin, when we sin from these books, not purifying our hands and faces
 and your feet and your ears, if not Zeus cleanses them
  It is about these that you are chosen "for a good reason" so to speak Plato "salty hearing
 
-released." And if the books are aunties, among other things, too
+released.” And if you don't care about the books, among other things, too
 the reasons, those with Scythian philosophy and
 Sogdians and Melanchlains, according to Herodotus
 historians, but those of Pythagoras and Empedocles are not believed
  doctrines and laws of the ancients were Greeks
-and the fireless diets. because there is no justice for us with the horses.
-      <note DBPEDIA_ENT="soul" category="" end="70" lang="en" link="http://dbpedia.org/resource/Soul" score="0.9999999177315464" source="DBpedia" start="68" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="soul" category="" end="116" lang="en" link="http://dbpedia.org/resource/Soul" score="0.9999999177315464" source="DBpedia" start="113" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Empedocles" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="190" lang="en" link="http://dbpedia.org/resource/Empedocles" score="1.0" source="DBpedia" start="187" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Pythagoras" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="540" lang="en" link="http://dbpedia.org/resource/Pythagoras" score="1.0" source="DBpedia" start="537" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Empedocles" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="555" lang="en" link="http://dbpedia.org/resource/Empedocles" score="1.0" source="DBpedia" start="552" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Zeus" category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="1031" lang="en" link="http://dbpedia.org/resource/Zeus" score="1.0" source="DBpedia" start="1027" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Plato" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="1121" lang="en" link="http://dbpedia.org/resource/Plato" score="1.0" source="DBpedia" start="1117" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Scythian" category="" end="1232" lang="en" link="http://dbpedia.org/resource/Scythians" score="0.9901210354434636" source="DBpedia" start="1228" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Sogdians" category="Wikidata:Q6256,Schema:Place,Schema:Country,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Country" end="1256" lang="en" link="http://dbpedia.org/resource/Sogdia" score="1.0" source="DBpedia" start="1252" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Herodotus" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1296" lang="en" link="http://dbpedia.org/resource/Herodotus" score="1.0" source="DBpedia" start="1292" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Pythagoras" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="1331" lang="en" link="http://dbpedia.org/resource/Pythagoras" score="1.0" source="DBpedia" start="1327" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Empedocles" category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="1346" lang="en" link="http://dbpedia.org/resource/Empedocles" score="1.0" source="DBpedia" start="1342" type="automatic">
-      </note>
-     </p>
-    </div1>
-    <div1 n="4" type="section">
-     <p>
-      τίνες οὖν ὕστερον τοῦτʼ ἔγνωσαν;
-      <quote rend="blockquote">
-       <l>
-        οἳ πρῶτοι κακοεργὸν ἐχαλκεύσαντο μάχαιραν
-        <milestone n="10" unit="tlnum">
-        </milestone>
-       </l>
-       <l lang="it">
-        il primo a uccidere un malfattore con un coltello di bronzo
-       </l>
-       <l lang="en">
-        the first to kill an evildoer with a bronze knife
-        <note DBPEDIA_ENT="evildoer" category="" end="31" lang="en" link="http://dbpedia.org/resource/Evil" score="0.9999984071621422" source="DBpedia" start="29" type="automatic">
-        </note>
-       </l>
-       <l>
-        εἰνοδίην, πρῶτοι δὲ βοῶν ἐπάσαντʼ ἀροτήρων.
-       </l>
-       <l lang="it">
-        in una sola direzione, ma il primo dei buoi oltrepassò gli aratori.
-       </l>
-       <l lang="en">
-        one way, but the first of the oxen passed the ploughmen.
-       </l>
-      </quote>
-      <milestone id="stephpage-998b" n="998b" unit="stephpage">
-      </milestone>
-      οὕτω τοι καὶ οἱ τυραννοῦντες ἄρχουσι μιαιφονίας.
+and the fireless diets.  because there is no justice for us towards the horses.
+     <note category="" end="70" lang="en" link="http://dbpedia.org/resource/Soul" mention="soul" score="0.9999999200674697" source="DBpedia" start="68" type="automatic"/>
+     <note category="" end="116" lang="en" link="http://dbpedia.org/resource/Soul" mention="soul" score="0.9999999200674697" source="DBpedia" start="113" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="190" lang="en" link="http://dbpedia.org/resource/Empedocles" mention="Empedocles" score="1.0" source="DBpedia" start="187" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="540" lang="en" link="http://dbpedia.org/resource/Pythagoras" mention="Pythagoras" score="1.0" source="DBpedia" start="537" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="555" lang="en" link="http://dbpedia.org/resource/Empedocles" mention="Empedocles" score="1.0" source="DBpedia" start="552" type="automatic"/>
+     <note category="Wikidata:Q24229398,Wikidata:Q178885,DUL:Agent,DBpedia:Agent,DBpedia:Deity" end="1033" lang="en" link="http://dbpedia.org/resource/Zeus" mention="Zeus" score="1.0" source="DBpedia" start="1029" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="1123" lang="en" link="http://dbpedia.org/resource/Plato" mention="Plato" score="1.0" source="DBpedia" start="1119" type="automatic"/>
+     <note category="" end="1243" lang="en" link="http://dbpedia.org/resource/Scythians" mention="Scythian" score="0.9894270250313507" source="DBpedia" start="1239" type="automatic"/>
+     <note category="Wikidata:Q6256,Schema:Place,Schema:Country,DBpedia:PopulatedPlace,DBpedia:Place,DBpedia:Location,DBpedia:Country" end="1267" lang="en" link="http://dbpedia.org/resource/Sogdia" mention="Sogdians" score="1.0" source="DBpedia" start="1263" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Person" end="1307" lang="en" link="http://dbpedia.org/resource/Herodotus" mention="Herodotus" score="1.0" source="DBpedia" start="1303" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="1342" lang="en" link="http://dbpedia.org/resource/Pythagoras" mention="Pythagoras" score="1.0" source="DBpedia" start="1338" type="automatic"/>
+     <note category="Http://xmlns.com/foaf/0.1/Person,Wikidata:Q729,Wikidata:Q5,Wikidata:Q4964182,Wikidata:Q215627,Wikidata:Q19088,DUL:NaturalPerson,Schema:Person,DBpedia:Species,DBpedia:Person,DBpedia:Eukaryote,DBpedia:Animal,DBpedia:Philosopher" end="1357" lang="en" link="http://dbpedia.org/resource/Empedocles" mention="Empedocles" score="1.0" source="DBpedia" start="1353" type="automatic"/>
+    </p>
+   </div1>
+   <div1 n="4" type="section">
+    <p>
+     τίνες οὖν ὕστερον τοῦτʼ ἔγνωσαν;
+     <quote rend="blockquote">
+      <l>
+       οἳ πρῶτοι κακοεργὸν ἐχαλκεύσαντο μάχαιραν
+       <milestone n="10" unit="tlnum"/>
+      </l>
+      <l lang="it">
+       il primo a uccidere un malfattore con un coltello di bronzo
+      </l>
+      <l lang="en">
+       the first to kill an evildoer with a bronze knife
+       <note category="" end="31" lang="en" link="http://dbpedia.org/resource/Evil" mention="evildoer" score="0.9999984071621422" source="DBpedia" start="29" type="automatic"/>
+      </l>
+      <l>
+       εἰνοδίην, πρῶτοι δὲ βοῶν ἐπάσαντʼ ἀροτήρων.
+      </l>
+      <l lang="it">
+       in una sola direzione, ma il primo dei buoi oltrepassò gli aratori.
+      </l>
+      <l lang="en">
+       one way, but the first of the oxen passed the ploughmen.
+      </l>
+     </quote>
+     <milestone id="stephpage-998b" n="998b" unit="stephpage"/>
+     οὕτω τοι καὶ οἱ τυραννοῦντες ἄρχουσι μιαιφονίας.
 ὥσπερ γὰρ τὸ πρῶτον ἀπέκτειναν Ἀθήνησι τὸν κάκιστον τῶν συκοφαντῶν, ὃς ἐπιτήδειος προσηγορεύθη, καὶ δεύτερον ὁμοίως, καὶ τρίτον· εἶτʼ ἐκ
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      τούτου συνήθεις γενόμενοι Νικήρατον περιεώρων ἀπολλύμενον τὸν Νικίου καὶ Θηραμένη τὸν στρατηγὸν καὶ Πολέμαρχον τὸν φιλόσοφον· οὕτω τὸ πρῶτον ἄγριόν τι ζῷον ἐβρώθη καὶ κακοῦργον, εἶτʼ
+     <milestone n="15" unit="tlnum"/>
+     τούτου συνήθεις γενόμενοι Νικήρατον περιεώρων ἀπολλύμενον τὸν Νικίου καὶ Θηραμένη τὸν στρατηγὸν καὶ Πολέμαρχον τὸν φιλόσοφον· οὕτω τὸ πρῶτον ἄγριόν τι ζῷον ἐβρώθη καὶ κακοῦργον, εἶτʼ
 ὄρνις τις ἢ ἰχθὺς εἵλκυστο καὶ γευσάμενον οὕτω
-      <milestone n="20" unit="tlnum">
-      </milestone>
-      καὶ προμελετῆσαν ἐν ἐκείνοις τὸ φονικὸν ἐπὶ βοῦν ἐργάτην ἦλθε καὶ τὸ κόσμιον πρόβατον καὶ τὸν
+     <milestone n="20" unit="tlnum"/>
+     καὶ προμελετῆσαν ἐν ἐκείνοις τὸ φονικὸν ἐπὶ βοῦν ἐργάτην ἦλθε καὶ τὸ κόσμιον πρόβατον καὶ τὸν
 οἰκουρὸν ἀλεκτρυόνα καὶ κατὰ μικρὸν οὕτω τὴν
-      <pb id="v.6.p.116">
-      </pb>
-      ἀπληστίαν στομώσαντες ἐπὶ σφαγὰς ἀνθρώπων καὶ
-      <milestone id="stephpage-998c" n="998c" unit="stephpage">
-      </milestone>
-      πολέμους καὶ φόνους προῆλθον. ἀλλʼ ἐὰν μὴ προσαποδείξῃ τις, ὅτι χρῶνται κοινοῖς αἱ ψυχαὶ σώμασιν
+     <pb id="v.6.p.116"/>
+     ἀπληστίαν στομώσαντες ἐπὶ σφαγὰς ἀνθρώπων καὶ
+     <milestone id="stephpage-998c" n="998c" unit="stephpage"/>
+     πολέμους καὶ φόνους προῆλθον. ἀλλʼ ἐὰν μὴ προσαποδείξῃ τις, ὅτι χρῶνται κοινοῖς αἱ ψυχαὶ σώμασιν
 ἐν ταῖς παλιγγενεσίαις καὶ τὸ νῦν λογικὸν
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      αὖθις γίγνεται ἄλογον καὶ πάλιν ἥμερον τὸ νῦν ἄγριον, ἀλλάσσει δʼ ἡ φύσις ἅπαντα καὶ μετοικίζει
-      <quote rend="blockquote">
-       σαρκῶν ἀλλογνῶτι περιστέλλουσα χιτῶνι
-      </quote>
-      ταῦτʼ οὐκ ἀποτρέπει τῶν ἀνῃρημένων τὸ ἀκόλαστον
+     <milestone n="5" unit="tlnum"/>
+     αὖθις γίγνεται ἄλογον καὶ πάλιν ἥμερον τὸ νῦν ἄγριον, ἀλλάσσει δʼ ἡ φύσις ἅπαντα καὶ μετοικίζει
+     <quote rend="blockquote">
+      σαρκῶν ἀλλογνῶτι περιστέλλουσα χιτῶνι
+     </quote>
+     ταῦτʼ οὐκ ἀποτρέπει τῶν ἀνῃρημένων τὸ ἀκόλαστον
 τὸ καὶ σώματι νόσους καὶ βαρύτητας ἐμποιεῖν καὶ
-      <milestone n="10" unit="tlnum">
-      </milestone>
-      ψυχὴν ἐπὶ πόλεμον ἀνομωτέρων τρεπομένην διαφθείρειν ὅταν ἐθισθῶμεν μὴ αἵματος ἄνευ καὶ φόνου μὴ ξένον ἑστιᾶν, μὴ γάμον ἑορτάζειν, μὴ φίλοις συγγίγνεσθαι.
-     </p>
-     <p lang="it">
-      Cosa sapevano dopo?
+     <milestone n="10" unit="tlnum"/>
+     ψυχὴν ἐπὶ πόλεμον ἀνομωτέρων τρεπομένην διαφθείρειν ὅταν ἐθισθῶμεν μὴ αἵματος ἄνευ καὶ φόνου μὴ ξένον ἑστιᾶν, μὴ γάμον ἑορτάζειν, μὴ φίλοις συγγίγνεσθαι.
+    </p>
+    <p lang="it">
+     Cosa sapevano dopo?
 
 il primo a uccidere un malfattore con un coltello di bronzo
 
@@ -624,25 +522,23 @@ in una sola direzione, ma il primo dei buoi oltrepassò gli aratori.
 così sono i principi tirannici.
 Infatti, come nel primo caso gli Ateniesi estendevano il male dei calunniatori di cui Pitideo era accusato, nel secondo allo stesso modo e nel terzo;
  Pertanto, quando sei nato, Nikeraton era circondato dall'ucciso Nikius, dal generale Theramenes e dal filosofo Polemarchus.
-ornis li ovvero pesci trafilati e gustati così
+li ornis o pesci attraenti e saporiti come questo
 
 e progettarono tra loro l'uccisione sul monte del lavoro, e le pecore mondane e il
 Alectryona cieca e piccola così
  parlando avidamente del massacro degli uomini e
- arrivarono guerre e omicidi. ma se non li dimostra, che le anime hanno bisogno di corpi in comune
+ arrivarono guerre e omicidi. ma se non li dimostra, hanno bisogno di anime e corpi comuni
 nelle generazioni passate e nella logica attuale
 
-quindi il selvaggio ora diventa cavallo e anche oggi la natura tutto cambia e abita
+quindi il selvaggio ora diventa cavallo e anche oggi la natura tutto cambia e abita 
 Sarkons allognotis peritellousa ha colpito Ma questo non impedisce a coloro che sono stati guariti di soffrire
 anche le malattie e la gravità colpiscono il corpo
  anima nella guerra di persone senza legge minacciate di corruzione quando diventiamo dipendenti dall'omicidio senza spargimento di sangue, senza estranei, senza matrimoni celebrati, senza amici che si incontrano.
-      <note DBPEDIA_ENT="pesci" category="DBpedia:Species" end="485" lang="it" link="http://it.dbpedia.org/resource/Pesce" score="0.9999778480125996" source="DBpedia" start="482" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="anime" category="" end="741" lang="it" link="http://it.dbpedia.org/resource/Anima" score="0.9999983145262938" source="DBpedia" start="738" type="automatic">
-      </note>
-     </p>
-     <p lang="en">
-      What did they know after that?
+     <note category="DBpedia:Species" end="480" lang="it" link="http://it.dbpedia.org/resource/Pesce" mention="pesci" score="0.9999901560493286" source="DBpedia" start="477" type="automatic"/>
+     <note category="" end="754" lang="it" link="http://it.dbpedia.org/resource/Anima" mention="anime" score="0.9999924010544375" source="DBpedia" start="751" type="automatic"/>
+    </p>
+    <p lang="en">
+     What did they know after that?
 
 the first to kill an evildoer with a bronze knife
 
@@ -653,240 +549,199 @@ one way, but the first of the oxen passed the ploughmen.
 so are the tyrannical princes.
 for as in the first case the Athenians extended the evil of the slanderers, whom Pitideus was accused of, and in the second likewise, and in the third;
  Therefore, when you were born, Nikeraton was surrounded by the slain Nikius, and Theramenes the general, and Polemarchus the philosopher.
-ornis them or fish drawn and tasted like this
+ornis them or fish attractive and tasting like this
 
 and they planned among them the slaying on the mountain of labor, and the worldly sheep and the
 blind alectryona and little like this
  greedily mouthing on the slaughter of men and
- wars and murders came. but if he does not prove them, that the souls need bodies in common
+ wars and murders came. but if he does not prove them, that they need common souls and bodies
 in past generations and the present logic
 
-therefore the wild now becomes a horse and again today, nature changes everything and inhabits
+therefore the wild now becomes a horse and again today, nature changes everything and inhabits 
 sarkons allognotis peritellousa hit But this does not prevent those who have been healed from suffering
 diseases and gravity also affect the body
  soul on war of lawless people threatened with corruption when we become addicted to bloodless murder, no strangers, no weddings celebrated, no friends coming together.
-      <note DBPEDIA_ENT="evildoer" category="" end="61" lang="en" link="http://dbpedia.org/resource/Evil" score="1.0" source="DBpedia" start="59" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Theramenes" category="" end="417" lang="en" link="http://dbpedia.org/resource/Theramenes" score="1.0" source="DBpedia" start="414" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Polemarchus" category="" end="445" lang="en" link="http://dbpedia.org/resource/Polemarchus" score="1.0" source="DBpedia" start="442" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="philosopher" category="" end="461" lang="en" link="http://dbpedia.org/resource/Philosophy" score="0.6860143577039831" source="DBpedia" start="458" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="logic" category="" end="830" lang="en" link="http://dbpedia.org/resource/Logic" score="0.9966912734164098" source="DBpedia" start="827" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="gravity" category="" end="1050" lang="en" link="http://dbpedia.org/resource/Gravity" score="0.9981687193027029" source="DBpedia" start="1046" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="soul" category="" end="1080" lang="en" link="http://dbpedia.org/resource/Soul" score="0.9999985452266523" source="DBpedia" start="1076" type="automatic">
-      </note>
-     </p>
-    </div1>
-    <div1 n="5" type="section">
-     <p>
-      καίτοι τῆς λεγομένης ταῖς ψυχαῖς εἰς σώματα
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      <milestone id="stephpage-998d" n="998d" unit="stephpage">
-      </milestone>
-      παλιμμεταβολῆς εἰ μὴ πίστεως ἄξιον τὸ ἀποδεικνύμενον, ἀλλʼ εὐλαβείας γε μεγάλης καὶ δέους τὸ ἀμφίβολον. οἷον εἴ τις ἐν νυκτομαχίαις στρατοπέδων ἀνδρὶ πεπτωκότι καὶ τὸ σῶμα κρυπτομένῳ τοῖς ὅπλοις ἐπιφέρων ξίφος ἀκούσειέ τινος λέγοντος
-      <milestone n="20" unit="tlnum">
-      </milestone>
-      οὐ πάνυ μὲν εἰδέναι βεβαίως, οἴεσθαι δὲ καὶ δοκεῖν υἱὸν αὐτοῦ τὸν κείμενον ἢ ἀδελφὸν ἢ πατέρα ἢ σύσκηνον εἶναι τί βέλτιον, ὑπονοίᾳ προσθέμενον
-      <pb id="v.6.p.117">
-      </pb>
-      οὐκ ἀληθεῖ προέσθαι τὸν ἐχθρὸν ὡς φίλον, ἢ καταφρονήσαντα τοῦ μὴ βεβαίου πρὸς πίστιν ἀνελεῖν
-      <milestone id="stephpage-998e" n="998e" unit="stephpage">
-      </milestone>
-      τὸν οἰκεῖον ὡς πολέμιον; ἐκεῖνο δεινὸν φήσετε πάντες. σκόπει δὲ καὶ τὴν ἐν τῇ τραγῳδίᾳ Μερόπην
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      ἐπὶ τὸν υἱὸν αὐτὸν ὡς φονέα τοῦ υἱοῦ πέλεκυν ἀραμένην καὶ λέγουσαν
-      <quote rend="blockquote">
-       <l>
-        ὠνητέραν δὴ τήνδʼ ἐγὼ δίδωμί σοι
-       </l>
-       <l lang="it">
-        Domani ti insegnerò
-       </l>
-       <l lang="en">
-        Tomorrow I will teach you
-       </l>
-       <l>
-        πληγήν·
-       </l>
-       <l lang="it">
-        male;
-       </l>
-       <l lang="en">
-        hurt;
-       </l>
-      </quote>
-      ὅσον ἐν τῷ θεάτρῳ κίνημα ποιεῖ, συνεξορθιάζουσα
-      <milestone n="10" unit="tlnum">
-      </milestone>
-      φόβῳ, καὶ δέος μὴ φθάσῃ τὸν ἐπιλαμβανόμενον γέροντα καὶ τρώσῃ τὸ μειράκιον. εἰ δʼ ἕτερος γέρων παρεστήκοι λέγων “παῖσον, πολέμιός ἐστιν·” ἕτερος
+     <note category="" end="61" lang="en" link="http://dbpedia.org/resource/Evil" mention="evildoer" score="1.0" source="DBpedia" start="59" type="automatic"/>
+     <note category="" end="417" lang="en" link="http://dbpedia.org/resource/Theramenes" mention="Theramenes" score="1.0" source="DBpedia" start="414" type="automatic"/>
+     <note category="" end="445" lang="en" link="http://dbpedia.org/resource/Polemarchus" mention="Polemarchus" score="1.0" source="DBpedia" start="442" type="automatic"/>
+     <note category="" end="461" lang="en" link="http://dbpedia.org/resource/Philosophy" mention="philosopher" score="0.6851563047845656" source="DBpedia" start="458" type="automatic"/>
+     <note category="" end="838" lang="en" link="http://dbpedia.org/resource/Logic" mention="logic" score="0.9953047706639416" source="DBpedia" start="835" type="automatic"/>
+     <note category="" end="1059" lang="en" link="http://dbpedia.org/resource/Gravity" mention="gravity" score="0.9986274076070513" source="DBpedia" start="1055" type="automatic"/>
+     <note category="" end="1089" lang="en" link="http://dbpedia.org/resource/Soul" mention="soul" score="0.9999982471599097" source="DBpedia" start="1085" type="automatic"/>
+    </p>
+   </div1>
+   <div1 n="5" type="section">
+    <p>
+     καίτοι τῆς λεγομένης ταῖς ψυχαῖς εἰς σώματα
+     <milestone n="15" unit="tlnum"/>
+     <milestone id="stephpage-998d" n="998d" unit="stephpage"/>
+     παλιμμεταβολῆς εἰ μὴ πίστεως ἄξιον τὸ ἀποδεικνύμενον, ἀλλʼ εὐλαβείας γε μεγάλης καὶ δέους τὸ ἀμφίβολον. οἷον εἴ τις ἐν νυκτομαχίαις στρατοπέδων ἀνδρὶ πεπτωκότι καὶ τὸ σῶμα κρυπτομένῳ τοῖς ὅπλοις ἐπιφέρων ξίφος ἀκούσειέ τινος λέγοντος
+     <milestone n="20" unit="tlnum"/>
+     οὐ πάνυ μὲν εἰδέναι βεβαίως, οἴεσθαι δὲ καὶ δοκεῖν υἱὸν αὐτοῦ τὸν κείμενον ἢ ἀδελφὸν ἢ πατέρα ἢ σύσκηνον εἶναι τί βέλτιον, ὑπονοίᾳ προσθέμενον
+     <pb id="v.6.p.117"/>
+     οὐκ ἀληθεῖ προέσθαι τὸν ἐχθρὸν ὡς φίλον, ἢ καταφρονήσαντα τοῦ μὴ βεβαίου πρὸς πίστιν ἀνελεῖν
+     <milestone id="stephpage-998e" n="998e" unit="stephpage"/>
+     τὸν οἰκεῖον ὡς πολέμιον; ἐκεῖνο δεινὸν φήσετε πάντες. σκόπει δὲ καὶ τὴν ἐν τῇ τραγῳδίᾳ Μερόπην
+     <milestone n="5" unit="tlnum"/>
+     ἐπὶ τὸν υἱὸν αὐτὸν ὡς φονέα τοῦ υἱοῦ πέλεκυν ἀραμένην καὶ λέγουσαν
+     <quote rend="blockquote">
+      <l>
+       ὠνητέραν δὴ τήνδʼ ἐγὼ δίδωμί σοι
+      </l>
+      <l lang="it">
+       Domani ti insegnerò
+      </l>
+      <l lang="en">
+       Tomorrow I will teach you
+      </l>
+      <l>
+       πληγήν·
+      </l>
+      <l lang="it">
+       male;
+      </l>
+      <l lang="en">
+       hurt;
+      </l>
+     </quote>
+     ὅσον ἐν τῷ θεάτρῳ κίνημα ποιεῖ, συνεξορθιάζουσα
+     <milestone n="10" unit="tlnum"/>
+     φόβῳ, καὶ δέος μὴ φθάσῃ τὸν ἐπιλαμβανόμενον γέροντα καὶ τρώσῃ τὸ μειράκιον. εἰ δʼ ἕτερος γέρων παρεστήκοι λέγων “παῖσον, πολέμιός ἐστιν·” ἕτερος
 δὲ “μὴ παίσῃς, υἱός ἐστι·” πότερον ἀδίκημα μεῖζον,
 ἐχθροῦ κόλασιν ἐκλιπεῖν διὰ τὸν υἱὸν ἢ τεκνοκτονίᾳ
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      περιπεσεῖν ὑπὸ τῆς πρὸς τὸν ἐχθρὸν ὀργῆς; ὁπότε τοίνυν οὐ μῖσός ἐστιν οὐδὲ θυμὸς ὁ πρὸς τὸν φόνον ἐξάγων ἡμᾶς οὐδʼ ἄμυνά τις οὐδὲ φόβος ὑπὲρ αὑτῶν,
-      <milestone id="stephpage-998f" n="998f" unit="stephpage">
-      </milestone>
-      ἀλλʼ εἰς ἡδονῆς μέρος ἕστηκεν ἱερεῖον ἀνακεκλασμένῳ τραχήλῳ ὑποκείμενον, εἶτα λέγει τῶν
-      <milestone n="20" unit="tlnum">
-      </milestone>
-      φιλοσόφων ὁ μὲν “κατάκοψον, ἄλογόν ἐστι τὸ ζῷον.” ὁ δὲ “ἀνάσχου· τί γὰρ εἰ συγγενοῦς ἢ θεοῦ τινος ἐνταῦθα ψυχὴ κεχώρηκεν;” ἴσος γε, ὦ θεοί, καὶ
-      <pb id="v.6.p.118">
-      </pb>
-      ὅμοιος ὁ κίνδυνος ἕχει, ἂν ἀπειθῶ φαγεῖν κρέας,
+     <milestone n="15" unit="tlnum"/>
+     περιπεσεῖν ὑπὸ τῆς πρὸς τὸν ἐχθρὸν ὀργῆς; ὁπότε τοίνυν οὐ μῖσός ἐστιν οὐδὲ θυμὸς ὁ πρὸς τὸν φόνον ἐξάγων ἡμᾶς οὐδʼ ἄμυνά τις οὐδὲ φόβος ὑπὲρ αὑτῶν,
+     <milestone id="stephpage-998f" n="998f" unit="stephpage"/>
+     ἀλλʼ εἰς ἡδονῆς μέρος ἕστηκεν ἱερεῖον ἀνακεκλασμένῳ τραχήλῳ ὑποκείμενον, εἶτα λέγει τῶν
+     <milestone n="20" unit="tlnum"/>
+     φιλοσόφων ὁ μὲν “κατάκοψον, ἄλογόν ἐστι τὸ ζῷον.” ὁ δὲ “ἀνάσχου· τί γὰρ εἰ συγγενοῦς ἢ θεοῦ τινος ἐνταῦθα ψυχὴ κεχώρηκεν;” ἴσος γε, ὦ θεοί, καὶ
+     <pb id="v.6.p.118"/>
+     ὅμοιος ὁ κίνδυνος ἕχει, ἂν ἀπειθῶ φαγεῖν κρέας,
 ἂν ἀπιστῶ φονεῦσαι τέκνον ἢ ἕτερον οἰκεῖον;
-     </p>
-     <p lang="it">
-      nonostante le cosiddette anime nei corpi
+    </p>
+    <p lang="it">
+     nonostante le cosiddette anime nei corpi
 
  di riluttanza all'incredulità per ciò che è dimostrato, ma di grande riverenza e timore reverenziale per ciò che è dubbio. chiunque abbia visto nelle battaglie notturne degli accampamenti un uomo emaciato e il cui corpo era nascosto tra le armi che portavano una spada, ascolti ciò che dice
 
-nessuno lo sa con certezza, ma lui sa e prova con suo figlio il testo o con il fratello o con il padre o con il fratello cosa è meglio, ha aggiunto pazientemente
+nessuno lo sa con certezza, ma lo sa e prova suo figlio, il testo, o fratello, o padre, o fratello, che è meglio, aggiunto con pazienza
 
 non è vero trattare il nemico come un amico, o disprezzare il non credente e innalzarsi alla fede
  la casa come nemica? Lasciate quel destino, tutti quanti. ma lo intende anche nella tragedia di Merope
- contro questo figlio come assassino del figlio
+ contro questo figlio come assassino del figlio 
 
 Domani ti insegnerò
 
  male;
  Finché c'è movimento nel teatro, si sta riprendendo
- che timore e stupore non colgano il vecchio e divorino il giovane. εἰ δʼ ἕτερος vecchi presenti dicono "gioca, è una lotta"; έτερος
+ Non lasciare che la paura e lo stupore colgano il vecchio e divorino il giovane. εἰ δʼ ἕτερος vecchi presenti dicono "gioca, è una lotta";
 ma "non giocare, sei un figlio" un reato più grave,
 L'inferno nemico scompare il figlio o l'infanticidio
  cadere sotto di lei nell'ira del nemico? quindi dicono che non è l'odio né la rabbia che ci spinge all'omicidio, né la loro difesa né la paura di loro,
  ma nel piacere c'era un prete soggetto a un collo non condannato, così dice
- dei filosofi quello che "si ferma, la vita è un cavallo". Ma "respira, perché cosa succederebbe se i tuoi parenti o l'anima del tuo dio fossero morti?" Allo stesso modo, oh dei, e
- c'è lo stesso pericolo se prometto di mangiare carne,
+ dei filosofi quello che "si ferma, la vita è un cavallo". E lui "respira, perché cosa succederebbe se i tuoi parenti o Dio, la cui anima è morta?" Allo stesso modo, oh dei, e
+ c'è lo stesso pericolo se li sfido a mangiare carne,
 Se non ci credo, uccidi un bambino o un'altra casa?
-      <note DBPEDIA_ENT="anime" category="" end="33" lang="it" link="http://it.dbpedia.org/resource/Anima" score="1.0" source="DBpedia" start="31" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="Merope" category="" end="702" lang="it" link="http://it.dbpedia.org/resource/Opere_di_Gabriele_D'Annunzio" score="0.9997397663994556" source="DBpedia" start="699" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="teatro" category="" end="812" lang="it" link="http://it.dbpedia.org/resource/Teatro" score="0.9999998648882047" source="DBpedia" start="809" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="infanticidio" category="" end="1065" lang="it" link="http://it.dbpedia.org/resource/Infanticidio" score="1.0" source="DBpedia" start="1061" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="collo" category="" end="1276" lang="it" link="http://it.dbpedia.org/resource/Collo" score="1.0" source="DBpedia" start="1272" type="automatic">
-      </note>
-     </p>
-     <p lang="en">
-      despite the so-called souls in bodies
+     <note category="" end="33" lang="it" link="http://it.dbpedia.org/resource/Anima" mention="anime" score="1.0" source="DBpedia" start="31" type="automatic"/>
+     <note category="" end="676" lang="it" link="http://it.dbpedia.org/resource/Opere_di_Gabriele_D'Annunzio" mention="Merope" score="0.9997397663994556" source="DBpedia" start="673" type="automatic"/>
+     <note category="" end="787" lang="it" link="http://it.dbpedia.org/resource/Teatro" mention="teatro" score="0.9999998955531791" source="DBpedia" start="784" type="automatic"/>
+     <note category="" end="1047" lang="it" link="http://it.dbpedia.org/resource/Infanticidio" mention="infanticidio" score="1.0" source="DBpedia" start="1043" type="automatic"/>
+     <note category="" end="1258" lang="it" link="http://it.dbpedia.org/resource/Collo" mention="collo" score="1.0" source="DBpedia" start="1254" type="automatic"/>
+     <note category="" end="1410" lang="it" link="http://it.dbpedia.org/resource/Dio" mention="Dio" score="0.9999999971362286" source="DBpedia" start="1406" type="automatic"/>
+    </p>
+    <p lang="en">
+     despite the so-called souls in bodies
 
- of reluctance to not believe what is proven, but of great reverence and awe of what is doubtful. whoever saw them in the night battles of the camps, a man who was emaciated and whose body was hidden in the weapons carrying a sword, listen to what he is saying
+ of reluctance to unbelief what is proven, but of great reverence and awe of what is doubtful. whoever saw them in the night battles of the camps, a man who was emaciated and whose body was hidden in the weapons carrying a sword, listen to what he is saying
 
 no one knows for sure, but he knows and tries his son, the text, or brother, or father, or brother, which is better, added with patience
 
 it is not true to treat the enemy as a friend, or to despise the unbeliever and rise to faith
  the house as an enemy? Leave that fate, everyone. but he also intends it in the tragedy of Merope
- against this son as the murderer of the son
+ against this son as the murderer of the son 
 
 Tomorrow I will teach you
 
  hurt;
- As long as there is movement in the theater, she is recovering
- let not fear and awe overtake the old man and eat the young man. εἰ δʼ ἕτερος old men present saying "play, it's a fight;" έτερος
+ As long as there is a movement in the theater, she is recovering
+ Do not let fear and awe overtake the old man and eat the young man. εἰ δʼ ἕτερος old men present saying "play, it's a fight;" έτερος
 but "don't play, you're a son" a more serious crime,
 Enemy hell disappear through the son or infanticide
  fall under her to the enemy's wrath? so they say it is not hatred nor anger that drives us to murder, nor is it defending them nor fear of them,
  but in pleasure there was a priest subject to an unconvicted neck, so he says of
- of philosophers the one who "stops, life is a horse." But "breathe, for what if your relatives or your god's soul has died?" Equally, oh gods, and
- the same danger is there, if I promise to eat meat,
+ of philosophers the one who "stops, life is a horse." And he "breathe, for what if your relatives or God, whose soul has died?" Equally, oh gods, and
+ the same danger is there, if I dare them to eat meat,
 If I don't believe, do you kill a child or another house?
-      <note DBPEDIA_ENT="Merope" category="" end="634" lang="en" link="http://dbpedia.org/resource/Heliades" score="0.9236451849047596" source="DBpedia" start="631" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="infanticide" category="" end="1010" lang="en" link="http://dbpedia.org/resource/Infanticide" score="0.9999999846495485" source="DBpedia" start="1006" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="soul" category="" end="1360" lang="en" link="http://dbpedia.org/resource/Soul" score="0.9999999999560032" source="DBpedia" start="1356" type="automatic">
-      </note>
-     </p>
-    </div1>
-    <div1 n="6" type="section">
-     <milestone id="stephpage-999a" n="999a" unit="stephpage">
-     </milestone>
-     <p>
-      οὐκ ἴσος δʼ ἔτι καὶ οὗτος ὁ ἀγὼν τοῖς
+     <note category="" end="631" lang="en" link="http://dbpedia.org/resource/Heliades" mention="Merope" score="0.9236451849048646" source="DBpedia" start="628" type="automatic"/>
+     <note category="" end="1013" lang="en" link="http://dbpedia.org/resource/Infanticide" mention="infanticide" score="0.9999999760794939" source="DBpedia" start="1009" type="automatic"/>
+     <note category="" end="1355" lang="en" link="http://dbpedia.org/resource/God_in_Islam" mention="God" score="0.9720618927668919" source="DBpedia" start="1351" type="automatic"/>
+     <note category="" end="1366" lang="en" link="http://dbpedia.org/resource/Soul" mention="soul" score="0.9999999999578222" source="DBpedia" start="1362" type="automatic"/>
+    </p>
+   </div1>
+   <div1 n="6" type="section">
+    <milestone id="stephpage-999a" n="999a" unit="stephpage"/>
+    <p>
+     οὐκ ἴσος δʼ ἔτι καὶ οὗτος ὁ ἀγὼν τοῖς
 Στωικοῖς ὑπὲρ τῆς σαρκοφαγίας. τίς  γὰρ ὁ πολὺς
-      <milestone n="5" unit="tlnum">
-      </milestone>
-      τόνος· εἰς τὴν γαστέρα καὶ τὰ ὀπτανεῖα; τί τὴν ἡδονὴν θηλύνοντες καὶ διαβάλλοντες ὡς οὔτʼ ἀγαθὸν οὔτε προηγούμενον οὔτʼ οἰκεῖον οὕτω περὶ τὰ τῶν ἡδονῶν ἐσπουδάκασι; καὶ μὴν ἀκόλουθον ἦν αὐτοῖς,
+     <milestone n="5" unit="tlnum"/>
+     τόνος· εἰς τὴν γαστέρα καὶ τὰ ὀπτανεῖα; τί τὴν ἡδονὴν θηλύνοντες καὶ διαβάλλοντες ὡς οὔτʼ ἀγαθὸν οὔτε προηγούμενον οὔτʼ οἰκεῖον οὕτω περὶ τὰ τῶν ἡδονῶν ἐσπουδάκασι; καὶ μὴν ἀκόλουθον ἦν αὐτοῖς,
 εἰ μύρον ἐξελαύνουσι καὶ πέμμα τῶν συμποσίων,
-      <milestone n="10" unit="tlnum">
-      </milestone>
-      μᾶλλον αἷμα καὶ σάρκα δυσχεραίνειν. νῦν δʼ ὥσπερ εἰς τὰς ἐφημερίδας φιλοσοφοῦντες δαπάνην ἀφαιροῦσι τῶν δείπνων ἐν τοῖς ἀχρήστοις καὶ περιττοῖς,
+     <milestone n="10" unit="tlnum"/>
+     μᾶλλον αἷμα καὶ σάρκα δυσχεραίνειν. νῦν δʼ ὥσπερ εἰς τὰς ἐφημερίδας φιλοσοφοῦντες δαπάνην ἀφαιροῦσι τῶν δείπνων ἐν τοῖς ἀχρήστοις καὶ περιττοῖς,
 τὸ δʼ ἀνήμερον τῆς πολυτελείας καὶ φονικὸν οὐ παραιτοῦνται. “ναί, φησίν, οὐδὲν γὰρ ἡμῖν πρὸς
-      <milestone n="15" unit="tlnum">
-      </milestone>
-      <milestone id="stephpage-999b" n="999b" unit="stephpage">
-      </milestone>
-      τὰ ἄλογα δίκαιον ἔστιν.” οὐδὲ γὰρ πρὸς τὸ μύρον, φαίη τις ἄν, οὐδὲ πρὸς τὰ ξενικὰ τῶν ἡδυσμάτων ἀλλὰ καὶ τούτων ἀποτρέπεσθε, τὸ μὴ χρήσιμον μηδʼ ἀναγκαῖον ἐν ἡδονῇ πανταχόθεν ἐξελαύνοντες.
-     </p>
-     <p lang="it">
-      Nessuna età è uguale e questa è la battaglia per loro
+     <milestone n="15" unit="tlnum"/>
+     <milestone id="stephpage-999b" n="999b" unit="stephpage"/>
+     τὰ ἄλογα δίκαιον ἔστιν.” οὐδὲ γὰρ πρὸς τὸ μύρον, φαίη τις ἄν, οὐδὲ πρὸς τὰ ξενικὰ τῶν ἡδυσμάτων ἀλλὰ καὶ τούτων ἀποτρέπεσθε, τὸ μὴ χρήσιμον μηδʼ ἀναγκαῖον ἐν ἡδονῇ πανταχόθεν ἐξελαύνοντες.
+    </p>
+    <p lang="it">
+     Nessuna età è uguale e questa è la battaglia per loro
 Stoici per carnivoro. per ciò che è grande
- tonno; nello stomaco e optaneas? Che cosa hai studiato sulle cose del piacere, insegnando e diffondendo il piacere come né bene né antecedente né dimora? e non c'era nessun loro seguace,
+ tonno; nello stomaco e nelle optanee? Che cosa hai studiato sulle cose del piacere, insegnando e diffondendo il piacere come né bene né antecedente né dimora? e non c'era nessun loro seguace,
 nella mirra sgorgano anche dai banchetti,
  piuttosto il sangue e la carne sono difficili. ora vedete come nel giornale i filosofi passavano togliendo le cene nell'inutile e nel superfluo,
 Non rinunciano al dʼanimero del lusso e della morte. "Sì, andiamo, perché non abbiamo niente da dirci
 
  i cavalli sono giusti." poiché non alla mirra, alla cenere, non agli estranei dei vestiti, ma evita anche questi, gli inutili elementi necessari al piacere che spuntano ovunque.
-      <note DBPEDIA_ENT="Stoici" category="" end="62" lang="it" link="http://it.dbpedia.org/resource/Stoicismo" score="1.0" source="DBpedia" start="60" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="carnivoro" category="" end="73" lang="it" link="http://it.dbpedia.org/resource/Carnivoro" score="0.985613304745746" source="DBpedia" start="71" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="tonno" category="DBpedia:Species" end="107" lang="it" link="http://it.dbpedia.org/resource/Thunnus" score="0.9993599390602561" source="DBpedia" start="104" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="mirra" category="" end="300" lang="it" link="http://it.dbpedia.org/resource/Mirra" score="1.0" source="DBpedia" start="297" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="mirra" category="" end="626" lang="it" link="http://it.dbpedia.org/resource/Mirra" score="1.0" source="DBpedia" start="623" type="automatic">
-      </note>
-     </p>
-     <p lang="en">
-      No age is equal, and this is the battle for them
+     <note category="" end="62" lang="it" link="http://it.dbpedia.org/resource/Stoicismo" mention="Stoici" score="1.0" source="DBpedia" start="60" type="automatic"/>
+     <note category="" end="73" lang="it" link="http://it.dbpedia.org/resource/Carnivoro" mention="carnivoro" score="0.985613304745746" source="DBpedia" start="71" type="automatic"/>
+     <note category="DBpedia:Species" end="107" lang="it" link="http://it.dbpedia.org/resource/Thunnus" mention="tonno" score="0.9993599390602561" source="DBpedia" start="104" type="automatic"/>
+     <note category="" end="305" lang="it" link="http://it.dbpedia.org/resource/Mirra" mention="mirra" score="1.0" source="DBpedia" start="302" type="automatic"/>
+     <note category="" end="631" lang="it" link="http://it.dbpedia.org/resource/Mirra" mention="mirra" score="1.0" source="DBpedia" start="628" type="automatic"/>
+    </p>
+    <p lang="en">
+     No age is equal, and this is the battle for them
 Stoics for carnivore. for what is the great
- tuna; in the stomach and optaneas? What did you study about the things of pleasure, teaching and disseminating pleasure as neither a good nor an antecedent nor a home? and there was no follower of them,
+ tuna; in the stomach and the optaneas? What did you study about the things of pleasure, teaching and disseminating pleasure as neither a good nor an antecedent nor a home? and there was no follower of them,
 in myrrh they also flow out from banquets,
  rather blood and flesh are difficult. now see how in the newspaper philosophers spent taking away the dinners in the useless and unnecessary,
 They do not give up the dʼanimero of luxury and death. "Yes, let's go, because we don't have anything to say
 
  horses are fair." for not to the myrrh, to the ashes, not to the aliens of the garments, but avoid these too, the unuseful necessaries in pleasure everywhere springing forth.
-      <note DBPEDIA_ENT="Stoics" category="" end="57" lang="en" link="http://dbpedia.org/resource/Stoicism" score="1.0" source="DBpedia" start="55" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="carnivore" category="" end="68" lang="en" link="http://dbpedia.org/resource/Carnivore" score="0.999943194744596" source="DBpedia" start="66" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="tuna" category="" end="103" lang="en" link="http://dbpedia.org/resource/Tuna" score="0.9999998248035962" source="DBpedia" start="100" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="myrrh" category="" end="309" lang="en" link="http://dbpedia.org/resource/Myrrh" score="1.0" source="DBpedia" start="306" type="automatic">
-      </note>
-      <note DBPEDIA_ENT="myrrh" category="" end="636" lang="en" link="http://dbpedia.org/resource/Myrrh" score="1.0" source="DBpedia" start="633" type="automatic">
-      </note>
-     </p>
-    </div1>
-    <div1 n="7" type="section">
-     <p>
-      οὐ μὴν ἀλλὰ καὶ τοῦτʼ ἤδη σκεψώμεθα, τὸ
-      <milestone n="20" unit="tlnum">
-      </milestone>
-      μηδὲν εἶναι πρὸς τὰ ζῷα δίκαιον ἡμῖν, μηδὲ τεχνικῶς
+     <note category="" end="57" lang="en" link="http://dbpedia.org/resource/Stoicism" mention="Stoics" score="1.0" source="DBpedia" start="55" type="automatic"/>
+     <note category="" end="68" lang="en" link="http://dbpedia.org/resource/Carnivore" mention="carnivore" score="0.999943194744596" source="DBpedia" start="66" type="automatic"/>
+     <note category="" end="103" lang="en" link="http://dbpedia.org/resource/Tuna" mention="tuna" score="0.9999998248035962" source="DBpedia" start="100" type="automatic"/>
+     <note category="" end="313" lang="en" link="http://dbpedia.org/resource/Myrrh" mention="myrrh" score="1.0" source="DBpedia" start="310" type="automatic"/>
+     <note category="" end="640" lang="en" link="http://dbpedia.org/resource/Myrrh" mention="myrrh" score="1.0" source="DBpedia" start="637" type="automatic"/>
+    </p>
+   </div1>
+   <div1 n="7" type="section">
+    <p>
+     οὐ μὴν ἀλλὰ καὶ τοῦτʼ ἤδη σκεψώμεθα, τὸ
+     <milestone n="20" unit="tlnum"/>
+     μηδὲν εἶναι πρὸς τὰ ζῷα δίκαιον ἡμῖν, μηδὲ τεχνικῶς
 μηδὲ σοφιστικῶς, ἀλλὰ τοῖς πάθεσιν ἐμβλέψαντες τοῖς ἑαυτῶν καὶ πρὸς ἑαυτοὺς ἀνθρωπικῶς λαλήσαντες καὶ ἀνακρίναντες.
-     </p>
-     <p lang="it">
-      no, ma a questo stiamo già pensando, il
+    </p>
+    <p lang="it">
+     no, ma a questo stiamo già pensando, il
  non è giusto nei confronti degli animali, non tecnicamente
 non sofisticamente, ma alle passioni, guardandosi e parlandosi umanamente e interrogandosi.
-     </p>
-     <p lang="en">
-      no, but we are already thinking about this, the
+    </p>
+    <p lang="en">
+     no, but we are already thinking about this, the
  it's not fair to the animals, not technically
 not sophistically, but to the passions, looking at themselves and speaking to themselves humanely and interrogating.
-     </p>
-    </div1>
-   </text>
-  </tei.2>
- 
-
+    </p>
+   </div1>
+  </body>
+ </text>
+</TEI.2>
