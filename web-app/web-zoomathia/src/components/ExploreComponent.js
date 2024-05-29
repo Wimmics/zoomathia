@@ -1,78 +1,58 @@
 import { useLayoutEffect, useState, useCallback, useRef } from 'react'
 import styles from "./css_modules/BookComponents.module.css"
-import ParagraphDisplay from './ParagraphComponent'
-import SelectComponent from './SelectComponent'
+//import DisplayTextComponent from './DisplayTextComponent'
 import Select from 'react-select'
-import SectionComponent from './SectionComponent'
+import DisplayTextComponent from './DisplayTextComponent'
 
-const BookPage = () => {
-    const [books, setBooks] = useState([])
-    const [sections, setSections] = useState([])
-    const [title, setTitle] = useState()
+const ExplorerComponent = () => {
+
+    const [displayTextComponent, setDisplayTextComponent] = useState(<p>No text selected</p>)
 
     const [authorList, setAuthorList] = useState([])
     const [worksList, setWorks] = useState([]);
+
     const [author, setAuthor] = useState('')
     const [work, setWork] = useState('')
-    const [currentLang, setCurrentLang] = useState('en')
+    const [title, setTitle] = useState('')
+
     const controller = useRef(null)
 
-    const getChildPart = useCallback((e) => {
-        setSections([])
-        if (controller.current) {
-            controller.current.abort()
-        }
-        controller.current = new AbortController()
-        const uri = e.value
-        const title = e.label
-        setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controller} />)
-    }, [])
+    const getDisplayText = useCallback((e) => {
 
-    const searchConcepts = async (input) => {
-        const retrieved_concept = []
-        const callForData = async (input) => {
-            if (input === '') {
-                return []
-            } else {
-                const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}searchConcepts?input=${input}&lang=${currentLang}`).then(response => response.json())
-                for (const concept of data) {
-                    retrieved_concept.push({ value: concept.uri, label: `${concept.label}@${currentLang}` })
-                }
-                return retrieved_concept
-            }
-        }
-        return await callForData(input)
-    }
+        setWork({ label: e.label, value: e.value })
+        setDisplayTextComponent(<p>No text selected</p>)
 
-    const getBook = useCallback((e) => {
-        let bookList = [{ value: '', label: '' }];
-        setBooks([])
+        if (author.label !== e.author) {
+            setAuthor({ label: e.author, value: e.value })
+            setTitle(`${e.author} - ${e.label}`)
+        } else {
+            setTitle(``)
+        }
+
         if (controller.current) {
             controller.current.abort("Canceling Fetch: Work has changed...")
         }
         controller.current = new AbortController()
-        setWork({ label: e.label, value: e.value })
 
-        if (author.label !== e.author) {
-            setAuthor({ label: e.author, value: e.value })
-        }
+
 
         const callForData = async () => {
+            let bookList = [{ value: '', label: '' }];
+
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getBookList?title=${e.value}`
             ).then(response => response.json())
             for (const book of data) {
                 bookList.push({ value: book.uri, label: book.title, id: book.id, number: book.id })
             }
 
-            setBooks(<section>
-                <h2 key="book">Select book</h2>
-                <Select className={styles["select-field"]} onChange={getChildPart} options={bookList} selectedValue={{ value: '', label: '' }} />
-            </section>)
-            setTitle(`${e.author} - ${e.label}`)
+            setDisplayTextComponent(
+                <DisplayTextComponent className={styles["select-field"]}
+                    controller={controller.current}
+                    bookList={bookList} />)
         }
 
         callForData()
-    }, [getChildPart])
+    }, [])
 
     const getWorks = useCallback((e) => {
         const workList = [{ label: '', value: '' }]
@@ -84,7 +64,8 @@ const BookPage = () => {
         controller.current = new AbortController()
         const callForData = async () => {
             setWorks([{ label: '', value: '' }])
-            setBooks([])
+            setTitle('')
+            setDisplayTextComponent(<p>No text selected</p>)
             if (e.value === '') {
                 urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorks`
             }
@@ -140,7 +121,7 @@ const BookPage = () => {
             </section>
             <section key="work" className={styles["select-field-section"]}>
                 <h2 key="work">Work</h2>
-                <Select id="work-select" className={styles["select-field"]} onChange={getBook} options={worksList} value={work} selectedValue={work} />
+                <Select id="work-select" className={styles["select-field"]} onChange={getDisplayText} options={worksList} value={work} selectedValue={work} />
             </section>
         </header>
 
@@ -149,12 +130,11 @@ const BookPage = () => {
             <h2>{title}</h2>
         </header>
 
-        {books}
-        {sections}
+        {displayTextComponent}
 
     </div>
 }
 
-export default BookPage;
+export default ExplorerComponent;
 
 
