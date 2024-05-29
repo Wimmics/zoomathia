@@ -107,8 +107,10 @@ const CompetencyQuestionComponent = () => {
     }, [setOptions])
 
     return <div className={styles["box-content"]}>
-        <h2 key="titre_competence">Select a competency question</h2>
-        <Select onChange={updateTable} options={options} />
+        <header>
+            <h2 key="titre_competence">Select a competency question</h2>
+            <Select onChange={updateTable} options={options} />
+        </header>
         <h3>{title}</h3>
         {table}
         <h3>Visualisation</h3>
