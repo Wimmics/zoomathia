@@ -49,17 +49,17 @@ def annotate_texts(directory_path, target_path):
                         english_DBpedia_NER = get_NER_from_dbpedia(element, lg)
 
                         #for ent in english_NER.ents:
-                         #   if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
-                          #      translated_element_en = bs_content.new_tag("note")
-                           #     translated_element_en["type"] = "automatic"
-                            #    translated_element_en["source"] = "Wikidata"
+                           # if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
+                              #  translated_element_en = bs_content.new_tag("note")
+                               # translated_element_en["type"] = "automatic"
+                                #translated_element_en["source"] = "Wikidata"
                              #   translated_element_en[ent.label_] = ent.text
-                                #translated_element_en["mention"] = ent.text
-                               #translated_element_en["category"] = ent.label_
-                              #  translated_element_en["start"] = ent.start_char
-                               # translated_element_en["end"] = ent.end_char
-                               # translated_element_en["lang"] = lg
-                               #translated_element_en["score"] = ent._.nerd_score
+                               # translated_element_en["mention"] = ent.text
+                                #translated_element_en["category"] = ent.label_
+                                #translated_element_en["start"] = ent.start_char
+                                #translated_element_en["end"] = ent.end_char
+                                #translated_element_en["lang"] = lg
+                                #translated_element_en["score"] = ent._.nerd_score
                                 #if ent._.url_wikidata is not None:
                                  #   translated_element_en["link"] = ent._.url_wikidata
                                 #element.append(translated_element_en)
