@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 const getBookList = (title) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo: <http://www.zoomathia/2024/zoo#>
-  SELECT DISTINCT ?book ?id ?title WHERE {
+  SELECT DISTINCT ?book ?type ?id ?title WHERE {
     ?book a ?type;
       (schema:identifier|zoo:identifier) ?id;
       (schema:title| zoo:title) ?title.
@@ -34,7 +34,8 @@ router.get('/getBookList', async (req, res) => {
     response.push({
       uri: elt["book"]["value"],
       id: elt["id"]["value"],
-      title: elt["title"]["value"]
+      title: elt["title"]["value"],
+      type: elt['type'].value
     })
   }
 
@@ -187,9 +188,10 @@ router.get("/getChildrenType", async (req, res) => {
 const getChildrenQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia/2024/zoo#> 
-  SELECT DISTINCT ?child ?title WHERE {
+  SELECT DISTINCT ?child ?title ?type WHERE {
     <${uri}> zoo:hasPart ?child.
-    ?child zoo:title ?title.
+    ?child zoo:title ?title;
+      a ?type.
   }ORDER BY ?child`
 }
 
@@ -200,7 +202,8 @@ router.get("/getChildren", async (req, res) => {
   for (const elt of result.results.bindings) {
     response.push({
       uri: elt.child.value,
-      title: elt.title.value
+      title: elt.title.value,
+      type: elt.type.value
     })
   }
 

@@ -4,6 +4,11 @@ import styles from "./css_modules/BookComponents.module.css"
 import Select from 'react-select'
 import DisplayTextComponent from './DisplayTextComponent'
 
+const getTypeFromURI = (uri) => {
+    const uri_split = uri.split('#')
+    return uri_split[uri_split.length - 1]
+}
+
 const ExplorerComponent = () => {
 
     const [displayTextComponent, setDisplayTextComponent] = useState(<p>No text selected</p>)
@@ -38,17 +43,20 @@ const ExplorerComponent = () => {
 
         const callForData = async () => {
             let bookList = [{ value: '', label: '' }];
+            let type = ''
 
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getBookList?title=${e.value}`
             ).then(response => response.json())
             for (const book of data) {
-                bookList.push({ value: book.uri, label: book.title, id: book.id, number: book.id })
+                type = getTypeFromURI(book.type)
+                bookList.push({ value: book.uri, label: book.title, id: book.id, number: book.id, type: getTypeFromURI(book.type) })
             }
 
             setDisplayTextComponent(
                 <DisplayTextComponent className={styles["select-field"]}
-                    controller={controller.current}
-                    bookList={bookList} />)
+                    controller={controller}
+                    bookList={bookList}
+                    type={type} />)
         }
 
         callForData()
@@ -62,6 +70,7 @@ const ExplorerComponent = () => {
             controller.current.abort("Canceling Fetch: Author has changed...")
         }
         controller.current = new AbortController()
+
         const callForData = async () => {
             setWorks([{ label: '', value: '' }])
             setTitle('')
