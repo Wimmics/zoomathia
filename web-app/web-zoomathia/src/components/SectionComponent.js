@@ -5,20 +5,6 @@ const SectionComponent = (props) => {
     const sectionTitle = props.sectionTitle
     const [sectionParagraph, setSectionParagraph] = useState([])
 
-    /*for (const paragraph of data) {
-        title = paragraph.title
-        paras.push(
-            <ParagraphDisplay
-                key={paragraph.id}
-                id={paragraph.id}
-                text={paragraph.text}
-                uri={paragraph.uri}
-                lang={currentLang}
-                controller={controller.current.signal}
-            />
-        )
-    }*/
-
     useLayoutEffect(() => {
         setSectionParagraph([])
         const callForData = async () => {
