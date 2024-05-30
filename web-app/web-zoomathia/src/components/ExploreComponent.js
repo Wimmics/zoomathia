@@ -29,17 +29,15 @@ const ExplorerComponent = () => {
 
         if (author.label !== e.author) {
             setAuthor({ label: e.author, value: e.value })
-            setTitle(`${e.author} - ${e.label}`)
-        } else {
-            setTitle(``)
+
         }
+
+        setTitle(`${e.author} - ${e.label}`)
 
         if (controller.current) {
             controller.current.abort("Canceling Fetch: Work has changed...")
         }
         controller.current = new AbortController()
-
-
 
         const callForData = async () => {
             let bookList = [{ value: '', label: '' }];
@@ -55,12 +53,12 @@ const ExplorerComponent = () => {
             setDisplayTextComponent(
                 <DisplayTextComponent className={styles["select-field"]}
                     controller={controller}
-                    bookList={bookList}
+                    options={bookList}
                     type={type} />)
         }
 
         callForData()
-    }, [])
+    }, [author])
 
     const getWorks = useCallback((e) => {
         const workList = [{ label: '', value: '' }]
@@ -85,9 +83,9 @@ const ExplorerComponent = () => {
             for (const work of data) {
                 workList.push({ value: work.uri, label: work.title, author: work.author })
             }
-            setWorks(workList)
-            setWork({ label: '', value: '' })
-            setAuthor({ label: e.label, value: e.value })
+            setWorks(workList) // Set select options list
+            setWork(null) // Clear value of select input
+            setAuthor({ label: e.label, value: e.value }) // Set current value of author
         }
         callForData()
 

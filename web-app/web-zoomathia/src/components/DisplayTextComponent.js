@@ -8,24 +8,21 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
-const DisplayTextComponent = ({ controller, bookList, type }) => {
+const DisplayTextComponent = ({ controller, options, type }) => {
     const [sections, setSections] = useState([])
-    const [headerSelect, setHeaderSelect] = useState([])
+    const [bookSelect, setBookSelect] = useState([])
+    const [chapterSelect, setChapterSelect] = useState([])
+    const [sectionSelect, setSectionSelect] = useState([])
+    const [paragraphSelect, setParagraphSelect] = useState([])
+
     const [currentLang, setCurrentLang] = useState('en')
-    const [sectionType, setSectionType] = useState(type)
 
     const getChildPart = useCallback((e) => {
         setSections([])
-
-        if (controller.current) {
-            controller.current.abort()
-        }
-        controller.current = new AbortController()
-
         const uri = e.value
         const title = e.label
         setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controller} />)
-    }, [])
+    }, [controller])
 
     const searchConcepts = async (input) => {
         const retrieved_concept = []
@@ -45,63 +42,105 @@ const DisplayTextComponent = ({ controller, bookList, type }) => {
     }
 
     const handleSelect = useCallback((e) => {
-        if (controller.current) {
-            controller.current.abort()
+        const callForData = async () => {
+            console.log(e)
+            let childType = ''
+            const checkType = await fetch(
+                `${process.env.REACT_APP_BACKEND_URL}getChildrenType?uri=${e.value}`,
+            ).then(response => response.json())
+
+            for (const elt of checkType) {
+                childType = getTypeFromURI(elt)
+            }
+
+            if (controller.current) {
+                controller.current = new AbortController()
+            }
+            const signal = controller.current.signal
+
+            console.log(signal)
+            const childOptions = []
+            const data = await fetch(
+                `${process.env.REACT_APP_BACKEND_URL}getChildren?uri=${e.value}`,
+                { signal }
+            ).then(response => response.json())
+            console.log(data)
+            for (const elt of data) {
+                childOptions.push({
+                    label: elt.title,
+                    value: elt.uri,
+                    type: elt.type
+                })
+            }
+
+            switch (childType) {
+                case 'Chapter':
+                    setChapterSelect(<section className={styles["select-field-section"]}>
+                        <h2>Select a Chapter</h2>
+                        <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={{ value: '', label: '' }} />
+                    </section>)
+                    break;
+                case 'Section':
+                    setSectionSelect(<section className={styles["select-field-section"]}>
+                        <h2>Select a Section</h2>
+                        <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={{ value: '', label: '' }} />
+                    </section>)
+                    break;
+                case 'Paragraph':
+                    setParagraphSelect(<section className={styles["select-field-section"]}>
+                        <h2>Select a Paragraph</h2>
+                        <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={{ value: '', label: '' }} />
+                    </section>)
+                    break;
+                default:
+                    console.log("This type is not currently supported to be display", childType)
+            }
+            getChildPart(e)
         }
-        controller.current = new AbortController()
+        callForData()
 
         // Start to print Text based on the URI selected
-        getChildPart(e)
         // Display another selection (paragraph, section etc)
         // Would be easier if current type of uri is stored in selection
-
-        setHeaderSelect(async (current) => {
-            console.log(current.length)
-            if (current.length > 1) {
-                setHeaderSelect(<section className={styles["select-field-section"]}>
-                    <h2>Select a {sectionType}</h2>
-                    <Select className={styles["select-field"]} onChange={handleSelect} options={bookList} selectedValue={{ value: '', label: '' }} />
-                </section>)
-            }
-
-            const callForData = async () => {
-                const childOption = []
-                let type = ''
-                const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getChildren?uri=${e.value}`).then(response => response.json())
-                for (const elt of data) {
-                    type = getTypeFromURI(elt.type)
-                    childOption.push({
-                        label: elt.title ? elt.title !== '' : elt.uri,
-                        value: elt.uri,
-                        type: getTypeFromURI(elt.type)
-                    })
-                }
-                return <section className={styles["select-field-section"]}>
-                    <h2>Select a {type}</h2>
-                    <Select className={styles["select-field"]} onChange={handleSelect} options={await callForData()} selectedValue={{ value: '', label: '' }} />
-                </section>
-            }
-            return [...current, await callForData()]
-
-        })
-
-    }, [setHeaderSelect])
+    }, [controller, getChildPart, setChapterSelect, setParagraphSelect, setSectionSelect])
 
     useLayoutEffect(() => {
-        const callForData = async () => {
-            // Get current subject type (book, chapter, section etc)
-            const data = await fetch().then(reponse => reponse.json())
+        switch (type) {
+            case 'Book':
+                setBookSelect(<section className={styles["select-field-section"]}>
+                    <h2>Select a Book</h2>
+                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
+                </section>)
+                break;
+            case 'Chapter':
+                setChapterSelect(<section className={styles["select-field-section"]}>
+                    <h2>Select a Chapter</h2>
+                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
+                </section>)
+                break;
+            case 'Section':
+                setSectionSelect(<section className={styles["select-field-section"]}>
+                    <h2>Select a Section</h2>
+                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
+                </section>)
+                break;
+            case 'Paragraph':
+                setParagraphSelect(<section className={styles["select-field-section"]}>
+                    <h2>Select a Paragraph</h2>
+                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
+                </section>)
+                break;
+            default:
+                console.log(`Unknown type: ${type}`)
         }
-
-        setHeaderSelect([<section className={styles["select-field-section"]}>
-            <h2>Select a {sectionType}</h2>
-            <Select className={styles["select-field"]} onChange={handleSelect} options={bookList} selectedValue={{ value: '', label: '' }} />
-        </section>])
-    }, [])
+    }, [handleSelect, options, type])
 
     return <section>
-        <header>
-            {headerSelect}
+        <header className={styles["selection-section"]}>
+            {bookSelect}
+            {chapterSelect}
+            {sectionSelect}
+            {paragraphSelect}
         </header>
         {sections}
 
