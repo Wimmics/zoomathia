@@ -42,7 +42,7 @@ const SectionComponent = (props) => {
                     ).then(response => response.json())
                     //setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controller.current} />)
                     for (const elt of children) {
-                        sections.push(<SectionComponent uri={elt.uri} sectionTitle={elt.title} controller={props.controller} />)
+                        sections.push(<SectionComponent key={elt.uri} uri={elt.uri} sectionTitle={elt.title} controller={props.controller} />)
                     }
                     setSectionParagraph(sections)
                 }
@@ -54,7 +54,7 @@ const SectionComponent = (props) => {
         callForData()
     }, [props])
 
-    return <section>
+    return <section key={props.uri}>
         <h2>{sectionTitle}</h2>
         {sectionParagraph}
     </section>
