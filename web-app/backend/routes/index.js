@@ -190,8 +190,12 @@ const getChildrenQuery = (uri) => {
   prefix zoo:     <http://www.zoomathia/2024/zoo#> 
   SELECT DISTINCT ?child ?title ?type WHERE {
     <${uri}> zoo:hasPart ?child.
-    ?child zoo:title ?title;
-      a ?type.
+    ?child a ?type;
+ 	zoo:identifier ?identifier.
+    OPTIONAL {
+      ?child zoo:title ?titleprov.
+    }
+    BIND(IF(BOUND(?titleprov), ?titleprov, ?identifier) AS ?title)
   }ORDER BY ?child`
 }
 
@@ -240,6 +244,32 @@ router.get('/getParagraphs', async (req, res) => {
   res.status(200).json(response)
 })
 
+const getParagraphAloneQuery = (uri) => {
+  return `prefix schema: <http://schema.org/>
+  prefix zoo:     <http://www.zoomathia/2024/zoo#> 
+  SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?text WHERE {
+    <${uri}> a ?type;
+      (schema:identifier|zoo:identifier) ?id_p;
+      (schema:text|zoo:text) ?text.
+    FILTER(?type in (zoo:Paragraph, schema:Paragraph))
+}ORDER BY ?id
+  `
+}
+
+router.get('/getParagraphAlone', async (req, res) => {
+  let response = []
+  const result = await executeSPARQLRequest(endpoint, getParagraphAloneQuery(req.query.uri));
+  for (const elt of result.results.bindings) {
+    response.push({
+      uri: req.query.uri,
+      text: elt.text.value,
+      id: elt.id.value
+    })
+  }
+
+  res.status(200).json(response)
+})
+
 const getConceptsQuery = (uri, lang) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo: <http://www.zoomathia/2024/zoo#>
@@ -268,7 +298,7 @@ const getConceptsQuery = (uri, lang) => {
   }ORDER BY ?label`
 }
 
-router.get('/getConcepts', async (req, res, next) => {
+router.get('/getConcepts', async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, getConceptsQuery(req.query.uri, req.query.lang))
   const response = []
 

@@ -20,7 +20,7 @@ const ExplorerComponent = () => {
     const [work, setWork] = useState('')
     const [title, setTitle] = useState('')
 
-    const controller = useRef(null)
+    const controller = useRef(new AbortController())
 
     const getDisplayText = useCallback((e) => {
 

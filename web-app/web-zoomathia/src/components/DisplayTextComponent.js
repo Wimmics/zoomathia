@@ -1,7 +1,8 @@
-import { useState, useCallback, useEffect, useLayoutEffect } from "react";
+import { useState, useCallback, useRef, useLayoutEffect } from "react";
 import SectionComponent from './SectionComponent'
 import Select from 'react-select'
 import styles from "./css_modules/BookComponents.module.css"
+import ParagraphDisplay from "./ParagraphComponent";
 
 const getTypeFromURI = (uri) => {
     const uri_split = uri.split('#')
@@ -14,6 +15,7 @@ const DisplayTextComponent = ({ controller, options, type }) => {
     const [chapterSelect, setChapterSelect] = useState([])
     const [sectionSelect, setSectionSelect] = useState([])
     const [paragraphSelect, setParagraphSelect] = useState([])
+    const controllerRef = useRef(controller.current)
 
     const [currentLang, setCurrentLang] = useState('en')
 
@@ -21,8 +23,32 @@ const DisplayTextComponent = ({ controller, options, type }) => {
         setSections([])
         const uri = e.value
         const title = e.label
-        setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controller} />)
-    }, [controller])
+        setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controllerRef} />)
+    }, [controllerRef])
+
+    const getParagraph = useCallback((e) => {
+        const signal = controllerRef.current.signal
+
+        const callForData = async () => {
+            const data = await fetch(
+                `${process.env.REACT_APP_BACKEND_URL}getParagraphAlone?uri=${e.value}`,
+                { signal }
+            ).then(response => response.json())
+
+            const para = []
+            for (const elt of data) {
+                para.push(<ParagraphDisplay
+                    key={elt.id}
+                    id={elt.id}
+                    text={elt.text}
+                    uri={elt.uri}
+                    lang={"en"}
+                    controller={controllerRef} />)
+            }
+            setSections(para)
+        }
+        callForData()
+    }, [])
 
     const searchConcepts = async (input) => {
         const retrieved_concept = []
@@ -42,8 +68,13 @@ const DisplayTextComponent = ({ controller, options, type }) => {
     }
 
     const handleSelect = useCallback((e) => {
+        if (controllerRef.current) {
+            controllerRef.current.abort()
+        }
+        controllerRef.current = new AbortController()
+        const signal = controllerRef.current.signal
+
         const callForData = async () => {
-            console.log(e)
             let childType = ''
             const checkType = await fetch(
                 `${process.env.REACT_APP_BACKEND_URL}getChildrenType?uri=${e.value}`,
@@ -53,18 +84,12 @@ const DisplayTextComponent = ({ controller, options, type }) => {
                 childType = getTypeFromURI(elt)
             }
 
-            if (controller.current) {
-                controller.current = new AbortController()
-            }
-            const signal = controller.current.signal
-
-            console.log(signal)
             const childOptions = []
             const data = await fetch(
                 `${process.env.REACT_APP_BACKEND_URL}getChildren?uri=${e.value}`,
                 { signal }
             ).then(response => response.json())
-            console.log(data)
+
             for (const elt of data) {
                 childOptions.push({
                     label: elt.title,
@@ -72,30 +97,38 @@ const DisplayTextComponent = ({ controller, options, type }) => {
                     type: elt.type
                 })
             }
+            console.log(e.type)
+            if (getTypeFromURI(e.type) === 'Paragraph') {
+                getParagraph(e)
 
-            switch (childType) {
-                case 'Chapter':
-                    setChapterSelect(<section className={styles["select-field-section"]}>
-                        <h2>Select a Chapter</h2>
-                        <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={{ value: '', label: '' }} />
-                    </section>)
-                    break;
-                case 'Section':
-                    setSectionSelect(<section className={styles["select-field-section"]}>
-                        <h2>Select a Section</h2>
-                        <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={{ value: '', label: '' }} />
-                    </section>)
-                    break;
-                case 'Paragraph':
-                    setParagraphSelect(<section className={styles["select-field-section"]}>
-                        <h2>Select a Paragraph</h2>
-                        <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={{ value: '', label: '' }} />
-                    </section>)
-                    break;
-                default:
-                    console.log("This type is not currently supported to be display", childType)
+            } else {
+
+                switch (childType) {
+                    case 'Chapter':
+                        setChapterSelect(<section className={styles["select-field-section"]}>
+                            <h2>Select a Chapter</h2>
+                            <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
+                        </section>)
+                        getChildPart(e)
+                        break;
+                    case 'Section':
+                        setSectionSelect(<section className={styles["select-field-section"]}>
+                            <h2>Select a Section</h2>
+                            <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
+                        </section>)
+                        getChildPart(e)
+                        break;
+                    case 'Paragraph':
+                        setParagraphSelect(<section className={styles["select-field-section"]}>
+                            <h2>Select a Paragraph</h2>
+                            <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
+                        </section>)
+                        getChildPart(e)
+                        break;
+                    default:
+                        console.log("This type is not currently supported to be display", childType)
+                }
             }
-            getChildPart(e)
         }
         callForData()
 
