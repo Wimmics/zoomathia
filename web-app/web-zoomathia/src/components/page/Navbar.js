@@ -8,10 +8,10 @@ const Navbar = () => {
 
             </div>
             <div className={styles["menu-box"]}>
-                <NavLink to='/' activeClassName='active'>Home</NavLink>
-                <NavLink to='/ExploreTheCorpus' activeClassName='active'>Explore the corpus</NavLink>
-                <NavLink to='/ExploreAWork' activeClassName='active'>Explore a work</NavLink>
-                <NavLink to='/CompetencyQuestion' activeClassName='active'>Competency question</NavLink>
+                <NavLink to='/' className={({isActive}) => isActive ? 'active' : ''}>Home</NavLink>
+                <NavLink to='/ExploreTheCorpus' className={({isActive}) => isActive ? 'active' : ''}>Explore the corpus</NavLink>
+                <NavLink to='/ExploreAWork' className={({isActive}) => isActive ? 'active' : ''}>Explore a work</NavLink>
+                <NavLink to='/CompetencyQuestion' className={({isActive}) => isActive ? 'active' : ''}>Competency question</NavLink>
             </div>
         </nav>
 
