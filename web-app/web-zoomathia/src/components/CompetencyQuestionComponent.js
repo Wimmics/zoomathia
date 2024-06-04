@@ -73,6 +73,7 @@ const CompetencyQuestionComponent = () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
             setTitle(title)
             for (const elt of data.table.columns) {
+                // Add link tag to paragraph uri - remove namespace for clarity
                 if (elt === "paragraph") {
                     generatedCol.push({
                         name: elt,
@@ -83,7 +84,12 @@ const CompetencyQuestionComponent = () => {
                 }
             }
             console.log(html)
-            setTable(<Grid data={data.table.data} columns={generatedCol} pagination={{ limit: 10 }} search={true} style={styleGrid} sort={true} />)
+            setTable(<Grid data={data.table.data}
+                columns={generatedCol}
+                pagination={{ limit: 10 }}
+                resizable={true}
+                search={true} style={styleGrid} sort={true} />)
+
             setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"
                 src={`${process.env.REACT_APP_LDVIZ_URL}ldviz?url=${process.env.REACT_APP_CORESE_URL}&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
