@@ -76,14 +76,14 @@ const CompetencyQuestionComponent = () => {
                 if (elt === "paragraph") {
                     generatedCol.push({
                         name: elt,
-                        formatter: (cell) => { return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}Work?uri=${cell}' target='_blank'>${cell}</a>`) }
+                        formatter: (cell) => { return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}Work?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
                     })
                 } else {
                     generatedCol.push(elt)
                 }
             }
             console.log(html)
-            setTable(<Grid data={data.table.data} columns={generatedCol} pagination={{ limit: 10 }} search={true} style={styleGrid} />)
+            setTable(<Grid data={data.table.data} columns={generatedCol} pagination={{ limit: 10 }} search={true} style={styleGrid} sort={true} />)
             setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"
                 src={`${process.env.REACT_APP_LDVIZ_URL}ldviz?url=${process.env.REACT_APP_CORESE_URL}&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
