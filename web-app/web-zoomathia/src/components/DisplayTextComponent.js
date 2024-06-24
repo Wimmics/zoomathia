@@ -11,9 +11,9 @@ const getTypeFromURI = (uri) => {
 
 const DisplayTextComponent = ({ controller, options, type }) => {
     const [sections, setSections] = useState([])
-    const [bookSelect, setBookSelect] = useState([])
-    const [chapterSelect, setChapterSelect] = useState([])
-    const [sectionSelect, setSectionSelect] = useState([])
+    const [firstLevel, setFirstLevel] = useState([])
+    const [secondLevel, setSecondLevel] = useState([])
+    const [thirdLevel, setThirdLevel] = useState([])
     const [paragraphSelect, setParagraphSelect] = useState([])
     const controllerRef = useRef(controller.current)
 
@@ -105,14 +105,14 @@ const DisplayTextComponent = ({ controller, options, type }) => {
 
                 switch (childType) {
                     case 'Chapter':
-                        setChapterSelect(<section className={styles["select-field-section"]}>
+                        setSecondLevel(<section className={styles["select-field-section"]}>
                             <h2>Select a Chapter</h2>
                             <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
                         </section>)
                         getChildPart(e)
                         break;
                     case 'Section':
-                        setSectionSelect(<section className={styles["select-field-section"]}>
+                        setThirdLevel(<section className={styles["select-field-section"]}>
                             <h2>Select a Section</h2>
                             <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
                         </section>)
@@ -135,28 +135,10 @@ const DisplayTextComponent = ({ controller, options, type }) => {
         // Start to print Text based on the URI selected
         // Display another selection (paragraph, section etc)
         // Would be easier if current type of uri is stored in selection
-    }, [controller, getChildPart, setChapterSelect, setParagraphSelect, setSectionSelect])
+    }, [controller, getChildPart, setSecondLevel, setParagraphSelect, setThirdLevel])
 
     useLayoutEffect(() => {
         switch (type) {
-            case 'Book':
-                setBookSelect(<section className={styles["select-field-section"]}>
-                    <h2>Select a Book</h2>
-                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
-                </section>)
-                break;
-            case 'Chapter':
-                setChapterSelect(<section className={styles["select-field-section"]}>
-                    <h2>Select a Chapter</h2>
-                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
-                </section>)
-                break;
-            case 'Section':
-                setSectionSelect(<section className={styles["select-field-section"]}>
-                    <h2>Select a Section</h2>
-                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
-                </section>)
-                break;
             case 'Paragraph':
                 setParagraphSelect(<section className={styles["select-field-section"]}>
                     <h2>Select a Paragraph</h2>
@@ -164,15 +146,19 @@ const DisplayTextComponent = ({ controller, options, type }) => {
                 </section>)
                 break;
             default:
-                console.log(`Unknown type: ${type}`)
+                setFirstLevel(<section className={styles["select-field-section"]}>
+                    <h2>Select a {type}</h2>
+                    <Select className={styles["select-field"]} onChange={handleSelect} options={options} selectedValue={{ value: '', label: '' }} />
+                </section>)
+                break;
         }
     }, [handleSelect, options, type])
 
     return <section>
         <header className={styles["selection-section"]}>
-            {bookSelect}
-            {chapterSelect}
-            {sectionSelect}
+            {firstLevel}
+            {secondLevel}
+            {thirdLevel}
             {paragraphSelect}
         </header>
         {sections}

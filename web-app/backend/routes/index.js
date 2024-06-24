@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 
 const getBookList = (title) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo: <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?book ?type ?id ?title WHERE {
     ?book a ?type;
       (schema:identifier|zoo:identifier) ?id;
@@ -68,7 +68,7 @@ const getParagraphWithConcept = (input, uri) => {
 const getParagraphsWithConcept = (input) => {
   return `prefix schema: <http://schema.org/>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo: <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?uri ?author ?title (xsd:integer(?book) as ?bookid) ?paragraph (xsd:integer(?id) as ?nb) ?text WHERE {
     ?annotation oa:hasBody ?concept;
       oa:hasTarget [
@@ -95,7 +95,7 @@ const getParagraphsWithConcept = (input) => {
 
 const getAuthors = () => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia/2024/zoo#> 
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?name WHERE {
     ?oeuvre (schema:author|zoo:author) ?name
   }ORDER BY ?name
@@ -115,7 +115,7 @@ router.get('/getAuthors', async (req, res) => {
 const getWorksFromAuthor = (author) => {
   console.log(author)
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
 
   SELECT ?oeuvre ?title WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
@@ -141,7 +141,7 @@ router.get('/getWorksFromAuthors', async (req, res) => {
 
 const getWorks = () => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
 
   SELECT ?oeuvre ?title ?author WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
@@ -165,7 +165,7 @@ router.get('/getWorks', async (req, res) => {
 
 const getChildrenTypeQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia/2024/zoo#> 
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?childType WHERE {
     <${uri}> zoo:hasPart ?child.
   
@@ -187,7 +187,7 @@ router.get("/getChildrenType", async (req, res) => {
 
 const getChildrenQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia/2024/zoo#> 
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?child ?title ?type WHERE {
     <${uri}> zoo:hasPart ?child.
     ?child a ?type;
@@ -216,7 +216,7 @@ router.get("/getChildren", async (req, res) => {
 
 const getParagraphQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia/2024/zoo#> 
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?title ?uri ?text WHERE {
     <${uri}> (schema:title|zoo:title) ?title.
 
@@ -246,7 +246,7 @@ router.get('/getParagraphs', async (req, res) => {
 
 const getParagraphAloneQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia/2024/zoo#> 
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?text WHERE {
     <${uri}> a ?type;
       (schema:identifier|zoo:identifier) ?id_p;
@@ -272,7 +272,7 @@ router.get('/getParagraphAlone', async (req, res) => {
 
 const getConceptsQuery = (uri, lang) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo: <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   prefix oa: <http://www.w3.org/ns/oa#>
   prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
   SELECT DISTINCT ?annotation ?concept ?label ?start ?end ?exact WHERE {
@@ -319,7 +319,7 @@ router.get('/getConcepts', async (req, res) => {
 const searchConceptsQuery = (input, lang) => {
   return `prefix schema: <http://schema.org/>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo: <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?concept ?label WHERE {
     ?concept skos:prefLabel ?label
     FILTER(lang(?label) = "${lang}")
@@ -358,7 +358,7 @@ const buildAnnotation = (labels) => {
 const getParagraphsWithConcepts = (subpart, uri) => {
   return `prefix schema: <http://schema.org/>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo: <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?paragraph ?title ?id ?text WHERE {
     <${uri}> schema:title ?title.
 
@@ -390,7 +390,7 @@ router.post('/getParagraphWithConcept', async (req, res) => {
 const getAllParagraphsWithConcepts = (subpart) => {
   return `prefix schema: <http://schema.org/>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo: <http://www.zoomathia/2024/zoo#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?uri ?author ?title ?book ?paragraph (xsd:integer(?id_p) as ?id) ?text WHERE {
     ${subpart}
     ?paragraph (schema:text|zoo:text) ?text;
