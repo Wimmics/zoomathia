@@ -1,0 +1,377 @@
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix zoo:     <http://www.zoomathia.com/2024/zoo#> .
+
+<http://www.zoomathia.com/Aesop/fabulae>
+      a       zoo:Oeuvre ;
+      zoo:author "Aesop" ;
+      zoo:date "1872" ;
+      zoo:editor "Karl Halm" ;
+      zoo:file "./tlg0096/tlg0096.tlg002.First1K-grc1.xml" ;
+      zoo:identifier "fabulae" ;
+      zoo:title "Fabulae" .
+
+<http://www.zoomathia.com/Aristotle/de_respiratione>
+      a       zoo:Oeuvre ;
+      zoo:author "Aristotle" ;
+      zoo:date "1837" ;
+      zoo:editor "Immanuel Bekker" ;
+      zoo:file "./tlg0086/tlg037/tlg0086.tlg037.1st1K-grc1.xml" ;
+      zoo:identifier "de_respiratione" ;
+      zoo:title "De respiratione" .
+
+<http://www.zoomathia.com/Columella,_Lucius_Junius_Moderatus/res_rustica,_books_v-ix>
+      a       zoo:Oeuvre ;
+      zoo:author "Columella, Lucius Junius Moderatus" ;
+      zoo:date "1954" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./phi0845/phi0845.phi002.perseus-lat2.xml" ;
+      zoo:identifier "res_rustica,_books_v-ix" ;
+      zoo:title "Res Rustica, Books V-IX" .
+
+<http://www.zoomathia.com/Aristotle/historia_animalium>
+      a       zoo:Oeuvre ;
+      zoo:author "Aristotle" ;
+      zoo:date "1837" ;
+      zoo:editor "Immanuel Bekker" ;
+      zoo:file "./tlg0086/tlg014/tlg0086.tlg014.1st1K-grc1.xml" ;
+      zoo:identifier "historia_animalium" ;
+      zoo:title "Historia animalium" .
+
+<http://www.zoomathia.com/Philo_Judaeus/de_agricultura>
+      a       zoo:Oeuvre ;
+      zoo:author "Philo Judaeus" ;
+      zoo:date "1897" ;
+      zoo:editor "Paul Wendland" ;
+      zoo:file "./tlg0018/tlg009/tlg0018.tlg009.opp-grc1.xml" ;
+      zoo:identifier "de_agricultura" ;
+      zoo:title "De agricultura" .
+
+<http://www.zoomathia.com/Lucian/de_sacrificiis>
+      a       zoo:Oeuvre ;
+      zoo:author "Lucian" ;
+      zoo:date "1921" ;
+      zoo:editor "A. M. Harmon" ;
+      zoo:file "./tlg0062/tlg027/tlg0062.tlg027.perseus-grc2.xml" , "./tlg0062/tlg027/tlg0062.tlg027.perseus-grc1.xml" ;
+      zoo:identifier "de_sacrificiis" ;
+      zoo:title "De sacrificiis" .
+
+<http://www.zoomathia.com/Xenophon/on_the_cavalry_commander_from_minor_works_greek._machine_readabletext>
+      a       zoo:Oeuvre ;
+      zoo:author "Xenophon" ;
+      zoo:date "1920 repr.1969" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0032/tlg012/tlg0032.tlg012.perseus-grc1.xml" ;
+      zoo:identifier "on_the_cavalry_commander_from_minor_works_greek._machine_readabletext" ;
+      zoo:title "On the Cavalry Commander from Minor Works Greek. Machine readabletext" .
+
+<http://www.zoomathia.com/Diodorus_Siculus/bibliotheca_historica,_books_xviii-xx>
+      a       zoo:Oeuvre ;
+      zoo:author "Diodorus Siculus" ;
+      zoo:date "1903-1906" ;
+      zoo:editor "Immanuel Bekker" ;
+      zoo:file "./tlg0060/tlg001/tlg0060.tlg001.perseus-grc2.xml" ;
+      zoo:identifier "bibliotheca_historica,_books_xviii-xx" ;
+      zoo:title "Bibliotheca Historica, Books XVIII-XX" .
+
+<http://www.zoomathia.com/Herodotus/the_histories>
+      a       zoo:Oeuvre ;
+      zoo:author "Herodotus" ;
+      zoo:date "1920" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0016/tlg001/tlg0016.tlg001.perseus-grc2.xml" ;
+      zoo:identifier "the_histories" ;
+      zoo:title "The Histories" .
+
+<http://www.zoomathia.com/Hesiod/works_and_days_greek._machine_readable_text>
+      a       zoo:Oeuvre ;
+      zoo:author "Hesiod" ;
+      zoo:date "1914" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0020/tlg002/tlg0020.tlg002.perseus-grc2.xml" ;
+      zoo:identifier "works_and_days_greek._machine_readable_text" ;
+      zoo:title "Works and Days Greek. Machine readable text" .
+
+<http://www.zoomathia.com/Oppian_of_Apamea/cynegetica>
+      a       zoo:Oeuvre ;
+      zoo:author "Oppian of Apamea" ;
+      zoo:date "1928" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0024/tlg001/tlg0024.tlg001.perseus-grc1.xml" ;
+      zoo:identifier "cynegetica" ;
+      zoo:title "Cynegetica" .
+
+<http://www.zoomathia.com/Artemidorus/onirocriticon>
+      a       zoo:Oeuvre ;
+      zoo:author "Artemidorus" ;
+      zoo:date "1963" ;
+      zoo:editor "Roger A Pack" ;
+      zoo:file "./tlg0553/tlg0553.tlg001.1st1K-grc1.xml" ;
+      zoo:identifier "onirocriticon" ;
+      zoo:title "Onirocriticon" .
+
+<http://www.zoomathia.com/Plutarch/de_amore_prolis>
+      a       zoo:Oeuvre ;
+      zoo:author "Plutarch" ;
+      zoo:date "1891" ;
+      zoo:editor "Gregorius N. Bernardakis" ;
+      zoo:file "./tlg0007/tlg098/tlg0007.tlg098.perseus-grc1.xml" ;
+      zoo:identifier "de_amore_prolis" ;
+      zoo:title "De amore prolis" .
+
+<http://www.zoomathia.com/Plutarch/quaestiones_naturales>
+      a       zoo:Oeuvre ;
+      zoo:author "Plutarch" ;
+      zoo:date "1893" ;
+      zoo:editor "Gregorius N. Bernardakis" ;
+      zoo:file "./tlg0007/tlg125/tlg0007.tlg125.perseus-grc1.xml" ;
+      zoo:identifier "quaestiones_naturales" ;
+      zoo:title "Quaestiones Naturales" .
+
+<http://www.zoomathia.com/Philo_Judaeus/de_somniis_lib._i‑ii>
+      a       zoo:Oeuvre ;
+      zoo:author "Philo Judaeus" ;
+      zoo:date "1898" ;
+      zoo:editor "Paul Wendland" ;
+      zoo:file "./tlg0018/tlg019/tlg0018.tlg019.opp-grc1.xml" ;
+      zoo:identifier "de_somniis_lib._i‑ii" ;
+      zoo:title "De somniis lib. i‑ii" .
+
+<http://www.zoomathia.com/Aristotle/de_sensu_et_sensibilibus>
+      a       zoo:Oeuvre ;
+      zoo:author "Aristotle" ;
+      zoo:date "1837" ;
+      zoo:editor "Immanuel Bekker" ;
+      zoo:file "./tlg0086/tlg041/tlg0086.tlg041.1st1K-grc1.xml" ;
+      zoo:identifier "de_sensu_et_sensibilibus" ;
+      zoo:title "De sensu et sensibilibus" .
+
+<http://www.zoomathia.com/Diodorus_Siculus/library_greek._machine_readable_text>
+      a       zoo:Oeuvre ;
+      zoo:author "Diodorus Siculus" ;
+      zoo:date "1989" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0060/tlg001/tlg0060.tlg001.perseus-grc3.xml" ;
+      zoo:identifier "library_greek._machine_readable_text" ;
+      zoo:title "Library Greek. Machine readable text" .
+
+<http://www.zoomathia.com/Athenaeus/deipnosophistae>
+      a       zoo:Oeuvre ;
+      zoo:author "Athenaeus" ;
+      zoo:date "1887" ;
+      zoo:editor "Georg Kaibel" ;
+      zoo:file "./tlg0008/tlg0008.tlg001.perseus-grc3_not_annotated.xml" ;
+      zoo:identifier "deipnosophistae" ;
+      zoo:title "Deipnosophistae" .
+
+<http://www.zoomathia.com/Babrius/fabulae_aesopeae>
+      a       zoo:Oeuvre ;
+      zoo:author "Babrius" ;
+      zoo:date "1872" ;
+      zoo:editor "Karl Halm" ;
+      zoo:file "./tlg0614/tlg0614.tlg001.1st1K-grc1.xml" ;
+      zoo:identifier "fabulae_aesopeae" ;
+      zoo:title "Fabulae Aesopeae" .
+
+<http://www.zoomathia.com/Pliny_the_Elder/naturalis_historia>
+      a       zoo:Oeuvre ;
+      zoo:author "Pliny the Elder" ;
+      zoo:date "1906" ;
+      zoo:editor "Karl Friedrich Theodor Mayhoff" ;
+      zoo:file "./phi0978/Perseus_text_1999.02.0138.xml" , "./phi0978/phi0978.phi001.perseus-lat2.xml" ;
+      zoo:identifier "naturalis_historia" ;
+      zoo:title "Naturalis Historia" .
+
+<http://www.zoomathia.com/Aristotle/de_iuventute_et_senectute,_de_vita_et_morte>
+      a       zoo:Oeuvre ;
+      zoo:author "Aristotle" ;
+      zoo:date "1837" ;
+      zoo:editor "Immanuel Bekker" ;
+      zoo:file "./tlg0086/tlg018/tlg0086.tlg018.1st1K-grc1.xml" ;
+      zoo:identifier "de_iuventute_et_senectute,_de_vita_et_morte" ;
+      zoo:title "De iuventute et senectute, De vita et morte" .
+
+<http://www.zoomathia.com/Lucian/dipsades>
+      a       zoo:Oeuvre ;
+      zoo:author "Lucian" ;
+      zoo:date "1896" ;
+      zoo:editor "Karl Jacobitz" ;
+      zoo:file "./tlg0062/tlg054/tlg0062.tlg054.perseus-grc1.xml" ;
+      zoo:identifier "dipsades" ;
+      zoo:title "Dipsades" .
+
+<http://www.zoomathia.com/Philo_Judaeus/de_plantatione>
+      a       zoo:Oeuvre ;
+      zoo:author "Philo Judaeus" ;
+      zoo:date "1897" ;
+      zoo:editor "Paul Wendland" ;
+      zoo:file "./tlg0018/tlg010/tlg0018.tlg010.opp-grc1.xml" ;
+      zoo:identifier "de_plantatione" ;
+      zoo:title "De plantatione" .
+
+<http://www.zoomathia.com/Diodorus_Siculus/bibliotheca_historica,_books_i-v>
+      a       zoo:Oeuvre ;
+      zoo:author "Diodorus Siculus" ;
+      zoo:date "1888-1890" ;
+      zoo:editor "Immanuel Bekker" ;
+      zoo:file "./tlg0060/tlg001/tlg0060.tlg001.perseus-grc1.xml" ;
+      zoo:identifier "bibliotheca_historica,_books_i-v" ;
+      zoo:title "Bibliotheca Historica, Books I-V" .
+
+<http://www.zoomathia.com/Xenophon/on_the_art_of_horsemanship_from_minor_works_greek._machine_readabletext>
+      a       zoo:Oeuvre ;
+      zoo:author "Xenophon" ;
+      zoo:date "1920 repr.1969" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0032/tlg013/tlg0032.tlg013.perseus-grc1.xml" ;
+      zoo:identifier "on_the_art_of_horsemanship_from_minor_works_greek._machine_readabletext" ;
+      zoo:title "On the Art of Horsemanship from Minor Works Greek. Machine readabletext" .
+
+<http://www.zoomathia.com/Xenophon/on_hunting_from_minor_works_greek._machine_readable_text>
+      a       zoo:Oeuvre ;
+      zoo:author "Xenophon" ;
+      zoo:date "1920 repr.1969" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0032/tlg014/tlg0032.tlg014.perseus-grc1.xml" ;
+      zoo:identifier "on_hunting_from_minor_works_greek._machine_readable_text" ;
+      zoo:title "On Hunting from Minor Works Greek. Machine readable text" .
+
+<http://www.zoomathia.com/Plutarch/de_esu_carnium_ii>
+      a       zoo:Oeuvre ;
+      zoo:author "Plutarch" ;
+      zoo:date "1895" ;
+      zoo:editor "Gregorius N. Bernardakis" ;
+      zoo:file "./tlg0007/tlg132/tlg0007.tlg132.perseus-grc1.xml" ;
+      zoo:identifier "de_esu_carnium_ii" ;
+      zoo:title "De esu carnium II" .
+
+<http://www.zoomathia.com/Strabo/geography_greek._machine_readable_text>
+      a       zoo:Oeuvre ;
+      zoo:author "Strabo" ;
+      zoo:date "1877" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0099/tlg0099.tlg001.perseus-grc1.xml" ;
+      zoo:identifier "geography_greek._machine_readable_text" ;
+      zoo:title "Geography Greek. Machine readable text" .
+
+<http://www.zoomathia.com/Plutarch/de_sollertia_animalium>
+      a       zoo:Oeuvre ;
+      zoo:author "Plutarch" ;
+      zoo:date "1895" ;
+      zoo:editor "Gregorius N. Bernardakis" ;
+      zoo:file "./tlg0007/tlg129/tlg0007.tlg129.perseus-grc1.xml" ;
+      zoo:identifier "de_sollertia_animalium" ;
+      zoo:title "De sollertia animalium" .
+
+<http://www.zoomathia.com/Aelian/de_natura_animalium>
+      a       zoo:Oeuvre ;
+      zoo:author "Aelian" ;
+      zoo:date "1864" ;
+      zoo:editor "Rudolf Hercher" ;
+      zoo:file "./tlg0545/tlg0545.tlg001.perseus-grc1.xml" ;
+      zoo:identifier "de_natura_animalium" ;
+      zoo:title "De Natura Animalium" .
+
+<http://www.zoomathia.com/Phaedrus/fabulae_aesopiae>
+      a       zoo:Oeuvre ;
+      zoo:author "Phaedrus" ;
+      zoo:date "1876" ;
+      zoo:editor "L. Mueller" ;
+      zoo:file "./phi0975/phi0975.phi001.perseus-lat1-p5.xml" ;
+      zoo:identifier "fabulae_aesopiae" ;
+      zoo:title "Fabulae Aesopiae" .
+
+<http://www.zoomathia.com/Aristotle/de_partibus_animalium>
+      a       zoo:Oeuvre ;
+      zoo:author "Aristotle" ;
+      zoo:date "1868" ;
+      zoo:editor "Bernhard Langkavel" ;
+      zoo:file "./tlg0086/tlg030/tlg0086.tlg030.1st1K-grc1.xml" ;
+      zoo:identifier "de_partibus_animalium" ;
+      zoo:title "De partibus animalium" .
+
+<http://www.zoomathia.com/Hippocrates/acut._sp.>
+      a       zoo:Oeuvre ;
+      zoo:author "Hippocrates" ;
+      zoo:date "June 1, 2005" ;
+      zoo:editor "A. Littre" ;
+      zoo:file "./tlg0627/tlg0627.tlg005.perseus-grc1.xml" ;
+      zoo:identifier "acut._sp." ;
+      zoo:title "Acut. sp." .
+
+<http://www.zoomathia.com/Athenaeus/the_deipnosophists>
+      a       zoo:Oeuvre ;
+      zoo:author "Athenaeus" ;
+      zoo:date "1927" ;
+      zoo:editor "Charles Burton Gulick" ;
+      zoo:file "./tlg0008/tlg0008.tlg001.perseus-grc4_annotated.xml" ;
+      zoo:identifier "the_deipnosophists" ;
+      zoo:title "The Deipnosophists" .
+
+<http://www.zoomathia.com/Plutarch/bruta_animalia_ratione_uti>
+      a       zoo:Oeuvre ;
+      zoo:author "Plutarch" ;
+      zoo:date "1895" ;
+      zoo:editor "Gregorius N. Bernardakis" ;
+      zoo:file "./tlg0007/tlg130/tlg0007.tlg130.perseus-grc1.xml" ;
+      zoo:identifier "bruta_animalia_ratione_uti" ;
+      zoo:title "Bruta animalia ratione uti" .
+
+<http://www.zoomathia.com/Xenophon/economics_from_works_on_socrates_greek._machine_readable_text>
+      a       zoo:Oeuvre ;
+      zoo:author "Xenophon" ;
+      zoo:date "1921 repr. 1971" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0032/tlg003/tlg0032.tlg003.perseus-grc1.xml" ;
+      zoo:identifier "economics_from_works_on_socrates_greek._machine_readable_text" ;
+      zoo:title "Economics from Works on Socrates Greek. Machine readable text" .
+
+<http://www.zoomathia.com/Galen/on_the_natural_faculties.>
+      a       zoo:Oeuvre ;
+      zoo:author "Galen" ;
+      zoo:date "1916" ;
+      zoo:editor "A.J. Brock" ;
+      zoo:file "./tlg0057/tlg010/tlg0057.tlg010.perseus-grc1.xml" ;
+      zoo:identifier "on_the_natural_faculties." ;
+      zoo:title "On the Natural Faculties." .
+
+<http://www.zoomathia.com/Oppian/halieutica>
+      a       zoo:Oeuvre ;
+      zoo:author "Oppian" ;
+      zoo:date "1928" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0023/tlg001/tlg0023.tlg001.perseus-grc1.xml" ;
+      zoo:identifier "halieutica" ;
+      zoo:title "Halieutica" .
+
+<http://www.zoomathia.com/Philo_Judaeus/de_aeternitate_mundi>
+      a       zoo:Oeuvre ;
+      zoo:author "Philo Judaeus" ;
+      zoo:date "1915" ;
+      zoo:editor "Sigofried Reiter" ;
+      zoo:file "./tlg0018/tlg029/tlg0018.tlg029.opp-grc1.xml" ;
+      zoo:identifier "de_aeternitate_mundi" ;
+      zoo:title "De aeternitate mundi" .
+
+<http://www.zoomathia.com/Columella,_Lucius_Junius_Moderatus/res_rustica,_books_i-iv>
+      a       zoo:Oeuvre ;
+      zoo:author "Columella, Lucius Junius Moderatus" ;
+      zoo:date "1940" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./phi0845/phi0845.phi002.perseus-lat1.xml" ;
+      zoo:identifier "res_rustica,_books_i-iv" ;
+      zoo:title "Res Rustica, Books I-IV" .
+
+<http://www.zoomathia.com/Aristotle/economics_greek._machine_readable_text>
+      a       zoo:Oeuvre ;
+      zoo:author "Aristotle" ;
+      zoo:date "1935" ;
+      zoo:editor "Unknown editor" ;
+      zoo:file "./tlg0086/tlg029/tlg0086.tlg029.perseus-grc1.xml" ;
+      zoo:identifier "economics_greek._machine_readable_text" ;
+      zoo:title "Economics Greek. Machine readable text" .
