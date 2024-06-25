@@ -21,7 +21,7 @@ const getWorkPart = (title) => {
       (schema:title| zoo:title) ?title.
     
     <${title}> (schema:hasPart|zoo:hasPart) ?part.
-  }`
+  }ORDER BY ?id`
 }
 
 router.get('/getWorkPart', async (req, res) => {
@@ -60,7 +60,7 @@ const getParagraphWithConcept = (input, uri) => {
     ?concept skos:prefLabel ?label
     FILTER(lang(?label) = "en")
     FILTER(str(?label) = "${input}")
-  }
+  }ORDER BY ?id
   `
 }
 
@@ -187,7 +187,7 @@ router.get("/getChildrenType", async (req, res) => {
 const getChildrenQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
-  SELECT DISTINCT ?child ?title ?type WHERE {
+  SELECT DISTINCT ?child ?identifier ?title ?type WHERE {
     <${uri}> zoo:hasPart ?child.
     ?child a ?type;
  	zoo:identifier ?identifier.
@@ -195,7 +195,7 @@ const getChildrenQuery = (uri) => {
       ?child zoo:title ?titleprov.
     }
     BIND(IF(BOUND(?titleprov), ?titleprov, ?identifier) AS ?title)
-  }ORDER BY ?child`
+  }ORDER BY ?identifier`
 }
 
 router.get("/getChildren", async (req, res) => {
