@@ -43,7 +43,7 @@ const ExplorerComponent = () => {
             let bookList = [{ value: '', label: '' }];
             let type = ''
 
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getBookList?title=${e.value}`
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkPart?title=${e.value}`
             ).then(response => response.json())
             for (const book of data) {
                 type = getTypeFromURI(book.type)

@@ -12,27 +12,26 @@ router.get('/', async (req, res) => {
   res.status(200);
 });
 
-const getBookList = (title) => {
+const getWorkPart = (title) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
-  SELECT DISTINCT ?book ?type ?id ?title WHERE {
-    ?book a ?type;
+  SELECT DISTINCT ?part ?type ?id ?title WHERE {
+    ?part a ?type;
       (schema:identifier|zoo:identifier) ?id;
       (schema:title| zoo:title) ?title.
     
-    <${title}> (schema:hasPart|zoo:hasPart) ?book.
-    filter(?type in (zoo:Book, schema:Book))
+    <${title}> (schema:hasPart|zoo:hasPart) ?part.
   }`
 }
 
-router.get('/getBookList', async (req, res) => {
-  const result = await executeSPARQLRequest(endpoint, getBookList(req.query.title))
+router.get('/getWorkPart', async (req, res) => {
+  const result = await executeSPARQLRequest(endpoint, getWorkPart(req.query.title))
   let response = []
   console.log(req.query.title)
 
   for (const elt of result["results"]["bindings"]) {
     response.push({
-      uri: elt["book"]["value"],
+      uri: elt["part"]["value"],
       id: elt["id"]["value"],
       title: elt["title"]["value"],
       type: elt['type'].value
@@ -218,13 +217,12 @@ const getParagraphQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?title ?uri ?text WHERE {
-    <${uri}> (schema:title|zoo:title) ?title.
+    <${uri}> zoo:title ?title.
 
-    ?uri a ?type;
-      (schema:isPartOf|zoo:isPartOf) <${uri}>;
-      (schema:identifier|zoo:identifier) ?id_p;
-      (schema:text|zoo:text) ?text.
-    FILTER(?type in (zoo:Paragraph, schema:Paragraph))
+    ?uri a zoo:Paragraph;
+      zoo:isPartOf <${uri}>;
+      zoo:identifier ?id_p;
+      zoo:text ?text.
 }ORDER BY ?id`
 }
 
@@ -248,10 +246,9 @@ const getParagraphAloneQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?text WHERE {
-    <${uri}> a ?type;
-      (schema:identifier|zoo:identifier) ?id_p;
-      (schema:text|zoo:text) ?text.
-    FILTER(?type in (zoo:Paragraph, schema:Paragraph))
+    <${uri}> a zoo:Paragraph;
+      zoo:identifier ?id_p;
+      zoo:text ?text.
 }ORDER BY ?id
   `
 }
@@ -362,13 +359,11 @@ const getParagraphsWithConcepts = (subpart, uri) => {
   SELECT DISTINCT ?paragraph ?title ?id ?text WHERE {
     <${uri}> schema:title ?title.
 
-    ?paragraph (schema:text|zoo:text) ?text;
-      (schema:identifier|zoo:identifier) ?id;
-      (schema:isPartOf|zoo:isPartOf) <${uri}>.
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id;
+      zoo:isPartOf <${uri}>.
 
     ${subpart}
-    
-
   }ORDER BY ?id
   `
 }
@@ -393,15 +388,15 @@ const getAllParagraphsWithConcepts = (subpart) => {
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?uri ?author ?title ?book ?paragraph (xsd:integer(?id_p) as ?id) ?text WHERE {
     ${subpart}
-    ?paragraph (schema:text|zoo:text) ?text;
-      (schema:identifier|zoo:identifier) ?id_p;
-      (schema:isPartOf|zoo:isPartOf) ?uri.
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id_p;
+      zoo:isPartOf ?uri.
     
-    ?uri (schema:identifier|zoo:identifier) ?book;
-      (schema:title|zoo:title) ?title.
+    ?uri zoo:identifier ?book;
+      zoo:title ?title.
 
-    ?oeuvre (schema:author|zoo:author) ?author;
-      (schema:hasPart+|zoo:hasPart+) ?uri.
+    ?oeuvre zoo:author ?author;
+      zoo:hasPart+ ?uri.
     
     ?concept skos:prefLabel ?label
 

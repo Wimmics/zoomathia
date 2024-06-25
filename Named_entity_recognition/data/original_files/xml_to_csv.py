@@ -462,7 +462,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_id = p_id
                     paragraph_text = strip_text(p.text)
                     # ["parent_uri", "type", "id", "title", "child"]
-                    link_data.append([parent_uri, parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/{paragraph_id}"])
+                    link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/{paragraph_id}"])
                     # ["parent_uri", "type", "id", "title", "text"]
                     paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text])
                     p_id += 1
@@ -495,8 +495,10 @@ def extraction_data(FILE,CSV):
             first_div_id = first_id
             if first_div.has_attr("n"):
                 first_div_title = first_div["n"]
+            elif first_div.head:
+                first_div_title = strip_text(first_div.head.text)
             else:
-                first_div_title = ""
+                first_div_title = first_id
 
             # Case for bekker page
             if first_div_type == "BekkerPage":
@@ -523,7 +525,7 @@ def extraction_data(FILE,CSV):
 
                     current_uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}"
                     link_data.append(
-                        [f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
+                        [f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}",
                                      first_div_type, first_div_id, first_div_title, current_uri])
 
                     if not does_it_have_children_div(second_div):
@@ -540,14 +542,15 @@ def extraction_data(FILE,CSV):
                             else:
                                 third_div_title = third_div["n"]
                             current_uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}"
+                            link_data.append(
+                                [f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
+                                 second_div_type, second_div_id, second_div_title, current_uri])
 
                             if not does_it_have_children_div(third_div):
-                                #TODO extract paragraph or line
                                 extract_paragraph(third_div, [
                                     f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
                                     third_div_type, third_div_id, third_div_title],
                                                   current_uri, link_data, paragraph_data)
-                                pass
                             else:
                                 for fourth_id, fourth_div in enumerate(third_div.find_all(re.compile("^div"), recursive=False)):
                                     fourth_div_id = fourth_id
@@ -557,6 +560,10 @@ def extraction_data(FILE,CSV):
                                     else:
                                         fourth_div_title = fourth_div["n"]
                                     current_uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}/{fourth_div_id}"
+                                    link_data.append(
+                                        [
+                                            f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
+                                            third_div_type, third_div_id, third_div_title, current_uri])
                                     extract_paragraph(fourth_div, [
                                         f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}",
                                         fourth_div_type, fourth_div_id, fourth_div_title],

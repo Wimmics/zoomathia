@@ -104,20 +104,6 @@ const DisplayTextComponent = ({ controller, options, type }) => {
             } else {
 
                 switch (childType) {
-                    case 'Chapter':
-                        setSecondLevel(<section className={styles["select-field-section"]}>
-                            <h2>Select a Chapter</h2>
-                            <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
-                        </section>)
-                        getChildPart(e)
-                        break;
-                    case 'Section':
-                        setThirdLevel(<section className={styles["select-field-section"]}>
-                            <h2>Select a Section</h2>
-                            <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
-                        </section>)
-                        getChildPart(e)
-                        break;
                     case 'Paragraph':
                         setParagraphSelect(<section className={styles["select-field-section"]}>
                             <h2>Select a Paragraph</h2>
@@ -126,6 +112,11 @@ const DisplayTextComponent = ({ controller, options, type }) => {
                         getChildPart(e)
                         break;
                     default:
+                        setSecondLevel(<section className={styles["select-field-section"]}>
+                            <h2>Select a {childType}</h2>
+                            <Select className={styles["select-field"]} onChange={handleSelect} options={childOptions} selectedValue={null} />
+                        </section>)
+                        getChildPart(e)
                         console.log("This type is not currently supported to be display", childType)
                 }
             }
@@ -138,6 +129,7 @@ const DisplayTextComponent = ({ controller, options, type }) => {
     }, [controller, getChildPart, setSecondLevel, setParagraphSelect, setThirdLevel])
 
     useLayoutEffect(() => {
+        console.log(type)
         switch (type) {
             case 'Paragraph':
                 setParagraphSelect(<section className={styles["select-field-section"]}>
