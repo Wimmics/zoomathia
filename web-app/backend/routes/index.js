@@ -242,15 +242,31 @@ router.get('/getParagraphs', async (req, res) => {
   res.status(200).json(response)
 })
 
+const getCurrentType = (uri) => {
+  return `prefix schema: <http://schema.org/>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  SELECT DISTINCT ?type WHERE {
+    <${uri}> a ?type
+    }`
+}
+
+router.get("/getCurrentType", async (req, res) => {
+  console.log(`Get type of ${req.query.uri}`)
+  const response = []
+  const result = await executeSPARQLRequest(endpoint, getCurrentType(req.query.uri));
+  for (const elt of result.results.bindings) {
+    response.push({ type: elt.type.value })
+  }
+  res.status(200).json(response)
+})
+
 const getParagraphAloneQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?text WHERE {
     <${uri}> a zoo:Paragraph;
       zoo:identifier ?id_p;
-      zoo:text ?text.
-}ORDER BY ?id
-  `
+      zoo:text ?text.}`
 }
 
 router.get('/getParagraphAlone', async (req, res) => {
