@@ -53,6 +53,7 @@ const ExplorerComponent = () => {
             setDisplayTextComponent(
                 <DisplayTextComponent className={styles["select-field"]}
                     controller={controller}
+                    uri={e.value}
                     options={bookList}
                     type={type} />)
         }

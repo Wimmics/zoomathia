@@ -1,5 +1,6 @@
 import { useState, useLayoutEffect } from "react"
 import ParagraphDisplay from "./ParagraphComponent"
+import styles from "./css_modules/BookComponents.module.css"
 
 const getTypeFromURI = (uri) => {
     const uri_split = uri.split('#')
@@ -69,7 +70,7 @@ const SectionComponent = (props) => {
     }, [props])
 
     return <section key={props.uri}>
-        <h2>{type} - {sectionTitle}</h2>
+        <h2 className={styles["sticky-title"]}>{type} - {sectionTitle}</h2>
         {sectionParagraph}
     </section>
 

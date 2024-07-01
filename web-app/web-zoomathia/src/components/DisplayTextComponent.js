@@ -9,9 +9,10 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
-const DisplayTextComponent = ({ controller, options, type }) => {
+const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [sections, setSections] = useState([])
     const [selectInput, setSelectInput] = useState([])
+    const [metadata, setMetadata] = useState({})
     const controllerRef = useRef(controller.current)
 
     const [currentLang, setCurrentLang] = useState('en')
@@ -130,13 +131,38 @@ const DisplayTextComponent = ({ controller, options, type }) => {
     }
 
     useEffect(() => {
+        const getMetadata = async () => {
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getMetadata?uri=${uri}`)
+                .then(response => response.json())
+            setMetadata(data)
+        }
         const update = async () => {
             setSelectInput([{ id: 0, type: type, options: options }])
         }
+
         update()
+        getMetadata()
     }, [options, type])
 
     return <section>
+        <section className={styles["metadata-section"]}>
+            <div>
+                <h3>Author</h3>
+                <p>{metadata.author}</p>
+            </div>
+            <div>
+                <h3>Editor</h3>
+                <p>{metadata.editor}</p>
+            </div>
+            <div>
+                <h3>Date</h3>
+                <p>{metadata.date}</p>
+            </div>
+            <div>
+                <h3>XML file</h3>
+                <p>{metadata.file}</p>
+            </div>
+        </section>
         <header className={styles["selection-section"]}>
             {selectInput.map((select, index) => {
                 return <section key={select.id} className={styles["select-field-section"]}>
@@ -150,6 +176,9 @@ const DisplayTextComponent = ({ controller, options, type }) => {
             })
             }
         </header>
+        <div>
+
+        </div>
         {sections}
 
     </section>

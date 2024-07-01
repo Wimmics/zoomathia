@@ -117,10 +117,13 @@ const CompetencyQuestionComponent = () => {
             <h2 key="titre_competence">Select a competency question</h2>
             <Select onChange={updateTable} options={options} />
         </header>
-        <h3>{title}</h3>
-        {table}
-        <h3>Visualisation</h3>
-        {iframe}
+        <section>
+            <h3>{title}</h3>
+            {table}
+            <h3>Visualisation</h3>
+            {iframe}
+        </section>
+
     </div>
 }
 

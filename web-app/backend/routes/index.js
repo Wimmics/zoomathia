@@ -12,6 +12,53 @@ router.get('/', async (req, res) => {
   res.status(200);
 });
 
+const getMetadata = (uri) => {
+  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  SELECT DISTINCT ?author ?editor ?file ?date WHERE {
+    <${uri}> a zoo:Oeuvre;
+      zoo:author ?author;
+      zoo:file ?file;
+      zoo:date ?date;
+      zoo:editor ?editor.
+  }`
+}
+
+router.get("/getMetadata", async (req, res) => {
+  console.log(req.query.uri)
+  const result = await executeSPARQLRequest(endpoint, getMetadata(req.query.uri))
+  let response = {}
+  for (const elt of result.results.bindings) {
+    response = {
+      author: elt.author.value,
+      editor: elt.editor.value,
+      date: elt.date.value,
+      file: elt.file.value
+    }
+  }
+
+  res.status(200).json(response)
+})
+
+const getSummary = (uri) => {
+  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+SELECT DISTINCT ?parent ?current ?type ?id ?title ?file WHERE {
+	?current a ?type;
+      	zoo:isPartOf+ <${uri}>;
+  	  	zoo:isPartOf ?parent;
+     	zoo:identifier ?id.
+	Optional {
+    	?current zoo:title ?title.
+  	}
+}ORDER BY ?parent ?id`
+}
+
+router.get("/getSummary", async (req, res) => {
+  const result = await executeSPARQLRequest(endpoint, getSummary(req.query.uri))
+  const response = []
+
+  res.status(200).json(response)
+})
+
 const getWorkPart = (title) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 

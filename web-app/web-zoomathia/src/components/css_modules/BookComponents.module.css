@@ -104,3 +104,22 @@ select option {
     text-align: center;
     font-size: 1.2rem;
 }
+
+.metadata-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.metadata-section div {
+    padding: 20px;
+    margin: auto;
+}
+
+.metadata-section div>h3 {
+    border-bottom: grey thin solid;
+    padding-bottom: 10px;
+}
+
+.sticky-title {
+    position: sticky;
+}
