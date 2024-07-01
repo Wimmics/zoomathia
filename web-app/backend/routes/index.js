@@ -56,6 +56,10 @@ router.get("/getSummary", async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, getSummary(req.query.uri))
   const response = []
 
+  for (const elt of result.results.bindings) {
+    response.push()
+  }
+
   res.status(200).json(response)
 })
 
