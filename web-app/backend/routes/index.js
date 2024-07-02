@@ -17,10 +17,12 @@ const getMetadata = (uri) => {
   SELECT DISTINCT ?author ?editor ?file ?date WHERE {
     <${uri}> a zoo:Oeuvre;
       zoo:author ?author;
-      zoo:file ?file_t;
       zoo:date ?date;
       zoo:editor ?editor.
-      BIND(IF(BOUND(?file_t), ?file_t, 'word_file') as ?file)
+      Optional {
+        <${uri}> zoo:file ?file_t.
+      }
+      BIND(IF(BOUND(?file_t), ?file_t, 'word_files') as ?file)
   }`
 }
 
