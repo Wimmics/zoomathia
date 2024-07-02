@@ -17,9 +17,10 @@ const getMetadata = (uri) => {
   SELECT DISTINCT ?author ?editor ?file ?date WHERE {
     <${uri}> a zoo:Oeuvre;
       zoo:author ?author;
-      zoo:file ?file;
+      zoo:file ?file_t;
       zoo:date ?date;
       zoo:editor ?editor.
+      BIND(IF(BOUND(?file_t), ?file_t, 'word_file') as ?file)
   }`
 }
 
@@ -42,36 +43,62 @@ router.get("/getMetadata", async (req, res) => {
 const getSummary = (uri) => {
   return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
 SELECT DISTINCT ?parent ?current ?type ?id ?title ?file WHERE {
-	?current a ?type;
-      	zoo:isPartOf+ <${uri}>;
-  	  	zoo:isPartOf ?parent;
-     	zoo:identifier ?id.
-	Optional {
-    	?current zoo:title ?title.
+  	{
+    	<${uri}> a zoo:Oeuvre;
+      		zoo:identifier ?id;
+        	zoo:title ?title;
+    	BIND(<${uri}> as ?parent)
+    BIND(zoo:Oeuvre as ?type)
+    BIND(<${uri}> as ?current)
+    }UNION{
+    	?current a ?type;
+      		zoo:isPartOf+ <${uri}>;
+  	  		zoo:isPartOf ?parent;
+     		zoo:identifier ?id.
+    	Optional {
+    		?current zoo:title ?title_t.
+  		}
+    	BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
   	}
 }ORDER BY ?parent ?id`
 }
 
 router.get("/getSummary", async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, getSummary(req.query.uri))
-  const response = []
+  const tree = []
+  const response = {}
+  const idInSet = new Set()
 
   for (const elt of result.results.bindings) {
-    response.push()
+    response[elt.current.value] = {
+      uri: elt.current.value,
+      id: elt.id.value,
+      title: elt.title.value,
+      type: elt.type.value,
+      children: []
+    }
   }
 
-  res.status(200).json(response)
+  for (const elt of result.results.bindings) {
+    if ((elt.current.value === req.query.uri) && (!idInSet.has(elt.current.value))) {
+      tree.push(response[elt.parent.value])
+      idInSet.add(elt.current.value)
+    } else {
+      response[elt.parent.value].children.push(response[elt.current.value])
+    }
+  }
+
+  res.status(200).json(tree)
 })
 
 const getWorkPart = (title) => {
-  return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?part ?type ?id ?title WHERE {
     ?part a ?type;
-      (schema:identifier|zoo:identifier) ?id;
-      (schema:title| zoo:title) ?title.
+      zoo:identifier ?id;
+      zoo:title ?title.
     
-    <${title}> (schema:hasPart|zoo:hasPart) ?part.
+    <${title}> zoo:hasPart ?part.
   }ORDER BY ?id`
 }
 
@@ -93,14 +120,14 @@ router.get('/getWorkPart', async (req, res) => {
 });
 
 const getParagraphWithConcept = (input, uri) => {
-  return `prefix schema: <http://schema.org/>
-  prefix oa: <http://www.w3.org/ns/oa#>
+  return `prefix oa: <http://www.w3.org/ns/oa#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT ?paragraph ?title ?id ?text WHERE {
     <${uri}> (schema:title|zoo:title) ?title.
 
-    ?paragraph (schema:isPartOf|zoo:isPartOf) <${uri}>;
-      (schema:identifier|zoo:identifier) ?id;
-      (schema:text|zoo:text) ?text;
+    ?paragraph zoo:isPartOf <${uri}>;
+      zoo:identifier ?id;
+      zoo:text ?text;
       zoo:hasAnnotation ?annotation.
 
     ?annotation oa:hasBody ?concept;

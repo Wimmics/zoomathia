@@ -9,10 +9,20 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
+const Summary = ({ node }) => {
+    return <li key={node.type + "_" + node.id}>
+        {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
+        {node.children && node.children.length > 0 && (<ul>
+            {node.children.map(child => <Summary key={`${node.type}_${node.id}`} node={child} />)}
+        </ul>)}
+    </li>
+}
+
 const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [sections, setSections] = useState([])
     const [selectInput, setSelectInput] = useState([])
     const [metadata, setMetadata] = useState({})
+    const [summary, setSummary] = useState(null)
     const controllerRef = useRef(controller.current)
 
     const [currentLang, setCurrentLang] = useState('en')
@@ -136,12 +146,20 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 .then(response => response.json())
             setMetadata(data)
         }
+
+        const getSummary = async () => {
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${uri}`)
+                .then(response => response.json())
+            setSummary(data[0])
+            console.log(data)
+        }
         const update = async () => {
             setSelectInput([{ id: 0, type: type, options: options }])
         }
 
         update()
         getMetadata()
+        getSummary()
     }, [options, type])
 
     return <section>
@@ -159,7 +177,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p>{metadata.date}</p>
             </div>
             <div>
-                <h3>XML file</h3>
+                <h3>File</h3>
                 <p>{metadata.file}</p>
             </div>
         </section>
@@ -176,10 +194,16 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             })
             }
         </header>
-        <div>
+        <section className={styles["display-section"]}>
+            <div>
+                <h2>Summary</h2>
+                <ul>
+                    {summary !== null ? <Summary node={summary} /> : ''}
+                </ul>
+            </div>
+            {sections}
+        </section>
 
-        </div>
-        {sections}
 
     </section>
 }

@@ -123,3 +123,30 @@ select option {
 .sticky-title {
     position: sticky;
 }
+
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: left;
+    display: block;
+    overflow-x: auto;
+    height: 100%;
+}
+
+li {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.display-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.display-section>div {
+    display: block;
+    max-height: 20rem;
+    min-width: fit-content;
+    position: sticky;
+}
