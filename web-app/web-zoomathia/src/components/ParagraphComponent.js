@@ -63,7 +63,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, controller }) => {
     }, [text, id, uri, lang, controller, highlight, removeHighlight])
 
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
-        <div key={`paragraph-${id}`} className={styles["id-paragraph"]}>
+        <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
             <p key={`number-${id}`}>[{id}]</p>
         </div>
         <div key={`text-${id}`} className={styles["text-paragraph"]}>

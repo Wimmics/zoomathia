@@ -41,7 +41,7 @@ const SectionComponent = (props) => {
                     ).then(response => response.json())
                     for (const elt of data) {
                         paragraphs.push(<ParagraphDisplay
-                            key={elt.id}
+                            key={elt.uri}
                             id={elt.id}
                             text={elt.text}
                             uri={elt.uri}
@@ -69,7 +69,7 @@ const SectionComponent = (props) => {
         callForData()
     }, [props])
 
-    return <section key={props.uri}>
+    return <section id={props.uri} key={props.uri}>
         <h2 className={styles["sticky-title"]}>{type} - {sectionTitle}</h2>
         {sectionParagraph}
     </section>

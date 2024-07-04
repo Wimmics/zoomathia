@@ -10,10 +10,18 @@ const getTypeFromURI = (uri) => {
 }
 
 const Summary = ({ node }) => {
-    return <li key={node.type + "_" + node.id}>
-        {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
+    const [uri, setURI] = useState(node.uri)
+    return <li id={node.type + "_" + node.id + "_summary"} key={node.type + "_" + node.id}>
+        <button onClick={() => {
+            const element = document.getElementById(uri)
+            if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
+                element.scrollIntoView({ behaviour: 'smooth' })
+            } else {
+                element.scrollIntoView({ behaviour: 'smooth', block: 'center' })
+            }
+        }}>{getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}</button>
         {node.children && node.children.length > 0 && (<ul>
-            {node.children.map(child => <Summary key={`${node.type}_${node.id}`} node={child} />)}
+            {node.children.map(child => <Summary key={`${node.type}_${node.id}_summary`} node={child} />)}
         </ul>)}
     </li>
 }
