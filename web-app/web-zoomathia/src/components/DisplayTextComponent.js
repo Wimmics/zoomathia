@@ -10,18 +10,24 @@ const getTypeFromURI = (uri) => {
 }
 
 const Summary = ({ node }) => {
-    const [uri, setURI] = useState(node.uri)
-    return <li id={node.type + "_" + node.id + "_summary"} key={node.type + "_" + node.id}>
+    return <li id={node.type + "_" + node.id + "_summary"} key={node.uri + "_summary"}>
         <button onClick={() => {
-            const element = document.getElementById(uri)
-            if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
-                element.scrollIntoView({ behaviour: 'smooth' })
+            const element = document.getElementById(node.uri)
+
+
+            if (!element) {
+                console.log(`Cannot select element on URI ${node.uri}`)
+            } else if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
+                //element.scrollIntoView({ behaviour: 'smooth', block: 'nearest' })
+                const position = element.getBoundingClientRect()
+                element.scrollIntoView({ behaviour: 'smooth', block: 'start' })
             } else {
                 element.scrollIntoView({ behaviour: 'smooth', block: 'center' })
+
             }
         }}>{getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}</button>
         {node.children && node.children.length > 0 && (<ul>
-            {node.children.map(child => <Summary key={`${node.type}_${node.id}_summary`} node={child} />)}
+            {node.children.map(child => <Summary key={`${child.uri}_${node.id}_summary`} node={child} />)}
         </ul>)}
     </li>
 }

@@ -14,9 +14,10 @@ h1 {
 
 .box-content {
     margin: auto;
-    width: 85%;
+    width: 95%;
     box-shadow: 0 0 5px;
     background-color: white;
+    overflow: auto;
 }
 
 button {
@@ -111,7 +112,6 @@ select option {
 }
 
 .metadata-section div {
-    padding: 20px;
     margin: auto;
 }
 
@@ -124,14 +124,17 @@ select option {
     position: sticky;
 }
 
-
 ul {
     list-style-type: none;
     padding-left: 20px;
     text-align: left;
     display: block;
-    overflow-x: auto;
     height: 100%;
+}
+
+.display-section>div>ul {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 li {
@@ -145,8 +148,18 @@ li {
 }
 
 .display-section>div {
+    overflow: hidden;
+    box-shadow: 0px 0px 5px;
     display: block;
-    max-height: 20rem;
+    max-height: 60svh;
     min-width: fit-content;
     position: sticky;
+    top: 0;
+    padding: 5px;
+    ;
+}
+
+.display-section>div>h2 {
+    margin: 0;
+    padding: 10px;
 }

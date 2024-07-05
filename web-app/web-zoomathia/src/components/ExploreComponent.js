@@ -121,7 +121,7 @@ const ExplorerComponent = () => {
         callForData()
     }, [])
 
-    return <div className={styles["box-content"]}>
+    return <div id={"box-content"} className={styles["box-content"]}>
         <header className={styles["selection-section"]}>
             <section key="author" className={styles["select-field-section"]}>
                 <h2 key="author">Author</h2>
