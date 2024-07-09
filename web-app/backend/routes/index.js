@@ -121,57 +121,6 @@ router.get('/getWorkPart', async (req, res) => {
   res.status(200).json(response);
 });
 
-const getParagraphWithConcept = (input, uri) => {
-  return `prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
-  SELECT DISTINCT ?paragraph ?title ?id ?text WHERE {
-    <${uri}> (schema:title|zoo:title) ?title.
-
-    ?paragraph zoo:isPartOf <${uri}>;
-      zoo:identifier ?id;
-      zoo:text ?text;
-      zoo:hasAnnotation ?annotation.
-
-    ?annotation oa:hasBody ?concept;
-      oa:hasTarget [
-        oa:hasSource ?paragraph
-      ].
-    
-    ?concept skos:prefLabel ?label
-    FILTER(lang(?label) = "en")
-    FILTER(str(?label) = "${input}")
-  }ORDER BY ?id
-  `
-}
-
-const getParagraphsWithConcept = (input) => {
-  return `prefix schema: <http://schema.org/>
-  prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
-  SELECT DISTINCT ?uri ?author ?title (xsd:integer(?book) as ?bookid) ?paragraph (xsd:integer(?id) as ?nb) ?text WHERE {
-    ?annotation oa:hasBody ?concept;
-      oa:hasTarget [
-        oa:hasSource ?paragraph
-      ].
-
-    ?paragraph (schema:text|zoo:text) ?text;
-      (schema:identifier|zoo:identifier) ?id;
-      (schema:isPartOf|zoo:isPartOf) ?uri.
-    
-    ?uri (schema:identifier|zoo:identifier) ?book;
-      (schema:title|zoo:title) ?title.
-
-    ?oeuvre (schema:author|zoo:author) ?author;
-      (schema:hasPart|zoo:hasPart) ?uri.
-    
-    ?concept skos:prefLabel ?label
-
-    FILTER(lang(?label) = "en")
-    FILTER(str(?label) = "${input}")
-  }ORDER BY ?bookid ?nb
-  `
-}
-
 const getAuthors = () => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
@@ -343,18 +292,24 @@ router.get("/getCurrentType", async (req, res) => {
 const getParagraphAloneQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
-  SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?text WHERE {
-    <${uri}> a zoo:Paragraph;
-      zoo:identifier ?id_p;
-      zoo:text ?text.}`
+  SELECT DISTINCT ?paragraph (xsd:integer(?id_p) as ?id) ?text WHERE {
+    ?oeuvre zoo:hasPart+ ?parent
+  ?parent zoo:hasPart ?paragraph
+  ?paragraph zoo:text ?text;
+  	zoo:identifier ?id_p.
+  FILTER EXISTS {
+    ?parent zoo:hasPart <${uri}>
+  }
+}order by ?id`
 }
 
 router.get('/getParagraphAlone', async (req, res) => {
   let response = []
   const result = await executeSPARQLRequest(endpoint, getParagraphAloneQuery(req.query.uri));
+  console.log(result.results.bindings)
   for (const elt of result.results.bindings) {
     response.push({
-      uri: req.query.uri,
+      uri: elt.paragraph.value,
       text: elt.text.value,
       id: elt.id.value
     })

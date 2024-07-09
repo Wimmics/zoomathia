@@ -67,12 +67,19 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
         const para = []
         for (const elt of data) {
+
+            const concepts_list = await fetch(
+                `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${elt.uri}&lang=${"en"}`,
+                { signal }
+            ).then(response => response.json())
+
             para.push(<ParagraphDisplay
                 key={elt.id}
                 id={elt.id}
                 text={elt.text}
                 uri={elt.uri}
                 lang={"en"}
+                concepts={concepts_list}
                 controller={controllerRef} />)
         }
         return para
