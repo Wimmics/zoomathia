@@ -42,26 +42,39 @@ router.get("/getMetadata", async (req, res) => {
   res.status(200).json(response)
 })
 
-const getSummary = (uri) => {
-  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
-SELECT DISTINCT ?parent ?current ?type ?id ?title ?file WHERE {
-  	{
-    	<${uri}> a zoo:Oeuvre;
-      		zoo:identifier ?id;
-        	zoo:title ?title;
-    	BIND(<${uri}> as ?parent)
+/*
+{
+      <${uri}> a zoo:Oeuvre;
+          zoo:identifier ?id;
+          zoo:title ?title;
     BIND(zoo:Oeuvre as ?type)
     BIND(<${uri}> as ?current)
     }UNION{
-    	?current a ?type;
-      		zoo:isPartOf+ <${uri}>;
-  	  		zoo:isPartOf ?parent;
-     		zoo:identifier ?id.
-    	Optional {
-    		?current zoo:title ?title_t.
-  		}
-    	BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
-  	}
+      ?current a ?type;
+          zoo:isPartOf+ <${uri}>;
+          zoo:isPartOf ?parent_t;
+          zoo:identifier ?id.
+        BIND(IF(?parent = <${uri}>, ?current, ?parent_t) AS ?parent)
+      Optional {
+        ?current zoo:title ?title_t.
+      }
+      BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
+    }
+}ORDER BY ?parent ?id`
+*/
+
+const getSummary = (uri) => {
+  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+SELECT DISTINCT ?parent ?current ?type ?id ?title ?file WHERE {
+      ?current a ?type;
+          zoo:isPartOf+ <${uri}>;
+          zoo:isPartOf ?parent_t;
+          zoo:identifier ?id.
+        BIND(IF(?parent_t = <${uri}>, ?current, ?parent_t) AS ?parent)
+      Optional {
+        ?current zoo:title ?title_t.
+      }
+      BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
 }ORDER BY ?parent ?id`
 }
 
@@ -82,14 +95,14 @@ router.get("/getSummary", async (req, res) => {
   }
 
   for (const elt of result.results.bindings) {
-    if ((elt.current.value === req.query.uri) && (!idInSet.has(elt.current.value))) {
-      tree.push(response[elt.parent.value])
+    if ((elt.current.value === elt.parent.value) && (!idInSet.has(elt.current.value))) {
+      tree.push(response[elt.current.value])
       idInSet.add(elt.current.value)
     } else {
       response[elt.parent.value].children.push(response[elt.current.value])
     }
   }
-
+  console.log(tree)
   res.status(200).json(tree)
 })
 
