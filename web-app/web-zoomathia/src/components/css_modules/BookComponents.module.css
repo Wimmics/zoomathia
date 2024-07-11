@@ -110,13 +110,24 @@ select option {
     flex-direction: row;
 }
 
-.metadata-section div {
+.metadata-div {
     margin: auto;
+    padding: 15px 0;
 }
 
-.metadata-section div>h3 {
-    border-bottom: grey thin solid;
-    padding-bottom: 10px;
+.metadata-div>p {
+    font-size: 1.3rem;
+}
+
+.button-export {
+    background-color: rgb(203, 212, 255);
+    border: grey thin solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.button-export:hover {
+    background-color: rgb(216, 255, 203)
 }
 
 .sticky-title {

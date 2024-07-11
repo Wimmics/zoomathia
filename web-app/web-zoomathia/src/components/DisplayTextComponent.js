@@ -161,6 +161,14 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
     }
 
+    const downloadRDF = () => {
+        console.log("subgraph download...")
+    }
+
+    const downloadTEI = () => {
+        console.log("XML-TEI download...")
+    }
+
     useEffect(() => {
         const getMetadata = async () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getMetadata?uri=${uri}`)
@@ -172,7 +180,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${uri}`)
                 .then(response => response.json())
             setSummary(data[0])
-            console.log(data)
         }
         const update = async () => {
             setSelectInput([{ id: 0, type: type, options: options }])
@@ -185,21 +192,17 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
     return <section>
         <section className={styles["metadata-section"]}>
-            <div>
-                <h3>Author</h3>
-                <p>{metadata.author}</p>
+            <div className={styles["metadata-div"]}>
+                <p><b>Editor</b>: {metadata.editor}</p>
             </div>
-            <div>
-                <h3>Editor</h3>
-                <p>{metadata.editor}</p>
+            <div className={styles["metadata-div"]}>
+                <p><b>Date</b>: {metadata.date}</p>
             </div>
-            <div>
-                <h3>Date</h3>
-                <p>{metadata.date}</p>
+            <div className={styles["metadata-div"]}>
+                <p><b>Export XML-TEI</b>: <button className={styles["button-export"]} onClick={downloadTEI} data={metadata.file}>XML-TEI</button></p>
             </div>
-            <div>
-                <h3>File</h3>
-                <p>{metadata.file}</p>
+            <div className={styles["metadata-div"]}>
+                <p><b>Export RDF</b>: <button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button></p>
             </div>
         </section>
         <header className={styles["selection-section"]}>
@@ -217,7 +220,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         </header>
         <section className={styles["display-section"]}>
             <div>
-                <h2>Summary</h2>
+                <h2>Table of content</h2>
                 <ul>
                     {summary !== null ? <Summary node={summary} /> : ''}
                 </ul>
