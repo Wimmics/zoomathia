@@ -118,7 +118,6 @@ const CompetencyQuestionComponent = () => {
             <Select onChange={updateTable} options={options} />
         </header>
         <section>
-            <h3>{title}</h3>
             {table}
             <h3>Visualisation</h3>
             {iframe}
