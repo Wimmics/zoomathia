@@ -25,7 +25,7 @@ const Summary = ({ node }) => {
     }
     return <li id={node.type + "_" + node.id + "_summary"} key={node.uri + "_summary"}>
 
-        <button onClick={handleClick}>
+        <button className={styles["button-toc"]} onClick={handleClick}>
             {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
         </button>
         {node.children && node.children.length > 1 && (<ul>
@@ -220,12 +220,15 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             }
         </header>
         <section className={styles["display-section"]}>
-            <div>
+            <section className={styles["section-toc"]}>
                 <h2>Table of content</h2>
-                <ul>
-                    {summary !== null ? summary.map(node => <Summary node={node} />) : ''}
-                </ul>
-            </div>
+                <div className={styles["ul-toc"]}>
+                    <ul>
+                        {summary !== null ? summary.map(node => <Summary node={node} />) : ''}
+                    </ul>
+                </div>
+
+            </section>
             {sections}
         </section>
     </section>

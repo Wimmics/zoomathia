@@ -138,18 +138,28 @@ ul {
     list-style-type: none;
     padding-left: 20px;
     text-align: left;
-    display: block;
     height: 100%;
 }
 
-.display-section>div>ul {
+.section-toc {
+    min-width: 15%;
+    max-width: 15%;
+    max-height: 60svh;
+    padding: 15px;
+    box-shadow: 0 0 5px;
     overflow-y: scroll;
     overflow-x: hidden;
+    position: sticky;
+}
+
+.section-toc>h2 {
+    margin: 0;
 }
 
 li {
     margin: 5px 0;
     text-align: left;
+    text-overflow: ellipsis;
 }
 
 .display-section {
@@ -172,6 +182,10 @@ li {
 .display-section>div>h2 {
     margin: 0;
     padding: 10px;
+}
+
+.button-toc:hover {
+    background-color: yellow;
 }
 
 .loader {

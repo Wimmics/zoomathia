@@ -65,17 +65,17 @@ router.get("/getMetadata", async (req, res) => {
 
 const getSummary = (uri) => {
   return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
-SELECT DISTINCT ?parent ?current ?type ?id ?title ?file WHERE {
+SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?title ?file WHERE {
       ?current a ?type;
           zoo:isPartOf+ <${uri}>;
           zoo:isPartOf ?parent_t;
-          zoo:identifier ?id.
+          zoo:identifier ?id_t.
         BIND(IF(?parent_t = <${uri}>, ?current, ?parent_t) AS ?parent)
       Optional {
         ?current zoo:title ?title_t.
       }
       BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
-}ORDER BY ?parent ?id`
+}ORDER BY ?id ?parent`
 }
 
 router.get("/getSummary", async (req, res) => {
@@ -102,8 +102,14 @@ router.get("/getSummary", async (req, res) => {
       response[elt.parent.value].children.push(response[elt.current.value])
     }
   }
-  console.log(tree)
-  res.status(200).json(tree)
+
+  try {
+    res.status(200).json(tree)
+  } catch (e) {
+    console.log(tree)
+    res.status(200).end(JSON.stringify(tree))
+  }
+
 })
 
 const getWorkPart = (title) => {
