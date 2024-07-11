@@ -10,23 +10,25 @@ const getTypeFromURI = (uri) => {
 }
 
 const Summary = ({ node }) => {
+    const handleClick = () => {
+        const element = document.getElementById(node.uri)
+        if (!element) {
+            console.log(`Cannot select element on URI ${node.uri}`)
+        } else if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
+            //element.scrollIntoView({ behaviour: 'smooth', block: 'nearest' })
+            const position = element.getBoundingClientRect()
+            element.scrollIntoView({ behaviour: 'smooth', block: 'start' })
+        } else {
+            element.scrollIntoView({ behaviour: 'smooth', block: 'center' })
+
+        }
+    }
     return <li id={node.type + "_" + node.id + "_summary"} key={node.uri + "_summary"}>
-        <button onClick={() => {
-            const element = document.getElementById(node.uri)
 
-
-            if (!element) {
-                console.log(`Cannot select element on URI ${node.uri}`)
-            } else if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
-                //element.scrollIntoView({ behaviour: 'smooth', block: 'nearest' })
-                const position = element.getBoundingClientRect()
-                element.scrollIntoView({ behaviour: 'smooth', block: 'start' })
-            } else {
-                element.scrollIntoView({ behaviour: 'smooth', block: 'center' })
-
-            }
-        }}>{getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}</button>
-        {node.children && node.children.length > 0 && (<ul>
+        <button onClick={handleClick}>
+            {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
+        </button>
+        {node.children && node.children.length > 1 && (<ul>
             {node.children.map(child => <Summary key={`${child.uri}_${node.id}_summary`} node={child} />)}
         </ul>)}
     </li>
@@ -152,7 +154,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             const title = selectedOption.label
             setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controllerRef} />)
         } else {
-
             setSections([])
             const uri = selectedOption.value
             const title = selectedOption.label
@@ -179,7 +180,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         const getSummary = async () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${uri}`)
                 .then(response => response.json())
-            setSummary(data[0])
+            setSummary(data)
         }
         const update = async () => {
             setSelectInput([{ id: 0, type: type, options: options }])
@@ -222,13 +223,11 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             <div>
                 <h2>Table of content</h2>
                 <ul>
-                    {summary !== null ? <Summary node={summary} /> : ''}
+                    {summary !== null ? summary.map(node => <Summary node={node} />) : ''}
                 </ul>
             </div>
             {sections}
         </section>
-
-
     </section>
 }
 
