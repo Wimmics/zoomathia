@@ -37,6 +37,10 @@ def strip_text(txt):
     txt = txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("(","").replace(")","")
     return re.sub(r"\s+", " ", txt)
 
+def strip_paragraph_text(txt):
+    txt = txt.strip().replace("\r", "").replace("\n", " ").replace("\t", "").replace("(", "").replace(")", "")
+    return re.sub(r"\s+", " ", txt)
+
 
 """
 def extraction_step(FILE, CSV, ANNOTATIONS):
@@ -428,9 +432,9 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         for p_id, p in enumerate(parent_division.find_all(["l"], recursive=False)):
 
             paragraph_id = p_id
-            paragraph_text = strip_text(p.text)
+            paragraph_text = strip_paragraph_text(p.text)
             if p.head:
-                paragraph_title = strip_text(p.head.text)
+                paragraph_title = strip_paragraph_text(p.head.text)
             else:
                 paragraph_title = ""
             # ["parent_uri", "type", "id", "title", "child"]
@@ -446,13 +450,13 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     continue
 
                 if p.head:
-                    paragraph_title = strip_text(p.head.text)
+                    paragraph_title = strip_paragraph_text(p.head.text)
                 else:
                     paragraph_title = ""
 
                 if parent_data[1] == "BekkerPage":
                     paragraph_id = 0 if "a" in parent_data[3] else 1
-                    paragraph_text = strip_text(p.text)
+                    paragraph_text = strip_paragraph_text(p.text)
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[2],
                                       f"{parent_uri}/{paragraph_id}"])
@@ -460,7 +464,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text])
                 else:
                     paragraph_id = p_id
-                    paragraph_text = strip_text(p.text)
+                    paragraph_text = strip_paragraph_text(p.text)
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/{paragraph_id}"])
                     # ["parent_uri", "type", "id", "title", "text"]

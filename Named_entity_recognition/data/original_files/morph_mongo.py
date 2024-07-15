@@ -39,7 +39,7 @@ def clear_mongo_collection(db_name, collection_name, mongo_uri="mongodb://localh
 
 
 if __name__ == "__main__":
-    # TODO: script qui execute des conversion morph_xr2rml
+    # TODO: script qui execute des conversions morph_xr2rml
     db_name = "Ner"
     csv_files = glob.glob("*.csv")
     clear_mongo_collection(db_name, "Annotation")

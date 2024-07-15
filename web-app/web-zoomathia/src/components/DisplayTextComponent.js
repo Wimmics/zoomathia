@@ -9,9 +9,16 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
-const Summary = ({ node }) => {
+const Summary = ({ node, currentBook, setChange }) => {
     const handleClick = () => {
+
         const element = document.getElementById(node.uri)
+        if (node.uri.includes(currentBook)) {
+            console.log(`It work currentBook=${currentBook} and node.uri=${node.uri}`)
+        } else {
+            console.log(`not includes currentBook=${currentBook} and node.uri=${node.uri}`)
+            setChange()
+        }
         if (!element) {
             console.log(`Cannot select element on URI ${node.uri}`)
         } else if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
@@ -29,7 +36,11 @@ const Summary = ({ node }) => {
             {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
         </button>
         {node.children && node.children.length > 1 && (<ul>
-            {node.children.map(child => <Summary key={`${child.uri}_${node.id}_summary`} node={child} />)}
+            {node.children.map(child => <Summary
+                key={`${child.uri}_${node.id}_summary`}
+                node={child}
+                currentBook={currentBook}
+                setChange={setChange} />)}
         </ul>)}
     </li>
 }
@@ -39,6 +50,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [selectInput, setSelectInput] = useState([])
     const [metadata, setMetadata] = useState({})
     const [summary, setSummary] = useState(null)
+    const [currentBook, setCurrentBook] = useState(null)
     const controllerRef = useRef(controller.current)
 
     const [currentLang, setCurrentLang] = useState('en')
@@ -143,7 +155,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             }
             return select;
         })
-
+        setCurrentBook(selectedOption.value)
         if (i === selectInput.length - 1) {
             const newId = selectInput.length + 1;
             const newType = await getChildrenType(selectedOption, signal);
@@ -168,6 +180,10 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
     const downloadTEI = () => {
         console.log("XML-TEI download...")
+    }
+
+    const setChange = () => {
+        console.log("Change Parent state ?")
     }
 
     useEffect(() => {
@@ -200,7 +216,9 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p><b>Date</b>: {metadata.date}</p>
             </div>
             <div className={styles["metadata-div"]}>
-                <p><b>Export XML-TEI</b>: <button className={styles["button-export"]} onClick={downloadTEI} data={metadata.file}>XML-TEI</button></p>
+                <p><b>Export XML-TEI</b>:
+                    <button title={metadata.file} className={styles["button-export"]} onClick={downloadTEI} data={metadata.file}>XML-TEI
+                    </button></p>
             </div>
             <div className={styles["metadata-div"]}>
                 <p><b>Export RDF</b>: <button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button></p>
@@ -224,7 +242,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <h2>Table of content</h2>
                 <div className={styles["ul-toc"]}>
                     <ul>
-                        {summary !== null ? summary.map(node => <Summary node={node} />) : ''}
+                        {summary !== null ? summary.map(node => <Summary node={node} currentBook={currentBook} setChange={setChange} />) : ''}
                     </ul>
                 </div>
 
