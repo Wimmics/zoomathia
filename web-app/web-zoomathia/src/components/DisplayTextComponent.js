@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import SectionComponent from './SectionComponent'
 import Select from 'react-select'
 import styles from "./css_modules/BookComponents.module.css"
@@ -22,8 +22,6 @@ const Summary = ({ node, currentBook, setChange }) => {
         if (!element) {
             console.log(`Cannot select element on URI ${node.uri}`)
         } else if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
-            //element.scrollIntoView({ behaviour: 'smooth', block: 'nearest' })
-            const position = element.getBoundingClientRect()
             element.scrollIntoView({ behaviour: 'smooth', block: 'start' })
         } else {
             element.scrollIntoView({ behaviour: 'smooth', block: 'center' })
@@ -53,9 +51,9 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [currentBook, setCurrentBook] = useState(null)
     const controllerRef = useRef(controller.current)
 
-    const [currentLang, setCurrentLang] = useState('en')
+    //const [currentLang, setCurrentLang] = useState('en')
 
-    const searchConcepts = async (input) => {
+    /*const searchConcepts = async (input) => {
         const retrieved_concept = []
         const callForData = async (input) => {
             if (input === '') {
@@ -70,7 +68,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             }
         }
         return await callForData(input)
-    }
+    }*/
 
     const getParagraph = async (e, signal) => {
 
@@ -205,7 +203,12 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         update()
         getMetadata()
         getSummary()
-    }, [options, type])
+        return () => {
+            setSelectInput([])
+            setSummary(null)
+            setMetadata({})
+        }
+    }, [options, type, uri])
 
     return <section>
         <section className={styles["metadata-section"]}>
@@ -242,7 +245,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <h2>Table of content</h2>
                 <div className={styles["ul-toc"]}>
                     <ul>
-                        {summary !== null ? summary.map(node => <Summary node={node} currentBook={currentBook} setChange={setChange} />) : ''}
+                        {summary !== null ? summary.map(node => <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} />) : ''}
                     </ul>
                 </div>
 
