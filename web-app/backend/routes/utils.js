@@ -6,14 +6,29 @@ const executeSPARQLRequest = async (endpoint, query) => {
     /**
      * TODO:  Catch unexpected error during fetch (fetchControler)
      */
+    try {
+        let result_data = await fetch(url, {
+            headers: {
+                'Content-Type': 'text/plain',
+                'Accept': "application/sparql-results+json"
+            }
+        })
+        return await result_data.json()
+    }
+    catch (e) {
+        console.log(`Request fail...`)
 
-    let result_data = await fetch(url, {
-        headers: {
-            'Content-Type': 'text/plain',
-            'Accept': "application/sparql-results+json"
+        if (e.cause.code === 'ECONNREFUSED') {
+            console.log("SPARQL Endpoint unreachable, server is not launch or doesn't accept connection")
+        } else {
+            console.log(e)
         }
-    })
-    return await result_data.json()
+        return {
+            results: {
+                bindings: []
+            }
+        }
+    }
 }
 
 /**
