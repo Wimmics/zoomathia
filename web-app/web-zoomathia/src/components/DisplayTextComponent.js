@@ -29,17 +29,20 @@ const Summary = ({ node, currentBook, setChange }) => {
         }
     }
     return <li id={node.type + "_" + node.id + "_summary"} key={node.uri + "_summary"}>
-
-        <button className={styles["button-toc"]} onClick={handleClick}>
-            {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
-        </button>
-        {node.children && node.children.length > 1 && (<ul>
-            {node.children.map(child => <Summary
-                key={`${child.uri}_${node.id}_summary`}
-                node={child}
-                currentBook={currentBook}
-                setChange={setChange} />)}
-        </ul>)}
+        <details>
+            <summary>
+                <button className={styles["button-toc"]} onClick={handleClick}>
+                    {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
+                </button>
+            </summary>
+            {node.children && node.children.length > 1 && (<ul>
+                {node.children.map(child => <Summary
+                    key={`${child.uri}_${node.id}_summary`}
+                    node={child}
+                    currentBook={currentBook}
+                    setChange={setChange} />)}
+            </ul>)}
+        </details>
     </li>
 }
 
@@ -227,7 +230,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p><b>Export RDF</b>: <button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button></p>
             </div>
         </section>
-        <header className={styles["selection-section"]}>
+        <section className={styles["selection-section"]}>
             {selectInput.map((select, index) => {
                 return <section key={select.id} className={styles["select-field-section"]}>
                     <h2>Select a {select.type}</h2>
@@ -239,7 +242,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 </section>
             })
             }
-        </header>
+        </section>
         <section className={styles["display-section"]}>
             <section className={styles["section-toc"]}>
                 <h2>Table of content</h2>
