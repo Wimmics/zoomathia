@@ -73,14 +73,36 @@ const CompetencyQuestionComponent = () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
             setTitle(title)
             for (const elt of data.table.columns) {
-                // Add link tag to paragraph uri - remove namespace for clarity
-                if (elt === "paragraph") {
-                    generatedCol.push({
-                        name: elt,
-                        formatter: (cell) => { return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}Work?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
-                    })
-                } else {
-                    generatedCol.push(elt)
+                switch(elt){
+                    case "paragraph":
+                        generatedCol.push({
+                            name: elt,
+                            formatter: (cell) => { 
+                                return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}Work?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
+                        })
+                        break;
+                    case "name_anthroponym":
+                        generatedCol.push({
+                            name: elt,
+                            formatter: (cell) => html(`<span class="${styles["anthroponym-variable"]}">${cell}</span>`)
+                        })
+                        break;
+                    case "name_animal":
+                        generatedCol.push({
+                            name: elt,
+                            formatter: (cell) => html(`<span class="${styles["animal-variable"]}">${cell}</span>`)
+                        })
+                        break;
+                    default:
+                        if(elt.includes("mention")){
+                            generatedCol.push(elt)
+                        }else{
+                            generatedCol.push({
+                                name: elt,
+                                formatter: (cell) => html(`<span class="${styles["other-variable"]}">${cell}</span>`),
+                            })
+                        }
+                        
                 }
             }
             console.log(html)
@@ -115,7 +137,7 @@ const CompetencyQuestionComponent = () => {
     return <div className={styles["box-content"]}>
         <header>
             <h2 key="titre_competence">Select a competency question</h2>
-            <Select onChange={updateTable} options={options} />
+            <Select className={styles["input-select"]} onChange={updateTable} options={options} />
         </header>
         <section>
             {table}

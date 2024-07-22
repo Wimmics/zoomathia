@@ -2,7 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix zoo:     <http://www.zoomathia/2024/zoo#> 
 
-SELECT DISTINCT ?paragraph ?name_animal ?name_relation ?name_anthro WHERE {
+SELECT DISTINCT ?paragraph ?name_animal ?name_relation ?name_anthroponym WHERE {
 
   ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;
@@ -27,10 +27,10 @@ SELECT DISTINCT ?paragraph ?name_animal ?name_relation ?name_anthro WHERE {
   ?annotation3 oa:hasBody ?anthro;
         oa:hasTarget [oa:hasSource ?paragraph;
       oa:hasSelector [oa:exact ?mention_anthro]].
-    ?anthro skos:prefLabel ?name_anthro.
+    ?anthro skos:prefLabel ?name_anthroponym.
     ?anthro_collection skos:prefLabel "Anthroponym"@en;
 	                     skos:member ?anthro.
-    FILTER (lang(?name_anthro) = "en")
+    FILTER (lang(?name_anthroponym) = "en")
   
 }
 ORDER BY ?paragraph

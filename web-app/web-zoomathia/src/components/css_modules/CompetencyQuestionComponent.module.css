@@ -7,9 +7,13 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 85%;
+    width: 95%;
     box-shadow: 0 0 5px;
     background-color: white;
+}
+
+.input-select {
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -29,4 +33,16 @@ section>h3 {
     width: 100%;
     height: 850px;
     border: none;
+}
+
+.animal-variable {
+    background-color: red;
+}
+
+.anthroponym-variable{
+    background-color: lightgreen;
+}
+
+.other-variable {
+    background-color: orange;
 }
