@@ -1,15 +1,24 @@
 .footer {
     display: flex;
     flex-direction: row;
-    background-color: #363537;
+    /*background-color: #363537;*/
+    background-color: #c2c2c2;
     width: 100%;
     margin-top: 1.4rem;
+    padding: 15px;
 }
 
-.footer p {
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 20px 0;
+.footer a {
+    display: block;
+    margin: auto;
+}
+
+.img-styles {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 70px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
