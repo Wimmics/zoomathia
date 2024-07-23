@@ -9,16 +9,26 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
-const Summary = ({ node, currentBook, setChange }) => {
-    const handleClick = () => {
+const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
+    const handleDisplay = () => {
+        console.log(node.title)
+        /* Check if the current display should be regenerated */
+        if (!node.uri.includes(currentBook)) {
+            console.log(`not includes currentBook=${currentBook} and node.uri=${node.uri}`)
+            if(getTypeFromURI(node.type) === "Book"){
+                setCurrentBook(node.uri)
+            }/*else{
+                const highest_level = node.uri.split("/")
+                setCurrentBook(highest_level[0]+'/'+highest_level[1])
+            }*/
+            setChange(node.uri, node.title)
+        }
+    }
+
+    const handleClick = async () => {
 
         const element = document.getElementById(node.uri)
-        if (node.uri.includes(currentBook)) {
-            console.log(`It work currentBook=${currentBook} and node.uri=${node.uri}`)
-        } else {
-            console.log(`not includes currentBook=${currentBook} and node.uri=${node.uri}`)
-            setChange()
-        }
+        handleDisplay()
         if (!element) {
             console.log(`Cannot select element on URI ${node.uri}`)
         } else if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
@@ -40,7 +50,8 @@ const Summary = ({ node, currentBook, setChange }) => {
                     key={`${child.uri}_${node.id}_summary`}
                     node={child}
                     currentBook={currentBook}
-                    setChange={setChange} />)}
+                    setChange={setChange} setCurrentBook={setCurrentBook}/>)}
+                    
             </ul>)}
         </details>
     </li>
@@ -130,6 +141,16 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         return childOptions
     }
 
+    const handleToc = async (uri, nodeTitle) => {
+        if (controllerRef.current) {
+            controllerRef.current.abort()
+        }
+        controllerRef.current = new AbortController()
+
+        setSections(<SectionComponent sectionTitle={nodeTitle} uri={uri} controller={controllerRef} />)
+
+    }
+
     const handleSelect = async (i, selectedOption) => {
         if (controllerRef.current) {
             controllerRef.current.abort()
@@ -183,8 +204,8 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         console.log("XML-TEI download...")
     }
 
-    const setChange = () => {
-        console.log("Change Parent state ?")
+    const setChange = (e, title) => {
+        handleToc(e, title)
     }
 
     useEffect(() => {
@@ -207,6 +228,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         getMetadata()
         getSummary()
         return () => {
+            update()
             setSelectInput([])
             setSummary(null)
             setMetadata({})
@@ -222,7 +244,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p><b>Date</b>: {metadata.date}</p>
             </div>
             <div className={styles["metadata-div"]}>
-                <p><b>Export XML-TEI</b>:
+                <p><b>Export XML-TEI</b>: 
                     <button title={metadata.file} className={styles["button-export"]} onClick={downloadTEI} data={metadata.file}>XML-TEI
                     </button></p>
             </div>
@@ -248,7 +270,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <h2>Table of content</h2>
                 <div className={styles["ul-toc"]}>
                     <ul>
-                        {summary !== null ? summary.map(node => <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} />) : ''}
+                        {summary !== null ? summary.map(node => <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} setCurrentBook={setCurrentBook} />) : ''}
                     </ul>
                 </div>
 
