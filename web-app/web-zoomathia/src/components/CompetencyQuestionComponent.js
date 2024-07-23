@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useMemo } from "react"
 import styles from "./css_modules/CompetencyQuestionComponent.module.css"
 import "gridjs/dist/theme/mermaid.min.css";
 import { Grid } from "gridjs-react"
@@ -6,22 +6,21 @@ import { html } from 'gridjs'
 import Select from 'react-select'
 
 const CompetencyQuestionComponent = () => {
-    const styleGrid = {
-        td: {
+    const styleGrid = useMemo(
+        () => {
+        return { td: {
             'text-overflow': 'ellipsis',
             'overflow': 'hidden',
             'white-space': 'normal'
-        }
-    }
+        }}
+    }, [])
 
     const [options, setOptions] = useState([])
-    const [title, setTitle] = useState("")
     const [iframe, setIframe] = useState(<></>)
     const [table, setTable] = useState(<Grid data={[]} columns={[]} pagination={{ limit: 10 }} search={true} style={styleGrid} />)
 
     const updateTable = useCallback((e) => {
         const file = e.value
-        const title = e.label
         const callForData = async () => {
             const generatedCol = []
             if (file === null) { return }
@@ -71,7 +70,6 @@ const CompetencyQuestionComponent = () => {
                 ]
             }`
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
-            setTitle(title)
             for (const elt of data.table.columns) {
                 switch(elt){
                     case "paragraph":
@@ -102,7 +100,6 @@ const CompetencyQuestionComponent = () => {
                                 formatter: (cell) => html(`<span class="${styles["other-variable"]}">${cell}</span>`),
                             })
                         }
-                        
                 }
             }
             console.log(html)
@@ -119,7 +116,7 @@ const CompetencyQuestionComponent = () => {
             </iframe>)
         }
         callForData()
-    }, [setTable, setIframe])
+    }, [setTable, setIframe, styleGrid])
 
     useEffect(() => {
         const callForData = async () => {
