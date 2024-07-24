@@ -18,7 +18,6 @@ const ExplorerComponent = () => {
 
     const [author, setAuthor] = useState('')
     const [work, setWork] = useState('')
-    const [title, setTitle] = useState('')
 
     const controller = useRef(new AbortController())
 
@@ -31,8 +30,6 @@ const ExplorerComponent = () => {
             setAuthor({ label: e.author, value: e.value })
 
         }
-
-        setTitle(`${e.author} - ${e.label}`)
 
         if (controller.current) {
             controller.current.abort("Canceling Fetch: Work has changed...")
@@ -72,7 +69,6 @@ const ExplorerComponent = () => {
 
         const callForData = async () => {
             setWorks([{ label: '', value: '' }])
-            setTitle('')
             setDisplayTextComponent(<p>No text selected</p>)
             if (e.value === '') {
                 urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorks`
@@ -135,7 +131,7 @@ const ExplorerComponent = () => {
 
 
         <header className={styles["selected-book-title"]}>
-            <h2>{title}</h2>
+            <h2>{}</h2>
         </header>
 
         {displayTextComponent}

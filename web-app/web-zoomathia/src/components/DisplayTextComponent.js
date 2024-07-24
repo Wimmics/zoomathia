@@ -151,7 +151,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
     }
 
-    const handleSelect = async (i, selectedOption) => {
+    /*const handleSelect = async (i, selectedOption) => {
         if (controllerRef.current) {
             controllerRef.current.abort()
         }
@@ -194,7 +194,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controllerRef} />)
         }
 
-    }
+    }*/
 
     const downloadRDF = () => {
         console.log("subgraph download...")
@@ -252,19 +252,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p><b>Export RDF</b>: <button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button></p>
             </div>
         </section>
-        <section className={styles["selection-section"]}>
-            {selectInput.map((select, index) => {
-                return <section key={select.id} className={styles["select-field-section"]}>
-                    <h2>Select a {select.type}</h2>
-                    <Select className={styles["select-field"]}
-                        onChange={(selectedOption) => handleSelect(index, selectedOption)}
-                        options={select.options}
-                        selectedValue={{ value: '', label: '' }}
-                    />
-                </section>
-            })
-            }
-        </section>
+        
         <section className={styles["display-section"]}>
             <section className={styles["section-toc"]}>
                 <h2>Table of content</h2>
@@ -281,3 +269,20 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 }
 
 export default DisplayTextComponent;
+
+
+/*
+<section className={styles["selection-section"]}>
+            {selectInput.map((select, index) => {
+                return <section key={select.id} className={styles["select-field-section"]}>
+                    <h2>Select a {select.type}</h2>
+                    <Select className={styles["select-field"]}
+                        onChange={(selectedOption) => handleSelect(index, selectedOption)}
+                        options={select.options}
+                        selectedValue={{ value: '', label: '' }}
+                    />
+                </section>
+            })
+            }
+        </section>
+        */

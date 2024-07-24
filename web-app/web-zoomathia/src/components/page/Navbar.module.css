@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: #363537;
+    background-color: #c2c2c2;
     margin-bottom: 1.4rem;
     font-weight: bold;
     position: sticky;
@@ -31,14 +31,14 @@
     margin: 15px 0px;
     padding: 1.5rem;
     border-radius: 5px;
-    color: white;
     text-decoration: none;
     font-size: 1.5rem;
     /*vertical-align: middle;*/
 }
 
 .menu-box a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(18, 18, 18, 0.5);
     cursor: pointer;
+    color: white;
     transition: 0.5s;
 }
