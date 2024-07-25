@@ -7,10 +7,10 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
-const LOADING_STATE = <>
+const LOADING_STATE = <section className={styles["text-part"]}>
     <div className={styles["loader"]}></div>
-    <p>Loading work...</p>
-</>
+    <p>Loading data...</p>
+</section>
 
 const SectionComponent = (props) => {
     const sectionTitle = props.sectionTitle
@@ -21,6 +21,7 @@ const SectionComponent = (props) => {
         setSectionParagraph([])
         const callForData = async () => {
             const signal = props.controller.current.signal
+            setSectionParagraph(LOADING_STATE)
             try {
 
                 const currentType = await fetch(`${process.env.REACT_APP_BACKEND_URL}getCurrentType?uri=${props.uri}`,
@@ -81,8 +82,8 @@ const SectionComponent = (props) => {
         callForData()
     }, [props])
 
-    return <section id={props.uri} key={props.uri}>
-        <h2 className={styles["sticky-title"]}>{type} - {sectionTitle}</h2>
+    return <section id={props.uri} key={props.uri} className={styles["text-part"]}>
+        <h2 className={styles["sticky-title"]}>{type} {sectionTitle}</h2>
         {sectionParagraph}
     </section>
 

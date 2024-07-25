@@ -3,7 +3,6 @@
     flex-direction: row;
     background-color: #c2c2c2;
     margin-bottom: 1.4rem;
-    font-weight: bold;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -25,15 +24,14 @@
 }
 
 .menu-box a {
-    display: inline-block;
     width: 100%;
     text-align: center;
     margin: 15px 0px;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.5rem;
-    /*vertical-align: middle;*/
+    vertical-align: middle;
 }
 
 .menu-box a:hover {

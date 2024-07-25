@@ -129,11 +129,6 @@ const ExplorerComponent = () => {
             </section>
         </header>
 
-
-        <header className={styles["selected-book-title"]}>
-            <h2>{}</h2>
-        </header>
-
         {displayTextComponent}
 
     </div>

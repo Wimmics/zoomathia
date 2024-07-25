@@ -236,7 +236,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     }, [options, type, uri])
 
     return <section>
-        <section className={styles["metadata-section"]}>
+        <section className={styles["selected-book-metadata"]}>
             <div className={styles["metadata-div"]}>
                 <p><b>Editor</b>: {metadata.editor}</p>
             </div>
@@ -244,18 +244,16 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p><b>Date</b>: {metadata.date}</p>
             </div>
             <div className={styles["metadata-div"]}>
-                <p><b>Export XML-TEI</b>: 
-                    <button title={metadata.file} className={styles["button-export"]} onClick={downloadTEI} data={metadata.file}>XML-TEI
-                    </button></p>
-            </div>
-            <div className={styles["metadata-div"]}>
-                <p><b>Export RDF</b>: <button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button></p>
+                <p><b>Export</b>: 
+                    <button alt={metadata.file} className={styles["button-export"]} onClick={downloadTEI} data={metadata.file}>XML-TEI</button>
+                    <button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button></p>
             </div>
         </section>
         
         <section className={styles["display-section"]}>
             <section className={styles["section-toc"]}>
                 <h2>Table of content</h2>
+                
                 <div className={styles["ul-toc"]}>
                     <ul>
                         {summary !== null ? summary.map(node => <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} setCurrentBook={setCurrentBook} />) : ''}

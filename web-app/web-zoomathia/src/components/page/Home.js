@@ -1,7 +1,6 @@
 import styles from "./Home.module.css"
 const Home = () => {
     return <section className={styles["box-content"]}>
-        <h1>Welcome to Zoomathia</h1>
         <section className={styles["home-project"]}>
             <h2>About Zoomathia</h2>
             <p>

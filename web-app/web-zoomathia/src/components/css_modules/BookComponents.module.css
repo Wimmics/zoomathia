@@ -84,9 +84,12 @@ select option {
     padding: 20px;
 }
 
-.selected-book-title h2 {
+.selected-book-metadata{
+    border-top: #c2c2c2 thin solid;
+    border-bottom: #c2c2c2 thin solid;
+    background-color: #ebebeb;
+    display: flex;
     margin: 0;
-    background-color: #363537;
     padding: 0.5rem;
     font-size: 2rem;
 }
@@ -121,6 +124,7 @@ select option {
     border: grey thin solid;
     border-radius: 5px;
     padding: 10px;
+    margin: 0 15px;
 }
 
 .button-export:hover {
@@ -129,6 +133,10 @@ select option {
 
 .sticky-title {
     position: sticky;
+}
+
+.text-part {
+    /*border-left: #c2c2c2 thin solid*/
 }
 
 ul {

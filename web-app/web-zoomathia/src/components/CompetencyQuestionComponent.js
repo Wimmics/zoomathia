@@ -1,9 +1,15 @@
 import { useState, useEffect, useCallback, useMemo } from "react"
-import styles from "./css_modules/CompetencyQuestionComponent.module.css"
 import "gridjs/dist/theme/mermaid.min.css";
-import { Grid } from "gridjs-react"
+import styles from "./css_modules/CompetencyQuestionComponent.module.css"
+
+import { Grid, _ } from "gridjs-react"
 import { html } from 'gridjs'
 import Select from 'react-select'
+
+const LOADING_STATE = <>
+    <div className={styles["loader"]}></div>
+    <p>Loading data...</p>
+</>
 
 const CompetencyQuestionComponent = () => {
     const styleGrid = useMemo(
@@ -17,10 +23,14 @@ const CompetencyQuestionComponent = () => {
 
     const [options, setOptions] = useState([])
     const [iframe, setIframe] = useState(<></>)
-    const [table, setTable] = useState(<Grid data={[]} columns={[]} pagination={{ limit: 10 }} search={true} style={styleGrid} />)
+    const [table, setTable] = useState(null)
 
     const updateTable = useCallback((e) => {
         const file = e.value
+
+        setTable(LOADING_STATE)
+        setIframe(LOADING_STATE)
+
         const callForData = async () => {
             const generatedCol = []
             if (file === null) { return }
@@ -103,11 +113,13 @@ const CompetencyQuestionComponent = () => {
                 }
             }
             console.log(html)
+
             setTable(<Grid data={data.table.data}
                 columns={generatedCol}
                 pagination={{ limit: 10 }}
                 resizable={true}
-                search={true} style={styleGrid} sort={true} />)
+                search={true} style={styleGrid} sort={true} 
+                language={ { search:{placeholder: "filter row by keyword..."} }} />)
 
             setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"
