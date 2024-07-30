@@ -2,36 +2,55 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix zoo:     <http://www.zoomathia/2024/zoo#> 
 
-SELECT DISTINCT (?paragraph as ?p) (?name_animal as ?s) (?name_relation as ?type)
- (?name_anthro as ?o) (?name_anthro as ?date) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?paragraph)) as ?url) 
- (CONCAT(?name_animal, " - ", ?name_relation, " - ", ?name_anthro) as ?label) ("fst" as ?style1) ("snd" as ?style2)   WHERE {
-  ?annotation1 oa:hasBody ?animal;
-              oa:hasTarget [oa:hasSource ?paragraph;
+SELECT DISTINCT ?p ?s ?o (?s as ?type)
+  (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) 
+  ("fst" as ?style1) ?style2 WHERE {
+  
+  ?annotation2 oa:hasBody ?relation;
+          oa:hasTarget [oa:hasSource ?p;
+            oa:hasSelector [ oa:exact ?mention_relation]].
+      ?relation skos:prefLabel ?s;
+                skos:broader+ ?relation_generique.
+      ?relation_generique skos:prefLabel  "special relationship"@en.
+      FILTER (lang(?s) = "en")
+
+  ?p zoo:hasAnnotation ?annotation1, ?annotation2, ?annotation3.
+  
+  {
+      BIND("snd" as ?style2)
+
+      ?annotation1 oa:hasBody ?animal;
+              oa:hasTarget [oa:hasSource ?p;
                 oa:hasSelector [oa:exact ?mention_animal]].
     ?animal a skos:Concept;
-       skos:prefLabel ?name_animal.
+       skos:prefLabel ?o.
     ?animal_collection a skos:Collection;
        skos:prefLabel "Zoonyms"@en;
        skos:member ?animal.
-    FILTER (lang(?name_animal) = "en")
+    FILTER (lang(?o) = "en")
 
-   ?paragraph zoo:hasAnnotation ?annotation1, ?annotation2, ?annotation3.
+    ?annotation3 oa:hasBody ?anthro;
+          oa:hasTarget [oa:hasSource ?p;
+        oa:hasSelector [oa:exact ?mention_anthro]].
+      ?anthro_collection skos:prefLabel "Anthroponym"@en;
+                        skos:member ?anthro.
+    }
+    UNION{
+      ?annotation3 oa:hasBody ?anthro;
+          oa:hasTarget [oa:hasSource ?p;
+        oa:hasSelector [oa:exact ?mention_anthro]].
+      ?anthro skos:prefLabel ?o.
+      ?anthro_collection skos:prefLabel "Anthroponym"@en;
+                        skos:member ?anthro.
+      BIND("rst" as ?style2)
+      FILTER (lang(?o) = "en")
 
-  ?annotation2 oa:hasBody ?relation;
-        oa:hasTarget [oa:hasSource ?paragraph;
-          oa:hasSelector [ oa:exact ?mention_relation]].
-    ?relation skos:prefLabel ?name_relation;
-     	        skos:broader+ ?relation_generique.
-    ?relation_generique skos:prefLabel  "special relationship"@en.
-    FILTER (lang(?name_relation) = "en")
-  
-  ?annotation3 oa:hasBody ?anthro;
-        oa:hasTarget [oa:hasSource ?paragraph;
-      oa:hasSelector [oa:exact ?mention_anthro]].
-    ?anthro skos:prefLabel ?name_anthro.
-    ?anthro_collection skos:prefLabel "Anthroponym"@en;
-	                     skos:member ?anthro.
-    FILTER (lang(?name_anthro) = "en")
-  
+      ?annotation1 oa:hasBody ?animal;
+              oa:hasTarget [oa:hasSource ?p;
+                oa:hasSelector [oa:exact ?mention_animal]].
+    ?animal_collection a skos:Collection;
+       skos:prefLabel "Zoonyms"@en;
+       skos:member ?animal.
+  }
 }
 ORDER BY ?paragraph

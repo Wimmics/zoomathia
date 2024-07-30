@@ -368,19 +368,23 @@ const getConceptsQuery = (uri, lang) => {
 router.get('/getConcepts', async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, getConceptsQuery(req.query.uri, req.query.lang))
   const response = []
+  const annotations = {}
 
   for (const elt of result.results.bindings) {
-    response.push({
-      annotation: elt.annotation.value,
+    annotations[elt.label.value] = {
       concept: elt.concept.value,
       label: elt.label.value,
-      start: elt.start ? parseInt(elt.start.value) : 0,
-      end: elt.end ? parseInt(elt.end.value) : 0,
-      exact: elt.exact.value
-    })
+      offset: []
+    }
   }
 
-  res.status(200).json(response)
+  for (const elt of result.results.bindings) {
+    annotations[elt.label.value].offset.push({start: elt.start.value, end: elt.end.value})
+  }
+  // start: elt.start ? parseInt(elt.start.value) : 0,
+  // end: elt.end ? parseInt(elt.end.value) : 0,
+
+  res.status(200).json(annotations)
 })
 
 const searchConceptsQuery = (input, lang) => {

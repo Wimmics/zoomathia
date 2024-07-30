@@ -33,8 +33,6 @@ const Work = () => {
 
         const callForData = async () => {
             const paragraphs = []
-            console.log(process.env.REACT_APP_BACKEND_URL)
-            console.log(uri)
             const data = await fetch(
                 `${process.env.REACT_APP_BACKEND_URL}getParagraphAlone?uri=${uri}`,
                 { signal }

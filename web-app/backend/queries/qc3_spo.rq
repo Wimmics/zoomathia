@@ -2,7 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?p ?s ?o (?s as ?date) ("fst" as ?style1) (?animal as ?date) (?use as ?type) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?s)) as ?url) ("snd" as ?style2) WHERE {
+SELECT DISTINCT ?p ?s ?o ("fst" as ?style1) ?type (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) ("snd" as ?style2) WHERE {
   ?annotation1 a oa:Annotation;
               oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?p;
@@ -17,10 +17,27 @@ SELECT DISTINCT ?p ?s ?o (?s as ?date) ("fst" as ?style1) (?animal as ?date) (?u
               oa:hasBody ?use;
               oa:hasTarget [oa:hasSource ?p;
                             oa:hasSelector [oa:exact ?mention2]].
-  ?use skos:prefLabel ?o;
+  ?use skos:prefLabel ?type;
 	skos:broader+ ?use_generique.
   ?use_generique skos:prefLabel "medical use of animal"@en.  
+
+  OPTIONAL {
+    ?annotation3 oa:hasBody ?part;
+    oa:hasTarget [
+      oa:hasSource ?p;
+      oa:hasSelector [
+        oa:exact ?mention3
+      ]
+    ].
+    ?part skos:prefLabel ?name_part.
+    ?part_collection skos:prefLabel "Anatomy"@en;
+      skos:member ?part. 
+      FILTER (lang(?name_part) = "en")
+  }
+  BIND(IF(BOUND(?name_part), ?name_part, "Unknown") AS ?o)
   
+  
+  FILTER(lang(?type) = "en")
   FILTER (lang(?s) = "en")
-  FILTER (lang(?o) = "en")
+  
 }

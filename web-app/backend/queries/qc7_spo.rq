@@ -2,20 +2,36 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/> 
 
-SELECT DISTINCT ?s ?o ("technical use" as ?p) (?o as ?date) (?o as ?type) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?s)) as ?url) ("fst" as ?style2) ("snd" as ?style1) WHERE {
+SELECT DISTINCT ?s ?o ?p (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
 ?annotation1 a oa:Annotation;
               oa:hasBody ?animal;
-              oa:hasTarget [ oa:hasSource ?s;
+              oa:hasTarget [ oa:hasSource ?p;
                              oa:hasSelector [oa:exact ?mention_animal]].
   ?animal a skos:Concept;
-       skos:prefLabel ?o.
+       skos:prefLabel ?s.
   ?animal_collection a skos:Collection;
        skos:prefLabel "Zoonyms"@en;
        skos:member ?animal.
 
   ?annotation2 oa:hasBody ?use;
-        oa:hasTarget [ oa:hasSource ?s;
+        oa:hasTarget [ oa:hasSource ?p;
                        oa:hasSelector [ oa:exact ?mention_use]].
   ?use skos:prefLabel "technical use"@en.
-  FILTER (lang(?o) = "en").
+
+  OPTIONAL {
+    ?annotation3 oa:hasBody ?part;
+    oa:hasTarget [
+      oa:hasSource ?p;
+      oa:hasSelector [
+        oa:exact ?mention3
+      ]
+    ].
+    ?part skos:prefLabel ?name_part.
+    ?part_collection skos:prefLabel "Anatomy"@en;
+      skos:member ?part. 
+      FILTER (lang(?name_part) = "en")
+  }
+  BIND(IF(BOUND(?name_part), ?name_part, "Unknown") AS ?o)
+
+  FILTER (lang(?s) = "en").
 }

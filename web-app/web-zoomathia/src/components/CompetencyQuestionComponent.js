@@ -61,7 +61,7 @@ const CompetencyQuestionComponent = () => {
                         "priority": 2
                     },
                     "rst": {
-                        "color": "purple",
+                        "color": "green",
                         "priority": 3
                     }
                 },

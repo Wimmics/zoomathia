@@ -2,18 +2,22 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?s ?o ("length of pregnancy" as ?p) (?animal as ?date) (?animal as ?type) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?s)) as ?url) ("fst" as ?style2) ("snd" as ?style1) WHERE {
+SELECT DISTINCT ?s (?length_of as ?o) ?p ?type (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) ("fst" as ?style2) ("snd" as ?style1) WHERE {
   ?annotation1 oa:hasBody ?animal;
-             oa:hasTarget [ oa:hasSource ?s;
+             oa:hasTarget [ oa:hasSource ?p;
                             oa:hasSelector [ oa:exact ?mention_animal]].
-  ?animal skos:prefLabel ?o.
+  ?animal skos:prefLabel ?s.
   ?animal_collection a skos:Collection;
        skos:prefLabel "Zoonyms"@en;
        skos:member ?animal.
 
   ?annotation2 oa:hasBody ?pregnancy;
-               oa:hasTarget [oa:hasSource ?s;
+               oa:hasTarget [oa:hasSource ?p;
                              oa:hasSelector [ oa:exact ?mention_pregnancy]].
-  ?pregnancy skos:prefLabel "length of pregnancy"@en.
-  FILTER (lang(?o) = "en")
+  ?pregnancy skos:prefLabel ?length_of;
+    skos:broader/skos:broader ?type_g.
+  ?type_g skos:prefLabel ?type. 
+  filter(?length_of in ("length of incubation"@en, "length of pregnancy"@en))
+  FILTER (lang(?s) = "en")
+  filter (lang(?type) ="en")
 }
