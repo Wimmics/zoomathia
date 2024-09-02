@@ -1,120 +1,140 @@
+import { useState, useEffect } from "react"
 import styles from "./css_modules/SearchComponent.module.css"
-import { useState, useCallback, useRef } from "react"
-import ParagraphDisplay from './ParagraphComponent'
-import SelectComponent from './SelectComponent'
+import AsyncSelect from 'react-select/async'
 
-const BookSection = (props) => {
-    return <>
-        <section className={styles["selected-book-title"]}>
-            <h2>{props.title}</h2>
-        </section>
-        {props.paragraphs}
-    </>
-}
 
 const SearchComponent = () => {
-    const [paragraphs, setParagraphs] = useState([])
-    const [currentLang, setCurrentLang] = useState("en")
-    const controllerRef = useRef(null)
 
-    const searchConcepts = async (input) => {
-        const retrieved_concept = []
-        const callForData = async (input) => {
-            if (input === '') {
-                return []
-            } else {
-                const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}searchConcepts?input=${input}&lang=${currentLang}`).then(response => response.json())
-                for (const concept of data) {
-                    retrieved_concept.push({ value: concept.uri, label: `${concept.label} @${currentLang}` })
-                }
-                return retrieved_concept
-            }
-        }
-        return await callForData(input)
+    // Selected value
+    const [author, setAuthor] = useState([])
+    const [work, setWork] = useState([])
+    const [concepts, setConcepts] = useState([])
+    // Options list for AsyncSelect
+    const [authorList, setAuthorList] = useState([])
+    const [workList, setWorkList] = useState([])
+    const [conceptList, setConceptList] = useState([])
+    const [checked, setChecked] = useState(false)
+
+    const filterList = async (input, listOptions) => {
+        return listOptions.filter(e => e.label.includes(input))
     }
 
-    const postParagraphWithConcepts = useCallback((e) => {
+    const authorSelect = <AsyncSelect key={"author-select"} className={styles["selection-input"]}
+        placeholder="Select author(s)"
+        defaultOptions={authorList}
+        loadOptions={(input) => filterList(input, authorList)}
+        isMulti
+        onChange={(e) => setAuthor(e || [])}
+    />
 
-        const callForData = async (e) => {
-            const paras = []
-            const book_found = {}
+    const workSelect = <AsyncSelect key={"work-select"} className={styles["selection-input"]}
+        placeholder="Select work(s)"
+        defaultOptions={workList}
+        loadOptions={(input) => filterList(input, workList)}
+        isMulti
+        onChange={(e) => setWork(e || [])}
+    />
 
-            if (controllerRef.current) {
-                controllerRef.current.abort()
+    const conceptsSelect = <AsyncSelect key={"concepts-select"} className={styles["selection-input"]}
+        placeholder="Select concept(s)"
+        defaultOptions={conceptList}
+        loadOptions={(input) => filterList(input, conceptList)}
+        isMulti
+        onChange={(e) => setConcepts(e || [])}
+    />
+
+    const sendRequestedForm = async () => {
+
+        // Requête POST
+        const searchObject = JSON.stringify({
+            author: author.map(e => e.value),
+            work: work.map(e => e.value),
+            concepts: concepts.map(e => {return{uri: e.value, type: e.type}}),
+            checked: checked
+        })
+
+        console.log(searchObject)
+
+        const data_retreive = await fetch(`${process.env.REACT_APP_BACKEND_URL}customSearch`,
+            {
+                method: "POST",
+                mode: "cors",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: searchObject
+              }
+        ).then(response => response.json()).catch(e => {console.log(e)})
+        console.log(data_retreive)
+
+        
+    }
+
+    useEffect(() => {
+        const getAuthors = async () => {
+            const author_response = []
+
+            const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getAuthors`
+            ).then(response => response.json()).catch(e => { console.log(e) })
+            for (const author of data_author) {
+                author_response.push({ value: author.name, label: author.name })
             }
-            controllerRef.current = new AbortController()
-            const signal = controllerRef.current.signal
-            try {
-                const data = await fetch(
-                    `${process.env.REACT_APP_BACKEND_URL}getParagraphsWithConcepts`,
-                    {
-                        method: 'POST',
-                        headers: { 'content-type': 'application/json' },
-                        body: JSON.stringify({ concepts: e }),
-                        signal
-                    }).then(response => response.json())
-                console.log(data)
-                for (const paragraph of data) {
-                    if (!book_found.hasOwnProperty(paragraph.bookUri)) {
-                        book_found[paragraph.bookUri] = {
-                            author: paragraph.author,
-                            id: paragraph.bookId,
-                            paragraphs: [],
-                            title: paragraph.title
-                        }
-                    }
-                    book_found[paragraph.bookUri]['paragraphs'].push(
-                        <ParagraphDisplay
-                            key={paragraph.id}
-                            id={paragraph.id}
-                            text={paragraph.text}
-                            uri={paragraph.uri}
-                            lang={currentLang}
-                        />
-                    )
-                }
-                for (const key of Object.keys(book_found)) {
-                    paras.push(
-                        <BookSection
-                            key={key}
-                            paragraphs={book_found[key].paragraphs}
-                            uri={key}
-                            id={book_found[key]['id']}
-                            title={`${book_found[key]['title']} - ${book_found[key]["author"]}`}
-                        />
-                    )
-                }
-                if (data.length === 0) {
-                    setParagraphs([])
-                    setParagraphs(<section className={styles["not-found"]}>
-                        <p>No result for concepts label</p>
-                    </section>
-                    )
-                } else {
-                    setParagraphs([])
-                    setParagraphs(paras)
-                }
-            } catch (e) {
-                if (e.namme === "abort") {
-                    console.log(e)
-                }
-
-            }
+    
+            return author_response
         }
-        callForData(e)
-    }, [currentLang, setParagraphs])
+    
+        const getWorks = async () => {
+            const work_response = []
+
+            const data_works = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
+            ).then(response => response.json())
+                .catch(e => { console.log(e) })
+            for (const work of data_works) {
+                work_response.push({ value: work.uri, label: work.title, author: work.author })
+            }
+    
+            return work_response
+        }
+
+        const getConcepts = async () => {
+            const concept_response = []
+
+            const data_concepts = await fetch(`${process.env.REACT_APP_BACKEND_URL}getTheso`
+            ).then(response => response.json())
+                .catch(e => { console.log(e) })
+    
+            return data_concepts
+        }
+
+        const loadData = async () => {
+            setAuthorList( await getAuthors())
+            setWorkList( await getWorks())
+            setConceptList(await getConcepts())
+        }
+        loadData()
+    }, [])
 
     return <div className={styles["box-content"]}>
-        <section className={styles["search-title"]}>
-            <h2>Select concepts</h2>
+        <section className={styles["section-form"]}>
+            <h2>Set a custom filter</h2>
+            <p>This formulary can take multiple element. The default behaviour for author(s) and work(s) is an OR value dans cannot be change.</p>
+            <div className={styles["block-input"]}>
+                <div className={styles["search-input"]}>
+                    <label>Filter on author(s):</label>
+                    {authorSelect}
+                </div>
+                <div className={styles["search-input"]}>
+                    <label>Filter on work(s):</label>
+                    {workSelect}
+                </div>
+                <div className={styles["search-input"]}>
+                    <label>Filter on concept(s):</label>
+                    {conceptsSelect}
+                    <label>AND<input type="checkbox" onChange={e => setChecked(!checked)}/></label>
+                </div>
+            </div>
+            <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>search</button>
         </section>
-        <SelectComponent
-            execute_effect={postParagraphWithConcepts}
-            load={searchConcepts}
-            filter_title=""
-            setLanguage={setCurrentLang}
-        />
-        {paragraphs}
     </div>
 
 }

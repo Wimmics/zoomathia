@@ -8,65 +8,47 @@ p {
     margin: 0
 }
 
-.select-lang {
-    margin: auto;
-}
-
-.selection-input {
-    margin: auto;
-    width: 50rem;
-}
-
 .box-content {
     margin: auto;
-    width: 85%;
+    width: 90%;
     box-shadow: 0 0 5px;
     padding: 15px;
     background-color: white;
 }
 
-.input-search {
+.section-form{
     display: flex;
     flex-direction: column;
-    margin: auto;
 }
 
-.input-search label {
-    text-align: center;
-    font-size: 1.4rem;
-    padding: 0.2rem 0;
+.block-input {
+    display:flex;
+    flex-direction: row;
+    padding: 1rem 0;
 }
 
-.input-search input {
-    text-align: left;
-    margin: auto;
-    font-size: 1.3rem;
-    padding: 0.5rem;
-    width: 25%;
+.search-input {
+    margin: 0 auto;
+    width: 30%;
 }
 
-.selected-book-title h2 {
-    text-align: center;
-    background-color: #363537;
-    color: white;
-    padding: 0.5rem;
-    margin: 0.8rem 0 0 0;
-    font-size: 2rem;
+.search-input > label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
 }
 
-.button-search {
-    padding: 0.5rem;
-    border-radius: 5px;
-    width: 20rem;
-    margin: 1rem auto 0 auto;
+.btn-submit-search {
+    font-size: 1.2rem;
+    padding: 15px;
     border: grey thin solid;
+    border-radius: 5px;
+    
+    width: fit-content;
+    margin: 15px auto;
 }
 
-.button-search:hover {
-    background-color: rgb(124, 168, 255);
-}
-
-.not-found {
-    margin: 2rem 0;
-    font-size: 1.4rem;
+.btn-submit-search:hover {
+    background-color: #acf3ff;
+    box-shadow: 0 0 2px;
 }

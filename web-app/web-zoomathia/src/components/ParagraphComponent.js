@@ -51,7 +51,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
             const { start, end } = offset;
             if (start > lastIndex) {
             // Ajouter le texte avant le span
-            parts.push(text.slice(lastIndex, start));
+                parts.push(text.slice(lastIndex, start));
             }
             // Ajouter le texte entouré par le span
             parts.push(<span key={`${index}-${start}`} className={styles["highlight"]}>{text.slice(start, end)}</span>);

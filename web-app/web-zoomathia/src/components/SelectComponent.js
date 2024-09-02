@@ -26,6 +26,7 @@ const SelectComponent = (props) => {
             {props.filter_title !== '' ? <label>{props.filter_title}</label> : ''}
             <AsyncSelect
                 key={props.key ? props.key : ''}
+                placeholder="Select concepts"
                 className={styles["selection-input"]}
                 loadOptions={props.load}
                 isMulti

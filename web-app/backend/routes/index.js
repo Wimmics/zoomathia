@@ -531,6 +531,31 @@ router.get('/getLanguageConcept', async (req, res) => {
   res.status(200).json(response)
 })
 
+const getTheso = () => {
+  return `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?concept ?label ?type WHERE {
+  ?concept a ?type;
+  	skos:prefLabel ?label.
+  FILTER(lang(?label) = "en")
+}ORDER BY ?label
+`
+}
+
+router.get('/getTheso', async (req, res) => {
+  const result = await executeSPARQLRequest(endpoint, getTheso())
+  const response = []
+
+  for(const elt of result.results.bindings){
+    response.push({
+      label: elt.type.value === "http://www.w3.org/2004/02/skos/core#Collection" ? elt.label.value + " (Collection)": elt.label.value,
+      value:elt.concept.value,
+      type: elt.type.value
+    })
+  }
+
+  res.status(200).json(response)
+})
+
 router.get("/qcList", (req, res) => {
   console.log(qcs)
   res.status(200).json(qcs)
@@ -564,4 +589,45 @@ router.get("/getQC", async (req, res) => {
   return res.status(200).json(response)
 })
 
+const addFilterOnVariable = (variable, filterList) => {
+  return `?work a zoo:Oeuvre;
+    zoo:title ?title;
+    zoo:author ?author.
+
+  FILTER(?${variable} in (${filterList.map(e => e.includes("http") ? `<${e}>`:`"${e}"`).join(" , ")}))`
+}
+
+
+
+/**
+ * POST request for custom search
+ * front object: 
+ * searchObject = {
+ *           author: author.map(e => e.value),
+ *           work: work.map(e => e.value),
+ *           concepts: concepts.map(e => {return{uri: e.value, type: e.type}})
+ *       }
+ */
+router.post("/customSearch", async (req, res) => {
+  // FILTER(?author in (authors.join(",")))
+
+  const authors = req.body.author
+  const works = req.body.work
+  const concepts = req.body.concepts
+
+  const buildRequest = `
+  SELECT DISTINCT * WHERE {
+    {
+      ${addFilterOnVariable("author", authors)}
+    }UNION{
+      ${addFilterOnVariable("work", works)}
+    }
+  }
+  `
+
+  console.log(buildRequest)
+
+
+  res.status(200).json({label: "YOUPIE"})
+})
 module.exports = router;
