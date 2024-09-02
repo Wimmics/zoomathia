@@ -16,7 +16,7 @@ const SearchComponent = () => {
     const [checked, setChecked] = useState(false)
 
     const filterList = async (input, listOptions) => {
-        return listOptions.filter(e => e.label.includes(input))
+        return listOptions.filter(e => e.label.toLowerCase().includes(input))
     }
 
     const authorSelect = <AsyncSelect key={"author-select"} className={styles["selection-input"]}
