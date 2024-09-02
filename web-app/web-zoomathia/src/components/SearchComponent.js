@@ -117,7 +117,8 @@ const SearchComponent = () => {
     return <div className={styles["box-content"]}>
         <section className={styles["section-form"]}>
             <h2>Set a custom filter</h2>
-            <p>This formulary can take multiple element. The default behaviour for author(s) and work(s) is an OR value dans cannot be change.</p>
+            <p>This formulary can take multiple value per input. The default behaviour for author(s) and work(s) input is an "OR" value and cannot be change.</p>
+            <p>For the select concept(s) input, a checkbox specify if the search strategy should be an OR value or an AND value.</p>
             <div className={styles["block-input"]}>
                 <div className={styles["search-input"]}>
                     <label>Filter on author(s):</label>
