@@ -614,17 +614,36 @@ router.post("/customSearch", async (req, res) => {
   const authors = req.body.author
   const works = req.body.work
   const concepts = req.body.concepts
+  let annotations = ""
 
-  const buildRequest = `
+  if(concepts){
+    if(req.body.checked){
+      annotations = buildAnnotation(concepts.map(e => e.uri))
+    }else{
+      annotations = `?annotation oa:hasBody ?concept;
+        oa:hasTarget [
+          oa:hasSource ?paragraph
+        ]
+      FILTER(?concept in (${concepts.map(e => e.uri.includes("http") ? `<${e.uri}>`:`"${e.uri}"`).join(" , ")}))
+      `
+    }
+    console.log(annotations)
+  }
+
+  const buildRequest = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+  prefix oa: <http://www.w3.org/ns/oa#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
   SELECT DISTINCT * WHERE {
     {
       ${addFilterOnVariable("author", authors)}
     }UNION{
       ${addFilterOnVariable("work", works)}
+    }UNION{
+      ${annotations}
     }
+    
   }
   `
-
   console.log(buildRequest)
 
 
