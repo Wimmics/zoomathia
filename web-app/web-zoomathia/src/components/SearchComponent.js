@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react"
 import styles from "./css_modules/SearchComponent.module.css"
 import AsyncSelect from 'react-select/async'
+import ParagraphDisplay from "./ParagraphComponent"
 
+const LOADING_STATE = <section className={styles["text-part"]}>
+    <div className={styles["loader"]}></div>
+    <p>Loading data...</p>
+</section>
 
 const SearchComponent = () => {
 
@@ -14,9 +19,10 @@ const SearchComponent = () => {
     const [workList, setWorkList] = useState([])
     const [conceptList, setConceptList] = useState([])
     const [checked, setChecked] = useState(false)
+    const [searchResult, setSearchResult] = useState([])
 
     const filterList = async (input, listOptions) => {
-        return listOptions.filter(e => e.label.toLowerCase().includes(input))
+        return listOptions.filter(e => e.label.toLowerCase().includes(input.toLowerCase()))
     }
 
     const authorSelect = <AsyncSelect key={"author-select"} className={styles["selection-input"]}
@@ -45,6 +51,8 @@ const SearchComponent = () => {
 
     const sendRequestedForm = async () => {
 
+        setSearchResult(LOADING_STATE)
+
         // Requête POST
         const searchObject = JSON.stringify({
             author: author.map(e => e.value),
@@ -52,8 +60,6 @@ const SearchComponent = () => {
             concepts: concepts.map(e => {return{uri: e.value, type: e.type}}),
             checked: checked
         })
-
-        console.log(searchObject)
 
         const data_retreive = await fetch(`${process.env.REACT_APP_BACKEND_URL}customSearch`,
             {
@@ -65,9 +71,36 @@ const SearchComponent = () => {
                 body: searchObject
               }
         ).then(response => response.json()).catch(e => {console.log(e)})
-        console.log(data_retreive)
-
         
+        const displaySearch = []
+
+        for(const key of Object.keys(data_retreive)){
+            const title = data_retreive[key].title
+            const author = data_retreive[key].author
+
+            const paragraphs = []
+            for(const paragraph of data_retreive[key].paragraph){
+                
+                const concepts_list = await fetch(`${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${paragraph.uri}&lang=${"en"}`
+                    ).then(response => response.json())
+
+                paragraphs.push(<ParagraphDisplay
+                    key={paragraph.id}
+                    id={paragraph.id}
+                    text={paragraph.text}
+                    uri={paragraph.uri}
+                    lang={"en"}
+                    concepts={concepts_list}
+                    controller={null} />
+                )
+            }
+
+            displaySearch.push(<div>
+                <h2>{author} - {title}</h2>
+                {paragraphs}
+            </div>)
+        }
+        setSearchResult(displaySearch)
     }
 
     useEffect(() => {
@@ -116,8 +149,8 @@ const SearchComponent = () => {
 
     return <div className={styles["box-content"]}>
         <section className={styles["section-form"]}>
-            <h2>Set a custom filter</h2>
-            <p>This formulary can take multiple value per input. The default behaviour for author(s) and work(s) input is an "OR" value and cannot be change.</p>
+            <h2>Define a custom filter</h2>
+            <p><u>Note:</u> This formulary can take multiple value per input. The default behaviour for author(s) and work(s) input is an "OR" value and cannot be change.</p>
             <p>For the select concept(s) input, a checkbox specify if the search strategy should be an OR value or an AND value.</p>
             <div className={styles["block-input"]}>
                 <div className={styles["search-input"]}>
@@ -134,8 +167,9 @@ const SearchComponent = () => {
                     <label>AND<input type="checkbox" onChange={e => setChecked(!checked)}/></label>
                 </div>
             </div>
-            <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>search</button>
+            <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
         </section>
+        {searchResult}
     </div>
 
 }

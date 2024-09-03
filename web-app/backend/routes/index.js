@@ -42,27 +42,6 @@ router.get("/getMetadata", async (req, res) => {
   res.status(200).json(response)
 })
 
-/*
-{
-      <${uri}> a zoo:Oeuvre;
-          zoo:identifier ?id;
-          zoo:title ?title;
-    BIND(zoo:Oeuvre as ?type)
-    BIND(<${uri}> as ?current)
-    }UNION{
-      ?current a ?type;
-          zoo:isPartOf+ <${uri}>;
-          zoo:isPartOf ?parent_t;
-          zoo:identifier ?id.
-        BIND(IF(?parent = <${uri}>, ?current, ?parent_t) AS ?parent)
-      Optional {
-        ?current zoo:title ?title_t.
-      }
-      BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
-    }
-}ORDER BY ?parent ?id`
-*/
-
 const getSummary = (uri) => {
   return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
 SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?title ?file WHERE {
@@ -307,6 +286,7 @@ router.get("/getCurrentType", async (req, res) => {
   }
   res.status(200).json(response)
 })
+
 
 const getParagraphAloneQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
@@ -609,16 +589,27 @@ const addFilterOnVariable = (variable, filterList) => {
  *       }
  */
 router.post("/customSearch", async (req, res) => {
-  // FILTER(?author in (authors.join(",")))
 
   const authors = req.body.author
   const works = req.body.work
   const concepts = req.body.concepts
-  let annotations = ""
 
-  if(concepts){
+  let annotations = ""
+  let union = ""
+  
+  if(concepts.length > 0){
     if(req.body.checked){
-      annotations = buildAnnotation(concepts.map(e => e.uri))
+      const query = []
+      for (let i = 0; i < concepts.length; i++) {
+        query.push(
+          `?annotation${i} oa:hasBody <${concepts[i].uri}>;
+          oa:hasTarget [
+            oa:hasSource ?paragraph;
+          ].
+          `)
+      }
+      annotations = query.join('\n')
+
     }else{
       annotations = `?annotation oa:hasBody ?concept;
         oa:hasTarget [
@@ -627,26 +618,59 @@ router.post("/customSearch", async (req, res) => {
       FILTER(?concept in (${concepts.map(e => e.uri.includes("http") ? `<${e.uri}>`:`"${e.uri}"`).join(" , ")}))
       `
     }
-    console.log(annotations)
+  }
+
+  if(authors.length >  0 && works.length > 0){
+    union = `{
+      ${addFilterOnVariable("author", authors)}
+    }UNION{
+      ${addFilterOnVariable("work", works)}
+    }`
+  }else{
+    if(authors.length >  0){
+      union = `${addFilterOnVariable("author", authors)}`
+    }else if(works.length > 0){
+      union = `${addFilterOnVariable("work", works)}`
+    }
   }
 
   const buildRequest = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
   prefix oa: <http://www.w3.org/ns/oa#>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
-  SELECT DISTINCT * WHERE {
-    {
-      ${addFilterOnVariable("author", authors)}
-    }UNION{
-      ${addFilterOnVariable("work", works)}
-    }UNION{
-      ${annotations}
-    }
+
+  SELECT DISTINCT ?work ?author ?title ?paragraph ?id ?text WHERE {
+    ${union}
+    ?work a zoo:Oeuvre;
+      zoo:title ?title;
+      zoo:author ?author;
+      zoo:hasPart+ ?paragraph.
     
-  }
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id.
+    ${annotations}
+  }ORDER BY ?work ?id
   `
   console.log(buildRequest)
 
 
-  res.status(200).json({label: "YOUPIE"})
+  const result = await executeSPARQLRequest(endpoint, buildRequest)
+  const response = {}
+  for(const elt of result.results.bindings){
+    if(!(elt.work.value in response)){
+      response[elt.work.value] = {
+        uri: elt.work.value,
+        title: elt.title.value,
+        author: elt.author.value,
+        paragraph: []
+      }
+    }   
+    response[elt.work.value].paragraph.push({
+        text: elt.text.value,
+        id: elt.id.value,
+        uri: elt.paragraph.value
+    })
+  }
+
+  res.status(200).json(response)
 })
 module.exports = router;
