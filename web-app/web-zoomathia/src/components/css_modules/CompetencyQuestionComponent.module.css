@@ -10,6 +10,7 @@
     width: 95%;
     box-shadow: 0 0 5px;
     background-color: white;
+    min-height: 70lvh;
 }
 
 .input-select {
@@ -53,12 +54,18 @@ section>h3 {
     background-color: orange;
 }
 
+.box-header {
+    text-align: center;
+}
+
+.box-question {
+    text-align: center;
+}
+
 
 .loader {
     border: 16px solid #f3f3f3;
-    /* Light grey */
     border-top: 16px solid #3498db;
-    /* Blue */
     border-radius: 50%;
     width: 60px;
     height: 60px;

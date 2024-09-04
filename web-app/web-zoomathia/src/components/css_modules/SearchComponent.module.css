@@ -10,10 +10,11 @@ p {
 
 .box-content {
     margin: auto;
-    width: 90%;
+    width: 95%;
     box-shadow: 0 0 5px;
     padding: 15px;
     background-color: white;
+    min-height: 70svh;
 }
 
 .section-form{
@@ -27,15 +28,39 @@ p {
     padding: 1rem 0;
 }
 
-.search-input {
-    margin: 0 auto;
+.search-input, .search-input-border {
+    margin: auto;
     width: 30%;
 }
 
-.search-input > label {
-    display: block;
+.search-input-border {
+    box-shadow: 0 0 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search-input > label, .search-input-border > label {
     font-size: 1.2rem;
     margin-bottom: 5px;
+}
+
+.search-input > label > button {
+    display: inline;
+}
+
+.search-concept {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.search-concept > div:first-child {
+    width: 90%;
+    margin: auto;
+}
+.search-concept-field {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-submit-search {
@@ -43,14 +68,17 @@ p {
     padding: 15px;
     border: grey thin solid;
     border-radius: 5px;
-    
     width: fit-content;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .btn-submit-search:hover {
     background-color: #acf3ff;
     box-shadow: 0 0 2px;
+}
+
+.box-result {
+    margin-top: 15px;
 }
 
 .loader {

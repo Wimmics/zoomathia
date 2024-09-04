@@ -144,11 +144,11 @@ const CompetencyQuestionComponent = () => {
     }, [setOptions])
 
     return <div className={styles["box-content"]}>
-        <header>
+        <header className={styles["box-header"]}>
             <h2 key="titre_competence">Select a competency question</h2>
             <Select className={styles["input-select"]} onChange={updateTable} options={options} />
         </header>
-        <section>
+        <section className={styles["box-question"]}>
             {table}
             <h3>Visualisation</h3>
             {iframe}
