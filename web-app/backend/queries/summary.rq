@@ -1,0 +1,31 @@
+  prefix oa: <http://www.w3.org/ns/oa#>
+  prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+
+  SELECT DISTINCT ?work ?parent ?current ?current_type ?current_id ?current_title ?paragraph ?id WHERE {
+    ?work a zoo:Oeuvre;
+    zoo:title ?title;
+    zoo:author ?author.
+
+  FILTER(?author in ("Athenaeus"))
+    ?work a zoo:Oeuvre;
+      zoo:title ?title;
+      zoo:author ?author;
+      zoo:hasPart+ ?paragraph.
+
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id.
+  ?work zoo:hasPart+ ?current.
+  
+  ?current a ?current_type;
+          zoo:identifier ?current_id;
+          zoo:isPartOf ?parent;
+          zoo:hasPart+ ?paragraph.
+  ?current a ?current_type;
+          zoo:isPartOf+ ?work;
+          zoo:isPartOf ?parent_t;
+          zoo:identifier ?current_id.
+  BIND(IF(?parent_t = ?work, ?current, ?parent_t) AS ?parent)
+  OPTIONAL {
+    ?current zoo:title ?current_title
+  }
+  }ORDER BY ?work ?current_id ?id
