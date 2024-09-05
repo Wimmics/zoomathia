@@ -23,7 +23,6 @@ const SectionComponent = (props) => {
             const signal = props.controller.current.signal
             setSectionParagraph(LOADING_STATE)
             try {
-
                 const currentType = await fetch(`${process.env.REACT_APP_BACKEND_URL}getCurrentType?uri=${props.uri}`,
                     { signal }
                 ).then(response => response.json())

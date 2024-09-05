@@ -560,6 +560,7 @@ router.get("/getQC", async (req, res) => {
   const response = {
     query: query,
     results: result,
+    titleVizu: qcs.find(e => e.id === parseInt(req.query.id)).vizuTitle,
     spo: fs.readFileSync(`queries/qc${req.query.id}_spo.rq`, 'utf8'),
     table: {
       columns: result.head.vars,
@@ -638,7 +639,7 @@ router.post("/customSearch", async (req, res) => {
   prefix oa: <http://www.w3.org/ns/oa#>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
 
-  SELECT DISTINCT ?work ?author ?title ?paragraph ?id ?text WHERE {
+  SELECT DISTINCT ?work ?author ?title ?parent ?current ?current_type ?current_id ?current_title ?paragraph ?id ?text WHERE {
     ${union}
     ?work a zoo:Oeuvre;
       zoo:title ?title;
@@ -648,13 +649,54 @@ router.post("/customSearch", async (req, res) => {
     ?paragraph zoo:text ?text;
       zoo:identifier ?id.
     ${annotations}
-  }ORDER BY ?work ?id
+
+    ?work zoo:hasPart+ ?current.
+  
+    ?current a ?current_type;
+            zoo:identifier ?current_id;
+            zoo:isPartOf ?parent;
+            zoo:hasPart+ ?paragraph.
+    OPTIONAL {
+      ?current zoo:title ?current_title
+    }
+  }ORDER BY ?work ?current_id ?id
   `
   console.log(buildRequest)
 
 
   const result = await executeSPARQLRequest(endpoint, buildRequest)
   const response = {}
+  /*//------------------
+  const tree = []
+  const idInSet = new Set()
+
+  for (const elt of result.results.bindings) {
+    response[elt.current.value] = {
+      uri: elt.current.value,
+      id: elt.id.value,
+      title: elt.title.value,
+      type: elt.type.value,
+      children: []
+    }
+  }
+
+  for (const elt of result.results.bindings) {
+    if ((elt.current.value === elt.parent.value) && (!idInSet.has(elt.current.value))) {
+      tree.push(response[elt.current.value])
+      idInSet.add(elt.current.value)
+    } else {
+      response[elt.parent.value].children.push(response[elt.current.value])
+    }
+  }
+
+  try {
+    res.status(200).json(tree)
+  } catch (e) {
+    console.log(tree)
+    res.status(200).end(JSON.stringify(tree))
+  }*/
+
+  //--------------
   for(const elt of result.results.bindings){
     if(!(elt.work.value in response)){
       response[elt.work.value] = {

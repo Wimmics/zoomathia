@@ -42,27 +42,8 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
     const highlight = useCallback((offsets) => {
         const parts = [];
         let lastIndex = 0;
-
-        // Il faut agrandir quand ça se chevauche et positionner correctement dans le cas contraire
-
-        // Parcourir les offsets triés par la position de départ
+        console.log(Math.min(...offsets.map(e => parseInt(e.start))))
         offsets.forEach((offset, index) => {
-            const { start, end } = offset;
-            if (start > lastIndex) {
-            // Ajouter le texte avant le span
-                parts.push(text.slice(lastIndex, start));
-            }
-            // Ajouter le texte entouré par le span
-            parts.push(<span key={`${index}-${start}`} className={styles["highlight"]}>{text.slice(start, end)}</span>);
-            lastIndex = Math.max(lastIndex, end);
-        });
-
-        // Ajouter le texte restant après le dernier span
-        if (lastIndex < text.length) {
-            parts.push(text.slice(lastIndex));
-        }
-
-        /*offsets.forEach((offset, index) => {
             const { start, end } = offset;
             // Ajouter le texte avant le span
             parts.push(text.slice(lastIndex, start));
@@ -73,7 +54,6 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
 
         // Ajouter le texte restant après le dernier span
         parts.push(text.slice(lastIndex));
-        console.log(parts)*/
         setTextContent(<p key={`content-${id}`}>{parts}</p>);
         
     }, [text, id])
@@ -104,7 +84,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
 
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
-            <p key={`number-${id}`}>[{id}]</p>
+            <p key={`number-${id}`}>{`[${parseInt(id) + 1}]`}</p>
         </div>
         <div key={`text-${id}`} className={styles["text-paragraph"]}>
             {text_content}

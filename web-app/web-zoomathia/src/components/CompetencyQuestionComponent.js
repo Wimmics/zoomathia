@@ -24,10 +24,10 @@ const CompetencyQuestionComponent = () => {
     const [options, setOptions] = useState([])
     const [iframe, setIframe] = useState(<></>)
     const [table, setTable] = useState(null)
+    const [titleVizu, setTitleVizu] = useState('')
 
     const updateTable = useCallback((e) => {
         const file = e.value
-
         setTable(LOADING_STATE)
         setIframe(LOADING_STATE)
 
@@ -80,6 +80,7 @@ const CompetencyQuestionComponent = () => {
                 ]
             }`
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
+            
             for (const elt of data.table.columns) {
                 switch(elt){
                     case "paragraph":
@@ -101,6 +102,12 @@ const CompetencyQuestionComponent = () => {
                             formatter: (cell) => html(`<span class="${styles["animal-variable"]}">${cell}</span>`)
                         })
                         break;
+                    case "animal_name":
+                        generatedCol.push({
+                            name: elt,
+                            formatter: (cell) => html(`<span class="${styles["animal-variable"]}">${cell}</span>`)
+                        })
+                        break;
                     default:
                         if(elt.includes("mention")){
                             generatedCol.push(elt)
@@ -112,7 +119,7 @@ const CompetencyQuestionComponent = () => {
                         }
                 }
             }
-            console.log(html)
+            console.log(data)
 
             setTable(<Grid data={data.table.data}
                 columns={generatedCol}
@@ -126,6 +133,7 @@ const CompetencyQuestionComponent = () => {
                 src={`${process.env.REACT_APP_LDVIZ_URL}ldviz?url=${process.env.REACT_APP_CORESE_URL}&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
             >
             </iframe>)
+            setTitleVizu(data.titleVizu)
         }
         callForData()
     }, [setTable, setIframe, styleGrid])
@@ -150,7 +158,7 @@ const CompetencyQuestionComponent = () => {
         </header>
         <section className={styles["box-question"]}>
             {table}
-            <h3>Visualisation</h3>
+            <h3>{titleVizu}</h3>
             {iframe}
         </section>
 
