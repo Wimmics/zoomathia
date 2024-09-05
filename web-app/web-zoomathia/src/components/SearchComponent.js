@@ -152,8 +152,6 @@ const SearchComponent = () => {
         }
 
         const getConcepts = async () => {
-            const concept_response = []
-
             const data_concepts = await fetch(`${process.env.REACT_APP_BACKEND_URL}getTheso`
             ).then(response => response.json())
                 .catch(e => { console.log(e) })
@@ -197,19 +195,22 @@ const SearchComponent = () => {
             <Grid size={2}>
                 <h2>Table of content</h2>
                 <SimpleTreeView>
-                    <TreeItem itemId="grid" label="Data Grid">
-                        <TreeItem itemId="grid-community" label="@mui/x-data-grid" />
-                        <TreeItem itemId="grid-pro" label="@mui/x-data-grid-pro" />
-                        <TreeItem itemId="grid-premium" label="@mui/x-data-grid-premium" />
+                    <TreeItem itemId="grid" label="Work 1">
+                        <TreeItem itemId="grid-community" label="Book 1" />
+                        <TreeItem itemId="grid-pro" label="Book 2" />
+                        <TreeItem itemId="grid-level-sub" label="Book 3">
+                            <TreeItem itemId="Yes" label="Chapter 1"></TreeItem>
+                        </TreeItem>
+                        <TreeItem itemId="grid-premium" label="Book 4" />
                     </TreeItem>
-                    <TreeItem itemId="pickers" label="Date and Time Pickers">
+                    <TreeItem itemId="pickers" label="Work 2">
                         <TreeItem itemId="pickers-community" label="@mui/x-date-pickers" />
                         <TreeItem itemId="pickers-pro" label="@mui/x-date-pickers-pro" />
                     </TreeItem>
-                        <TreeItem itemId="charts" label="Charts">
+                    <TreeItem itemId="charts" label="Work 3">
                         <TreeItem itemId="charts-community" label="@mui/x-charts" />
                     </TreeItem>
-                        <TreeItem itemId="tree-view" label="Tree View">
+                    <TreeItem itemId="tree-view" label="Work 4">
                         <TreeItem itemId="tree-view-community" label="@mui/x-tree-view" />
                     </TreeItem>
                 </SimpleTreeView>

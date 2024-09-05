@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react"
+import { useState, useCallback } from "react"
 import styles from "./css_modules/ParagraphComponent.module.css"
 
 const ListElement = ({uri, label, offsets, onMouseEnter, onMouseLeave, onClick}) => {
@@ -11,14 +11,13 @@ const ListElement = ({uri, label, offsets, onMouseEnter, onMouseLeave, onClick})
 
 const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
     const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}</p>)
-    const [nbConcept, setNbConcept] = useState(0)
+    //const [nbConcept, setNbConcept] = useState(0)
 
     const redirectToOpenTheso = (e) => {
         window.open(e, "_blank")
     }
 
-
-    const mergeOffsets = (offsets) => {
+    /*const mergeOffsets = (offsets) => {
         console.log(offsets)
         // Trier les offsets par leur position de départ (et par la position de fin en cas d'égalité)
         offsets.sort((a, b) => a.start - b.start || a.start - b.start);
@@ -38,7 +37,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
         });
       
         return merged;
-      };
+      };*/
 
     const highlight = useCallback((offsets) => {
         const parts = [];

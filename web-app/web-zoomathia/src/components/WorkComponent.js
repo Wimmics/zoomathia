@@ -11,7 +11,7 @@ const LOADING_STATE = <>
 const Work = () => {
     const [searchParams] = useSearchParams();
     const [paragraph, setParagraph] = useState(LOADING_STATE)
-    const [title, setTitle] = useState(null)
+    //const [title, setTitle] = useState(null)
     const [focus, setFocus] = useState(false)
     const controllerRef = useRef(null)
 

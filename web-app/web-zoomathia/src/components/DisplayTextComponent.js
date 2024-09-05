@@ -1,15 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import SectionComponent from './SectionComponent'
 import styles from "./css_modules/BookComponents.module.css"
-import ParagraphDisplay from "./ParagraphComponent";
 import Summary from "./Summary.js"
-
-const getTypeFromURI = (uri) => {
-    const uri_split = uri.split('#')
-    return uri_split[uri_split.length - 1]
-}
-
-
+import { SimpleTreeView } from "@mui/x-tree-view";
 
 const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [sections, setSections] = useState([])
@@ -18,82 +11,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [summary, setSummary] = useState(null)
     const [currentBook, setCurrentBook] = useState(null)
     const controllerRef = useRef(controller.current)
-
-    //const [currentLang, setCurrentLang] = useState('en')
-
-    /*const searchConcepts = async (input) => {
-        const retrieved_concept = []
-        const callForData = async (input) => {
-            if (input === '') {
-                return []
-            } else {
-                const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}searchConcepts?input=${input}&lang=${currentLang}`)
-                    .then(response => response.json())
-                for (const concept of data) {
-                    retrieved_concept.push({ value: concept.uri, label: `${concept.label}@${currentLang}` })
-                }
-                return retrieved_concept
-            }
-        }
-        return await callForData(input)
-    }*/
-
-    const getParagraph = async (e, signal) => {
-
-        const data = await fetch(
-            `${process.env.REACT_APP_BACKEND_URL}getParagraphAlone?uri=${e.value}`,
-            { signal }
-        ).then(response => response.json())
-
-        const para = []
-        for (const elt of data) {
-
-            const concepts_list = await fetch(
-                `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${elt.uri}&lang=${"en"}`,
-                { signal }
-            ).then(response => response.json())
-
-            para.push(<ParagraphDisplay
-                key={elt.id}
-                id={elt.id}
-                text={elt.text}
-                uri={elt.uri}
-                lang={"en"}
-                concepts={concepts_list}
-                controller={controllerRef} />)
-        }
-        return para
-    }
-
-    const getChildrenType = async (selectedOption, signal) => {
-        let childType = ''
-        const checkType = await fetch(
-            `${process.env.REACT_APP_BACKEND_URL}getChildrenType?uri=${selectedOption.value}`,
-            { signal }
-        ).then(response => response.json())
-
-        for (const elt of checkType) {
-            childType = getTypeFromURI(elt)
-        }
-        return childType
-    }
-
-    const getOptions = async (selectedOption, signal) => {
-        const childOptions = []
-        const data = await fetch(
-            `${process.env.REACT_APP_BACKEND_URL}getChildren?uri=${selectedOption.value}`,
-            { signal }
-        ).then(response => response.json())
-
-        for (const elt of data) {
-            childOptions.push({
-                label: elt.title,
-                value: elt.uri,
-                type: elt.type
-            })
-        }
-        return childOptions
-    }
 
     const handleToc = async (uri, nodeTitle) => {
         if (controllerRef.current) {
@@ -104,51 +21,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         setSections(<SectionComponent sectionTitle={nodeTitle} uri={uri} controller={controllerRef} />)
 
     }
-
-    /*const handleSelect = async (i, selectedOption) => {
-        if (controllerRef.current) {
-            controllerRef.current.abort()
-        }
-        controllerRef.current = new AbortController()
-        const signal = controllerRef.current.signal
-
-
-
-        if (getTypeFromURI(selectedOption.type) === "Paragraph") {
-            const newSelects = selectInput.slice(0, i + 1).map((select, index) => {
-                return select;
-            })
-            setSelectInput(newSelects)
-            setSections([])
-            const paragraph = await getParagraph(selectedOption)
-            setSections(paragraph)
-            return
-        }
-
-        const newSelects = selectInput.slice(0, i + 1).map((select, index) => {
-            if (i === index) {
-                return { ...select, value: selectedOption }
-            }
-            return select;
-        })
-        setCurrentBook(selectedOption.value)
-        if (i === selectInput.length - 1) {
-            const newId = selectInput.length + 1;
-            const newType = await getChildrenType(selectedOption, signal);
-            const newOptions = await getOptions(selectedOption, signal);
-            setSelectInput([...newSelects, { id: newId, type: newType, options: newOptions }])
-            setSections([])
-            const uri = selectedOption.value
-            const title = selectedOption.label
-            setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controllerRef} />)
-        } else {
-            setSections([])
-            const uri = selectedOption.value
-            const title = selectedOption.label
-            setSections(<SectionComponent sectionTitle={title} uri={uri} controller={controllerRef} />)
-        }
-
-    }*/
 
     const downloadRDF = () => {
         console.log("subgraph download...")
@@ -210,7 +82,10 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 
                 <div className={styles["ul-toc"]}>
                     <ul>
-                        {summary !== null ? summary.map(node => <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} setCurrentBook={setCurrentBook} />) : ''}
+                        {summary !== null ? summary.map(node => <SimpleTreeView key={node.uri}>
+                            <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} setCurrentBook={setCurrentBook} />
+                            </SimpleTreeView>
+                        ) : ''}
                     </ul>
                 </div>
 
@@ -221,20 +96,3 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 }
 
 export default DisplayTextComponent;
-
-
-/*
-<section className={styles["selection-section"]}>
-            {selectInput.map((select, index) => {
-                return <section key={select.id} className={styles["select-field-section"]}>
-                    <h2>Select a {select.type}</h2>
-                    <Select className={styles["select-field"]}
-                        onChange={(selectedOption) => handleSelect(index, selectedOption)}
-                        options={select.options}
-                        selectedValue={{ value: '', label: '' }}
-                    />
-                </section>
-            })
-            }
-        </section>
-        */

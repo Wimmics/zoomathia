@@ -1,3 +1,4 @@
+import { TreeItem } from "@mui/x-tree-view"
 import styles from "./css_modules/BookComponents.module.css"
 
 const getTypeFromURI = (uri) => {
@@ -6,7 +7,14 @@ const getTypeFromURI = (uri) => {
 }
 
 
+const removeDuplicate = (node) => {
+    return node.filter((obj1, i, arr) => 
+        arr.findIndex(obj2 => (obj2.id === obj1.id)) === i
+      )
+}
+
 const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
+
     const handleDisplay = () => {
         console.log(node.title)
         /* Check if the current display should be regenerated */
@@ -32,23 +40,18 @@ const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
 
         }
     }
-    return <li id={node.type + "_" + node.id + "_summary"} key={node.uri + "_summary"}>
-        <details>
-            <summary>
-                <button className={styles["button-toc"]} onClick={handleClick}>
-                    {getTypeFromURI(node?.type)} - {node.title !== '' ? node.title : node.id}
-                </button>
-            </summary>
-            {node.children && node.children.length > 1 && (<ul>
-                {node.children.map(child => <Summary
+
+    return <TreeItem id={node.type + "_" + node.id + "_summary"}  itemId={node.uri + "_summary"} onClick={handleClick}
+                label={getTypeFromURI(node?.type) + "-" + (node.title !== '' ? node.title : node.id)}>
+            {node.children && node.children.length > 1 && (<>
+                {removeDuplicate(node.children).map(child => <Summary
                     key={`${child.uri}_${node.id}_summary`}
                     node={child}
                     currentBook={currentBook}
                     setChange={setChange} setCurrentBook={setCurrentBook}/>)}
                     
-            </ul>)}
-        </details>
-    </li>
+                </>)}
+    </TreeItem>
 }
 
 export default Summary;
