@@ -29,3 +29,31 @@
     ?current zoo:title ?current_title
   }
   }ORDER BY ?work ?current_id ?id
+
+
+PREFIX oa:     <http://www.w3.org/ns/oa#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+
+SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?paragraph ?title ?file WHERE {
+  {
+  	?paragraph zoo:hasAnnotation ?annotation.
+    ?annotation oa:hasBody ?animals.
+  
+  	?animals_generic skos:prefLabel "BIRD"@en.
+    ?animals skos:prefLabel ?label;
+             skos:broader+ ?animals_generic.
+  }
+      ?work zoo:author "Pliny the Elder".
+  
+      ?current a ?type;
+          zoo:isPartOf+ ?work;
+          zoo:isPartOf ?parent_t;
+  		  zoo:hasPart+ ?paragraph;
+          zoo:identifier ?id_t.
+        BIND(IF(?parent_t = ?work, ?current, ?parent_t) AS ?parent)
+      Optional {
+        ?current zoo:title ?title_t.
+      }
+      BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
+}ORDER BY ?id ?parent
