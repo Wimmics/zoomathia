@@ -1,6 +1,6 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-prefix zoo:     <http://www.zoomathia/2024/zoo#> 
+prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
 
 SELECT DISTINCT ?p ?s ?o (?s as ?type)
   (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) 
@@ -53,4 +53,4 @@ SELECT DISTINCT ?p ?s ?o (?s as ?type)
        skos:member ?animal.
   }
 }
-ORDER BY ?paragraph
+ORDER BY ?p
