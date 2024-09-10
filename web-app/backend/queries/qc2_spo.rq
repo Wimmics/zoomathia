@@ -4,7 +4,7 @@ prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
 
 SELECT DISTINCT ?p ?s ?o (?s as ?type)
   (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) 
-  ("fst" as ?style1) ?style2 WHERE {
+  ("snd" as ?style1) ?style2 WHERE {
   
   ?annotation2 oa:hasBody ?relation;
           oa:hasTarget [oa:hasSource ?p;
@@ -17,7 +17,7 @@ SELECT DISTINCT ?p ?s ?o (?s as ?type)
   ?p zoo:hasAnnotation ?annotation1, ?annotation2, ?annotation3.
   
   {
-      BIND("snd" as ?style2)
+      BIND("fst" as ?style2)
 
       ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?p;
