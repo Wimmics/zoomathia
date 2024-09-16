@@ -99,7 +99,7 @@ const SearchComponent = () => {
             displaySearch.push(<div className={styles["box-result"]}><p>No result for this custom filter</p></div>)
         }else{
             setStats(<section className={styles["selected-book-metadata"]}>
-                <h4>Resultat</h4>
+                <h4>Results</h4>
                 <p>Number of Work: {data_retreive.length}</p>
             </section>)
             setSummary(<div className={styles["ul-toc"]}>
@@ -111,7 +111,6 @@ const SearchComponent = () => {
             </div>)
 
             for(const node of data_retreive){
-                console.log("Yes")
                 displaySearch.push(<DisplaySearch node={node}/>)
             }
         }
@@ -193,7 +192,7 @@ const SearchComponent = () => {
             <Grid size={2}>
                 {summary}
             </Grid>
-            <Grid size={10}>
+            <Grid size={10}> 
             {searchResult}
             {currentWorkLoading}
             </Grid>
