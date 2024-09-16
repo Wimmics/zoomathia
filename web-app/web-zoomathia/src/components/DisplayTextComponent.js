@@ -70,7 +70,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p><b>Export</b>: 
                     <a className={styles["button-export"]} 
                         href={`${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`} 
-                        download={metadata.file}>XML-TEI</a>
+                        download={metadata.file} target="_blank">XML-TEI</a>
                     </p>
             </div>
         </section>

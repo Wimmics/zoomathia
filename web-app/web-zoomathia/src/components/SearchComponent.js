@@ -146,6 +146,7 @@ const SearchComponent = () => {
         const displaySearch = []
         if(Object.keys(data_retreive).length === 0){
             displaySearch.push(<div className={styles["box-result"]}><p>No result for this custom filter</p></div>)
+            setSummary([])
         }else{
             setStats(<section className={styles["selected-book-metadata"]}>
                 <h4>Results</h4>
