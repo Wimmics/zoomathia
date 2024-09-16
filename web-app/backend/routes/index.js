@@ -1,11 +1,32 @@
 let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion } = require('./utils.js')
 let express = require('express');
+const path = require('path');
 const { qcs } = require("../queries/qcs.js")
 const axios = require('axios');
 const fs = require("fs")
 let router = express.Router();
 
 const endpoint = "http://localhost:8080/sparql"
+const __dirForDOwnload__ = "./files/"
+
+
+router.get('/download-xml', (req, res) => {
+  const fileName = req.query.file
+  const filePath = path.join(__dirForDOwnload__, fileName);
+
+  res.download(filePath, fileName.split("/")[-1], (err) => {
+      if (err) {
+        console.log(err)
+        res.status(500).send('Error file not found.');
+      }
+  });
+});
+
+router.get('/download-turtle', async (req, res) => {
+  const response = await executeSPARQLRequest(endpoint, query)
+
+  res.status(200).json(response)
+})
 
 /* GET home page. */
 router.get('/', async (req, res) => {
@@ -639,9 +660,9 @@ router.post("/customSearch", async (req, res) => {
   prefix oa: <http://www.w3.org/ns/oa#>
   prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
 
-  SELECT DISTINCT ?work ?author ?title ?parent ?current ?current_type ?current_id ?current_title ?paragraph ?id ?text WHERE {
+  SELECT DISTINCT ?work ?type ?author ?title ?parent ?current ?current_type ?current_id ?current_title ?paragraph_direct_parent ?paragraph ?id ?text WHERE {
     ${union}
-    ?work a zoo:Oeuvre;
+    ?work a zoo:Oeuvre; a ?type;
       zoo:title ?title;
       zoo:author ?author;
       zoo:hasPart+ ?paragraph.
@@ -650,12 +671,12 @@ router.post("/customSearch", async (req, res) => {
       zoo:identifier ?id.
     ${annotations}
 
-    ?work zoo:hasPart+ ?current.
+    ?paragraph zoo:isPartOf+ ?current;
+               zoo:isPartOf ?paragraph_direct_parent.
   
     ?current a ?current_type;
             zoo:identifier ?current_id;
-            zoo:isPartOf ?parent;
-            zoo:hasPart+ ?paragraph.
+            zoo:isPartOf ?parent.
     OPTIONAL {
       ?current zoo:title ?current_title
     }
@@ -666,26 +687,48 @@ router.post("/customSearch", async (req, res) => {
 
   const result = await executeSPARQLRequest(endpoint, buildRequest)
   const response = {}
-  /*//------------------
+  
   const tree = []
   const idInSet = new Set()
 
   for (const elt of result.results.bindings) {
-    response[elt.current.value] = {
-      uri: elt.current.value,
-      id: elt.id.value,
+    response[elt.work.value] = {
+      uri: elt.work.value,
+      id: elt.work.value,
       title: elt.title.value,
       type: elt.type.value,
+      children: []
+    }
+
+    response[elt.current.value] = {
+      uri: elt.current.value,
+      id: elt.current_id.value,
+      title: elt.current_title.value,
+      type: elt.current_type.value,
       children: []
     }
   }
 
   for (const elt of result.results.bindings) {
-    if ((elt.current.value === elt.parent.value) && (!idInSet.has(elt.current.value))) {
-      tree.push(response[elt.current.value])
-      idInSet.add(elt.current.value)
+    if ((!idInSet.has(elt.work.value))) {
+      tree.push(response[elt.work.value])
+      idInSet.add(elt.work.value)
     } else {
-      response[elt.parent.value].children.push(response[elt.current.value])
+      if(response[elt.parent.value].children.indexOf(response[elt.current.value]) < 0){
+        response[elt.parent.value].children.push(response[elt.current.value])
+      }
+    }
+  }
+
+  for(const elt of result.results.bindings){
+    const paragraph = {
+      uri: elt.paragraph.value,
+      id: elt.id.value,
+      text: elt.text.value,
+      children: []
+    }
+    if(response[elt.paragraph_direct_parent.value].children.indexOf(paragraph) < 0){
+      response[elt.paragraph_direct_parent.value].children.push(paragraph)
     }
   }
 
@@ -694,25 +737,6 @@ router.post("/customSearch", async (req, res) => {
   } catch (e) {
     console.log(tree)
     res.status(200).end(JSON.stringify(tree))
-  }*/
-
-  //--------------
-  for(const elt of result.results.bindings){
-    if(!(elt.work.value in response)){
-      response[elt.work.value] = {
-        uri: elt.work.value,
-        title: elt.title.value,
-        author: elt.author.value,
-        paragraph: []
-      }
-    }   
-    response[elt.work.value].paragraph.push({
-        text: elt.text.value,
-        id: elt.id.value,
-        uri: elt.paragraph.value
-    })
   }
-
-  res.status(200).json(response)
 })
 module.exports = router;

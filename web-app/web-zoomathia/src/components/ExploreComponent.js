@@ -11,7 +11,9 @@ const getTypeFromURI = (uri) => {
 
 const ExplorerComponent = () => {
 
-    const [displayTextComponent, setDisplayTextComponent] = useState(<p>No text selected</p>)
+    const [displayTextComponent, setDisplayTextComponent] = useState(<div>
+        <p>No text selected</p>
+        </div>)
 
     const [authorList, setAuthorList] = useState([])
     const [worksList, setWorks] = useState([]);

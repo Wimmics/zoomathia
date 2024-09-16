@@ -8,6 +8,8 @@ import { IconButton } from "@mui/material"
 import Grid from '@mui/material/Grid2';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
+import Summary from "./Summary"
+import DisplaySearch from "./DisplaySearch"
 
 
 
@@ -31,6 +33,8 @@ const SearchComponent = () => {
     const [checked, setChecked] = useState(false)
     const [searchResult, setSearchResult] = useState([])
     const [currentWorkLoading, setCurrentWorkLoading] = useState("")
+    const [summary, setSummary] = useState([])
+    const [stats, setStats] = useState(null)
 
     const filterList = async (input, listOptions) => {
         return listOptions.filter(e => e.label.toLowerCase().includes(input.toLowerCase()))
@@ -94,30 +98,21 @@ const SearchComponent = () => {
         if(Object.keys(data_retreive).length === 0){
             displaySearch.push(<div className={styles["box-result"]}><p>No result for this custom filter</p></div>)
         }else{
-            for(const key of Object.keys(data_retreive)){
-                const title = data_retreive[key].title
-                const author = data_retreive[key].author
-    
-                const paragraphs = []
-                for(const paragraph of data_retreive[key].paragraph){
-                    setCurrentWorkLoading(<p>Loading: {paragraph.uri}</p>)
-                    const concepts_list = await fetch(`${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${paragraph.uri}&lang=${"en"}`
-                        ).then(response => response.json())
-    
-                    paragraphs.push(<ParagraphDisplay
-                        key={paragraph.id}
-                        id={paragraph.id}
-                        text={paragraph.text}
-                        uri={paragraph.uri}
-                        lang={"en"}
-                        concepts={concepts_list}
-                        controller={null} />
-                    )
-                }
-                displaySearch.push(<div className={styles["box-result"]}>
-                    <h2>{author} - {title}</h2>
-                    {paragraphs}
-                </div>)
+            setStats(<section className={styles["selected-book-metadata"]}>
+                <h4>Resultat</h4>
+                <p>Number of Work: {data_retreive.length}</p>
+            </section>)
+            setSummary(<div className={styles["ul-toc"]}>
+                    <h2>Table of content</h2>
+                    <ul>{data_retreive !== null ? data_retreive.map(node => <SimpleTreeView key={node.uri}>
+                <Summary key={node.uri} node={node} currentBook={() => <></>} setChange={() => <></>} setCurrentBook={() => <></>} />
+                </SimpleTreeView>
+                    ) : ''}</ul>
+            </div>)
+
+            for(const node of data_retreive){
+                console.log("Yes")
+                displaySearch.push(<DisplaySearch node={node}/>)
             }
         }
         
@@ -192,41 +187,19 @@ const SearchComponent = () => {
             
         </section>
         <Grid container spacing={2}>
+            <Grid size={12}>
+                {stats}
+            </Grid>
             <Grid size={2}>
-                <h2>Table of content</h2>
-                <SimpleTreeView>
-                    <TreeItem itemId="grid" label="Work 1">
-                        <TreeItem itemId="grid-community" label="Book 1" />
-                        <TreeItem itemId="grid-pro" label="Book 2" />
-                        <TreeItem itemId="grid-level-sub" label="Book 3">
-                            <TreeItem itemId="Yes" label="Chapter 1"></TreeItem>
-                        </TreeItem>
-                        <TreeItem itemId="grid-premium" label="Book 4" />
-                    </TreeItem>
-                    <TreeItem itemId="pickers" label="Work 2">
-                        <TreeItem itemId="pickers-community" label="@mui/x-date-pickers" />
-                        <TreeItem itemId="pickers-pro" label="@mui/x-date-pickers-pro" />
-                    </TreeItem>
-                    <TreeItem itemId="charts" label="Work 3">
-                        <TreeItem itemId="charts-community" label="@mui/x-charts" />
-                    </TreeItem>
-                    <TreeItem itemId="tree-view" label="Work 4">
-                        <TreeItem itemId="tree-view-community" label="@mui/x-tree-view" />
-                    </TreeItem>
-                </SimpleTreeView>
+                {summary}
             </Grid>
             <Grid size={10}>
-                <h2>Author - Name of Work</h2>
-                <Grid>
-                    <h3>Chapter 1</h3>
-                    <Grid>
-                        
-                    </Grid>
-                </Grid>
+            {searchResult}
+            {currentWorkLoading}
             </Grid>
         </Grid>
-        {searchResult}
-        {currentWorkLoading}
+        
+        
     </div>
 
 }

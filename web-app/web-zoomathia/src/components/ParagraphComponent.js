@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect } from "react"
 import styles from "./css_modules/ParagraphComponent.module.css"
 
 const ListElement = ({uri, label, offsets, onMouseEnter, onMouseLeave, onClick}) => {
@@ -9,9 +9,8 @@ const ListElement = ({uri, label, offsets, onMouseEnter, onMouseLeave, onClick})
 
 }
 
-const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
+const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId }) => {
     const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}</p>)
-    //const [nbConcept, setNbConcept] = useState(0)
 
     const redirectToOpenTheso = (e) => {
         window.open(e, "_blank")
@@ -82,9 +81,15 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller }) => {
         return concepts_list
     }
 
+    /*useEffect(() => {
+        if(concepts.length === 0){
+            set
+        }
+    })*/
+
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
-            <p key={`number-${id}`}>{`[${parseInt(id) + 1}]`}</p>
+            {displayId ? <p key={`number-${id}`}>{`[${parseInt(id) + 1}]`}</p> : <></>}
         </div>
         <div key={`text-${id}`} className={styles["text-paragraph"]}>
             {text_content}

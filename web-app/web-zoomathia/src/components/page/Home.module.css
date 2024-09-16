@@ -1,9 +1,10 @@
 .box-content {
     margin: auto;
-    width: 85%;
+    width: 95%;
     box-shadow: 0 0 5px;
     padding: 15px;
     background-color: white;
+    min-height: calc(100svh - 20svh);
 }
 
 .box-content>* {
@@ -22,7 +23,9 @@ h1 {
 }
 
 .home-project h2 {
-    background-color: #363537;
+    background-color: #0043a8;
     color: white;
-    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    padding: 1rem;
 }

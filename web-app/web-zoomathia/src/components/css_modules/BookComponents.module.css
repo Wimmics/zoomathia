@@ -17,6 +17,7 @@ h1 {
     width: 95%;
     box-shadow: 0 0 5px;
     background-color: white;
+    min-height: calc(100svh - 20svh);
 }
 
 button {
@@ -148,8 +149,6 @@ ul {
 }
 
 .section-toc {
-    min-width: 15%;
-    max-width: 15%;
     max-height: 60svh;
     padding: 15px;
 }

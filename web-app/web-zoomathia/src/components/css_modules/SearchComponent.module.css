@@ -12,9 +12,8 @@ p {
     margin: auto;
     width: 95%;
     box-shadow: 0 0 5px;
-    padding: 15px;
     background-color: white;
-    min-height: 70svh;
+    min-height: calc(100svh - 20svh);
 }
 
 .section-form{
@@ -79,6 +78,19 @@ p {
 
 .box-result {
     margin-top: 15px;
+}
+
+.selected-book-metadata{
+    border-top: #c2c2c2 thin solid;
+    border-bottom: #c2c2c2 thin solid;
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.selected-book-metadata > h4 {
+    margin: 0;
+    font-size: 1.1rem;
 }
 
 .loader {
