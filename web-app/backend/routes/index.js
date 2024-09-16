@@ -1,4 +1,4 @@
-let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion } = require('./utils.js')
+let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion, checkParagraph } = require('./utils.js')
 let express = require('express');
 const path = require('path');
 const { qcs } = require("../queries/qcs.js")
@@ -727,7 +727,7 @@ router.post("/customSearch", async (req, res) => {
       text: elt.text.value,
       children: []
     }
-    if(response[elt.paragraph_direct_parent.value].children.indexOf(paragraph) < 0){
+    if(!checkParagraph(response[elt.paragraph_direct_parent.value], paragraph)){
       response[elt.paragraph_direct_parent.value].children.push(paragraph)
     }
   }

@@ -92,20 +92,17 @@ const CompetencyQuestionComponent = () => {
                         break;
                     case "name_anthroponym":
                         generatedCol.push({
-                            name: elt,
-                            formatter: (cell) => html(`<span class="${styles["anthroponym-variable"]}">${cell}</span>`)
+                            name: html(`<span class="${styles["anthroponym-variable"]}">${elt}</span>`),
                         })
                         break;
                     case "name_animal":
                         generatedCol.push({
-                            name: elt,
-                            formatter: (cell) => html(`<span class="${styles["animal-variable"]}">${cell}</span>`)
+                            name: html(`<span class="${styles["animal-variable"]}">${elt}</span>`),
                         })
                         break;
                     case "animal_name":
                         generatedCol.push({
-                            name: elt,
-                            formatter: (cell) => html(`<span class="${styles["animal-variable"]}">${cell}</span>`)
+                            name: html(`<span class="${styles["animal-variable"]}">${elt}</span>`),
                         })
                         break;
                     default:
@@ -113,8 +110,7 @@ const CompetencyQuestionComponent = () => {
                             generatedCol.push(elt)
                         }else{
                             generatedCol.push({
-                                name: elt,
-                                formatter: (cell) => html(`<span class="${styles["other-variable"]}">${cell}</span>`),
+                                name: html(`<span class="${styles["other-variable"]}">${elt}</span>`),
                             })
                         }
                 }
@@ -154,7 +150,7 @@ const CompetencyQuestionComponent = () => {
     return <div className={styles["box-content"]}>
         <header className={styles["box-header"]}>
             <h2 key="titre_competence">Select a competency question</h2>
-            <Select className={styles["input-select"]} onChange={updateTable} options={options} />
+            <Select className={styles["input-select"]} placeholder={"Select a competency question"} onChange={updateTable} options={options} />
         </header>
         <section className={styles["box-question"]}>
             {table}

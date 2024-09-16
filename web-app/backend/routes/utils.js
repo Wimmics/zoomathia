@@ -53,6 +53,16 @@ const getCompetenciesQuestion = (file) => {
     return queryTpl;
 }
 
+const checkParagraph = (node, paragraph) => {
+    for(const p of node.children){
+        if(p.id === paragraph.id){
+            return true
+        }
+    }
+    return false
+}
+
 exports.executeSPARQLRequest = executeSPARQLRequest;
 exports.readTemplate = readTemplate;
 exports.getCompetenciesQuestion = getCompetenciesQuestion;
+exports.checkParagraph = checkParagraph;

@@ -12,7 +12,7 @@ const getTypeFromURI = (uri) => {
 const ExplorerComponent = () => {
 
     const [displayTextComponent, setDisplayTextComponent] = useState(<div>
-        <p>No text selected</p>
+        <p className={styles["p-start"]}>No text selected</p>
         </div>)
 
     const [authorList, setAuthorList] = useState([])
@@ -26,7 +26,7 @@ const ExplorerComponent = () => {
     const getDisplayText = useCallback((e) => {
 
         setWork({ label: e.label, value: e.value })
-        setDisplayTextComponent(<p>No text selected</p>)
+        setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)
 
         if (author.label !== e.author) {
             setAuthor({ label: e.author, value: e.value })
@@ -71,7 +71,7 @@ const ExplorerComponent = () => {
 
         const callForData = async () => {
             setWorks([{ label: '', value: '' }])
-            setDisplayTextComponent(<p>No text selected</p>)
+            setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)
             if (e.value === '') {
                 urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorks`
             }
@@ -123,11 +123,11 @@ const ExplorerComponent = () => {
         <header className={styles["selection-section"]}>
             <section key="author" className={styles["select-field-section"]}>
                 <h2 key="author">Author</h2>
-                <Select id="author-select" className={styles["select-field"]} onChange={getWorks} options={authorList} value={author} selectedValue={author} />
+                <Select id="author-select" className={styles["select-field"]} placeholder="Select an author" onChange={getWorks} options={authorList} value={author} selectedValue={author} />
             </section>
             <section key="work" className={styles["select-field-section"]}>
                 <h2 key="work">Work</h2>
-                <Select id="work-select" className={styles["select-field"]} onChange={getDisplayText} options={worksList} value={work} selectedValue={work} />
+                <Select id="work-select" className={styles["select-field"]} placeholder="Select a work" onChange={getDisplayText} options={worksList} value={work} selectedValue={work} />
             </section>
         </header>
 

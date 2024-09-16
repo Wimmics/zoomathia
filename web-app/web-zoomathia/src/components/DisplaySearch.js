@@ -1,6 +1,6 @@
 
 
-import { useState, useCallback } from "react"
+import { useCallback } from "react"
 import Grid from '@mui/material/Grid2';
 import ParagraphDisplay from "./ParagraphComponent";
 
@@ -10,20 +10,23 @@ const getTypeFromURI = (uri) => {
 }
 
 const DisplaySearch = ({ node }) => {
-    return <>{(node.children && ('type' in node.children[0]))? <> <Grid size={12}>
-        <h2>{getTypeFromURI(node.type)} {node.title}</h2>
-        </Grid> {node.children.map(n => <DisplaySearch node={n} />)}
+    
+    return <>{((node.children.length > 0) && ('type' in node.children[0]))? <> 
+            <Grid key={node.uri} id={node.uri} size={12}>
+                <h2>{node.title}</h2>
+            </Grid> 
+            {node.children.map(n => <DisplaySearch node={n} />)}
         </> :  <>
-            {!('type' in node.children[0] && node.children.length > 1) 
-            ? <><Grid size={12}>
+            {(!('type' in node.children[0]) && node.children.length > 1)
+            ? <><Grid key={node.uri} id={node.uri} size={12}>
                 <h2>{getTypeFromURI(node.type)} {node.title}</h2>
                 {node.children.map(n => <ParagraphDisplay id={n.id} text={n.text} uri={n.uri} concepts={[]} displayId={true} />)}
                 </Grid>
             </>
-            : <><Grid size={12}>
+            : <><Grid key={node.uri} id={node.uri} size={12}>
                     <h2>{getTypeFromURI(node.type)} {node.title}</h2>
                 </Grid>
-                {node.children.map(n => <ParagraphDisplay id={n.id} text={n.text} uri={n.uri} concepts={[]} displayId={true} />)}
+                {node.children.map(n => <ParagraphDisplay id={n.id} text={n.text} uri={n.uri} concepts={[]} displayId={false} />)}
             </>
             } 
         </>

@@ -71,7 +71,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                     <a className={styles["button-export"]} 
                         href={`${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`} 
                         download={metadata.file}>XML-TEI</a>
-                    <button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button></p>
+                    </p>
             </div>
         </section>
         <Grid container spacing={2}>
@@ -94,24 +94,9 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 {sections}
             </Grid>
         </Grid>
-        
-        <section className={styles["display-section"]}>
-            <section className={styles["section-toc"]}>
-                <h2>Table of content</h2>
-                
-                <div className={styles["ul-toc"]}>
-                    <ul>
-                        {summary !== null ? summary.map(node => <SimpleTreeView key={node.uri}>
-                            <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} setCurrentBook={setCurrentBook} />
-                            </SimpleTreeView>
-                        ) : ''}
-                    </ul>
-                </div>
-
-            </section>
-            {sections}
-        </section>
     </section>
 }
 
 export default DisplayTextComponent;
+
+/*<button className={styles["button-export"]} onClick={downloadRDF}>Turtle</button>*/

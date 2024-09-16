@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react"
 import styles from "./css_modules/SearchComponent.module.css"
 import AsyncSelect from 'react-select/async'
-import ParagraphDisplay from "./ParagraphComponent"
 import Tooltip from "@mui/material/Tooltip"
 import InfoIcon from '@mui/icons-material/Info';
 import { IconButton } from "@mui/material"
 import Grid from '@mui/material/Grid2';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
-import { TreeItem } from '@mui/x-tree-view/TreeItem';
+import { styled } from '@mui/material/styles';
 import Summary from "./Summary"
 import DisplaySearch from "./DisplaySearch"
+import Switch from '@mui/material/Switch';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 
 
 
@@ -17,6 +19,53 @@ const LOADING_STATE = <section className={styles["text-part"]}>
     <div className={styles["loader"]}></div>
     <p>Loading data...</p>
 </section>
+
+const AntSwitch = styled(Switch)(({ theme }) => ({
+    width: 28,
+    height: 16,
+    padding: 0,
+    display: 'flex',
+    '&:active': {
+      '& .MuiSwitch-thumb': {
+        width: 15,
+      },
+      '& .MuiSwitch-switchBase.Mui-checked': {
+        transform: 'translateX(9px)',
+      },
+    },
+    '& .MuiSwitch-switchBase': {
+      padding: 2,
+      '&.Mui-checked': {
+        transform: 'translateX(12px)',
+        color: '#fff',
+        '& + .MuiSwitch-track': {
+          opacity: 1,
+          backgroundColor: '#1890ff',
+          ...theme.applyStyles('dark', {
+            backgroundColor: '#177ddc',
+          }),
+        },
+      },
+    },
+    '& .MuiSwitch-thumb': {
+      boxShadow: '0 2px 4px 0 rgb(0 35 11 / 20%)',
+      width: 12,
+      height: 12,
+      borderRadius: 6,
+      transition: theme.transitions.create(['width'], {
+        duration: 200,
+      }),
+    },
+    '& .MuiSwitch-track': {
+      borderRadius: 16 / 2,
+      opacity: 1,
+      backgroundColor: 'rgba(0,0,0,.25)',
+      boxSizing: 'border-box',
+      ...theme.applyStyles('dark', {
+        backgroundColor: 'rgba(255,255,255,.35)',
+      }),
+    },
+  }));
 
 const logicConceptTooltip = "For the search concept(s) field, the checkbox specify if the search strategy should be an OR value logic or an AND value logic."
 
@@ -65,7 +114,7 @@ const SearchComponent = () => {
     />
 
     const sendRequestedForm = async () => {
-
+        console.log(checked)
         // All form empty, no search
         if(author.length === 0 && work.length === 0 && concepts.length === 0){
             console.log("Avoiding overloading: Search cancel due to no input...")
@@ -101,11 +150,12 @@ const SearchComponent = () => {
             setStats(<section className={styles["selected-book-metadata"]}>
                 <h4>Results</h4>
                 <p>Number of Work: {data_retreive.length}</p>
+                {currentWorkLoading}
             </section>)
             setSummary(<div className={styles["ul-toc"]}>
                     <h2>Table of content</h2>
                     <ul>{data_retreive !== null ? data_retreive.map(node => <SimpleTreeView key={node.uri}>
-                <Summary key={node.uri} node={node} currentBook={() => <></>} setChange={() => <></>} setCurrentBook={() => <></>} />
+                <Summary key={node.uri} node={node} currentBook={null} setChange={null} setCurrentBook={null} />
                 </SimpleTreeView>
                     ) : ''}</ul>
             </div>)
@@ -178,7 +228,11 @@ const SearchComponent = () => {
                     <label>Filter on concept(s):<Tooltip title={logicConceptTooltip}><IconButton><InfoIcon /></IconButton></Tooltip></label>
                     <div className={styles["search-concept"]}>
                         {conceptsSelect}
-                        <label>AND<input type="checkbox" onChange={e => setChecked(!checked)}/></label>
+                        <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
+                            <Typography>OR</Typography>
+                            <AntSwitch inputProps={{ 'aria-label': 'ant design' }} onChange={e => setChecked(!checked)}/>
+                            <Typography>AND</Typography>
+                        </Stack>
                     </div>
                 </div>
                 <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
@@ -194,7 +248,6 @@ const SearchComponent = () => {
             </Grid>
             <Grid size={10}> 
             {searchResult}
-            {currentWorkLoading}
             </Grid>
         </Grid>
         
@@ -204,3 +257,5 @@ const SearchComponent = () => {
 }
 
 export default SearchComponent;
+
+/*<label>AND<input type="checkbox" onChange={e => setChecked(!checked)}/></label>*/
