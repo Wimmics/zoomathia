@@ -122,6 +122,8 @@ const SearchComponent = () => {
         }
 
         setSearchResult(LOADING_STATE)
+        setStats([])
+        setSummary([])
 
         // Requête POST
         const searchObject = JSON.stringify({
@@ -160,7 +162,7 @@ const SearchComponent = () => {
                 </SimpleTreeView>
                     ) : ''}</ul>
             </div>)
-
+            console.log(data_retreive)
             for(const node of data_retreive){
                 displaySearch.push(<DisplaySearch node={node}/>)
             }

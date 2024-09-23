@@ -11,11 +11,11 @@ const getTypeFromURI = (uri) => {
 
 const DisplaySearch = ({ node }) => {
     
-    return <>{((node.children.length > 0) && ('type' in node.children[0]))? <> 
+    return <>{((node?.children.length > 0) && ('type' in node?.children[0]))? <> 
             <Grid key={node.uri} id={node.uri} size={12}>
                 <h2>{node.title}</h2>
             </Grid> 
-            {node.children.map(n => <DisplaySearch node={n} />)}
+            {node?.children.map(n => <DisplaySearch node={n} />)}
         </> :  <>
             {(!('type' in node.children[0]) && node.children.length > 1)
             ? <><Grid key={node.uri} id={node.uri} size={12}>

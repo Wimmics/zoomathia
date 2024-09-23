@@ -56,7 +56,7 @@ const Work = () => {
             setFocus(true)
         }
         callForData()
-    }, [])
+    }, [uri])
 
     return <div className={styles["box-content"]}>
         <header className={styles["selected-book-title"]}>

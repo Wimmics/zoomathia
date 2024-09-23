@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from "react"
 import "gridjs/dist/theme/mermaid.min.css";
 import styles from "./css_modules/CompetencyQuestionComponent.module.css"
 
-import { Grid, _ } from "gridjs-react"
+import { Grid } from "gridjs-react"
 import { html } from 'gridjs'
 import Select from 'react-select'
 

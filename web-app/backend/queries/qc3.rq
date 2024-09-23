@@ -2,11 +2,11 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?paragraph ?name_animal ?mention1 ?name_use ?mention2 WHERE {
+SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_use ?mention_use WHERE {
   ?annotation1 a oa:Annotation;
               oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;
-                            oa:hasSelector [oa:exact ?mention1]].
+                            oa:hasSelector [oa:exact ?mention_animal]].
   ?animal a skos:Concept;
        skos:prefLabel ?name_animal.
   ?animal_collection a skos:Collection;
@@ -16,7 +16,7 @@ SELECT DISTINCT ?paragraph ?name_animal ?mention1 ?name_use ?mention2 WHERE {
   ?annotation2 a oa:Annotation;
               oa:hasBody ?use;
               oa:hasTarget [oa:hasSource ?paragraph;
-                            oa:hasSelector [oa:exact ?mention2]].
+                            oa:hasSelector [oa:exact ?mention_use]].
                             
   ?use skos:prefLabel ?name_use;
 	skos:broader+ ?use_generique.

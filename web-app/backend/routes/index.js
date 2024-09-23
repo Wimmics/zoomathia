@@ -713,11 +713,11 @@ router.post("/customSearch", async (req, res) => {
     if ((!idInSet.has(elt.work.value))) {
       tree.push(response[elt.work.value])
       idInSet.add(elt.work.value)
-    } else {
-      if(response[elt.parent.value].children.indexOf(response[elt.current.value]) < 0){
-        response[elt.parent.value].children.push(response[elt.current.value])
-      }
     }
+    if(response[elt.parent.value].children.indexOf(response[elt.current.value]) < 0){
+      response[elt.parent.value].children.push(response[elt.current.value])
+    }
+
   }
 
   for(const elt of result.results.bindings){
