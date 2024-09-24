@@ -71,7 +71,11 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                     <a className={styles["button-export"]} 
                         href={`${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`} 
                         download={metadata.file} target="_blank" rel="noreferrer">XML-TEI</a>
+                        <a className={styles["button-export"]} 
+                        href={`${process.env.REACT_APP_BACKEND_URL}download-turtle?uri=${uri}`}  
+                        download target="_blank" rel="noreferrer">Turtle</a>
                     </p>
+                    
             </div>
         </section>
         <Grid container spacing={2}>

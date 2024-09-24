@@ -67,17 +67,7 @@ const CompetencyQuestionComponent = () => {
                 },
                 "edge": {
                     "color": "green"
-                },
-                "services": [
-                    {
-                        "label": "ACTA",
-                        "url": "http://134.59.134.234:8081/analyseddocs?id="
-                    },
-                    {
-                        "label": "Browser Corese",
-                        "url": "http://corese.inria.fr/srv/service/covid?uri="
-                    }
-                ]
+                }
             }`
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
             
@@ -117,12 +107,21 @@ const CompetencyQuestionComponent = () => {
             }
             console.log(data)
 
-            setTable(<Grid data={data.table.data}
+            setTable(<>
+                <section className={styles["selected-book-metadata"]}>
+                <p><b>Export SPARQL Result</b>: 
+                        <a className={styles["button-export"]} 
+                        href={`${process.env.REACT_APP_BACKEND_URL}download-qc?id=${file}`}  
+                        download target="_blank" rel="noreferrer">JSON</a>
+                    </p>
+                </section>
+                <Grid data={data.table.data}
                 columns={generatedCol}
                 pagination={{ limit: 10 }}
                 resizable={true}
                 search={true} style={styleGrid} sort={true} 
-                language={ { search:{placeholder: "filter row by keyword..."} }} />)
+                language={ { search:{placeholder: "filter row by keyword..."} }} />
+                </>)
 
             setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"

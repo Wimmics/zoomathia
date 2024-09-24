@@ -1,8 +1,9 @@
-let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion, checkParagraph } = require('./utils.js')
+let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion, checkParagraph, executeDescribeRequest } = require('./utils.js')
 let express = require('express');
 const path = require('path');
 const { qcs } = require("../queries/qcs.js")
 const axios = require('axios');
+const os = require('os')
 const fs = require("fs")
 let router = express.Router();
 
@@ -21,12 +22,6 @@ router.get('/download-xml', (req, res) => {
       }
   });
 });
-
-router.get('/download-turtle', async (req, res) => {
-  const response = await executeSPARQLRequest(endpoint, query)
-
-  res.status(200).json(response)
-})
 
 /* GET home page. */
 router.get('/', async (req, res) => {
@@ -738,5 +733,81 @@ router.post("/customSearch", async (req, res) => {
     console.log(tree)
     res.status(200).end(JSON.stringify(tree))
   }
+})
+
+const describeRequest = (uri) => {
+  return `PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+
+DESCRIBE <${uri}> ?paragraph WHERE {
+    <${uri}> a zoo:Oeuvre;
+  	  zoo:hasPart+ ?paragraph.
+  
+    ?paragraph ?p ?o
+  }
+  `
+}
+
+router.get("/download-turtle", async (req, res) => {
+  console.log(describeRequest(req.query?.uri))
+  const result = await executeDescribeRequest(endpoint, describeRequest(req.query?.uri))
+
+  const tempDir = os.tmpdir()
+  const fileName = `export_turtle-${Date.now()}.ttl`
+  const filePath = path.join(tempDir, fileName)
+
+  fs.writeFile(filePath, result, (err) => {
+    if(err){
+      console.log('Creation file error')
+      return res.status(500).send('Creation file error');
+    }
+
+    res.download(filePath, fileName, (err) => {
+      if (err) {
+        console.error('Download error', err);
+        return res.status(500).send('Download error');
+      }
+      fs.unlink(filePath, (err) => {
+        if (err) {
+            console.error('Erase file error', err);
+        }
+        console.log(`File ${fileName} erased.`);
+    });
+    })
+  })
+
+})
+
+router.get("/download-qc", async (req, res) => {
+  const query = getCompetenciesQuestion(`${req.query.id}`)
+  const result = await executeSPARQLRequest(endpoint, query)
+
+  const tempDir = os.tmpdir()
+  const fileName = `export_qc${req.query.id}.json`
+  const filePath = path.join(tempDir, fileName)
+
+  fs.writeFile(filePath, JSON.stringify(result), (err) => {
+    if(err){
+      console.log('Creation file error')
+      return res.status(500).send('Creation file error');
+    }
+
+    res.download(filePath, fileName, (err) => {
+      if (err) {
+        console.error('Download error', err);
+        return res.status(500).send('Download error');
+      }
+      fs.unlink(filePath, (err) => {
+        if (err) {
+            console.error('Erase file error', err);
+        }
+        console.log(`File ${fileName} erased.`);
+    });
+    })
+  })
+
+
 })
 module.exports = router;

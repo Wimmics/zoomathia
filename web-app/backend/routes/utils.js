@@ -1,5 +1,32 @@
 let fs = require('fs');
 
+const executeDescribeRequest = async (endpoint, query) => {
+    const url = `${endpoint}?query=${encodeURIComponent(query)}&format=turtle`;
+
+    /**
+     * TODO:  Catch unexpected error during fetch (fetchControler)
+     */
+    try {
+        let result_data = await fetch(url, {
+            headers: {
+                'Content-Type': 'text/plain',
+                'Accept': `text/turtle`
+            }
+        })
+        return await result_data.text()
+    }
+    catch (e) {
+        console.log(`Request fail...`)
+
+        if (e.cause.code === 'ECONNREFUSED') {
+            console.log("SPARQL Endpoint unreachable, server is not launch or doesn't accept connection")
+        } else {
+            console.log(e)
+        }
+        return "Doesn't work..."
+    }
+}
+
 const executeSPARQLRequest = async (endpoint, query) => {
     const url = `${endpoint}?query=${encodeURIComponent(query)}&format=json`;
 
@@ -10,7 +37,7 @@ const executeSPARQLRequest = async (endpoint, query) => {
         let result_data = await fetch(url, {
             headers: {
                 'Content-Type': 'text/plain',
-                'Accept': "application/sparql-results+json"
+                'Accept': `application/sparql-results+json`
             }
         })
         return await result_data.json()
@@ -66,3 +93,4 @@ exports.executeSPARQLRequest = executeSPARQLRequest;
 exports.readTemplate = readTemplate;
 exports.getCompetenciesQuestion = getCompetenciesQuestion;
 exports.checkParagraph = checkParagraph;
+exports.executeDescribeRequest = executeDescribeRequest;

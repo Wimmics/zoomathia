@@ -79,6 +79,31 @@ section>h3 {
     animation: spin 1.5s linear infinite;
 }
 
+.selected-book-metadata{
+    border-top: #c2c2c2 thin solid;
+    border-bottom: #c2c2c2 thin solid;
+    background-color: #ebebeb;
+    display: flex;
+    margin: 10px 0;
+    padding: 1.5rem;
+}
+
+.selected-book-metadata > p {
+    margin: auto;
+}
+
+.button-export {
+    background-color: rgb(203, 212, 255);
+    border: grey thin solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.button-export:hover {
+    background-color: rgb(216, 255, 203)
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
