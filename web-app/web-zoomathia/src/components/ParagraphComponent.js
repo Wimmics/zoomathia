@@ -66,6 +66,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
 
     useEffect(() => {
         const getConcepts = async () => {
+            try {
 
             const concepts = await fetch(
                 `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${uri}&lang=${"en"}`).then(response => response.json())
@@ -90,7 +91,10 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
                   {concepts_list}  
                 </ul>
             </div>)
+        }catch(err){
+        console.log(err)
         }
+    }
 
         getConcepts()
     }, [highlight, id, lang, removeHighlight, uri])
