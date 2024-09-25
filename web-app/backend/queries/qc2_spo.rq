@@ -2,7 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
 
-SELECT DISTINCT ?p ?s ?o (?o as ?date) (?s as ?type)
+SELECT DISTINCT ?p ?s ?o (?label_animal as ?date) (?s as ?type)
   (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) 
   ("snd" as ?style1) ?style2 WHERE {
   
@@ -28,6 +28,7 @@ SELECT DISTINCT ?p ?s ?o (?o as ?date) (?s as ?type)
        skos:prefLabel "Zoonyms"@en;
        skos:member ?animal.
     FILTER (lang(?o) = "en")
+    BIND(?o as ?label_animal)
 
     ?annotation3 oa:hasBody ?anthro;
           oa:hasTarget [oa:hasSource ?p;
