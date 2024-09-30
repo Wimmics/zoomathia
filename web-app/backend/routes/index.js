@@ -1,4 +1,4 @@
-let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion, checkParagraph, executeDescribeRequest } = require('./utils.js')
+let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion, checkParagraph, executeDescribeRequest, getTypeFromURI } = require('./utils.js')
 let express = require('express');
 const path = require('path');
 const { qcs } = require("../queries/qcs.js")
@@ -618,16 +618,37 @@ router.post("/customSearch", async (req, res) => {
     if(req.body.checked){
       const query = []
       for (let i = 0; i < concepts.length; i++) {
-        query.push(
-          `?annotation${i} oa:hasBody <${concepts[i].uri}>;
-          oa:hasTarget [
-            oa:hasSource ?paragraph;
-          ].
-          `)
-      }
-      annotations = query.join('\n')
-
-    }else{
+        if(req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection"){
+            console.log(`Collection for concepts :${concepts[i].uri}`)
+            query.push(
+              `?annotation${i} oa:hasBody ?c${i};
+              oa:hasTarget [
+                oa:hasSource ?paragraph;
+              ].
+              
+              <${concepts[i].uri}> skos:member ?c${i}.
+              BIND(if(?c${i} = <${concepts[i].uri}>, <${concepts[i].uri}>, ?c${i}) as ?c${i})
+              `)
+          }else if(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept" ){
+            query.push(
+              `?annotation${i} oa:hasBody ?c${i};
+              oa:hasTarget [
+                oa:hasSource ?paragraph;
+              ].
+              ?c${i} skos:broader+ <${concepts[i].uri}>.
+              BIND(if(?c${i} = <${concepts[i].uri}>, <${concepts[i].uri}>, ?c${i}) as ?c${i})
+              `)
+          } else {
+            query.push(
+              `?annotation${i} oa:hasBody <${concepts[i].uri}>;
+              oa:hasTarget [
+                oa:hasSource ?paragraph;
+              ].
+              `)
+          }
+        }
+        annotations = query.join('\n')
+      }else{
       annotations = `?annotation oa:hasBody ?concept;
         oa:hasTarget [
           oa:hasSource ?paragraph

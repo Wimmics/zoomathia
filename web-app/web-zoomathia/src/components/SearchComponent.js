@@ -3,7 +3,7 @@ import styles from "./css_modules/SearchComponent.module.css"
 import AsyncSelect from 'react-select/async'
 import Tooltip from "@mui/material/Tooltip"
 import InfoIcon from '@mui/icons-material/Info';
-import { IconButton } from "@mui/material"
+import { Checkbox, FormControlLabel, IconButton } from "@mui/material"
 import Grid from '@mui/material/Grid2';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { styled } from '@mui/material/styles';
@@ -79,9 +79,14 @@ const SearchComponent = () => {
     const [authorList, setAuthorList] = useState([])
     const [workList, setWorkList] = useState([])
     const [conceptList, setConceptList] = useState([])
+
     const [checked, setChecked] = useState(false)
+    const [subConcepts, setSubConcepts] = useState(false)
+    const [collectionMembers, setCollectionMembers] = useState(false)
+
     const [searchResult, setSearchResult] = useState([])
     const [currentWorkLoading, setCurrentWorkLoading] = useState("")
+
     const [summary, setSummary] = useState([])
     const [stats, setStats] = useState(null)
 
@@ -130,7 +135,9 @@ const SearchComponent = () => {
             author: author.map(e => e.value),
             work: work.map(e => e.value),
             concepts: concepts.map(e => {return{uri: e.value, type: e.type}}),
-            checked: checked
+            checked: checked,
+            subConcepts: subConcepts,
+            collectionMembers: collectionMembers
         })
 
         const data_retreive = await fetch(`${process.env.REACT_APP_BACKEND_URL}customSearch`,
@@ -245,6 +252,8 @@ const SearchComponent = () => {
                             <Typography>AND</Typography>
                         </Stack>
                     </div>
+                    <FormControlLabel control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>} label="Add sub-concepts" />
+                    <FormControlLabel control={<Checkbox color="success" onChange={e => setCollectionMembers(!collectionMembers)}/>} label="Add members of collection" />
                 </div>
                 <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
             </div>

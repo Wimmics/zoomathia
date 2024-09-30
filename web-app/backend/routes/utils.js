@@ -89,8 +89,14 @@ const checkParagraph = (node, paragraph) => {
     return false
 }
 
+const getTypeFromURI = (uri) => {
+    const uri_split = uri.split('#')
+    return uri_split[uri_split.length - 1]
+}
+
 exports.executeSPARQLRequest = executeSPARQLRequest;
 exports.readTemplate = readTemplate;
 exports.getCompetenciesQuestion = getCompetenciesQuestion;
 exports.checkParagraph = checkParagraph;
 exports.executeDescribeRequest = executeDescribeRequest;
+exports.getTypeFromURI = getTypeFromURI;
