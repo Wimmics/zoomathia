@@ -728,11 +728,40 @@ router.post("/customSearch", async (req, res) => {
   }
 
   try {
-    res.status(200).json(tree)
+    res.status(200).json({sparql: buildRequest, tree: tree})
   } catch (e) {
     console.log(tree)
     res.status(200).end(JSON.stringify(tree))
   }
+})
+
+router.get("/download-custom-search", async (req, res) => {
+  const result = await executeSPARQLRequest(endpoint, req.query.sparql)
+
+  const tempDir = os.tmpdir()
+  const fileName = `export_custom_search-${Date.now()}.ttl`
+  const filePath = path.join(tempDir, fileName)
+
+  fs.writeFile(filePath,  JSON.stringify(result), (err) => {
+    if(err){
+      console.log('Creation file error')
+      return res.status(500).send('Creation file error');
+    }
+
+    res.download(filePath, fileName, (err) => {
+      if (err) {
+        console.error('Download error', err);
+        return res.status(500).send('Download error');
+      }
+      fs.unlink(filePath, (err) => {
+        if (err) {
+            console.error('Erase file error', err);
+        }
+        console.log(`File ${fileName} erased.`);
+    });
+    })
+  })
+
 })
 
 const describeRequest = (uri) => {

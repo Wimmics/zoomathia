@@ -146,24 +146,32 @@ const SearchComponent = () => {
         
         console.log(data_retreive)
         const displaySearch = []
-        if(Object.keys(data_retreive).length === 0){
+        if(Object.keys(data_retreive.tree).length === 0){
             displaySearch.push(<div className={styles["box-result"]}><p>No result for this custom filter</p></div>)
             setSummary([])
         }else{
             setStats(<section className={styles["selected-book-metadata"]}>
-                <h4>Results</h4>
-                <p>Number of Work: {data_retreive.length}</p>
+                <div className={styles["block-stat"]}>
+                    <h4>Results</h4>
+                    <p>Number of Work: {data_retreive.tree.length}</p>
+                </div>
+                <div className={styles["block-stat"]}>
+                    <h4>Export: </h4>
+                    <a href={`${process.env.REACT_APP_BACKEND_URL}download-custom-search?sparql=${encodeURIComponent(data_retreive.sparql)}`} className={styles["btn-download"]} download target="_blank" rel="noreferrer">SPARQL result</a>
+                </div>
+                
+                
                 {currentWorkLoading}
             </section>)
             setSummary(<div className={styles["ul-toc"]}>
                     <h2>Table of content</h2>
-                    <ul>{data_retreive !== null ? data_retreive.map(node => <SimpleTreeView key={node.uri}>
+                    <ul>{data_retreive.tree !== null ? data_retreive.tree.map(node => <SimpleTreeView key={node.uri}>
                 <Summary key={node.uri} node={node} currentBook={null} setChange={null} setCurrentBook={null} />
                 </SimpleTreeView>
                     ) : ''}</ul>
             </div>)
-            console.log(data_retreive)
-            for(const node of data_retreive){
+            console.log(data_retreive.tree)
+            for(const node of data_retreive.tree){
                 displaySearch.push(<DisplaySearch node={node}/>)
             }
         }

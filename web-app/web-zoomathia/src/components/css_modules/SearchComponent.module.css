@@ -69,6 +69,7 @@ p {
     border-radius: 5px;
     width: fit-content;
     margin: auto;
+    text-decoration: none;
 }
 
 .btn-submit-search:hover {
@@ -81,6 +82,8 @@ p {
 }
 
 .selected-book-metadata{
+    display: flex;
+    flex-direction: row;
     border-top: #c2c2c2 thin solid;
     border-bottom: #c2c2c2 thin solid;
     background-color: #ebebeb;
@@ -88,9 +91,29 @@ p {
     padding: 0.5rem;
 }
 
-.selected-book-metadata > h4 {
+.block-stat > h4 {
     margin: 0;
     font-size: 1.1rem;
+}
+
+.block-stat {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-decoration: none;
+}
+
+.btn-download {
+    border: grey thin solid;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background-color: #acf3ff;
+    box-shadow: 0 0 2px;
 }
 
 .loader {
