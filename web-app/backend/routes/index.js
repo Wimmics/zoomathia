@@ -615,40 +615,45 @@ router.post("/customSearch", async (req, res) => {
   let union = ""
   
   if(concepts.length > 0){
+
     if(req.body.checked){
       const query = []
+      const subconcepts = []
+      const collections = []
+
       for (let i = 0; i < concepts.length; i++) {
         if(req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection"){
             console.log(`Collection for concepts :${concepts[i].uri}`)
-            query.push(
-              `?annotation${i} oa:hasBody ?c${i};
+            collections.push(
+              `?annotation${i}_opt oa:hasBody ?c${i};
               oa:hasTarget [
                 oa:hasSource ?paragraph;
               ].
               
               <${concepts[i].uri}> skos:member ?c${i}.
-              BIND(if(?c${i} = <${concepts[i].uri}>, <${concepts[i].uri}>, ?c${i}) as ?c${i})
               `)
-          }else if(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept" ){
-            query.push(
-              `?annotation${i} oa:hasBody ?c${i};
+        }else if(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept" ){
+          subconcepts.push(
+              `?annotation${i}_opt oa:hasBody ?c${i};
               oa:hasTarget [
                 oa:hasSource ?paragraph;
               ].
               ?c${i} skos:broader+ <${concepts[i].uri}>.
-              BIND(if(?c${i} = <${concepts[i].uri}>, <${concepts[i].uri}>, ?c${i}) as ?c${i})
               `)
-          } else {
-            query.push(
-              `?annotation${i} oa:hasBody <${concepts[i].uri}>;
-              oa:hasTarget [
-                oa:hasSource ?paragraph;
-              ].
-              `)
-          }
         }
-        annotations = query.join('\n')
-      }else{
+        query.push(
+          `${(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept") ||
+          (req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection") ? 'OPTIONAL {' : ''}
+          ?annotation${i} oa:hasBody <${concepts[i].uri}>;
+          oa:hasTarget [
+            oa:hasSource ?paragraph;
+          ].
+          ${(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept") ||
+          (req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection") ? '}' : ''}
+          `)
+      }
+      annotations = [...subconcepts, ...collections, ...query].join('\n')
+    }else{
       annotations = `?annotation oa:hasBody ?concept;
         oa:hasTarget [
           oa:hasSource ?paragraph
