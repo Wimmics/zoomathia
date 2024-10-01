@@ -616,21 +616,21 @@ router.post("/customSearch", async (req, res) => {
   
   if(concepts.length > 0){
 
-    if(req.body.checked){
-      const query = []
-      const subconcepts = []
-      const collections = []
+    const query = []
+    const subconcepts = []
+    const collections = []
 
+    if(req.body.checked){     
       for (let i = 0; i < concepts.length; i++) {
         if(req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection"){
             console.log(`Collection for concepts :${concepts[i].uri}`)
             collections.push(
-              `?annotation${i}_opt oa:hasBody ?c${i};
+              `<${concepts[i].uri}> skos:member ?c${i}.
+              
+              ?annotation${i}_opt oa:hasBody ?c${i};
               oa:hasTarget [
                 oa:hasSource ?paragraph;
               ].
-              
-              <${concepts[i].uri}> skos:member ?c${i}.
               `)
         }else if(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept" ){
           subconcepts.push(
@@ -652,13 +652,76 @@ router.post("/customSearch", async (req, res) => {
           (req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection") ? '}' : ''}
           `)
       }
-      annotations = [...subconcepts, ...collections, ...query].join('\n')
+      annotations = `?work a zoo:Oeuvre; a ?type;
+      zoo:title ?title;
+      zoo:author ?author;
+      zoo:hasPart+ ?paragraph.
+    
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id.
+    ` + [...subconcepts, ...collections, ...query].join('\n')
     }else{
-      annotations = `?annotation oa:hasBody ?concept;
+      let conceptBuilder = ''
+      let collectionBuilder = ''
+      for(let i = 0; i < concepts.length; i++){
+        if(req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection"){
+          collections.push(`<${concepts[i].uri}>`)
+        }
+        if(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept" ){
+          subconcepts.push(`<${concepts[i].uri}>`)
+        }
+      }
+      
+      collectionBuilder = subconcepts.length > 0 ? `{
+    ?work a zoo:Oeuvre; a ?type;
+      zoo:title ?title;
+      zoo:author ?author;
+      zoo:hasPart+ ?paragraph.
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id.
+
+    ?annotation oa:hasBody ?concept;
+                oa:hasTarget [
+                    oa:hasSource ?paragraph
+                ].
+    ?collection skos:member ?concept.
+    FILTER(?collection in (${collections.join(", ")}))
+  }` : ''
+
+      conceptBuilder = collections.length > 0 ?`{
+    ?work a zoo:Oeuvre; a ?type;
+      zoo:title ?title;
+      zoo:author ?author;
+      zoo:hasPart+ ?paragraph.
+    
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id.
+
+    ?annotation oa:hasBody ?concept;
+          oa:hasTarget [
+            oa:hasSource ?paragraph
+          ].
+
+    ?concept skos:broader+ ?superconcept
+    FILTER(?superconcept in (${subconcepts.join(', ')}))
+    }` : ''
+
+      annotations = `${conceptBuilder !== '' ? conceptBuilder + 'UNION' : ''} 
+      ${collectionBuilder !== '' ? collectionBuilder + 'UNION' : ''}  { 
+      ?work a zoo:Oeuvre; a ?type;
+      zoo:title ?title;
+      zoo:author ?author;
+      zoo:hasPart+ ?paragraph.
+    
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id.
+
+      ?annotation oa:hasBody ?concept;
         oa:hasTarget [
           oa:hasSource ?paragraph
         ]
       FILTER(?concept in (${concepts.map(e => e.uri.includes("http") ? `<${e.uri}>`:`"${e.uri}"`).join(" , ")}))
+      }
       `
     }
   }
@@ -683,13 +746,6 @@ router.post("/customSearch", async (req, res) => {
 
   SELECT DISTINCT ?work ?type ?author ?title ?parent ?current ?current_type ?current_id ?current_title ?paragraph_direct_parent ?paragraph ?id ?text WHERE {
     ${union}
-    ?work a zoo:Oeuvre; a ?type;
-      zoo:title ?title;
-      zoo:author ?author;
-      zoo:hasPart+ ?paragraph.
-    
-    ?paragraph zoo:text ?text;
-      zoo:identifier ?id.
     ${annotations}
 
     ?paragraph zoo:isPartOf+ ?current;
