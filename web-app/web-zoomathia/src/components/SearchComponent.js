@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import styles from "./css_modules/SearchComponent.module.css"
 import AsyncSelect from 'react-select/async'
 import Tooltip from "@mui/material/Tooltip"
@@ -90,6 +90,8 @@ const SearchComponent = () => {
     const [summary, setSummary] = useState([])
     const [stats, setStats] = useState(null)
 
+    const controller = useRef(new AbortController())
+
     const filterList = async (input, listOptions) => {
         return listOptions.filter(e => e.label.toLowerCase().includes(input.toLowerCase()))
     }
@@ -119,6 +121,8 @@ const SearchComponent = () => {
     />
 
     const sendRequestedForm = async () => {
+
+        if(controller.current)
         console.log(checked)
         // All form empty, no search
         if(author.length === 0 && work.length === 0 && concepts.length === 0){
@@ -130,6 +134,12 @@ const SearchComponent = () => {
         setStats([])
         setSummary([])
 
+        if (controller.current) {
+            controller.current.abort("Canceling Fetch: Work has changed...")
+        }
+        controller.current = new AbortController()
+        const signal = controller.current.signal
+
         // Requête POST
         const searchObject = JSON.stringify({
             author: author.map(e => e.value),
@@ -139,7 +149,7 @@ const SearchComponent = () => {
             subConcepts: subConcepts,
             collectionMembers: collectionMembers
         })
-
+        let time1 = performance.now()
         const data_retreive = await fetch(`${process.env.REACT_APP_BACKEND_URL}customSearch`,
             {
                 method: "POST",
@@ -147,10 +157,12 @@ const SearchComponent = () => {
                 headers: {
                   "Content-Type": "application/json",
                 },
-                body: searchObject
+                body: searchObject,
+                signal
               }
         ).then(response => response.json()).catch(e => {console.log(e)})
-        
+        let time2 = performance.now()
+
         console.log(data_retreive)
         const displaySearch = []
         if(Object.keys(data_retreive.tree).length === 0){
@@ -161,6 +173,7 @@ const SearchComponent = () => {
                 <div className={styles["block-stat"]}>
                     <h4>Results</h4>
                     <p>Number of Work: {data_retreive.tree.length}</p>
+                    <p>Request time: {(time2 - time1) / 1000} s</p>
                 </div>
                 <div className={styles["block-stat"]}>
                     <h4>Export: </h4>
@@ -179,7 +192,7 @@ const SearchComponent = () => {
             </div>)
             console.log(data_retreive.tree)
             for(const node of data_retreive.tree){
-                displaySearch.push(<DisplaySearch node={node}/>)
+                displaySearch.push(<DisplaySearch node={node} controller={controller}/>)
             }
         }
         
