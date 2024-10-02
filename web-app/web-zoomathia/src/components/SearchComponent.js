@@ -12,6 +12,10 @@ import DisplaySearch from "./DisplaySearch"
 import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 
 
@@ -79,6 +83,7 @@ const SearchComponent = () => {
     const [authorList, setAuthorList] = useState([])
     const [workList, setWorkList] = useState([])
     const [conceptList, setConceptList] = useState([])
+    const [lang, setLang] = useState([])
 
     const [checked, setChecked] = useState(false)
     const [subConcepts, setSubConcepts] = useState(false)
@@ -119,6 +124,11 @@ const SearchComponent = () => {
         isMulti
         onChange={(e) => setConcepts(e || [])}
     />
+
+    const changeLang = (e) => {
+        setLang(e.target.value)
+        //TODO: Changer la liste des concepts présent dans l'input select
+    }
 
     const sendRequestedForm = async () => {
 
@@ -256,7 +266,24 @@ const SearchComponent = () => {
                     {workSelect}
                 </div>
                 <div className={styles["search-input-border"]}>
-                    <label>Filter on concept(s):<Tooltip title={logicConceptTooltip}><IconButton><InfoIcon /></IconButton></Tooltip></label>
+                    <label>Filter on concept(s):<Tooltip title={logicConceptTooltip}><IconButton><InfoIcon /></IconButton></Tooltip>
+                    <FormControl sx={{ m: 1, minWidth: 80 }}>
+                        <InputLabel id="demo-simple-select-autowidth-label">Lang</InputLabel>
+                        <Select
+                            labelId="demo-simple-select-autowidth-label"
+                            id="demo-simple-select-autowidth"
+                            value={lang}
+                            onChange={changeLang}
+                            autoWidth
+                            label="lang">
+                            <MenuItem value="">
+                                <em></em>
+                            </MenuItem>
+                            <MenuItem value="en">English</MenuItem>
+                            <MenuItem value="fr">Français</MenuItem>
+                            <MenuItem value="it">Italiano</MenuItem>
+                        </Select>
+                    </FormControl></label>
                     <div className={styles["search-concept"]}>
                         {conceptsSelect}
                         <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
