@@ -926,7 +926,7 @@ router.get("/download-custom-search-csv", async (req, res) => {
   })
 })
 
-router.get("/download-qc", async (req, res) => {
+router.get("/download-qc-json", async (req, res) => {
   const query = getCompetenciesQuestion(`${req.query.id}`)
   const result = await executeSPARQLRequest(endpoint, query)
 
@@ -935,6 +935,37 @@ router.get("/download-qc", async (req, res) => {
   const filePath = path.join(tempDir, fileName)
 
   fs.writeFile(filePath, JSON.stringify(result), (err) => {
+    if(err){
+      console.log('Creation file error')
+      return res.status(500).send('Creation file error');
+    }
+
+    res.download(filePath, fileName, (err) => {
+      if (err) {
+        console.error('Download error', err);
+        return res.status(500).send('Download error');
+      }
+      fs.unlink(filePath, (err) => {
+        if (err) {
+            console.error('Erase file error', err);
+        }
+        console.log(`File ${fileName} erased.`);
+    });
+    })
+  })
+
+
+})
+
+router.get("/download-qc-csv", async (req, res) => {
+  const query = getCompetenciesQuestion(`${req.query.id}`)
+  const result = await executeSPARQLRequest(endpoint, query)
+
+  const tempDir = os.tmpdir()
+  const fileName = `export_qc${req.query.id}.csv`
+  const filePath = path.join(tempDir, fileName)
+
+  fs.writeFile(filePath, jsonToCsv(result), (err) => {
     if(err){
       console.log('Creation file error')
       return res.status(500).send('Creation file error');

@@ -111,8 +111,12 @@ const CompetencyQuestionComponent = () => {
                 <section className={styles["selected-book-metadata"]}>
                 <p><b>Export SPARQL Result</b>: 
                         <a className={styles["button-export"]} 
-                        href={`${process.env.REACT_APP_BACKEND_URL}download-qc?id=${file}`}  
+                        href={`${process.env.REACT_APP_BACKEND_URL}download-qc-json?id=${file}`}  
                         download target="_blank" rel="noreferrer">JSON</a>
+
+                        <a className={styles["button-export"]} 
+                        href={`${process.env.REACT_APP_BACKEND_URL}download-qc-csv?id=${file}`}  
+                        download target="_blank" rel="noreferrer">CSV</a>
                     </p>
                 </section>
                 <Grid data={data.table.data}
