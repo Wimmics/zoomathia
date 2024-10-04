@@ -35,9 +35,8 @@ const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
         if (!element) {
             console.log(`Cannot select element on URI ${node.uri}`)
         }else if (element) {
-            const offsetSvh = 10; // Définir l'offset en svh (10 svh dans cet exemple)
-            const offset = (window.innerHeight * offsetSvh) / 100; // Convertir svh en pixels
-
+            const offsetSvh = 10;
+            const offset = (window.innerHeight * offsetSvh) / 100;
             const elementPosition = element.getBoundingClientRect().top + window.scrollY;
             const offsetPosition = elementPosition - offset;
             window.scrollTo({ behaviour: 'smooth', top: offsetPosition})
