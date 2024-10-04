@@ -527,18 +527,18 @@ router.get('/getLanguageConcept', async (req, res) => {
   res.status(200).json(response)
 })
 
-const getTheso = () => {
+const getTheso = (lang) => {
   return `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT DISTINCT ?concept ?label ?type WHERE {
   ?concept a ?type;
   	skos:prefLabel ?label.
-  FILTER(lang(?label) = "en")
+  FILTER(lang(?label) = "${lang}")
 }ORDER BY ?label
 `
 }
 
 router.get('/getTheso', async (req, res) => {
-  const result = await executeSPARQLRequest(endpoint, getTheso())
+  const result = await executeSPARQLRequest(endpoint, getTheso(req.query.lang))
   const response = []
 
   for(const elt of result.results.bindings){

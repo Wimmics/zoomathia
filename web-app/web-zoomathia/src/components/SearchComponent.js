@@ -83,11 +83,10 @@ const SearchComponent = () => {
     const [authorList, setAuthorList] = useState([])
     const [workList, setWorkList] = useState([])
     const [conceptList, setConceptList] = useState([])
-    const [lang, setLang] = useState([])
+    const [lang, setLang] = useState('en')
 
     const [checked, setChecked] = useState(false)
     const [subConcepts, setSubConcepts] = useState(false)
-    const [collectionMembers, setCollectionMembers] = useState(false)
 
     const [searchResult, setSearchResult] = useState([])
     const [currentWorkLoading, setCurrentWorkLoading] = useState("")
@@ -125,9 +124,11 @@ const SearchComponent = () => {
         onChange={(e) => setConcepts(e || [])}
     />
 
-    const changeLang = (e) => {
+    const changeLang = async (e) => {
+        setConceptList(await getConcepts(e.target.value))
         setLang(e.target.value)
         //TODO: Changer la liste des concepts présent dans l'input select
+        
     }
 
     const sendRequestedForm = async () => {
@@ -156,8 +157,7 @@ const SearchComponent = () => {
             work: work.map(e => e.value),
             concepts: concepts.map(e => {return{uri: e.value, type: e.type}}),
             checked: checked,
-            subConcepts: subConcepts,
-            collectionMembers: collectionMembers
+            subConcepts: subConcepts
         })
         let time1 = performance.now()
         const data_retreive = await fetch(`${process.env.REACT_APP_BACKEND_URL}customSearch`,
@@ -213,6 +213,14 @@ const SearchComponent = () => {
         setSearchResult(displaySearch)
     }
 
+    const getConcepts = async (language="en") => {
+        const data_concepts = await fetch(`${process.env.REACT_APP_BACKEND_URL}getTheso?lang=${language}`
+        ).then(response => response.json())
+            .catch(e => { console.log(e) })
+
+        return data_concepts
+    }
+
     useEffect(() => {
         const getAuthors = async () => {
             const author_response = []
@@ -237,14 +245,6 @@ const SearchComponent = () => {
             }
     
             return work_response
-        }
-
-        const getConcepts = async () => {
-            const data_concepts = await fetch(`${process.env.REACT_APP_BACKEND_URL}getTheso`
-            ).then(response => response.json())
-                .catch(e => { console.log(e) })
-    
-            return data_concepts
         }
 
         const loadData = async () => {
