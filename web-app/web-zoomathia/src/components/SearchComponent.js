@@ -186,8 +186,11 @@ const SearchComponent = () => {
                     <p>Request time: {(time2 - time1) / 1000} s</p>
                 </div>
                 <div className={styles["block-stat"]}>
-                    <h4>Export: </h4>
-                    <a href={`${process.env.REACT_APP_BACKEND_URL}download-custom-search?sparql=${encodeURIComponent(data_retreive.sparql)}`} className={styles["btn-download"]} download target="_blank" rel="noreferrer">SPARQL result</a>
+                    <h4>Export SPARQL Result: </h4>
+                    <div className={styles["btn-export-multiple"]}>
+                        <a href={`${process.env.REACT_APP_BACKEND_URL}download-custom-search-json?sparql=${encodeURIComponent(data_retreive.sparql)}`} className={styles["btn-download"]} download target="_blank" rel="noreferrer">JSON</a>
+                        <a href={`${process.env.REACT_APP_BACKEND_URL}download-custom-search-csv?sparql=${encodeURIComponent(data_retreive.sparql)}`} className={styles["btn-download"]} download target="_blank" rel="noreferrer">CSV</a>
+                    </div>
                 </div>
                 
                 
@@ -266,8 +269,10 @@ const SearchComponent = () => {
                     {workSelect}
                 </div>
                 <div className={styles["search-input-border"]}>
-                    <label>Filter on concept(s):<Tooltip title={logicConceptTooltip}><IconButton><InfoIcon /></IconButton></Tooltip>
-                    <FormControl sx={{ m: 1, minWidth: 80 }}>
+                    <label>Filter on concept(s):<Tooltip title={logicConceptTooltip}><IconButton><InfoIcon /></IconButton></Tooltip></label>
+                    <div className={styles["search-concept"]}>
+                        {conceptsSelect}
+                        <FormControl sx={{ m: 1, minWidth: 80 }}>
                         <InputLabel id="demo-simple-select-autowidth-label">Lang</InputLabel>
                         <Select
                             labelId="demo-simple-select-autowidth-label"
@@ -283,17 +288,14 @@ const SearchComponent = () => {
                             <MenuItem value="fr">Français</MenuItem>
                             <MenuItem value="it">Italiano</MenuItem>
                         </Select>
-                    </FormControl></label>
-                    <div className={styles["search-concept"]}>
-                        {conceptsSelect}
-                        <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
+                    </FormControl>
+                    </div>
+                    <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
                             <Typography>OR</Typography>
                             <AntSwitch inputProps={{ 'aria-label': 'ant design' }} onChange={e => setChecked(!checked)}/>
                             <Typography>AND</Typography>
-                        </Stack>
-                    </div>
-                    <FormControlLabel control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>} label="Add sub-concepts" />
-                    <FormControlLabel control={<Checkbox color="success" onChange={e => setCollectionMembers(!collectionMembers)}/>} label="Add members of collection" />
+                            <FormControlLabel className={styles["concept-checkbox"]} control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>} label="Add sub-concepts" />
+                    </Stack>
                 </div>
                 <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
             </div>

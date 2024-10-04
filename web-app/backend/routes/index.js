@@ -1,4 +1,4 @@
-let { executeSPARQLRequest, readTemplate, getCompetenciesQuestion, checkParagraph, executeDescribeRequest, getTypeFromURI } = require('./utils.js')
+let { executeSPARQLRequest, jsonToCsv, getCompetenciesQuestion, checkParagraph, executeDescribeRequest, getTypeFromURI } = require('./utils.js')
 let express = require('express');
 const path = require('path');
 const { qcs } = require("../queries/qcs.js")
@@ -48,10 +48,10 @@ router.get("/getMetadata", async (req, res) => {
   let response = {}
   for (const elt of result.results.bindings) {
     response = {
-      author: elt.author.value,
-      editor: elt.editor.value,
-      date: elt.date.value,
-      file: elt.file.value
+      author: elt?.author.value,
+      editor: elt?.editor.value,
+      date: elt?.date.value,
+      file: elt?.file.value
     }
   }
 
@@ -80,21 +80,21 @@ router.get("/getSummary", async (req, res) => {
   const idInSet = new Set()
 
   for (const elt of result.results.bindings) {
-    response[elt.current.value] = {
-      uri: elt.current.value,
-      id: elt.id.value,
-      title: elt.title.value,
-      type: elt.type.value,
+    response[elt?.current.value] = {
+      uri: elt?.current.value,
+      id: elt?.id.value,
+      title: elt?.title.value,
+      type: elt?.type.value,
       children: []
     }
   }
 
   for (const elt of result.results.bindings) {
-    if ((elt.current.value === elt.parent.value) && (!idInSet.has(elt.current.value))) {
-      tree.push(response[elt.current.value])
-      idInSet.add(elt.current.value)
+    if ((elt?.current.value === elt?.parent.value) && (!idInSet.has(elt?.current.value))) {
+      tree.push(response[elt?.current.value])
+      idInSet.add(elt?.current.value)
     } else {
-      response[elt.parent.value].children.push(response[elt.current.value])
+      response[elt?.parent.value].children.push(response[elt?.current.value])
     }
   }
 
@@ -173,8 +173,8 @@ router.get('/getWorksFromAuthors', async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, getWorksFromAuthor(req.query.author))
   for (const elt of result.results.bindings) {
     response.push({
-      uri: elt.oeuvre.value,
-      title: elt.title.value,
+      uri: elt?.oeuvre.value,
+      title: elt?.title.value,
       author: req.query.author
     })
   }
@@ -197,9 +197,9 @@ router.get('/getWorks', async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, getWorks())
   for (const elt of result.results.bindings) {
     response.push({
-      uri: elt.oeuvre.value,
-      title: elt.title.value,
-      author: elt.author.value
+      uri: elt?.oeuvre.value,
+      title: elt?.title.value,
+      author: elt?.author.value
     })
   }
   res.status(200).json(response)
@@ -247,9 +247,9 @@ router.get("/getChildren", async (req, res) => {
 
   for (const elt of result.results.bindings) {
     response.push({
-      uri: elt.child.value,
-      title: elt.title.value,
-      type: elt.type.value
+      uri: elt?.child.value,
+      title: elt?.title.value,
+      type: elt?.type.value
     })
   }
 
@@ -275,10 +275,10 @@ router.get('/getParagraphs', async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, getParagraphQuery(req.query.uri));
   for (const elt of result.results.bindings) {
     response.push({
-      title: elt.title.value,
-      uri: elt.uri.value,
-      text: elt.text.value,
-      id: elt.id.value
+      title: elt?.title.value,
+      uri: elt?.uri.value,
+      text: elt?.text.value,
+      id: elt?.id.value
     })
   }
 
@@ -298,7 +298,7 @@ router.get("/getCurrentType", async (req, res) => {
   const response = []
   const result = await executeSPARQLRequest(endpoint, getCurrentType(req.query.uri));
   for (const elt of result.results.bindings) {
-    response.push({ type: elt.type.value })
+    response.push({ type: elt?.type.value })
   }
   res.status(200).json(response)
 })
@@ -324,9 +324,9 @@ router.get('/getParagraphAlone', async (req, res) => {
   console.log(result.results.bindings)
   for (const elt of result.results.bindings) {
     response.push({
-      uri: elt.paragraph.value,
-      text: elt.text.value,
-      id: elt.id.value
+      uri: elt?.paragraph.value,
+      text: elt?.text.value,
+      id: elt?.id.value
     })
   }
 
@@ -367,18 +367,18 @@ router.get('/getConcepts', async (req, res) => {
   const annotations = {}
 
   for (const elt of result.results.bindings) {
-    annotations[elt.label.value] = {
-      concept: elt.concept.value,
-      label: elt.label.value,
+    annotations[elt?.label.value] = {
+      concept: elt?.concept.value,
+      label: elt?.label.value,
       offset: []
     }
   }
 
   for (const elt of result.results.bindings) {
-    annotations[elt.label.value].offset.push({start: elt.start.value, end: elt.end.value})
+    annotations[elt?.label.value].offset.push({start: elt?.start.value, end: elt?.end.value})
   }
-  // start: elt.start ? parseInt(elt.start.value) : 0,
-  // end: elt.end ? parseInt(elt.end.value) : 0,
+  // start: elt?.start ? parseInt(elt?.start.value) : 0,
+  // end: elt?.end ? parseInt(elt?.end.value) : 0,
 
   res.status(200).json(annotations)
 })
@@ -401,8 +401,8 @@ router.get('/searchConcepts', async (req, res) => {
 
   for (const elt of result.results.bindings) {
     response.push({
-      uri: elt.concept.value,
-      label: elt.label.value
+      uri: elt?.concept.value,
+      label: elt?.label.value
     })
   }
 
@@ -443,10 +443,10 @@ router.post('/getParagraphWithConcept', async (req, res) => {
   let response = []
   for (const elt of result.results.bindings) {
     response.push({
-      uri: elt.paragraph.value,
-      text: elt.text.value,
-      title: elt.title.value,
-      id: elt.id.value
+      uri: elt?.paragraph.value,
+      text: elt?.text.value,
+      title: elt?.title.value,
+      id: elt?.id.value
     })
   }
   res.status(200).json(response)
@@ -481,13 +481,13 @@ router.post('/getParagraphsWithConcepts', async (req, res) => {
   //?uri ?book ?paragraph ?id ?text
   for (const elt of result.results.bindings) {
     response.push({
-      author: elt.author.value,
-      bookUri: elt.uri.value,
-      bookId: elt.book.value,
-      title: elt.title.value,
-      uri: elt.paragraph.value,
-      text: elt.text.value,
-      id: elt.id.value
+      author: elt?.author.value,
+      bookUri: elt?.uri.value,
+      bookId: elt?.book.value,
+      title: elt?.title.value,
+      uri: elt?.paragraph.value,
+      text: elt?.text.value,
+      id: elt?.id.value
     })
   }
   res.status(200).json(response)
@@ -521,7 +521,7 @@ router.get('/getLanguageConcept', async (req, res) => {
   const response = []
   for (const elt of result.results.bindings) {
     response.push({
-      value: elt.lang.value
+      value: elt?.lang.value
     })
   }
   res.status(200).json(response)
@@ -543,9 +543,9 @@ router.get('/getTheso', async (req, res) => {
 
   for(const elt of result.results.bindings){
     response.push({
-      label: elt.type.value === "http://www.w3.org/2004/02/skos/core#Collection" ? elt.label.value + " (Collection)": elt.label.value,
-      value:elt.concept.value,
-      type: elt.type.value
+      label: elt?.type.value === "http://www.w3.org/2004/02/skos/core#Collection" ? elt?.label.value + " (Collection)": elt?.label.value,
+      value:elt?.concept.value,
+      type: elt?.type.value
     })
   }
 
@@ -664,7 +664,7 @@ router.post("/customSearch", async (req, res) => {
       let conceptBuilder = ''
       let collectionBuilder = ''
       for(let i = 0; i < concepts.length; i++){
-        if(req.body.collectionMembers && getTypeFromURI(concepts[i].type) === "Collection"){
+        if(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Collection"){
           collections.push(`<${concepts[i].uri}>`)
         }
         if(req.body.subConcepts && getTypeFromURI(concepts[i].type) === "Concept" ){
@@ -747,6 +747,13 @@ router.post("/customSearch", async (req, res) => {
   SELECT DISTINCT ?work ?type ?author ?title ?parent ?current ?current_type ?current_id ?current_title ?paragraph_direct_parent ?paragraph ?id ?text WHERE {
     ${union}
     ${annotations}
+    ?work a zoo:Oeuvre; a ?type;
+      zoo:title ?title;
+      zoo:author ?author;
+      zoo:hasPart+ ?paragraph.
+    
+    ?paragraph zoo:text ?text;
+      zoo:identifier ?id.
 
     ?paragraph zoo:isPartOf+ ?current;
                zoo:isPartOf ?paragraph_direct_parent.
@@ -768,44 +775,44 @@ router.post("/customSearch", async (req, res) => {
   const tree = []
   const idInSet = new Set()
 
-  for (const elt of result.results.bindings) {
-    response[elt.work.value] = {
-      uri: elt.work.value,
-      id: elt.work.value,
-      title: elt.title.value,
-      type: elt.type.value,
+  for (const elt of result?.results.bindings) {
+    response[elt?.work.value] = {
+      uri: elt?.work.value,
+      id: elt?.work.value,
+      title: elt?.title.value,
+      type: elt?.type.value,
       children: []
     }
 
-    response[elt.current.value] = {
-      uri: elt.current.value,
-      id: elt.current_id.value,
-      title: elt.current_title.value,
-      type: elt.current_type.value,
+    response[elt?.current.value] = {
+      uri: elt?.current.value,
+      id: elt?.current_id.value,
+      title: elt?.current_title.value,
+      type: elt?.current_type.value,
       children: []
     }
   }
 
   for (const elt of result.results.bindings) {
-    if ((!idInSet.has(elt.work.value))) {
-      tree.push(response[elt.work.value])
-      idInSet.add(elt.work.value)
+    if ((!idInSet.has(elt?.work.value))) {
+      tree.push(response[elt?.work.value])
+      idInSet.add(elt?.work.value)
     }
-    if(response[elt.parent.value].children.indexOf(response[elt.current.value]) < 0){
-      response[elt.parent.value].children.push(response[elt.current.value])
+    if(response[elt?.parent.value].children.indexOf(response[elt?.current.value]) < 0){
+      response[elt?.parent.value].children.push(response[elt?.current.value])
     }
 
   }
 
   for(const elt of result.results.bindings){
     const paragraph = {
-      uri: elt.paragraph.value,
-      id: elt.id.value,
-      text: elt.text.value,
+      uri: elt?.paragraph.value,
+      id: elt?.id.value,
+      text: elt?.text.value,
       children: []
     }
-    if(!checkParagraph(response[elt.paragraph_direct_parent.value], paragraph)){
-      response[elt.paragraph_direct_parent.value].children.push(paragraph)
+    if(!checkParagraph(response[elt?.paragraph_direct_parent.value], paragraph)){
+      response[elt?.paragraph_direct_parent.value].children.push(paragraph)
     }
   }
 
@@ -817,11 +824,11 @@ router.post("/customSearch", async (req, res) => {
   }
 })
 
-router.get("/download-custom-search", async (req, res) => {
+router.get("/download-custom-search-json", async (req, res) => {
   const result = await executeSPARQLRequest(endpoint, req.query.sparql)
 
   const tempDir = os.tmpdir()
-  const fileName = `export_custom_search-${Date.now()}.ttl`
+  const fileName = `export_custom_search-${Date.now()}.json`
   const filePath = path.join(tempDir, fileName)
 
   fs.writeFile(filePath,  JSON.stringify(result), (err) => {
@@ -889,6 +896,34 @@ router.get("/download-turtle", async (req, res) => {
     })
   })
 
+})
+
+router.get("/download-custom-search-csv", async (req, res) => {
+  const result = await executeSPARQLRequest(endpoint, req.query.sparql)
+
+  const tempDir = os.tmpdir()
+  const fileName = `export_custom_search-${Date.now()}.csv`
+  const filePath = path.join(tempDir, fileName)
+
+  fs.writeFile(filePath,  jsonToCsv(result), (err) => {
+    if(err){
+      console.log('Creation file error')
+      return res.status(500).send('Creation file error');
+    }
+
+    res.download(filePath, fileName, (err) => {
+      if (err) {
+        console.error('Download error', err);
+        return res.status(500).send('Download error');
+      }
+      fs.unlink(filePath, (err) => {
+        if (err) {
+            console.error('Erase file error', err);
+        }
+        console.log(`File ${fileName} erased.`);
+    });
+    })
+  })
 })
 
 router.get("/download-qc", async (req, res) => {

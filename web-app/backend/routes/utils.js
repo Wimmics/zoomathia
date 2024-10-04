@@ -94,9 +94,27 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
+const jsonToCsv = (jsonObject) => {
+    const header = jsonObject.head.vars
+    let fileWriter = []
+
+    fileWriter.push(header.join(";"))
+
+    for(const line of jsonObject.results.bindings){
+        const temp = []
+        for(const title of header){
+            temp.push(line[title].value)
+        }
+        fileWriter.push(temp.join(";"))
+    }
+
+    return fileWriter.join("\n")
+}
+
 exports.executeSPARQLRequest = executeSPARQLRequest;
 exports.readTemplate = readTemplate;
 exports.getCompetenciesQuestion = getCompetenciesQuestion;
 exports.checkParagraph = checkParagraph;
 exports.executeDescribeRequest = executeDescribeRequest;
 exports.getTypeFromURI = getTypeFromURI;
+exports.jsonToCsv = jsonToCsv;
