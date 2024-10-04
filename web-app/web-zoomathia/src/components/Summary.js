@@ -31,13 +31,16 @@ const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
         if(setChange !== null){
             handleDisplay()
         }
+
         if (!element) {
             console.log(`Cannot select element on URI ${node.uri}`)
-        } else if (element && node.type !== "http://www.zoomathia.com/2024/zoo#Paragraph") {
-            element.scrollIntoView({ behaviour: 'smooth', block: 'start'})
-        } else {
-            element.scrollIntoView({ behaviour: 'smooth', block: 'center' })
+        }else if (element) {
+            const offsetSvh = 10; // Définir l'offset en svh (10 svh dans cet exemple)
+            const offset = (window.innerHeight * offsetSvh) / 100; // Convertir svh en pixels
 
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - offset;
+            window.scrollTo({ behaviour: 'smooth', top: offsetPosition})
         }
     }
 
