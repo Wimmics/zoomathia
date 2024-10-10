@@ -3,6 +3,10 @@
     flex-direction: row;
 }
 
+.paragraph-section:nth-child(2n+1) {
+    background-color: #9A653026;
+}
+
 
 .id-paragraph {
     text-align: center;
@@ -38,9 +42,8 @@
 
 .concept-list p {
     margin-bottom: 0.3rem;
-    text-align: center;
-    color: white;
-    background-color: #0043a8;
+    text-align: left;
+    color: black;
     padding: 0.3rem;
 }
 

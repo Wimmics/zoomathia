@@ -6,7 +6,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    min-height: 10svh;
+    min-height: fit-content;
     max-height: 10svh;
 }
 
@@ -27,6 +27,7 @@
 
 .menu-box a {
     width: 100%;
+    color: black;
     text-align: center;
     margin: 15px 0px;
     padding: 1rem;
@@ -37,7 +38,7 @@
 }
 
 .menu-box a:hover {
-    background-color: rgb(0 19 103 / 50%);
+    background-color: #9a6530;
     cursor: pointer;
     color: white;
     transition: 0.3s;

@@ -17,7 +17,7 @@ h1 {
     width: 95%;
     box-shadow: 0 0 5px;
     background-color: white;
-    min-height: calc(100svh - 20svh);
+    min-height: calc(100svh - 17svh);
 }
 
 button {
@@ -125,12 +125,17 @@ select option {
 }
 
 .button-export {
-    background-color: rgb(203, 212, 255);
+    background-color: #9A653026;
     border: grey thin solid;
     border-radius: 5px;
     padding: 10px;
     margin: 0 15px;
     text-decoration: none;
+    color: black;
+}
+
+.loading-p{
+    text-align: center;
 }
 
 .button-export:hover {
