@@ -294,7 +294,7 @@ const SearchComponent = () => {
                             <Typography>OR</Typography>
                             <AntSwitch inputProps={{ 'aria-label': 'ant design' }} onChange={e => setChecked(!checked)}/>
                             <Typography>AND</Typography>
-                            <FormControlLabel className={styles["concept-checkbox"]} control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>} label="Add sub-concepts" />
+                            <FormControlLabel className={styles["concept-checkbox"]} control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>} label="Include sub-concepts" />
                     </Stack>
                 </div>
                 <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
