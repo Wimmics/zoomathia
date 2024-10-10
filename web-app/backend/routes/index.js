@@ -7,7 +7,7 @@ const os = require('os')
 const fs = require("fs")
 let router = express.Router();
 
-const endpoint = "http://localhost:8080/sparql"
+const endpoint = "http://zoomathia.i3s.unice.fr/sparql"
 const __dirForDOwnload__ = "./files/"
 
 
@@ -69,7 +69,9 @@ SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?title ?file 
       Optional {
         ?current zoo:title ?title_t.
       }
+      BIND(IF(BOUND(?author_t), ?author_t, "") AS ?author)
       BIND(IF(BOUND(?title_t), ?title_t, "") AS ?title)
+
 }ORDER BY ?id ?parent`
 }
 
@@ -779,6 +781,7 @@ router.post("/customSearch", async (req, res) => {
     response[elt?.work.value] = {
       uri: elt?.work.value,
       id: elt?.work.value,
+      author: elt?.author.value,
       title: elt?.title.value,
       type: elt?.type.value,
       children: []
@@ -787,6 +790,7 @@ router.post("/customSearch", async (req, res) => {
     response[elt?.current.value] = {
       uri: elt?.current.value,
       id: elt?.current_id.value,
+      author: elt?.author.value,
       title: elt?.current_title.value,
       type: elt?.current_type.value,
       children: []
@@ -808,6 +812,7 @@ router.post("/customSearch", async (req, res) => {
     const paragraph = {
       uri: elt?.paragraph.value,
       id: elt?.id.value,
+      author: elt?.author.value,
       text: elt?.text.value,
       children: []
     }
