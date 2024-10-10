@@ -7,7 +7,6 @@ import Grid from '@mui/material/Grid2';
 
 const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [sections, setSections] = useState([])
-    const [selectInput, setSelectInput] = useState([])
     const [metadata, setMetadata] = useState({})
     const [summary, setSummary] = useState(null)
     const [currentBook, setCurrentBook] = useState(null)
@@ -23,14 +22,10 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
     }
 
-    const downloadRDF = () => {
-        console.log("subgraph download...")
-    }
-
     const setChange = (e, title) => {
         handleToc(e, title)
     }
-
+    
     useEffect(() => {
         const getMetadata = async () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getMetadata?uri=${uri}`)
@@ -42,17 +37,13 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${uri}`)
                 .then(response => response.json())
             setSummary(data)
-        }
-        const update = async () => {
-            setSelectInput([{ id: 0, type: type, options: options }])
+            setSections(<SectionComponent sectionTitle={data[0].title} uri={data[0].uri} controller={controllerRef} />)
+            setCurrentBook(data[0].uri)
         }
 
-        update()
         getMetadata()
         getSummary()
         return () => {
-            update()
-            setSelectInput([])
             setSummary(null)
             setMetadata({})
         }
@@ -71,18 +62,16 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                     <a className={styles["button-export"]} 
                         href={`${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`} 
                         download={metadata.file} target="_blank" rel="noreferrer">XML-TEI</a>
-                        <a className={styles["button-export"]} 
+                    <a className={styles["button-export"]} 
                         href={`${process.env.REACT_APP_BACKEND_URL}download-turtle?uri=${uri}`}  
                         download target="_blank" rel="noreferrer">Turtle</a>
-                    </p>
-                    
+                </p>
             </div>
         </section>
         <Grid container spacing={2}>
             <Grid size={2}>
                 <section className={styles["section-toc"]}>
                     <h2>Table of content</h2>
-                    
                     <div className={styles["ul-toc"]}>
                         <ul>
                             {summary !== null ? summary.map(node => <SimpleTreeView key={node.uri}>
@@ -91,7 +80,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                             ) : ''}
                         </ul>
                     </div>
-
                 </section>
             </Grid>
             <Grid size={10}>

@@ -51,7 +51,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
                 }
 
                 setConceptsDiv(<div key={`concept-${id}`} className={styles['concept-list']}>
-                    <p>{Object.keys(concepts_list).length} concept{Object.keys(concepts_list).length > 1 ? 's' : ''}</p>
+                    <p><b>{Object.keys(concepts_list).length} concept{Object.keys(concepts_list).length > 1 ? 's' : ''}</b></p>
                     <ul key={`concept-list-${id}`}>
                     {concepts_list}  
                     </ul>
@@ -62,7 +62,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
     }
 
         getConcepts()
-    }, [highlight, id, lang, removeHighlight, uri])
+    }, [highlight, id, lang, removeHighlight, uri, controller])
 
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>

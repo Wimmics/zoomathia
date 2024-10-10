@@ -9,7 +9,7 @@ const getTypeFromURI = (uri) => {
 
 const LOADING_STATE = <section className={styles["text-part"]}>
     <div className={styles["loader"]}></div>
-    <p>Loading data...</p>
+    <p className={styles["loading-p"]}>Loading data...</p>
 </section>
 
 const SectionComponent = (props) => {
