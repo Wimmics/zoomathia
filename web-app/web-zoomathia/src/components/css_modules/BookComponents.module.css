@@ -12,6 +12,12 @@ h1 {
     font-size: 1.3rem;
 }
 
+.select-field-section > label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
 .box-content {
     margin: auto;
     width: 95%;
@@ -62,6 +68,7 @@ select option {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin: 20px 0;
 }
 
 .selection-section>* {
@@ -202,6 +209,22 @@ li {
 
 .button-toc:hover {
     background-color: yellow;
+}
+
+.btn-submit-search {
+    width: fit-content;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: grey thin solid;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+}
+
+.btn-submit-search:hover {
+    background-color: #acf3ff;
+    box-shadow: 0 0 2px;
 }
 
 .loader {

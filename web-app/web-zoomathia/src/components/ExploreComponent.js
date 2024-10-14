@@ -18,19 +18,16 @@ const ExplorerComponent = () => {
     const [authorList, setAuthorList] = useState([])
     const [worksList, setWorks] = useState([]);
 
-    const [author, setAuthor] = useState('')
-    const [work, setWork] = useState('')
+    const [author, setAuthor] = useState(null)
+    const [work, setWork] = useState(null)
 
     const controller = useRef(new AbortController())
 
-    const getDisplayText = useCallback((e) => {
+    const loadText = useCallback((e) => {
 
-        setWork({ label: e.label, value: e.value })
-        setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)
-
-        if (author.label !== e.author) {
-            setAuthor({ label: e.author, value: e.value })
-
+        if(!author && !work){
+            console.log("nothing selected")
+            return
         }
 
         if (controller.current) {
@@ -41,9 +38,10 @@ const ExplorerComponent = () => {
         const callForData = async () => {
             let bookList = [{ value: '', label: '' }];
             let type = ''
+            console.log(work)
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkPart?title=${work.value}`
+                ).then(response => response.json())
 
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkPart?title=${e.value}`
-            ).then(response => response.json())
             for (const book of data) {
                 type = getTypeFromURI(book.type)
                 bookList.push({ value: book.uri, label: book.title, id: book.id, number: book.id, type: getTypeFromURI(book.type) })
@@ -52,15 +50,26 @@ const ExplorerComponent = () => {
             setDisplayTextComponent(
                 <DisplayTextComponent className={styles["select-field"]}
                     controller={controller}
-                    uri={e.value}
+                    uri={work.value}
                     options={bookList}
                     type={type} />)
         }
 
         callForData()
-    }, [author])
+    }, [author, work])
 
-    const getWorks = useCallback((e) => {
+    const setWorkAndFilter = useCallback((e) => {
+        if(e.label === ''){
+            setWork(null)
+        }else{
+            setWork({ label: e.label, value: e.value })
+            if (!author || author?.label !== e.author) {
+                setAuthor({ label: e.author, value: e.value })
+            }
+        }        
+    },[author])
+
+    const setAuthorAndFilter = useCallback((e) => {
         const workList = [{ label: '', value: '' }]
         let urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorksFromAuthors?author=${e.value}`
 
@@ -71,7 +80,6 @@ const ExplorerComponent = () => {
 
         const callForData = async () => {
             setWorks([{ label: '', value: '' }])
-            setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)
             if (e.value === '') {
                 urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorks`
             }
@@ -88,10 +96,7 @@ const ExplorerComponent = () => {
         }
         callForData()
 
-
     }, [controller, setAuthor])
-
-
 
     useLayoutEffect(() => {
 
@@ -122,12 +127,14 @@ const ExplorerComponent = () => {
     return <div id={"box-content"} className={styles["box-content"]}>
         <header className={styles["selection-section"]}>
             <section key="author" className={styles["select-field-section"]}>
-                <h2 key="author">Author</h2>
-                <Select id="author-select" className={styles["select-field"]} placeholder="Select an author" onChange={getWorks} options={authorList} value={author} selectedValue={author} />
+                <Select id="author-select" className={styles["select-field"]} placeholder="Select or type an author" onChange={setAuthorAndFilter} options={authorList} value={author} selectedValue={author} />
             </section>
             <section key="work" className={styles["select-field-section"]}>
-                <h2 key="work">Work</h2>
-                <Select id="work-select" className={styles["select-field"]} placeholder="Select a work" onChange={getDisplayText} options={worksList} value={work} selectedValue={work} />
+                <Select id="work-select" className={styles["select-field"]} placeholder="Select or type a work" onChange={setWorkAndFilter} options={worksList} value={work} selectedValue={work} />
+            </section>
+            <section key="send" className={styles["select-field-section"]}>
+                <button className={styles["btn-submit-search"]} onClick={e => {setAuthor(null); setWork(null); setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)}}>clear</button>
+                <button className={styles["btn-submit-search"]} onClick={loadText}>search</button>
             </section>
         </header>
 

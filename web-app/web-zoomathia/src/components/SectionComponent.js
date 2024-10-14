@@ -7,15 +7,19 @@ const getTypeFromURI = (uri) => {
     return uri_split[uri_split.length - 1]
 }
 
-const LOADING_STATE = <section className={styles["text-part"]}>
-    <div className={styles["loader"]}></div>
-    <p className={styles["loading-p"]}>Loading data...</p>
-</section>
+
 
 const SectionComponent = (props) => {
     const sectionTitle = props.sectionTitle
-    const [sectionParagraph, setSectionParagraph] = useState(LOADING_STATE)
     const [type, setType] = useState("")
+
+    const LOADING_STATE = (e) => <section className={styles["text-part"]}>
+            <div className={styles["loader"]}></div>
+            <p className={styles["loading-p"]}>Loading data...</p>
+            <p className={styles["loading-p"]}>Get concept of {e}</p>
+        </section>
+
+    const [sectionParagraph, setSectionParagraph] = useState(LOADING_STATE())
 
     useLayoutEffect(() => {
         setSectionParagraph([])
@@ -45,7 +49,7 @@ const SectionComponent = (props) => {
                         { signal }
                     ).then(response => response.json())
                     for (const elt of data) {
-
+                        setSectionParagraph(LOADING_STATE(elt.uri))
                         const concepts_list = await fetch(
                             `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${elt.uri}&lang=${"en"}`,
                             { signal }
