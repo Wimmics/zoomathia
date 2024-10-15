@@ -6,8 +6,8 @@ import spacy
 from tqdm import tqdm
 import time
 
-from Named_entity_recognition.annotation_dbpedia import get_NER_from_dbpedia
-#from Named_entity_recognition.annotation_wikidata import get_NER_from_wikidata
+#from Named_entity_recognition.annotation_dbpedia import get_NER_from_dbpedia
+from Named_entity_recognition.annotation_wikidata import get_NER_from_wikidata
 
 
 def annotate_texts(directory_path, target_path):
@@ -18,11 +18,11 @@ def annotate_texts(directory_path, target_path):
             file_path = os.path.join(subdir, file_name)
 
             if os.path.isfile(file_path):
-                with open(file_path, 'r') as file:
+                with open(file_path, 'r', encoding="UTF-8") as file:
                     print(file_name)
                     # Read the XML file
-                    content = file.read()
-                    bs_content = bs(content, "lxml-xml")
+                    #content = file.read()
+                    bs_content = bs(file, "lxml-xml")
                     if bs_content.find_all("p"):
                         element_to_extract.append("p")
                     if bs_content.find_all("l"):
@@ -45,24 +45,24 @@ def annotate_texts(directory_path, target_path):
                             print(f"Pausing for {delay_duration} seconds...")
                             time.sleep(delay_duration)
                         # else:
-                        #english_NER = get_NER_from_wikidata(element, lg)
-                        english_DBpedia_NER = get_NER_from_dbpedia(element, lg)
+                        english_NER = get_NER_from_wikidata(element, lg)
+                        #english_DBpedia_NER = get_NER_from_dbpedia(element, lg)
 
-                        #for ent in english_NER.ents:
-                           # if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
-                              #  translated_element_en = bs_content.new_tag("note")
-                               # translated_element_en["type"] = "automatic"
-                                #translated_element_en["source"] = "Wikidata"
-                             #   translated_element_en[ent.label_] = ent.text
-                               # translated_element_en["mention"] = ent.text
-                                #translated_element_en["category"] = ent.label_
-                                #translated_element_en["start"] = ent.start_char
-                                #translated_element_en["end"] = ent.end_char
-                                #translated_element_en["lang"] = lg
-                                #translated_element_en["score"] = ent._.nerd_score
-                                #if ent._.url_wikidata is not None:
-                                 #   translated_element_en["link"] = ent._.url_wikidata
-                                #element.append(translated_element_en)
+                        for ent in english_NER.ents:
+                            if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
+                                translated_element_en = bs_content.new_tag("note")
+                                translated_element_en["type"] = "automatic"
+                                translated_element_en["source"] = "Wikidata"
+                                translated_element_en[ent.label_] = ent.text
+                                translated_element_en["mention"] = ent.text
+                                translated_element_en["category"] = ent.label_
+                                translated_element_en["start"] = ent.start_char
+                                translated_element_en["end"] = ent.end_char
+                                translated_element_en["lang"] = lg
+                                translated_element_en["score"] = ent._.nerd_score
+                                if ent._.url_wikidata is not None:
+                                   translated_element_en["link"] = ent._.url_wikidata
+                                element.append(translated_element_en)
 
                         Dbpedia_category_list_to_filter = ["DBpedia:MusicalWork", "DBpedia:MusicalArtist",
                                                            "Schema:MusicGroup",
@@ -75,7 +75,7 @@ def annotate_texts(directory_path, target_path):
                                                            "DBpedia:Company"]
                         link_dbpedia_to_filter = ["film", "music", "song"]
 
-                        for ent in english_DBpedia_NER.ents:
+                        """for ent in english_DBpedia_NER.ents:
                             if (ent._.dbpedia_raw_result['@types'] is not None and not (
                                     any([x in ent._.dbpedia_raw_result['@types'] for x in
                                          Dbpedia_category_list_to_filter]))):
@@ -95,7 +95,7 @@ def annotate_texts(directory_path, target_path):
                                     translated_element_en["category"] = ent._.dbpedia_raw_result['@types']
                                     if ent.kb_id_ is not None:
                                         translated_element_en["link"] = ent.kb_id_
-                                    element.append(translated_element_en)
+                                    element.append(translated_element_en)"""
 
                 # Use the prettify() method to obtain the prettified XML content
                 prettified_xml = bs_content.prettify()

@@ -19,7 +19,6 @@ def split_and_translate(text, lang_target, max_chunk_length=1000):
 
 
 def translate_text_using_deep_translator(bs_content, balises):
-    print(balises)
     for balise in balises:
         for element in tqdm(bs_content.find_all(balise)):
             # print(element)
@@ -50,9 +49,6 @@ def translate_text_using_deep_translator(bs_content, balises):
 def write_xml_with_translation(bs_content, file, target_directory):
     # Use the prettify() method to obtain the prettified XML content
     prettified_xml = bs_content.prettify()
-    # Remove the <html> and <body> tags
-    #prettified_xml = prettified_xml.replace('<html>', '').replace('</html>', '').replace('<body>', '').replace(
-     #   '</body>', '')
 
     # Write the updated XML to a new file
     file_name, file_extension = os.path.splitext(os.path.basename(file.name))

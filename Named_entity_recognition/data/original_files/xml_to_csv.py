@@ -429,7 +429,7 @@ def find_xml_files(directory):
 def extract_paragraph(parent_division, parent_data, parent_uri, link_data, paragraph_data):
 
     if len(parent_division.find_all(["p"])) == 0:
-        for p_id, p in enumerate(parent_division.find_all(["l"], recursive=False)):
+        for p_id, p in enumerate(parent_division.find_all(["l"], recursive=False), 1):
 
             paragraph_id = p_id
             paragraph_text = strip_paragraph_text(p.text)
@@ -442,7 +442,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
             # ["parent_uri", "type", "id", "title", "text"]
             paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text])
     else:
-        p_id = 0
+        p_id = 1
         for p in parent_division.find_all(["p"]):
             if not p.find_parent('p'):
                 # remove useless empty text (maybe error of generation)
@@ -488,13 +488,13 @@ def extraction_data(FILE,CSV):
         link_labels = ["parent_uri", "type", "id", "title", "child"]
         paragraph_data = []
         paragraph_labels = ["parent_uri", "type", "id", "title", "text"]
-        uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}"
+        uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}"
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
         metadata_labels = ["uri", "id", "type", "title", "author", "date", "editor", "prov"]
 
 
         # Edition type case is unknown to implement
-        for first_id, first_div in enumerate(body_parser.find_all(re.compile("^div"), recursive=False)):
+        for first_id, first_div in enumerate(body_parser.find_all(re.compile("^div"), recursive=False), 1):
             first_div_type = first_div["type"].title().replace(" ", "") if first_div["type"] != "textpart" else first_div["subtype"].title().replace(" ", "")
             first_div_id = first_id
             if first_div.has_attr("n"):
@@ -509,17 +509,17 @@ def extraction_data(FILE,CSV):
                 #extract number from the title
                 first_div_id = int(re.search(r"\d+", first_div_title).group())
 
-            current_uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}"
+            current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}"
             link_data.append([uri, "Oeuvre", oeuvre_id, oeuvre_title, current_uri])
 
             # First division has direct paragraph as children
             if not does_it_have_children_div(first_div):
                 extract_paragraph(first_div,
-                                  [f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}",
+                                  [f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}",
                                    first_div_type, first_div_id, first_div_title],
                                   current_uri, link_data, paragraph_data)
             else:
-                for second_id, second_div in enumerate(first_div.find_all(re.compile("^div"), recursive=False)):
+                for second_id, second_div in enumerate(first_div.find_all(re.compile("^div"), recursive=False), 1):
                     second_div_type = second_div["type"].title().replace(" ", "")  if second_div["type"] != "textpart" else second_div["subtype"].title().replace(" ", "")
                     second_div_id = second_id
                     if second_div.head:
@@ -527,55 +527,55 @@ def extraction_data(FILE,CSV):
                     else:
                         second_div_title = second_div["n"]
 
-                    current_uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}"
+                    current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}"
                     link_data.append(
-                        [f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}",
+                        [f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}",
                                      first_div_type, first_div_id, first_div_title, current_uri])
 
                     if not does_it_have_children_div(second_div):
                         extract_paragraph(second_div, [
-                            f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
+                            f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
                                    second_div_type, second_div_id, second_div_title],
                                           current_uri, link_data, paragraph_data)
                     else:
-                        for third_id, third_div in enumerate(second_div.find_all(re.compile("^div"), recursive=False)):
+                        for third_id, third_div in enumerate(second_div.find_all(re.compile("^div"), recursive=False), 1):
                             third_div_type = third_div["type"].title().replace(" ", "")  if third_div["type"] != "textpart" else third_div["subtype"].title().replace(" ", "")
                             third_div_id = third_id
                             if third_div.head:
                                 third_div_title = strip_text(third_div.head.text)
                             else:
                                 third_div_title = third_div["n"]
-                            current_uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}"
+                            current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}"
                             link_data.append(
-                                [f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
+                                [f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
                                  second_div_type, second_div_id, second_div_title, current_uri])
 
                             if not does_it_have_children_div(third_div):
                                 extract_paragraph(third_div, [
-                                    f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
+                                    f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
                                     third_div_type, third_div_id, third_div_title],
                                                   current_uri, link_data, paragraph_data)
                             else:
-                                for fourth_id, fourth_div in enumerate(third_div.find_all(re.compile("^div"), recursive=False)):
+                                for fourth_id, fourth_div in enumerate(third_div.find_all(re.compile("^div"), recursive=False), 1):
                                     fourth_div_id = fourth_id
                                     fourth_div_type = fourth_div["type"].title().replace(" ", "")  if fourth_div["type"] != "textpart" else third_div["subtype"].title().replace(" ", "")
                                     if fourth_div.head:
                                         fourth_div_title = strip_text(fourth_div.head.text)
                                     else:
                                         fourth_div_title = fourth_div["n"]
-                                    current_uri = f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}/{fourth_div_id}"
+                                    current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}/{fourth_div_id}"
                                     link_data.append(
                                         [
-                                            f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
+                                            f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
                                             third_div_type, third_div_id, third_div_title, current_uri])
                                     extract_paragraph(fourth_div, [
-                                        f"http://www.zoomathia.com/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}",
+                                        f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}",
                                         fourth_div_type, fourth_div_id, fourth_div_title],
                                         current_uri, link_data, paragraph_data)
 
-        pd.DataFrame(link_data, columns=link_labels).to_csv(CSV+"_link.csv", index=False, encoding='UTF-8')
-        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv(CSV+"_paragraph.csv", index=False, encoding='UTF-8')
-        pd.DataFrame(metadata, columns=metadata_labels).to_csv(CSV + "_metadata.csv", index=False,
+        pd.DataFrame(link_data, columns=link_labels).to_csv('./output/'+CSV+"_link.csv", index=False, encoding='UTF-8')
+        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv('./output/'+CSV+"_paragraph.csv", index=False, encoding='UTF-8')
+        pd.DataFrame(metadata, columns=metadata_labels).to_csv('./output/'+CSV + "_metadata.csv", index=False,
                                                                       encoding='UTF-8')
 
 
