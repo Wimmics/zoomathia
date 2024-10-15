@@ -46,7 +46,7 @@ const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
     return <TreeItem id={node.type + "_" + node.id + "_summary"}  itemId={node?.uri + "_summary"} onClick={handleClick}
                 label={ `${node.type ? 
                 (getTypeFromURI(node.type) !== "Oeuvre" ? getTypeFromURI(node.type) : node.author) : 'Paragraph'} - ${((node.title && node.title !== '') ? node.title : node.id)}`}>
-            {node.children && node.children.length > 1 && (<>
+            {node.children && ((node.children.length > 1) || (node.children[0]?.children.length > 1 )) && (<>
                 {removeDuplicate(node.children).map(child => <Summary
                     key={`${child?.uri}_${node.id}_summary`}
                     node={child}

@@ -53,11 +53,11 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
                 setConceptsDiv(<div key={`concept-${id}`} className={styles['concept-list']}>
                     <p><b>{Object.keys(concepts_list).length} concept{Object.keys(concepts_list).length > 1 ? 's' : ''}</b></p>
                     <ul key={`concept-list-${id}`}>
-                    {concepts_list}  
+                        {concepts_list}  
                     </ul>
                 </div>)
             }catch(err){
-            console.log(err)
+                console.log(err)
             }
     }
 

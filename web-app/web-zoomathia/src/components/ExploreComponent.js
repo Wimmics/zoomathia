@@ -38,7 +38,7 @@ const ExplorerComponent = () => {
         const callForData = async () => {
             let bookList = [{ value: '', label: '' }];
             let type = ''
-            console.log(work)
+
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkPart?title=${work.value}`
                 ).then(response => response.json())
 
