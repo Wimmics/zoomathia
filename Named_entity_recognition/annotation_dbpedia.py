@@ -1,6 +1,6 @@
 import spacy
 
-def get_NER_from_dbpedia(element,lg):
+def get_NER_from_dbpedia(element,lg="en"):
     nlp = spacy.load("en_core_web_lg")
     nlp.add_pipe('dbpedia_spotlight', config={'confidence': 0.6})
     #nlp.add_pipe("entityfishing", config={"api_ef_base": "http://nerd.huma-num.fr/nerd/service",'language': 'el'})

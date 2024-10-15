@@ -4,6 +4,10 @@ import re
 import os
 import glob
 
+from Named_entity_recognition.annotation_dbpedia import get_NER_from_dbpedia
+from Named_entity_recognition.annotation_wikidata import get_NER_from_wikidata
+from Named_entity_recognition.translation_step import split_and_translate
+
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 DEBUG = False
 
@@ -433,6 +437,10 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 
             paragraph_id = p_id
             paragraph_text = strip_paragraph_text(p.text)
+            translated_paragraph = split_and_translate(paragraph_text, "en")
+            print(get_NER_from_wikidata(translated_paragraph))
+            print(get_NER_from_dbpedia(translated_paragraph))
+            exit()
             if p.head:
                 paragraph_title = strip_paragraph_text(p.head.text)
             else:
@@ -457,6 +465,10 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 if parent_data[1] == "BekkerPage":
                     paragraph_id = 0 if "a" in parent_data[3] else 1
                     paragraph_text = strip_paragraph_text(p.text)
+                    translated_paragraph = split_and_translate(paragraph_text, "en")
+                    print(get_NER_from_wikidata(translated_paragraph))
+                    print(get_NER_from_dbpedia(translated_paragraph))
+                    exit()
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[2],
                                       f"{parent_uri}/{paragraph_id}"])
@@ -465,6 +477,10 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 else:
                     paragraph_id = p_id
                     paragraph_text = strip_paragraph_text(p.text)
+                    translated_paragraph = split_and_translate(paragraph_text, "en")
+                    print(get_NER_from_wikidata(translated_paragraph))
+                    print(get_NER_from_dbpedia(translated_paragraph))
+                    exit()
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/{paragraph_id}"])
                     # ["parent_uri", "type", "id", "title", "text"]
