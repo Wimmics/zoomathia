@@ -553,10 +553,11 @@ def extract_dbpedia(entities, annotations, paragraph):
     link_dbpedia_to_filter = ["film", "music", "song"]
 
     for ent in entities:
-        #if (ent._.dbpedia_raw_result['@types'] is not None and not (any([x in ent._.dbpedia_raw_result['@types'] for x in Dbpedia_category_list_to_filter]))):
-        if ((ent.kb_id_ is not None) and not (any([x in ent.kb_id_ for x in link_dbpedia_to_filter]))):
+        if ent.kb_id_ == None or ent.kb_id_ == '':
+            continue
+        if (ent.kb_id_ is not None) and not (any([x in ent.kb_id_ for x in link_dbpedia_to_filter])):
             annotations.append([paragraph,
-                                ent.kb_id_ if ent.kb_id_ is not None else "",
+                                ent.kb_id_,
                                 ent.text,
                                 #ent._.dbpedia_raw_result['@similarityScore'],
                                 0.6,
@@ -565,13 +566,15 @@ def extract_dbpedia(entities, annotations, paragraph):
 
 def extract_wikidata(entities, annotations, paragraph):
     for ent in entities:
+        if ent._.url_wikidata is None or ent._.url_wikidata == '':
+            continue
         if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
             #print("label", ent.label_)
             annotations.append([paragraph,
-                                ent._.url_wikidata if ent._.url_wikidata is not None else "",
+                                ent._.url_wikidata,
                                 ent.text,
                                 ent._.nerd_score,
-                                "DBpedia"])
+                                "wikidata"])
 
 
 def extraction_data(FILE,CSV):
