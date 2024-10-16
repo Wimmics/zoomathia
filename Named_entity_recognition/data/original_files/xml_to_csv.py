@@ -4,15 +4,51 @@ import re
 import os
 import glob
 from tqdm import tqdm
+from deep_translator import GoogleTranslator
 
-from Named_entity_recognition.annotation_dbpedia import get_NER_from_dbpedia
-from Named_entity_recognition.annotation_wikidata import get_NER_from_wikidata
-from Named_entity_recognition.translation_step import split_and_translate
+import spacy
+
+
 
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 DEBUG = False
 
+def split_and_translate(text, lang_target, max_chunk_length=1000):
+    chunks = [text[i:i + max_chunk_length] for i in range(0, len(text), max_chunk_length)]
+    #print(chunks)
+    translated_chunks = []
 
+    for chunk in chunks:
+        translated_chunk = GoogleTranslator(source='auto', target=lang_target).translate(chunk)
+        if translated_chunk is not None:
+            translated_chunks.append(translated_chunk)
+
+    translated_text = ' '.join(translated_chunks)
+    return translated_text
+
+def get_NER_from_dbpedia(element,lg="en"):
+
+    nlp = spacy.load("en_core_web_lg")
+    nlp.add_pipe('dbpedia_spotlight', config={'confidence': 0.6})
+
+    en_text = nlp(element)
+
+    del nlp
+    return en_text.ents
+
+API_ENDPOINT_URL = "http://nerd.huma-num.fr/nerd/service"
+def get_NER_from_wikidata(element, lg="en"):
+
+    if lg == "it":
+        nlp_model = spacy.load("it_core_news_lg")
+        nlp_model.add_pipe("entityfishing", config={"language": lg, "api_ef_base": API_ENDPOINT_URL})
+    else:
+        nlp_model = spacy.load("en_core_web_sm")
+        nlp_model.add_pipe("entityfishing", config={'language': lg, "api_ef_base": API_ENDPOINT_URL})
+
+    en_text = nlp_model(element)
+    del nlp_model
+    return en_text.ents
 def extract_sourcedesc_data(source):
     """
         Extract metadata from XML-TEI header
