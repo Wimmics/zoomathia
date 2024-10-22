@@ -7,7 +7,8 @@ const os = require('os')
 const fs = require("fs")
 let router = express.Router();
 
-const endpoint = "http://zoomathia.i3s.unice.fr/sparql"
+//const endpoint = "http://zoomathia.i3s.unice.fr/sparql"
+const endpoint = "http://localhost:8080/sparql"
 const __dirForDOwnload__ = "./files/"
 
 
@@ -29,7 +30,7 @@ router.get('/', async (req, res) => {
 });
 
 const getMetadata = (uri) => {
-  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  return `prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?author ?editor ?file ?date WHERE {
     <${uri}> a zoo:Oeuvre;
       zoo:author ?author;
@@ -59,7 +60,7 @@ router.get("/getMetadata", async (req, res) => {
 })
 
 const getSummary = (uri) => {
-  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+  return `prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
 SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?title ?file WHERE {
       ?current a ?type;
           zoo:isPartOf+ <${uri}>;
@@ -110,7 +111,7 @@ router.get("/getSummary", async (req, res) => {
 })
 
 const getWorkPart = (title) => {
-  return `prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  return `prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?part ?type ?id ?title WHERE {
     ?part a ?type;
       zoo:identifier ?id;
@@ -139,7 +140,7 @@ router.get('/getWorkPart', async (req, res) => {
 
 const getAuthors = () => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?name WHERE {
     ?oeuvre (schema:author|zoo:author) ?name
   }ORDER BY ?name
@@ -159,7 +160,7 @@ router.get('/getAuthors', async (req, res) => {
 const getWorksFromAuthor = (author) => {
   console.log(author)
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
 
   SELECT ?oeuvre ?title WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
@@ -185,7 +186,7 @@ router.get('/getWorksFromAuthors', async (req, res) => {
 
 const getWorks = () => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
 
   SELECT ?oeuvre ?title ?author WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
@@ -209,7 +210,7 @@ router.get('/getWorks', async (req, res) => {
 
 const getChildrenTypeQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?childType WHERE {
     <${uri}> zoo:hasPart ?child.
   
@@ -231,7 +232,7 @@ router.get("/getChildrenType", async (req, res) => {
 
 const getChildrenQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?child ?identifier ?title ?type WHERE {
     <${uri}> zoo:hasPart ?child.
     ?child a ?type;
@@ -260,7 +261,7 @@ router.get("/getChildren", async (req, res) => {
 
 const getParagraphQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT (xsd:integer(?id_p) as ?id) ?title ?uri ?text WHERE {
     <${uri}> zoo:title ?title.
 
@@ -289,7 +290,7 @@ router.get('/getParagraphs', async (req, res) => {
 
 const getCurrentType = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?type WHERE {
     <${uri}> a ?type
     }`
@@ -308,7 +309,7 @@ router.get("/getCurrentType", async (req, res) => {
 
 const getParagraphAloneQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?paragraph (xsd:integer(?id_p) as ?id) ?text WHERE {
     ?oeuvre zoo:hasPart+ ?parent
   ?parent zoo:hasPart ?paragraph
@@ -337,7 +338,7 @@ router.get('/getParagraphAlone', async (req, res) => {
 
 const getConceptsQuery = (uri, lang) => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   prefix oa: <http://www.w3.org/ns/oa#>
   prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
   SELECT DISTINCT ?annotation ?concept ?label ?start ?end ?exact WHERE {
@@ -355,9 +356,11 @@ const getConceptsQuery = (uri, lang) => {
     FILTER(lang(?labellang) = "${lang}")
   }
   OPTIONAL {
-    ?selector oa:start ?start;
-      oa:end ?end
+    ?selector oa:start ?start_t;
+      oa:end ?end_t
   }
+  BIND(IF(BOUND(?start_t), ?start_t, 0) as ?start)
+  BIND(IF(BOUND(?end_t), ?end_t, 0) as ?end)
   BIND(IF(BOUND(?labellang), ?labellang, ?labelen) AS ?label)
   
   }ORDER BY ?label`
@@ -388,7 +391,7 @@ router.get('/getConcepts', async (req, res) => {
 const searchConceptsQuery = (input, lang) => {
   return `prefix schema: <http://schema.org/>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?concept ?label WHERE {
     ?concept skos:prefLabel ?label
     FILTER(lang(?label) = "${lang}")
@@ -427,7 +430,7 @@ const buildAnnotation = (labels) => {
 const getParagraphsWithConcepts = (subpart, uri) => {
   return `prefix schema: <http://schema.org/>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?paragraph ?title ?id ?text WHERE {
     <${uri}> schema:title ?title.
 
@@ -457,7 +460,7 @@ router.post('/getParagraphWithConcept', async (req, res) => {
 const getAllParagraphsWithConcepts = (subpart) => {
   return `prefix schema: <http://schema.org/>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?uri ?author ?title ?book ?paragraph (xsd:integer(?id_p) as ?id) ?text WHERE {
     ${subpart}
     ?paragraph zoo:text ?text;
@@ -744,7 +747,7 @@ router.post("/customSearch", async (req, res) => {
 
   const buildRequest = `PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
   prefix oa: <http://www.w3.org/ns/oa#>
-  prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
 
   SELECT DISTINCT ?work ?type ?author ?title ?parent ?current ?current_type ?current_id ?current_title ?paragraph_direct_parent ?paragraph ?id ?text WHERE {
     ${union}
@@ -862,7 +865,7 @@ const describeRequest = (uri) => {
   return `PREFIX oa: <http://www.w3.org/ns/oa#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix zoo:     <http://www.zoomathia.com/2024/zoo#>
+prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
 
 DESCRIBE <${uri}> ?paragraph WHERE {
     <${uri}> a zoo:Oeuvre;
