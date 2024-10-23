@@ -1,9 +1,9 @@
 import { useState, useCallback, useEffect } from "react"
 import styles from "./css_modules/ParagraphComponent.module.css"
 
-const ListElement = ({uri, label, offsets, onMouseEnter, onMouseLeave, onClick}) => {
-
-    return <li onMouseEnter={() => onMouseEnter(offsets)} onMouseLeave={onMouseLeave} onClick={() => {onClick(uri)}}>
+const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onClick}) => {
+    console.log(type)
+    return <li className={type.includes("Automatic") ? styles["auto-annotation"] : styles["manual-annotation"]}  onMouseEnter={() => onMouseEnter(offsets)} onMouseLeave={onMouseLeave} onClick={() => {onClick(uri)}}>
         {label}
     </li>
 
@@ -43,6 +43,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
                     <ListElement key={`concept_element_${concepts[annotation].label}${lang}`}
                         uri={concepts[annotation].concept}
                         label={concepts[annotation].label}
+                        type={concepts[annotation].type}
                         offsets={offsets}
                         onMouseEnter={highlight}
                         onMouseLeave={removeHighlight}

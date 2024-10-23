@@ -48,7 +48,7 @@ const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
                 label={ `${node.type ? 
                 (getTypeFromURI(node.type) !== "Oeuvre" ? 
                 getTypeFromURI(node.type) : node.author) : 'Paragraph'} - ${((node.title && node.title !== '') ? node.title : node.id)}`}>
-            {node.children && ((node.children.length > 1) || (node.children[0]?.children.length > 1 )) && (<>
+            {node.children && ((node.children.length > 1) || (node.children[0]?.children.length > 0 )) && (<>
                 {removeDuplicate(node.children).map(child => <Summary
                     key={`${child?.uri}_${node.id}_summary`}
                     node={child}

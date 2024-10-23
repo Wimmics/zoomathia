@@ -55,7 +55,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 <p><b>Editor</b>: {metadata.editor}</p>
             </div>
             <div className={styles["metadata-div"]}>
-                <p><b>Date</b>: {metadata.date}</p>
+                <p><b>Year</b>: {metadata.date}</p>
             </div>
             <div className={styles["metadata-div"]}>
                 <p><b>Export</b>: 
@@ -71,7 +71,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         <Grid container spacing={2}>
             <Grid size={2}>
                 <section className={styles["section-toc"]}>
-                    <h2>Table of content</h2>
+                    <h2>Table of contents</h2>
                     <div className={styles["ul-toc"]}>
                         <ul>
                             {summary !== null ? summary.map(node => <SimpleTreeView key={node.uri}>
