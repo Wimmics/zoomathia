@@ -77,8 +77,8 @@ def setQuery(label, df, previous):
             ?x a ?type;
                 skos:prefLabel ?label.
             FILTER(lang(?label) = "en" || lang(?label) = "fr").
-            filter("{label}" in (ucase(str(?label)), lcase(str(?label)), str(?label))).
-        }}
+            filter(str(?label) in (ucase(str("{label}")), lcase(str("{label}")), str("{label}"))).
+        }} 
         """
 
     result = convert_sparql_to_json(sparqlQuery(g, q))
