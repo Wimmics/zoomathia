@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+  web-backend:
+    image: zoomathia/backend
+    container_name: backend
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 3001:3001
