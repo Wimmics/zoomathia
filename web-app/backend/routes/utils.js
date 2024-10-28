@@ -17,11 +17,11 @@ const executeDescribeRequest = async (endpoint, query) => {
     }
     catch (e) {
         console.log(`Request fail...`)
-
-        if (e.cause.code === 'ECONNREFUSED') {
+        console.log(e)
+        if (e.cause?.code === 'ECONNREFUSED') {
             console.log("SPARQL Endpoint unreachable, server is not launch or doesn't accept connection")
         } else {
-            console.log(e)
+            console.log(e.cause)
         }
         return "Doesn't work..."
     }
@@ -44,11 +44,11 @@ const executeSPARQLRequest = async (endpoint, query) => {
     }
     catch (e) {
         console.log(`Request fail...`)
-
-        if (e.cause.code === 'ECONNREFUSED') {
+        console.log(e)
+        if (e.cause?.code === 'ECONNREFUSED') {
             console.log("SPARQL Endpoint unreachable, server is not launch or doesn't accept connection")
         } else {
-            console.log(e)
+            console.log(e.cause)
         }
         return {
             results: {

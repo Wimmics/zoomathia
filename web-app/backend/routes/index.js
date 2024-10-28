@@ -2,13 +2,14 @@ let { executeSPARQLRequest, jsonToCsv, getCompetenciesQuestion, checkParagraph, 
 let express = require('express');
 const path = require('path');
 const { qcs } = require("../queries/qcs.js")
+require('dotenv').config();
 const axios = require('axios');
 const os = require('os')
 const fs = require("fs")
 let router = express.Router();
 
-//const endpoint = "http://zoomathia.i3s.unice.fr/sparql"
-const endpoint = "http://localhost:8080/sparql"
+const endpoint = process.env.SPARQL_ENDPOINT
+console.log(endpoint)
 const __dirForDOwnload__ = "./files/"
 
 
@@ -60,7 +61,7 @@ router.get("/getMetadata", async (req, res) => {
 })
 
 const getSummary = (uri) => {
-  return `prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
+  return `prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?title ?file WHERE {
       ?current a ?type;
           zoo:isPartOf+ <${uri}>;
@@ -160,7 +161,7 @@ router.get('/getAuthors', async (req, res) => {
 const getWorksFromAuthor = (author) => {
   console.log(author)
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
   SELECT ?oeuvre ?title WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
@@ -186,7 +187,7 @@ router.get('/getWorksFromAuthors', async (req, res) => {
 
 const getWorks = () => {
   return `prefix schema: <http://schema.org/>
-  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
+  prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
   SELECT ?oeuvre ?title ?author WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
@@ -341,8 +342,9 @@ const getConceptsQuery = (uri, lang) => {
   prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   prefix oa: <http://www.w3.org/ns/oa#>
   prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
-  SELECT DISTINCT ?annotation ?concept ?label ?start ?end ?exact WHERE {
-    ?annotation oa:hasBody ?concept;
+  SELECT DISTINCT ?annotation ?annotation_type ?concept ?label ?start ?end ?exact WHERE {
+    ?annotation a ?annotation_type;
+      oa:hasBody ?concept;
       oa:hasTarget [
         oa:hasSource <${uri}>;
         oa:hasSelector ?selector
@@ -375,6 +377,7 @@ router.get('/getConcepts', async (req, res) => {
     annotations[elt?.label.value] = {
       concept: elt?.concept.value,
       label: elt?.label.value,
+      type: elt?.annotation_type.value,
       offset: []
     }
   }
@@ -801,10 +804,12 @@ router.post("/customSearch", async (req, res) => {
   }
 
   for (const elt of result.results.bindings) {
+
     if ((!idInSet.has(elt?.work.value))) {
       tree.push(response[elt?.work.value])
       idInSet.add(elt?.work.value)
     }
+    
     if(response[elt?.parent.value].children.indexOf(response[elt?.current.value]) < 0){
       response[elt?.parent.value].children.push(response[elt?.current.value])
     }
@@ -865,7 +870,7 @@ const describeRequest = (uri) => {
   return `PREFIX oa: <http://www.w3.org/ns/oa#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
+prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
 DESCRIBE <${uri}> ?paragraph WHERE {
     <${uri}> a zoo:Oeuvre;
