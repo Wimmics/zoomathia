@@ -1,6 +1,5 @@
 import { useLayoutEffect, useState, useCallback, useRef } from 'react'
 import styles from "./css_modules/BookComponents.module.css"
-//import DisplayTextComponent from './DisplayTextComponent'
 import Select from 'react-select'
 import DisplayTextComponent from './DisplayTextComponent'
 
@@ -34,12 +33,13 @@ const ExplorerComponent = () => {
             controller.current.abort("Canceling Fetch: Work has changed...")
         }
         controller.current = new AbortController()
+        const signal = controller.current.signal
 
         const callForData = async () => {
             let bookList = [{ value: '', label: '' }];
             let type = ''
 
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkPart?title=${work.value}`
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkPart?title=${work.value}`, {signal}
                 ).then(response => response.json())
 
             for (const book of data) {
@@ -77,6 +77,7 @@ const ExplorerComponent = () => {
             controller.current.abort("Canceling Fetch: Author has changed...")
         }
         controller.current = new AbortController()
+        const signal = controller.current.signal
 
         const callForData = async () => {
             setWorks([{ label: '', value: '' }])
@@ -84,7 +85,7 @@ const ExplorerComponent = () => {
                 urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorks`
             }
 
-            const data = await fetch(urlRequest)
+            const data = await fetch(urlRequest, {signal})
                 .then(response => response.json())
                 .catch(e => { console.log(e) })
             for (const work of data) {
@@ -124,6 +125,17 @@ const ExplorerComponent = () => {
         callForData()
     }, [])
 
+    const clearInputField = (e) => {
+        if (controller.current) {
+            controller.current.abort("Clear input select field and cancel current request")
+        }
+
+        controller.current = new AbortController()
+        setAuthor(null)
+        setWork(null)
+        setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)
+    }
+
     return <div id={"box-content"} className={styles["box-content"]}>
         <header className={styles["selection-section"]}>
             <section key="author" className={styles["select-field-section"]}>
@@ -133,7 +145,7 @@ const ExplorerComponent = () => {
                 <Select id="work-select" className={styles["select-field"]} placeholder="Select or type a work" onChange={setWorkAndFilter} options={worksList} value={work} selectedValue={work} />
             </section>
             <section key="send" className={styles["select-field-section"]}>
-                <button className={styles["btn-submit-search"]} onClick={e => {setAuthor(null); setWork(null); setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)}}>clear</button>
+                <button className={styles["btn-submit-search"]} onClick={clearInputField}>clear</button>
                 <button className={styles["btn-submit-search"]} onClick={loadText}>search</button>
             </section>
         </header>

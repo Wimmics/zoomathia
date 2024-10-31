@@ -3,7 +3,6 @@ import SearchComponent from './components/SearchComponent';
 import Navbar from './components/page/Navbar';
 import Footer from './components/page/Footer';
 import Home from './components/page/Home';
-import SparqlTest from './components/SparqlTest';
 import Work from './components/WorkComponent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CompetencyQuestionComponent from './components/CompetencyQuestionComponent';
@@ -19,7 +18,6 @@ function App() {
         <Route path='ExploreAWork' element={<ExplorerComponent />} />
         <Route path='ExploreTheCorpus' element={<SearchComponent />} />
         <Route path='CompetencyQuestion' element={<CompetencyQuestionComponent />} />
-        <Route path='SPARQLJS' element={< SparqlTest />} />
         <Route path='Work' element={<Work />} />
       </Routes>
       <Footer />

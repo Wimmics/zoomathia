@@ -2,7 +2,6 @@ import { useState, useCallback, useEffect } from "react"
 import styles from "./css_modules/ParagraphComponent.module.css"
 
 const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onClick}) => {
-    console.log(type)
     return <li className={type.includes("Automatic") ? styles["auto-annotation"] : styles["manual-annotation"]}  onMouseEnter={() => onMouseEnter(offsets)} onMouseLeave={onMouseLeave} onClick={() => {onClick(uri)}}>
         {label}
     </li>
@@ -30,20 +29,25 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
     useEffect(() => {
         const getConcepts = async () => {
             try {
-                const signal = controller.current.signal
-                const concepts = await fetch( 
-                    `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${uri}&lang=${"en"}`, 
-                    {signal}
-                ).then(response => response.json())
-                const concepts_list = []
+                let concepts_data
+                if(concepts.length <= 0){
+                    const signal = controller.current.signal
+                    concepts_data = await fetch( 
+                        `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${uri}&lang=${"en"}`, 
+                        {signal}
+                    ).then(response => response.json())
+                } else {
+                    concepts_data = concepts
+                }
 
-                for(const annotation of  Object.keys(concepts)){
-                    const offsets = concepts[annotation].offset
+                const concepts_list = []
+                for(const annotation of Object.keys(concepts_data)){
+                    const offsets = concepts_data[annotation].offset
                     concepts_list.push(
-                    <ListElement key={`concept_element_${concepts[annotation].label}${lang}`}
-                        uri={concepts[annotation].concept}
-                        label={concepts[annotation].label}
-                        type={concepts[annotation].type}
+                    <ListElement key={`concept_element_${concepts_data[annotation].label}${lang}`}
+                        uri={concepts_data[annotation].concept}
+                        label={concepts_data[annotation].label}
+                        type={concepts_data[annotation].type}
                         offsets={offsets}
                         onMouseEnter={highlight}
                         onMouseLeave={removeHighlight}
@@ -63,7 +67,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
     }
 
         getConcepts()
-    }, [highlight, id, lang, removeHighlight, uri, controller])
+    }, [highlight, id, lang, removeHighlight, uri, controller, concepts])
 
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
