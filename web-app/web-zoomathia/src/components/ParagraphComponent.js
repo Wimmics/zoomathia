@@ -2,7 +2,9 @@ import { useState, useCallback, useEffect } from "react"
 import styles from "./css_modules/ParagraphComponent.module.css"
 
 const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onClick}) => {
-    return <li className={type.includes("Automatic") ? styles["auto-annotation"] : styles["manual-annotation"]}  onMouseEnter={() => onMouseEnter(offsets)} onMouseLeave={onMouseLeave} onClick={() => {onClick(uri)}}>
+    return <li className={
+        uri.includes("wikidata") ? styles["wikidata-annotation"] :
+        uri.includes("dbpedia") ? styles["dbpedia-annotation"] : styles["manual-annotation"]}  onMouseEnter={() => onMouseEnter(offsets)} onMouseLeave={onMouseLeave} onClick={() => {onClick(uri)}}>
         {label}
     </li>
 
