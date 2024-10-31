@@ -343,6 +343,9 @@ const getConceptsQuery = (uri, lang) => {
   prefix oa: <http://www.w3.org/ns/oa#>
   prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
   SELECT DISTINCT ?annotation ?annotation_type ?concept ?label ?start ?end ?exact WHERE {
+  
+    <${uri}> zoo:hasAnnotation ?annotation.
+
     ?annotation a ?annotation_type;
       oa:hasBody ?concept;
       oa:hasTarget [
