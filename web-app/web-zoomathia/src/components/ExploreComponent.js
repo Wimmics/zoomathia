@@ -29,13 +29,14 @@ const ExplorerComponent = () => {
             return
         }
 
-        if (controller.current) {
-            controller.current.abort("Canceling Fetch: Work has changed...")
-        }
-        controller.current = new AbortController()
-        const signal = controller.current.signal
-
         const callForData = async () => {
+
+            if (controller.current) {
+                controller.current.abort("Canceling Fetch: Work has changed...")
+            }
+            controller.current = new AbortController()
+            const signal = controller.current.signal
+            
             let bookList = [{ value: '', label: '' }];
             let type = ''
 
@@ -59,6 +60,7 @@ const ExplorerComponent = () => {
     }, [author, work])
 
     const setWorkAndFilter = useCallback((e) => {
+
         if(e.label === ''){
             setWork(null)
         }else{
@@ -73,10 +75,7 @@ const ExplorerComponent = () => {
         const workList = [{ label: '', value: '' }]
         let urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorksFromAuthors?author=${e.value}`
 
-        if (controller.current) {
-            controller.current.abort("Canceling Fetch: Author has changed...")
-        }
-        controller.current = new AbortController()
+
         const signal = controller.current.signal
 
         const callForData = async () => {
@@ -126,6 +125,7 @@ const ExplorerComponent = () => {
     }, [])
 
     const clearInputField = (e) => {
+
         if (controller.current) {
             controller.current.abort("Clear input select field and cancel current request")
         }

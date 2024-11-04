@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import ParagraphDisplay from "./ParagraphComponent"
 import styles from "./css_modules/BookComponents.module.css"
 
@@ -11,6 +11,7 @@ const getTypeFromURI = (uri) => {
 
 const SectionComponent = (props) => {
     const sectionTitle = props.sectionTitle
+    const controllerRef = useRef(props.controller)
     const [type, setType] = useState("")
 
     const LOADING_STATE = (e) => <section className={styles["text-part"]}>
@@ -21,12 +22,13 @@ const SectionComponent = (props) => {
 
     const [sectionParagraph, setSectionParagraph] = useState(LOADING_STATE())
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         setSectionParagraph([])
         const callForData = async () => {
-            const signal = props.controller.current.signal
+            
             setSectionParagraph(LOADING_STATE)
             try {
+                const signal = controllerRef.current.signal
                 const currentType = await fetch(`${process.env.REACT_APP_BACKEND_URL}getCurrentType?uri=${props.uri}`,
                     { signal }
                 ).then(response => response.json())
@@ -62,7 +64,7 @@ const SectionComponent = (props) => {
                             uri={elt.uri}
                             lang={"en"}
                             concepts={concepts_list}
-                            controller={props.controller} />)
+                            controller={controllerRef} />)
                     }
                     setSectionParagraph(paragraphs)
 

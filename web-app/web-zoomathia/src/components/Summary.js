@@ -43,8 +43,7 @@ const Summary = ({ node, currentBook, setChange, setCurrentBook }) => {
         }
     }
 
-    return <TreeItem id={node.type + "_" + node.id + "_summary"}  itemId={node?.uri + "_summary"} onClick={handleClick} 
-        selectedItems={node.type + "_" + node.id + "_summary"} multiSelect={false}
+    return <TreeItem id={node.type + "_" + node.id + "_summary"}  itemId={node?.uri + "_summary"} onClick={handleClick}
                 label={ `${node.type ? 
                 (getTypeFromURI(node.type) !== "Oeuvre" ? 
                 getTypeFromURI(node.type) : node.author) : 'Paragraph'} - ${((node.title && node.title !== '') ? node.title : node.id)}`}>

@@ -13,8 +13,9 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const controllerRef = useRef(controller.current)
 
     const handleToc = async (uri, nodeTitle) => {
+        setSections([])
         if (controllerRef.current) {
-            controllerRef.current.abort()
+            controllerRef.current.abort("Changing work from table of content")
         }
         controllerRef.current = new AbortController()
 
@@ -46,6 +47,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         return () => {
             setSummary(null)
             setMetadata({})
+            setSections([])
         }
     }, [options, type, uri])
 

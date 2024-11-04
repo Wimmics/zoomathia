@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback, useEffect, useRef } from "react"
 import styles from "./css_modules/ParagraphComponent.module.css"
 
 const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onClick}) => {
@@ -13,6 +13,7 @@ const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onC
 const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId }) => {
     const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}</p>)
     const [conceptsDiv, setConceptsDiv] = useState([])
+    const controllerRef = useRef(controller)
 
     const redirectToOpenTheso = (e) => {
         window.open(e, "_blank")
@@ -33,7 +34,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
             try {
                 let concepts_data
                 if(concepts.length <= 0){
-                    const signal = controller.current.signal
+                    const signal = controllerRef.current.signal
                     concepts_data = await fetch( 
                         `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${uri}&lang=${"en"}`, 
                         {signal}
@@ -69,7 +70,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
     }
 
         getConcepts()
-    }, [highlight, id, lang, removeHighlight, uri, controller, concepts])
+    }, [highlight, id, lang, removeHighlight, uri, concepts])
 
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
