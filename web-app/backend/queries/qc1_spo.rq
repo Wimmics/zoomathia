@@ -1,23 +1,25 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?p ?s ?o (?s as ?date) (?o as ?type) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
-  ?annotation1 oa:hasBody ?animal; 
-               oa:hasTarget [oa:hasSource ?p;
-                             oa:hasSelector [oa:exact ?mention_animal]].
-
-  ?animal a skos:Concept; skos:prefLabel ?s.
-      <https://opentheso.huma-num.fr/?idg=MT_10&idt=th310> skos:member ?animal.
-
+SELECT DISTINCT ?p (group_concat(distinct ?s ; separator = '--') as ?author) (?o as ?date) (?o as ?type) (CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=",str(?p)) as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
   ?annotation2 oa:hasBody ?construction; 
         oa:hasTarget [oa:hasSource ?p;
                       oa:hasSelector [oa:exact ?mention_construction]].
 
   ?construction skos:prefLabel ?o;
                     skos:broader+ <https://opentheso.huma-num.fr/?idc=105466&idt=th310>.
+  
+  ?annotation1 oa:hasBody ?animal; 
+               oa:hasTarget [oa:hasSource ?p;
+                             oa:hasSelector [oa:exact ?mention_animal]].
+
+  
+  ?animal a skos:Concept; skos:prefLabel ?s.
+      <https://opentheso.huma-num.fr/?idg=MT_10&idt=th310> skos:member ?animal.
+
+  
 
   FILTER (lang(?s) = "en").
   FILTER (lang(?o) = "en")
 }
-ORDER BY ?p
+GROUP BY ?p ?author

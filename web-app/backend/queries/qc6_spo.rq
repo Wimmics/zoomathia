@@ -2,15 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?s (?length_of as ?o) ?p (?s as ?date) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
-  ?annotation1 oa:hasBody ?animal;
-             oa:hasTarget [ oa:hasSource ?p;
-                            oa:hasSelector [ oa:exact ?mention_animal]].
-  ?animal skos:prefLabel ?s.
-  ?animal_collection a skos:Collection;
-       skos:prefLabel "Zoonyms"@en;
-       skos:member ?animal.
-
+SELECT DISTINCT ?s (?length_of as ?o) ?p (?s as ?date) (CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=",str(?p)) as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
   ?annotation2 oa:hasBody ?pregnancy;
                oa:hasTarget [oa:hasSource ?p;
                              oa:hasSelector [ oa:exact ?mention_pregnancy]].
@@ -18,6 +10,12 @@ SELECT DISTINCT ?s (?length_of as ?o) ?p (?s as ?date) (CONCAT("http://127.0.0.1
     skos:broader/skos:broader ?type_g.
   ?type_g skos:prefLabel ?type. 
   filter(?length_of in ("length of incubation"@en, "length of pregnancy"@en))
+
+  ?annotation1 oa:hasBody ?animal;
+             oa:hasTarget [ oa:hasSource ?p;
+                            oa:hasSelector [ oa:exact ?mention_animal]].
+  ?animal skos:prefLabel ?s.
+  <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
   FILTER (lang(?s) = "en")
   filter (lang(?type) ="en")
 }

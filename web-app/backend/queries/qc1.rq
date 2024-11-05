@@ -1,8 +1,14 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX schema:  <http://schema.org/>
 
 SELECT DISTINCT ?paragraph ?name_animal ?name_construction WHERE {
+  ?annotation2 oa:hasBody ?construction; 
+        oa:hasTarget [oa:hasSource ?paragraph;
+                      oa:hasSelector [oa:exact ?mention_construction]].
+
+  ?construction skos:prefLabel ?name_construction;
+                    skos:broader+ <https://opentheso.huma-num.fr/?idc=105466&idt=th310>.
+                    
   ?annotation1 oa:hasBody ?animal; 
                oa:hasTarget [oa:hasSource ?paragraph;
                              oa:hasSelector [oa:exact ?mention_animal]].
@@ -10,12 +16,7 @@ SELECT DISTINCT ?paragraph ?name_animal ?name_construction WHERE {
   ?animal a skos:Concept; skos:prefLabel ?name_animal.
       <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
 
-  ?annotation2 oa:hasBody ?construction; 
-        oa:hasTarget [oa:hasSource ?paragraph;
-                      oa:hasSelector [oa:exact ?mention_construction]].
-
-  ?construction skos:prefLabel ?name_construction;
-                    skos:broader+ <https://opentheso.huma-num.fr/?idc=105466&idt=th310>.
+  
 
   FILTER (lang(?name_animal) = "en").
   FILTER (lang(?name_construction) = "en")

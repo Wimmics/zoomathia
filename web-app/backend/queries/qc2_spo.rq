@@ -1,9 +1,9 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
 SELECT DISTINCT ?p ?s ?o (?label_animal as ?date) (?s as ?type)
-  (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) 
+  (CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=",str(?p)) as ?url) 
   ("snd" as ?style1) ?style2 WHERE {
   
   ?annotation2 oa:hasBody ?relation;

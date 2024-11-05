@@ -3,10 +3,16 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
 SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_conso 
-(CONCAT("http://127.0.0.1:3002/Work?uri=",str(?paragraph)) as ?url) (?animal as ?date) (?animal_generique as ?type)
+(CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=",str(?paragraph)) as ?url) (?animal as ?date) (?animal_generique as ?type)
 (?paragraph as ?p) (?name_animal as ?s) (?name_conso as ?o) WHERE {
-  ?annotation1 a oa:Annotation;
-              oa:hasBody ?animal;
+     ?annotation2 oa:hasBody ?conso;
+        oa:hasTarget [oa:hasSource ?paragraph;
+                      oa:hasSelector [oa:exact ?mention_conso]].
+  ?conso skos:prefLabel ?name_conso;
+     	            skos:broader+ ?conso_generique.
+  ?conso_generique skos:prefLabel "animal in human nourishing"@en.
+  
+  ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;
                             oa:hasSelector [oa:exact ?mention_animal]].
   ?animal a skos:Concept;
@@ -15,12 +21,7 @@ SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_con
   ?animal_generique a skos:Concept;
        skos:prefLabel ?name_animal_generique.
 
-  ?annotation2 oa:hasBody ?conso;
-        oa:hasTarget [oa:hasSource ?paragraph;
-                      oa:hasSelector [oa:exact ?mention_conso]].
-  ?conso skos:prefLabel ?name_conso;
-     	            skos:broader+ ?conso_generique.
-  ?conso_generique skos:prefLabel "animal in human nourishing"@en.
+  
 
   FILTER (str(?name_animal_generique) in ("BIRD","BIRD WITH CLAW","BIRD WITH TOES","WATERBIRD","NIGHT BIRD","MIGRATORY BIRD", "PALMIPED BIRD")).
   FILTER (lang(?name_animal) = "en").

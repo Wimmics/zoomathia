@@ -3,19 +3,17 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
 SELECT DISTINCT ?paragraph ?animal_name ?mention_animal ?gestation ?mention_gestation WHERE {
-  ?annotation1 oa:hasBody ?animal;
-             oa:hasTarget [ oa:hasSource ?paragraph;
-                            oa:hasSelector [ oa:exact ?mention_animal]].
-  ?animal skos:prefLabel ?animal_name.
-  ?animal_collection a skos:Collection;
-       skos:prefLabel "Zoonyms"@en;
-       skos:member ?animal.
-
   ?annotation2 oa:hasBody ?pregnancy;
                oa:hasTarget [oa:hasSource ?paragraph;
                              oa:hasSelector [ oa:exact ?mention_gestation]].
   ?pregnancy skos:prefLabel ?gestation.
   filter(?gestation in ("length of incubation"@en, "length of pregnancy"@en))
+  
+  ?annotation1 oa:hasBody ?animal;
+             oa:hasTarget [ oa:hasSource ?paragraph;
+                            oa:hasSelector [ oa:exact ?mention_animal]].
+  ?animal skos:prefLabel ?animal_name.
+  <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
   FILTER (lang(?animal_name) = "en")
 }
 ORDER BY ?paragraph

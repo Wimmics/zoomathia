@@ -1,43 +1,28 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?p ?s ?o ("fst" as ?style1) (?s as ?date) ?type (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?p)) as ?url) ("snd" as ?style2) WHERE {
-  ?annotation1 a oa:Annotation;
-              oa:hasBody ?animal;
+SELECT DISTINCT ?p ?s ?o ("fst" as ?style1) (?s as ?date) ?type (CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=", str(?p)) as ?url) ("snd" as ?style2) WHERE {
+  ?annotation2 oa:hasBody ?use;
               oa:hasTarget [oa:hasSource ?p;
-                            oa:hasSelector [oa:exact ?mention1]].
+                            oa:hasSelector [oa:exact ?mention_use]].
+                            
+  ?use skos:prefLabel ?type;
+	  skos:broader* <https://opentheso.huma-num.fr/?idc=105582&idt=th310>.
+
+  ?annotation1 oa:hasBody ?animal;
+              oa:hasTarget [oa:hasSource ?p;
+                            oa:hasSelector [oa:exact ?mention_animal]].
   ?animal a skos:Concept;
        skos:prefLabel ?s.
-  ?animal_collection a skos:Collection;
-       skos:prefLabel "Zoonyms"@en;
-       skos:member ?animal.
-
-  ?annotation2 a oa:Annotation;
-              oa:hasBody ?use;
-              oa:hasTarget [oa:hasSource ?p;
-                            oa:hasSelector [oa:exact ?mention2]].
-  ?use skos:prefLabel ?type;
-	skos:broader+ ?use_generique.
-  ?use_generique skos:prefLabel "medical use of animal"@en.  
+  <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
 
   OPTIONAL {
     ?annotation3 oa:hasBody ?part;
-    oa:hasTarget [
-      oa:hasSource ?p;
-      oa:hasSelector [
-        oa:exact ?mention3
-      ]
-    ].
+    	oa:hasTarget [oa:hasSource ?p].
     ?part skos:prefLabel ?name_part.
-    ?part_collection skos:prefLabel "Anatomy"@en;
-      skos:member ?part. 
-      FILTER (lang(?name_part) = "en")
+    <https://opentheso.huma-num.fr/?idg=MT_8&idt=th310> skos:member ?part. 
+    FILTER (lang(?name_part) = "en")
   }
   BIND(IF(BOUND(?name_part), ?name_part, "Unknown") AS ?o)
-  
-  
   FILTER(lang(?type) = "en")
-  FILTER (lang(?s) = "en")
-  
 }

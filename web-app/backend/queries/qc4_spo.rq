@@ -3,20 +3,17 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
 SELECT DISTINCT ?s ?o ("speech" as ?p) (?o as ?date) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?s)) as ?url) ("fst" as ?style2) ("snd" as ?style1) WHERE {
-  ?annotation1 a oa:Annotation;
-              oa:hasBody ?animal;
+
+  ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?s;
                             oa:hasSelector [oa:exact ?mention_animal]].
   ?animal a skos:Concept;
        skos:prefLabel ?o.
-  ?animal_collection a skos:Collection;
-       skos:prefLabel "Zoonyms"@en;
-       skos:member ?animal.
+  <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
 
-  ?annotation2 oa:hasBody ?social;
+  ?annotation2 oa:hasBody [skos:prefLabel "speech"@en];
         oa:hasTarget [ oa:hasSource ?s;
                        oa:hasSelector [ oa:exact ?mention_social]].
-  ?social skos:prefLabel "speech"@en.
 
   FILTER (lang(?o) = "en")
 }

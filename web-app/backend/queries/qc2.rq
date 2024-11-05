@@ -1,8 +1,18 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-prefix zoo:     <http://www.zoomathia.com/2024/zoo#> 
+prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
 SELECT DISTINCT ?paragraph ?name_animal ?name_relation ?name_anthroponym WHERE {
+
+  ?annotation2 oa:hasBody ?relation;
+        oa:hasTarget [oa:hasSource ?paragraph;
+          oa:hasSelector [ oa:exact ?mention_relation]].
+    ?relation skos:prefLabel ?name_relation;
+     	        skos:broader+ ?relation_generique.
+    ?relation_generique skos:prefLabel  "special relationship"@en.
+    FILTER (lang(?name_relation) = "en")
+
+  ?paragraph zoo:hasAnnotation ?annotation1, ?annotation2, ?annotation3.
 
   ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;
@@ -12,17 +22,7 @@ SELECT DISTINCT ?paragraph ?name_animal ?name_relation ?name_anthroponym WHERE {
     ?animal_collection a skos:Collection;
        skos:prefLabel "Zoonyms"@en;
        skos:member ?animal.
-    FILTER (lang(?name_animal) = "en")
-
-   ?paragraph zoo:hasAnnotation ?annotation1, ?annotation2, ?annotation3.
-
-  ?annotation2 oa:hasBody ?relation;
-        oa:hasTarget [oa:hasSource ?paragraph;
-          oa:hasSelector [ oa:exact ?mention_relation]].
-    ?relation skos:prefLabel ?name_relation;
-     	        skos:broader+ ?relation_generique.
-    ?relation_generique skos:prefLabel  "special relationship"@en.
-    FILTER (lang(?name_relation) = "en")
+    FILTER (lang(?name_animal) = "en")  
   
   ?annotation3 oa:hasBody ?anthro;
         oa:hasTarget [oa:hasSource ?paragraph;
