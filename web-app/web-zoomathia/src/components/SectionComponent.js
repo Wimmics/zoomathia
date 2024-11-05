@@ -62,6 +62,7 @@ const SectionComponent = (props) => {
                             text={elt.text}
                             uri={elt.uri}
                             lang={"en"}
+                            displayId={data.length > 1 ? true : false}
                             concepts={concepts_list}
                             controller={props.controller} />)
                     }

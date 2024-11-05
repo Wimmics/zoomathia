@@ -74,14 +74,7 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
 
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
-            {displayId ? 
-                    <>{(uri.includes('http://www.zoomathia.com/Pliny/historia_naturalis')) ? 
-                        <p key={`number-${id}`}>{`[${parseInt(id)}]`}</p>  : 
-                        <p key={`number-${id}`}>{`[${parseInt(id) + 1}]`}</p>}
-                    </> : 
-                    <>{(uri.includes('http://www.zoomathia.com/Pliny/historia_naturalis')) ? 
-                        <p key={`number-${id}`}>{`[${parseInt(id)}]`}</p>  : 
-                        <p key={`number-${id}`}></p>}</>}
+            {displayId ? <p key={`number-${id}`}>{`[${parseInt(id)}]`}</p> : <p key={`number-${id}`}></p>}
         </div>
         <div key={`text-${id}`} className={styles["text-paragraph"]}>
             {text_content}
