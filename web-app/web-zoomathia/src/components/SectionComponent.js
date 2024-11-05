@@ -28,9 +28,8 @@ const SectionComponent = (props) => {
             
             setSectionParagraph(LOADING_STATE)
             try {
-                const signal = controllerRef.current.signal
                 const currentType = await fetch(`${process.env.REACT_APP_BACKEND_URL}getCurrentType?uri=${props.uri}`,
-                    { signal }
+                    {signal: controllerRef.current.signal}
                 ).then(response => response.json())
                 let sectionType = ""
                 for (const elt of currentType) {
@@ -40,7 +39,7 @@ const SectionComponent = (props) => {
 
                 const checkType = await fetch(
                     `${process.env.REACT_APP_BACKEND_URL}getChildrenType?uri=${props.uri}`,
-                    { signal }
+                    {signal: controllerRef.current.signal}
                 ).then(response => response.json())
                 // Extract only Type part after '#' of Class URI
                 const childType = getTypeFromURI(checkType[0])
@@ -48,13 +47,13 @@ const SectionComponent = (props) => {
                     const paragraphs = []
                     const data = await fetch(
                         `${process.env.REACT_APP_BACKEND_URL}getParagraphs?uri=${props.uri}`,
-                        { signal }
+                        {signal: controllerRef.current.signal}
                     ).then(response => response.json())
                     for (const elt of data) {
                         setSectionParagraph(LOADING_STATE(elt.uri))
                         const concepts_list = await fetch(
                             `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${elt.uri}&lang=${"en"}`,
-                            { signal }
+                            {signal: controllerRef.current.signal}
                         ).then(response => response.json())
 
                         paragraphs.push(<ParagraphDisplay
@@ -64,7 +63,7 @@ const SectionComponent = (props) => {
                             uri={elt.uri}
                             lang={"en"}
                             concepts={concepts_list}
-                            controller={controllerRef} />)
+                            controller={props.controller} />)
                     }
                     setSectionParagraph(paragraphs)
 
@@ -72,7 +71,7 @@ const SectionComponent = (props) => {
                     const sections = []
                     const children = await fetch(
                         `${process.env.REACT_APP_BACKEND_URL}getChildren?uri=${props.uri}`,
-                        { signal }
+                        {signal: controllerRef.current.signal}
                     ).then(response => response.json())
                     for (const elt of children) {
                         sections.push(<SectionComponent key={elt.uri} uri={elt.uri} sectionTitle={elt.title} controller={props.controller} />)

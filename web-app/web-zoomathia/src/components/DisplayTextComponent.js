@@ -10,16 +10,17 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [metadata, setMetadata] = useState({})
     const [summary, setSummary] = useState(null)
     const [currentBook, setCurrentBook] = useState(null)
-    const controllerRef = useRef(controller.current)
+    const controllerRef = useRef(controller)
 
     const handleToc = async (uri, nodeTitle) => {
         setSections([])
+
         if (controllerRef.current) {
             controllerRef.current.abort("Changing work from table of content")
         }
         controllerRef.current = new AbortController()
 
-        setSections(<SectionComponent sectionTitle={nodeTitle} uri={uri} controller={controllerRef} />)
+        setSections(<SectionComponent sectionTitle={nodeTitle} uri={uri} controller={controller} />)
 
     }
 
@@ -38,7 +39,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${uri}`)
                 .then(response => response.json())
             setSummary(data)
-            setSections(<SectionComponent sectionTitle={data[0].title} uri={data[0].uri} controller={controllerRef} />)
+            setSections(<SectionComponent sectionTitle={data[0].title} uri={data[0].uri} controller={controller} />)
             setCurrentBook(data[0].uri)
         }
 
@@ -49,7 +50,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             setMetadata({})
             setSections([])
         }
-    }, [options, type, uri])
+    }, [options, type, uri, controller])
 
     return <section>
         <section className={styles["selected-book-metadata"]}>
