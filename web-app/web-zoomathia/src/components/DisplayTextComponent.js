@@ -14,11 +14,11 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
     const handleToc = async (uri, nodeTitle) => {
         setSections([])
-
-        if (controllerRef.current) {
+        
+        /*if (controllerRef.current) {
             controllerRef.current.abort("Changing work from table of content")
         }
-        controllerRef.current = new AbortController()
+        controllerRef.current = new AbortController()*/
 
         setSections(<SectionComponent sectionTitle={nodeTitle} uri={uri} controller={controller} />)
 
