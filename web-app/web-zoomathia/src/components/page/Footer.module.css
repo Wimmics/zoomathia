@@ -3,9 +3,9 @@
     flex-direction: row;
     background-color: white;
     box-shadow: 0 0 5px;
-    padding: 15px;
-    min-height: 5svh;
-    max-height: 5svh;
+    padding: 0.5svw;
+    
+    max-height: 3svw;
     bottom: 0;
     position: sticky;
 }
@@ -16,8 +16,6 @@
 }
 
 .img-styles {
-    height: auto;
-    width: auto;
-    max-width: 120px;
-    max-height: 50px;
+    max-width: 3svw;
+    max-height: 3svw;
 }
