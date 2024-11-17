@@ -210,6 +210,27 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         print(parent_division)
         exit(0)
 
+def extract_division_metadata(div, parent_uri, link_data):
+
+    for tag_id, tag_div in enumerate(div.find_all(re.compile("^div"), recursive=False), 1):
+
+        tag_div_type = tag_div["type"].title().replace(" ", "") if (("textpart" not in tag_div["type"]) and ("section" not in tag_div["type"])) else tag_div["subtype"].title().replace(" ", "")
+        current_uri = f"{parent_uri}/{tag_id}"
+        if tag_div.head:
+            tag_div_title = strip_text(tag_div.head.text)
+        else:
+            tag_div_title = tag_id
+
+
+        # ["parent_uri", "type", "id", "title", "child"]
+        link_data.append([parent_uri, tag_div_type, tag_id, tag_div_title, current_uri])
+
+        #extract quote if there is quote
+
+
+        # if still div remaining
+        # else extract paragraph or quote
+
 def extraction_data(FILE,CSV):
     with (open(FILE, 'r', encoding="UTF-8") as xml_file):
         xml_parser = bs(xml_file, "lxml-xml")
@@ -228,7 +249,7 @@ def extraction_data(FILE,CSV):
 
         # Edition type case is unknown to implement
         for first_id, first_div in tqdm(enumerate(body_parser.find_all(re.compile("^div"), recursive=False), 1)):
-            first_div_type = first_div["type"].title().replace(" ", "") if first_div["type"] != "textpart" else first_div["subtype"].title().replace(" ", "")
+            first_div_type = first_div["type"].title().replace(" ", "") if (("textpart" not in first_div["type"]) and ("section" not in first_div["type"])) else first_div["subtype"].title().replace(" ", "")
             first_div_id = first_id
             if first_div.has_attr("n"):
                 first_div_title = first_div["n"]
