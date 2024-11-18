@@ -106,7 +106,7 @@ def extract_sourcedesc_data(source):
         source.titleStmt.date.text) if source.titleStmt.date else strip_text(source.publicationStmt.date.text)
     editor = strip_text(source.titleStmt.editor.text) if source.titleStmt.editor else "Unknown editor"
     author = strip_text(source.titleStmt.author.text) if source.titleStmt.author else strip_text(
-        source.sourceDesc.author.text)
+        source.sourceDesc.author.text) if source.sourceDesc.author else 'Author not found'
     oeuvre_title = strip_text(source.titleStmt.title.text)
     oeuvre_id = strip_text(source.titleStmt.title.text).replace(" ", "_").lower()
 
@@ -139,7 +139,38 @@ def find_xml_files(directory):
 
 def extract_paragraph(parent_division, parent_data, parent_uri, link_data, paragraph_data, annotation_data):
 
-    if len(parent_division.find_all(["p"])) == 0:
+    paragraph_author = ""
+    paragraph_work = ""
+
+    if len(parent_division.find_all(["cit"], recursive=False)) >= 1:
+        for cit_id, cit_tag in enumerate(parent_division.find_all(["cit"], recursive=False), 1):
+            paragraph_id = cit_id
+
+            paragraph_author = cit_tag.bibl.author.text if cit_tag.bibl and cit_tag.bibl.author else "Missing author"
+            paragraph_work = cit_tag.bibl.ref.text if cit_tag.bibl and cit_tag.bibl.ref else "Missing work"
+
+            for quote in cit_tag.find_all(["quote"], recursive=False):
+                paragraph_text = strip_paragraph_text(quote.text)
+
+                if quote.head:
+                    paragraph_title = strip_paragraph_text(quote.head.text)
+                else:
+                    paragraph_title = ""
+
+                translated_paragraph = split_and_translate(paragraph_text, "en")
+
+                wikidata_entities = get_NER_from_wikidata(translated_paragraph)
+                extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+                dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
+                extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+
+                # ["parent_uri", "type", "id", "title", "child"]
+                link_data.append(
+                    [parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/text/{paragraph_id}"])
+                # ["parent_uri", "type", "id", "title", "text"]
+                paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text, paragraph_author, paragraph_work])
+
+    elif len(parent_division.find_all(["p"])) == 0:
         for p_id, p in tqdm(enumerate(parent_division.find_all(["l"], recursive=False), 1)):
 
             paragraph_id = p_id
@@ -147,18 +178,18 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
             translated_paragraph = split_and_translate(paragraph_text, "en")
 
             wikidata_entities = get_NER_from_wikidata(translated_paragraph)
-            extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/{paragraph_id}")
+            extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
             dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-            extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/{paragraph_id}")
+            extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
             if p.head:
                 paragraph_title = strip_paragraph_text(p.head.text)
             else:
                 paragraph_title = ""
             # ["parent_uri", "type", "id", "title", "child"]
-            link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/{paragraph_id}"])
+            link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/text/{paragraph_id}"])
             # ["parent_uri", "type", "id", "title", "text"]
-            paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text])
+            paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text, paragraph_author, paragraph_work])
     else:
         p_id = 1
         for p in tqdm(parent_division.find_all(["p"])):
@@ -178,29 +209,29 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     translated_paragraph = split_and_translate(paragraph_text, "en")
 
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
-                    extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/{paragraph_id}")
+                    extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                     dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                    extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/{paragraph_id}")
+                    extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[2],
-                                      f"{parent_uri}/{paragraph_id}"])
+                                      f"{parent_uri}/text/{paragraph_id}"])
                     # ["parent_uri", "type", "id", "title", "text"]
-                    paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text])
+                    paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text, paragraph_author, paragraph_work])
                 else:
                     paragraph_id = p_id
                     paragraph_text = strip_paragraph_text(p.text)
                     translated_paragraph = split_and_translate(paragraph_text, "en")
 
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
-                    extract_wikidata(wikidata_entities, annotation_data ,f"{parent_uri}/{paragraph_id}" )
+                    extract_wikidata(wikidata_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
                     dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                    extract_dbpedia(dbpedia_entities, annotation_data ,f"{parent_uri}/{paragraph_id}" )
+                    extract_dbpedia(dbpedia_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
 
                     # ["parent_uri", "type", "id", "title", "child"]
-                    link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/{paragraph_id}"])
+                    link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/text/{paragraph_id}"])
                     # ["parent_uri", "type", "id", "title", "text"]
-                    paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text])
+                    paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text, paragraph_author, paragraph_work])
                     p_id += 1
     try:
         return paragraph_id, paragraph_text
@@ -210,128 +241,74 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         print(parent_division)
         exit(0)
 
-def extract_division_metadata(div, parent_uri, link_data):
+def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annotation_data):
+    for tag_id, tag_div in tqdm(enumerate(div.find_all(re.compile("^div"), recursive=False), 1)):
+        tag_div_type = tag_div["type"].title().replace(" ", "") if (
+                ("textpart" not in tag_div["type"]) and not any(c.isnumeric() for c in tag_div["type"])
+        ) else tag_div["subtype"].title().replace(" ", "")
 
-    for tag_id, tag_div in enumerate(div.find_all(re.compile("^div"), recursive=False), 1):
-
-        tag_div_type = tag_div["type"].title().replace(" ", "") if (("textpart" not in tag_div["type"]) and ("section" not in tag_div["type"])) else tag_div["subtype"].title().replace(" ", "")
-        current_uri = f"{parent_uri}/{tag_id}"
         if tag_div.head:
             tag_div_title = strip_text(tag_div.head.text)
         else:
-            tag_div_title = tag_id
+            tag_div_title = tag_div["n"] if tag_div.has_attr("n") else tag_id
 
+        if tag_div_type == "BekkerPage":
+                # extract number from the title
+            tag_div_id = int(re.search(r"\d+", tag_div["n"]).group())
+        else:
+            tag_div_id = tag_id
 
-        # ["parent_uri", "type", "id", "title", "child"]
-        link_data.append([parent_uri, tag_div_type, tag_id, tag_div_title, current_uri])
-
-        #extract quote if there is quote
-
+        current_uri = f"{parent_uri}/{tag_div_id}"
 
         # if still div remaining
-        # else extract paragraph or quote
+        if does_it_have_children_div(tag_div):
+            # extract quote if there are quotes
+            if len(tag_div.find_all(["cit"], recursive=False)) > 1:
+                extract_paragraph(tag_div,
+                                  [parent_uri,
+                                   tag_div_type, tag_id, tag_div_title],
+                                  current_uri, link_data, paragraph_data, annotation_data)
+            for child_id, _ in enumerate(tag_div.find_all(re.compile("^div"), recursive=False),1):
+                # ["parent_uri", "type", "id", "title", "child"]
+                link_data.append([parent_uri, tag_div_type, tag_div_id, tag_div_title, f"{current_uri}/{child_id}"])
+            extract_division_metadata(tag_div, current_uri, link_data, paragraph_data, annotation_data)
+        else:
+            extract_paragraph(tag_div,
+                              [parent_uri,
+                               tag_div_type, tag_id, tag_div_title],
+                              current_uri, link_data, paragraph_data, annotation_data)
+
+
+
 
 def extraction_data(FILE,CSV):
     with (open(FILE, 'r', encoding="UTF-8") as xml_file):
+
         xml_parser = bs(xml_file, "lxml-xml")
         oeuvre_id, oeuvre_title, author, date, editor = extract_sourcedesc_data(xml_parser)
         body_parser = xml_parser.body
+
         link_data = []
         link_labels = ["parent_uri", "type", "id", "title", "child"]
         paragraph_data = []
-        paragraph_labels = ["parent_uri", "type", "id", "title", "text"]
-        uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}"
-        metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
+        paragraph_labels = ["parent_uri", "type", "id", "title", "text", "author", "work"]
         metadata_labels = ["uri", "id", "type", "title", "author", "date", "editor", "prov"]
         annotation_data = []
-        annotation_labels = ["paragraph_uri", "concept_uri", "mention", "score","origin"]
+        annotation_labels = ["paragraph_uri", "concept_uri", "mention", "score", "origin"]
 
+        uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}"
+        metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
-        # Edition type case is unknown to implement
-        for first_id, first_div in tqdm(enumerate(body_parser.find_all(re.compile("^div"), recursive=False), 1)):
-            first_div_type = first_div["type"].title().replace(" ", "") if (("textpart" not in first_div["type"]) and ("section" not in first_div["type"])) else first_div["subtype"].title().replace(" ", "")
-            first_div_id = first_id
-            if first_div.has_attr("n"):
-                first_div_title = first_div["n"]
-            elif first_div.head:
-                first_div_title = strip_text(first_div.head.text)
-            else:
-                first_div_title = first_id
+        extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data)
 
-            # Case for bekker page
-            if first_div_type == "BekkerPage":
-                #extract number from the title
-                first_div_id = int(re.search(r"\d+", first_div_title).group())
-
-            current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}"
-            link_data.append([uri, "Oeuvre", oeuvre_id, oeuvre_title, current_uri])
-
-            # First division has direct paragraph as children
-            if not does_it_have_children_div(first_div):
-                extract_paragraph(first_div,
-                                  [f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}",
-                                   first_div_type, first_div_id, first_div_title],
-                                  current_uri, link_data, paragraph_data, annotation_data)
-            else:
-                for second_id, second_div in enumerate(first_div.find_all(re.compile("^div"), recursive=False), 1):
-                    second_div_type = second_div["type"].title().replace(" ", "")  if second_div["type"] != "textpart" else second_div["subtype"].title().replace(" ", "")
-                    second_div_id = second_id
-                    if second_div.head:
-                        second_div_title = strip_text(second_div.head.text)
-                    else:
-                        second_div_title = second_div["n"]
-
-                    current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}"
-                    link_data.append(
-                        [f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}",
-                                     first_div_type, first_div_id, first_div_title, current_uri])
-
-                    if not does_it_have_children_div(second_div):
-                        extract_paragraph(second_div, [
-                            f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
-                                   second_div_type, second_div_id, second_div_title],
-                                          current_uri, link_data, paragraph_data, annotation_data)
-                    else:
-                        for third_id, third_div in enumerate(second_div.find_all(re.compile("^div"), recursive=False), 1):
-                            third_div_type = third_div["type"].title().replace(" ", "")  if third_div["type"] != "textpart" else third_div["subtype"].title().replace(" ", "")
-                            third_div_id = third_id
-                            if third_div.head:
-                                third_div_title = strip_text(third_div.head.text)
-                            else:
-                                third_div_title = third_div["n"]
-                            current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}"
-                            link_data.append(
-                                [f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}",
-                                 second_div_type, second_div_id, second_div_title, current_uri])
-
-                            if not does_it_have_children_div(third_div):
-                                extract_paragraph(third_div, [
-                                    f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
-                                    third_div_type, third_div_id, third_div_title],
-                                                  current_uri, link_data, paragraph_data, annotation_data)
-                            else:
-                                for fourth_id, fourth_div in enumerate(third_div.find_all(re.compile("^div"), recursive=False), 1):
-                                    fourth_div_id = fourth_id
-                                    fourth_div_type = fourth_div["type"].title().replace(" ", "")  if fourth_div["type"] != "textpart" else third_div["subtype"].title().replace(" ", "")
-                                    if fourth_div.head:
-                                        fourth_div_title = strip_text(fourth_div.head.text)
-                                    else:
-                                        fourth_div_title = fourth_div["n"]
-                                    current_uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}/{fourth_div_id}"
-                                    link_data.append(
-                                        [
-                                            f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}",
-                                            third_div_type, third_div_id, third_div_title, current_uri])
-                                    extract_paragraph(fourth_div, [
-                                        f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{first_div_id}/{second_div_id}/{third_div_id}",
-                                        fourth_div_type, fourth_div_id, fourth_div_title],
-                                        current_uri, link_data, paragraph_data, annotation_data)
-
-        pd.DataFrame(link_data, columns=link_labels).to_csv('./output/'+CSV+"_link.csv", index=False, encoding='UTF-8')
-        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv('./output/'+CSV+"_paragraph.csv", index=False, encoding='UTF-8')
-        pd.DataFrame(metadata, columns=metadata_labels).to_csv('./output/'+CSV + "_metadata.csv", index=False,
+        pd.DataFrame(link_data, columns=link_labels).to_csv('./output/' + CSV + "_link.csv", index=False,
+                                                            encoding='UTF-8')
+        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv('./output/' + CSV + "_paragraph.csv", index=False,
                                                                       encoding='UTF-8')
-        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/'+CSV+"_annotations.csv", index=False)
+        pd.DataFrame(metadata, columns=metadata_labels).to_csv('./output/' + CSV + "_metadata.csv", index=False,
+                                                     encoding='UTF-8')
+        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",
+                                                                        index=False)
 
 
 if __name__ == "__main__":
@@ -344,4 +321,5 @@ if __name__ == "__main__":
         ANNOTATIONS = ".".join(FILE.split("\\")[-1].split(".")[0:-1]) + "_annotated.csv"
         #extraction_step(FILE, CSV, ANNOTATIONS)
         extraction_data(FILE, CSV)
+
     print("End of CSV generation")
