@@ -18,6 +18,10 @@ const Home = () => {
 
             <p>It relies on the exploitation of a knowledge graph annotating the
             Zoomathia corpus of texts with concepts from the <a href="https://opentheso.huma-num.fr/opentheso/?idt=th310" rel="noreferrer" target="_blank">TheZoo thesaurus</a>.</p>
+            <p>The pipeline for the automatic construction of this knowledge graph was
+            developed within the framework of the AutomaZoo project funded by the
+            Academy of Excellence 5 of IdEx UCA JEDI, and further refined within the
+            framework of the HisINum project.</p>
             <p>GitHub of the project: <a href="https://github.com/Wimmics/zoomathia" rel="noreferrer" target="_blank">https://github.com/Wimmics/zoomathia</a></p>
             <p>Access to the knowledge graph through its SPARQL endpoint:
             <a href="http://zoomathia.i3s.unice.fr/sparql" rel="noreferrer" target="_blank">http://zoomathia.i3s.unice.fr/sparql</a><br /><br /><br /></p>
