@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.title = "Explore the Zoomathia corpus"
 root.render(
   <App />
 );

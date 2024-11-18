@@ -1,22 +1,28 @@
 import styles from "./Home.module.css"
-import vizu from "../css_modules/logo/vizu.png"
-import filter from "../css_modules/logo/filter.png"
 const Home = () => {
     return <section className={styles["box-content"]}>
         <section className={styles["home-project"]}>
-        <h2>About Hisinum project and Zoomathia</h2>
-            <p>Further information about Zoomathia can be found on the <a href="https://www.cepam.cnrs.fr/sites/zoomathia/presentation-generale-du-gdri-zoomathia/" target="_blank" rel="noreferrer" >Cepam - Zoomathia project</a> web page.
-            Zoomathia is also part of the Hisinum project which be presented at <a target="_blank" rel="noreferrer" href="https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-dexcellence-homme-idees-et-milieux/projets-de-recherche/projets-2020-2024/hisinum">UCA - Hisinum project</a>.</p>
             <h2>About the Application</h2>
-            <p>This interface allows users to explore and visualize texts, in Latin and Ancient Greek,  annotated both manually and automatically. Functionally, the application offers two ways to visualize the texts:
-                <a href="/ExploreAWork">(1)</a> within a single work previously selected by the user, and <a href="/ExploreTheCorpus">(2)</a> across the entire annotated corpus or within a custom sub-corpus defined by the user.
-            </p>
-            <img className={styles["box-img"]} src={filter} alt="filter"/>
-            <p>The application also allows users to visualize the results of competency questions expressed by experts. 
-                Two types of visualizations are available: (1) a table format using raw SPARQL results, and (2) an interactive graph exploration using the MGExplorer tool.
-                Those kind of visualisation can be access through the <a href="/CompetencyQuestion">Competency Questions</a> page.</p>
-            <img className={styles["box-img"]} src={vizu} alt="vizualisation"/>
-            <p>You can query yourself the knowledge graph with the SPARQL endpoint available at <a href={process.env.REACT_APP_CORESE_URL}>{process.env.REACT_APP_CORESE_URL}</a>.</p>
+            <p>This application is being developed within the framework of the <a target="_blank" rel="noreferrer" href="https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-dexcellence-homme-idees-et-milieux/projets-de-recherche/projets-2020-2024/hisinum">HisINum project</a> funded by the <a href="https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-dexcellence-homme-idees-et-milieux" rel="noreferrer" target="_blank">Academy of Excellence 5</a> of <a href="https://univ-cotedazur.fr/recherche-innovation/defis-scientifiques-idex" rel="noreferrer" target="_blank">IdEx UCA JEDI</a>.</p>
+            <p>It aims to support the study of the transmission of zoological knowledge
+                from antiquity to the Middle Ages through the analysis of a corpus of
+                texts on animals compiled within the <a href="https://www.cepam.cnrs.fr/sites/zoomathia/presentation-generale-du-gdri-zoomathia/" target="_blank" rel="noreferrer" >Zoomathia GDRI</a> funded by the CNRS.<br /><br /></p>
+            <p>It allows:</p>
+            <ul className={styles["list-items"]}>
+                <li>exploration of the corpus, via a search for works by concept ;</li>
+                <li>exploration of a selected work from the corpus, with
+                visualisation of the concepts annotating each of its parts;</li>
+                <li>visualisation of the results of queries implementing
+                competency questions on a selected work from the corpus.</li>
+            </ul>
+
+            <p>It relies on the exploitation of a knowledge graph annotating the
+            Zoomathia corpus of texts with concepts from the <a href="https://opentheso.huma-num.fr/opentheso/?idt=th310" rel="noreferrer" target="_blank">TheZoo thesaurus</a>.</p>
+            <p>GitHub of the project: <a href="https://github.com/Wimmics/zoomathia" rel="noreferrer" target="_blank">https://github.com/Wimmics/zoomathia</a></p>
+            <p>Access to the knowledge graph through its SPARQL endpoint:
+            <a href="http://zoomathia.i3s.unice.fr/sparql" rel="noreferrer" target="_blank">http://zoomathia.i3s.unice.fr/sparql</a><br /><br /><br /></p>
+            <p>Contact: <a href="mailto:faro@i3s.unice.fr">Catherine Faron</a></p>
+            
         </section>
     </section>
 }
