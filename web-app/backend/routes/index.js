@@ -113,12 +113,12 @@ router.get("/getSummary", async (req, res) => {
 
 const getWorkPart = (title) => {
   return `prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
-  SELECT DISTINCT ?part ?type ?id ?title WHERE {
+  SELECT DISTINCT ?part ?type ?id ?title WHERE {    
+    <${title}> zoo:hasPart ?part.
+
     ?part a ?type;
       zoo:identifier ?id;
       zoo:title ?title.
-    
-    <${title}> zoo:hasPart ?part.
   }ORDER BY ?id`
 }
 
@@ -143,7 +143,8 @@ const getAuthors = () => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
   SELECT DISTINCT ?name WHERE {
-    ?oeuvre (schema:author|zoo:author) ?name
+    ?oeuvre (schema:author|zoo:author) ?name;
+      zoo:editor ?editor.
   }ORDER BY ?name
 `
 }
@@ -165,6 +166,7 @@ const getWorksFromAuthor = (author) => {
 
   SELECT ?oeuvre ?title WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
+      zoo:editor ?editor;
     (schema:title|zoo:title) ?title.
 
     filter(str(?author) = "${author}")
