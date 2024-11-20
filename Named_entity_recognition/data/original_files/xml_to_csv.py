@@ -241,7 +241,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         print(parent_division)
         exit(0)
 
-def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annotation_data):
+def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annotation_data, depth):
     for tag_id, tag_div in tqdm(enumerate(div.find_all(re.compile("^div"), recursive=False), 1)):
         tag_div_type = tag_div["type"].title().replace(" ", "") if (
                 ("textpart" not in tag_div["type"]) and not any(c.isnumeric() for c in tag_div["type"])
@@ -265,8 +265,11 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
             if tag_div_type == "Oeuvre":
                 for child_id, _ in enumerate(tag_div.find_all(re.compile("^div"), recursive=False), 1):
                     link_data.append([parent_uri, tag_div_type, tag_div_id, tag_div_title, f"{parent_uri}/{child_id}"])
-                extract_division_metadata(tag_div, parent_uri, link_data, paragraph_data, annotation_data)
+                extract_division_metadata(tag_div, parent_uri, link_data, paragraph_data, annotation_data, depth + 1)
                 continue
+
+            if depth == 0:
+                link_data.append([parent_uri, "Oeuvre", tag_div_id, tag_div_title, f"{parent_uri}/{tag_div_id}"])
 
             # extract quote if there are quotes
             if len(tag_div.find_all(["cit"], recursive=False)) > 1:
@@ -278,8 +281,10 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
             for child_id, _ in enumerate(tag_div.find_all(re.compile("^div"), recursive=False),1):
                 # ["parent_uri", "type", "id", "title", "child"]
                 link_data.append([parent_uri, tag_div_type, tag_div_id, tag_div_title, f"{current_uri}/{child_id}"])
-            extract_division_metadata(tag_div, current_uri, link_data, paragraph_data, annotation_data)
+            extract_division_metadata(tag_div, current_uri, link_data, paragraph_data, annotation_data, depth + 1)
         else:
+            if depth == 0:
+                link_data.append([parent_uri, "Oeuvre", tag_div_id, tag_div_title, f"{parent_uri}/{tag_div_id}"])
             extract_paragraph(tag_div,
                               [parent_uri,
                                tag_div_type, tag_div_id, tag_div_title],
@@ -306,7 +311,7 @@ def extraction_data(FILE,CSV):
         uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}"
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
-        extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data)
+        extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0)
 
         pd.DataFrame(link_data, columns=link_labels).to_csv('./output/' + CSV + "_link.csv", index=False,
                                                             encoding='UTF-8')
