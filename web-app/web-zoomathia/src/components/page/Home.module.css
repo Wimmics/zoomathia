@@ -4,7 +4,11 @@
     box-shadow: 0 0 5px;
     padding: 15px;
     background-color: white;
-    min-height: calc(100svh - 17svh);
+    min-height: calc(100svh - 10svh - 3svw);
+}
+
+.MuiButtonBase-root {
+    padding: 0;
 }
 
 .box-content>* {

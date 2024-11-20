@@ -13,7 +13,8 @@ p {
     width: 95%;
     box-shadow: 0 0 5px;
     background-color: white;
-    min-height: calc(100svh - 17svh);
+    min-height: calc(100svh - 10svh - 3svw);
+    padding: 15px;
 }
 
 .section-form{
@@ -28,19 +29,23 @@ p {
 }
 
 .search-input, .search-input-border {
-    margin: auto;
+    margin: 0 auto;
     width: 30%;
+    padding: 5px;
 }
 
 .search-input-border {
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 1px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
+}
+
+.MuiButtonBase-root {
+    padding: 0;
 }
 
 .search-input > label, .search-input-border > label {
     font-size: 1.2rem;
-    margin-bottom: 5px;
 }
 
 .search-input > label > button {
@@ -50,12 +55,15 @@ p {
 .search-concept {
     display: flex;
     flex-direction: row;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
 }
+
 .search-concept > div:first-child {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.search-concept > div:nth-child(2) {
+    margin: 0 auto;
 }
 .search-concept-field {
     display: flex;
