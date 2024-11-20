@@ -5,8 +5,9 @@
 @prefix owl:    <http://www.w3.org/2002/07/owl#>.
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix zoo:     <http://www.zoomathia/2024/zoo#> .
+@prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> .
 @prefix oa:     <http://www.w3.org/ns/oa#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
    
@@ -21,7 +22,23 @@
     rr:termType rr:BlankNode;
     rr:class oa:TextPositionSelector;
 	rr:class oa:TextQuoteSelector;  
-];
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate oa:start;
+    rr:objectMap [
+      xrr:reference "0";
+      rr:termType rr:Literal;
+    ];
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate oa:end;
+    rr:objectMap [
+      xrr:reference "0";
+      rr:termType rr:Literal;
+    ];
+  ];
   
   rr:predicateObjectMap [
     rr:predicate oa:exact;
@@ -45,7 +62,7 @@
   
   rr:predicateObjectMap [
     rr:predicate oa:hasSource;
-    rr:objectMap [ rr:template "http://www.zoomathia.com/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id}"; ];
+    rr:objectMap [ rr:template "{$.paragraph_uri}"; ];
   ];
   rr:predicateObjectMap [
     rr:predicate oa:hasSelector;
@@ -62,14 +79,14 @@
 	];
 	
 	rr:subjectMap [
-		rr:template "http://www.zoomathia.com/annotation/sha1({$._id}/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id})";
-		rr:class oa:Annotation;
+		rr:template "http://ns.inria.fr/zoomathia/annotation/sha1({$._id}{$.paragraph_uri}{$.concept_uri})";
+		rr:class zoo:AutomaticAnnotation;
 	];
 	
 	rr:predicateObjectMap [
 		rr:predicate oa:hasBody;
 		rr:objectMap [
-		 rr:template "https://opentheso.huma-num.fr/{$.mention_without_space}";
+		 rr:template "{$.concept_uri}";
 		];
 	];
 	
@@ -89,13 +106,13 @@
 	];
 	
 	rr:subjectMap [
-		rr:template "http://www.zoomathia.com/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id}";
+		rr:template "{$.paragraph_uri}";
 		rr:class zoo:Paragraph;
 	];
 	
 	rr:predicateObjectMap [
 		rr:predicate zoo:hasAnnotation;
 		rr:objectMap [
-		 rr:template "http://www.zoomathia.com/annotation/sha1({$._id}/{$.oeuvre_id}/{$.book_id}/{$.chapter_id}/{$.paragraph_id})";
+		 rr:template "http://ns.inria.fr/zoomathia/annotation/sha1({$._id}{$.paragraph_uri}{$.concept_uri})";
 		];
 	].

@@ -8,28 +8,22 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
-<#Anno>
+<#concept>
 	a rr:TripleMap;
+	
 	xrr:logicalSource [
-		xrr:query """db.Annotation.find()""";
+		xrr:query """db.Annotation.find({'origin' : {$ne : 'zoomathia'}})""";
 	];
 	
 	rr:subjectMap [
-		rr:template "https://opentheso.huma-num.fr/{$.mention_without_space}";
+		rr:template "{$.concept_uri}";
 		rr:class skos:Concept;
 	];
 	
 	rr:predicateObjectMap [
 		rr:predicate skos:prefLabel;
 		rr:objectMap [
-			xrr:reference "$.mention";
+			xrr:reference "$.label";
 			rr:language "en";
-		];
-	];
-
-        rr:predicateObjectMap [
-	rr:predicate skos:exactMatch;
-	rr:objectMap [
-		rr:template "{$.link}";
-		];
+		]
 	].
