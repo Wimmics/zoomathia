@@ -35,7 +35,9 @@ def get_NER_from_dbpedia(element,lg="en"):
     if "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.remove_pipe("entityfishing")
     if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
-        nlp_model.add_pipe('dbpedia_spotlight', config={'dbpedia_rest_endpoint': 'http://localhost:2222/rest', 'confidence': 0.6})
+        #nlp_model.add_pipe('dbpedia_spotlight', config={'dbpedia_rest_endpoint': 'http://localhost:2222/rest', 'confidence': 0.6})
+        nlp_model.add_pipe('dbpedia_spotlight',
+                           config={'dbpedia_rest_endpoint': 'http://54.36.123.165:2222/rest', 'confidence': 0.6})
     try:
         en_text = nlp_model(element)
     except Exception as err:
@@ -157,12 +159,12 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 else:
                     paragraph_title = ""
 
-                """translated_paragraph = split_and_translate(paragraph_text, "en")
+                translated_paragraph = split_and_translate(paragraph_text, "en")
 
                 wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                 extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                 dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")"""
+                extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
                 # ["parent_uri", "type", "id", "title", "child"]
                 link_data.append(
@@ -175,12 +177,12 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 
             paragraph_id = p_id
             paragraph_text = strip_paragraph_text(p.text)
-            """translated_paragraph = split_and_translate(paragraph_text, "en")
+            translated_paragraph = split_and_translate(paragraph_text, "en")
 
             wikidata_entities = get_NER_from_wikidata(translated_paragraph)
             extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
             dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-            extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")"""
+            extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
             if p.head:
                 paragraph_title = strip_paragraph_text(p.head.text)
@@ -206,12 +208,12 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 if parent_data[1] == "BekkerPage":
                     paragraph_id = 0 if "a" in parent_data[3] else 1
                     paragraph_text = strip_paragraph_text(p.text)
-                    """translated_paragraph = split_and_translate(paragraph_text, "en")
+                    translated_paragraph = split_and_translate(paragraph_text, "en")
 
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                     extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                     dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                    extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")"""
+                    extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[2],
@@ -221,12 +223,12 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 else:
                     paragraph_id = p_id
                     paragraph_text = strip_paragraph_text(p.text)
-                    """translated_paragraph = split_and_translate(paragraph_text, "en")
+                    translated_paragraph = split_and_translate(paragraph_text, "en")
 
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                     extract_wikidata(wikidata_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
                     dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                    extract_dbpedia(dbpedia_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )"""
+                    extract_dbpedia(dbpedia_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
 
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/text/{paragraph_id}"])
