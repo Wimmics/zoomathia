@@ -321,7 +321,7 @@ def extraction_data(FILE,CSV):
                                                                       encoding='UTF-8')
         pd.DataFrame(metadata, columns=metadata_labels).to_csv('./output/' + CSV + "_metadata.csv", index=False,
                                                      encoding='UTF-8')
-        #pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
+        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
 
 
 if __name__ == "__main__":
