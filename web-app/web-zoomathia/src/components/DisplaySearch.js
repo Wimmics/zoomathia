@@ -9,21 +9,20 @@ const getTypeFromURI = (uri) => {
 }
 
 const DisplaySearch = ({ node, controller }) => {
-    
     return <>{((node?.children.length > 0) && ('type' in node?.children[0]))? <> 
             <Grid key={node.uri} id={node.uri} size={12}>
                 <h2>{node.title}</h2>
             </Grid> 
             {node?.children.map(n => <DisplaySearch node={n} controller={controller} />)}
         </> :  <>
-            {(!('type' in node.children[0]) && node.children.length > 1)
+            {(node.children.length > 1 && !('type' in node.children[0]))
             ? <><Grid key={node.uri} id={node.uri} size={12}>
-                <h2>{getTypeFromURI(node.type)} {node.title}</h2>
+                <h2>{getTypeFromURI(node?.type) ? node?.type !== undefined : console.log(node)} {node.title}</h2>
                 {node.children.map(n => <ParagraphDisplay id={n.id} text={n.text} uri={n.uri} concepts={[]} displayId={true} controller={controller} />)}
                 </Grid>
             </>
             : <><Grid key={node.uri} id={node.uri} size={12}>
-                    <h2>{getTypeFromURI(node.type)} {node.title}</h2>
+                    <h2> {node.title}</h2>
                 </Grid>
                 {node.children.map(n => <ParagraphDisplay id={n.id} text={n.text} uri={n.uri} concepts={[]} displayId={false} controller={controller} />)}
             </>

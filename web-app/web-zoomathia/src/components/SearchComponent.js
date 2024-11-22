@@ -196,7 +196,7 @@ const SearchComponent = () => {
                 
                 {currentWorkLoading}
             </section>)
-            setSummary(<div className={styles["ul-toc"]}>
+            setSummary(<div key="main" className={styles["ul-toc"]}>
                     <h2>Table of contents</h2>
                     <ul>{data_retreive.tree !== null ? data_retreive.tree.map(node => <SimpleTreeView key={node.uri}>
                 <Summary key={node.uri} node={node} currentBook={null} setChange={null} setCurrentBook={null} />

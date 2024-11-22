@@ -25,7 +25,11 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     }
 
     const setChange = (e, title) => {
-        handleToc(e, title)
+        if(e !== currentBook){
+            setCurrentBook(e)
+            handleToc(e, title)
+        }
+        
     }
     
     useEffect(() => {
@@ -77,8 +81,9 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                     <h2>Table of contents</h2>
                     <div className={styles["ul-toc"]}>
                         <ul>
-                            {summary !== null ? summary.map(node => <SimpleTreeView key={node.uri}>
-                                <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} setCurrentBook={setCurrentBook} />
+                            {summary !== null ? summary.map(node =>
+                                <SimpleTreeView key={node.uri}>
+                                    <Summary key={node.uri} node={node} currentBook={currentBook} setChange={setChange} setCurrentBook={setCurrentBook} />
                                 </SimpleTreeView>
                             ) : ''}
                         </ul>
