@@ -10,6 +10,7 @@ from urllib.error import HTTPError
 import spacy
 
 API_ENDPOINT_URL = "http://nerd.huma-num.fr/nerd/service"
+DBPEDIA_LOCAL = 'http://54.36.123.165:2222/rest'
 
 nlp_model = spacy.load("en_core_web_sm")
 
@@ -18,7 +19,6 @@ DEBUG = False
 
 def split_and_translate(text, lang_target, max_chunk_length=1000):
     chunks = [text[i:i + max_chunk_length] for i in range(0, len(text), max_chunk_length)]
-    #print(chunks)
     translated_chunks = []
 
     for chunk in chunks:
@@ -31,13 +31,11 @@ def split_and_translate(text, lang_target, max_chunk_length=1000):
 
 
 def get_NER_from_dbpedia(element,lg="en"):
-
     if "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.remove_pipe("entityfishing")
     if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
-        #nlp_model.add_pipe('dbpedia_spotlight', config={'dbpedia_rest_endpoint': 'http://localhost:2222/rest', 'confidence': 0.6})
         nlp_model.add_pipe('dbpedia_spotlight',
-                           config={'dbpedia_rest_endpoint': 'http://54.36.123.165:2222/rest', 'confidence': 0.6})
+                           config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.6})
     try:
         en_text = nlp_model(element)
     except Exception as err:
@@ -50,7 +48,6 @@ def get_NER_from_dbpedia(element,lg="en"):
     return en_text.ents
 
 def get_NER_from_wikidata(element, lg="en"):
-
     if "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.remove_pipe("dbpedia_spotlight")
     if not "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
@@ -76,8 +73,11 @@ def extract_dbpedia(entities, annotations, paragraph):
     for ent in entities:
         if ent.kb_id_ == None or ent.kb_id_ == '':
             continue
-        if (ent.kb_id_ is not None) and not (any([x in ent.kb_id_ for x in link_dbpedia_to_filter])):
-            annotations.append([paragraph,
+        if (ent._.dbpedia_raw_result['@types'] is not None and not (
+                                    any([x in ent._.dbpedia_raw_result['@types'] for x in
+                                         Dbpedia_category_list_to_filter]))):
+            if (ent.kb_id_ is not None) and not (any([x in ent.kb_id_ for x in link_dbpedia_to_filter])):
+                annotations.append([paragraph,
                                 ent.kb_id_,
                                 ent.text,
                                 #ent._.dbpedia_raw_result['@similarityScore'],
@@ -333,7 +333,6 @@ if __name__ == "__main__":
         FILE = xml_file
         CSV = ".".join(FILE.split("\\")[-1].split(".")[0:-1])
         ANNOTATIONS = ".".join(FILE.split("\\")[-1].split(".")[0:-1]) + "_annotated.csv"
-        #extraction_step(FILE, CSV, ANNOTATIONS)
         extraction_data(FILE, CSV)
 
     print("End of CSV generation")
