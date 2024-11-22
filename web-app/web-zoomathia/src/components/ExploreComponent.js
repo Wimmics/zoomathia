@@ -2,6 +2,7 @@ import { useLayoutEffect, useState, useCallback, useRef } from 'react'
 import styles from "./css_modules/BookComponents.module.css"
 import Select from 'react-select'
 import DisplayTextComponent from './DisplayTextComponent'
+import { useSearchParams } from 'react-router-dom';
 
 const getTypeFromURI = (uri) => {
     const uri_split = uri.split('#')
@@ -13,7 +14,7 @@ const ExplorerComponent = () => {
     const [displayTextComponent, setDisplayTextComponent] = useState(<div>
         <p className={styles["p-start"]}>No text selected</p>
         </div>)
-
+    const [searchParams] = useSearchParams();
     const [authorList, setAuthorList] = useState([])
     const [worksList, setWorks] = useState([]);
 
@@ -21,6 +22,8 @@ const ExplorerComponent = () => {
     const [work, setWork] = useState(null)
 
     const controller = useRef(new AbortController())
+
+    const uri = searchParams.get('uri');
 
     const loadText = useCallback((e) => {
 
@@ -122,6 +125,11 @@ const ExplorerComponent = () => {
         }
 
         callForData()
+
+        if(uri){
+            console.log(uri)
+        }
+
     }, [])
 
     const clearInputField = (e) => {
