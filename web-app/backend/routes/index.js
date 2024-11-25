@@ -211,6 +211,31 @@ router.get('/getWorks', async (req, res) => {
   res.status(200).json(response)
 })
 
+const getWorksByUri = (uri) => {
+  return `prefix schema: <http://schema.org/>
+prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
+SELECT DISTINCT ?work ?author ?title WHERE {
+    ?work zoo:hasPart+ <${uri}>;
+  		zoo:author ?author;
+  		zoo:title ?title.
+}`
+}
+
+router.get("/getWorkByUri", async (req, res) =>  {
+  const response = []
+  const result = await executeSPARQLRequest(endpoint, getWorksByUri(req.query.uri))
+
+  for(elt of result.results.bindings){ 
+    response.push({
+      uri: elt.work.value,
+      title: elt.title.value,
+      author: elt.author.value
+    })
+  }
+
+  res.status(200).json(response)
+})
+
 const getChildrenTypeQuery = (uri) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
@@ -878,12 +903,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
 DESCRIBE <${uri}> ?paragraph WHERE {
-    <${uri}> a zoo:Oeuvre;
-  	  zoo:hasPart+ ?paragraph.
-  
-    ?paragraph ?p ?o
-  }
-  `
+    <${uri}> zoo:hasPart+ ?paragraph.
+}`
 }
 
 router.get("/download-turtle", async (req, res) => {

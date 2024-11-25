@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from 'react-router-dom';
 import SectionComponent from './SectionComponent'
 import styles from "./css_modules/BookComponents.module.css"
 import Summary from "./Summary.js"
@@ -10,11 +11,13 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [metadata, setMetadata] = useState({})
     const [summary, setSummary] = useState(null)
     const [currentBook, setCurrentBook] = useState(null)
-    const controllerRef = useRef(controller)
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const paramsUri = searchParams.get('uri');
 
     const handleToc = async (uri, nodeTitle) => {
         setSections([])
-        
+        setSearchParams("")
         /*if (controllerRef.current) {
             controllerRef.current.abort("Changing work from table of content")
         }
@@ -33,6 +36,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     }
     
     useEffect(() => {
+
         const getMetadata = async () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getMetadata?uri=${uri}`)
                 .then(response => response.json())
@@ -43,18 +47,27 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${uri}`)
                 .then(response => response.json())
             setSummary(data)
-            setSections(<SectionComponent sectionTitle={data[0].title} uri={data[0].uri} controller={controller} />)
-            setCurrentBook(data[0].uri)
+
+            /* This part is called only if searchParams is given
+             * Get the book that include the given URI, if the URI is a Work, set to the first child 
+             */
+            if(searchParams && (data[0].uri.length <= paramsUri?.length)){
+                for(const book of data){
+                    if( paramsUri.includes(book.uri)){
+                        setSections(<SectionComponent sectionTitle={book.title} uri={book.uri} controller={controller} />)
+                        setCurrentBook(book.uri)
+                    }
+                }                
+            }else{
+                setSections(<SectionComponent sectionTitle={data[0].title} uri={data[0].uri} controller={controller} />)
+                setCurrentBook(data[0].uri)
+            }
+            
         }
 
         getMetadata()
         getSummary()
-        return () => {
-            setSummary(null)
-            setMetadata({})
-            setSections([])
-        }
-    }, [options, type, uri, controller])
+    }, [options, type, uri, controller, paramsUri, searchParams, setSearchParams])
 
     return <section>
         <section className={styles["selected-book-metadata"]}>

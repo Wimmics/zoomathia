@@ -14,7 +14,7 @@ const ExplorerComponent = () => {
     const [displayTextComponent, setDisplayTextComponent] = useState(<div>
         <p className={styles["p-start"]}>No text selected</p>
         </div>)
-    const [searchParams] = useSearchParams();
+    const [searchParams, setSearchParams] = useSearchParams();
     const [authorList, setAuthorList] = useState([])
     const [worksList, setWorks] = useState([]);
 
@@ -25,8 +25,39 @@ const ExplorerComponent = () => {
 
     const uri = searchParams.get('uri');
 
-    const loadText = useCallback((e) => {
+    const loadFromUrl = (uri) => {
+        const callForData = async () => {
 
+            if (controller.current) {
+                controller.current.abort("Canceling Fetch: Work has changed...")
+            }
+            controller.current = new AbortController()
+            const signal = controller.current.signal
+            
+            let bookList = [{ value: '', label: '' }];
+            let type = ''
+
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkPart?title=${uri}`, {signal}
+                ).then(response => response.json())
+
+            for (const book of data) {
+                type = getTypeFromURI(book.type)
+                bookList.push({ value: book.uri, label: book.title, id: book.id, number: book.id, type: getTypeFromURI(book.type) })
+            }
+
+            setDisplayTextComponent(
+                <DisplayTextComponent className={styles["select-field"]}
+                    controller={controller}
+                    uri={uri}
+                    options={bookList}
+                    type={type} />)
+        }
+
+        callForData()
+    }
+
+    const loadText = useCallback((e) => {
+        setSearchParams("")
         if(!author && !work){
             console.log("nothing selected")
             return
@@ -126,14 +157,28 @@ const ExplorerComponent = () => {
 
         callForData()
 
-        if(uri){
-            console.log(uri)
+        const getWorkFromUri = async (uri) => {
+            let workUri = ''
+            const result = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkByUri?uri=${uri}`
+            ).then(response => response.json())
+            for(const elt of result){
+                
+                setWork({label: elt.title, value: elt.uri})
+                setAuthor({label: elt.author, value: elt.uri})
+                workUri = elt.uri
+            }
+
+            loadFromUrl(workUri)
         }
 
-    }, [])
+        if(uri){
+            getWorkFromUri(uri)
+        }
+
+    }, [uri])
 
     const clearInputField = (e) => {
-
+        setSearchParams("")
         if (controller.current) {
             controller.current.abort("Clear input select field and cancel current request")
         }
