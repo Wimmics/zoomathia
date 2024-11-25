@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from "react"
 import styles from "./css_modules/ParagraphComponent.module.css"
+import redirection from "./css_modules/logo/redirect-svgrepo-com.svg"
 
 const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onClick}) => {
     return <li className={
@@ -10,7 +11,7 @@ const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onC
 
 }
 
-const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId }) => {
+const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId, redirect }) => {
     const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}</p>)
     const [conceptsDiv, setConceptsDiv] = useState([])
     const controllerRef = useRef(controller)
@@ -75,6 +76,9 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
             {displayId ? <p key={`number-${id}`}>{`[${parseInt(id)}]`}</p> : <p key={`number-${id}`}></p>}
+            {true ? <a href={`${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${uri}`} rel="noreferrer" target="_blank">
+                <img className={styles["logo-redirect"]} src={redirection} alt=""/>
+                </a> : ""}
         </div>
         <div key={`text-${id}`} className={styles["text-paragraph"]}>
             {text_content}
