@@ -3,7 +3,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
 SELECT DISTINCT ?p ?s ?o (?label_animal as ?date) (?s as ?type)
-  (CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=",str(?p)) as ?url) 
+  (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?paragraph))  as ?url) 
   ("snd" as ?style1) ?style2 WHERE {
   
   ?annotation2 oa:hasBody ?relation;

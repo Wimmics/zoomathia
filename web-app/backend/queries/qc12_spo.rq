@@ -3,7 +3,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
 SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_conso 
-(CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=",str(?paragraph)) as ?url) (?animal as ?date) (?animal_generique as ?type)
+(CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?paragraph)) as ?url) (?animal as ?date) (?animal_generique as ?type)
 (?paragraph as ?p) (?name_animal as ?s) (?name_conso as ?o) WHERE {
      ?annotation2 oa:hasBody ?conso;
         oa:hasTarget [oa:hasSource ?paragraph;

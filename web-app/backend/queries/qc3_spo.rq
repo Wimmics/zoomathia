@@ -1,7 +1,7 @@
 PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT DISTINCT ?p ?s ?o ("fst" as ?style1) (?s as ?date) ?type (CONCAT("http://zoomathia.i3s.unice.fr/Work?uri=", str(?p)) as ?url) ("snd" as ?style2) WHERE {
+SELECT DISTINCT ?p ?s ?o ("fst" as ?style1) (?s as ?date) ?type (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?paragraph))  as ?url) ("snd" as ?style2) WHERE {
   ?annotation2 oa:hasBody ?use;
               oa:hasTarget [oa:hasSource ?p;
                             oa:hasSelector [oa:exact ?mention_use]].

@@ -2,7 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?s ?o ("speech" as ?p) (?o as ?date) (CONCAT("http://127.0.0.1:3002/Work?uri=",str(?s)) as ?url) ("fst" as ?style2) ("snd" as ?style1) WHERE {
+SELECT DISTINCT ?s ?o ("speech" as ?p) (?o as ?date) (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?paragraph))  as ?url) ("fst" as ?style2) ("snd" as ?style1) WHERE {
 
   ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?s;
