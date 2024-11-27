@@ -46,6 +46,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         const getSummary = async () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${uri}`)
                 .then(response => response.json())
+            console.log(data)
             setSummary(data)
 
             /* This part is called only if searchParams is given

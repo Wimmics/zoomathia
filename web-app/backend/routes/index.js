@@ -215,9 +215,15 @@ const getWorksByUri = (uri) => {
   return `prefix schema: <http://schema.org/>
 prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#> 
 SELECT DISTINCT ?work ?author ?title WHERE {
-    ?work zoo:hasPart+ <${uri}>;
+    {?work zoo:hasPart+ <${uri}>;
   		zoo:author ?author;
-  		zoo:title ?title.
+      zoo:editor ?editor;
+  		zoo:title ?title.}UNION{
+      ?work zoo:author ?author;
+        zoo:title ?title;
+        zoo:editor ?editor.
+      Filter(?work = <http://ns.inria.fr/zoomathia/Aelian/de_natura_animalium>)
+    }
 }`
 }
 
