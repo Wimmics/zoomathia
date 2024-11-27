@@ -25,7 +25,7 @@ const ExplorerComponent = () => {
 
     const uri = searchParams.get('uri');
 
-    const loadFromUrl = (uri) => {
+    const loadFromUrl = async (uri) => {
         const callForData = async () => {
 
             if (controller.current) {
@@ -58,6 +58,7 @@ const ExplorerComponent = () => {
 
     const loadText = useCallback((e) => {
         setSearchParams("")
+        setDisplayTextComponent([])
         if(!author && !work){
             console.log("nothing selected")
             return
@@ -174,6 +175,7 @@ const ExplorerComponent = () => {
         if(uri){
             getWorkFromUri(uri)
         }
+
 
     }, [uri])
 

@@ -55,6 +55,8 @@ const SectionComponent = (props) => {
                             `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${elt.uri}&lang=${"en"}`,
                             {signal: controllerRef.current.signal}
                         ).then(response => response.json())
+                        console.log(sectionType)
+                        const bekker = sectionType.includes("Bekker") ? true : false
 
                         paragraphs.push(<ParagraphDisplay
                             key={elt.uri}
@@ -64,7 +66,8 @@ const SectionComponent = (props) => {
                             lang={"en"}
                             displayId={data.length > 1 ? true : false}
                             concepts={concepts_list}
-                            controller={props.controller} />)
+                            controller={props.controller}
+                            bekker={bekker} />)
                     }
                     setSectionParagraph(paragraphs)
 

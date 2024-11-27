@@ -11,8 +11,10 @@ const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onC
 
 }
 
-const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId, redirect }) => {
-    const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}</p>)
+const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId, redirect, bekker }) => {
+    const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}{redirect ? <a href={`${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${uri}`} rel="noreferrer" target="_blank">
+        <img className={styles["logo-redirect"]} src={redirection} alt=""/>
+        </a> : ""}</p>)
     const [conceptsDiv, setConceptsDiv] = useState([])
     const controllerRef = useRef(controller)
 
@@ -29,6 +31,14 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
     const removeHighlight = useCallback((e) => {
         setTextContent(<p key={`content-${id}`}>{text}</p>)
     }, [id, text])
+
+    const toBekker = (identification) => {
+        if(identification === 0){
+            return "A"
+        }else{
+            return "B"
+        }
+    }
 
     useEffect(() => {
         const getConcepts = async () => {
@@ -75,10 +85,8 @@ const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId
 
     return <section key={`paragraph-section-${id}`} className={styles["paragraph-section"]}>
         <div key={`paragraph-${id}`} id={uri} className={styles["id-paragraph"]}>
-            {displayId ? <p key={`number-${id}`}>{`[${parseInt(id)}]`}</p> : <p key={`number-${id}`}></p>}
-            {true ? <a href={`${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${uri}`} rel="noreferrer" target="_blank">
-                <img className={styles["logo-redirect"]} src={redirection} alt=""/>
-                </a> : ""}
+            {displayId ? 
+                <>{ bekker ? <p key={`number-${id}`}>[{toBekker(parseInt(id))}]</p>  : <p key={`number-${id}`}>{`[${parseInt(id)}]`}</p>}</> : <p key={`number-${id}`}></p>}
         </div>
         <div key={`text-${id}`} className={styles["text-paragraph"]}>
             {text_content}
