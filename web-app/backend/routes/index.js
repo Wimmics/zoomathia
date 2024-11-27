@@ -595,6 +595,14 @@ router.get("/qcList", (req, res) => {
   res.status(200).json(qcs)
 })
 
+
+router.get("/getQCspo", async (req, res) => {
+  const query = fs.readFileSync(`queries/qc${req.query.id}_spo.rq`, 'utf8')
+  const result = await executeSPARQLRequest(endpoint, query)
+
+  res.status(200).json(result.results.bindings)
+})
+
 /**
  * 
  */
