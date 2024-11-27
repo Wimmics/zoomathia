@@ -17,6 +17,9 @@ java_process = subprocess.Popen(
 sleep(1)
 gateway = JavaGateway()
 
+
+
+
 # Stop java gateway at the enf od script
 def exit_handler():
     gateway.shutdown()
@@ -70,7 +73,32 @@ def load(graph ,path):
 
     return graph
 
+def dbpediaClassFiltered(uri, filtered_already_found):
+    if uri in filtered_already_found.keys():
+        return filtered_already_found[uri]
+
+    q = f"""select * where {{
+	service <https://dbpedia.org/sparql> {{
+		<{uri}> a ?type
+	}}
+}}"""
+    result = convert_sparql_to_json(sparqlQuery(g, q))
+
+    for elt in result["results"]["bindings"]:
+        if elt["type"]["value"] in filtered_class_list:
+            filtered_already_found[uri] = False
+            return False
+    filtered_already_found[uri] = False
+    return True
+
+
 def setQuery(label, df, previous):
+    if label in zoomathia_linked.keys():
+        for elt in zoomathia_linked[label]:
+            df.append([previous[0], elt, previous[2], previous[3], "zoomathia", label])
+
+        return
+
     q = f"""prefix skos: <http://www.w3.org/2004/02/skos/core#>  .
 
         SELECT DISTINCT ?x ?label WHERE {{
@@ -84,11 +112,11 @@ def setQuery(label, df, previous):
     result = convert_sparql_to_json(sparqlQuery(g, q))
 
     if not result["results"]["bindings"]:
-        old = previous + [label]
-        df.append(old)
+        return
 
+    zoomathia_linked[label] = []
     for elt in result["results"]["bindings"]:
-        #print(f'{label} ---> {elt["label"]["value"]}')
+        zoomathia_linked[label].append(elt["x"]["value"])
         df.append([previous[0], elt["x"]["value"], previous[2], previous[3], "zoomathia", label])
 
 
@@ -122,8 +150,12 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
             score = df["score"][row]
             origin = df["origin"][row]
 
+            if origin == "wikidata" or dbpediaClassFiltered(concept_uri, filtered_already_found):
+                data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
+
             label = concept_uri.split("/")[-1].replace("_", " ") if "dbpedia" in concept_uri else mention
             setQuery(label, data, [paragraph_uri, concept_uri, mention, score, origin])
+
         df = pd.DataFrame(data, columns=new_columns)
 
     collection.insert_many(df.to_dict('records'))
@@ -148,6 +180,12 @@ if __name__ == "__main__":
     # TODO: script qui execute des conversions morph_xr2rml
     g = Graph()
     g = load(g, "th310.ttl")
+
+    filtered_already_found = dict()
+    zoomathia_linked = dict()
+
+    with open("filter_class.json", "r") as filter_file:
+        filtered_class_list = json.load(filter_file)["class"]
 
     db_name = "Ner"
     csv_files = glob.glob("./output/*.csv")

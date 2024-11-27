@@ -15,7 +15,7 @@ DBPEDIA_LOCAL = 'http://54.36.123.165:2222/rest'
 nlp_model = spacy.load("en_core_web_sm")
 
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
-DEBUG = False
+ANNOTATION_AUTO = False
 
 def split_and_translate(text, lang_target, max_chunk_length=1000):
     chunks = [text[i:i + max_chunk_length] for i in range(0, len(text), max_chunk_length)]
@@ -71,6 +71,13 @@ def extract_dbpedia(entities, annotations, paragraph):
     link_dbpedia_to_filter = ["film", "music", "song"]
 
     for ent in entities:
+        annotations.append([paragraph,
+                            ent.kb_id_,
+                            ent.text,
+                            ent._.dbpedia_raw_result['@types'],
+                            0.6,
+                            "DBpedia"])
+        continue
         if ent.kb_id_ == None or ent.kb_id_ == '':
             continue
         if (ent._.dbpedia_raw_result['@types'] is not None and not (
@@ -80,7 +87,7 @@ def extract_dbpedia(entities, annotations, paragraph):
                 annotations.append([paragraph,
                                 ent.kb_id_,
                                 ent.text,
-                                #ent._.dbpedia_raw_result['@similarityScore'],
+                                ent._.dbpedia_raw_result['@types'],
                                 0.6,
                                 "DBpedia"])
 
@@ -124,12 +131,12 @@ def does_it_have_children_div(node):
 
 
 def strip_text(txt):
-    txt = txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("(","").replace(")","")
+    txt = txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("(","").replace(")","").replace("\"", "")
     return re.sub(r"\s+", " ", txt)
 
 
 def strip_paragraph_text(txt):
-    txt = txt.strip().replace("\r", "").replace("\n", " ").replace("\t", "").replace("(", "").replace(")", "")
+    txt = txt.strip().replace("\r", "").replace("\n", " ").replace("\t", "").replace("(", "").replace(")", "").replace("\"", "'")
     return re.sub(r"\s+", " ", txt)
 
 
@@ -159,12 +166,13 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 else:
                     paragraph_title = ""
 
-                translated_paragraph = split_and_translate(paragraph_text, "en")
+                if ANNOTATION_AUTO:
+                    translated_paragraph = split_and_translate(paragraph_text, "en")
 
-                wikidata_entities = get_NER_from_wikidata(translated_paragraph)
-                extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
-                dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+                    wikidata_entities = get_NER_from_wikidata(translated_paragraph)
+                    extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+                    dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
+                    extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
                 # ["parent_uri", "type", "id", "title", "child"]
                 link_data.append(
@@ -177,12 +185,14 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 
             paragraph_id = p_id
             paragraph_text = strip_paragraph_text(p.text)
-            translated_paragraph = split_and_translate(paragraph_text, "en")
 
-            wikidata_entities = get_NER_from_wikidata(translated_paragraph)
-            extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
-            dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-            extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+            if ANNOTATION_AUTO:
+                translated_paragraph = split_and_translate(paragraph_text, "en")
+
+                wikidata_entities = get_NER_from_wikidata(translated_paragraph)
+                extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+                dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
+                extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
             if p.head:
                 paragraph_title = strip_paragraph_text(p.head.text)
@@ -208,12 +218,13 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 if parent_data[1] == "BekkerPage":
                     paragraph_id = 0 if "a" in parent_data[3] else 1
                     paragraph_text = strip_paragraph_text(p.text)
-                    translated_paragraph = split_and_translate(paragraph_text, "en")
+                    if ANNOTATION_AUTO:
+                        translated_paragraph = split_and_translate(paragraph_text, "en")
 
-                    wikidata_entities = get_NER_from_wikidata(translated_paragraph)
-                    extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
-                    dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                    extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+                        wikidata_entities = get_NER_from_wikidata(translated_paragraph)
+                        extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
+                        dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
+                        extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
 
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[2],
@@ -223,12 +234,14 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 else:
                     paragraph_id = p_id
                     paragraph_text = strip_paragraph_text(p.text)
-                    translated_paragraph = split_and_translate(paragraph_text, "en")
 
-                    wikidata_entities = get_NER_from_wikidata(translated_paragraph)
-                    extract_wikidata(wikidata_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
-                    dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-                    extract_dbpedia(dbpedia_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
+                    if ANNOTATION_AUTO:
+                        translated_paragraph = split_and_translate(paragraph_text, "en")
+
+                        wikidata_entities = get_NER_from_wikidata(translated_paragraph)
+                        extract_wikidata(wikidata_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
+                        dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
+                        extract_dbpedia(dbpedia_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
 
                     # ["parent_uri", "type", "id", "title", "child"]
                     link_data.append([parent_data[0], parent_data[1], parent_data[2], parent_data[3], f"{parent_uri}/text/{paragraph_id}"])
@@ -239,9 +252,6 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         return paragraph_id, paragraph_text
     except UnboundLocalError:
         print("Paragraph_id and paragraph_text is not defined")
-        print(parent_uri)
-        print(parent_division)
-        exit(0)
 
 def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annotation_data, depth):
     for tag_id, tag_div in tqdm(enumerate(div.find_all(re.compile("^div"), recursive=False), 1)):
@@ -321,7 +331,7 @@ def extraction_data(FILE,CSV):
                                                                       encoding='UTF-8')
         pd.DataFrame(metadata, columns=metadata_labels).to_csv('./output/' + CSV + "_metadata.csv", index=False,
                                                      encoding='UTF-8')
-        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
+        #pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
 
 
 if __name__ == "__main__":
@@ -332,7 +342,6 @@ if __name__ == "__main__":
         print(xml_file)
         FILE = xml_file
         CSV = ".".join(FILE.split("\\")[-1].split(".")[0:-1])
-        ANNOTATIONS = ".".join(FILE.split("\\")[-1].split(".")[0:-1]) + "_annotated.csv"
         extraction_data(FILE, CSV)
 
     print("End of CSV generation")
