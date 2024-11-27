@@ -34,7 +34,7 @@ const CompetencyQuestionComponent = () => {
         const callForData = async () => {
             const generatedCol = []
             if (file === null) { return }
-            const styleSheet = `{
+            const styleSheet = {
                 "appli": {
                     "name": "ldviz",
                     "debug": true
@@ -68,7 +68,8 @@ const CompetencyQuestionComponent = () => {
                 "edge": {
                     "color": "green"
                 }
-            }`
+            }
+            const spo_data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQCspo?id=${file}`).then(response => response.json())
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
             
             for (const elt of data.table.columns) {
@@ -77,7 +78,7 @@ const CompetencyQuestionComponent = () => {
                         generatedCol.push({
                             name: elt,
                             formatter: (cell) => { 
-                                return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}Work?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
+                                return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
                         })
                         break;
                     case "name_anthroponym":
@@ -127,11 +128,23 @@ const CompetencyQuestionComponent = () => {
                 language={ { search:{placeholder: "filter row by keyword..."} }} />
                 </>)
 
-            setIframe(<iframe className={styles["iframe-box"]}
+            const mgeDashboard = document.querySelector("#mge-dashboard")
+            mgeDashboard.disableInitialQueryPanel()
+            mgeDashboard.disableView("mge-glyph-matrix")
+            mgeDashboard.disableView("mge-clustervis")
+            mgeDashboard.disableView("mge-annotation")
+            mgeDashboard.disableView("mge-query")
+            
+
+            mgeDashboard.setData(spo_data, styleSheet)
+            mgeDashboard.setDashboard()
+
+
+            /*setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"
                 src={`${process.env.REACT_APP_LDVIZ_URL}ldviz?url=${process.env.REACT_APP_CORESE_URL}&query=${encodeURIComponent(data.spo)}&stylesheet=${encodeURIComponent(styleSheet)}`}
             >
-            </iframe>)
+            </iframe>)*/
             setTitleVizu(data.titleVizu)
         }
         callForData()
@@ -158,7 +171,10 @@ const CompetencyQuestionComponent = () => {
         <section className={styles["box-question"]}>
             {table}
             <h3>{titleVizu}</h3>
-            {iframe}
+            <div>
+                <mge-dashboard id="mge-dashboard" className={styles["mge-dashboard"]}></mge-dashboard>
+            </div>
+            
         </section>
 
     </div>
