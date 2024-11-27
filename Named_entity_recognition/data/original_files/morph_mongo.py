@@ -82,14 +82,17 @@ def dbpediaClassFiltered(uri, filtered_already_found):
 		<{uri}> a ?type
 	}}
 }}"""
-    result = convert_sparql_to_json(sparqlQuery(g, q))
+    try:
+        result = convert_sparql_to_json(sparqlQuery(g, q))
 
-    for elt in result["results"]["bindings"]:
-        if elt["type"]["value"] in filtered_class_list:
-            filtered_already_found[uri] = False
-            return False
-    filtered_already_found[uri] = False
-    return True
+        for elt in result["results"]["bindings"]:
+            if elt["type"]["value"] in filtered_class_list:
+                filtered_already_found[uri] = False
+                return False
+        filtered_already_found[uri] = False
+        return True
+    except:
+        print("Nothing extracted")
 
 
 def setQuery(label, df, previous):
