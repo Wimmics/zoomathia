@@ -25,8 +25,7 @@ const Home = () => {
             <p><br />GitHub of the project: <a href="https://github.com/Wimmics/zoomathia" rel="noreferrer" target="_blank">https://github.com/Wimmics/zoomathia</a></p>
             <p><br />Access to the knowledge graph through its SPARQL endpoint:
             <a href="http://zoomathia.i3s.unice.fr/sparql" rel="noreferrer" target="_blank">http://zoomathia.i3s.unice.fr/sparql</a><br /><br /><br /></p>
-            <p>Contact: <a href="mailto:faro@i3s.unice.fr">Catherine Faron</a></p>
-            
+            <p>Contact: <a href="mailto:faro@i3s.unice.fr">Catherine Faron</a>, <a href="mailto:Arnaud.Zucker@univ-cotedazur.fr">Arnaud Zucker</a></p>            
         </section>
     </section>
 }

@@ -94,6 +94,30 @@ def dbpediaClassFiltered(uri, filtered_already_found):
     except:
         print("Nothing extracted")
 
+def linkClassToOntology(name, class_link):
+    if name in class_link.keys():
+        return class_link[name]
+
+    q = f"""select ?class where {{
+  ?class a rdfs:Class;
+	rdfs:label ?label
+  filter(str(?label) = "{name}")
+}}"""
+    result = convert_sparql_to_json(sparqlQuery(g, q))
+    test = []
+    for elt in result["results"]["bindings"]:
+        class_association[name] = elt["class"]["value"].split("#")[-1]
+        test.append(elt["class"]["value"].split("#")[-1])
+
+    if not test:
+        class_link[name] = "UnidentifiedPart"
+        return "UnidentifiedPart"
+    elif len(test) > 1:
+        print("More than one classes posssible")
+        print(name, test)
+        return test[0]
+    return test[0]
+
 
 def setQuery(label, df, previous):
     if label in zoomathia_linked.keys():
@@ -109,8 +133,7 @@ def setQuery(label, df, previous):
                 skos:prefLabel ?label.
             FILTER(lang(?label) = "en" || lang(?label) = "fr").
             filter(str(?label) in (ucase(str("{label}")), lcase(str("{label}")), str("{label}"))).
-        }} 
-        """
+        }}"""
 
     result = convert_sparql_to_json(sparqlQuery(g, q))
 
@@ -139,7 +162,20 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
     collection = db[collection_name]
     df = pd.read_csv(csv_file)
     df = df.where(pd.notnull(df), "")
-    if collection_name == "Annotation":
+    if collection_name == "Link":
+        data = []
+        new_columns = list(df.columns)
+        for row in df.index:
+            parent_uri = df["parent_uri"][row]
+            uri_type = linkClassToOntology(df["type"][row], class_association)
+            uri_id = df["id"][row]
+            uri_title = df["title"][row]
+            uri_child = df["child"][row]
+
+            data.append([parent_uri, uri_type, uri_id, uri_title, uri_child])
+        df = pd.DataFrame(data, columns=new_columns)
+
+    elif collection_name == "Annotation":
 
         data = []
         # Conversion du DataFrame en dictionnaires et insertion dans MongoDB
@@ -183,16 +219,18 @@ if __name__ == "__main__":
     # TODO: script qui execute des conversions morph_xr2rml
     g = Graph()
     g = load(g, "th310.ttl")
+    g = load(g, "zoomathia.ttl")
 
     filtered_already_found = dict()
     zoomathia_linked = dict()
+    class_association = dict()
 
     with open("filter_class.json", "r") as filter_file:
         filtered_class_list = json.load(filter_file)["class"]
 
     db_name = "Ner"
     csv_files = glob.glob("./output/*.csv")
-    clear_mongo_collection(db_name, "Annotation")
+    #clear_mongo_collection(db_name, "Annotation")
     clear_mongo_collection(db_name, "Paragraph")
     clear_mongo_collection(db_name, "Link")
     clear_mongo_collection(db_name, "Metadata")
@@ -204,7 +242,8 @@ if __name__ == "__main__":
         elif "paragraph" in csv:
             load_csv_to_mongodb(csv, db_name, "Paragraph")
         elif "annotations" in csv:
-            load_csv_to_mongodb(csv, db_name, "Annotation")
+            pass
+            #load_csv_to_mongodb(csv, db_name, "Annotation")
         else:
             load_csv_to_mongodb(csv, db_name, "Metadata")
 
