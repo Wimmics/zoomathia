@@ -35,7 +35,7 @@ def get_NER_from_dbpedia(element,lg="en"):
         nlp_model.remove_pipe("entityfishing")
     if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe('dbpedia_spotlight',
-                           config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.6})
+                           config={ 'confidence': 0.3})
     try:
         en_text = nlp_model(element)
     except Exception as err:
@@ -131,12 +131,12 @@ def does_it_have_children_div(node):
 
 
 def strip_text(txt):
-    txt = txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("(","").replace(")","").replace("\"", "")
+    txt = txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("\"", "").replace("- ", "")
     return re.sub(r"\s+", " ", txt)
 
 
 def strip_paragraph_text(txt):
-    txt = txt.strip().replace("\r", "").replace("\n", " ").replace("\t", "").replace("(", "").replace(")", "").replace("\"", "'")
+    txt = txt.strip().replace("\r", "").replace("\n", " ").replace("\t", "").replace("\"", "'").replace("- ", "")
     return re.sub(r"\s+", " ", txt)
 
 
@@ -335,6 +335,20 @@ def extraction_data(FILE,CSV):
 
 
 if __name__ == "__main__":
+    text = "Ἀλώπηξ καὶ πίθηξ ἐπὶ τὸ αὐτὸ ὡδοιπόρουν. Παρ- ερχόμενοι δὲ διὰ τινῶν μνημείων, ἔφη ὁ πίθηξ τῇ ἀλώ- πεκι, ὡς πάντες οἱ νεκροὶ οὗτοι ἀπελεύθεροι τῶν ἐμῶν γεννητόρων ὑπάρχουσιν. δὲ ἀλώπηξ λέγει τῷ πί- θηκι· „εὐκαίρως ἐψεύσω· οὐδεὶς γὰρ τῶν ἐνταῦθα τα- φέντων ἀπελέγξαι σε δύναται."
+    translated_paragraph = split_and_translate(text, "en")
+    #print(translated_paragraph)
+    annotation = []
+    #wikidata_entities = get_NER_from_wikidata(text)
+    #print(wikidata_entities)
+    #extract_wikidata(wikidata_entities, annotation, "")
+    #print(annotation)
+    #annotation = []
+    dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
+    print(list(set(dbpedia_entities)))
+    print('Entities', [(ent.text, ent.label_, ent.kb_id_) for ent in dbpedia_entities])
+    #extract_dbpedia(dbpedia_entities, annotation, "")
+    exit()
     directory_path = './'
     xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
