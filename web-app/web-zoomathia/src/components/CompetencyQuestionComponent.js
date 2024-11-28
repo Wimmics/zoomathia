@@ -129,6 +129,7 @@ const CompetencyQuestionComponent = () => {
                 </>)
 
             const mgeDashboard = document.querySelector("#mge-dashboard")
+            mgeDashboard.resetDashboard()
             mgeDashboard.disableInitialQueryPanel()
             mgeDashboard.disableView("mge-glyph-matrix")
             mgeDashboard.disableView("mge-clustervis")
