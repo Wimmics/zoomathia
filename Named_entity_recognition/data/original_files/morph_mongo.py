@@ -230,7 +230,7 @@ if __name__ == "__main__":
 
     db_name = "Ner"
     csv_files = glob.glob("./output/*.csv")
-    #clear_mongo_collection(db_name, "Annotation")
+    clear_mongo_collection(db_name, "Annotation")
     clear_mongo_collection(db_name, "Paragraph")
     clear_mongo_collection(db_name, "Link")
     clear_mongo_collection(db_name, "Metadata")
@@ -242,8 +242,7 @@ if __name__ == "__main__":
         elif "paragraph" in csv:
             load_csv_to_mongodb(csv, db_name, "Paragraph")
         elif "annotations" in csv:
-            pass
-            #load_csv_to_mongodb(csv, db_name, "Annotation")
+            load_csv_to_mongodb(csv, db_name, "Annotation")
         else:
             load_csv_to_mongodb(csv, db_name, "Metadata")
 
