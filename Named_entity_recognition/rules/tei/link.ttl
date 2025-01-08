@@ -10,7 +10,7 @@
 <#link_pattern>
 	a rr:TripleMap;
 	xrr:logicalSource [
-		xrr:query """db.Link.find({"type": {$ne: "Oeuvre"}})""";
+		xrr:query """db.Link.find({"type": {$ne: "Work"}})""";
 	];
 	
 	rr:subjectMap [
@@ -57,7 +57,7 @@
 <#link_oeuvre>
 	a rr:TripleMap;
 	xrr:logicalSource [
-		xrr:query """db.Link.find({"type" : "Oeuvre"})""";
+		xrr:query """db.Link.find({"type" : "Work"})""";
 	];
 	
 	rr:subjectMap [

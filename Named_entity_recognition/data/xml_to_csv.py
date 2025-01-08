@@ -10,12 +10,12 @@ from urllib.error import HTTPError
 import spacy
 
 API_ENDPOINT_URL = "http://nerd.huma-num.fr/nerd/service"
-DBPEDIA_LOCAL = 'http://54.36.123.165:2222/rest'
+DBPEDIA_LOCAL = 'http://localhost:2222/rest'
 
 nlp_model = spacy.load("en_core_web_sm")
 
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
-ANNOTATION_AUTO = False
+ANNOTATION_AUTO = True
 
 def split_and_translate(text, lang_target, max_chunk_length=1000):
     chunks = [text[i:i + max_chunk_length] for i in range(0, len(text), max_chunk_length)]
@@ -35,7 +35,7 @@ def get_NER_from_dbpedia(element,lg="en"):
         nlp_model.remove_pipe("entityfishing")
     if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe('dbpedia_spotlight',
-                           config={ 'confidence': 0.3})
+                           config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.3})
     try:
         en_text = nlp_model(element)
     except Exception as err:
@@ -44,7 +44,6 @@ def get_NER_from_dbpedia(element,lg="en"):
         print(FILE)
         return []
 
-    #print("dbpedia", en_text.ents)
     return en_text.ents
 
 def get_NER_from_wikidata(element, lg="en"):
@@ -54,50 +53,27 @@ def get_NER_from_wikidata(element, lg="en"):
         nlp_model.add_pipe("entityfishing", config={"language": "en", "api_ef_base": API_ENDPOINT_URL})
 
     en_text = nlp_model(element)
-    #print("wikidata", en_text.ents)
     return en_text.ents
 
 
 def extract_dbpedia(entities, annotations, paragraph):
-    Dbpedia_category_list_to_filter = ["DBpedia:MusicalWork", "DBpedia:MusicalArtist",
-                                       "Schema:MusicGroup",
-                                       "Schema:MusicAlbum", "Schema:MusicRecording", "DBpedia:Film",
-                                       "DBpedia:MusicGenre", "Memory_management",
-                                       "DBpedia:Device", "DBpedia:InformationAppliance",
-                                       "Schema:CreativeWork", "DBpedia:TelevisionShow",
-                                       "DBpedia:Software", "DBpedia:VideoGame",
-                                       "DBpedia:Magazine", "DBpedia:BroadcastNetwork",
-                                       "DBpedia:Company"]
-    link_dbpedia_to_filter = ["film", "music", "song"]
-
     for ent in entities:
-        annotations.append([paragraph,
-                            ent.kb_id_,
-                            ent.text,
-                            ent._.dbpedia_raw_result['@types'],
-                            0.6,
-                            "DBpedia"])
-        continue
         if ent.kb_id_ == None or ent.kb_id_ == '':
             continue
-        if (ent._.dbpedia_raw_result['@types'] is not None and not (
-                                    any([x in ent._.dbpedia_raw_result['@types'] for x in
-                                         Dbpedia_category_list_to_filter]))):
-            if (ent.kb_id_ is not None) and not (any([x in ent.kb_id_ for x in link_dbpedia_to_filter])):
-                annotations.append([paragraph,
-                                ent.kb_id_,
-                                ent.text,
-                                ent._.dbpedia_raw_result['@types'],
-                                0.6,
-                                "DBpedia"])
+        if ent.kb_id_ is not None:
+            annotations.append([paragraph,
+                            ent.kb_id_,
+                            ent.text,
+                            ent._.dbpedia_raw_result['@similarityScore'],
+                            "DBpedia"])
 
 
 def extract_wikidata(entities, annotations, paragraph):
     for ent in entities:
         if ent._.url_wikidata is None or ent._.url_wikidata == '':
             continue
-        if ent._.nerd_score is not None and ent._.nerd_score >= 0.6:
-            #print("label", ent.label_)
+        if ent._.nerd_score is not None and ent._.nerd_score >= 0.3:
+
             annotations.append([paragraph,
                                 ent._.url_wikidata,
                                 ent.text,
@@ -167,7 +143,10 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_title = ""
 
                 if ANNOTATION_AUTO:
-                    translated_paragraph = split_and_translate(paragraph_text, "en")
+                    if "eng" in FILE.split("\\")[-1]:
+                        translated_paragraph = paragraph_text
+                    else:
+                        translated_paragraph = split_and_translate(paragraph_text, "en")
 
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                     extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
@@ -187,7 +166,11 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
             paragraph_text = strip_paragraph_text(p.text)
 
             if ANNOTATION_AUTO:
-                translated_paragraph = split_and_translate(paragraph_text, "en")
+
+                if "eng" in FILE.split("\\")[-1]:
+                    translated_paragraph = paragraph_text
+                else:
+                    translated_paragraph = split_and_translate(paragraph_text, "en")
 
                 wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                 extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
@@ -219,7 +202,10 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_id = 0 if "a" in parent_data[3] else 1
                     paragraph_text = strip_paragraph_text(p.text)
                     if ANNOTATION_AUTO:
-                        translated_paragraph = split_and_translate(paragraph_text, "en")
+                        if "eng" in FILE.split("\\")[-1]:
+                            translated_paragraph = paragraph_text
+                        else:
+                            translated_paragraph = split_and_translate(paragraph_text, "en")
 
                         wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                         extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
@@ -236,7 +222,10 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_text = strip_paragraph_text(p.text)
 
                     if ANNOTATION_AUTO:
-                        translated_paragraph = split_and_translate(paragraph_text, "en")
+                        if "eng" in FILE.split("\\")[-1]:
+                            translated_paragraph = paragraph_text
+                        else:
+                            translated_paragraph = split_and_translate(paragraph_text, "en")
 
                         wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                         extract_wikidata(wikidata_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
@@ -265,7 +254,7 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
         else:
             tag_div_id = tag_id
 
-        if tag_div.head:
+        if tag_div.find_all("head", recursive=False):
             tag_div_title = strip_text(tag_div.head.text)
         else:
             tag_div_title = tag_div["n"] if tag_div.has_attr("n") else tag_div_id
@@ -281,7 +270,7 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
                 continue
 
             if depth == 0:
-                link_data.append([parent_uri, "Oeuvre", tag_div_id, tag_div_title, f"{parent_uri}/{tag_div_id}"])
+                link_data.append([parent_uri, "Work", tag_div_id, tag_div_title, f"{parent_uri}/{tag_div_id}"])
 
             # extract quote if there are quotes
             if len(tag_div.find_all(["cit"], recursive=False)) > 1:
@@ -331,11 +320,11 @@ def extraction_data(FILE,CSV):
                                                                       encoding='UTF-8')
         pd.DataFrame(metadata, columns=metadata_labels).to_csv('./output/' + CSV + "_metadata.csv", index=False,
                                                      encoding='UTF-8')
-        #pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
+        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
 
 
 if __name__ == "__main__":
-    text = "Ἀλώπηξ καὶ πίθηξ ἐπὶ τὸ αὐτὸ ὡδοιπόρουν. Παρ- ερχόμενοι δὲ διὰ τινῶν μνημείων, ἔφη ὁ πίθηξ τῇ ἀλώ- πεκι, ὡς πάντες οἱ νεκροὶ οὗτοι ἀπελεύθεροι τῶν ἐμῶν γεννητόρων ὑπάρχουσιν. δὲ ἀλώπηξ λέγει τῷ πί- θηκι· „εὐκαίρως ἐψεύσω· οὐδεὶς γὰρ τῶν ἐνταῦθα τα- φέντων ἀπελέγξαι σε δύναται."
+    """text = "Ἀλώπηξ καὶ πίθηξ ἐπὶ τὸ αὐτὸ ὡδοιπόρουν. Παρ- ερχόμενοι δὲ διὰ τινῶν μνημείων, ἔφη ὁ πίθηξ τῇ ἀλώ- πεκι, ὡς πάντες οἱ νεκροὶ οὗτοι ἀπελεύθεροι τῶν ἐμῶν γεννητόρων ὑπάρχουσιν. δὲ ἀλώπηξ λέγει τῷ πί- θηκι· „εὐκαίρως ἐψεύσω· οὐδεὶς γὰρ τῶν ἐνταῦθα τα- φέντων ἀπελέγξαι σε δύναται."
     translated_paragraph = split_and_translate(text, "en")
     #print(translated_paragraph)
     annotation = []
@@ -348,7 +337,7 @@ if __name__ == "__main__":
     print(list(set(dbpedia_entities)))
     print('Entities', [(ent.text, ent.label_, ent.kb_id_) for ent in dbpedia_entities])
     #extract_dbpedia(dbpedia_entities, annotation, "")
-    exit()
+    exit()"""
     directory_path = './'
     xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
