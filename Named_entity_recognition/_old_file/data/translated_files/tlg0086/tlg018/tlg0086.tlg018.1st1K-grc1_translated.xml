@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>
+     De iuventute et senectute, De vita et morte
+    </title>
+    <author>
+     Aristotle
+    </author>
+    <editor>
+     Immanuel Bekker
+    </editor>
+    <funder>
+     Andrew W. Mellon Foundation
+    </funder>
+    <respStmt>
+     <persName xml:id="DDD">
+      Digital Divide Data
+     </persName>
+     <resp>
+      Keyboarding
+     </resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>
+     A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+					Foundation
+    </authority>
+    <publisher>
+     University of Leipzig
+    </publisher>
+    <pubPlace>
+     Germany
+    </pubPlace>
+    <idno type="filename">
+     tlg0086.tlg018.1st1K-grc1.xml
+    </idno>
+    <availability>
+     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+      Available under a
+						Creative Commons Attribution-ShareAlike 4.0 International License
+     </licence>
+    </availability>
+    <date>
+     2016
+    </date>
+   </publicationStmt>
+   <sourceDesc>
+    <biblStruct>
+     <monogr>
+      <title>
+       Aristotelis Opera
+      </title>
+      <author>
+       Aristotle
+      </author>
+      <editor>
+       Immanuel Bekker
+      </editor>
+      <imprint>
+       <publisher>
+        Oxford University Press
+       </publisher>
+       <pubPlace>
+        Oxford
+       </pubPlace>
+       <biblScope unit="vol">
+        3
+       </biblScope>
+       <biblScope from="322" to="329" unit="pp">
+        322-329
+       </biblScope>
+       <date>
+        1837
+       </date>
+      </imprint>
+     </monogr>
+     <ref target="https://catalog.hathitrust.org/Record/001222547">
+      HathiTrust
+     </ref>
+    </biblStruct>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>
+    The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+				Architecture.
+   </p>
+   <p lang="it">
+    Il testo seguente è codificato secondo gli standard EpiDoc e CTS/CITE
+				Architettura.
+   </p>
+   <p lang="en">
+    The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+				Architecture.
+   </p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="greek">
+     Greek
+    </language>
+   </langUsage>
+  </profileDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div n="urn:cts:greekLit:tlg0086.tlg018.1st1K-grc1" type="edition" xml:lang="grc">
+    <pb n="322"/>
+    <div n="1" subtype="chapter" type="textpart">
+     <head>
+      ΠΕΡΙ ΝΕΟΤΗΤΟΣ ΚΑΙ ΓΗΡΩΣ. ΠΕΡΙ ΖΩΗΣ ΚΑΙ ΘΑΝΑΤΟΥ.
+     </head>
+     <p>
+      Περὶ δὲ νεότητος καὶ γήρως καὶ περὶ ζωῆς καὶ θανάτου
+      <lb/>
+      λεκτέον νῦν· ἅμα δὲ καὶ περὶ
+						ἀναπνοῆς ἀναγκαῖον ἴσως τὰς
+      <lb/>
+      αἰτίας εἰπεῖν· ἐνίοις γὰρ τῶν ζῴων διὰ τοῦτο συμβαίνει
+						τὸ
+      <lb/>
+      ζῆν καὶ τὸ μὴ ζῆν. Ἐπεὶ δὲ περὶ ψυχῆς ἐν ἑτέροις διώρισται,
+      <lb/>
+      καὶ δῆλον ὅτι
+						οὐχ οἷόν τ’ εἶναι σῶμα τὴν οὐσίαν αὐτῆς,
+      <lb/>
+      ἀλλ’ ὅμως ὅτι γ’ ἔν τινι τοῦ σώματος
+						ὑπάρχει μορίῳ, φανερόν,
+      <lb/>
+      καὶ ἐν τούτῳ τινὶ τῶν ἐχόντων δύναμιν ἐν τοῖς μορίοις.
+      <lb/>
+      Τὰ μὲν οὖν ἄλλα τῆς ψυχῆς ἢ μόρια ἢ δυνάμεις, ὁποτέρως
+      <lb/>
+      ποτὲ δεῖ καλεῖν,
+						ἀφείσθω τὰ νῦν· ὅσα δὲ ζῷα λέγεται καὶ
+      <lb/>
+      ζῆν, ἐν μὲν τοῖς ἀμφοτέρων τούτων τετυχηκόσι
+						(λέγω δ’
+      <lb/>
+      ἀμφοτέρων τοῦ τε ζῷον εἶναι καὶ τοῦ ζῆν) ἀνάγκη ταὐτὸν
+      <lb/>
+      εἶναι καὶ ἓν
+						μόριον καθ’ ὅ τε ζῇ καὶ καθ’ ὃ προσαγορεύομεν
+      <lb/>
+      αὐτὸ ζῷον. Τὸ μὲν γὰρ ζῷον ᾗ ζῷον,
+						ἀδύνατον μὴ ζῆν·
+      <lb/>
+      ᾗ δὲ ζῇ, ταύτῃ ζῷον ὑπάρχειν οὐκ ἀναγκαῖον· τὰ γὰρ φυτὰ
+      <lb/>
+      ζῇ
+						μέν, οὐκ ἔχει δ’ αἴσθησιν, τῷ δ’ αἰσθάνεσθαι τὸ ζῷον
+      <lb/>
+      πρὸς τὸ μὴ ζῷον διορίζομεν.
+						Ἀριθμῷ μὲν οὖν ἀναγκαῖον
+      <lb/>
+      ἓν εἶναι καὶ τὸ αὐτὸ τοῦτο τὸ μόριον, τῷ δ’ εἶναι πλείω
+      <lb/>
+      καὶ ἕτερα· οὐ γὰρ ταὐτὸ τὸ ζῴῳ τε εἶναι καὶ τὸ ζῆν.
+      <lb/>
+      Ἐπεὶ οὖν τῶν ἰδίων
+						αἰσθητηρίων ἕν τι κοινόν ἐστιν αἰσθητήριον,
+      <lb/>
+      εἰς ὃ τὰς κατ’ ἐνέργειαν αἰσθήσεις
+						ἀναγκαῖον ἀπαντᾶν,
+      <lb/>
+      τοῦτο δ’ ἂν εἴη μέσον τοῦ πρόσθεν καλουμένου καὶ
+      <lb/>
+      ὄπισθεν
+						(ἔμπροσθεν μὲν γὰρ λέγεται ἐφ’ ὅ ἐστιν ἡμῖν ἡ
+      <lb/>
+      αἴσθησις, ὄπισθεν δὲ τὸ
+						ἀντικείμενον), ἔτι δὲ διῃρημένου τοῦ
+      <lb/>
+      σώματος τῶν μὲν ζώντων πάντων τῷ τ’ ἄνω καὶ
+						κάτω
+      <lb/>
+      (πάντα γὰρ ἔχει τὸ ἄνω καὶ τὸ κάτω, ὥστε καὶ τὰ φυτά),
+      <lb/>
+      δῆλον ὅτι τὴν
+						θρεπτικὴν ἀρχὴν ἔχοι ἂν μέσῳ τούτων·
+      <pb n="323"/>
+      καθ’ ὃ μὲν γὰρ εἰσέρχεται μόριον ἡ
+						τροφή, ἄνω καλοῦμεν,
+      <lb/>
+      πρὸς αὐτὸ βλέποντες ἀλλ’ οὐ πρὸς τὸ περιέχον ὅλον, κάτω
+      <lb/>
+      δὲ καθ’ ὃ τὸ περίττωμα ἀφίησι τὸ πρῶτον. Ἔχει δ’ ἐναντίως
+      <lb/>
+      τοῖς φυτοῖς τοῦτο
+						καὶ τοῖς ζῴοις· τῷ μὲν γὰρ ἀνθρώπῳ
+      <lb/>
+      διὰ τὴν ὀρθότητα μάλιστα ὑπάρχει τοῦτο τῶν ζῴων,
+						τὸ
+      <lb/>
+      ἔχειν τὸ ἄνω μόριον πρὸς τὸ τοῦ παντὸς ἄνω, τοῖς δ’ ἄλλοις
+      <lb/>
+      μεταξύ· τοῖς δὲ
+						φυτοῖς ἀκινήτοις οὖσι καὶ λαμβάνουσιν ἐκ
+      <lb/>
+      τῆς γῆς τὴν τροφὴν ἀναγκαῖον ἀεὶ κάτω
+						τοῦτ’ ἔχειν τὸ
+      <lb/>
+      μόριον. Ἀνάλογον γάρ εἰσιν αἱ ῥίζαι τοῖς φυτοῖς καὶ τὸ
+      <lb/>
+      καλούμενον στόμα τοῖς ζῴοις, δι’ οὗ τὴν τροφὴν τὰ μὲν ἐκ
+      <lb/>
+      τῆς γῆς λαμβάνει, τὰ
+						δὲ δι’ αὑτῶν.
+     </p>
+     <p lang="it">
+      E riguardo alla giovinezza e alla vecchiaia, e alla vita e alla morte, parla ora;
+						la respirazione è necessaria, forse lo diranno le ragioni;
+						vivere e non vivere. E quando si tratta dell'anima degli altri, è divisa, e lo dicono
+						nessuno è un corpo nella sua essenza, se non perché è una parte del corpo
+						c'è una particella, manifesta, e in questa c'è qualcuno di coloro che avevano potere nelle particelle.
+						Le altre cose dell'anima, o molecole o potenze, altrimenti quando chiamano,
+						Lascio il presente; ma ciò che è vivo si chiama vita, mentre ad entrambi questi duecento
+						(Dico che l'uno e l'altro sono vita e vita) anche questo bisogno è uno
+						deficiente come vive e come promettiamo questa vita. Perché vivo come vivo,
+						non vivere ciò che è impossibile; se non vive, questa vita non esiste perché le piante vivono;
+						Per me non ha senso, quando la vita viene percepita la attribuiamo al non vivente.
+						Numero uno, quindi anche questa molecola è necessariamente una, t ῷ non è più vicino
+						e altri; perché questa vita non è vita. Quindi, di loro
+						dei sensi, ciò che è comune ai sensi, in cui i sensi sono energeticamente
+						devono rispondere se viene chiamato il centro del davanti e il dietro
+						(perché si dice davanti a ciò che per noi è il senso, e dietro
+						oggetto), ma quando il corpo di tutti gli esseri viventi è diviso in quanto sopra e
+						sotto (perché ha sempre un superiore e un inferiore, proprio come le piante), dicono che il
+						Hai un principio nutriente in mezzo a questi;
+						chiamiamo cibo, in alto, occupandoci di esso ma non del tutto che contiene, in basso
+						ma come gli escrementi lasciano il primo. Ce l'ha contro le piante
+						e agli animali; poiché per l'uomo, per amore della giustizia, infatti c'è questo degli animali,
+						Hanno la parte superiore alla parte superiore, alle altre quattro in mezzo;
+						alle piante immobili, quindi, ricevono dalla terra il nutrimento necessario ὶ giù
+						questo è ciò che ha la molecola. Analogo come lo sono le radici per le piante e il
+						chiamata la bocca dei viventi, attraverso la quale si riceve il cibo dalla terra, la
+						non a causa loro.
+     </p>
+     <p lang="en">
+      And concerning youth and old age, and concerning life and death, speak now;
+						breathing is necessary, perhaps the reasons will tell;
+						to live and not to live. And when it comes to the soul in others, it is divided, and they say that
+						no one is a body its essence, but because it is a part of the body
+						there is a particle, manifest, and in this some of those who had power in the particles.
+						The other things of the soul, or molecules or powers, otherwise when they call,
+						I leave the present; but what is alive is called life, while to both of these two hundred
+						(I say that both of them are life and life) this need is also one
+						moron as he lives and as we promise this life. Because I live as I live,
+						do not live what is impossible; if he does not live, this life does not exist; for plants live
+						Me, it has no sense, when life is sensed we appoint it to the non-living.
+						Number one, so this molecule is also necessarily one, t ῷ is not nearer
+						and others; for this life is not life. So, of their own
+						of the senses, what is common to the senses, in which the senses are energetically
+						they must answer, if this is the middle of the front called and the back
+						(because it is said in front of what the sense is to us, and behind
+						object), but when the body of all living things is divided into the above and
+						below (because it always has an upper and a lower, just like plants), they say that the
+						You have a nourishing principle in the midst of these;
+						food, above we call, seeing to it but not to the containing whole, below
+						but as the excrement leave the first. He has this against the plants
+						and to the animals; for to man, for the sake of righteousness, indeed there is this of the animals,
+						They have the upper part to the upper part, to the four others in between;
+						to the immovable plants, therefore, they receive the necessary food from the earth ὶ down
+						that's what the molecule has. Analogous as the roots are to the plants and the
+						called the mouth of the living, through which food is received from the earth, the
+						not because of them.
+     </p>
+    </div>
+    <div n="2" subtype="chapter" type="textpart">
+     <p>
+      Τριῶν δὲ μερῶν ὄντων εἰς ἃ διαιρεῖται πάντα τὰ τέλεια
+      <lb/>
+      τῶν ζῴων, ἑνὸς μὲν ᾗ δέχεται
+						τὴν τροφήν, ἑνὸς δ’ ᾗ τὸ
+      <lb/>
+      περίττωμα προΐεται, τρίτου δὲ τοῦ μέσου τούτων, τοῦτο ἐν
+      <lb/>
+      μὲν τοῖς μεγίστοις τῶν ζῴων καλεῖται στῆθος, ἐν δὲ τοῖς
+      <lb/>
+      ἄλλοις τὸ ἀνάλογον,
+						διήρθρωται δὲ μᾶλλον ἑτέροις ἑτέρων.
+      <lb/>
+      Ὅσα δ’ αὐτῶν ἐστὶ πορευτικά, πρόσκειται καὶ
+						μόρια τὰ
+      <lb/>
+      πρὸς ταύτην τὴν ὑπηρεσίαν, οἷς τὸ πᾶν οἴσουσι κύτος, σκέλη
+      <lb/>
+      τε καὶ
+						πόδες καὶ τὰ τούτοις ἔχοντα τὴν αὐτὴν δύναμιν. Ἀλλ’
+      <lb/>
+      ἥ γε τῆς θρεπτικῆς ἀρχὴ ψυχῆς
+						ἐν τῷ μέσῳ τῶν τριῶν
+      <lb/>
+      μορίων καὶ κατὰ τὴν αἴσθησιν οὖσα φαίνεται καὶ κατὰ τὸν
+      <lb/>
+      λόγον· πολλὰ γὰρ τῶν ζῴων ἀφαιρουμένου ἑκατέρου
+      <lb/>
+      τῶν μορίων, τῆς τε καλουμένης
+						κεφαλῆς καὶ τοῦ δεκτικοῦ τῆς
+      <lb/>
+      τροφῆς, ζῇ μεθ’ οὗπερ ἂν ᾖ τὸ μέσον. Δῆλον δ’ ἐπὶ τῶν
+      <lb/>
+      ἐντόμων, οἷον σφηκῶν τε καὶ μελιττῶν, τοῦτο συμβαῖνον·
+      <lb/>
+      καὶ τῶν μὴ ἐντόμων δὲ
+						πολλὰ διαιρούμενα δύναται ζῆν διὰ
+      <lb/>
+      τὸ θρεπτικόν. Τὸ δὲ τοιοῦτον μόριον ἐνεργείᾳ μὲν
+						ἔχει ἕν,
+      <pb n="324"/>
+      δυνάμει δὲ πλείω· τὸν αὐτὸν γὰρ συνέστηκε τοῖς φυτοῖς τρόπον·
+      <lb/>
+      καὶ γὰρ τὰ φυτὰ διαιρούμενα ζῇ χωρίς, καὶ γίνεται
+      <lb/>
+      πολλὰ ἀπὸ μιᾶς ἀρχῆς δένδρα.
+						Δι’ ἢν δ’ αἰτίαν τὰ μὲν οὐ
+      <lb/>
+      δύναται διαιρούμενα ζῆν, τὰ δ’ ἀποφυτεύεται τῶν φυτῶν,
+      <lb/>
+      ἕτερος ἔσται λόγος. Ἀλλ’ ὁμοίως ἔχει κατά γε τοῦτο
+      <lb/>
+      τά τε φυτὰ καὶ τὸ τῶν
+						ἐντόμων γένος. Ἀνάγκη δὲ καὶ
+      <lb/>
+      τὴν θρεπτικὴν ψυχὴν ἐνεργείᾳ μὲν ἐν τοῖς ἔχουσιν εἶναι
+						μίαν,
+      <lb/>
+      δυνάμει δὲ πλείους, Ὁμοίως δὲ καὶ τὴν αἰσθητικὴν ἀρχήν·
+      <lb/>
+      φαίνεται γὰρ
+						ἔχοντα αἴσθησιν τὰ διαιρούμενα αὐτῶν. Ἀλλὰ
+      <lb/>
+      πρὸς τὸ σώζεσθαι τὴν φύσιν, τὰ μὲν φυτὰ
+						δύναται, ταῦτα δ’
+      <lb/>
+      οὐ δύναται διὰ τὸ μὴ ἔχειν ὄργανα πρὸς σωτηρίαν, ἐνδεᾶ
+      <lb/>
+      τ’
+						εἶναι τὰ μὲν τοῦ ληψομένου τὰ δὲ τοῦ δεξομένου τὴν
+      <lb/>
+      τροφήν, τὰ δ’ ἄλλων τε καὶ
+						τούτων ἀμφοτέρων. Ἐοίκασι
+      <lb/>
+      γὰρ τὰ τοιαῦτα τῶν ζῴων πολλοῖς ζῴοις συμπεφυκόσιν· τὰ
+      <lb/>
+      δ’ ἄριστα συνεστηκότα τοῦτ’ οὐ πάσχει τῶν ζῴων διὰ τὸ
+      <lb/>
+      εἶναι τὴν φύσιν αὐτῶν ὡς
+						ἐνδέχεται μάλιστα μίαν. Διὸ καὶ
+      <lb/>
+      μικρὰν αἴσθησιν ἔνια ποιεῖ διαιρούμενα τῶν μορίων,
+						ὅτι
+      <lb/>
+      ἔχει τι ψυχικὸν πάθος· χωριζομένων γὰρ τῶν σπλάγχνων
+      <lb/>
+      ποιεῖται κίνησιν,
+						οἷον καὶ αἱ χελῶναι τῆς καρδίας
+      <lb/>
+      ἀφῃρημένης.
+     </p>
+     <p lang="it">
+      Ma delle tre parti dell'essere in cui sono sempre divise le perfezioni della vita, una riceve
+						il cibo, un quarto da cui hanno origine gli escrementi, e un terzo dalla metà di questi, questo in
+						ma per il più grande degli animali è chiamato petto, mentre per altri è lo stesso,
+						ma è piuttosto strutturato da altri partiti. Per quanto riguarda loro due, anche loro sono vicini
+						particelle per questo servizio, che sono tutte scafo, gambe e
+						piedi e questi hanno la stessa potenza. Ma è lui il principio nutritivo dell'anima
+						in mezzo alle tre molecole e secondo il senso, quindi si vede anche secondo il
+						ragione; per molte delle vite, meno una delle molecole, del cosiddetto
+						del capo e di chi riceve il cibo, vive con ciò che ne è il mezzo. Dîlon 4 su di loro
+						con gli insetti, come le vespe e le api, ciò accade e con i non insetti;
+						molte cose divisibili possono vivere di nutrimento. Ma una tale molecola ha energia
+						Ne ha uno, ma navigo con la forza, perché è stato lui a raccomandarlo loro alle piante
+						poiché le piante divise vivono senza, e molti alberi sono fatti da un unico principio.
+						Infatti, se non possono vivere divisi, non vengono defogliati dalle piante,
+						c'è un'altra ragione. Ma ha anche le piante e gli alberi
+						genere di insetti. Ma il bisogno e l'energia che nutre l'anima in coloro che ce l'hanno lo sono
+						uno, ma più potente, e allo stesso modo il principio sensuale;
+						avere il senso delle loro divisioni. Ma per salvare la natura, le piante
+						è capace, queste cose non sono possibili perché non hanno mezzi di salvezza, lasciamo che
+						è quello di colui che ha ricevuto il cibo e quello di colui che ha accettato il cibo, l'altro
+						di entrambi. Poiché le cose dei viventi siano molti esseri viventi insieme;
+						È perfettamente coerente che non soffra degli animali perché è la loro natura
+						può anche ospitarne uno. Perché anche un piccolo senso di unità divide le molecole,
+						perché ha qualche passione mentale quelli che sono separati c quando le viscere vengono spostate,
+						chi e le tartarughe del cuore astratto.
+     </p>
+     <p lang="en">
+      But of the three parts of beings into which the perfections of life are always divided, one receives
+						the food, a fourth from which the excrement originates, and a third from the middle of these, this in
+						but to the greatest of animals it is called a breast, while to others it is the same,
+						but it is rather structured by other parties. As far as the two of them are concerned, they are close too
+						particles for this service, all of which are hull, legs and
+						feet and these having the same power. But he is the nourishing principle of the soul
+						in the middle of the three molecules and according to the sense, therefore it is also seen according to the
+						reason; for many of the lives, minus one of the molecules, of the so-called
+						of the head and of the recipient of the food, lives with what is the means. Dîlon 4 on them
+						with insects, such as wasps and honeybees, this happens; and with non-insects
+						many divisible things can live through nourishment. But such a molecule has energy
+						He has one, but I sail by strength, for he recommended him to them to the plants
+						for the plants that are divided live without, and many trees are made from one beginning.
+						For if they are not able to live in division, they are not defoliated from the plants,
+						there is another reason. But it also has the plants and the trees
+						insect genus. But the need and the soul-nourishing energy in those who have it is
+						one, but more in power, and likewise the sensual principle; for it seems
+						having sense of their divisions. But to save the nature, the plants
+						is able, these things are not possible because they have no means of salvation, let the
+						it is the one of the one who received the food and the one of the one who accepted the food, the other
+						of both of them. For let the things of the living be many living things together;
+						It is perfectly consistent that it does not suffer from animals because it is their nature as
+						it can even accommodate one. For even a small sense of unity divides the molecules,
+						because he has some mental passion; those who are separated c when the bowels are moved,
+						who and the turtles of the abstract heart.
+     </p>
+    </div>
+    <div n="3" subtype="chapter" type="textpart">
+     <p>
+      Ἔτι δὲ ἐπί τε τῶν φυτῶν δῆλον καὶ ἐπὶ τῶν ζῴων, τῶν
+      <lb/>
+      μὲν φυτῶν τήν τ’ ἐκ τῶν
+						σπερμάτων γένεσιν ἐπισκοποῦσι
+      <lb/>
+      καὶ τὰς ἐμφυτείας τε καὶ τὰς ἀποφυτείας. Ἥ τε γὰρ
+      <lb/>
+      τῶν σπερμάτων γένεσις συμβαίνει πᾶσιν ἐκ τοῦ μέσου·
+      <lb/>
+      διθύρων γὰρ ὄντων πάντων,
+						ᾗ συμπέφυκεν ἔχεται, καὶ τὸ
+      <lb/>
+      μέσον ἐστὶν ἑκατέρου τῶν μορίων· ἐντεῦθεν γὰρ ὅ τε
+						καυλὸς
+      <lb/>
+      ἐκφύεται καὶ ἡ ῥίζα τῶν φυομένων, ἡ δ’ ἀρχὴ τὸ μέσον
+      <pb n="325"/>
+      αὐτῶν
+						ἐστίν. Ἔν τε ταῖς ἐμφυτείαις καὶ ταῖς ἀποφυτείαις
+      <lb/>
+      μάλιστα τοῦτο συμβαίνει περὶ τοὺς
+						ὄζους· ἔστι
+      <lb/>
+      γὰρ ἀρχή τις ὁ ὄζος τοῦ κλάδου, ἅμα δὲ καὶ μέσον, ὥστε ἢ
+      <lb/>
+      τοῦτο
+						ἀφαιροῦσιν ἢ εἰς τοῦτο ἐμβάλλουσιν, ἵνα ἢ ὁ κλάδος
+      <lb/>
+      ἢ αἱ ῥίζαι ἐκ τούτων γίνωνται,
+						ὡς οὔσης τῆς ἀρχῆς ἐκ
+      <lb/>
+      τοῦ μέσου καυλοῦ καὶ ῥίζης. Καὶ τῶν ζῴων τῶν ἐναίμων ἡ
+      <lb/>
+      καρδία γίνεται πρῶτον. Τοῦτο δὲ δῆλον ἐξ ὧν ἐν τοῖς ἐνδεχομένοις
+      <lb/>
+      ἔτι
+						γιγνομένοις ἰδεῖν τεθεωρήκαμεν. Ὥστε καὶ
+      <lb/>
+      ἐν τοῖς ἀναίμοις ἀναγκαῖον τὸ ἀνάλογον τῇ
+						καρδίᾳ γίνεσθαι
+      <lb/>
+      πρῶτον. Ἡ δὲ καρδία ὅτι ἐστὶν ἀρχὴ τῶν φλεβῶν,
+      <lb/>
+      ἐν τοῖς περὶ τὰ
+						μέρη τῶν ζῴων εἴρηται πρότερον· καὶ ὅτι τὸ
+      <lb/>
+      αἷμα τοῖς ἐναίμοις ἐστὶ τελευταία τροφή,
+						ἐξ οὗ γίνεται τὰ
+      <lb/>
+      μόρια. Φανερὸν τοίνυν ὅτι μίαν μέν τινα ἐργασίαν ἡ τοῦ
+      <lb/>
+      στόματος λειτουργεῖ δύναμις, ἑτέραν δ’ ἡ τῆς κοιλίας περὶ
+      <lb/>
+      τὴν τροφήν. Ἡ δὲ
+						καρδία κυριωτάτη, καὶ τὸ τέλος ἐπιτίθησιν.
+      <lb/>
+      Ὥστ’ ἀνάγκη καὶ τῆς αἰσθητικῆς καὶ τῆς
+						θρεπτικῆς
+      <lb/>
+      ψυχῆς ἐν τῇ καρδίᾳ τὴν ἀρχὴν εἶναι τοῖς ἐναίμοις· τὰ γὰρ
+      <lb/>
+      τῶν ἄλλων
+						μορίων ἔργα περὶ τὴν τροφὴν τοῦ ταύτης ἔργου
+      <lb/>
+      χάριν ἐστί· δεῖ γὰρ τὸ κύριον πρὸς τὸ
+						οὗ ἕνεκα διατελεῖν,
+      <lb/>
+      ἀλλ’ οὐκ ἐν τοῖς τούτου ἕνεκα, οἷον ἰατρὸς πρὸς τὴν ὑγίειαν.
+      <lb/>
+      Ἀλλὰ μὴν τό γε κύριον τῶν αἰσθήσεων ἐν ταύτῃ
+      <lb/>
+      τοῖς ἐναίμοις πᾶσιν· ἐν τούτῳ γὰρ
+						ἀναγκαῖον εἶναι τὸ
+      <lb/>
+      πάντων τῶν αἰσθητηρίων κοινὸν αἰσθητήριον. Δύο δὲ φανερῶς
+      <lb/>
+      ἐνταῦθα συντεινούσας ὁρῶμεν, τήν τε γεῦσιν καὶ τὴν
+      <lb/>
+      ἁφήν, ὥστε καὶ τὰς ἄλλας
+						ἀναγκαῖον· ἐν τούτῳ μὲν γὰρ
+      <pb n="326"/>
+      τοῖς ἄλλοις αἰσθητηρίοις ἐνδέχεται ποιεῖσθαι
+						τὴν κίνησιν,
+      <lb/>
+      ταῦτα δ’ οὐδὲν συντείνει πρὸς τὸν ἄνω τόπον. Χωρὶς δὲ
+      <lb/>
+      τούτων, εἰ
+						τὸ ζῆν ἐν τούτῳ τῷ μορίῳ πᾶσίν ἐστι, δῆλον ὅτι
+      <lb/>
+      καὶ τὴν αἰσθητικὴν ἀρχὴν ἀναγκαῖον·
+						ᾗ μὲν γὰρ ζῷον, ταύτῃ
+      <lb/>
+      καὶ ζῆν φαμέν, ᾗ δ’ αἰσθητικόν, ταύτῃ τὸ σῶμα ζῷον εἶναι
+      <lb/>
+      λέγομεν. Διὰ τί δ’ αἱ μὲν τῶν αἰσθήσεων φανερῶς συντείνουσι
+      <lb/>
+      πρὸς τὴν καρδίαν,
+						αἱ δ’ εἰσὶν ἐν τῇ κεφαλῇ (διὸ καὶ
+      <lb/>
+      δοκεῖ τισὶν αἰσθάνεσθαι τὰ ζῷα διὰ τὸν
+						ἐγκέφαλον), τὸ
+      <lb/>
+      αἴτιον τούτων ἐν ἑτέροις εἴρηται χωρίς. Κατὰ μὲν οὖν τὰ
+      <lb/>
+      φαινόμενα δῆλον ἐκ τῶν εἰρημένων ὅτι ἐν τούτῳ τε καὶ ἐν
+      <lb/>
+      τῷ μέσῳ τοῦ σώματος
+						τῶν τριῶν μορίων ἥ τε τῆς αἰσθητικῆς
+      <lb/>
+      ἀρχὴ ψυχῆς ἐστὶ καὶ ἡ τῆς αὐξητικῆς καὶ τῆς
+      <lb/>
+      θρεπτικῆς.
+     </p>
+     <p lang="it">
+      Ma che dire delle piante e degli animali, delle non piante?
+						i semi nascono dall'episcopato e dagli impianti e dai reimpianti. Perché no?
+						la genesi dei semi avviene sempre dal centro, poiché delle due parti di tutti gli esseri,
+						ciò che è contiguo è, e il centro è delle quattro molecole;
+						uno stelo cresce anche sopra la radice delle piante, il secondo principio è al centro di esse
+						È Sia negli impianti che negli espianti, infatti, ciò avviene con il
+						poiché la radice del ramo è l'inizio, ma anche la parte centrale, come questa
+						toglietelo o investitelo, in modo che da questi si faccia o il ramo o le radici,
+						così come l'inizio dalla metà del fusto e del rizoma. E della vita delle anime
+						il cuore è fatto prima. E questo lo fanno da qualche parte nelle contingenze
+						siamo stati visti e visti. C'è anche nelle anime una necessità che le corrisponde
+						il cuore viene prima. E il cuore, perché è l'inizio delle vene, in quelle circa le parti viventi sono menzionate per prime e poiché il sangue è l'ultimo cibo del sangue,
+						da dove vengono prodotte le molecole. È ovvio che lavora da un po'
+						della bocca funziona come una forza, un'altra è quella dello stomaco per il cibo. IL
+						il cuore del mio signore e l'attacco finale. Ha bisogno sia dell'estetica che del
+						l'anima nutriente nel cuore è prima nel sangue; per le cose degli altri
+						lavora per il cibo di quest'opera per amore della grazia; perché vede il maestro
+						dove ce n'è uno, ma non tra loro, che è medico della salute.
+						Ma non renderlo padrone dei sensi in questo a tutte le anime;
+						Necessariamente tutti i sensi hanno un senso comune. Ma due a quanto pare
+						In questo modo hai accettato, si vede, il gusto e la grazia, così come gli altri
+						necessario; in questo, ma negli altri sensi, è possibile scrivere
+						il movimento, questo non si estende al luogo più alto. Ma senza questi , eh
+						la vita in questa molecola è tutto ciò che c'è, perché è necessario anche il principio estetico;
+						Perché ciò che è vita, questa è vita, e ciò che è sensuale, questo corpo è vita
+						noi diciamo Perché i sensi sembrano raggiungere il cuore,
+						i quattro sono nella testa (con la quale gli animali sentono il
+						cervello), si dice che negli altri la causa di ciò sia esterna. In altre parole,
+						I fenomeni sono tra i separati perché in questo e in mezzo al corpo
+						delle tre molecole, il principio sensoriale dell'anima è anche quello dell'aumento e
+						nutrizionale.
+     </p>
+     <p lang="en">
+      But what about the plants and the animals, the non-plants
+						seeds are born by episcopacy and the implantations and the replantings. Why not?
+						the genesis of the seeds always happens from the middle, for of the two parts of all beings,
+						that which is contiguous is, and the middle is of the four molecules;
+						a stem also grows up the root of the plants, the second principle is the middle of them
+						is In both the implantations and the explantations, in fact, this happens with the
+						for the root of the branch is the beginning, but also the middle, such as this
+						remove or invest in it, so that either the branch or the roots are made from these,
+						as well as the beginning from the middle of the stem and rhizome. And of the lives of the souls
+						heart is done first. And this they do from where in the contingencies
+						we were seen and seen. There is also in the souls a necessity corresponding to her
+						heart comes first. And the heart, because it is the beginning of the veins, in those about the parts of the living are mentioned first; and because blood is the last food for the blood,
+						from where the molecules are made. It is obvious that she has been working for a while
+						of the mouth works as a force, another is that of the stomach for food. The
+						my lord's heart, and the end attack. In need of both the aesthetic and the
+						nourishing soul in the heart is first in the blood; for the things of others
+						works for the food of this work for the sake of grace; for he sees the master
+						where there is one, but not among them is one, who is a physician to health.
+						But do not make it master of the senses in this to all the souls; for in this
+						Necessarily, all the senses have a common sense. But two apparently
+						In this way you agreed, we see, the taste and the grace, as well as the others
+						necessary; in this, but in the other senses, it is possible to write
+						the movement, this does not extend to the higher place. But without these , eh
+						the life in this molecule is all there is, because the aesthetic principle is also necessary;
+						For what is life, this is life, and what is sensual, this body is life
+						we say Why do the senses seem to reach the heart,
+						the four are in the head (by which the animals feel the
+						brain), the cause of these in others is said to be without. In other words,
+						Phenomena are among the separated because in this and in the middle of the body
+						of the three molecules, the sensuous principle of the soul is also that of the increasing and
+						nutritional.
+     </p>
+    </div>
+    <div n="4" subtype="chapter" type="textpart">
+     <p>
+      Κατὰ δὲ τὸν λόγον, ὅτι τὴν φύσιν ὁρῶμεν ἐν πᾶσιν ἐκ
+      <lb/>
+      τῶν δυνατῶν ποιοῦσαν τὸ
+						κάλλιστον. Ἐν τῷ μέσῳ δὲ τῆς
+      <lb/>
+      οὐσίας τῆς ἀρχῆς οὔσης ἑκατέρας μάλιστα μὲν ἀποτελεῖ
+      <lb/>
+      τῶν μορίων ἑκάτερον τὸ αὑτοῦ ἔργον, τό τε κατεργαζόμενον
+      <lb/>
+      τὴν ἐσχάτην τροφὴν
+						καὶ τὸ δεκτικόν· πρὸς ἑκατέρῳ γὰρ
+      <lb/>
+      αὐτῶν οὕτως ἔσται, καὶ ἔστιν ἡ τοῦ τοιούτου μέση
+						χώρα
+      <lb/>
+      ἄρχοντος χώρα. Ἔτι τὸ χρώμενον καὶ ᾧ χρῆται, δεῖ
+      <lb/>
+      διαφέρειν. Ὥσπερ δὲ τὴν
+						δύναμιν, οὕτως ἂν ἐνδέχοιτο
+      <lb/>
+      καὶ τὸν τρόπον, ὥσπερ οἵ τ’ αὐλοὶ καὶ τὸ κινοῦν τοὺς
+      <lb/>
+      αὐλούς, ἡ χείρ. Εἴπερ οὖν τὸ ζῷον ὥρισται τῷ τὴν αἰσθητικὴν
+      <lb/>
+      ἔχειν ψυχήν, τοῖς
+						μὲν ἐναίμοις ἀναγκαῖον ἐν τῇ
+      <lb/>
+      καρδίᾳ ταύτην ἔχειν τὴν ἀρχήν, τοῖς δ’ ἀναίμοις ἐν τῷ
+						ἀνάλογον
+      <lb/>
+      μορίῳ. Πάντα δὲ τὰ μόρια καὶ πᾶν τὸ σῶμα τῶν
+      <lb/>
+      ζῴων ἔχει τινὰ σύμφυτον
+						θερμότητα φυσικήν· διὸ ζῶντα
+      <lb/>
+      μὲν φαίνεται θερμά, τελευτῶντα δὲ καὶ στερισκόμενα τοῦ
+      <pb n="327"/>
+      ζῆν τοὐναντίον. Ἀναγκαῖον δὴ ταύτης τὴν ἀρχὴν τῆς
+      <lb/>
+      θερμότητος ἐν τῇ
+						καρδίᾳ τοῖς ἐναίμοις εἶναι, τοῖς δ’ ἀναίμοις
+      <lb/>
+      ἐν τῷ ἀνάλογον· ἐργάζεται γὰρ καὶ
+						πέττει τῷ φυσικῷ
+      <lb/>
+      θερμῷ τὴν τροφὴν πάντα, μάλιστα δὲ τὸ κυριώτατον. Διὸ
+      <lb/>
+      τῶν μὲν
+						ἄλλων μορίων ψυχομένων ὑπομένει τὸ ζῆν, τοῦ δ’ ἐν
+      <lb/>
+      ταύτῃ φθείρεται πάμπαν, διὰ τὸ
+						τὴν ἀρχὴν ἐντεῦθεν τῆς
+      <lb/>
+      θερμότητος ἠρτῆσθαι πᾶσι, καὶ τῆς ψυχῆς ὥσπερ ἐμπεπυρευμένης
+      <lb/>
+      ἐν τοῖς μορίοις τούτοις, τῶν μὲν ἀναίμων ἐν
+      <lb/>
+      τῷ ἀνάλογον, ἐν δὲ τῇ καρδίᾳ τῶν
+						ἐναίμων. Ἀνάγκη τοίνυν
+      <lb/>
+      ἅμα τό τε ζῆν ὑπάρχειν καὶ τὴν τοῦ θερμοῦ τούτου
+      <lb/>
+      σωτηρίαν, καὶ τὸν καλούμενον θάνατον εἶναι τὴν τούτου
+      <lb/>
+      φθοράν.
+     </p>
+     <p lang="it">
+      Ma secondo la parola, perché intendiamo la natura in tutte le cose possibili che
+						preferibilmente. Ma in mezzo all'essenza dell'inizio, anche uno in realtà sono io
+						delle molecole, ciascuna svolgendo il proprio lavoro, trasformando il cibo finale
+						e il ricettivo; poiché per ciascuno di loro così sarà, e il mezzo di tale è
+						paese del paese sovrano. Ciò che è colorato e dove viene utilizzato è diverso. È sera
+						potere, anche se fosse capace di farlo, come se i tribunali e il
+						avlous, la mano. Perché quindi la vita è dedicata a ciò che è sensuale e ha un'anima, a quelli
+						con le anime della necessità in questo cuore hanno il principio, a quelli con le anime nel
+						in proporzione. Ma sempre le molecole e ogni corpo degli animali hanno un simbionte
+						calore naturale; dal vivo appare caldo, ma infine e aggrappato al
+							 vivere contro di loro. Necessariamente non identificare in lei il principio del calore
+						cuore alle anime è, alle anime allo stesso modo; perchè è
+						getta al calore naturale il cibo tutto, anzi il massimo. A causa mia
+						di altre molecole dell'anima, la vita perdura, e in questo si consuma sempre, perché
+						l'inizio del calore ovunque, e dell'anima come infiammata
+						in queste molecole, delle anime allo stesso modo, ma nel cuore di
+						di sangue Sentono il bisogno di questo calore se vivono
+						salvezza, e la cosiddetta morte è la sua decadenza.
+     </p>
+     <p lang="en">
+      But according to the word, because we mean nature in all of the possible things that
+						preferably. But in the middle of the essence of the beginning, even one is actually me
+						of the molecules, each doing its work, processing the final food
+						and the receptive; for to each of them so shall it be, and the middle of such is
+						country of ruler country. That what is colored and where it is used is different. It's evening
+						power, even if he were capable of the way, as if the courts and the
+						avlous, the hand. For therefore life is dedicated to the sensual that has a soul, to those
+						with souls of necessity in this heart they have the principle, to those with souls in the
+						in proportion. But always the molecules and every body of animals has a symbiont
+						natural heat; by the living it appears warm, but lastly and clinging to the
+							 live against them. Necessarily, do not identify the principle of warmth in her
+						heart to the souls it is, to the souls in the same way; ergaz because it is
+						it throws to the natural heat the food everything, indeed the most. Because of me
+						of other soulful molecules, life endures, and in this it always wears out, because
+						the beginning of the warmth everywhere, and of the soul as if inflamed
+						in these molecules, of souls in the same way, but in the heart of
+						of blood They feel a need for this heat if they live
+						salvation, and the so-called death is its decay.
+     </p>
+    </div>
+    <div n="5" subtype="chapter" type="textpart">
+     <p>
+      Ἀλλὰ μὴν πυρός γε δύο ὁρῶμεν φθοράς, μάρανσίν τε καὶ
+      <lb/>
+      σβέσιν. Καλοῦμεν δὲ τὴν μὲν
+						ὑφ’ αὑτοῦ μάρανσιν, τὴν
+      <lb/>
+      δ’ ὑπὸ τῶν ἐναντίων σβέσιν, τὴν μὲν γήρᾳ, τὴν δὲ βίαιον.
+      <lb/>
+      Συμβαίνει δ’ ἀμφοτέρας διὰ ταὐτὸ γίνεσθαι τὰς φθοράς·
+      <lb/>
+      ὑπολειπούσης γὰρ τῆς
+						τροφῆς, οὐ δυναμένου λαμβάνειν τοῦ
+      <lb/>
+      θερμοῦ τὴν τροφήν, φθορὰ γίνεται τοῦ πυρός. Τὸ
+						μὲν γὰρ
+      <lb/>
+      ἐναντίον παῦον τὴν πέψιν κωλύει τρέφεσθαι· ὁτὲ δὲ μαραίνεσθαι
+      <lb/>
+      συμβαίνει, πλείονος ἀθροιζομένου θερμοῦ διὰ τὸ μὴ
+      <lb/>
+      ἀναπνεῖν μηδὲ καταψύχεσθαι·
+						ταχὺ γὰρ καὶ οὕτω καταναλίσκει
+      <lb/>
+      τὴν τροφὴν πολὺ συναθροιζόμενον τὸ θερμόν, καὶ
+						φθάνει
+      <lb/>
+      καταναλίσκον πρὶν ἐπιστῆναι τὴν ἀναθυμίασιν. Διόπερ οὐ
+      <lb/>
+      μόνον μαραίνεται
+						τὸ ἔλαττον παρὰ τὸ πλεῖον πῦρ, ἀλλὰ
+      <lb/>
+      καὶ αὐτὴ καθ’ αὑτὴν ἡ τοῦ λύχνου φλὸξ
+						ἐντιθεμένη πλείονι
+      <lb/>
+      φλογὶ κατακάεται, καθάπερ ὁτιοῦν ἄλλο τῶν καυστῶν.
+      <lb/>
+      Αἴτιον
+						δ’ ὅτι τὴν μὲν οὖσαν ἐν τῇ φλογὶ τροφὴν φθάνει
+      <pb n="328"/>
+      λαμβάνουσα ἡ μείζων φλὸξ
+						πρὶν ἐπελθεῖν ἑτέραν, τὸ δὲ πῦρ
+      <lb/>
+      ἀεὶ διατελεῖ γινόμενον καὶ ῥέον ὥσπερ ποταμός, ἀλλὰ
+						λανθάνει
+      <lb/>
+      διὰ τὸ τάχος. Δῆλον τοίνυν ὡς εἴπερ δεῖ σώζεσθαι
+      <lb/>
+      τὸ θερμόν (τοῦτο δ’
+						ἀναγκαῖον, εἴπερ μέλλει ζῆν), δεῖ γίνεσθαί
+      <lb/>
+      τινα τοῦ θερμοῦ τοῦ ἐν τῇ ἀρχῇ
+						κατάψυξιν. Παράδειγμα
+      <lb/>
+      δὲ τούτου λαβεῖν ἔστι τὸ συμβαῖνον ἐπὶ τῶν
+      <lb/>
+      καταπνιγομένων ἀνθράκων· ἂν μὲν γὰρ ὦσι περιπεπωμασμένοι
+      <lb/>
+      τῷ καλουμένῳ πνιγεῖ
+						συνεχῶς, ἀποσβέννυνται ταχέως·
+      <lb/>
+      ἂν δὲ παρ’ ἄλληλά τις ποιῇ πυκνὰ τὴν ἀφαίρεσιν καὶ
+						τὴν
+      <lb/>
+      ἐπίθεσιν, μένουσι πεπυρωμένοι πολὺν χρόνον. Ἡ δ’
+      <lb/>
+      ἔγκρυψις σώζει τὸ πῦρ·
+						οὔτε γὰρ ἀποπνεῖν κωλύεται διὰ
+      <lb/>
+      μανότητα τῆς τέφρας, ἀντιφράττει τε τῷ πέριξ ἀέρι
+      <lb/>
+      πρὸς τὸ μὴ σβεννύναι τῷ πλήθει τῆς ἐνυπαρχούσης αὐτῷ
+      <lb/>
+      θερμότητος. Ἀλλὰ περὶ μὲν
+						τῆς αἰτίας ταύτης, ὅτι τὸ
+      <lb/>
+      ἐναντίον συμβαίνει τῷ ἐγκρυπτομένῳ καὶ καταπνιγομένῳ
+      <lb/>
+      πυρί (τὸ μὲν γὰρ μαραίνεται, τὸ δὲ διαμένει πλείω χρόνον),
+      <lb/>
+      εἴρηται ἐν τοῖς
+						προβλήμασιν.
+     </p>
+     <p lang="it">
+      Ma non sparare due termini di decadimento, lascialo appassire e spegniti. Ma la chiamiamo
+						Secondo lui periranno, si estinguerà il quarto degli avversari, quello vecchio e quello violento.
+						Succede il contrario per questo motivo si fa il decadimento, perché rimane
+						di cibo, non potendo prendere il cibo dal caldo, si fa danno al fuoco. IL
+						perché se al contrario ostacola la digestione, si nutre ma appassisce;
+						si verifica, più calore accumulato per non respirare che per congelamento;
+						perché velocemente e così consuma il cibo, accumulando molto calore, e
+						raggiunge il consumatore prima che si creda alla vaporizzazione. Dioper non sta solo appassendo
+						il fuoco minore rispetto al fuoco maggiore, ma è in sé la fiamma della lampada
+						si consumano fiamme più intense, diverse da quelle ardenti. Causa
+						d' perché la fiamma principale riceve il cibo che era nella fiamma
+						prima che arrivino a un altro, il fuoco del cielo diventa e scorre come un fiume, ma è latente a causa della velocità. Sembra che il calore venga risparmiato lì (questo 4
+						necessario, perché viva), guardate cosa è successo al calore dell’inizio
+						congelatore Un esempio di ciò è quello che è successo loro
+						di carboni soffocanti;
+						continuamente, si estinguono rapidamente;
+						l'attacco, rimanendo in fiamme per molto tempo. Il quarto occultamento salva il fuoco;
+						non respira nemmeno, è ostacolato dalla durezza della cenere, contrasta con l'aria circostante
+						per non spegnersi dalla moltitudine del calore che esiste in lui. Ma riguardo a me
+						per lo stesso motivo, perché al nascosto e al represso accade il contrario
+						fuoco (perché appassisce, ma dura più a lungo), si dice tra i
+						problema
+     </p>
+     <p lang="en">
+      But don't fire two terms of decay, let it wither and go out. But we call her
+						According to him, they will perish, the fourth among the adversaries will be extinguished, the old one, and the violent one.
+						It happens the other way around because of this, decay is made, because it remains
+						of food, not being able to take the food of the heat, damage is done to the fire. The
+						for if, on the contrary, it hinders the digestion, it is nourished; but it withers
+						occurs, more of the accumulated heat for not breathing than freezing;
+						because quickly and thus it consumes the food, accumulating a lot of heat, and
+						it reaches a consumer before the vaporization is believed. Dioper is not only withering
+						the lesser fire than the greater fire, but it is in itself the flame of the lamp
+						more intense flames are consumed, as other than the burning ones. Cause
+						d' because the main flame receives the food that was in the flame
+						before they come to another, the fire of heaven is becoming and flowing like a river, but it is latent due to the speed. They look as if the heat is saved there (this 4
+						necessary, because he lives), see what happened to the heat of the beginning
+						freezer An example of this is what happened to them
+						of suffocating coals;
+						continuously, they are quickly extinguished;
+						the attack, staying on fire for a long time. The fourth concealment saves the fire;
+						neither does it breathe, it is obstructed by the ash's hardness, it contrasts with the surrounding air
+						in order not to be extinguished by the multitude of the heat existing in him. But about me
+						of the same reason, because the opposite happens to the hidden and suppressed
+						fire (for it withers away, but it lasts longer), is said among the
+						problem
+     </p>
+    </div>
+    <div n="6" subtype="chapter" type="textpart">
+     <p>
+      Ἐπεὶ δὲ πᾶν ζῷον ἔχει ψυχήν, αὐτὸ δ’ οὐκ ἄνευ φυσικῆς
+      <lb/>
+      ὑπάρχει θερμότητος, ὥσπερ
+						εἴπομεν, τοῖς μὲν φυτοῖς ἡ
+      <lb/>
+      διὰ τῆς τροφῆς καὶ τοῦ περιέχοντος ἱκανὴ γίνεται βοήθεια
+      <lb/>
+      πρὸς τὴν τοῦ φυσικοῦ θερμοῦ σωτηρίαν. Καὶ γὰρ ἡ τροφὴ
+      <lb/>
+      ποιεῖ κατάψυξιν
+						εἰσιοῦσα, καθάπερ καὶ τοῖς ἀνθρώποις τὸ
+      <lb/>
+      πρῶτον προσενεγκαμένοις· αἱ δὲ νηστεῖαι
+						θερμαίνουσι καὶ
+      <lb/>
+      δίψας ποιοῦσιν· ἀκίνητος γὰρ ὢν ὁ ἀὴρ ἀεὶ θερμαίνεται,
+      <lb/>
+      τῆς δὲ
+						τροφῆς εἰσιούσης καταψύχει κινούμενος, ἕως ἂν
+      <lb/>
+      λάβῃ τὴν πέψιν. Ἐὰν δὲ ἢ τὸ περιέχον
+						ὑπερβάλλῃ
+      <lb/>
+      ψυχρότητι διὰ τὴν ὥραν, ἰσχυρῶν γινομένων πάγων, ἐξαυαίνεται,
+      <pb n="329"/>
+      αίνεται, ἢ τοῦ θέρους ἰσχυρὰ συμβαίνῃ καύματα καὶ μὴ
+      <lb/>
+      δύνηται τὸ σπώμενον ἐκ τῆς
+						γῆς ὑγρὸν καταψύχειν, φθείρεται
+      <lb/>
+      μαραινόμενον τὸ θερμόν, καὶ λέγεται σφακελίζειν καὶ
+      <lb/>
+      ἀστρόβλητα γίνεσθαι τὰ δένδρα περὶ τοὺς καιροὺς τούτους.
+      <lb/>
+      Διὸ καὶ γένη τινὰ
+						λίθων ταῖς ῥίζαις ὑποβάλλουσι καὶ ὕδωρ
+      <lb/>
+      ἐν ἀγγείοις, ὅπως αἱ ῥίζαι ψύχωνται τῶν
+						φυτῶν. Τῶν δὲ
+      <lb/>
+      ζῴων ἐπεὶ τὰ μέν ἐστιν ἔνυδρα τὰ δ’ ἐν τῷ ἀέρι ποιεῖται τὴν
+      <lb/>
+      δίαιταν, ἐκ τούτων καὶ διὰ τούτων πορίζεται τὴν κατάψυξιν,
+      <lb/>
+      τὰ μὲν τῷ ὕδατι τὰ
+						δὲ τῷ ἀέρι. Τίνα δὲ τρόπον καὶ πῶς,
+      <lb/>
+      λεκτέον ἐπιστήσασι τὸν λόγον μᾶλλον.
+     </p>
+     <p lang="it">
+      Ma poiché ogni essere vivente ha un'anima, non esiste senza la fisica, come
+						diciamo che alle piante, attraverso il cibo e il contenuto, viene dato aiuto
+						verso la salvezza del calore naturale. Dopotutto, il cibo è congelato
+						Isiassia, rimprovero anche al popolo, anzitutto a coloro che sono accusati;
+						sono accaldati e hanno sete;
+						cibo congelato durante lo spostamento, finché non viene digerito. Ma se lo contengono
+						esagera il freddo nel corso del tempo, il ghiaccio diventa forte, diventa feroce, feroce, oppure in estate si verificano forti incendi e non è possibile staccarsi dal
+						terreno ghiacciato, viene consumato dal caldo e si chiama sfakelizen e
+						Gli alberi diventano stellati in questi momenti. Per questo motivo
+						delle pietre le radici vengono anche poste in acqua in vasi, poiché le radici vengono raffreddate
+						di piante. E tra gli esseri viventi c'è acqua nell'aria. dieta, da questi e attraverso questi si ottiene il congelamento, il me all'acqua il
+						ma nell'aria. Ma qual è il modo e come, crediamo invece alla parola.
+     </p>
+     <p lang="en">
+      But since every living thing has a soul, it does not exist without physics, as
+						we say, to the plants, through the food and the content, help is given
+						towards the salvation of the natural heat. After all, the food is frozen
+						Isiassia, rebuke also to the people first of all those who are accused;
+						they are heated and they are thirsty;
+						frozen food while moving, until it is digested. But if they contain it
+						exaggerates the coldness during the time, the ice becomes strong, it becomes fierce, fierce, or in the summer strong fires occur and it is not possible to break from the
+						frozen ground, it is worn away by the heat, and is called sfakelizen and
+						The trees become starry at these times. Because of that
+						of stones the roots are also placed in water in vessels, as the roots are cooled by
+						of plants. And of the living things, there is water in the air. diet, from these and through these the freezing is obtained, the me to the water the
+						but in the air. But what is the way and how, let's believe the word instead.
+     </p>
+    </div>
+   </div>
+  </body>
+ </text>
+</TEI>

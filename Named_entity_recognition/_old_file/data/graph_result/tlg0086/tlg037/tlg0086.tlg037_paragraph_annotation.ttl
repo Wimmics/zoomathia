@@ -1,0 +1,2020 @@
+@prefix schema:  <http://schema.org/> .
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dce:     <http://purl.org/dc/elements/1.1/> .
+@prefix fabio:   <http://purl.org/spar/fabio/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:    <http://purl.org/vocab/frbr/core#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix oa:      <http://www.w3.org/ns/oa#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<http://www.zoomathia.com/annotation/88777f5721576cb177a011e2bde7ae049809440f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f268990a0f0d374b077e8f280e7d582ab7d8b104>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105782&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "aquatic"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/915dbe9ace17f12205c7adbb5038170abd19e19f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrty1af1lU8Dc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4754eb0a5bc48503700a435bd1c5547a94c40708>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7048433c4aed33861e923b6e625634b1c2af9f68>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Abderita"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c1b6c794fc8fc2bc078fb5aaa5e15eaa875fc71f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "branchia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/23f0fee8a3b019714151f20510f2555bcdbc063f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/537652e91df20417e1a8a79858291d908f12ad2a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "epiglottide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d5accf0377f4370fe3d24e8bf04c79867ab67e64>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "coccodrilli"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e3aa2b95fdae40f0769af47c3d61384d034fcc02>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "insetti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/065ef3c55e322dd802ddf9a4c4f9c9303d170281>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtVogUK1mSX3&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "organo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/52fb702de7b0045b035c6910a86fe9d8eca2beb4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/48782f392d912b96b3f94fda50b2a1f1beae68ad>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtI3GLtDKz2W&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "synagogue"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f1129e8d5dd703b23b4cfc37e74623bd92a295c4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/23>
+              ] .
+
+<http://www.zoomathia.com/annotation/f84356d67f9013f654b801ad7db831f1d8193b20>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "selaci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/aa0e76d336cec50f484bab2ce98319a1d882c3ea>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fungi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/93a4cecc2427d2bb7811ff8e0b9a422477546311>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mucus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/afcdcf0fdcb0a27a21802d4f7d361c7df0c855a7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "crostacei"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/732f62a77b1ce244d6ebbda7c33648211da44ecd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bacteria"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0ae0768b609aaf4d473c61d7ae4d5eccd3f8c2ae>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsPauzzRS5z&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "honey"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a4e2887eed8b6d82e9a2b58e42b6b5ad4ef0fe9c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9f9c62ba964286394a2dcea670635b8e74717a97>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ardore"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1636c6e09340e0d218149180bf2e14698641ad90>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "epiglottide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0f16763fc9f28c0ac25c7e2f5e6186fbf5a363c8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/00911731f6ca874ed82b79dafc66450203296194>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "branchia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9d4b365b9da22f5da7cec3bf7e62d2a77b4d045b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anassagora"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f5f53d5b47e71421053c8e4c520069002e4303e1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "viscera"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6a928b97407efff59fac23e02b5a2aded44b13e7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/504e425fffb3c987a829701a3b3a4b2ec4fabd53>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105620&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "plague"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ac4de5ce34258f64fba9c885b27b9eb864fcd9fb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "inferenza"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/75d9ec95059d246480d5de9c17401021869e30df>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cetacei"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cecf29b938a690124dae2642122d57c252e8a487>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "exhalation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c24855a6c7f43870fe0446378cf571c8c6c3a76f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bb1784368aa7a76dde6d49e0ca6d7289c720b498>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "funghi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc7feffb4b1f8cd9a6e36a69743a68596f07edc8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "common time"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/686e5a01665bcc2c01109453b3ec917990ae0ade>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "esophagus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/59d3b34899091be37043f9c4dff2e6586b0d3ab5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "esofago"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8afc83afaff573189e782f24b394ec3d7861de31>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anime"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d9b656b885eb63ac677708b8cd2d74eb549aeac8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anassagora"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1a4368b4d3c663977e00abbc3b630d05805cf1ff>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105782&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "aquatic"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/dd084d89f862a7acda1e188beba3280a27925715>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3921e125ac30b9025123af4bd67e617467cbfb14>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "peste"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e103dda5a34cb0f4d0b6f53ee76a7fec7bc5a951>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2599575d19f3603d795e50cd10939e2c15070b59>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrty1af1lU8Dc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4aa1c6d6a11c9a89534979b613ff85d5eebb5e3e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtVogUK1mSX3&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "organo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_19/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e9383b4f2777a394ca729181252685f6814bf823>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fungi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c7319cf0b0f500dd86b0f5da6876894f51a4c443>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "insetti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4091b3bf3069a0d0547c6218f9992a678a0753d7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/480c884e2e75ad9dd5ae1f2291ffe162d8abb26a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olfatto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/840c4fb80ce50b3044aa6137660db8f9fda18580>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "genus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/18bfca159f81bda050bb8bd7ce4e3695e69bbf33>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "exhalation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_6/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/12ba496d4f9e2ddab46cf5344c2a1dd4abb3906e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105245&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "respiration"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b38233e19cb8624dd5b29169f3c9d084b213c9a0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lucertole"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1907f42e362230c14714109652ddf68a52c63000>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anime"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/544eec58339c178475f0502e48feaa2695c941dc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/550acd3bdda9bf41f02bc3bad46d8832fa0f2068>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/eabde4b792a255d89c47df4fc51caecd84139964>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "epiglottis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f804b43405e4f21bb5ec7ba22f32e41c9177567f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=5073&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mole"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/10e1af9aca8dad47ace41ca8d065b76a39e2f6dd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/01573ccd60900fec41b7c618db5f0e28a6af0214>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Genesi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6c9b92d55b4735f60dd88e308824f5d6770d0871>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4728c400de751a9f9a079933663fa6a6573ad712>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anime"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a6ac242bc2fd8227fba939f7812a50e47e77b98>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "hourglass"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8010d141a342a2bd04a5920d9497a404a63213eb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJs2bV5mfYW&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "atrium"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a6220e2e6339cf6591bcc2438378fd0216a6575c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "addome"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4d4258c3bf5c1414cad231075262a39acd8c1cac>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0941ed242464bbbfa7444c68b065870208b84606>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6ab92430a1f792f78b1afb79f2c0812a34c587f0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/49df737bb9ff02fdb35bd195446486a2cb3ee63e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anassagora"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/17b0581c1b7a94088e9dd9b29a5684891aa77e35>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtaO1Rsn1iPp&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tartaruga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2e29ac197d5bf5b4bb0397968f8ab8c1cb3adcae>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Abbigliamento sportivo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/5>
+              ] .
+
+<http://www.zoomathia.com/annotation/abe9ee92ab63ed857ae47ccafe77f5cfea4b4ab3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soft palate"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/49c5376aa2e589783addf92d1ec46b7fbd6d1941>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "exhalation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9fba422814a7cfc7bddfef5e0b9f81898eb1b692>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtaO1Rsn1iPp&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tartaruga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5869a9b847bb5918555b924e52ac3ae39d06d2f5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "insetti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fd81c8349d627f11751752234051d662f3f1b0f9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2b568abc1f7e99676329fc1fdac677ffa6651a9c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3971736355e53b3f6da82aa73efc0a5634a84063>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/30855429bef5dbc9ef5e9c590494b364b51e72a6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/ab54dd51dea19d95d3fb459e71752325ae15b9f3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ricettacolo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/74c18149fba4e7b76259590ae69129c5a2d6e2c2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3f3953259e51d73bebeb5b5fee6b3bfe1680e739>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105245&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "respiration"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0886741f8e42fb8663b07b29b228641dd1dc86bb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "palato molle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d5c00c47c53d9628c82217b93d4bc11e6d4bacf6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "crostacei"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/64749a9d87bffcf53cf80870ba1243410a66843d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "insetti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a2f0dc6ce1736efb937263ef2a4ab50b426f351a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "insetti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/37c41b95927fbdc0080ed34491dfbf18f9af9515>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2940b20e82e134f5d1cb695afa29aeae842747f9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5e57658fa0cf6e3ee7da79cc1199f01c79ce5c6c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "muco"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/8c1b57837360c6b485583324e60cf1c5701a602f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "generi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/aa07fa60d39f8cfb28216bcf0c3152f13234d219>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrte9SAbeF3Ny&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anaxagoras"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a35c22ca267ef6ee6f9b68d87e95666768f03f1f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/574c92ee36cbbd9c90c7674c9dba4b61250c5d82>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "esofago"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/09f50b6c703aafbca72b6ae32496387c5df708fe>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fa32f1e297ecba618d9f36c69b72af9bf599a68a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8ecc8e7a1081c5a4df2fc7dade1938f2cc72dcff>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "foche"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9a27c34a22d5d74b280ec93ad10673b1ed215605>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "genus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e426d91915be6811e5c70d19844e17e56fb2a7ba>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/366c09d874dd60a2bb6b27977cc2598c7bb6da96>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9b13118af2e11f85764ab572d0cc194f4ca87210>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyky7aii4ZT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Timaeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/db5da7dc8f5eeb763c505affa772c3766948e4aa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Respirazione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/704eb9a8477703a16303a1d043e864ae421455ca>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olfatto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bc5ae70543243e914ed9167cda6d97e81f3d3af7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nitre"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2042378dbb8d1c9207f0bd0ed79d630672d1102c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "arterie"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/45733d3f1ce3f1fa07665cf2cf7aca9ed9d9991a>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b6e42d932895090406ff6db2e51031416d5f4b77>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "suffragette"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/dddc951d8fca566242e9bc1fb9fe4256f4b7d68f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c9747c7192df1154e57a9a9100c66d5d7cbc26cc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "insetti"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/16ed2094f5247e0f2616386c590a439f719830ec>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anemia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1279ada290aaba0c65ad9175ddb49e86686eb0b7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fungi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/6eb5ce8d37f3b43f4996dc73abcd99e54052c1ba>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bc78de1f0aeefcfbc4048c8ac253f3cf389c8cb7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrty1af1lU8Dc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c9f9b3858ee51e7a3067ff2757339c2179204d65>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "peduncle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5d90a205fdd8ef797f6372ee259fc298c12e5da4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Congelatore"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0b9144534808d2c176e0c036c7063c70606672e5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc7c56f765de8e8d0fbfbc7eaa580f6b51c031c3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/20b3330ba6ff8f8a720b5392d7dea55bbf7d68e0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Spirito Santo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5ccb94e7be128c63107edc2adc44e611c336f293>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/93a138129629acec6a2a42f4b3c07f28bd1d4ddc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5ae177351648150298e0d20678a740c1b539d062>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "genus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fed5ec9e9885b62b808206c39bbee81688c5939a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "undead"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_15/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/dfaf5a6d450dd015bb5f5ace1e4eb98f5fb7e778>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vescovo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2c9e65b96d626b50fdd0c09395163587d138610c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mitili"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a790d3813caba471b5657f7a77989adc473a76d9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsPauzzRS5z&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "miele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bf2baf264bfd3d537275c72c7d434aedcc551973>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/309ea4ec31667440eaf4767b02ebe9eb8846b483>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Abderite"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f91e5c6af3151227077404b28cdb84df8a02dc78>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtVogUK1mSX3&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "organo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5985920a760a7bf0f837e9a212dc188cc8cc1eb1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "physicist"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f20345444dceb82d8628fd2a27c03c0929569182>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "copper"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/17>
+              ] .
+
+<http://www.zoomathia.com/annotation/447b8258eb5dca51910c0594f2bbc709cea919e5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "exhalation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7b0d45b2a518309b9951a5ffac954f39c93c0094>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Exhalation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/529b74df85ee696a3337c938fed6e9ae41ce8a4f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "stomach ulcer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7c33306f88dfdb296c2525e081091bb28ca19c77>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtZvvShB1zoF&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Holy Spirit"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d454294e3b95363d1cb0dcaf80b59d544f35f7a6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4tFWajMDuA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "api"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/7f3e2b44eb11a9da9ec479387046d715fa4bdac3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "addome"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cb850e2125f0a500d18b92d2ab7e9743f3588d81>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Genesis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_18/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/971a8d858697be69b5034f090c9f92b08d557673>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pulsano"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_20/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d3b2b64be7b2c790ce22b2885ac299b74e6ccee1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "selachians"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c0ce671ffd88d911f4fe2e538b2507e0743a64fa>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "squalo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8a834c07dda18118779151d0fac95fcf10a0dcde>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt16pnvNar4g&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "rame"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/17>
+              ] .
+
+<http://www.zoomathia.com/annotation/1f281374cd40153bf2efbf63c8817d25ddf4734f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Parallasse"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e2239bbf3ab0ba97c6d95664c80984811312f956>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bd4f053c51042b3e755ad7de3682113857bbefa7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Parallasse"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bbc045686951a8c81086e8191fd362c875babe1f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6c793d7f3c9cb75d5dc9631f45617ba38ce8ec27>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrte9SAbeF3Ny&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Anaxagoras"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8813c920fd27b6d76af968ae7758435c578b8513>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "delitto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9235291ead2c84de2f1305e7568fa790ba241168>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "balene"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b7bd1ca3fb95296e40da98769d4ebf03e945ce8a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0c4f3ccf48d39a7475201ecf18eee54a8641018b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "stia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6d52313f0d2bb26c3bfef12c94cf4c4d1fe7272b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3682736f5cf6e09d72a3e14353844c2257e2f5c6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt9N2SEhD5yI&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9ea3ccfc5122d4955b642058c612faff88e5f7e9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polipi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cf6b41955d24c950e2fa0adf5742637ad83816bf>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105983&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fat"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/cf2f6cb2a85e3a88cc7bb0dbc41e2e3be952490b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "funghi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/dc2f58c844129478a988d87e5cbbbd2f76bf4b4c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "granchi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d433bf20561b0bfff9edb1883227cbce77609a56>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "molluscs"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f8cc563882e24ffb09c9c5022a285d55b3b975c1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Parallax"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/316486514c947aa991704b0bbd9b70c36ace7737>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sta succedendo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_20/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/1af4856a837e31897edb5e0f70765f4a2a09913f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bomb"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d84e7fa274a58bceaeaaa8e5f3b4ac33d117659b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "molluschi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a81b73a9583c00b10633fcf2faec8d36bb33d97a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "epiglottis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c5c1302488d5451a40b48fab58613b6efd998193>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/eae8f22cc41a8788d5661be208384aa7ff4abd03>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anime"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d8f03aa74dbfe12feb55bb28c7aeedf7dd650da4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "torace"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4afdb8135493a9b3c94660e87d39f938096594d6>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fbed8bae0b9c1b5cba88ace4c45c76e3578a378e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "depression"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8fd8546ffb561c3442c7dfb9d73ff3c798f8b8fb>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "palato molle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/df209bf9c7c03fb902211bfc2347fde1707fd6a8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "acqua in bocca"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/49a52d810a19417278b9c6a9386b2c177a7bbed2>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/76e3c2aa5979c5d264eeb4650392c0694e63e772>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105782&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "aquatic"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/06ca8f5e2dd66ab02f073102fdeff1bb428bac1c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "funghi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/56675f3c77d9030e78093d39e422d7631eaa3415>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anemia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f11bc40b6443963e2c328a3f13b3550b1d5bfe62>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/f43b79ac1170d771e58748ed80cf1713fa1df62f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "genus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_13/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2c8175ae4ceed536435f69fd58a12354076227f9>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anime"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_10/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/19da8edb9fcd43a6e1466deddbc2f0d8e41faf6f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a71907a80b547e09f8eb47d0b5850f32053bcdc0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b83d5e5323354f41705c34a4b64ec53af7116e15>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fusional"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_20/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/9631d8a6f61cfdcc69d1f0944b54a6fcf6aeab7d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "exhalation"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_21/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/721770a02cffecc6fa28c1ccdc1cf4cc03a1ea5d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "inferenza"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_17/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/10ca66bc4f97a7ae615837a429cb6f76c8779c61>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/27>
+              ] .
+
+<http://www.zoomathia.com/annotation/25cbe84ceda4c7b2be595326a86df40119a1cca2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "batteri"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2a49fd402c270b38caeb8135276cd44d6e3944fc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "artery"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/69a8fd7267c6722e992ad7bddbd7064b204b383d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "addome"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0e79d324885f2e35daf7b8b93531d6e671e12b87>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105206&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lung"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/3b71a546d97e1678adb21fefb3b8bddb1d402ba2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_16/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/bd233a04daede707141284145460d441b7d9a211>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pesci"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b6ce58e768b8d74d6a0216a07e0f62b03e798b07>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "avlon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_12/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/24103396b74d4368ddc8896646468092cbac4d9a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/b4abdfa87167dd456f6d0e6651bc84ce3d7ac0dc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105245&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "respiration"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_7/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/48e2e2ff8c8820368be551e060392ba4670dbc10>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "veil"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5089dd599bc9aa1741f1c3ed87276dfdefffa075>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_8/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/d098e338251116f31b2d40dce4943df171131b20>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soft palate"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_9/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5330b12a3c8a8134ea4062c869fd79a0e3286b31>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Empedocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_14/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/c53cb2199a9063ea79500ce84e32fcec59328bd7>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtI3GLtDKz2W&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sinagoga"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_11/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/244bc391b96b3631a859264956aba028dd4aee38>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtyky7aii4ZT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Timaeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Derespiratione/chapter_5/1>
+              ] .

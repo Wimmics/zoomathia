@@ -1,0 +1,3148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>
+     De respiratione
+    </title>
+    <author>
+     Aristotle
+    </author>
+    <editor>
+     Immanuel Bekker
+    </editor>
+    <funder>
+     Andrew W. Mellon Foundation
+    </funder>
+    <respStmt>
+     <resp>
+      Published original versions of the electronic texts
+     </resp>
+     <orgName ref="http://www.graeco-arabic-studies.org/">
+      A Digital Corpus for Graeco-Arabic
+						Studies, funded by the Andrew W. Mellon Foundation
+     </orgName>
+     <persName>
+      Mark Schiefsky, Harvard University
+     </persName>
+     <persName>
+      Gregory R. Crane, Universität Leipzig
+     </persName>
+     <persName>
+      Uwe Vagelpohl, University of Warwick
+     </persName>
+    </respStmt>
+    <respStmt>
+     <resp>
+      Keyboarding
+     </resp>
+     <orgName xml:id="DDD">
+      Digital Divide Data
+     </orgName>
+    </respStmt>
+    <respStmt>
+     <resp>
+      Editor-in-Chief, Perseus Digital Library
+     </resp>
+     <persName>
+      Gregory R. Crane
+     </persName>
+    </respStmt>
+    <respStmt>
+     <resp>
+      Project Manager (University of Leipzig), 2016 - present
+     </resp>
+     <persName>
+      Matt Munson
+     </persName>
+    </respStmt>
+    <respStmt>
+     <resp>
+      Project Assistant (University of Leipzig), 2015 - present
+     </resp>
+     <persName>
+      Annette Geßner
+     </persName>
+    </respStmt>
+    <respStmt>
+     <resp>
+      Lead Developer (University of Leipzig)
+     </resp>
+     <persName>
+      Thibault Clérice
+     </persName>
+    </respStmt>
+    <respStmt>
+     <resp>
+      Technical Advisor
+     </resp>
+     <persName>
+      Bruce Robertson
+     </persName>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>
+     A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
+					Foundation
+    </authority>
+    <publisher>
+     University of Leipzig
+    </publisher>
+    <pubPlace>
+     Germany
+    </pubPlace>
+    <idno type="filename">
+     tlg0086.tlg037.1st1K-grc1.xml
+    </idno>
+    <availability>
+     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+      Available under a
+						Creative Commons Attribution-ShareAlike 4.0 International License
+     </licence>
+    </availability>
+    <date>
+     2016
+    </date>
+   </publicationStmt>
+   <sourceDesc>
+    <biblStruct>
+     <monogr>
+      <title>
+       Aristotelis Opera
+      </title>
+      <author>
+       Aristotle
+      </author>
+      <editor>
+       Immanuel Bekker
+      </editor>
+      <imprint>
+       <publisher>
+        Oxford University Press
+       </publisher>
+       <pubPlace>
+        Oxford
+       </pubPlace>
+       <biblScope unit="vol">
+        3
+       </biblScope>
+       <biblScope from="329" to="354" unit="pp">
+        329-354
+       </biblScope>
+       <date>
+        1837
+       </date>
+      </imprint>
+     </monogr>
+     <ref target="https://catalog.hathitrust.org/Record/001222547">
+      HathiTrust
+     </ref>
+    </biblStruct>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>
+    The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+				Architecture.
+   </p>
+   <p lang="it">
+    Il testo seguente è codificato secondo gli standard EpiDoc e CTS/CITE
+				Architettura.
+   </p>
+   <p lang="en">
+    The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+				Architecture.
+   </p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="greek">
+     Greek
+    </language>
+   </langUsage>
+  </profileDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div n="urn:cts:greekLit:tlg0086.tlg037.1st1K-grc1" type="edition" xml:lang="grc">
+    <pb n="329"/>
+    <div n="1" subtype="chapter" type="textpart">
+     <head>
+      ΠΕΡΙ ΑΝΑΠΝΟΗΣ.
+     </head>
+     <p>
+      Περὶ γὰρ ἀναπνοῆς ὀλίγοι μέν τινες τῶν πρότερον
+      <lb/>
+      φυσικῶν εἰρήκασιν· τίνος μέντοι
+						χάριν ὑπάρχει τοῖς ζῴοις,
+      <lb/>
+      οἱ μὲν οὐδὲν ἀπεφήναντο, οἱ δὲ εἰρήκασι μέν, οὐ καλῶς δ’
+      <lb/>
+      εἰρήκασιν ἀλλ’ ἀπειροτέρως τῶν συμβαινόντων. Ἔτι δὲ
+      <lb/>
+      πάντα τὰ ζῷά φασιν
+						ἀναπνεῖν· τοῦτο δ’ οὐκ ἔστιν ἀληθές.
+      <lb/>
+      Ὥστ’ ἀναγκαῖον περὶ τούτων πρῶτον ἐπελθεῖν,
+						ὅπως μὴ
+      <lb/>
+      δοκῶμεν ἀπόντων κενὴν κατηγορεῖν. Ὅτι μὲν οὖν ὅσα
+      <lb/>
+      πλεύμονα ἔχει τῶν
+						ζῴων, ἀναπνεῖ πάντα, φανερόν. Ἀλλὰ
+      <lb/>
+      καὶ τούτων αὐτῶν ὅσα μὲν ἄναιμον ἔχει τὸν
+						πλεύμονα καὶ
+      <lb/>
+      σομφόν, ἧττον δέονται τῆς ἀναπνοῆς· διὸ πολὺν χρόνον ἐν
+      <lb/>
+      τοῖς
+						ὕδασι δύνανται διαμένειν παρὰ τὴν τοῦ σώματος
+      <lb/>
+      ἰσχύν. Τὸν δὲ πλεύμονα σομφὸν ἔχει
+						πάντα τὰ ᾠοτοκοῦντα,
+      <lb/>
+      οἷον τὸ τῶν βατράχων γένος. Ἔτι δὲ αἱ ἑμύδες τε
+      <lb/>
+      καὶ
+						χελῶναι πολὺν χρόνον μένουσιν ἐν τοῖς ὑγροῖς· ὁ γὰρ
+      <lb/>
+      πλεύμων ὀλίγην ἔχει θερμότητα·
+						ὀλίγαιμον γὰρ ἔχουσιν
+      <lb/>
+      αὐτόν· ἐμφυσώμενος οὖν αὐτὸς τῇ κινήσει καταψύχει καὶ
+      <pb n="330"/>
+      ποιεῖ διαμένειν πολὺν χρόνον. Ἐὰν μέντοι βιάζηταί τις
+      <lb/>
+      λίαν κατέχων
+						πολὺν χρόνον, ἀποπνίγονται πάντα· οὐδὲν
+      <lb/>
+      γὰρ τῶν τοιούτων δέχεται τὸ ὕδωρ ὥσπερ οἱ
+						ἰχθῦς. Τὰ
+      <lb/>
+      δ’ ἔναιμον ἔχοντα τὸν πλεύμονα πάντα μᾶλλον δεῖται τῆς
+      <lb/>
+      ἀναπνοῆς διὰ
+						τὸ πλῆθος τῆς θερμότητος· τῶν δ’ ἄλλων ὅσα
+      <lb/>
+      μὴ ἔχει πλεύμονα, οὐδὲν ἀναπνεῖ.
+     </p>
+     <p lang="it">
+      Perché sulla respirazione, pochi ex fisici litigavano;
+						poiché c'è grazia tra i viventi, quelli che non hanno parlato contro di me, ma quelli che hanno litigato con me, non l'hanno fatto
+						irikesin, ma infinitamente di più, degli avvenimenti. Che tutti gli animali mangiano
+						respirare; questo non è vero. Se è necessario che questi arrivino prima,
+						in modo da non cercare di lanciare accuse vuote. Perché non importa quanti polmoni abbia
+						vivere, respirare sempre, manifestarsi. Ma anche di questi, purché abbia un'anima
+						polmoni e polmoni, sono legati alla respirazione da molto tempo nel
+						quindi possono restare nonostante la forza del corpo. Ma ha un palato molle
+						tutti i ᾠotokounta, un genere di rane. E le cozze?
+						le tartarughe stanno molto tempo nell'acqua, perché la tartaruga marina ha poco calore;
+						Infatti ne hanno ben poco: quando viene soffiato, si congela mentre si muove, e lì rimane a lungo. Se gli uomini cercano i tanti proprietari
+						molto tempo n, soffocano sempre; perché nessuno di questi riceve l'acqua come il
+						pescare. I polmoni che hanno polmoni sono sempre piuttosto visti attraverso la respirazione
+						la moltitudine del calore; degli altri, tutto ciò che non ha polmoni, non respira.
+     </p>
+     <p lang="en">
+      Because about breathing, few mints of the former physicists quarreled; whose mints
+						for there is grace among the living, those who did not speak against me, but those who quarreled with me, did not
+						irikesin, but infinitely more, of the happenings. That all animals eat
+						breathe; this is not true. If it is necessary for these to arrive first,
+						so that we do not try to make empty accusations. Because no matter how many lungs he has
+						living, always breathing, manifest. But even of these, as long as he has a soul
+						lungs and lungs, they are tied to breathing; for a long time in the
+						thus they can stay despite the strength of the body. But he has a soft palate
+						all the ᾠotokounta, a genus of frogs. What about the mussels?
+						turtles stay a long time in the water, because the sea turtle has little heat;
+						For they have but little of it: when it is blown, it freezes on the move, and where it stays for a long time. If men are looking for the many owners
+						a lot of time n, they always suffocate; for none of these receive the water as the
+						fish. The lungs having lungs are always rather seen of respiration through
+						the multitude of heat; of the others, whatever has no lungs, does not breathe.
+     </p>
+    </div>
+    <div n="2" subtype="chapter" type="textpart">
+     <p>
+      Δημόκριτος μὲν οὖν ὁ Ἀβδηρίτης καί τινες ἄλλοι τῶν
+      <lb/>
+      περὶ ἀναπνοῆς εἰρηκότων οὐδὲν
+						περὶ τῶν ἄλλων διωρίκασι
+      <lb/>
+      ζῴων, ἐοίκασι μέντοι λέγειν ὡς πάντων ἀναπνεόντων·
+						Ἀναξαγόρας
+      <lb/>
+      δὲ καὶ Διογένης, πάντα φάσκοντες ἀναπνεῖν, περὶ
+      <lb/>
+      τῶν ἰχθύων καὶ τῶν
+						ὀστρείων λέγουσι τίνα τρόπον ἀναπνέουσιν.
+      <lb/>
+      Καί φησιν Ἀναξαγόρας μέν, ὅταν ἀφῶσι τὸ
+						ὕδωρ
+      <lb/>
+      διὰ τῶν βραγχίων, τὸν ἐν τῷ στόματι γινόμενον ἀέρα ἕλκοντας
+      <lb/>
+      ἀναπνεῖν τοὺς
+						ἰχθῦς· οὐ γὰρ εἶναι κενὸν οὐδέν·
+      <lb/>
+      Διογένης δ’ ὅταν ἀφῶσι τὸ ὕδωρ διὰ τῶν βραγχίων,
+						ἐκ τοῦ
+      <lb/>
+      περὶ τὸ στόμα περιεστῶτος ὕδατος ἕλκειν τῷ κενῷ τῷ ἐν
+      <lb/>
+      τῷ στόματι τὸν
+						ἀέρα, ὡς ἐνόντος ἐν τῷ ὕδατι ἀέρος. Ταῦτα
+      <lb/>
+      δ’ ἐστὶν ἀδύνατα. Πρῶτον μὲν γὰρ τὸ ἥμισυ
+						τοῦ πράγματος
+      <lb/>
+      ἀφαιροῦσι, διὰ τὸ τὸ κοινὸν ἐπὶ θατέρου λέγεσθαι μόνον.
+      <lb/>
+      Ἀναπνοὴ
+						γὰρ καλεῖται, ταύτης δὲ τὸ μὲν ἐκπνοή
+      <lb/>
+      ἐστι τὸ δ’ εἰσπνοή· περὶ ἧς οὐθὲν λέγουσι,
+						τίνα τρόπον
+      <lb/>
+      ἐκπνέουσι τὰ τοιαῦτα τῶν ζῴων. Οὐδ’ ἐνδέχεται αὐτοῖς
+      <lb/>
+      εἰπεῖν· ὅταν
+						γὰρ ἀναπνεύσωσι, ταύτῃ ᾗ ἀνέπνευσαν πάλιν
+      <lb/>
+      δεῖ ἐκπνεῖν, καὶ τοῦτο ποιεῖν ἀεὶ
+						παραλλάξ, ὥστε συμβαίνει
+      <lb/>
+      ἅμα δέχεσθαι τὸ ὕδωρ κατὰ τὸ στόμα καὶ ἐκπνεῖν.
+      <pb n="331"/>
+      Ἀνάγκη δ’ ἀπαντῶντα ἐμποδίζειν θάτερον θατέρῳ. Εἶτα
+      <lb/>
+      ὅταν ἀφῶσι τὸ ὕδωρ,
+						τότε ἐκπνέουσι κατὰ τὸ στόμα ἢ
+      <lb/>
+      κατὰ τὰ βράγχια, ὥστε συμβαίνει ἅμα ἐκπνεῖν καὶ
+						ἀναπνεῖν·
+      <lb/>
+      τότε γάρ φασιν αὐτὸ ἀναπνεῖν. Ἄμα δ’ ἀναπνεῖν καὶ
+      <lb/>
+      ἐκπνεῖν ἀδύνατον.
+						Ὤστ’ εἰ ἀνάγκη τὰ ἀναπνέοντα ἐκπνεῖν
+      <lb/>
+      καὶ εἰσπνεῖν, ἐκπνεῖν δὲ μὴ ἐνδέχεται μηδὲν
+						αὐτῶν, φανερὸν
+      <lb/>
+      ὡς οὐδ’ ἀναπνεῖ αὐτῶν οὐδέν.
+     </p>
+     <p lang="it">
+      Democrito, quindi, l'Abderita e il resto delle suffragette riguardo al respiro, niente
+						delle altre vite diorikasi, ἔικασι mentis dicono che sono tutte cose che respirano;
+						E Anassagora e Diogene, sempre impegnati a respirare, riguardo ai pesci e al
+						Dicono che respirano nel modo in cui respirano. E lasciami essere Anassagora, quando lo lascerò andare
+						l'acqua attraverso le branchie, l'aria prodotta nella bocca li spinge a respirare
+						pesce; poiché non c'è nulla di vuoto;
+						dalla presenza di acqua attorno alla bocca allo spazio vuoto nella bocca
+						aria, come nell'aria acqua. Questi non sono impossibili. Prima di tutto, senza metà
+						della cosa tolta, per il comune sul padre solo sei detto. Respirazione
+						poiché si chiama, e questa espirazione è la quarta inspirazione di cui non dicono;
+						come espirano le cose dei viventi? Non gli è permesso di dire loro quando;
+						poiché hanno inspirato, ciò che hanno inspirato di nuovo lo vedono espirare, e Chi è questo?
+						Parallasse, come accade se prendi l'acqua in bocca ed espiri.  Necessità d' risposta per ostacolare il vero al vero. Ha detto quando ha rilasciato l'acqua,
+						poi espirano attraverso la bocca o attraverso le branchie, come avviene anche loro
+						respirare; poi lasciarli respirare. Se inspirano ed espirano, è impossibile.
+						Se necessario, le cose che respirano espirano e inspirano, ma non possono espirare
+						di loro, apparentemente come se nessuno di loro respirasse.
+     </p>
+     <p lang="en">
+      Democritus, then, the Abderite and the rest of the suffragettes about breathing, nothing
+						about the other diorikasi lives, ἔικασι mentis say that they are all breathing things;
+						And Anaxagoras and Diogenes, always busy breathing, about the fishes and the
+						They say that they breathe the way they breathe. And let me be Anaxagoras, when I let it go
+						water through the gills, the air produced in the mouth pulling them to breathe
+						fish; for there is nothing empty; Diogenes iv.
+						from the presence of water around the mouth to the gap in the mouth
+						air, as in water air. These are not impossible. First of all, without half
+						of the thing removed, for the common on the father only you are said. Breathing
+						for it is called, and this one exhalation is the fourth inhalation; of which they do not say,
+						how do the things of the living breathe out. He is not allowed to tell them; when
+						for they breathed in, that which they breathed in again see they breathe out, and Who is this?
+						Parallax, as it happens if you take the water in your mouth and exhale.  Necessity d' answer to hinder the true to the true. He said when he released the water,
+						then they exhale through the mouth or through the gills, as happens if they also
+						breathe; then let them breathe. If they breathe in and out, it's impossible.
+						If necessary, breathing things exhale and inhale, but they cannot breathe out
+						of them, apparently as if none of them breathes.
+     </p>
+    </div>
+    <div n="3" subtype="chapter" type="textpart">
+     <p>
+      Ἔτι δὲ τὸ φάναι τὸν ἀέρα ἕλκειν ἐκ τοῦ στόματος ἢ
+      <lb/>
+      ἐκ τοῦ ὕδατος διὰ τοῦ στόματος
+						ἀδύνατον· οὐ γὰρ ἔχουσιν
+      <lb/>
+      ἀρτηρίαν διὰ τὸ πλεύμονα μὴ ἔχειν, ἀλλ’ εὐθὺς ἡ κοιλία
+      <lb/>
+      πρὸς τῷ στόματί ἐστιν, ὥστ’ ἀναγκαῖον τῇ κοιλίᾳ ἕλκειν.
+      <lb/>
+      Τοῦτο δὲ κἂν τἆλλα
+						ἐποίει ζῷα· νῦν δὲ οὐ ποιοῦσιν. Κἂν
+      <lb/>
+      ἐκεῖνα δ’ ἔξω τοῦ ὑγροῦ ὄντα ἐπιδήλως ἂν αὐτὸ
+						ἐποίει· φαίνεται
+      <lb/>
+      δ’ οὐ ποιοῦντ’ αὐτό. Ἔτι πάντων τῶν ἀναπνεόντων
+      <lb/>
+      καὶ ἑλκόντων
+						τὸ πνεῦμα ὁρῶμεν γινομένην κίνησίν τινα
+      <lb/>
+      τοῦ μορίου τοῦ ἕλκοντος, ἐπὶ δὲ τῶν ἰχθύων
+						οὐ συμβαῖνον·
+      <lb/>
+      οὐδὲν γὰρ φαίνονται κινοῦντες τῶν περὶ τὴν κοιλίαν, ἀλλ’ ἢ
+      <lb/>
+      τὰ
+						βράγχια μόνον, καὶ ἐν τῷ ὑγρῷ καὶ εἰς τὸ ξηρὸν ἐκπεσόντες,
+      <lb/>
+      ὅταν σπαίρωσιν. Ἔτι ὅταν
+						ἀποθνήσκῃ πνιγόμενα
+      <lb/>
+      ἐν τοῖς ὑγροῖς πάντα τὰ ἀναπνέοντα, γίνονται πομφόλυγες
+      <lb/>
+      τοῦ πνεύματος ἐξιόντος βιαίως, οἷον ἐάν τις βιάζηται χελώνας
+      <lb/>
+      ἢ βατράχους ἤ τι
+						ἄλλο τῶν τοιούτων γενῶν· ἐπὶ δὲ τῶν
+      <lb/>
+      ἰχθύων οὐ συμβαίνει πειρωμένοις πάντα τρόπον,
+						ὡς οὐκ ἐχόντων
+      <lb/>
+      πνεῦμα θύραθεν οὐθέν. Ὄν τε τρόπον λέγουσι γίνεσθαι
+      <lb/>
+      τὴν
+						ἀναπνοὴν αὐτοῖς, ἐνδέχεται καὶ τοῖς ἀνθρώποις οὖσιν
+      <lb/>
+      ἐν τῷ ὑγρῷ συμβαίνειν· εἰ γὰρ
+						καὶ οἱ ἰχθύες ἕλκουσιν
+      <lb/>
+      ἐκ τοῦ πέριξ ὕδατος τῷ στόματι, διὰ τί τοῦτο οὐκ ἂν
+      <pb n="332"/>
+      ποιοῖμεν καὶ οἱ ἄνθρωποι καὶ τἆλλα ζῷα; Καὶ τὸν ἐκ τοῦ
+      <lb/>
+      στόματος δ’ ἂν
+						ἕλκοιμεν ὁμοίως τοῖς ἰχθύσιν. Ὤστ’ εἴπερ
+      <lb/>
+      κἀκεῖνα ἦν δυνατά, καὶ ταῦτ’ ἂν ἦν· ἐπεὶ
+						δ’ οὐκ ἔστι, δῆλον
+      <lb/>
+      ὡς οὐδ’ ἐπ’ ἐκείνων ἐστίν. Πρὸς δὲ τούτοις διὰ τίν’ αἰτίαν
+      <lb/>
+      ἐν τῷ ἀέρι ἀποθνήσκουσι καὶ φαίνονται ἀσπαρίζοντα ὥσπερ
+      <lb/>
+      τὰ πνιγόμενα, εἴπερ
+						ἀναπνέουσιν; Οὐ γὰρ δὴ τροφῆς γε
+      <lb/>
+      ἐνδείᾳ τοῦτο πάσχουσιν. Ἢν γὰρ λέγει Διογένης
+						αἰτίαν,
+      <lb/>
+      εὐήθης· φησὶ γὰρ ὅτι τὸν ἀέρα πολὺν ἕλκουσι λίαν ἐν τῷ
+      <lb/>
+      ἀέρι, ἐν δὲ τῷ
+						ὕδατι μέτριον, καὶ διὰ τοῦτ’ ἀποθνήσκειν.
+      <lb/>
+      Καὶ γὰρ ἐπὶ τῶν πεζῶν ἔδει δυνατὸν εἶναι
+						τοῦτο συμβαίνειν·
+      <lb/>
+      νῦν δ’ οὐδὲν τῷ σφόδρα ἀναπνεῦσαι ἀποπνίγεται πεζὸν
+      <lb/>
+      ζῷον.
+						Ἔτι δ’ εἰ πάντα ἀναπνεῖ, δῆλον ὅτι καὶ τὰ ἔντομα
+      <lb/>
+      τῶν ζῴων ἀναπνεῖ· φαίνεται δ’
+						αὐτῶν πολλὰ διατεμνόμενα
+      <lb/>
+      ζῆν, οὐ μόνον εἰς δύο μέρη ἀλλὰ καὶ εἰς πλείω, οἷον αἱ
+						καλούμεναι
+      <lb/>
+      σκολόπενδραι· ἃ πῶς ἢ τίνι ἐνδέχεται ἀναπνεῖν;
+      <lb/>
+      Αἴτιον δὲ μάλιστα
+						τοῦ μὴ λέγεσθαι περὶ αὐτῶν καλῶς τό
+      <lb/>
+      τε τῶν μορίων ἀπείρους εἶναι τῶν ἐντός, καὶ μὴ
+						λαμβάνειν
+      <lb/>
+      ἕνεκά τινος τὴν φύσιν πάντα ποιεῖν· ζητοῦντες γὰρ τίνος
+      <lb/>
+      ἕνεκα ἡ
+						ἀναπνοὴ τοῖς ζῴοις ὑπάρχει, καὶ ἐπὶ τῶν μορίων
+      <lb/>
+      τοῦτ’ ἐπισκοποῦντες, οἷον ἐπὶ
+						βραγχίων καὶ πλεύμονος, εὗρον
+      <lb/>
+      ἂν θᾶττον τὴν αἰτίαν.
+     </p>
+     <p lang="it">
+      Ma cosa succede se l'aria viene aspirata dalla bocca o dall'acqua attraverso la bocca?
+						impossibile; poiché non hanno un'arteria che attraversa i polmoni, ma l'addome stesso
+						È verso la bocca, come se fosse un'ulcera allo stomaco. Non è nemmeno così
+						vivono; ma ora non lo fanno. Se quelli sono fuori dal liquido, è evidente che sia così
+						sembra; non sembra. Che dire di tutto ciò che respira e tira?
+						lo spirito che vediamo non è fatto per muovere la mole della peste, ma dei pesci
+						non succede, perché non sembra che si muovano attorno all'addome, ma il
+						solo lamelle, sia nell'umido che nell'asciutto cadente, quando seminano. Cosa quando
+						tutto ciò che respira muore annegato nelle acque, si mummifica
+						dello spirito che esce violentemente, chi se viene precipitato da una tartaruga o da rane o cosa
+						un altro di questi generi, ma con i pesci non è sempre sperimentato in alcun modo,
+						come se non ci fosse spirito dalla porta. Come si dice c iniettare il
+						respirarli è possibile anche per gli esseri umani, così avviene nell'acqua;
+						E i pesci fanno male a causa dell'acqua intorno alla bocca, perché non ne soffrono anche gli esseri umani e gli altri animali? E quello dalla bocca d'an
+						Siamo feriti allo stesso modo dei pesci. Soprattutto era forte, e anche se lo era;
+						d' οὐκ ἔστι, διλον come οὐδ' su quelli estín. Ma per quale motivo?
+						nell'aria muoiono e appaiono bianchi come gli annegati,
+						stanno respirando? Poiché non c'è cibo, per questo soffrono. Perché dice Diogene
+						perché tu hai benedetto;
+						Acqua mediocre, e per questo morì. E perché sui pedoni è forte
+						ecco cosa succede; adesso se non respiri forte, soffochi a piedi.
+						Poiché tutto respira, sembra che respirino anche gli insetti degli animali;
+						molte di queste vite si intersecavano, non solo in due parti ma anche in s pleio, oἷon aἱ
+						chiamati scolopendrai; come o cosa possono respirare? Per questo motivo
+						per non dire bene che il te delle infinite molecole è delle interne, e non
+						ricevono uno la cui natura è tutta chi;
+						c'è respiro nei vivi, e nelle particelle del vescovo, che su
+						branchie e polmoni, hanno trovato la causa.
+     </p>
+     <p lang="en">
+      But what if the air is drawn from the mouth or from the water through the mouth
+						impossible; for they have no artery through the lungs, they do not, but the abdomen itself
+						It is towards the mouth, as if it were a stomach ulcer. This is not even the case
+						they live; but now they do not. If those are outside of the liquid being manifestly if that
+						it seems; it doesn't seem like it. What about everything that breathes and pulls
+						the spirit we see is made to move the mole of the plague, but of the fish
+						it does not happen, because they do not appear to be moving around the abdomen, but the
+						gills only, both in the wet and in the dry falling, when they sow. What when
+						everything that breathes dies drowned in the waters, they become mummified
+						of the spirit coming out violently, who if rushed by a turtle or frogs or what
+						another of such genera; but with fishes it is not always experienced in any way,
+						as if there was no spirit from the door. How do they say c inject the
+						breathing to them, it is also possible for humans, so it happens in the water; for
+						And the fishes hurt from the water around the mouth, why don't humans and other animals also suffer from this? And the one from the mouth d'an
+						We are wounded in the same way as fish. Above all it was strong, and even if it was;
+						d' οὐκ ἔστι, διλον as οὐδ' on those estín. But for what reason?
+						in the air they perish and appear as white as those drowned,
+						are they breathing? Because there is no food because of this they suffer. Because it says Diogenes
+						cause, thou hast blessed;
+						Mediocre water, and because of this he died. And because on the pedestrians it is strong
+						this is what happens; now if you don't breathe hard, you suffocate on foot.
+						Because everything breathes, it seems that the insects of the animals also breathe; it seems that
+						many of these intersected lives, not only in two parts but also in s pleio, oἷon aἱ
+						called scolopendrai; how or what can they breathe? Because of that
+						not to say about them well that the te of the infinite molecules is of the internals, and not
+						they receive one whose nature all who; for asking whose one the
+						there is breath in the living, and in the particles of the bishop, who on
+						gills and lungs, they found the cause.
+     </p>
+    </div>
+    <div n="4" subtype="chapter" type="textpart">
+     <p>
+      Δημόκριτος δ’ ὅτι μὲν ἐκ τῆς ἀναπνοῆς συμβαίνει τι τοῖς
+      <lb/>
+      ἀναπνέουσι λέγει, φάσκων
+						κωλύειν ἐκθλίβεσθαι τὴν ψυχήν·
+      <lb/>
+      οὐ μέντοι ὡς τούτου γ’ ἕνεκα ποιήσασαν τοῦτο τὴν
+						φύσιν
+      <lb/>
+      οὐθὲν εἴρηκεν· ὅλως γὰρ ὥσπερ καὶ οἱ ἄλλοι φυσικοί, καὶ
+      <lb/>
+      οὗτος οὐθὲν
+						ἅπτεται τῆς τοιαύτης αἰτίας. Λέγει δ’ ὡς ἡ
+      <lb/>
+      ψυχὴ καὶ τὸ θερμὸν ταὐτὸν τὰ πρῶτα
+						σχήματα τῶν σφαιροειδῶν.
+      <lb/>
+      συγκρινομένων οὖν αὐτῶν ὑπὸ τοῦ περιέχοντος
+      <pb n="333"/>
+      ἐκθλίβοντος, βοήθειαν γίνεσθαι τὴν ἀναπνοήν φησιν. Ἐν
+      <lb/>
+      γὰρ τῷ ἀέρι πολὺν ἀριθμὸν
+						εἶναι τῶν τοιούτων ἃ καλεῖ ἐκεῖνος
+      <lb/>
+      νοῦν καὶ ψυχήν· ἀναπνέοντος οὖν καὶ εἰσιόντος
+						τοῦ
+      <lb/>
+      ἀέρος συνεισιόντα ταῦτα, καὶ ἀνείργοντα τὴν θλίψιν,
+      <lb/>
+      κωλύειν τὴν ἐνοῦσαν ἐν
+						τοῖς ζῴοις διιέναι ψυχήν. Καὶ διὰ
+      <lb/>
+      τοῦτο ἐν τῷ ἀναπνεῖν καὶ ἐκπνεῖν εἶναι τὸ ζῆν καὶ
+						τὸ ἀποθνήσκειν·
+      <lb/>
+      ὅταν γὰρ κρατῇ τὸ περιέχον συνθλῖβον, καὶ μηκέτι
+      <lb/>
+      θύραθεν
+						εἰσιὸν δύνηται ἀνείργειν, μὴ δυναμένου
+      <lb/>
+      ἀναπνεῖν, τότε συμβαίνειν τὸν θάνατον τοῖς
+						ζῴοις· εἶναι
+      <lb/>
+      γὰρ τὸν θάνατον τὴν τῶν τοιούτων σχημάτων ἐκ τοῦ σώματος
+      <lb/>
+      ἔξοδον
+						ἐκ τῆς τοῦ περιέχοντος ἐκθλίψεως. Τὴν δ’
+      <lb/>
+      αἰτίαν διὰ τί ποτε πᾶσι μὲν ἀναγκαῖον
+						ἀποθανεῖν, οὐ μέντοι
+      <lb/>
+      ὅτε ἔτυχεν ἀλλὰ κατὰ φύσιν μὲν γήρᾳ, βίᾳ δὲ παρὰ
+      <lb/>
+      φύσιν,
+						οὐθὲν δεδήλωκεν. Καίτοι ἐχρῆν, ἐπεὶ ὁτὲ μὲν φαίνεται
+      <lb/>
+      τοῦτο γινόμενον, ὁτὲ δ’ οὐ
+						φαίνεται, πότερον τὸ
+      <lb/>
+      αἴτιον ἔξωθέν ἐστιν ἢ ἐντός. Οὐ λέγει δὲ οὐδὲ περὶ τῆς
+      <lb/>
+      ἀρχῆς τοῦ ἀναπνεῖν τί τὸ αἴτιον, πότερον ἔσωθεν ἢ ἔξωθεν·
+      <lb/>
+      οὐ γὰρ δὴ ὁ θύραθεν
+						νοῦς τηρεῖ τὴν βοήθειαν, ἀλλ’ ἔσωθεν
+      <lb/>
+      ἡ ἀρχὴ τῆς ἀναπνοῆς γίνεται καὶ τῆς κινήσεως,
+						οὐχ ὡς βιαζομένου
+      <lb/>
+      τοῦ περιέχοντος. Ἄτοπον δὲ καὶ τὸ ἅμα τὸ
+      <lb/>
+      περιέχον συνθλίβειν
+						καὶ εἰσιὸν διαστέλλειν. Ἃ μὲν οὖν
+      <lb/>
+      εἴρηκε καὶ ὥς, σχεδὸν ταῦτ’ ἐστίν. Εἰ δὲ δεῖ
+						νομίζειν
+      <lb/>
+      ἀληθῆ εἶναι τὰ πρότερον λεχθέντα καὶ μὴ πάντα τὰ ζῷα
+      <lb/>
+      ἀναπνεῖν, οὐ
+						περὶ παντὸς θανάτου τὴν αἰτίαν ὑποληπτέον
+      <lb/>
+      εἰρῆσθαι ταύτην, ἀλλὰ μόνον ἐπὶ τῶν
+						ἀναπνεόντων. Οὐ μὴν
+      <lb/>
+      οὐδ’ ἐπὶ τούτων καλῶς. Δῆλον δ’ ἐκ τῶν συμβαινόντων καὶ
+      <lb/>
+      τῶν τοιούτων ὧν ἔχομεν πάντες πεῖραν. Ἐν γὰρ ταῖς
+      <pb n="334"/>
+      ἀλέαις
+						θερμαινόμενοι μᾶλλον καὶ τῆς ἀναπνοῆς μᾶλλον
+      <lb/>
+      δεόμεθα καὶ πυκνότερον ἀναπνέομεν
+						πάντες· ὅταν δὲ τὸ
+      <lb/>
+      πέριξ ᾖ ψυχρὸν καὶ συνάγῃ καὶ συμπηγνύῃ τὸ σῶμα, κατέχειν
+      <lb/>
+      συμβαίνει τὸ πνεῦμα. Καίτοι τότ’ ἐχρῆν τὸν θύραθεν
+      <lb/>
+      εἰσιόντα κωλύειν τὴν
+						σύνθλιψιν. Νῦν δὲ γίνεται τοὐναντίον·
+      <lb/>
+      ὅταν γὰρ πολὺ λίαν ἀθροισθῇ τὸ θερμὸν μὴ
+						ἐκπνεόντων,
+      <lb/>
+      τότε δέονται τῆς ἀναπνοῆς· ἀναγκαῖον δ’ εἰσπνεύσαντας
+      <lb/>
+      ἀναπνεῖν.
+						Ἀλεάζοντες δὲ πολλάκις ἀναπνέουσιν,
+      <lb/>
+      ὡς ἀναψύξεως χάριν ἀναπνέοντες, ὅτε τὸ
+						λεγόμενον
+      <lb/>
+      ποιεῖ πῦρ ἐπὶ πῦρ.
+     </p>
+     <p lang="it">
+      Democrito 4 dice che dalla respirazione accade ciò che accade a chi respira, Faskon
+						impedisce all'anima di soffrire; quindi nessun uomo ha fatto questo per undici anni
+						la natura non parlava; proprio come gli altri fisici, anche lui
+						colpiti da tale causa. Dice che l'anima e il calore sono le prime cose
+						forme di sferoidi. confrontandoli quindi sotto il contenuto 
+						angosciato, il respiro affannoso diventa un aiuto. Perché nell'aria un gran numero
+						è di tale che egli chiama mente e anima respiro quindi anche essere;
+						dell'aria questi composti, e rimuovendo il dolore, ostruiscono il respiro
+						Dà la vita ai vivi. E per questo motivo, nell'inspirazione e nell'espirazione c'è anche la vita
+						perisce; per quando tiene la cotta contenuta, e un velo dalla porta
+						se non è in grado di agire, se non è in grado di respirare, allora a quelli accade la morte
+						vivere; perché è la morte di tali forme dal corpo ex dente
+						dalla depressione contenuta. Non chiedono nulla a meno che non sia necessario
+						muoiono non gli uomini quando ciò accadde, ma per natura, per vecchiaia e per violenza contro natura,
+						non ha dichiarato. Alcuni hanno detto, quando mi sembra che ciò stia accadendo, che non è così
+						si vede se la causa è esterna o interna. Non dice niente di lei
+						all'inizio della respirazione, qual è la causa, se viene dall'interno o dall'esterno;
+						la mente trattiene l'aiuto, ma dentro l'inizio il respiro diventa anche di movimento,
+						non che il contenuto abbia fretta. Atopon e l'ama che lo conteneva furono schiacciati
+						e si sta espandendo. Se è così, si è detto che è quasi così. Ma vedi
+						pensano che quello detto prima sia vero e non tutti gli animali respirano, no
+						per ogni morte la cui causa si presume sia questo delitto, ma solo sul
+						respirazione. No, no, non su questi buoni. Sono quattro degli eventi e
+						di quelli che abbiamo preso tutti. Perché nelle spiagge riscaldarsi piuttosto che respirare piuttosto vedere e respirare più densamente
+						tutti; ma quando l'ambiente circostante è freddo e il corpo si restringe e si condensa, possiedono
+						accade lo spirito. Qualcuno ha poi usato la porta per bloccarla
+						schiacciare Ma ora accade il contrario; per quando il caldo si accumula
+						espirando, allora sono obbligati a respirare; è necessario non inspirare per respirare.
+						Mentre macinano, spesso respirano, come se respirassero per rinfrescarsi, quando il
+						il cosiddetto poiei fuoco sul fuoco.
+     </p>
+     <p lang="en">
+      Democritus 4 says that from breathing what happens to those who breathe, Faskon
+						it hinders the soul from sorrow; no men, therefore, for eleven years, have done this
+						nature did not speak; for just like the other physicists, he
+						affected by such a cause. He says that the soul and the heat are the first things
+						shapes of spheroids. comparing them therefore under the contained 
+						distressed, the breathless breath becomes a help. For in the air a great number
+						it is of such that he calls mind and soul; breathing therefore also being
+						of the air these compounds, and removing the sorrow, obstruct the breath in
+						He gives life to the living. And because of this, in inhaling and exhaling is life as well
+						it perishes; for when it holds the contained crush, and a veil from the door
+						if he is unable to act, if he is unable to breathe, then death happens to those
+						living; for it is the death of such forms from the body ex tooth
+						from the contained depression. They don't ask for anything unless it's necessary
+						die, not men when it happened, but by nature with old age, and by violence against nature,
+						he did not declare. Some have said, when it seems to me that this is happening, that it is not
+						it is seen whether the cause is external or internal. He doesn't say anything about her
+						at the beginning of breathing, what is the cause, whether it is from within or without;
+						mind keeps the help, but inside the beginning of breathing also becomes of movement,
+						not as if the content is in a hurry. Atopon and the ama that contained it were crushed
+						and he is expanding. If so, it was said that it is almost like this. But see
+						they think that what was said before is true and not all animals breathe, no
+						for every death the cause of which is presumed to be this crime, but only on the
+						breathing. No, no, not on these good ones. They are four of the events and
+						of the ones that we have everyone took. For in the beaches warming rather than breathing rather see and breathe more densely
+						all; but when the surrounding is cold and the body shrinks and condenses, they possess
+						the spirit happens. Someone then used the door to block it
+						crush But now the opposite happens; for when the heat accumulates
+						exhaling, then they are bound to breathing; it is necessary not to inhale to breathe.
+						While grinding, they often breathe, as if breathing for the sake of refreshment, when the
+						so-called poiei fire on fire.
+     </p>
+    </div>
+    <div n="5" subtype="chapter" type="textpart">
+     <p>
+      Ἡ δ’ ἐν τῷ Τιμαίῳ γεγραμμένη περίωσις περί τε τῶν
+      <lb/>
+      ἄλλων ζῴων οὐδὲν διώρικε τίνα
+						τρόπον αὐτοῖς ἡ τοῦ θερμοῦ
+      <lb/>
+      γίνεται σωτηρία, πότερον τὸν αὐτὸν ἢ δι’ ἄλλην τινὰ
+						αἰτίαν·
+      <lb/>
+      εἰ μὲν γὰρ μόνοις τὸ τῆς ἀναπνοῆς ὑπάρχει τοῖς πεζοῖς,
+      <lb/>
+      λεκτέον τὴν
+						αἰτίαν τοῦ μόνοις· εἰ δὲ καὶ τοῖς ἄλλοις, ὁ δὲ
+      <lb/>
+      τρόπος ἄλλος, καὶ περὶ τούτου
+						διοριστέον, εἴπερ δυνατὸν
+      <lb/>
+      ἀναπνεῖν πᾶσιν. Ἔτι δὲ καὶ πλασματώδης ὁ τρόπος τῆς
+      <lb/>
+      αἰτίας. Ἐξιόντος γὰρ ἔξω τοῦ θερμοῦ διὰ τοῦ στόματος,
+      <lb/>
+      τὸν περιέχοντα ὠθούμενον
+						ἀέρα φερόμενον ἐμπίπτειν εἰς
+      <lb/>
+      τὸν αὐτὸν τόπον φησὶ διὰ μανῶν οὐσῶν τῶν σαρκῶν, ὅθεν
+						τὸ
+      <lb/>
+      ἐντὸς ἐξῄει θερμόν, διὰ τὸ μηδὲν εἶναι κενὸν ἀντιπεριισταμένων
+      <lb/>
+      ἀλλήλοις·
+						θερμανθέντα δὲ πάλιν ἐξιέναι κατὰ τὸν αὐτὸν
+      <lb/>
+      τόπον, καὶ περιωθεῖν εἴσω διὰ τοῦ
+						στόματος τὸν ἀέρα τὸν
+      <lb/>
+      ἐκπίπτοντα θερμόν· καὶ τοῦτο δὴ διατελεῖν ἀεὶ ποιοῦντας,
+      <lb/>
+      ἀναπνέοντάς τε καὶ ἐκπνέοντας. Συμβαίνει δὲ τοῖς οὕτως
+      <lb/>
+      οἰομένοις πρότερον τὴν
+						ἐκπνοὴν γίνεσθαι τῆς εἰσπνοῆς.
+      <lb/>
+      Ἔστι δὲ τοὐναντίον. Σημεῖον δέ· γίνεται μὲν γὰρ
+						ἀλλήλοις
+      <lb/>
+      ταῦτα παρ’ ἄλληλα, τελευτῶντες δὲ ἐκπνέουσιν, ὥστ’
+      <lb/>
+      ἀναγκαῖον εἶναι
+						τὴν ἀρχὴν εἰσπνοήν. Ἔτι δὲ τὸ τίνος
+      <pb n="335"/>
+      ἕνεκα ταῦθ’ ὑπάρχει τοῖς ζῴοις (λέγω
+						δὲ τὸ ἀναπνεῖν καὶ
+      <lb/>
+      τὸ ἐκπνεῖν) οὐθὲν εἰρήκασιν οἱ τοῦτον τὸν τρόπον λέγοντες,
+      <lb/>
+      ἀλλ’ ὡς περὶ συμπτώματός τινος ἀποφαίνονται μόνον.
+      <lb/>
+      Καίτοι γε κύρια ταῦθ’
+						ὁρῶμεν τοῦ ζῆν καὶ τελευτᾶν· ὅταν
+      <lb/>
+      γὰρ ἀναπνεῖν μὴ δύνωνται, τότε συμβαίνει γίνεσθαι
+						τὴν
+      <lb/>
+      φθορὰν τοῖς ἀναπνέουσιν. Ἔτι δὲ ἄτοπον τὸ τὴν μὲν τοῦ
+      <lb/>
+      θερμοῦ διὰ τοῦ
+						στόματος ἔξοδον καὶ πάλιν εἴσοδον μὴ
+      <lb/>
+      λανθάνειν ἡμᾶς, τὴν δ’ εἰς τὸν θώρακα τοῦ
+						πνεύματος εἴσοδον
+      <lb/>
+      καὶ πάλιν θερμανθέντος ἔξοδον λανθάνειν. Ἄτοπον δὲ καὶ
+      <lb/>
+      τοῦ
+						θερμοῦ τὴν ἀναπνοὴν εἴσοδον εἶναι. Φαίνεται γὰρ τοὐναντίον·
+      <lb/>
+      τὸ μὲν γὰρ ἐκπνεόμενον
+						εἶναι θερμόν, τὸ δ’
+      <lb/>
+      εἰσπνεόμενον ψυχρόν. Ὅταν δὲ θερμὸν ᾖ, ἀσθμαίνοντες
+      <lb/>
+      ἀναπνέουσιν· διὰ γὰρ τὸ μὴ καταψύχειν ἱκανῶς τὸ εἰσιὸν
+      <lb/>
+      πολλάκις τὸ πνεῦμα
+						συμβαίνει σπᾶν.
+     </p>
+     <p lang="it">
+      Il quarto versetto scritto nel Timeo sulle altre vite non vi ha separati
+						In questo modo il caldo diventa per loro una salvezza, dopo averlo bevuto o per qualche altro motivo
+						causa; poiché se tra i pedoni esiste solo il respiro, lascia che
+						causa sua soltanto; ma anche ad altri, ma la via è diversa, e su questo
+						Nominato, tutti respiravano affannosamente. E se i suoi modi fossero fittizi?
+						causa. Per essere fuori dal thermos attraverso la bocca, l'otumone contenente
+						l'aria, trasportata, cadde nello stesso luogo dalle madri degli esseri carnali, da dove
+						mentre emette calore, per nulla è vuoto di opposti;
+						ed essendo riscaldato, si dissipa di nuovo nello stesso luogo ed è circondato dal
+						bocca l'aria il calore che cade;
+						inspirando ed espirando. Ma succede a chi l'ha già visto
+						L'espirazione diventa inspirazione. Anzi. È un segno; diventa m Perché
+						questi uno dopo l'altro, ma per ultimi espirano, secondo necessità
+						la prima inspirazione. Ma la sua unità esiste tra i viventi (dico
+						ma lo inspirano e lo espirano) quelli che dicevano così non litigavano,
+						ma decidono solo del suo sintomo. Cerchiamo di essere i principali
+						lasciali vivere e finire; perché quando respirano non possono, allora succede
+						la stanchezza di chi respira. Ma per questo motivo non vedo il calore del sole
+						bocca sono uscito e sono entrato di nuovo per non impigliarci, il quarto nel petto
+						di spirito entrai e di nuovo riscaldato uscii dormiente. Anche Atopon
+						riscalda il respiro dentro di sé. Perché sembra il contrario;
+						è caldo, il freddo inalato. Ma quando fa caldo, mi manca il fiato
+						respirano, per non congelare troppo spesso l'anima
+						succede raramente.
+     </p>
+     <p lang="en">
+      The fourth verse written in Timaeus about other lives did not separate you
+						In this way, the heat becomes a salvation for them, after drinking it or for some other reason
+						cause; for if the breath alone exists among the pedestrians, let the
+						cause of him alone; but also to others, but the way is different, and about this
+						Appointed, everyone was breathing hard. What if her manner is fictitious
+						cause. For being outside the thermos through the mouth, the containing othumone
+						the air, being carried, fell into the same place by the mothers of fleshly beings, whence
+						while it emits heat, for nothing it is a void of opposites;
+						and being heated, it again dissipates in the same place, and is surrounded by the
+						mouth the air the falling heat;
+						breathing in and out. But it happens to those who have seen it before
+						Exhalation becomes inhalation. On the contrary. It's a sign; it becomes m because
+						these one after the other, but last they exhale, as necessary
+						the first inhalation. But his oneness exists among the living (I say
+						but they breathe it in and breathe it out) those saying this way did not quarrel,
+						but they only decide about his symptom. Let's be the main ones
+						let them live and end; for when they breathe they cannot, then it happens
+						the weariness of those who breathe. But I don't see the heat of the sun because of it
+						mouth I went out and came in again do not entangle us, the fourth in the chest of
+						of spirit I went in and again heated I went out dormant. Atopon, too
+						warm the breath inward it is. For it seems to the contrary;
+						it is warm, the d'inhaled cold. But when it's hot, short of breath
+						they breathe, for not to freeze the soul too often
+						it happens rarely.
+     </p>
+    </div>
+    <div n="6" subtype="chapter" type="textpart">
+     <p>
+      Ἀλλὰ μὴν οὐδὲ τροφῆς γε χάριν ὑποληπτέον γίνεσθαι
+      <lb/>
+      τὴν ἀναπνοήν, ὡς τρεφομένου τῷ
+						πνεύματι τοῦ ἐντὸς πυρός,
+      <lb/>
+      καὶ ἀναπνέοντος μὲν ὥσ περ ἐπὶ πῦρ ὑπέκκαυμα
+						ὑποβάλλεσθαι,
+      <lb/>
+      τραφέντος δὲ τοῦ πυρὸς γίνεσθαι τὴν ἐκπνοήν. Ταὐτὰ
+      <lb/>
+      γὰρ ἐροῦμεν
+						πάλιν καὶ πρὸς τοῦτον τὸν λόγον ἅπερ πρὸς
+      <lb/>
+      τοὺς ἔμπροσθεν· καὶ γὰρ ἐπὶ τῶν ἄλλων
+						ζῴων ἐχρῆν τοῦτο
+      <lb/>
+      συμβαίνειν ἢ τὸ ἀνάλογον τούτῳ· πάντα γὰρ ἔχει θερμότητα
+      <lb/>
+      ζωτικήν. Ἔπειτα καὶ τὸ γίνεσθαι τὸ θερμὸν ἐκ τοῦ
+      <lb/>
+      πνεύματος τίνα χρὴ τρόπον
+						λέγειν, πλασματῶδες ὄν·
+      <lb/>
+      μᾶλλον γὰρ ἐκ τῆς τροφῆς τοῦτο γινόμενον ὁρῶμεν. Συμβαίνει
+      <lb/>
+      τε κατὰ ταὐτὸ δέχεσθαι τὴν τροφὴν καὶ τὸ περίττωμα
+      <lb/>
+      ἀφιέναι· τοῦτο δ’ ἐπὶ τῶν
+						ἄλλων οὐχ ὁρῶμεν
+      <lb/>
+      γινόμενον.
+     </p>
+     <p lang="it">
+      Ma nessun cibo per amore della grazia diventa respiro, in quanto nutrito dall'
+						lo spirito del fuoco e respira come cenere sul fuoco
+						è posticipato, ma dopo che il fuoco è stato alimentato, diventa l'espirazione. Perché è quello che siamo
+						ancora e questa parola si applica a quelli che stanno davanti; perché anche agli altri
+						Nella vita, lascia che accada questo o qualcosa di simile, perché ha sempre calore
+						vitale. Allora diventa il calore dello spirito in modo diverso
+						dicono, esseri creati, anzi, lo vediamo accadere dal cibo. Succede
+						quindi riceve il cibo e lascia gli escrementi;
+						altri non li vediamo accadere.
+     </p>
+     <p lang="en">
+      But no food for the sake of grace becomes the breath, as nourished by the
+						the spirit of the fire, and breathing like ashes on the fire
+						it is postponed, but after the fire is fed, it becomes the exhalation. Because that's what we are
+						again and to this word apply to those in front; for also to the others
+						In life, let this happen or something similar to it, because it always has heat
+						vital. Then it becomes the heat from the spirit in a different way
+						they say, created beings; rather, we see this happening from food. It happens
+						therefore he receives the food and the excrement is left;
+						others we do not see happening.
+     </p>
+    </div>
+    <div n="7" subtype="chapter" type="textpart">
+     <p>
+      Λέγει δὲ περὶ ἀναπνοῆς καὶ Ἐμπεδοκλῆς, οὐ μέντοι τίνος
+      <lb/>
+      γ’ ἕνεκα, οὐδὲ περὶ πάντων
+						τῶν ζῴων οὐδὲν ποιεῖ δῆλον, εἴτε
+      <pb n="336"/>
+      ἀναπνέουσιν εἴτε μή. Καὶ περὶ τῆς διὰ τῶν
+						μυκτήρων ἀναπνοῆς
+      <lb/>
+      λέγων οἴεται καὶ περὶ τῆς κυρίας λέγειν ἀναπνοῆς.
+      <lb/>
+      Ἔστι γὰρ
+						καὶ διὰ τῆς ἀρτηρίας ἐκ τῶν στηθῶν ἡ ἀναπνοή,
+      <lb/>
+      καὶ ἡ διὰ τῶν μυκτήρων· αὐτοῖς δὲ
+						χωρὶς ἐκείνης οὐκ
+      <lb/>
+      ἔστιν ἀναπνεῦσαι τοῖς μυκτῆρσιν. Καὶ τῆς μὲν διὰ τῶν
+      <lb/>
+      μυκτήρων γινομένης ἀναπνοῆς στερισκόμενα τὰ ζῷα οὐδὲν
+      <lb/>
+      πάσχουσι, τῆς δὲ κατὰ
+						τὴν ἀρτηρίαν ἀποθνήσκουσιν.
+      <lb/>
+      Καταχρῆται γὰρ ἡ φύσις ἐν παρέργῳ τῇ διὰ τῶν μυκτήρων
+      <lb/>
+      ἀναπνοῇ πρὸς τὴν ὄσφρησιν ἐν ἐνίοις τῶν ζῴων· διόπερ
+      <lb/>
+      ὀσφρήσεως μὲν σχεδὸν
+						μετέχει πάντα τὰ ζῷα, ἔστι δ’ οὐ
+      <lb/>
+      πᾶσι τὸ αὐτὸ αἰσθητήριον. Εἴρηται δὲ περὶ αὐτῶν ἐν
+						ἑτέροις
+      <lb/>
+      σαφέστερον. Γίνεσθαι δέ φησι τὴν ἀναπνοὴν καὶ ἐκπνοὴν
+      <lb/>
+      διὰ τὸ φλέβας
+						εἶναί τινας, ἐν αἷς ἔνεστι μὲν αἷμα, οὐ
+      <lb/>
+      μέντοι πλήρεις εἰσὶν αἵματος, ἔχουσι δὲ
+						πόρους εἰς τὸν ἔξω
+      <lb/>
+      ἀέρα, τῶν μὲν τοῦ σώματος μορίων ἐλάττους, τῶν δὲ τοῦ
+      <lb/>
+      ἀέρος
+						μείζους· διὸ τοῦ αἵματος πεφυκότος κινεῖσθαι ἄνω
+      <lb/>
+      καὶ κάτω, κάτω μὲν φερομένου
+						εἰσρεῖν τὸν ἀέρα καὶ γίνεσθαι
+      <lb/>
+      ἀναπνοήν, ἄνω δ’ ἰόντος ἐκπίπτειν θύραζε καὶ γίνεσθαι
+						τὴν
+      <lb/>
+      ἐκπνοήν, παρεικάζων τὸ συμβαῖνον ταῖς κλεψύδραις.
+     </p>
+     <p lang="it">
+      E parla del respiro e di Empedocle, non dei suoi terzi undici, non di tutto
+						degli esseri viventi nessuno inganna, che respirino o no. E di lei attraverso loro
+						dei batteri respiratori, dicono, ovviamente, della signora, dicono anche respiratori. È
+						e attraverso l'arteria dai seni la respirazione, e attraverso i polmoni;
+						senza di lei, i miziani non possono respirare. E di me per loro
+						gli animali che fanno affidamento sulla respirazione dei funghi non soffrono, ma
+						l'arteria muore. Perché la natura viene abusata in modo strano attraverso i funghi
+						respirare verso l'olfatto negli esseri viventi attraverso l'olfatto senza attingere
+						partecipa sempre alla vita, perché non tutti hanno lo stesso sentimento. Si dice di loro in
+						altri in modo più chiaro. Inspira ed espira attraverso la vena
+						è tuo, in un sangue intriso di sangue, non sei pieno di sangue, ma loro lo hanno
+						pori dell'aria esterna, delle molecole difettose del corpo e dell'aria o
+						maggiore; attraverso il sangue del peduncolo si muove su e giù, sotto
+						lascia entrare l'aria e diventerai respiro
+						espirazione, simulando il fenomeno della clessidra.
+     </p>
+     <p lang="en">
+      And he says about breathing and Empedocles, not about his third eleven, not about everything
+						of living things no one deceives, whether they breathe or not. And about her through them
+						of respiratory bacteria, they say, of course, about the lady, they also say respiratory. It is
+						and through the artery from the breasts the respiration, and through the lungs;
+						without her, there is no breathing to the myctians. And of me for them
+						the animals relying on the respiration of fungi do not suffer, but
+						the artery dies. Because nature is abused in a strange way through fungi
+						breathing towards the sense of smell in living beings; through sense of smell without drawing
+						he always participates in life, because not all of them have the same feeling. It is said about them in
+						others more clearly. Inhale and exhale through the vein
+						it is yours, in a blood infused with blood, you are not full of blood, but they have
+						pores to the outside air, of the body's defect molecules, and of the air o
+						major; through the blood of the peduncle it moves up and down, under
+						let in the air and you will become breath
+						exhalation, simulating the hourglass phenomenon.
+     </p>
+     <lg>
+      <l>
+       Ὧδε δ’ ἀναπνεῖ πάντα καὶ ἐκπνεῖ. Πᾶσι λίφαιμοι
+      </l>
+      <l lang="it">
+       Non sempre inspira ed espira. Tutta gente grassa
+      </l>
+      <l lang="en">
+       He doesn't always breathe in and out. All fat people
+      </l>
+      <l>
+       σαρκῶν σύριγγες πύματον κατὰ σῶμα τέτανται,
+      </l>
+      <l lang="it">
+       Siringhe di carne tese sopra il corpo,
+      </l>
+      <l lang="en">
+       Syringes of flesh stretched above the body,
+      </l>
+      <l>
+       καί σφιν ἐπὶ στομίοις πυκναῖς τέτρηνται ἄλοξιν
+      </l>
+      <l lang="it">
+       e i cunei sulle bocche dei boschetti vengono tagliati in diagonale
+      </l>
+      <l lang="en">
+       and wedges on the mouths of the thickets are cut diagonally
+      </l>
+      <l>
+       ῥινῶν ἔσχατα τέρθρα διαμπερές, ὥστε φόνον μέν
+      </l>
+      <l lang="it">
+       ῥινῶν ἔχατα τερθρα παράες, στε φονον MEN
+      </l>
+      <l lang="en">
+       ῥινῶν ἔχατα τερθρα παράες, στε φονον MEN
+      </l>
+      <l>
+       κεύθειν, αἰθέρι δ’ εὐπορίην διόδοισι τετμῆσθαι.
+      </l>
+      <l lang="it">
+       kevethin, aetheri d'euporiin diodoisi tetmisthai.
+      </l>
+      <l lang="en">
+       kevethin, aetheri d'euporiin diodoisi tetmisthai.
+      </l>
+      <l>
+       Ἔνθεν ἔπειθ’ ὁπόταν μὲν ἀπαΐξῃ τέρεν αἷμα,
+      </l>
+      <l lang="it">
+       In qualche modo pensava di voler fare una partita di sangue,
+      </l>
+      <l lang="en">
+       Somehow he thought he wanted to play a game of blood,
+      </l>
+      <pb n="337"/>
+      <l>
+       αἰθὴρ παφλάζων καταβήσεται οἴδματι μάργῳ,
+      </l>
+      <l lang="it">
+       l'aria del fuoco è abbattuta dal sangue di marg,
+      </l>
+      <l lang="en">
+       the air of the fire is brought down by the blood of marg,
+      </l>
+      <l>
+       εὖτε δ’ ἀναθρώσκει, πάλιν ἐκπνεῖ, ὥσ περ ὅταν παῖς
+      </l>
+      <l lang="it">
+       quindi non pensare, espira di nuovo, come quando vai
+      </l>
+      <l lang="en">
+       so don't think, breathe out again, like when you go
+      </l>
+      <l>
+       κλεψύδρην παίζησι δι’ εὐπετέος χαλκοῖο.
+      </l>
+      <l lang="it">
+       Clessidra che gioca con il bronzo giubilare.
+      </l>
+      <l lang="en">
+       Hourglass playing with jubilee bronze.
+      </l>
+      <l>
+       Εὖτε μὲν αὐλοῦ πορθμὸν ἐπ’ εὐειδεῖ χερὶ θεῖσα
+      </l>
+      <l lang="it">
+       Così, con una court boat, ci ho messo mano
+      </l>
+      <l lang="en">
+       So, with a court boat, I put my hand on it
+      </l>
+      <l>
+       εἰς ὕδατος βάπτῃσι τέρεν δέμας ἀργυφέοιο,
+      </l>
+      <l lang="it">
+       Battezzare nell'acqua teren demas argyfeoio,
+      </l>
+      <l lang="en">
+       Baptize in water teren demas argyfeoio,
+      </l>
+      <l>
+       οὐδ’ ὅγ’ ἐς ἄγγος δ’ ὄμβρος ἐσέρχεται, ἀλλά μιν εἴργει
+      </l>
+      <l lang="it">
+       no, quando sei un po' di pioggia, non arriva, ma non funziona
+      </l>
+      <l lang="en">
+       no, when you're a little rain, it doesn't come, but it doesn't work
+      </l>
+      <l>
+       ἀέρος ὄγκος ἔσωθε πεσὼν ἐπὶ τρήματα πυκνά,
+      </l>
+      <l lang="it">
+       Un volume d'aria risparmiato cadendo fittamente sui fori,
+      </l>
+      <l lang="en">
+       A volume of air saved falling on holes densely,
+      </l>
+      <l>
+       εἰσόκ’ ἀποστεγάσῃ πυνικὸν ῥόον· αὐτὰρ ἔπειτα
+      </l>
+      <l lang="it">
+       se dà rifugio a un pynic ῥoon;
+      </l>
+      <l lang="en">
+       if he shelters a pynic ῥoon;
+      </l>
+      <l>
+       πνεύματος ἐλλείποντος ἐσέρχεται αὔξιμον ὕδωρ.
+      </l>
+      <l lang="it">
+       mancando lo spirito, entrano le acque che salgono.
+      </l>
+      <l lang="en">
+       lacking spirit, rising water enters.
+      </l>
+      <l>
+       Ὡς δ’ αὕτως ὅθ’ ὕδωρ μὲν ἔχει κατὰ βένθεα χαλκοῦ
+      </l>
+      <l lang="it">
+       È come se ci fosse acqua come una benthea di rame
+      </l>
+      <l lang="en">
+       It's the same as if there's water like a copper benthea
+      </l>
+      <l>
+       πορθμοῦ χωσθέντος βροτέῳ χροῒ ἠδὲ πόροιο,
+      </l>
+      <l lang="it">
+       La barca perduta ha trovato il tempo, nessuna risorsa,
+      </l>
+      <l lang="en">
+       Lost boat found time, no resource,
+      </l>
+      <l>
+       αἰθὴρ δ’ ἐκτὸς ἔσω λελιημένος ὄμβρον ἐρύκει
+      </l>
+      <l lang="it">
+       ἀθὀ δ' ektὸς ὔσο λελιένος ombron yrikei
+      </l>
+      <l lang="en">
+       ἀθὀ δ' ektὸς ὔσο λελιένος ombron yrikei
+      </l>
+      <l>
+       ἀμφὶ πύλας ἰσθμοῖο δυσηχέος, ἄκρα κρατύνων,
+      </l>
+      <l lang="it">
+       ma la porta dell'istmo è difficile, le estremità del
+      </l>
+      <l lang="en">
+       but the gate of the isthmus is difficult, the ends of the
+      </l>
+      <l>
+       εἰσόκε χειρὶ μεθῇ· τότε δ’ αὖ πάλιν, ἔμπαλιν ἢ πρίν,
+      </l>
+      <l lang="it">
+       se la mano è ubriaca, allora ancora, ancora o prima,
+      </l>
+      <l lang="en">
+       if the hand is drunk; then again, again or before,
+      </l>
+      <l>
+       πνεύματος ἐμπίπτοντος ὑπεκθέει αὔξιμον ὕδωρ.
+      </l>
+      <l lang="it">
+       lo spirito che cade presuppone l'acqua che sale.
+      </l>
+      <l lang="en">
+       falling spirit presupposes rising water.
+      </l>
+      <l>
+       Ὡς δ’ αὕτως τέρεν αἷμα κλαδασσόμενον διὰ γυίων
+      </l>
+      <l lang="it">
+       Ὡs d' sos teren sangue potato dai figli
+      </l>
+      <l lang="en">
+       Ὡs d' thus teren blood pruned by sons
+      </l>
+      <l>
+       ὁππότε μὲν παλίνορσον ἐπαΐξειε μυχόνδε,
+      </l>
+      <l lang="it">
+       poi con palinorson suona myhonde,
+      </l>
+      <l lang="en">
+       then with palinorson play myhonde,
+      </l>
+      <pb n="338"/>
+      <l>
+       αἰθέρος εὐθὺς ῥεῦμα κατέρχεται οἴδματι θῦον,
+      </l>
+      <l lang="it">
+       ἀθερος ὐθὺς ῥεῦμα discende οιδματι ῦον,
+      </l>
+      <l lang="en">
+       ἀθερος ὐθὺς ῥεῦμα descends οιδματι ῦον,
+      </l>
+      <l>
+       εὖτε δ’ ἀναθρώσκῃ, πάλιν ἐκπνεῖ ἶσον ὀπίσσω.
+      </l>
+      <l lang="it">
+       Quindi non pensare, espira di nuovo.
+      </l>
+      <l lang="en">
+       So don't think, breathe out again.
+      </l>
+     </lg>
+     <p>
+      Λέγει μὲν οὖν ταῦτα περὶ τοῦ ἀναπνεῖν, ἀναπνεῖ δ’, ὥσπερ
+      <lb/>
+      εἴπομεν, τὰ φανερῶς
+						ἀναπνέοντα διὰ τῆς ἀρτηρίας, διά τε
+      <lb/>
+      τοῦ στόματος ἅμα καὶ διὰ τῶν μυκτήρων. Ὥστ’ εἰ
+						μὲν
+      <lb/>
+      περὶ ταύτης λέγει τῆς ἀναπνοῆς, ἀναγκαῖον ζητεῖν πῶς
+      <lb/>
+      ἐφαρμόσει ὁ εἰρημένος
+						λόγος τῆς αἰτίας· φαίνεται γὰρ
+      <lb/>
+      τοὐναντίον συμβαῖνον. Ἄραντες μὲν γὰρ τὸν τόπον,
+						καθάπερ
+      <lb/>
+      τὰς φύσας ἐν τοῖς χαλκείοις, ἀναπνέουσιν· αἴρειν δὲ τὸ
+      <lb/>
+      θερμὸν εὔλογον,
+						ἔχειν δὲ τὸ αἷμα τὴν τοῦ θερμοῦ χώραν·
+      <lb/>
+      συνιζάνοντες δὲ καὶ καταπνίγοντες, ὥσπερ
+						ἐκεῖ τὰς φύσας,
+      <lb/>
+      ἐκπνέουσιν. Πλὴν ἐκεῖ μὲν οὐ κατὰ ταὐτὸν εἰσδέχονταί
+      <lb/>
+      τε τὸν
+						ἀέρα καὶ πάλιν ἐξιᾶσιν, οἱ δ’ ἀναπνέοντες κατὰ
+      <lb/>
+      ταὐτόν. Εἰ δὲ περὶ τῆς κατὰ τοὺς
+						μυκτῆρας λέγει μόνης,
+      <lb/>
+      πολὺ διημάρτηκεν· οὐ γάρ ἐστιν ἀναπνοὴ μυκτήρων ἴδιος,
+      <lb/>
+      ἀλλὰ παρὰ τὸν αὐλῶνα τὸν περὶ τὸν γαργαρεῶνα, ᾗ τὸ
+      <lb/>
+      ἔσχατον τοῦ ἐν τῷ στόματι
+						οὐρανοῦ, συντετρημένων τῶν
+      <lb/>
+      μυκτήρων χωρεῖ τὸ μὲν ταύτῃ τοῦ πνεύματος, τὸ δὲ διὰ
+      <lb/>
+      τοῦ στόματος, ὁμοίως εἰσιόν τε καὶ ἐξιόν. Τὰ μὲν οὖν
+      <lb/>
+      παρὰ τῶν ἄλλων εἰρημένα
+						περὶ τοῦ ἀναπνεῖν τοιαύτας καὶ
+      <lb/>
+      τοσαύτας ἔχει δυσχερείας.
+     </p>
+     <p lang="it">
+      Quindi dice queste cose sulla respirazione, respira, come diciamo noi, ovviamente
+						respirare attraverso l'arteria, attraverso la bocca, ma anche attraverso il muco. Ὥσ'εἰ
+						ma riguardo a questo che dice della respirazione, bisogna chiedersi come si applica l'unto
+						ragione della causa; sembra invece il contrario. Perché vuoi quel posto,
+						vedi le nature nei bronzi, respirano;
+						ma il sangue ha il paese caldo;
+						lì respira la natura. Tuttavia, non lo accettano lì
+						aria e respira di nuovo, chi non respira secondo questo. Ma su di lei contro di loro
+						Myctiras dice da solo, molto dimartiken; perché non è il respiro di Myctears stesso,
+						ma invece del gorgoglio attorno al gorgoglio, la fine in bocca
+						del cielo, schiacciato dai funghi, regge il me dello stesso spirito, e il
+						della bocca, allo stesso modo eision te ed eision. Quelli diversi dagli altri n rotto
+						riguardo alla respirazione di questo e quello c'è difficoltà.
+     </p>
+     <p lang="en">
+      So he says these things about breathing, he breathes, as we say, obviously
+						breathing through the artery, through the mouth, but also through the mucus. Ὥσ' εἰ
+						but about this he says of breathing, it is necessary to ask how the anointed one applies
+						reason of the cause; for the contrary seems to be the case. Because you want the place,
+						see the natures in the bronzes, they breathe;
+						but the blood has the warm country;
+						there the natures breathe. However, they do not accept him there
+						air and breathe again, those who do not breathe according to this. But about her against them
+						Myctiras says alone, much dimartiken; for it is not the breath of myctears itself,
+						but instead of the gurgling around the gurgling, the end of it in the mouth
+						of heaven, crushed by the fungi, the me of the same spirit holds, and the
+						of the mouth, likewise eision te and eision. The ones that are different from the others n broken
+						about the breathing of such and such there is difficulty.
+     </p>
+    </div>
+    <div n="8" subtype="chapter" type="textpart">
+     <p>
+      Ἐπεὶ δὲ εἴρηται πρότερον ὅτι τὸ ζῆν καὶ ἡ τῆς ψυχῆς
+      <lb/>
+      ἕξις μετὰ θερμότητός τινός
+						ἐστιν· οὐδὲ γὰρ ἡ πέψις, δι’ ἧς
+      <lb/>
+      ἡ τροφὴ γίνεται τοῖς ζῴοις, οὔτ’ ἄνευ ψυχῆς οὔτ’
+						ἄνευ θερμότητός
+      <lb/>
+      ἐστιν· πυρὶ γὰρ ἐργάζεται πάντα. Διόπερ ἐν ᾧ
+      <pb n="339"/>
+      πρώτῳ
+						τόπῳ τοῦ σώματος καὶ ἐν ᾧ πρώτῳ τοῦ τόπου τούτου
+      <lb/>
+      μορίῳ τὴν ἀρχὴν ἀναγκαῖον εἶναι
+						τὴν τοιαύτην, ἐνταῦθα
+      <lb/>
+      καὶ τὴν πρώτην τὴν θρεπτικὴν ψυχὴν ἀναγκαῖον ὑπάρχειν.
+      <lb/>
+      Οὗτος δ’ ἐστὶν ὁ μέσος τόπος τοῦ τε δεχομένου τὴν
+      <lb/>
+      τροφὴν καὶ καθ’ ὃν ἀφίησι τὸ
+						περίττωμα. Τοῖς μὲν οὖν
+      <lb/>
+      ἀναίμοις ἀνώνυμον, τοῖς δ’ ἐναίμοις ἡ καρδία τοῦτο τὸ
+						μόριόν
+      <lb/>
+      ἐστιν. Ἡ τροφὴ μὲν γὰρ ἐξ ἧς ἤδη γίνεται τὰ μόρια
+      <lb/>
+      τοῖς ζῴοις, ἡ τοῦ
+						αἵματος φύσις ἐστίν. Τοῦ δ’ αἵματος καὶ
+      <lb/>
+      τῶν φλεβῶν τὴν αὐτὴν ἀρχὴν ἀναγκαῖον εἶναι·
+						θατέρου
+      <lb/>
+      γὰρ ἕνεκα θάτερόν ἐστιν, ὡς ἀγγεῖον καὶ δεκτικόν. Ἀρχὴ
+      <lb/>
+      δὲ τῶν φλεβῶν ἡ
+						καρδία τοῖς ἐναίμοις· οὐ γὰρ διὰ ταύτης,
+      <lb/>
+      ἀλλ’ ἐκ ταύτης ἠρτημέναι πᾶσαι
+						τυγχάνουσιν. Δῆλον δ’
+      <lb/>
+      ἡμῖν τοῦτο ἐκ τῶν ἀνατομῶν. Τὰς μὲν οὖν ἄλλας δυνάμεις
+      <lb/>
+      τῆς ψυχῆς ἀδύνατον ὑπάρχειν ἄνευ τῆς θρεπτικῆς (δι’ ἣν δ’
+      <lb/>
+      αἰτίαν, εἴρηται
+						πρότερον ἐν τοῖς περὶ ψυχῆς), ταύτην δ’ ἄνευ
+      <lb/>
+      τοῦ φυσικοῦ πυρός· ἐν τούτῳ γὰρ ἡ
+						φύσις ἐμπεπύρευκεν
+      <lb/>
+      αὐτήν. Φθορὰ δὲ πυρός, ὥσ περ εἴρηται πρότερον, σβέσις
+      <lb/>
+      καὶ
+						μάρανσις. Σβέσις μὲν ἡ ὑπὸ τῶν ἐναντίων· διό περ
+      <lb/>
+      ἀθρόον τε ὑπὸ τῆς τοῦ περιέχοντος
+						ψυχρότητος, καὶ
+      <lb/>
+      θᾶττον ὅτι σβέννυται διασπώμενον. Αὕτη μὲν οὖν ἡ
+      <lb/>
+      φθορὰ βίαιος
+						ὁμοίως ἐπὶ τῶν ἐμψύχων καὶ τῶν ἀψύχων
+      <lb/>
+      ἐστίν· καὶ γὰρ ὀργάνοις διαιρουμένου τοῦ
+						ζῴου, καὶ πηγνυμένου
+      <lb/>
+      διὰ ψύχους ὑπερβολήν, ἀποθνήσκουσιν. Ἡ δὲ μάρανσις
+      <lb/>
+      διὰ
+						πλῆθος θερμότητος· καὶ γὰρ ἂν ὑπερβάλλῃ τὸ
+      <lb/>
+      πέριξ θερμόν, καὶ τροφὴν ἐὰν μὴ λαμβάνῃ,
+						φθείρεται τὸ
+      <lb/>
+      πυρούμενον, οὐ ψυχόμενον ἀλλὰ μαραινόμενον. Ὥστ’
+      <lb/>
+      ἀνάγκη γίνεσθαι
+						κατάψυξιν, εἰ μέλλει τεύξεσθαι σωτηρίας·
+      <lb/>
+      τοῦτο γὰρ βοηθεῖ πρὸς ταύτην τὴν φθοράν.
+     </p>
+     <p lang="it">
+      E quando prima si diceva che la vita e l'anima sono sei con il calore di una cosa sola
+						poiché non è la digestione, mediante la quale viene dato il cibo agli esseri viventi, né senza anima né
+						È senza calore, perché il fuoco funziona sempre. Dioper ἐν ᾧ protoῳ
+						al luogo del corpo e nel quale, come prima particella di questo luogo, si trova il principio necessario
+						questo, in questa e nella prima anima nutritrice, esiste necessariamente.
+						Questo è il luogo intermedio di colui che ha ricevuto il cibo e al quale ha lasciato il cibo
+						escrementi. A coloro che sono morti in modo anonimo, a coloro che sono morti, il cuore di questo
+						è una molecola. Per il cibo da cui sono già costituite le molecole degli animali, il
+						la natura del sangue è. Del sangue e delle vene è necessario questo principio;
+						poiché c'è un solo padre, come vaso e ricevitore. Ma l'inizio delle vene
+						cuore alle anime: perché non per questo, ma da questo tutti sono legati
+						accadono. Impariamo questo dagli anatomisti. Le altre forze dell’anima impossibile esistere senza nutrimento (per quale ragione lo è
+						precedentemente in quelli sull'anima), questo senza il fuoco naturale poiché in questo il
+						la natura lo ha causato. Ma quando il fuoco si consuma, come detto prima, lo spegni anche tu
+						Maransis. Svesis con o sotto gli avversari; da per athroon e sotto quello del contenimento
+						di freddezza, e che si estingue per disintegrazione. Questa, dunque, la distruzione è violenta
+						allo stesso modo sull'animato e sull'inanimato; poiché sono organi divisi dell'anima
+						della vita, ed essendo consumati dal freddo eccessivo, muoiono. Ma i maransis di
+						una moltitudine di calore; perché se il calore circostante è eccessivo, e il cibo non riceve,
+						il fuoco consuma, non raffreddando ma appassindo. Se necessario, verrà fatto
+						il congelamento, se si vuole salvarlo, perché questo aiuta contro questo deterioramento.
+     </p>
+     <p lang="en">
+      And when it was said before that the life and the soul are six with the warmth of one
+						for it is not digestion, by which food is given to living things, neither without a soul nor
+						It is without heat, for fire always works. Dioper ἐν ᾧ protoῳ
+						to the place of the body and in which, as the first particle of this place, the necessary principle is
+						this, in this and the first nourishing soul, necessarily exists.
+						This is the middle place of the one who received the food and to whom he left the
+						excrement. To those who have died anonymously, to those who have died, the heart of this
+						it is a molecule. For the food from which the molecules of the animals are already made, the
+						blood nature is. Of the blood and veins this principle is necessary;
+						for there are only one father, as a vessel and a receiver. But the beginning of the veins
+						heart to the souls: for not through this, but from this are all bound
+						they happen. Let us learn this from the anatomists. The other forces of the soul impossible to exist without nourishment (for what reason, it is
+						previously in those about the soul), this one without the natural fire; for in this the
+						nature caused it. But when the fire wears out, as mentioned before, you also put it out
+						maransis. Svesis with or under the opponents; by per athroon and under that of the containing
+						of coldness, and that it is extinguished by disintegration. This one, then, the destruction is violent
+						likewise on the animate and the inanimate; for they are divided organs of the
+						of life, and being consumed by excessive cold, they die. But the maransis di
+						a multitude of heat; for if the surrounding heat is excessive, and food if it does not receive,
+						the burning wears out, not cooling but withering. If necessary, it will be done
+						freezing, if it is to be saved, because this helps against this deterioration.
+     </p>
+    </div>
+    <pb n="340"/>
+    <div n="9" subtype="chapter" type="textpart">
+     <p>
+      Ἐπεὶ δὲ τῶν ζῴων τὰ μὲν ἔνυδρα, τὰ δ’ ἐν τῇ γῇ ποιεῖται
+      <lb/>
+      τὴν διατριβήν, τούτων τοῖς
+						μὲν μικροῖς πάμπαν καὶ
+      <lb/>
+      τοῖς ἀναίμοις ἡ γινομένη ἐκ τοῦ περιέχοντος ἢ ὕδατος ἢ ἀέρος
+      <lb/>
+      ψύξις ἱκανὴ πρὸς τὴν βοήθειαν τῆς φθορᾶς ταύτης·
+      <lb/>
+      μικρὸν γὰρ ἔχοντα τὸ θερμὸν
+						μικρᾶς δέονται τῆς βοηθείας.
+      <lb/>
+      Διὸ καὶ βραχύβια σχεδὸν πάντα τὰ τοιαῦτ’ ἐστίν· ἐπ’
+						ἀμφότερα
+      <lb/>
+      γὰρ μικρᾶς ὄντα τυγχάνει ῥοπῆς. Ὅσα δὲ μακροβιώτερα
+      <lb/>
+      τῶν ἐντόμων
+						(ἄναιμα γάρ ἐστι πάντα τὰ ἔντομα),
+      <lb/>
+      τούτοις ὑπὸ τὸ διάζωμα διέσχισται, ὅπως διὰ
+						λεπτοτέρου
+      <lb/>
+      ὄντος τοῦ ὑμένος ψύχηται· μᾶλλον γὰρ ὄντα θερμὰ
+      <lb/>
+      πλείονος δεῖται τῆς
+						καταψύξεως, οἷον αἱ μέλιτται (τῶν γὰρ
+      <lb/>
+      μελιττῶν ἔνιαι ζῶσι καὶ ἑπτὰ ἔτη) καὶ τἆλλα
+						δὲ ὅσα βομβεῖ,
+      <lb/>
+      οἷον σφῆκες καὶ μηλολόνθαι καὶ τέττιγες. Καὶ γὰρ
+      <lb/>
+      τὸν ψόφον
+						ποιοῦσι πνεύματι, οἷον ἀσθμαίνοντα· ἐν αὐτῷ
+      <lb/>
+      γὰρ τῷ ὑποζώματι, τῷ ἐμφύτῳ πνεύματι
+						αἴροντι καὶ συνίζοντι,
+      <lb/>
+      συμβαίνει πρὸς τὸν ὑμένα γίνεσθαι τρίψιν· κινοῦσι
+      <lb/>
+      γὰρ
+						τὸν τόπον τοῦτον, ὥσπερ τὰ ἀναπνέοντα ἔξωθεν τῷ
+      <lb/>
+      πλεύμονι καὶ οἱ ἰχθύες τοῖς
+						βραγχίοις. Παραπλήσιον γὰρ
+      <lb/>
+      συμβαίνει κἂν εἴ τίς τινα τῶν ἀναπνεόντων πνίγοι, τὸ
+      <lb/>
+      στόμα κατασχών· καὶ γὰρ ταῦτα ποιήσει τῷ πλεύμονι τὴν
+      <lb/>
+      ἄρσιν ταύτην. Ἀλλὰ
+						τούτοις μὲν οὐχ ἱκανὴν ἡ τοιαύτη
+      <lb/>
+      ποιεῖ κίνησις κατάψυξιν, ἐκείνοις δ’ ἱκανήν. Καὶ
+						τῇ τρίψει
+      <lb/>
+      τῇ πρὸς τὸν ὑμένα ποιοῦσι τὸν βόμβον, ὥσπερ λέγομεν,
+      <lb/>
+      οἷον διὰ τῶν
+						καλάμων τῶν τετρυπημένων τὰ παιδία, ὅταν
+      <lb/>
+      ἐπιθῶσιν ὑμένα λεπτόν. Διὰ γὰρ τοῦτο καὶ
+						τῶν τεττίγων
+      <lb/>
+      οἱ ᾄδοντες ᾄδουσιν· θερμότεροι γάρ εἰσι, καὶ ἔσχισται αὐτοῖς
+      <lb/>
+      ὑπὸ
+						τὸ ὑπόζωμα· τοῖς δὲ μὴ ᾄδουσι τοῦτ’ ἐστὶν ἄσχιστον.
+      <pb n="341"/>
+      Καὶ τῶν ἐναίμων δὲ καὶ
+						πλεύμονα ἐχόντων, ὀλίγαιμον δ’
+      <lb/>
+      ἐχόντων καὶ σομφόν, ἔνια διὰ τοῦτο πολὺν χρόνον
+						δύνανται
+      <lb/>
+      ἀπνευστὶ ζῆν, ὅτι ὁ πλεύμων ἄρσιν ἔχει πολλήν, ὀλίγον
+      <lb/>
+      ἔχων τὸ αἷμα
+						καὶ τὸ ὑγρόν· ἡ γὰρ οἰκεία κίνησις ἐπὶ πολὺν
+      <lb/>
+      χρόνον διαρκεῖ καταψύχουσα. Τέλος δ’
+						οὐ δύναται,
+      <lb/>
+      ἀλλ’ ἀποπνίγεται μὴ ἀναπνεύσαντα, καθάπερ εἴρηται καὶ
+      <lb/>
+      πρότερον·
+						τῆς γὰρ μαράνσεως ἡ διὰ τὸ μὴ ψύχεσθαι φθορὰ
+      <lb/>
+      καλεῖται πνίξις, καὶ τὰ οὕτω
+						φθειρόμενα ἀποπνίγεσθαί
+      <lb/>
+      φαμεν. Ὅτι δ’ οὐκ ἀναπνεῖ τὰ ἔντομα τῶν ζῴων, εἴρηται
+      <lb/>
+      μὲν καὶ πρότερον, φανερὸν δὲ καὶ ἐπὶ τῶν μικρῶν ἐστὶ
+      <lb/>
+      ζῴων, οἷον μυιῶν καὶ
+						μελιττῶν· ἐν γὰρ τοῖς ὑγροῖς πολὺν
+      <lb/>
+      χρόνον ἀνανήχεται, ἂν μὴ λίαν ᾖ θερμὸν ἢ ψυχρόν.
+						Καίτοι
+      <lb/>
+      τὰ μικρὰν ἔχοντα δύναμιν πυκνότερον ζητεῖ ἀναπνεῖν.
+      <lb/>
+      Ἀλλὰ φθείρεται
+						ταῦτα καὶ λέγεται ἀποπνίγεσθαι πληρουμένης
+      <lb/>
+      τῆς κοιλίας καὶ φθειρομένου τοῦ ἐν τῷ
+						ὑποζώματι
+      <lb/>
+      ὑγροῦ. Διὸ καὶ ἐν τῇ τέφρᾳ χρονισθέντα ἀνίσταται.
+      <lb/>
+      Καὶ τῶν ἐν τῷ ὑγρῷ
+						δὲ ζώντων ὅσα ἄναιμα, πλείω χρόνον
+      <lb/>
+      ζῇ ἐν τῷ ἀέρι τῶν ἐναίμων καὶ δεχομένων τὴν
+						θάλατταν,
+      <lb/>
+      οἷον τῶν ἰχθύων· διὰ γὰρ τὸ ὀλίγον ἔχειν τὸ θερμὸν ὁ ἀὴρ
+      <lb/>
+      ἱκανός
+						ἐστιν ἐπὶ πολὺν χρόνον καταψύχειν, οἷον τοῖς τε
+      <lb/>
+      μαλακοστράκοις καὶ τοῖς πολύποσιν.
+						Οὐ μὴν εἰς τέλος
+      <lb/>
+      γε διαρκεῖ πρὸς τὸ ζῆν, διὰ τὸ ὀλιγόθερμα εἶναι, ἐπεὶ
+      <lb/>
+      καὶ τῶν
+						ἰχθύων οἱ πολλοὶ ζῶσιν ἐν τῇ γῇ, ἀκινητίζοντες
+      <lb/>
+      μέντοι, καὶ εὑρίσκονται ὀρυττόμενοι.
+						Ὅσα γὰρ ἢ μηδ’
+      <lb/>
+      ὅλως ἔχει πλεύμονα ἢ ἄναιμον, ἐλαττονάκις δεῖται
+      <lb/>
+      καταψύξεως.
+     </p>
+     <p lang="it">
+      Ma delle cose viventi che sono umide, di quelle che sono nella terra, di queste è scritta la tesi
+						ai piccoli, e alle anime, la cosa fatta di contenere o acqua o aria
+						hai abbastanza freddo per alleviare questa stanchezza, perché hanno poco calore
+						i più piccoli hanno bisogno di aiuto. Perché quasi tutto è di breve durata;
+						perché entrambi sono piccole creature. Ma gli insetti più longevi
+						(poiché tutti gli insetti sono inanimati), questo è incrociato sotto il diazoma, come da
+						l'essenza più sottile del calore si raffredda;
+						del gelo, che le api (perché la vita delle api è di sette anni) e fiorisce
+						ma cosa ronza, dove vespe e meli e vespe. Ma il sogno
+						Il cui spirito è colui che respira;
+						Ironia e armonia, ti capita di diventare uno strofinaccio;
+						questo posto, come le cose che respirano fuori dai polmoni e altre pesci al
+						branchie. Perché avviene quasi come se le cose di chi respira fossero soffocate, ts
+						bocca delle confische: e queste cose le farà ai polmoni. Ma
+						tuttavia, se non è in grado di congelarsi, quelli non lo sono. E
+						per strofinarti contro chi è la bomba, come diciamo, chi per il
+						come le canne dei bambini storpi, quando ti cercano poco. Anche per questo
+						dei quattro, l'ᾄdontes ᾄdusin è più caldo perché lo sono, e si spacca sotto di loro
+						i calzoni; ma non vedranno che è intatto.  E del sangue
+						molti di quelli che ne avevano, pochi di quelli che ne avevano e sofhon, uno per così tanto tempo
+						possono vivere senza respirare, perché l'uomo che nuota ha tanto, ha poco sangue
+						e il liquido, perché il movimento intimo dura a lungo congelandosi. fine d'
+						non può, ma soffoca senza respirare, come si è detto prima;
+						a causa dell'avvizzimento, il decadimento dovuto al mancato raffreddamento è detto pn ixis e così via
+						fenomeni di decomposizione e soffocamento. Che gli insetti degli animali non respirano, si dice
+						e prima, ed evidentemente anche sugli animaletti, che sono muscolosi e
+						di miele; poiché tra le bestie rimane a lungo, sia caldo che freddo.
+						Coloro che hanno il piccolo potere più densamente chiedono di respirare. Ma si consuma
+						questo si chiama anche soffocamento quando la pancia è piena e stanca
+						sottosuolo d'acqua. Perché anche dalle ceneri risorge. E quelli nell'acqua
+						ma coloro che vivono come anime, ora vivono nell'aria delle anime e accettano la
+						talatano, uno dei pesci: perché l'aria ha il calore per un po'
+						Viene congelato a lungo, il che è adatto a chi ha il palato molle e a chi ha molto appetito.
+						Non dura per tutta la vita, a causa dell'oligotermo che è, oltretutto
+						Molti pesci vivono sulla terra, immobilizzando le zecche, e vengono ritrovati sepolti.
+						Dopotutto, che abbia o meno i polmoni o l'anemia essendo, gli ellatonakis possono essere visti congelati.
+     </p>
+     <p lang="en">
+      But about the living things that are moist, the things that are in the earth, the thesis is written, of these
+						to the little ones, and to the souls, the thing made of containing either water or air
+						you are cold enough to help this weariness, for they have little heat
+						little ones need help. Because almost everything is short-lived; on
+						because both of them are small creatures. But the longer-lived insects
+						(since all insects are inanimate), this one is crossed under the diazoma, as by
+						the finer being of the heat is cooled;
+						of freezing, which the bees (for the life of the bees is seven years) and flowers
+						but what is buzzing, where wasps and apple trees and wasps. But the dream
+						Whose spirit is he who breathes;
+						Irony and harmony, it happens to you that you become a rub; for move
+						this place, like the things that breathe outside the lungs and others fishes to the
+						gills. For it happens almost as if the things of the breathing ones are suffocated, ts
+						mouth of confiscations: and he will do these things to the lungs. But
+						however, if she is not capable of freezing, those are not. And
+						to rub in towards you who is the bomb, as we say, who for the
+						like reeds of the crippled children, when they seek you thinly. Because of this too
+						of the four, the ᾄdontes ᾄdusin; warmer because they are, and it splits under them
+						the breeches; but they shall not see that it is uncut.  And of the blood
+						many of those who had, few of those who had and sofhon, one for this long time
+						they can live without breathing, because the man who swims has a lot, he has little blood
+						and the liquid, because intimate movement lasts for a long time freezing. end d'
+						he cannot, but suffocates without breathing, as was said before;
+						because of wilting, the decay due to not being cooled is called pn ixis, and so on
+						decaying suffocating phenomena. That the insects of the animals do not breathe, it is said
+						and before, and evidently also on the little animals, which are muscular and
+						of honey; for among the beasts it lingers for a long time, whether it be hot or cold.
+						Those who have the small power more densely ask to breathe. But it wears out
+						this is also called suffocation when the belly is full and worn out
+						underbody of water. For even in the ashes he is resurrected. And those in the water
+						but those who live as souls, now live in the air of souls and accepting the
+						thalatan, one of the fishes: for the air has the heat for a little
+						It is frozen for a long time, which is suitable for those with a soft palate and those with a lot of appetite.
+						It doesn't end up lasting for life, because of the oligotherm it is, on top of the
+						Many fishes live on the earth, immobilizing mints, and they are found being buried.
+						After all, whether or not he has lungs or anemia being, ellatonakis can be seen frozen.
+     </p>
+    </div>
+    <pb n="342"/>
+    <div n="10" subtype="chapter" type="textpart">
+     <p>
+      Περὶ μὲν οὖν τῶν ἀναίμων, ὅτι τοῖς μὲν ὁ περιέχων ἀὴρ
+      <lb/>
+      τοῖς δὲ τὸ ὑγρὸν βοηθεῖ πρὸς
+						τὴν ζωήν, εἴρηται· τοῖς
+      <lb/>
+      δ’ ἐναίμοις καὶ τοῖς ἔχουσι καρδίαν, ὅσα μὲν ἔχει πλεύμονα,
+      <lb/>
+      πάντα δέχεται τὸν ἀέρα καὶ τὴν κατάψυξιν ποιεῖται
+      <lb/>
+      διὰ τοῦ ἀναπνεῖν καὶ
+						ἐκπνεῖν. Ἔχει δὲ πλεύμονα τά τε
+      <lb/>
+      ζῳοτοκοῦντα ἐν αὑτοῖς καὶ μὴ θύραζε μόνον (τὰ γὰρ
+						σελάχη
+      <lb/>
+      ζῳοτοκεῖ μέν, ἀλλ’ οὐκ ἐν αὑτοῖς) καὶ τῶν ᾠοτοκούντων
+      <lb/>
+      τά τε πτερυγωτά,
+						οἷον ὄρνιθες, καὶ τὰ φολιδωτά, οἷον
+      <lb/>
+      χελῶναι καὶ σαῦραι καὶ ὄφεις. Ἐκεῖνα μὲν οὖν
+						ἔναιμον,
+      <lb/>
+      τούτων δὲ τὰ πλεῖστα τὸν πλεύμονα ἔχει σομφόν. Διὸ καὶ
+      <lb/>
+      τῇ ἀναπνοῇ
+						χρῆται μανότερον, ὥσπερ εἴρηται καὶ πρότερον.
+      <lb/>
+      Χρῆται δὲ πάντα καὶ ὅσα διατρίβει καὶ
+						ποιεῖται τὸν
+      <lb/>
+      βίον ἐν τοῖς ὕδασιν, οἷον τὸ τῶν ὕδρων γένος καὶ βατράχων
+      <lb/>
+      καὶ
+						κροκοδείλων καὶ ἑμύδων καὶ χελῶναι αἵ τε θαλάττιαι
+      <lb/>
+      καὶ αἱ χερσαῖαι καὶ φῶκαι· ταῦτα
+						γὰρ πάντα
+      <lb/>
+      καὶ τὰ τοιαῦτα καὶ τίκτει ἐν τῷ ξηρῷ, καὶ καθεύδει ἢ ἐν
+      <lb/>
+      τῷ ξηρῷ, ἢ
+						ἐν τῷ ὑγρῷ ὑπερέχοντα τὸ στόμα διὰ τὴν ἀναπνοήν.
+      <lb/>
+      Ὅσα δὲ βράγχια ἔχει, πάντα
+						καταψύχεται δεχόμενα
+      <lb/>
+      τὸ ὕδωρ· ἔχει δὲ βράγχια τὸ τῶν καλουμένων σελαχῶν
+      <lb/>
+      γένος
+						καὶ τῶν ἄλλων ἀπόδων. Ἄποδες δ’ οἱ ἰχθύες
+      <lb/>
+      πάντες· καὶ γὰρ ἃ ἔχει, καθ’ ὁμοιότητα
+						τῶν πτερυγίων
+      <lb/>
+      ἔχουσιν. Τῶν δὲ πόδας ἐχόντων ἓν ἔχει βράγχιον μόνον
+      <lb/>
+      τῶν
+						τεθεωρημένων ὁ καλούμενος κορδύλος. Ἅμα δὲ πλεύμονα
+      <lb/>
+      καὶ βράγχια οὐδὲν ὦπταί πω
+						ἔχον. Αἴτιον δ’ ὅτι ὁ
+      <lb/>
+      μὲν πλεύμων τῆς ὑπὸ τοῦ πνεύματος καταψύξεως ἕνεκέν ἐστιν
+      <lb/>
+      (ἔοικε δὲ καὶ τοὔνομα εἰληφέναι ὁ πνεύμων διὰ τὴν τοῦ
+      <pb n="343"/>
+      πνεύματος
+						ὑποδοχήν), τὰ δὲ βράγχια πρὸς τὴν ἀπὸ τοῦ
+      <lb/>
+      ὕδατος κατάψυξιν· ἓν δ’ ἐφ’ ἓν ὄργανον
+						χρήσιμον, καὶ
+      <lb/>
+      μία κατάψυξις ἱκανὴ πᾶσιν. Ὤστ’ ἐπεὶ μάτην οὐδὲν ὁρῶμεν
+      <lb/>
+      ποιοῦσαν
+						τὴν φύσιν, δυοῖν δ’ ὄντοιν θάτερον ἂν ἦν μάτην,
+      <lb/>
+      διὰ τοῦτο τὰ μὲν ἔχει βράγχια τὰ δὲ
+						πνεύμονα, ἄμφω δ’
+      <lb/>
+      οὐδέν.
+     </p>
+     <p lang="it">
+      Quanto alle anime, perché a loro il contenuto dell'aria, ma a loro il liquido aiuta
+						la vita, si dice; a coloro che hanno sangue e a coloro che hanno un cuore, quanti hanno polmoni,
+						accetta sempre l'aria e il congelamento viene effettuato in modo che possa respirare
+						espirare Ma lui ha un polmone, gli esseri viventi nelle orecchie, e non solo li portava (perché
+						selahi vive con me, ma non in loro) e di coloro che vivono con le ali,
+						che galline, e quelle squamose, che tartarughe e lucertole e tu vedi. Ecco, allora
+						ventoso, ma la maggior parte di loro ha i polmoni. A causa della respirazione
+						è necessario un genitore, come accennato in precedenza. Ma è sempre necessario, e qualunque cosa lo dimostra
+						la vita nelle acque, che è il genere delle acque e delle rane e
+						di coccodrilli, mitili e tartarughe così che gli animali dei mari e della terra e le foche;
+						perché anche tutto e così ticchetta nell'asciutto, e si siede nell'asciutto, o
+						nell'acqua rimasta in bocca per respirare. Quanto a non importa, sempre
+						ghiaccia quando riceve acqua; è dotato di branchie, il genere dei cosiddetti selaci
+						e gli altri modi. Apodes 4 tutti i pesci: e ciò che ha, a somiglianza
+						delle ali che hanno. E di quelli che hanno le gambe, solo quelli hanno le branchie
+						considerato il cosiddetto nastro. Per quanto riguarda i polmoni e le branchie, non sento niente
+						loro hanno Il motivo 4 è che colui che naviga con lo spirito del congelamento è uno
+						(Ma la casa e la casa dello spirito sono estatiche a causa dello spirito
+						ricezione) e le branchie verso il congelamento dall'acqua;
+						utile e basta un congelatore. In realtà non sappiamo chi fossero
+						natura, due non sarebbero morti se fosse morto, per questo ha branchie e
+						polmone, amfo d'nessuno.
+     </p>
+     <p lang="en">
+      As for souls, because to them the content of air, but to them liquid helps to
+						life, it is said; to those who have blood and to those who have a heart, as many as have lungs,
+						it always accepts the air and the freezing is done so that it can breathe
+						exhale But he has a lung, the living things in his ears, and he did not only carry them (because
+						selahi lives with me, but not in them) and of those who live with wings,
+						which hens, and the scaly ones, which turtles and lizards and you see. There, then
+						windy, but most of them have the lungs. Because of breathing
+						a parent is needed, as mentioned earlier. But it is always necessary, and whatever it is that proves it
+						the life in the waters, which is the genus of waters and frogs and
+						of crocodiles and mussels and turtles so that the seas and the land animals and seals; these
+						for everything and such also ticks in the dry, and sits either in the dry, or
+						in the water remaining in the mouth for breathing. As for never mind, always
+						it freezes when it receives water; it has gills, the genus of the so-called selachians
+						and the other ways. Apodes 4 the fishes all: and what he has, in likeness
+						of the wings they have. And of those who have legs, only those have gills
+						considered the so-called ribbon. As for lungs and gills, I can't hear anything
+						they have Reason 4 is that the one who sails under the spirit of freezing is one
+						(But the house and the house of the spirit are ecstatic because of the spirit
+						reception), and the gills towards freezing from the water;
+						useful, and a freezer is enough. In fact, we don't know who they were
+						nature, two would not be dead if it were dead, for this reason it has gills and
+						lung, amfo d' none.
+     </p>
+    </div>
+    <div n="11" subtype="chapter" type="textpart">
+     <p>
+      Ἐπεὶ δὲ πρὸς μὲν τὸ εἶναι τροφῆς δεῖται τῶν ζῴων
+      <lb/>
+      ἕκαστον, πρὸς δὲ τὴν σωτηρίαν τῆς
+						καταψύξεως, τῷ αὐτῷ
+      <lb/>
+      ὀργάνῳ χρῆται πρὸς ἄμφω ταῦτα ἡ φύσις, καθάπερ ἐνίοις
+      <lb/>
+      τῇ
+						γλώττῃ πρός τε τοὺς χυμοὺς καὶ πρὸς τὴν ἑρμηνείαν,
+      <lb/>
+      οὕτω τοῖς ἔχουσι τὸν πλεύμονα τῷ
+						καλουμένῳ στόματι
+      <lb/>
+      πρός τε τὴν τῆς τροφῆς ἐργασίαν καὶ τὴν ἐκπνοὴν καὶ τὴν
+      <lb/>
+      ἀναπνοήν. Τοῖς δὲ μὴ ἔχουσι πνεύμονα μηδ’ ἀναπνέουσι τὸ
+      <lb/>
+      μὲν στόμα πρὸς τὴν
+						ἐργασίαν τῆς τροφῆς, πρὸς δὲ τὴν
+      <lb/>
+      κατάψυξιν τοῖς δεομένοις καταψύξεως ἡ τῶν βραγχίων
+      <lb/>
+      ὑπάρχει φύσις. Πῶς μὲν οὖν ἡ τῶν εἰρημένων ὀργάνων
+      <lb/>
+      δύναμις ποιεῖ τὴν
+						κατάψυξιν, ὕστερον ἐροῦμεν. Πρὸς δὲ
+      <lb/>
+      τὸ τὴν τροφὴν μὴ διακωλύειν παραπλησίως τοῖς τ’
+						ἀναπνέουσι
+      <lb/>
+      συμβαίνει καὶ τοῖς δεχομένοις τὸ ὑγρόν· οὔτε γὰρ
+      <lb/>
+      ἀναπνέοντες ἅμα
+						καταδέχονται τὴν τροφήν· εἰ δὲ μή, συμβαίνει
+      <lb/>
+      πνίγεσθαι παρεισιούσης τῆς τροφῆς ἢ
+						τῆς ὑγρᾶς
+      <lb/>
+      ἢ τῆς ξηρᾶς ἐπὶ τὸν πνεύμονα διὰ τῆς ἀρτηρίας· πρότερον
+      <lb/>
+      γὰρ κεῖται ἡ
+						ἀρτηρία τοῦ οἰσοφάγου, δι’ οὖ ἡ τροφὴ πορεύεται
+      <lb/>
+      εἰς τὴν καλουμένην κοιλίαν. Τοῖς
+						μὲν οὖν τετράποσι
+      <lb/>
+      καὶ ἐναίμοις ἔχει ἡ ἀρτηρία οἷον πῶμα τὴν ἐπιγλωττίδα·
+      <lb/>
+      τοῖς
+						δ’ ὄρνισι καὶ τῶν τετραπόδων τοῖς ᾠοτόκοις οὐκ ἔπεστιν,
+      <lb/>
+      ἀλλὰ τῇ συναγωγῇ τὸ αὐτὸ
+						ποιοῦσιν· δεχόμενα γὰρ
+      <lb/>
+      τὴν τροφὴν τὰ μὲν συνάγει, τὰ δ’ ἐπιτίθησι τὴν ἐπιγλωττίδα.
+      <lb/>
+      Προελθούσης δὲ τὰ μὲν ἐπαίρει, τὰ δὲ διοίγει καὶ
+      <pb n="344"/>
+      καταδέχεται τὸ
+						πνεῦμα πρὸς τὴν κατάψυξιν. Τὰ δ’ ἔχοντα
+      <lb/>
+      βράγχια, ἀφέντα διὰ τούτων τὸ ὑγρόν, διὰ
+						τοῦ στόματος
+      <lb/>
+      καταδέχεται τὴν τροφήν· ἀρτηρίαν μὲν γὰρ οὐκ ἔχουσιν,
+      <lb/>
+      ὥστε ταύτῃ
+						μὲν οὐθὲν ἂν βλάπτοιντο ὑπὸ τῆς τοῦ ὑγροῦ
+      <lb/>
+      παρεμπτώσεως, ἀλλ’ εἰς τὴν κοιλίαν
+						εἰσιόντος. Διὸ ταχεῖαν
+      <lb/>
+      ποιεῖται τὴν ἄφεσιν καὶ τὴν λῆψιν τῆς τροφῆς, καὶ τοὺς
+      <lb/>
+      ὀδόντας ὀξεῖς ἔχουσι, καὶ καρχαρόδοντες σχεδὸν πάντες
+      <lb/>
+      εἰσίν· οὐ γὰρ ἐνδέχεται
+						λεαίνειν τὴν τροφήν.
+     </p>
+     <p lang="it">
+      E quando verso di me si vede il cibo di ciascuno degli animali, ma verso la salvezza degli
+						del congelamento, a quest'organo è richiesta la natura per entrambi, come talvolta
+						parlano con i succhi e con l'interpretazione, quindi hanno i polmoni per farlo
+						bocca invitata al lavoro del cibo e dell'espirazione e
+						respirazione Ma non hanno polmoni, non respirano con la bocca
+						lavorazione degli alimenti e per il congelamento delle branchie
+						c'è la natura. Come fa dunque la potenza degli organi separati?
+						Congelatore, arriveremo più tardi. Per quanto riguarda il cibo, non interferire con il
+						respirano, succede anche a chi riceve il liquido;
+						accettano il cibo; in caso contrario, c'è soffocamento del cibo o
+						dell'umido o del secco sul polmone presso l'arteria;
+						arteria dell'esofago, quindi il cibo viaggia verso i calumeni e Olio. A loro
+						ma l'arteria che chiude l'epiglottide ha quattro vasi sanguigni;
+						f uccelli e quadrupedi non cadono negli ᾠotokoi, ma nella sinagoga
+						chi sono, poiché accettando il cibo, deducono che attaccano l'epiglottide.
+						Quando viene, li prende, li dirige e li accoglie
+						spirito verso il congelatore. I quattro hanno le branchie, attraverso le quali scorre il liquido
+						della bocca riceve il cibo; perché non hanno arteria, quindi
+						a meno che non sia stato danneggiato dalla penetrazione del fluido, ma nell'addome
+						entrando Perché il dare e prendere il cibo avviene velocemente, e il
+						hanno denti aguzzi e quasi tutti hanno denti di squalo;
+						mangiano il cibo.
+     </p>
+     <p lang="en">
+      And when towards me the food is seen of each of the animals, but towards the salvation of the
+						of freezing, to this organ nature is required for both of these, as sometimes
+						speak to the juices and to the interpretation, so they have the lungs to the
+						invited mouth to the work of food and exhalation and
+						breathing But they have no lungs, they do not breathe with their mouths to the
+						processing of the food, and for the freezing of the gills
+						there is nature. How, then, does the power of the separated organs do it?
+						Freezer, we will come later. As for the food, do not interfere with the
+						they breathe, it also happens to those who receive the liquid;
+						they accept the food; if not, there is choking of the food or
+						of the wet or of the dry on the lung by the artery; for first lies the
+						artery of the esophagus, so the food travels to the calumeni and Oil. To them
+						but the artery that closes the epiglottis has four blood vessels;
+						f fowls and quadrupeds do not fall to the ᾠotokoi, but to the synagogue
+						who are they, for by accepting the food, they infer that they attack the epiglottis.
+						When he comes, he takes them, he directs them and accepts them
+						spirit towards the freezer. The four having gills, through which the liquid
+						of the mouth receives food; for they have no artery, so that
+						unless it was damaged by the penetration of the fluid, but in the abdomen
+						entering Because the giving and taking of food is done quickly, and the
+						they have sharp teeth, and they are almost all shark-toothed;
+						they eat the food.
+     </p>
+    </div>
+    <div n="12" subtype="chapter" type="textpart">
+     <p>
+      Περὶ δὲ τὰ κητώδη τῶν ἐνύδρων ἀπορήσειεν ἄν τις, ἔχει
+      <lb/>
+      δὲ κἀκεῖνα κατὰ λόγον, οἷον
+						περί τε τοὺς δελφῖνας καὶ
+      <lb/>
+      τὰς φαλαίνας, καὶ τῶν ἄλλων ὅσα ἔχει τὸν καλούμενον
+						αὐλόν.
+      <lb/>
+      Ταῦτα γὰρ ἄποδα μέν ἐστιν, ἔχοντα δὲ πνεύμονα
+      <lb/>
+      δέχεται τὴν θάλατταν.
+						Αἴτιον δὲ τούτου τὸ νῦν εἰρημένον·
+      <lb/>
+      οὐ γὰρ καταψύξεως ἕνεκεν δέχεται τὸ ὑγρόν. Τοῦτο
+      <lb/>
+      μὲν γὰρ γίνεται αὐτοῖς ἀναπνέουσιν· ἔχουσι γὰρ πλεύμονα.
+      <lb/>
+      Διὸ καὶ καθεύδουσιν
+						ὑπερέχοντα τὸ στόμα, καὶ
+      <lb/>
+      ῥέγχουσιν οἵ γε δελφῖνες. Ἔτι δὲ κἂν ληφθῶσι τοῖς
+      <lb/>
+      δικτύοις, ταχὺ ἀποπνίγονται διὰ τὸ μὴ ἀναπνεῖν· καὶ ἐπιπολάζοντα
+      <lb/>
+      φαίνεται τὰ
+						τοιαῦτα ἐπὶ τῆς θαλάττης διὰ τὴν
+      <lb/>
+      ἀναπνοήν. Ἀλλ’ ἐπειδὴ ἀναγκαῖον ποιεῖσθαι τὴν
+						τροφὴν
+      <lb/>
+      ἐν ὑγρῷ, ἀναγκαῖον δεχόμενα τὸ ὑγρὸν ἀφιέναι, καὶ διὰ
+      <lb/>
+      τοῦτ’ ἔχουσι
+						πάντα τὸν αὐλόν· δεξάμενα γὰρ τὸ ὕδωρ,
+      <lb/>
+      ὥσπερ οἱ ἰχθύες κατὰ τὰ βράγχια, ταῦτα κατὰ
+						τὸν
+      <lb/>
+      αὐλόν, ἀνασπᾷ τὸ ὕδωρ. Σημεῖον δὲ καὶ ἡ θέσις τοῦ αὐλοῦ·
+      <lb/>
+      πρὸς οὐθὲν γὰρ
+						περαίνει τῶν ἐναίμων, ἀλλὰ πρὸ τοῦ ἐγκεφάλου
+      <lb/>
+      τὴν θέσιν ἔχει, καὶ ἀφίησι τὸ ὕδωρ.
+						Διὰ ταὐτὸ δὲ
+      <lb/>
+      τοῦτο δέχεται καὶ τὰ μαλάκια τὸ ὕδωρ καὶ τὰ μαλακόστρακα,
+      <lb/>
+      λέγω δ’
+						οἷον τοὺς καλουμένους καράβους καὶ τοὺς
+      <lb/>
+      καρκίνους. Καταψύξεως μὲν γὰρ αὐτῶν οὐδὲν
+						τυγχάνει δεόμενον·
+      <pb n="345"/>
+      ὀλιγόθερμον γάρ ἐστι καὶ ἄναιμον ἕκαστον αὐτῶν,
+      <lb/>
+      ὥσθ’ ἱκανῶς καταψύχεται ὑπὸ τοῦ περιέχοντος ὑγροῦ· ἀλλὰ
+      <lb/>
+      διὰ τὴν τροφήν, ὅπως
+						μὴ ἅμα δεχομένοις εἰσρέῃ τὸ ὑγρόν.
+      <lb/>
+      Τὰ μὲν οὖν μαλακόστρακα, οἷον οἵ τε καρκίνοι καὶ
+						οἱ κάραβοι,
+      <lb/>
+      παρὰ τὰ δασέα ἀφιᾶσι τὸ ὕδωρ διὰ τῶν ἐπιπτυγμάτων,
+      <lb/>
+      σηπίαι δὲ καὶ
+						πολύποδες διὰ τοῦ κοίλου τοῦ ὑπὲρ τῆς
+      <lb/>
+      καλουμένης κεφαλῆς. Γέγραπται δὲ περὶ αὐτῶν
+						δι’ ἀκριβείας
+      <lb/>
+      μᾶλλον ἐν ταῖς περὶ τῶν ζῴων ἱστορίαις. Περὶ
+      <lb/>
+      μὲν οὖν τοῦ
+						δέχεσθαι τὸ ὑγρόν, εἴρηται ὅτι συμβαίνει διὰ
+      <lb/>
+      κατάψυξιν καὶ διὰ τὸ δεῖν δέχεσθαι τὴν
+						τροφὴν ἐκ τοῦ
+      <lb/>
+      ὑγροῦ τὰ τὴν φύσιν ὄντα τῶν ζῴων ἔνυδρα.
+     </p>
+     <p lang="it">
+      Per quanto riguarda i cetacei acquatici, chissà se lo sono, ma ce ne sono alcuni a ragione,
+						sui delfini e sulle balene e sugli altri che hanno i cosiddetti
+						AọLON. Perché queste cose vengono da me, ma avendo un polmone, accetta il talatano.
+						Il motivo è che il liquido non può congelare. Questo
+						poiché non è loro possibile respirare, poiché hanno polmoni. Perché si siedono
+						sovrastante la foce, e rhenchousin dove ci sono i delfini. E se gli venisse portato via?
+						reti, soffocano presto perché non respirano e il
+						quindi sulla spiaggia per respirare. Ma per necessità si fa
+						cibo in liquidi, accettando necessariamente il liquido che bevono, e per questo hanno
+						sempre le branchie;
+						l'avlon, abbraccia l'acqua. E anche la posizione del cortile è un segno;
+						passa attraverso il sangue, ma ha il suo posto vicino al cervello, e lascia che il acqua.
+						Per questo motivo accetta anche molluschi, acqua e crostacei, dico d'
+						che chiamava le navi e i granchi. Non c'è congelamento senza di loro
+						succede a ciascuno di loro,
+						in modo che sia sufficientemente congelato dal liquido contenuto ma dal cibo, come
+						Non lasciare entrare l'acqua se ricevuta. Cosa sono i crostacei, cosa sono i tumori
+						le navi, malgrado le onde, lasciano passare l'acqua attraverso le vele, e dormono anche
+						polipi attraverso la cavità della cosiddetta testa. È scritto su di loro
+						per accuratezza piuttosto nelle storie sui vivi. Su di me allora
+						accetta il liquido, si dice che avvenga per congelamento e per questo accetta il
+						cibo dal liquido, le creature della natura sono umide.
+     </p>
+     <p lang="en">
+      As for the aquatic cetaceans, I wonder if they are, but there are some according to reason,
+						about the dolphins and the whales, and about the others that have the so-called
+						AọLON. For these things are from me, but having a lung, he accepts the thalatan.
+						The reason for this is that the liquid is not allowed to freeze. This
+						for it is not possible for them to breathe; for they have lungs. Because they sit down
+						overhanging the mouth, and rhenchousin where there are dolphins. What if it is taken from them
+						nets, they quickly suffocate because they do not breathe; and the
+						so on the beach for breathing. But because of necessity it is done
+						food in liquid, necessarily accepting the liquid they drink, and because of this they have
+						always the gills;
+						the avlon, embraces the water. And the position of the courtyard is also a sign;
+						it passes through the blood, but it has its place near the brain, and let the water.
+						For this reason, this also accepts molluscs, water and crustaceans, I say d'
+						who called the ships and the crabs. There is no freezing without them
+						it happens to each one of them,
+						so that it is sufficiently frozen by the contained liquid; but by the food, as
+						Do not let the water enter if received. What are crustaceans, what are cancers
+						the ships, in spite of the waves, let the water through the sails, and sleep also
+						polyps through the cavity of the so-called head. It is written about them
+						for accuracy rather in the stories about the living. About me then
+						it accepts the liquid, it is said that it happens due to freezing and because of that it accepts the
+						food from the liquid, the creatures of the nature are moist.
+     </p>
+    </div>
+    <div n="13" subtype="chapter" type="textpart">
+     <p>
+      Περὶ δὲ τῆς καταψύξεως, τίνα γίνεται τρόπον τοῖς τ’
+      <lb/>
+      ἀναπνέουσι καὶ τοῖς ἔχουσι
+						βράγχια, μετὰ ταῦτα λεκτέον.
+      <lb/>
+      Ὅτι μὲν οὖν ἀναπνέουσιν ὅσα πνεύμονα τῶν ζῴων ἔχουσι,
+      <lb/>
+      πρότερον εἴρηται. Διὰ τί δὲ τοῦτο τὸ μόριον ἔχουσιν
+      <lb/>
+      ἔνια, καὶ διὰ τί τὰ ἔχοντα
+						δεῖται τῆς ἀναπνοῆς, αἴτιον τοῦ
+      <lb/>
+      μὲν ἔχειν ὅτι τὰ τιμιώτερα τῶν ζῴων πλείονος
+						τετύχηκε
+      <lb/>
+      θερμότητος· ἅμα γὰρ ἀνάγκη καὶ ψυχῆς τετυχηκέναι τιμιωτέρας·
+      <lb/>
+      τιμιώτερα γὰρ τὰ τοιαῦτα τῆς φύσεως τῆς τῶν φυτῶν.
+      <lb/>
+      Διὸ καὶ τὰ μάλιστα ἔναιμον
+						ἔχοντα τὸν πνεύμονα καὶ
+      <lb/>
+      θερμὸν μείζονά τε τοῖς μεγέθεσι, καὶ τό γε καθαρωτάτῳ
+      <lb/>
+      καὶ πλείστῳ κεχρημένον αἵματι τῶν ζῴων ὀρθότατόν
+      <lb/>
+      ἐστιν ὁ ἄνθρωπος, καὶ τὸ ἄνω
+						πρὸς τὸ τοῦ ὅλου ἄνω ἔχει
+      <lb/>
+      μόνον διὰ τὸ τοιοῦτον ἔχειν τοῦτο τὸ μόριον. Ὥστε τῆς
+      <lb/>
+      οὐσίας καὶ τούτῳ καὶ τοῖς ἄλλοις θετέον αἴτιον αὐτό, καθάπερ
+      <lb/>
+      ὁτιοῦν ἄλλο τῶν
+						μορίων. Ἔχει μὲν οὖν ἕνεκα τούτου.
+      <lb/>
+      Τὴν δ’ ἐξ ἀνάγκης καὶ τῆς κινήσεως αἰτίαν καὶ τὰ
+						τοιαῦτα
+      <pb n="346"/>
+      νομίζειν συνεστάναι ζῷα, καθάπερ καὶ μὴ τοιαῦτα πολλὰ
+      <lb/>
+      συνέστηκεν· τὰ μὲν γὰρ ἐκ γῆς πλείονος γέγονεν, οἷον τὸ
+      <lb/>
+      τῶν φυτῶν γένος, τὰ δ’
+						ἐξ ὕδατος, οἷον τὸ τῶν ἐνύδρων·
+      <lb/>
+      τῶν δὲ πτηνῶν καὶ πεζῶν τὰ μὲν ἐξ ἀέρος τὰ δ’ ἐκ
+						πυρός.
+      <lb/>
+      Ἕκαστα δ’ ἐν τοῖς οἰκείοις τόποις ἔχει τὴν τάξιν αὐτῶν.
+     </p>
+     <p lang="it">
+      Quanto al congelamento, diventa un modo per chi lo respira e per chi ce l’ha
+						branchie, dopo questa lezione. Perché poi respirano tanti polmoni quanti ne hanno gli animali,
+						precedentemente citato. Perché hanno questa molecola e perché l'hanno avuta?
+						si vede del respiro, perché mi hanno che il più nobile degli esseri viventi
+						si scioglieva nel calore; perché se il bisogno e l'anima fossero resi più onorevoli
+						poiché più onorevoli sono quelli della natura delle piante. Perché sta addirittura piovendo
+						avendo il polmone e il calore maggiori dei grandi e dei puri
+						e per la maggior parte il sangue degli animali utilizzati è quello dell'uomo retto, e quanto sopra
+						verso il tutto sopra ha solo perché ha questa particella. È lei
+						a questo e agli altri non va data alcuna ragione, poiché fanno altro che
+						molecole. Ha una ragione per questo. Il d' per necessità e la causa del movimento e il
+						in questo pensano che consista la vita, ma non così tanto
+						co nesteken; per le cose che vennero dalla terra, come il genere delle piante, i quattro
+						dall'acqua, che è quella degli animali acquatici; e degli uccelli e dei pedoni, uno dall'aria, l'altro dall'aria
+						fuoco. Ciascuno dei luoghi familiari ha la sua classe.
+     </p>
+     <p lang="en">
+      As for freezing, it becomes a way for those who breathe it and those who have it
+						gills, after this lecteon. Because then they breathe as many lungs as the animals have,
+						previously mentioned. Why do they have this molecule, and why did they have it?
+						is seen of breathing, because they have me that the noblest of living things
+						he melted into warmth; for if need and soul were made more honorable
+						for more honorable are those of the nature of plants. Because it's even raining
+						having the lung and heat greater than the great, and the pure
+						and for the most part the blood of animals used is the upright man, and the above
+						towards the whole above it has only because it has this particle. It's her
+						no reason should be given to this and to the others, as they do other than
+						molecules. He has one reason for this. The d' out of necessity and the cause of the movement and the
+						that's what they think life consists of, but not so much
+						co nesteken; for the things that came from the earth, like the genus of plants, the four
+						from water, which is that of aquatic animals; and of birds and pedestrians, one from air, the other from
+						fire. Each of the familiar places has its class.
+     </p>
+    </div>
+    <div n="14" subtype="chapter" type="textpart">
+     <p>
+      Ἐμπεδοκλῆς δ’ οὐ καλῶς τοῦτ’ εἴρηκε, φάσκων τὰ θερμότατα
+      <lb/>
+      καὶ πῦρ ἔχοντα πλεῖστον
+						τῶν ζῴων ἔνυδρα εἶναι,
+      <lb/>
+      φεύγοντα τὴν ὑπερβολὴν τῆς ἐν τῇ φύσει θερμότητος, ὅπως
+      <lb/>
+      ἐπειδὴ τοῦ ψυχροῦ καὶ τοῦ ὑγροῦ ἐλλείπει, κατὰ τὸν τόπον
+      <lb/>
+      ἀνασώζηται ἐναντία
+						ὄντα· θερμὸν γὰρ εἶναι τὸ ὑγρὸν
+      <lb/>
+      ἧττον τοῦ ἀέρος. Ὅλως μὲν οὖν ἄτοπον πῶς ἐνδέχεται
+      <lb/>
+      γενόμενον ἕκαστον αὐτῶν ἐν τῷ ξηρῷ μεταβάλλειν τὸν
+      <lb/>
+      τόπον εἰς τὸ ὑγρόν· σχεδὸν
+						γὰρ καὶ ἄποδα τὰ πλεῖστα
+      <lb/>
+      αὐτῶν ἐστίν. Ὁ δὲ τὴν ἐξ ἀρχῆς αὐτῶν σύστασιν λέγων
+      <lb/>
+      γενέσθαι μὲν ἐν τῷ ξηρῷ φησί, φεύγοντα δ’ ἐλθεῖν εἰς τὸ
+      <lb/>
+      ὑγρόν. Ἔτι δ’ οὔτε
+						φαίνεται θερμότερα ὄντα τῶν πεζῶν·
+      <lb/>
+      τὰ μὲν γὰρ ἄναιμα πάμπαν, τὰ δ’ ὀλίγαιμα αὐτῶν
+      <lb/>
+      ἐστίν. Ἀλλὰ ποῖα μὲν δεῖ λέγειν θερμὰ καὶ ψυχρά, καθ’
+      <lb/>
+      αὑτὰ τὴν ἐπίσκεψιν
+						εἴληφεν· περὶ δ’ ἧς αἰτίας εἴρηκεν Ἐμπεδοκλῆς,
+      <lb/>
+      τῇ μὲν ἔχει τὸ ζητούμενον λόγον, οὐ
+						μὴν ὅ γε
+      <lb/>
+      φησὶν ἐκεῖνος ἀληθές. Τῶν μὲν γὰρ ἕξεων τὰς ὑπερβολὰς
+      <lb/>
+      ἔχοντας οἱ
+						ἐναντίοι τόποι καὶ ὧραι σώζουσιν, ἡ δὲ φύσις
+      <lb/>
+      ἐν τοῖς οἰκείοις σώζεται μάλιστα
+						τόποις. Οὐ γὰρ ταὐτὸν
+      <lb/>
+      ἥ θ’ ὕλη τῶν ζῴων ἐξ ἧς ἐστὶν ἕκαστον, καὶ αἱ ἕξεις καὶ
+      <lb/>
+      διαθέσεις αὐτῆς. Λέγω δ’ οἷον εἴ τι ἐκ κηροῦ συστήσειεν
+      <pb n="347"/>
+      ἡ φύσις, οὐκ
+						ἂν ἐν θερμῷ θεῖσα διέσωσεν, οὐδ’ εἴ τι ἐκ κρυστάλλου·
+      <lb/>
+      ἐφθάρη γὰρ ἂν ταχὺ διὰ
+						τοὐναντίον· τήκει γὰρ
+      <lb/>
+      τὸ θερμὸν τὸ ὑπὸ τοῦ ἐναντίου συστάν. Οὐδ’ εἴ τι ἐξ ἁλὸς
+      <lb/>
+      ἢ νίτρου συνέστησεν, οὐκ ἂν εἰς ὑγρὸν φέρουσα κατέθηκεν·
+      <lb/>
+      φθείρει γὰρ τὰ ὑπὸ
+						θερμοῦ καὶ ξηροῦ συστάντα τὸ ὑγρόν.
+      <lb/>
+      Εἰ οὖν ὕλη πᾶσι τοῖς σώμασι τὸ ὑγρὸν καὶ τὸ
+						ξηρόν,
+      <lb/>
+      εὐλόγως τὰ μὲν ἐξ ὑγροῦ καὶ ψυχροῦ συστάντα ἐν ὑγροῖς
+      <lb/>
+      ἐστί, καὶ εἰ
+						ψυχρά, ἔσται ἐν ψυχρῷ, τὰ δ’ ἐκ ξηροῦ ἐν
+      <lb/>
+      ξηρῷ. Διὰ τοῦτο τὰ δένδρα οὐκ ἐν ὕδατι
+						φύεται, ἀλλ’ ἐν
+      <lb/>
+      τῇ γῇ. Καί τοι τοῦ αὐτοῦ λόγου ἐστὶν εἰς τὸ ὕδωρ, διὰ
+      <lb/>
+      τὸ εἶναι
+						αὐτὰ ὑπέρξηρα, ὥσπερ τὰ ὑπέρπυρά φησιν ἐκεῖνος·
+      <lb/>
+      οὐ γὰρ διὰ τὸ ψυχρὸν ἦλθεν εἰς
+						αὐτό, ἀλλ’ ὅτι ὑγρόν.
+      <lb/>
+      Αἱ μὲν οὖν φύσεις τῆς ὕλης, ἐν οἵῳπερ τόπῳ εἰσί, τοιαῦται
+      <lb/>
+      οὖσαι τυγχάνουσιν, αἱ μὲν ἐν ὕδατι ὑγραί, αἱ δ’ ἐν τῇ γῇ
+      <lb/>
+      ξηραί, αἱ δ’ ἐν τῷ
+						ἀέρι θερμαί. Αἱ μέντοι ἕξεις αἱ μὲν
+      <lb/>
+      ὑπερβάλλουσαι θερμότητι ἐν ψυχρῷ, αἱ δὲ τῇ
+						ψυχρότητι ἐν
+      <lb/>
+      θερμῷ τιθέμεναι σώζονται μᾶλλον· ἐπανισοῖ γὰρ εἰς τὸ
+      <lb/>
+      μέτριον ὁ
+						τόπος τὴν τῆς ἕξεως ὑπερβολήν. Τοῦτο μὲν
+      <lb/>
+      οὖν δεῖ ζητεῖν ἐν τοῖς οἰκείοις τόποις
+						ἑκάστης ὕλης, καὶ
+      <lb/>
+      κατὰ τὰς μεταβολὰς τῆς κοινῆς ὥρας· τὰς μὲν γὰρ ἕξεις
+      <lb/>
+      ἐνδέχεται τοῖς τόποις ἐναντίας εἶναι, τὴν δ’ ὕλην ἀδύνατον.
+      <lb/>
+      Ὅτι μὲν οὖν οὐ διὰ
+						θερμότητα τῆς φύσεως τὰ μὲν ἔνυδρα τὰ
+      <lb/>
+      δὲ πεζὰ τῶν ζῴων ἐστί, καθάπερ Ἐμπεδοκλῆς
+						φησίν, τοσαῦτ’
+      <lb/>
+      εἰρήσθω, καὶ διότι τὰ μὲν οὐκ ἔχει πνεύμονα τὰ δὲ
+      <lb/>
+      ἔχει.
+     </p>
+     <p lang="it">
+      Empedocle 4 non lo disse bene, perché aveva le torce più calde e ardenti.
+						degli esseri viventi sono umidi, lasciando l'eccesso di calore in natura, come
+						a causa della mancanza di freddo e di acqua, invece
+						essendo, perché il calore è l'ottavo liquido dell'aria. Anche se non so come possa
+						ognuno di loro nascendo nel luogo asciutto cambia quasi il luogo in quello umido;
+						perché anche la maggior parte di loro è povera. Ma la costituzione iniziale di queste parole
+						Sono nato nella terra asciutta, lasciandomi per venire sull'umido. Cosa no
+						sembrano essere creature più calde dei pedoni;
+						È Ma quelli che mi vedono lo dicono con calore e freddezza, durante questa visita
+						elifen; riguardo alla quarta causa di cui parlava Empedocle, non ha la ragione richiesta
+						quello che ha detto è vero. A causa delle esagerazioni delle famiglie, avendo il
+						Luoghi e tempi opposti si salvano, ma la natura in famiglia si salva facilmente Veramente
+						luoghi. Perché non è ciò che è la fonte degli esseri viventi da cui ciascuno è, e le azioni e
+						i suoi stati d'animo. I say d'oἷon eἴ ti ქალერიმები მელილებილები, οὐκ
+						Se lo metto al fuoco si salva, ma non è di cristallo, perché se viene cotto in fretta muore
+						al contrario; poiché il calore scioglie secondo il principio contrario. Niente di straordinario
+						Oppure consigliavano il nitro, non se si depositava nell'acqua, perché consuma il
+						componente caldo e asciutto il liquido. Eὖ ὖ Ιλι πασι τοις σομαι il liquido e il
+						secco, fortunatamente le cose che sono liquide e fredde consistono in liquidi, e se
+						freddo, stare al freddo, il d' da secco a secco. Questo è il motivo per cui gli alberi non sono nell'acqua
+						cresce, ma nella terra. E quelli di questa parola sono nell'acqua, perché lo è
+						questi erano estremamente asciutti, come se fossero estremamente caldi; poiché non era a causa del freddo che entrò
+						questo, ma perché è bagnato. La natura della materia in cui ti trovi è
+						così accade, quelli che sono nell'acqua sono bagnati, quelli che sono nella terra sono asciutti, quelli che sono nell'acqua sono asciutti no, sì
+						aria calda Le mentine piperite agiscono come calore eccessivo al freddo, ma al
+						la freddezza viene posta nel caldo piuttosto che si salvino, poiché con moderazione il
+						luogo di eccedenza una tantum. Questo è ciò che vede nei suoi luoghi familiari
+						di ogni materia, e secondo i mutamenti del tempo comune;
+						è capace di luoghi, ma è impossibile il secondo oggetto. Perché in caso contrario non sarà possibile
+						il calore della natura è l'acqua, ma i piedi degli animali lo sono, come dice Empedocle
+						Guarda, sono così arrabbiato, e perché il mio non ha un polmone e non ce l'ha.
+     </p>
+     <p lang="en">
+      Empedocles 4 didn't say this well, because he had the hottest and most fiery torches.
+						of living things are moist, leaving the excess of heat in nature, as
+						because of the lack of cold and water, instead of
+						being, for heat is the liquid eighth of the air. Even though I don't know how he can
+						each one of them being born in the dry place changes the place to the wet; almost
+						because most of them are also poor. But the initial constitution of these words
+						I was born in dry land, leaving to come to the wet. What not
+						seem to be warmer creatures than pedestrians;
+						is But those who see me say warmly and coldly, during this visit
+						elifen; about the fourth cause that Empedocles spoke of, he has the requested reason, not
+						what he said is true. Because of the exaggerations of the families, having the
+						Opposite places and times save, but nature in the family is saved easily really
+						places. For it is not that which is the source of the living things from which each one is, and the actions and
+						her moods. I say d'oἷon eἴ ti ქალერიმები მელილებილები, οὐκ
+						If I put it in heat, it saved it, but it is not made of crystal, for it perishes if it is quickly
+						on the contrary; for the heat melts under the contrary principle. Nothing out of the ordinary
+						Or nitre they recommended, not if it was deposited in water, for it wears out the
+						warm and dry component the liquid. Eὖ ὖ Ιλι πασι τοις σομαι the liquid and the
+						dry, blessedly the things that are made of liquid and cold consist in liquids, and if
+						cold, be in cold, the d' from dry to dry. This is why the trees are not in water
+						it grows, but in the earth. And those of this word are in the water, because it is
+						these were exceedingly dry, as if they were exceedingly hot; for it was not because of the cold that he came into
+						this, but because it is wet. The natures of matter, in which place you are, are
+						so it happens, those who are in the water are wet, those who are in the land are dry, those who are in the water are dry n tặs
+						hot air Peppermints act as excessive heat in the cold, but in the
+						coldness is placed in heat rather they are saved, for in moderation the
+						place of one-time excess. This is what he sees in his familiar places
+						of every material, and according to the changes of the common time;
+						it is capable of places, but it is, the second object impossible. Because if not then not through
+						the heat of nature is water, but the feet of animals are, as Empedocles says
+						Look, I'm so angry, and because mine doesn't have a lung and it doesn't.
+     </p>
+    </div>
+    <div n="15" subtype="chapter" type="textpart">
+     <p>
+      Διὰ τί δὲ τὰ ἔχοντα δέχεται τὸν ἀέρα καὶ ἀναπνέουσι,
+      <lb/>
+      καὶ μάλιστ’ αὐτῶν ὅσα ἔχουσιν
+						ἔναιμον, αἴτιον τοῦ μὲν ἀναπνεῖν
+      <pb n="348"/>
+      ὁ πνεύμων σομφὸς ὢν καὶ συρίγγων πλήρης.
+						Καὶ
+      <lb/>
+      ἐναιμότατον δὴ μάλιστα τοῦτο τὸ μόριον τῶν καλουμένων
+      <lb/>
+      σπλάγχνων. Ὅσα δὴ
+						ἔχει ἔναιμον αὐτό, ταχείας μὲν
+      <lb/>
+      δεῖται τῆς καταψύξεως διὰ τὸ μικρὰν εἶναι τὴν ῥοπὴν
+						τοῦ
+      <lb/>
+      ψυχικοῦ πυρός, εἴσω δ’ εἰσιέναι διὰ παντὸς διὰ τὸ πλῆθος
+      <lb/>
+      τοῦ αἵματος καὶ
+						τῆς θερμότητος. Ταῦτα δ’ ἀμφότερα ὁ
+      <lb/>
+      μὲν ἀὴρ δύναται ῥᾳδίως ποιεῖν· διὰ γὰρ τὸ
+						λεπτὴν ἔχειν
+      <lb/>
+      τὴν φύσιν διὰ παντός τε καὶ ταχέως διαδυόμενος διαψύχει·
+      <lb/>
+      τὸ δ’
+						ὕδωρ τοὐναντίον. Καὶ διότι δὴ μάλιστ’ ἀναπνέουσι
+      <lb/>
+      τὰ ἔχοντα τὸν πνεύμονα ἔναιμον, ἐκ
+						τούτων δῆλον· τό τε
+      <lb/>
+      γὰρ θερμότερον πλείονος δεῖται τῆς καταψύξεως, ἅμα δὲ
+      <lb/>
+      καὶ
+						πρὸς τὴν ἀρχὴν τῆς θερμότητος τῆς ἐν τῇ καρδίᾳ πορεύεται
+      <lb/>
+      τὸ πνεῦμα ῥᾳδίως.
+     </p>
+     <p lang="it">
+      Perché quelli che hanno ricevono l'aria e respirano, e al loro posto quello che hanno
+						respiro, perché i polmoni sono pieni e pieni di fistole.
+						E la più cruenta nemmeno questa molecola dei cosiddetti visceri. Cosa no
+						piove, fa freddo perché è mattina
+						di fuoco mentale, forse non è per tutti a causa della moltitudine di sangue e
+						di calore. Entrambe queste cose possono essere fatte dai non morti, perché
+						minuto ha la natura di ogni cosa e rapidamente si raffredda il d';
+						acqua al contrario. E poiché chi ha i polmoni in realtà non respira, da
+						di questi, più fa caldo, maggiore è il gelo, ma anche
+						verso l'inizio del suo calore nel cuore, lo spirito marcia in flagrante.
+     </p>
+     <p lang="en">
+      Why do those who have receive the air and breathe, and instead of them what they have
+						breath, because the lungs are full and full of fistulas.
+						And the bloodiest not even this molecule of the so-called viscera. What not
+						it's raining, it's freezing fast because it's the morning
+						of mental fire, perhaps it is not for all because of the multitude of blood and
+						of heat. Both of these things can be done by the undead, because
+						minute has the nature of everything and quickly diffuses cools; the d'
+						water on the contrary. And because those who have the lungs do not actually breathe, from
+						of these, for the warmer it is, the greater the freezing, but also
+						towards the beginning of its warmth in the heart, the spirit marches red-handed.
+     </p>
+    </div>
+    <div n="16" subtype="chapter" type="textpart">
+     <p>
+      Ὃν δὲ τρόπον ἡ καρδία τὴν σύντρησιν ἔχει πρὸς τὸν
+      <lb/>
+      πλεύμονα, δεῖ θεωρεῖν ἔκ τε τῶν
+						ἀνατεμνομένων καὶ τῶν
+      <lb/>
+      ἱστοριῶν τῶν περὶ τὰ ζῷα γεγραμμένων. Καταψύξεως
+      <lb/>
+      μὲν οὖν
+						ὅλως ἡ τῶν ζῴων δεῖται φύσις διὰ τὴν ἐν τῇ καρδίᾳ
+      <lb/>
+      τῆς ψυχῆς ἐμπύρωσιν. Ταύτην δὲ
+						ποιεῖται διὰ τῆς ἀναπνοῆς,
+      <lb/>
+      ὅσα μὴ μόνον ἔχουσι καρδίαν ἀλλὰ καὶ πνεύμονα τῶν
+      <lb/>
+      ζῴων. Τὰ δὲ καρδίαν μὲν ἔχοντα, πνεύμονα δὲ μή, καθάπερ
+      <lb/>
+      οἱ ἰχθύες διὰ τὸ
+						ἔνυδρον αὐτῶν τὴν φύσιν εἶναι, τῷ ὕδατι
+      <lb/>
+      ποιοῦνται τὴν κατάψυξιν διὰ τῶν βραγχίων.
+						Ὡς δ’ ἡ θέσις
+      <lb/>
+      ἔχει τῆς καρδίας πρὸς τὰ βράγχια, πρὸς μὲν τὴν ὄψιν ἐκ
+      <lb/>
+      τῶν
+						ἀνατομῶν δεῖ θεωρεῖν, πρὸς δ’ ἀκρίβειαν ἐκ τῶν ἱστοριῶν·
+      <lb/>
+      ὡς δ’ ἐν κεφαλαίοις εἰπεῖν
+						καὶ νῦν, ἔχει τόνδε τὸν
+      <lb/>
+      τρόπον. Δόξειε μὲν γὰρ ἂν οὐχ ὡσαύτως ἔχειν τὴν θέσιν
+      <lb/>
+      ἡ καρδία τοῖς τε πεζοῖς τῶν ζῴων καὶ τοῖς ἰχθύσιν, ἔχει
+      <lb/>
+      δ’ ὡσαύτως. Ἧι γὰρ
+						νεύουσι τὰς κεφαλάς, ἐνταῦθ’ ἡ καρδία
+      <pb n="349"/>
+      τὸ ὀξὺ ἔχει. Ἐπεὶ δὲ οὐχ ὡσαύτως αἱ
+						κεφαλαὶ νεύουσι
+      <lb/>
+      τοῖς τε πεζοῖς τῶν ζῴων καὶ τοῖς ἰχθύσι, πρὸς τὸ στόμα ἡ
+      <lb/>
+      καρδία τὸ ὀξὺ ἔχει. Τείνει δ’ ἐξ ἄκρου τῆς καρδίας αὐλὸς
+      <lb/>
+      φλεβονευρώδης εἰς τὸ
+						μέσον, ᾗ συνάπτουσιν ἀλλήλοις πάντα
+      <lb/>
+      τὰ βράγχια. Μέγιστος μὲν οὖν οὗτός ἐστιν, ἔνθεν
+						δὲ
+      <lb/>
+      καὶ ἔνθεν τῆς καρδίας καὶ ἕτεροι τείνουσιν εἰς ἄκρον ἑκάστου
+      <lb/>
+      τῶν βραγχίων,
+						δι’ ὧν ἡ κατάψυξις γίνεται πρὸς τὴν καρδίαν,
+      <lb/>
+      διαυλωνίζοντος ἀεὶ τοῦ ὕδατος διὰ τῶν
+						βραγχίων.
+      <lb/>
+      Ὡσαύτως δὲ τοῖς ἀναπνέουσιν ὁ θώραξ ἄνω καὶ κάτω κινεῖται
+      <lb/>
+      πολλάκις
+						δεχομένων τὸ πνεῦμα καὶ ἐξιέντων, ὡς τὰ
+      <lb/>
+      βράγχια τοῖς ἰχθύσιν. Καὶ τὰ μὲν ἀναπνέοντα
+						ἐν ὀλίγῳ
+      <lb/>
+      ἀέρι καὶ τῷ αὐτῷ ἀποπνίγονται· ταχέως γὰρ ἑκάτερον
+      <lb/>
+      αὐτῶν γίνεται
+						θερμόν· θερμαίνει γὰρ ἡ τοῦ αἵματος θίξις
+      <lb/>
+      ἑκάτερον. θερμὸν δ’ ὂν τὸ αἷμα κωλύει τὴν
+						κατάψυξιν· καὶ
+      <lb/>
+      μὴ δυναμένων κινεῖν τῶν μὲν ἀναπνεόντων τὸν πνεύμονα τῶν
+      <lb/>
+      δ’
+						ἐνύδρων τὰ βράγχια διὰ πάθος ἢ διὰ γῆρας, τότε συμβαίνειν
+      <lb/>
+      τὴν τελευτήν.
+     </p>
+     <p lang="it">
+      Ma se il cuore ha una connessione con i polmoni, pensano
+						ricordando le storie scritte sugli animali. Congelare con oὖ
+						Tutta la vita è vista come natura attraverso l'ardore nel cuore dell'anima. Ma questo
+						è fatto attraverso la respirazione, che non ha solo un cuore ma anche un polmone
+						della vita. Ma quelli che non avevano cuore, ma nemmeno polmoni, i pesci morirono a causa di essi
+						La loro natura è acquatica, usano l'acqua per congelare attraverso le branchie.
+						Qual è la posizione del cuore verso le branchie, verso l'occhio dal
+						degli anatomisti, ritengono, secondo l'esattezza delle storie, come dicono in maiuscolo
+						e ora è così. Buona fortuna, perché altrimenti hanno anche la posizione
+						il cuore degli animali ambulanti e dei pesci ha lo stesso. Perchè è
+						annuiscono con la testa, mentre il cuore è amareggiato. Ma non altrettanto bene
+						le loro teste accennano ai piedi degli animali e ai pesci, verso la bocca del ha il cuore amaro. Tende dall'estremità del cuore all'atrio venoneurotico
+						medio, al quale si uniscono tutte le lamelle. Maximus me oὖn ὗtos estin, ἐνθεν
+						e dall'interno del cuore, e altri tendono all'estremità di ciascuna branchia,
+						attraverso il quale avviene il congelamento verso il cuore, facendo passare l'acqua attraverso il
+						branchie. Allo stesso modo, in chi respira, il torace si muove spesso su e giù
+						ricevendo lo spirito e uscendo, come le branchie dei pesci. E quelli non traspiranti
+						soffocano in un breve soffio d'aria, perché presto uno di loro diventa
+						calore; perché il calore del sangue riscalda. il calore del sangue ostruisce il
+						congelamento; e incapacità di muovere chi non respira
+						se le branchie sono acquose a causa della passione o della vecchiaia, allora accade quest'ultima.
+     </p>
+     <p lang="en">
+      But if the heart has a connection with the lungs, they consider
+						remembering the stories written about the animals. Freezing with oὖ
+						The whole of life is seen as nature through the burning in the heart of the soul. But this one
+						it is done through breathing, which not only have a heart but also a lung of the
+						of life. But those who had no heart, but no lungs, the fish perished because of
+						Their nature is aquatic, they use water to freeze through their gills.
+						What is the position of the heart towards the gills, towards the eye from the
+						of anatomists, they consider, to the accuracy of the stories; as they say in capitals
+						and now, he has that way. Good luck, because if not, they also have the position
+						the heart of the walking animals and the fishes, has the same. Because it is
+						they nod their heads, while the heart is bitter. But not as well
+						their heads nod to the foot of the animals and to the fish, towards the mouth of the he has a bitter heart. It tends from the end of the heart to the venoneurotic atrium
+						medium, to which all the gills join each other. Maximus me oὖn ὗtos estin, ἐνθεν
+						and from the inside of the heart, and others tend to the end of each of the gills,
+						through which the freezing takes place towards the heart, passing the water through the
+						gills. In the same way, in those who breathe, the chest often moves up and down
+						receiving the spirit and passing out, as the gills of fishes. And the non-breathable ones
+						they suffocate in a short breath of air, for quickly one of them becomes
+						heat; for the heat of the blood heats one. heat d' ὂn the blood obstructs the
+						freezing; and not being able to move the non-breathing
+						if the gills are watery due to passion or old age, then the latter happens.
+     </p>
+    </div>
+    <div n="17" subtype="chapter" type="textpart">
+     <p>
+      Ἔστι μὲν οὖν πᾶσι τοῖς ζῴοις κοινὸν γένεσις καὶ θάνατος,
+      <lb/>
+      οἱ δὲ τρόποι διαφέρουσι
+						τῷ εἴδει· οὐ γὰρ ἀδιάφορος ἡ
+      <lb/>
+      φθορά, ἀλλ’ ἔχει τι κοινόν. Θάνατος δ’ ἐστὶν ὁ μὲν
+						βίαιος
+      <lb/>
+      ὁ δὲ κατὰ φύσιν, βίαιος μὲν ὅταν ἡ ἀρχὴ ἔξωθεν ᾖ, κατὰ
+      <lb/>
+      φύσιν δ’ ὅταν ἐν
+						αὐτῷ. Καὶ ἡ τοῦ μορίου σύστασις ἐξ
+      <lb/>
+      ἀρχῆς τοιαύτη, ἀλλὰ μὴ ἐπίκτητόν τι πάθος. Τοῖς
+						μὲν οὖν
+      <lb/>
+      φυτοῖς αὔανσις, ἐν δὲ τοῖς ζῴοις καλεῖται τοῦτο γῆρας.
+      <lb/>
+      Ἔστι δὲ θάνατος
+						καὶ ἡ φθορὰ πᾶσιν ὁμοίως τοῖς μὴ
+      <lb/>
+      ἀτελέσιν· τούτοις δὲ παρομοίως μέν, ἄλλον δὲ
+						τρόπον.
+      <lb/>
+      Ἀτελῆ δὲ λέγω οἷον τά τε ᾠὰ καὶ τὰ σπέρματα τῶν φυτῶν,
+      <lb/>
+      ὅσα ἄρριζα.
+						Πᾶσι μἐν οὖν ἡ φθορὰ γίνεται διὰ θερμοῦ
+      <pb n="350"/>
+      τινὸς ἔκλειψιν, τοῖς δὲ τελείοις,
+						ἐν ᾧ τῆς οὐσίας ἡ ἀρχή.
+      <lb/>
+      Αὕτη δ’ ἐστίν, ὥσπερ εἴρηται πρότερον, ἐν ᾧ τό τε ἄνω καὶ
+      <lb/>
+      τὸ κάτω συνάπτει, τοῖς μὲν φυτοῖς μέσον βλαστοῦ καὶ
+      <lb/>
+      ῥίζης, τῶν δὲ ζῴων τοῖς
+						μὲν ἐναίμοις ἡ καρδία, τοῖς δ’ ἀναίμοις
+      <lb/>
+      τὸ ἀνάλογον. Τούτων δ’ ἔνια δυνάμει πολλὰς
+						ἀρχὰς
+      <lb/>
+      ἔχουσιν, οὐ μέντοι γε ἐνεργείᾳ. Διὸ καὶ τῶν ἐντόμων ἔνια
+      <lb/>
+      διαιρούμενα
+						ζῶσι, καὶ τῶν ἐναίμων ὅσα μὴ ζωτικὰ λίαν
+      <lb/>
+      εἰσί, πολὺν χρόνον ζῶσιν ἐξῃρημένης τῆς
+						καρδίας, οἷον αἱ
+      <lb/>
+      χελῶναι καὶ κινοῦνται τοῖς ποσίν, ἐπόντων τῶν χελωνίων,
+      <lb/>
+      διὰ
+						τὸ μὴ συγκεῖσθαι τὴν φύσιν αὐτῶν εὖ, παραπλησίως δὲ
+      <lb/>
+      τοῖς ἐντόμοις. Ἡ δ’ ἀρχὴ τῆς
+						ζωῆς ἐκλείπει τοῖς ἔχουσιν,
+      <lb/>
+      ὅταν μὴ καταψύχηται τὸ θερμὸν τὸ κοινωνοῦν αὐτῆς.
+      <lb/>
+      Καθάπερ γὰρ εἴρηται πολλάκις, συντήκεται αὐτὸ
+      <lb/>
+      ὑφ’ αὑτοῦ. Ὅταν οὖν τοῖς μὲν ὁ
+						πλεύμων τοῖς δὲ τὰ
+      <lb/>
+      βράγχια σκληρύνηται, διὰ χρόνου μῆκος ξηραινομένων τοῖς
+      <lb/>
+      μὲν
+						τῶν βραγχίων τοῖς δὲ τοῦ πλεύμονος, καὶ γινομένων
+      <lb/>
+      γεηρῶν, οὐ δύναται ταῦτα τὰ μόρια
+						κινεῖν οὐδ’ αἴρειν καὶ
+      <lb/>
+      συνάγειν. Τέλος δὲ γινομένης ἐπιτάσεως καταμαραίνεται
+      <lb/>
+      τὸ πῦρ. Διὸ καὶ μικρῶν παθημάτων ἐπιγινομένων ἐν τῷ
+      <lb/>
+      γήρᾳ ταχέως τελευτῶσιν·
+						διὰ γὰρ τὸ ὀλίγον εἶναι τὸ θερμόν,
+      <lb/>
+      ἅτε τοῦ πλείστου διαπεπνευκότος ἐν τῷ πλήθει τῆς
+      <lb/>
+      ζωῆς, ἥτις ἂν ἐπίτασις γένηται τοῦ μορίου, ταχέως ἀποσβέννυται·
+      <lb/>
+      ὥσπερ γὰρ
+						ἀκαριαίας καὶ μικρᾶς ἐν αὐτῷ φλογὸς
+      <lb/>
+      ἐνούσης διὰ μικρὰν κίνησιν ἀποσβέννυται. Διὸ
+						καὶ ἄλυπός
+      <lb/>
+      ἐστιν ὁ ἐν τῷ γήρᾳ θάνατος· οὐδενὸς γὰρ βιαίου
+      <lb/>
+      πάθους αὐτοῖς
+						συμβαίνοντος τελευτῶσιν, ἀλλ’ ἀναίσθητος ἡ
+      <pb n="351"/>
+      τῆς ψυχῆς ἀπόλυσις γίνεται
+						παντελῶς. Καὶ τῶν νοσημάτων
+      <lb/>
+      ὅσα ποιοῦσι τὸν πνεύμονα σκληρὸν ἢ φύμασιν ἢ
+						περιττώμασιν
+      <lb/>
+      ἢ θερμότητος νοσηματικῆς ὑπερβολῇ, καθάπερ
+      <lb/>
+      ἐν τοῖς πυρετοῖς,
+						πυκνὸν τὸ πνεῦμα ποιοῦσι διὰ τὸ μὴ
+      <lb/>
+      δύνασθαι τὸν πνεύμονα μακρὰν αἴρειν ἄνω καὶ
+						συνίζειν.
+      <lb/>
+      Τέλος δ’, ὅταν μηκέτι δύνωνται κινεῖν, τελευτῶσιν
+      <lb/>
+      ἀποπνεύσαντες.
+     </p>
+     <p lang="it">
+      Infatti la nascita e la morte sono comuni a tutti gli esseri viventi, ma le modalità differiscono
+						per lui, perché la decadenza non è indifferente, ma ha qualcosa in comune. La morte non sono io
+						ma è violento per natura, violento solo quando il principio è dall'esterno x, per natura d' quando è interno
+						a se stesso. E la costituzione della molecola da quel principio, ma nessuna passione viene acquisita. A loro
+						Ma per le piante questa si chiama vecchiaia. Cos'è la morte?
+						e la corruzione non sarà fatta allo stesso modo degli altri;
+						modo Ma imperfetti chiamo quelli che sono gli ᾠὰ e i semi delle piante, che ho colto.
+						Tutto tranne il danno è causato da un'eclissi calda, ma per quelle finite,
+						in ᾧ dell'essenza il principio. Questo è, come accennato prima, in cui quanto sopra e
+						quello inferiore unisce alle piante la metà del germoglio e della radice, e dei vivi alla
+						col sangue il cuore, a quelli col sangue lo stesso. È passato molto tempo da allora
+						Hanno un inizio, non hanno energia. Anche a causa degli insetti divisibile
+						vita, e delle anime poco vitali vivranno a lungo
+						del cuore, che le tartarughe e si spostano nei posini, delle tartarughe,
+						Non danneggia la loro natura, ma è vicino agli insetti. Il 4° inizio di
+						manca la vita a chi ce l’ha, quando non si ghiaccia il calore della sua comunione.
+						Poiché viene detto molte volte, si fonde con se stesso. Quando poi per me il
+						le branchie delle pinne si induriscono, col tempo si seccano
+						delle branchie, ma dei polmoni, e quando invecchiano, queste particelle non possono più
+						non muovono né inferenza né inferenza. Ma alla fine di un attacco, viene maledetto
+						il fuoco Perché anche le piccole sofferenze causate nella vecchiaia finiranno presto;
+						poiché piccolo è il caldo, ma il più soffocante nella moltitudine di
+						della vita, che, se tentata, è fatta di molecola, si estingue rapidamente per quanto
+						istantanea e piccola in lui una fiamma di rabbia attraversata il piccolo movimento è smorzato. Perché
+						E la morte nella vecchiaia è miserabile, perché per loro non c'è passione violenta
+						accadendo eventualmente, ma inconsciamente, avviene la dissoluzione dell'anima
+						assolutamente. E delle malattie che rendono i polmoni duri o fanno fumo o
+						escrementi o calore di eccesso morboso, come nelle febbri,
+						il cui spirito è ottuso perché non riesce a sollevare i polmoni molto al di sopra e
+						Essere d'accordo Alla fine, quando riescono a malapena a muoversi, finiscono senza fiato.
+     </p>
+     <p lang="en">
+      For, therefore, birth and death are common to all living things, but the ways differ
+						to him, for decay is not indifferent, but it has something in common. Death is not me
+						but he is violent by nature, violent only when the principle is from outside x, by nature d' when in
+						to himself. And the constitution of the molecule from that principle, but no passion is acquired. To them
+						But to plants this is called old age. What is death?
+						and corruption shall not be done in the same way as in others;
+						way But imperfect I call those who are the ᾠὰ and the seeds of the plants, which I plucked.
+						All but the damage is done by a hot eclipse, but for the finished ones,
+						in ᾧ of the essence the principle. This one is, as mentioned before, in which the above and
+						the lower one joins, to the plants the middle of the shoot and the root, and of the living to the
+						with blood the heart, to those with blood the same. It's been a long time since then
+						They have a beginning, they don't have energy. Because of the insects as well divisible
+						life, and of the souls that are not very vital, they will live for a long time
+						of the heart, which the turtles and move to the posins, of the turtles,
+						It doesn't hurt their nature, but it is close to the insects. The 4th beginning of
+						of life is lacking to those who have it, when the warmth of their communion is not frozen.
+						Because it is said many times, it merges with itself. When then to me the
+						the gills of the fins harden, over time they dry up
+						of the gills, but of the lungs, and when they become old, these particles cannot
+						they move neither inference nor inference. But at the end of an attack, it is cursed
+						the fire Because even small sufferings caused in old age will quickly end;
+						for the little is the heat, but of the most suffocating in the multitude of
+						of life, which, if attempted, is made of the molecule, is quickly extinguished; for as
+						instantaneous and small in him a flame of anger through small movement is damped. Why
+						And death in old age is miserable, for there is no violent passion for them
+						happening eventually, but unconsciously, the dissolution of the soul takes place
+						absolutely. And of the diseases that make the lungs hard or smoke or
+						excrement or heat of morbid excess, as in fevers,
+						whose spirit is thick because he cannot lift his lungs far above and
+						agree Finally, when they are barely able to move, they end up out of breath.
+     </p>
+    </div>
+    <div n="18" subtype="chapter" type="textpart">
+     <p>
+      Γένεσις μὲν οὖν ἐστὶν ἡ πρώτη μέθεξις ἐν τῷ θερμῷ τῆς
+      <lb/>
+      θρεπτικῆς ψυχῆς, ζωὴ δ’ ἡ
+						μονὴ ταύτης. Νεότης δ’ ἐστὶν ἡ
+      <lb/>
+      τοῦ πρώτου καταψυκτικοῦ μορίου αὔξησις, γῆρας δ’ ἡ
+						τούτου
+      <lb/>
+      φθίσις, ἀκμὴ δὲ τὸ τούτων μέσον. Τελευτὴ δὲ καὶ φθορὰ
+      <lb/>
+      βίαιος μὲν ἡ τοῦ
+						θερμοῦ σβέσις καὶ μάρανσις· φθαρείη γὰρ
+      <lb/>
+      ἂν δι’ ἀμφοτέρας ταύτας τὰς αἰτίας, ἡ δὲ
+						κατὰ φύσιν τοῦ
+      <lb/>
+      αὐτοῦ τούτου μάρανσις διὰ χρόνου μῆκος γινομένη καὶ τελειότητα.
+      <lb/>
+      Τοῖς μὲν οὖν φυτοῖς αὔανσις, ἐν δὲ τοῖς ζῴοις
+      <lb/>
+      καλεῖται θάνατος. Τούτου δ’ ὁ
+						μὲν ἐν γήρᾳ θάνατος μάρανσις
+      <lb/>
+      τοῦ μορίου δι’ ἀδυναμίαν τοῦ καταψύχειν ὑπὸ γήρως.
+      <lb/>
+      Τί μὲν οὖν ἐστὶ γένεσις καὶ ζωὴ καὶ θάνατος, καὶ διὰ τίνας
+      <lb/>
+      αἰτίας ὑπάρχουσι
+						τοῖς ζῴοις, εἴρηται.
+     </p>
+     <p lang="it">
+      La Genesi è quindi la prima inebriante nel calore dell'anima nutriente, la vita 4
+						solo uno. La giovinezza è l'età della prima molecola congelante della crescita, la vecchiaia è l'età
+						di questo cadi, ma non nel mezzo di questi. E, ultimo ma non meno importante, anche violento
+						calore che spegni e appassisci;
+						secondo la natura di questo, col tempo, diventerà lungo e perfetto.
+						Per gli uomini è phytoès ahanceis, ma per i vivi è chiamata morte. Questo quarto
+						ma in età avanzata la morte della molecola è causata dall'incapacità di congelarsi in età avanzata.
+						Che cosa sono dunque la nascita, la vita e la morte? E per questa ragione esistono?
+						ai vivi, si dice.
+     </p>
+     <p lang="en">
+      Genesis is therefore the first intoxicating in the heat of the nourishing soul, life 4
+						only one. Youth is the age of the first freezing molecule of growth, old age is the
+						of this you fall, but not the middle of these. And last but not least, violent as well
+						heat you put out and wither;
+						according to the nature of this, over time, it will become long and perfect.
+						To men oὖn phytoès ahanceis, but to the living it is called death. This fourth
+						but in old age death maransis of the molecule due to inability to freeze under old age.
+						What, then, is birth and life and death, and for this cause do they exist
+						to the living, it is said.
+     </p>
+    </div>
+    <div n="19" subtype="chapter" type="textpart">
+     <p>
+      Δῆλον δ’ ἐκ τούτων καὶ διὰ τίν’ αἰτίαν τοῖς μὲν ἀναπνέουσι
+      <lb/>
+      τῶν ζῴων ἀποπνίγεσθαι
+						συμβαίνει ἐν τῷ ὑγρῷ, τοῖς
+      <lb/>
+      δ’ ἰχθύσιν ἐν τῷ ἀέρι· τοῖς μὲν γὰρ διὰ τοῦ ὕδατος ἡ
+						κατάψυξις
+      <lb/>
+      γίνεται, τοῖς δὲ διὰ τοῦ ἀέρος, ὧν ἑκάτερα στερίσκεται
+      <lb/>
+      μεταβάλλοντα
+						τοὺς τόπους. Ἡ δ’ αἰτία τῆς κινήσεως
+      <lb/>
+      τοῖς μὲν τῶν βραγχίων τοῖς δὲ τοῦ πνεύμονος,
+						ὧν αἰρομένων
+      <lb/>
+      καὶ συνιζόντων τὰ μὲν ἐκπνέουσι καὶ εἰσπνέουσι τὰ
+      <lb/>
+      δὲ δέχονται τὸ
+						ὑγρὸν καὶ ἐξιᾶσιν, ἔτι δ’ ἡ σύστασις τοῦ
+      <lb/>
+      ὀργάνου, τόνδ’ ἔχει τὸν τρόπον.
+     </p>
+     <p lang="it">
+      Qual è il quarto e perché il respiro degli esseri viventi è soffocato?
+						succede nell'acqua, a chi non pesca nell'aria, a chi sta nell'acqua
+						avviene il congelamento, e ad essi attraverso l'aria, dove ciascuno è privato del mutamento
+						I posti. La seconda causa di movimento sono le branchie e i polmoni,
+						in coloro che sono unti e simpatizzanti, in coloro che espirano e inspirano e in coloro che ricevono
+						umido e asciutto, quando l'organizzazione dell'organo non c'è, allora ha il modo.
+     </p>
+     <p lang="en">
+      What is the fourth of these and why do the breathing of living things suffocate
+						it happens in the water, to those who do not fish in the air, for to those who are in the water
+						freezing takes place, and to them through the air, where each is deprived of changing
+						the places. The second cause of movement is the gills and the lungs,
+						in those who are anointed and sympathizers, those who breathe out and breathe in, and those who receive
+						wet and dry, when the organization of the organ is not, then it has the way.
+     </p>
+    </div>
+    <div n="20" subtype="chapter" type="textpart">
+     <p>
+      Τρία ἐστὶ τὰ συμβαίνοντα περὶ τὴν καρδίαν, ἃ δοκεῖ
+      <pb n="352"/>
+      τὴν αὐτὴν φύσιν ἔχειν,
+						ἔχει δ’ οὐ τὴν αὐτήν, πήδησις καὶ
+      <lb/>
+      σφυγμὸς καὶ ἀναπνοή. Πήδησις μὲν οὖν ἐστὶ σύνωσις
+      <lb/>
+      τοῦ θερμοῦ τοῦ ἐν αὐτῇ διὰ κατάψυξιν περιττωματικὴν ἢ
+      <lb/>
+      συντηκτικήν, οἷον ἐν τῇ
+						νόσῳ τῇ καλουμένῃ παλμῷ, καὶ ἐν
+      <lb/>
+      ἄλλαις δὲ νόσοις, καὶ ἐν τοῖς φόβοις δέ· καὶ γὰρ οἱ
+						φοβούμενοι
+      <lb/>
+      καταψύχονται τὰ ἄνω, τὸ δὲ θερμὸν ὑποφεῦγον
+      <lb/>
+      καὶ συστελλόμενον ποιεῖ
+						τὴν πήδησιν, εἰς μικρὸν συνωθούμενον
+      <lb/>
+      οὕτως ὥστ’ ἐνίοτ’ ἀποσβέννυσθαι τὰ ζῷα καὶ
+						ἀποθνήσκειν
+      <lb/>
+      διὰ φόβον καὶ διὰ πάθος νοσηματικόν. Ἡ δὲ συμβαίνουσα
+      <lb/>
+      σφύξις τῆς
+						καρδίας, ἣν ἀεὶ φαίνεται ποιουμένη συνεχῶς,
+      <lb/>
+      ὁμοία φύμασίν ἐστιν, ἣν ποιοῦνται
+						κίνησιν μετ’ ἀλγηδόνος
+      <lb/>
+      διὰ τὸ παρὰ φύσιν εἶναι τῷ αἵματι τὴν μεταβολήν. Γίνεται
+      <lb/>
+      δὲ μέχρι οὗ ἂν πυωθῇ πεφθέν. Ἔστι δ’ ὅμοιον
+      <lb/>
+      ζέσει τοῦτο τὸ πάθος· ἡ γὰρ ζέσις
+						γίνεται πνευματουμένου
+      <lb/>
+      τοῦ ὑγροῦ ὑπὸ τοῦ θερμοῦ· αἴρεται γὰρ διὰ τὸ πλείω
+      <lb/>
+      γίνεσθαι τὸν ὄγκον. Παῦλα δ’ ἐν μὲν τοῖς φύμασιν, ἐὰν
+      <lb/>
+      μὴ διαπνεύσῃ, παχυτέρου
+						γινομένου τοῦ ὑγροῦ, σῆψις, τῇ
+      <lb/>
+      δὲ ζέσει ἡ ἔκπτωσις διὰ τῶν ὁριζόντων. Ἐν δὲ τῇ
+						καρδίᾳ
+      <lb/>
+      ἡ τοῦ ἀεὶ προσιόντος ἐκ τῆς τροφῆς ὑγροῦ διὰ τῆς
+      <lb/>
+      θερμότητος ὄγκωσις
+						ποιεῖ σφυγμόν, αἰρομένη πρὸς τὸν
+      <lb/>
+      ἔσχατον χιτῶνα τῆς καρδίας. Καὶ τοῦτ’ ἀεὶ γίνεται
+						συνεχῶς·
+      <lb/>
+      ἐπιρρεῖ γὰρ ἀεὶ τὸ ὑγρὸν συνεχῶς, ἐξ οὗ γίνεται
+      <lb/>
+      ἡ τοῦ αἵματος φύσις·
+						πρῶτον γὰρ ἐν τῇ καρδίᾳ δημιουργεῖται.
+      <lb/>
+      Δῆλον δ’ ἐν τῇ γενέσει ἐξ ἀρχῆς· οὔπω γὰρ
+						διωρισμένων
+      <lb/>
+      τῶν φλεβῶν φαίνεται ἔχουσα αἷμα. Καὶ διὰ τοῦτο
+      <lb/>
+      σφύζει μᾶλλον τοῖς
+						νεωτέροις τῶν πρεσβυτέρων· γίνεται
+      <pb n="353"/>
+      γὰρ ἡ ἀναθυμίασις πλείων τοῖς
+						νεωτέροις. Καὶ σφύζουσιν
+      <lb/>
+      αἱ φλέβες πᾶσαι, καὶ ἅμα ἀλλήλαις, διὰ τὸ ἠρτῆσθαι ἐκ
+      <lb/>
+      τῆς καρδίας. Κινεῖ δ’ ἀεί· ὥστε κἀκεῖναι αἰεί, καὶ ἅμα ἀλλήλαις,
+      <lb/>
+      ὅτε κινεῖ.
+						Ἀναπήδησις μὲν οὖν ἐστὶν ἡ γινομένη
+      <lb/>
+      ἄντωσις πρὸς τὴν τοῦ ψυχροῦ σύνωσιν, σφύξις δ’
+						ἡ τοῦ
+      <lb/>
+      ὑγροῦ θερμαινομένου πνευμάτωσις.
+     </p>
+     <p lang="it">
+      Tre sono le cose che accadono al cuore, che ha questa natura,
+						ha la stessa cosa, saltare, pulsare e respirare. Pedisis me oὖ est sinossi
+						del calore in esso contenuto mediante congelamento escretore o fusionale, che in
+						malattia della palma callosa, e in altre malattie, e nei timori per il
+						temendo, quelli sopra sono congelati, ma il calore è evitato e si restringe
+						il salto, restringendosi in uno piccolo in modo che gli animali si estinguano e
+						morì di paura e di passione morbosa. Ma l'incidente della sua sfissi
+						del cuore, che sembra ardere continuamente, è come il fumo che arde
+						movimento con gli algidoni perché è nella natura del sangue cambiare. Sta succedendo
+						ma fino a dove cade. È la stessa persona che vive questa passione, perché lo zelo
+						si fa come lo spirito del liquido sotto il fuoco, perché è sollevato di lato
+						diventare il volume. Paul D' in me al fumo, se non respira, più spesso
+						Essendo fatto d'acqua marcisce, ma in essa vive la discesa attraverso gli orizzonti. Altrimenti
+						dal cuore dell'animale dal cibo liquido per il rigonfiamento del caldo
+						pulsa, profumato fino all'ultimo strato del cuore. E questo sta accadendo
+						continuamente; poiché il sangue scorre continuamente, da cui deriva la natura del sangue;
+						perché è prima creato nel cuore. È stato fatto nella creazione fin dall'inizio, perché lo adoro
+						vene separate sembra che avessi sangue. E per questo motivo li picchia piuttosto
+						il più giovane dei più anziani: poiché in mezzo a loro avviene l'anatimiasi del popolo
+						quelli più giovani. E le vene pulsano ovunque, e se sei diverso, è per la soddisfazione che ti dà
+						del cuore. Si muove per sempre, quindi è per sempre, e se sei diverso, quando si muove.
+						Ti riprendi, quindi è la resistenza finita verso l'incontro freddo, ti stringi.
+						la pneumatosi riscaldata dal liquido.
+     </p>
+     <p lang="en">
+      There are three things that happen to the heart, which has this nature,
+						it has the same thing, leaping and pulse and breathing. Pedisis me oὖ est synossis
+						of the heat in it by excretory or fusional freezing, which in
+						disease of the calloused palm, and in other diseases, and in fears; for the
+						fearing, the above are frozen, but the heat is shunned and shrinking
+						the jump, shrinking into a small one so that the animals are extinguished and
+						he died of fear and morbid passion. But the incident of her sphyxis
+						of the heart, which seems to be burning constantly, is like smoke, which is burning
+						movement with algidons because it is the blood's nature to change. It's happening
+						but up to where it falls. He is the same person who lives this passion, because the zeal
+						it is done as the spirit of the liquid under the heat, because it is lifted by the side
+						become the volume. Paul D' in me to the smoke, if it does not breathe, thicker
+						Being made of water, it rots, but in it lives the descent through horizons. If not
+						by the heart of the animal from the liquid food due to the swelling of the heat
+						it pulses, perfumed to the last layer of the heart. And this is happening
+						continuously; for blood flows continuously, from which the nature of blood is made;
+						because it is first created in the heart. It was done in creation from the beginning, because I love it
+						separated veins it looks like I had blood. And because of this, it beats rather to them
+						the younger of the elders: for the anathimiasis of the people takes place among them
+						younger ones. And the veins throb everywhere, and if you are different, because of the satisfaction from
+						of the heart. It moves forever, so that it is forever, and if you are different, when it moves.
+						You bounce back, so it's the finished endurance towards the cold meeting, you tighten up.
+						the liquid heated pneumatosis.
+     </p>
+    </div>
+    <div n="21" subtype="chapter" type="textpart">
+     <p>
+      Ἡ δ’ ἀναπνοὴ γίνεται αὐξανομένου τοῦ θερμοῦ, ἐν ᾧ ἡ
+      <lb/>
+      ἀρχὴ ἡ θρεπτική. Καθάπερ γὰρ
+						καὶ τἆλλα δεῖται τροφῆς,
+      <lb/>
+      κἀκεῖνο, καὶ τῶν ἄλλων μᾶλλον· καὶ γὰρ τοῖς ἄλλοις
+      <lb/>
+      ἐκεῖνο τῆς τροφῆς αἴτιόν ἐστιν. Ἀνάγκη δὴ πλέον γινόμενον
+      <lb/>
+      αἴρειν τὸ ὄργανον.
+						Δεῖ δ’ ὑπολαβεῖν τὴν σύστασιν
+      <lb/>
+      τοῦ ὀργάνου παραπλησίαν μὲν εἶναι ταῖς φύσαις ταῖς ἐν
+      <lb/>
+      τοῖς χαλκείοις· οὐ πόρρω γὰρ οὔθ’ ὁ πνεύμων οὔθ’ ἡ καρδία
+      <lb/>
+      πρὸς τὸ δέξασθαι
+						σχῆμα τοιοῦτον· διπλοῦν δ’ εἶναι τὸ
+      <lb/>
+      τοιοῦτον· δεῖ γὰρ ἐν τῷ μέσῳ τὸ θρεπτικὸν εἶναι
+						τῆς φυσικῆς
+      <lb/>
+      δυνάμεως. Αἴρεται μὲν οὖν πλεῖον γενόμενον, αἰρομένου
+      <lb/>
+      δ’ ἀναγκαῖον
+						αἴρεσθαι καὶ τὸ περιέχον αὐτὸ μόριον.
+      <lb/>
+      Ὅπερ φαίνονται ποιεῖν οἱ ἀναπνέοντες· αἴρουσι
+						γὰρ τὸν
+      <lb/>
+      θώρακα διὰ τὸ τὴν ἀρχὴν τὴν ἐνοῦσαν αὐτῷ τοῦ τοιούτου
+      <lb/>
+      μορίου ταὐτὸ
+						τοῦτο ποιεῖν· αἰρομένου γάρ, καθάπερ εἰς τὰς
+      <lb/>
+      φύσας, ἀναγκαῖον εἰσφέρειν τὸν ἀέρα
+						τὸν θύραθεν, καὶ
+      <lb/>
+      ψυχρὸν ὄντα καὶ καταψύχοντα σβεννύναι τὴν ὑπεροχὴν
+      <lb/>
+      τὴν τοῦ
+						πυρός. Ὥσπερ δ’ αὐξανομένου ᾔρετο τοῦτο τὸ
+      <lb/>
+      μόριον, καὶ φθίνοντος ἀναγκαῖον
+						συνίζειν, καὶ συνίζοντος
+      <lb/>
+      ἐξιέναι τὸν ἀέρα τὸν εἰσελθόντα πάλιν, εἰσιόντα μὲν ψυχρὸν
+      <lb/>
+      ἐξιόντα δὲ θερμὸν διὰ τὴν ἁφὴν τοῦ θερμοῦ τοῦ ἐνόντος
+      <lb/>
+      ἐν τῷ μορίῳ τούτῳ, καὶ
+						μάλιστα τοῖς τὸν πνεύμονα ἔναιμον
+      <pb n="354"/>
+      ἔχουσιν· εἰς πολλοὺς γὰρ οἷον αὐλῶνας
+						τὰς σύριγγας
+      <lb/>
+      ἐμπίπτειν τὰς ἐν τῷ πνεύμονι, ὧν παρ’ ἑκάστην παρατέτανται
+      <lb/>
+      φλέβες, ὥστε δοκεῖν ὅλον εἶναι τὸν πνεύμονα πλήρη
+      <lb/>
+      αἵματος. Καλεῖται δ’ ἡ μὲν
+						εἴσοδος τοῦ ἀέρος ἀναπνοή, ἡ
+      <lb/>
+      δ’ ἔξοδος ἐκπνοή. Καὶ ἀεὶ δὴ τοῦτο γίνεται συνεχῶς,
+						ἕως
+      <lb/>
+      περ ἂν ζῇ καὶ κινῇ τοῦτο τὸ μόριον συνεχῶς. Καὶ διὰ
+      <lb/>
+      τοῦτο ἐν τῷ ἀναπνεῖν
+						καὶ ἐκπνεῖν ἐστὶ τὸ ζῆν. Τὸν αὐτὸν
+      <lb/>
+      δὲ τρόπον καὶ τοῖς ἰχθύσιν ἡ κίνησις γίνεται τῶν
+						βραγχίων.
+      <lb/>
+      Αἰρομένου μὲν γὰρ τοῦ θερμοῦ τοῦ ἐν τῷ αἵματι
+      <lb/>
+      διὰ τῶν μορίων
+						αἴρονται καὶ τὰ βράγχια, καὶ διιᾶσι τὸ
+      <lb/>
+      ὕδωρ· κατιόντος δὲ πρὸς τὴν καρδίαν διὰ τῶν
+						πόρων καὶ
+      <lb/>
+      καταψυχομένου συνίζουσι, καὶ ἀφιᾶσι τὸ ὕδωρ. Ἀεὶ δ’ αἰρομένου
+      <lb/>
+      τοῦ ἐν
+						τῇ καρδίᾳ, ἀεὶ δέχεται πάλιν καταψυχομένου.
+      <lb/>
+      Διὸ κἀκείνοις τοῦ ζῆν καὶ μὴ ζῆν τὸ
+						τέλος ἐστὶν
+      <lb/>
+      ἐν τῷ ἀναπνεῖν, καὶ τούτοις ἐν τῷ δέχεσθαι τὸ ὑγρόν.
+     </p>
+     <p lang="it">
+      Il quarto respiro avviene con calore crescente, in cui l'inizio è il nutrimento. Dopotutto, Kathaper
+						e la bellezza si vede nel cibo, cattivo, e piuttosto negli altri;
+						quella del cibo è la causa. Non è più necessario rimuovere l'organo.
+						Non si occupano dell’organizzazione dell’organo di prossimità a me se è nella loro natura
+						ai ramaioli; poiché né lo spirito né il cuore sono in grado di accettarlo
+						la forma di uno simile; non piegano quello; perché vedere nel mezzo è il nutrimento
+						di forza fisica. Si prende con il nostro genomenon plurale
+						anche la molecola che lo contiene sale. Perché si vedono coloro che respirano gloria;
+						poiché il petto era unito a lui dall'inizio di questa molecola
+						cosa fanno?
+						dalla porta, ed essere freddo e gelido spegne la bellezza di
+						fuoco. Man mano che questa molecola aumenta, diminuisce il necessario
+						sono d'accordo, e come sono d'accordo, l'aria che è entrata di nuovo, è fredda
+						e irradia calore a causa del rilascio del calore della sostanza in questa molecola, e
+						infatti hanno il respiro dei polmoni;
+						le siringhe cadono nei polmoni, dove vengono estese
+						vene, in modo che sentano il sapore di tutto il polmone pieno di sangue. Si chiama d'or me
+						l'ingresso dell'aria è l'inalazione, la quarta uscita è l'espirazione. E ehi, non succede sempre così?
+						finché questa molecola vive e si muove continuamente. E per questo motivo mentre respiri
+						E la vita muore. Allo stesso modo anche il movimento dei pesci lo fanno loro
+						branchie. A causa del calore del sangue attraverso le molecole
+						anche le branchie sono sollevate e l'acqua è divisa e scende verso il cuore attraverso il
+						poro e congelato insieme, e lasciare l'acqua. Santo dello Spirito Santo
+						il cuore, aeὶ riceve di nuovo ghiacciato. A causa di qualcuno vivere e non vivere
+						il fine è respirare, e questo nel ricevere il liquido.
+     </p>
+     <p lang="en">
+      The fourth breath takes place with increasing heat, in which the beginning is the nourishing. After all, Kathaper
+						and beauty is seen in food, bad, and rather in others; for in others
+						that of food is the cause. There is no longer any need to remove the organ.
+						They do not take care of the organization of the organ of proximity to me if it is their nature in
+						to the coppersmiths; for neither the spirit nor the heart is able to accept it
+						the shape of such a one; they fold not that one; for see in the middle is the nourishing
+						of physical force. It is taken with oὖn plural genomenon
+						the molecule containing it also rises. Because they are seen who are breathing; glory
+						for the chest was united to him by the beginning of this molecule
+						what do they do?
+						from the door, and being cold and freezing extinguishes the beauty of
+						fire. As this molecule increases, it decreases the necessary
+						they agree, and as they agree, the air enters again, being cold
+						and it radiates heat due to the release of the heat of the substance in this molecule, and
+						in fact, they have the breath of the lungs;
+						the syringes fall into the lungs, where they are extended
+						veins, so that they taste the whole lung full of blood. It is called d' or me
+						air inlet is inhalation, the fourth outlet is exhalation. And hey, doesn't this happen all the time,
+						as long as this molecule lives and moves continuously. And because of this while breathing
+						And life dies. In the same way, the movement of the fishes is also done by them
+						gills. Because of the heat of the blood through the molecules
+						the gills are also raised, and the water is divided; and descending towards the heart through the
+						pore and frozen together, and leave the water. Saint of the Holy Spirit
+						the heart, aeὶ receives again chilled. Because of someone to live and not to live
+						the end is in breathing, and this in receiving the liquid.
+     </p>
+     <p>
+      Περὶ μὲν οὖν ζωῆς καὶ θανάτου καὶ τῶν συγγενῶν ταύτης
+      <lb/>
+      τῆς σκέψεως, σχεδὸν εἴρηται
+						περὶ πάντων. Περὶ δὲ
+      <lb/>
+      ὑγιείας καὶ νόσου οὐ μόνον ἐστὶν ἰατροῦ ἀλλὰ καὶ τοῦ φυσικοῦ
+      <lb/>
+      μέχρι του τὰς αἰτίας εἰπεῖν. Ἧι δὲ διαφέρουσι καὶ ᾗ
+      <lb/>
+      διαφέροντα θεωροῦσιν, οὐ
+						δεῖ λανθάνειν, ἐπεὶ ὅτι γε σύνορος
+      <lb/>
+      ἡ πραγματεία μέχρι τινός ἐστι, μαρτυρεῖ τὸ
+						γινόμενον·
+      <lb/>
+      τῶν τε γὰρ ἰατρῶν ὅσοι κομψοὶ ἢ περίεργοι, λέγουσί τι
+      <lb/>
+      περὶ φύσεως
+						καὶ τὰς ἀρχὰς ἐκεῖθεν ἀξιοῦσι λαμβάνειν, καὶ
+      <lb/>
+      τῶν περὶ φύσεως πραγματευθέντων οἱ
+						χαριέστατοι σχεδὸν
+      <lb/>
+      τελευτῶσιν εἰς τὰς ἀρχὰς τὰς ἰατρικάς.
+     </p>
+     <p lang="it">
+      Della vita e della morte e dei parenti di questo pensiero, è quasi detto
+						su tutto. Per quanto riguarda la salute e la malattia, non riguarda solo il medico ma anche il fisico
+						fino a quando non verranno spiegate le ragioni. Ma cosa differiscono e cosa considerano diverso, no
+						vedi lantanain, che il trattato è confine finché non lo si è, testimonia
+						accadendo; perché di questi medici, quelli che sono eleganti o curiosi, dicono che cosa dicono della natura
+						e da lì ricevono i principi del merito e delle cose svolte intorno
+						felici, quasi finiscono nelle autorità mediche.
+     </p>
+     <p lang="en">
+      About life and death and the relatives of this thought, it is almost said
+						about everything. As for health and disease, it is not only for the physician but also for the physicist
+						until the reasons are told. But what do they differ and what do they consider different, no
+						see lantanain, that the treatise is a border until one is, testifies to
+						happening; for of those physicians, those who are elegant or curious, say what about nature
+						and from there they receive the principles of merit, and of the things carried out about
+						happy, they almost end up in the medical authorities.
+     </p>
+    </div>
+   </div>
+  </body>
+ </text>
+</TEI>

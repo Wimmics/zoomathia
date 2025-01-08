@@ -1,0 +1,32 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>.
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>.
+PREFIX schema:  <http://schema.org/> .
+
+SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?mention_pregnancy WHERE {
+?annotation1 a oa:Annotation;
+              oa:hasBody ?animal;
+              oa:hasTarget ?target1.
+  ?target1 oa:hasSource ?paragraph;
+     oa:hasSelector ?selector.
+    
+  ?selector oa:exact ?mention_animal.
+
+  ?animal a skos:Concept;
+       skos:prefLabel ?name_animal.
+    
+  ?animal_collection a skos:Collection;
+       skos:prefLabel "Ancient class"@en;
+       skos:member ?animal.
+
+  ?annotation2 oa:hasBody ?pregnancy;
+        oa:hasTarget ?target2.
+  ?target2 oa:hasSource ?paragraph;
+      oa:hasSelector ?selector2.
+  ?selector2 oa:exact ?mention_pregnancy.
+
+  ?pregnancy skos:prefLabel "length of pregnancy"@en.
+
+  FILTER (lang(?name_pregnancy) = "en")
+  FILTER (lang(?name_animal) = "en").
+}
+ORDER BY ?paragraph

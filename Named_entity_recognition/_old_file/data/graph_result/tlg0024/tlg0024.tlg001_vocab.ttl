@@ -1,0 +1,2893 @@
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix schema:  <http://schema.org/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dce:     <http://purl.org/dc/elements/1.1/> .
+@prefix fabio:   <http://purl.org/spar/fabio/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:    <http://purl.org/vocab/frbr/core#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix oa:      <http://www.w3.org/ns/oa#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<https://opentheso.huma-num.fr/veil>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Veil"^^xsd:IRI ;
+      skos:prefLabel "veil" .
+
+<https://opentheso.huma-num.fr/Macedonian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Macedonian_language"^^xsd:IRI ;
+      skos:prefLabel "Macedonian" .
+
+<https://opentheso.huma-num.fr/tendini>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Tendine"^^xsd:IRI ;
+      skos:prefLabel "tendini" .
+
+<https://opentheso.huma-num.fr/kela>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Kela_(institution)"^^xsd:IRI ;
+      skos:prefLabel "kela" .
+
+<https://opentheso.huma-num.fr/Turnebus>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q376210"^^xsd:IRI ;
+      skos:prefLabel "Turnebus" .
+
+<https://opentheso.huma-num.fr/cecchino>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Tiratore_scelto"^^xsd:IRI ;
+      skos:prefLabel "cecchino" .
+
+<https://opentheso.huma-num.fr/Assyrians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Assyrian_people"^^xsd:IRI ;
+      skos:prefLabel "Assyrians" .
+
+<https://opentheso.huma-num.fr/Xouthos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Xuthus_(mythology)"^^xsd:IRI ;
+      skos:prefLabel "Xouthos" .
+
+<https://opentheso.huma-num.fr/acqua_salata>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Acqua_di_mare"^^xsd:IRI ;
+      skos:prefLabel "acqua salata" .
+
+<https://opentheso.huma-num.fr/clito>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Clito_il_Nero"^^xsd:IRI ;
+      skos:prefLabel "clito" .
+
+<https://opentheso.huma-num.fr/Asma>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Asma"^^xsd:IRI ;
+      skos:prefLabel "Asma" .
+
+<https://opentheso.huma-num.fr/Asthma>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Asthma"^^xsd:IRI ;
+      skos:prefLabel "Asthma" .
+
+<https://opentheso.huma-num.fr/Ascoltami>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q19919381"^^xsd:IRI ;
+      skos:prefLabel "Ascoltami" .
+
+<https://opentheso.huma-num.fr/poti>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Poti"^^xsd:IRI , "http://dbpedia.org/resource/Poti"^^xsd:IRI ;
+      skos:prefLabel "poti" .
+
+<https://opentheso.huma-num.fr/corimbi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Corimbo"^^xsd:IRI ;
+      skos:prefLabel "corimbi" .
+
+<https://opentheso.huma-num.fr/palm_tree>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Arecaceae"^^xsd:IRI ;
+      skos:prefLabel "palm tree" .
+
+<https://opentheso.huma-num.fr/omen>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Omen"^^xsd:IRI ;
+      skos:prefLabel "omen" .
+
+<https://opentheso.huma-num.fr/cammello>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Camelus_bactrianus"^^xsd:IRI ;
+      skos:prefLabel "cammello" .
+
+<https://opentheso.huma-num.fr/formiche>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Formicidae"^^xsd:IRI ;
+      skos:prefLabel "formiche" .
+
+<https://opentheso.huma-num.fr/scoliosi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Scoliosi"^^xsd:IRI ;
+      skos:prefLabel "scoliosi" .
+
+<https://opentheso.huma-num.fr/rheum>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Rheum"^^xsd:IRI ;
+      skos:prefLabel "rheum" .
+
+<https://opentheso.huma-num.fr/Oia>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Oia,_Greece"^^xsd:IRI ;
+      skos:prefLabel "Oia" .
+
+<https://opentheso.huma-num.fr/predator>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Predation"^^xsd:IRI ;
+      skos:prefLabel "predator" .
+
+<https://opentheso.huma-num.fr/ponton>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ponton_(automobile)"^^xsd:IRI ;
+      skos:prefLabel "ponton" .
+
+<https://opentheso.huma-num.fr/Celts>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Celts"^^xsd:IRI ;
+      skos:prefLabel "Celts" .
+
+<https://opentheso.huma-num.fr/lepre>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Lepus_europaeus"^^xsd:IRI ;
+      skos:prefLabel "lepre" .
+
+<https://opentheso.huma-num.fr/cratere>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Cratere_meteoritico"^^xsd:IRI ;
+      skos:prefLabel "cratere" .
+
+<https://opentheso.huma-num.fr/lunar>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lunar_craters"^^xsd:IRI ;
+      skos:prefLabel "lunar" .
+
+<https://opentheso.huma-num.fr/acqua_in_bocca>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Acqua_in_bocca_(serie_animata)"^^xsd:IRI ;
+      skos:prefLabel "acqua in bocca" .
+
+<https://opentheso.huma-num.fr/Eracle>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Eracle"^^xsd:IRI ;
+      skos:prefLabel "Eracle" .
+
+<https://opentheso.huma-num.fr/Cirene>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Cirene"^^xsd:IRI ;
+      skos:prefLabel "Cirene" .
+
+<https://opentheso.huma-num.fr/rhenium>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Rhenium"^^xsd:IRI ;
+      skos:prefLabel "rhenium" .
+
+<https://opentheso.huma-num.fr/Tolman>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Edward_Tolman"^^xsd:IRI ;
+      skos:prefLabel "Tolman" .
+
+<https://opentheso.huma-num.fr/hornet>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Hornet"^^xsd:IRI ;
+      skos:prefLabel "hornet" .
+
+<https://opentheso.huma-num.fr/monogamous>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Monogamy"^^xsd:IRI ;
+      skos:prefLabel "monogamous" .
+
+<https://opentheso.huma-num.fr/Gesner>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Conrad_Gessner"^^xsd:IRI ;
+      skos:prefLabel "Gesner" .
+
+<https://opentheso.huma-num.fr/Iberian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Iberian_Peninsula"^^xsd:IRI ;
+      skos:prefLabel "Iberian" .
+
+<https://opentheso.huma-num.fr/ghiottoni>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Gulo_gulo"^^xsd:IRI ;
+      skos:prefLabel "ghiottoni" .
+
+<https://opentheso.huma-num.fr/elafos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Elafos,_Pieria"^^xsd:IRI ;
+      skos:prefLabel "elafos" .
+
+<https://opentheso.huma-num.fr/Olbia>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Olbia"^^xsd:IRI , "http://it.dbpedia.org/resource/Olbia"^^xsd:IRI ;
+      skos:prefLabel "Olbia" .
+
+<https://opentheso.huma-num.fr/fila>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/United_World_Wrestling"^^xsd:IRI ;
+      skos:prefLabel "fila" .
+
+<https://opentheso.huma-num.fr/acre>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Acre"^^xsd:IRI ;
+      skos:prefLabel "acre" .
+
+<https://opentheso.huma-num.fr/multitudes>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Multitudes"^^xsd:IRI ;
+      skos:prefLabel "multitudes" .
+
+<https://opentheso.huma-num.fr/Archippo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Archippo_di_Colossi"^^xsd:IRI ;
+      skos:prefLabel "Archippo" .
+
+<https://opentheso.huma-num.fr/Artemide>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Artemide"^^xsd:IRI ;
+      skos:prefLabel "Artemide" .
+
+<https://opentheso.huma-num.fr/Savage>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Randy_Savage"^^xsd:IRI ;
+      skos:prefLabel "Savage" .
+
+<https://opentheso.huma-num.fr/anxiety>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Anxiety"^^xsd:IRI ;
+      skos:prefLabel "anxiety" .
+
+<https://opentheso.huma-num.fr/Mars>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Mars"^^xsd:IRI ;
+      skos:prefLabel "Mars" .
+
+<https://opentheso.huma-num.fr/Bacco>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Bacco"^^xsd:IRI ;
+      skos:prefLabel "Bacco" .
+
+<https://opentheso.huma-num.fr/cubito>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Glossario_entomologico"^^xsd:IRI ;
+      skos:prefLabel "cubito" .
+
+<https://opentheso.huma-num.fr/fishing_rod>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fishing_rod"^^xsd:IRI ;
+      skos:prefLabel "fishing rod" .
+
+<https://opentheso.huma-num.fr/sweat>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Perspiration"^^xsd:IRI ;
+      skos:prefLabel "sweat" .
+
+<https://opentheso.huma-num.fr/Epei>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Epei"^^xsd:IRI ;
+      skos:prefLabel "Epei" .
+
+<https://opentheso.huma-num.fr/tiros>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Tiros"^^xsd:IRI ;
+      skos:prefLabel "tiros" .
+
+<https://opentheso.huma-num.fr/iois>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Arhopala"^^xsd:IRI ;
+      skos:prefLabel "iois" .
+
+<https://opentheso.huma-num.fr/Elisas>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q3463341"^^xsd:IRI ;
+      skos:prefLabel "Elisas" .
+
+<https://opentheso.huma-num.fr/aphrodisiac>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Aphrodisiac"^^xsd:IRI ;
+      skos:prefLabel "aphrodisiac" .
+
+<https://opentheso.huma-num.fr/counterparty>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Counterparty"^^xsd:IRI ;
+      skos:prefLabel "counterparty" .
+
+<https://opentheso.huma-num.fr/mais>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Zea_mays"^^xsd:IRI ;
+      skos:prefLabel "mais" .
+
+<https://opentheso.huma-num.fr/Gorgon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Gorgon"^^xsd:IRI ;
+      skos:prefLabel "Gorgon" .
+
+<https://opentheso.huma-num.fr/erateini>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Erateini"^^xsd:IRI ;
+      skos:prefLabel "erateini" .
+
+<https://opentheso.huma-num.fr/volon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Volon"^^xsd:IRI ;
+      skos:prefLabel "volon" .
+
+<https://opentheso.huma-num.fr/thoron>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Isotopes_of_radon"^^xsd:IRI ;
+      skos:prefLabel "thoron" .
+
+<https://opentheso.huma-num.fr/seal>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pinniped"^^xsd:IRI ;
+      skos:prefLabel "seal" .
+
+<https://opentheso.huma-num.fr/Armena>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q4793105"^^xsd:IRI ;
+      skos:prefLabel "Armena" .
+
+<https://opentheso.huma-num.fr/Medea>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Medea"^^xsd:IRI , "http://dbpedia.org/resource/Medea"^^xsd:IRI ;
+      skos:prefLabel "Medea" .
+
+<https://opentheso.huma-num.fr/God>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/God"^^xsd:IRI ;
+      skos:prefLabel "God" .
+
+<https://opentheso.huma-num.fr/scribi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Scriba"^^xsd:IRI ;
+      skos:prefLabel "scribi" .
+
+<https://opentheso.huma-num.fr/i_piatti>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/I_Piatti"^^xsd:IRI ;
+      skos:prefLabel "i piatti" .
+
+<https://opentheso.huma-num.fr/Norther>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q643946"^^xsd:IRI ;
+      skos:prefLabel "Norther" .
+
+<https://opentheso.huma-num.fr/ek>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Iron_Cross"^^xsd:IRI ;
+      skos:prefLabel "ek" .
+
+<https://opentheso.huma-num.fr/rachis>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Rachis"^^xsd:IRI ;
+      skos:prefLabel "rachis" .
+
+<https://opentheso.huma-num.fr/Gesù>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Gesù"^^xsd:IRI ;
+      skos:prefLabel "Gesù" .
+
+<https://opentheso.huma-num.fr/sea_salt>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sea_salt"^^xsd:IRI ;
+      skos:prefLabel "sea salt" .
+
+<https://opentheso.huma-num.fr/Dionysus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dionysius_of_Halicarnassus"^^xsd:IRI , "http://dbpedia.org/resource/Dionysus"^^xsd:IRI ;
+      skos:prefLabel "Dionysus" .
+
+<https://opentheso.huma-num.fr/law>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/John_Law"^^xsd:IRI ;
+      skos:prefLabel "law" .
+
+<https://opentheso.huma-num.fr/women_lead>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Women_LEAD"^^xsd:IRI ;
+      skos:prefLabel "women lead" .
+
+<https://opentheso.huma-num.fr/tooth_decay>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Tooth_decay"^^xsd:IRI ;
+      skos:prefLabel "tooth decay" .
+
+<https://opentheso.huma-num.fr/snake>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Snake"^^xsd:IRI ;
+      skos:prefLabel "snake" .
+
+<https://opentheso.huma-num.fr/eoni>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Eone"^^xsd:IRI ;
+      skos:prefLabel "eoni" .
+
+<https://opentheso.huma-num.fr/black_arrow>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Black_Arrow"^^xsd:IRI ;
+      skos:prefLabel "black arrow" .
+
+<https://opentheso.huma-num.fr/cloud>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Cloud"^^xsd:IRI ;
+      skos:prefLabel "cloud" .
+
+<https://opentheso.huma-num.fr/oa>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Oa_(fumetto)"^^xsd:IRI ;
+      skos:prefLabel "oa" .
+
+<https://opentheso.huma-num.fr/fai>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Federazione_calcistica_dell'Irlanda"^^xsd:IRI ;
+      skos:prefLabel "fai" .
+
+<https://opentheso.huma-num.fr/cistern>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Cistern"^^xsd:IRI ;
+      skos:prefLabel "cistern" .
+
+<https://opentheso.huma-num.fr/topi_muschiati>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ondatra_zibethicus"^^xsd:IRI ;
+      skos:prefLabel "topi muschiati" .
+
+<https://opentheso.huma-num.fr/kata>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Kata"^^xsd:IRI , "http://dbpedia.org/resource/Kata"^^xsd:IRI ;
+      skos:prefLabel "kata" .
+
+<https://opentheso.huma-num.fr/weed>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Weed"^^xsd:IRI ;
+      skos:prefLabel "weed" .
+
+<https://opentheso.huma-num.fr/Penthea>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q14815106"^^xsd:IRI ;
+      skos:prefLabel "Penthea" .
+
+<https://opentheso.huma-num.fr/Anfitrite>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Anfitrite"^^xsd:IRI ;
+      skos:prefLabel "Anfitrite" .
+
+<https://opentheso.huma-num.fr/vine>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Vine"^^xsd:IRI ;
+      skos:prefLabel "vine" .
+
+<https://opentheso.huma-num.fr/asty>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Asty"^^xsd:IRI , "http://dbpedia.org/resource/Asty"^^xsd:IRI ;
+      skos:prefLabel "asty" .
+
+<https://opentheso.huma-num.fr/anfibi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Amphibia"^^xsd:IRI ;
+      skos:prefLabel "anfibi" .
+
+<https://opentheso.huma-num.fr/1517>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/1517"^^xsd:IRI ;
+      skos:prefLabel "1517" .
+
+<https://opentheso.huma-num.fr/lagoon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lagoon"^^xsd:IRI ;
+      skos:prefLabel "lagoon" .
+
+<https://opentheso.huma-num.fr/wax>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Wax"^^xsd:IRI ;
+      skos:prefLabel "wax" .
+
+<https://opentheso.huma-num.fr/dark_moon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dark_moon"^^xsd:IRI ;
+      skos:prefLabel "dark moon" .
+
+<https://opentheso.huma-num.fr/tanti_auguri>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Amoa"^^xsd:IRI ;
+      skos:prefLabel "tanti auguri" .
+
+<https://opentheso.huma-num.fr/Nervi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Pier_Luigi_Nervi"^^xsd:IRI ;
+      skos:prefLabel "Nervi" .
+
+<https://opentheso.huma-num.fr/heifer>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Cattle"^^xsd:IRI ;
+      skos:prefLabel "heifer" .
+
+<https://opentheso.huma-num.fr/ice>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ice"^^xsd:IRI ;
+      skos:prefLabel "ice" .
+
+<https://opentheso.huma-num.fr/rsi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Repubblica_Sociale_Italiana"^^xsd:IRI ;
+      skos:prefLabel "rsi" .
+
+<https://opentheso.huma-num.fr/Zephyr>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Anemoi"^^xsd:IRI ;
+      skos:prefLabel "Zephyr" .
+
+<https://opentheso.huma-num.fr/lot>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Lot"^^xsd:IRI ;
+      skos:prefLabel "lot" .
+
+<https://opentheso.huma-num.fr/Armenians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Armenians"^^xsd:IRI ;
+      skos:prefLabel "Armenians" .
+
+<https://opentheso.huma-num.fr/theca>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Theca"^^xsd:IRI ;
+      skos:prefLabel "theca" .
+
+<https://opentheso.huma-num.fr/phalanges>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Phalanx_bone"^^xsd:IRI ;
+      skos:prefLabel "phalanges" .
+
+<https://opentheso.huma-num.fr/Dryads>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dryad"^^xsd:IRI ;
+      skos:prefLabel "Dryads" .
+
+<https://opentheso.huma-num.fr/chimera>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fusion_protein"^^xsd:IRI ;
+      skos:prefLabel "chimera" .
+
+<https://opentheso.huma-num.fr/Colchis>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Colchis"^^xsd:IRI ;
+      skos:prefLabel "Colchis" .
+
+<https://opentheso.huma-num.fr/vendi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Venedi"^^xsd:IRI ;
+      skos:prefLabel "vendi" .
+
+<https://opentheso.huma-num.fr/Titina>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Titina_De_Filippo"^^xsd:IRI ;
+      skos:prefLabel "Titina" .
+
+<https://opentheso.huma-num.fr/armeno>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Lingua_armena"^^xsd:IRI ;
+      skos:prefLabel "armeno" .
+
+<https://opentheso.huma-num.fr/Nero>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Nero"^^xsd:IRI ;
+      skos:prefLabel "Nero" .
+
+<https://opentheso.huma-num.fr/rwn>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Rwn"^^xsd:IRI ;
+      skos:prefLabel "rwn" .
+
+<https://opentheso.huma-num.fr/rachide>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Glossario_botanico"^^xsd:IRI ;
+      skos:prefLabel "rachide" .
+
+<https://opentheso.huma-num.fr/aloe>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Aloe_vera"^^xsd:IRI ;
+      skos:prefLabel "aloe" .
+
+<https://opentheso.huma-num.fr/cubit>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Cubit"^^xsd:IRI ;
+      skos:prefLabel "cubit" .
+
+<https://opentheso.huma-num.fr/chthonos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Chthonos"^^xsd:IRI ;
+      skos:prefLabel "chthonos" .
+
+<https://opentheso.huma-num.fr/lexon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lexon"^^xsd:IRI ;
+      skos:prefLabel "lexon" .
+
+<https://opentheso.huma-num.fr/phalanx>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Phalanx"^^xsd:IRI ;
+      skos:prefLabel "phalanx" .
+
+<https://opentheso.huma-num.fr/atar>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q3272422"^^xsd:IRI ;
+      skos:prefLabel "atar" .
+
+<https://opentheso.huma-num.fr/Inghilterra>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Inghilterra"^^xsd:IRI ;
+      skos:prefLabel "Inghilterra" .
+
+<https://opentheso.huma-num.fr/Colchide>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q183150"^^xsd:IRI , "http://it.dbpedia.org/resource/Colchide"^^xsd:IRI ;
+      skos:prefLabel "Colchide" .
+
+<https://opentheso.huma-num.fr/whistle>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Whistle"^^xsd:IRI ;
+      skos:prefLabel "whistle" .
+
+<https://opentheso.huma-num.fr/Medusa>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Medusa"^^xsd:IRI ;
+      skos:prefLabel "Medusa" .
+
+<https://opentheso.huma-num.fr/Scythians>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q131802"^^xsd:IRI , "http://dbpedia.org/resource/Scythians"^^xsd:IRI ;
+      skos:prefLabel "Scythians" .
+
+<https://opentheso.huma-num.fr/toron>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Toron"^^xsd:IRI , "http://dbpedia.org/resource/Vassals_of_the_Kingdom_of_Jerusalem"^^xsd:IRI ;
+      skos:prefLabel "toron" .
+
+<https://opentheso.huma-num.fr/Eros>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Eros"^^xsd:IRI ;
+      skos:prefLabel "Eros" .
+
+<https://opentheso.huma-num.fr/narthex>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Narthex"^^xsd:IRI ;
+      skos:prefLabel "narthex" .
+
+<https://opentheso.huma-num.fr/deer>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Deer"^^xsd:IRI ;
+      skos:prefLabel "deer" .
+
+<https://opentheso.huma-num.fr/falange>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Falange_macedone"^^xsd:IRI ;
+      skos:prefLabel "falange" .
+
+<https://opentheso.huma-num.fr/ostrich>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ostrich"^^xsd:IRI ;
+      skos:prefLabel "ostrich" .
+
+<https://opentheso.huma-num.fr/lago>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Lago"^^xsd:IRI ;
+      skos:prefLabel "lago" .
+
+<https://opentheso.huma-num.fr/canna>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Canna_da_pesca"^^xsd:IRI ;
+      skos:prefLabel "canna" .
+
+<https://opentheso.huma-num.fr/pesci>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Pesce"^^xsd:IRI ;
+      skos:prefLabel "pesci" .
+
+<https://opentheso.huma-num.fr/Lacedaemonian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sparta"^^xsd:IRI ;
+      skos:prefLabel "Lacedaemonian" .
+
+<https://opentheso.huma-num.fr/teon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Primal_(comics)"^^xsd:IRI ;
+      skos:prefLabel "teon" .
+
+<https://opentheso.huma-num.fr/fireflies>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Firefly"^^xsd:IRI ;
+      skos:prefLabel "fireflies" .
+
+<https://opentheso.huma-num.fr/pedon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Soil_horizon"^^xsd:IRI ;
+      skos:prefLabel "pedon" .
+
+<https://opentheso.huma-num.fr/tanta>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Tanta"^^xsd:IRI ;
+      skos:prefLabel "tanta" .
+
+<https://opentheso.huma-num.fr/Gelosia>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Gelosia"^^xsd:IRI ;
+      skos:prefLabel "Gelosia" .
+
+<https://opentheso.huma-num.fr/fres>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Royal_Entomological_Society"^^xsd:IRI ;
+      skos:prefLabel "fres" .
+
+<https://opentheso.huma-num.fr/holon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Holon"^^xsd:IRI , "http://it.dbpedia.org/resource/Holon"^^xsd:IRI ;
+      skos:prefLabel "holon" .
+
+<https://opentheso.huma-num.fr/Sirion>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Daihatsu_Sirion"^^xsd:IRI , "http://it.dbpedia.org/resource/Sirion"^^xsd:IRI ;
+      skos:prefLabel "Sirion" .
+
+<https://opentheso.huma-num.fr/Pandora>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pandora"^^xsd:IRI ;
+      skos:prefLabel "Pandora" .
+
+<https://opentheso.huma-num.fr/freccia_nera>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Freccia_Nera"^^xsd:IRI ;
+      skos:prefLabel "freccia nera" .
+
+<https://opentheso.huma-num.fr/renio>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Renio"^^xsd:IRI ;
+      skos:prefLabel "renio" .
+
+<https://opentheso.huma-num.fr/sternum>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sternum"^^xsd:IRI ;
+      skos:prefLabel "sternum" .
+
+<https://opentheso.huma-num.fr/urge>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/HMS_Urge"^^xsd:IRI ;
+      skos:prefLabel "urge" .
+
+<https://opentheso.huma-num.fr/vento>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Vento"^^xsd:IRI ;
+      skos:prefLabel "vento" .
+
+<https://opentheso.huma-num.fr/scoiattolo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Sciuridae"^^xsd:IRI ;
+      skos:prefLabel "scoiattolo" .
+
+<https://opentheso.huma-num.fr/Earth>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Earth"^^xsd:IRI ;
+      skos:prefLabel "Earth" .
+
+<https://opentheso.huma-num.fr/eone>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Eone"^^xsd:IRI ;
+      skos:prefLabel "eone" .
+
+<https://opentheso.huma-num.fr/boxer>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Boxing"^^xsd:IRI ;
+      skos:prefLabel "boxer" .
+
+<https://opentheso.huma-num.fr/Libya>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Libya"^^xsd:IRI ;
+      skos:prefLabel "Libya" .
+
+<https://opentheso.huma-num.fr/Half-breed>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Half-breed"^^xsd:IRI ;
+      skos:prefLabel "Half-breed" .
+
+<https://opentheso.huma-num.fr/anca>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Anca"^^xsd:IRI ;
+      skos:prefLabel "anca" .
+
+<https://opentheso.huma-num.fr/reptile>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Reptile"^^xsd:IRI ;
+      skos:prefLabel "reptile" .
+
+<https://opentheso.huma-num.fr/Meleagro>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Meleagro"^^xsd:IRI ;
+      skos:prefLabel "Meleagro" .
+
+<https://opentheso.huma-num.fr/colpo_d'ariete>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Colpo_d'ariete"^^xsd:IRI ;
+      skos:prefLabel "colpo d'ariete" .
+
+<https://opentheso.huma-num.fr/water_hammer>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Water_hammer"^^xsd:IRI ;
+      skos:prefLabel "water hammer" .
+
+<https://opentheso.huma-num.fr/kiona>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Kiona,_Washington"^^xsd:IRI ;
+      skos:prefLabel "kiona" .
+
+<https://opentheso.huma-num.fr/Tigri>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Tigri"^^xsd:IRI ;
+      skos:prefLabel "Tigri" .
+
+<https://opentheso.huma-num.fr/MSS>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Maximum_Segment_Size"^^xsd:IRI , "http://it.dbpedia.org/resource/Movimento_Scout_Svizzero"^^xsd:IRI ;
+      skos:prefLabel "MSS" .
+
+<https://opentheso.huma-num.fr/lassie>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lassie"^^xsd:IRI , "http://it.dbpedia.org/resource/Lassie"^^xsd:IRI ;
+      skos:prefLabel "lassie" .
+
+<https://opentheso.huma-num.fr/Moon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Moon"^^xsd:IRI ;
+      skos:prefLabel "Moon" .
+
+<https://opentheso.huma-num.fr/Libia>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Libia"^^xsd:IRI ;
+      skos:prefLabel "Libia" .
+
+<https://opentheso.huma-num.fr/Archippus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Archippus"^^xsd:IRI ;
+      skos:prefLabel "Archippus" .
+
+<https://opentheso.huma-num.fr/ai>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Artificial_intelligence"^^xsd:IRI ;
+      skos:prefLabel "ai" .
+
+<https://opentheso.huma-num.fr/phaedra>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Fedra"^^xsd:IRI , "http://dbpedia.org/resource/Phaedra_(mythology)"^^xsd:IRI ;
+      skos:prefLabel "phaedra" .
+
+<https://opentheso.huma-num.fr/ferroboron>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ferroboron"^^xsd:IRI ;
+      skos:prefLabel "ferroboron" .
+
+<https://opentheso.huma-num.fr/Saturn>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Saturn"^^xsd:IRI ;
+      skos:prefLabel "Saturn" .
+
+<https://opentheso.huma-num.fr/arpie>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Arpia"^^xsd:IRI ;
+      skos:prefLabel "arpie" .
+
+<https://opentheso.huma-num.fr/Driadi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Driadi"^^xsd:IRI ;
+      skos:prefLabel "Driadi" .
+
+<https://opentheso.huma-num.fr/Jesus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Jesus_in_Christianity"^^xsd:IRI ;
+      skos:prefLabel "Jesus" .
+
+<https://opentheso.huma-num.fr/dog>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dog"^^xsd:IRI ;
+      skos:prefLabel "dog" .
+
+<https://opentheso.huma-num.fr/fetus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fetus"^^xsd:IRI ;
+      skos:prefLabel "fetus" .
+
+<https://opentheso.huma-num.fr/Atalanti>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q1233671"^^xsd:IRI , "http://dbpedia.org/resource/Atalanti"^^xsd:IRI , "http://it.dbpedia.org/resource/Atalanti"^^xsd:IRI ;
+      skos:prefLabel "Atalanti" .
+
+<https://opentheso.huma-num.fr/Agave>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Classe_Legni"^^xsd:IRI , "http://dbpedia.org/resource/Agave"^^xsd:IRI ;
+      skos:prefLabel "Agave" .
+
+<https://opentheso.huma-num.fr/sima>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ordination_hall"^^xsd:IRI ;
+      skos:prefLabel "sima" .
+
+<https://opentheso.huma-num.fr/tarsus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Arthropod_leg"^^xsd:IRI ;
+      skos:prefLabel "tarsus" .
+
+<https://opentheso.huma-num.fr/headlong>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Headlong_(theatre_company)"^^xsd:IRI ;
+      skos:prefLabel "headlong" .
+
+<https://opentheso.huma-num.fr/Atika>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Atikah_bint_Yazid"^^xsd:IRI ;
+      skos:prefLabel "Atika" .
+
+<https://opentheso.huma-num.fr/squirrel>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Squirrel"^^xsd:IRI ;
+      skos:prefLabel "squirrel" .
+
+<https://opentheso.huma-num.fr/leontes>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Leontes"^^xsd:IRI ;
+      skos:prefLabel "leontes" .
+
+<https://opentheso.huma-num.fr/lasion>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lasion"^^xsd:IRI ;
+      skos:prefLabel "lasion" .
+
+<https://opentheso.huma-num.fr/alci>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Alces_alces"^^xsd:IRI ;
+      skos:prefLabel "alci" .
+
+<https://opentheso.huma-num.fr/Mediano>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Centrocampista"^^xsd:IRI ;
+      skos:prefLabel "Mediano" .
+
+<https://opentheso.huma-num.fr/Calais>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Calais"^^xsd:IRI ;
+      skos:prefLabel "Calais" .
+
+<https://opentheso.huma-num.fr/Forbes>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q25161472"^^xsd:IRI ;
+      skos:prefLabel "Forbes" .
+
+<https://opentheso.huma-num.fr/occhi_neri>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Nero_per_gli_occhi"^^xsd:IRI ;
+      skos:prefLabel "occhi neri" .
+
+<https://opentheso.huma-num.fr/grano>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Triticum"^^xsd:IRI ;
+      skos:prefLabel "grano" .
+
+<https://opentheso.huma-num.fr/forgetting>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Forgetting"^^xsd:IRI ;
+      skos:prefLabel "forgetting" .
+
+<https://opentheso.huma-num.fr/flax>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Flax"^^xsd:IRI ;
+      skos:prefLabel "flax" .
+
+<https://opentheso.huma-num.fr/lodano>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Lodano"^^xsd:IRI ;
+      skos:prefLabel "lodano" .
+
+<https://opentheso.huma-num.fr/Armenia>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Armenia"^^xsd:IRI ;
+      skos:prefLabel "Armenia" .
+
+<https://opentheso.huma-num.fr/olive>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Olive"^^xsd:IRI ;
+      skos:prefLabel "olive" .
+
+<https://opentheso.huma-num.fr/iron>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Iron"^^xsd:IRI ;
+      skos:prefLabel "iron" .
+
+<https://opentheso.huma-num.fr/aia>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/American_Institute_of_Architects"^^xsd:IRI ;
+      skos:prefLabel "aia" .
+
+<https://opentheso.huma-num.fr/Argo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Argo_di_Tespi"^^xsd:IRI , "http://dbpedia.org/resource/Argo"^^xsd:IRI ;
+      skos:prefLabel "Argo" .
+
+<https://opentheso.huma-num.fr/Severus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Septimius_Severus"^^xsd:IRI ;
+      skos:prefLabel "Severus" .
+
+<https://opentheso.huma-num.fr/arazzi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Arazzo"^^xsd:IRI ;
+      skos:prefLabel "arazzi" .
+
+<https://opentheso.huma-num.fr/Narciso>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Narcissus"^^xsd:IRI ;
+      skos:prefLabel "Narciso" .
+
+<https://opentheso.huma-num.fr/glaucous>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Glaucous"^^xsd:IRI ;
+      skos:prefLabel "glaucous" .
+
+<https://opentheso.huma-num.fr/chiglia>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Chiglia"^^xsd:IRI ;
+      skos:prefLabel "chiglia" .
+
+<https://opentheso.huma-num.fr/lynx>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lynx"^^xsd:IRI ;
+      skos:prefLabel "lynx" .
+
+<https://opentheso.huma-num.fr/xnh>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Xnh"^^xsd:IRI ;
+      skos:prefLabel "xnh" .
+
+<https://opentheso.huma-num.fr/goat>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Goat"^^xsd:IRI ;
+      skos:prefLabel "goat" .
+
+<https://opentheso.huma-num.fr/polyphonic>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Polyphony"^^xsd:IRI ;
+      skos:prefLabel "polyphonic" .
+
+<https://opentheso.huma-num.fr/sheaf>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sheaf_(mathematics)"^^xsd:IRI ;
+      skos:prefLabel "sheaf" .
+
+<https://opentheso.huma-num.fr/a_Dioniso>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Inno_a_Dioniso"^^xsd:IRI ;
+      skos:prefLabel "a Dioniso" .
+
+<https://opentheso.huma-num.fr/Perseo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Perseo"^^xsd:IRI ;
+      skos:prefLabel "Perseo" .
+
+<https://opentheso.huma-num.fr/tympanon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Timpani"^^xsd:IRI ;
+      skos:prefLabel "tympanon" .
+
+<https://opentheso.huma-num.fr/Phoebus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Apollo"^^xsd:IRI ;
+      skos:prefLabel "Phoebus" .
+
+<https://opentheso.huma-num.fr/Celti>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q35966"^^xsd:IRI , "http://it.dbpedia.org/resource/Celti"^^xsd:IRI ;
+      skos:prefLabel "Celti" .
+
+<https://opentheso.huma-num.fr/tracker>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Tracker"^^xsd:IRI ;
+      skos:prefLabel "tracker" .
+
+<https://opentheso.huma-num.fr/Aldine>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Aldine_Press"^^xsd:IRI , "http://it.dbpedia.org/resource/Aldina"^^xsd:IRI ;
+      skos:prefLabel "Aldine" .
+
+<https://opentheso.huma-num.fr/Zefiro>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Zefiro"^^xsd:IRI ;
+      skos:prefLabel "Zefiro" .
+
+<https://opentheso.huma-num.fr/peccato>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Peccato"^^xsd:IRI ;
+      skos:prefLabel "peccato" .
+
+<https://opentheso.huma-num.fr/ariano>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Arianesimo"^^xsd:IRI ;
+      skos:prefLabel "ariano" .
+
+<https://opentheso.huma-num.fr/coccodrilli>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Crocodylia"^^xsd:IRI ;
+      skos:prefLabel "coccodrilli" .
+
+<https://opentheso.huma-num.fr/Brunck>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q454469"^^xsd:IRI , "http://dbpedia.org/resource/Richard_François_Philippe_Brunck"^^xsd:IRI ;
+      skos:prefLabel "Brunck" .
+
+<https://opentheso.huma-num.fr/deaf>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Deafness"^^xsd:IRI ;
+      skos:prefLabel "deaf" .
+
+<https://opentheso.huma-num.fr/Re_di_Macedonia>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q622602"^^xsd:IRI ;
+      skos:prefLabel "Re di Macedonia" .
+
+<https://opentheso.huma-num.fr/tua>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ferrovia_del_Tua"^^xsd:IRI ;
+      skos:prefLabel "tua" .
+
+<https://opentheso.huma-num.fr/polymath>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Polymath"^^xsd:IRI ;
+      skos:prefLabel "polymath" .
+
+<https://opentheso.huma-num.fr/Bromion>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Bromion"^^xsd:IRI ;
+      skos:prefLabel "Bromion" .
+
+<https://opentheso.huma-num.fr/cicogne>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ciconiidae"^^xsd:IRI ;
+      skos:prefLabel "cicogne" .
+
+<https://opentheso.huma-num.fr/Meleager>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Meleager"^^xsd:IRI ;
+      skos:prefLabel "Meleager" .
+
+<https://opentheso.huma-num.fr/aragoste>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Palinuridae"^^xsd:IRI ;
+      skos:prefLabel "aragoste" .
+
+<https://opentheso.huma-num.fr/FHM>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q157015"^^xsd:IRI ;
+      skos:prefLabel "FHM" .
+
+<https://opentheso.huma-num.fr/Apollo>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Apollo"^^xsd:IRI , "http://dbpedia.org/resource/Apollo_program"^^xsd:IRI , "http://it.dbpedia.org/resource/Apollo"^^xsd:IRI ;
+      skos:prefLabel "Apollo" .
+
+<https://opentheso.huma-num.fr/athlon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Athlon"^^xsd:IRI ;
+      skos:prefLabel "athlon" .
+
+<https://opentheso.huma-num.fr/Sciti>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Sciti"^^xsd:IRI ;
+      skos:prefLabel "Sciti" .
+
+<https://opentheso.huma-num.fr/oste>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Oste"^^xsd:IRI ;
+      skos:prefLabel "oste" .
+
+<https://opentheso.huma-num.fr/scythe>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Scythe"^^xsd:IRI ;
+      skos:prefLabel "scythe" .
+
+<https://opentheso.huma-num.fr/allevamento>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Allevamento"^^xsd:IRI ;
+      skos:prefLabel "allevamento" .
+
+<https://opentheso.huma-num.fr/Persian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Persian_language"^^xsd:IRI ;
+      skos:prefLabel "Persian" .
+
+<https://opentheso.huma-num.fr/kon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Asteroid_family"^^xsd:IRI ;
+      skos:prefLabel "kon" .
+
+<https://opentheso.huma-num.fr/nymph>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Nymph"^^xsd:IRI ;
+      skos:prefLabel "nymph" .
+
+<https://opentheso.huma-num.fr/lung>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lung"^^xsd:IRI ;
+      skos:prefLabel "lung" .
+
+<https://opentheso.huma-num.fr/eterni>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Eterni_(Marvel_Comics)"^^xsd:IRI ;
+      skos:prefLabel "eterni" .
+
+<https://opentheso.huma-num.fr/milk>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Milk"^^xsd:IRI ;
+      skos:prefLabel "milk" .
+
+<https://opentheso.huma-num.fr/zibellino>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Martes_zibellina"^^xsd:IRI ;
+      skos:prefLabel "zibellino" .
+
+<https://opentheso.huma-num.fr/pontian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pontian_District"^^xsd:IRI ;
+      skos:prefLabel "pontian" .
+
+<https://opentheso.huma-num.fr/alloro>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Laurus_nobilis"^^xsd:IRI ;
+      skos:prefLabel "alloro" .
+
+<https://opentheso.huma-num.fr/lion_shield>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Tonga_Major_League"^^xsd:IRI ;
+      skos:prefLabel "lion shield" .
+
+<https://opentheso.huma-num.fr/Sergeant>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sergeant"^^xsd:IRI ;
+      skos:prefLabel "Sergeant" .
+
+<https://opentheso.huma-num.fr/Bacchus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Bacchus-F"^^xsd:IRI ;
+      skos:prefLabel "Bacchus" .
+
+<https://opentheso.huma-num.fr/Peoni>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Peoni"^^xsd:IRI ;
+      skos:prefLabel "Peoni" .
+
+<https://opentheso.huma-num.fr/ferro>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ferro"^^xsd:IRI ;
+      skos:prefLabel "ferro" .
+
+<https://opentheso.huma-num.fr/generi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Genere_(tassonomia)"^^xsd:IRI ;
+      skos:prefLabel "generi" .
+
+<https://opentheso.huma-num.fr/choli>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Choli"^^xsd:IRI ;
+      skos:prefLabel "choli" .
+
+<https://opentheso.huma-num.fr/collo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Collo"^^xsd:IRI ;
+      skos:prefLabel "collo" .
+
+<https://opentheso.huma-num.fr/Phineus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Phineus"^^xsd:IRI ;
+      skos:prefLabel "Phineus" .
+
+<https://opentheso.huma-num.fr/struzzo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Struthio_camelus"^^xsd:IRI ;
+      skos:prefLabel "struzzo" .
+
+<https://opentheso.huma-num.fr/pyrophoric>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pyrophoricity"^^xsd:IRI ;
+      skos:prefLabel "pyrophoric" .
+
+<https://opentheso.huma-num.fr/Aethiopians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Aethiopia"^^xsd:IRI ;
+      skos:prefLabel "Aethiopians" .
+
+<https://opentheso.huma-num.fr/Phrygians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Phrygians"^^xsd:IRI ;
+      skos:prefLabel "Phrygians" .
+
+<https://opentheso.huma-num.fr/plain>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Plain"^^xsd:IRI ;
+      skos:prefLabel "plain" .
+
+<https://opentheso.huma-num.fr/u.i.>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Unità_internazionale"^^xsd:IRI ;
+      skos:prefLabel "u.i." .
+
+<https://opentheso.huma-num.fr/xanthos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Xanthos"^^xsd:IRI , "http://it.dbpedia.org/resource/Xanthos"^^xsd:IRI ;
+      skos:prefLabel "xanthos" .
+
+<https://opentheso.huma-num.fr/omnipotent>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Omnipotence"^^xsd:IRI ;
+      skos:prefLabel "omnipotent" .
+
+<https://opentheso.huma-num.fr/Achei
+____>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q191962"^^xsd:IRI ;
+      skos:prefLabel "Achei" .
+
+<https://opentheso.huma-num.fr/Phaethon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Phaethon"^^xsd:IRI , "http://dbpedia.org/resource/Helios"^^xsd:IRI , "http://it.dbpedia.org/resource/Phaethon"^^xsd:IRI ;
+      skos:prefLabel "Phaethon" .
+
+<https://opentheso.huma-num.fr/Afrodite>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Afrodite"^^xsd:IRI ;
+      skos:prefLabel "Afrodite" .
+
+<https://opentheso.huma-num.fr/ombelico>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ombelico"^^xsd:IRI ;
+      skos:prefLabel "ombelico" .
+
+<https://opentheso.huma-num.fr/fighting_dogs>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dog_fighting"^^xsd:IRI ;
+      skos:prefLabel "fighting dogs" .
+
+<https://opentheso.huma-num.fr/asino>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Equus_africanus_asinus"^^xsd:IRI ;
+      skos:prefLabel "asino" .
+
+<https://opentheso.huma-num.fr/photina>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Samaritan_woman_at_the_well"^^xsd:IRI ;
+      skos:prefLabel "photina" .
+
+<https://opentheso.huma-num.fr/alce>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Alces_alces"^^xsd:IRI ;
+      skos:prefLabel "alce" .
+
+<https://opentheso.huma-num.fr/wood>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Wood"^^xsd:IRI ;
+      skos:prefLabel "wood" .
+
+<https://opentheso.huma-num.fr/camel>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Camel"^^xsd:IRI ;
+      skos:prefLabel "camel" .
+
+<https://opentheso.huma-num.fr/Calliope>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Calliope"^^xsd:IRI , "http://dbpedia.org/resource/Calliope"^^xsd:IRI ;
+      skos:prefLabel "Calliope" .
+
+<https://opentheso.huma-num.fr/tapestry>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Tapestry"^^xsd:IRI ;
+      skos:prefLabel "tapestry" .
+
+<https://opentheso.huma-num.fr/Ippon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ippon"^^xsd:IRI , "http://it.dbpedia.org/resource/Ippon"^^xsd:IRI ;
+      skos:prefLabel "Ippon" .
+
+<https://opentheso.huma-num.fr/moschoi>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Moschia"^^xsd:IRI ;
+      skos:prefLabel "moschoi" .
+
+<https://opentheso.huma-num.fr/orgia>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Orgia"^^xsd:IRI ;
+      skos:prefLabel "orgia" .
+
+<https://opentheso.huma-num.fr/pir>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pir_(Sufism)"^^xsd:IRI ;
+      skos:prefLabel "pir" .
+
+<https://opentheso.huma-num.fr/Amphitrite>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Amphitrite"^^xsd:IRI ;
+      skos:prefLabel "Amphitrite" .
+
+<https://opentheso.huma-num.fr/palamaon>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q108444382"^^xsd:IRI , "http://dbpedia.org/resource/Palamaon"^^xsd:IRI ;
+      skos:prefLabel "palamaon" .
+
+<https://opentheso.huma-num.fr/Cadmeans>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q27613"^^xsd:IRI ;
+      skos:prefLabel "Cadmeans" .
+
+<https://opentheso.huma-num.fr/interest_rate>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Interest_rate"^^xsd:IRI ;
+      skos:prefLabel "interest rate" .
+
+<https://opentheso.huma-num.fr/forton>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Longparish"^^xsd:IRI ;
+      skos:prefLabel "forton" .
+
+<https://opentheso.huma-num.fr/aulon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Avlonari"^^xsd:IRI ;
+      skos:prefLabel "aulon" .
+
+<https://opentheso.huma-num.fr/eagle>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Eagle"^^xsd:IRI ;
+      skos:prefLabel "eagle" .
+
+<https://opentheso.huma-num.fr/Palestinian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/State_of_Palestine"^^xsd:IRI ;
+      skos:prefLabel "Palestinian" .
+
+<https://opentheso.huma-num.fr/great_beasts>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Alpha_Flight"^^xsd:IRI ;
+      skos:prefLabel "great beasts" .
+
+<https://opentheso.huma-num.fr/city>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/City"^^xsd:IRI ;
+      skos:prefLabel "city" .
+
+<https://opentheso.huma-num.fr/kyrton>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Edward_Kyrton"^^xsd:IRI ;
+      skos:prefLabel "kyrton" .
+
+<https://opentheso.huma-num.fr/Themisto>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Polycera"^^xsd:IRI , "http://dbpedia.org/resource/Themisto"^^xsd:IRI ;
+      skos:prefLabel "Themisto" .
+
+<https://opentheso.huma-num.fr/Eubea>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Eubea"^^xsd:IRI ;
+      skos:prefLabel "Eubea" .
+
+<https://opentheso.huma-num.fr/lamb>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lamb_and_mutton"^^xsd:IRI ;
+      skos:prefLabel "lamb" .
+
+<https://opentheso.huma-num.fr/C2K>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/C2k"^^xsd:IRI ;
+      skos:prefLabel "C2K" .
+
+<https://opentheso.huma-num.fr/fairy>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fairy"^^xsd:IRI ;
+      skos:prefLabel "fairy" .
+
+<https://opentheso.huma-num.fr/bile>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Bile"^^xsd:IRI , "http://it.dbpedia.org/resource/Bile"^^xsd:IRI ;
+      skos:prefLabel "bile" .
+
+<https://opentheso.huma-num.fr/bridle>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Bridle"^^xsd:IRI ;
+      skos:prefLabel "bridle" .
+
+<https://opentheso.huma-num.fr/ice_cream>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ice_cream"^^xsd:IRI ;
+      skos:prefLabel "ice cream" .
+
+<https://opentheso.huma-num.fr/Orontes>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Orontes_River"^^xsd:IRI ;
+      skos:prefLabel "Orontes" .
+
+<https://opentheso.huma-num.fr/soffiano>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Soffiano"^^xsd:IRI ;
+      skos:prefLabel "soffiano" .
+
+<https://opentheso.huma-num.fr/wild_boar>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Wild_boar"^^xsd:IRI ;
+      skos:prefLabel "wild boar" .
+
+<https://opentheso.huma-num.fr/tenderly>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Tenderly"^^xsd:IRI ;
+      skos:prefLabel "tenderly" .
+
+<https://opentheso.huma-num.fr/zefiro>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Zefiro"^^xsd:IRI ;
+      skos:prefLabel "zefiro" .
+
+<https://opentheso.huma-num.fr/api>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Apis"^^xsd:IRI ;
+      skos:prefLabel "api" .
+
+<https://opentheso.huma-num.fr/Dionysos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dionysus"^^xsd:IRI ;
+      skos:prefLabel "Dionysos" .
+
+<https://opentheso.huma-num.fr/black-skinned>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Black_people"^^xsd:IRI ;
+      skos:prefLabel "black-skinned" .
+
+<https://opentheso.huma-num.fr/Penteo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Penteo"^^xsd:IRI , "https://www.wikidata.org/wiki/Q391091"^^xsd:IRI ;
+      skos:prefLabel "Penteo" .
+
+<https://opentheso.huma-num.fr/timo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Thymus"^^xsd:IRI ;
+      skos:prefLabel "timo" .
+
+<https://opentheso.huma-num.fr/ede>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ede_(Paesi_Bassi)"^^xsd:IRI ;
+      skos:prefLabel "ede" .
+
+<https://opentheso.huma-num.fr/Narcissus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Tiberius_Claudius_Narcissus"^^xsd:IRI ;
+      skos:prefLabel "Narcissus" .
+
+<https://opentheso.huma-num.fr/pompelmo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Citrus_paradisi"^^xsd:IRI , "https://www.wikidata.org/wiki/Q41350"^^xsd:IRI ;
+      skos:prefLabel "pompelmo" .
+
+<https://opentheso.huma-num.fr/Nile>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Nile"^^xsd:IRI ;
+      skos:prefLabel "Nile" .
+
+<https://opentheso.huma-num.fr/Eunice>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Eunice_Harper_Higgins"^^xsd:IRI ;
+      skos:prefLabel "Eunice" .
+
+<https://opentheso.huma-num.fr/proboscis>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Proboscis"^^xsd:IRI ;
+      skos:prefLabel "proboscis" .
+
+<https://opentheso.huma-num.fr/rubano>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Rubano"^^xsd:IRI ;
+      skos:prefLabel "rubano" .
+
+<https://opentheso.huma-num.fr/lipen>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lipen"^^xsd:IRI ;
+      skos:prefLabel "lipen" .
+
+<https://opentheso.huma-num.fr/GLM>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q6518141"^^xsd:IRI ;
+      skos:prefLabel "GLM" .
+
+<https://opentheso.huma-num.fr/Armenios>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Armenia_(Antioquia)"^^xsd:IRI ;
+      skos:prefLabel "Armenios" .
+
+<https://opentheso.huma-num.fr/archer>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Archery"^^xsd:IRI ;
+      skos:prefLabel "archer" .
+
+<https://opentheso.huma-num.fr/ichnos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Trace_fossil_classification"^^xsd:IRI ;
+      skos:prefLabel "ichnos" .
+
+<https://opentheso.huma-num.fr/Oronte>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Oronte"^^xsd:IRI ;
+      skos:prefLabel "Oronte" .
+
+<https://opentheso.huma-num.fr/eupteron>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q2381113"^^xsd:IRI ;
+      skos:prefLabel "eupteron" .
+
+<https://opentheso.huma-num.fr/Laconi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Laconi"^^xsd:IRI ;
+      skos:prefLabel "Laconi" .
+
+<https://opentheso.huma-num.fr/melpe>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Mixed-excitation_linear_prediction"^^xsd:IRI ;
+      skos:prefLabel "melpe" .
+
+<https://opentheso.huma-num.fr/Aphrodite>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Aphrodite"^^xsd:IRI ;
+      skos:prefLabel "Aphrodite" .
+
+<https://opentheso.huma-num.fr/drums>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Drum_kit"^^xsd:IRI ;
+      skos:prefLabel "drums" .
+
+<https://opentheso.huma-num.fr/istrice>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Hystrix_cristata"^^xsd:IRI ;
+      skos:prefLabel "istrice" .
+
+<https://opentheso.huma-num.fr/orecchio>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Orecchio"^^xsd:IRI ;
+      skos:prefLabel "orecchio" .
+
+<https://opentheso.huma-num.fr/zein>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Zein"^^xsd:IRI ;
+      skos:prefLabel "zein" .
+
+<https://opentheso.huma-num.fr/narka>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Narka_(California)"^^xsd:IRI ;
+      skos:prefLabel "narka" .
+
+<https://opentheso.huma-num.fr/apostrophe>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Apostrophe"^^xsd:IRI ;
+      skos:prefLabel "apostrophe" .
+
+<https://opentheso.huma-num.fr/itching>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Itch"^^xsd:IRI ;
+      skos:prefLabel "itching" .
+
+<https://opentheso.huma-num.fr/poppa>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Poppa"^^xsd:IRI ;
+      skos:prefLabel "poppa" .
+
+<https://opentheso.huma-num.fr/thyme>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Thyme"^^xsd:IRI ;
+      skos:prefLabel "thyme" .
+
+<https://opentheso.huma-num.fr/Terra>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Terra"^^xsd:IRI ;
+      skos:prefLabel "Terra" .
+
+<https://opentheso.huma-num.fr/oryx>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Oryx"^^xsd:IRI ;
+      skos:prefLabel "oryx" .
+
+<https://opentheso.huma-num.fr/Heracles>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Heracles"^^xsd:IRI ;
+      skos:prefLabel "Heracles" .
+
+<https://opentheso.huma-num.fr/Helios>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Helios"^^xsd:IRI ;
+      skos:prefLabel "Helios" .
+
+<https://opentheso.huma-num.fr/ardente>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ardente_(cacciatorpediniere)"^^xsd:IRI ;
+      skos:prefLabel "ardente" .
+
+<https://opentheso.huma-num.fr/falene>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Falena"^^xsd:IRI ;
+      skos:prefLabel "falene" .
+
+<https://opentheso.huma-num.fr/circumambulation>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Circumambulation"^^xsd:IRI ;
+      skos:prefLabel "circumambulation" .
+
+<https://opentheso.huma-num.fr/potnia>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Potnia"^^xsd:IRI ;
+      skos:prefLabel "potnia" .
+
+<https://opentheso.huma-num.fr/kama>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Kamaloka"^^xsd:IRI , "http://dbpedia.org/resource/Kama"^^xsd:IRI ;
+      skos:prefLabel "kama" .
+
+<https://opentheso.huma-num.fr/miracolo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Miracolo"^^xsd:IRI ;
+      skos:prefLabel "miracolo" .
+
+<https://opentheso.huma-num.fr/scissors>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Scissors"^^xsd:IRI ;
+      skos:prefLabel "scissors" .
+
+<https://opentheso.huma-num.fr/fungible>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fungibility"^^xsd:IRI ;
+      skos:prefLabel "fungible" .
+
+<https://opentheso.huma-num.fr/ninfe>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ninfa_(mitologia)"^^xsd:IRI ;
+      skos:prefLabel "ninfe" .
+
+<https://opentheso.huma-num.fr/chariot>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Chariot"^^xsd:IRI ;
+      skos:prefLabel "chariot" .
+
+<https://opentheso.huma-num.fr/hunting_dog>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Hunting_dog"^^xsd:IRI ;
+      skos:prefLabel "hunting dog" .
+
+<https://opentheso.huma-num.fr/phyla>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Phylum"^^xsd:IRI , "http://dbpedia.org/resource/Phylum"^^xsd:IRI ;
+      skos:prefLabel "phyla" .
+
+<https://opentheso.huma-num.fr/Nerone>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Nerone"^^xsd:IRI ;
+      skos:prefLabel "Nerone" .
+
+<https://opentheso.huma-num.fr/Sicily>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sicily"^^xsd:IRI ;
+      skos:prefLabel "Sicily" .
+
+<https://opentheso.huma-num.fr/orsi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ursidae"^^xsd:IRI ;
+      skos:prefLabel "orsi" .
+
+<https://opentheso.huma-num.fr/partridge>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Partridge"^^xsd:IRI ;
+      skos:prefLabel "partridge" .
+
+<https://opentheso.huma-num.fr/Jealousy>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Jealousy"^^xsd:IRI ;
+      skos:prefLabel "Jealousy" .
+
+<https://opentheso.huma-num.fr/Blessed>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Beatification"^^xsd:IRI ;
+      skos:prefLabel "Blessed" .
+
+<https://opentheso.huma-num.fr/Euphrates_River>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Euphrates"^^xsd:IRI ;
+      skos:prefLabel "Euphrates River" .
+
+<https://opentheso.huma-num.fr/soul>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Soul"^^xsd:IRI ;
+      skos:prefLabel "soul" .
+
+<https://opentheso.huma-num.fr/aquila>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Aquila"^^xsd:IRI ;
+      skos:prefLabel "aquila" .
+
+<https://opentheso.huma-num.fr/Parrucchiere>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Parrucchiere"^^xsd:IRI ;
+      skos:prefLabel "Parrucchiere" .
+
+<https://opentheso.huma-num.fr/clytus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Clytus"^^xsd:IRI ;
+      skos:prefLabel "clytus" .
+
+<https://opentheso.huma-num.fr/Cadmei>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Cadmea"^^xsd:IRI , "https://www.wikidata.org/wiki/Q1276854"^^xsd:IRI ;
+      skos:prefLabel "Cadmei" .
+
+<https://opentheso.huma-num.fr/Sarmatian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sarmatians"^^xsd:IRI ;
+      skos:prefLabel "Sarmatian" .
+
+<https://opentheso.huma-num.fr/Egeide>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Egeide"^^xsd:IRI ;
+      skos:prefLabel "Egeide" .
+
+<https://opentheso.huma-num.fr/ion>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ion"^^xsd:IRI ;
+      skos:prefLabel "ion" .
+
+<https://opentheso.huma-num.fr/Tigris>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Tigris"^^xsd:IRI ;
+      skos:prefLabel "Tigris" .
+
+<https://opentheso.huma-num.fr/Nereus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Nereus"^^xsd:IRI ;
+      skos:prefLabel "Nereus" .
+
+<https://opentheso.huma-num.fr/asma>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Asma"^^xsd:IRI ;
+      skos:prefLabel "asma" .
+
+<https://opentheso.huma-num.fr/Airy>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/George_Biddell_Airy"^^xsd:IRI ;
+      skos:prefLabel "Airy" .
+
+<https://opentheso.huma-num.fr/nymphs>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Nymph"^^xsd:IRI ;
+      skos:prefLabel "nymphs" .
+
+<https://opentheso.huma-num.fr/ixos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ixos"^^xsd:IRI ;
+      skos:prefLabel "ixos" .
+
+<https://opentheso.huma-num.fr/Titan>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Titans"^^xsd:IRI ;
+      skos:prefLabel "Titan" .
+
+<https://opentheso.huma-num.fr/kera>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/KERA-TV"^^xsd:IRI ;
+      skos:prefLabel "kera" .
+
+<https://opentheso.huma-num.fr/trave>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Trave_di_equilibrio"^^xsd:IRI ;
+      skos:prefLabel "trave" .
+
+<https://opentheso.huma-num.fr/Macedonia>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/North_Macedonia"^^xsd:IRI ;
+      skos:prefLabel "Macedonia" .
+
+<https://opentheso.huma-num.fr/genus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Genus"^^xsd:IRI ;
+      skos:prefLabel "genus" .
+
+<https://opentheso.huma-num.fr/Cappadocians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Cappadocian_Greeks"^^xsd:IRI ;
+      skos:prefLabel "Cappadocians" .
+
+<https://opentheso.huma-num.fr/Cyrene>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Crete_and_Cyrenaica"^^xsd:IRI ;
+      skos:prefLabel "Cyrene" .
+
+<https://opentheso.huma-num.fr/fagotto>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Fagotto"^^xsd:IRI ;
+      skos:prefLabel "fagotto" .
+
+<https://opentheso.huma-num.fr/Cappadocia>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Cappadocia"^^xsd:IRI , "http://dbpedia.org/resource/Cappadocia"^^xsd:IRI ;
+      skos:prefLabel "Cappadocia" .
+
+<https://opentheso.huma-num.fr/Erto>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Erto_e_Casso"^^xsd:IRI ;
+      skos:prefLabel "Erto" .
+
+<https://opentheso.huma-num.fr/Sicilian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sicilian_language"^^xsd:IRI ;
+      skos:prefLabel "Sicilian" .
+
+<https://opentheso.huma-num.fr/mica>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Mica"^^xsd:IRI , "http://it.dbpedia.org/resource/Mica"^^xsd:IRI ;
+      skos:prefLabel "mica" .
+
+<https://opentheso.huma-num.fr/Attar>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Attar_of_Nishapur"^^xsd:IRI ;
+      skos:prefLabel "Attar" .
+
+<https://opentheso.huma-num.fr/hesperos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Hesperus"^^xsd:IRI ;
+      skos:prefLabel "hesperos" .
+
+<https://opentheso.huma-num.fr/poleis>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Polis"^^xsd:IRI , "http://it.dbpedia.org/resource/Polis"^^xsd:IRI ;
+      skos:prefLabel "poleis" .
+
+<https://opentheso.huma-num.fr/phallus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Phallus"^^xsd:IRI ;
+      skos:prefLabel "phallus" .
+
+<https://opentheso.huma-num.fr/osa>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Classe_Osa"^^xsd:IRI ;
+      skos:prefLabel "osa" .
+
+<https://opentheso.huma-num.fr/Memnon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Memnon"^^xsd:IRI ;
+      skos:prefLabel "Memnon" .
+
+<https://opentheso.huma-num.fr/scoliosis>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Scoliosis"^^xsd:IRI ;
+      skos:prefLabel "scoliosis" .
+
+<https://opentheso.huma-num.fr/aeon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Aeon"^^xsd:IRI ;
+      skos:prefLabel "aeon" .
+
+<https://opentheso.huma-num.fr/coll>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Coll"^^xsd:IRI ;
+      skos:prefLabel "coll" .
+
+<https://opentheso.huma-num.fr/orice>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Oryx"^^xsd:IRI ;
+      skos:prefLabel "orice" .
+
+<https://opentheso.huma-num.fr/bay_leaves>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Bay_leaf"^^xsd:IRI ;
+      skos:prefLabel "bay leaves" .
+
+<https://opentheso.huma-num.fr/Cadmio>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Cadmio"^^xsd:IRI ;
+      skos:prefLabel "Cadmio" .
+
+<https://opentheso.huma-num.fr/shepherd>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Shepherd"^^xsd:IRI ;
+      skos:prefLabel "shepherd" .
+
+<https://opentheso.huma-num.fr/trail>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Trail"^^xsd:IRI ;
+      skos:prefLabel "trail" .
+
+<https://opentheso.huma-num.fr/retto_dell'addome>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Muscolo_retto_dell'addome"^^xsd:IRI ;
+      skos:prefLabel "retto dell'addome" .
+
+<https://opentheso.huma-num.fr/Zeno>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Zeno_of_Citium"^^xsd:IRI ;
+      skos:prefLabel "Zeno" .
+
+<https://opentheso.huma-num.fr/roaring_lions>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Roaring_Lions_FC"^^xsd:IRI ;
+      skos:prefLabel "roaring lions" .
+
+<https://opentheso.huma-num.fr/Allegheny>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Contea_di_Allegheny"^^xsd:IRI ;
+      skos:prefLabel "Allegheny" .
+
+<https://opentheso.huma-num.fr/breast>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Breast"^^xsd:IRI ;
+      skos:prefLabel "breast" .
+
+<https://opentheso.huma-num.fr/Frigi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Frigi"^^xsd:IRI ;
+      skos:prefLabel "Frigi" .
+
+<https://opentheso.huma-num.fr/elefanti>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Elephantidae"^^xsd:IRI ;
+      skos:prefLabel "elefanti" .
+
+<https://opentheso.huma-num.fr/monogama>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Monogamia"^^xsd:IRI ;
+      skos:prefLabel "monogama" .
+
+<https://opentheso.huma-num.fr/maze>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Maze"^^xsd:IRI ;
+      skos:prefLabel "maze" .
+
+<https://opentheso.huma-num.fr/ninfa>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ninfa_(mitologia)"^^xsd:IRI ;
+      skos:prefLabel "ninfa" .
+
+<https://opentheso.huma-num.fr/kaka>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Nestor_meridionalis"^^xsd:IRI ;
+      skos:prefLabel "kaka" .
+
+<https://opentheso.huma-num.fr/Dio>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Dio"^^xsd:IRI ;
+      skos:prefLabel "Dio" .
+
+<https://opentheso.huma-num.fr/squalo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Selachimorpha"^^xsd:IRI ;
+      skos:prefLabel "squalo" .
+
+<https://opentheso.huma-num.fr/England>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Kingdom_of_England"^^xsd:IRI ;
+      skos:prefLabel "England" .
+
+<https://opentheso.huma-num.fr/clite>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Clita"^^xsd:IRI ;
+      skos:prefLabel "clite" .
+
+<https://opentheso.huma-num.fr/Fetonte>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Fetonte"^^xsd:IRI ;
+      skos:prefLabel "Fetonte" .
+
+<https://opentheso.huma-num.fr/Euboea>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Euboea"^^xsd:IRI ;
+      skos:prefLabel "Euboea" .
+
+<https://opentheso.huma-num.fr/fatty_oil>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fat"^^xsd:IRI ;
+      skos:prefLabel "fatty oil" .
+
+<https://opentheso.huma-num.fr/lagos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lagos"^^xsd:IRI , "http://it.dbpedia.org/resource/Lagos"^^xsd:IRI ;
+      skos:prefLabel "lagos" .
+
+<https://opentheso.huma-num.fr/Parthians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Parthian_Empire"^^xsd:IRI ;
+      skos:prefLabel "Parthians" .
+
+<https://opentheso.huma-num.fr/evildoer>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Evil"^^xsd:IRI ;
+      skos:prefLabel "evildoer" .
+
+<https://opentheso.huma-num.fr/nocturnal>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Nocturnality"^^xsd:IRI ;
+      skos:prefLabel "nocturnal" .
+
+<https://opentheso.huma-num.fr/heteroclinic>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Heteroclinic_orbit"^^xsd:IRI ;
+      skos:prefLabel "heteroclinic" .
+
+<https://opentheso.huma-num.fr/Alkar>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q1278047"^^xsd:IRI ;
+      skos:prefLabel "Alkar" .
+
+<https://opentheso.huma-num.fr/Eurystheus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Eurystheus"^^xsd:IRI ;
+      skos:prefLabel "Eurystheus" .
+
+<https://opentheso.huma-num.fr/medea>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Medea"^^xsd:IRI , "http://it.dbpedia.org/resource/Medea"^^xsd:IRI ;
+      skos:prefLabel "medea" .
+
+<https://opentheso.huma-num.fr/timpano>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Timpano_(architettura)"^^xsd:IRI ;
+      skos:prefLabel "timpano" .
+
+<https://opentheso.huma-num.fr/Atar>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Atar"^^xsd:IRI ;
+      skos:prefLabel "Atar" .
+
+<https://opentheso.huma-num.fr/navel>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Navel"^^xsd:IRI ;
+      skos:prefLabel "navel" .
+
+<https://opentheso.huma-num.fr/stern>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Stern"^^xsd:IRI ;
+      skos:prefLabel "stern" .
+
+<https://opentheso.huma-num.fr/Thebes>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Thebes,_Greece"^^xsd:IRI ;
+      skos:prefLabel "Thebes" .
+
+<https://opentheso.huma-num.fr/carnivorous>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Carnivore"^^xsd:IRI ;
+      skos:prefLabel "carnivorous" .
+
+<https://opentheso.huma-num.fr/mwn>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Mwn"^^xsd:IRI ;
+      skos:prefLabel "mwn" .
+
+<https://opentheso.huma-num.fr/polychaete>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Polychaete"^^xsd:IRI ;
+      skos:prefLabel "polychaete" .
+
+<https://opentheso.huma-num.fr/phoenixes>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fenghuang"^^xsd:IRI ;
+      skos:prefLabel "phoenixes" .
+
+<https://opentheso.huma-num.fr/elfs>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Elf"^^xsd:IRI ;
+      skos:prefLabel "elfs" .
+
+<https://opentheso.huma-num.fr/Euristeo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Euristeo"^^xsd:IRI , "https://www.wikidata.org/wiki/Q212087"^^xsd:IRI ;
+      skos:prefLabel "Euristeo" .
+
+<https://opentheso.huma-num.fr/rectus_abdominis>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Rectus_abdominis_muscle"^^xsd:IRI ;
+      skos:prefLabel "rectus abdominis" .
+
+<https://opentheso.huma-num.fr/soma>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Chandra"^^xsd:IRI ;
+      skos:prefLabel "soma" .
+
+<https://opentheso.huma-num.fr/scimmie>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Simiiformes"^^xsd:IRI ;
+      skos:prefLabel "scimmie" .
+
+<https://opentheso.huma-num.fr/krater>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Krater"^^xsd:IRI ;
+      skos:prefLabel "krater" .
+
+<https://opentheso.huma-num.fr/pig>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pig"^^xsd:IRI ;
+      skos:prefLabel "pig" .
+
+<https://opentheso.huma-num.fr/sieve>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sieve"^^xsd:IRI ;
+      skos:prefLabel "sieve" .
+
+<https://opentheso.huma-num.fr/trombe>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Tromba"^^xsd:IRI ;
+      skos:prefLabel "trombe" .
+
+<https://opentheso.huma-num.fr/ratti>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Rattus"^^xsd:IRI ;
+      skos:prefLabel "ratti" .
+
+<https://opentheso.huma-num.fr/Armenian>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Armenian_language"^^xsd:IRI ;
+      skos:prefLabel "Armenian" .
+
+<https://opentheso.huma-num.fr/Assyria>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Assyria"^^xsd:IRI ;
+      skos:prefLabel "Assyria" .
+
+<https://opentheso.huma-num.fr/buoy>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Buoy"^^xsd:IRI ;
+      skos:prefLabel "buoy" .
+
+<https://opentheso.huma-num.fr/cave>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Cave"^^xsd:IRI ;
+      skos:prefLabel "cave" .
+
+<https://opentheso.huma-num.fr/thesan>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Thesan"^^xsd:IRI ;
+      skos:prefLabel "thesan" .
+
+<https://opentheso.huma-num.fr/paros>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Paros"^^xsd:IRI ;
+      skos:prefLabel "paros" .
+
+<https://opentheso.huma-num.fr/helen>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Helen_of_Troy"^^xsd:IRI ;
+      skos:prefLabel "helen" .
+
+<https://opentheso.huma-num.fr/Da>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Unità_di_massa_atomica"^^xsd:IRI ;
+      skos:prefLabel "Da" .
+
+<https://opentheso.huma-num.fr/Ireo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ireo"^^xsd:IRI , "https://www.wikidata.org/wiki/Q1817912"^^xsd:IRI ;
+      skos:prefLabel "Ireo" .
+
+<https://opentheso.huma-num.fr/Bucephalas>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Bucephalus"^^xsd:IRI ;
+      skos:prefLabel "Bucephalas" .
+
+<https://opentheso.huma-num.fr/flower>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Flower"^^xsd:IRI ;
+      skos:prefLabel "flower" .
+
+<https://opentheso.huma-num.fr/Alci>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Alces_alces"^^xsd:IRI , "https://www.wikidata.org/wiki/Q35517"^^xsd:IRI ;
+      skos:prefLabel "Alci" .
+
+<https://opentheso.huma-num.fr/nostos>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Nostos"^^xsd:IRI ;
+      skos:prefLabel "nostos" .
+
+<https://opentheso.huma-num.fr/keel>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Keel"^^xsd:IRI ;
+      skos:prefLabel "keel" .
+
+<https://opentheso.huma-num.fr/grape>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Grape"^^xsd:IRI ;
+      skos:prefLabel "grape" .
+
+<https://opentheso.huma-num.fr/horse_racing>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Horse_racing"^^xsd:IRI ;
+      skos:prefLabel "horse racing" .
+
+<https://opentheso.huma-num.fr/mirror>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Mirror"^^xsd:IRI ;
+      skos:prefLabel "mirror" .
+
+<https://opentheso.huma-num.fr/l'aquila>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/L'Aquila"^^xsd:IRI ;
+      skos:prefLabel "l'aquila" .
+
+<https://opentheso.huma-num.fr/cancer>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Cancer"^^xsd:IRI ;
+      skos:prefLabel "cancer" .
+
+<https://opentheso.huma-num.fr/G._bond>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/G._Bond_(crater)"^^xsd:IRI ;
+      skos:prefLabel "G. bond" .
+
+<https://opentheso.huma-num.fr/piroforico>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Piroforicità"^^xsd:IRI ;
+      skos:prefLabel "piroforico" .
+
+<https://opentheso.huma-num.fr/Ioni>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ioni"^^xsd:IRI ;
+      skos:prefLabel "Ioni" .
+
+<https://opentheso.huma-num.fr/demigod>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Demigod"^^xsd:IRI ;
+      skos:prefLabel "demigod" .
+
+<https://opentheso.huma-num.fr/fagotti>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Fagotto"^^xsd:IRI ;
+      skos:prefLabel "fagotti" .
+
+<https://opentheso.huma-num.fr/porphyry>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Porphyry_copper_deposit"^^xsd:IRI ;
+      skos:prefLabel "porphyry" .
+
+<https://opentheso.huma-num.fr/Argives>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Regions_of_ancient_Greece"^^xsd:IRI ;
+      skos:prefLabel "Argives" .
+
+<https://opentheso.huma-num.fr/wine>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Wine"^^xsd:IRI ;
+      skos:prefLabel "wine" .
+
+<https://opentheso.huma-num.fr/L.>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Linneo"^^xsd:IRI ;
+      skos:prefLabel "L." .
+
+<https://opentheso.huma-num.fr/Eufrate>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q34589"^^xsd:IRI , "http://it.dbpedia.org/resource/Eufrate"^^xsd:IRI ;
+      skos:prefLabel "Eufrate" .
+
+<https://opentheso.huma-num.fr/rame>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Rame"^^xsd:IRI ;
+      skos:prefLabel "rame" .
+
+<https://opentheso.huma-num.fr/houndstooth>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Houndstooth"^^xsd:IRI ;
+      skos:prefLabel "houndstooth" .
+
+<https://opentheso.huma-num.fr/scymnus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Scymnus"^^xsd:IRI , "http://it.dbpedia.org/resource/Scimno_di_Chio"^^xsd:IRI ;
+      skos:prefLabel "scymnus" .
+
+<https://opentheso.huma-num.fr/Dioniso>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q41680"^^xsd:IRI ;
+      skos:prefLabel "Dioniso" .
+
+<https://opentheso.huma-num.fr/polichete>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Polychaeta"^^xsd:IRI ;
+      skos:prefLabel "polichete" .
+
+<https://opentheso.huma-num.fr/cinghiale>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Sus_scrofa"^^xsd:IRI ;
+      skos:prefLabel "cinghiale" .
+
+<https://opentheso.huma-num.fr/Atene>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Atene"^^xsd:IRI ;
+      skos:prefLabel "Atene" .
+
+<https://opentheso.huma-num.fr/genii>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Jinn"^^xsd:IRI ;
+      skos:prefLabel "genii" .
+
+<https://opentheso.huma-num.fr/herpes>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Herpes_simplex"^^xsd:IRI ;
+      skos:prefLabel "herpes" .
+
+<https://opentheso.huma-num.fr/dragon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dragon"^^xsd:IRI ;
+      skos:prefLabel "dragon" .
+
+<https://opentheso.huma-num.fr/demon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Demon"^^xsd:IRI ;
+      skos:prefLabel "demon" .
+
+<https://opentheso.huma-num.fr/Crete>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Crete"^^xsd:IRI ;
+      skos:prefLabel "Crete" .
+
+<https://opentheso.huma-num.fr/antenne>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Antenna_degli_insetti"^^xsd:IRI ;
+      skos:prefLabel "antenne" .
+
+<https://opentheso.huma-num.fr/afrodisiaco>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Afrodisiaco"^^xsd:IRI ;
+      skos:prefLabel "afrodisiaco" .
+
+<https://opentheso.huma-num.fr/Lacedaemonians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Sparta"^^xsd:IRI ;
+      skos:prefLabel "Lacedaemonians" .
+
+<https://opentheso.huma-num.fr/Iberians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Kingdom_of_Iberia"^^xsd:IRI , "http://dbpedia.org/resource/Iberians"^^xsd:IRI ;
+      skos:prefLabel "Iberians" .
+
+<https://opentheso.huma-num.fr/elephant>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Elephant"^^xsd:IRI ;
+      skos:prefLabel "elephant" .
+
+<https://opentheso.huma-num.fr/corimbo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Corimbo"^^xsd:IRI ;
+      skos:prefLabel "corimbo" .
+
+<https://opentheso.huma-num.fr/olio>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Pittura_a_olio"^^xsd:IRI ;
+      skos:prefLabel "olio" .
+
+<https://opentheso.huma-num.fr/meteore>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Meteora"^^xsd:IRI ;
+      skos:prefLabel "meteore" .
+
+<https://opentheso.huma-num.fr/agris>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Agris"^^xsd:IRI , "http://dbpedia.org/resource/AGRIS"^^xsd:IRI , "https://www.wikidata.org/wiki/Q4693839"^^xsd:IRI ;
+      skos:prefLabel "agris" .
+
+<https://opentheso.huma-num.fr/tarso>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Glossario_entomologico"^^xsd:IRI ;
+      skos:prefLabel "tarso" .
+
+<https://opentheso.huma-num.fr/Dionysius>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dionysius_of_Halicarnassus"^^xsd:IRI ;
+      skos:prefLabel "Dionysius" .
+
+<https://opentheso.huma-num.fr/phylum>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Phylum"^^xsd:IRI , "http://dbpedia.org/resource/Phylum"^^xsd:IRI ;
+      skos:prefLabel "phylum" .
+
+<https://opentheso.huma-num.fr/sterilizzazione>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Sterilizzazione_degli_alimenti"^^xsd:IRI ;
+      skos:prefLabel "sterilizzazione" .
+
+<https://opentheso.huma-num.fr/boar>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Wild_boar"^^xsd:IRI ;
+      skos:prefLabel "boar" .
+
+<https://opentheso.huma-num.fr/Euphrates>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q34589"^^xsd:IRI , "http://dbpedia.org/resource/Euphrates"^^xsd:IRI ;
+      skos:prefLabel "Euphrates" .
+
+<https://opentheso.huma-num.fr/panth>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Khalsa"^^xsd:IRI ;
+      skos:prefLabel "panth" .
+
+<https://opentheso.huma-num.fr/Zeus>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Zeus"^^xsd:IRI , "http://dbpedia.org/resource/Zeus"^^xsd:IRI ;
+      skos:prefLabel "Zeus" .
+
+<https://opentheso.huma-num.fr/Ed>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Personaggi_di_Un_medico_tra_gli_orsi"^^xsd:IRI ;
+      skos:prefLabel "Ed" .
+
+<https://opentheso.huma-num.fr/most>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Microvariability_and_Oscillations_of_STars"^^xsd:IRI ;
+      skos:prefLabel "most" .
+
+<https://opentheso.huma-num.fr/porfido>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Porfido"^^xsd:IRI ;
+      skos:prefLabel "porfido" .
+
+<https://opentheso.huma-num.fr/krateros>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Craterus"^^xsd:IRI ;
+      skos:prefLabel "krateros" .
+
+<https://opentheso.huma-num.fr/fat>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Fat"^^xsd:IRI ;
+      skos:prefLabel "fat" .
+
+<https://opentheso.huma-num.fr/Artemis>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Artemis"^^xsd:IRI ;
+      skos:prefLabel "Artemis" .
+
+<https://opentheso.huma-num.fr/Black>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_census"^^xsd:IRI ;
+      skos:prefLabel "Black" .
+
+<https://opentheso.huma-num.fr/Febo_Apollo>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q37340"^^xsd:IRI ;
+      skos:prefLabel "Febo Apollo" .
+
+<https://opentheso.huma-num.fr/ellissi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ellisse"^^xsd:IRI ;
+      skos:prefLabel "ellissi" .
+
+<https://opentheso.huma-num.fr/pion>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pion"^^xsd:IRI ;
+      skos:prefLabel "pion" .
+
+<https://opentheso.huma-num.fr/oasi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Oasi"^^xsd:IRI ;
+      skos:prefLabel "oasi" .
+
+<https://opentheso.huma-num.fr/Eita>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Eita_(Tarawa)"^^xsd:IRI , "http://dbpedia.org/resource/Eita_Nagayama"^^xsd:IRI ;
+      skos:prefLabel "Eita" .
+
+<https://opentheso.huma-num.fr/germani_reali>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Anas_platyrhynchos"^^xsd:IRI ;
+      skos:prefLabel "germani reali" .
+
+<https://opentheso.huma-num.fr/smeraldo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Smeraldo"^^xsd:IRI ;
+      skos:prefLabel "smeraldo" .
+
+<https://opentheso.huma-num.fr/Ionians>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Ionians"^^xsd:IRI ;
+      skos:prefLabel "Ionians" .
+
+<https://opentheso.huma-num.fr/prima_era>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Storia_di_Arda"^^xsd:IRI ;
+      skos:prefLabel "prima era" .
+
+<https://opentheso.huma-num.fr/ombra>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ombra"^^xsd:IRI ;
+      skos:prefLabel "ombra" .
+
+<https://opentheso.huma-num.fr/stoma>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Stoma"^^xsd:IRI ;
+      skos:prefLabel "stoma" .
+
+<https://opentheso.huma-num.fr/cyborg>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Cyborg"^^xsd:IRI , "http://dbpedia.org/resource/Cyborg"^^xsd:IRI ;
+      skos:prefLabel "cyborg" .
+
+<https://opentheso.huma-num.fr/megaliti>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Megalito"^^xsd:IRI ;
+      skos:prefLabel "megaliti" .
+
+<https://opentheso.huma-num.fr/Athens>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Athens"^^xsd:IRI ;
+      skos:prefLabel "Athens" .
+
+<https://opentheso.huma-num.fr/audace>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Audace_Football_Club"^^xsd:IRI ;
+      skos:prefLabel "audace" .
+
+<https://opentheso.huma-num.fr/foglie>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Foglia"^^xsd:IRI ;
+      skos:prefLabel "foglie" .
+
+<https://opentheso.huma-num.fr/copper>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Copper"^^xsd:IRI ;
+      skos:prefLabel "copper" .
+
+<https://opentheso.huma-num.fr/Achei>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Achei"^^xsd:IRI ;
+      skos:prefLabel "Achei" .
+
+<https://opentheso.huma-num.fr/harem>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Harem"^^xsd:IRI , "http://dbpedia.org/resource/Harem"^^xsd:IRI ;
+      skos:prefLabel "harem" .
+
+<https://opentheso.huma-num.fr/clay>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Clay"^^xsd:IRI ;
+      skos:prefLabel "clay" .
+
+<https://opentheso.huma-num.fr/breed>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Breed"^^xsd:IRI ;
+      skos:prefLabel "breed" .
+
+<https://opentheso.huma-num.fr/pied_de_poule>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Pied_de_poule"^^xsd:IRI ;
+      skos:prefLabel "pied de poule" .
+
+<https://opentheso.huma-num.fr/eteri>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Eteri"^^xsd:IRI ;
+      skos:prefLabel "eteri" .
+
+<https://opentheso.huma-num.fr/Karina>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Karina_Nose"^^xsd:IRI ;
+      skos:prefLabel "Karina" .
+
+<https://opentheso.huma-num.fr/Fineo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Fineo_(figlio_di_Agenore)"^^xsd:IRI ;
+      skos:prefLabel "Fineo" .
+
+<https://opentheso.huma-num.fr/Epeians>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q6536845"^^xsd:IRI ;
+      skos:prefLabel "Epeians" .
+
+<https://opentheso.huma-num.fr/pedone>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Pedone_(scacchi)"^^xsd:IRI ;
+      skos:prefLabel "pedone" .
+
+<https://opentheso.huma-num.fr/bianco>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Bianco"^^xsd:IRI ;
+      skos:prefLabel "bianco" .
+
+<https://opentheso.huma-num.fr/elfi>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Elfo"^^xsd:IRI ;
+      skos:prefLabel "elfi" .
+
+<https://opentheso.huma-num.fr/Assiri>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Assiria"^^xsd:IRI ;
+      skos:prefLabel "Assiri" .
+
+<https://opentheso.huma-num.fr/lip>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Lip"^^xsd:IRI ;
+      skos:prefLabel "lip" .
+
+<https://opentheso.huma-num.fr/ran>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ran_Mori"^^xsd:IRI ;
+      skos:prefLabel "ran" .
+
+<https://opentheso.huma-num.fr/multitasking>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Multitasking"^^xsd:IRI ;
+      skos:prefLabel "multitasking" .
+
+<https://opentheso.huma-num.fr/Arion>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Arion"^^xsd:IRI ;
+      skos:prefLabel "Arion" .
+
+<https://opentheso.huma-num.fr/Sicilia>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Sicilia"^^xsd:IRI ;
+      skos:prefLabel "Sicilia" .
+
+<https://opentheso.huma-num.fr/rettile>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Reptilia"^^xsd:IRI ;
+      skos:prefLabel "rettile" .
+
+<https://opentheso.huma-num.fr/argilla>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Argilla"^^xsd:IRI ;
+      skos:prefLabel "argilla" .
+
+<https://opentheso.huma-num.fr/cinghiali>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Sus_scrofa"^^xsd:IRI ;
+      skos:prefLabel "cinghiali" .
+
+<https://opentheso.huma-num.fr/Pentheus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Pentheus"^^xsd:IRI ;
+      skos:prefLabel "Pentheus" .
+
+<https://opentheso.huma-num.fr/philon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Philon"^^xsd:IRI , "http://it.dbpedia.org/resource/Filone_(cognomen)"^^xsd:IRI ;
+      skos:prefLabel "philon" .
+
+<https://opentheso.huma-num.fr/agrin>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Agrin"^^xsd:IRI ;
+      skos:prefLabel "agrin" .
+
+<https://opentheso.huma-num.fr/nartece>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Nartece"^^xsd:IRI ;
+      skos:prefLabel "nartece" .
+
+<https://opentheso.huma-num.fr/Creta>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Creta"^^xsd:IRI ;
+      skos:prefLabel "Creta" .
+
+<https://opentheso.huma-num.fr/antenna>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Antenna_(radio)"^^xsd:IRI ;
+      skos:prefLabel "antenna" .
+
+<https://opentheso.huma-num.fr/thei>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Technological_and_Higher_Education_Institute_of_Hong_Kong"^^xsd:IRI ;
+      skos:prefLabel "thei" .
+
+<https://opentheso.huma-num.fr/harpies>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Harpy"^^xsd:IRI ;
+      skos:prefLabel "harpies" .
+
+<https://opentheso.huma-num.fr/bow>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Bow_and_arrow"^^xsd:IRI ;
+      skos:prefLabel "bow" .
+
+<https://opentheso.huma-num.fr/drimys>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Drimys"^^xsd:IRI ;
+      skos:prefLabel "drimys" .
+
+<https://opentheso.huma-num.fr/ra>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Ra"^^xsd:IRI ;
+      skos:prefLabel "ra" .
+
+<https://opentheso.huma-num.fr/thicket>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Thicket"^^xsd:IRI ;
+      skos:prefLabel "thicket" .
+
+<https://opentheso.huma-num.fr/Phoebe>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Phoebe_Buffay"^^xsd:IRI ;
+      skos:prefLabel "Phoebe" .
+
+<https://opentheso.huma-num.fr/linen>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Linen"^^xsd:IRI ;
+      skos:prefLabel "linen" .
+
+<https://opentheso.huma-num.fr/platamonas>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Platamon"^^xsd:IRI ;
+      skos:prefLabel "platamonas" .
+
+<https://opentheso.huma-num.fr/mantle>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Earth's_mantle"^^xsd:IRI ;
+      skos:prefLabel "mantle" .
+
+<https://opentheso.huma-num.fr/tessera>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Aeroporto_di_Venezia-Marco_Polo"^^xsd:IRI ;
+      skos:prefLabel "tessera" .
+
+<https://opentheso.huma-num.fr/hoe>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Promiscuity"^^xsd:IRI ;
+      skos:prefLabel "hoe" .
+
+<https://opentheso.huma-num.fr/dracaena>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Dracaena_(plant)"^^xsd:IRI , "http://it.dbpedia.org/resource/Dracaena"^^xsd:IRI ;
+      skos:prefLabel "dracaena" .
+
+<https://opentheso.huma-num.fr/G._Hermann>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q77616"^^xsd:IRI ;
+      skos:prefLabel "G. Hermann" .
+
+<https://opentheso.huma-num.fr/Arsena>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q4796374"^^xsd:IRI ;
+      skos:prefLabel "Arsena" .
+
+<https://opentheso.huma-num.fr/Nilo>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Nilo"^^xsd:IRI ;
+      skos:prefLabel "Nilo" .
+
+<https://opentheso.huma-num.fr/asphalt>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Asphalt"^^xsd:IRI ;
+      skos:prefLabel "asphalt" .
+
+<https://opentheso.huma-num.fr/Castor>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Castor_and_Pollux"^^xsd:IRI ;
+      skos:prefLabel "Castor" .
+
+<https://opentheso.huma-num.fr/heremon>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Érimón"^^xsd:IRI ;
+      skos:prefLabel "heremon" .
+
+<https://opentheso.huma-num.fr/l'inverno_sta_arrivando>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Episodi_de_Il_Trono_di_Spade_(prima_stagione)"^^xsd:IRI ;
+      skos:prefLabel "l'inverno sta arrivando" .
+
+<https://opentheso.huma-num.fr/Molossians>
+      a       skos:Concept ;
+      skos:exactMatch "https://www.wikidata.org/wiki/Q827399"^^xsd:IRI , "http://dbpedia.org/resource/Molossians"^^xsd:IRI ;
+      skos:prefLabel "Molossians" .
+
+<https://opentheso.huma-num.fr/Anta>
+      a       skos:Concept ;
+      skos:exactMatch "http://it.dbpedia.org/resource/Provincia_di_Anta"^^xsd:IRI ;
+      skos:prefLabel "Anta" .
+
+<https://opentheso.huma-num.fr/Perseus>
+      a       skos:Concept ;
+      skos:exactMatch "http://dbpedia.org/resource/Perseus"^^xsd:IRI ;
+      skos:prefLabel "Perseus" .

@@ -1,0 +1,46 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>.
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>.
+PREFIX schema:  <http://schema.org/> .
+PREFIX paragraph: <http://www.zoomathia.com/>.
+
+SELECT DISTINCT ?paragraph ?name_animal ?name_relation ?name_anthro WHERE {
+  ?annotation1 a oa:Annotation;
+              oa:hasBody ?animal;
+              oa:hasTarget ?target1.
+  ?target1 oa:hasSource ?paragraph;
+     oa:hasSelector ?selector.
+ ?selector oa:exact ?mention_animal.
+
+  ?annotation2 oa:hasBody ?relation;
+        oa:hasTarget ?target2.
+  ?target2 oa:hasSource ?paragraph;
+      oa:hasSelector ?selector2.
+  ?selector2 oa:exact ?mention_relation.
+
+   ?annotation3 oa:hasBody ?anthro;
+        oa:hasTarget ?target3.
+  ?target3 oa:hasSource ?paragraph;
+      oa:hasSelector ?selector3.
+  ?selector3 oa:exact ?mention_anthro.
+
+  ?animal a skos:Concept;
+       skos:prefLabel ?name_animal.
+    
+  ?animal_collection a skos:Collection;
+       skos:prefLabel "Ancient class"@en;
+       skos:member ?animal.
+
+  ?relation skos:prefLabel ?name_relation;
+     	            skos:broader+ ?relation_generique.
+  ?relation_generique skos:prefLabel  "special relationship"@en.
+
+ ?anthro skos:prefLabel ?name_anthro.
+ ?anthro_collection skos:prefLabel ?anthro_collection_name;
+	skos:member ?anthro.
+
+  FILTER (lang(?name_animal) = "en").
+  FILTER (lang(?name_relation) = "en")
+  FILTER (lang(?name_anthro) = "en")
+  FILTER (?anthro_collection_name in ("Place"@en, "Anthroponym"@en))
+}
+ORDER BY ?paragraph

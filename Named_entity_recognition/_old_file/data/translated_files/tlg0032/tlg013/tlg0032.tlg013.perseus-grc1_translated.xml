@@ -1,0 +1,3477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader type="text">
+  <fileDesc>
+   <titleStmt>
+    <title>
+     On the Art of Horsemanship from Minor Works (Greek). Machine readable
+					text
+    </title>
+    <author>
+     Xenophon
+    </author>
+    <sponsor>
+     Perseus Project, Tufts University
+    </sponsor>
+    <principal>
+     Gregory Crane
+    </principal>
+    <respStmt>
+     <resp>
+      Prepared under the supervision of
+     </resp>
+     <name>
+      Lisa Cerrato
+     </name>
+     <name>
+      William Merrill
+     </name>
+     <name>
+      Elli Mylonas
+     </name>
+     <name>
+      David Smith
+     </name>
+    </respStmt>
+    <funder n="org:AnnCPB">
+     The Annenberg CPB Project
+    </funder>
+   </titleStmt>
+   <publicationStmt>
+    <publisher>
+     Trustees of Tufts University
+    </publisher>
+    <pubPlace>
+     Medford, MA
+    </pubPlace>
+    <authority>
+     Perseus Project
+    </authority>
+   </publicationStmt>
+   <sourceDesc>
+    <biblStruct>
+     <monogr>
+      <author>
+       Xenophon
+      </author>
+      <title>
+       Xenophontis opera omnia, vol. 5
+      </title>
+      <imprint>
+       <publisher>
+        Oxford, Clarendon Press
+       </publisher>
+       <date>
+        1920 (repr.1969)
+       </date>
+      </imprint>
+     </monogr>
+    </biblStruct>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <refsDecl>
+    <refState unit="text"/>
+    <refState unit="chapter"/>
+    <refState unit="section"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="greek">
+     Greek
+    </language>
+    <language ident="en">
+     English
+    </language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <!--
+<change>
+<date>6/92</date><respStmt><name>em amp wpm</name><resp>(n/a)</resp></respStmt><item>chopped into files</item>
+</change>
+<change>
+<date>6/92 - 7/92</date><respStmt><name>das</name><resp>(n/a)</resp></respStmt><item>inserted section and chapter tags and TEI header; CheckMarked</item>
+</change>
+<change>
+<date>8/11/92</date><respStmt><name>das</name><resp>(n/a)</resp></respStmt><item>changed chapters to div2's</item>
+</change>
+<change>
+<date>10/30/92</date><respStmt><name>das</name><resp>(n/a)</resp></respStmt><item>added HEAD's and REFDECL's; glued minor works together</item>
+</change>
+<change><date>July 2014</date>
+    <respStmt><name>Stella Dee</name><resp>ed.</resp></respStmt>
+    <item>split speeches and converted to unicode</item>
+      </change>-->
+   <change when="2014-08-01" who="Stella Dee">
+    edited markup
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div n="1" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἐπειδὴ διὰ τὸ συμβῆναι ἡμῖν πολὺν χρόνον
+						ἱππεύειν οἰόμεθα ἔμπειροι ἱππικῆς γεγενῆσθαι, βουλόμεθα καὶ τοῖς νεωτέροις
+						τῶν φίλων δηλῶσαι ᾗ ἂν νομίζομεν αὐτοὺς ὀρθότατα ἵπποις προσφέρεσθαι.
+						συνέγραψε μὲν οὖν καὶ Σίμων περὶ ἱππικῆς, ὃς καὶ τὸν κατὰ τὸ Ἐλευσίνιον
+						Ἀθήνησιν ἵππον χαλκοῦν ἀνέθηκε καὶ ἐν τῷ βάθρῳ τὰ ἑαυτοῦ ἔργα ἐξετύπωσεν·
+						ἡμεῖς γε μέντοι ὅσοις συνετύχομεν ταὐτὰ γνόντες ἐκείνῳ, οὐκ ἐξαλείφομεν ἐκ
+						τῶν ἡμετέρων, ἀλλὰ πολὺ ἥδιον παραδώσομεν αὐτὰ τοῖς φίλοις, νομίζοντες
+						ἀξιοπιστότερα εἶναι ὅτι κἀκεῖνος κατὰ ταὐτὰ ἡμῖν ἔγνω ἱππικὸς ὤν· καὶ ὅσα δὴ
+						παρέλιπεν ἡμεῖς πειρασόμεθα δηλῶσαι.
+     </p>
+     <p lang="it">
+      perché ci succede da molto tempo
+						cavalchiamo con cavalieri esperti, incontriamo anche i più giovani
+						degli amici, dichiari che se li riteniamo giusti, ti verranno offerti.
+						Scrisse anche con Simone sull'equitazione, che scrisse anche sull'Eleusino
+						Ad Atene, su un cavallo di bronzo, si innalzò e stampò le proprie opere sul piedistallo;
+						Noi uomini che realizziamo queste cose conoscendolo, non ne siamo eliminati
+						di giorni, ma è molto opportuno consegnarlo agli amici, riflettendo
+						più attendibile è che secondo noi sia un cattivo cavallo e quant'altro;
+						Inoltre, siamo tentati di dichiarare.
+     </p>
+     <p lang="en">
+      because it has been happening to us for a long time
+						we ride with experienced equestrians, we also meet the younger ones
+						of the friends, you declare that if we think them right, you will be offered.
+						He also wrote with Simon about equestrianism, who also wrote about the Eleusinian
+						In Athens, on a bronze horse, he raised himself and printed his own works on the pedestal;
+						We men who achieve these things knowing him, are not eliminated from
+						of days, but it is very appropriate that we hand it over to friends, thinking
+						more reliable is that he is a bad horse according to us; and whatever
+						In addition, we are tempted to declare.
+     </p>
+     <p>
+      <milestone ed="P" unit="para"/>
+      πρῶτον δὲ γράψομεν ὡς ἄν τις ἥκιστα ἐξαπατῷτο
+						ἐν ἱππωνίᾳ. τοῦ μὲν τοίνυν ἔτι ἀδαμάστου πώλου δῆλον ὅτι τὸ σῶμα δεῖ
+						δοκιμάζειν· τῆς γὰρ ψυχῆς οὐ πάνυ σαφῆ τεκμήρια παρέχεται ὁ μήπω
+						ἀναβαινόμενος.
+     </p>
+     <p lang="it">
+      Ma prima scriviamo come se li avesse acquistati con l'inganno
+						a cavallo. a me sembrano un palo indomito, mi ingannano perché il corpo vede
+						mettono alla prova; poiché la mela non fornisce all'anima alcuna prova chiara
+						in aumento.
+     </p>
+     <p lang="en">
+      But first, let's write as if he bought them by deception
+						on horseback. to me they look like an untamed pole, they deceive me because the body sees
+						they test; for the soul is not provided with any clear proofs by the apple
+						rising.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      τοῦ γε μὴν σώματος πρῶτόν φαμεν χρῆναι τοὺς πόδας σκοπεῖν. ὥσπερ γὰρ οἰκίας
+						οὐδὲν ὄφελος ἂν εἴη, εἰ τὰ ἄνω πάνυ καλὰ ἔχοι μὴ ὑποκειμένων οἵων δεῖ
+						θεμελίων, οὕτω καὶ ἵππου πολεμιστηρίου οὐδὲν ἂν ὄφελος εἴη, οὐδʼ εἰ τἆλλα
+						πάντα ἀγαθὰ ἔχοι, κακόπους δʼ εἴη· οὐδενὶ γὰρ ἂν δύναιτο τῶν ἀγαθῶν χρῆσθαι.
+     </p>
+     <p lang="it">
+      Per dare prima un corpo bisogna puntare ai piedi. come una casa
+						nessun beneficio se lo fosse, se le cose di cui sopra sono cose buone, non sudditi
+						di fondamenta, quindi anche di campo di battaglia
+						sempre cose buone, cose cattive no, perché nulla può essere utilizzato senza il potere delle cose buone.
+     </p>
+     <p lang="en">
+      To give a body first, we need to aim for the feet. like a house
+						no benefit if it were, if the above things are good things, not subjects
+						of foundations, so also of a battle-ground
+						always good things, bad things not, for nothing can be used without the power of good things.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      πόδας δʼ ἄν τις δοκιμάζοι πρῶτον μὲν τοὺς ὄνυχας σκοπῶν· οἱ γὰρ παχεῖς πολὺ
+						τῶν λεπτῶν διαφέρουσιν εἰς εὐποδίαν· ἔπειτα οὐδὲ τοῦτο δεῖ λανθάνειν,
+						πότερον αἱ ὁπλαί εἰσιν ὑψηλαὶ
+      <del>
+       ἢ ταπειναὶ
+      </del>
+      καὶ ἔμπροσθεν καὶ
+						ὄπισθεν ἢ χαμηλαί. αἱ μὲν γὰρ ὑψηλαὶ πόρρω ἀπὸ τοῦ δαπέδου ἔχουσι τὴν
+						χελιδόνα καλουμένην, αἱ δὲ ταπειναὶ ὁμοίως βαίνουσι τῷ τε ἰσχυροτάτῳ καὶ τῷ
+						μαλακωτάτῳ τοῦ ποδός, ὥσπερ οἱ βλαισοὶ τῶν ἀνθρώπων· καὶ τῷ ψόφῳ δὲ ἔφη
+						Σίμων δήλους εἶναι τοὺς εὔποδας, καλῶς λέγων· ὥσπερ γὰρ κύμβαλον ψοφεῖ πρὸς
+						τὸ δάπεδον ἡ κοίλη ὁπλή.
+     </p>
+     <p lang="it">
+      piedi, se li provi prima con l'onice, perché sono molto grossi
+						dei minuti differiscono in eupodia;
+						poi le armi sono alte o basse e anche davanti
+						indietro o basso. perché ce l'hanno quelli che stanno in alto
+						si chiama la rondine, ma anche gli umili vanno dai potenti e
+						alla debolezza dei piedi, come le piaghe degli uomini: e al vecchio
+						Della stessa specie sono, per così dire, gli eupodi;
+						il pavimento lo zoccolo cavo.
+     </p>
+     <p lang="en">
+      feet, if you try them first with the onyx, for they are very fat
+						of the minutes they differ in eupodia;
+						later the weapons are high or low and in front as well
+						back or low. because those who are high above the floor have it
+						the swallow is called, but the humble likewise go to the mighty and
+						to the softening of the foot, as the sores of men: and to the old man
+						Of the same kind are the eupodes, so to speak;
+						the floor the hollow hoof.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἐπεὶ δὲ ἠρξάμεθα ἐντεῦθεν, ταύτῃ καὶ
+						ἀναβησόμεθα πρὸς τὸ ἄλλο σῶμα. δεῖ τοίνυν καὶ τὰ ἀνωτέρω μὲν τῶν ὁπλῶν,
+						κατωτέρω δὲ τῶν κυνηπόδων ὀστᾶ μήτε ἄγαν ὀρθὰ εἶναι ὥσπερ αἰγός·
+						ἀντιτυπώτερα γὰρ ὄντα κόπτει τε τὸν ἀναβάτην καὶ παραπίμπραται μᾶλλον τὰ
+						τοιαῦτα σκέλη· οὐδὲ μὴν ἄγαν ταπεινὰ τὰ ὀστᾶ δεῖ εἶναι· ψιλοῖντο γὰρ ἂν καὶ
+						ἑλκοῖντο οἱ κυνήποδες εἴτʼ ἐν βώλοις εἴτʼ ἐν λίθοις ἐλαύνοιτο ὁ ἵππος.
+     </p>
+     <p lang="it">
+      Ma anche noi ci alziamo da qui
+						ascendiamo all'altro corpo. vedi anche le parti superiori delle armi,
+						ma sotto le zampe canine non ci sono ossa, è come una capra;
+						poiché è più una copia, taglia il cavaliere e piuttosto travisa il
+						questi rami; non hanno rotto umilmente le ossa qui; perché erano anche belli
+						Gli zoccoli del cavallo venivano battuti in palline o in pietre.
+     </p>
+     <p lang="en">
+      But we get up from here, too
+						we ascend to the other body. see also the upper parts of the weapons,
+						but below the canine legs there are no bones, it is like a goat;
+						because it is more of a copy, it cuts the rider and rather misrepresents the
+						these branches; they did not humbly break the bones here; for they were fine even
+						The horse's hooves were beaten, either in balls or in stones.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      τῶν γε μὴν κνημῶν τὰ ὀστᾶ παχέα χρὴ εἶναι· ταῦτα γάρ ἐστι στήριγγες τοῦ
+						σώματος· οὐ μέντοι φλεψί γε οὐδὲ σαρξὶ παχέα· εἰ δὲ μή, ὅταν ἐν σκληροῖς
+						ἐλαύνηται, ἀνάγκη αἵματος ταῦτα πληροῦσθαι καὶ κρισσοὺς γίγνεσθαι, καὶ
+						παχύνεσθαι μὲν τὰ σκέλη, ἀφίστασθαι δὲ τὸ δέρμα. χαλῶντος δὲ τούτου πολλάκις
+						καὶ ἡ περόνη ἀποστᾶσα χωλὸν ἀπέδειξε τὸν ἵππον.
+     </p>
+     <p lang="it">
+      le ossa degli stinchi sono spesse; questi ne sono i supporti
+						corpo; non mentirmi, non avere carne grassa se no, quando sei duro
+						siate benedetti, questo bisogno di sangue sarà soddisfatto e diventeranno arieti, e
+						si infittisce con i rami, ma la pelle si allenta. ma spesso lo rovinano
+						e la fibula si azzoppò e si rivelò un ippopotamo.
+     </p>
+     <p lang="en">
+      the bones of the shins are thick; these are the supports of
+						body; don't lie to me, don't have fat flesh; if not, when in hard
+						be blessed, this need for blood will be fulfilled and it will become rams, and
+						it thickens with the branches, but the skin becomes loose. but often spoiling this
+						and the fibula turned lame and proved the hippopotamus.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      τά γε μὴν γόνατα ἢν βαδίζων ὁ πῶλος ὑγρῶς κάμπτῃ, εἰκάζοις ἂν καὶ ἱππεύοντα
+						ὑγρὰ ἕξειν τὰ σκέλη· πάντες γὰρ προϊόντος τοῦ χρόνου ὑγροτέρως κάμπτουσιν ἐν
+						τοῖς γόνασι. τὰ δὲ ὑγρὰ δικαίως εὐδοκιμεῖ· ἀπταιστότερον γὰρ καὶ ἀκοπώτερον
+						τὸν ἵππον τῶν σκληρῶν σκελῶν παρέχει.
+     </p>
+     <p lang="it">
+      non inginocchiarti mentre cammini, il bastoncino si piega dolcemente, lo intuisci anche mentre guidi
+						i rami sono bagnati, perché tutti i prodotti del tempo si piegano sempre più bagnati
+						fino alle ginocchia. ma viene giustamente privilegiato il liquido, perché più affidabile e più instancabile
+						fornisce al cavallo le gambe dure.
+     </p>
+     <p lang="en">
+      don't kneel when walking, the pole bends smoothly, you guess even when riding
+						the branches are wet, for all products of time bend wetter in
+						to the knees. but the liquid is rightly favored, because it is more reliable and more tireless
+						provides the horse of the hard legs.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      μηροί γε μέντοι οἱ ὑπὸ ταῖς ὠμοπλάταις ἢν παχεῖς ὦσιν, ἰσχυρότεροί τε καὶ
+						εὐπρεπέστεροι ὥσπερ ἀνδρὸς φαίνονται. καὶ μὴν στέρνα πλατύτερα ὄντα καὶ πρὸς
+						κάλλος καὶ πρὸς ἰσχὺν καὶ πρὸς τὸ μὴ ἐπαλλὰξ ἀλλὰ διὰ πολλοῦ τὰ σκέλη φέρειν
+						εὐφυέστερα.
+     </p>
+     <p lang="it">
+      se sei grasso, sei anche più forte
+						sembrano più dignitosi come uomo. E non cisternare esseri più ampi e pr
+						bellezza e verso la forza e verso il non cambiano ma a lungo i rami portano
+						più intelligente.
+     </p>
+     <p lang="en">
+      if you are fat, you are stronger too
+						they look more dignified as a man. And don't cistern wider beings and pr
+						beauty and towards strength and towards the do not change but for a long time the branches bear
+						smarter.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      ἀπό γε μὴν τοῦ στέρνου ὁ μὲν αὐχὴν αὐτοῦ μὴ ὥσπερ κάπρου προπετὴς πεφύκοι,
+						ἀλλʼ ὥσπερ ἀλεκτρυόνος ὀρθὸς πρὸς τὴν κορυφὴν ἥκοι, λαγαρὸς δὲ εἴη τὰ κατὰ
+						τὴν συγκαμπήν, ἡ δὲ κεφαλὴ ὀστώδης οὖσα μικρὰν σιαγόνα ἔχοι. οὕτως ὁ μὲν
+						τράχηλος πρὸ τοῦ ἀναβάτου ἂν εἴη, τὸ δὲ ὄμμα
+      <add>
+       τὰ
+      </add>
+      πρὸ τῶν ποδῶν
+						ὁρῴη. καὶ βιάζεσθαι δὲ ἥκιστʼ ἂν δύναιτο ὁ τοιοῦτον σχῆμα ἔχων καὶ εἰ πάνυ
+						θυμοειδὴς εἴη· οὐ γὰρ ἐγκάμπτοντες ἀλλʼ ἐκτείνοντες τὸν τράχηλον καὶ τὴν
+						κεφαλὴν βιάζεσθαι οἱ ἵπποι ἐπιχειροῦσι.
+     </p>
+     <p lang="it">
+      dal lato dello sterno, dall'orecchio, non come un cinghiale che profetizza,
+						ma come un alectrione ritto verso la sommità della terra, ma magri erano i
+						l'articolazione e la testa ossuta, come una piccola mascella. quindi l'io
+						il collo verso l'eventuale cavaliere e la sella verso i piedi
+						giorno. e sbrigati, se fosse possibile, ho una forma così in stoffa
+						timoide, poiché non sono flessori ma estensori del collo e
+						I cavalli si lanciano a capofitto.
+     </p>
+     <p lang="en">
+      from the side of the sternum, the ear of him, not like a boar prophesying,
+						but like an alectryon upright towards the top of the earth, but lean were the
+						the joint, and the bony head, like a small jaw. thus the me
+						neck towards the rider if any, and the saddle towards the feet
+						day. and hurry up, if it were possible, I have such a shape in cloth
+						thymoid, for they are not flexors but extenders of the neck and
+						The horses rush headlong.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      σκοπεῖν δὲ χρὴ καὶ εἰ ἀμφότεραι μαλακαὶ αἱ γνάθοι ἢ σκληρὰ ἡ ἑτέρα.
+						ἑτερόγναθοι γὰρ ὡς τὰ πολλὰ οἱ μὴ ὁμοίας τὰς γνάθους ἔχοντες γίγνονται. καὶ
+						μὴν τὸ ἐξόφθαλμον εἶναι ἐγρηγορὸς μᾶλλον φαίνεται τοῦ κοιλοφθάλμου, καὶ ἐπὶ
+						πλέον δʼ ἂν ὁ τοιοῦτος ὁρῴη.
+     </p>
+     <p lang="it">
+      ma importa anche se entrambe le mascelle sono morbide o l'altra è dura.
+						Perché chi ha mascelle diverse diventa eterognato, come tanti altri. E
+						non quello fuori dall'occhio è veloce, piuttosto lo si vede nel co-occhio, e così via
+						ora, se è così.
+     </p>
+     <p lang="en">
+      but it also matters if both jaws are soft or the other is hard.
+						Because those who have different jaws become heterognathous, like many others. and
+						not the out-of-eye is fast, rather it is seen in the co-eye, and on
+						now if that is the case.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      καὶ μυκτῆρές γε οἱ ἀναπεπταμένοι τῶν συμπεπτωκότων εὐπνοώτεροί τε ἅμα εἰσὶ
+						καὶ γοργότερον τὸν ἵππον ἀποδεικνύουσι. καὶ γὰρ ὅταν ὀργίζηται ἵππος ἵππῳ ἢ
+						ἐν ἱππασίᾳ θυμῶται, εὐρύνει μᾶλλον τοὺς μυκτῆρας.
+     </p>
+     <p lang="it">
+      e i myctiri, quelli non digeriti dei sintomatici, sono i più sonnolenti
+						e dimostrano che il cavallo è più veloce. E perché quando un cavallo è arrabbiato con un cavallo o
+						mentre è a cavallo è arrabbiato, anzi apre le narici.
+     </p>
+     <p lang="en">
+      and myctires, the undigested of the sympeptocates are the most sleepy
+						and they prove the horse faster. And because when a horse is angry with a horse or
+						while on horseback, he is angry, rather he opens his nostrils.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      καὶ μὴν κορυφὴ μὲν μείζων, ὦτα δὲ μικρότερα ἱππωδεστέραν τὴν κεφαλὴν
+						ἀποφαίνει. ἡ δʼ αὖ ὑψηλὴ ἀκρωμία τῷ τε ἀναβάτῃ ἀσφαλεστέραν τὴν ἕδραν καὶ
+						τοῖς ὤμοις
+      <del>
+       καὶ τῷ σώματι
+      </del>
+      ἰσχυροτέραν τὴν πρόσφυσιν παρέχεται.
+      <add>
+       ῥάχις γε μὴν
+      </add>
+      ἡ διπλῆ τῆς ἁπλῆς καὶ ἐγκαθῆσθαι μαλακωτέρα καὶ
+						ἰδεῖν ἡδίων.
+     </p>
+     <p lang="it">
+      e non uno stemma con una testa maggiore, ma una testa di cavallo più piccola
+						decide. la dʼ aὖ alta acromia al cavaliere più sicura l'edra e
+						viene fornita una presa più forte ai muscoli e al corpo.
+							Il tessuto non è lungo il doppio del tessuto e rimarrà più morbido e
+						ידזין ידיון
+     </p>
+     <p lang="en">
+      and not a crest with a major, but a smaller horse's head
+						decides. the dʼ aὖ high acromia to the rider safer the hedra and
+						stronger grip is provided to the muscles and the body.
+							The fabric is not twice as long as the fabric and it will sit softer and
+						ידזין ידיון
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      καὶ πλευρὰ δὲ ἡ βαθυτέρα καὶ πρὸς τὴν γαστέρα ὀγκωδεστέρα ἅμα εὐεδρότερόν τε
+						καὶ ἰσχυρότερον καὶ εὐχιλότερον ὡς ἐπὶ πολὺ τὸν ἵππον παρέχεται. ὀσφῦς γε
+						μὴν ὅσῳ ἂν πλατυτέρα τε καὶ βραχυτέρα ᾖ, τοσούτῳ ῥᾷον μὲν ὁ ἵππος τὰ πρόσθεν
+						αἴρεται, ῥᾷον δὲ τὰ ὄπισθεν προσάγεται· καὶ ὁ κενεὼν δὲ οὕτω μικρότατος
+						φαίνεται, ὅσπερ μέγας ὢν μέρος μέν τι καὶ αἰσχύνει, μέρος δέ τι καὶ
+						ἀσθενέστερον καὶ δυσφορώτερον αὖ τὸν ἵππον παρέχεται.
+     </p>
+     <p lang="it">
+      e il lato più profondo, verso lo stomaco, è più voluminoso, ma più leggero
+						e più forte e più facile come su molti cavalli. ὀσφῦς ge
+						non largo quanto te e corto quanto x, quanto il cavallo
+						viene portato via, ma quello che sta dietro viene portato dentro e il vuoto è così piccolo
+						sembra che, per quanto grande, in parte sia pesante, in parte lo sia
+						più debole e più scomodo di quanto viene fornito al cavallo.
+     </p>
+     <p lang="en">
+      and the deeper side, towards the stomach, is more bulky, but lighter
+						and stronger and easier as on many horses is provided. ὀσφῦς ge
+						not as wide as te and shorter as x, as much as the horse
+						is taken away, but what is behind is brought in; and the void is so small
+						it seems, as big as it is, part of it is heavy, part of it is
+						weaker and more uncomfortable than the horse is provided.
+     </p>
+    </div>
+    <div n="13" type="section">
+     <p>
+      τά γε μὴν ἰσχία πλατέα μὲν εἶναι χρὴ καὶ εὔσαρκα, ἵνα ἀκόλουθα ᾖ ταῖς
+						πλευραῖς καὶ τοῖς στέρνοις· ἢν δὲ πάντα στερεὰ ᾖ, κουφότερα ἂν τὰ πρὸς τὸν
+						δρόμον εἴη καὶ ὀξύτερον μᾶλλον ἂν τὸν ἵππον παρέχοιτο.
+     </p>
+     <p lang="it">
+      non avere i fianchi larghi se sei alto e carnoso, quindi posso seguirti
+						lati e allo sterno;
+						una strada più facile e migliore se fosse stato fornito il cavallo.
+     </p>
+     <p lang="en">
+      don't have a wide hip if you're tall and fleshy, so I can follow you
+						sides and to the sternum;
+						an easier road and a better one if the horse was provided.
+     </p>
+    </div>
+    <div n="14" type="section">
+     <p>
+      μηρούς γε μὴν τοὺς ὑπὸ τῇ οὐρᾷ ἢν ἅμα πλατείᾳ τῇ γραμμῇ διωρισμένους ἔχῃ,
+						οὕτω καὶ τὰ ὄπισθεν σκέλη διὰ πολλοῦ ὑποθήσει. τοῦτο δὲ ποιῶν ἅμα γοργοτέραν
+						τε καὶ ἰσχυροτέραν ἕξει τὴν ὑπόβασίν τε καὶ ἱππασίαν καὶ ἅπαντα βελτίων
+						ἔσται ἑαυτοῦ. τεκμήραιο δʼ ἂν καὶ ἀπʼ ἀνθρώπων· ὅταν γάρ τι ἀπὸ τῆς γῆς
+						ἄρασθαι βούλωνται, διαβαίνοντες πάντες μᾶλλον ἢ συμβεβηκότες ἐπιχειροῦσιν
+						αἴρεσθαι.
+     </p>
+     <p lang="it">
+      le sue cosce non sono quelle sotto il cielo a meno che non siano separate dalla larghezza della linea,
+						così sono gli arti posteriori per molte ragioni. Ma a chi importa se è così
+						più forte è il sei, più basso è il cavallo e tanto meglio
+						Sii te stesso. presuntivo d'an e dagli uomini; quando è fatto di terra
+						ci stanno provando
+						Mi dispiace.
+     </p>
+     <p lang="en">
+      his thighs are not those under the sky unless they are separated by the width of the line,
+						so are the hind limbs for many reasons. But who cares if this is the case
+						the stronger the six the lower the horse and all the better
+						be yourself. presumptive d'an and by men; when it is made of the earth
+						they are trying
+						I'm sorry.
+     </p>
+    </div>
+    <div n="15" type="section">
+     <p>
+      τούς γε μὴν ὄρχεις δεῖ μὴ μεγάλους τὸν ἵππον ἔχειν, ὃ οὐκ ἔστι πώλου
+						κατιδεῖν. περί γε μὴν τῶν κάτωθεν, ἀστραγάλων ἢ κνημῶν καὶ κυνηπόδων καὶ
+						ὁπλῶν, ταὐτὰ λέγομεν ἅπερ περὶ τῶν ἔμπροσθεν.
+     </p>
+     <p lang="it">
+      Non guardarli, non guardarli grandi, il cavallo che hanno, che non è in vendita
+						catideina di quello che c'è sotto, caviglie o stinchi e anche canini
+						armi, questo diciamo degli attaccanti.
+     </p>
+     <p lang="en">
+      Don't look at them, don't look at them big, the horse they have, which is not for sale
+						catidein about what's below, ankles or shins and canines too
+						weapons, this is what we say about the forwards.
+     </p>
+    </div>
+    <div n="16" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      γράψαι δὲ βούλομαι καὶ ἐξ ὧν ἂν περὶ μεγέθους
+						ἥκιστα ἀποτυγχάνοι τις. ὅτου γὰρ ἂν ὦσιν αἱ κνῆμαι εὐθὺς γιγνομένου
+						ὑψηλόταται, οὗτος μέγιστος γίγνεται. προϊόντος γὰρ τοῦ χρόνου πάντων τῶν
+						τετραπόδων αἱ μὲν κνῆμαι εἰς μέγεθος οὐ μάλα αὔξονται, πρὸς δὲ ταύτας ὡς ἂν
+						συμμέτρως ἔχῃ συναύξεται καὶ τὸ ἄλλο σῶμα.
+     </p>
+     <p lang="it">
+      Voglio scrivere anche da dove riguardo alle dimensioni
+						ἥkista fallendo. Perché se lo dice la gente, succederà
+						Si esalta, diventa il più grande. perché è un prodotto del tempo di ogni cosa
+						i quadrupedi che sposto a misura non aumentano facilmente, ma a questi come se
+						allo stesso modo si unisce anche l'altro corpo.
+     </p>
+     <p lang="en">
+      I want to write also from where about size
+						ἥkista failing them. Because if the people say it, it will happen
+						He is exalted, he becomes the greatest. because it is a product of everything's time
+						quadrupeds that I move to size do not increase easily, but to these as if
+						in the same way, the other body is joined as well.
+     </p>
+    </div>
+    <div n="17" type="section">
+     <p>
+      εἶδος μὲν δὴ πώλου οὕτω δοκιμάζοντες μάλιστʼ ἂν ἡμῖν δοκοῦσι τυγχάνειν
+						εὔποδος καὶ ἰσχυροῦ καὶ εὐσάρκου καὶ εὐσχήμονος καὶ εὐμεγέθους. εἰ δέ τινες
+						αὐξανόμενοι μεταβάλλουσιν, ὅμως οὕτω θαρρῶν τις δοκιμάζοι ἄν· πολὺ γὰρ
+						πλείονες εὔχρηστοι ἐξ αἰσχρῶν ἢ ἐκ τοιούτων αἰσχροὶ γίγνονται.
+     </p>
+     <p lang="it">
+      un tipo che non vendo, sapore così, anzi, se ci proviamo
+						dai piedi facili, forte, carnoso, fortunato e di grande taglia. se non lo fai
+						aumentando, cambiano, ma anche così li provi se;
+						diventano più utili dalla bellezza o da tale bellezza.
+     </p>
+     <p lang="en">
+      a kind that I do not sell, tasting like this, indeed, if we try
+						easy-footed and strong and fleshy and fortunate and of great size. if you don't
+						increasing, they change, but even so you try them if; for very
+						they become more useful from beauty or from such beauty.
+     </p>
+    </div>
+   </div>
+   <div n="2" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὅπως γε μὴν δεῖ πωλεύειν
+      <add>
+       οὐ
+      </add>
+      δοκεῖ
+						ἡμῖν γραπτέον εἶναι· τάττονται μὲν γὰρ δὴ ἐν ταῖς πόλεσιν ἱππεύειν οἱ τοῖς
+						χρήμασί τε ἱκανώτατοι καὶ τῆς πόλεως οὐκ ἐλάχιστον μετέχοντες· πολὺ δὲ
+						κρεῖττον τοῦ πωλοδαμνεῖν
+      <del>
+       εἶναι
+      </del>
+      τῷ μὲν νέῳ εὐεξίας τε ἐπιμελεῖσθαι
+						τῆς ἑαυτοῦ καὶ ἱππικὴν
+      <del>
+       ἐν ἢ
+      </del>
+      ἐπισταμένῳ ἤδη ἱππάζεσθαι μελετᾶν, τῷ
+						δὲ πρεσβυτέρῳ τοῦ τε οἴκου καὶ τῶν φίλων καὶ τῶν πολιτικῶν καὶ τῶν πολεμικῶν
+						μᾶλλον ἢ ἀμφὶ πώλευσιν διατρίβειν.
+     </p>
+     <p lang="it">
+      come se non lo vedi, non lo assaggi
+						È scritto da noi;
+						ricchi e robusti e della città, non ultimi i partecipanti ma non molti;
+						il merito di venderlo è per me nuovo benessere e cura
+						di se stesso ed equestre in o fidato già studio di equitazione, a
+						ma al capofamiglia e agli amici e ai politici e agli uomini di guerra
+						forse o se vendono diatribe.
+     </p>
+     <p lang="en">
+      as if you don't see it, you don't taste it
+						It is written by us;
+						wealthy and able-bodied and of the city, not least participants; but not many
+						the credit of selling it is to me new well-being and care
+						of himself and equestrian in or trusted already riding study, to
+						but to the elder of the house and of the friends and of the politicians and of the men of war
+						maybe or if they sell diatribes.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      ὁ μὲν δὴ ὥσπερ ἐγὼ γιγνώσκων περὶ πωλείας δῆλον ὅτι ἐκδώσει τὸν πῶλον. χρὴ
+						μέντοι, ὥσπερ τὸν παῖδα ὅταν ἐπὶ τέχνην ἐκδῷ, συγγραψάμενον ἃ δεήσει
+						ἐπιστάμενον ἀποδοῦναι οὕτως ἐκδιδόναι. ταῦτα γὰρ ὑπομνήματα ἔσται τῷ
+						πωλοδάμνῃ ὧν δεῖ ἐπιμεληθῆναι, εἰ μέλλει τὸν μισθὸν ἀπολήψεσθαι.
+     </p>
+     <p lang="it">
+      Chi non è informato sulle vendite come me rinuncerà ai soldi. soldi
+						pensieri, come un bambino quando è in giro per l'arte, e scrive tutto ciò che vede
+						se lo si crede, lo si rende così. perché questi ricordi sono con lui
+						venderlo dove viene lavorato, se arriva lo stipendio, verrà incamerato.
+     </p>
+     <p lang="en">
+      The one who is not as knowledgeable about sales as I am will give up the money. money
+						ments, like a child when on art out there, writing whatever he sees
+						if it is believed, it is thus rendered. for these reminders are with him
+						sell it where it is being processed, if the salary is forthcoming, it will be forfeited.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      ὅπως μέντοι πρᾷός τε καὶ χειροήθης καὶ φιλάνθρωπος ὁ πῶλος ἐκδιδῶται τῷ
+						πωλοδάμνῃ ἐπιμελητέον. τὸ γὰρ τοιοῦτον οἴκοι τε τὰ πλεῖστα καὶ διὰ τοῦ
+						ἱπποκόμου ἀποτελεῖται, ἢν ἐπίστηται τὸ μὲν πεινῆν καὶ διψῆν καὶ μυωπίζεσθαι
+						παρασκευάζειν μετʼ ἐρημίας γίγνεσθαι τῷ πώλῳ, τὸ δὲ φαγεῖν καὶ πιεῖν καὶ τὸ
+						τῶν λυπούντων ἀπαλλάττεσθαι διʼ ἀνθρώπων. τούτων γὰρ γιγνομένων ἀνάγκη μὴ
+						μόνον φιλεῖσθαι ἀλλὰ καὶ ποθεῖσθαι ὑπὸ πώλων ἀνθρώπους.
+     </p>
+     <p lang="it">
+      come fanno gli uomini, e sono commossi e filantropici, a cui Paul si dedica
+						vendere perché le case di una persona del genere e la maggior parte di esse a causa sua
+						un cavaliere è, se credi che io sia affamato, assetato e miope
+						si preparano con la solitudine divenendo al palo, ma mangiano e bevono e il
+						dei dolorosi è liberato dagli uomini. perché non c'è bisogno di questi eventi
+						non è solo amato ma anche bramato dagli uomini della pole.
+     </p>
+     <p lang="en">
+      as men do, and are touched and philanthropic, Paul gives himself to
+						sell because the houses of such a person and most of them because of him
+						a horseman is, if you believe that I am hungry and thirsty and myopic
+						they prepare with solitude becoming to the pole, but they eat and drink and the
+						of the sorrowful he is freed by men. for there is no need for these events
+						he is not only loved but also lusted after by pole men.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      καὶ ἅπτεσθαι δὲ χρὴ ὧν ψηλαφωμένων ὁ ἵππος μάλιστα ἥδεται. ταῦτα δʼ ἐστὶ τά
+						τε λασιώτατα καὶ οἷς αὐτὸς ἥκιστʼ ἂν δύναιτο ὁ ἵππος, ἤν τι λυπῇ αὐτόν,
+						ἐπικουρεῖν.
+     </p>
+     <p lang="it">
+      E quando si tratta di quelli palpabili, il cavallo arriva davvero. queste sono le cose
+						il più grasso e chiunque fosse, se il cavallo potesse, o cosa avrebbe avuto pietà di lui,
+						loro aiutano
+     </p>
+     <p lang="en">
+      And when it comes to the palpable ones, the horse actually comes. these are the things
+						the fattest and whoever he was, if the horse could, or what would pity him,
+						they help
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      προστετάχθω δὲ τῷ ἱπποκόμῳ καὶ τὸ διʼ ὄχλου διάγειν καὶ παντοδαπαῖς μὲν ὄψεσι
+						παντοδαποῖς δὲ ψόφοις πλησιάζειν. τούτων δέ, ὅσα ἂν ὁ πῶλος φοβῆται, οὐ
+						χαλεπαίνοντα δεῖ ἀλλὰ πραΰνοντα διδάσκειν ὅτι οὐ δεινά ἐστι. καὶ περὶ μὲν
+						πωλείας ἀρκεῖν μοι δοκεῖ τῷ ἰδιώτῃ εἰπεῖν τοσαῦτα πράττειν.
+     </p>
+     <p lang="it">
+      Mi sono inchinato al cavaliere, e attraverso la folla sono andati ovunque senza vista
+						ma ovunque si avvicinano gli psofos. di questi, per quanto Paolo abbia paura, non lo è
+						debole lo vede ma calmo insegnano che non esiste sofferenza. e su di me
+						della vendita, è sufficiente che il privato gli dica di farlo.
+     </p>
+     <p lang="en">
+      I bowed down to the horseman, and through the crowd they went and everywhere without sight
+						but everywhere the psofos are approaching. of these, as much as Paul is afraid, he is not
+						weak he sees but calm they teach that there is no suffering. and about me
+						of sale, it is enough for the private person to tell them to do so.
+     </p>
+    </div>
+   </div>
+   <div n="3" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὅταν γε μὴν ἱππαζόμενον ὠνῆταί τις, ὑπομνήματα
+						γράψομεν ἃ δεῖ καταμανθάνειν τὸν μέλλοντα μὴ ἐξαπατᾶσθαι ἐν ἱππωνίᾳ. πρῶτον
+						μὲν τοίνυν μὴ λαθέτω αὐτὸν τίς
+      <add>
+       ἡ
+      </add>
+      ἡλικία· ὁ γὰρ μηκέτι ἔχων
+						γνώμονας οὔτʼ ἐλπίσιν εὐφραίνει οὔτε ὁμοίως εὐαπάλλακτος γίγνεται.
+     </p>
+     <p lang="it">
+      quando non li cavalca, ricorda
+						scriviamo ciò che vede e prevediamo il futuro, non fatevi ingannare in ipponia. Primo
+						Non penso che si sia confuso con l'età, perché è così
+						in vista del quale la speranza non si rallegra, né diventa parimenti estatica.
+     </p>
+     <p lang="en">
+      when he is not riding on them, reminders
+						let's write what he sees and predict the future, don't be deceived in ipponia. first
+						I don't think he's mistaken for age, because he has
+						in view of which hope does not rejoice, nor does it likewise become ecstatic.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      ὁπότε δὲ ἡ νεότης σαφής, δεῖ αὖ μὴ λαθεῖν πῶς μὲν εἰς τὸ στόμα δέχεται τὸν
+						χαλινόν, πῶς δὲ περὶ τὰ ὦτα τὴν κορυφαίαν. ταῦτα δʼ ἥκιστʼ ἂν λανθάνοι, εἰ
+						ὁρῶντος μὲν τοῦ ὠνουμένου ἐμβάλλοιτο ὁ χαλινός, ὁρῶντος δʼ ἐξαιροῖτο.
+     </p>
+     <p lang="it">
+      allora il giovane è chiaro, vedi per non sbagliare come in bocca riceve il
+						halinon, ma per quanto riguarda le orecchie della parte superiore. taῦta dʼ ἥkistʼ ἂν lanthanoi, εἰ
+						Vedendo solo colui che veniva premiato, la briglia fu imbalsamata, visto che non era escluso.
+     </p>
+     <p lang="en">
+      then the youth is clear, see so don't be mistaken how in the mouth he receives the
+						halinon, but what about the ears of the top. taῦta dʼ ἥkistʼ ἂν lanthanoi, εἰ
+						Seeing only the one who was rewarded, the bridle was embalmed, seeing that he was not excluded.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      ἔπειτα δὲ προσέχειν δεῖ τὸν νοῦν πῶς ἐπὶ τὸν νῶτον δέχεται τὸν ἀναβάτην.
+						πολλοὶ γὰρ ἵπποι χαλεπῶς προσίενται ἃ πρόδηλα αὐτοῖς ἐστιν ὅτι προσέμενοι
+						πονεῖν ἀναγκασθήσονται.
+     </p>
+     <p lang="it">
+      ma poi si preoccupano di vedere la mente come accoglie il cavaliere sul lato sud.
+						perché ci sono molti che pregano pigramente, il che è loro evidente che aspettano
+						sono costretti a ferire.
+     </p>
+     <p lang="en">
+      but then they take care to see the mind how it receives the rider on the south side.
+						for there are many who pray lazily, which is manifest to them, that they wait
+						they are forced to hurt.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      σκεπτέον δὲ καὶ τόδε, εἰ ἀναβαθεὶς ἐθέλει ἀφʼ ἵππων ἀποχωρεῖν ἢ εἰ παρʼ
+						ἑστηκότας ἱππεύων μὴ ἐκφέρει πρὸς τούτους. εἰσὶ δὲ οἳ διὰ κακὴν ἀγωγὴν καὶ
+						πρὸς τὰς οἴκαδε ἀφόδους φεύγουσιν ἐκ τῶν ἱππασιῶν.
+     </p>
+     <p lang="it">
+      e pensa anche poi, se sarai a cavallo, i cavalli partiranno o se
+						Non portare loro la cavezza da cavaliere. e anche ciò che è dovuto alla cattiva condotta
+						verso gli afodi dell'oikade partono dai cavalli.
+     </p>
+     <p lang="en">
+      and think also then, if you are mounted, will the horses leave or if
+						Don't bring a horseman's halter to them. and what is due to bad conduct as well
+						towards the oikade aphodes they leave from the horses.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      τούς γε μὴν ἑτερογνάθους μηνύει μὲν καὶ ἡ πέδη καλουμένη ἱππασία, πολὺ δὲ
+						μᾶλλον καὶ τὸ μεταβάλλεσθαι τὴν ἱππασίαν. πολλοὶ γὰρ οὐκ ἐγχειροῦσιν
+						ἐκφέρειν, ἢν μὴ ἅμα συμβῇ ἥ τε ἄδικος γνάθος καὶ ἡ πρὸς οἶκον ἐκφορά. δεῖ γε
+						μὴν εἰδέναι καὶ εἰ ἀφεθεὶς εἰς τάχος ἀναλαμβάνεται ἐν βραχεῖ καὶ εἰ
+						ἀποστρέφεσθαι ἐθέλει.
+     </p>
+     <p lang="it">
+      quelli con mascelle diverse vengono querelati anche dal freno chiamato equitazione, ma non molto
+						probabilmente anche il cambio di guida. perché molti non operano
+						pronunciare, a meno che non avvenga la mascella ingiusta e l'espressione verso la casa. Vedere
+						Non lo so e se rimani all'oscuro, viene ripreso in brachei ed ei
+						voltare le spalle volontà.
+     </p>
+     <p lang="en">
+      those with different jaws are also sued by the brake called horse riding, but not much
+						probably also the change of riding. because many do not operate
+						utter, unless it happens that the unjust jaw and the utterance towards the house. see
+						Don't know and if you are left in the dark, it is taken up in brachei and ei
+						turn away will.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      ἀγαθὸν δὲ μὴ ἄπειρον εἶναι εἰ καὶ πληγῇ ἐγερθεὶς ἐθέλει ὁμοίως πείθεσθαι.
+						ἄχρηστον μὲν γὰρ δήπου καὶ οἰκέτης καὶ στράτευμα ἀπειθές· ἵππος δὲ ἀπειθὴς
+						οὐ μόνον ἄχρηστος, ἀλλὰ πολλάκις καὶ ὅσαπερ προδότης διαπράττεται.
+     </p>
+     <p lang="it">
+      Ma il bene non è infinito, se si rialzerà e si ferirà, si convincerà altrettanto.
+						poiché hai parlato di una città, di un esercito e di un esercito;
+						non solo inutile, ma molte volte e ancor più insidioso viene commesso.
+     </p>
+     <p lang="en">
+      But good is not infinite, if he will be raised up and hurt, he will likewise be convinced.
+						for thou hast spoken of a city, and an army, and an army;
+						not only useless, but many times and even more treacherous is committed.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      ἐπεὶ δὲ πολεμιστήριον ἵππον ὑπεθέμεθα ὠνεῖσθαι, ληπτέον πεῖραν ἁπάντων
+						ὅσωνπερ καὶ ὁ πόλεμος πεῖραν λαμβάνει. ἔστι δὲ ταῦτα, τάφρους διαπηδᾶν,
+						τειχία ὑπερβαίνειν, ἐπʼ ὄχθους ἀνορούειν, ἀπʼ ὄχθων καθάλλεσθαι· καὶ πρὸς
+						ἄναντες δὲ καὶ κατὰ πρανοῦς καὶ πλάγια ἐλαύνοντα πεῖραν λαμβάνειν· πάντα γὰρ
+						ταῦτα καὶ τὴν ψυχὴν εἰ καρτερὰ καὶ τὸ σῶμα εἰ ὑγιὲς δοκιμάζει.
+     </p>
+     <p lang="it">
+      Ma sul campo di battaglia, se dovevamo essere uccisi, prendevano tutti
+						Per quanto la guerra ha preso, lui riceve. e queste sono trincee
+						i muri sono sormontati, su sponde si levano, da sponde si saziano e verso
+						e a monte e a valle e a valle ricevettero e ricevettero per sempre;
+						mette alla prova questi e l'anima se è sana e il corpo se è sano.
+     </p>
+     <p lang="en">
+      But on the battlefield, if we were supposed to be killed, they took everyone
+						As much as the war took, he receives. and these are trenches
+						walls are surmounted, on shores they rise, from shores they are satisfied; and towards
+						and upstream and downstream and side-streaming they received and received; for always
+						he tests these and the soul if it is healthy and the body if it is healthy.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      οὐ μέντοι τὸν μὴ καλῶς πάνυ ταῦτα ποιοῦντα ἀποδοκιμαστέον. πολλοὶ γὰρ οὐ διὰ
+						τὸ μὴ δύνασθαι, ἀλλὰ διὰ τὸ ἄπειροι εἶναι τούτων ἐλλείπονται. μαθόντες δὲ
+						καὶ ἐθισθέντες καὶ μελετήσαντες καλῶς ἂν ταῦτα πάντα ποιοῖεν, εἴ γʼ ἄλλως
+						ὑγιεῖς καὶ μὴ κακοὶ εἶεν.
+     </p>
+     <p lang="it">
+      Non biasimarlo per non aver fatto bene perché queste cose sono inaccettabili. perché molti no
+						Non è possibile, ma a causa dell'infinito questi mancano. mentre impari
+						e ben adattato e ben studiato se tutte queste cose
+						sono sani e non fanno male.
+     </p>
+     <p lang="en">
+      Don't blame him for not doing well because these things are unacceptable. because many do not
+						It is not possible, but because of the infinite, these are lacking. while learning
+						and well-adjusted and well-studied if all these things
+						they are healthy and not bad.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      τούς γε μέντοι ὑπόπτας φύσει φυλακτέον. οἱ γὰρ ὑπέρφοβοι βλάπτειν μὲν τοὺς
+						πολεμίους ἀφʼ ἑαυτῶν οὐκ ἐῶσι, τὸν δὲ ἀναβάτην ἔσφηλάν τε πολλάκις καὶ εἰς
+						τὰ χαλεπώτατα ἐνέβαλον.
+     </p>
+     <p lang="it">
+      gli uomini sospettano un talismano. perché i timorosi mi fanno del male
+						Non sono guerrieri di per sé, ma spesso attaccano il cavaliere e lo intromettono
+						furono inviati i peggiori.
+     </p>
+     <p lang="en">
+      the ge ments suspecting a talisman. because the fearful harm me
+						They are not warriors by themselves, but they often attack the rider and in
+						the worst ones were sent.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      δεῖ δὲ καὶ εἴ τινα χαλεπότητα ἔχοι ὁ ἵππος καταμανθάνειν, εἴτε πρὸς ἵππους
+						εἴτε πρὸς ἀνθρώπους, καὶ εἰ δυσγάργαλίς γε εἴη· πάντα γὰρ ταῦτα χαλεπὰ τοῖς
+						κεκτημένοις γίγνεται.
+     </p>
+     <p lang="it">
+      e vedi se hai qualche lassismo, il cavallo cadrà, sia verso il cavallo
+						sia per gli uomini, e se sei scontento, sia;
+						acquisito diventa.
+     </p>
+     <p lang="en">
+      and see if you have any laxity, the horse will fall, either towards the horse
+						be it to men, and if you are displeased, be it;
+						acquired becomes.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      τὰς δέ γε τῶν χαλινώσεων καὶ ἀναβάσεων ἀποκωλύσεις καὶ τἆλλα δὴ νεύματα πολὺ
+						ἂν ἔτι μᾶλλον καταμάθοι τις, εἰ πεπονηκότος ἤδη τοῦ ἵππου πάλιν πειρῷτο
+						ποιεῖν ταὐτὰ ὅσαπερ πρὶν ἄρξασθαι ἱππεύειν. ὅσοι δʼ ἂν πεπονηκότες ἐθέλωσι
+						πάλιν ὑποδύεσθαι πόνους ἱκανὰ τεκμήρια παρέχονται ταῦτα ψυχῆς καρτερᾶς.
+     </p>
+     <p lang="it">
+      Non dare troppi cenni alle redini e alle salite.
+						se li impari di più, sperimenterai già di nuovo il cavallo
+						chi sono questi osaper prima dell'arkstha che cavalcano. Quelli che non mangiano meloni volentieri
+						anche in questo caso, ha sopportato dolori, prove sufficienti sono fornite di queste carteras dell'anima.
+     </p>
+     <p lang="en">
+      Don't give too many nods to reins and climbs.
+						if you learn them more, you will already experience the horse again
+						who are these osapers before arkstha they ride. Those who don't eat melons willingly
+						again, he endured pains, sufficient proofs are provided of these soul carteras.
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      ὡς δὲ συνελόντι εἰπεῖν, ὅστις εὔπους μὲν εἴη, πρᾷος δέ, ἀρκούντως δὲ ποδώκης,
+						ἐθέλοι δὲ καὶ δύναιτο πόνους ὑποφέρειν, πείθοιτο δὲ μάλιστα, οὗτος ἂν
+						εἰκότως ἀλυπότατός τʼ εἴη καὶ σωτηριώτατος τῷ ἀναβάτῃ ἐν τοῖς πολεμικοῖς. οἱ
+						δὲ ἢ διὰ βλακείαν ἐλάσεως πολλῆς δεόμενοι ἢ διὰ τὸ ὑπέρθυμοι εἶναι πολλῆς
+						θωπείας τε καὶ πραγματείας ἀσχολίαν μὲν ταῖς χερσὶ τοῦ ἀναβάτου παρέχουσιν,
+						ἀθυμίαν δʼ ἐν τοῖς κινδύνοις.
+     </p>
+     <p lang="it">
+      ma come si suol dire, chi è felice con me, non recita, ma tu basti,
+						ed era disposto e capace di sopportare i dolori, ed era perfino convinto, che se
+						anzi, era misericordioso e salvatore del cavaliere tra i guerrieri. IL
+						Ma o per la stupidità di essere legati a molti o perché sono disposti ad essere in molti
+						l'equitazione e i trattati riguardanti le mani del cavaliere forniscono,
+						ἐθιμιαν δʼ ἐν τοῖς κύδινοιοι.
+     </p>
+     <p lang="en">
+      but as they say, those who are happy with me, don't act, but you are enough,
+						and he was willing and able to suffer pains, and he was even convinced, that if
+						indeed, he was merciful and savior to the rider among the warriors. the
+						But either because of the stupidity of being tied to many or because they are willing there are many
+						horsemanship and treatises of concern with the hands of the rider provide,
+						ἐθιμιαν δʼ ἐν τοῖς κύδινοιοι.
+     </p>
+    </div>
+   </div>
+   <div n="4" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὅταν γε μὴν ἀγασθεὶς ἵππον πρίηταί τις καὶ
+						οἴκαδε ἀγάγηται, καλὸν μὲν ἐν τοιούτῳ τῆς οἰκίας τὸν σταθμὸν εἶναι ὅπου
+						πλειστάκις ὁ δεσπότης ὄψεται τὸν ἵππον· ἀγαθὸν δὲ οὕτω κατεσκευάσθαι τὸν
+						ἱππῶνα, ὥστε μηδὲν μᾶλλον οἷόν τʼ εἶναι τὸν τοῦ ἵππου σῖτον κλαπῆναι ἐκ τῆς
+						φάτνης ἢ τὸν τοῦ δεσπότου ἐκ τοῦ ταμιείου. ὁ δὲ τούτου ἀμελῶν ἐμοὶ μὲν
+						ἑαυτοῦ δοκεῖ ἀμελεῖν· δῆλον γὰρ ὅτι ἐν τοῖς κινδύνοις τὸ αὑτοῦ σῶμα τῷ ἵππῳ
+						ὁ δεσπότης παρακατατίθεται.
+     </p>
+     <p lang="it">
+      quando non li ami, li toccano anche loro
+						dovunque vada, ebbene in quella casa la stazione è dove si trova
+						il più delle volte il despota guarda l'ippopotamo;
+						cavallo, affinché nessuno che possiede il cavallo venga rubato al
+						mangiatoia o despota dal tesoro. Ma sono io che sono negligente in questo
+						si dimostra negligente, perché dicono che il suo corpo è in pericolo per il cavallo
+						il despota si arrende.
+     </p>
+     <p lang="en">
+      when you don't love them, they touch them too
+						wherever he goes, well in that house the station is where he is
+						most of the time the despot looks at the hippopotamus;
+						horse, so that no one who owns the horse is stolen from the
+						manger or despot's from the treasury. But I am the one who is negligent of this
+						he proves himself negligent, for they say that his body is in danger to the horse
+						the despot surrenders.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      ἔστι δὲ οὐ μόνον τοῦ μὴ κλέπτεσθαι ἕνεκα τὸν σῖτον ἀγαθὸς ὁ ἐχυρὸς ἱππών,
+						ἀλλʼ ὅτι καὶ ὅταν
+      <del>
+       μὴ
+      </del>
+      ἐκκομίζῃ τὸν σῖτον ὁ ἵππος φανερὸν γίγνεται.
+						τούτου δʼ ἄν τις αἰσθανόμενος γιγνώσκοι ὅτι ἢ τὸ σῶμα ὑπεραιμοῦν δεῖται
+						θεραπείας ἢ κόπου ἐνόντος δεῖται ἀναπαύσεως, ἢ κριθίασις ἢ ἄλλη τις ἀρρωστία
+						ὑποδύεται. ἔστι δὲ ὥσπερ ἀνθρώπῳ, οὕτω καὶ ἵππῳ ἀρχόμενα πάντα εὐιατότερα ἢ
+						ἐπειδὰν ἐνσκιρωθῇ τε καὶ ἐξαμαρτηθῇ τὰ νοσήματα.
+     </p>
+     <p lang="it">
+      ma non solo il grano non viene rubato, la generosità del cavallo è buona,
+						Ma perché anche quando non miete il grano, il cavallo diventa evidente.
+						Pertanto, se la persona che li sente sa che il corpo sta sanguinando, si vede
+						trattamento o travaglio a riposo, oppure critiasi o altra malattia
+						rappresenta. Ma quanto all'uomo, così al cavallo, i principi sono sempre più beati, o
+						perché oscura e pecca le malattie.
+     </p>
+     <p lang="en">
+      but not only that the wheat is not stolen, the horse's bounty is good,
+						But because even when he does not harvest the wheat, the horse becomes obvious.
+						Therefore, if the person who feels them knows that the body is bleeding, it is seen
+						treatment or labor while resting, or critiasis or other illness
+						represents. But as to man, so to horse, princes are always more blessed, or
+						because it darkens and sins the diseases.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὥσπερ δὲ τοῦ ἵππου σίτου τε καὶ γυμνασίων
+						ἐπιμελητέον, ὅπως ἂν τὸ σῶμα ἰσχύῃ, οὕτω καὶ τοὺς πόδας ἀσκητέον. τὰ μὲν
+						τοίνυν ὑγρά τε καὶ λεῖα τῶν σταθμῶν λυμαίνεται καὶ ταῖς εὐφυέσιν ὁπλαῖς· τὰ
+						δέ, ὡς μὲν μὴ ὑγρὰ εἶναι, ἀπόρρυτα, ὡς δὲ μὴ λεῖα, λίθους ἔχοντα
+						κατορωρυγμένους, προσαλλήλους, παραπλησίους ὁπλαῖς τὸ μέγεθος
+      <gap/>
+      τὰ γὰρ
+						τοιαῦτα σταθμὰ
+      <gap/>
+      καὶ ἐφεστηκότων ἅμα στερεοῖ τοὺς πόδας.
+     </p>
+     <p lang="it">
+      per quanto riguarda il cavallo di grano e gli studenti delle scuole superiori
+						Abbi cura di te, come se il corpo fosse forte, così i piedi dovrebbero essere ascetici. tema
+						sono bagnati e sciolti i bottini delle stazioni e le armi del genio;
+						e, come se non fossero bagnati, erano secreti e, come se non fossero sciolti, avevano pietre
+						saccheggiatori, reclute, armi ravvicinate, le dimensioni del
+						tale posizione e fa appello se i piedi sono fermi.
+     </p>
+     <p lang="en">
+      as for the wheat horse and high school students
+						Take care, as if the body is strong, so should the feet be ascetic. the me
+						they are wet and the spoils of the stations are loosed and the weapons of genius;
+						and, as if they were not wet, they were secreted, and as if they were not loose, having stones
+						looters, recruits, close-up weapons, the size of the
+						such a position and appeals if the feet are firm.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      ἔπειτά γε μὴν τῷ ἱπποκόμῳ ἐξακτέον μὲν τὸν ἵππον ὅπου ψήξει, μεταδετέον δὲ
+						μετὰ τὸ ἄριστον ἀπὸ τῆς φάτνης, ἵνʼ ἥδιον ἐπὶ τὸ δεῖπνον ἴῃ. ὧδε δʼ ἂν αὖ ὁ
+						ἔξω σταθμὸς βέλτιστος εἴη καὶ τοὺς πόδας καρτερύνοι, εἰ λίθων στρογγύλων
+						ἀμφιδόχμων ὅσον μνααίων ἁμάξας τέτταρας καὶ πέντε χύδην καταβάλοι,
+						περιχειλώσας σιδήρῳ, ὡς ἂν μὴ σκεδαννύωνται· ἐπὶ γὰρ τούτων ἑστηκὼς ὥσπερ ἐν
+						ὁδῷ λιθώδει ἀεὶ μέρος
+      <add>
+       τι
+      </add>
+      τῆς ἡμέρας πορεύοιτο
+      <add>
+       ἄν
+      </add>
+      ·
+     </p>
+     <p lang="it">
+      allora non dire al cavaliere cosa fare con il cavallo
+						con il meglio della mangiatoia, affinché Dio sia presente nella cena. ὧδε δʼ ἂν αὖ ὁ
+						fuori stazione, anche i piedi erano squamosi, in pietre rotonde
+						ambivalenti purché abbiano quattro carrozze e cinque carri alla rinfusa,
+						ricoprendoli di ferro, come se non fossero rotti; poiché su questi stavo come in
+						La strada sta scendendo, in che parte della giornata ha camminato?
+     </p>
+     <p lang="en">
+      then don't tell the horseman what to do with the horse
+						with the best from the manger, so that God may be upon the supper. ὧδε δʼ ἂν αὖ ὁ
+						out of station, the feet were also scaly, in round stones
+						ambivalent as long as they have four carriages and five bulk carts,
+						covering them with iron, as if they were not broken; for upon these I stood as in
+						The road is winding down, what part of the day was he walking if;
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ἀνάγκη δὲ καὶ ψηχόμενον καὶ μυωπιζόμενον χρῆσθαι ταῖς ὁπλαῖς καθάπερ ὅταν
+						βαδίζῃ. καὶ τὰς χελιδόνας δὲ τῶν ποδῶν οἱ οὕτω κεχυμένοι λίθοι στερεοῦσιν.
+						ὡς δὲ περὶ τῶν ὁπλῶν ὅπως στερεαὶ ἔσονται ἐπιμελητέον, οὕτω καὶ τὰ περὶ τὸ
+						στόμα αὖ ὅπως μαλακὰ ἔσται ἐπιμελεῖσθαι δεῖ. τὰ δʼ αὐτὰ ἀνθρώπου τε σάρκα
+						καὶ ἵππου στόμα ἁπαλύνει.
+     </p>
+     <p lang="it">
+      ma è necessario usare le armi con attenzione e in modo ristretto quando
+						camminare E le rondini dei piedi restano fissate alle pietre così squadrate.
+						Per quanto riguarda le armi, poiché sono solide, lo sono anche le cose che riguardano
+						la bocca è morbida com'è, prenditene cura, vedi. Questa è carne umana
+						e dove la bocca si addolcisce.
+     </p>
+     <p lang="en">
+      but it is necessary to use the weapons carefully and narrowly when
+						walk And the swallows of the feet are fixed by the stones thus hewn.
+						As for the weapons, as they are solid, so are the things about the
+						mouth aὖ as soft as it is, take care of it, see. These are human flesh
+						and where the mouth softens.
+     </p>
+    </div>
+   </div>
+   <div n="5" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἱππικοῦ δὲ ἀνδρὸς ἡμῖν δοκεῖ εἶναι καὶ τὸν
+						ἱπποκόμον πεπαιδευκέναι ἃ δεῖ περὶ τὸν ἵππον πράττειν. πρῶτον μὲν τοίνυν τῆς
+						ἐπιφατνιδίας φορβειᾶς ἐπίστασθαι αὐτὸν δεῖ μήποτε τὸ ἅμμα ποιεῖσθαι ἔνθαπερ
+						ἡ κορυφαία περιτίθεται. πολλάκις γὰρ κνῶν ὁ ἵππος ἐπὶ τῇ φάτνῃ τὴν κεφαλήν,
+						εἰ μὴ ἀσινὴς ἡ φορβειὰ περὶ τὰ ὦτα ἔσται, πολλάκις ἂν ἕλκη ποιοίη.
+						ἑλκουμένων γε μὴν τούτων ἀνάγκη τὸν ἵππον καὶ περὶ τὸ χαλινοῦσθαι καὶ περὶ
+						τὸ ψήχεσθαι δυσκολώτερον εἶναι.
+     </p>
+     <p lang="it">
+      E il cavaliere che proviamo è anche lui
+						ippokomon pepedeukenai cosa vede su hippon pratein. Prima di tutto la guardano
+						epifatnidias phorveias pistastias lo vede una volta l'amma poeisstia enthaper
+						viene menzionata la parte superiore. perché spesso il cavallo nella mangiatoia si morde la testa,
+						Se non è un asino, la paura è per gli occhi, spesso se si tratta di un'ulcera.
+						ferito, non c'è bisogno del cavallo, delle briglie e altro ancora
+						scrivere è più difficile.
+     </p>
+     <p lang="en">
+      And the horseman we try is also him
+						ippokomon pepedeukenai what he sees about hippon pratein. First of all, they look at her
+						epifatnidias phorveias pistastias him see once the amma poeisstia enthaper
+						the top is mentioned. for the horse often bites his head in the manger,
+						If it is not a donkey, the fear about the eyes is, often if it is an ulcer.
+						wounded, there is no need for the horse and about the bridle and about
+						writing is more difficult.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      ἀγαθὸν δὲ καὶ τὸ τετάχθαι τῷ ἱπποκόμῳ καθʼ ἡμέραν τὴν κόπρον καὶ τὰ
+						ὑποστρώματα τοῦ ἵππου ἐκφέρειν εἰς ἓν χωρίον. τοῦτο γὰρ ποιῶν αὐτός τʼ ἂν
+						ῥᾷστα ἀπαλλάττοι καὶ ἅμα τὸν ἵππον ὠφελοίη.
+     </p>
+     <p lang="it">
+      e il bene e l'ordine al cavaliere ogni giorno lo sterco e il
+						sottopelo del cavallo portato in un villaggio. perché lui è così
+						ῥᾷsta apallattoi καὶ ἐμα τον ἠππον οφελοι.
+     </p>
+     <p lang="en">
+      and the good and the order to the horseman every day the dung and the
+						horse's undercoats brought to a village. because this is who he is
+						ῥᾷsta apallattoi καὶ ἐμα τον ἠππον οφελοι.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      εἰδέναι δὲ χρὴ τὸν ἱπποκόμον καὶ τὸν κημὸν περιτιθέναι τῷ ἵππῳ, καὶ ὅταν ἐπὶ
+						ψῆξιν καὶ ὅταν ἐπὶ καλίστραν ἐξάγῃ. καὶ ἀεὶ δὲ ὅποι ἂν ἀχαλίνωτον ἄγῃ κημοῦν
+						δεῖ. ὁ γὰρ κημὸς ἀναπνεῖν μὲν οὐ κωλύει, δάκνειν δὲ οὐκ ἐᾷ· καὶ τὸ
+						ἐπιβουλεύειν δὲ περικείμενος μᾶλλον ἐξαιρεῖ τῶν ἵππων·
+     </p>
+     <p lang="it">
+      ma conosce l'uso del cavaliere e del cavallo, e quando montarlo
+						lasciatela raffreddare anche quando sarà sformata su un piatto. E chiunque sarà sfrenato perirà
+						Vedere. poiché la sostanza chimica non gli impedisce la respirazione e non brucia;
+						ma consiglia di escludere piuttosto i cavalli;
+     </p>
+     <p lang="en">
+      but he knows the use of the horseman and the horse, and when on
+						let it cool even when it is taken out on a plate. And whosoever shall be unbridled shall perish
+						see. for the chemical does not obstruct its breathing, and it does not burn; and the
+						but he advises that he should rather exclude the horses;
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      καὶ μὴν δεσμεύειν τὸν ἵππον ἄνωθεν τῆς κεφαλῆς δεῖ· πάντα γὰρ ὁπόσα ἂν
+						δύσκολʼ ᾖ περὶ τὸ πρόσωπον ὁ ἵππος ἐκνεύειν πέφυκεν ἄνω· ἐκνεύων γε μὴν οὕτω
+						δεδεμένος χαλᾷ μᾶλλον ἢ διασπᾷ τὰ δεσμά.
+     </p>
+     <p lang="it">
+      e non legare il cavallo sopra la testa, per nessun motivo
+						è difficile che la faccia del cavallo voli in alto;
+						chi è legato rompe o rompe i legami.
+     </p>
+     <p lang="en">
+      and do not bind the horse above the head, for whatever
+						it is difficult for the face of the horse to fly up; fly not like this
+						he who is bound breaks or breaks the bonds.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ἐπειδὰν δὲ ψήχῃ, ἄρχεσθαι μὲν ἀπὸ τῆς κεφαλῆς καὶ τῆς χαίτης· μὴ γὰρ καθαρῶν
+						τῶν ἄνω ὄντων μάταιον τὰ κάτω καθαίρειν. ἔπειτα δὲ κατὰ μὲν τὸ ἄλλο σῶμα
+						πᾶσι τοῖς τῆς καθάρσεως ὀργάνοις ἀνιστάντα δεῖ τὴν τρίχα σοβεῖν τὴν κόνιν
+						κατὰ φύσιν τῆς τριχός· τῶν δʼ ἐν τῇ ῥάχει τριχῶν ἄλλῳ μὲν ὀργάνῳ οὐδενὶ δεῖ
+						ἅπτεσθαι, ταῖς δὲ χερσὶ τρίβειν καὶ ἁπαλύνειν ᾗπερ φύσει κέκλινται· ἥκιστα
+						γὰρ ἂν βλάπτοι τὴν ἕδραν τοῦ ἵππου.
+     </p>
+     <p lang="it">
+      ma se si secca, comincia solo dalla testa e dalla criniera, perché non sono pulite;
+						degli esseri superiori invano vengono purificati quelli inferiori. e poi l'altro corpo si voltò verso di me
+						tutti gli organi di purificazione resistettero, vedono i capelli, seminano la polvere
+						secondo la natura dei capelli; di quelli che sono nei capelli, nessuno vede altro che un organo
+						Sto male, ma quelle mani si sfregano e si ammorbidiscono sulla natura si appoggiano;
+						perché se danneggi la sella del cavallo.
+     </p>
+     <p lang="en">
+      but if it dries, it begins only from the head and the mane; for they are not clean
+						of the higher beings in vain the lower ones are purified. and then the other body turned towards me
+						all the organs of purification resisted, see the hair, sow the dust
+						according to the nature of the hair; of those that are in the hair, no one sees anything other than an organ
+						I'm sick, but those hands rub and soften over nature they lean;
+						for if you harm the horse's saddle.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      ὕδατι δὲ καταπλύνειν τὴν κεφαλὴν χρή· ὀστώδης γὰρ οὖσα, εἰ σιδήρῳ ἢ ξύλῳ
+						καθαίροιτο, λυποῖ ἂν τὸν ἵππον. καὶ τὸ προκόμιον δὲ χρὴ βρέχειν· καὶ γὰρ
+						αὗται εὐμήκεις οὖσαι αἱ τρίχες ὁρᾶν μὲν οὐ κωλύουσι τὸν ἵππον, ἀποσοβοῦσι δὲ
+						ἀπὸ τῶν ὀφθαλμῶν τὰ λυποῦντα. καὶ τοὺς θεοὺς δὲ οἴεσθαι χρὴ δεδωκέναι ταύτας
+						τὰς τρίχας ἵππῳ ἀντὶ τῶν μεγάλων ὤτων ἃ ὄνοις τε καὶ ἡμιόνοις ἔδοσαν
+						ἀλεξητήρια πρὸ τῶν ὀμμάτων.
+     </p>
+     <p lang="it">
+      Ma l'acqua dovrebbe essere lavata sopra la testa, perché è ossea, sia di ferro che di legno.
+						chatheiroito, lypoῖ ἕν τὸν ἵπν. e il precomio quando piove e perché;
+						Sono peli lunghi che non ostacolano il cavallo, ma non disturbano
+						dagli occhi tristi. E anche gli dei sono conosciuti come questi
+						i crini di un cavallo invece dei grandi sacrifici che uomini e donne hanno dato
+						seggi elettorali davanti al popolo.
+     </p>
+     <p lang="en">
+      But water should be washed over the head, for it is bony, whether of iron or wood.
+						chatheiroito, lypoῖ ἕν τὸν ἵπν. and the precomium when it rains; and because
+						These are long hairs that do not hinder the horse, but do not disturb
+						from the sad eyes. And the gods are also known as these
+						the hairs of a horse instead of the great sacrifices that men and women gave
+						polling stations in front of the people.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      καὶ οὐρὰν δὲ καὶ χαίτην πλύνειν χρή, ἐπείπερ αὔξειν δεῖ τὰς τρίχας, τὰς μὲν
+						ἐν τῇ οὐρᾷ, ὅπως ἐπὶ πλεῖστον ἐξικνούμενος ἀποσοβῆται ὁ ἵππος τὰ λυποῦντα,
+						τὰς δὲ ἐν τῷ τραχήλῳ, ὅπως τῷ ἀναβάτῃ ὡς ἀφθονωτάτη ἀντίληψις ᾖ.
+     </p>
+     <p lang="it">
+      e se non vogliono nemmeno lavarli, guarda i capelli,
+						nel cielo, come l'ippopotamo scaccia i dolori,
+						e quelli del collo, come il cavaliere percepisce come abbondanti x.
+     </p>
+     <p lang="en">
+      and if they don't even want to wash it, look at the hair,
+						in the sky, as the hippo casts away the sorrows,
+						and those in the neck, as the rider perceives as abundant x.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      δέδοται δὲ παρὰ θεῶν καὶ ἀγλαΐας ἕνεκεν ἵππῳ χαίτη, καὶ προκόμιον δὲ καὶ
+						οὐρά. τεκμήριον δέ· αἱ γὰρ ἀγελαῖαι τῶν ἵππων οὐχ ὁμοίως ὑπομένουσι τοὺς
+						ὄνους ἐπὶ τῇ ὀχείᾳ ἕως ἂν κομῶσιν· οὗ ἕνεκα καὶ ἀποκείρουσι πρὸς τὴν ὀχείαν
+						τὰς ἵππους ἅπαντες οἱ ὀνοβατοῦντες.
+     </p>
+     <p lang="it">
+      ma viene dato oltre agli dei e all'aglaia, la criniera di un cavallo e
+						coda. non presumere; perché anche i cavalli dei cavalli non sopportano il
+						cavalli sul fiume finché non muoiono
+						i cavalli ovunque i cavalieri.
+     </p>
+     <p lang="en">
+      but it is given in addition to gods and aglaia, a horse's mane, and
+						tail. do not presume; for the horses' horses do not likewise endure the
+						horses on the river until they die
+						the horses everywhere the riders.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      τήν γε μὴν τῶν σκελῶν κατάπλυσιν ἀφαιροῦμεν· ὠφελεῖ μὲν γὰρ οὐδέν, βλάπτει δὲ
+						τὰς ὁπλὰς ἡ καθʼ ἑκάστην ἡμέραν βρέξις. καὶ τὴν ὑπὸ γαστέρα δὲ ἄγαν κάθαρσιν
+						μειοῦν χρή· αὕτη γὰρ λυπεῖ μὲν μάλιστα τὸν ἵππον, ὅσῳ δʼ ἂν καθαρώτερα ταῦτα
+						γένηται, τοσούτῳ πλείω τὰ λυποῦντα ἁθροίζει ὑπὸ τὴν γαστέρα·
+     </p>
+     <p lang="it">
+      rimuoviamo il lavaggio dei fili, perché non giova a nulla, ma fa male
+						le armi sono bagnate ogni giorno. e quello sotto lo stomaco fu purificato
+						sono di minor utilità; perché lei si addolora anche più dell'ippopotamo, per il quale queste cose sono più pure
+						si nasce, tanto che quelle tristi si sommano sotto lo stomaco;
+     </p>
+     <p lang="en">
+      we remove the washing of the strands, because it benefits nothing, but harms
+						the weapons are wet every day. and the one under the stomach was cleansed
+						they are of less use; for she grieves even more than the hippopotamus, to whom these things are more pure
+						it is born, so much so that the sad ones add up under the stomach;
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      ἢν δὲ καὶ πάνυ διαπονήσηταί τις ταῦτα, οὐ φθάνει
+      <del>
+       τʼ
+      </del>
+      ἐξαγόμενος ὁ
+						ἵππος καὶ εὐθὺς ὅμοιός ἐστι τοῖς ἀκαθάρτοις. ταῦτα μὲν οὖν ἐᾶν χρή· ἀρκεῖ δὲ
+						καὶ ἡ τῶν σκελῶν ψῆξις αὐταῖς ταῖς χερσὶ γιγνομένη.
+     </p>
+     <p lang="it">
+      Ma anche se queste cose vengono sopportate, colui che sarà portato fuori non arriverà
+						Un cavallo e un cavallo sono simili per gli impuri. Queste cose non servono, ma bastano
+						E i fili di questi abiti di seconda mano.
+     </p>
+     <p lang="en">
+      But even if these things are endured, the one who is brought out will not reach
+						A horse and a horse are alike to the impure. These things are of no use, but it is enough
+						And the strands of these hand-me-downs.
+     </p>
+    </div>
+   </div>
+   <div n="6" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      δηλώσομεν δὲ καὶ τοῦτο, ὡς ἂν ἀβλαβέστατα μέν
+						τις ἑαυτῷ, τῷ δʼ ἵππῳ ὠφελιμώτατα
+      <add>
+       τὰ πρόσθεν
+      </add>
+      ψήχοι. ἢν μὲν γὰρ ἐς
+						τὸ αὐτὸ βλέπων τῷ ἵππῳ καθαίρῃ, κίνδυνος καὶ τῷ γόνατι καὶ τῇ ὁπλῇ εἰς τὸ
+						πρόσωπον πληγῆναι·
+     </p>
+     <p lang="it">
+      e affermiamo anche questo, come se per me fosse innocuo
+						l'ἑαυτῷ, τῷ δʼ ἵππῳ ὠelimotata te presente psichoi. se non tu
+						questo vedono al cavallo pulito, pericolo anche al ginocchio e all'arma nel
+						una persona è ferita;
+     </p>
+     <p lang="en">
+      and we state this too, as if it were harmless to me
+						the ἑαυτῷ, τῷ δʼ ἵππῳ ὠelimotata te present psichoi. if not you
+						this they see to the clean horse, danger also to the knee and to the weapon in the
+						a person is hurt;
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      ἢν δὲ ἀντία τῷ ἵππῳ ὁρῶν καὶ ἔξω τοῦ σκέλους, ὅταν καθαίρῃ, κατὰ τὴν
+						ὠμοπλάτην καθίζων ἀποτρίβῃ, οὕτω πάθοι μὲν ἂν οὐδέν, δύναιτο δʼ ἂν καὶ τὴν
+						χελιδόνα τοῦ ἵππου θεραπεύειν ἀναπτύσσων τὴν ὁπλήν. ὡς δʼ αὔτως καὶ τὰ
+						ὄπισθεν σκέλη καθαιρέτω.
+     </p>
+     <p lang="it">
+      ma se il cavallo esce dal limite e dalla gamba, quando è pulito, secondo il
+						distoglie le scapole, quindi passioni se non altro, potere se e il
+						deglutizione del cavallo che guarisce sviluppando lo zoccolo. così come
+						arti posteriori decumbenti.
+     </p>
+     <p lang="en">
+      but if the horse goes out of bounds and out of the leg, when he is clean, according to the
+						he averts his shoulder blades, so passions if nothing, power if and the
+						swallow of the horse healing developing the hoof. as well as
+						hind limbs decumbent.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      εἰδέναι δὲ χρὴ τὸν περὶ τὸν ἵππον ὅτι καὶ ταῦτα καὶ τἆλλα πάντα ὅσα πράττειν
+						δεῖ ὡς ἥκιστα χρὴ κατὰ
+      <del>
+       τὸ
+      </del>
+      πρόσωπόν τε καὶ οὐρὰν ἀντίον ἑαυτὸν
+						ποιήσαντα προσιέναι· ἢν γὰρ ἐπιχειρῇ ἀδικεῖν, κατʼ ἀμφότερα ταῦτα κρείττων ὁ
+						ἵππος ἀνθρώπου. ἐκ πλαγίου δʼ ἄν τις προσιὼν ἀβλαβέστατα μὲν ἑαυτῷ, πλεῖστα
+						δʼ ἂν ἵππῳ δύναιτο χρῆσθαι.
+     </p>
+     <p lang="it">
+      ma sa dell'ippopotamo, perché fa sia questi che tutto ciò
+						guarda come ha comprato soldi in faccia e niente contro se stesso
+						poiché se commette un'ingiustizia, secondo entrambi, il
+						cavallo umano. di lato, vedi se li affronta indenne con se stesso, soprattutto
+						δʼ ἂν ἵππῳ dynaito usato.
+     </p>
+     <p lang="en">
+      but he knows about the hippopotamus, because both these and all that he does
+						see how he bought money to his face and nothing against himself
+						for if he commits injustice, according to both of these, the
+						human horse. from the side, see if he faces them unscathed with himself, mostly
+						δʼ ἂν ἵππῳ dynaito used.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      ἐπειδὰν δὲ ἄγειν δέῃ τὸν ἵππον, τὴν μὲν ὄπισθεν ἀγωγὴν διὰ τάδε οὐκ
+						ἐπαινοῦμεν, ὅτι τῷ μὲν ἄγοντι οὕτως ἥκιστα ἔστι φυλάξασθαι, τῷ δὲ ἵππῳ οὕτως
+						μάλιστα ἔξεστι ποιῆσαι ὅ τι ἂν βούληται.
+     </p>
+     <p lang="it">
+      perché se vuole il cavallo, mi spingerà indietro
+						ti lodiamo, perché così sei stato salvato per il cavaliere e così per il cavallo
+						infatti puoi fare quello che vuoi.
+     </p>
+     <p lang="en">
+      because if he wants the horse, he will drive me backwards
+						we praise you, because to the rider thus you have been saved, and to the horse thus
+						in fact, you can do whatever you want.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      τὸ δʼ αὖ ἔμπροσθεν μακρῷ τῷ ἀγωγεῖ προϊόντα διδάσκειν ὑφηγεῖσθαι τὸν ἵππον
+						διὰ τάδε αὖ ψέγομεν· ἔξεστι μὲν γὰρ τῷ ἵππῳ καθʼ ὁπότερʼ ἂν βούληται τῶν
+						πλαγίων κακουργεῖν, ἔξεστι δὲ ἀναστρεφόμενον ἀντίον γίγνεσθαι τῷ ἄγοντι.
+     </p>
+     <p lang="it">
+      τὸ δʼ ὖ ἔprosthen makrῷ τῷ ἐγογεῖ i prodotti insegnano ἔφηγεῖσται τὸν ἠπόν
+						perché così e così mentiamo;
+						criminali laterali, ma ha mostrato il contrario del diventare un giocatore.
+     </p>
+     <p lang="en">
+      τὸ δʼ ὖ ἔprosthen makrῷ τῷ ἐγογεῖ products teach ἔφηγεῖσται τὸν ἠπόν
+						for so and so we lie;
+						lateral criminals, but he showed a reversed opposite of becoming a player.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      ἁθρόοι δὲ δὴ ἵπποι πῶς ἄν ποτε ἀλλήλων δύναιντο ἀπέχεσθαι οὕτως ἀγόμενοι; ἐκ
+						πλαγίου δὲ ἵππος ἐθισθεὶς παράγεσθαι ἥκιστα μὲν ἂν καὶ ἵππους καὶ ἀνθρώπους
+						δύναιτʼ ἂν κακουργεῖν, κάλλιστα δʼ ἂν παρεσκευασμένος τῷ ἀναβάτῃ εἴη καὶ εἴ
+						ποτε ἐν τάχει ἀναβῆναι δεήσειεν.
+     </p>
+     <p lang="it">
+      Ma come mai se altri hanno potuto partire in quel modo? da
+						e il fianco del cavallo, e i cavalli e gli uomini
+						possono fare del male, beh non se sono preparati per il cavaliere
+						quando sale veloce.
+     </p>
+     <p lang="en">
+      But how come, if others were able to leave in such a manner? from
+						and the side of the horse, and the horses and men
+						they can do evil, well not if they are prepared for the rider
+						when he climbs fast.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      ἵνα δὲ ὁ ἱπποκόμος καὶ τὸν χαλινὸν ὀρθῶς ἐμβάλῃ, πρῶτον μὲν προσίτω κατὰ τὰ
+						ἀριστερὰ τοῦ ἵππου· ἔπειτα τὰς μὲν ἡνίας περιβαλὼν περὶ τὴν κεφαλὴν καθέτω
+						ἐπὶ τῇ ἀκρωμίᾳ, τὴν δὲ κορυφαίαν τῇ δεξιᾷ αἰρέτω, τὸ δὲ στόμιον τῇ ἀριστερᾷ
+						προσφερέτω.
+     </p>
+     <p lang="it">
+      Ma affinché il cavaliere possa indossare correttamente la briglia, mi avvicino prima secondo il
+						a sinistra del cavallo; dopo gli zibellini attorno alla testa verticalmente
+						sull'acromia, tranne la parte superiore di destra e la bocca di sinistra
+						Io offro.
+     </p>
+     <p lang="en">
+      But in order for the horseman to put on the bridle correctly, I first approach according to the
+						to the left of the horse; after the sables around the head vertically
+						on the acromia, but the top of the right, and the mouth of the left
+						I offer.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      κἂν μὲν δέχηται, δῆλον ὅτι περιτιθέναι δεῖ τὸν κεκρύφαλον· ἐὰν δὲ μὴ
+						ὑποχάσκῃ, ἔχοντα δεῖ πρὸς τοῖς ὀδοῦσι τὸν χαλινὸν τὸν μέγαν δάκτυλον τῆς
+						ἀριστερᾶς χειρὸς εἴσω τῆς γνάθου τῷ ἵππῳ ποιῆσαι. οἱ γὰρ πολλοὶ τούτου
+						γιγνομένου χαλῶσι τὸ στόμα. ἢν δὲ μηδʼ οὕτω δέχηται, πιεσάτω τὸ χεῖλος περὶ
+						τῷ κυνόδοντι· καὶ πάνυ τινὲς ὀλίγοι οὐ δέχονται τοῦτο πάσχοντες.
+     </p>
+     <p lang="it">
+      e se non accetta, allora deve vedere il cecrifalo e se non lo fa;
+						obbedisci, avendo visto la briglia sul suo alluce
+						mano sinistra sulla mascella del cavallo. perché molti di questo
+						la bocca si allenta. Se non lo accetta così, lascialo muovere il labbro
+						al cane; e anche adesso pochi malati non lo accettano.
+     </p>
+     <p lang="en">
+      and if he does not accept, then he must see the cecryphalon; and if he does not
+						obey, having seen the bridle her big toe
+						left hand across the horse's jaw. because many of this
+						the mouth becoming loose. If he doesn't accept it like that, let him press the lip about
+						to the canine; and even now few sufferers do not accept this.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      δεδιδάχθω δὲ καὶ τάδε ὁ ἱπποκόμος, πρῶτον μὲν μήποτε ἄγειν τῆς ἡνίας τὸν
+						ἵππον· τοῦτο γὰρ ἑτερογνάθους ποιεῖ· ἔπειτα δὲ ὅσον δεῖ ἀπέχειν τὸν χαλινὸν
+						τῶν γνάθων. ὁ μὲν γὰρ ἄγαν πρὸς αὐταῖς τυλοῖ τὸ στόμα, ὥστε μὴ εὐαίσθητον
+						εἶναι, ὁ δὲ ἄγαν εἰς ἄκρον τὸ στόμα καθιέμενος ἐξουσίαν παρέχει συνδάκνοντι
+						τὸ στόμιον μὴ πείθεσθαι.
+     </p>
+     <p lang="it">
+      e così al cavaliere fu insegnato, innanzitutto, che non avrebbe mai dovuto farlo
+						un cavallo, perché questo è un cavallo con la mascella incrociata; quindi, finché vede, lascia andare le briglie
+						delle mascelle. poiché chi parla loro chiude la bocca per non percepire
+						lo è, ma l'agan all'angolo della bocca, seduto al potere, fornisce syndaknodi
+						la bocca non è convinta.
+     </p>
+     <p lang="en">
+      and thus the horseman was taught, first of all, that he should never
+						a horse, for this is a cross-jawed horse; then, as long as he sees, let go of the bridle
+						of the jaws. for he who speaks to them closes his mouth, so as not to perceive
+						it is, but the agan in the corner of the mouth, sitting in power, provides syndaknodi
+						the mouth is not convinced.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      χρὴ δὲ τὸν ἱπποκόμον καὶ τὰ τοιάδε παρατηρεῖν, εἰ μὴ ῥᾳδίως τὸν χαλινὸν ὁ
+						ἵππος δέχεται, αἰσθανόμενος ὅτι δεῖ πονεῖν. οὕτω γὰρ δὴ μέγα ἐστὶ τὸ
+						λαμβάνειν ἐθέλειν τὸν ἵππον τὸν χαλινὸν ὡς ὁ μὴ δεχόμενος παντάπασιν
+						ἄχρηστος.
+     </p>
+     <p lang="it">
+      ma guardano il cavaliere e simili, se non le briglie
+						Ippona accetta, sentendo di vedere il dolore. Ecco quanto è grande
+						ricevono, vogliono il cavallo, la briglia, come chi non accetta
+						inutile.
+     </p>
+     <p lang="en">
+      but they watch the horseman and the like, if not the bridle
+						Hippo accepts, feeling that he sees pain. That's how big it is
+						they receive, they want the horse, the bridle, as the one who does not accept
+						useless.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      ἢν δὲ μὴ μόνον ὅταν πονεῖν μέλλῃ χαλινῶται, ἀλλὰ καὶ ὅταν ἐπὶ τὸν σῖτον καὶ
+						ὅταν ἐξ ἱππασίας εἰς οἶκον ἀπάγηται, οὐδὲν ἂν εἴη θαυμαστὸν εἰ ἁρπάζοι τὸν
+						χαλινὸν αὐτόματος προτεινόμενον.
+     </p>
+     <p lang="it">
+      ma non solo quando sono doloranti, ma anche quando sono sul grano e
+						quando viene rapito mentre tornava a casa, non c'è da stupirsi se lo prendi
+						consigliata briglia automatica.
+     </p>
+     <p lang="en">
+      but not only when they are sore, but also when on the wheat and
+						when he is abducted from riding home, no wonder if you seize him
+						automatic bridle recommended.
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      ἀγαθὸν δὲ τὸν ἱπποκόμον καὶ ἀναβάλλειν ἐπίστασθαι τὸν Περσικὸν τρόπον, ὅπως
+						αὐτός τε ὁ δεσπότης, ἤν ποτε ἀρρωστήσῃ ἢ πρεσβύτερος γένηται, ἔχῃ τὸν
+						εὐπετῶς ἀναβιβάσοντα καὶ ἄλλῳ ἤν τινι βούληται τὸν ἀναβαλοῦντα ἐπιχαρίσηται.
+     </p>
+     <p lang="it">
+      ma il cavaliere è bravo e rimandano la via persiana, come
+						questo despota, se mai si ammala o diventa anziano, ha il
+						rimane di buon auspicio e verso un altro, se vuole, si compiace del ritardo.
+     </p>
+     <p lang="en">
+      but the horseman is good, and they put off the Persian way, as
+						this despot, if he ever falls ill or becomes an elder, has the
+						auspiciously abiding, and to another, if he wills, he is pleased with the delaying.
+     </p>
+    </div>
+    <div n="13" type="section">
+     <p>
+      τὸ δὲ μήποτε σὺν ὀργῇ ἵππῳ προσφέρεσθαι, ἓν τοῦτο καὶ δίδαγμα καὶ ἔθισμα πρὸς
+						ἵππον ἄριστον. ἀπρονόητον γὰρ ἡ ὀργή, ὥστε πολλάκις ἐξεργάζεται ὧν
+						μεταμέλειν ἀνάγκη.
+     </p>
+     <p lang="it">
+      ma mai offrire un cavallo arrabbiato, questa è sia una lezione che una lezione
+						per eccellenza. Perché la rabbia è imprevedibile, per cui spesso viene capito dove
+						bisogno successivo.
+     </p>
+     <p lang="en">
+      but never with an angry horse be offered, this is both a lesson and a lesson to
+						for excellence. For anger is unpredictable, so that it is often worked out where
+						later need.
+     </p>
+    </div>
+    <div n="14" type="section">
+     <p>
+      καὶ ὅταν δὲ ὑποπτεύσας τι ὁ ἵππος μὴ θέλῃ πρὸς τοῦτο προσιέναι, διδάσκειν δεῖ
+						ὅτι οὐ δεινόν ἐστι μάλιστα μὲν οὖν ἵππῳ εὐκαρδίῳ, εἰ δὲ μή, ἁπτόμενον αὐτὸν
+						τοῦ δεινοῦ δοκοῦντος εἶναι καὶ τὸν ἵππον πρᾴως προσάγοντα.
+     </p>
+     <p lang="it">
+      e quando sospetti che il cavallo non voglia avvicinarsi, insegnagli
+						poiché non vedevano che era davvero un cavallo con un cuore, se non lo toccavano
+						Il presente del deino è anche la preposizione del cavallo.
+     </p>
+     <p lang="en">
+      and when you suspect that the horse does not want to approach it, teach
+						for they did not see that he was indeed a horse with a heart, if not, touching him
+						The present tense of the deino is also the preposition of the horse.
+     </p>
+    </div>
+    <div n="15" type="section">
+     <p>
+      οἱ δὲ πληγαῖς ἀναγκάζοντες ἔτι πλείω φόβον παρέχουσιν· οἴονται γὰρ οἱ ἵπποι,
+						ὅταν τι χαλεπὸν πάσχωσιν ἐν τῷ τοιούτῳ, καὶ τούτου τὰ ὑποπτευόμενα αἴτια
+						εἶναι.
+     </p>
+     <p lang="it">
+      ma le ferite che mi costringono a salpare dovrebbero darmi paura perché si vedono i cavalli,
+						quando soffrono in questo modo e le presunte cause di ciò
+						È.
+     </p>
+     <p lang="en">
+      but the wounds that compel me to sail should provide fear; for the horses are seen,
+						when they suffer in such a way, and the suspected causes thereof
+						is.
+     </p>
+    </div>
+    <div n="16" type="section">
+     <p>
+      ἐπειδάν γε μὴν ὁ ἱπποκόμος τὸν ἵππον παραδῷ τῷ ἀναβάτῃ, τὸ μὲν ἐπίστασθαι
+						ὑποβιβάζεσθαι τὸν ἵππον, ὥστε εὐπετὲς εἶναι ἀναβῆναι, οὐ μεμφόμεθα· τόν γε
+						μέντοι ἱππέα νομίζομεν χρῆναι μελετᾶν καὶ μὴ παρέχοντος ἵππου δύνασθαι
+						ἀναβαίνειν. ἄλλοτε μὲν γὰρ ἀλλοῖος ἵππος παραπίπτει, ἄλλοτε δʼ ἄλλως ὁ αὐτὸς
+						ὑπηρετεῖ.
+     </p>
+     <p lang="it">
+      perché se lo stalliere non consegna il cavallo al cavaliere, il
+						abbassiamo il cavallo, affinché sia ​​beato a salire, non lo rimproveriamo;
+						pensiamo che gli uomini a cavallo stiano studiando e non forniscano cavalli dove possono
+						salgono a volte perché cade un altro cavallo, a volte no
+						servi.
+     </p>
+     <p lang="en">
+      because if the groom does not hand over the horse to the rider, the
+						lower the horse, so that it is blessed to ascend, we do not reproach him;
+						we think horse men are studying and not providing horses where they can
+						they go up sometimes because another horse falls, sometimes he does not
+						serves.
+     </p>
+    </div>
+   </div>
+   <div n="7" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὅταν γε μὴν παραδέξηται τὸν ἵππον ὡς
+						ἀναβησόμενος, νῦν αὖ γράψομεν ὅσα ποιῶν ὁ ἱππεὺς καὶ ἑαυτῷ καὶ τῷ ἵππῳ
+						ὠφελιμώτατος ἂν ἐν τῇ ἱππικῇ εἴη. πρῶτον μὲν τοίνυν τὸν ῥυταγωγέα χρὴ ἐκ τῆς
+						ὑποχαλινιδίας ἢ ἐκ τοῦ ψαλίου ἠρτημένον εὐτρεπῆ εἰς τὴν ἀριστερὰν χεῖρα
+						λαβεῖν, καὶ οὕτω χαλαρὸν ὡς μήτʼ ἂν
+      <del>
+       ἀνιὼν
+      </del>
+      τῶν τριχῶν παρὰ τὰ ὦτα
+						λαβόμενος μέλλῃ ἀναβήσεσθαι μήτʼ ἂν ἀπὸ δόρατος ἀναπηδᾷ, σπᾶν τὸν ἵππον. τῇ
+						δεξιᾷ δὲ τὰς ἡνίας παρὰ τὴν ἀκρωμίαν λαμβανέτω ὁμοῦ τῇ χαίτῃ, ὅπως μηδὲ καθʼ
+						ἕνα τρόπον ἀναβαίνων σπάσῃ τῷ χαλινῷ τὸ στόμα τοῦ ἵππου.
+     </p>
+     <p lang="it">
+      quando ge non ammette il cavallo come
+						montato, scriviamo ora ciò che il cavaliere ha per sé e per il cavallo
+						Utile se in ambito equestre. Prima di tutto, non vedono la sua ritagogea
+						ipohalinidias o dall'eutrepus montato sul psalium nella mano sinistra
+						prendono, e così rilassati come se non ci fossero altri peli oltre alle orecchie
+						prendendo la spada, non salire, perché non salti dalla lancia e rompa il cavallo. ῇ
+						ma merita gli onori nonostante l'oscurità che ricevo dall'uomo della criniera, come mai prima d'ora
+						un modo di arrampicarsi rompere la bocca del cavallo con la briglia.
+     </p>
+     <p lang="en">
+      when ge does not admit the horse as
+						mounted, now let us write down what the horseman has for himself and for the horse
+						Beneficial if in the equestrian field. First of all, they don't see the rythagogea from her
+						hypohalinidias or from the psalium mounted eutrepus in the left hand
+						they take, and so relaxed as if there were no hairs other than the ears
+						taking the sword, do not mount, lest he spring from a spear, and break the horse. ῇ
+						but he deserves the honors despite the blackness I receive from the man of the mane, as never before
+						a way of climbing break the horse's mouth with the bridle.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      ἐπειδὰν δὲ ἀνακουφίσῃ ἑαυτὸν εἰς τὴν ἀνάβασιν, τῇ μὲν ἀριστερᾷ ἀνιμάτω τὸ
+						σῶμα, τὴν δὲ δεξιὰν ἐκτείνων συνεπαιρέτω ἑαυτόν (οὕτω γὰρ ἀναβαίνων οὐδὲ
+						ὄπισθεν αἰσχρὰν θέαν παρέξει συγκεκαμμένῳ τῷ σκέλει), καὶ μηδὲ τὸ γόνυ ἐπὶ
+						τὴν ῥάχιν τοῦ τιθέτω ἵππου, ἀλλʼ ὑπερβησάτω ἐπὶ τὰς δεξιὰς πλευρὰς τὴν
+						κνήμην. ὅταν δὲ περιενέγκῃ τὸν πόδα, τότε καὶ τὼ γλουτὼ καθέτω ἐπὶ τὸν
+						ἵππον.
+     </p>
+     <p lang="it">
+      ma poiché fa i suoi bisogni nella salita, alla mia sinistra animò il
+						corpo, ma quando tendo la mano destra, mi porto con me (così salgo
+						dietro una bella vista di una persona piegata sulla gamba), e non il ginocchio sul
+						Gli consegno le redini del cavallo, ma lo lascio attraversare sul fianco destro
+						tibia e quando abbassa il piede, allora appoggio anche la mia natica su di lui
+						ἵππον.
+     </p>
+     <p lang="en">
+      but because he relieves himself in the ascent, to my left I animate the
+						body, but when I extend my right hand, I take myself with me (so that I ascend
+						behind a beautiful view of a person bent over the leg), and not the knee on the
+						I give him the horse's reins, but let him cross on the right flank the
+						shinbone and when he lowers his foot, then I also place my buttock on him
+						ἵππον.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      ἢν δὲ τύχῃ ὁ ἱππεὺς τῇ μὲν ἀριστερᾷ ἄγων τὸν ἵππον, τῇ δὲ δεξιᾷ τὸ δόρυ ἔχων,
+						ἀγαθὸν μὲν ἡμῖν δοκεῖ εἶναι τὸ καὶ ἐκ τῶν δεξιῶν μελετῆσαι ἀναπηδᾶν. μαθεῖν
+						δʼ οὐδὲν δεῖ ἄλλο ἢ ἃ μὲν τότε τοῖς δεξιοῖς τοῦ σώματος ἐποίει τοῖς
+						ἀριστεροῖς ποιεῖν, ἃ δὲ τότε τοῖς ἀριστεροῖς τοῖς δεξιοῖς.
+     </p>
+     <p lang="it">
+      Ma se il cavaliere ha un cavallo alla sua sinistra e una lancia alla sua destra,
+						È bene che studiamo e scaturiamo da quelli giusti. Imparare
+						non vede nient'altro né ciò che fa poi al lato destro del corpo
+						Sinistra chi, cosa poi a chi di sinistra e a chi di destra.
+     </p>
+     <p lang="en">
+      But if the horseman happens to have a horse on his left, and a spear on his right,
+						It is a good thing for us to study and spring from the right ones. learn
+						he does not see anything else or what he then does to the right side of the body
+						Leftists who, what then to those on the left and those on the right.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      τούτου δʼ ἕνεκεν καὶ ταύτην ἐπαινοῦμεν τὴν ἀνάβασιν, ὅτι ἅμα τε ἀναβεβηκὼς ἂν
+						εἴη καὶ κατεσκευασμένος πάντα, εἴ τι δέοι ἐξαίφνης πρὸς πολεμίους
+						ἀγωνίζεσθαι.
+     </p>
+     <p lang="it">
+      Per questo lodiamo l'ascesa, perché se salissimo
+						Inoltre era sempre preparato, improvvisamente aveva paura delle guerre
+						fai fatica.
+     </p>
+     <p lang="en">
+      This is why we praise the ascent, because if we ascended
+						He was also always prepared, he was suddenly afraid of wars
+						you struggle.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ἐπειδάν γε μὴν καθέζηται ἐάν τε ἐπὶ ψιλοῦ ἐάν τε ἐπὶ τοῦ ἐφιππίου, οὐ τὴν
+						ὥσπερ ἐπὶ
+      <del>
+       τοῦ
+      </del>
+      δίφρου ἕδραν ἐπαινοῦμεν, ἀλλὰ τὴν ὥσπερ εἰ ὀρθὸς ἂν
+						διαβεβηκὼς εἴη τοῖν σκελοῖν. τοῖν τε γὰρ μηροῖν οὕτως ἂν ἔχοιτο μᾶλλον τοῦ
+						ἵππου, καὶ ὀρθὸς ὢν ἐρρωμενεστέρως ἂν δύναιτο καὶ ἀκοντίσαι καὶ πατάξαι ἀπὸ
+						τοῦ ἵππου, εἰ δέοι.
+     </p>
+     <p lang="it">
+      perché non viene punito né a piedi né a cavallo, non il
+						come se da due parti ne lodassimo uno, ma come se fosse giusto se
+						Sono sicuro che sia in piedi. perché la sua coscia è così, se fosse piuttosto la sua
+						cavallo e in posizione verticale, se possibile
+						del cavallo, ei deoi.
+     </p>
+     <p lang="en">
+      because he is not punished whether on foot or on horseback, not the
+						as if on two sides we praise one, but as if it is right if
+						I'm sure he's on his feet. for his thigh is like that if it were rather his
+						horse, and upright, if possible
+						of the horse, ei deoi.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      χρὴ δὲ καὶ χαλαρὰν ἀπὸ τοῦ γόνατος ἀφεῖσθαι τὴν κνήμην σὺν τῷ ποδί. σκληρὸν
+						μὲν γὰρ ἔχων τὸ σκέλος εἰ προσκόψειέ τῳ, προσκεκλασμένος ἂν εἴη· ὑγρὰ δὲ
+						οὖσα ἡ κνήμη, εἴ τι καὶ προσπίπτοι αὐτῇ, ὑπείκοι ἂν καὶ τὸν μηρὸν οὐδὲν
+						μετακινοίη.
+     </p>
+     <p lang="it">
+      mentre ti rilassi dal ginocchio, lascia che la tibia sia con il piede. difficile
+						perché se ho la gamba per fermarlo, invitato se fosse ma bagnato;
+						poi lo stinco, anche se ci cadi sopra, si sottomette anche se la coscia no
+						mobile
+     </p>
+     <p lang="en">
+      while relaxing from the knee let the shin be with the foot. hard
+						for if I have the leg to stop him, invited if he was; but wet
+						then the shin, even if you fall on it, submit even if the thigh is not
+						mobile
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      δεῖ δὲ τὸν ἱππέα καὶ τὸ ἄνωθεν τῶν ἑαυτοῦ ἰσχίων σῶμα ὡς ὑγρότατον ἐθίζειν
+						εἶναι. οὕτω γὰρ ἂν πονεῖν τε ἔτι μᾶλλον δύναιτο καὶ εἰ ἕλκοι τις αὐτὸν ἢ
+						ὠθοίη ἧττον ἂν σφάλλοιτο.
+     </p>
+     <p lang="it">
+      ma guarda il cavaliere e il suo corpo sopra i fianchi come se fossero bagnati
+						È. perché anche se fanno male, è più probabile che lo ulcerino o
+						ὠθοιη ἧττον ἂν sfalloito.
+     </p>
+     <p lang="en">
+      but look at the horseman and his body above his hips as if they were wet
+						is. for even if they hurt, it is more likely that if they ulcerate him or
+						ὠθοιη ἧττον ἂν sfalloito.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      ἐπειδάν γε μὴν καθέζηται, πρῶτον μὲν ἠρεμεῖν δεῖ διδάσκειν τὸν ἵππον, ἕως ἂν
+						καὶ ὑποσπάσηται, ἤν τι δέηται, καὶ ἡνίας ἰσώσηται καὶ δόρυ λάβῃ ὡς ἂν
+						εὐφορώτατον εἴη· ἔπειτα δὲ ἐχέτω τὸν ἀριστερὸν βραχίονα πρὸς ταῖς πλευραῖς·
+						οὕτω γὰρ εὐσταλέστατός τε ὁ ἱππεὺς ἔσται καὶ ἡ χεὶρ ἐγκρατεστάτη.
+     </p>
+     <p lang="it">
+      perché non viene punito, prima è calmo e gli viene insegnato il cavallo, finché
+						e si sottomette, qualunque cosa sia richiesta, e alza la mano e riceve una lancia come se
+						Era il più generoso; poi portava il braccio sinistro lungo il fianco;
+						poiché tale è l'equanimità del cavaliere, così come la mano che trattiene.
+     </p>
+     <p lang="en">
+      because he is not punished, first he is calm and he is taught the horse, until
+						and he submits, whatever is required, and he raises his hand and receives a spear as if
+						He was the most generous; then he brought his left arm to his side;
+						for so is the horseman's equanimity, and so is the restraining hand.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      ἡνίας γε μὴν ἐπαινοῦμεν ὁποῖαι ἴσαι τέ εἰσι καὶ μὴ ἀσθενεῖς μηδὲ ὀλισθηραὶ
+						μηδὲ παχεῖαι, ἵνα καὶ τὸ δόρυ ὅταν δέῃ δέχεσθαι ἡ χεὶρ δύνηται.
+     </p>
+     <p lang="it">
+      Henias, non lodare chi sei e non ammalarti, non scivolare
+						Non è ingrassato, così che anche la lancia quando soffia possa essere ricevuta con la mano.
+     </p>
+     <p lang="en">
+      Henias, don't praise who you are and don't be sick, don't slip
+						It is not fattened, so that even the spear when it blows may be received by the hand.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὅταν δὲ προχωρεῖν σημήνῃ τῷ ἵππῳ, βάδην μὲν
+						ἀρχέσθω· τοῦτο γὰρ ἀταρακτότατον. ἡνιοχείτω δέ, ἢν μὲν κυφαγωγότερος ᾖ ὁ
+						ἵππος, ἀνωτέρω ταῖς χερσίν, ἢν δὲ μᾶλλον ἀνακεκυφώς, κατωτέρω· οὕτω γὰρ ἂν
+						μάλιστα κοσμοίη τὸ σχῆμα.
+     </p>
+     <p lang="it">
+      Ma quando avanzano a cavallo, vado
+						Comincio; perché questo è fermo. Lascialo felice, se è più allegro di me
+						cavallo, sopra le braccia, o meglio inesorabilmente, sotto, per così se
+						infatti, la forma è universale.
+     </p>
+     <p lang="en">
+      But when they advance on the horse, I go
+						I begin; for this is steadfast. Let him be happy, if he is more cheerful than me
+						horse, above the arms, or rather unrelentingly, below; for thus if
+						in fact, the shape is universal.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      μετὰ δὲ ταῦτα τὸν αὐτοφυᾶ διατροχάζων διαχαλῴη τʼ ἂν ἀλυπότατα τὸ σῶμα καὶ
+						εἰς τὸ ἐπιρραβδοφορεῖν ἥδιστʼ ἂν ἀφικνοῖτο. ἐπείπερ δὲ καὶ ἀπὸ τῶν ἀριστερῶν
+						ἄρχεσθαι εὐδοκιμώτερον, ὧδʼ ἂν μάλιστα ἀπὸ τούτων ἄρχοιτο, εἰ διατροχάζοντος
+						μέν, ὁπότε ἐμβαίνοι τῷ δεξιῷ, τότε σημαίνοι τῷ ἵππῳ τὸ ἐπιρραβδοφορεῖν.
+     </p>
+     <p lang="it">
+      ma dopo questo, l'autofita, che attraversa il corpo
+						all'ἐπραβδοφορεῖν ἥδιστʼ ἑν Αφικνοῖto. E ancor più di quelli di sinistra
+						sarà meglio cominciare, se proprio da questi, di passaggio
+						vieni, dunque, vai a destra, poi segnala al cavallo che stanno per portare il palo.
+     </p>
+     <p lang="en">
+      but after this, the autophyte, traversing the body
+						to the ἐπραβδοφορεῖν ἥδιστʼ ἑν Αφικνοῖto. And even more so than the leftists
+						it will be better to start, if indeed it starts from these, in passing
+						come, therefore, go to the right, then signal to the horse that they are going to bear the stake.
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      τὸ γὰρ ἀριστερὸν μέλλων αἴρειν ἐκ τούτου ἂν ἄρχοιτο, καὶ ὁπότε ἐπὶ τὰ εὐώνυμα
+						ἀναστρέφοι, τότε καὶ τῆς ἐπισκελίσεως ἄρχοιτο. καὶ γὰρ πέφυκεν ὁ ἵππος εἰς
+						μὲν τὰ δεξιὰ στρεφόμενος τοῖς δεξιοῖς ἀφηγεῖσθαι, εἰς εὐώνυμα δὲ τοῖς
+						ἀριστεροῖς.
+     </p>
+     <p lang="it">
+      poiché il lato sinistro del futuro verrebbe rimosso da questo se iniziasse, e poi dagli eunonimi
+						tornò indietro, allora ebbe inizio la visita. e il cavallo vi cadde dentro
+						con la destra che si rivolge a quelli di destra
+						di sinistra.
+     </p>
+     <p lang="en">
+      for the left side of the future would be removed from this if it began, and then on the eunonyms
+						turned back, then the visitation began. and the horse fell into it
+						with the right turning to those on the right
+						leftists.
+     </p>
+    </div>
+    <div n="13" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἱππασίαν δʼ ἐπαινοῦμεν τὴν πέδην καλουμένην·
+						ἐπʼ ἀμφοτέρας γὰρ τὰς γνάθους στρέφεσθαι ἐθίζει. καὶ τὸ μεταβάλλεσθαι δὲ τὴν
+						ἱππασίαν ἀγαθόν, ἵνα ἀμφότεραι αἱ γνάθοι καθʼ ἑκάτερον τῆς ἱππασίας
+						ἰσάζωνται.
+     </p>
+     <p lang="it">
+      a cavallo lodiamo la sella chiamata;
+						Perché capovolge le mascelle. e il cambiamento
+						beni equestri, in modo che entrambe le mascelle su ciascun lato del cavallo
+						sono uguali.
+     </p>
+     <p lang="en">
+      horse riding we praise the saddle called;
+						Because it turns the jaws upside down. and the change
+						equestrian goods, so that both the jaws on each side of the horse
+						they are equal.
+     </p>
+    </div>
+    <div n="14" type="section">
+     <p>
+      ἐπαινοῦμεν δὲ καὶ τὴν ἑτερομήκη πέδην μᾶλλον τῆς κυκλοτεροῦς. ἥδιον μὲν γὰρ
+						οὕτως ἂν στρέφοιτο ὁ ἵππος ἤδη πλήρης ὢν τοῦ εὐθέος, καὶ τό τε ὀρθοδρομεῖν
+						καὶ τὸ ἀποκάμπτειν ἅμα μελετῴη ἄν.
+     </p>
+     <p lang="it">
+      ma lodiamo anche il freno lungo piuttosto che quello circolare. A causa di Dio
+						così se il cavallo girasse, già pieno di rettilineità, e allora correrebbe dritto
+						e l'apokambtein ama otdiniῴi an.
+     </p>
+     <p lang="en">
+      but we also praise the long brake rather than the circular one. Because of God
+						so if the horse were to turn, already full of straightness, and then it would run straight
+						and the apokambtein ama otdiniῴi an.
+     </p>
+    </div>
+    <div n="15" type="section">
+     <p>
+      δεῖ δὲ καὶ ὑπολαμβάνειν ἐν ταῖς στροφαῖς· οὐ γὰρ ῥᾴδιον τῷ ἵππῳ οὐδʼ ἀσφαλὲς
+						ἐν τῷ τάχει ὄντα κάμπτειν ἐν μικρῷ, ἄλλως τε κἂν ἀπόκροτον ἢ ὀλισθηρὸν ᾖ τὸ
+						χωρίον.
+     </p>
+     <p lang="it">
+      ed ecco, anche loro si prendono cura di se stessi nei turni;
+						quando è veloce si piega leggermente, altrimenti non riesce a resistere né a scivolare.
+						villaggio.
+     </p>
+     <p lang="en">
+      and behold, they also take care of themselves in the turns;
+						when he is fast, he bends in a small way, otherwise he is not able to resist or slip.
+						village.
+     </p>
+    </div>
+    <div n="16" type="section">
+     <p>
+      ὅταν γε μὴν ὑπολαμβάνῃ, ὡς ἥκιστα μὲν χρὴ τὸν ἵππον πλαγιοῦν τῷ χαλινῷ, ὡς
+						ἥκιστα δʼ αὐτὸν πλαγιοῦσθαι· εἰ δὲ μή, εὖ χρὴ εἰδέναι ὅτι μικρὰ πρόφασις
+						ἀρκέσει κεῖσθαι καὶ αὐτὸν καὶ τὸν ἵππον.
+     </p>
+     <p lang="it">
+      quando non accetta, poiché ha comprato il cavallo con le briglie, come
+						se lo vedi sdraiato, altrimenti è noto che stai facendo piccole promesse
+						è sufficiente sia per lui che per l'ippopotamo.
+     </p>
+     <p lang="en">
+      when he does not accept, as he bought the horse with the bridle, as
+						if you see him lying down, if not, then it is known that you are making small promises
+						it is enough for both him and the hippopotamus.
+     </p>
+    </div>
+    <div n="17" type="section">
+     <p>
+      ἐπειδάν γε μὴν ἐκ τῆς στροφῆς εἰς τὸ εὐθὺ βλέπῃ ὁ ἵππος, ἐν τούτῳ πρὸς τὸ
+						θᾶττον αὐτὸν ὁρμάτω. δῆλον γὰρ ὅτι καὶ ἐν τοῖς πολέμοις αἱ στροφαί εἰσι τοῦ
+						διώκειν ἢ τοῦ ἀποχωρεῖν ἕνεκα. ἀγαθὸν οὖν τὸ στραφέντα ταχύνειν μελετᾶν.
+     </p>
+     <p lang="it">
+      perché dalla svolta al rettilineo il cavallo vede, in questo verso il
+						Io lo seguirò. perché anche nelle guerre le strofe sono per lui
+						perseguitare o lasciare stare. Buoni o cattivi, studiano velocemente.
+     </p>
+     <p lang="en">
+      because from the turn to the straight the horse sees, in this towards the
+						I will follow him. because even in wars, the stanzas are for him
+						persecute or leave alone. Good or evil, they study quickly.
+     </p>
+    </div>
+    <div n="18" type="section">
+     <p>
+      ὅταν δὲ ἱκανῶς ἤδη δοκῇ τὸ γυμνάσιον τῷ ἵππῳ ἔχειν, ἀγαθὸν καὶ διαναπαύσαντα
+						ὁρμῆσαι αὖθις ἐξαίφνης εἰς τὸ τάχιστον, καὶ ἀφʼ ἵππων μέντοι, μὴ πρὸς
+						ἵππους· καὶ ἐκ τοῦ ταχέος αὖ ὡς ἐγγυτάτω ἠρεμίζειν, καὶ ἐκ τοῦ ἑστάναι δὲ
+						στρέψαντα
+      <del>
+       δεῖ
+      </del>
+      πάλιν ὁρμᾶν· πρόδηλον γὰρ ὅτι ἔσται ποτὲ ὅτε
+						ἑκατέρου τούτων δεήσει·
+     </p>
+     <p lang="it">
+      ma quando ha già provato la palestra per il cavallo, se la passa bene e riposante
+						correre improvvisamente alla velocità e lasciare i cavalli, non farlo
+						i cavalli; e da quello veloce, man mano che si avvicinano, si calmano, e da quello in piedi
+						voltatevi e vedeteli correre di nuovo, perché è evidente che non ci sono mai
+						uno di questi legami;
+     </p>
+     <p lang="en">
+      but when he has already tried the gymnasium for the horse, he has a good and restful one
+						rush suddenly to the speed, and leave the horses, do not
+						horses; and from the fast one, as they approach, they are calmed down, and from the standing one
+						turn around and see them rushing again, for it is evident that they are never there
+						one of these ties;
+     </p>
+    </div>
+    <div n="19" type="section">
+     <p>
+      ὅταν γε μὴν καταβαίνειν ἤδη καιρὸς ᾖ, μήτε ἐν ἵπποις ποτὲ καταβαίνειν μήτε
+						παρὰ σύστασιν ἀνθρώπων μήτʼ ἔξω τῆς ἱππασίας, ἀλλʼ ὅπουπερ καὶ πονεῖν
+						ἀναγκάζεται ὁ ἵππος, ἐνταῦθα καὶ τῆς ῥᾳστώνης τυγχανέτω.
+     </p>
+     <p lang="it">
+      quando non scendono è già tempo
+						nonostante i consigli di persone non esterne al mondo della guida, ma ovunque, fanno male
+						il cavallo è costretto, anche nel bel mezzo dell'aratro.
+     </p>
+     <p lang="en">
+      when they don't come down already time
+						despite the advice of people not outside of riding, but everywhere they hurt
+						the horse is forced, even in the thick of the plow.
+     </p>
+    </div>
+   </div>
+   <div n="8" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἐπείπερ δὲ ἔστιν ὅπου τρέχειν δεήσει τὸν ἵππον
+						καὶ πρανῆ καὶ ὄρθια καὶ πλάγια, ἔστι δʼ ὅπου διαπηδᾶν, ἔστι δʼ ὅπου καὶ
+						ἐκπηδᾶν, ἔνθα δὲ καθάλλεσθαι, καὶ ταῦτα πάντα διδάσκειν τε δεῖ καὶ μελετᾶν
+						καὶ αὑτὸν καὶ τὸν ἵππον. οὕτω γὰρ ἂν σωτήριοί τε εἶεν ἀλλήλοις καὶ καθόλου
+						χρησιμώτεροι ἂν δοκοῖεν εἶναι.
+     </p>
+     <p lang="it">
+      Ma è oltre il luogo in cui corrono per legare l'ippopotamo
+						e prono, eretto e di lato, sii lì dove si diffondono, sii lì dove
+						saltano fuori, ma quando sono soddisfatti, e insegnano, vedono e studiano tutte queste cose
+						sia lui che l'ippopotamo. perché anche se fossero salvatori, sarebbero diversi e non sarebbero affatto diversi
+						più utili se lo sono.
+     </p>
+     <p lang="en">
+      But it is beyond where they run to bind the hippo
+						and prone and upright and sideways, be there where they spread, be there where
+						they jump out, but when they are satisfied, and all these things they teach, see and study
+						both him and the hippo. for even if they were saviors, they would be different and not at all
+						more useful if they are.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      εἰ δέ τις διλογεῖν ἡμᾶς οἴεται, ὅτι περὶ τῶν αὐτῶν λέγομεν νῦν τε καὶ
+						πρόσθεν, οὐ διλογία ταῦτʼ ἐστίν. ὅτε μὲν γὰρ ἐωνεῖτο, πειρᾶσθαι ἐκελεύομεν
+						εἰ δύναιτο ὁ ἵππος ταῦτα ποιεῖν· νῦν δὲ διδάσκειν φαμὲν χρῆναι τὸν ἑαυτοῦ
+						καὶ γράψομεν ὡς δεῖ διδάσκειν.
+     </p>
+     <p lang="it">
+      se non ce ne parlano è perché ogni tanto ne parliamo
+						prima non c'è dialogo su questo. perché se così fosse saremmo tentati di scegliere
+						se il cavallo fosse capace di fare queste cose, ma ora gli insegnano a mangiare e a bere da solo
+						e scrivono mentre insegnano.
+     </p>
+     <p lang="en">
+      if they don't talk about them to us, that's because we talk about them now and then
+						before, there is no dialogue of this. because if it were, we would be tempted to choose
+						if the horse were able to do these things, but now they teach him to eat and drink himself
+						and write as they teach.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      τὸν μὲν γὰρ παντάπασιν ἄπειρον τοῦ διαπηδᾶν λαβόντα δεῖ τοῦ ἀγωγέως
+						καταβεβλημένου προδιαβῆναι αὐτὸν τὴν τάφρον, ἔπειτα δὲ ἐντείνειν δεῖ τῷ
+						ἀγωγεῖ ὡς διάλληται.
+     </p>
+     <p lang="it">
+      poiché colui che è onnipresente è infinito e lo ricevono dal leader
+						sopraffatto, lo precedette attraverso il fosso, e poi intensificò il suo
+						procedere come appropriato.
+     </p>
+     <p lang="en">
+      for the one who is omnipresent is infinite, and they receive him from the leader
+						overwhelmed, he preceded him through the ditch, and then intensified his
+						proceed as appropriate.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      ἢν δὲ μὴ ἐθέλῃ, ἔχων τις μάστιγα ἢ ῥάβδον ἐμβαλέτω ὡς ἰσχυρότατα· καὶ οὕτως
+						ὑπεραλεῖται οὐ τὸ μέτρον, ἀλλὰ πολὺ πλέον τοῦ καιρίου· καὶ τὸ λοιπὸν οὐδὲν
+						δεήσει παίειν, ἀλλʼ ἢν μόνον ἴδῃ ὄπισθέν τινα ἐπελθόντα, ἁλεῖται.
+     </p>
+     <p lang="it">
+      ma se non lo fa, ho il flagello o la verga come i più forti e così;
+						non si supera la misura, ma molto più del tempo; e il resto nulla
+						vuole giocare, ma se solo vede quello che è successo, morirà.
+     </p>
+     <p lang="en">
+      but if he will not, I have the scourge or the rod as the strongest; and so
+						not the measure is exceeded, but much more than the time; and the rest nothing
+						he wants to play, but if he only sees what has happened, he will die.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ἐπειδὰν δὲ οὕτω διαπηδᾶν ἐθισθῇ, καὶ ἀναβεβηκὼς ἐπαγέτω τὸ μὲν πρῶτον μικράς,
+						ἔπειτα δὲ καὶ μείζους. ὅταν δὲ μέλλῃ πηδᾶν, παισάτω αὐτὸν τῷ μύωπι. ὡσαύτως
+						δὲ καὶ τὸ ἀναπηδᾶν καὶ τὸ καταπηδᾶν διδάσκειν παίσαντα τῷ μύωπι. ἁθρόῳ γὰρ
+						τῷ σώματι ταῦτα πάντα ποιῶν καὶ ἑαυτῷ ὁ ἵππος καὶ τῷ ἀναβάτῃ ἀσφαλέστερον
+						ποιήσει μᾶλλον ἢ ἂν ἐκλείπῃ τὰ ὄπισθεν ἢ διαπηδῶν ἢ ἀνορούων ἢ καθαλλόμενος.
+     </p>
+     <p lang="it">
+      Ma poiché si diffondevano in questo modo, ne divenne dipendente, e quando salii, commisi il primo piccolo,
+						e poi quelli maggiori. Ma quando saltano, lascialo giocare con i miei occhi. anche
+						Ma insegnano anche al giovane come saltare e come saltare. Perché
+						al cui corpo tutte queste cose e a se stesso il cavallo e il cavaliere sono più sicuri
+						che cosa farà piuttosto o se tralascerà i cerve o dei lebbrosi o dei malati o di coloro che sono sazi.
+     </p>
+     <p lang="en">
+      But because they spread like this, he became addicted, and when I ascended, I committed the first little one,
+						and then major ones. But when they jump, let him play with my eyes. as well
+						But they also teach the young man how to jump and how to jump. because
+						to whose body all these things and to himself the horse and to the rider safer
+						what will he do rather or if he omits the hinds or of the lepers or of the sick or of those who are satisfied.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      εἴς γε μὴν τὸ κάταντες πρῶτον χρὴ ἐν μαλακῷ χωρίῳ διδάσκειν, καὶ τελευτῶν,
+						ἐπειδὰν τοῦτο ἐθισθῇ, πολὺ ἥδιον τὸ πρανὲς τοῦ ὀρθίου δραμεῖται. ἃ δὲ
+						φοβοῦνταί τινες μὴ ἀπορρηγνύωνται τοὺς ὤμους κατὰ τὰ πρανῆ ἐλαυνόμενοι,
+						θαρρούντων μαθόντες ὅτι Πέρσαι καὶ Ὀδρύσαι ἅπαντες τὰ κατάντη ἁμιλλώμενοι
+						οὐδὲν ἧττον τῶν Ἑλλήνων ὑγιεῖς τοὺς ἵππους ἔχουσι.
+     </p>
+     <p lang="it">
+      Non sei la prima volta che insegni un villaggio morbido, e l'ultima,
+						poiché questo viene eccitato, l'erettore spinale viene fortemente colpito. Che cosa?
+						hanno paura di te, non si assolvono dai loro peccati dilettandosi,
+						incoraggiato, apprendendo che i Persiani e gli Odrisi discendevano tutti
+						Nessuno dei greci ha cavalli sani.
+     </p>
+     <p lang="en">
+      You are not the first time in a soft village teaching, and the last,
+						because this is aroused, the erector spinae is greatly affected. what?
+						they are afraid of you, they do not absolve themselves of their sins by delighting themselves,
+						emboldened, learning that the Persians and the Odrysas all descended
+						None of the Greeks have healthy horses.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      παρήσομεν δὲ οὐδὲ ὅπως τὸν ἀναβάτην ὑπηρετεῖν
+						δεῖ πρὸς ἕκαστα τούτων. χρὴ γὰρ ὁρμῶντος μὲν ἐξαίφνης τοῦ ἵππου προνεύειν·
+						ἧττον γὰρ ἂν καὶ ὑποδύοι ὁ ἵππος καὶ ἀναβάλλοι τὸν ἀναβάτην· ἐν μικρῷ δὲ
+						ἀναλαμβανομένου ἀναπίπτειν· ἧττον γὰρ ἂν αὐτὸς κόπτοιτο.
+     </p>
+     <p lang="it">
+      ma non facciamo finta che il cavaliere sia servito
+						guarda ciascuno di questi. perché quando il cavallo corre, si preparano;
+						infatti anche se il cavallo smonta e il cavaliere ritarda di poco;
+						di essere ripreso non avviene perché se fosse tagliato.
+     </p>
+     <p lang="en">
+      but let us not pretend that the rider is served
+						look at each of these. for when the horse is running, they are preparing for it;
+						for even if the horse dismounts and the rider is delayed; but in a small
+						of being taken up does not happen; because if it were cut off.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      τάφρον δὲ διαλλομένου καὶ πρὸς ὄρθιον ἱεμένου καλὸν χαίτης ἐπιλαμβάνεσθαι, ὡς
+						μὴ ὁ ἵππος τῷ τε χωρίῳ ἅμα καὶ τῷ χαλινῷ βαρύνηται. εἴς γε μὴν τὸ πρανὲς καὶ
+						ἑαυτὸν ὑπτιώτερον ποιητέον καὶ τοῦ ἵππου ἀντιληπτέον τῷ χαλινῷ, ὡς μὴ
+						προπετῶς εἰς τὸ κάταντες μήτε αὐτὸς μήτε ὁ ἵππος φέρηται.
+     </p>
+     <p lang="it">
+      e si divide un fossato e verso il sacerdote in piedi si porta una buona criniera, come
+						Il cavallo non è gravato dal cavallo ma dalle briglie. Non sei stato tu a farlo
+						lui stesso un poeta più nobile e un cavallo percepito dalla briglia, come no
+						né lui né il cavallo vengono portati davanti al caduto.
+     </p>
+     <p lang="en">
+      and a moat divided and towards the standing priest a good mane is taken, as
+						The horse is not burdened by the horse but by the bridle. You're not the one who did it
+						himself a nobler poet and a horse perceived by the bridle, as not
+						neither he nor the horse is brought before the fallen.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὀρθῶς δʼ ἔχει καὶ τὸ ἄλλοτε μὲν ἐν ἄλλοις
+						τόποις, ἄλλοτε δὲ μακράς, ἄλλοτε δὲ βραχείας τὰς ἱππασίας ποιεῖσθαι.
+						ἀμισέστερα γὰρ καὶ ταῦτα τῷ ἵππῳ τοῦ ἀεὶ ἐν τοῖς αὐτοῖς τόποις καὶ ὁμοίας
+						τὰς ἱππασίας ποιεῖσθαι.
+     </p>
+     <p lang="it">
+      Giustamente non ha l'altro tempo negli altri
+						luoghi, a volte lunghi, a volte brevi, di passeggiate a cavallo.
+						perché anche questo è più crudele nei confronti del cavallo degli ae in questi luoghi e simili
+						poesie equestri.
+     </p>
+     <p lang="en">
+      Rightly, it does not have the other time in others
+						places, sometimes long, sometimes short, of horse riding.
+						for even this is more unkind to the horse of ae in these places and the like
+						equestrian poems.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      ἐπεὶ δὲ δεῖ ἐν παντοίοις τε χωρίοις τὸν ἱππέα ἀνὰ κράτος ἐλαύνοντα ἔποχον
+						εἶναι καὶ ἀπὸ τοῦ ἵππου τοῖς ὅπλοις καλῶς δύνασθαι χρῆσθαι, ὅπου μέν ἐστι
+						χωρία ἐπιτήδεια καὶ θηρία, ἄμεμπτος ἡ ἐν θήραις μελέτη τῆς ἱππικῆς· ὅπου δὲ
+						ταῦτα μὴ ὑπάρχει, ἀγαθὴ ἄσκησις καὶ ἢν δύο ἱππότα συνθεμένω ὁ μὲν φεύγῃ ἐπὶ
+						τοῦ ἵππου παντοῖα χωρία καὶ τὸ δόρυ εἰς τοὔπισθεν μεταβαλόμενος ὑποχωρῇ, ὁ
+						δὲ διώκῃ ἐσφαιρωμένα τε ἔχων ἀκόντια καὶ δόρυ ὡσαύτως πεπραγματευμένον, καὶ
+						ὅπου μὲν ἂν εἰς ἀκόντιον ἀφικνῆται, ἀκοντίζῃ τὸν φεύγοντα τοῖς σφαιρωτοῖς,
+						ὅπου δʼ ἂν εἰς δόρατος πληγήν, τῷ δόρατι παίῃ τὸν ἁλισκόμενον.
+     </p>
+     <p lang="it">
+      ma vede in tutti i villaggi il cavaliere di uno stato che si gode la stagione
+						è anche del cavallo che serve bene per le armi, dov'è
+						senza cavalli e animali, lo studio dell'equitazione negli animali è irreprensibile, ma dove?
+						non esiste una cosa del genere, buona pratica, e se sono composti due cavalieri, quello che fugge continua
+						del cavallo completamente e la lancia nella parte posteriore che si sposta e si ritira, il
+						ma inseguo con le pallottole, ho fatto negoziare anche giavellotti e lance, e
+						dovunque arriva con il giavellotto, trafigge con le frecce il fuggitivo,
+						Dove una lancia ferisce, la lancia ucciderà il rampicante.
+     </p>
+     <p lang="en">
+      but he sees in all the villages the horseman of a state enjoying the season
+						it is also of the horse that is well used for weapons, where it is
+						without horses and beasts, the study of horsemanship in beasts is blameless; but where
+						there is no such thing, good practice, and if two knights are composed, the one who flees on
+						of the horse all the way and the spear in the rear shifting and retreating, the
+						but pursue with bullets, I have javelins and spears likewise negotiated, and
+						wherever he arrives with a javelin, he impales the fugitive with arrows,
+						Where a spear wounds, the spear will kill the creeper.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      ἀγαθὸν δὲ κἄν ποτε συμπέσωσιν, ἑλκύσαντα ἐφʼ ἑαυτὸν τὸν πολέμιον ἐξαίφνης
+						ἀπῶσαι· τοῦτο γὰρ καταβλητικόν. ὀρθῶς δὲ ἔχει καὶ τῷ ἑλκομένῳ ἐπελαύνειν τὸν
+						ἵππον· τοῦτο γὰρ ποιῶν ὁ ἑλκόμενος καταβάλοι ἂν μᾶλλον τὸν ἕλκοντα ἢ
+						καταπέσοι.
+     </p>
+     <p lang="it">
+      ma a volte accadono cose belle, che attirano a sé la guerra aperta
+						state lontani, perché questo costa. Ed è giusto che i feriti siano guariti
+						cavallo; per chi è questo colui che è afflitto, piuttosto colui che è afflitto o
+						abbattuto.
+     </p>
+     <p lang="en">
+      but good things sometimes happen, attracting to themselves the open war
+						stay away, for this is costly. And it is right for the wounded to be healed
+						horse; for whose is this the one who is afflicted, rather the one who is afflicted or
+						downed.
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      ἢν δέ ποτε καὶ στρατοπέδου ἀντικαθημένου ἀνθιππεύωσιν ἀλλήλοις, καὶ διώκωσι
+						μὲν μέχρι τῆς πολεμίας φάλαγγος τοὺς ἀντίους, φεύγωσι δὲ μέχρι τῆς φιλίας,
+						ἀγαθὸν καὶ ἐνταῦθα ἐπίστασθαι ὅτι ἕως μὲν ἂν παρὰ τοὺς φίλους τις ᾖ, καλὸν
+						καὶ ἀσφαλὲς τὸ ἐν πρώτοις ἀναστρέψαντα ἀνὰ κράτος ἐπικεῖσθαι, ὅταν δʼ ἐγγὺς
+						τῶν ἐναντίων γίγνηται, ὑποχείριον τὸν ἵππον ἔχειν. οὕτω γὰρ ἂν ὡς τὸ εἰκὸς
+						μάλιστα δύναιτο βλάπτων τοὺς ἐναντίους μὴ βλάπτεσθαι ὑπʼ αὐτῶν.
+     </p>
+     <p lang="it">
+      se mai un accampamento viene sostituito, si oppongono l'un l'altro e si perseguitano
+						falange gli Antienti fino alla guerra, ma fuggono fino all'amicizia,
+						bene e in questo credo che finché non rivedrò i miei amici, bene
+						ed è prudente fare appello in primo luogo allo Stato, quando è vicino
+						degli avversari diventa, servo del cavallo che ha. infatti se come ὅκὸς
+						Infatti, se sei in grado di danneggiare i tuoi avversari, non farti danneggiare da loro.
+     </p>
+     <p lang="en">
+      if ever and a camp replaced, they oppose each other, and persecute
+						phalanx the Antients until war, but flee until friendship,
+						good and in this I believe that until I see my friends, well
+						and it is safe to appeal to the state in the first place, when it is near
+						of the opponents he becomes, a servant of the horse he has. for so if as ὅκὸς
+						In fact, if you are able to harm your opponents, do not be harmed by them.
+     </p>
+    </div>
+    <div n="13" type="section">
+     <p>
+      ἀνθρώποις μὲν οὖν ἄνθρωπον ἔδοσαν οἱ θεοὶ λόγῳ διδάσκειν ἃ δεῖ ποιεῖν, ἵππον
+						δὲ δῆλον ὅτι λόγῳ μὲν οὐδὲν ἂν διδάξαις· ἢν δὲ ὅταν μὲν ποιήσῃ ὡς ἂν
+						βούλοιο, ἀντιχαρίσῃ τι αὐτῷ, ὅταν δὲ ἀπειθῇ, κολάζῃς, οὕτω μάλιστʼ ἂν μάθοι
+						τὸ δέον ὑπηρετεῖν.
+     </p>
+     <p lang="it">
+      uomini come uomini, gli dei hanno dato con la parola di insegnare ciò che vedono, perché
+						ma non lo fanno per nulla se insegni, o quando non ti comporti come se
+						Prepotente, sii felice per lui, ma quando promette, andrai all'inferno, anche se impari
+						il dovuto servizio.
+     </p>
+     <p lang="en">
+      men as men, the gods have given by word to teach what they see, because
+						but they do not do it because of nothing if you teach, or when you do not act as if
+						Bully, be happy about him, but when he promises, you're going to hell, even if you learn
+						the due service.
+     </p>
+    </div>
+    <div n="14" type="section">
+     <p>
+      καὶ ἔστι μὲν τοῦτο ἐν βραχεῖ εἰπεῖν, διʼ ὅλης δὲ τῆς ἱππικῆς παρακολουθεῖ.
+						καὶ γὰρ χαλινὸν μᾶλλον ἂν λαμβάνοι, εἰ ὁπότε δέξαιτο ἀγαθόν τι αὐτῷ
+						ἀποβαίνοι· καὶ διαπηδῴη δʼ ἂν καὶ ἐξάλλοιτο καὶ τἆλλα πάντα ὑπηρετοίη ἄν, εἰ
+						προσδοκῴη, ὁπότε τὰ σημαινόμενα πράξειε, ῥᾳστώνην τινά.
+     </p>
+     <p lang="it">
+      E lo dicano in breve tempo, e lui guardi attraverso tutta la cavalleria.
+						e se ricevi una briglia, allora cosa è bene per lui?
+						aboine; e diapedii dʼ se e altri
+						l'attesa, quindi gli atti significati, ῥᾳstonin tina.
+     </p>
+     <p lang="en">
+      And let them say this in short order, and throughout the cavalry he is watching.
+						and if you receive a bridle, then what is good for him
+						aboine; and diapedii dʼ if and other
+						expectation, therefore the signified acts, ῥᾳstonin tina.
+     </p>
+    </div>
+   </div>
+   <div n="9" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      καὶ τὰ μὲν δὴ εἰρημένα ταῦτʼ ἐστίν, ὡς ἂν
+						ἥκιστα μὲν ἐξαπατῷτο καὶ πῶλον καὶ ἵππον ὠνούμενος, ἥκιστα δʼ ἂν διαφθείροι
+						χρώμενος, μάλιστα δʼ ἂν ἵππον ἀποδεικνύοι, εἰ δέοι, ἔχοντα ὧν ἱππεὺς δεῖται
+						εἰς πόλεμον. καιρὸς δʼ ἴσως γράψαι καί, εἴ ποτε συμβαίη θυμοειδεστέρῳ ἵππῳ
+						τοῦ καιρίου χρῆσθαι ἢ βλακωδεστέρῳ, ὡς ἂν ὀρθότατα ἑκατέρῳ χρῷτο.
+     </p>
+     <p lang="it">
+      e le cose che non sono rotte sono queste, come se
+						Non ha ingannato, non ha ingannato, non ha corrotto.
+						colorato, infatti dʼ Ἡἰ ἵππον δείταικοι
+						alla guerra È ora di scrivere, se mai fosse successo al cavallo timoidester
+						del tempo usato o usato stupidamente, come se fosse usato correttamente.
+     </p>
+     <p lang="en">
+      and the things that are not broken are these, as if
+						He did not deceive, he did not deceive, he did not corrupt.
+						colored, in fact dʼ Ἡἰ ἵππον δείταικοι
+						to war Time to write, if it ever happened to thymoidester horse
+						of the time used or stupidly used, as if properly used.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      πρῶτον μὲν τοίνυν χρὴ τοῦτο γνῶναι, ὅτι ἐστὶ θυμὸς ἵππῳ ὅπερ ὀργὴ ἀνθρώπῳ.
+						ὥσπερ οὖν ἄνθρωπον ἥκιστʼ ἂν ὀργίζοι τις
+      <del>
+       ὁ
+      </del>
+      μήτε λέγων χαλεπὸν
+						μηδὲν μήτε ποιῶν, οὕτω καὶ ἵππον θυμοειδῆ ὁ μὴ ἀνιῶν ἥκιστʼ ἂν ἐξοργίζοι.
+     </p>
+     <p lang="it">
+      Innanzitutto questo è noto perché la rabbia di un cavallo è maggiore della rabbia di un uomo.
+						come essere umano, se sei arrabbiato con loro, non dire addio
+						nessuno dei quali, come si dice di Thymoides, quello che non vive, se provoca.
+     </p>
+     <p lang="en">
+      First of all, this is known because the anger of a horse is greater than the anger of a man.
+						as a human being, if you are angry with them, don't say goodbye
+						neither of whom, even as it is said of Thymoides, the one who does not live, if you provoke.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      εὐθὺς μὲν οὖν χρὴ ἐν τῇ ἀναβάσει ἐπιμελεῖσθαι ὡς ἂν ἥκιστʼ ἀναβαίνων λυποίη·
+						ἐπειδὰν δὲ ἀναβῇ, ἠρεμήσαντα πλείω χρόνον ἢ τὸν ἐπιτυχόντα οὕτω προκινεῖν
+						αὐτὸν ὡς πρᾳοτάτοις σημείοις· ἔπειτα δʼ ἐκ τοῦ βραδυτάτου ἀρχόμενον οὕτως αὖ
+						εἰς τὸ θᾶττον προάγειν, ὡς ἂν μάλιστα λανθάνοι αὑτὸν ὁ ἵππος εἰς τὸ ταχὺ
+						ἀφικνούμενος.
+     </p>
+     <p lang="it">
+      þeuthys me oὖn ὖρ νῆν Ανάσει επιμελείσται come se ci fosse dolore per coloro che salirono;
+						ma se ascende, dopo un po' si calmano, oppure quello che ha successo viene così promosso
+						lui come i primi segni; poi dalla sera cominciando così
+						alla cosa avanzano, come se il cavallo nel veloce
+						in arrivo.
+     </p>
+     <p lang="en">
+      þeuthys me oὖn ὖρ νῆν Ανάσει επιμελείσται as if there was sorrow for those who ascended;
+						but if he ascends, they calm down after a while, or the successful one is thus promoted
+						him as the first signs; then from the evening beginning thus
+						to the thing they advance, as if the horse in the swift
+						arriving.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      ὅ τι δʼ ἂν ἐξαίφνης σημήνῃ, θυμοειδῆ ἵππον ὥσπερ ἄνθρωπον ταράττει τὰ
+						ἐξαπίναια καὶ ὁράματα καὶ ἀκούσματα καὶ παθήματα. εἰδέναι δὲ χρὴ ὅτι καὶ ἐν
+						ἵππῳ τὰ ἐξαπίναια τάραχον ἐξεργάζεται.
+     </p>
+     <p lang="it">
+      e se non significasse, è come un essere umano
+						prodigi, visioni, udienze e sofferenze. ma è noto che anche in
+						ἵπῳ τὰ ἑπαπιαια ταραχον viene elaborato.
+     </p>
+     <p lang="en">
+      what if it does not mean, it is like a human being
+						wonders and visions and hearings and sufferings. but it is known that even in
+						ἵπῳ τὰ ἑπαπιαια ταραχον is worked out.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ἢν δὲ καὶ εἰς τὸ θᾶττον ὁρμώμενον τοῦ καιροῦ ὑπολαμβάνειν βούλῃ τὸν θυμοειδῆ,
+						οὐ δεῖ ἐξαπιναίως σπᾶν, ἀλλʼ ἠρεμαίως προσάγεσθαι τῷ χαλινῷ, πραΰνοντα, οὐ
+						βιαζόμενον ἠρεμεῖν.
+     </p>
+     <p lang="it">
+      ma se anche nel tumulto del tempo seguono la volontà timoidea,
+						non li vede improvvisamente rompersi, ma si avvicina con calma alle briglie, con calma, no
+						ἠρεμεῖν
+     </p>
+     <p lang="en">
+      but if even in the tumult of the time they undertake the Thymoidean will,
+						he does not suddenly see them breaking, but calmly approaches the bridle, calmly, not
+						ἠρεμεῖν
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      καὶ αἵ τε μακραὶ ἐλάσεις μᾶλλον ἢ αἱ πυκναὶ ἀποστροφαὶ πραΰνουσι τοὺς ἵππους,
+						καὶ αἱ ἡσυχαῖαι μέν, πολυχρόνιοι δὲ καθέψουσι καὶ πραΰνουσι καὶ οὐκ
+						ἀνεγείρουσι τὸν θυμοειδῆ.
+     </p>
+     <p lang="it">
+      e faresti meglio ad arrivare lungo altrimenti gli apostrofi grossi rallenteranno i cavalli,
+						e quelli silenziosi, ma quelli perenni si siedono e si appoggiano e no
+						sollevano il timoide.
+     </p>
+     <p lang="en">
+      and you had better come long or the thick apostrophes slow the horses,
+						and the quiet ones, but the perennial ones sit down and lean and not
+						they raise the thymoid.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      εἰ δέ τις οἴεται, ἢν ταχὺ καὶ πολλὰ ἐλαύνηται, ἀπειπεῖν ποιήσας τὸν ἵππον
+						πραυνεῖν, τἀναντία γιγνώσκει τοῦ γιγνομένου. ἐν γὰρ τοῖς τοιούτοις ὁ
+						θυμοειδὴς καὶ ἄγειν βίᾳ μάλιστα ἐπιχειρεῖ καὶ σὺν τῇ ὀργῇ, ὥσπερ ἄνθρωπος
+						ὀργίλος, πολλάκις καὶ ἑαυτὸν καὶ τὸν ἀναβάτην πολλὰ ἀνήκεστα ἐποίησεν.
+     </p>
+     <p lang="it">
+      se non li vede, se è subito e molto contento, digli che hai ucciso l'ippopotamo
+						Prayernein, tanandia gnoskei del fatto. ἐν γὰρ a tale
+						timoide e violento, anche nella rabbia si comporta da uomo
+						Orgilos, molti di loro, sia lui che il cavaliere, hanno fatto molte cose.
+     </p>
+     <p lang="en">
+      if he does not see them, if he is quickly and greatly pleased, say that you have killed the hippopotamus
+						praynein, tanandia gnoskei of the fact. ἐν γὰρ to such
+						thymoid and violent, even in his anger he acts like a man
+						Orgilos, many of them, both himself and the rider, did many things.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      ἐπιλαμβάνειν δὲ χρὴ ἵππον θυμοειδῆ καὶ τότε τοῦ εἰς τὸ τάχιστον ὁρμᾶν, τοῦ δὲ
+						δὴ παραβάλλειν ἵππῳ καὶ παντάπασιν ἀπέχεσθαι· σχεδὸν γὰρ οἱ θυμοειδέστατοι
+						καὶ φιλονικότατοι τῶν ἵππων γίγνονται.
+     </p>
+     <p lang="it">
+      e prendono un cavallo come un timo, e poi corrono veloci, ma
+						non paragonarlo a un cavallo e astenersi sempre dal farlo
+						e diventano litigiosi tra i cavalli.
+     </p>
+     <p lang="en">
+      and they take on a horse like a thymus, and then they rush at speed, but
+						do not compare to a horse and always refrain from
+						and they become quarrelsome among horses.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      καὶ χαλινοὶ δὲ οἱ λεῖοι ἐπιτηδειότεροι τῶν τραχέων. ἐὰν δὲ καὶ τραχὺς
+						ἐμβληθῇ, τῇ χαλαρότητι λείῳ δεῖ αὐτὸν ἀφομοιοῦν. ἀγαθὸν δὲ ἐθίζειν αὑτὸν καὶ
+						τὸ ἠρεμεῖν, μάλιστα ἐπὶ θυμοειδοῦς ἵππου, καὶ τὸ ὡς ἥκιστα ἄλλῳ τινὶ
+						ἅπτεσθαι ἢ οἷς τοῦ καθῆσθαι ἀσφαλῶς ἕνεκα ἁπτόμεθα.
+     </p>
+     <p lang="it">
+      e le briglie sono quelle lisce più ambiziose di quelle ruvide. anche se ruvido
+						Pervasi di facilità, lo vedono assimilarsi. E abusano anche di lui
+						lo riposano infatti su cavalli timoidi, e come se fossero comprati da altri
+						Aptesthai o chiunque si sia seduto su di lui sicuramente una settimana.
+     </p>
+     <p lang="en">
+      and bridles are the smooth ones more ambitious than the rough ones. even if rough
+						Imbued with ease, they see him assimilating. And they abuse him too
+						they rest it, in fact on thymoid horses, and as it were bought by others
+						Aptesthai or whoever sat on him for sure one week.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      εἰδέναι δὲ χρὴ ὅτι δίδαγμά τί ἐστι καὶ τὸ ποππυσμῷ μὲν πραΰνεσθαι, κλωσμῷ δὲ
+						ἐγείρεσθαι, καὶ εἴ τις ἐξ ἀρχῆς ἐπὶ μὲν κλωσμῷ τὰ πραέα, ἐπὶ δὲ ποππυσμῷ τὰ
+						χαλεπὰ προσφέροι, μάθοι ἂν ὁ ἵππος ποππυσμῷ μὲν ἐγείρεσθαι, κλωσμῷ δὲ
+						πραΰνεσθαι.
+     </p>
+     <p lang="it">
+      ma è risaputo che insegna ciò che è e il poppysmus non è ammorbidito, ma
+						alzarsi, e siano prima da un filo quelli molli, e dall'altro lato i
+						per favore offri, scopri se il papavero del cavallo non si alza, ma
+						calmati.
+     </p>
+     <p lang="en">
+      but it is well known that it teaches what it is and the poppysmus is not softened, but
+						arise, and let them first be on one thread the soft ones, and on the other side the
+						please offer, find out if the horse poppysmus does not rise, but
+						calm down.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      οὕτως οὖν δεῖ καὶ παρὰ κραυγὴν καὶ παρὰ σάλπιγγα μήτʼ αὐτὸν φαίνεσθαι
+						τεθορυβημένον τῷ ἵππῳ μήτε μὴν ἐκείνῳ θορυβῶδες μηδὲν προσφέρειν, ἀλλʼ εἰς
+						τὸ δυνατὸν καὶ ἀναπαύειν ἐν τῷ τοιούτῳ καὶ ἄριστα καὶ δεῖπνα, εἰ ἐγχωροίη,
+						προσφέρειν.
+     </p>
+     <p lang="it">
+      perciò guardate, e con grida e con trombe non sia visto
+						a un cavallo problematico, non offrirgli nulla di rumoroso, ma a
+						il forte e il riposo in questo e ottimo e la cena, se di campagna,
+						loro offrono.
+     </p>
+     <p lang="en">
+      therefore, see, and with shouts and with trumpets, let him not be seen
+						to a troubled horse, do not offer him anything noisy, but to
+						the strong and rest in this and excellent and dinner, if country,
+						they offer.
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      κάλλιστον δὲ συμβούλευμα τὸ ἄγαν θυμοειδῆ ἵππον μὴ κτᾶσθαι εἰς πόλεμον. βλᾶκα
+						γε μὴν ἵππον ἀρκεῖν μοι δοκεῖ γράψαι πάντα τἀναντία ποιεῖν ὅσων τῷ θυμοειδεῖ
+						χρῆσθαι συμβουλεύομεν.
+     </p>
+     <p lang="it">
+      ma consiglio bene all'Agan Thymoides di non entrare in guerra. Stupido
+						non dire che mi basta provarci, scrivi sempre contro chi pensi
+						Ti consigliamo di usarlo.
+     </p>
+     <p lang="en">
+      but I advise the Agan Thymoides well not to be in war. Stupid
+						don't say it's enough for me to try, always write against who you think
+						We advise you to use it.
+     </p>
+    </div>
+   </div>
+   <div n="10" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἢν δέ τίς ποτε βουληθῇ χρῆσθαι τῷ χρησίμῳ εἰς
+						πόλεμον ἵππῳ ὡς μεγαλοπρεπεστέρῳ τε καὶ περιβλεπτοτέρῳ ἱππάζεσθαι, τοῦ μὲν
+						ἕλκειν τε τὸ στόμα τῷ χαλινῷ καὶ μυωπίζειν τε καὶ μαστιγοῦν τὸν ἵππον, ἃ οἱ
+						πολλοὶ ποιοῦντες λαμπρύνειν οἴονται, ἀπέχεσθαι δεῖ· πάντα γὰρ τἀναντία οὗτοί
+						γε ποιοῦσιν ὧν βούλονται.
+     </p>
+     <p lang="it">
+      Se non li usi quando vuoi usarli
+						cavallo di guerra come il più grande e il più attento che cavalchi, per me
+						ferirono la bocca della briglia, strizzarono gli occhi e frustarono l'ippopotamo, che il
+						molti che brillano si vedono, si astengono dal vedere, per sempre contro questi
+						lasciali andare dove vogliono.
+     </p>
+     <p lang="en">
+      If you don't use them when you want to use them
+						war horse as the grandest and the most careful you ride, for me
+						they wound the bridle's mouth and squinted and whipped the hippo, which the
+						many who shine are seen, refrain from seeing, for always against these
+						let them go where they want.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      τά τε γὰρ στόματα ἕλκοντες ἄνω ἀντὶ τοῦ προορᾶν ἐκτυφλοῦσι τοὺς ἵππους καὶ
+						μυωπίζοντες καὶ παίοντες ἐκπλήττουσιν, ὡς τεταράχθαι καὶ κινδυνεύειν. ταῦτα
+						δʼ ἐστὶν ἵππων ἔργα τῶν μάλιστα ἀχθομένων ἱππασίᾳ καὶ αἰσχρὰ καὶ οὐ καλὰ
+						ποιούντων.
+     </p>
+     <p lang="it">
+      per quelle bocche che tirano oltre il loro scopo, accecando i cavalli e
+						Miopi e ciechi, sorprendono, come se tremassero e fossero in pericolo. Questo
+						poiché ci sono lavori di cavalli, anche quelli che sono trasportati da cavalli, e sono brutti e non buoni
+						Chi.
+     </p>
+     <p lang="en">
+      for those mouths pulling above instead of their purpose, blinding the horses and
+						short-sighted and blind, they surprise, as if they are trembling and in danger. this
+						for there are works of horses, even those who are carried by horses, and they are ugly and not good
+						who.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      ἐὰν δέ τις διδάξῃ τὸν ἵππον ἐν χαλαρῷ μὲν τῷ χαλινῷ ἱππεύειν, ἄνω δὲ τὸν
+						αὐχένα αἴρειν, ἀπὸ δὲ τῆς κεφαλῆς κυρτοῦσθαι, οὕτως ἂν ἀπεργάζοιτο ποιεῖν
+						τὸν ἵππον οἵοισπερ καὶ αὐτὸς ἥδεταί τε καὶ ἀγάλλεται.
+     </p>
+     <p lang="it">
+      se non insegna loro a cavalcare un cavallo in modo rilassato con le briglie, ma
+						niente collo, ma dalla testa si piega, quindi se funzionasse
+						l'ippopotamo e lui viene e si rallegra.
+     </p>
+     <p lang="en">
+      if he does not teach them to ride a horse in a relaxed manner with a bridle, but
+						no neck, but from the head it bends, so if it were working
+						the hippopotamus and he comes and rejoices.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      τεκμήριον δὲ ὅτι τούτοις ἥδεται· ὅταν γὰρ αὐτὸς σχηματοποιεῖσθαι θέλῃ παρʼ
+						ἵππους, μάλιστα δὲ ὅταν παρὰ θηλείας, τότε αἴρει τε τὸν αὐχένα ἄνω καὶ
+						κυρτοῖ μάλιστα τὴν κεφαλὴν γοργούμενος, καὶ τὰ μὲν σκέλη ὑγρὰ μετεωρίζει,
+						τὴν δὲ οὐρὰν ἄνω ἀνατείνει.
+     </p>
+     <p lang="it">
+      ma presume che ciò accadrà, perché quando sarà formato lo vorrà
+						cavallo, e infatti, quando è vicino alla capezza, allora solleva il collo e
+						infatti china il capo canticchiando, e soffia umidamente sui rami,
+						ma il cielo sopra si alza.
+     </p>
+     <p lang="en">
+      but he assumed that this is coming; for when he is formed he wants to
+						horse, and in fact, when near the halter, then he lifts the neck up and
+						in fact, he bows his head humming, and he wetly blows his branches,
+						but the sky above rises.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ὅταν οὖν τις αὐτὸν εἰς ταῦτα προάγῃ ἅπερ αὐτὸς σχηματοποιεῖται, ὅταν μάλιστα
+						καλλωπίζηται, οὕτως ἡδόμενόν τε τῇ ἱππασίᾳ καὶ μεγαλοπρεπῆ καὶ γοργὸν καὶ
+						περίβλεπτον ἀποφαίνει τὸν ἵππον. ὡς οὖν ἡγούμεθα ταῦτʼ ἂν ἀπεργασθῆναι νῦν
+						αὖ πειρασόμεθα διηγεῖσθαι.
+     </p>
+     <p lang="it">
+      quando dunque lo promuove a queste cose, è formato, quando infatti
+						abbellito, così dedito alla cavalcatura e maestoso e veloce e
+						perivelpton pronuncia ippopotamo. se è fatto adesso
+						aὖ abbiamo la tentazione di raccontare storie.
+     </p>
+     <p lang="en">
+      when, therefore, he promotes him to these things, he is formed, when in fact
+						beautified, so given to riding and majestic and swift and
+						perivelpton pronounces hippo. if it is done now
+						aὖ we are tempted to tell stories.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      πρῶτον μὲν τοίνυν χρὴ οὐ μεῖον δυοῖν χαλινοῖν
+						κεκτῆσθαι. τούτων δὲ ἔστω ὁ μὲν λεῖος, τοὺς τροχοὺς εὐμεγέθεις ἔχων, ὁ δʼ
+						ἕτερος τοὺς μὲν τροχοὺς καὶ βαρεῖς καὶ ταπεινούς, τοὺς δʼ ἐχίνους ὀξεῖς,
+						ἵνα, ὁπόταν μὲν τοῦτον λάβῃ, ἀσχάλλων τῇ τραχύτητι διὰ τοῦτο ἀφίῃ, ὅταν δὲ
+						τὸν λεῖον μεταλάβῃ, τῇ μὲν λειότητι αὐτοῦ ἡσθῇ, ἃ δʼ ἂν ὑπὸ τοῦ τραχέος
+						παιδευθῇ, ταὐτὰ δὲ καὶ ἐν τῷ λείῳ ποιῇ.
+     </p>
+     <p lang="it">
+      Innanzitutto, non usano meno di due redini
+						essere acquisito. ma lasciatemi essere tranquillo, ho le ruote grandi, il
+						un altro, quelli senza ruote e pesanti e umili, quelli senza ruote,
+						in modo che, se ricevesse questo, non sarebbe turbato dalla ruvidità a causa di questo, quando
+						inghiottire la morbidezza della sua morbidezza, dovunque sia sotto la trachea
+						essere insegnato, e questo anche alla luce della poesia.
+     </p>
+     <p lang="en">
+      First, they don't use less than two reins
+						be acquired. but let me be smooth, I have big wheels, the
+						another, those without wheels and heavy and humble, those without wheels,
+						so that, if he received this, he would not be troubled by the roughness because of this, when
+						swallow the smoothness of his smoothness, wherever it is under the trachea
+						be taught, and this also in the light of poetry.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      ἢν δʼ αὖ καταφρονήσας τῆς λειότητος θαμινὰ ἀπερείδηται ἐν αὐτῷ, τούτου ἕνεκα
+						τοὺς τροχοὺς μεγάλους τῷ λείῳ προστίθεμεν, ἵνα χάσκειν ἀναγκαζόμενος ὑπʼ
+						αὐτῶν ἀφίῃ τὸ στόμιον. οἷόν τε δὲ καὶ τὸν τραχὺν παντοδαπὸν ποιεῖν καὶ
+						κατειλοῦντα καὶ κατατείνοντα.
+     </p>
+     <p lang="it">
+      Se hai disprezzato la gentilezza, per questo motivo in lui la rovina è inevitabile
+						aggiungiamo le grandi ruote alla preda, in modo che cada sotto forzatura
+						Lasciamo che chiudano la bocca. E chi è il rude ovunque?
+						occupare e occupare.
+     </p>
+     <p lang="en">
+      If you have despised gentleness, doom is inevitable in him, because of this
+						we add the big wheels to the prey, so that it falls under being forced
+						Let them shut their mouths. And who is the rough one everywhere?
+						occupying and occupying.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      ὁποῖοι δʼ ἂν ὦσι χαλινοί, πάντες ὑγροὶ ἔστωσαν. τὸν μὲν γὰρ σκληρόν, ὅπῃ ἂν ὁ
+						ἵππος λάβῃ, ὅλον ἔχει πρὸς ταῖς γνάθοις, ὥσπερ καὶ ὀβελίσκον, ὁπόθεν ἄν τις
+						λάβῃ, ὅλον αἴρει.
+     </p>
+     <p lang="it">
+      Coloro che sono così contenuti, sono tutti arrabbiati. perché è duro, dove lui
+						Quando riceve, ha tutto nelle mascelle, come un obelisco, donde se
+						prendilo, qualunque cosa sia.
+     </p>
+     <p lang="en">
+      Those who are so restrained, all are angry. because he is hard, where he
+						When he receives, he has everything in his jaws, like an obelisk, whence if
+						take it, whatever it is.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      ὁ δὲ ἕτερος ὥσπερ ἡ ἅλυσις ποιεῖ· ὃ γὰρ ἂν ἔχῃ τις αὐτοῦ, τοῦτο μόνον
+						ἄκαμπτον μένει, τὸ δὲ ἄλλο ἀπήρτηται. τὸ δὲ φεῦγον ἐν τῷ στόματι ἀεὶ θηρεύων
+						ἀφίησιν ἀπὸ τῶν γνάθων τὸ στόμιον· τούτου ἕνεκα καὶ οἱ κατὰ μέσον ἐκ τῶν
+						ἀξόνων δακτύλιοι κρεμάννυνται, ὅπως τούτους διώκων τῇ τε γλώττῃ καὶ τοῖς
+						ὀδοῦσιν ἀμελῇ τοῦ ἀναλαμβάνειν πρὸς τὰς γνάθους τὸν χαλινόν.
+     </p>
+     <p lang="it">
+      ma l'altro è come una catena; perché se ha la sua, solo questa
+						rimane rigido, ma il resto viene rimosso. Ma lo lasciarono in bocca alle bestie selvagge
+						lascia la bocca dalle mascelle; di questo undici e la media di
+						gli anelli dell'albero pendono, come questi persecutori della lingua e del
+						Sono negligenti nel prendere le redini per le mascelle.
+     </p>
+     <p lang="en">
+      but the other is like a chain; for if he has his own, this only
+						remains rigid, but the rest is removed. But they left it in the mouth of wild beasts
+						leave the mouth from the jaws; of this eleven and the average of
+						shaft rings are hanging, like these persecutors of the tongue and the
+						They are negligent in taking the rein by the jaws.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      εἰ δέ τις ἀγνοεῖ, τί τὸ ὑγρὸν τοῦ χαλινοῦ καὶ τί τὸ σκληρόν, γράψομεν καὶ
+						τοῦτο. ὑγρὸν μὲν γάρ ἐστιν ὅταν οἱ ἄξονες εὐρείας καὶ λείας ἔχωσι τὰς
+						συμβολάς, ὥστε ῥᾳδίως κάμπτεσθαι· καὶ πάντα δὲ ὁπόσα περιτίθεται περὶ τοὺς
+						ἄξονας ἢν εὐρύστομα ᾖ καὶ μὴ σύμπυκνα, ὑγρότερά ἐστιν.
+     </p>
+     <p lang="it">
+      se non li conosce qual'è la parte liquida della briglia e qual'è la parte dura scriviamo anche
+						Questo. è fluido con il gar quando gli alberi larghi e lisci hanno il
+						e tutto ciò che viene detto riguardo a
+						se l'asse è stretto e non denso, è più umido.
+     </p>
+     <p lang="en">
+      if he doesn't know them, what is the liquid part of the bridle and what is the hard part, let's also write
+						this. it is fluid with gar when the broad and smooth shafts have the
+						and all that is said about the
+						axis if it is tight and not dense, it is more moist.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      ἢν δὲ χαλεπῶς ἕκαστα τοῦ χαλινοῦ διατρέχῃ καὶ συνθέῃ, τοῦτʼ ἐστὶ τὸ σκληρὸν
+						εἶναι. ὁποῖος δʼ ἄν τις ᾖ, τούτῳ τάδε γε πάντα ταὐτὰ ποιητέον, ἤνπερ γε
+						βούληται ἀποδείξασθαι τὸν ἵππον οἷονπερ εἴρηται·
+     </p>
+     <p lang="it">
+      Ma se percorre ogni parte della briglia e la compone, quella è la parte difficile.
+						È. chiunque li veda, così e così e così e così e così e così e così e così e così e così
+						è destinato a dimostrare il cavallo di cui si parla;
+     </p>
+     <p lang="en">
+      But if he runs through each part of the bridle and composes it, that is the hard part.
+						is. whoever sees them, so and so and so and so and so and so and so and so and so and so and so
+						it is intended to prove the horse that is spoken of;
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      ἀνακρουστέον μὲν τὸ στόμα τοῦ ἵππου οὔτε ἄγαν χαλεπῶς ὥστʼ ἐκνεύειν, οὔτε
+						ἄγαν ἡσύχως ὡς μὴ αἰσθάνεσθαι· ἐπειδὰν δὲ ἀνακρουόμενος αἴρῃ τὸν αὐχένα,
+						δοτέον εὐθὺς τὸν χαλινόν. καὶ τἆλλα δὲ δεῖ, ὥσπερ οὐ παυόμεθα λέγοντες, ἐν ᾧ
+						ἂν καλῶς ὑπηρετῇ, χαρίζεσθαι τῷ ἵππῳ.
+     </p>
+     <p lang="it">
+      risuonando con la bocca del cavallo, né parlavano con leggerezza per respirare, né
+						Agan hsichos come se non si sentisse;
+						dare liberamente le redini. E vede la gioia, come se non smettiamo di dirlo, in ᾧ
+						Se servi bene, sarai soddisfatto del cavallo.
+     </p>
+     <p lang="en">
+      resounding with the horse's mouth, nor did they speak lightly so as to breathe, nor
+						Agan hsichos as if not felt;
+						freely give the reins. And he sees joy, as if we do not stop saying, in ᾧ
+						If you serve well, you will be pleased with the horse.
+     </p>
+    </div>
+    <div n="13" type="section">
+     <p>
+      καὶ ὅταν δʼ αἴσθηται ἡδόμενον τὸν ἵππον τῇ τε ὑψαυχενίᾳ καὶ τῇ χαλαρότητι, ἐν
+						τούτῳ οὐδὲν δεῖ χαλεπὸν προσφέρειν ὡς πονεῖν ἀναγκάζοντα, ἀλλὰ θωπεύειν ὡς
+						ἱππάσασθαι βουλόμενον· οὕτω γὰρ μάλιστα θαρρῶν πρόεισιν εἰς τὴν ταχεῖαν
+						ἱππασίαν.
+     </p>
+     <p lang="it">
+      e quando si sente cedere al cavallo con orgoglio e rilassatezza, dentro
+						a questo non offrono sollievo come se forzassero il dolore, ma leniscono come
+						cavalca con gli occhi chiusi, perché è così che osi correre avanti
+						equestre.
+     </p>
+     <p lang="en">
+      and when he feels himself yielding to the horse with pride and relaxation, in
+						to this one they do not offer relief as if they were forcing pain, but they soothe as
+						ride with your eyes closed, for that is how you dare to rush forward
+						equestrian.
+     </p>
+    </div>
+    <div n="14" type="section">
+     <p>
+      ὡς δὲ καὶ τῷ ταχὺ θεῖν ἵππος ἥδεται τεκμήριον· ἐκφυγὼν γὰρ οὐδεὶς βάδην
+						πορεύεται, ἀλλὰ θεῖ. τούτῳ γὰρ πέφυκεν ἥδεσθαι, ἢν μή τις πλείω τοῦ καιροῦ
+						θεῖν ἀναγκάζῃ· ὑπερβάλλον δὲ τὸν καιρὸν οὐδὲν τῶν πάντων ἡδὺ οὔτε ἵππῳ οὔτε
+						ἀνθρώπῳ.
+     </p>
+     <p lang="it">
+      e come si dice al veloce, un cavallo arriverà sicuramente;
+						cammina, ma vuole. poiché questa è la fine del mio viaggio, se non mi avvicino a loro in tempo
+						li costringerà; ma esagerando il tempo, niente di tutto, né cavallo né
+						Uomo.
+     </p>
+     <p lang="en">
+      and as they say to the swift, a horse is sure to come;
+						he walks, but he wants. for this is the end of my journey, if I do not approach them in time
+						he will compel them; but exaggerating the time, nothing of all things, neither horse nor
+						man.
+     </p>
+    </div>
+    <div n="15" type="section">
+     <p>
+      ὅταν γε μὴν εἰς τὸ ἱππάζεσθαι μετὰ τοῦ κυδροῦ ἀφιγμένος ᾖ, εἰθισμένος μὲν
+						δήπου ἡμῖν ἦν ἐν τῇ πρώτῃ ἱππασίᾳ ἐκ τῶν στροφῶν εἰς τὸ θᾶττον ὁρμᾶσθαι. ἢν
+						δέ τις τοῦτο
+      <del>
+       μὲν
+      </del>
+      μεμαθηκότος αὐτοῦ ἅμα ἀντιλαμβάνηταί τε τῷ
+						χαλινῷ καὶ σημήνῃ τῶν ὁρμητηρίων τι, οὕτως ὑπὸ μὲν τοῦ χαλινοῦ πιεσθείς, ὑπὸ
+						δὲ τοῦ ὁρμᾶν σημανθῆναι ἐγερθείς,
+      <del>
+       καὶ
+      </del>
+      προβάλλεται μὲν τὰ στέρνα,
+						αἴρει δὲ ἄνω τὰ σκέλη ὀργιζόμενος, οὐ μέντοι ὑγρά γε· οὐ γὰρ μάλα ὅταν
+						λυπῶνται ὑγροῖς τοῖς σκέλεσιν ἵπποι χρῶνται.
+     </p>
+     <p lang="it">
+      quando non vai col bue sei arrivato, sei abituato
+						nel nostro paese era sul primo cavallo dai turni a quella corsa. O
+						e questi a sua insaputa se vengono percepiti da lui
+						briglia e segno degli speroni cosa, così sei premuto sotto la briglia, sotto
+						ma gli corrono incontro stando in piedi, ed egli è proiettato con le cisterne,
+						ma lui solleva i rami con ira, non beve acqua, perché non importa quando
+						Sono dispiaciuti per coloro che sono nel bisogno.
+     </p>
+     <p lang="en">
+      when you don't ride with the ox, you've arrived, you're used to it
+						in our country he was on the first horse from the turns to that race. or
+						and these without his knowledge if they are perceived by him
+						bridle and sign of the spurs what, thus you are pressed under the bridle, under
+						but they rush to him standing up, and he is projected with the cisterns,
+						but he lifts up the branches in anger, don't drink water, because it doesn't matter when
+						They are sorry for those who are in need.
+     </p>
+    </div>
+    <div n="16" type="section">
+     <p>
+      ἢν δέ τις οὕτως ἀνεζωπυρημένῳ αὐτῷ δῷ τὸν χαλινόν, ἐνταῦθʼ ὑφʼ ἡδονῆς τῷ διὰ
+						τὴν χαλαρότητα τοῦ στομίου λελύσθαι νομίζειν, κυδρῷ μὲν τῷ σχήματι, ὑγροῖν
+						δὲ τοῖν σκελοῖν γαυριώμενος φέρεται, παντάπασιν ἐκμιμούμενος τὸν πρὸς ἵππους
+						καλλωπισμόν.
+     </p>
+     <p lang="it">
+      Se non lo tenevano a freno, infiammandolo così, allora era a suo piacimento.
+						pensano che la scioltezza della bocca sia allentata
+						ma si porta con le gambe ancorate, imitando sempre un cavallo
+						abbellimento
+     </p>
+     <p lang="en">
+      If they did not rein him in, thus inflaming him, then he was at his pleasure.
+						they think the looseness of the mouth is loose
+						but he carries himself with his legs anchored, always imitating a horse
+						beautification
+     </p>
+    </div>
+    <div n="17" type="section">
+     <p>
+      καὶ οἱ θεώμενοι τὸν ἵππον τοιοῦτον ἐπικαλοῦσιν ἐλευθέριόν τε καὶ ἐθελουργὸν
+						καὶ ἱππαστὴν καὶ θυμοειδῆ καὶ σοβαρὸν καὶ ἅμα ἡδύν τε καὶ γοργὸν ἰδεῖν. καὶ
+						ταῦτα μὲν δή, ἢν τούτων τις ἐπιθυμήσῃ, μέχρι τούτων ἡμῖν γεγράφθω.
+     </p>
+     <p lang="it">
+      e coloro che adorano gli dei chiamano questo cavallo libero e volenteroso
+						E cavalcando, e timoide, e serio, e vedono sia il tramonto che la gorgone. E
+						Queste cose, se vuoi, scriverò fino a queste cose.
+     </p>
+     <p lang="en">
+      and those who worship the gods call this horse free and willing
+						And riding, and thymoide, and serious, and they see both sunset and gorgon. and
+						These things, if you wish, I will write until these things.
+     </p>
+    </div>
+   </div>
+   <div n="11" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἢν δέ τις ἄρα βουληθῇ καὶ πομπικῷ καὶ μετεώρῳ
+						καὶ λαμπρῷ ἵππῳ χρήσασθαι, οὐ μάλα μὲν τὰ τοιαῦτα ἐκ παντὸς ἵππου γίγνεται,
+						ἀλλὰ δεῖ ὑπάρξαι αὐτῷ καὶ τὴν ψυχὴν μεγαλόφρονα καὶ τὸ σῶμα εὔρωστον.
+     </p>
+     <p lang="it">
+      In caso contrario, verrà utilizzato sia in modo pompico che meteorico
+						e per un cavallo brillante viene usato, non importa di cosa sia fatto,
+						ma ecco, ha un'anima generosa e un corpo sano.
+     </p>
+     <p lang="en">
+      If not, then it will be used both pompically and meteorically
+						and for a brilliant horse it is used, no matter what it is made of,
+						but behold, he has both a generous soul and a healthy body.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      οὐ μέντοι ὅ γε οἴονταί τινες τὸν τὰ σκέλη ὑγρὰ ἔχοντα καὶ τὸ σῶμα αἴρειν
+						δυνήσεσθαι, οὕτως ἔχει· ἀλλὰ μᾶλλον ὃς ἂν τὴν ὀσφῦν ὑγράν τε καὶ βραχεῖαν
+						καὶ ἰσχυρὰν ἔχῃ (καὶ οὐ τὴν κατʼ οὐρὰν λέγομεν, ἀλλʼ ἣ πέφυκε μεταξὺ τῶν
+						πλευρῶν καὶ τῶν ἰσχίων κατὰ τὸν κενεῶνα), οὗτος δυνήσεται πόρρω ὑποτιθέναι
+						τὰ ὀπίσθια σκέλη ὑπὸ τὰ ἐμπρόσθια.
+     </p>
+     <p lang="it">
+      non mentire sul loro aspetto con le gambe bagnate e un corpo maschile
+						potrai, così è;
+						ed ha potenza (e non diciamo che è nei cieli,
+						fianchi e fianchi secondo il kenneon), questo può essere
+						le zampe posteriori sotto quelle anteriori.
+     </p>
+     <p lang="en">
+      don't lie what they look like with wet legs and a male body
+						you will be able, so it is;
+						and it has power (and we do not say that it is in heaven,
+						sides and hips according to the kenneon), this one can be
+						the back legs under the front ones.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      ἢν οὖν τις ὑποτιθέντος αὐτοῦ ἀνακρούῃ τῷ χαλινῷ, ὀκλάζει μὲν τὰ ὀπίσθια ἐν
+						τοῖς ἀστραγάλοις, αἴρει δὲ τὸ πρόσθεν σῶμα, ὥστε τοῖς ἐξ ἐναντίας φαίνεσθαι
+						τὴν γαστέρα καὶ τὰ αἰδοῖα. δεῖ δὲ καὶ ὅταν ταῦτα ποιῇ διδόναι αὐτῷ τὸν
+						χαλινόν, ὅπως τὰ κάλλιστα ἵππου ἑκόντα ποιῆσαι δοκῇ τοῖς ὁρῶσιν.
+     </p>
+     <p lang="it">
+      Se, quindi, i suoi sottoposti colpiscono le briglie, piange con le zampe posteriori dentro
+						alle caviglie, ma solleva il corpo davanti, in modo che sembri opposto
+						lo stomaco e la vulva. e vedi anche quando queste cose gli saranno date
+						hanno frenato, come il meglio del meglio.
+     </p>
+     <p lang="en">
+      If, therefore, his underlings strike the bridle, he weeps with his hindquarters in
+						to the ankles, but lifts the body in front, so that it appears to the opposite
+						the stomach and the vulva. and see also when these things are given to him
+						they reined in, as the best of the best.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      εἰσὶ μέντοι οἳ καὶ ταῦτα διδάσκουσιν οἱ μὲν ῥάβδῳ ὑπὸ τοὺς ἀστραγάλους
+						κρούοντες, οἱ δὲ καὶ βακτηρίᾳ παρατρέχοντά τινα κελεύοντες ὑπὸ τὰς μηριαίας
+						παίειν.
+     </p>
+     <p lang="it">
+      siete uomini che insegnano queste cose anche con la verga sotto le caviglie
+						bussare e i batteri che strisciano sotto i femori
+						giocare
+     </p>
+     <p lang="en">
+      you are men who also teach these things with a rod under the ankles
+						knocking, and the bacteria crawling under the thighbones
+						play
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ἡμεῖς γε μέντοι τὸ κράτιστον τῶν διδασκαλίων νομίζομεν, ὥσπερ ἀεὶ λέγομεν, ἢν
+						ἐν παντὶ παρέπηται τὸ ἐν ᾧ ἂν ποιήσῃ τῷ ἀναβάτῃ κατὰ γνώμην τυγχάνειν
+						ῥᾳστώνης παρʼ αὐτοῦ.
+     </p>
+     <p lang="it">
+      Noi, uomini dello stato degli insegnamenti, pensiamo, come diciamo, se
+						in ogni cosa si fa riferimento all'ἐν ᾧ se secondo lui capita al cavaliere
+						ῥᾳstonis suo malgrado.
+     </p>
+     <p lang="en">
+      We, the men of the state of the teachings, think, as we say, if
+						in everything, the ἐν ᾧ is referred to if it happens to the rider in his opinion
+						ῥᾳstonis in spite of him.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      ἃ μὲν γὰρ ὁ ἵππος ἀναγκαζόμενος ποιεῖ, ὥσπερ καὶ Σίμων λέγει, οὔτʼ ἐπίσταται
+						οὔτε καλά ἐστιν οὐδὲν μᾶλλον ἢ εἴ τις ὀρχηστὴν μαστιγῶν καὶ κεντρίζων
+      <add>
+       ῥυθμίζοι
+      </add>
+      · πολὺ γὰρ ἂν πλείω ἀσχημονοίη ἢ καλὰ ποιοίη ὁ
+						τοιαῦτα πάσχων καὶ ἵππος καὶ ἄνθρωπος. ἀλλὰ δεῖ ἀπὸ σημείων ἑκόντα πάντα τὰ
+						κάλλιστα καὶ λαμπρότατα ἐπιδείκνυσθαι.
+     </p>
+     <p lang="it">
+      infatti, se il cavallo non è costretto a cantare, come dice anche Simone, non crede
+						non va neanche bene, oppure è l'orchestra di fruste e pungiglioni
+							adattatevi; perché dipende molto se navigo brutto o bene chi
+						così paziente, cavallo e uomo. ma vedi dai segni di tutto
+						ben e brillantemente visualizzato.
+     </p>
+     <p lang="en">
+      for unless the horse is compelled to sing, as Simon also says, it does not believe
+						it's not good, either, or it's the orchestra of whips and stingers
+							adjust yourselves; for it is very much whether I sail ugly or well who
+						so patient and horse and man. but see from the signs of everything
+						well and brilliantly displayed.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      ἢν δὲ καί, ὅταν μὲν ἱππάζηται μέχρι, πολλοῦ ἱδρῶτος ἐλαύνηται, ὅταν δὲ καλῶς
+						μετεωρίζῃ ἑαυτόν, ταχύ τε καταβαίνηται καὶ ἀποχαλινῶται, εὖ χρὴ εἰδέναι ὅτι
+						ἑκὼν εἶσιν εἰς τὸ μετεωρίζειν ἑαυτόν·
+     </p>
+     <p lang="it">
+      anche se, quando arriva, suda molto, ma quando lui
+						fantastica, scende velocemente e si rilassa, poi lo sa
+						se sono nei meteoriti stessi;
+     </p>
+     <p lang="en">
+      even though, when he rides up to, he sweats a lot, but when he
+						he fantasizes himself, quickly descends and relaxes, then he knows that
+						if they are in the meteorites themselves;
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      ἐπὶ τῶν τοιούτων δὴ ἱππαζόμενοι ἵππων καὶ θεοὶ καὶ ἥρωες γράφονται, καὶ
+						ἄνδρες οἱ καλῶς χρώμενοι αὐτοῖς μεγαλοπρεπεῖς φαίνονται.
+     </p>
+     <p lang="it">
+      su coloro che non cavalcano cavalli sono scritti dei ed eroi, e
+						gli uomini di bella carnagione sembrano loro maestosi.
+     </p>
+     <p lang="en">
+      on those not riding horses and gods and heroes are written, and
+						well-complexioned men look majestic to them.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      οὕτω δὲ καὶ ἔστιν ὁ μετεωρίζων ἑαυτὸν ἵππος σφόδρα
+      <del>
+       ἢ καλὸν ἢ δεινὸν
+							ἢ
+      </del>
+      ἀγαστὸν
+      <del>
+       ἢ θαυμαστόν
+      </del>
+      , ὡς πάντων τῶν ὁρώντων καὶ νέων
+						καὶ γεραιτέρων τὰ ὄμματα κατέχειν. οὐδεὶς γοῦν οὔτε ἀπολείπει αὐτὸν οὔτε
+						ἀπαγορεύει θεώμενος, ἔστʼ ἄν περ ἐπιδεικνύηται τὴν λαμπρότητα.
+     </p>
+     <p lang="it">
+      lo stesso vale per chi fantastica su se stesso, sia nel bene che nel male
+							o amato o ammirato, come tutti quelli che vedono e sono giovani
+						e quelli più anziani possiedono i sigilli. nemmeno lui lo omette
+						proibisce di essere un dio, anche se sta ostentando la sua genialità.
+     </p>
+     <p lang="en">
+      so is he who fantasizes about himself, either for good or for evil
+							or beloved or admired, like all those who see and are young
+						and older ones own the seals. neither does he omit him either
+						he forbids being a god, even though he is showing off his brilliance.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      ἤν γε μήν ποτε συμβῇ τινι τῶν τοιοῦτον ἵππον κεκτημένων ἢ φυλαρχῆσαι ἢ
+						ἱππαρχῆσαι, οὐ δεῖ αὐτὸν τοῦτο σπουδάζειν, ὅπως αὐτὸς μόνος λαμπρὸς ἔσται,
+						ἀλλὰ πολὺ μᾶλλον ὅπως ὅλον τὸ ἑπόμενον ἀξιοθέατον φανεῖται.
+     </p>
+     <p lang="it">
+      Se mai dovesse accadere, che dire dei cavalli acquisiti o del tenerli o
+						Ippocrate non lo vede studiare questo, poiché lui solo è brillante,
+						ma molto più probabile poiché si vede tutta l'attrazione successiva.
+     </p>
+     <p lang="en">
+      If it ever happens, what about the acquired horses or keep them or
+						Hippocrates, does not see him studying this, as he alone is brilliant,
+						but much more likely as all the next attraction is seen.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      ἢν μὲν οὖν ἡγῆται
+      <del>
+       ὡς μάλιστα ἐπαινοῦσι τοὺς τοιούτους ἵππους,
+      </del>
+      ὃς
+						ἂν ἀνωτάτω αἰρόμενος καὶ πυκνότατα τὸ σῶμα βραχύτατον προβαίνῃ, δῆλον ὅτι
+						καὶ βάδην ἕποιντʼ ἂν οἱ ἄλλοι ἵπποι αὐτῷ. ἐκ δὲ ταύτης τῆς ὄψεως τί ἂν καὶ
+						λαμπρὸν γένοιτʼ ἄν;
+     </p>
+     <p lang="it">
+      In caso contrario, è come se stesse effettivamente lodando tali cavalli, il che
+						Se il corpo si solleva e il corpo si accorcia, è perché
+						E andò a vedere se gli altri facevano lo stesso con lui. ma da questo punto di vista, e se
+						brillante genoitʼ ἅν?
+     </p>
+     <p lang="en">
+      If not, then it is as if he were actually praising such horses, which
+						If the body is lifted up and the body is shortened, it is because
+						And he went to see if the others did the same to him. but from this point of view, what if
+						brilliant genoitʼ ἅν?
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      ἢν δὲ ἐξεγείρας τὸν ἵππον ἡγῇ μήτε τῷ ἄγαν ταχεῖ μήτε τῷ ἄγαν βραδεῖ, ὡς δʼ
+						εὐθυμότατοι ἵπποι καὶ γοργότατοι καὶ
+      <del>
+       πονεῖν
+      </del>
+      εὐσχημονέστατοι
+						γίγνονται, —ἐὰν ἡγῇ αὐτοῖς οὕτως, ἁθρόος μὲν
+      <add>
+       ἂν
+      </add>
+      ὁ κτύπος, ἁθρόον
+						δὲ τὸ φρύαγμα καὶ τὸ φύσημα τῶν ἵππων συμπαρέποιτο, ὥστε οὐ μόνον αὐτὸς ἀλλὰ
+						καὶ πάντες οἱ συμπαρεπόμενοι ἀξιοθέατοι ἂν φαίνοιντο.
+     </p>
+     <p lang="it">
+      Ma se stimoli l'ippopotamo, la terra non accelererà né rallenterà, come
+						cavalli allegri e galoppanti e dolorosamente felici
+						diventano, —ἐἰν ἡγῇ aὐτοῖς ἐτοῖς ἐτος, ἐθροος ὅν ἅν ο κτυπος, ἐθροον
+						ma il nitrito e il nitrito dei cavalli corrispondevano, tanto che non solo lui ma
+						e tutti i turisti che l'accompagnavano se fossero apparsi.
+     </p>
+     <p lang="en">
+      But if you stir up the hippopotamus, the earth will neither speed nor slow down, as
+						jolly horses and galloping and painfully happy
+						they become, —ἐἰν ἡγῇ aὐτοῖς ἐτοῖς ἐτος, ἐθροος ὅν ἅν ο κτυπος, ἐθροον
+						but the neighing and neighing of the horses matched, so that not only he but
+						and all the accompanying sightseers if they appeared.
+     </p>
+    </div>
+    <div n="13" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἤν γε μήν τις καλῶς μὲν ἱππωνήσῃ, τρέφῃ δὲ ὡς
+						πόνους δύνασθαι ὑποφέρειν, ὀρθῶς δὲ χρῆται καὶ ἐν τοῖς πρὸς πόλεμον
+						μελετήμασι καὶ ἐν ταῖς πρὸς ἐπίδειξιν ἱππασίαις καὶ ἐν τοῖς πολεμικοῖς
+						ἀγωνίσμασι, τί ἔτι ἐμποδὼν τούτῳ μὴ οὐχὶ πλείονός τε ἀξίους ἵππους ποιεῖν ἢ
+						οἵους ἂν παραλαμβάνῃ, καὶ εὐδοκίμους μὲν ἵππους ἔχειν, εὐδοκιμεῖν δὲ αὐτὸν
+						ἐν τῇ ἱππικῇ, ἢν μή τι δαιμόνιον κωλύῃ;
+     </p>
+     <p lang="it">
+      Se non li cavalchi bene, dagli da mangiare come
+						i dolori si possono soffrire, ma se ne usa giustamente anche in chi va in guerra
+						studiamo sia negli spettacoli equestri che in quelli militari
+						combattere, ciò che lo ostacola, non la maggioranza dei cavalli degni che o
+						chiunque riceverà e coloro che hanno cavalli lo benediranno
+						nel cavallo, o quale demone lo ostacola?
+     </p>
+     <p lang="en">
+      If you don't ride them well, feed them as
+						pains can be suffered, but it is rightly used even in those who go to war
+						let's study both in the horse shows and in the military ones
+						fight, what hinders this, not a majority of worthy horses who or
+						whomever he receives, and those who have horses, let them bless him
+						in the horse, or what demon hinders?
+     </p>
+    </div>
+   </div>
+   <div n="12" type="chapter">
+    <div n="1" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      γράψαι δὲ βουλόμεθα καὶ ὡς δεῖ ὡπλίσθαι τὸν
+						μέλλοντα ἐφʼ ἵππου κινδυνεύειν. πρῶτον μὲν τοίνυν φαμὲν χρῆναι πρὸς τὸ σῶμα
+						τὸν θώρακα πεποιῆσθαι. τὸν μὲν γὰρ καλῶς ἁρμόττοντα
+      <del>
+       ἐκεῖνον
+      </del>
+      φέρει
+						τὸ σῶμα, τὸν δὲ ἄγαν χαλαρὸν οἱ ὦμοι μόνοι φέρουσιν. ὅ γε μὴν λίαν στενὸς
+						δεσμός, οὐχ ὅπλον ἐστίν.
+     </p>
+     <p lang="it">
+      Ma scrivi, lo sappiamo, e come vede, è armato
+						futuri in cui sono in pericolo. prima di tutto viene applicato sul corpo
+						il petto è convinto. perché porta colui che è ben qualificato
+						il corpo, ma lasciamo che siano gli uomini a portarlo da soli. Non è troppo stretto
+						un legame, non un'arma.
+     </p>
+     <p lang="en">
+      But write, we know, and as he sees, he is armed
+						futures where they are in danger. first of all, it is applied to the body
+						the chest is convinced. for he brings the one who is well qualified
+						the body, but let the men carry it alone. It's not too narrow
+						a bond, not a weapon.
+     </p>
+    </div>
+    <div n="2" type="section">
+     <p>
+      ἐπεὶ δὲ καὶ ὁ αὐχήν ἐστι τῶν καιρίων, φαμὲν χρῆναι καὶ τούτῳ ἐξ αὐτοῦ τοῦ
+						θώρακος ὅμοιον τῷ αὐχένι στέγασμα πεποιῆσθαι. τοῦτο γὰρ ἅμα κόσμον τε
+						παρέξει καί, ἢν οἷον δεῖ εἰργασμένον ᾖ, δέξεται ὅταν βούληται τῷ ἀναβάτῃ τὸ
+						πρόσωπον μέχρι τῆς ῥινός.
+     </p>
+     <p lang="it">
+      e siccome è il colmo dei tempi, è ora di mangiare anche questo di questo
+						torace simile al riparo del collo. perché questo è il mondo
+						inoltre, se qualcuno lo vede lavorare, accetta quando il pilota lo desidera
+						affrontare la luna.
+     </p>
+     <p lang="en">
+      and since it is the height of the times, it is time to eat even this one from this
+						chest similar to the neck shelter. because this is the world
+						also, if someone sees him working, he accepts when the rider wants the
+						face up to the moon.
+     </p>
+    </div>
+    <div n="3" type="section">
+     <p>
+      κράνος γε μὴν κράτιστον εἶναι νομίζομεν τὸ βοιωτιουργές· τοῦτο γὰρ αὖ
+						στεγάζει μάλιστα πάντα τὰ ὑπερέχοντα τοῦ θώρακος, ὁρᾶν δὲ οὐ κωλύει. ὁ δʼ αὖ
+						θώραξ οὕτως εἰργάσθω ὡς μὴ κωλύειν μήτε καθίζειν μήτʼ ἐπικύπτειν.
+     </p>
+     <p lang="it">
+      kranos ge non affermare è ciò che pensiamo sia il boiotiorges per questo;
+						accoglie infatti tutto l'eccesso del torace, ma non ostacola la visione. ὁ dʼ aὖ
+						lasciami agire così in modo che non si intromettano, non si siedano, non cadano.
+     </p>
+     <p lang="en">
+      kranos ge do not state is what we think is the boiotiorges; for this
+						in fact, it houses all the excess of the chest, but it does not obstruct the vision. ὁ dʼ aὖ
+						let me act like this so that they do not get in the way, do not sit down, do not fall over.
+     </p>
+    </div>
+    <div n="4" type="section">
+     <p>
+      τὰ δὲ περὶ τὸ ἦτρον καὶ τὰ αἰδοῖα
+      <del>
+       καὶ τὰ
+      </del>
+      κύκλῳ αἱ πτέρυγες
+						τοσαῦται καὶ τοιαῦται ἔστωσαν ὥστε στέγειν τὰ βέλη.
+     </p>
+     <p lang="it">
+      e attorno all'acroto e alla vulva e attorno alle ali
+						così si sistemarono e così si sistemarono per riparare le frecce.
+     </p>
+     <p lang="en">
+      and about the acrotum and the vulva and around the wings
+						so they set up and so they set up to shelter the arrows.
+     </p>
+    </div>
+    <div n="5" type="section">
+     <p>
+      ἐπεὶ δὲ καὶ ἡ ἀριστερὰ χεὶρ ἤν τι πάθῃ, καταλύει τὸν ἱππέα, καὶ ταύτῃ
+						ἐπαινοῦμεν τὸ ηὑρημένον ὅπλον τὴν χεῖρα καλουμένην. τόν τε γὰρ ὦμον σκεπάζει
+						καὶ τὸν βραχίονα καὶ τὸν πῆχυν καὶ τὸ ἐχόμενον τῶν ἡνιῶν, καὶ ἐκτείνεται δὲ
+						καὶ συγκάμπτεται· πρὸς δὲ τούτοις καὶ τὸ διαλεῖπον τοῦ θώρακος ὑπὸ τῇ
+						μασχάλῃ καλύπτει.
+     </p>
+     <p lang="it">
+      e la mano sinistra, qualunque cosa soffra, catalizza il cavaliere, e questo
+						lodiamo l'arma ritrovata nella mano chiamata. perché lo copre
+						e il braccio, la coscia e la parte interna dell'inguine, e si estende
+						e si contrae; e a queste anche la rottura del petto sotto di esso
+						coperture delle ascelle.
+     </p>
+     <p lang="en">
+      and the left hand, whatever it suffers, catalyzes the knight, and this
+						we praise the weapon found in the hand called. because it covers him
+						and the arm and the thigh and the inner part of the groin, and it extends
+						and it contracts; and to these also the break of the chest under it
+						armpit covers.
+     </p>
+    </div>
+    <div n="6" type="section">
+     <p>
+      τήν γε μὴν δεξιὰν ἐπαίρειν δεῖ, ἤν τε ἀκοντίσαι ἤν τε πατάξαι βουληθῇ. τοῦ
+						μὲν δὴ θώρακος τὸ κωλῦον ταύτῃ ἀφαιρετέον· ἀντὶ δὲ τούτου πτέρυγας ἐν τοῖς
+						γιγγλύμοις προσθετέον ὅπως, ὅταν μὲν διαίρηται, ὁμοίως ἀναπτύσσωνται, ὅταν
+						δὲ καταίρηται, ἐπικλείωνται.
+     </p>
+     <p lang="it">
+      non darle la mano destra, vedi se la tagli o la picchi. Di
+						senza il petto viene asportato il torace; al suo posto viene rimossa un'ala nelle gambe
+						gli aggiunti gyglymois come, quando divisi da, sono sviluppati in modo simile, quando
+						ma è maledetto, sono abbracciati.
+     </p>
+     <p lang="en">
+      don't give her a right hand, see if you cut her or beat her. of
+						without the chest, the thorax is removed; instead of this, a wing in the legs
+						gyglymois adjuncts such as, when divided by, are similarly developed, when
+						but it is cursed, they are embraced.
+     </p>
+    </div>
+    <div n="7" type="section">
+     <p>
+      τῷ γε μὴν βραχίονι τὸ ὥσπερ κνημὶς παρατιθέμενον βέλτιον ἡμῖν δοκεῖ εἶναι ἢ
+						συνδεθὲν
+      <add>
+       τῷ
+      </add>
+      ὅπλῳ. τό γε μὴν ψιλούμενον αἰρομένης τῆς δεξιᾶς
+						στεγαστέον ἐγγὺς τοῦ θώρακος ἢ μοσχείῳ ἢ χαλκείῳ· εἰ δὲ μή, ἐν τῷ
+						ἐπικαιροτάτῳ ἀφύλακτον ἔσται.
+     </p>
+     <p lang="it">
+      Per l'uomo che non ha un braccio, la cosa migliore che può fare per noi è l'uno o l'altro
+						collegato all'arma. il ge non psilumenon armene della destra
+						riparato vicino al petto o al polpaccio o al torace in caso contrario, nel
+						epikairotatiῳ afylakton ἔstai.
+     </p>
+     <p lang="en">
+      To the man who has no arm, the best thing he can do for us is either
+						connected to the weapon. the ge not psilumenon aromene of the right
+						sheltered close to the chest or the calf or the chest; if not, in the
+						epikairotatiῳ afylakton ἔstai.
+     </p>
+    </div>
+    <div n="8" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἐπεὶ δʼ ἤνπερ τι πάσχῃ ὁ ἵππος, ἐν παντὶ
+						κινδύνου καὶ ὁ ἀναβάτης γίγνεται, ὁπλίζειν δεῖ καὶ τὸν ἵππον προμετωπιδίῳ
+						καὶ προστερνιδίῳ καὶ παραμηριδίοις· ταῦτα γὰρ ἅμα καὶ τῷ ἀναβάτῃ παραμηρίδια
+						γίγνεται. πάντων δὲ μάλιστα τοῦ ἵππου τὸν κενεῶνα δεῖ σκεπάζειν· καιριώτατον
+						γὰρ ὂν καὶ ἀφαυρότατόν ἐστι· δυνατὸν δὲ σὺν τῷ ἐφιππίῳ καὶ αὐτὸν σκεπάσαι.
+     </p>
+     <p lang="it">
+      Di ciò di cui soffre il cavallo, in ogni cosa
+						pericolo e il cavaliere diventa, armano anche il cavallo con un frontale
+						e al prosternidio e alle armi da fianco: poiché anche queste sono armi da fianco per il cavaliere
+						diventa ma in ogni caso coprono il cavallo del cavallo;
+						poiché anche tu sei invincibile, e forte con il cavaliere anche lo copri.
+     </p>
+     <p lang="en">
+      About what the horse is suffering from, in everything
+						danger and the rider becomes, they also arm the horse with a frontal
+						and to the prosternidium and sidearms: for these are also sidearms for the rider
+						becomes but in any case they cover the horse's horse;
+						for you are also invincible, and strong with the horseman you also cover him.
+     </p>
+    </div>
+    <div n="9" type="section">
+     <p>
+      χρὴ δὲ καὶ τὸ ἔποχον τοιοῦτον ἐρράφθαι ὡς ἀσφαλέστερόν τε τὸν ἱππέα καθῆσθαι
+						καὶ τὴν ἕδραν τοῦ ἵππου μὴ σίνεσθαι. καὶ τὰ μὲν δὴ ἄλλα οὕτω καὶ ὁ ἵππος καὶ
+						ὁ ἱππεὺς ὡπλισμένοι ἂν εἶεν.
+     </p>
+     <p lang="it">
+      ma il tempo e la stagione di una persona simile sono considerati più sicuri del posto del cavaliere
+						e non sederti sulla sella del cavallo. E per le altre cose, lo stesso vale per il cavallo
+						i cavalieri armati se lo sono.
+     </p>
+     <p lang="en">
+      but the time and season of such a person is considered safer than the horseman's seat
+						and do not sit on the horse's saddle. And the other things, the same goes for the horse
+						the horsemen armed if they are.
+     </p>
+    </div>
+    <div n="10" type="section">
+     <p>
+      κνῆμαι δὲ καὶ πόδες ὑπερέχοιεν μὲν ἂν εἰκότως τῶν παραμηριδίων, ὁπλισθείη δʼ
+						ἂν καὶ ταῦτα, εἰ ἐμβάδες γένοιντο σκύτους, ἐξ οὗπερ αἱ κρηπῖδες ποιοῦνται·
+						οὕτω γὰρ ἂν ἅμα ὅπλον τε κνήμαις καὶ ποσὶν ὑποδήματʼ ἂν εἴη.
+     </p>
+     <p lang="it">
+      Mi sono mosso e i miei piedi traboccavano, se non altro per il rancio, armato di
+						sebbene anche questi, in embadas siano nati nella Scizia, da dove vengono ricavate le cripte;
+						Ecco come se porti un'arma e quante scarpe hai.
+     </p>
+     <p lang="en">
+      I moved and my feet were overflowing, if only for the rations, armed with
+						although these too, in embadas they were born in Scythia, from where the crypts are made;
+						That's how if you carry a weapon and how many shoes you have.
+     </p>
+    </div>
+    <div n="11" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ὡς μὲν δὴ μὴ βλάπτεσθαι θεῶν ἵλεων ὄντων ταῦτα
+						ὅπλα. ὡς δὲ τοὺς ἐναντίους βλάπτειν, μάχαιραν μὲν μᾶλλον ἢ ξίφος ἐπαινοῦμεν·
+						ἐφʼ ὑψηλοῦ γὰρ ὄντι τῷ ἱππεῖ κοπίδος μᾶλλον ἡ πληγὴ ἢ ξίφους ἀρκέσει.
+     </p>
+     <p lang="it">
+      finché queste creature non vengono danneggiate
+						braccia. ma poiché danneggiano gli avversari, lodiamo la spada con il maglio o con la spada;
+						Perché se il cavaliere è alto, basterà la ferita o la spada.
+     </p>
+     <p lang="en">
+      as long as these creatures are not harmed
+						arms. but as they harm the adversaries, we praise a sword with a mallet or a sword;
+						For if the rider is high, the wound or the sword will suffice.
+     </p>
+    </div>
+    <div n="12" type="section">
+     <p>
+      ἀντί γε μὴν δόρατος καμακίνου, ἐπειδὴ καὶ ἀσθενὲς καὶ δύσφορόν ἐστι, τὰ
+						κρανέϊνα δύο παλτὰ μᾶλλον ἐπαινοῦμεν. καὶ γὰρ ἐξαφεῖναι τὸ ἕτερον δυνατὸν τῷ
+						ἐπισταμένῳ, καὶ τῷ λειπομένῳ οἷόν τε χρῆσθαι καὶ εἰς τὸ ἀντίον καὶ εἰς τὰ
+						πλάγια καὶ εἰς τοὔπισθεν· καὶ ἅμα ἰσχυρότερά τε τοῦ δόρατος καὶ εὐφορώτερά
+						ἐστιν.
+     </p>
+     <p lang="it">
+      invece di una lancia arpione, perché sei malato e fastidioso, il
+						teschi due mani piuttosto lode. e perché l'altra forza è lasciata al
+						al fedele, e a quello che è rimasto, che è utilizzato entrambi nel
+						lateralmente e all'indietro; e se più forte della lancia e più fertile
+						è.
+     </p>
+     <p lang="en">
+      instead of a harpoon spear, because you are both sick and troublesome, the
+						skulls two coats rather praise. and because the other force is left to the
+						to the faithful, and to the one who is left, who is used both in the
+						sideways and to the rear; and if stronger than the spear and more fertile
+						it is.
+     </p>
+    </div>
+    <div n="13" type="section">
+     <p>
+      <milestone ed="P" unit="para"/>
+      ἀκόντισμά γε μὴν τὸ μακρότατον ἐπαινοῦμεν· καὶ
+						γὰρ ἀποστρέψαι καὶ μεταλαβεῖν παλτὸν οὕτω μᾶλλον ὁ χρόνος ἐγχωρεῖ. γράψομεν
+						δὲ ἐν βραχεῖ καὶ ὡς ἄν τις κράτιστα ἀκοντίζοι. ἢν γὰρ προβαλλόμενος μὲν τὰ
+						ἀριστερά, ἐπανάγων δὲ τὰ δεξιά, ἐξανιστάμενος δὲ ἐκ τῶν μηρῶν, μικρὸν
+						ἐπανακύπτουσαν τὴν λόγχην ἀφῇ, οὕτω σφοδρότατόν τε καὶ μακρότατον οἴσεται τὸ
+						ἀκόντιον, εὐστοχώτατον μέντοι, ἐὰν κατὰ τὸν σκοπὸν ἀφιεμένη ἀεὶ ὁρᾷ ἡ λόγχη.
+     </p>
+     <p lang="it">
+      affilatura non più lunga che lodiamo e
+						per andare via e prendere un cappotto, così forse il tempo lo permetterà. scriviamo
+						ma quando è bagnato è come se li tenessi affilati. perché è proiettato con te
+						a sinistra, e ripeto a destra, ma in piedi dalle cosce, un po' piccolo
+						lascia che la lancia cada ancora e ancora, tanto feroce e lunga è la
+						Giavellotto, uomini ben mirati, se per lo scopo afiemeni ae si vede la lancia.
+     </p>
+     <p lang="en">
+      sharpening not the longest we praise; and
+						for turn away and take a coat, so perhaps time will allow. let's write
+						but when it's wet, it's as if you're holding them sharp. because he is projected with te
+						to the left, and I repeat the right, but standing from the thighs, a little one
+						let the lance fall again and again, so fierce and long is the
+						Javelin, well-aimed men, if for the purpose afiemeni ae the lance is seen.
+     </p>
+    </div>
+    <div n="14" type="section">
+     <p>
+      καὶ ταῦτα μὲν δὴ ἰδιώτῃ καὶ ὑπομνήματα καὶ μαθήματα καὶ μελετήματα γεγράφθω
+						ἡμῖν. ἃ δὲ ἱππάρχῳ προσῆκεν εἰδέναι τε καὶ πράττειν ἐν ἑτέρῳ λόγῳ
+						δεδήλωται.
+     </p>
+     <p lang="it">
+      e scriverò questi in privato e ricordi, lezioni e studi
+						noi ma quello che accadde all'ippocampo lo sapeva e agiva per un'altra ragione
+						è dichiarato.
+     </p>
+     <p lang="en">
+      and I will write these privately and reminders and lessons and studies
+						us but what happened to the hippocampus he knew and acted in another reason
+						is declared.
+     </p>
+    </div>
+   </div>
+  </body>
+ </text>
+</TEI>

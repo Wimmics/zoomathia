@@ -1,0 +1,2008 @@
+@prefix schema:  <http://schema.org/> .
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dce:     <http://purl.org/dc/elements/1.1/> .
+@prefix fabio:   <http://purl.org/spar/fabio/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbr:    <http://purl.org/vocab/frbr/core#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix oa:      <http://www.w3.org/ns/oa#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xrr:     <http://i3s.unice.fr/xr2rml#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+<http://www.zoomathia.com/annotation/660dc4b04898766ffd3494351f22b27bddec141b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "despota"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/180aab915a5f2d3f7896fe121c2f564e18c386ab>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/be2a1be04512e8dfd3246094731672582ad53706>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ferro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/bcbe19aa7971de2475198adee2a0e4d9f9b776dd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtFGWKUDARj5&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Equi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/c7ccc4eb9e9b549a8ddcf133e02f16463b380790>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "phy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b6adb8d9c62a213a2c4f86c7934285c3fed69fca>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/9ce2e5496ad9be10e2164aaf06928dcfa3cb2bba>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Erasistrato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4d3361130dfa4ff531e99d5cb7b7d05b3603a291>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/004cd738b5eb794ab0072fc5e40efe6bbb45608a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Oia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/b99a403b44f73ebc1633ff7656536b73292ea047>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Mullah"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/c598a6f576fc78d997317aa890843ab575d517f0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "pollo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f2dec2a732a18f18562a910db60ee475c51c387>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=106992&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "incest"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/e1f3a60836ac674cf77aeb614948ab934f360321>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pericle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/045a9ac11c76ea1a1e127718aef0a0589ef60b99>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cimone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/e2d093a658024dc3100763cd254c1d79b3203422>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemidoro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/6a05e35ca5c8ce5aed1eba39c934745ea0656c2c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "micron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/153bda11576ca28f987f86b1ff7f55e83294f829>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsPauzzRS5z&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "miele"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/5604d04b62aca9baef983a2c818fe2ea2bd274d9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8de4c48c79e36663d0ae109dbef9084aa247bcae>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "herb"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/67609a4e6fc804762b33e6df479340b58d7543c1>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0656e00a30358646ace1dade1890f86fbed1a9ad>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "economia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/a83ec6aaf5a93576aab73bd6ff00311c13b42267>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/5>
+              ] .
+
+<http://www.zoomathia.com/annotation/df85ee8ce9c28e53168b60b95b8a9c0e9abe3f90>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtJWWucnutA0&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "iron"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/1f65a8fca27b79918274ee13ed60ed0159c3d545>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/c8469f2705632d99ce5798bc2c1dce272b63471d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "EUR"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/eb55e448339ea9e9466da89a500eff33a4ad07d3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "avvoltoio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/23338489e4ed2c5e90d16e9c015ebf30ce4393f5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4562ddf2706dc6266cc1e1de13c062c5940b5bc8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Solone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/4773517c62ad5250d61e0a30fc92fc68b6e4ae32>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "salario"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/2865133cd1706a46095d16ed4a964019f6147c77>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/3bcfa11864230944dfc77fa53c657f420b3f347d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/04d42f1674286c73a087c61b656a58bdf05648d8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Temistocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/cb003f72c76f24f602f6c7a1f35c9862a8bd7118>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "obscenity"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/c1635dc6734c0a040103f26532466b2063796acc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "snatch"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/fc0e39578d63fa43099870168cdf3a827e18e68b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lacuna"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8fd0a4e83ebdc34e332f7fe53f411c9e6e82e413>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "inheritors"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/7654c9e6a903aaf8137d2a54c9108eb3725dd194>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "kiss"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/61877bd343c649a1095d6e1637e183fefea87e11>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/d79f4ff39fbb30485753cf216a2c2a4059915e6a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "coverts"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/851aa1efdcd31c965509ccae3ee7b44ec385dd32>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=105302&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "philosopher"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/bd8802dba7e7204460aa90ceb6fe7c7fecc3a513>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtsPauzzRS5z&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "honey"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/804ad4cff4fa84c7a9dcb6e5797e191a3918f7f0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc257fb62a7f5bef83ff202162e5e37d7c3ee982>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pericles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/19da6737e80fc9d5293be684a1b2c0f672f53127>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dragon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c22b8d091746873e2e051a33191ddfb8a3a53501>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lacuna"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/018312364885e4723a2334f3ee758b473aadfc95>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrty1af1lU8Dc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f0a5832f897cb7e365b530fdffbb6757ac6c4ef1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiadi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/1c47e7f03c2d75944eb7a4897dac41036cb52420>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/ce8c107654d78a25f31ad8a69f1b5e536c9c6523>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Erasistratos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/93953bf2f3c1d7350f7065d89408a32ecaebd441>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "despota"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/6d249b002de49630361b1f4582b501e7a124420b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Solone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/b68d86cc366baf99bdf14609af43beff9f272b53>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "484"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/36cf83e9428e21e4b9b0e6ebadc1a42c1572164f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/50ca96910f6ed0d69f7248398d89aa38226eeb30>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sophocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/a22042dc9c8597adbcacb252348fd9e12c1a640f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "soul"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/88fa71d73c265dccfeb44986025fa9ac83627612>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "temperance"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/4ca3108b496a559ac416dc84f4a6281302012e37>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtU6s8jjsWol&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "teatro"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/f743314da97f53738b9d149cb43d0e93dad6ae31>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Themistocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/e5f0c00aa18ac544142c7015173b51ef25dfe9ee>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dowry"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/a04ccad39724d8f8be33f95045befb5d75d151c8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Temistocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/18b280329a622e4e6f3663ae034464987bb2c56a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed1cf6160fcff54fdf76f97862283404b925533d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anastomosi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/539e6e79b204d44d2cb31823f809f6f929e81406>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtv7QXaZmBD2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Lycurgus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/29ac77d850c43eed1f993d1403e90a2c4de684d5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "imperfetto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4af2351fd1b377e8505cef2121cd767fdaddf67b>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "halcyons"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/32c80c3311a2ddc1ed0d8eb9ba5f67220548a1cd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Xanthippus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/708c20340372ee6514b2c3dd98ceab71026ae560>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/e1234f8472d967db3071be81c7b87fc5b3efd709>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fantasy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/fce4eeb1e60bce2384bb07c2dd98055f6557feb2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/672717d72484494fd97fa11973192ba455f1baa7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Salamis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/16d976cf5e8b31401afb4125293fe83b1c98a35f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlrmkS4anNV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Euripide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/03a25f788601e60585039fab5c16956baf092159>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democrito"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/3d38a0976522a562f12c2bbd35c607307104fbd4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Cimon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/95331140c259a5c95b21da1b6fe7268063bdeb2a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Salamina"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/5bf8734bb53a78e5e42ab62f25f05efaf3aeabf9>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/ae30cba456a3bc797eb94f9429e6c0017a7ca026>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Solon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/15159df3df23bb5f2afef5205e1352b1f3c643a2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vad"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f00fb712da19e18e447130d44c4b013226abfd4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nauck"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/d75f7ceac3933d4cdceb2c72e43945ebafe02636>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sophocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/0e19a7f0fa6141a9595277ec63e78c28ee48df76>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "scymnus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/fa1cc4b5f878f779b7effd4eef31dc95f75098e2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fuck"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/48dfcdd081efe95411476d7269fb4ccf99307533>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Bergk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/08f652eff896b9c8926708991c85e2c03c85778c>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sophocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/5741f3529fac5313e08562fefadb8343571cd663>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nymph"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/851b1f5ed987ceee73e0baf788a681632f0d3b08>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dragon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/5bdee90e6888a1c11e8e5e39554c1d9bcc6bae62>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Licurgo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/08edbfcf110f51db07cf0f1bf6c3ca26e20d8812>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Themistocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/a536dd65a6df62f79bad90ea5b5c958747297aa6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "liberale"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/4722a1b052a32c42fdfb2852178b227e2159944a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/07a998b8acf543032b9a7b981d58bdd23e62082f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Bergk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/dde26ddc65a621d30c256601c3212900df579216>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "famine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/31b4d71300ced1f53382655349f9c27a6fe560dd>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/4d4bbfa27e15f623ced2acc03e1e3485c96e1cfd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lacuna"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/90c1c803d3eeac86bb4118c4a334c998d4a6117a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "scymnus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/d68c5c14ccbfdf2f322521c442a119d33a85a13b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlrmkS4anNV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Euripides"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/aa82716a79d6db28b01f0aaf695feaa87e5e2751>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtrPNM3U83F1&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Danae"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/736ceda2becb09f6d15b62b0be28137ac3045f99>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Neocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/f30f52f11db250c299e62fbf37eb3b16cfa6c88c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ninfa"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/84b68f4d368aa70670c9f8eec20707c03efdac52>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/cf5bc7949f4471c788567d5a339aa7645c3a00ef>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dragon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c4c487485b47a111d797962153bcd1bc897131a7>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "bow"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/a9923ca835da22e1dd1f157020747a9e0c2b1f9c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/8c8a457d9b409645b8e03818089482a8de2811e3>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/b7f085ec973cd572d0047d192f97ffc3800663e4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Bergk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/8>
+              ] .
+
+<http://www.zoomathia.com/annotation/a6ce9f8f2626c625989ea6700bc1b9ef14a09e63>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Santippo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f9a80ce69be58fe8e4616b6b2ff4f58e39abe31>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "lebbra"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/e89aae5c9f4e57ea10fdbad746791bc4b8176a43>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "chewing gum"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/eec4f2d90de6be4ba6c1c478d79beb8d031b7187>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f0150d4e0579c80553eeab927925a2b1954d98ad>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Kock"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/d77cef3fc8cb37be410a69ac7cea4f2ce182706e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Eurimedonte"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/6b4431251de7983ed1f7616818a0115b6ceda608>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Solone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/1e03b332acabe2e3dfc7d253f4372e17d8339cff>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Milziade"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/ae64736a84840aef375314faa884cf6ddfa77e75>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt3mTg9h3RFE&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "wine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/7>
+              ] .
+
+<http://www.zoomathia.com/annotation/3d8e3af006d101a44078fd31564e3b256d00376f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fantasy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/03e19c200ff00fad4d62eee633cf3da39614bded>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtihlJWfvH4v&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vine"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/22af2d08d3091a723c969d343303689e60935df8>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polygamous"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/f59fc119a6625a6b2910962b4181f8c2754e77dc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Oia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/61cef43342cdc121ee6fdd9e25960772e44fa930>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlrmkS4anNV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Euripides"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/1047c0a8640a9937d81c8284add51de8e0f567b4>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "1275"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/12b8fe61c4123805f74d2c33b8ef869678471e65>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Eurymedon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/e4ace28b851670586f986dd27ddbab0c44fe731d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtAWl3eAUQlA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "milk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/205b6b1dfc069dedf30662d71349926b13da8f89>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlrmkS4anNV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Euripide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/8f991130bb2d7337b2aabd885b0fee6732a3decf>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "enema"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/95c9c267adfe115e7f336149c886f69a0f7b562c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "breast"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ec0cd1bf551cad4a12ae30777d338b6ffa08eb9f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/906d0828ae3cfed80cc55b8049f400cda8eeca6d>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sophocles"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/f06d0eaca58d8d44acc0cd787de5e1d3dec82c1d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/d82a29e6132226cbafe1495cef72b5da721f4999>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "1159"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/d010032843141425ca0c2860bdeb1f0498960586>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "coverts"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/25dff74ce71e32a85b5a1901d3126dba0e7b868f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "culvert"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/f506524212c29de1adbfdb64b577e502846a3712>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "chicken"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/d3044cad8439bf71467e1e4474fb5051ef8a938f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "God"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/772b91e134dd35dfa109e7ba0607f6e7bc39f221>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/81891c3fde665112a154ad39157ee548ecebc37f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "oma"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/fbdabad86c6e790136eb7a57b64cd4bcaadc4b75>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "nygma"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/0276fa613beaaef1b56e9c50c683ca273919b596>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Bergk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/fc6c9ec99fc8c9dd22b3668f4259b11ddd9c111f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Erasistrato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/29c70e976a6b81bc6e15fc0c5f5874ad5d3c978c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Erasistratos"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/350649578f33c911e55d2ab23270a0e1f98fd141>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrthX6AbS1ezc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Oedipus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/b53d431ad338f850b5bb39d1a9b6fe9dbf08aae5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlrmkS4anNV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Euripides"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/e9c61d1bf872021cf4375e5b668e139223b67eb4>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrttvE2YZwZu6&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "olio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/a49245ae4dc7bd8ef326957e62d956907097d124>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Dio"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/5325f554315cb5710767479eb31f718573c9ef05>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Solon"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/cc1df37e5f9c982feea72083b28fd3dc3dd7676e>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nauck"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/b3963233616cc434067a2be5f31743bb75e72fc5>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtAWl3eAUQlA&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "milk"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/722c2e7ed3f9b2b0e8dae5725b3427a6fd3eee3c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Omero"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/4dfc4a29004cff0549ad272589957a1323eda261>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtepvW8S9Ma2&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Plato"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/5109c0137506031b45e6bdcfae0fa586743689f1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "penia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/5588d192d62773b73b70ab11ec43929858f818ec>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Platone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/d011a1cbe9ceb00bd578fc7a7a77cd3ed7600846>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "circoncisione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b67de1c62180561e3f753410db50db6adc5b9579>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=108042&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "vulture"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/601d1544c9711bd1c13db6fceb419dbb50101382>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "incesto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/5838f00721e7ed6926f922e3afab45c9afc2f868>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "musk oxen"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/04f3acee61d1343a5a257d36572503aacd44471a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "corrigenda"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/497187f7f0d343136241892574cc86369d159c44>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "fi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/b600410038670a7de1fd12d25370dadb1623df34>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Kock"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/350ceff5f8f9672a8757d78c55bf0e190e3449dc>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "imperfetto"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/96c1b7548bf19b9f3273919b5dcbf5947f89582a>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "orsi"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/d67ebd62ba27180135d8958becb612d56e63663c>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "tic"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed5e56d44de95fa89f0aaa324a4416f7b52e5bad>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/ed4872991c0fd3e35f77874369447111b754f1c3>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "anastomosis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/2645cfc9d5a7f2310bd8a0eb988dc13bd0f5a559>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/e235b61a8c93fddaeb3e8bfb70355f4b705dff02>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/1e3396cf7fb0a9b4fe23aab74ceb858f73086c4d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "clistere"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/da9392018cc3f647ad0cc4176e7a69e240a4953f>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "leprosy"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/05808a4a237df394151223415fd1da553e7ae3c6>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "circumcision"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/7df2737ca297ac1b0c1260ed3f62bee84d484742>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "primogeniture"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/144bd27289684fd9795da63764f9deb341f765a5>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "city"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_1/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/8da775f76213fee51fd6d18334a9f2b2978d0beb>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrty1af1lU8Dc&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Democritus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/ce0cfe5548917df634fcba1621f8edf056717301>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "apatia"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/f950516f5410c2cfb7f843f972a696c955ec8873>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Miltiades"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/b90cdc13d51c88c9563d4077f75c009ebfe2a816>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "alcione"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/94ebfc874b5be4db3c1edd79cdd00228c77da315>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "polygamous"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/2a003fcc3effcc47e5e8c3f77e1e40fd256f0fcd>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Solone"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/f26bbc1c4edd4fcc6d991e43de5a8680d10cc957>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "coverts"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/4>
+              ] .
+
+<http://www.zoomathia.com/annotation/0eecaf17928c3c643247a050f31e73d054fef434>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "mestruazioni"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/91669550f515d51127a9cbee3d5d9eb9580fcf79>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "endanger"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/71be7b79c3d0aeb0975a102735336a340c3f35be>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "sternum"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/09bce614c2d32aad4d7066156ebee6bea2c03fbc>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtzpSV0VaSnU&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Ariston"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/261614a737a8f77d30eb47de2380eaca7f19877f>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/1>
+              ] .
+
+<http://www.zoomathia.com/annotation/2fabf3469152af734eda575ac95bf02d478d421d>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "salario"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/b9169d6a76351eb8aeb42a141de1b9dabd0b937e>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSUK6lcT0rY&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Sofocle"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/3c5e2e3c402c366baa597acba500199b089a1d41>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107103&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiades"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/fe1d4c3c53acbd21feba1b260a8cb2880c109427>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt4v7jKE3TVw&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "dog"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/5615066040a3f91aa92862defa6df89fefd37e41>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtSgaLklRNDT&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Zeus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/0ee1e3080ba9efa6991d18f99effcc3621eb6508>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "aldilà"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_3/2>
+              ] .
+
+<http://www.zoomathia.com/annotation/4df539606cb6f9611df79cce7f37329658ef15d1>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "buoi muschiati"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_2/6>
+              ] .
+
+<http://www.zoomathia.com/annotation/c985763711776330c4d9f63db9347aef6eb4acc0>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Salamis"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/5922b32f8358684e18498128cbc4323b15ab797b>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt5nTYoQ2SHR&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Homer"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/bd42ea9db908fc92f2c3a362eb375468bae8a5f8>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=107103&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Pleiades"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/7394d20f9647de281c60c7aa4f23d64c786d53e2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "domo"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_5/3>
+              ] .
+
+<http://www.zoomathia.com/annotation/ff771c02721bef3a9eabd6a5f5745563f75832ed>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Artemidorus"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/90f9cb0908b61c4c6b5f561fad2688b8145bffa2>
+      a       oa:Annotation ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Nauck"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
+
+<http://www.zoomathia.com/annotation/c08cd3d126320c885df2a27c0710eefd5e1c9cff>
+      a       oa:Annotation ;
+      oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtlrmkS4anNV&idt=th310> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "Euripide"
+                        ] ;
+                oa:hasSource <http://www.zoomathia.com/Deamoreprolis/section_4/15>
+              ] .
