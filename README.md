@@ -147,6 +147,12 @@ pip install pywin32
 pip install python-docx
 ```
 
+## Directories
+
+- QC: contains Jupyter Notebook with the SPARQL implementation of the competency questions to evaluate the graph.
+- Script: contains docx files to be extracted, the script pipeline of extraction and the csv output of the extraction needed for morph-xR2RML
+- Ontology: contains all the tutle files of the graph
+- Mapping: contains all xR2RML mapping file to build the graph
 
 
 ## Pipeline
