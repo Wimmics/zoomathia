@@ -19,13 +19,19 @@ GitHub of the project: https://github.com/Wimmics/zoomathia
 
 Access to the knowledge graph through its SPARQL endpoint:http://zoomathia.i3s.unice.fr/sparql
 
+The Zoomathia application is split in two different folder: (1) the frontend side and (2) the backend side.
+
 ## Frontend
 
-https://github.com/Wimmics/zoomathia/tree/main/web-app/web-zoomathia
+The frontend side contains all the implementation of interaction and visual design that hide SPARQL request for non-expert of web semantics. It's been implemented with React technologies and component based approach, and all the component are feed according to the data contain in knowledge graph.
+
+To try the frontend side, follow the readme : https://github.com/Wimmics/zoomathia/tree/main/web-app/web-zoomathia
 
 ## Backend
 
-https://github.com/Wimmics/zoomathia/tree/main/web-app/backend
+The backend side contains all the route and procedure to map SPARQL Queries into JSON object needed for the frontend side to feed components. It's basically a mask to avoid quering the SPARQL endpoint directly in the client side.
+
+To try the backend side, follow the readme : https://github.com/Wimmics/zoomathia/tree/main/web-app/backend
 
 # Named Entity Recognition
 
