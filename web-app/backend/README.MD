@@ -87,31 +87,31 @@ response[elt?.current.value] = {
     }
 ```
 
-- /getWorkPart?title
-- /getAuthors
-- /getWorksFromAuthors?author
-- /getWorks
-- /getWorkByUri?uri
-- /getChildrenType?uri
-- /getChildren?uri
-- /getParagraphs?uri
-- /getCurrentType?uri
-- /getParagraphAlone?uri
-- /getConcepts?uri&lang
-- /searchConcepts?input
-- /getLanguageConcept
-- /getTheso?lang
-- /qcList
-- /getQCspo
-- /getQC?id
-- /download-custom-search-json?sparql
-- /download-turtle?uri
-- /download-custom-search-csv?sparql
-- /download-qc-json?id
-- /download-qc-csv?id
+- `/getWorkPart?title`
+- `/getAuthors`
+- `/getWorksFromAuthors?author`
+- `/getWorks`
+- `/getWorkByUri?uri`
+- `/getChildrenType?uri`
+- `/getChildren?uri`
+- `/getParagraphs?uri`
+- `/getCurrentType?uri`
+- `/getParagraphAlone?uri`
+- `/getConcepts?uri&lang`
+- `/searchConcepts?input`
+- `/getLanguageConcept`
+- `/getTheso?lang`
+- `/qcList`
+- `/getQCspo`
+- `/getQC?id`
+- `/download-custom-search-json?sparql`
+- `/download-turtle?uri`
+- `/download-custom-search-csv?sparql`
+- `/download-qc-json?id`
+- `/download-qc-csv?id`
 
 ### POST
 
-- /getParagraphWithConcept
-- /getParagraphsWithConcepts
-- /customSearch
+- `/getParagraphWithConcept`
+- `/getParagraphsWithConcepts`
+- `/customSearch`
