@@ -125,4 +125,18 @@ Get all paragraph from the given parent URI if the given concept is present in t
 }
  ```
 - `/getParagraphsWithConcepts`
+
+Get all paragraphs which contains the given concepts presents in its annotations
+
+```js
+{
+      author: elt?.author.value,
+      bookUri: elt?.uri.value,
+      bookId: elt?.book.value,
+      title: elt?.title.value,
+      uri: elt?.paragraph.value,
+      text: elt?.text.value,
+      id: elt?.id.value
+}
+```
 - `/customSearch`
