@@ -74,10 +74,10 @@ response = {
     }
 ```
 
-- /getSummary?uri
+- `/getSummary?uri`
 Get structure hierarchy of a work. Mostly used to generate Table Of Content components.
 Return imbriqued JSON Object..
-```json
+```js
 response[elt?.current.value] = {
       uri: elt?.current.value,
       id: elt?.id.value,
