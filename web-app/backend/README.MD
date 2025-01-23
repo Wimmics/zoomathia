@@ -112,6 +112,17 @@ response[elt?.current.value] = {
 
 ### POST
 
-- `/getParagraphWithConcept`
+- `/getParagraphWithConcept` 
+
+Get all paragraph from the given parent URI if the given concept is present in the annotations.
+
+```js
+{
+      uri: elt?.paragraph.value,
+      text: elt?.text.value,
+      title: elt?.title.value,
+      id: elt?.id.value
+}
+ ```
 - `/getParagraphsWithConcepts`
 - `/customSearch`
