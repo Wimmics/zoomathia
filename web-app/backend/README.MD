@@ -55,13 +55,38 @@ npm install
 npm start
 ```
 
-## Routes
+The app will be accessible at `http://localhost:3001`.
+
+## API
 
 ### GET
 
-- /download-xml?file
-- /getMetadata?uri
+- `/download-xml?file`
+Download the xml file of the work. The filename is contained in the graph.
+- `/getMetadata?uri`
+Get the metadata of the given work URI. Return a JSON object.
+```js
+response = {
+      author: elt?.author.value,
+      editor: elt?.editor.value,
+      date: elt?.date.value,
+      file: elt?.file.value
+    }
+```
+
 - /getSummary?uri
+Get structure hierarchy of a work. Mostly used to generate Table Of Content components.
+Return imbriqued JSON Object..
+```json
+response[elt?.current.value] = {
+      uri: elt?.current.value,
+      id: elt?.id.value,
+      title: elt?.title.value,
+      type: elt?.type.value,
+      children: []
+    }
+```
+
 - /getWorkPart?title
 - /getAuthors
 - /getWorksFromAuthors?author
