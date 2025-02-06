@@ -69,24 +69,52 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## Components
+## Components list
 
 ### Competency Questions Component
 
+Display the page of Competency Question visualisation. The component is divide in 3 part, an input select to select the question, a Table of the raw SPARQL result and a zone that use MGExplorer visualisation.
+
+- route used: /qcList, /getQC, /getQCspo, /download-qc-json, /download-qc-csv
+
 ### Display Search Component
 
-### Display Text Component
+Build the grid that display book structure and paragraph with annotation for the "Explore the Corpus" page.
 
+- route used: no route used. The component information is fed and does not fetch anything.
+- 
+### Display Text Component
+Build the text visualisation of a single Work. This component use the "section component" for the book structure before the "Paragraph display component"
+
+- route used: /getMetadata, /getSummary, /download-xml, /download-turtle
 ### Explore Component
+
+Build the page "Explore a Work". This component is the mother component to dislay text for a single Work.
+
+- route used: /getWorkPart, /getWorksFromAuthors, /getWorks, /getAuthors, /getWorkByUri
 
 ### Paragraph Component
 
+Build the Paragraph component that show the text, id and annotations.
+
+- route used: /getConcepts
+- 
 ### Search Component
 
+
+- route used:
 ### Section Component
 
+
+- route used:
 ### Table of Content 
 
+
+- route used:
 ### Tooltip
 
+
+- route used:
 ### Work Component (obsolete)
+
+- route used:
