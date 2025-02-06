@@ -98,23 +98,33 @@ Build the page "Explore a Work". This component is the mother component to disla
 Build the Paragraph component that show the text, id and annotations.
 
 - route used: /getConcepts
-- 
+  
 ### Search Component
 
+Build the page "Explore the Corpus". The component is divide in 2 big part, the search input part with 3 inputs: authors, work and concepts; and a second part which show the results corpus based on the filter given.
 
-- route used:
+- route used: /getAuthors, /getWorks, /getTheso, /download-custom-search-json, /download-custom-search-csv, /customSearch
+  
 ### Section Component
 
+Build the header of the current work structure part (chapter title, book title etc) before display Paragraph.
 
-- route used:
+- route used: /getChildren, /getConcepts, /getParagraphs, /getChildrenType, /getCurrentType
+
 ### Table of Content 
 
+Build the table of content of the given work list structure
 
-- route used:
+- route used: no fetch
+- 
 ### Tooltip
 
+Build tooltip of the "Explore the corpus" page
 
-- route used:
+- route used: no fetch
+  
 ### Work Component (obsolete)
 
-- route used:
+To be deleted. Show text paragraph and annotation from the given URI
+
+- route used: /getParagraphAlone, /getConcepts
