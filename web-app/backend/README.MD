@@ -232,4 +232,4 @@ Get all paragraphs which contains the given concepts presents in its annotations
       id: elt?.id.value
 }
 ```
-- `/customSearch`
+- `/customSearch` Generate all data needed to build sub-corpus. Return a tree that contain all work to paragraph metadata.
