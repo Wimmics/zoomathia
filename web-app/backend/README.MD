@@ -193,16 +193,11 @@ annotations[elt?.label.value] = {
     goal:
 }
 ```
-- `/getQCspo` Get the SPO version of SPARQL queries of QC
-```js
-```
-- `/getQC?id` Get the SPARQL query of the QC
-```js
-```
+- `/getQCspo` Return SPARQL result of the MGExplorer version of SPARQL query QC
+
+- `/getQC?id` Get the SPARQL result of SPARQL query of the QC
 
 - `/download-custom-search-json?sparql`
-```js
-```
 - `/download-turtle?uri`
 - `/download-custom-search-csv?sparql`
 - `/download-qc-json?id`
