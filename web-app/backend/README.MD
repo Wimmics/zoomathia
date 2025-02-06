@@ -87,24 +87,122 @@ response[elt?.current.value] = {
     }
 ```
 
-- `/getWorkPart?title`
-- `/getAuthors`
-- `/getWorksFromAuthors?author`
-- `/getWorks`
-- `/getWorkByUri?uri`
-- `/getChildrenType?uri`
-- `/getChildren?uri`
-- `/getParagraphs?uri`
-- `/getCurrentType?uri`
-- `/getParagraphAlone?uri`
-- `/getConcepts?uri&lang`
-- `/searchConcepts?input`
-- `/getLanguageConcept`
-- `/getTheso?lang`
-- `/qcList`
-- `/getQCspo`
-- `/getQC?id`
+- `/getWorkPart?title` Get direct children of a given URI
+```js
+{
+      uri: elt["part"]["value"],
+      id: elt["id"]["value"],
+      title: elt["title"]["value"],
+      type: elt['type'].value
+    }
+```
+- `/getAuthors` Get author list of works
+```js
+[{ name: author.name.value }, ...]
+```
+- `/getWorksFromAuthors?author` Filter works based on the given author
+```js
+{
+      uri: elt?.oeuvre.value,
+      title: elt?.title.value,
+      author: req.query.author
+    }
+```
+- `/getWorks` List all works
+```js
+{
+      uri: elt?.oeuvre.value,
+      title: elt?.title.value,
+      author: elt?.author.value
+    }
+```
+- `/getWorkByUri?uri` Retrieve author and work metadata based on the given URI
+```js
+{
+      uri: elt.work.value,
+      title: elt.title.value,
+      author: elt.author.value
+    }
+```
+
+- `/getChildrenType?uri` Get all RDF classes of children from the given URI (Use for component logic)
+
+- `/getChildren?uri` List all direct children of the given URI
+```js
+{
+      uri: elt?.child.value,
+      title: elt?.title.value,
+      type: elt?.type.value
+    }
+```
+- `/getParagraphs?uri` Get all direct paragraph from the given URI
+```js
+{
+      title: elt?.title.value,
+      uri: elt?.uri.value,
+      text: elt?.text.value,
+      id: elt?.id.value
+    }
+```
+- `/getCurrentType?uri` Get RDF classes of the current URI
+
+- `/getParagraphAlone?uri` **Obsolete** Retrieve paragraphs from the given hierarchical URI.
+
+```js
+{
+      uri: elt?.paragraph.value,
+      text: elt?.text.value,
+      id: elt?.id.value
+    }
+```
+- `/getConcepts?uri&lang` List all concept annotation from the paragraph in the given current lang. The lang is automatically set to English if no skos:prefLabel is avalaible in the choosen language.
+```js
+annotations[elt?.label.value] = {
+      concept: elt?.concept.value,
+      label: elt?.label.value,
+      type: elt?.annotation_type.value,
+      offset: []
+    }
+```
+- `/searchConcepts?input` List all concepts that match the language and labels given
+```js
+{
+      uri: elt?.concept.value,
+      label: elt?.label.value
+    }
+```
+
+- `/getLanguageConcept` Change label language of concepts
+```js
+```
+- `/getTheso?lang` List all concepts and collections of the TheZoo thesaurus
+```js
+{
+      label: elt?.type.value === "http://www.w3.org/2004/02/skos/core#Collection" ? elt?.label.value + " (Collection)": elt?.label.value,
+      value:elt?.concept.value,
+      type: elt?.type.value
+    }
+```
+- `/qcList` Get list of Competency Questions stored in the qcs.js file (queries folder)
+```js
+{
+    id:
+    file:
+    title:
+    vizuTitle:
+    goal:
+}
+```
+- `/getQCspo` Get the SPO version of SPARQL queries of QC
+```js
+```
+- `/getQC?id` Get the SPARQL query of the QC
+```js
+```
+
 - `/download-custom-search-json?sparql`
+```js
+```
 - `/download-turtle?uri`
 - `/download-custom-search-csv?sparql`
 - `/download-qc-json?id`
