@@ -1,6 +1,3 @@
-# Zoomathia Project
-This work is carried out in the framework of the GDRI Zoomathia which aims to study the transmission of zoological knowledge from Antiquity to the Middle Ages. 
-
 # Zoomathia Application
 
 This application is being developed within the framework of the [HisINum project](https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-dexcellence-homme-idees-et-milieux/projets-de-recherche/projets-2020-2024/hisinum) funded by the [Academy of Excellence 5](https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-dexcellence-homme-idees-et-milieux) of [IdEx UCA JEDI](https://univ-cotedazur.fr/recherche-innovation/defis-scientifiques-idex).
@@ -9,13 +6,12 @@ It aims to support the study of the transmission of zoological knowledge  from a
 
 It allows:
 
-- exploration of the corpus, via a search for works by concept;
-- exploration of a selected work from the corpus, with visualisation of the concepts annotating each of its parts;
-- visualisation of the results of queries implementing competency questions on a selected work from the corpus.
+- exploration of the corpus of ancient texts, via a concept-based search for works;
+- exploration of a selected work by visualizing the concepts annotating each of its parts;
+- visualisation of the results of queries implementing competency questions on a selected work.
 
 It relies on the exploitation of a knowledge graph annotating the Zoomathia corpus of texts with concepts from the [TheZoo thesaurus](https://opentheso.huma-num.fr/opentheso/?idt=th310).
-The pipeline for the automatic construction of this knowledge graph was developed within the framework of the [AutomaZoo project](https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-dexcellence-homme-idees-et-milieux/projets-de-recherche/projets-2020-2024/automazoo-annotation-automatique-dun-corpus-zoologique-ancien) funded by the Academy of Excellence 5 of IdEx UCA JEDI, and further refined within the framework of the HisINum project.
-GitHub of the project: https://github.com/Wimmics/zoomathia
+The pipeline for the automatic construction of this knowledge graph was developed within the framework of the [AutomaZoo project](https://univ-cotedazur.fr/recherche-innovation/structures-de-recherche/academies-dexcellence/academie-dexcellence-homme-idees-et-milieux/projets-de-recherche/projets-2020-2024/automazoo-annotation-automatique-dun-corpus-zoologique-ancien) funded by the Academy of Excellence 5 of [IdEx UCA JEDI](https://univ-cotedazur.fr/recherche-innovation/defis-scientifiques-idex), and further refined within the framework of the HisINum project.
 
 Access to the knowledge graph through its SPARQL endpoint:http://zoomathia.i3s.unice.fr/sparql
 
@@ -23,28 +19,26 @@ The Zoomathia application is split in two different folder: (1) the frontend sid
 
 ## Frontend
 
-The frontend side contains all the implementation of interaction and visual design that hide SPARQL request for non-expert of web semantics. It's been implemented with React technologies and component based approach, and all the component are feed according to the data contain in knowledge graph.
+The frontend application contains the implementation of the interaction and visual design that hide SPARQL requests from non-expert of web semantics. It was implemented in React.js, the components are fed with the data contained in the knowledge graph.
 
-To try the frontend side, follow the readme : https://github.com/Wimmics/zoomathia/tree/main/web-app/web-zoomathia
+To try the frontend application, follow the readme: https://github.com/Wimmics/zoomathia/tree/main/web-app/web-zoomathia
 
 ## Backend
 
-The backend side contains all the route and procedure to map SPARQL Queries into JSON object needed for the frontend side to feed components. It's basically a mask to avoid quering the SPARQL endpoint directly in the client side.
+The backend application contains the services that map SPARQL queries to JSON objects, needed by the components of the frontend. 
 
-To try the backend side, follow the readme : https://github.com/Wimmics/zoomathia/tree/main/web-app/backend
+To try the backend application, follow the readme: https://github.com/Wimmics/zoomathia/tree/main/web-app/backend
 
-# Named Entity Recognition
+
+# Named Entity Recognition annotation pipeline
 
 ## Dependencies
-- pandas
+
 ```python
 pip install pandas
-```
-
-- deep translator
-
-```python
 pip install deep-translator
+pip install lxml
+pip install pymongo
 ```
 
 - spacy (python 3.X < 3.13)
@@ -54,7 +48,7 @@ pip install spacy
 pip install spacy-dbpedia-spotlight
 pip install spacyfishing
 ```
-models needed for spacy:
+- models needed for spacy:
 
 ```shell
 python -m spacy download en_core_web_lg
@@ -71,32 +65,24 @@ docker volume create spotlight-models
 # start the container (here assuming we want the en model, but any other supported language code can be used)
 docker run -ti --restart unless-stopped --name dbpedia-spotlight.en --mount source=spotlight-models,target=/opt/spotlight -p 2222:80 dbpedia/dbpedia-spotlight spotlight.sh en
 ```
-When the VM is launch, it will download the english knowledge base. You have to wait the end of this download and the launch of the service before using spacy NER.
-
-- lxml-xml
-
-```
-pip install lxml
-```
-
-- PyMongo
-
-```
-pip install pymongo
-```
+When the VM starts, it will download the English knowledge base. 
+Wait until the download completes and the service starts up before using spacy NER.
 
 
+## Annotation pipeline
 
-## Pipeline
+### XML to CSV transformation
 
-To use this pipeline of annotation, you have to start with the python script **xml_to_csv.py**. It will scan every folders at the same level of the script to find all XML file. The script will extract metadata of the work, work structure and paragraphs text. All work information will be transform into 4 csv files per XML file in the output folder:
+To use this pipeline of annotation, you have to start with the python script `Named_entity_recognition/data/original_files/xml_to_csv.py`. It will scan every folders at the same level of the script to find all XML files. For each work the script will extract the metadata, structure and paragraphs. All work information will be transformed into 4 csv files per XML file in the `output` folder:
 
 - xxx_annotations.csv that contains all the annotation for the work
 - xxx_link.csv that contains all information for the work structure
 - xxx_metadata.csv contains all the metadata of the work (author, title, editor...)
 - xxx_paragraph.csv contains all the paragraph of the work
 
-When the xml_to_csv process is over, the next step is to launch the **morph_mongo.py** script that upload all the generated CSV to its respective MongoDB  collection. This process will also filter annotation based on **classes URI** specified in the **filter_class.json** file and find close concept base on the label in the TheZoo Thesaurus.
+### Load CSV to MongoDB
+
+The next step is to launch the `Named_entity_recognition/data/original_files/morph_mongo.py` script that uploads all the generated CSV files into respective MongoDB collections. This process will also filter out annotations based on the class URIs specified in the `filter_class.json` file and find close concepts base on the label in the TheZoo Thesaurus.
 
 ```json
 {
@@ -109,7 +95,9 @@ When the xml_to_csv process is over, the next step is to launch the **morph_mong
 }
 ```
 
-The last step after the morph_mongo process is the graph generation with morph-xR2RML in the rules folder. Every file has to be specified in the morph.properties file:
+### Generate RDF files
+
+The last step is the graph generation with Morph-xR2RML in the `Named_entity_recognition/rules`  folder. Every file has to be specified in the `tei/morph.properties `file:
 
 ```yaml
 # xR2RML mapping file. Mandatory.
@@ -127,43 +115,32 @@ output.file.path=output/paragraph.ttl
 #output.file.path=output/vocab.ttl
 ```
 
-The produced graph will be formed with 5 turtle files. The vocab.ttl file contains all the DBpedia alignment with TheZoo thesaurus. 
+The produced graph will be formed of 5 turtle files. The vocab.ttl file contains all the DBpedia alignments with TheZoo thesaurus. 
+
 
 # Manual Annotation
 
 ## Dependencies
 
-The script only work with windows due to strong optimisation only available on windows32com API.
-
-- pandas
+The script only works on Windows due to strong optimisation only available on windows32com API.
 
 ```python
 pip install pandas
-```
-
-- pywin32
-
-```
 pip install pywin32
-```
-
-- opendocx
-
-```
 pip install python-docx
 ```
 
 ## Directories
 
-- QC: contains Jupyter Notebook with the SPARQL implementation of the competency questions to evaluate the graph.
-- Script: contains docx files to be extracted, the script pipeline of extraction and the csv output of the extraction needed for morph-xR2RML
-- Ontology: contains all the tutle files of the graph
-- Mapping: contains all xR2RML mapping file to build the graph
+- QC: contains a Jupyter Notebook with the SPARQL implementation of the competency questions to evaluate the graph.
+- Script: contains docx files to be extracted, the extraction pipeline script `extraction.py` and the csv output of the extraction, needed for Morph-xR2RML.
+- ontology: contains all the Tutle files generated.
+- mapping: contains all xR2RML mapping files to build the graph
 
 
 ## Pipeline
 
-The script extract text annotation label from TheZoo thesaurus in docx comments based on the following pattern:
+The script extracts text annotation labels from TheZoo thesaurus in docx comments based on the following pattern:
 
 ```
 concept label
@@ -171,9 +148,10 @@ parent label : child label : grand child label
 concept label1 ; concept label2
 ```
 
-All labels extracted will be match with a concept in TheZoo if it's label is close enough. The script will generate multiple CSV file to generate graph and correct error of matching label.
+All labels extracted will be matched with a concept of TheZoo if its label is close enough. 
+The script will generate multiple CSV files to generate graph and correct error of matching label.
 
-The last step are the manual upload of the file in MongoDB Collection "Paragraphe" and "Annotation" and the graph generation with morph-xR2RML in the rules folder. Every file has to be specified in the morph.properties file:
+The last step is the manual upload of the files in MongoDB collections "Paragraphe" and "Annotation", and the graph generation with Morph-xR2RML in the folder `Named_entity_recognition/rules`. Every file has to be specified in file `morph.properties`:
 
 ```yaml
 # xR2RML mapping file. Mandatory.
@@ -184,4 +162,3 @@ mappingdocument.file.path=paragraph.ttl
 output.file.path=output/paragraph.ttl
 #output.file.path=output/annotation.ttl
 ```
-
