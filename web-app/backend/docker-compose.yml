@@ -10,12 +10,15 @@ services:
       - .:/usr/src/app
     ports:
       - 3001:3001
+    restart: always
+
   corese:
     image: wimmics/corese
     build: ./corese
     ports:
-      - "8080:8080"
+      - 8080:8080
     volumes:
-      - "/home/abarbe/Corese/Zoomathia/:/usr/local/corese/data"
+      - /home/abarbe/Corese/Zoomathia/:/usr/local/corese/data
     environment:
       JVM_XMX: "16G"
+    restart: always

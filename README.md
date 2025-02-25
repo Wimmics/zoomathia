@@ -21,13 +21,13 @@ The Zoomathia application is split in two different folder: (1) the frontend sid
 
 The frontend application contains the implementation of the interaction and visual design that hide SPARQL requests from non-expert of web semantics. It was implemented in React.js, the components are fed with the data contained in the knowledge graph.
 
-To try the frontend application, follow the readme: https://github.com/Wimmics/zoomathia/tree/main/web-app/web-zoomathia
+To try the frontend application, follow the [README](web-app/web-zoomathia).
 
 ## Backend
 
 The backend application contains the services that map SPARQL queries to JSON objects, needed by the components of the frontend. 
 
-To try the backend application, follow the readme: https://github.com/Wimmics/zoomathia/tree/main/web-app/backend
+To try the backend application, follow the readme: [README](web-app/backend).
 
 
 # Named Entity Recognition annotation pipeline
@@ -73,7 +73,8 @@ Wait until the download completes and the service starts up before using spacy N
 
 ### XML to CSV transformation
 
-To use this pipeline of annotation, you have to start with the python script `Named_entity_recognition/data/original_files/xml_to_csv.py`. It will scan every folders at the same level of the script to find all XML files. For each work the script will extract the metadata, structure and paragraphs. All work information will be transformed into 4 csv files per XML file in the `output` folder:
+To use this pipeline of annotation, you have to start with the python script `Named_entity_recognition/data/original_files/xml_to_csv.py`.
+It will scan every folders at the same level of the script to find all XML files. For each work the script will extract the metadata, structure and paragraphs. All work information will be transformed into 4 csv files per XML file in the `output` folder:
 
 - xxx_annotations.csv that contains all the annotation for the work
 - xxx_link.csv that contains all information for the work structure
