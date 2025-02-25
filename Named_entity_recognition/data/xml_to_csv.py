@@ -324,24 +324,9 @@ def extraction_data(FILE,CSV):
 
 
 if __name__ == "__main__":
-    """text = "Ἀλώπηξ καὶ πίθηξ ἐπὶ τὸ αὐτὸ ὡδοιπόρουν. Παρ- ερχόμενοι δὲ διὰ τινῶν μνημείων, ἔφη ὁ πίθηξ τῇ ἀλώ- πεκι, ὡς πάντες οἱ νεκροὶ οὗτοι ἀπελεύθεροι τῶν ἐμῶν γεννητόρων ὑπάρχουσιν. δὲ ἀλώπηξ λέγει τῷ πί- θηκι· „εὐκαίρως ἐψεύσω· οὐδεὶς γὰρ τῶν ἐνταῦθα τα- φέντων ἀπελέγξαι σε δύναται."
-    translated_paragraph = split_and_translate(text, "en")
-    #print(translated_paragraph)
-    annotation = []
-    #wikidata_entities = get_NER_from_wikidata(text)
-    #print(wikidata_entities)
-    #extract_wikidata(wikidata_entities, annotation, "")
-    #print(annotation)
-    #annotation = []
-    dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
-    print(list(set(dbpedia_entities)))
-    print('Entities', [(ent.text, ent.label_, ent.kb_id_) for ent in dbpedia_entities])
-    #extract_dbpedia(dbpedia_entities, annotation, "")
-    exit()"""
     directory_path = './'
     xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
-    #for xml_file in [r"C:\Users\abarbe\Desktop\projet zoomathia\zoomathia\Named_entity_recognition\data\original_files\tlg0086\tlg029\tlg0086.tlg029.perseus-grc1.xml"]:
         print(xml_file)
         FILE = xml_file
         CSV = ".".join(FILE.split("\\")[-1].split(".")[0:-1])

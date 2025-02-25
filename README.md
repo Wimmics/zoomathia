@@ -73,8 +73,7 @@ Wait until the download completes and the service starts up before using spacy N
 
 ### XML to CSV transformation
 
-To use this pipeline of annotation, you have to start with the python script `Named_entity_recognition/data/original_files/xml_to_csv.py`.
-It will scan every folders at the same level of the script to find all XML files. For each work the script will extract the metadata, structure and paragraphs. All work information will be transformed into 4 csv files per XML file in the `output` folder:
+To use this pipeline of annotation, you have to start with the python script `Named_entity_recognition/data/xml_to_csv.py`. It will scan every folders at the same level of the script to find all XML files. For each work the script will extract the metadata, structure and paragraphs. All work information will be transformed into 4 csv files per XML file in the `output` folder:
 
 - xxx_annotations.csv that contains all the annotation for the work
 - xxx_link.csv that contains all information for the work structure
@@ -83,7 +82,7 @@ It will scan every folders at the same level of the script to find all XML files
 
 ### Load CSV to MongoDB
 
-The next step is to launch the `Named_entity_recognition/data/original_files/morph_mongo.py` script that uploads all the generated CSV files into respective MongoDB collections. This process will also filter out annotations based on the class URIs specified in the `filter_class.json` file and find close concepts base on the label in the TheZoo Thesaurus.
+The next step is to launch the `Named_entity_recognition/data/morph_mongo.py` script that uploads all the generated CSV files into respective MongoDB collections. This process will also filter out annotations based on the class URIs specified in the `filter_class.json` file and find close concepts base on the label in the TheZoo Thesaurus.
 
 ```json
 {

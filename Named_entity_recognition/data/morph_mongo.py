@@ -211,8 +211,12 @@ def clear_mongo_collection(db_name, collection_name, mongo_uri="mongodb://localh
     """
     client = MongoClient(mongo_uri)
     db = client[db_name]
-    collection = db[collection_name]
-    clear_result = collection.delete_many({})
+
+    if collection_name not in db.list_collection_names():
+        db.create_collection(collection_name)
+    else:
+        collection = db[collection_name]
+        clear_result = collection.delete_many({})
 
 
 if __name__ == "__main__":
