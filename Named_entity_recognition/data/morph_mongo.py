@@ -1,4 +1,6 @@
 from time import sleep
+import time
+import requests
 
 import pandas as pd
 from pymongo import MongoClient
@@ -11,23 +13,19 @@ import subprocess
 from py4j.java_gateway import JavaGateway
 
 
-# Start java gateway
 java_process = subprocess.Popen(
     ['java', '-jar', '-Dfile.encoding=UTF-8', 'corese-library-python-4.4.1.jar'])
 sleep(1)
 gateway = JavaGateway()
 
 
-
-
-# Stop java gateway at the enf od script
 def exit_handler():
     gateway.shutdown()
     print('\n' * 2)
     print('Gateway Server Stop!')
 
 atexit.register(exit_handler)
-# Import of class
+
 Graph = gateway.jvm.fr.inria.corese.core.Graph
 Load = gateway.jvm.fr.inria.corese.core.load.Load
 Transformer = gateway.jvm.fr.inria.corese.core.transform.Transformer
@@ -36,63 +34,85 @@ RDF = gateway.jvm.fr.inria.corese.core.logic.RDF
 RESULTFORMAT = gateway.jvm.fr.inria.corese.core.print.ResultFormat
 coreseFormat = gateway.jvm.fr.inria.corese.sparql.api.ResultFormatDef
 
-def sparqlQuery(graph, query):
-    """Run a query on a graph
+CACHE_FILE = "dbpedia_cache.json"
 
-    :param graph: the graph on which the query is executed
-    :param query: query to run
-    :returns: query result
-    """
+def load_cache():
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return dict()
+
+def save_cache(cache_dict):
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache_dict, f, indent=4)
+
+
+def sparqlQuery(graph, query):
     exec = QueryProcess.create(graph)
     return exec.query(query)
 
 
 def convert_sparql_to_json(mapping_object):
-    """
-    Transform sparql Java object map into standard JSON response
-    :param mapping_object:
-    :return:
-    """
     sparql_formater = RESULTFORMAT.create(mapping_object)
     sparql_formater.setSelectFormat(coreseFormat.JSON_FORMAT)
 
-    # Convert string to JSON
     json_convert = json.loads(sparql_formater.toString())
     return json_convert
 
 
 def load(graph ,path):
-    """Load a graph from a local file or a URL
-
-    :param path: local path or a URL
-    :returns: the graph load
-    """
-
     ld = Load.create(graph)
     ld.parse(path)
-
     return graph
+
 
 def dbpediaClassFiltered(uri, filtered_already_found):
     if uri in filtered_already_found.keys():
+        # print(f"{uri} already in cache and : {filtered_already_found[uri]}")
         return filtered_already_found[uri]
 
-    q = f"""select * where {{
-	service <https://dbpedia.org/sparql> {{
-		<{uri}> a ?type
-	}}
-}}"""
-    try:
-        result = convert_sparql_to_json(sparqlQuery(g, q))
+    q = f"""
+    SELECT * WHERE {{
+        <{uri}> a ?type
+    }}
+    """
+    
+    url = "https://dbpedia.org/sparql"
+    params = {"query": q, "format": "application/json"}
+    tentative = 0
+    
+    while True:
+        try:
+            time.sleep(1)
+            
+            response = requests.get(url, params=params, timeout=30)
+            response.raise_for_status() 
+            
+            result = response.json()
 
-        for elt in result["results"]["bindings"]:
-            if elt["type"]["value"] in filtered_class_list:
-                filtered_already_found[uri] = False
-                return False
-        filtered_already_found[uri] = False
-        return True
-    except:
-        print("Nothing extracted")
+            if not result or "results" not in result or not result["results"]["bindings"]:
+                filtered_already_found[uri] = True
+                save_cache(filtered_already_found)
+                return True
+
+            for elt in result["results"]["bindings"]:
+                if elt["type"]["value"] in filtered_class_list:
+                    filtered_already_found[uri] = False
+                    # print(f"elt: {elt["type"]["value"]}, uri: {uri} is False")
+                    save_cache(filtered_already_found)
+                    return False
+                    
+            filtered_already_found[uri] = True
+            # print(f"elt:{elt["type"]["value"]}, uri: {uri} is True")
+            save_cache(filtered_already_found)
+            return True
+
+        except requests.exceptions.RequestException as e:
+            tentative += 1
+            attente = min(5 * tentative, 60)
+            print(f"[{uri}] Echec connexion (Tentative {tentative}). Reessai dans {attente}s...")
+            time.sleep(attente)
+
 
 def linkClassToOntology(name, class_link):
     if name in class_link.keys():
@@ -148,20 +168,12 @@ def setQuery(label, df, previous):
 
 
 def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb://localhost:27017/"):
-    """
-    Load data from csv to a mongoDB collection
-    :param csv_file:
-    :param db_name:
-    :param collection_name:
-    :param mongo_uri:
-    :return:
-    """
-    # Connexion à MongoDB
     client = MongoClient(mongo_uri)
     db = client[db_name]
     collection = db[collection_name]
     df = pd.read_csv(csv_file)
     df = df.where(pd.notnull(df), "")
+    
     if collection_name == "Link":
         data = []
         new_columns = list(df.columns)
@@ -176,9 +188,7 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
         df = pd.DataFrame(data, columns=new_columns)
 
     elif collection_name == "Annotation":
-
         data = []
-        # Conversion du DataFrame en dictionnaires et insertion dans MongoDB
         new_columns = list(df.columns)
         new_columns.append("label")
 
@@ -193,7 +203,8 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
                 data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
 
             label = concept_uri.split("/")[-1].replace("_", " ") if "dbpedia" in concept_uri else mention
-            setQuery(label, data, [paragraph_uri, concept_uri, mention, score, origin])
+            if origin != "zoomathia":
+                setQuery(label, data, [paragraph_uri, concept_uri, mention, score, origin])
 
         df = pd.DataFrame(data, columns=new_columns)
 
@@ -202,13 +213,6 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
 
 
 def clear_mongo_collection(db_name, collection_name, mongo_uri="mongodb://localhost:27017/"):
-    """
-    Clear old data from the given mongoDB collection
-    :param db_name:
-    :param collection_name:
-    :param mongo_uri:
-    :return:
-    """
     client = MongoClient(mongo_uri)
     db = client[db_name]
 
@@ -217,36 +221,40 @@ def clear_mongo_collection(db_name, collection_name, mongo_uri="mongodb://localh
     else:
         collection = db[collection_name]
         clear_result = collection.delete_many({})
+        print(f"collection {collection_name} cleared: {clear_result}")
 
 
 if __name__ == "__main__":
-    # TODO: script qui execute des conversions morph_xr2rml
     g = Graph()
     g = load(g, "th310.ttl")
     g = load(g, "zoomathia.ttl")
 
-    filtered_already_found = dict()
+    filtered_already_found = load_cache()
     zoomathia_linked = dict()
     class_association = dict()
 
     with open("filter_class.json", "r") as filter_file:
         filtered_class_list = json.load(filter_file)["class"]
 
-    db_name = "Ner"
     csv_files = glob.glob("./output/*.csv")
-    clear_mongo_collection(db_name, "Annotation")
-    clear_mongo_collection(db_name, "Paragraph")
-    clear_mongo_collection(db_name, "Link")
-    clear_mongo_collection(db_name, "Metadata")
+
+    db_name = "Ner"
+    # clear_mongo_collection(db_name, "Annotation")
+    # clear_mongo_collection(db_name, "Paragraph")
+    # clear_mongo_collection(db_name, "Link")
+    # clear_mongo_collection(db_name, "Metadata")
 
     for csv in csv_files:
         print(csv)
         if "link" in csv:
+            print("link loading on mongodb ...")
             load_csv_to_mongodb(csv, db_name, "Link")
         elif "paragraph" in csv:
+            print("Paragraph loading on mongodb ...")
             load_csv_to_mongodb(csv, db_name, "Paragraph")
         elif "annotations" in csv:
+            print("Annotation loading on mongodb ...")
             load_csv_to_mongodb(csv, db_name, "Annotation")
         else:
+            print("Metadata loading on mongodb ...")
             load_csv_to_mongodb(csv, db_name, "Metadata")
-
