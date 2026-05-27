@@ -199,12 +199,16 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
             score = df["score"][row]
             origin = df["origin"][row]
 
-            if origin == "wikidata" or dbpediaClassFiltered(concept_uri, filtered_already_found):
+            if origin == "zoomathia":
                 data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
 
-            label = concept_uri.split("/")[-1].replace("_", " ") if "dbpedia" in concept_uri else mention
-            if origin != "zoomathia":
-                setQuery(label, data, [paragraph_uri, concept_uri, mention, score, origin])
+            else:
+                if origin == "wikidata" or dbpediaClassFiltered(concept_uri, filtered_already_found) :
+                    data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
+
+                label = concept_uri.split("/")[-1].replace("_", " ") if "dbpedia" in concept_uri else mention
+                if origin != "zoomathia":
+                    setQuery(label, data, [paragraph_uri, concept_uri, mention, score, origin])
 
         df = pd.DataFrame(data, columns=new_columns)
 
@@ -236,13 +240,13 @@ if __name__ == "__main__":
     with open("filter_class.json", "r") as filter_file:
         filtered_class_list = json.load(filter_file)["class"]
 
-    csv_files = glob.glob("./output/*.csv")
+    csv_files = glob.glob("./output/tlg0057.tlg010*.csv")
 
     db_name = "Ner"
-    # clear_mongo_collection(db_name, "Annotation")
-    # clear_mongo_collection(db_name, "Paragraph")
-    # clear_mongo_collection(db_name, "Link")
-    # clear_mongo_collection(db_name, "Metadata")
+    clear_mongo_collection(db_name, "Annotation")
+    clear_mongo_collection(db_name, "Paragraph")
+    clear_mongo_collection(db_name, "Link")
+    clear_mongo_collection(db_name, "Metadata")
 
     for csv in csv_files:
         print(csv)
