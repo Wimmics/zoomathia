@@ -14,7 +14,7 @@ import atexit
 import ujson as json
 
 import spacy
-
+from spacy.matcher import PhraseMatcher
 
 java_process = subprocess.Popen(
     ['java', '-jar', '-Dfile.encoding=UTF-8', 'corese-library-python-4.4.1.jar'])
@@ -100,15 +100,30 @@ def get_NER_from_wikidata(element, lg="en"):
     return en_text.ents
 
 def find_thesaurus_entities(translated_paragraph, annotations, paragraph):
+    # doc = nlp_model(translated_paragraph)
+    # for token in doc:
+    #     word_lower = token.text.lower()
+    #     if word_lower in thesaurus_dict:
+    #         annotations.append([paragraph,
+    #                             thesaurus_dict[word_lower],
+    #                             word_lower,
+    #                             1,
+    #                             "zoomathia"])
+
     doc = nlp_model(translated_paragraph)
-    for token in doc:
-        word_lower = token.text.lower()
-        if word_lower in thesaurus_dict:
-            annotations.append([paragraph,
-                                thesaurus_dict[word_lower],
-                                word_lower,
-                                1,
-                                "zoomathia"])
+    matches = matcher(doc)
+    for _, start, end in matches:
+        span = doc[start:end]
+        mention_text = span.text
+        mention_lower = mention_text.lower()
+        if mention_lower in thesaurus_dict:
+            annotations.append([
+                paragraph,
+                thesaurus_dict[mention_lower],
+                mention_text,  # Conserve la casse d'origine du texte (ex: "Self-defense")
+                1,
+                "zoomathia"
+            ])
 
 
 def extract_dbpedia(entities, annotations, paragraph):
@@ -205,6 +220,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     else:
                         translated_paragraph = split_and_translate(paragraph_text, "en")
 
+                    find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                     extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                     dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
@@ -229,6 +245,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 else:
                     translated_paragraph = split_and_translate(paragraph_text, "en")
 
+                find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                 wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                 extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                 dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
@@ -264,6 +281,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                         else:
                             translated_paragraph = split_and_translate(paragraph_text, "en")
 
+                        find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                         wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                         extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                         dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
@@ -387,7 +405,7 @@ def get_all_thesaurus_concepts(g):
         SELECT DISTINCT ?concept ?label WHERE { 
             ?concept a skos:Concept ;
                      skos:prefLabel ?label .
-            FILTER(lang(?label) = "en" || lang(?label) = "fr")
+            FILTER(lang(?label) = "en")
         }
         """
 
@@ -409,8 +427,14 @@ if __name__ == "__main__":
 
     thesaurus_dict = get_all_thesaurus_concepts(g)
 
-    directory_path = ('./texts/')
-    xml_files = find_xml_files(directory_path)
+    matcher = PhraseMatcher(nlp_model.vocab, attr="LOWER")
+    patterns = [nlp_model.make_doc(text) for text in thesaurus_dict.keys()]
+    if patterns:
+        matcher.add("THESAURUS", patterns)
+
+    directory_path = ('./texts')
+    # xml_files = find_xml_files(directory_path)
+    xml_files = glob.glob(".\\texts\\test.xml")
     for xml_file in xml_files:
         print(xml_file)
         FILE = xml_file
