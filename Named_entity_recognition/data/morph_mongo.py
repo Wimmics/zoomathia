@@ -151,7 +151,7 @@ def setQuery(label, df, previous):
         SELECT DISTINCT ?x ?label WHERE {{
             ?x a ?type;
                 skos:prefLabel ?label.
-            FILTER(lang(?label) = "en" || lang(?label) = "fr").
+            FILTER(lang(?label) = "en").
             filter(str(?label) in (ucase(str("{label}")), lcase(str("{label}")), str("{label}"))).
         }}"""
 
