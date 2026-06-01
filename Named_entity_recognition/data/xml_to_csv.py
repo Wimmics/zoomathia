@@ -15,6 +15,7 @@ import ujson as json
 
 import spacy
 from spacy.matcher import PhraseMatcher
+from spacy.lang.en.stop_words import STOP_WORDS
 
 java_process = subprocess.Popen(
     ['java', '-jar', '-Dfile.encoding=UTF-8', 'corese-library-python-4.4.1.jar'])
@@ -100,16 +101,6 @@ def get_NER_from_wikidata(element, lg="en"):
     return en_text.ents
 
 def find_thesaurus_entities(translated_paragraph, annotations, paragraph):
-    # doc = nlp_model(translated_paragraph)
-    # for token in doc:
-    #     word_lower = token.text.lower()
-    #     if word_lower in thesaurus_dict:
-    #         annotations.append([paragraph,
-    #                             thesaurus_dict[word_lower],
-    #                             word_lower,
-    #                             1,
-    #                             "zoomathia"])
-
     doc = nlp_model(translated_paragraph)
     matches = matcher(doc)
     for _, start, end in matches:
@@ -120,7 +111,7 @@ def find_thesaurus_entities(translated_paragraph, annotations, paragraph):
             annotations.append([
                 paragraph,
                 thesaurus_dict[mention_lower],
-                mention_text,  # Conserve la casse d'origine du texte (ex: "Self-defense")
+                mention_text,
                 1,
                 "zoomathia"
             ])
@@ -129,6 +120,8 @@ def find_thesaurus_entities(translated_paragraph, annotations, paragraph):
 def extract_dbpedia(entities, annotations, paragraph):
     for ent in entities:
         if ent.kb_id_ == None or ent.kb_id_ == '':
+            continue
+        if ent.text.lower() in STOP_WORDS:
             continue
         if ent.kb_id_ is not None:
             annotations.append([paragraph,
@@ -141,6 +134,8 @@ def extract_dbpedia(entities, annotations, paragraph):
 def extract_wikidata(entities, annotations, paragraph):
     for ent in entities:
         if ent._.url_wikidata is None or ent._.url_wikidata == '':
+            continue
+        if ent.text.lower() in STOP_WORDS:
             continue
         if ent._.nerd_score is not None and ent._.nerd_score >= 0.3:
 
@@ -433,8 +428,7 @@ if __name__ == "__main__":
         matcher.add("THESAURUS", patterns)
 
     directory_path = ('./texts')
-    # xml_files = find_xml_files(directory_path)
-    xml_files = glob.glob(".\\texts\\test.xml")
+    xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
         print(xml_file)
         FILE = xml_file

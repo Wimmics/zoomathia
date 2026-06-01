@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI.2>
-	<teiHeader type="text">
-		<fileDesc>
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader><fileDesc>
 			<titleStmt>
 				<title>On the Characteristics of Animals</title>
 				<author>Aelian</author>
@@ -12,11 +11,7 @@
 				<editor role="editor">E. H. Warmington</editor>
 				<funder n="org:Google">Google Digital Humanities Awards Program</funder>
 			</titleStmt>
-			<publicationStmt>
-				<publisher>Aikaterini Laskaridis Foundation</publisher>
-				<pubPlace>Piraeus</pubPlace>
-				<authority>ToposText</authority>
-			</publicationStmt>
+			<publicationStmt><publisher>Aikaterini Laskaridis Foundation</publisher><pubPlace>Piraeus</pubPlace><authority>ToposText</authority></publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<monogr>
@@ -40,24 +35,21 @@
 						<respStmt>
 							<name>Alwyn Faber Scholfield</name>
 							<resp>translation</resp>
-						</respStmt>
+						<name/></respStmt>
 					</monogr>
 				</biblStruct>
 				<p>Keyboarding</p>
 			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<refsDecl doctype="TEI.2">
-				<state unit="book"/>
-				<state unit="chapter" n="chunk"/>
+		</fileDesc><encodingDesc>
+			<refsDecl>
+				<refState unit="book"/>
+				<refState unit="chapter" n="chunk"/>
 			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
+		</encodingDesc><profileDesc>
 			<langUsage>
-				<language id="english">English</language><!--changement de greek à english-->
+				<language ident="english">English</language><!--changement de greek à english-->
 			</langUsage>
-		</profileDesc>
-	</teiHeader>
+		</profileDesc></teiHeader>
 	<text>
 		<body>
 			<div1 type="book" n="1">
@@ -986,7 +978,7 @@ The Circe may be said to differ from the falcon not only in sex but in its natur
 					<p>Chaffinches, it seems, are cleverer than man at predicting the future. For instance, they can tell when winter is coming, and they take the most careful precautions against an impending snowfall, and for fear of being overtaken they flee to the woodlands where the thick foliage affords them, as you might say, an asylum.	</p>
 				</div2>
 			</div1>
-			<pb id="p.108"/>
+			<pb xml:id="p.108"/>
 			<div1 type="book" n="5">
 				<div2 type="chapter" n="1">
 					<p>They say that the country about Parium and its neighbour Cyzicus are inhabited by birds black in appearance; from their shape you would say that they were hawks. But they do not touch flesh, are temperate in their appetite, and for them seeds are a sufficient meal. And when late autumn sets in, a flock of these birds (they call them Memnons) resort to the land round Ilium, making straight for the tomb of Memnon. And the people who still inhabit the Troad assert that there is a tomb there dedicated to Memnon the son of Eos (Dawn); and since the actual dead body was borne through the air by his mother from the midst of the carnage to Susa (celebrated for this reason as 'Memnonian'), where it was awarded a becoming burial, the monument in the Troad is called after him to no purpose. And so year by year the birds named after the aforesaid hero arrive and separate themselves into hostile factions and fight violently until half their number are killed, when the victors depart and return whence they came. How this all comes to pass and for what reason, I have at the moment no leisure to speculate, nor yet to track down the mysteries of Nature. This however I
@@ -1223,7 +1215,7 @@ To the lowing of cattle or the braying of an ass they pay no attention; but a ma
 					</p>
 				</div2>
 				<div2 type="chapter" n="54">
-					<p>In Mauretania Leopards do not attack monkeys with force nor with all the strength and power at their command, the reason being that the Monkeys do not face them but escape from them and run up trees and sit there on guard against the designs of the Leopards. Yet it seems that after all the Leopard is craftier than the Monkey, for such designs and traps does it contrive for the Monkeys. It comes to the place where a gathering of Monkeys is seated, throws itself down beneath a tree, lies on the ground on its back, inflates its belly, relaxes its legs, closes both eyes, and even holds its breath, and lies there like one dead. And the Monkeys looking down upon their most hated enemy, fancy it to be dead; and what they most fervently desire, that they believe. For all that, they do not as yet take courage but make an experiment, and the experiment is this: they send down one of their number whom they regard as the most fearless to test and to scrutinise the state of the Leopard. So the Monkey descends not altogether unafraid; but after running down a little way he turns back, fear causing him to retreat. And a second time he descends and having approached, withdraws; and a third time he returns and observes the Leopard's eyes and examines it to see if it is breathing. But the Leopard, by remaining motionless with the utmost self-control, inspires a gradual fearlessness in the Monkey. And since it approaches and remains close by and takes no harm, the Monkeys up aloft also now gather courage and run down from that particular tree and from all others that grow near by, and assembling in a mass encircle the Leopard and dance round it. Then they leap upon it and turn somersaults on its body and by dancing in triumph a dance appropriate to monkeys, and by a variety of insults testify to the joy and delight they feel over the supposed corpse. But the Leopard submits to all this until it realises that the Monkeys are tired by their dancing and their insolence, when it leaps up unexpectedly and springs at them. And some it lacerates with its claws, others it tears to pieces with its teeth, and enjoys without stint the ample and sumptuous banquet provided by its enemies. It is Nature that bids the Leopard endure with heroic fortitude, so that it may rise superior to the insults of its enemies, bearing up with the utmost patience and finding no need to say 'endure, my heart'. Indeed the son of Laertes was within an ace of revealing himself prematurely through being unable to tolerate the insults of the maidservants.						<pb id="p.137"/>
+					<p>In Mauretania Leopards do not attack monkeys with force nor with all the strength and power at their command, the reason being that the Monkeys do not face them but escape from them and run up trees and sit there on guard against the designs of the Leopards. Yet it seems that after all the Leopard is craftier than the Monkey, for such designs and traps does it contrive for the Monkeys. It comes to the place where a gathering of Monkeys is seated, throws itself down beneath a tree, lies on the ground on its back, inflates its belly, relaxes its legs, closes both eyes, and even holds its breath, and lies there like one dead. And the Monkeys looking down upon their most hated enemy, fancy it to be dead; and what they most fervently desire, that they believe. For all that, they do not as yet take courage but make an experiment, and the experiment is this: they send down one of their number whom they regard as the most fearless to test and to scrutinise the state of the Leopard. So the Monkey descends not altogether unafraid; but after running down a little way he turns back, fear causing him to retreat. And a second time he descends and having approached, withdraws; and a third time he returns and observes the Leopard's eyes and examines it to see if it is breathing. But the Leopard, by remaining motionless with the utmost self-control, inspires a gradual fearlessness in the Monkey. And since it approaches and remains close by and takes no harm, the Monkeys up aloft also now gather courage and run down from that particular tree and from all others that grow near by, and assembling in a mass encircle the Leopard and dance round it. Then they leap upon it and turn somersaults on its body and by dancing in triumph a dance appropriate to monkeys, and by a variety of insults testify to the joy and delight they feel over the supposed corpse. But the Leopard submits to all this until it realises that the Monkeys are tired by their dancing and their insolence, when it leaps up unexpectedly and springs at them. And some it lacerates with its claws, others it tears to pieces with its teeth, and enjoys without stint the ample and sumptuous banquet provided by its enemies. It is Nature that bids the Leopard endure with heroic fortitude, so that it may rise superior to the insults of its enemies, bearing up with the utmost patience and finding no need to say 'endure, my heart'. Indeed the son of Laertes was within an ace of revealing himself prematurely through being unable to tolerate the insults of the maidservants.						<pb xml:id="p.137"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="55">
@@ -1410,7 +1402,7 @@ The event reached the ears of the inhabitants, and it was no mean tomb that they
 I have also heard the following example of their cleverness: their relations bury dead ants in the capsules of wheat, just as men bury their parents or all whom they love in coffins.					</p>
 				</div2>
 				<div2 type="chapter" n="44">
-					<p>If a Horse receives careful attention, he repays his benefactor by being good-natured and friendly. How Bucephalus bore himself to Alexander is a story that is current everywhere and would give me no pleasure to repeat. I shall also pass over the horse of Antiochus which avenged his master by killing the Gaul (his name was Centoarates) who slew Antiochus on the battlefield. Socles then, about whom not many seem to know, was an Athenian who was esteemed, and indeed was, a comely boy. Now he bought a horse, handsome too like its master but of a violently amorous disposition and with a far sharper eye than other horses. Hence it conceived a passionate love for its master, and when he approached, it would snort; and if he patted it, it would neigh; when he mounted, it would be docile; when he stood before it, it would cast languishing glances at him. These actions already savoured of love, but were thought pleasing. When however the horse, becoming too reckless, seemed to be meditating an assault upon the boy, and tales about the pair of a too mon-strous nature began to circulate, Socles would not tolerate the slander, and in his detestation of a licentious lover sold the horse. But the animal could not bear to be separated from the beautiful boy and ended its days by a rigorous starvation.						<pb id="p.160"/>
+					<p>If a Horse receives careful attention, he repays his benefactor by being good-natured and friendly. How Bucephalus bore himself to Alexander is a story that is current everywhere and would give me no pleasure to repeat. I shall also pass over the horse of Antiochus which avenged his master by killing the Gaul (his name was Centoarates) who slew Antiochus on the battlefield. Socles then, about whom not many seem to know, was an Athenian who was esteemed, and indeed was, a comely boy. Now he bought a horse, handsome too like its master but of a violently amorous disposition and with a far sharper eye than other horses. Hence it conceived a passionate love for its master, and when he approached, it would snort; and if he patted it, it would neigh; when he mounted, it would be docile; when he stood before it, it would cast languishing glances at him. These actions already savoured of love, but were thought pleasing. When however the horse, becoming too reckless, seemed to be meditating an assault upon the boy, and tales about the pair of a too mon-strous nature began to circulate, Socles would not tolerate the slander, and in his detestation of a licentious lover sold the horse. But the animal could not bear to be separated from the beautiful boy and ended its days by a rigorous starvation.						<pb xml:id="p.160"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="45">
@@ -1501,7 +1493,7 @@ I have earlier described another method of capture.
 					</p>
 				</div2>
 			</div1>
-			<pb id="p.170"/>
+			<pb xml:id="p.170"/>
 			<div1 type="book" n="7">
 				<div2 type="chapter" n="1">
 					<p>
@@ -1775,11 +1767,11 @@ And the Acontias (javelin-snake), they say, is amphibious and spends much time o
 				</div2>
 				<div2 type="chapter" n="15">
 					<p>
-						<pb id="p.210"/>When Elephants are unable to cross a ditch the largest one in the herd throws himself into it and standing transversely bridges the gap, while the rest tread on his back, cross to the far side, and make off, but not until they have rescued him. And the way in which they rescue him is as follows. One of them on the bank puts his foot forward and allows the large Elephant to wrap his trunk round it. Meantime the others throw undergrowth and timber into the trench as fast as they can. And he mounts on these and clinging firmly with all his might to the other's foot is drawn up without difficulty.
+						<pb xml:id="p.210"/>When Elephants are unable to cross a ditch the largest one in the herd throws himself into it and standing transversely bridges the gap, while the rest tread on his back, cross to the far side, and make off, but not until they have rescued him. And the way in which they rescue him is as follows. One of them on the bank puts his foot forward and allows the large Elephant to wrap his trunk round it. Meantime the others throw undergrowth and timber into the trench as fast as they can. And he mounts on these and clinging firmly with all his might to the other's foot is drawn up without difficulty.
 There is in India a tract of land called Phalacra (bald). And the reason for the name is that any creature which eats the grass growing there loses its hair and its horns. Accordingly Elephants do not willingly go near this tract, but if they have drawn near to it they move away, since Elephants, like prudent men, avoid anything that is harmful.					</p>
 				</div2>
 				<div2 type="chapter" n="16">
-					<p>The Sponge is directed by a small animal resembling a spider rather than a crab. For the Sponge is no lifeless or bloodless object engendered by the sea, but clings to the rocks like other creatures and has a certain power of movement in itself, though it needs, as you might say, someone to remind it that it is a living creature, for owing to some natural porosity it remains motionless and at rest, until something encounters its pores; then the spider-like creature pricks it, and it seizes what has fallen in and makes a meal. But when a man approaches to cut it off, the Sponge is pricked by the animal that lives in it, shudders, and contracts, and the trouble and labour that this causes to the fisherman is considerable, and no mistake.					<pb id="p.211"/>
+					<p>The Sponge is directed by a small animal resembling a spider rather than a crab. For the Sponge is no lifeless or bloodless object engendered by the sea, but clings to the rocks like other creatures and has a certain power of movement in itself, though it needs, as you might say, someone to remind it that it is a living creature, for owing to some natural porosity it remains motionless and at rest, until something encounters its pores; then the spider-like creature pricks it, and it seizes what has fallen in and makes a meal. But when a man approaches to cut it off, the Sponge is pricked by the animal that lives in it, shudders, and contracts, and the trouble and labour that this causes to the fisherman is considerable, and no mistake.					<pb xml:id="p.211"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="17">
@@ -1815,7 +1807,7 @@ So long as her husband lived she cared for him with the utmost devotion. But whe
 				</div2>
 				<div2 type="chapter" n="25">
 					<p>I have spoken above of the benefit which the Egyptian Plovers confer upon Crocodiles, and Herodotus mentions it in his Account of Egypt. But what I did not mention, though I knew it, I will mention now, in order that others also may learn the facts.
-The Egyptian Plover is one of the marsh-fowls, and ranges along the banks of rivers, feeding upon whatever it chances to pick up here and there, while the Crocodile provides it with the food that I spoke of. And the bird repays it by taking care of it and keeping watch on its behalf while it sleeps. For as it lies asleep the Ichneumon has designs upon it, and fastening on its throat has often throttled it. But the Egyptian Plover utters its cry, beats the Crocodile on the nose, rouses it, and eggs it on against its enemy. Now whether we should applaud the bird for its solicitude on behalf of an omnivorous and gluttonous animal, we shall know later. It is the special characteristics of these creatures that I have mentioned.						<pb id="p.216"/>
+The Egyptian Plover is one of the marsh-fowls, and ranges along the banks of rivers, feeding upon whatever it chances to pick up here and there, while the Crocodile provides it with the food that I spoke of. And the bird repays it by taking care of it and keeping watch on its behalf while it sleeps. For as it lies asleep the Ichneumon has designs upon it, and fastening on its throat has often throttled it. But the Egyptian Plover utters its cry, beats the Crocodile on the nose, rouses it, and eggs it on against its enemy. Now whether we should applaud the bird for its solicitude on behalf of an omnivorous and gluttonous animal, we shall know later. It is the special characteristics of these creatures that I have mentioned.						<pb xml:id="p.216"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="26">
@@ -1886,7 +1878,7 @@ Whenever Frogs utter their cry more loudly and more clearly than is their wont, 
 				</div2>
 				<div2 type="chapter" n="14">
 					<p>I have often heard my mother say, when I was a child, that if a man touches a Torpedo, his hand is seized with the affliction corresponding to its name (torpor). And I have learnt from persons of experience that if a man touches even the net in which it has been captured his entire body is numbed.
-And if one throws it alive into a vessel and pours salt water upon it, and if the fish happens to be pregnant and the time of its delivery is at hand, then it gives birth. And if one pours the water in the vessel over a man's hand or foot, the hand or foot is inevitably numbed.						<pb id="p.223"/>
+And if one throws it alive into a vessel and pours salt water upon it, and if the fish happens to be pregnant and the time of its delivery is at hand, then it gives birth. And if one pours the water in the vessel over a man's hand or foot, the hand or foot is inevitably numbed.						<pb xml:id="p.223"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="15">
@@ -1969,7 +1961,7 @@ And in this way it navigates so long as it has nothing to fear. If however it is
 					</p>
 				</div2>
 				<div2 type="chapter" n="36">
-					<p>There is, it seems, a fish of the species mullet which is accustomed to live and to feed among rocks, and is yellow in appearance. There are two names for it in common use, for some call it 'Adonis,' others 'Exocoetus For, you see, when the waves are lulled in places where the water is calm and smooth, it runs aground, borne forward by the force of the wave, and spreading itself upon the rocks, sleeps a deep and tranquil sleep. And it is well aware that there is peace between it and all other creatures, though it dreads all birds that are or are reputed to be nurslings of the sea. And so if one appears, the fish leaps up and dances as nature has taught it with movements that, one might say, baffle description, until it jumps off the rock, falls into the sea, and is safe. People like to call it 'Adonis' because it loves both land and sea, and those who first gave it this name were hinting (so I think) at the son of Cinyras whose life was divided between two goddesses; one who loved him was beneath the earth, the other above.						<pb id="p.232"/>
+					<p>There is, it seems, a fish of the species mullet which is accustomed to live and to feed among rocks, and is yellow in appearance. There are two names for it in common use, for some call it 'Adonis,' others 'Exocoetus For, you see, when the waves are lulled in places where the water is calm and smooth, it runs aground, borne forward by the force of the wave, and spreading itself upon the rocks, sleeps a deep and tranquil sleep. And it is well aware that there is peace between it and all other creatures, though it dreads all birds that are or are reputed to be nurslings of the sea. And so if one appears, the fish leaps up and dances as nature has taught it with movements that, one might say, baffle description, until it jumps off the rock, falls into the sea, and is safe. People like to call it 'Adonis' because it loves both land and sea, and those who first gave it this name were hinting (so I think) at the son of Cinyras whose life was divided between two goddesses; one who loved him was beneath the earth, the other above.						<pb xml:id="p.232"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="37">
@@ -2133,7 +2125,7 @@ A man who had some knowledge of the method of hunting these animals obtained lea
 				</div2>
 				<div2 type="chapter" n="11">
 					<p>Those who condemn all fishes without exception to silence are ignorant of their nature, because there are those that whistle and those that grunt. The Gurnard grunts, so too do the Chromis and the Caprus, as Aristotle says.
-The John Dory whistles; the Cuckoo a (or 'Piper') has a voice which resembles that of the bird whose name it bears and makes a similar sound.					<pb id="p.247"/>
+The John Dory whistles; the Cuckoo a (or 'Piper') has a voice which resembles that of the bird whose name it bears and makes a similar sound.					<pb xml:id="p.247"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="12">
@@ -2215,7 +2207,7 @@ And yet when it turns to rest it first of all washes itself and purges. It makes
 				</div2>
 				<div2 type="chapter" n="30">
 					<p>It occurs to me now to mention the following additional facts relating to Baboons. If a Baboon finds some edible object with a shell on it (I mean almonds, acorns, nuts) it strips the shell off and cleans it out, after first breaking it most intelligently, and it knows that the contents are good to eat but that the outside is to be thrown away. And it will drink wine, and if boiled or cooked meat is served to it, it will eat its fill; and it likes well-seasoned food, but food boiled without any care it dislikes.
-If it wears clothes, it is careful of them; and it does everything else that I have described above. If you put it while still tiny to a woman's breast, it will suck the milk like a baby.						<pb id="p.259"/>
+If it wears clothes, it is careful of them; and it does everything else that I have described above. If you put it while still tiny to a woman's breast, it will suck the milk like a baby.						<pb xml:id="p.259"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="31">
@@ -2312,7 +2304,7 @@ So much then for this peculiarity of animals at Eryx in addition to those which 
 So when at the customary time they perform the established ritual of the aforesaid god there swoop down from what are called the Rhipaean mountains swans in clouds, past numbering, and after they have circled round the temple as though they were purifying it by their flight, they descend into the precinct of the temple, an area of immense size and of surpassing beauty. Now whenever the singers sing their hymns to the god and the harpers accompany the chorus with their harmonious music, thereupon the Swans also with one accord join in the chant and never once do they sing a discordant note or out of tune, but as though they had been given the key by the conductor they chant in unison with the natives who are skilled in the sacred melodies. Then when the hymn is finished the aforesaid winged choristers, so to call them, after their customary service in honour of the god and after singing and celebrating his praises all through the day, depart.					</p>
 				</div2>
 				<div2 type="chapter" n="2">
-					<p>The people of Epirus and all strangers sojourning there, beside any other sacrifice to Apollo, on one day in the year hold their chief festival in his honour with solemnity and great pomp. There is a grove dedicated to the god, and round about it a precinct, and in the enclosure are Serpents, and these self-same Serpents are the pets of the god. Now the priestess, who is a virgin, enters unaccompanied, bringing food for the Serpents. And the people of Epirus maintain that the Serpents are sprung from the Python at Delphi. If, as the priestess approaches, they look graciously upon her and take the food with eagerness, it is agreed that they are indicating a year of prosperity and of freedom from sickness. If however they scare her and refuse the pleasant food she offers, then the Serpents are foretelling the reverse of the above, and that is what the people of Epirus expect.						<pb id="p.271"/>
+					<p>The people of Epirus and all strangers sojourning there, beside any other sacrifice to Apollo, on one day in the year hold their chief festival in his honour with solemnity and great pomp. There is a grove dedicated to the god, and round about it a precinct, and in the enclosure are Serpents, and these self-same Serpents are the pets of the god. Now the priestess, who is a virgin, enters unaccompanied, bringing food for the Serpents. And the people of Epirus maintain that the Serpents are sprung from the Python at Delphi. If, as the priestess approaches, they look graciously upon her and take the food with eagerness, it is agreed that they are indicating a year of prosperity and of freedom from sickness. If however they scare her and refuse the pleasant food she offers, then the Serpents are foretelling the reverse of the above, and that is what the people of Epirus expect.						<pb xml:id="p.271"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="3">
@@ -2937,7 +2929,7 @@ Those who are skilled at exploring these matters assert that the hairs which gro
 					</p>
 				</div2>
 				<div2 type="chapter" n="8">
-					<p>The Pearl-oyster of India: (I have spoken earlier on of the one in the Red Sea) is obtained in the following manner. There is a, city of which one' Soras by name was ruler, a man of royal lineage, at the time when Eucratides was ruler of Bactria. And the name of the city is Perimula, and it is inhabited by Ichthyophagi (fish-eaters). These men, it is said, set out from there with their nets and draw a ring of wide embrace round a great circle of the shore. The aforesaid stone is produced from a shell resembling a large trumpet-shell, and the Pearl-oysters swim in shoals and have leaders, just as bees, in their hives have 'kings,' as they are called. And I have heard that the 'leader' too is conspicuous for his colour and his size. Now divers beneath the waters make it their special aim to capture him, for once he is caught they catch the entire shoal, since it is, so to say, left destitute and without a leader; for it remains motionless and ceases to advance, like a flock of sheep that by some mischance has lost its shepherd. But the leader makes good his escape and slips out with the utmost adroitness and takes the lead and rescues those that obey him. Those however that are caught the Ichthyophagi are said to pickle in jars. And when the flesh turns clammy and falls away, the precious stone is left behind. The best ones are those from India and from the Red Sea; but they are also found in the western ocean where the island of Britain is, though this kind has a more golden appearance, and a duller, duskier sheen. Juba asserts that they occur also in the strait leading to the Bosporus and are inferior to the British kind, and are not for a moment to be compared with those from India and the Red Sea. But the land-pearl of India is said not to have an independent origin but to be generated not from the ice formed by frost but from excavated rock-crystal.						<pb id="p.373"/>
+					<p>The Pearl-oyster of India: (I have spoken earlier on of the one in the Red Sea) is obtained in the following manner. There is a, city of which one' Soras by name was ruler, a man of royal lineage, at the time when Eucratides was ruler of Bactria. And the name of the city is Perimula, and it is inhabited by Ichthyophagi (fish-eaters). These men, it is said, set out from there with their nets and draw a ring of wide embrace round a great circle of the shore. The aforesaid stone is produced from a shell resembling a large trumpet-shell, and the Pearl-oysters swim in shoals and have leaders, just as bees, in their hives have 'kings,' as they are called. And I have heard that the 'leader' too is conspicuous for his colour and his size. Now divers beneath the waters make it their special aim to capture him, for once he is caught they catch the entire shoal, since it is, so to say, left destitute and without a leader; for it remains motionless and ceases to advance, like a flock of sheep that by some mischance has lost its shepherd. But the leader makes good his escape and slips out with the utmost adroitness and takes the lead and rescues those that obey him. Those however that are caught the Ichthyophagi are said to pickle in jars. And when the flesh turns clammy and falls away, the precious stone is left behind. The best ones are those from India and from the Red Sea; but they are also found in the western ocean where the island of Britain is, though this kind has a more golden appearance, and a duller, duskier sheen. Juba asserts that they occur also in the strait leading to the Bosporus and are inferior to the British kind, and are not for a moment to be compared with those from India and the Red Sea. But the land-pearl of India is said not to have an independent origin but to be generated not from the ice formed by frost but from excavated rock-crystal.						<pb xml:id="p.373"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="9">
@@ -3175,7 +3167,7 @@ Egyptian histories relate that in the time of Ptolemy Philadelphus there were br
 					<p>Pammenes in his work concerning wild animals says that in Egypt there are Scorpions with wings and a double sting (this, he says, is not mere hearsay, but professes that it is his personal observation): there are also two-headed Snakes which have two ti feet in the region of the tail. Further, Ctesias of Cnidus says that in the neighbourhood of Sittace in Persia there is a river called the Argades, and that it contains a great number of Snakes whose bodies are entirely black except for the head, and this is white. There Snakes attain to as much as six feet in length. By day they are not visible, for they swim under water, but at night they kill those who come either to draw water or to wash their clothes. And the victims are numerous, either because they need water when their supply fails, or because they were busy during the day-time and unable to wash their clothes then.					</p>
 				</div2>
 			</div1>
-			<pb id="p.412"/>
+			<pb xml:id="p.412"/>
 			<div1 type="book" n="17">
 				<div2 type="chapter" n="1">
 					<p>
@@ -3213,7 +3205,7 @@ The Camel greatly dislikes clear, pure water for drinking, and regards muddy, di
 				</div2>
 				<div2 type="chapter" n="10">
 					<p>Boeotia is free of Moles, and this animal does not burrow through at Lebadea, and if by some chance Moles are introduced from elsewhere they die. [But in the neighbourhood of Orchomenus they abound.]
-In Libya there is an absence of wild swine and of stags. In the Euxine there are neither cephalopod mollusca nor testacea, except on rare occasions and in small numbers. And Dinon says that in Ethiopia there occur the one-horned birds, swine with four horns, and sheep destitute of wool but with the hair of camels.						<pb id="p.417"/>
+In Libya there is an absence of wild swine and of stags. In the Euxine there are neither cephalopod mollusca nor testacea, except on rare occasions and in small numbers. And Dinon says that in Ethiopia there occur the one-horned birds, swine with four horns, and sheep destitute of wool but with the hair of camels.						<pb xml:id="p.417"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="11">
@@ -3262,7 +3254,7 @@ The Foxes in Caspian territory are so numerous that they not only constantly vis
 					<p>Let us make room for Cleitarchus also. He says that in India there occurs a bird with strongly amorous propensities and that it is called the Orion. Well now, let us depict it as he has described it. This 'Orion' is the same size as the birds they call herons and its legs are red like theirs; its eyes are dark (in this respect it is unlike them), and Nature has taught it to make melody sweet as any bridal song with its alluring charms.					</p>
 				</div2>
 				<div2 type="chapter" n="23">
-					<p>Cleitarchus says that the Catreus, as it is called, is a native of India, and is a bird of magnificent beauty. It might be about the same size as a peacock; the tips of its feathers are the colour of an emerald, and when it looks in another direction you cannot tell what its eyes are like. If however it looks you in the face, you will pronounce them to be vermilion all except the pupil, and this has a grey hue and a keen glance. And,what is white in the eyes of all other birds is pale brown in the Catreus. And its head feathers are a bluer-grey with saffron-coloured speckles sprinkled here and there! Its legs are an orange colour, and its note is as melodious and clear as the nightingale. Now the use of these birds for food is (prohibited) by the Indians, in order that spectators may feast their eyes upon them. At any rate there are to be seen in India birds entirely scarlet, the colour of the purest flame, and they fly in such multitudes that one would take them for clouds. Others however are mottled and it is not very easy to say what they look like, but for beauty and clarity of tone their singing is unsurpassed; they might be, if the expression is not too strong, Sirens, for these fabled maidens as celebrated by poets and portrayed by artists had wings.						<pb id="p.423"/>
+					<p>Cleitarchus says that the Catreus, as it is called, is a native of India, and is a bird of magnificent beauty. It might be about the same size as a peacock; the tips of its feathers are the colour of an emerald, and when it looks in another direction you cannot tell what its eyes are like. If however it looks you in the face, you will pronounce them to be vermilion all except the pupil, and this has a grey hue and a keen glance. And,what is white in the eyes of all other birds is pale brown in the Catreus. And its head feathers are a bluer-grey with saffron-coloured speckles sprinkled here and there! Its legs are an orange colour, and its note is as melodious and clear as the nightingale. Now the use of these birds for food is (prohibited) by the Indians, in order that spectators may feast their eyes upon them. At any rate there are to be seen in India birds entirely scarlet, the colour of the purest flame, and they fly in such multitudes that one would take them for clouds. Others however are mottled and it is not very easy to say what they look like, but for beauty and clarity of tone their singing is unsurpassed; they might be, if the expression is not too strong, Sirens, for these fabled maidens as celebrated by poets and portrayed by artists had wings.						<pb xml:id="p.423"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="24">
@@ -3316,7 +3308,7 @@ The following bird also is a Caspian, or rather an Indian, bird, for its generic
 				</div2>
 				<div2 type="chapter" n="37">
 					<p>Some men, sixteen in all, reaping beneath a blazing sun and oppressed with thirst, despatched one pf their number to fetch water from a spring near by. So the man went off with his reaping sickle in his hand and the pail for drawing water Over his shoulder. On arrival he found an Eagle wrapped in the powerful grip of a snake. The Eagle, happened to have swooped upon it but failed to achieve its design and could not, as in Homer, carry their food to its young ones. Instead of that it fell into the serpent's coils and so far from killing was likely to be killed. So the husbandman knowing that the Eagle was the messenger and minister of Zeus and knowing too that the snake was an evil brute, cut the beast in two with the aforesaid sickle and released the Eagle from that inescapable grip that bound it. And yet all this was performed as a secondary purpose of the man's journey, and after drawing the water he returned, mixed it with the wine, and dispensed it to the company, whereupon they drained their cups at a single draught many times over at their luncheon. The man himself was intending to drink after the others, for he happened at that time to be rather their servant than their fellow at table; But when he raised the cup to his lips, the. Eagle which he had rescued and which, fortunately for him, was still lingering about the spot, to reward him for saving its life swooped upon the cup, dashed it from his hand, and spilt the drink. The man was annoyed, for he was indeed thirsty, and exclaimed 'So it is you' (for he recognised the bird), 'yet this is how you thank those who saved your life! I ask you, is this fair? And how should a man hereafter want to do a good turn to another from respect for Zeus who marks and watches over kind actions?' Such were his words and he felt parched. But turning round he saw the men who had drunk gasping and at the point of death. It seems, at a guess, that the snake had vomited into the spring and mingled the water with its poison. And so the Eagle repaid its saviour by similarly saving his life.
-Crates of Pergamum says that Stesichorus also sings of this in a poem which has not, I think, reached a wide public, and he has cited, in my opinion, a weighty witness from ancient times.						<pb id="p.430"/>
+Crates of Pergamum says that Stesichorus also sings of this in a poem which has not, I think, reached a wide public, and he has cited, in my opinion, a weighty witness from ancient times.						<pb xml:id="p.430"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="38">
@@ -3340,7 +3332,7 @@ Crates of Pergamum says that Stesichorus also sings of this in a poem which has 
 				</div2>
 				<div2 type="chapter" n="43">
 					<p>The Leopard of Caria and Lycia is not fierce-tempered, nor of a kind that can leap high, though its body is long. But when wounded with pikes and spears it offers resistance and does not readily yield to the steel, behaving as Homer describes:
-'Yet though pierced with a spear she does not cease.'						<pb id="p.432"/>
+'Yet though pierced with a spear she does not cease.'						<pb xml:id="p.432"/>
 					</p>
 				</div2>
 				<div2 type="chapter" n="44">
@@ -3354,7 +3346,7 @@ Crates of Pergamum says that Stesichorus also sings of this in a poem which has 
 					<p>Mnaseas in his work On Europe says that there is a temple to Heracles and to his spouse whom poets celebrate as the daughter of Hera. Now they say that in the precincts of these temples a large number of tame birds are kept, adding that these birds are cockerels and hens. They feed and consort together according to their sex, are fed at the public expense, and are consecrated to the aforesaid gods. The hens feed in the temple of Hebe while their mates feed in the temple of Heracles. And a never-failing channel of clear water flows between them. Now on the one hand not a single hen ever appears in the temple of Heracles. On the other hand at the season of mating the cockerels fly across the channel and after consorting with the hens return again to their own quarters at the side of the god whom they serve, cleansed by the water that separates the sexes. And so to begin with, as a natural result of this union eggs are laid; later on when the hens have warmed them and hatched the chicks, the cockerels carry off the male birds and rear them, while the hens make it their business to rear their daughters.
 					</p>
 				</div2>
-				<pb id="p.434"/>
+				<pb xml:id="p.434"/>
 				<div2 type="chapter" n="epilogos">
 					<p>All that my own application, reflection, and labour augment my knowledge, all that the advance of understanding in these studies (as eminent scholars vied with each other in acquainting themselves with these matters) have traced out and discovered — all this I have now set down to the best of my ability. I have not through idleness omitted anything that I have learnt, as though animals, void of reason and of speech, were beneath my notice and to be despised, but here as elsewhere I have been fired by that love of knowledge which in me is inherent and innate; I am well aware that among those who keep a sharp look-out for money, or who are keen in the pursuit of honours and influence and all that brings reputation, there are some who will blame me for devoting my leisure to these studies, when I might have given myself airs and appeared in palaces and attained to considerable wealth. I however occupy myself with foxes and lizards and beetles and snakes and lions, with the habits of the leopard, the affectionate nature of the stork, the melodiousness of the nightingale, the sagacity of the elephant, and the shapes of fishes and the migrations of cranes and the various species of serpents, and so on — everything which in this account of mine has been carefully got together and observed. But it is no pleasure to me to be numbered among your rich men and to be compared with them. But if I exert myself and desire some how to count myself one of that company to which learned poets, and men clever at detecting and probing the secrets of nature, and writers who have attained the greatest experience, claim to belong, it is obvious that my own counsel is better than the judgment of those men. For I would rather attain to expert knowledge in at least one branch than to the belauded riches and possessions of your wealthiest men. So enough of this for the present. I am aware too that some will express disapproval because I have not in my discourse kept each creature separate by itself, and have not said in its own place all that is to be said about each, but have mixed the various kinds like a varied pattern in the course of describing a great number, at one point dropping the narrative about such-and-such animals, at another going back and stringing together other facts about their nature. Now in the first place, speaking for myself, I am no slave to another's judgment and will: I maintain that it is not my duty to follow another's lead wherever it may take me. And in the second place, since I was aiming to attract through the variety of my reading matter, and since I flee from the tedium arising from monotony, I felt that I ought to weave the tissue of this narrative of mine so as to resemble a meadow or a chaplet beautiful with its many colours, the many creatures, as it were, contributing their flowers. And although hunters regard the finding of even one animal as a piece of luck, I maintain that there is nothing splendid in finding the tracks or capturing the bodies of such a multitude of animals, whereas to track down the faculties which nature has seen fit to bestow upon them — that is splendid.
 What have they to say to this, your Cephaluses and Hippolytuses, and all the others so skilful in the chase upon the wild mountains, or again, among those who were skilled in fishing, Metrodorus of Byzantium, or his son Leonidas, or Demostratus, or any others who were past masters at the catching of fish? And there were many such, god knows! Painters too: the picture of a horse consummately drawn fills them with pride, as it did Aglaophon; or the picture of a fawn, as it did Apelles; or his statue of a calf, as it did Myron; or take any other work of art. But when one man displays and brings forth to the light of day his researches into the habits, the forms, the sagacity, the shrewdness, the justice, the temperance, the bravery, the affection, the filial piety of such a great number of animals, he cannot fail to claim immediate respect. Having reached this point in my discourse I am distressed that while praising the filial piety of unreasoning animals, I have to accuse men of the reverse. I shall not here enlarge on this subject, but this much I have every right to add — indeed I mentioned this point at the beginning of this treatise: it is not fair to censure me for repeating what all, or at any rate most, writers have said already. After all I could not create other animals, though I have given evidence that I have known a great many. Yet I have in fact mentioned certain characteristics which no other writer who has attempted the work on my scale has mentioned. But I prize truth in all spheres, most of all in this, and critics who handle me without malice will realise the quality of my work, the labour it cost, the dignity of its style and composition, and the propriety of the words and phrases employed.					</p>
@@ -3362,4 +3354,4 @@ What have they to say to this, your Cephaluses and Hippolytuses, and all the oth
 			</div1>
 		</body>
 	</text>
-</TEI.2>
+</TEI>

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TEI.2>
-    <teiHeader>
-        <fileDesc>
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader><fileDesc>
             <titleStmt>
                 <title>Fabulae Aesopiae ENG</title>
                 <author>Phaedrus</author>
@@ -14,14 +13,10 @@
                     <name>William Merrill</name>
                     <name>Elli Mylonas</name>
                     <name>David Smith</name>
-                    <name />
-                </respStmt>
+                    <name/>
+                <name/></respStmt>
             </titleStmt>
-            <publicationStmt>
-                <publisher>Trustees of Tufts University</publisher>
-                <pubPlace>Medford, MA</pubPlace>
-                <authority>Perseus Project</authority>
-            </publicationStmt>
+            <publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
             <sourceDesc>
                 <biblStruct>
                     <monogr>
@@ -36,30 +31,26 @@
                     </monogr>
                 </biblStruct>
             </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
+        </fileDesc><encodingDesc>
             <refsDecl>
-                <refState unit="book" />
-                <refState n="chunk" unit="poem" />
-                <refState unit="line" />
+                <refState unit="book"/>
+                <refState n="chunk" unit="poem"/>
+                <refState unit="line"/>
             </refsDecl>
-        </encodingDesc>
-        <profileDesc>
+        </encodingDesc><profileDesc>
             <langUsage>
-                <language ident="la">Latin
+                <language>Latin
                 </language>
-                <language ident="greek">Greek
+                <language>Greek
                 </language>
             </langUsage>
-        </profileDesc>
-    </teiHeader>
-    <text lang="en">
+        </profileDesc></teiHeader>
+    <text xml:lang="en">
         <body>
-            <div1 type="book" n="1" org="uniform" sample="complete">
-                <div2 type="poem" n="prologus" org="uniform" sample="complete">
+            <div1 type="book" n="1">
+                <div2 type="poem" n="prologus">
                     <head>Prologue.</head>
-                    <l n="tr">WHAT from the founder <placeName key="tgn,2318967"
-                            authname="tgn,2318967">Esop</placeName> fell,</l>
+                    <l n="tr">WHAT from the founder <placeName key="tgn,2318967" authname="tgn,2318967">Esop</placeName> fell,</l>
                     <l n="tr">In neat familiar verse I tell:</l>
                     <l n="tr">Twofold's the genius of the page,</l>
                     <l n="tr">To make you smile and make you sage.</l>
@@ -71,7 +62,7 @@
                     <l n="tr">By fiction, in the cause of truth.
 </l>
                 </div2>
-                <div2 type="poem" n="1" org="uniform" sample="complete">
+                <div2 type="poem" n="1">
                     <head>The Wolf and the Lamb</head>
 
                     <l n="tr">BY thirst incited; to the brook</l>
@@ -98,11 +89,10 @@
                     <l n="tr">But they will injure innocence.
 </l>
                 </div2>
-                <div2 type="poem" n="2" org="uniform" sample="complete">
+                <div2 type="poem" n="2">
                     <head>The Frogs Desiring a King</head>
 
-                    <l n="tr">With equal laws when <placeName key="tgn,7001393"
-                            authname="tgn,7001393">Athens</placeName> throve,</l>
+                    <l n="tr">With equal laws when <placeName key="tgn,7001393" authname="tgn,7001393">Athens</placeName> throve,</l>
                     <l n="tr">The petulance of freedom drove</l>
                     <l n="tr">Their state to license, which overthrew</l>
                     <l n="tr">Those just restraints of old they knew.</l>
@@ -149,7 +139,7 @@
                     <l n="tr">Be still, for fear of worse and worse.
 </l>
                 </div2>
-                <div2 type="poem" n="3" org="uniform" sample="complete">
+                <div2 type="poem" n="3">
                     <head>The Vain Jackdaw</head>
 
                     <l n="tr">Lest any one himself should plume,</l>
@@ -175,7 +165,7 @@
                     <l n="tr">Had been deserted in distress."
 </l>
                 </div2>
-                <div2 type="poem" n="4" org="uniform" sample="complete">
+                <div2 type="poem" n="4">
                     <head>The Dog in the River.</head>
                     <l n="tr">The churl that wants another's fare</l>
                     <l n="tr">Deserves at least to lose his share.</l>
@@ -189,7 +179,7 @@
                     <l n="tr">Both shade and substance, beef and bone.
 </l>
                 </div2>
-                <div2 type="poem" n="5" org="uniform" sample="complete">
+                <div2 type="poem" n="5">
                     <head>The Heifer, Goat, Sheep, and Lion.</head>
                     <l n="tr">A partnership with men in power</l>
                     <l n="tr">We cannot build upon an hour.</l>
@@ -211,7 +201,7 @@
                     <l n="tr">Seized all the prey without remorse.
 </l>
                 </div2>
-                <div2 type="poem" n="6" org="uniform" sample="complete">
+                <div2 type="poem" n="6">
                     <head>The Frogs and Sun</head>
 
                     <l n="tr">When <placeName key="tgn,2318967" authname="tgn,2318967">Esop</placeName>
@@ -233,7 +223,7 @@
                     <l n="tr">And propagate a race of fire !"
 </l>
                 </div2>
-                <div2 type="poem" n="7" org="uniform" sample="complete">
+                <div2 type="poem" n="7">
                     <head>The Fox and the Tragic Mask</head>
 
                     <l n="tr">A Fox beheld a Mask- "0 rare</l>
@@ -242,7 +232,7 @@
                     <l n="tr">Pomp, pow'r, and everything but sense.
 </l>
                 </div2>
-                <div2 type="poem" n="8" org="uniform" sample="complete">
+                <div2 type="poem" n="8">
                     <head>The Wolf and Crane</head>
 
                     <l n="tr">Who for his merit seeks a price</l>
@@ -267,7 +257,7 @@
                     <l n="tr">And now, forsooth, you'd bring your bill!"
 </l>
                 </div2>
-                <div2 type="poem" n="9" org="uniform" sample="complete">
+                <div2 type="poem" n="9">
                     <head>The Hare and the Sparrow</head>
                     <l n="tr">Still to give cautions, as a friend,</l>
                     <l n="tr">And not one's own affairs attend,</l>
@@ -287,13 +277,12 @@
                     <l n="tr">Must now deplore her own no less."
 </l>
                 </div2>
-                <div2 type="poem" n="10" org="uniform" sample="complete">
+                <div2 type="poem" n="10">
                     <head>The Wolf and Fox, with the Ape for Judge</head>
                     <l n="tr">Whoe'er by practice indiscreet</l>
                     <l n="tr">Has pass'd for a notorious cheat,</l>
                     <l n="tr">Will shortly find his credit fail,</l>
-                    <l n="tr">Though he speak truth, says <placeName key="tgn,2318967"
-                            authname="tgn,2318967">Esop</placeName>'s tale.</l>
+                    <l n="tr">Though he speak truth, says <placeName key="tgn,2318967" authname="tgn,2318967">Esop</placeName>'s tale.</l>
                     <l n="tr">The Wolf the Fox for theft arraigned;</l>
                     <l n="tr">The Fox her innocence maintained:</l>
                     <l n="tr">The Ape, as umpire, takes his seat;</l>
@@ -306,7 +295,7 @@
                     <l n="tr">0 Fox! have stolen the goods no doubt."
 </l>
                 </div2>
-                <div2 type="poem" n="11" org="uniform" sample="complete">
+                <div2 type="poem" n="11">
                     <head>The Ass and the Lion Hunting</head>
 
                     <l n="tr">A coward, full of pompous speech,</l>
@@ -335,7 +324,7 @@
                     <l n="tr">Their terror had been all my own!"
 </l>
                 </div2>
-                <div2 type="poem" n="12" org="uniform" sample="complete">
+                <div2 type="poem" n="12">
                     <head>The Stag at the Fountain</head>
 
                     <l n="tr">FULL often what you now despise</l>
@@ -359,7 +348,7 @@
                     <l n="tr">How grievous that which made me vain!
 </l>
                 </div2>
-                <div2 type="poem" n="13" org="uniform" sample="complete">
+                <div2 type="poem" n="13">
                     <head>The Fox and the Crow</head>
 
                     <l n="tr">His folly in repentance ends,</l>
@@ -384,7 +373,7 @@
                     <l n="tr">That for her folly she must fast.
 </l>
                 </div2>
-                <div2 type="poem" n="14" org="uniform" sample="complete">
+                <div2 type="poem" n="14">
                     <head>The Cobbler Turned Doctor</head>
 
                     <l n="tr">A bankrupt Cobbler, poor and lean,</l>
@@ -417,7 +406,7 @@
                     <l n="tr">Whose weakness is the prey of knaves.
 </l>
                 </div2>
-                <div2 type="poem" n="15" org="uniform" sample="complete">
+                <div2 type="poem" n="15">
                     <head>The Sapient Ass</head>
 
                     <l n="tr">In all the changes of a state,</l>
@@ -438,7 +427,7 @@
                     <l n="tr">Cries he, "I care not who is king."
 </l>
                 </div2>
-                <div2 type="poem" n="16" org="uniform" sample="complete">
+                <div2 type="poem" n="16">
                     <head>The Sheep, the Stag, and the Wolf</head>
                     <l n="tr">When one rogue would another get</l>
                     <l n="tr">For surety in a case of debt,</l>
@@ -454,7 +443,7 @@
                     <l n="tr">Upon the day the debt is due ?"
 </l>
                 </div2>
-                <div2 type="poem" n="17" org="uniform" sample="complete">
+                <div2 type="poem" n="17">
                     <head>The Sheep, the Dog, and the Wolf.</head>
                     <l n="tr">Liars are liable to rue</l>
                     <l n="tr">The mischief they 're so prone to do.</l>
@@ -472,12 +461,12 @@
                     <l n="tr">Of justice on a wretch like thee."
 </l>
                 </div2>
-                <div2 type="poem" n="18" org="uniform" sample="complete">
+                <div2 type="poem" n="18">
                     <head>(mulier Parturiens)</head>
                     <p>Not here translated.
 </p>
                 </div2>
-                <div2 type="poem" n="19" org="uniform" sample="complete">
+                <div2 type="poem" n="19">
                     <head>The Bitch and Her Puppies</head>
 
                     <l n="tr">Bad men have speeches smooth and fair,</l>
@@ -498,7 +487,7 @@
                     <l n="tr">When you 're a match for me and mine.'
 </l>
                 </div2>
-                <div2 type="poem" n="20" org="uniform" sample="complete">
+                <div2 type="poem" n="20">
                     <head>The Hungry Dogs</head>
                     <l n="tr">A stupid plan that fools project,</l>
                     <l n="tr">Not only will not take effect,</l>
@@ -512,7 +501,7 @@
                     <l n="tr">They perish'd, ere they could succeed.
 </l>
                 </div2>
-                <div2 type="poem" n="21" org="uniform" sample="complete">
+                <div2 type="poem" n="21">
                     <head>The Old Lion</head>
 
                     <l n="tr">Whoever, to his honor's cost,</l>
@@ -537,7 +526,7 @@
                     <l n="tr">Giv'st death at least a double sting."
 </l>
                 </div2>
-                <div2 type="poem" n="22" org="uniform" sample="complete">
+                <div2 type="poem" n="22">
                     <head>The Man and the Weasel</head>
 
                     <l n="tr">A Weasel, by a person caught,</l>
@@ -560,7 +549,7 @@
                     <l n="tr">Would boast the merit of a friend.
 </l>
                 </div2>
-                <div2 type="poem" n="23" org="uniform" sample="complete">
+                <div2 type="poem" n="23">
                     <head>The Faithful House-dog</head>
 
                     <l n="tr">A Man that's gen'rous all at once</l>
@@ -577,7 +566,7 @@
                     <l n="tr">Lest such a scoundrel should come in."
 </l>
                 </div2>
-                <div2 type="poem" n="24" org="uniform" sample="complete">
+                <div2 type="poem" n="24">
                     <head>The Proud Frog</head>
 
                     <l n="tr">When poor men to expenses run,</l>
@@ -596,15 +585,14 @@
                     <l n="tr">She raged and puffed, and burst in two.
 </l>
                 </div2>
-                <div2 type="poem" n="25" org="uniform" sample="complete">
+                <div2 type="poem" n="25">
                     <head>The Dog and the Crocodile</head>
 
                     <l n="tr">Who give bad precepts to the wise,</l>
                     <l n="tr">And cautious men with guile advise,</l>
                     <l n="tr">Not only lose their toil and time,</l>
                     <l n="tr">But slip into sarcastic rhyme.</l>
-                    <l n="tr">The dogs that are about the <placeName key="tgn,1127805"
-                            authname="tgn,1127805">Nile</placeName>,</l>
+                    <l n="tr">The dogs that are about the <placeName key="tgn,1127805" authname="tgn,1127805">Nile</placeName>,</l>
                     <l n="tr">Through terror of the Crocodile,</l>
                     <l n="tr">Are therefore said to drink and run.</l>
                     <l n="tr">It happen'd on a day, that one,</l>
@@ -618,7 +606,7 @@
                     <l n="tr">You shall not taste a bit of mine."
 </l>
                 </div2>
-                <div2 type="poem" n="26" org="uniform" sample="complete">
+                <div2 type="poem" n="26">
                     <head>The Fox and the Stork</head>
 
                     <l n="tr">One should do injury to none;</l>
@@ -643,7 +631,7 @@
                     <l n="tr">Of their example, is but fair."
 </l>
                 </div2>
-                <div2 type="poem" n="27" org="uniform" sample="complete">
+                <div2 type="poem" n="27">
                     <head>The Dog, Treasure, and Vulture.</head>
                     <l n="tr">A Dog, while scratching up the ground,</l>
                     <l n="tr">'Mongst human bones a treasure found;</l>
@@ -663,7 +651,7 @@
                     <l n="tr">Hadst royal riches in thy head."
 </l>
                 </div2>
-                <div2 type="poem" n="28" org="uniform" sample="complete">
+                <div2 type="poem" n="28">
                     <head>The Fox and Eagle</head>
 
                     <l n="tr">Howe'er exalted in your sphere,</l>
@@ -686,12 +674,12 @@
                     <l n="tr">Submissive did the cubs return.
 </l>
                 </div2>
-                <div2 type="poem" n="29" org="uniform" sample="complete">
+                <div2 type="poem" n="29">
                     <head>The Donkey and the Boar</head>
                     <p>Not here translated
 </p>
                 </div2>
-                <div2 type="poem" n="30" org="uniform" sample="complete">
+                <div2 type="poem" n="30">
                     <head>The Frogs and Bulls</head>
 
                     <l n="tr">Men of low life are in distress</l>
@@ -710,7 +698,7 @@
                     <l n="tr">Wherefore their rage to us pertains."
 </l>
                 </div2>
-                <div2 type="poem" n="31" org="uniform" sample="complete">
+                <div2 type="poem" n="31">
                     <head>The Kite and the Doves</head>
 
                     <l n="tr">He that would have the wicked reign,</l>
@@ -734,4 +722,4 @@
             </div1>
         </body>
     </text>
-</TEI.2>
+</TEI>
