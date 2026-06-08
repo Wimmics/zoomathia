@@ -83,8 +83,6 @@ def dbpediaClassFiltered(uri, filtered_already_found):
     
     while True:
         try:
-            time.sleep(1)
-            
             response = requests.get(url, params=params, timeout=30)
             response.raise_for_status() 
             
@@ -101,7 +99,13 @@ def dbpediaClassFiltered(uri, filtered_already_found):
                     # print(f"elt: {elt["type"]["value"]}, uri: {uri} is False")
                     save_cache(filtered_already_found)
                     return False
-                    
+                blacklist = ["album", "film"]
+                for word in blacklist:
+                    if word in uri:
+                        filtered_already_found[uri] = False
+                        save_cache(filtered_already_found)
+                        return False
+            
             filtered_already_found[uri] = True
             # print(f"elt:{elt["type"]["value"]}, uri: {uri} is True")
             save_cache(filtered_already_found)
@@ -199,7 +203,9 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
             score = df["score"][row]
             origin = df["origin"][row]
 
-            if origin == "zoomathia":
+
+
+            if origin == "zoomathia_match":
                 data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
 
             else:
@@ -207,7 +213,7 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
                     data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
 
                 label = concept_uri.split("/")[-1].replace("_", " ") if "dbpedia" in concept_uri else mention
-                if origin != "zoomathia":
+                if origin != "zoomathia_match":
                     setQuery(label, data, [paragraph_uri, concept_uri, mention, score, origin])
 
         df = pd.DataFrame(data, columns=new_columns)
@@ -240,7 +246,7 @@ if __name__ == "__main__":
     with open("filter_class.json", "r") as filter_file:
         filtered_class_list = json.load(filter_file)["class"]
 
-    csv_files = glob.glob("./output/tlg0057.tlg010*.csv")
+    csv_files = glob.glob("./texts.csv")
 
     db_name = "Ner"
     clear_mongo_collection(db_name, "Annotation")
