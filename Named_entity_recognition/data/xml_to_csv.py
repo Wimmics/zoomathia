@@ -8,6 +8,7 @@ from deep_translator import GoogleTranslator
 from urllib.error import HTTPError
 
 from py4j.java_gateway import JavaGateway
+import time
 from time import sleep
 import subprocess
 import atexit
@@ -57,7 +58,7 @@ def load(graph ,path):
 API_ENDPOINT_URL = "http://nerd.huma-num.fr/nerd/service"
 DBPEDIA_LOCAL = 'http://localhost:2222/rest'
 
-nlp_model = spacy.load("en_core_web_sm")
+nlp_model = spacy.load("en_core_web_lg")
 
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 ANNOTATION_AUTO = True
@@ -67,53 +68,106 @@ def split_and_translate(text, lang_target, max_chunk_length=1000):
     translated_chunks = []
 
     for chunk in chunks:
-        translated_chunk = GoogleTranslator(source='auto', target=lang_target).translate(chunk)
-        if translated_chunk is not None:
-            translated_chunks.append(translated_chunk)
+        tries = 0
+        success = False
+        while not success:
+            try:
+                translated_chunk = GoogleTranslator(source='auto', target=lang_target).translate(chunk)
+                if translated_chunk is not None:
+                    translated_chunks.append(translated_chunk)
+
+                success = True
+
+            except Exception as e:
+                tries += 1
+                wait = min(5 * tries, 60)
+                print(f" Echec connexion à Google Translate (Tentative {tries}). Reessai dans {wait}s...")
+                time.sleep(wait)
 
     translated_text = ' '.join(translated_chunks)
     return translated_text
 
 
+def is_stop_word(word):
+    if word.text.lower() not in STOP_WORDS:
+        return False
+    elif len(word) == 1:
+        token = word[0]
+        return token.pos_ != "PROPN"
+    else:
+        return all(token.pos_ != "PROPN"
+                   for token in word)
+
+
 def get_NER_from_dbpedia(element,lg="en"):
+    if not element or element.strip() == "":
+        return []
     if "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.remove_pipe("entityfishing")
     if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe('dbpedia_spotlight',
                            config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.3})
-    try:
-        en_text = nlp_model(element)
-    except Exception as err:
-        print(err)
+
+    last_error = None
+    for tries in range(2):  # en attendant de trouver une meilleure solution de programmation défensive
+        try:
+            en_text = nlp_model(element)
+            return en_text.ents
+
+        except Exception as err:
+            last_error = err
+            sleep(1)
+
+    if last_error:
+        print(last_error)
         print(element)
         print(FILE)
         return []
 
-    return en_text.ents
 
 def get_NER_from_wikidata(element, lg="en"):
+    if not element or element.strip() == "":
+        return []
     if "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.remove_pipe("dbpedia_spotlight")
     if not "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe("entityfishing", config={"language": "en", "api_ef_base": API_ENDPOINT_URL})
 
-    en_text = nlp_model(element)
-    return en_text.ents
+    last_error = None
+    for tries in range(2):
+        try:
+            en_text = nlp_model(element)
+            return en_text.ents
+
+        except Exception as err:
+            last_error = err
+            sleep(1)
+
+    if last_error:
+        print(last_error)
+        print(element)
+        print(FILE)
+        return []
+
 
 def find_thesaurus_entities(translated_paragraph, annotations, paragraph):
-    doc = nlp_model(translated_paragraph)
+    if not translated_paragraph or translated_paragraph.strip() == "":
+        return
+    pipes_to_disable = ["dbpedia_spotlight", "entityfishing", "ner"]
+    active_disables = [pipe for pipe in pipes_to_disable if pipe in nlp_model.pipe_names]
+    with nlp_model.select_pipes(disable=active_disables):
+        doc = nlp_model(translated_paragraph)
+
     matches = matcher(doc)
-    for _, start, end in matches:
+    for match_id, start, end in matches:
         span = doc[start:end]
-        mention_text = span.text
-        mention_lower = mention_text.lower()
-        if mention_lower in thesaurus_dict:
+        if not is_stop_word(span):
             annotations.append([
                 paragraph,
-                thesaurus_dict[mention_lower],
-                mention_text,
+                thesaurus_dict[nlp_model.vocab.strings[match_id]],
+                span.text,
                 1,
-                "zoomathia"
+                "zoomathia_match"
             ])
 
 
@@ -121,7 +175,7 @@ def extract_dbpedia(entities, annotations, paragraph):
     for ent in entities:
         if ent.kb_id_ == None or ent.kb_id_ == '':
             continue
-        if ent.text.lower() in STOP_WORDS:
+        if is_stop_word(ent):
             continue
         if ent.kb_id_ is not None:
             annotations.append([paragraph,
@@ -135,7 +189,7 @@ def extract_wikidata(entities, annotations, paragraph):
     for ent in entities:
         if ent._.url_wikidata is None or ent._.url_wikidata == '':
             continue
-        if ent.text.lower() in STOP_WORDS:
+        if is_stop_word(ent):
             continue
         if ent._.nerd_score is not None and ent._.nerd_score >= 0.3:
 
@@ -258,7 +312,6 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         p_id = 1
         for p in tqdm(parent_division.find_all(["p"])):
             if not p.find_parent('p'):
-                # remove useless empty text (maybe error of generation)
                 if strip_text(p.text) == "":
                     continue
 
@@ -357,10 +410,7 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
         else:
             if depth == 0:
                 link_data.append([parent_uri, "Oeuvre", tag_div_id, tag_div_title, f"{parent_uri}/{tag_div_id}"])
-            extract_paragraph(tag_div,
-                              [parent_uri,
-                               tag_div_type, tag_div_id, tag_div_title],
-                              current_uri, link_data, paragraph_data, annotation_data)
+            extract_paragraph(tag_div,[parent_uri, tag_div_type, tag_div_id, tag_div_title],current_uri, link_data, paragraph_data, annotation_data)
 
 
 
@@ -380,7 +430,16 @@ def extraction_data(FILE,CSV):
         annotation_data = []
         annotation_labels = ["paragraph_uri", "concept_uri", "mention", "score", "origin"]
 
-        uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}"
+        if "eng" in FILE.split("\\")[-1]:
+            lang_suffix = "en"
+        elif "phi" in FILE.split("\\")[-1]:
+            lang_suffix = "la"
+        elif "tlg" in FILE.split("\\")[-1]:
+            lang_suffix = "grc"
+        else:
+            lang_suffix = ""
+        uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{lang_suffix}"
+
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
         extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0)
@@ -411,7 +470,7 @@ def get_all_thesaurus_concepts(g):
         concept_uri = item["concept"]["value"]
         entity_label = item["label"]["value"]
 
-        thesaurus_dict[entity_label.lower()] = concept_uri
+        thesaurus_dict[entity_label] = concept_uri
 
     return thesaurus_dict
 
@@ -422,14 +481,14 @@ if __name__ == "__main__":
 
     thesaurus_dict = get_all_thesaurus_concepts(g)
 
-    matcher = PhraseMatcher(nlp_model.vocab, attr="LOWER")
-    patterns = [nlp_model.make_doc(text) for text in thesaurus_dict.keys()]
-    if patterns:
-        matcher.add("THESAURUS", patterns)
+    matcher = PhraseMatcher(nlp_model.vocab, attr="LEMMA")
+    for concept_name in thesaurus_dict.keys():
+        matcher.add(concept_name, [nlp_model(concept_name)])
 
-    directory_path = ('./texts')
+    directory_path = ('./texts/')
     xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
+
         print(xml_file)
         FILE = xml_file
         CSV = ".".join(FILE.split("\\")[-1].split(".")[0:-1])
