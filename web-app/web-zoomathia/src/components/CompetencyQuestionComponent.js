@@ -170,13 +170,12 @@ const CompetencyQuestionComponent = () => {
             <Select className={styles["input-select"]} placeholder={"Select a competency question"} onChange={updateTable} options={options} />
         </header>
         <section className={styles["box-question"]}>
-            {table}
-            <h3>{titleVizu}</h3>
-            <div>
-                <mge-dashboard id="mge-dashboard" className={styles["mge-dashboard"]}></mge-dashboard>
-            </div>
-            
-        </section>
+    {table}
+    {titleVizu && <h3>{titleVizu}</h3>}
+    <div style={{display: table ? 'block' : 'none'}}>
+        <mge-dashboard id="mge-dashboard" className={styles["mge-dashboard"]}></mge-dashboard>
+    </div>
+</section>
 
     </div>
 }

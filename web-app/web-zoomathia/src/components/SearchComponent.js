@@ -290,12 +290,19 @@ const SearchComponent = () => {
                         </Select>
                     </FormControl>
                     </div>
-                    <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-                            <Typography>OR</Typography>
-                            <AntSwitch inputProps={{ 'aria-label': 'ant design' }} onChange={e => setChecked(!checked)}/>
-                            <Typography>AND</Typography>
-                            <FormControlLabel className={styles["concept-checkbox"]} control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>} label="Include sub-concepts" />
-                    </Stack>
+                    <div className={styles["logic-selector"]}>
+    <label className={styles["radio-label"]}>
+        <input type="radio" name="logic" value="or" defaultChecked onChange={() => setChecked(false)} />
+        <span>OR</span>
+        <small>At least one concept</small>
+    </label>
+    <label className={styles["radio-label"]}>
+        <input type="radio" name="logic" value="and" onChange={() => setChecked(true)} />
+        <span>AND</span>
+        <small>All concepts required</small>
+    </label>
+    <FormControlLabel className={styles["concept-checkbox"]} control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>} label="Include sub-concepts" />
+</div>
                 </div>
                 <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
             </div>

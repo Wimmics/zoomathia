@@ -11,8 +11,10 @@ const getTypeFromURI = (uri) => {
 
 const ExplorerComponent = () => {
 
-    const [displayTextComponent, setDisplayTextComponent] = useState(<div>
-        <p className={styles["p-start"]}>No text selected</p>
+    const [displayTextComponent, setDisplayTextComponent] = useState(
+        <div className={styles["empty-state"]}>
+            <p className={styles["empty-state-title"]}>No text selected</p>
+            <p className={styles["empty-state-subtitle"]}>Select an author and a work to start exploring</p>
         </div>)
     const [searchParams, setSearchParams] = useSearchParams();
     const [authorList, setAuthorList] = useState([])
@@ -110,7 +112,6 @@ const ExplorerComponent = () => {
         const workList = [{ label: '', value: '' }]
         let urlRequest = `${process.env.REACT_APP_BACKEND_URL}getWorksFromAuthors?author=${e.value}`
 
-
         const signal = controller.current.signal
 
         const callForData = async () => {
@@ -125,9 +126,9 @@ const ExplorerComponent = () => {
             for (const work of data) {
                 workList.push({ value: work.uri, label: work.title, author: work.author })
             }
-            setWorks(workList) // Set select options list
-            setWork(null) // Clear value of select input
-            setAuthor({ label: e.label, value: e.value }) // Set current value of author
+            setWorks(workList)
+            setWork(null)
+            setAuthor({ label: e.label, value: e.value })
         }
         callForData()
 
@@ -163,19 +164,16 @@ const ExplorerComponent = () => {
             const result = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorkByUri?uri=${uri}`
             ).then(response => response.json())
             for(const elt of result){
-                
                 setWork({label: elt.title, value: elt.uri})
                 setAuthor({label: elt.author, value: elt.uri})
                 workUri = elt.uri
             }
-
             loadFromUrl(workUri)
         }
 
         if(uri){
             getWorkFromUri(uri)
         }
-
 
     }, [uri])
 
@@ -188,7 +186,11 @@ const ExplorerComponent = () => {
         controller.current = new AbortController()
         setAuthor(null)
         setWork(null)
-        setDisplayTextComponent(<p className={styles["p-start"]}>No text selected</p>)
+        setDisplayTextComponent(
+            <div className={styles["empty-state"]}>
+                <p className={styles["empty-state-title"]}>No text selected</p>
+                <p className={styles["empty-state-subtitle"]}>Select an author and a work to start exploring</p>
+            </div>)
     }
 
     return <div id={"box-content"} className={styles["box-content"]}>
@@ -211,5 +213,3 @@ const ExplorerComponent = () => {
 }
 
 export default ExplorerComponent;
-
-

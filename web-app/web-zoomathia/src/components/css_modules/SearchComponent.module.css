@@ -154,3 +154,46 @@ p {
         transform: rotate(360deg);
     }
 }
+
+.logic-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid #e8ddd0;
+    border-radius: 8px;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.radio-label:hover {
+    background-color: #9A653026;
+    border-color: #9A6530;
+}
+
+.radio-label input {
+    accent-color: #9A6530;
+}
+
+.radio-label span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3d2b1f;
+}
+
+.radio-label small {
+    font-size: 0.75rem;
+    color: #888;
+}
