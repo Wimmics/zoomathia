@@ -276,3 +276,42 @@ li {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.section-toc {
+    max-height: 60svh;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e8ddd0;
+}
+
+.section-toc > h2 {
+    margin: 0 0 12px 0;
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    color: #3d2b1f;
+    border-bottom: 1px solid #e8ddd0;
+    padding-bottom: 8px;
+}
+
+.display-section > div {
+    overflow: hidden;
+    box-shadow: none;
+    border: 1px solid #e8ddd0;
+    border-radius: 8px;
+    background-color: white;
+    display: block;
+    max-height: 60svh;
+    min-width: fit-content;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+
+.box-content a {
+    color: #9A6530;
+}
+
+.box-content a:hover {
+    color: #7a4f25;
+}
