@@ -7,6 +7,7 @@ import Work from './components/WorkComponent';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CompetencyQuestionComponent from './components/CompetencyQuestionComponent';
 import ExplorerComponent from './components/ExploreComponent';
+import About from './components/page/About';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='ExploreTheCorpus' element={<SearchComponent />} />
         <Route path='CompetencyQuestion' element={<CompetencyQuestionComponent />} />
         <Route path='Work' element={<Work />} />
+        <Route path='About' element={<About />} />
       </Routes>
       <Footer />
     </BrowserRouter>

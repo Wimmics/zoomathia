@@ -58,3 +58,50 @@ h1 {
     width: inherit;
     margin: auto;
 }
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 24px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3d2b1f;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #9A6530;
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #7a4f25;
+}
