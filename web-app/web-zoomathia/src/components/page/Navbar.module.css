@@ -1,16 +1,14 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: white;
-    background-image: url("../../../public/NileMosaicOfPalestrina.jpg");
-    background-size: cover;
-    background-position: center top;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    background-color: rgba(20, 13, 5, 0.85);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
     z-index: 1;
     min-height: fit-content;
-    max-height: 10svh;
+    max-height: 7svh;
 }
 
 .logo-box {
@@ -21,7 +19,6 @@
     width: 10%;
     padding: 1.5svh;
 }
-
 .menu-box {
     display: flex;
     width: 70%;

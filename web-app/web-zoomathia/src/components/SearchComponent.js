@@ -225,10 +225,10 @@ const SearchComponent = () => {
         const getAuthors = async () => {
             const author_response = []
 
-            const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getAuthors`
+            const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
             ).then(response => response.json()).catch(e => { console.log(e) })
             for (const author of data_author) {
-                author_response.push({ value: author.name, label: author.name })
+                author_response.push({ value: author.author, label: author.author })
             }
     
             return author_response
