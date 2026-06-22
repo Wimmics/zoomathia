@@ -72,7 +72,12 @@ const SearchComponent = () => {
     const [lang, setLang] = useState('en')
     const [checked, setChecked] = useState(false)
     const [subConcepts, setSubConcepts] = useState(false)
-    const [searchResult, setSearchResult] = useState([])
+    const [searchResult, setSearchResult] = useState(
+    <div className={styles["empty-state"]}>
+        <p className={styles["empty-state-title"]}>No results yet</p>
+        <p className={styles["empty-state-subtitle"]}>Select one or more filters and click Search to explore the corpus</p>
+    </div>
+)
     const [currentWorkLoading, setCurrentWorkLoading] = useState("")
     const [summary, setSummary] = useState([])
     const [stats, setStats] = useState(null)
