@@ -21,7 +21,8 @@ function App() {
         <Route path='CompetencyQuestion' element={<CompetencyQuestionComponent />} />
         <Route path='Work' element={<Work />} />
         <Route path='About' element={<About />} />
-      </Routes>
+        <Route path='Contact' element={<About />} />    
+        </Routes>
       <Footer />
     </BrowserRouter>
 
