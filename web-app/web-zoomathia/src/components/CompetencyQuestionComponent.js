@@ -23,7 +23,12 @@ const CompetencyQuestionComponent = () => {
 
     const [options, setOptions] = useState([])
     const [iframe, setIframe] = useState(<></>)
-    const [table, setTable] = useState(null)
+    const [table, setTable] = useState(
+    <div className={styles["empty-state"]}>
+        <p className={styles["empty-state-title"]}>No question selected</p>
+        <p className={styles["empty-state-subtitle"]}>Select a competency question above to see the results</p>
+    </div>
+)
     const [titleVizu, setTitleVizu] = useState('')
 
     const updateTable = useCallback((e) => {
