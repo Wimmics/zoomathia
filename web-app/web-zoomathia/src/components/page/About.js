@@ -1,5 +1,5 @@
 import styles from "./About.module.css"
-import { NavLink } from 'react-router-dom'
+
 
 const About = () => {
     return <section className={styles["box-content"]}>
@@ -11,18 +11,18 @@ const About = () => {
 
             <h3 className={styles["section-title"]}>What it allows</h3>
            <div className={styles["cards"]}>
-    <NavLink to='/ExploreTheCorpus' className={styles["card"]}>
+    <div to='/ExploreTheCorpus' className={styles["card"]}>
         <h4>Explore the corpus</h4>
         <p>Search for works by concept across the entire zoological corpus.</p>
-    </NavLink>
-    <NavLink to='/ExploreAWork' className={styles["card"]}>
+    </div>
+    <div to='/ExploreAWork' className={styles["card"]}>
         <h4>Explore a work</h4>
         <p>Browse a selected work and visualise the concepts annotating each of its parts.</p>
-    </NavLink>
-    <NavLink to='/CompetencyQuestion' className={styles["card"]}>
+    </div>
+    <div to='/CompetencyQuestion' className={styles["card"]}>
         <h4>Competency questions</h4>
         <p>Visualise the results of queries implementing competency questions on the corpus.</p>
-    </NavLink>
+    </div>
 </div>
 
             <h3 className={styles["section-title"]}>Knowledge graph</h3>
