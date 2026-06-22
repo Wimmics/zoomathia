@@ -2,6 +2,7 @@
     transition: 0.2s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .box-content {
     margin: auto;
     width: 95%;
@@ -13,8 +14,8 @@
 }
 
 .input-select {
-    font-size: 1.2rem;
-    width: 80%;
+    font-size: 1rem;
+    width: 60%;
     margin: auto;
 }
 
@@ -22,16 +23,18 @@ th {
     padding: 0 !important;
     text-align: center;
 }
+
 td {
     padding: 7px !important;
 }
 
-
-section>h3 {
+section > h3 {
     background-color: #9A6530;
     color: white;
-    padding: 1.3rem;
+    padding: 1rem 1.3rem;
     margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
+    font-size: 1rem;
 }
 
 .iframe-box {
@@ -42,35 +45,38 @@ section>h3 {
 
 .animal-variable {
     display: block;
-    padding: 0.7rem;
-    background-color: red;
+    padding: 0.5rem 0.7rem;
+    background-color: #e74c3c;
     color: white;
+    border-radius: 4px;
 }
 
-.anthroponym-variable{
+.anthroponym-variable {
     display: block;
-    padding: 0.7rem;
-    background-color: lightgreen;
+    padding: 0.5rem 0.7rem;
+    background-color: #2ecc71;
+    border-radius: 4px;
 }
 
 .other-variable {
     display: block;
-    padding: 0.7rem;
-    background-color: orange;
+    padding: 0.5rem 0.7rem;
+    background-color: #f39c12;
+    border-radius: 4px;
 }
 
 .box-header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .box-question {
     text-align: center;
 }
 
-
 .loader {
     border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
+    border-top: 16px solid #9A6530;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -78,13 +84,13 @@ section>h3 {
     animation: spin 1.5s linear infinite;
 }
 
-.selected-book-metadata{
-    border-top: #c2c2c2 thin solid;
-    border-bottom: #c2c2c2 thin solid;
-    background-color: #ebebeb;
+.selected-book-metadata {
+    background-color: #fdf8f2;
+    border: 1px solid #e8ddd0;
+    border-radius: 8px;
     display: flex;
     margin: 10px 0;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .selected-book-metadata > p {
@@ -92,12 +98,18 @@ section>h3 {
 }
 
 .button-export {
-    background-color: #9A653026;
-    border: grey thin solid;
+    background-color: transparent;
+    border: 1px solid #9A6530;
     border-radius: 5px;
-    padding: 10px;
-    margin: 0 15px;
+    padding: 6px 14px;
+    margin: 0 8px;
     text-decoration: none;
+    color: #9A6530;
+    font-size: 0.9rem;
+}
+
+.button-export:hover {
+    background-color: #9A653026;
 }
 
 .mge-dashboard {
@@ -105,16 +117,7 @@ section>h3 {
     top: 0;
 }
 
-.button-export:hover {
-    background-color: rgb(216, 255, 203)
-}
-
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
