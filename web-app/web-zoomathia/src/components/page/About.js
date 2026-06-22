@@ -1,4 +1,4 @@
-import styles from "./Home.module.css"
+import styles from "./About.module.css"
 
 const About = () => {
     return <section className={styles["box-content"]}>

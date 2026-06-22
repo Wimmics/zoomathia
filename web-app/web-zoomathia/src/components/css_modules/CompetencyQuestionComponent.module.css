@@ -2,16 +2,14 @@
     transition: 0.2s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .box-content {
-    display: flex;
-    flex-direction: column;
     margin: auto;
     width: 95%;
     box-shadow: 0 0 5px;
-    background-color: white;
+    background-color: #fdf8f2;
     min-height: calc(100svh - 10svh - 3svw);
     padding: 15px;
+    overflow: scroll;
 }
 
 .input-select {
