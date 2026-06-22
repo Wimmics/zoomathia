@@ -85,15 +85,28 @@ p {
 .box-result {
     margin-top: 15px;
 }
-
-.selected-book-metadata{
+.selected-book-metadata {
     display: flex;
     flex-direction: row;
-    border-top: #c2c2c2 thin solid;
-    border-bottom: #c2c2c2 thin solid;
-    background-color: #ebebeb;
-    margin: 0;
-    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #fdf8f2;
+    border: 1px solid #e8ddd0;
+    margin: 16px 0;
+    padding: 1rem;
+    gap: 24px;
+}
+
+.block-stat h4 {
+    margin: 0 0 6px 0;
+    font-size: 1rem;
+    color: #3d2b1f;
+    font-family: Georgia, serif;
+}
+
+.block-stat p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 2px 0;
 }
 
 .block-stat > h4 {
@@ -196,4 +209,27 @@ p {
 .radio-label small {
     font-size: 0.75rem;
     color: #888;
+}
+
+.note-text {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.btn-advanced {
+    background: none;
+    border: none;
+    color: #9A6530;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 4px 0;
+    text-decoration: underline;
+    font-family: Verdana, sans-serif;
+    margin-top: 8px;
+}
+
+.btn-advanced:hover {
+    color: #7a4f25;
 }
