@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: row;
     background-color: white;
-    box-shadow: 0 0 5px;
+    background-image: url("../../../public/NileMosaicOfPalestrina.jpg");
+    background-size: cover;
+    background-position: center top;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -29,12 +32,12 @@
 .menu-box a {
     font-size: 1.3svw;
     width: 100%;
-    color: black;
+    color: white;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
-
 .menu-box a:hover {
     background-color: #9a6530;
     cursor: pointer;
