@@ -233,3 +233,34 @@ p {
 .btn-advanced:hover {
     color: #7a4f25;
 }
+
+.block-input {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-btn-section {
+    width: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.btn-submit-search {
+    font-size: 0.9rem;
+    padding: 8px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    border: 1px solid #9A6530;
+    background-color: #9A6530;
+    color: white;
+    width: fit-content;
+}
+
+.btn-submit-search:hover {
+    background-color: #7a4f25;
+}
