@@ -1,13 +1,14 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background-color: white;
-    box-shadow: 0 0 5px;
+    background-color: rgba(20, 13, 5, 0.85);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
     z-index: 1;
     min-height: fit-content;
-    max-height: 10svh;
+    max-height: 7svh;
 }
 
 .logo-box {
@@ -18,7 +19,6 @@
     width: 10%;
     padding: 1.5svh;
 }
-
 .menu-box {
     display: flex;
     width: 70%;
@@ -27,14 +27,15 @@
 }
 
 .menu-box a {
-    font-size: 1.3svw;
+    font-size: 1svw;
     width: 100%;
-    color: black;
+    color: rgba(255,255,255,0.85);
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
+    font-family: Georgia, serif;
+    letter-spacing: 0.04em;
 }
-
 .menu-box a:hover {
     background-color: #9a6530;
     cursor: pointer;
