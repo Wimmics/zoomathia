@@ -38,6 +38,8 @@ RDF = gateway.jvm.fr.inria.corese.core.logic.RDF
 RESULTFORMAT = gateway.jvm.fr.inria.corese.core.print.ResultFormat
 coreseFormat = gateway.jvm.fr.inria.corese.sparql.api.ResultFormatDef
 
+MAX_TRIES = 50
+
 def sparqlQuery(graph, query):
     exec = QueryProcess.create(graph)
     return exec.query(query)
@@ -107,22 +109,7 @@ def get_NER_from_dbpedia(element,lg="en"):
     if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe('dbpedia_spotlight',
                            config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.3})
-
-    last_error = None
-    for tries in range(2):  # en attendant de trouver une meilleure solution de programmation défensive
-        try:
-            en_text = nlp_model(element)
-            return en_text.ents
-
-        except Exception as err:
-            last_error = err
-            sleep(1)
-
-    if last_error:
-        print(last_error)
-        print(element)
-        print(FILE)
-        return []
+    return process_nlp(element, nlp_model)
 
 
 def get_NER_from_wikidata(element, lg="en"):
@@ -132,22 +119,28 @@ def get_NER_from_wikidata(element, lg="en"):
         nlp_model.remove_pipe("dbpedia_spotlight")
     if not "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe("entityfishing", config={"language": "en", "api_ef_base": API_ENDPOINT_URL})
+    return process_nlp(element,nlp_model)
 
-    last_error = None
-    for tries in range(2):
+
+def process_nlp(element,nlp_model):
+    error = None
+
+    for tries in range(MAX_TRIES):
         try:
             en_text = nlp_model(element)
             return en_text.ents
 
-        except Exception as err:
-            last_error = err
-            sleep(1)
+        except Exception as e:
+            attente = min(5 * ++tries, 60)
+            print(f"Echec du traitement nlp (Tentative {tries}). Reessai dans {attente}s...")
+            if tries==MAX_TRIES:
+                error = e
+            time.sleep(attente)
 
-    if last_error:
-        print(last_error)
-        print(element)
-        print(FILE)
-        return []
+    print(error)
+    print(f"Echec lors du traitement avec le nlp sur {element}. Ignore.")
+    print(FILE)
+    return []
 
 
 def find_thesaurus_entities(translated_paragraph, annotations, paragraph):
@@ -432,10 +425,10 @@ def extraction_data(FILE,CSV):
 
         if "eng" in FILE.split("\\")[-1]:
             lang_suffix = "en"
-        elif "phi" in FILE.split("\\")[-1]:
-            lang_suffix = "la"
         elif "tlg" in FILE.split("\\")[-1]:
             lang_suffix = "grc"
+        elif "phi" in FILE.split("\\")[-1] or "lat" in FILE.split("\\")[-1]:
+            lang_suffix = "la"
         else:
             lang_suffix = ""
         uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{lang_suffix}"
