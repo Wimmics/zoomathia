@@ -35,6 +35,7 @@ RESULTFORMAT = gateway.jvm.fr.inria.corese.core.print.ResultFormat
 coreseFormat = gateway.jvm.fr.inria.corese.sparql.api.ResultFormatDef
 
 CACHE_FILE = "dbpedia_cache.json"
+MAX_TRIES = 50
 
 def load_cache():
     if os.path.exists(CACHE_FILE):
@@ -79,9 +80,9 @@ def dbpediaClassFiltered(uri, filtered_already_found):
     
     url = "https://dbpedia.org/sparql"
     params = {"query": q, "format": "application/json"}
-    tentative = 0
+    tentatives = 0
     
-    while True:
+    for i in range (MAX_TRIES):
         try:
             response = requests.get(url, params=params, timeout=30)
             response.raise_for_status() 
@@ -112,9 +113,9 @@ def dbpediaClassFiltered(uri, filtered_already_found):
             return True
 
         except requests.exceptions.RequestException as e:
-            tentative += 1
-            attente = min(5 * tentative, 60)
-            print(f"[{uri}] Echec connexion (Tentative {tentative}). Reessai dans {attente}s...")
+            tentatives += 1
+            attente = min(5 * tentatives, 60)
+            print(f"[{uri}] Echec connexion (Tentative {tentatives}). Reessai dans {attente}s...")
             time.sleep(attente)
 
 
@@ -246,7 +247,7 @@ if __name__ == "__main__":
     with open("filter_class.json", "r") as filter_file:
         filtered_class_list = json.load(filter_file)["class"]
 
-    csv_files = glob.glob("./texts.csv")
+    csv_files = glob.glob("./output/*.csv")
 
     db_name = "Ner"
     clear_mongo_collection(db_name, "Annotation")
