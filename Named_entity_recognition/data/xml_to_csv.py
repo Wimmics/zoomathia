@@ -5,7 +5,6 @@ import os
 import glob
 from tqdm import tqdm
 from deep_translator import GoogleTranslator
-from urllib.error import HTTPError
 
 from py4j.java_gateway import JavaGateway
 import time
@@ -206,7 +205,7 @@ def extract_sourcedesc_data(source):
     author = strip_text(source.titleStmt.author.text) if source.titleStmt and source.titleStmt.author else \
         strip_text(
             source.sourceDesc.author.text) if source.sourceDesc and source.sourceDesc.author else 'Author not found'
-    oeuvre_title = strip_text(source.titleStmt.title.text) if source.titleStmt and source.titleStmt.title else "title not found"
+    oeuvre_title = clean_uri(source.titleStmt.title.text) if source.titleStmt and source.titleStmt.title else "title not found"
     oeuvre_id = oeuvre_title.replace(" ", "_").lower() if oeuvre_title != "title not found" else "id_not_found"
 
     return oeuvre_id, oeuvre_title, author, date, editor
@@ -224,6 +223,17 @@ def strip_text(txt):
     txt = txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("\"", "").replace("- ", "")
     return re.sub(r"\s+", " ", txt)
 
+
+def clean_uri(txt):
+    if not txt or txt.strip() == "":
+        return ""
+    try:
+        translated_txt = GoogleTranslator(source='auto', target="en").translate(txt)
+    except Exception as e:
+        print(f"[WARNING] Erreur de traduction du titre/auteur pour: '{txt}' : {e}")
+        translated_txt = txt
+    txt = translated_txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("\"", "").replace("- ", "")
+    return re.sub(r"\s+", " ", txt)
 
 def strip_paragraph_text(txt):
     txt = txt.strip().replace("\r", "").replace("\n", " ").replace("\t", "").replace("\"", "'").replace("- ", "")
@@ -406,15 +416,13 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
             extract_paragraph(tag_div,[parent_uri, tag_div_type, tag_div_id, tag_div_title],current_uri, link_data, paragraph_data, annotation_data)
 
 
-
-
 def extraction_data(FILE,CSV):
     with (open(FILE, 'r', encoding="UTF-8") as xml_file):
 
         xml_parser = bs(xml_file, "lxml-xml")
         oeuvre_id, oeuvre_title, author, date, editor = extract_sourcedesc_data(xml_parser)
         body_parser = xml_parser.body
-
+        # translate author and oeuvre_id
         link_data = []
         link_labels = ["parent_uri", "type", "id", "title", "child"]
         paragraph_data = []
@@ -423,15 +431,9 @@ def extraction_data(FILE,CSV):
         annotation_data = []
         annotation_labels = ["paragraph_uri", "concept_uri", "mention", "score", "origin"]
 
-        if "eng" in FILE.split("\\")[-1]:
-            lang_suffix = "en"
-        elif "tlg" in FILE.split("\\")[-1]:
-            lang_suffix = "grc"
-        elif "phi" in FILE.split("\\")[-1] or "lat" in FILE.split("\\")[-1]:
-            lang_suffix = "la"
-        else:
-            lang_suffix = ""
-        uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}/{lang_suffix}"
+        text_tag = xml_parser.find("text")
+        lang_suffix = text_tag.get("xml:lang", "") if text_tag else ""
+        uri = f"http://ns.inria.fr/zoomathia/{clean_uri(author).replace(' ', '_')}/{oeuvre_id}/{lang_suffix}"
 
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
