@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Etymologiae</title>
+        <title type="alt" xml:lang="fr">Étymologies</title>
+        <title type="alt" xml:lang="en">Etymologies</title>
+        <author>
+          <persName>ISIDORUS HISPALENSIS</persName>
+          <idno type="zoomathia">stoa0159</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-29">2026-06-29</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-29">2026-06-29</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0159</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>tardo-antique (300 - 700 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="12">
+  <head>ISIDORI HISPALENSIS EPISCOPI ETYMOLOGIARUM SIVE ORIGINUM LIBER XII</head>
+  <head type="subtitle">DE ANIMALIBVS</head>
+
+  <div type="chapter" n="1">
+    <head>I. DE PECORIBVS ET IVMENTIS.</head>
+
+    <p>
+      <milestone unit="section" n="1"/>
+      Omnibus animantibus <persName>Adam</persName> primum vocabula indidit, appellans unicuique nomen ex praesenti institutione iuxta condicionem naturae cui serviret.
+    </p>
+
+    <p>
+      <milestone unit="section" n="2"/>
+      Gentes autem unicuique animalium ex propria lingua dederunt vocabula. Non autem secundum Latinam linguam atque Graecam aut quarumlibet gentium barbararum nomina illa inposuit <persName>Adam</persName>, sed illa lingua quae ante diluvium omnium una fuit, quae <foreign xml:lang="la">Hebraea</foreign> nuncupatur.
+    </p>
+
+    <p>
+      <milestone unit="section" n="3"/>
+      Latine autem animalia sive animantia dicta, quod animentur vita et moveantur spiritu.
+    </p>
+
+    <p>
+      <milestone unit="section" n="4"/>
+      Quadrupedia vocata, quia quattuor pedibus gradiuntur: quae dum sint similia pecoribus, tamen sub cura humana non sunt; ut <name type="animal" xml:lang="la">cervi</name>, <name type="animal" xml:lang="la">dammae</name>, <name type="animal" xml:lang="la">onagri</name>, et cetera. Sed neque bestiae sunt, ut <name type="animal" xml:lang="la">leones</name>; neque iumenta, ut usus hominum iuvare possint.
+    </p>
+
+    <p>
+      <milestone unit="section" n="5"/>
+      Pecus dicimus omne quod humana lingua et effigie caret. Proprie autem pecorum nomen his animalibus adcommodari solet quae sunt aut ad vescendum apta, ut <name type="animal" xml:lang="la">oves</name> et <name type="animal" xml:lang="la">sues</name>; aut in usu hominum commoda, ut <name type="animal" xml:lang="la">equi</name> et <name type="animal" xml:lang="la">boves</name>.
+    </p>
+
+    <p>
+      <milestone unit="section" n="6"/>
+      Differt autem inter pecora et pecudes: nam veteres communiter in significatione omnium animalium pecora dixerunt; pecudes autem tantum illa animalia quae eduntur, quasi pecuedes. Generaliter autem omne animal pecus a pascendo vocatum.
+    </p>
+
+    <p>
+      <milestone unit="section" n="7"/>
+      Iumenta nomina inde traxerunt, quod nostrum laborem vel onus suo adiutorio subvectando vel arando iuvent. Nam <name type="animal" xml:lang="la">bos</name> carpenta trahit, et durissimas terrae glebas vomere vertit; <name type="animal" xml:lang="la">equus</name> et <name type="animal" xml:lang="la">asinus</name> portant onera, et hominum in gradiendo laborem temperant. Vnde et iumenta appellantur ab eo quod iuvent homines: sunt enim magnarum virium animalia.
+    </p>
+
+    <p>
+      <milestone unit="section" n="8"/>
+      Item quoque armenta, vel quod sint apta armis, id est bello; vel quod his in armis utimur. Alii armenta tantum <name type="animal" xml:lang="la">boves</name> intellegunt, ab arando, quasi aramenta [vel quod sint cornibus armata]. Discretio est autem inter armenta et greges: nam armenta <name type="animal" xml:lang="la">equorum</name> et <name type="animal" xml:lang="la">boum</name> sunt, greges vero <name type="animal" xml:lang="la">caprarum</name> et <name type="animal" xml:lang="la">ovium</name>.
+    </p>
+
+    <p>
+      <milestone unit="section" n="9"/>
+      <name type="animal" xml:lang="la">Ovis</name> molle pecus lanis, corpore inerme, animo placidum, ab oblatione dictum; eo quod apud veteres [in] initio non <name type="animal" xml:lang="la">tauri</name>, sed <name type="animal" xml:lang="la">oves</name> in sacrificio mactarentur. Ex his quasdam bidentes vocant, eas quae inter octo dentes duos altiores habent, quas maxime gentiles in sacrificium offerebant.
+    </p>
+
+    <p>
+      <milestone unit="section" n="10"/>
+      <name type="animal" xml:lang="la">Vervex</name> vel a viribus dictus, quod ceteris <name type="animal" xml:lang="la">ovibus</name> sit fortior; vel quod sit vir, id est masculus; vel quod vermem in capite habeat, quorum excitati pruritu invicem se concutiunt, et pugnantes cum magno impetu feriunt.
+    </p>
+
+    <p>
+      <milestone unit="section" n="11"/>
+      <name type="animal" xml:lang="la">Aries</name> vel <foreign xml:lang="grc">ΑΠΟ ΤΟΥ ΑΡΕΟΣ</foreign>, id est a <name type="deity">Marte</name>, vocatus: unde apud nos in gregibus masculi mares dicuntur: sive quod hoc pecus a gentilibus primum aris est immolatum. <name type="animal" xml:lang="la">Aries</name>, quod inponeretur aris. Vnde est illud
+      <quote source="#Sedul_1_115">
+        <name type="animal" xml:lang="la">Aries</name> mactatur ad aram.
+      </quote>
+    </p>
+
+  </div>
+</div>
+<div type="section" n="12">
+  <p>
+    <milestone unit="section" n="12"/>
+    <name type="animal" xml:lang="la">Agnum</name> quamquam et Graeci vocent
+    <foreign xml:lang="grc">ΑΠΟ ΤΟΥ ΑΓΝΟΥ</foreign>, quasi pium, Latini autem ideo hoc nomen habere putant, eo quod prae ceteris animantibus matrem agnoscat; adeo ut etiam si in magno grege erraverit, statim balatu recognoscat vocem parentis.
+  </p>
+</div>
+
+<div type="section" n="13">
+  <p>
+    <milestone unit="section" n="13"/>
+    <name type="animal" xml:lang="la">Haedi</name> ab edendo vocati. Parvi enim pinguissimi sunt et saporis iucundi, unde [et edere, unde] et edulium vocatur.
+  </p>
+</div>
+
+<div type="section" n="14">
+  <p>
+    <milestone unit="section" n="14"/>
+    <name type="animal" xml:lang="la">Hircus</name> lascivum animal et petulcum et fervens semper ad coitum; cuius oculi ob libidine in transversum aspiciunt, unde et nomen traxit. Nam hirqui sunt oculorum anguli secundum
+    <persName>Suetonium</persName>
+    (Prat. 171); cuius natura adeo calidissima est ut adamantem lapidem, quem nec ignis, nec ferri domare valet materia, solus huius cruor dissolvat. Maiores
+    <name type="animal" xml:lang="la">hirci</name> Cinyphii dicuntur a fluvio
+    <placeName>Cinyphe</placeName> in
+    <placeName>Libya</placeName>, ubi grandes nascuntur.
+  </p>
+</div>
+
+<div type="section" n="15">
+  <p>
+    <milestone unit="section" n="15"/>
+    <name type="animal" xml:lang="la">Capros</name> et
+    <name type="animal" xml:lang="la">capras</name> a carpendis virgultis quidam dixerunt. Alii quod captent aspera. Nonnulli a crepitu crurum, unde eas crepas vocitatas; quae sunt agrestes
+    <name type="animal" xml:lang="la">caprae</name>, quas Graeci pro eo quod acutissime videant, id est
+    <foreign xml:lang="grc">ΟΞΥΔΕΡΚΕΣΤΕΡΟΝ</foreign>,
+    <foreign xml:lang="grc">ΔΟΡΚΑ</foreign> appellaverunt. Morantur enim in excelsis montibus, et quamvis de longinquo, vident tamen omnes qui veniunt.
+  </p>
+</div>
+
+<div type="section" n="16">
+  <p>
+    <milestone unit="section" n="16"/>
+    Idem autem et
+    <name type="animal" xml:lang="la">capreae</name>: idem
+    <name type="animal" xml:lang="la">ibices</name>, quasi avices, eo quod ad instar avium ardua et excelsa teneant et in sublime inhabitent, ita ut de sublimitate vix humanis obtutibus pateant.
+  </p>
+</div>
+
+<div type="section" n="17">
+  <p>
+    <milestone unit="section" n="17"/>
+    Vnde et meridiana pars
+    <name type="animal" xml:lang="la">ibices</name>
+    <name type="animal" xml:lang="la">aves</name> vocant, qui
+    <placeName>Nili</placeName> fluentis inhabitant. Haec itaque animalia, ut diximus, in petris altissimis commorantur, et si quando ferarum vel hominum adversitatem persenserint, de altissimis saxorum cacuminibus sese praecipitantes in suis [se] cornibus inlaesa suscipiunt.
+  </p>
+</div>
+
+<div type="section" n="18">
+  <p>
+    <milestone unit="section" n="18"/>
+    <name type="animal" xml:lang="la">Cervi</name> dicti
+    <foreign xml:lang="grc">ΑΠΟ ΤΩΝ ΚΕΡΑΤΩΝ</foreign>, id est a cornibus;
+    <foreign xml:lang="grc">ΚΕΡΑΤΑ</foreign> enim Graece cornua dicuntur. Hi
+    <name type="animal" xml:lang="la">serpentium</name> inimici cum se gravatos infirmitate persenserint, spiritu narium eos extrahunt de cavernis, et superata pernicie veneni eorum pabulo reparantur.
+    <name type="plant" xml:lang="la">Dictamnum herbam</name> ipsi prodiderunt; nam eo pasti excutiunt acceptas sagittas. Mirantur autem sibilum fistularum.
+  </p>
+</div>
+
+<div type="section" n="19">
+  <p>
+    <milestone unit="section" n="19"/>
+    Erectis auribus acute audiunt, summissis nihil. Si quando inmensa flumina vel maria transnatant, capita clunibus praecedentium superponunt sibique invicem succedentes nullum laborem ponderis sentiunt.
+  </p>
+</div>
+
+<div type="section" n="20">
+  <p>
+    <milestone unit="section" n="20"/>
+    <name type="animal" xml:lang="la">Tragelaphi</name> a Graecis nominati, qui quum eadem specie sint ut
+    <name type="animal" xml:lang="la">cervi</name>, villosos tamen habent armos ut
+    <name type="animal" xml:lang="la">hirci</name>, et menta promissis hirta barbis, qui non alibi sunt quam circa
+    <placeName>Phasidem</placeName>.
+  </p>
+</div>
+
+<div type="section" n="21">
+  <p>
+    <milestone unit="section" n="21"/>
+    <name type="animal" xml:lang="la">Hinnuli</name> filii sunt
+    <name type="animal" xml:lang="la">cervorum</name> [ab innuere dicti, quia ad nutum matris absconduntur].
+  </p>
+</div>
+
+<div type="section" n="22">
+  <p>
+    <milestone unit="section" n="22"/>
+    <name type="animal" xml:lang="la">Dammula</name> vocata, quod de manu effugiat: timidum animal et inbelle; de quo
+    <persName>Martialis</persName> (13,94):
+  </p>
+  <quote>
+    <lg>
+      <l>Dente timetur <name type="animal" xml:lang="la">aper</name>, defendunt cornua <name type="animal" xml:lang="la">cervum</name>;</l>
+      <l>inbelles <name type="animal" xml:lang="la">damae</name> quid nisi praeda sumus?</l>
+    </lg>
+  </quote>
+</div>
+<div type="section" n="23">
+  <p>
+    <milestone unit="section" n="23"/>
+    <name type="animal" xml:lang="la">Lepus</name>, levipes, quia velociter currit. Vnde et
+    <foreign xml:lang="grc">Graece</foreign> pro cursu
+    <foreign xml:lang="grc">LAGOS</foreign> dicitur; velox est enim animal et satis timidum.
+  </p>
+</div>
+
+<div type="section" n="24">
+  <p>
+    <milestone unit="section" n="24"/>
+    <name type="animal" xml:lang="la">Cuniculi</name> genus agrestium animalium dicti quasi
+    <name type="animal" xml:lang="la">caniculi</name>, eo quod
+    <name type="animal" xml:lang="la">canum</name> indagine capiantur vel excludantur ab speluncis.
+  </p>
+</div>
+
+<div type="section" n="25">
+  <p>
+    <milestone unit="section" n="25"/>
+    <name type="animal" xml:lang="la">Sus</name> dicta, quod pascua subigat, id est terra subacta
+    escas inquirat. <name type="animal" xml:lang="la">Verres</name>, quod grandes habeat vires.
+    <name type="animal" xml:lang="la">Porcus</name>, quasi spurcus. Ingurgitat enim se caeno, luto
+    inmergit, limo inlinit. <persName>Horatius</persName>
+    <quote>(Epist. 1,2,26):</quote>
+  </p>
+  <p>
+    <quote>Et amica luto <name type="animal" xml:lang="la">sus</name>.</quote>
+  </p>
+</div>
+
+<div type="section" n="26">
+  <p>
+    <milestone unit="section" n="26"/>
+    Hinc etiam spurcitiam vel spurios nuncupatos.
+    <name type="animal" xml:lang="la">Porcorum</name> pilos setas vocamus, et setas a
+    <name type="animal" xml:lang="la">sue</name> dictas: a quibus et sutores vocantur, quod ex
+    setis suant, id est consuant, pelles.
+  </p>
+</div>
+
+<div type="section" n="27">
+  <p>
+    <milestone unit="section" n="27"/>
+    <name type="animal" xml:lang="la">Aper</name> a feritate vocatus, ablata F littera et
+    subrogata P. Vnde et apud Graecos
+    <foreign xml:lang="grc">SUAGROS</foreign>, id est ferus, dicitur. Omne enim, quod ferum est
+    et inmite, abusive agreste vocamus.
+  </p>
+</div>
+
+<div type="section" n="28">
+  <p>
+    <milestone unit="section" n="28"/>
+    <name type="animal" xml:lang="la">Iuvencus</name> dictus, quod iuvare incipiat hominum usus
+    in colenda terra, vel quia apud gentiles
+    <name type="deity">Iovi</name> semper ubique
+    <name type="animal" xml:lang="la">invencus</name> inmolabatur, numquam
+    <name type="animal" xml:lang="la">taurus</name>. Nam in victimis etiam aetas considerabatur.
+    <name type="animal" xml:lang="la">Taurus</name> Graecum nomen est, sicut et
+    <foreign xml:lang="grc">hos</foreign>.
+  </p>
+</div>
+
+<div type="section" n="29">
+  <p>
+    <milestone unit="section" n="29"/>
+    Indicis <name type="animal" xml:lang="la">tauris</name> color fulvus est, volucris pernicitas,
+    pilis in contrarium versis; caput circumflectunt flexibilitate qua volunt; tergi duritia omne
+    telum respuunt inmiti feritate.
+  </p>
+</div>
+
+<div type="section" n="30">
+  <p>
+    <milestone unit="section" n="30"/>
+    <name type="animal" xml:lang="la">Bovem</name> Graeci
+    <foreign xml:lang="grc">BOUN</foreign> dicunt. Hunc Latini
+    <name type="animal" xml:lang="la">trionem</name> vocant, eo quod terram terat, quasi
+    terionem. <persName>Naevius</persName>
+    <quote>(trag. 62):</quote>
+  </p>
+  <p>
+    <quote>Trionum hic moderator rusticus.</quote>
+  </p>
+</div>
+Je vais encoder ce morceau 4/40 des Etymologiae d'Isidore de Séville. Cependant, je constate que le texte à encoder semble être vide (aucun contenu textuel n'a été fourni après "TEXTE:").
+    </body>
+  </text>
+</TEI>

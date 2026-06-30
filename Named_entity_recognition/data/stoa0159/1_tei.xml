@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Etymologiae</title>
+        <title type="alt" xml:lang="fr">Étymologies</title>
+        <title type="alt" xml:lang="en">Etymologies</title>
+        <author>
+          <persName>ISIDORUS HISPALENSIS</persName>
+          <idno type="zoomathia">stoa0159</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-29">2026-06-29</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-29">2026-06-29</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0159</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>tardo-antique (300 - 700 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <head>ISIDORI HISPALENSIS EPISCOPI ETYMOLOGIARUM SIVE ORIGINUM LIBER I</head>
+  <head type="sub">DE GRAMMATICA</head>
+
+  <div type="chapter" n="1">
+    <head>I. DE DISCIPLINA ET ARTE.</head>
+    <p>
+      <milestone unit="section" n="1"/>
+      Disciplina a discendo nomen accepit: unde et scientia dici potest. Nam scire dictum a discere, quia nemo nostrum scit, nisi qui discit. Aliter dicta disciplina, quia discitur plena.
+      <milestone unit="section" n="2"/>
+      Ars vero dicta est, quod artis praeceptis regulisque consistat. Alii dicunt a Graecis hoc tractum esse vocabulum <foreign xml:lang="grc">ΑΠΟ ΤΗΣ ΑΡΕΤΗΣ</foreign>, id est a virtute, quam scientiam vocaverunt.
+      <milestone unit="section" n="3"/>
+      Inter artem et disciplinam <persName>Plato</persName> et <persName>Aristoteles</persName> hanc differentiam esse voluerunt, dicentes artem esse in his quae se et aliter habere possunt; disciplina vero est, quae de his agit quae aliter evenire non possunt. Nam quando veris disputationibus aliquid disseritur, disciplina erit: quando aliquid verisimile atque opinabile tractatur, nomen artis habebit.
+    </p>
+  </div>
+
+  <div type="chapter" n="2">
+    <head>II. DE SEPTEM LIBERALIBVS DISCIPLINIS.</head>
+    <p>
+      <milestone unit="section" n="1"/>
+      Disciplinae liberalium artium septem sunt. Prima grammatica, id est loquendi peritia. Secunda rhetorica, quae propter nitorem et copiam eloquentiae suae maxime in civibibus quaestionibus necessaria existimatur. Tertia dialectica cognomento logica, quae disputationibus subtilissimis vera secernit a falsis.
+      <milestone unit="section" n="2"/>
+      Quarta arithmetica, quae continet numerorum causas et divisiones. Quinta musica, quae in carminibus cantibusque consistit.
+      <milestone unit="section" n="3"/>
+      Sexta geometrica, quae mensuras terrae dimensionesque conplectitur. Septima astronomia, quae continet legem astrorum.
+    </p>
+  </div>
+
+</div>
+<div type="chapter" n="3">
+  <head>III. DE LITTERIS COMMVNIBVS.</head>
+
+  <div type="section" n="1">
+    <milestone unit="section" n="1"/>
+    <p>Primordia grammaticae artis litterae communes existunt, quas librarii et calculatores sequuntur. Quarum disciplina velut quaedam grammaticae artis infantia est; unde et eam <persName>Varro</persName> litterationem vocat. Litterae autem sunt indices rerum, signa verborum, quibus tanta vis est, ut nobis dicta absentium sine voce loquantur. Verba enim per oculos non per aures introducunt.</p>
+  </div>
+
+  <div type="section" n="2">
+    <milestone unit="section" n="2"/>
+    <p>Vsus litterarum repertus propter memorian rerum. Nam ne oblivione fugiant, litteris alligantur. In tanta enim rerum varietate nec disci audiendo poterant omnia, nec memoria contineri.</p>
+  </div>
+
+  <div type="section" n="3">
+    <milestone unit="section" n="3"/>
+    <p>Litterae autem dictae quasi legiterae, quod iter legentibus praestent, vel quod in legendo iterentur.</p>
+  </div>
+
+  <div type="section" n="4">
+    <milestone unit="section" n="4"/>
+    <p>Litterae Latinae et Graecae ab Hebraeis videntur exortae. Apud illos enim prius dictum est
+      <foreign xml:lang="he">aleph</foreign>, deinde ex simili enuntiatione apud Graecos tractum est
+      <foreign xml:lang="grc">alpha</foreign>, inde apud Latinos A. Translator enim ex simili sono alterius linguae litteram condidit, ut nosse possimus linguam Hebraicam omnium linguarum et litterarum esse matrem. Sed Hebraei viginti duo elementa litterarum secundum, Veteris Testamenti libros utuntur; Graeci vero viginti quattuor. Latini enim inter utramque linguam progredientes viginti tria elementa habent.</p>
+  </div>
+
+  <div type="section" n="5">
+    <milestone unit="section" n="5"/>
+    <p>Hebraeorum litteras a Lege coepisse per <persName>Moysen</persName>: Syrorum autem et Chaldaeorum per <persName>Abraham</persName>. Vnde et cum Hebraeis et numero et sono concordant, solis characteribus discrepant. Aegyptiorum litteras <persName>Isis</persName> regina, <persName>Inachis</persName> filia, de <placeName>Graecia</placeName> veniens in <placeName>Aegyptum</placeName>, repperit et Aegyptiis tradidit. Apud Aegyptios autem alias habuisse litteras sacerdotes, alias vulgus;
+      <foreign xml:lang="grc">sacerdotales IERAS, PANDEMOUS vulgares</foreign>. Graecarum litterarum usum primi Phoenices invenerunt; unde et <persName>Lucanus</persName> (3,220):
+      <quote>
+        <lg>
+          <l>Phoenices primi, famae si creditur, ausi</l>
+          <l>mansuram rudibus vocem signare figuris.</l>
+        </lg>
+      </quote>
+    </p>
+  </div>
+
+  <div type="section" n="6">
+    <milestone unit="section" n="6"/>
+    <p>Hinc est quod et Phoeniceo colore librorum capita scribuntur, quia ab ipsis litterae initium habuerunt. <persName>Cadmus</persName> <persName>Agenoris</persName> filius Graecas litteras a <placeName>Phoenice</placeName> in <placeName>Graeciam</placeName> decem et septem primus attulit; A. B. Γ. Δ. E. Z. I. K. Λ. M. N. O. Π. Ρ. C. T. Φ. His <persName>Palamedes</persName> Troiano bello tres adiecit H. X. Ω. Post quem <persName>Simonides</persName> Melicus tres alias adiecit Ψ. Ξ. Θ.</p>
+  </div>
+
+  <div type="section" n="7">
+    <milestone unit="section" n="7"/>
+    <p>Υ litteram <persName>Pythagoras</persName> Samius ad exemplum vitae humanae primus formavit; cuius virgula subterior primam aetatem significat, incertam quippe et quae adhuc se nec vitiis nec virtutibus dedit. Bivium autem, quod superest, ab adolescentia incipit: cuius dextra pars ardua est, sed ad beatam vitam tendens: sinistra facilior, sed ad labem interitumque deducens. De qua sic <persName>Persius</persName> ait (3,56):
+      <quote>
+        <lg>
+          <l>Et tibi qua Samios deduxit littera ramos,</l>
+          <l>surgentem dextro monstravit limite callem.</l>
+        </lg>
+      </quote>
+    </p>
+  </div>
+
+</div>
+<div type="section" n="8">
+  <p>
+    <milestone unit="section" n="8"/>
+    Quinque autem esse apud <placeName>Graecos</placeName> mysticas litteras. Prima
+    <foreign xml:lang="grc">Υ</foreign>, quae humanam vitam significat, de qua nunc diximus.
+    Secunda <foreign xml:lang="grc">Θ</foreign>, quae mortem significat. Nam iudices eandem
+    litteram <foreign xml:lang="grc">Θ</foreign> adponebant ad eorum nomina, quos supplicio
+    afficiebant. Et dicitur Theta <foreign xml:lang="grc">ΑΠΟ ΤΟΥ ΘΑΝΑΤΟΝ</foreign>, id est
+    a morte. Vnde et habet per medium telum, id est mortis signum. De qua quidam:
+  </p>
+  <quote>
+    <p>O multum ante alias infelix littera theta.</p>
+  </quote>
+</div>
+
+<div type="section" n="9">
+  <p>
+    <milestone unit="section" n="9"/>
+    Tertia <foreign xml:lang="grc">Τ</foreign> figuram demonstrans Dominicae crucis, unde et
+    Hebraice signum interpretatur. De qua dictum est in Ezechielo angelo (9,4):
+    <quote>Transi per medium <placeName>Ierusalem</placeName>, et signa thau in frontes
+    virorum gementium et dolentium</quote> Reliquas vero duas summam et ultimam sibi vindicat
+    <persName>Christus</persName>. Ipse enim principium, ipse finis, dicens
+    <quote>Ego sum <foreign xml:lang="grc">Α</foreign> et <foreign xml:lang="grc">Ω</foreign></quote>
+    Concurrentibus enim in se invicem <foreign xml:lang="grc">Α</foreign> ad
+    <foreign xml:lang="grc">Ω</foreign> usque devolvitur, et rursus
+    <foreign xml:lang="grc">Ω</foreign> ad <foreign xml:lang="grc">Α</foreign> replicatur,
+    ut ostenderet in se Dominus et initii decursum ad finem et finis decursum ad initium.
+  </p>
+</div>
+
+<div type="section" n="10">
+  <p>
+    <milestone unit="section" n="10"/>
+    Omnes autem litterae apud <placeName>Graecos</placeName> et verba conponunt et numeros
+    faciunt. Nam Alpha littera apud eos vocatur in numeris unum. Vbi autem scribunt Beta,
+    vocatur duo; ubi scribunt Gamma, vocatur in numeris ipsorum tres; ubi scribunt Delta,
+    vocatur in numeris ipsorum quattuor; et sic omnes litterae apud eos numeros habent.
+  </p>
+</div>
+
+<div type="section" n="11">
+  <p>
+    <milestone unit="section" n="11"/>
+    Latini autem numeros ad litteras non conputant, sed sola verba componunt, excepto
+    <foreign xml:lang="la">I</foreign> et <foreign xml:lang="la">X</foreign> littera, quae
+    et figura crucem significat et in numero decem demonstrat.
+  </p>
+</div>
+Je vais encoder ce texte des Etymologiae d'Isidore de Séville. Cependant, je remarque que le **texte à encoder est absent** — le champ "TEXTE:" est vide.
+    </body>
+  </text>
+</TEI>

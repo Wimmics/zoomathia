@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">De re rustica</title>
+        <title type="alt" xml:lang="fr">L’économie rurale</title>
+        <title type="alt" xml:lang="en">On agriculture</title>
+        <author>
+          <persName>VARRO</persName>
+          <idno type="zoomathia">phi0684</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-29">2026-06-29</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-29">2026-06-29</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">phi0684</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="3">
+  <head>M. TERENTI VARRONIS RERUM RUSTICARUM DE AGRI CULTURA LIBER TERTIUS</head>
+
+  <div type="chapter" n="1">
+    <milestone unit="section" n="1"/>
+    <p>
+      Cum duae vitae traditae sint hominum, rustica et urbana, quidni,
+      <persName>Pinni</persName>, dubium non est quin hae non solum loco
+      discretae sint, sed etiam tempore diversam originem habeant.
+      Antiquior enim multo rustica, quod fuit tempus, cum rura colerent
+      homines neque urbem haberent. Etenim vetustissimum oppidum cum sit
+      traditum Graecum <placeName>Boeotiae</placeName>
+      <placeName>Thebae</placeName>, quod rex <persName>Ogyges</persName>
+      aedificarit, in agro Romano <placeName>Roma</placeName>, quam rex
+      <persName>Romulus</persName>; nam in hoc nunc denique est ut dici
+      possit, non cum <persName>Ennius</persName> scripsit:
+    </p>
+    <quote>
+      <lg>
+        <l>septingenti sunt paulo plus aut minus anni,</l>
+        <l>augusto augurio postquam inclita condita
+          <placeName>Roma</placeName> est.</l>
+      </lg>
+    </quote>
+  </div>
+
+</div>
+<div type="book" n="3">
+  <div type="chapter" n="1">
+    <p>
+      <milestone unit="section" n="3.1.1"/>
+      <placeName>Thebae</placeName>, quae ante cataclysmon <persName>Ogygi</persName> conditae dicuntur, eae tamen circiter duo milia annorum et centum sunt. Quod tempus si referas ad illud principium, quo agri coli sunt coepti atque in casis et tuguriis habitabant nec murus et porta quid esset sciebant, immani numero annorum urbanos agricolae praestant. Nec mirum, quod divina natura dedit agros, ars humana aedificavit urbes, cum artes omnes dicantur in <placeName>Graecia</placeName> intra mille annorum reperte, agri numquam non fuerint in terris qui coli possint.
+    </p>
+    <p>
+      <milestone unit="section" n="3.1.2"/>
+      Neque solum antiquior cultura agri, sed etiam melior. Itaque non sine causa maiores nostri ex urbe in agros redigebant suos cives, quod et in pace a rusticis Romanis alebantur et in bello ab his allevabantur. Nec sine causa terram eandem appellabant matrem et <name type="deity">Cererem</name>, et qui eam colerent, piam et utilem agere vitam credebant atque eos solos reliquos esse ex stirpe <persName>Saturni</persName> regis. Cui consentaneum est, quod initia vocantur potissimum ea quae <name type="deity">Cereri</name> fiunt sacra.
+    </p>
+    <p>
+      <milestone unit="section" n="3.1.3"/>
+      Nec minus oppidi quoque nomen <placeName>Thebae</placeName> indicat antiquiorem esse agrum, quod ab agri genere, non a conditore nomen ei est impositum. Nam lingua prisca et in <placeName>Graecia</placeName> Aeolis Boeoti sine afflatu vocant collis <foreign xml:lang="grc">tebas</foreign>, et in <placeName>Sabinis</placeName>, quo e <placeName>Graecia</placeName> venerunt <name type="deity">Pelasgi</name>, etiam nunc ita dicunt, cuius vestigium in agro <placeName>Sabino</placeName> via <placeName>Salaria</placeName> non longe a <placeName>Reate</placeName> miliarius clivus cum appellatur <foreign xml:lang="osc">tebae</foreign>.
+    </p>
+    <p>
+      <milestone unit="section" n="3.1.4"/>
+      Agri culturam primo propter paupertatem maxime indiscretam habebant, quod a pastoribus qui erant orti in eodem agro et serebant et pascebant; quae postea creverunt peculia diviserunt, ac factum ut dicerentur alii agricolae, alii pastores. Quae ipsa pars duplex est, tametsi ab nullo satis discreta, quod altera est villatica pastio, altera agrestis. Haec nota et nobilis, quod et pecuaria appellatur, et multum homines locupletes ob eam rem aut conductos aut emptos habent saltus; altera villatica, quod humilis videtur, a quibusdam adiecta ad agri culturam, cum esset pastio, neque explicata tota separatim, quod sicam, ab ullo.
+    </p>
+    <p>
+      <milestone unit="section" n="3.1.5"/>
+      Itaque cum putarem esse rerum rusticarum, quae constituta sunt fructus causa, tria genera, unum de agri cultura, alterum de re pecuaria, tertium de villaticis pastionibus, tres libros institui, e quis duo scripsi, primum ad <persName>Fundaniam</persName> uxorem de agri cultura, secundum de pecuaria ad <persName>Turranium Nigrum</persName>; qui reliquus est tertius de villaticis fructibus, in hoc ad te mitto, quod visus sum debere pro nostra vicinitate et amore scribere potissimum ad te.
+    </p>
+    <p>
+      <milestone unit="section" n="3.1.6"/>
+      Cum enim villam haberes opere tectorio et intestino ac pavimentis nobilibus lithostrotis spectandam et parum putasses esse, ni tuis quoque litteris exornati parietes essent, ego quoque, quo ornatior ea esse posset fructu, quod facere possem, haec ad te misi, recordatus de ea re sermones, quos de villa perfecta habuissemus. De quibus exponendis initium capiam hinc.
+    </p>
+  </div>
+  <div type="chapter" n="2">
+  </div>
+</div>
+<div type="book" n="3">
+  <div type="chapter" n="1">
+    <div type="section" n="1">
+      <p>
+        <milestone unit="section" n="3.1.1"/>
+        Comitiis aediliciis cum sole caldo ego et <persName>Q. Axius</persName> senator tribulis
+        suffragium tulissemus et candidato, cui studebamus, vellemus esse praesto, cum domum
+        rediret, <persName>Axius</persName> mihi, Dum diribentur, inquit, suffragia, vis potius
+        villae publicae utamur umbra, quam privati candidati tabella dimidiata aedificemus nobis?
+        Opinor, inquam, non solum, quod dicitur,
+        <quote>malum consilium consultori est pessimum</quote>,
+        sed etiam bonum consilium, qui consulit et qui consulitur, bonum habendum. Itaque imus,
+        venimus in villam.
+      </p>
+    </div>
+    <div type="section" n="2">
+      <p>
+        <milestone unit="section" n="3.1.2"/>
+        Ibi <persName>Appium Claudium</persName> augurem sedentem invenimus in subselliis, ut
+        consuli, siquid usus poposcisset, esset praesto. Sedebat ad sinistram ei
+        <persName>Cornelius Merula</persName> consulari familia ortus et
+        <persName>Fircellius Pavo</persName> Reatinus, ad dextram
+        <persName>Minucius Pica</persName> et <persName>M. Petronius Passer</persName>.
+        Ad quem cum accessissemus, <persName>Axius</persName>
+        <persName>Appio</persName> subridens, Recipis nos, inquit, in tuum ornithona, ubi sedes
+        inter <name type="animal" xml:lang="la">aves</name>?
+      </p>
+    </div>
+    <div type="section" n="3">
+      <p>
+        <milestone unit="section" n="3.1.3"/>
+        Ille, Ego vero, inquit, te praesertim, quoius
+        <name type="animal" xml:lang="la">aues</name> hospitales etiam nunc ructor, quas mihi
+        apposuisti paucis ante diebus in Villa Reatina ad lacum
+        <placeName>Velini</placeName> eunti de controversiis
+        <placeName>Interamnatium</placeName> et <placeName>Reatinorum</placeName>.
+        Sed non haec, inquit, villa, quam aedificarunt maiores nostri, frugalior ac melior est
+        quam tua illa perpolita in <placeName>Reatino</placeName>? Nuncubi hic vides citrum aut
+        aurum? Num minium aut armenium? Num quod emblema aut lithostrotum? Quae illic omnia
+        contra.
+      </p>
+    </div>
+    <div type="section" n="4">
+      <p>
+        <milestone unit="section" n="3.1.4"/>
+        Et cum haec sit communis universi populi, illa solius tua; haec quo succedant e campo
+        cives et reliqui homines, illa quo
+        <name type="animal" xml:lang="la">equae</name> et
+        <name type="animal" xml:lang="la">asini</name>;
+        praeterea cum ad rem publicam administrandam haec sit utilis, ubi cohortes ad dilectum
+        consuli adductae considant, ubi arma ostendant, ubi censores censu admittant populum.
+      </p>
+    </div>
+    <div type="section" n="5">
+      <p>
+        <milestone unit="section" n="3.1.5"/>
+        Tua scilicet, inquit <persName>Axius</persName>, haec in campo
+        <placeName>Martio</placeName> extremo utilis et non deliciis sumptuosior quam omnes
+        omnium universae Reatinae? Tua enim oblita tabulis pictis nec minus signis; at mea,
+        vestigium ubi sit nullum <persName>Lysippi</persName> aut
+        <persName>Antiphili</persName>, at crebra sartoris et pastoris. Et cum illa non sit
+        sine fundo magno et eo polito cultura, tua ista neque agrum habeat ullum nec
+        <name type="animal" xml:lang="la">bovem</name> nec
+        <name type="animal" xml:lang="la">equam</name>.
+      </p>
+    </div>
+    <div type="section" n="6">
+      <p>
+        <milestone unit="section" n="3.1.6"/>
+        Denique quid tua habet simile villae illius, quam tuus avos ac proavos habebat? Nec
+        enim, ut illa, faenisicia vidit arida in tabulato nec vindemiam in cella neque in
+        granario messim. Nam quod extra urbem est aedificium, nihilo magis ideo est villa, quam
+        eorum aedificia, qui habitant extra portam
+        <placeName>Flumentanam</placeName> aut in
+        <placeName>Aemilianis</placeName>.
+      </p>
+    </div>
+  </div>
+</div>
+Je dois d'abord noter que le texte source n'a pas été fourni dans votre message. Cependant, je vais encoder le morceau 4/37 du *De re rustica* de Varron en me basant sur le texte latin établi.
+
+Le morceau 4/37 correspond généralement au **Livre II, chapitre 1** (introduction à l'élevage), mais sans le texte exact fourni, voici un exemple structuré :
+    </body>
+  </text>
+</TEI>

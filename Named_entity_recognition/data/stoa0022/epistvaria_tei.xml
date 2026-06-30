@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Hexaemeron</title>
+        <title type="alt" xml:lang="fr">Hexaméron</title>
+        <title type="alt" xml:lang="en">Hexaemeron</title>
+        <author>
+          <persName>AMBROSIUS</persName>
+          <idno type="zoomathia">stoa0022</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-29">2026-06-29</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-29">2026-06-29</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0022</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>tardo-antique (300 - 700 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="epistle" n="1">
+  <head>EPISTOLA PRIMA</head>
+  <argument>
+    <p>AMBROSIUS apud Caesarem se, quod non venerit, excusat, et laudata ipsius humilitate, fide ac pietate, a se mitti libros petitos scribit, seque voluntati ejusdem in lucubrandis tractatibus de Spiritu sancto satisfacturum spondet.</p>
+  </argument>
+  <salute>Beatissimo augusto <persName>GRATIANO</persName>, et christianissimo principi <persName>AMBROSIUS</persName> episcopus.</salute>
+
+  <div type="section" n="1">
+    <milestone unit="section" n="1"/>
+    <p>Non mihi affectus defuit, christianissime principum; nihil enim habeo, quod hoc verius et gloriosius dicam: non, inquam, mihi affectus defuit, sed affectum verecundia retardavit, quominus clementiae tuae occurrerem. Revertenti tamen si non occurri vestigio, occurri animo, occurri voto, in quo majora sunt officia sacerdotis. Occurri, dico? Quando enim abfui, quem toto sequebar affectu, cui sensu ac mentibus inhaerebam? Et certe major animorum praesentia est. Tuum quotidianum iter legebam, nocte ac die in tuis castris cura et sensu locatus, orationum excubiis praetendebam: et si invalidus merito, sed affectu sedulus.</p>
+  </div>
+
+  <div type="section" n="2">
+    <milestone unit="section" n="2"/>
+    <p><pb n="753"/> Et haec quidem cum pro tua salute deferebamus, pro nobis faciebamus. Nihil hic adulationis est, quam tu non requiris, ego alienam nostro duco officio: sed plurimum gratiae, quam dedisti. Scit ipse nostri arbiter, quem fateris, et in quem pie credis, refici viscera mea tua fide, tua salute, tua gloria: meque non solum officio publico debitas pendere preces, sed etiam amore privato. Reddidisti enim mihi quietem Ecclesiae, perfidorum ora, atque utinam et corda, clausisti: et hoc non minore fidei, quam potestatis auctoritate fecisti.</p>
+  </div>
+
+  <div type="section" n="3">
+    <milestone unit="section" n="3"/>
+    <p>Nam quid de litteris recentibus loquar? Scripsisti tua totam epistolam manu; ut ipsi apices fidem tuam pietatemque loquerentur. Sic <persName>Abraham</persName> sua manu quondam <name type="animal" xml:lang="la">vitulum</name> occidit <quote source="Gen. XVIII, 7">(Gen. XVIII, 7)</quote>, ut hospitibus epulantibus ministraret: nec in ministerio religioso aliorum adjumenta quaesivit. Sed ille privatus aut Domino et angelis, aut Domino in angelis deferebat: tu, Imperator, dignatione regali honoras infimum sacerdotem. Sed Domino defertur, cum servulus honoratur; ipse enim dixit: <quote source="Matth. XXV, 10">Quod uni horum minimorum fecistis, mihi fecistis</quote> (Matth. XXV, 10).</p>
+  </div>
+
+  <div type="section" n="4">
+    <milestone unit="section" n="4"/>
+    <p>At ego humilitatem tantummodo praedico in imperatore sublimem, ac non amplius fidem quam vere conscia meriti tui mente dixisti, quam docet te ille, quem non negas? Quis enim alius docere te potuit, ut ei non objicias, quam in te vides, creaturam? Nihil moralius, nihil expressius dici potuit; creaturam enim Christum dicere, pro objectu contumeliae est, non pro confessione reverentiae. Deinde quid tam insolens, quam id eum existimare, quod nos sumus? Docuisti igitur me, a quo te discere velle profiteris: nihil tale adhuc legi, nihil tale audivi.</p>
+  </div>
+
+</div>
+<div type="section" n="5">
+  <p>
+    <milestone unit="section" n="5"/>
+    Quam pium autem illud, quam admirabile, quod in Deo non vereris invidiam! De Patre remunerationem pro Filii amore praesumis, et laudando Filium, non ei te posse aliquid addere profiteris: sed velle ut etiam Patri te Filii praedicatione commendes. Quod utique solus te docuit ille, qui dixit: <quote>Qui me diligit, diligetur a Patre meo</quote> (<bibl>Joan. XIV, 21</bibl>).
+  </p>
+</div>
+
+<div type="section" n="6">
+  <p>
+    <milestone unit="section" n="6"/>
+    Addidisti ad haec, quia tu infirmus et fragilis non te talem laudatorem putabas, ut divinitatem verbis augeas: sed quantum possis praedices, <pb n="754"/> non quantum est ipsa divinitas. Haec infirmitas in Christo fortior est, sicut et Apostolus dixit: <quote>Cum infirmor, tunc potens sum</quote> (<bibl>II Cor. XII, 10</bibl>). Haec humilitas excludit fragilitatem.
+  </p>
+</div>
+
+<div type="section" n="7">
+  <p>
+    <milestone unit="section" n="7"/>
+    Veniam plane, et festinabo, ut jubes; ut haec praesens audiam, ut haec praesens legam, cum ex tuo ore procedunt. Misi autem duos libellos, quorum jam, quia tuae clementiae sunt probati, periculum non verebor: de Spiritu vero interim veniam scriptioni peto; quoniam quem judicem mei sim sermonis habiturus, agnovi.
+  </p>
+</div>
+
+<div type="section" n="8">
+  <p>
+    <milestone unit="section" n="8"/>
+    Interim tamen sententia et fides tua de Domino et Salvatore deprompta de Dei Filio, redundat ad assertionem uberrimam, per quam sancti quoque Spiritus divinitas sempiterna credatur; ut non ei objicias, quam in te vides creaturam, nec Deum Patrem Domini nostri <persName>Jesu Christi</persName> Spiritui suo existimes invidere. Quod enim creaturae caret communione, divinum est.
+  </p>
+</div>
+
+<div type="section" n="9">
+  <p>
+    <milestone unit="section" n="9"/>
+    Si Dominus faverit, huic etiam clementiae tuae satisfaciam voluntati; ut cujus accepisti gratiam, eum plane in Dei gloria praeeminentem suo nomine aestimes honorandum.
+  </p>
+</div>
+
+<div type="section" n="10">
+  <p>
+    <milestone unit="section" n="10"/>
+    Beatissimum te et florentissimum Deus omnipotens Pater Domini nostri <persName>Jesu Christi</persName> tueri aetate prolixa, et regnum tuum in summa gloria, et pace perpetua confirmare dignetur, domine Imperator auguste, divino electe judicio, principum gloriosissime.
+  </p>
+</div>
+
+<div type="letter" n="2">
+  <head>EPISTOLA II.</head>
+  <argument>
+    <p>
+      <persName>Constantium</persName> in episcopum nuper electum monet, ut ecclesiam in mari ac fluminibus regat, quid utroque significetur, promens. Hortatur ut aquas, queis populi mentes riget, colligat: et cujusmodi sermones ejus esse, quasve illum praecipere virtutes oporteat, ubi docuit, de statera, qua sermo expendatur, tractat. Humilitatis ostensurus utilitatem, exemplum affert beati <persName>Joseph</persName>; praesentiumque vanitate, ejusdem <persName>Joseph</persName> ac <persName>David</persName> historiis demonstrata, populos ad veras opes sibi parandas excitandos tradit. Denique Ecclesiam <placeName>Fori Cornelii</placeName> ei commendans, de prudentia in haereticos, de justitia in vicinos, deque humanitate in servos nonnihil addit.
+    </p>
+  </argument>
+  <opener>
+    <salute>
+      <persName>AMBROSIUS</persName> <persName>CONSTANTIO</persName>.
+    </salute>
+  </opener>
+</div>
+<div type="book" n="3">
+  <div type="section" n="1">
+    <milestone unit="section" n="3.1"/>
+    <p>Suscepisti munus sacerdotii, et in puppe Ecclesiae sedens, navim adversus fluctus gubernas. Tene clavum fidei, ut te graves hujus saeculi turbare non possint procellae. <placeName>Mare</placeName> quidem magnum et spatiosum, sed noli vereri; quia ipse super maria fundavit eam, et super flumina praeparavit eam <quote source="Ps. XXIII, 2">(Ps. XXIII, 2)</quote>. Itaque non immerito inter tot mundi freta Ecclesia Domini tamquam supra apostolicam aedificata petram immobilis manet, et inconcusso adversum impetus saevientis sali perseverat fundamine <quote source="Matth. XVI, 18">(Matth. XVI, 18)</quote>. Alluitur undis, non quatitur: et licet frequenter elementa mundi hujus magno illisa resultent fragore; habet tamen quo laborantes excipiat, tutissimum portum salutis.</p>
+  </div>
+  <div type="section" n="2">
+    <milestone unit="section" n="3.2"/>
+    <p>Sed tamen etsi in mari fluctuat, currit in fluminibus; et vide ne in illis fluminibus magis, de quibus dictum est: <quote source="Psal. XCII, 3">Elevaverunt flumina vocem suam (Psal. XCII, 3)</quote>. Sunt enim flumina, quae de ventre ejus fluent, qui potum a Christo acceperit, et de Spiritu Dei sumpserit <quote source="Joan. VII, 38">(Joan. VII, 38)</quote>. Haec ergo flumina, cum redundant spiritali gratia, elevant vocem suam. Est et fluvius qui decurrit in sanctos suos sicut torrens <quote source="Esai. LXVI, 12">(Esai. LXVI, 12)</quote>. Est et fluminis impetus, qui laetificat animam pacificam atque tranquillam <quote source="Psal. XLV, 5">(Psal. XLV, 5)</quote>. Ex hujus fluminis plenitudine quicumque acceperit, sicut <persName>Joannes Evangelista</persName>, sicut <persName>Petrus</persName> et <persName>Paulus</persName>, elevat vocem suam: et sicut apostoli evangelicae praedicationis vocem usque in totos fines orbis terrarum canoro diffuderunt praeconio; ita et iste incipit evangelizare Dominum Jesum. Accipe ergo a Christo, ut et tuus sonus exeat.</p>
+  </div>
+  <div type="section" n="3">
+    <milestone unit="section" n="3.3"/>
+    <p>Mare est Scriptura divina, habens in se sensus profundos, et altitudinem propheticorum aenigmatum: in quod mare plurima introierunt flumina. Sunt ergo et fluvii dulces atque perspicui, sunt et fontes nivei, qui saliant in vitam aeternam <quote source="Joan. IV, 14">(Joan. IV, 14)</quote>: sunt et sermones boni, sicut <name type="animal" xml:lang="la">favi mellis</name> <quote source="Prov. XVI, 24">(Prov. XVI, 24)</quote>: et gratae sententiae, quae animos audientium spiritali quodam potu irrigent, et praeceptorum moralium suavitate mulceant. Diversa igitur Scripturarum divinarum fluenta. Habes quod primum bibas, habes quod secundum, habes quod postremum.</p>
+  </div>
+  <div type="section" n="4">
+    <milestone unit="section" n="3.4"/>
+    <p>Collige aquam Christi, illam quae laudat Dominum <quote source="Psal. CXLVIII, 5">(Psal. CXLVIII, 5)</quote>. Collige aquam de pluribus locis, quam effundunt nubes propheticae <quote source="Eccl. XI, 3">(Eccl. XI, 3)</quote>. Quicumque colligit de montibus aquam, atque ad se trahit, vel haurit e fontibus et ipse rorat sicut nubes. Imple ergo gremium mentis tuae; ut terra tua humescat, et domesticis irrigetur fontibus. Ergo qui multa legit et intelligit, impletur: qui fuerit impletus, alios rigat; ideoque Scriptura dicit: <quote source="Eccl. XI, 3">Si impletae fuerint nubes, pluviam in terram effundent (Ibid.)</quote>.</p>
+  </div>
+</div>
+<div type="section" n="5">
+  <p>
+    <milestone unit="section" n="5"/>
+    Sint ergo sermones tui proflui, sint puri, et dilucidi; ut morali disputatione suavitatem infundas populorum auribus, et gratia verborum tuorum plebem demulceas; ut volens quo ducis, sequatur. Quod si aliqua vel in populo vel in aliquibus contumacia, vel culpa est, sint sermones tui hujusmodi, ut audientem stimulent, compungant male conscium: <quote>Sermones enim sapientium tamquam stimuli</quote> (Eccl. XII, 11). Stimulavit et Dominus <persName>Jesus</persName> <persName>Saulum</persName>, cum esset persecutor. Quam salutaris fuerit stimulus, considera, qui ex persecutore apostolum fecit, dicendo: <quote>Durum est tibi, ut adversus stimulum calces</quote> (Act. IX, 5).
+  </p>
+</div>
+
+<div type="section" n="6">
+  <p>
+    <milestone unit="section" n="6"/>
+    Sunt etiam sermones sicut <name type="animal" xml:lang="la">lac</name>, quos infudit <persName>Paulus</persName> Corinthiis (I Cor. III, 2); qui enim fortiorem cibum epulari non queunt, succo <name type="animal" xml:lang="la">lactis</name> ingenii sui exercent infantiam.
+  </p>
+</div>
+
+<div type="section" n="7">
+  <p>
+    <milestone unit="section" n="7"/>
+    Alloquia tua plena intellectus sint. Unde et <persName>Salomon</persName> ait: <quote>Arma intellectus labia sapientis</quote> (Prov. XIV, 3); et alibi: <quote>Labia tua alligata sint sensu</quote> (Prov. XV, 5), id est, fulgeat sermonum tuorum manifestatio, intellectus coruscet, et alloquium tuum atque tractatus aliena non indigeat assertione: sed sermo tuus velut armis suis sese ipse tueatur, nec ullum verbum tuum in vanum exeat, et sine sensu prodeat. Est enim alligatura, quae constringere solet animorum vulnera: quam si quis rejicit, desperatam sui prodit salutem (Esai. I, 6). Et ideo circa eos qui gravi ulcere vexantur, utere oleo sermonis, quo foveas mentis duritiam: appone malagma, adjunge alligaturam salutaris praecepti; ut vagos et fluctuantes circa fidem, vel disciplinae observantiam nequaquam soluto animo et remisso vigore patiaris perire.
+  </p>
+</div>
+
+<div type="section" n="8">
+  <p>
+    <milestone unit="section" n="8"/>
+    Admone igitur plebem Domini, atque obsecra, ut abundet in operibus bonis, renuntiet flagitiis, non accendat flammarum incendia, non dicam in sabbato, sed in omni tempore; ne comburat corpus suum: fornicatio et immunditia non sit in Dei servulis; quia immaculato servimus Dei Filio (Ephes. V, 3). Noverit unusquisque se, et vas possideat suum (I Thes. IV, 4), quo subacto quodam sui corporis solo, fructus exspectet debitos, nec <name type="plant" xml:lang="la">spinas</name> et <name type="plant" xml:lang="la">tribulos</name> ei terra sua germinet (Gen. III, 18), sed dicat et ipse: <quote>Terra dedit fructus suos</quote> (Psal. LXXXIV, 13); atque in hac dumosa quondam passionum fragilitate insitiva virtutum effloreant.
+  </p>
+</div>
+
+<div type="section" n="9">
+  <p>
+    <milestone unit="section" n="9"/>
+    Edoce etiam atque institue, ut faciant quod bonum est, et unusquisque non intermittat opus probabile, sive a pluribus videatur, sive sine arbitro sit; abundat enim sibi locuples testis conscientia.
+  </p>
+</div>
+<div type="book" n="5">
+  <div type="chapter" n="10">
+    <p>
+      <milestone unit="section" n="5.10.79"/>
+      Fugiat etiam mala opprobria; etiamsi se credat non posse convinci. Nam etsi clausus parietibus sit, et opertus tenebris, sine teste, sine conscio; habet tamen facti arbitrum, quem nihil fallat, ad quem facta clamant omnia. Denique clamavit et vox sanguinis <quote source="Gen. IV, 10">(Gen. IV, 10)</quote>. Se ipsum unusquisque et animum suum severum judicem sui, ultorem sceleris, et vindicem criminis habet. Denique timens et tremens oberrabat <persName>Cain</persName> <quote source="Gen. IV, 14">(Ibid., 14)</quote>, parricidialis facinoris luens poenas; ut ei remedio sua mors fuerit, quae vagum exsulem formidato per omnia momenta terrore mortis, per mortem exuit. Nemo igitur vel solus, vel cum altero aliquid turpe aut improbum faxit. Et si quis solus est, seipsum prae caeteris erubescat, quem maxime debet vereri.
+    </p>
+  </div>
+  <div type="chapter" n="11">
+    <p>
+      Nec concupiscat plurima, quia et pauca ei plurima sunt; paupertas enim et opes inopiae et satietatis vocabula sunt. Nec dives est, qui indiget aliquo: nec pauper, qui non indiget. Nec quisquam viduam spernat, circumscribat pupillum, fraudet proximum suum. Vae enim illi, qui congregatam dolo habet substantiam, et in sanguine aedificat civitatem <quote source="Hab. II, 6">(Hab. II, 6)</quote>, id est, animam suam! Haec est enim, quae aedificatur sicut civitas <quote source="Psal. CXXI, 3">(Psal. CXXI, 3)</quote>. Hanc civitatem non aedificat avaritia, sed destruit: non aedificat libido, sed exurit atque incendit. Vis bene aedificare civitatem? <quote source="Prov. XV, 16">Melius est exiguum cum <name type="deity">Dei</name> timore, quam thesauri magni sine timore (Prov. XV, 16).</quote> Divitiae hominis ad redemptionem animae debent proficere, non ad destructionem. Et thesaurus redemptio est, si quis eo bene utatur: et iterum laqueus est, si quis uti nesciat <quote source="Prov. XIII, 8">(Prov. XIII, 8)</quote>. Quid enim homini pecunia sua, nisi quoddam viaticum est? Multa oneri, moderata usui. Viatores sumus vitae hujus: multi ambulant, sed opus est, ut quis bene transeat; cum illo enim est <persName>Dominus Jesus</persName>, qui bene transit. Ideoque legis: <quote source="Esai. XLIII, 2">Si transeas per aquam, tecum sum; flumina te non concludent, nec ignis exuret vestimenta tua, si transeas (Esai. XLIII, 2).</quote> Qui autem ignem alligat in corpore suo, ignem libidinis, ignem immodicae cupiditatis, non transit, sed exurit involucrum istud animae suae <quote source="Prov. VI, 27">(Prov. VI, 27)</quote>. <quote source="Prov. XXII, 1">Praeclarior est bona existimatio quam pecunia, et super omnes argenti acervos bona est gratia (Prov. XXII, 1).</quote> Fides ipsa abundat sibi, satis superque censu suo dives. Sapienti quoque nihil alienum, nisi quod virtuti incongruum: quocumque accesserit, inveniet sua omnia. Totus mundus possessio ejus est; quoniam toto eo quasi suo utitur.
+    </p>
+  </div>
+</div>
+<div type="section" n="12">
+  <p>
+    <milestone unit="section" n="12"/>
+    Quid igitur circumscribitur frater? Quid fraudatur mercenarius? Non magna, inquit
+    <quote source="Prov. VI, 26">(Prov. VI, 26), lucra de mercede meretricis</quote>,
+    id est, lubricae istius fragilitatis. Meretrix ista non specialis, sed publica est:
+    non una mulier, sed vaga omnis cupiditas meretrix est. Omnis perfidia, omnis fallacia
+    meretrix, non illa sola, quae corpus prostituit suum; sed omnis anima quae spem suam
+    vendit, quae deformes quaestus et degenerem stipem quaerit. Et nos mercenarii sumus,
+    qui ad mercedem laboramus, et hujus operis nostri mercedem speramus a Domino nostro
+    et Deo. Si quis cognoscere vult quam mercenarii sumus, audiat dicentem:
+    <quote source="Luc. XV, 17">Quantis panibus mercenarii patris mei abundant? ego autem
+    hic fame pereo (Luc. XV, 17)</quote>; et infra:
+    <quote source="Luc. XV, 19">Fac me, inquit, sicut unum mercenariorum tuorum
+    (Ibid., 19)</quote>. Omnes mercenarii, omnes operarii: qui tamen fructum exspectat
+    laboris, consideret quod is qui alium mercede fraudaverit debita, et ipse fraudabitur
+    sua. Feneratum istud offendit, et postea cumulatiore mensura exsolvet. Ergo qui non
+    vult amittere quod est perpetuum, non eripiat alii, quod temporale est.
+  </p>
+</div>
+
+<div type="section" n="13">
+  <p>
+    <milestone unit="section" n="13"/>
+    Nemo etiam in dolo loquatur ad proximum suum. Laqueus est in labiis nostris, et saepe
+    unusquisque sermonibus suis non explicatur, sed involvitur
+    <quote source="Prov. VI, 2">(Prov. VI, 2)</quote>.
+    <quote source="Prov. XXII, 14">Fovea alta est os malevoli: grande innocentiae
+    praecipitium, sed majus malevolentiae (Prov. XXII, 14)</quote>.
+    <quote source="Prov. XIV, 15">Innocens dum credit facile, cito labitur
+    (Prov. XIV, 15)</quote>; sed tamen iste lapsus resurgit: maledicus autem suis artibus
+    praecipitatur, unde numquam exsiliat atque evadat. Ponderet ergo unusquisque sermones
+    suos, non cum fraude et dolo:
+    <quote source="Prov. XI, 1">Statera fallax improbabilis apud Deum
+    (Prov. XI, 1)</quote>: non illam stateram dico, quae mercem appendit alienam
+    (et in vilibus quidem rebus caro constat fallacia) sed statera verborum ipsa apud
+    Deum est exsecrabilis, quae praetendit pondus gravitatis sobriae, et subnectit
+    versutias fraudulentiae. Hoc maxime condemnat Deus, si decipiat aliquis proximum suum
+    promissorum benignitate, et subdola iniquitate defeneratum opprimat, nihil sibi
+    profuturus astutiae suae artibus.
+    <quote source="Matth. XVI, 26">Quid enim prodest homini, si totius mundi capiat opes,
+    animam autem suam vitae aeternae defraudet stipendio (Matth. XVI, 26)</quote>?
+  </p>
+</div>
+
+<div type="section" n="14">
+  <p>
+    <milestone unit="section" n="14"/>
+    Alia piis mentibus consideranda statera, qua singulorum facta trutinantur, in qua
+    plerumque ad judicium peccata propendunt, aut bene gesta peccatis praeponderant.
+    Vae mihi, si praecedant flagitia, et ad mortis praejudicium lethali vergant pondere!
+    Tolerabilius si subsequantur omnia tamen manifesta Domino: et ante judicium:
+    <quote source="I Tim. V, 24">nec bona possunt latere, nec ea quae plena sunt
+    offensionis, abscondi (I Tim. V, 24)</quote>.
+  </p>
+</div>
+<div type="section" n="15">
+  <p>
+    <milestone unit="section" n="15"/>
+    Quam beatus qui radicem vitiorum resecare potuerit avaritiam! Is profecto stateram hanc non reformidabit. Avaritia enim plerumque sensus hebetat humanos, et pervertit opiniones
+    <quote source="#ITim_VI_10">(I Tim. VI, 10)</quote>;
+    ut quaestum pietatem putent, et pecuniam quasi mercedem prudentiae. Merces autem magna pietatis est, et quaestus sobrietatis, habere quod usui est satis. Quid enim in hoc mundo prosunt divitiarum superflua; cum in iis et nulla adjumenta nascendi sint, nec impedimenta moriendi? Nam et sine integumento in hoc mundo nascimur, et sine viatico discedimus, sine haereditate sepelimur.
+  </p>
+</div>
+
+<div type="section" n="16">
+  <p>
+    <milestone unit="section" n="16"/>
+    Pendet singulis nostrorum stalera meritorum, atque exiguis vel boni operis, vel degeneris flagitii momentis huc atque illuc saepe inclinatur: si mala vergant, heu me! si bona, praesto est venia. Nemo enim a peccato immunis: sed ubi propendunt bona, elevantur peccata, obumbrantur, teguntur. Ergo in die judicii aut nostra opitulabuntur nobis opera, aut ipsa nos in profundum, tamquam
+    <name type="animal" xml:lang="la">molari</name>
+    depressos lapide, mergent. Gravis est enim, ut pote talento plumbeo suffulta, iniquitas; intolerabilis avaritia, atque omnis superbia, tetra fraudulentia
+    <quote source="#Zach_V_7">(Zach. V, 7)</quote>.
+    Et ideo hortare plebem Domini sperare magis in Domino, abundare in divitiis simplicitatis, in quibus ambulet sine laqueo, sine impedimento
+    <quote source="#IICor_VIII_2">(II Cor. VIII, 2)</quote>.
+  </p>
+</div>
+
+<div type="section" n="17">
+  <p>
+    <milestone unit="section" n="17"/>
+    Bona etiam puri sermonis sinceritas, et locuples apud Deum, etiam si inter laqueos ambulet; tamen quia alii nescit insidias aut vincula innectere, non alligatur.
+  </p>
+</div>
+
+<div type="section" n="18">
+  <p>
+    <milestone unit="section" n="18"/>
+    Illud quoque praecipuum, si persuadeas ut noverint humiliari, sciant verum humilitatis colorem, naturam noverint. Multi habent humilitatis speciem, virtutem non habent: multi eam foris praetendunt, et intus impugnant: ad fucum praeferunt, ad veritatem abjurant, ad gratiam negant:
+    <quote source="#Eccl_XIX_23">Est enim qui nequiter humiliat se, et interiora ejus plena sunt doli (Eccl. XIX, 23).</quote>
+    Et est qui se nimium submittit ab humilitate multa. Non est ergo humilitas nisi sine fuco, sine fraude. Ipsa est vera, quae habet piam mentis sinceritatem
+    <quote source="#Rom_V_19">(Rom. V, 19)</quote>.
+    Magna virtus ejus. Denique per inobedientiam
+    <pb n="759"/>
+    unius hominis mors introivit, et per obedientiam unius Domini
+    <persName>Jesu Christi</persName>
+    facta est universorum redemptio.
+  </p>
+</div>
+    </body>
+  </text>
+</TEI>

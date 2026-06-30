@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="fr">Γεωγραφικά</title>
+        <title type="alt" xml:lang="fr">Géographie</title>
+        <title type="alt" xml:lang="en">Geography</title>
+        <author>
+          <persName>STRABO</persName>
+          <idno type="zoomathia">tlg0099</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-30">2026-06-30</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-30">2026-06-30</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">tlg0099</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr">francais</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>francais</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="2">
+   <div type="chapter" n="1">
+      <p>Dans son second livre, Strabon cite textuellement un certain nombre de passages d'<persName>Ératosthène</persName>, qu'il soumet ensuite à un examen critique, relevant tout ce qui lui paraît inexact dans les assertions, les divisions ou les descriptions de cet auteur. Il rappelle aussi et discute de la même façon mainte opinion d'<persName>Hipparque</persName>, puis termine par un exposé abrégé et en quelque sorte synoptique de son propre ouvrage, autrement dit de la science géographique tout entière.</p>
+      <milestone unit="section" n="1"/>
+      <p>Dans le troisième livre de sa <foreign xml:lang="grc">Γεωγραφικά</foreign>, dressant la carte de la terre habitée, <persName>Ératosthène</persName> divise celle-ci en deux de l'ouest à l'est par une ligne parallèle à la ligne équinoxiale : les extrémités qu'il donne à cette ligne sont, à l'ouest, les <placeName>Colonnes d'Hercule</placeName>, et, à l'est, les promontoires et contre-forts extrêmes de la chaîne qui forme le côté septentrional de l'<placeName>Inde</placeName>; puis, à partir des <placeName>Colonnes d'Hercule</placeName>, il la mène par le détroit de <placeName>Sicile</placeName> et les caps méridionaux du <placeName>Péloponnèse</placeName> et de l'<placeName>Attique</placeName> jusqu'à l'île de <placeName>Rhodes</placeName> et au golfe d'<placeName>Issus</placeName>. Jusque-là, comme il le marque lui-même, la ligne en question n'a fait que traverser la mer et longer les continents qui la bordent, parce qu'effectivement notre mer intérieure s'étend ainsi toute en longueur jusqu'à la <placeName>Cilicie</placeName>; mais à partir de ce point il lui fait suivre toute la chaîne du <placeName>Taurus</placeName> jusqu'à l'<placeName>Inde</placeName>, et cela sans dévier, car le <placeName>Taurus</placeName> qui est, selon lui, le prolongement direct de la mer que nous voyons commencer aux <placeName>Colonnes d'Hercule</placeName>, divise l'<name type="animal" xml:lang="fr">Asie</name> tout entière dans le sens de sa longueur en deux parties, l'une boréale, l'autre australe, et se trouve de la sorte, et comme la mer elle-même, laquelle s'étend, avons-nous dit, des <placeName>Colonnes d'Hercule</placeName> au point où commencent ses premières pentes, situé sous le parallèle d'<placeName>Athènes</placeName> (01)</p>
+   </div>
+</div>
+    </body>
+  </text>
+</TEI>

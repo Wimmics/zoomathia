@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Hexaemeron</title>
+        <title type="alt" xml:lang="fr">Hexaméron</title>
+        <title type="alt" xml:lang="en">Hexaemeron</title>
+        <author>
+          <persName>AMBROSIUS</persName>
+          <idno type="zoomathia">stoa0022</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-29">2026-06-29</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-29">2026-06-29</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0022</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>tardo-antique (300 - 700 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="work" xml:lang="la">
+  <head>SANCTI AMBROSII MEDIOLANENSIS EPISCOPI HYMNI</head>
+
+  <div type="poem" n="1">
+    <head>HYMNUS I.</head>
+    <lg type="strophe">
+      <l n="1">Aeterne rerum conditor,</l>
+      <l n="2">Noctem diemque qui regis,</l>
+      <l n="3">Et temporum das tempora,</l>
+      <l n="4">Ut alleves fastidium,</l>
+    </lg>
+    <lg type="strophe">
+      <l n="5">Praeco diei jam sonat,</l>
+      <l n="6">Noctis profundae pervigil,</l>
+      <l n="7">Nocturna lux viantibus,</l>
+      <l n="8">A nocte noctem segregans.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="9">Hoc excitatus <name type="animal" xml:lang="la">Lucifer</name>,</l>
+      <l n="10">Solvit polum caligine,</l>
+      <l n="11">Hoc omnis errorum chorus,</l>
+      <l n="12">Viam nocendi deserit.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="13">Hoc nauta vires colligit,</l>
+      <l n="14">Pontique mitescunt freta,</l>
+      <l n="15">Hoc ipsa petra Ecclesiae</l>
+      <l n="16">Canente, culpam diluit.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="17">Surgamus ergo strenue,</l>
+      <l n="18"><name type="animal" xml:lang="la">Gallus</name> jacentes excitat,</l>
+      <l n="19">Et somnolentos increpat,</l>
+      <l n="20"><name type="animal" xml:lang="la">Gallus</name> negantes arguit.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="21"><name type="animal" xml:lang="la">Gallo</name> canente, spes redit,</l>
+      <l n="22">Aegris salus refunditur,</l>
+      <l n="23">Mucro latronis conditur,</l>
+      <l n="24">Lapsis fides revertitur.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="25"><persName>Jesu</persName>, labantes respice,</l>
+      <l n="26">Et nos videndo corrige;</l>
+      <l n="27">Si respicis, lapsus cadunt,</l>
+      <l n="28">Fletuque culpa solvitur.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="29">Tu lux refulge sensibus,</l>
+      <l n="30">Mentisque somnum discute:</l>
+      <l n="31">Te nostra vox primum sonet,</l>
+      <l n="32">Et vota solvamus tibi.</l>
+    </lg>
+  </div>
+
+  <div type="poem" n="2">
+    <head>HYMNUS II.</head>
+    <lg type="strophe">
+      <l n="1">Deus creator omnium,</l>
+      <l n="2">Polique rector, vestiens</l>
+      <l n="3">Diem decoro lumine,</l>
+      <l n="4">Noctem soporis gratia.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="5">Artus solutos ut quies</l>
+      <l n="6">Reddat laboris usui,</l>
+      <l n="7">Mentesque fessas allevet,</l>
+      <l n="8">Luctusque solvat anxios.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="9">Grates peracto jam die,</l>
+      <l n="10">Et noctis exortu preces,</l>
+      <l n="11">Votis, reos ut adjuves,</l>
+      <l n="12">Hymnum canentes solvimus.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="13">Te cordis ima concinant,</l>
+      <l n="14">Te vox canora concrepet,</l>
+      <l n="15">Te diligat castus amor,</l>
+      <l n="16">Te mens adoret sobria.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="17">Ut cum profunda clauserit</l>
+      <l n="18">Diem caligo noctium,</l>
+      <l n="19">Fides tenebras nesciat,</l>
+      <l n="20">Et nox fide reluceat.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="21">Dormire mentem ne sinas,</l>
+      <l n="22">Dormire culpa noverit,</l>
+      <l n="23">Custos fides refrigerans,</l>
+      <l n="24">Somni vaporem temperet.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="25">Exuta sensu lubrico,</l>
+      <l n="26">Te cordis alta somnient;</l>
+      <l n="27">Nec hostis invidi dolo</l>
+      <l n="28">Pavor quietos suscitet.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="29">Christum rogemus et Patrem,</l>
+      <l n="30">Christi Patrisque Spiritum,</l>
+      <l n="31">Unum potens per omnia</l>
+      <l n="32">Fove precantes Trinitas.</l>
+    </lg>
+  </div>
+
+  <div type="poem" n="3">
+    <head>HYMNUS III.</head>
+    <lg type="strophe">
+      <l n="1">Jam surgit hora tertia,</l>
+      <l n="2">Qua <persName>Christus</persName> ascendit crucem,</l>
+      <l n="3">Nil insolens mens cogitet,</l>
+      <l n="4">Intendat affectum precis.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="5">Qui corde <persName>Christum</persName> suscipit,</l>
+      <l n="6">Innoxium sensum gerit:</l>
+      <l n="7">Votisque praestat sedulis,</l>
+      <l n="8">Sanctum mereri Spiritum.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="9">Haec hora qua finem dedit</l>
+      <l n="10">Diri veterno criminis,</l>
+      <l n="11">Mortisque regnum diluit,</l>
+      <l n="12">Culpamque ab aevo sustulit.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="13">Hinc jam beata tempora</l>
+      <l n="14">Coepere <persName>Christi</persName> gratia:</l>
+      <l n="15">Fide replevit veritas</l>
+      <l n="16">Totum per orbem Ecclesias.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="17">Celso triumphi vertice,</l>
+      <l n="18">Matri loquebatur suae:</l>
+      <l n="19">En filius, mater, tuus;</l>
+      <l n="20">Apostole, en mater tua.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="21">Praetenta nuptae foedera</l>
+      <l n="22">Alto docens mysterio;</l>
+      <l n="23">Ne virginis partus sacer</l>
+      <l n="24">Matris pudorem laederet.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="25">Cui fidem coelestibus</l>
+      <l n="26"><persName>Jesus</persName> dedit miraculis:</l>
+      <l n="27">Nec credidit plebs impia;</l>
+      <l n="28">Qui credidit, salvus erit.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="29">Nos credimus natum Deum,</l>
+      <l n="30">Partumque Virginis sacrae,</l>
+      <l n="31">Peccata qui mundi tulit,</l>
+      <l n="32">Ad dexteram sedens Patris.</l>
+    </lg>
+  </div>
+
+  <div type="poem" n="4">
+    <head>HYMNUS IV.</head>
+  </div>
+
+</div>
+<div type="hymn">
+  <head>HYMNUS IV</head>
+  <lg type="strophe">
+    <l n="1">Veni, redemptor gentium,</l>
+    <l n="2">Ostende partum Virginis,</l>
+    <l n="3">Miretur omne saeculum:</l>
+    <l n="4">Talis decet partus Deum.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Non ex virili semine,</l>
+    <l n="6">Sed mystico spiramine,</l>
+    <l n="7">Verbum Dei factum caro,</l>
+    <l n="8">Fructusque ventris floruit.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Alvus tumescit Virginis,</l>
+    <l n="10">Claustrum pudoris permanet,</l>
+    <l n="11">Vexilla virtutum micant,</l>
+    <l n="12">Versatur in templo Deus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="13">Procedens de thalamo suo,</l>
+    <l n="14">Pudoris aula regia,</l>
+    <l n="15">Geminae Gigas substantiae,</l>
+    <l n="16">Alacris ut currat viam.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="17">Egressus ejus a Patre,</l>
+    <l n="18">Regressus ejus ad Patrem;</l>
+    <l n="19">Excursus usque ad inferos,</l>
+    <l n="20">Recursus ad sedem Dei.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="21">Aequalis aeterno Patri</l>
+    <l n="22">Carnis tropaeo accingere</l>
+    <l n="23">Infirma nostri corporis</l>
+    <l n="24">Virtute firmans perpeti.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="25">Praesepe jam fulget tuum,</l>
+    <l n="26">Lumenque nox spirat novum,</l>
+    <l n="27">Quod nulla nox interpolet,</l>
+    <l n="28">Fideque jugi luceat.</l>
+  </lg>
+</div>
+
+<div type="hymn">
+  <head>HYMNUS V.</head>
+  <lg type="strophe">
+    <l n="1">Illuminans Altissimus</l>
+    <l n="2">Micantium astrorum globos,</l>
+    <l n="3">Pax, vita, lumen, veritas,</l>
+    <l n="4"><persName>Jesu</persName> fave precantibus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Seu mystico baptismate</l>
+    <l n="6">Fluenta <placeName>Jordanis</placeName> retro</l>
+    <l n="7">Conversa quondam tertio</l>
+    <l n="8">Praesente sacraris die.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Seu stella partum Virginis</l>
+    <l n="10">Coelo micans signaveris;</l>
+    <l n="11">Et hac adoratum die</l>
+    <l n="12">Praesepe Magos duxeris.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="13">Vel hydriis plenis aquae</l>
+    <l n="14">Vini saporem infuderis:</l>
+    <l n="15">Hausit minister conscius,</l>
+    <l n="16">Quod ipse non impleverat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="17">Aquas colorari videns,</l>
+    <l n="18">Inebriare flumina;</l>
+    <l n="19">Mutata elementa stupent</l>
+    <l n="20">Transire in usus alteros.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="21">Sic quinque millibus viris</l>
+    <l n="22">Dum quinque panes dividis,</l>
+    <l n="23">Edentium sub dentibus</l>
+    <l n="24">In ore crescebat cibus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="25">Multiplicabatur magis</l>
+    <l n="26">Dispendio panis suo:</l>
+    <l n="27">Quis haec videns mirabitur</l>
+    <l n="28">Juges meatus fontium?</l>
+  </lg>
+  <lg type="strophe">
+    <l n="29">Inter manus frangentium</l>
+    <l n="30">Panis rigatur profluus:</l>
+    <l n="31">Intacta quae non fregerant,</l>
+    <l n="32">Fragmenta subrepunt viris.</l>
+  </lg>
+</div>
+
+<div type="hymn">
+  <head>HYMNUS VI.</head>
+  <lg type="strophe">
+    <l n="1">Orabo mente Dominum,</l>
+    <l n="2">Orabo simul spiritu;</l>
+    <l n="3">Ne vox sola Deo canat,</l>
+    <l n="4">Sensusque noster alibi</l>
+    <l n="5">Ductus, aberret fluctuans,</l>
+    <l n="6">Vanis praeventus casibus.</l>
+  </lg>
+</div>
+
+<div type="hymn">
+  <head>HYMNUS VII.</head>
+  <lg type="strophe">
+    <l n="1">Splendor Paternae gloriae,</l>
+    <l n="2">De luce lucem proferens,</l>
+    <l n="3">Primordiis lucis novae</l>
+    <l n="4">Diem dies illuminans.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Verusque sol illabere,</l>
+    <l n="6">Micans nitore perpeti,</l>
+    <l n="7">Jubarque sancti Spiritus</l>
+    <l n="8">Infunde nostris sensibus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Votis vocemus et Patrem,</l>
+    <l n="10">Patrem perennis gloriae,</l>
+    <l n="11">Patrem potentis gratiae,</l>
+    <l n="12">Culpam releget lubricam.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="13">Informet actus strenuos,</l>
+    <l n="14">Dentes retundat invidi,</l>
+    <l n="15">Casus secundet asperos,</l>
+    <l n="16">Donet gerendi gratiam.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="17">Mentem gubernet et regat,</l>
+    <l n="18">Casto fideli corpore,</l>
+    <l n="19">Fides calore ferveat,</l>
+    <l n="20">Fraudis venena nesciat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="21">Christusque nobis sit cibus,</l>
+    <l n="22">Potusque noster sit fides,</l>
+    <l n="23">Laeti bibamus sobriam</l>
+    <l n="24">Ebrietatem Spiritus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="25">Laetus dies hic transeat,</l>
+    <l n="26">Pudor sit ut diluculum,</l>
+    <l n="27">Fides velut meridies,</l>
+    <l n="28">Crepusculum mens nesciat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="29">Aurora cursus provehit,</l>
+    <l n="30">Aurora totus prodeat</l>
+    <l n="31">In Patre totus Filius</l>
+    <l n="32">Et totus in Verbo Pater.</l>
+  </lg>
+</div>
+
+<div type="hymn">
+  <head>HYMNUS VIII.</head>
+</div>
+<div type="hymn" n="8">
+  <head>HYMNUS VIII</head>
+  <lg type="strophe">
+    <l n="1">Aeterna Christi munera,</l>
+    <l n="2">Et martyrum victorias,</l>
+    <l n="3">Laudes ferentes debitas,</l>
+    <l n="4">Laetis canamus mentibus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Ecclesiarum principes,</l>
+    <l n="6">Belli triumphales duces,</l>
+    <l n="7">Coelestis aulae milites,</l>
+    <l n="8">Et vera mundi lumina.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Terrore victo saeculi,</l>
+    <l n="10">Spretisque poenis corporis,</l>
+    <l n="11">Mortis sacrae compendio,</l>
+    <l n="12">Vitam beatam possident.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="13">Traduntur igni martyres,</l>
+    <l n="14">Et <name type="animal" xml:lang="la">bestiarum</name> dentibus,</l>
+    <l n="15">Armata saevit ungulis</l>
+    <l n="16">Tortoris insani manus,</l>
+  </lg>
+  <lg type="strophe">
+    <l n="17">Nudata pendent viscera,</l>
+    <l n="18">Sanguis sacratus funditur,</l>
+    <l n="19">Sed permanent immobiles</l>
+    <l n="20">Vitae perennis gratia.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="21">Devota sanctorum fides,</l>
+    <l n="22">Invicta spes credentium;</l>
+    <l n="23">Perfecta Christi charitas,</l>
+    <l n="24">Mundi triumphat principem.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="25">In his Paterna gloria,</l>
+    <l n="26">In his voluntas Filii,</l>
+    <l n="27">Exsultat in his Spiritus,</l>
+    <l n="28">Coelum repletur gaudiis.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="29">Te nunc, Redemptor, quaesumus,</l>
+    <l n="30">Ut ipsorum consortio</l>
+    <l n="31">Jungas precantes servulos,</l>
+    <l n="32">In sempiterna saecula. Amen.</l>
+  </lg>
+</div>
+
+<div type="hymn" n="9">
+  <head>HYMNUS IX.</head>
+  <lg type="strophe">
+    <l n="1">Somno refectis artubus,</l>
+    <l n="2">Spreto cubili surgimus,</l>
+    <l n="3">Nobis, Pater, canentibus</l>
+    <l n="4">Adesse te deposcimus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Te lingua primum concinat,</l>
+    <l n="6">Te mentis ardor ambiat;</l>
+    <l n="7">Ut actuum sequentium</l>
+    <l n="8">Tu, sancte, sis exordium.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Cedant tenebrae lumini,</l>
+    <l n="10">Et nox diurno sideri;</l>
+    <l n="11">Ut culpa quam nox intulit,</l>
+    <l n="12">Lucis labascat munere.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="13">Precamur iidem supplices,</l>
+    <l n="14">Noxas ut omnes amputes;</l>
+    <l n="15">Ne ore te canentium</l>
+    <l n="16">Lauderis in perpetuum.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="17">Praesta, Pater piissime,</l>
+    <l n="18">Patrique compar unice,</l>
+    <l n="19">Cum Spiritu paraclito</l>
+    <l n="20">Regnans per omne saeculum.</l>
+  </lg>
+</div>
+
+<div type="hymn" n="10">
+  <head>HYMNUS X.</head>
+  <lg type="strophe">
+    <l n="1">Consors paterni luminis,</l>
+    <l n="2">Lux ipse lucis, et dies,</l>
+    <l n="3">Noctem canendo rumpimus,</l>
+    <l n="4">Assiste postulantibus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Aufer tenebras mentium,</l>
+    <l n="6">Fuga catervas daemonum:</l>
+    <l n="7">Expelle somnolentiam,</l>
+    <l n="8">Ne pigritantes obruat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Sic, Christe, nobis omnibus</l>
+    <l n="10">Indulgeas credentibus;</l>
+    <l n="11">Ut prosit exorantibus,</l>
+    <l n="12">Quod praecinentes psallimus.</l>
+  </lg>
+</div>
+
+<div type="hymn" n="11">
+  <head>HYMNUS XI.</head>
+  <lg type="strophe">
+    <l n="1">O Lux beata Trinitas,</l>
+    <l n="2">Et principalis unitas,</l>
+    <l n="3">Jam sol recedit igneus,</l>
+    <l n="4">Infunde lumen cordibus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Te mane laudum carmine,</l>
+    <l n="6">Te deprecamur vespere,</l>
+    <l n="7">Te nostra supplex gloria,</l>
+    <l n="8">Per cuncta laudet saecula.</l>
+  </lg>
+</div>
+
+<div type="hymn" n="12">
+  <head>HYMNUS XII.</head>
+  <lg type="strophe">
+    <l n="1">Fit porta Christi pervia,</l>
+    <l n="2">Referta plena gratia,</l>
+    <l n="3">Transitque Rex, et permanet,</l>
+    <l n="4">Clausa, ut fuit, per saecula.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">Genus superni luminis,</l>
+    <l n="6">Processit aula virginis,</l>
+    <l n="7">Sponsus, redemptor, conditor,</l>
+    <l n="8">Suae gigas Ecclesiae.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Honor matris et gaudium,</l>
+    <l n="10">Immensa spes credentium,</l>
+    <l n="11">Per atra mortis pocula,</l>
+    <l n="12">Resolvit nostra crimina.</l>
+  </lg>
+</div>
+    </body>
+  </text>
+</TEI>

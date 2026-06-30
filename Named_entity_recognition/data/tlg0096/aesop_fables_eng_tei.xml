@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="en">Μῦθοι</title>
+        <title type="alt" xml:lang="fr">Fables</title>
+        <title type="alt" xml:lang="en">Fables</title>
+        <author>
+          <persName>ESOPUS</persName>
+          <idno type="zoomathia">tlg0096</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-30">2026-06-30</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-30">2026-06-30</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">tlg0096</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="en">anglais</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>anglais</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="chapter" n="1">
+   <head>THAT WOMAN</head>
+   <p>When the murder was done and the heralds shouted through the thick streets the passing of <persName>Caesar</persName>, it was the passing of the republic they announced, the foundation of Imperial <placeName>Rome</placeName>.</p>
+   <p>There was a hush, then a riot which frightened a senate that frightened the world. <persName>Caesar</persName> was adored. A man who could give millions away and sup on dry bread was apt to conquer, not provinces alone, but hearts. Besides, he had begun well and his people had done their best. The House of <persName>Julia</persName>, to which he belonged, descended, he declared, from <name type="deity">Venus</name>. The ancestry was less legendary than typical. <persName>Cinna</persName> drafted a law giving him the right to marry as often as he chose. His mistresses were queens. After the episodes in <placeName>Gaul</placeName>, when he entered <placeName>Rome</placeName> his legions warned the citizens to have an eye on their wives. At seventeen he fascinated <name type="animal" xml:lang="en">pirates</name>. A shipload of the latter had caught him and demanded twenty talents ransom. "Too little," said the lad; "I will give you fifty, and impale you too," which he did, jesting with them meanwhile, reciting verses of his own composition, calling them <foreign xml:lang="en">barbarians</foreign> when they did not applaud, ordering them to be quiet when he wished to sleep, captivating them by the effrontery of his assurance, and, the ransom paid, slaughtering them as he had promised.</p>
+</div>
+    </body>
+  </text>
+</TEI>
