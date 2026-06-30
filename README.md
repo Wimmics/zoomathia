@@ -52,7 +52,6 @@ pip install spacyfishing
 
 ```shell
 python -m spacy download en_core_web_lg
-python -m spacy download en_core_web_sm
 ```
 
 - dbpedia_spotlight docker
@@ -82,7 +81,7 @@ To use this pipeline of annotation, you have to start with the python script `Na
 
 ### Load CSV to MongoDB
 
-The next step is to launch the `Named_entity_recognition/data/morph_mongo.py` script that uploads all the generated CSV files into respective MongoDB collections. This process will also filter out annotations based on the class URIs specified in the `filter_class.json` file and find close concepts base on the label in the TheZoo Thesaurus.
+The next step is to launch the `Named_entity_recognition/data/morph_mongo.py` script that uploads all the generated CSV files into respective MongoDB collections. This process will also filter out annotations based on the class URIs specified in the `filter_class.json` file or if the class contains any blacklisted word in the `blacklist` tab. It will also and find close concepts base on the label in the TheZoo Thesaurus.
 
 ```json
 {
@@ -93,6 +92,10 @@ The next step is to launch the `Named_entity_recognition/data/morph_mongo.py` sc
         ...
     ]
 }
+```
+
+```python 
+blacklist = ["album", "film"]
 ```
 
 ### Generate RDF files
@@ -114,8 +117,8 @@ output.file.path=output/paragraph.ttl
 #output.file.path=output/annotation.ttl
 #output.file.path=output/vocab.ttl
 ```
-
-The produced graph will be formed of 5 turtle files. The vocab.ttl file contains all the DBpedia alignments with TheZoo thesaurus. 
+You can produce the graph for all texts in database by only launching graph-generation.py. The mongoDB instance must be running.
+The produced graph will be formed of 1 turtle file for each file in the Metadata table. The vocab part contains all the DBpedia alignments with TheZoo thesaurus and is located at the end of the ttl file. Then a single ttl file all.ttl contains all the concatenated ttl files and can be loaded in a SPARQL endpoint to empower the web app. 
 
 
 # Manual Annotation
