@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Stratonis Lampsaceni Fragmenta</title>
+        <author>
+          <persName>STRATO LAMPSACENUS</persName>
+        </author>
+        <respStmt>
+          <resp>Conversion DFHG vers TEI P5</resp>
+          <name>zoomathia_convertir_dfhg_vers_tei.py</name>
+          <date when="2026-06-30">2026-06-30</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-30">2026-06-30</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Source originale : Digital Fragmenta Historicorum Graecorum (DFHG Project),
+        http://www.dfhg-project.org/, editeur en chef Monica Berti, Universite de Leipzig, 2017.</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">grec</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier converti depuis le format DFHG (Digital Fragmenta Historicorum
+        Graecorum) vers TEI P5 pour le projet Zoomathia.</p>
+      </projectDesc>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="fragment" n="1">
+        <head>ΠΕΡΙ ΕΥΡΗΜΑΤΩΝ</head>
+        <bibl type="witness">Clemens Alex. Strom. I, p. 129, 29 Sylb.:</bibl>
+        <p xml:lang="grc">Χίλωνι τῷ Λακεδαιμονίῳ ἀναφέρουσι τὸ μηδὲν ἄγαν. Στράτων δὲ ἐν τῷ Περὶ εὑρημάτων Στρατοδήμῳ τῷ Τεγεάτῃ προσάπτει τὸ ἀπόφθεγμα, Δίδυμος δὲ Σόλωνι αὐτὸ ἀντίθησιν.</p>
+        <p xml:lang="la" type="translation">Illad, Ne quid nimis Chiloni Lacedaemonio ascribuut. Straton vero in libro De inventis dictum hoc Stratodemo (Aristodemo) Tegratae tribuit; Didymus denique Soloni vindicat.</p>
+        <note type="commentary">Pro Στρατοδήμῳ procul dubio scribendum Ἀριστοδήμῶ, quanquam hunc non Tegeatam, sed Argivum vel Lacedaemonium reliqui dicunt. Idem ibid. p. 133; postquam varia variorum inventa recensuerat, inter fontes suos praeter Scammonem aliosque etiam Stratonem Peripateticum ἐν τοῖς Περὶ εὑρημάτων nominat. (V. fragm. Scammonis.)</note>
+        <pb n="369"/>
+      </div>
+    </body>
+  </text>
+</TEI>
