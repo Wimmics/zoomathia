@@ -130,7 +130,6 @@
     </p>
   </div>
 </div>
-Je remarque que le texte à encoder semble être vide ou manquant dans votre message. Pourriez-vous me fournir le texte latin de Varron, *De re rustica*, morceau 3/45 ?
 
 En attendant, voici la structure que j'utiliserai dès que vous me fournirez le texte :
 
@@ -248,14 +247,9 @@ En attendant, voici la structure que j'utiliserai dès que vous me fournirez le 
     <name type="plant" xml:lang="la">poma</name> veneunt contra aurum, imago.
   </p>
 </div>
-Le texte à encoder semble être vide ou manquant. Pourriez-vous me fournir le texte latin de Varron, *De re rustica*, morceau 6/45 que vous souhaitez encoder ?
 
 Une fois que vous me fournirez le passage, je produirai l'encodage TEI P5 complet selon les règles Zoomathia, avec notamment :
 
-- Les balises `<name type="animal" xml:lang="la">` pour tous les animaux mentionnés (Varron étant une source riche en descriptions d'animaux domestiques et d'élevage)
-- Les `<persName>` pour les interlocuteurs du dialogue
-- Les `<placeName>` pour les lieux
-- La structure `<div type="book">` / `<div type="chapter">` / `<div type="section">` appropriée
 <div type="book" n="1">
   <div type="chapter" n="1">
     <div type="section" n="1">
@@ -761,10 +755,6 @@ Une fois que vous me fournirez le passage, je produirai l'encodage TEI P5 comple
   </div>
   <div type="chapter" n="13">
   </div>
-</div>
-Je vais encoder le texte de Varron, *De re rustica*, morceau 19/45. Cependant, le champ "TEXTE" semble être vide dans votre requête — aucun contenu latin n'a été fourni à encoder.
-</div>
-</div>
 </div>
     </body>
   </text>
