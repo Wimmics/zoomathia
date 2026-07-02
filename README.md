@@ -30,7 +30,7 @@ The backend application contains the services that map SPARQL queries to JSON ob
 To try the backend application, follow the readme: [README](web-app/backend).
 
 
-# Named Entity Recognition annotation pipeline
+# Automatic Annotation Pipeline
 
 ## Dependencies
 
@@ -122,7 +122,7 @@ The produced graph will be formed of 5 turtle files. The vocab.ttl file contains
 
 ## Dependencies
 
-The script only works on Windows due to strong optimisation only available on windows32com API.
+The script works on Windows, using windows32com API.
 
 ```python
 pip install pandas
