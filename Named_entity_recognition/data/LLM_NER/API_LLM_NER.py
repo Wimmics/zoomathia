@@ -15,6 +15,7 @@ import ujson as json
 from google import genai
 from pydantic import BaseModel
 from google.genai import types
+from dotenv import load_dotenv
 
 
 java_process = subprocess.Popen(
@@ -44,7 +45,8 @@ DBPEDIA_LOCAL = 'http://localhost:2222/rest'
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 ANNOTATION_AUTO = True
 
-client = genai.Client(api_key="AQ.Ab8RN6L3sK_7WIbRWDe-WajJzirxO-O7cA2RoyIReQgNuzO2iw")
+load_dotenv()
+client = genai.Client()
 MODEL = "gemini-3.5-flash"
 PROMPT_PATH = os.path.join(os.path.dirname(__file__), "prompt.txt")
 
