@@ -171,14 +171,13 @@ def setQuery(label, df, previous):
         df.append([previous[0], elt["x"]["value"], previous[2], previous[3], "zoomathia", label])
 
 
-
 def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb://localhost:27017/"):
     client = MongoClient(mongo_uri)
     db = client[db_name]
     collection = db[collection_name]
     df = pd.read_csv(csv_file)
     df = df.where(pd.notnull(df), "")
-    
+
     if collection_name == "Link":
         data = []
         new_columns = list(df.columns)
@@ -197,20 +196,25 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
         new_columns = list(df.columns)
         new_columns.append("label")
 
+        seen_annotations = set()
+
         for row in df.index:
             paragraph_uri = df["paragraph_uri"][row]
             concept_uri = df["concept_uri"][row]
+
+            if (paragraph_uri, concept_uri) in seen_annotations:
+                continue
+            seen_annotations.add((paragraph_uri, concept_uri))
+
             mention = df["mention"][row]
             score = df["score"][row]
             origin = df["origin"][row]
-
-
 
             if origin == "zoomathia_match":
                 data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
 
             else:
-                if origin == "wikidata" or dbpediaClassFiltered(concept_uri, filtered_already_found) :
+                if origin == "wikidata" or dbpediaClassFiltered(concept_uri, filtered_already_found):
                     data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
 
                 label = concept_uri.split("/")[-1].replace("_", " ") if "dbpedia" in concept_uri else mention
@@ -218,6 +222,8 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
                     setQuery(label, data, [paragraph_uri, concept_uri, mention, score, origin])
 
         df = pd.DataFrame(data, columns=new_columns)
+
+        df = df.drop_duplicates(subset=['paragraph_uri', 'concept_uri'], keep='first')
 
     collection.insert_many(df.to_dict('records'))
     print(f"Chargé {csv_file} dans la collection {collection_name} de la base de données {db_name}")
