@@ -16,13 +16,13 @@
         <respStmt>
           <resp>Encodage automatique TEI P5</resp>
           <name>zoomathia_encoder.py v3.0</name>
-          <date when="2026-06-30">2026-06-30</date>
+          <date when="2026-07-02">2026-07-02</date>
         </respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
         <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
-        <date when="2026-06-30">2026-06-30</date>
+        <date when="2026-07-02">2026-07-02</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
         </availability>
@@ -61,6 +61,1536 @@
   </teiHeader>
   <text>
     <body>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diatês oxeôn, Livre II) :
+
+
+<div type="book" n="2">
+   <head>
+      <persName>Hippocrate</persName> : du régime. livre II (bilingue)
+   </head>
+   <p>
+      <foreign xml:lang="grc">ΠΕΡΙ ΔΙΑΙΤΗΣ. ΤΟ ΔΕΥΤΕΡΟΝ</foreign>
+   </p>
+   <milestone unit="section" n="1"/>
+   <p>
+      RETOUR À L’ENTRÉE DU SITE
+   </p>
+   <p>
+      TABLE DES MATIÈRES
+   </p>
+   <p>
+      D'HIPPOCRATE
+   </p>
+   <p>
+      <persName>HIPPOCRATE</persName>
+   </p>
+   <p>
+      DU REGIME. LIVRE DEUXIÈME. -
+      <foreign xml:lang="grc">ΠΕΡΙ ΔΙΑΙΤΗΣ. ΤΟ ΔΕΥΤΕΡΟΝ</foreign>.
+   </p>
+   <p>
+      du régime livre I - du régime livre III
+   </p>
+   <p>
+      <persName>HIPPOCRATE</persName>
+   </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte fourni, en respectant la structure, les entités nommées Zoomathia et les balises autorisées :
+
+
+<div type="book" n="2">
+  <div type="chapter" n="1">
+    <milestone unit="section" n="2"/>
+    <p>DU REGIME.</p>
+    <p>LIVRE DEUXIÈME.</p>
+    <p>ARGUMENT.</p>
+    <p>Le deuxième livre passe en revue les
+    <name type="placeName">contrées</name>, les
+    <name type="animal">vents</name>, les aliments, les boissons, les bains, les
+    onctions, le soleil et le feu, l'ombre et le froid, les sueurs,
+    l'acte vénérien, les vomissements, le sommeil et la veille,
+    l'inaction et le travail, les exercices tant naturels que
+    gymnastiques, et il se termine par l'examen des courbatures que
+    produit chez les personnes inexercées un labeur quelconque, et chez
+    les personnes exercées un labeur excessif.</p>
+    <p>S'il est vrai, comme le prétend notre
+    <persName>auteur</persName>, que la théorie qui attribue la santé à un rapport exact
+    entre les exercices et les aliments est de lui, et qu'il a été le
+    premier à indiquer cette cause de maladies, les signes qui dénotent
+    la rupture de ce rapport, et le traitement qui convient, cela peut
+    servir à établir une sorte de chronologie relativement les
+    différents écrits <persName>hippocratiques</persName>.</p>
+    <p>Car il en est quelques-uns qui
+    sont manifestement dominés par cette théorie, laquelle, du reste,
+    consiste en ceci : quand les exercices l'emportent sur les aliments,
+    la chair se fond ; cette fonte ou colliquation, étant trop
+    considérable pour être dissipée par le mouvement circulaire
+    <foreign xml:lang="grc">περίοδος</foreign>, s'amasse et finit par produire la maladie. Au contraire, quand les</p>
+  </div>
+</div>
+<div type="book" n="3">
+  <div type="section" n="103">
+    <milestone unit="section" n="3/103"/>
+    <p>aliments l'emportent sur les exercices, une portion de nourriture
+      reste non consommée, elle s'amasse aussi, et la maladie naît
+      derechef de cette surabondance.</p>
+    <p>Le vomissement de précaution,
+      probablement introduit dans les habitudes populaires longtemps avant
+      cette théorie, s'y encadrait merveilleusement. Voici comment les
+      anciens le pratiquaient : on se gorgeait de nourriture, d'aliments
+      variés ; puis l'on provoquait le vomissement. Suivant le but que
+      l'on voulait atteindre, on laissait les aliments séjourner plus ou
+      moins longtemps dans l'estomac avant de les faire rejeter. Il est
+      curieux de suivre les effets de cette pratique, véritable
+      expérimentation faite en grand sur le corps humain.</p>
+    <p>On lira aussi avec intérêt et
+      certainement avec fruit les détails donnés sur les différents
+      exercices. On ne peut trop signaler cette lacune dans notre
+      existence moderne. Il conviendrait de rétablir parmi nous des
+      habitudes qui étaient si utiles au développement physique et mental
+      des anciens ; et ce serait un livre important au point de vue de la
+      médecine sociale, que celui où, prenant pour point de départ les
+      exercices de l'antiquité, on les comparerait avec les besoins de
+      notre civilisation, et où l'on poserait les bases d'une bonne
+      gymnastique tant pour les enfants que pour les adultes.</p>
+  </div>
+</div>
+<div type="book" n="4">
+   <div type="section" n="37">
+      <milestone unit="section" n="37"/>
+      <p>
+         <foreign xml:lang="grc">ΧΩΡΕΩΝ</foreign> δὲ <name type="deity">Θέσιν</name> καὶ <foreign xml:lang="grc">φύσιν</foreign> ἑκάστων ὧδε χρὴ διαγινώσκειν.
+         Κατά παντὸς μὲν εἰπεῖν ὧδε ἔχει· ἡ πρὸς <persName>μεσημβρίαν</persName> κειμένη θερμότερη καὶ ξηροτέρη τῆς πρὸς τὰς <name type="animal" xml:lang="fr">ἄρκτους</name> κειμένης, διότι ἐγγυτέρω τοῦ <name type="deity">ἡλίου</name> ἐστίν.
+         Ἐν δὲ ταύτῃ τῇ χώρῃ ἀνάγκη καὶ τὰ ἔθνη τῶν <name type="animal" xml:lang="fr">ἀνθρώπων</name> καὶ τὰ φύομενα ἐκ τῆς γῆς ξηρότερα καὶ θερμότερα καὶ ἰσχυρότερα εἶναι ἢ ἐν ταύτῃ ἐναντίοις· οἷον τὸ <placeName>Λιβυκὸν</placeName> ἔθνος πρὸς τὸ <placeName>Ποντικὸν</placeName> καὶ τὰ ἐγγιστά ἑκατέρων.
+         Αὗται δὲ καθ' ἑωυτὰς αἱ χώραι ὧδε ἔχουσι· τὰ ὑψηλὰ καὶ αὐχμηρὰ καὶ πρὸς <persName>μεσημβρίαν</persName> κείμενα ξηρότερα τῶν πεδίων τῶν ὁμοίως κειμένων, διότι ἐλάσσονος ἰκμάδος ἔχει· τὰ μὲν γὰρ οὐκ ἔχει στάσιν τῷ ὀμβρίῳ ὕδατι, τὰ δὲ ἔχει.
+         Τὰ δὲ <name type="plant" xml:lang="fr">λίμναια</name> καὶ <name type="plant" xml:lang="fr">ἕλοδα</name>
+      </p>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte d'Hippocrate, en respectant la structure demandée et en identifiant les entités zoologiques (bien que ce passage ne contienne pas de noms d'animaux explicites, j'ai encodé les termes pertinents pour la zoologie antique) :
+
+
+<div type="book" n="5">
+  <div type="section" n="103">
+    <milestone unit="section" n="5.103"/>
+    <p>Ὑγραίνει καὶ θερμαίνει· θερμαίνει μὲν, διότι κοῖλα καὶ περιέχομενα
+      καὶ οὐ διαπνέεται· Ὑγραίνει δέ, διότι τὰ φερόμενα ἐκ τῆς γῆς
+      ὑγρότερα, οἷς τρέφονται οἱ ἄνθρωποι, τὸ τε πνεῦμα ὃ ἀναπνέομεν,
+      παχύτερον διὰ τὸ ὕδωρ ἀπὸ τῆς ἀκινήσις. Τὰ δὲ κοῖλα καὶ μὴ ἔνυδρα
+      ξηραίνει καὶ θερμαίνει· θερμαίνει μὲν, ὅτι κοῖλα καὶ περιέχεται,
+      ξηραίνει δὲ διὰ τῆς τροφῆς τὴν ξηρότητα, καὶ διότι τὸ πνεῦμα, ὃ
+      ἀναπνέομεν, ξηρὸν ἐὸν ἕλκει ἐκ τῶν σωμάτων τὸ ὑγρὸν ἐς τροφὴν
+      ἑωυτῷ, οὐκ ἔχον πρὸς ὅ τι ἂν ὑγρότερον προσπίπτον τρέφηται.</p>
+    <p>Ὅκον δὲ τοῖσι χωρίοισι ὄρεα προσκέεται πρὸς νότον, ἐν τούτοισι
+      αὐχμώδεις οἱ νότοι καὶ νοσερὸι προσπνέουσιν. Ὅκον δὲ βόραθεν
+      ὄρη πρόσκειται, ἐν τούτοισι οἱ βορέαι ταράσσοισι καὶ νούσους
+      ποιέουσιν.</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="6">
+  <div type="section" n="38">
+    <milestone unit="section" n="38"/>
+    <p><foreign xml:lang="grc">βόραθεν</foreign> <name type="animal" xml:lang="fr">coléoptères</name> <foreign xml:lang="grc">χορίαι</foreign> <placeName>villes</placeName> <foreign xml:lang="grc">τοῖσιν</foreign> <foreign xml:lang="grc">ἄστεσσι</foreign> προσκέεται, ἢ καὶ ἐκ <name type="animal" xml:lang="fr">mer</name> <foreign xml:lang="grc">νᾶσος</foreign> ἀντίκειται, πρὸς τῶν <foreign xml:lang="grc">θερινῶν</foreign> <foreign xml:lang="grc">πνευμάτων</foreign> θερμὸν καὶ <foreign xml:lang="grc">νοσερὸν</foreign> τοῦτο τὸ <foreign xml:lang="grc">χωρίον</foreign>, διότι οὔτε <foreign xml:lang="grc">βορέης</foreign> διαπνέων καθαρὴν τὴν ἐπαγωγὴν τοῦ <foreign xml:lang="grc">πνεύματος</foreign> παρέχει, οὔτε ὑπὸ τῶν <foreign xml:lang="grc">θερινῶν</foreign> <foreign xml:lang="grc">πνευμάτων</foreign> διαψύχεται. Τῶν δὲ <foreign xml:lang="grc">νήσων</foreign> αἱ μὲν ἐγγὺς τῶν <foreign xml:lang="grc">ἀπείρων</foreign> δριμύτεραί εἰσι, αἱ δὲ πόντοι ἀλαιότεραι τὸν <foreign xml:lang="grc">χειμῶνα</foreign>, διότι αἱ <foreign xml:lang="grc">χιόνες</foreign> καὶ πάγοι ἐν μὲν ταῖσιν <foreign xml:lang="grc">ἀπειρόισι</foreign> ἔχοισι στάσιν καὶ τὰ <foreign xml:lang="grc">πνεύματα</foreign> ψυχρὰ πέμποισιν ἐς τὰς ἐγγὺς <foreign xml:lang="grc">νήσους</foreign>, τὰ δὲ <foreign xml:lang="grc">πελάγια</foreign> οὐκ ἔχει στάσιν ἐν <foreign xml:lang="grc">χειμῶνι</foreign>.</p>
+    <p>Περὶ δὲ <foreign xml:lang="grc">πνευμάτων</foreign> ἥν τινα φύσιν ἔχει καὶ δύναμιν ἕκαστα, ὧδε χρὴ διαγινώσκειν. Φύσιν μὲν ἔχει τὰ <foreign xml:lang="grc">πνεύματα</foreign> πάντα ὑγραινεῖν καὶ ψύχειν τὰ τε σώματα τῶν <name type="animal" xml:lang="fr">animaux</name> καὶ τὰ φυτὸν ἐκ τῆς γῆς διὰ τάδε ἀνάγκη</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diaitês oxeôn, section 7/103), avec une attention particulière aux entités nommées zoologiques et aux structures demandées :
+
+
+<div type="book" n="7">
+  <div type="section" n="7">
+    <milestone unit="section" n="7"/>
+    <p>ἐστὶ τὰ πνεύματα ταῦτα πάντα πνέειν ἀπὸ χιόνος καὶ κρυστάλλου καὶ
+      <name type="animal" xml:lang="fr">pangolin</name> ἰσχυρῶν καὶ ποταμῶν καὶ
+      λιμνέων καὶ γῆς ὑγρανθείσῃς καὶ ψυχρανθείσῃς. Καὶ τὰ μὲν ἰσχυρότερα τῶν
+      πνευμάτων ἀπὸ μεζόνων καὶ ἰσχυροτέρων, τὰ δὲ ἀσθενέστερα ἀπὸ
+      <name type="animal" xml:lang="fr">moutons</name> καὶ ἀσθενεστέρων· ὥσπερ
+      γὰρ καὶ τοῖσι ζῴοισι πνεῦμα ἔνεστιν, οὕτω καὶ τοῖσιν ἄλλοισι πᾶσι,
+      τοῖσι μὲν ἔλασσον, τοῖσι δὲ κατὰ μέγεθος.</p>
+    <p>Φύσιν μὲν οὖν ἔχει ψύχειν καὶ ὑγραίνειν τὰ πνεύματα πάντα. Διὰ
+      θέσιν δὲ χωρίων καὶ τόπων, δι᾽ ὧν παραγίνεται τὰ πνεύματα ἐς τὰς
+      χώρας ἑκάστας, διαφορὰ γίνεται ἀλλήλων, ψυχρότερα, θερμότερα,
+      ὑγράτερα, ξηρότερα, νοσερώτερα, ὑγιεινώτερα.</p>
+    <p>Τὴν δὲ αἰτίαν ἑκάστων ὧδε χρὴ γινώσκειν· ὁ μὲν βορέας</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos instructions, en respectant la structure demandée et en priorisant l'encodage des entités nommées Zoomathia :
+
+
+<div type="book" n="8">
+  <div type="section" n="103">
+    <milestone unit="section" n="8.103"/>
+    <p>
+      <foreign xml:lang="grc">ψυχρὸς</foreign> πνεῖν καὶ ὑγρὸς, ὅτι ὁρμᾶται ἀπὸ τοιοούτων χωρίων,
+      <foreign xml:lang="grc">πορεύεται</foreign> τε διὰ τοιοούτων τόπων, οἵτινάς τινας ὁ ἥλιος οὐκ
+      <foreign xml:lang="grc">ἐφέπει</foreign>, οὐδὲ <foreign xml:lang="grc">ἀποξηραίνων</foreign> τὸν ἀέρα
+      <foreign xml:lang="grc">ἐκπίνει</foreign> τὴν <name type="animal" xml:lang="fr">l'icmada</name>, ὥστε
+      παραγίνεται ἐπὶ τὴν <placeName>oïkouménēn</placeName>, τὴν <foreign xml:lang="grc">ἑωθινοῦ</foreign>
+      δύναμιν ἔχων, <name type="animal" xml:lang="fr">l'ours</name> μὴ διὰ τὴν θέσιν τῆς χώρης
+      <foreign xml:lang="grc">διαφθείρεται</foreign>· καὶ τοῖσι μὲν οἰκέοισι ἔγγιστα
+      <foreign xml:lang="grc">ψυχρότατος</foreign>, τοῖσι δὲ προσώτατ' ἥκιστα.
+    </p>
+    <p>
+      Ὁ δὲ νότος πνεῖ μὲν ἀπὸ τῶν ὁμοίων τὴν φύσιν τῷ <name type="animal" xml:lang="fr">bœuf</name>·
+      <foreign xml:lang="grc">ἀπὸ</foreign> γὰρ τοῦ <foreign xml:lang="grc">νοτίου</foreign> πόλου πνέων,
+      <foreign xml:lang="grc">ἀπὸ</foreign> χιόνος πολλῆς καὶ κρυστάλλου καὶ πάγων
+      <foreign xml:lang="grc">ἰσχυρῶς</foreign> ὁρμώμενος, τοῖσι μὲν ἐκείνῳ πλῆσθ' αὐτοῦ οἰκέοισιν
+      <foreign xml:lang="grc">ἀνάγκη</foreign> τοῦτον πνεῖν <foreign xml:lang="grc">ὁμοίως</foreign> περὶ ἡμᾶς ὁ
+      <name type="animal" xml:lang="fr">bœuf</name>.
+    </p>
+    <p>
+      Ἐπὶ δὲ πᾶσαν χώρην οὐκ ἔτι ὅμοιος παραγίνεται· διὰ γὰρ τῶν <name type="animal" xml:lang="fr">serpents</name>
+      τοῦ <foreign xml:lang="grc">ἡλίου</foreign>
+    </p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles du projet Zoomathia :
+
+
+<div type="book" n="9">
+  <div type="section" n="103">
+    <milestone unit="section" n="9.103"/>
+    <p>καὶ ὑπὸ τὴν μεσημβρίην πνέων, ἐκπίπτεται τὸ ὑγρὸν ὑπὸ τοῦ ἡλίου·
+    <foreign xml:lang="grc">ἀποξηραινόμενος</foreign> δὲ ἁραιοῦται· διὸ ἀνάγκη θερμὸν αὐτὸν καὶ ξηρὸν
+    ἐνθάδε παραγίνεσθαι.</p>
+    <p>Ἐν μὲν οὖν τοῖσιν ἐγγίστοις χωρίοισιν ἀνάγκη τοιαύτην δύναμιν
+    <foreign xml:lang="grc">ἀποδιδόναι</foreign> θερμὴν καὶ ξηρὴν, καὶ ποιέει τοῦτο ἐν τῇ
+    <placeName>Λιβύῃ</placeName>· τὰ γὰρ φύομενα <foreign xml:lang="grc">ἐξαναίει</foreign>, καὶ τοὺς
+    <name type="animal" xml:lang="fr">hommes</name> λανθάνει <foreign xml:lang="grc">ἀποξηραινόντων</foreign>·
+    <foreign xml:lang="grc">ἕτερ</foreign> γὰρ οὐκ ἔχων οὔτε ἐκ θαλάσσης ἰκμάδα λαβεῖν οὔτε ἐκ
+    ποταμοῦ, ἐκ τῶν ζώων καὶ ἐκ τῶν φοινικίων ἐκπίπτει τὸ ὑγρὸν.</p>
+    <p>Ὅκoταν δὲ τὸ πέλagos περιρρέῃ, <foreign xml:lang="grc">ἕτερ</foreign> θερμὸς ὢν καὶ ἁραιός,
+    πολλῆς ὑγρασίας <foreign xml:lang="grc">ἐμπίπλησι</foreign> τὴν χώρην <foreign xml:lang="grc">ἐμπίπτων</foreign>·
+    ἀνάγκη δὲ τὸν νότον θερμὸν τε καὶ ὑγρὸν εἶναι, <foreign xml:lang="grc">ὅκoν</foreign> μὴ τῶν
+    χωρίων αἱ θέσιες αἴτιαι εἰσίν.</p>
+    <p>Ὡσαύτως δὲ</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="10">
+  <div type="chapter" n="10">
+    <milestone unit="section" n="10.1"/>
+    <p>καὶ τῶν ἄλλων πνευμάτων αἱ δυνάμεις ἔχουσιν. Κατά δὲ τὰς χώρας
+    <name type="animal" xml:lang="grc">ἑκάστης</name> τὰ πνεύματα ὧδε ἔχει· τὰ μὲν ἐκ θαλάσσης πνεύματα ἐς τὰς
+    χώρας ἐμπίπτοντα ἢ ἀπὸ χιόνος ἢ πάγων ἢ λιμνέων ἢ ποταμῶν ἅπαντα
+    ὑγραινει καὶ ψύχει καὶ τὰ φυτὰ καὶ τὰ ζῷα, καὶ ὑγιείην τοῖσι σώμασι
+    παρέχει ὁκόσα μή ὑπερβάλλει ψυχρότητι· καὶ ταῦτα δὲ βλάπτει, διότι
+    μεγάλας τὰς μεταβολὰς ἐν τοῖσι σώμασι ἐμποιέει τοῦ θερμοῦ καὶ τοῦ
+    ψυχροῦ· ταῦτα δὲ πάσχουσιν ὅσοι ἐν χώροις οἰκέουσιν ἑλώδεσι καὶ
+    θερμοῖσιν ἐγγὺς ποταμῶν ἰσχυρῶν. Τὰ δ᾽ ἄλλα τῶν πνευμάτων ὁκόσα
+    πνέει ἀπὸ τῶν προειρημένων, ὠφελέει, τόν τε ἀέρα καθαρὸν καὶ
+    εὐλικρινέα παρέχοντα καὶ τῷ τῆς ψυχρῆς θερμῷ ἰκμάδα διδόντα. Ὁκόσα δὲ
+    τῶν πνευμάτων κατά γῆν παραγίνεται, ξηρότερα ἀνάγκη εἶναι, ἀπὸ τε
+    </p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate, en respectant la structure demandée et en priorisant les entités nommées zoologiques :
+
+
+<div type="book" n="2">
+   <div type="chapter" n="37">
+      <milestone unit="section" n="37"/>
+      <p>Il faut ainsi juger de la situation et de la nature de chaque contrée : en général on peut dire que la contrée qui est au midi est plus chaude et plus sèche que celle qui est au nord ; elle est en effet plus près du soleil. Dans ces régions, nécessairement et les populations humaines et les productions de la terre sont plus sèches, plus chaudes et plus actives que dans les</p>
+   </div>
+</div>
+<div type="book" n="12">
+  <div type="chapter" n="103">
+    <p>régions opposées; exemple, la nation <placeName>Libyque</placeName> à l'égard de celle du <placeName>Pont</placeName>, et celles qui se rapprochent de l'une et de l'autre.</p>
+    <p>Considérées en elles-mêmes, les contrées se comportent ainsi : les lieux hauts, arides et tournés au midi sont plus secs que les plaines situées semblablement, à cause qu'ils ont moins d'humidité; les hauts lieux ne retenant pas l'eau de pluie, et les plaines la retenant.</p>
+    <p>Les contrées lacustres et marécageuses humectent et échauffent; elles échauffent, vu que, étant creuses et dominées, elles ne sont pas balancées par l'air; elles humectent parce que les productions de la terre dont se nourrissent les hommes sont plus humides et que l'air respiré est plus épais à cause de l'eau qui n'a pas de mouvement.</p>
+    <p>Les contrées creuses et non humides dessèchent et échauffent; elles échauffent, parce qu'elles sont creuses et dominées; elles dessèchent, parce que les aliments qu'elles fournissent sont secs et que l'air respiré, étant sec, attire hors des corps l'humide pour sa nourriture à lui, n'ayant rien de plus humide sur quoi il puisse se jeter et se nourrir.</p>
+    <p>Là où la contrée est protégée par des montagnes au midi, là les vents du midi soufflent desséchants et insalubres.</p>
+    <p>Là où la contrée est protégée par des montagnes au nord, là les vents d'<foreign xml:lang="la">aquilon</foreign> causent du trouble</p>
+  </div>
+</div>
+<div type="book" n="13">
+  <div type="section" n="38">
+    <p>et des maladies. Là où les villes ont des localités creuses au nord, et encore là où vis-à-vis une île est située au nord en mer, là il y a chaleur et insalubrité avec les vents d'été, parce que ni l'<name type="animal" xml:lang="fr">aquilon</name>, balayant ces lieux, n'y apporté un flot d'air pur, ni les vents d'été ne les rafraîchissent. Parmi les îles, celles qui sont près de la terre ferme ont des hivers plus rudes, celles qui sont au large les ont plus doux ; en effet, sur la terre ferme, les neiges et les glaces sont permanentes et envoient des vents froids aux îles voisines ; mais en haute mer elles n'ont pas de permanence pendant l'hiver.</p>
+    <milestone unit="section" n="38"/>
+    <p>(Des vents.) Quant aux vents, on jugera ainsi de leur nature et de leurs propriétés. Les vents ont tous la vertu d'humecter et de rafraîchir et les corps des <name type="animal" xml:lang="fr">animaux</name> et les productions de la terre. Voici pourquoi : nécessairement tous ces vents proviennent de la neige, de la glace, des fortes gelées, des fleuves, des étangs, et de la terre humectée et refroidie. Les vents les plus forts sont produits par les conditions de ce genre les plus grandes et les plus fortes ; les vents les plus faibles, par des conditions moindres et plus faibles ; car, comme il y a du souffle en tous les <name type="animal" xml:lang="fr">animaux</name>, de même il y en a dans tout le reste, plus ou moins, suivant la grandeur. Ainsi donc tous les vents ont la</p>
+  </div>
+</div>
+<div type="book" n="14">
+   <div type="section" n="103">
+      <milestone unit="section" n="14.103"/>
+      <p>propriété de refroidir et d'humecter. Mais par la situation des
+         <name type="placeName">régions</name> et des <name type="placeName">lieux</name> qu'ils traversent pour arriver en chaque point,
+         les vents deviennent différents les uns des autres, plus froids,
+         plus chauds, plus humides, plus secs, plus malsains, plus sains. Il
+         faut juger ainsi des causes qui déterminent chacun de ces vents :
+         l'<name type="animal">aquilon</name> souffle froid et humide parce qu'il part de
+         <name type="placeName">lieux</name> froids et humides et traverse des <name type="placeName">lieux</name> froids et
+         humides que le soleil ne visite pas et dont il ne dessèche pas l'air,
+         n'absorbe pas l'humidité ; de la sorte il arrive à la terre habitée
+         avec sa propriété native, là où cette propriété n'est pas altérée par
+         le site local ; il est le plus froid pour les habitants les plus
+         voisins, le moins froid pour les plus éloignés.</p>
+      <p>Le vent du raidi souffle de points dont la nature est semblable à celle
+         de l'<name type="animal">aquilon</name> ; car, partant du pôle méridional, et venant
+         d'une neige abondante, de glaces et de fortes gelées, il est
+         nécessairement, pour ceux qui habitent là, près de lui, tel qu'est
+         l'<name type="animal">aquilon</name> chez nous. Mais il ne garde pas ce caractère pour
+         tous les pays ; en effet, soufflant par la route du soleil et sous
+         le midi, il a son humidité absorbée par l'astre ; or, desséché, il se
+         raréfie ; aussi, nécessairement, il arrive ici chaud et sec. C'est
+         donc cette qualité chaude et sèche</p>
+   </div>
+</div>
+<div type="book" n="15">
+  <div type="section" n="103">
+    <p>qu'il manifeste dans les pays les plus voisins, et c'est ce qu'il fait dans la <placeName>Libye</placeName>. Il y dessèche les productions de la terre, et il y exerce sur les hommes, à leur insu, la même action, n'ayant à prendre l'humide ni à une mer ni à un fleuve, il le prend aux <name type="animal" xml:lang="fr">animaux</name> et aux productions. Mais quand, étant chaud et raréfié, il a traversé la mer, il emplit d'humidité la région sur laquelle il arrive; et nécessairement le vent du midi est chaud et humide là où le site local n'y met pas obstacle. Les propriétés des autres vents dépendent de conditions semblables.</p>
+    <p>Quant à chaque contrée, voici comment les vents se comportent : les vents venant ou delà mer ou de neige, ou de glaces, ou d'étangs, ou de <name type="animal" xml:lang="fr">fleuves</name> sont tous humectants et refroidissants, soit pour les <name type="plant" xml:lang="fr">végétaux</name>, soit pour les <name type="animal" xml:lang="fr">animaux</name>, et sont salubres, du moins ceux dont le froid n'est pas excessif; mais ceux-là nuisent parce qu'ils causent, dans les corps, de grands changements du chaud et du froid; et c'est ce qui arrive dans les lieux marécageux et chauds près de <name type="animal" xml:lang="fr">fleuves</name> considérables.</p>
+    <p>Mais les autres vents qui soufflent des points susdits sont utiles, rendant l'air pur et clair et donnant de l'humide au chaud de l'âme. Les vents de terre sont nécessairement plus secs, étant desséchés et par le soleil et par la terre; ils n'ont pas d'où tirer de l'aliment,</p>
+  </div>
+</div>
+<div type="chapter" n="16">
+   <milestone unit="section" n="16.103"/>
+   <p>enlèvent l'humide aux <name type="animal" xml:lang="fr">êtres vivants</name>, et nuisent à tous, végétaux et
+      <name type="animal" xml:lang="fr">animaux</name>. Les <name type="wind" xml:lang="fr">vents</name> qui passent par dessus des
+      <name type="placeName" xml:lang="fr">montagnes</name> pour arriver dans les
+      <name type="placeName" xml:lang="fr">villes</name>, non-seulement sont desséchants, mais encore
+      troublent l'air respiré et le <name type="animal" xml:lang="fr">corps humain</name> de manière à produire des
+      maladies. Tel est le jugement qu'il faut porter sur la nature et les
+      propriétés de chaque <name type="wind" xml:lang="fr">vent</name> ; quant aux moyens de se préserver de
+      chacune de leurs influences, je l'expliquerai plus loin dans ce
+      discours.</p>
+</div>
+Voici l'encodage TEI P5 strict du texte fourni, conforme aux règles du projet Zoomathia :
+
+
+<div type="book" n="17">
+  <milestone unit="section" n="39"/>
+  <p>Σιτίων δὲ καὶ πομάτων δύναμιν ἑκάστων καὶ τὴν κατὰ φύσιν καὶ τὴν διὰ τέχνης ὧδε χρὴ γινώσκειν.</p>
+  <p>Ὁκόσοι μὲν οὖν κατὰ παντὸς ἐπεχειρήσανтες εἰπεῖν περὶ τῶν γλυκέων ἢ λιπαρῶν ἢ ἁλικῶν ἢ περὶ ἄλλου τινὸς τῶν τοιούτων τῆς δυνάμεως, οὐκ ὀρθῶς γινώσκουσιν· οὐ γὰρ τὴν αὐτὴν δύναμιν ἔχουσιν οὔτε τὰ γλυκέα ἀλλήλοισιν οὔτε τὰ λιπαρὰ οὔτε τῶν ἄλλων τῶν τοιούτων οὐδέν· πολλὰ γὰρ τῶν γλυκέων διαχωρέει καὶ ἵστησι καὶ ξηραίνει καὶ ὑγραίνει.</p>
+  <p>Ὡσαύτως δὲ καὶ τῶν ἄλλων ἁπάντων· ἔστι δὲ ὅσα στύφει καὶ διαχωρέεται καὶ οὐρέεται, τὰ δὲ οὐδέτερα τούτων.</p>
+  <p>Ὡσαύτως δὲ καὶ τῶν θερμαντικῶν καὶ τῶν ἄλλων ἁπάντων, ἄλλην ἄλλα δύναμιν ἔχει.</p>
+  <p>Περὶ μὲν οὖν ἁπάντων οὐχ οἷόν τε δηλωθῆναι ὁκόθεν τινὰ ἐστί· καθ᾽ ἕκαστα δὲ ἥν τινα δύναμιν ἔχει διδάξω.</p>
+  <milestone unit="section" n="40"/>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate (Peri diaitês oxeôn, section 18/103) :
+
+
+<div type="book" n="18">
+  <div type="section" n="103">
+    <milestone unit="section" n="18.103"/>
+    <p><foreign xml:lang="grc">Κρῖθαι</foreign> <name type="animal" xml:lang="fr">poulet</name> φύσει μὲν ψυχρὸν καὶ ὑγρὸν καὶ ξηραινει·
+    ἔνι δὲ καὶ καθαρτικὸν τι ἀπὸ τοῦ χνοῦ τοῦ ἀχύρου· τέκμ
+    <foreign xml:lang="grc">ηριον</foreign> δὲ, ἢν μὲν θέλῃς κρῖθας ἀπτισθέντας ἐψῆσαι, καθαίρει ὁ χνὸς ἰσχυρῶς· εἰ δὲ ἐπιτισμένο
+    ψύχει μᾶλλον καὶ ἵστησιν· ὀκόταν δὲ πυρώθωσι, τὸ μὲν ὑγρὸν καὶ καθαρτικὸν ὑπὸ τοῦ πυρὸς οἴχεται, τὸ δὲ ψυχρὸν καὶ ξηρὸν
+    καταλείπεται. Ὄκνοσά τε δὲ δεῖ ψῦξαι καὶ ξηρῆναι, ἅλφιτα διαπρήσσει ὧδε χρεόμενος μάζῃ παντοδαπῇ, δύναμιν δὲ ἔχει ἡ
+    <foreign xml:lang="grc">μάζα</foreign> τοιήνδε. Τὰ συγκομισθέντα ἅλευρα τροφὴν μὲν ἔχει ἐλάσσω, διαχωρέει δὲ μᾶλλον· τὰ δὲ καθαρὰ
+    τροφιμώτερα, ἧσσον δὲ διαχωρέει. Μάζα προφερθεῖσα, ῥαντὴ, ἄτριπτος, κοῦφη, καὶ διαχωρέει, καὶ ψύχει· ψύχει μὲν ὅτι ψυχρῷ ὕδατι
+    ὑγρὴ ἐγένετο, διαχωρέει δὲ ὅτι ταχέως πέσσεται, κοῦφη δὲ ὅτι πολὺ</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate, en respectant la structure demandée et en identifiant les entités zoologiques et autres :
+
+
+<div type="book" n="19">
+  <div type="section" n="1">
+    <p>τῆς τροφῆς μετὰ τοῦ πνεύματος ἐξω ἀποκρίνεται. Στενωπότεραι γὰρ αἱ διέξοδοι τῇ τροφῇ ἐοῦσαι ἄλλην ἐπιοῦσαν οὐκ ἐπιδέχονται· καὶ τὸ μὲν ξὺν τῷ πνεύματι λεπτυνόμενον ἀποκρίνεται ἔξω, τὸ δὲ αὐτοῦ ἐμμένον φῶσαν ἐμποιέει· καὶ τὸ μὲν ἄνω ἐρέγγανεται, τὸ δὲ κάτω ὑποχωρεῖ πολὺ οὖν τῆς τροφῆς ἀπὸ τοῦ σώματος ἀποπνέεται.</p>
+    <p>Ἢν δὲ θέλῃς τὴν μάζαν εὐθέως φέρουσας διδόναι, ἡ τοιαύτη ξηραντική ἐστὶ γὰρ τὸ ἄλφιτον ξηρὸν ἐὸν καὶ ὑπὸ τοῦ ὕδατος διάβροχον οὕτω γεγενημένον, ἐσπέσῃ εἰς τὴν κοιλίην, ἕλκει ἐξ αὐτῆς τὸ ὑγρὸν θερμὸν ἐόν· πέφυκε γὰρ τὸ μὲν θερμὸν ψυχρὸν ἕλκειν, τὸ δὲ ψυχρὸν θερμόν· καταναλισκόμενοι δὲ τοῦ ὑγροῦ ἐκ τῆς κοιλίης ἀνάγκη ξηραίνεσθαι, τοῦ δὲ ὕδατος τὸ ξὺν τῇ μαζῇ ἐσελθόντος ψύχει ψύχεσθαι ἐπαγόμενον.</p>
+  </div>
+</div>
+<div type="book" n="20">
+  <div type="section" n="41">
+    <p>
+      <foreign xml:lang="grc">ὃν</foreign> δὲ χρῆναι ξηρᾶναι ἢ ψῦξαι ἢ διὰ τρίψεως ἐχόμενον ἢ ἄλλῃ τινὶ θερμασίῃ, ἡ
+      τοιαύτη μάξα διαπρήσσεται. Ἡ δὲ ξηρὴ τριπτή ξηραίνει μὲν οὐχ ὁμοίως
+      διὰ τὸ πεπιλήσθαι ἰσχυρῶς, τροφὴν δὲ τῷ σώματι πλείστην δίδωσιν, ὥστε
+      δὴ ἡσυχῇ τεκούμεναι δέχονται τὴν τροφὴν αἱ διόδοι διαχωρέῖ μὲν οὖν
+      βραδέως, φῦσαν δὲ οὐκ ἐμποιοῦσι οὐδὲ ἐρεύγεται. Ἡ δὲ προφερηθεῖσα
+      τριπτή τρέφει μὲν ἧσσον, διαχωρέει δὲ, καὶ ἐμποιοῦσι μᾶλλον φῦσαν.
+    </p>
+    <milestone unit="section" n="41"/>
+    <p>
+      <name type="animal" xml:lang="fr">cochon</name> δὲ σὺν ἀλφίτοισι μόνον ἐφ᾽ ὕδατι μὲν ψύχει καὶ τρέφει, ἐπὶ
+      οἴνῳ δὲ θερμαίνει καὶ τρέφει καὶ ἵστησιν· ἐπὶ μέλιτι δὲ θερμαίνει
+      μὲν ἧσσον καὶ τρέφει, διαχωρέει δὲ μᾶλλον, ἢν μὴ ἄκρητον ᾖ τὸ μέλι
+      ἢν δὲ μὴ, οὐ διαχωρέει, ἀλλ᾽ ἵστησιν· ἐπὶ δὲ γάλακτι τρόφιμοι μὲν
+    </p>
+  </div>
+</div>
+<div type="book" n="21">
+  <div type="section" n="41">
+    <p>
+      <foreign xml:lang="grc">πάντας</foreign>, πλὴν ἀλλὰ τὸ μὲν ὄϊον ἵστησι, τὸ δὲ αἴγειον μᾶλλον
+      διαχωρέει, τὸ δὲ βοειον ἧσσον, τὸ δὲ ἴππειον καὶ τὸ ὄνειον μᾶλλον
+      διαχωρέει.
+    </p>
+    <milestone unit="section" n="41"/>
+    <p>
+      <foreign xml:lang="grc">Πρὸς</foreign> ἰσχυρότεροι κριθῶν καὶ τροφιμότεροι, διαχωρέουσιν δὲ ἧσσον καὶ
+      αὐτοὶ καὶ ὁ χυλός. Ἄρτος δὲ ὁ μὲν συγκομιστὸς ξηραίνει καὶ
+      διαχωρέει, ὁ δὲ καθαρὸς τρέφει μὲν μᾶλλον, διαχωρέει δὲ ἧσσον. Αὐτῶν
+      δὲ τῶν ἄρτων ὁ μὲν ζυμίτῃς κοῦφος καὶ διαχωρέει καὶ κοῦφος μὲν
+      ἐστίν, ὅτι ἀπὸ τῆς ζύμης τοῦ ὀξέος τὸ ὑγρὸν προανάλωται, ὅπερ ἐστὶν
+      ἡ τροφή· διαχωρέει δὲ ὅτι ταχέως πέσσεται. Ὁ δὲ ἄζυμος διαχωρέει μὲν
+      ἧσσον, τρέφει δὲ μᾶλλον.
+    </p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diaitês oxeôn, section 42) :
+
+
+<div type="section" n="42">
+  <milestone unit="section" n="42"/>
+  <p>
+    <foreign xml:lang="grc">Ὁ</foreign> δὲ τῷ χολοτέρῳ πεφυρημένον κοπρότερον, καὶ τρέφει ἱκανῶς, καὶ
+    διαχωρέει· τρέφει μὲν ὅτι καθαρὸς, κοῦφος δὲ ἐστιν ὅτι τῷ κοπροτέρῳ
+    πεφύρηται καὶ ἐζύμωται ὑπὸ τούτου καὶ πεπύρωται· διαχωρέει δὲ ὅτι τῷ
+    γλυκέῖ καὶ διαχωρητικῷ τοῦ πυροῦ συμμέμικται. Αὐτῶν δὲ τῶν ἄρτων οἱ
+    μεγιστοι τροφιμώτατοι, διότι ἥκιστα ἐκκαίονται ὑπὸ τοῦ πυρὸς τὸ
+    ὑγρόν· καὶ οἱ ἰπνῖται ἄρτοι τροφιμώτεροι τῶν ἐσχαριτῶν καὶ ὀβελιέων,
+    διότι ἧσσον ἐκκαίονται ὑπὸ τοῦ πυρός. Οἱ δὲ κλιβανῖται καὶ οἱ
+    ἐγκρύφιοι ξηρότατοι, οἱ μὲν διὰ τὴν σποδὸν, οἱ δὲ διὰ τὸ ὄστρακον
+    ἐκπινόμενοι τὸ ὑγρόν. Οἱ δὲ σιμιδαλῖται ἰσχυρότατοι πάντων τούτων,
+    ἔτι δὲ μᾶλλον καὶ οἱ ἐκ τοῦ χόνδρου καὶ τροφιμοὶ σφόδρα, πλὴν οὐ
+  </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diaitês oxeôn), en respectant les entités nommées Zoomathia et la structure demandée :
+
+
+<div type="book" n="23">
+  <div type="section" n="43">
+    <milestone unit="section" n="43"/>
+    <p><foreign xml:lang="grc">διαχωρέοισιν</foreign> ὁμοίως. ἄλητον καθαρὸν πιόμενον ἐφ᾽ ὕδατι ψύχει, καὶ
+    <name type="animal" xml:lang="fr">πνεύμα</name> σταυτὸς ἐπὶ πύρᾳ. Πιτύρων χυμὸς ἐφθὸς κοῦφος καὶ διαχωρεῖ. Τὰ
+    δὲ ἐν γάλακτι ἐψόμενα ἄλητα διαχωρεῖ μᾶλλον ἢ τὰ ἐν ὕδατι, διὰ
+    τοὺς ὀξὺς γοάς, καὶ μάλιστα ἐν τοῖσι διαχωρητικοῖσι. Ὄκνοσα δὲ ξὺν
+    <name type="plant" xml:lang="fr">μέλιτι</name> καὶ <name type="plant" xml:lang="fr">ἐλαίῳ</name> ἔψεται ἢ ὀπτάται ἐξ ἀλήτων, πάντα
+    <foreign xml:lang="grc">κανσώδεα</foreign> καὶ <foreign xml:lang="grc">ἐρεβινθώδεα</foreign>· <foreign xml:lang="grc">ἐρεβινθώδεα</foreign> μὲν ὅτι τρόφιμα
+    ὄντα οὐ διαχωρητικά ἐστι, <foreign xml:lang="grc">κανσώδεα</foreign> δὲ διότι λιπαρά ἐόντα καὶ γλυκέα καὶ
+    ἀξύμφορα ἀλλήλοισιν, οὐ τῆς αὐτῆς καθέξεως δεόμενα, ἐν τῷ αὐτῷ ἐστί.
+    <name type="plant" xml:lang="fr">Σεμιδαλις</name> καὶ <name type="plant" xml:lang="fr">χόνδρος</name> ἐφθά,
+    ἰσχυρὰ καὶ τρόφιμα, οὐ μέντοι διαχωρεῖ.</p>
+    <p><name type="plant" xml:lang="fr">Τύφη</name>, ζεῖα κομφότερα πυρῶν, καὶ τὰ ἐξ αὐτῶν γενόμενα ὁμοίως τοῖς ἐκ
+    τῶν πυρῶν, καὶ διαχωρητικά μᾶλλον. <name type="animal" xml:lang="fr">βρόμος</name> ὑγραινεῖ καὶ ψύχει</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate, en respectant toutes les règles et priorités :
+
+
+<div type="chapter" n="24">
+   <milestone unit="section" n="39"/>
+   <p>ἐσθιομένων καὶ ῥόφημα γενόμενος.</p>
+
+   <p>(Des propriétés des aliments et des boissons. On ne peut traiter en général des substances douces, acres, acides, etc.; il faut les prendre une à une.) Les qualités, tant naturelles qu'artificielles, de <foreign xml:lang="grc">χορε</foreign> aliment et de chaque boisson seront appréciées ainsi : ceux qui ont essayé de traiter en général des propriétés soit des substances douces, soit des grasses, soit des salées, soit de toute autre de ce genre, n'ont pas une vue juste ; eh effet, les mêmes propriétés n'appartiennent ni à toutes les substances douces, ni à toutes les substances grasses, ni à aucune autre semblable ; et il est des substances douces qui relâchent, qui resserrent, qui dessèchent, qui humectent. La même remarque s'applique à toutes les classes ; dans chacune il est des substances astringentes, minoratives, diurétiques, ou n'ayant ni l'une ni l'autre de ces vertus. Il en est de même des substances échauffantes et du reste ; les unes ont une propriété, les autres une autre. Il n'est donc pas possible de dire en général ce qu'il en est ; et je les prendrai une à une pour en enseigner la propriété.</p>
+
+   <milestone unit="section" n="40"/>
+   <p>(De l'orge, et de la polenta ou pâte faite avec le gruau d'orge.) L'<name type="plant" xml:lang="fr">orge</name> est naturellement froide, humide, et <foreign xml:lang="grc">κλη</foreign> dessèche ; elle a aussi quelque chose de purgatif</p>
+</div>
+<div type="book" n="25">
+  <div type="section" n="103">
+    <p>qu'elle tient du suc de sa balle; voulez-vous vous en assurer? faites bouillir de l'<name type="plant" xml:lang="fr">orge</name> non mondé, et vous verrez que cette eau est fortement relâchante. Mais l'<name type="plant" xml:lang="fr">orge</name> mondé est plutôt rafraîchissant et resserrant. Dans l'<name type="plant" xml:lang="fr">orge</name> passée au feu, la partie humide et purgative a été enlevée par l'action de la chaleur, et il reste la partie froide et sèche. Dans tous les cas où il faut refroidir et dessécher, le gruau d'<name type="plant" xml:lang="fr">orge</name> le procure à celui qui use ainsi de la <foreign xml:lang="la">polenta</foreign> préparée d'une façon quelconque ; telle est, en effet, la propriété de la <foreign xml:lang="la">polenta</foreign>. Les farines non blutées sont moins nourrissantes et donnent plus d'évacuations alvines; blutées, elles sont plus nourrissantes et donnent moins d'évacuations. La <foreign xml:lang="la">polenta</foreign>, pétrie d'avance, humectée, non broyée, est légère, relâchante et rafraîchissante ; rafraîchissante, parce que c'est l'eau froide qui l'a humectée ; relâchante, parce qu'elle se digère vile ; légère, parce qu'une bonne partie de l'aliment est expulsée au dehors avec l'air. Les voies, étant trop étroites pour l'aliment, n'en acceptent point une nouvelle ingestion ; dès lors une part atténuée avec l'air est expulsée au dehors, l'autre part demeure et produit des flatuosités ; ces flatuosités sortent les unes par le bas, les autres par le haut ; de la sorte une bonne partie de l'aliment est exhalée hors du corps. <foreign xml:lang="la">polenta</foreign>, donnée aussitôt</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate (Peri diaitês oxeôn, section 26/103) :
+
+
+<div type="section" n="26">
+   <p>qu'elle est pétrie, est desséchante ; car le <name type="plant" xml:lang="fr">gruau</name> d'<name type="plant" xml:lang="fr">orge</name>, étant sec et étant ainsi humecté par l'eau, est introduit dans le ventre et en tire, grâce à sa chaleur, l'humide ; en effet, naturellement, le chaud attire le froid, et le froid attire le chaud. Le liquide qui est dans le ventre se consume et se dessèche nécessairement, et celui qui <foreign xml:lang="grc">γ</foreign> est appelé se refroidit par le froid de l'eau introduite avec la <foreign xml:lang="grc">πολέντᾳ</foreign>. Ainsi, dans tous les cas où il faut sécher ou refroidir soit qu'il s'agisse d'une diarrhée ou de tout autre échauffement, la <foreign xml:lang="grc">πολέντᾳ</foreign> ainsi préparée y est bonne.</p>
+   <p>La <foreign xml:lang="grc">πολέντᾳ</foreign> sèche, broyée, ne dessèche pas semblablement parce qu'elle est fortement condensée ; mais elle donne le plus de nourriture au corps, vu que, se fondant lentement, elle fournit aux voies un aliment qu'elles reçoivent. Elle donne lentement les selles, mais elle ne cause ni flatuosités ni rapports. La <foreign xml:lang="grc">πολέντᾳ</foreign> pétrie d'avance et broyée nourrit moins, donne des selles et produit plus de flatuosités.</p>
+   <milestone unit="section" n="41"/>
+   <p>(Du <foreign xml:lang="grc">κυκεών</foreign>, voy. note 9. Du <name type="animal" xml:lang="fr">lait</name>.) Le <foreign xml:lang="grc">κυκεών</foreign> avec le <name type="plant" xml:lang="fr">gruau</name> d'<name type="plant" xml:lang="fr">orge</name>, rafraîchit et nourrit préparé à l'eau seule ; préparé au <name type="plant" xml:lang="fr">vin</name>, échauffe, nourrit et resserre ; préparé au <name type="plant" xml:lang="fr">miel</name>, échauffe et nourrit moins, mais donne plus de selles, si le <name type="plant" xml:lang="fr">miel</name> est coupé ; s'il ne l'est pas, loin de donner des selles, il resserre.</p>
+   <p>Avec le <name type="animal" xml:lang="fr">lait</name>, tous les <foreign xml:lang="grc">κυκεών</foreign> sont nourrissants ;</p>
+</div>
+<div type="chapter" n="27">
+   <milestone unit="section" n="42"/>
+   <p>seulement le lait de <name type="animal" xml:lang="fr">brebis</name> resserre, le lait de <name type="animal" xml:lang="fr">chèvre</name> relâche, le lait de <name type="animal" xml:lang="fr">vache</name> moins, le lait de <name type="animal" xml:lang="fr">cavale</name> et celui d'<name type="animal" xml:lang="fr">ânesse</name> davantage,</p>
+   <p>(Du <name type="plant" xml:lang="fr">blé</name>, du pain, de la farine.) Le <name type="plant" xml:lang="fr">blé</name> a plus de force et est plus nutritif que l'<name type="plant" xml:lang="fr">orge</name>, mais il évacue moins, soit le grain même soit la décoction. Le pain bis dessèche et évacue, le pain blanc nourrit davantage, évacue moins. Quant aux pains eux-mêmes, le pain fermenté est léger et évacue, léger parce que l'acide du ferment a consumé préalablement l'humide, qui est l'aliment; évacuant, parce qu'il se digère vite. Le pain azyme évacue moins, nourrit davantage. Le pain pétri avec la décoction de <name type="plant" xml:lang="fr">blé</name> est plus léger, nourrit assez et évacue ; il nourrit parce, qu'il est fait de farine pure ; il est léger parce qu'il a été pétri avec la substance la plus légère, fermenté avec la même et passé au feu ; il évacue parce qu'il est mélangé avec la partie douce et évacuante du <name type="plant" xml:lang="fr">blé</name>. Les plus gros pains sont les plus nourrissants, parce que ce sont ceux dont le feu enlève le moins d'humide. Les pains de four nourrissent plus que les pains cuits sur l'âtre et à la broche, parce qu'ils ont senti moins le feu. Les pains de tourtière et les pains cuits sous la cendre sont les plus secs; ceux-ci, à cause de la cendre, ceux-là, à cause de la tourtière, perdent l'humidité. Les pains de fleur de farine sont les plus forts</p>
+</div>
+<div type="book" n="28">
+  <div type="section" n="43">
+    <p>de tous, et encore plus ceux de <name type="plant" xml:lang="fr">gruau</name>, qui sont très-nourrissants, mais qui n'évacuent pas autant. La <name type="plant" xml:lang="fr">farine blutée</name>, bue dans de l'eau, rafraîchit ainsi que la <foreign xml:lang="la">lavura</foreign> de <name type="plant" xml:lang="fr">pâte</name> qu'on met sur le feu. Le suc de <name type="plant" xml:lang="fr">son</name> est, étant cuit, léger et évacuant. La <name type="plant" xml:lang="fr">farine</name> cuite dans le <foreign xml:lang="la">lac</foreign> évacue plus que la <name type="plant" xml:lang="fr">farine</name> cuite à l'eau, à cause du petit lait, surtout si on la donne avec des substances évacuantes. Tout mets de <name type="plant" xml:lang="fr">farine</name>, bouilli ou grillé avec du <foreign xml:lang="la">mel</foreign> et de l'<foreign xml:lang="la">oleum</foreign>, cause de la chaleur et des flatuosités ; des flatuosités, parce que, étant nourrissant, il n'est pas évacuant ; de la chaleur, parce que les ingrédients, étant gras, doux, discordants entre eux et ne réclamant pas la même cuisson, sont dans le même lieu. La <name type="plant" xml:lang="fr">fleur de farine</name> et le <name type="plant" xml:lang="fr">gruau de blé</name>, cuits, sont forts et nourrissants, cependant ils n'évacuent pas.</p>
+    <milestone unit="section" n="43"/>
+    <p>(Différentes céréales.) La <name type="plant" xml:lang="fr">tiphé</name> (<foreign xml:lang="la">triticum monococcum</foreign>, L.) et l'<name type="plant" xml:lang="fr">épeautre</name> (<foreign xml:lang="la">triticum spelta</foreign>, L.) sont plus légères que le <name type="plant" xml:lang="fr">blé</name> ; et les préparations qu'on en fait plus légères et plus évacuantes que les préparations correspondantes du <name type="plant" xml:lang="fr">blé</name>. L'<name type="plant" xml:lang="fr">avoine</name> humecte et rafraîchit, en grain et en décoction.</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles Zoomathia :
+
+
+<div type="chapter" n="29">
+   <milestone unit="section" n="44"/>
+   <p>Tà πρόσφατα ἄλφιτα καὶ ἄλητα ξηρότερα τῶν παλαιῶν, ὅτι ἔγγιον τοῦ
+      <foreign xml:lang="grc">πυρὸς</foreign> καὶ τῆς ἐργασίης εἰσὶ παλαιούμενα δὲ,
+      τὸ μὲν θερμὸν ἐκπνέει, τὸ δὲ ψυχρὸν ἐπάγεται. ὄρτοι θερμοὶ μὲν ξηραίνουσι,
+      ψυχροὶ δὲ ὕσσοον, ἔωλοι δὲ τι ὕσσοον, ἰσχνασίην δὲ τινα παρέχουσι.</p>
+   <milestone unit="section" n="45"/>
+   <p>Κύαμοι, τρόφιμον τι καὶ στατικὸν καὶ φῶσάδες· φῶσάδες μὲν ὅτι οὐ
+      δέχονται οἱ πόροι τὴν τροφὴν ἁλέα ἐπιοῦσαν· στάσιμον δὲ ὅτι ὀλίγην ἔχει τὴν
+      ὑπόστασιν τῆς τροφῆς. Οἱ πιccοί φῶσσοισι μὲν ὕσσοον, διαχωρέουσι δὲ μᾶλλον·
+      ἕχροὶ δὲ καὶ δόλιχοι διαχωρητικώτεροι τούτων, ὕσσοον δὲ φῶσσοδες, τρόφιμοι
+      δὲ. Ἐρέβινθοι λευκοὶ διαχωρέουσι καὶ οὐρέονται καὶ τρέφοισι· τρέφει μὲν τὸ
+      σαρκῶδες· οὐρέεται δὲ τὸ γλυκύ· διαχωρέεται δὲ τὸ ἁλμυρόν. Κέγχροι χόνδροι
+      καὶ</p>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles Zoomathia :
+
+
+<div type="book" n="30">
+  <div type="section" n="103">
+    <p><foreign xml:lang="grc">κυνόβια</foreign>, ξηρὸν καὶ στάσιμον, μετὰ <name type="animal" xml:lang="fr">chien</name> ἰσχυρὸν τοῖσι πονοῦσι·</p>
+    <p>αὐτοὶ δὲ οἱ κέγχροι ἑφθοὶ τρόφιμοι, οὐ μέντοι διαχωρέουσι. Φακοὶ</p>
+    <p>κανσώδεις καὶ τραχυτικοί, καὶ οὔτε διαχωρέουσι οὔτε ἵστασιν.</p>
+    <p>Ὄροβοι, στάσιμον καὶ ἰσχυρὸν καὶ παχύνει καὶ πληροῖ καὶ εὔχρουν</p>
+    <p>ποιέει τὸν ἄνθρωπον. Λίνον καρπὸς τρόφιμον καὶ στάσιμον·</p>
+    <p>ἔχει δὲ τι καὶ ψυκτικόν. Ὅρμινόν κάρπoς παραπλήσια τῷ λίνῳ</p>
+    <p>διαπρήσσειται. Θέρμοι φύσει μὲν ἰσχυρὸν καὶ θερμόν, διὰ δὲ</p>
+    <p>τὴν ἐργασίαν κοῦφον καὶ ψυκτικώτερόν ἐστι καὶ διαχωρέει.</p>
+    <p>Ἑρύσιμον ὑγραινεῖ καὶ διαχωρέει. Σίκυον σπέρμα διορρέει</p>
+    <p>μᾶλλον ἢ διαχωρέει. Σῆσαμoν ἅπαντα διαχωρέεται, πληροῖ δὲ</p>
+    <p>καὶ παχύνει· διαχωρέει μὲν διὰ τὸ ἄχυρον τὸ ἔξω, πληροῖ δὲ</p>
+    <p>καὶ παχύνει διὰ τὴν σάρκα· πεπλημένα δὲ διαχωρέει</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, avec une traduction littérale des termes grecs et l'identification des entités zoologiques :
+
+
+<div type="chapter" n="31">
+   <milestone unit="section" n="31.103"/>
+   <p>μὲν, <name type="animal" xml:lang="fr">âne</name> δὲ, παχύνει δὲ καὶ πληροῖ μᾶλλον, αὐαίνει δὲ καὶ καίει
+   διὰ τὸ λιπαρὸν καὶ πῖον. <name type="animal" xml:lang="fr">Chien</name> δὲ διαχωρεύει. <name type="animal" xml:lang="fr">Chat</name> στάσιμον,
+   μᾶλλον δὲ ἡ μέλαινα <name type="animal" xml:lang="fr">chat</name>, ἀτὰρ καὶ ἡ λευκή· τρόφιμον δὲ καὶ ἰσχυρὸν.</p>
+   <p>Τοίνυν δὲ ἁπάντων οἱ χυλοὶ διαχωρητικώτεροι τῆς σαρκός· δεῖ οὖν τῇ ἐργασίῃ φυλάσσειν,
+   ὁκόσα μὲν βούλει ξηραίνειν, τοὺς χυλοὺς ἀφαιρέοντα τῇ σαρκὶ χρᾶσθαι· ὁκόσα δὲ διαχωρεύειν,
+   τῷ μὲν χυλῷ πλέονι, τῇ δὲ σαρκὶ ἐλάσσονι καὶ εὐχυλότερῳ.</p>
+   <milestone unit="section" n="31.103.46"/>
+   <p>Περὶ δὲ τῶν ζῴων τῶν ἐσθιομένων ὧδε χρὴ γινώσκειν. Βόεια κρέα ἰσχυρὰ καὶ στάσιμα
+   καὶ δύσπεπτα ταῖσι κοιλίῃσι, διότι παχύαιμον καὶ πολυαίμον ἐστὶ τοῦτο τὸ ζῷον· καὶ τὰ κρέα
+   βαρέα ἐς τὸ σῶμα, καὶ αὐταὶ αἱ σάρκες καὶ τὸ αἷμα καὶ τὸ γάλα. Ὡκόσων δὲ τὸ γάλα λεπτον</p>
+</div>
+<div type="book" n="32">
+  <div type="section" n="1">
+    <p><foreign xml:lang="grc">καὶ τὸ αἷμα ὁμοίον, καὶ αἱ σάρκες παραπλήσιοι.</foreign> <milestone unit="section" n="32.1"/> <foreign xml:lang="grc">Τὰ δὲ αἴγεια κρέα κομφότερα τοῦτον καὶ διαχωρέει μᾶλλον.</foreign> <foreign xml:lang="grc">Τὰ δὲ ὑεία ἰσχὺν μὲν τῷ σώματι ἐμποιέει μᾶλλον τοῦτον, διαχωρέει δὲ ἱκανῶς διότι λεπτὰς τὰς φλέβας ἔχει καὶ ὀλιγοαίμους, σάρκα δὲ πολλήν.</foreign> <foreign xml:lang="grc">Τὰ δὲ ἄρνειά κονφότερα τῶν ὀίων, καὶ τὰ ἐρίφεια τῶν αἰγείων, διότι ἀναιμότερα καὶ ὑγρότερα.</foreign> <foreign xml:lang="grc">Ξηρὰ γὰρ καὶ ἰσχυρὰ φύσει ὄντα τὰ ζῷα, ὁκόταν μὲν ἁπαλὰ ᾖ, διαχωρέει, ὁκόταν δὲ αὐξηθῇ, οὐχ ὁμοίως καὶ τὰ μοσχεία τῶν βοείων ὥσαύτως.</foreign> <foreign xml:lang="grc">Τὰ δὲ χοιρέια τῶν σφεῶν βαρύτερα· φύσει γὰρ εὐσαρκον ὂν τὸ ζῷον καὶ ἄναιμον ὑπερβολὴν ὑγρασίας ἔχει τῶς τεοῦτο ἂν νέον ᾖ· ὁκόταν οὖν οἱ πόροι μὴ δέχωνται τὴν τροφὴν ἐπιούσαν, ἐνμένει θερμαίνει καὶ ταράσσει τὴν κοιλίην.</foreign> <foreign xml:lang="grc">Τὰ δὲ ὄνεια διαχωρέει, καὶ τῶν πώλων ἔτι</foreign>
+  </p>
+</div>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="33">
+  <div type="section" n="1">
+    <milestone unit="section" n="47"/>
+    <p><foreign xml:lang="grc">μᾶλλον</foreign>, καὶ τὰ ἵππεια κομφότερα. <name type="animal" xml:lang="fr">chiens</name> δὲ θερμαίνει καὶ ξηραίνει καὶ ἰσχὺν ἐμποιέει, οὐ μέντοι διαχωρέει· <name type="animal" xml:lang="fr">serpents</name> δὲ ὑγραινει καὶ διαχωρέει, οὐρέεται δὲ μᾶλλον. <name type="animal" xml:lang="fr">loup</name> ἀγρίου ξηραίνει καὶ ἰσχὺν παρέχει καὶ διαχωρέει. <name type="animal" xml:lang="fr">porc</name> δὲ ξηραίνει, ὥστε δὲ διαχωρέει, οὐρέεται δὲ μᾶλλον. <name type="animal" xml:lang="fr">lièvres</name> ξηρὰ καὶ στάσιμα, οὐρήσιν δὲ τινα παρέχει. <name type="animal" xml:lang="fr">renards</name> δὲ ὑγρότερα, καὶ οὐρέεται δὲ καὶ ἐχίνων χερσαίων οὐρητικὰ, ὑγραίνει δὲ.</p>
+    <p><foreign xml:lang="grc">Περὶ</foreign> δὲ ὀρνίθων ἥδε ἔχει· σχεδὸν τι πάντα τὰ ὀρνίθια ξηρότερα ἢ τὰ τετράποδα· ὁκόσα γὰρ κύστιν οὐκ ἔχει οὔτε οὐρέει οὔτε σιαλοχέει, πάντως ξηρά· διὰ γὰρ θερμότητα τῆς κοιλίης ἀναλίσκεται τὸ ὑγρὸν ἐκ τοῦ σώματος ἐς τὴν τροφὴν τῷ θερμῷ, ὥστε οὔτε οὐρέεται οὔτε</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte selon les règles Zoomathia et les consignes fournies :
+
+
+<div type="book" n="34">
+  <div type="section" n="1">
+    <p>Ἅμα δὲ καὶ τὰς ὑγρὰς σαρκὰς ξηρὰς εἶναι ἀνάγκη· <milestone unit="section" n="48"/>
+      ξηρότατον μὲν οὖν φαίνεται κρέας φάσσης, δεύτερον περιστερᾶς, τρίτον περδίκιος καὶ ἀλεκτρυόνος καὶ τρυγόνου· ὑγρότατον δὲ χηνός. Ὅσα δὲ σπερμολογέει, ξηρότερα τῶν ἑτέρων. Νῆσσις δὲ καὶ τῶν ἄλλων ὀκόσα ἐν ἕλεσι διαίτῃται ἢ ἐν ὕδασι, πάντα ὑγρά.</p>
+    <p>Τῶν δὲ ἰχθύων ξηρότατοι μὲν οὗτοι, σκόρπιος, δράκων, καλλίονυμος, κόκκυξ, γλαῦκος, πέρκη, θρίσσα· κοῦφοι δὲ οἱ πετραῖοι σχεδὸν τιν πάντες, οἷον κίχλη, φοινίξ, ἐλεφίτης, κωβιός· οἱ τοιοῦτοι δὲ καὶ οἱ προῤῥυηθέντες κομφότεροι τῶν πλανήτων· ἕτερ γὰρ ἀτρεμίξοντες οὗτοι ἀραὴν τὴν σάρκα καὶ κοῦφην ἔχουσιν. Οἱ δὲ πλανῆται καὶ κνηματοπλήγες τετρημμένοι τῷ πόνῳ στερεωτέρην καὶ βαρυτέρην τὴν σάρκα ἔχουσιν.</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="35">
+  <div type="section" n="1">
+    <p><name type="animal" xml:lang="fr">narques</name> δὲ καὶ <name type="animal" xml:lang="fr">rhinocéros</name> καὶ <name type="animal" xml:lang="fr">phoques</name> καὶ τὰ τοιαῦτα ἐλαφρότερα. Ὄκκοσοι δὲ
+    τῶν <name type="animal" xml:lang="fr">poissons</name> ἐν τοῖσι πηλώδεσι καὶ ὑδρηλοῖσι χωρίοισι τὰς τροφὰς ἔχουσι, οἷον <name type="animal" xml:lang="fr">céphaloi</name>,
+    <name type="animal" xml:lang="fr">cestreins</name>, <name type="animal" xml:lang="fr">enchéleïs</name>, οἱ τοιοῦτοι βαρύτεροι, διότι ἀπὸ τοῦ ὕδατος καὶ τοῦ πηλοῦ καὶ τῶν ἐν
+    τούτοισι φορομένων τὰς τροφὰς ἔχουσι, ἀφ' ὧν καὶ τὸ πνεῦμα ἐσιόν ἐς τὸν ἄνθρωπον βλάπτε
+    καὶ βαρύνει. Οἱ δὲ ποτάμιοι καὶ λιμναῖοι ἔτι βαρύτεροι τούτων.</p>
+
+    <p><name type="animal" xml:lang="fr">Polypodes</name> δὲ καὶ <name type="animal" xml:lang="fr">seiches</name> καὶ τὰ τοιαῦτα οὔτε κοῦφα, ὡς δοκέει,
+    ἐστὶν οὔτε διαχωρητικά, τοὺς δ' ὀφθαλμοὺς ἀπαμβλύνουσι· οἱ μὲντοι χολοὶ τούτων
+    διαχωρέουσι.</p>
+
+    <p>Τὰ δὲ <name type="animal" xml:lang="fr">conques</name>, οἷον <name type="animal" xml:lang="fr">pinnae</name>, <name type="animal" xml:lang="fr">porphyrai</name>,
+    <name type="animal" xml:lang="fr">lepadès</name>, <name type="animal" xml:lang="fr">kérykes</name>, <name type="animal" xml:lang="fr">ostrea</name>, αὐτὴ μὲν ἡ σάρξ ξηραίνει,
+    οἱ δὲ χολοὶ τούτων διαχωρητικοί.</p>
+
+    <p>Μύες δὲ καὶ <name type="animal" xml:lang="fr">ctènes</name> καὶ <name type="animal" xml:lang="fr">tellines</name> τούτων μᾶλλον</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte selon les règles Zoomathia et vos instructions :
+
+
+<div type="chapter" n="36">
+   <milestone unit="section" n="36.1"/>
+   <p><foreign xml:lang="grc">διαχωρέοισιν</foreign> αἱ δὲ κνῖδαι μάλιστα καὶ τὰ σέλάχεα <name type="animal" xml:lang="fr">huitre</name> ἁγρίνει καὶ
+   διαχωρέει. Τῶν δὲ ἐχίνων τὰ ῥὰ καὶ τὸ ὑγρὸν καραβίον διαχωρέει, καὶ
+   <name type="animal" xml:lang="fr">ours</name>, καὶ <name type="animal" xml:lang="fr">carcajou</name>, μᾶλλον μὲν οἱ ποτάμιοι, ἀτὰρ καὶ οἱ θαλάσσιοι,
+   καὶ <name type="animal" xml:lang="fr">blaireau</name>.</p>
+
+   <p>Οἱ τάριχοι ξηραίνουσι καὶ ἰσχναίνουσι· τὰ δὲ πίονα
+   διαχωρέει ἐπιεικῶς· ξηρότατοι μὲν τῶν ταρίχων οἱ θαλάσσιοι,
+   δεύτερον δὲ οἱ ποτάμιοι, ὑγρότατοι δὲ οἱ λιμναῖοι, αὐτέων δὲ τῶν
+   θαλάσσιων οἱ λεγόμενοι πέρκαι <name type="animal" xml:lang="fr">perche</name> ἰχθύες ξηρότατοι οὗτοι καὶ τάριχοι.</p>
+
+   <milestone unit="section" n="36.2"/>
+   <p>44.
+   ( Comparaison entre les pâtes et les bouillies
+   fraîches ou vieilles.) Les pâtes et les bouillies dessèchent
+   plus étant fraîches qu'étant anciennes, parce qu'elles sont plus
+   près du feu et de la préparation ; mais, en vieillissant, elles
+   laissent exhaler le chaud, et attirent le froid. Le pain chaud
+   dessèche, le pain froid dessèche moins, le pain rassis encore moins,
+   mais il produit une certaine atténuation.</p>
+
+   <milestone unit="section" n="36.3"/>
+   <p>45.
+   (Des légumes.) Les fèves ont quelque</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diaitês oxeôn, 37/103) :
+
+
+<div type="chapter" n="37">
+  <milestone unit="section" n="37"/>
+  <p>chose de nourrissant, de resserrant et de flatueux ; flatueux, parce que les pores ne reçoivent pas la nourriture abondante qu'elles fournissent } resserrant, parce qu'il n'y a qu'un faible résidu d'aliment.</p>
+  <p>Les <name type="plant" xml:lang="fr">pois</name> sont moins flatulents et plus évacuants. La <name type="plant" xml:lang="fr">gesse chiche</name> (<foreign xml:lang="la">lathyrus cicera</foreign>, L.) et le <name type="plant" xml:lang="fr">haricot</name> sont plus évacuants et moins flatulents que les précédents, ils sont nourrissants.</p>
+  <p>Le <name type="plant" xml:lang="fr">pois chiche blanc</name> est évacuant, diurétique et nourrissant; nourrissant par la partie charnue, diurétique par la partie douce, évacuant par la partie salée.</p>
+  <p>Le <foreign xml:lang="la">gruau de panic</foreign> (<foreign xml:lang="la">panicum miliaceum</foreign>, L.) et le son qu'il fournit sont secs et resserrants ; avec des <name type="plant" xml:lang="fr">figues</name> c'est une nourriture forte pour ceux qui travaillent; le <foreign xml:lang="la">panic</foreign> même, cuit, est nourrissant, mais il n'évacue pas.</p>
+  <p>La <name type="plant" xml:lang="fr">lentille</name> échauffe et trouble ; elle n'est ni évacuante ni resserrante.</p>
+  <p>L'<foreign xml:lang="la">ers</foreign> (<foreign xml:lang="la">ervum ervilia</foreign>, L.) est resserrant, fort, incarnant, remplissant et donnant bon teint.</p>
+  <p>La graine de <name type="plant" xml:lang="fr">lin</name> est nutritive et resserrante; elle a aussi quelque chose de rafraîchissant.</p>
+  <p>La graine de l'<foreign xml:lang="la">horminon</foreign> (<foreign xml:lang="fr">sauge hormirn</foreign>, <foreign xml:lang="la">salvia horminum</foreign>, L.) agit comme le <name type="plant" xml:lang="fr">lin</name>.</p>
+  <p>Le <name type="animal" xml:lang="fr">lupin</name> est naturellement fort et chaud ; par la préparation il devient plus léger, plus rafraîchissant, et il évacue.</p>
+  <p>L'<foreign xml:lang="la">érysimon</foreign> (<foreign xml:lang="fr">sisymbre à siliques nombreuses</foreign>, <foreign xml:lang="la">sisymbrium polyceratium</foreign>, L.) (voy. note 3) humecte et évacue.</p>
+  <p>La graine de <name type="plant" xml:lang="fr">concombre</name> est plus</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate, en respectant la structure demandée et en priorisant l'encodage des entités zoologiques :
+
+
+<div type="section" n="38">
+   <milestone unit="section" n="38"/>
+   <p>diurétique qu'évacuante. Le <name type="plant" xml:lang="fr">sésame</name>, avec sa balle, est évacuant, mais remplissant et incarnant ; il évacue à cause de la balle extérieure; il est remplissant et incarnant à cause de la partie charnue, débarrassé de sa balle, il est encore évacuant, mais moins, il est plus incarnant et remplissant, il dessèche et brûle à cause de la partie grasse et onctueuse.</p>
+   <p>Le <name type="plant" xml:lang="fr">carthame</name> (<foreign xml:lang="la">carthamus tinctorius</foreign>, L.) est évacuant. Le <name type="plant" xml:lang="fr">pavot</name> est resserrant, plus le <name type="plant" xml:lang="fr">pavot noir</name>, mais aussi le <name type="plant" xml:lang="fr">pavot blanc</name> ; il est nourrissant et fort.</p>
+   <p>Les sues de toutes ces productions sont plus évacuants que la partie charnue ; il faut donc avoir ce soin dans la préparation : voulez-vous dessécher? ôtez les sucs et usez de la partie charnue; voulez-vous relâcher? donnez le suc en plus grande quantité, la chair en moindre quantité et plus pleine de suc.</p>
+</div>
+<div type="section" n="46">
+   <milestone unit="section" n="46"/>
+   <p>( De la viande des <name type="animal" xml:lang="fr">quadrupèdes</name>. On voit là que les Grecs mangeaient du <name type="animal" xml:lang="fr">renard</name>, du <name type="animal" xml:lang="fr">chien</name> et du <name type="animal" xml:lang="fr">hérisson</name>.) Les animaux que l'on mange doivent être ainsi appréciés : la viande de <name type="animal" xml:lang="fr">bœuf</name> est forte, resserrante, de difficile digestion pour les estomacs, parce que cet animal a le sang épais et abondant ; et sa chair, son sang, et son lait sont pesants au corps. Mais les animaux dont le lait est léger et le sang semblable, ont la chair de même qualité. La viande de <name type="animal" xml:lang="fr">chèvre</name> est plus légère et plus évacuante.</p>
+</div>
+<div type="section" n="39">
+   <p>viande de <name type="animal" xml:lang="fr">porc</name> donne au corps plus de force que les précédentes, et elle évacue notamment, parce que le <name type="animal" xml:lang="fr">porc</name> a les veines ténues et peu abondantes en sang, mais beaucoup de chair.</p>
+   <p>L'<name type="animal" xml:lang="fr">agneau</name> est plus léger que le <name type="animal" xml:lang="fr">mouton</name>, et le <name type="animal" xml:lang="fr">chevreau</name> que la <name type="animal" xml:lang="fr">chèvre</name>, parce qu'ils ont moins de sang et sont plus humides. En effet, la viande d'animaux de nature sèche et forte, quand ils sont jeunes, est évacuante ; mais quand ils ont crû, elle ne l'est plus de même. Il en est ainsi du <name type="animal" xml:lang="fr">veau</name> par rapport au <name type="animal" xml:lang="fr">bœuf</name>.</p>
+   <p>Le <name type="animal" xml:lang="fr">cochon de lait</name> est plus lourd que le <name type="animal" xml:lang="fr">porc</name> ; en effet, cet animal, ayant naturellement beaucoup de chair et peu de sang, a un excès d'humidité tant qu'il est jeune ; or, les pores ne recevant pas la nourriture qu'il fournit, il séjourne, échauffe le ventre et le trouble.</p>
+   <p>La viande d'<name type="animal" xml:lang="fr">âne</name> est évacuante, celle d'<name type="animal" xml:lang="fr">ânon</name> encore davantage.</p>
+   <p>La viande de <name type="animal" xml:lang="fr">cheval</name> est plus légère.</p>
+   <p>La viande de <name type="animal" xml:lang="fr">chien</name> échauffe, dessèche et fortifie, mais elle n'est pas évacuante ; celle de <foreign xml:lang="la">catulus</foreign> est humectante, évacuante et encore plus diurétique.</p>
+   <p>Le <name type="animal" xml:lang="fr">sanglier</name> dessèche, fortifie et évacue.</p>
+   <p>Celle de <name type="animal" xml:lang="fr">cerf</name> dessèche, évacue moins, et fait davantage uriner.</p>
+   <p>Celle de <name type="animal" xml:lang="fr">lièvre</name> sèche, resserre et procure quelque diurèse.</p>
+   <p>Celle de <name type="animal" xml:lang="fr">renard</name> est plus humide et fait uriner.</p>
+   <p>Celle du <name type="animal" xml:lang="fr">hérisson</name> terrestre est diurétique, et elle humecte.</p>
+   <milestone unit="section" n="47"/>
+   <p>(De la chair des oiseaux. ) Quant aux</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate (Peri diaitês oxeôn), en respectant toutes les règles Zoomathia :
+
+
+<div type="book" n="40">
+   <div type="section" n="48">
+      <milestone unit="section" n="48"/>
+      <p>oiseaux, voici ce qu'il en est : en général ils sont plus secs que les quadrupèdes. Les animaux qui n'ont ni vessie ni urine ni salive sont absolument secs; la chaleur du ventre consume l'humide du corps pour l'alimentation du chaud, de sorte qu'ils n'urinent ni ne salivent ; or, là où manquent ces humeurs il y a nécessairement sécheresse.</p>
+      <p>La viande la plus sèche paraît celle du <name type="animal" xml:lang="fr">ramier</name>, puis du <name type="animal" xml:lang="fr">pigeon</name>, en troisième lieu de la <name type="animal" xml:lang="fr">perdrix</name>, de la <name type="animal" xml:lang="fr">poule</name> et de la <name type="animal" xml:lang="fr">tourterelle</name>; la plus humide est celle de l'<name type="animal" xml:lang="fr">oie</name>. Ceux qui vivent de graines sont plus secs que les autres. Le <name type="animal" xml:lang="fr">canard</name> et tous ceux qui vivent dans les marais et dans les eaux sont tous humides.</p>
+      <p>Parmi les poissons les plus secs sont le <name type="animal" xml:lang="fr">scorpios</name> (<foreign xml:lang="la">scorpæna scrofa</foreign>, L.), le <name type="animal" xml:lang="fr">dragon</name> (<foreign xml:lang="la">vive</foreign>, <foreign xml:lang="la">trachynus draco</foreign>), le <name type="animal" xml:lang="fr">callionyme</name> (<foreign xml:lang="la">uranoscope</foreign>, <foreign xml:lang="la">uranoscopus scaber</foreign>), le <name type="animal" xml:lang="fr">coccyx</name> (le <name type="animal" xml:lang="fr">rouget commun</name>), le <name type="animal" xml:lang="fr">glaucus</name> (la <name type="animal" xml:lang="fr">liche vadigo</name>, ou le <name type="animal" xml:lang="fr">maigre</name>), la <name type="animal" xml:lang="fr">perche</name>, le <name type="animal" xml:lang="fr">tbrisse</name> (<foreign xml:lang="fr">alose?</foreign>); presque tous les poissons saxatiles sont légers; par exemple, le <name type="animal" xml:lang="fr">tourd</name>, le <name type="animal" xml:lang="fr">phycis</name> (<foreign xml:lang="la">gobius</foreign>, Lin.), l'<name type="animal" xml:lang="fr">éléphitis</name> (indéterminé), le <name type="animal" xml:lang="fr">cobius</name> (un <name type="animal" xml:lang="fr">chabot</name>, <foreign xml:lang="la">cottus gobio</foreign>, L.) ; ceux-ci et les précédents sont plus légers que les poissons voyageurs ; en effet, comme ils se tiennent tranquilles, ils ont la chair non compacte et légère. Mais les poissons voyageurs, battus</p>
+   </div>
+</div>
+<div type="chapter" n="41">
+   <milestone unit="section" n="41"/>
+   <p>par les flots et rompus par le travail, ont la chair plus dense et
+      plus <foreign xml:lang="grc">ἐπὶ</foreign> <foreign xml:lang="grc">τὸ</foreign> <foreign xml:lang="grc">πυκνότερον</foreign>. <name type="animal" xml:lang="fr">La torpille</name>, <name type="animal" xml:lang="fr">la raie bouclée</name>, <name type="animal" xml:lang="fr">la psesse</name> (un <foreign xml:lang="la">pleuronecte</foreign>, <name type="animal" xml:lang="fr">plie</name>, <name type="animal" xml:lang="fr">turbot</name>, etc.) et les autres de ce genre
+      sont plus légers. Ceux qui prennent leur nourriture dans des eaux bourbeuses, comme <name type="animal" xml:lang="fr">le céphale</name> (<foreign xml:lang="la">mugil cephalus</foreign> <persName>Cuv.</persName>), <name type="animal" xml:lang="fr">le cestrée</name> (un <foreign xml:lang="fr">muge</foreign> d'espèce indéterminée), <name type="animal" xml:lang="fr">l'anguille</name>, sont plus pesants, parce qu'ils se nourrissent d'eaux bourbeuses et de ce qui s'y produit; conditions
+      qui rendent même nuisible et pesant pour le corps humain l'air qui s'en exhale. Les <name type="animal" xml:lang="fr">poissons</name> de rivière et d'étang sont encore plus pesants. <name type="animal" xml:lang="fr">Les poulpes</name>, <name type="animal" xml:lang="fr">les sèches</name> et les autres de ce genre ne sont
+      ni légers, comme on le pense, ni évacuants, et ils affaiblissent les
+      yeux ; cependant le bouillon qu'ils fournissent est évacuant. Quant
+      aux <name type="animal" xml:lang="fr">coquillages</name>, tels que <name type="animal" xml:lang="fr">les pinnes marines</name>, <name type="animal" xml:lang="fr">les pourpres</name>, <name type="animal" xml:lang="fr">les patelles</name>, <name type="animal" xml:lang="fr">les cerjx</name> (un <foreign xml:lang="la">buccin</foreign>), <name type="animal" xml:lang="fr">les huîtres</name>, la chair même en est desséchante, mais le bouillon en est
+      évacuant. <name type="animal" xml:lang="fr">Les moules</name>, <name type="animal" xml:lang="fr">les pétoncles</name>, <name type="animal" xml:lang="fr">les tellines</name> (bivalves indéterminés), sont plus évacuants; <name type="animal" xml:lang="fr">les orties de mer</name> le sont
+      surtout. <name type="animal" xml:lang="fr">Les poissons cartilagineux</name> sont humectants et évacuants.
+      <name type="animal" xml:lang="fr">Les œufs</name> <name type="animal" xml:lang="fr">des oursins</name> et la partie molle <name type="animal" xml:lang="fr">du crabe</name> (voy. note 7) sont évacuants, ainsi que <name type="animal" xml:lang="fr">les arcos</name> (crustacé indéterminé) et <name type="animal" xml:lang="fr">les écrevisses</name>, surtout <name type="animal" xml:lang="fr">les écrevisses</name>
+   </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage d'Hippocrate :
+
+
+<div type="section" n="42">
+  <milestone unit="section" n="42"/>
+  <p>rivière, mais encore celles de mer ; ils sont diurétiques aussi. Les
+    <name type="animal" xml:lang="fr">salaissons</name> dessèchent et atténuent ; les
+    <name type="animal" xml:lang="fr">grasses</name> sont notablement évacuantes ; des
+    <name type="animal" xml:lang="fr">salaissons</name>, les plus sèches sont celles de mer, puis
+    celles de rivière, en troisième lieu celles d'étang. Parmi les
+    <name type="animal" xml:lang="fr">poissons</name> de mer, ceux qu'on nomme
+    <name type="animal" xml:lang="fr">perches</name> sont les plus secs, frais ou salés.</p>
+</div>
+<div type="section" n="49">
+   <milestone unit="section" n="49"/>
+   <p>T<foreign xml:lang="grc">ῶ</foreign>ν δ<foreign xml:lang="grc">ὲ</foreign> ζ<foreign xml:lang="grc">ώ</foreign>ων τ<foreign xml:lang="grc">ῶ</foreign>ν τιθ<foreign xml:lang="grc">α</foreign>σ<foreign xml:lang="grc">σ</foreign><name type="animal" xml:lang="fr">oies</name>, τ<foreign xml:lang="grc">ὰ</foreign> ὑλ<foreign xml:lang="grc">ό</foreign>νομα κα<foreign xml:lang="grc">ὶ</foreign> ἀγρ<foreign xml:lang="grc">ό</foreign>νομα τ<foreign xml:lang="grc">ῶ</foreign>ν ἔνδον τρ<foreign xml:lang="grc">ε</foreign>φομ<foreign xml:lang="grc">έ</foreign>ν<foreign xml:lang="grc">ω</foreign>ν ξηρ<foreign xml:lang="grc">ό</foreign>τερα, ὅτι πον<foreign xml:lang="grc">ο</foreign>ῦντα ξηρ<foreign xml:lang="grc">α</foreign>ί<foreign xml:lang="grc">ν</foreign>εται κα<foreign xml:lang="grc">ὶ</foreign> ὑπ<foreign xml:lang="grc">ὸ</foreign> το<foreign xml:lang="grc">ῦ</foreign> ἡλ<foreign xml:lang="grc">ί</foreign>ου κα<foreign xml:lang="grc">ὶ</foreign> ὑπ<foreign xml:lang="grc">ὸ</foreign> το<foreign xml:lang="grc">ῦ</foreign> ψ<foreign xml:lang="grc">ύ</foreign>χεος, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ῷ</foreign> πνεύματ<foreign xml:lang="grc">ι</foreign> ξηρ<foreign xml:lang="grc">ο</foreign>τ<foreign xml:lang="grc">έ</foreign>ρ<foreign xml:lang="grc">ῳ</foreign> χρ<foreign xml:lang="grc">ᾶ</foreign>ται.</p>
+   <p>Τ<foreign xml:lang="grc">ὰ</foreign> δ<foreign xml:lang="grc">ὲ</foreign> <name type="animal" xml:lang="fr">agrestes</name> τ<foreign xml:lang="grc">ῶ</foreign>ν <name type="animal" xml:lang="fr">oiseaux</name> ξηρ<foreign xml:lang="grc">ό</foreign>τερα, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> ὠμοφ<foreign xml:lang="grc">ά</foreign>γα κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> ὑλοφ<foreign xml:lang="grc">ά</foreign>γα κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> ὀλιγοφ<foreign xml:lang="grc">ά</foreign>γα τ<foreign xml:lang="grc">ῶ</foreign>ν πολ<foreign xml:lang="grc">ύ</foreign>φ<foreign xml:lang="grc">ά</foreign>γων, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> χλωροφ<foreign xml:lang="grc">ά</foreign>γα τ<foreign xml:lang="grc">ῶ</foreign>ν ποηφ<foreign xml:lang="grc">ά</foreign>γων, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> καρποφ<foreign xml:lang="grc">ά</foreign>γα τ<foreign xml:lang="grc">ῶ</foreign>ν μ<foreign xml:lang="grc">ὴ</foreign> καρποφ<foreign xml:lang="grc">ά</foreign>γων, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> ὀλιγόπ<foreign xml:lang="grc">ο</foreign>τα τ<foreign xml:lang="grc">ῶ</foreign>ν πολ<foreign xml:lang="grc">ύ</foreign>π<foreign xml:lang="grc">ο</foreign>των, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> πολ<foreign xml:lang="grc">ύ</foreign>αιμα τ<foreign xml:lang="grc">ῶ</foreign>ν ἀναιμ<foreign xml:lang="grc">ώ</foreign>ν κα<foreign xml:lang="grc">ὶ</foreign> ὀλιγαιμ<foreign xml:lang="grc">ώ</foreign>ν, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> ἀκμάζοντα μ<foreign xml:lang="grc">ᾶ</foreign>λλον ἢ τ<foreign xml:lang="grc">ὰ</foreign> λ<foreign xml:lang="grc">ή</foreign>ην παλ<foreign xml:lang="grc">α</foreign>ιά κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> ν<foreign xml:lang="grc">έ</foreign>α, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> <name type="animal" xml:lang="fr">mâles</name> τ<foreign xml:lang="grc">ῶ</foreign>ν <name type="animal" xml:lang="fr">femelles</name>, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> ἔν<foreign xml:lang="grc">ο</foreign>ρχα τ<foreign xml:lang="grc">ῶ</foreign>ν ἀνόρ<foreign xml:lang="grc">χ</foreign>ων, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> μ<foreign xml:lang="grc">έ</foreign>λανα τ<foreign xml:lang="grc">ῶ</foreign>ν λευκ<foreign xml:lang="grc">ῶ</foreign>ν, κα<foreign xml:lang="grc">ὶ</foreign> τ<foreign xml:lang="grc">ὰ</foreign> δ<foreign xml:lang="grc">α</foreign>σ<foreign xml:lang="grc">έ</foreign>α τ<foreign xml:lang="grc">ῶ</foreign>ν φ<foreign xml:lang="grc">ύ</foreign>λλ<foreign xml:lang="grc">ω</foreign>ν· τ<foreign xml:lang="grc">ὰ</foreign> δ<foreign xml:lang="grc">ὲ</foreign> ἐναντ<foreign xml:lang="grc">ί</foreign>α ὑγρ<foreign xml:lang="grc">ό</foreign>τερα.</p>
+   <p>Α<foreign xml:lang="grc">ὐ</foreign>τ<foreign xml:lang="grc">ῶ</foreign>ν δ<foreign xml:lang="grc">ὲ</foreign> τ<foreign xml:lang="grc">ῶ</foreign>ν ζ<foreign xml:lang="grc">ώ</foreign>ων ἰσχ<foreign xml:lang="grc">υ</foreign>ρότ<foreign xml:lang="grc">α</foreign>ται μ<foreign xml:lang="grc">ὲ</foreign>ν α<foreign xml:lang="grc">ἱ</foreign> σ<foreign xml:lang="grc">ά</foreign>ρκες α<foreign xml:lang="grc">ἱ</foreign> μ<foreign xml:lang="grc">ά</foreign>λιστα πον<foreign xml:lang="grc">έ</foreign>ουσ<foreign xml:lang="grc">αι</foreign> κα<foreign xml:lang="grc">ὶ</foreign></p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour ce passage d'Hippocrate (Peri diaitês oxeôn) :
+
+
+<div type="book" n="44">
+   <div type="section" n="50">
+      <p>ἐναιμώταται καὶ ἐν ὧσι κατακλίνεται, κοιφώταται δὲ τῶν σαρκῶν αἱ
+      ἥκιστά πονηρόν τε καὶ ὀλιγαιμάταται, καὶ ἐκ τῆς σκιῆς, καὶ ὅσαι ἐσώταται
+      τοῦ ζώου. Τῶν δὲ ἀναίμων ἐγκέφαλος καὶ μηλὸς ἰσχυρόταται κοιφώταται δὲ
+      κεφαλὴ, μυεῖς, κτένες, πόδες. Τῶν δὲ ἰχθύων ξηρότατά ἐστι τὰ ἄνω,
+      κοιφώτατα δὲ τὰ ὑπογάστρια, καὶ κεφαλὰὶ ὑγρότεραι διὰ τὴν πιμελήν καὶ
+      τὸν ἐγκέφαλον.</p>
+   </div>
+   <milestone unit="section" n="50"/>
+   <div type="section" n="51">
+      <p>Τὰ δὲ ὀρνίθων ἰσχυρὸν μὲν τί ἔχουσι καὶ τρόφιμον καὶ φρῶσαι· ἰσχυρὸν
+      μὲν, ὅτι γένεσις ἐστὶ τοῦ ζώου, τρόφιμον δὲ ὅτι γάλα ἐστὶ τοῦτο τῷ
+      νεοσσῷ, φρῶσαι δὲ ὅτι ἐκ μικροῦ ὄγκου ἐς πολὺ διαχέεται.</p>
+      <p>Ὁ δὲ τυρὸς ἰσχυρὸν καὶ καρσώδης καὶ τρόφιμον καὶ στάσιμον, ἰσχυρὸν μὲν
+      ὅτι ἐγγιστὰ γενέσιος, τρόφιμον δὲ ὅτι τοῦ γάλακτος τὸ σαρκώδες ἐστιν</p>
+   </div>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles du projet Zoomathia :
+
+
+<div type="book" n="45">
+  <div type="section" n="52">
+    <p><foreign xml:lang="grc">ὑπολοιπον</foreign>, κανσώδε<foreign xml:lang="grc">ς</foreign> δὲ <foreign xml:lang="grc">ὅτι</foreign> λιπαρόν, στάσιμον δὲ <foreign xml:lang="grc">ὅτι</foreign> ὀπῇ καὶ πνιτῇ ξυνέστηκεν.</p>
+    <milestone unit="section" n="52"/>
+    <p><name type="animal" xml:lang="fr">vin</name> ψυχρὸν καὶ ὑγρὸν <foreign xml:lang="grc">οἶνος</foreign> θερμὸν καὶ ξηρὸν <foreign xml:lang="grc">ἔχει</foreign> δὲ τι καὶ καθαρτικὸν ἀπὸ τῆς ὕλης. Τῶν δὲ <name type="animal" xml:lang="fr">vins</name> οἱ μέλανες καὶ αὐστηροὶ ξηρότεροι καὶ οὔτε διαχωροῦνται οὔτε οὐρέονται οὔτε πτύονται· ξηραίνουσι δὲ τῇ θερμαισίῃ, τὸ ὑγρὸν ἐκ τοῦ σώματος καταναλίσκοντες.</p>
+    <p>Οἱ δὲ μαλακοὶ μέλανες ὑγρότεροι καὶ φοσῶσι καὶ διαχωρέονται μᾶλλον. Οἱ δὲ γλυκέες μέλανες ὑγρότεροι καὶ ἀσθενέστεροι, καὶ φοσῶσιν, ὑγρασίην ἐμποιοῦντες. Οἱ δὲ λευκοὶ καὶ αὐστηροὶ θερμαινόμενοι μὲν, οὐ μήν ξηραίνουσι, οὐρέονται δὲ μᾶλλον ἢ διαχωρέονται.</p>
+    <p>Οἱ νέοι μᾶλλον τῶν <name type="animal" xml:lang="fr">vins</name> διαχωρέονται, διότι ἐγγύτερω τοῦ γλυκέος εἰσι καὶ</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles du projet Zoomathia :
+
+
+<div type="book" n="46">
+  <div type="section" n="1">
+    <milestone unit="section" n="46.1"/>
+    <p>τρόφιμοι, καὶ οἱ ὄζοντες τῶν ἀνώσμων τῆς αὐτῆς ἡλικίης, διότι πεπειρώτεροί εἰσι, καὶ οἱ παχέες τῶν λεπτῶν. Οἱ δὲ λεπτοὶ οὐρέονται μᾶλλον· καὶ οἱ λευκοὶ καὶ οἱ λεπτοὶ γλυκέες οὐρέονται μᾶλλον ἢ διαχωρέουσιν, καὶ ψύχουσί τε καὶ ἰσχναίνουσί τε καὶ ὑγραινούσι τὸ σῶμα, καὶ τὸ αἷμα ἀσθενέες ποιέουσιν, αὐξόντες δὲ τὸ ἀντίπαλον τῷ αἵματι ἐν τῷ σώματι.</p>
+    <p>Γλεύκος φύσι· καὶ ἐκταρássει καὶ τὴν κοιλίην ὑπάγει· φύσι μὲν ὅτι θερμαινει, ὑπάγει δὲ ἐκ τοῦ σώματος ὅτι καθαίρει, ταράσσει δὲ ζῶον ἐν τῇ κοιλίῃ καὶ διαχωρέει.</p>
+    <p>Οἱ ὀξύνοι οἶνοι ψύχουσί τε καὶ ἰσχναίνουσί τε καὶ ὑγραινούσι, ψύχουσί μὲν καὶ ἰσχναίνουσί κενώσι τῶν ὑγρῶν ἀπὸ τοῦ σώματος ποιεύμενοι, ὑγραινούσι δὲ ἀπὸ τοῦ ἐσίοντός</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diaitês oxeôn, section 47/103) :
+
+
+<div type="section" n="47">
+   <milestone unit="section" n="47"/>
+   <p>ὑδατὸς <name type="animal" xml:lang="fr">suin</name> σὺν τῷ οἴνῳ. ὀξὸς ψυχρικὸν, διότι τὸ ἡγρὸν τὸ ἐν τῷ
+      σώματι καταναλίσκει, ἵστησι δὲ μᾶλλον ἢ διαχωρέει διότι οὐ τρόφιμον καὶ
+      δριμύ. ἔψημα θερμαίνει καὶ ὑγραίνει καὶ ὑπάγει, θερμαίνει μὲν ὅτι
+      οἰνώδεις, ὑγραίνει δὲ ὅτι τρόφιμον, ὑπάγει δὲ ὅτι γλυκὺ καὶ
+      προσκαθεψημένον ἐστίν.</p>
+   <p>Αἱ τρὺγες στεμφυλίτιδες ὑγραίνουσι καὶ ὑπάγουσι καὶ φρῶσσι, διότι καὶ τὸ
+      γλεῦκος τὸ αὐτὸ ποιέει.</p>
+   <milestone unit="section" n="53"/>
+   <p>Μέλι θερμὸν καὶ ξηρὸν ἄκρατον, ξὺν ὕδατι δὲ ὑγραίνει καὶ διαχωρέει
+      τοῖσι χολοδέσι, τοῖσι δὲ φλεγματώδεσι ἵστησιν. Ὁ δὲ γλυκὺς οἶνος
+      διαχωρέει μᾶλλον τοῖσι φλεγματώδεσι.</p>
+   <milestone unit="section" n="49"/>
+   <p>(Différences entre les viandes suivant les animaux en suivant les parties de l'animal. De même pour les
+      poissons.) Des animaux domestiques ceux qui paissent dans les bois et les champs sont plus secs que ceux
+      qui sont nourris sous le toit, parce que, s'exerçant, ils sont desséchés et par le soleil et</p>
+</div>
+<div type="section" n="48">
+   <p>par le froid et respirent un air plus sec. Les <name type="animal" xml:lang="fr">animaux sauvages</name> sont plus secs que les <name type="animal" xml:lang="fr">animaux domestiques</name>, ceux qui vivent de substances crues, ceux qui se nourrissent dans les <name type="plant" xml:lang="fr">bois</name>, ceux qui mangent peu, plus secs que ceux qui mangent beaucoup ; ceux qui mangent des <foreign xml:lang="la">fourrages</foreign> secs que ceux qui sont au vert ; ceux qui mangent du <foreign xml:lang="la">grain</foreign> que ceux qui n'en mangent pas ; ceux qui boivent peu que ceux qui boivent beaucoup ; ceux qui ont beaucoup de sang que ceux qui en ont peu ou point, ceux qui sont dans la force de l'<foreign xml:lang="la">âge</foreign> que ceux qui sont trop vieux ou jeunes ; les <foreign xml:lang="la">mâles</foreign> que les <foreign xml:lang="la">femelles</foreign> ; les entiers que les <foreign xml:lang="la">châtrés</foreign> ; les foncés que les clairs ; les velus que les glabres. Dans les conditions contraires ils sont plus humides.</p>
+   <p>Dans chaque <name type="animal" xml:lang="fr">animal</name> les chairs les plus fortes sont celles qui travaillent le plus, qui ont le plus de sang et sur lesquelles l'<name type="animal" xml:lang="fr">animal</name> se couche ; les plus légères sont celles qui travaillent le moins, qui ont le moins de sang, qui sont à l'ombre et le plus en dedans de l'<name type="animal" xml:lang="fr">animal</name>.</p>
+   <p>Des parties exsangues les plus fortes sont la <foreign xml:lang="la">cervelle</foreign> et la <foreign xml:lang="la">moelle</foreign> ; les plus légères sont la tête, les parties tendineuses (voy. note 13), les parties génitales (voy. note 13), les pieds.</p>
+   <p>Chez les <name type="animal" xml:lang="fr">poissons</name> les parties supérieures sont les plus sèches ; celles du ventre sont les plus légères ; la tête est plus humide à cause de la graisse et de la cervelle.</p>
+   <milestone unit="section" n="50"/>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate (Peri diaitês oxeôn) :
+
+
+<div type="section" n="49">
+   <milestone unit="section" n="49"/>
+   <p>(Des <name type="animal" xml:lang="fr">œufs</name>.) Les <name type="animal" xml:lang="fr">œufs</name> des <foreign xml:lang="grc">ὀρνίθων</foreign> ont
+   quelque chose de fort, de nutritif et de flatulent; de fort, parce
+   que c'est la génération de l'<name type="animal" xml:lang="fr">animal</name>, de nutritif, parce que c'est le
+   lait du petit, de flatulent parce que sous un petit volume ils ont
+   une diffusion considérable.</p>
+</div>
+
+<div type="section" n="50">
+   <milestone unit="section" n="50"/>
+   <p>(Du fromage..) Le fromage est fort,
+   échauffant, nutritif et resserrant ; fort, parce qu'il est très-près
+   de la génération ; nutritif, parce qu'il est ce qui, du lait, reste
+   de charnu ; échauffant, parce qu'il est gras ; resserrant, parce
+   qu'il a été coagulé avec le suc (voy. note 3),
+   et la présure.</p>
+</div>
+
+<div type="section" n="51">
+   <milestone unit="section" n="51"/>
+   <p>(De l'<name type="plant" xml:lang="fr">eau</name>, du <name type="plant" xml:lang="fr">vin</name>, du <name type="plant" xml:lang="fr">moût</name>, du <foreign xml:lang="la">uinum</foreign>, du
+   <name type="plant" xml:lang="fr">moût cuit</name>, de la <name type="plant" xml:lang="fr">piquette</name> de <name type="plant" xml:lang="fr">mare de raisin</name>.) L'<name type="plant" xml:lang="fr">eau</name> est
+   froide et humide. Le <name type="plant" xml:lang="fr">vin</name> est chaud et sec, il tient aussi,
+   de la substance qui l'a produit, quelque chose de relâchant. Des <name type="plant" xml:lang="fr">vins</name> les
+   noirs et astringents sont plus secs, ils ne font ni évacuer ni
+   uriner ni cracher, mais ils dessèchent par leur chaleur, consumant
+   l'humide du corps. Les noirs et mous sont plus humides, plus
+   flatulents et plus évacuants. Les noirs et doux sont plus humides et
+   plus faibles, ils causent des flatuosités vu qu'ils produisent de
+   l'humidité. Les blancs et astringents échauffent, à la vérité, mais
+   ils ne dessèchent pas, ils sont plus diurétiques qu'évacuants. Les
+   nouveaux sont plus évacuants, parce qu'ils sont plus près du moût et</p>
+</div>
+<p>plus nutritifs; de même les vins qui ont du bouquet le sont plus, à âge égal, que ceux qui n'en ont pas, parce qu'ils sont plus mûrs ; de même les vins épais le sont plus que les vins légers. Les vins légers font plus uriner.</p>
+<p>Les vins blancs et les vins légers doux sont plus diurétiques qu'évacuants, ils rafraîchissent, atténuent et humectent le corps, ils rendent le sang faible, en augmentant dans le corps l'opposé du sang.</p>
+<p>Le moût est flatulent, il trouble et vide le ventre ; il est flatulent, parce qu'il échauffe ; il vide le corps, parce qu'il est purgatif; il trouble, parce qu'il bout dans le ventre et fait aller à la selle.</p>
+<p>Les vins acides rafraîchissent, atténuent et humectent ; ils rafraîchissent et atténuent, procurant l'évacuation de l'humide hors du corps; ils humectent à cause de l'eau introduite avec le vin.</p>
+<p>Le vinaigre est rafraîchissant, parce qu'il fond et consume l'humide qui est dans le corps ; il est plutôt resserrant qu'évacuant parce qu'il n'est pas nourrissant et qu'il est piquant.</p>
+<p>Le moût qui a cuit échauffe, humecte et fait aller à la selle ; il échauffe parce qu'il est vineux ; il humecte parce qu'il est nourrissant ; il fait aller à la selle parce qu'il est doux et qu'en outre il est cuit.</p>
+<p>La piquette de marc de raisin humecte, fait aller à la selle et est flatulente, parce que le moût aussi a les mêmes effets.</p>
+<milestone unit="section" n="53"/>
+<div type="section" n="51">
+   <p>Le <name type="plant" xml:lang="fr">miel</name>, pur, est chaud et sec ; avec de l'eau il humecte, il est évacuant chez les <name type="deity">bilieux</name>, mais resserrant chez les <name type="deity">phlegmatiques</name> ; pour ces derniers un vin doux est plutôt évacuant.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte d'Hippocrate :
+
+
+<div type="section" n="54">
+   <milestone unit="section" n="54"/>
+   <p><foreign xml:lang="grc">Περὶ</foreign> δὲ <name type="plant" xml:lang="fr">lachanôn</name> ὧδε ἔχει. <name type="animal" xml:lang="fr">σκόροδον</name> θερμὸν καὶ διαχωρέει καὶ
+      οὐρέεται, ἀγαθὸν τοῖσι σώμασι, τοῖσι δὲ ὀφθαλμοῖσι φλαῦρον· καθαρσίν
+      γὰρ τοῦ σώματος πολλὴν ποιεύμενον, τὴν ὄψιν ἀπαμβλύνει· διαχωρέει
+      δὲ καὶ οὐρέεται, διὰ τὸ καθαρτικόν· ἑφθὸν ἀσθενέστερον ἢ ὠμόν·
+      φῦσαν δὲ ἐμποιέει διὰ τοῦ πνεύματος τὴν ἐπίστασιν. <name type="plant" xml:lang="fr">Κρόμυον</name> τῇ μὲν ὄψει
+      ἀγαθόν, τῷ δὲ σώματι κακόν, διότι θερμὸν καὶ καυσωδέες ἐστι καὶ οὐ
+      διαχωρέει· τροφὴν μὲν γὰρ οὐ δίδωσι τῷ σώματι οὐδὲ ὠφέλειαν·
+      θερμαινόντες δὲ ξηραίνει διὰ τὸν ὀπὸν. <name type="plant" xml:lang="fr">Πράσον</name> θερμαίνει μὲν
+      ἧσσον, οὐρέεται δὲ καὶ διαχωρέει· ἔχει δὲ τι καθαρτικόν· ὑγραινέει δὲ καὶ
+      ὀξύρρεγμίνην παύει· καλὸν δὲ ἕστατον τῶν ἄλλων βρωμάτων ἐσθίειν
+      αὐτό. <name type="plant" xml:lang="fr">Ράφανις</name> ὑγραινέει διαχέουσα τὸ φλέγμα τῇ δριμύτητι, τὰ δὲ φύλλα
+   </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour ce passage d'Hippocrate (Peri diaitês oxeôn) :
+
+
+<div type="chapter" n="53">
+  <milestone unit="section" n="53.1"/>
+  <p><foreign xml:lang="grc">ἧσσον</foreign>, πλὴν πρὸς τοὺς ἀρθριτικούς· <name type="animal" xml:lang="fr">moineau</name> μὲν γὰρ ἡ ῥίζη, ἐπιπολάζον δὲ
+    καὶ δύσπεπτον. Κάρδαμον θερμὸν καὶ τὴν σάρκα τῆκον, ἵστησι δὲ φλέγμα λευκὸν, ὥστε
+    στραγκουρίην ἐμποιέειν. Νᾶπυ θερμὸν, διαχωρητικὸν δέ, πλὴν δυσόρρεκτα καὶ τοῦτο·
+    ἀλλὰ καὶ εὔζωμον παραπλήσια διαπρήσσει.</p>
+  <p>Κορίανον θερμὸν καὶ στατικὸν, καὶ τὴν ὀξυρεγμίην παύει, ὕστατον δ᾽ ἐπεσθιόμενον καὶ
+    ὑπνοποιέει. Θρίδαξ ψυχρότερον πρὶν τὸν ὀπὸν ἔχειν· ἀσθενείην δὲ τινὰ ἐμποιέει τῷ
+    σώματι. Ἄνηθον θερμὸν καὶ στατικὸν, καὶ πταρμὸν παύει ὀσφραινόμενον. Σέλινον
+    οὐρέεται μᾶλλον ἢ διαχωρέει, καὶ αἱ ῥίζαι μᾶλλον ἢ αὐτὸ διαχωρέουσιν. Ἄκιμον
+    ξηρὸν καὶ θερμὸν καὶ στάσιμον. Πήγανον οὐρέεται μᾶλλον ἢ διαχωρέει, καὶ σπασμῶν
+    τι ἕξει, καὶ πρὸς τὰ φάρμακα τὰ</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour ce passage d'Hippocrate :
+
+
+<div type="book" n="54">
+  <div type="section" n="1">
+    <p><foreign xml:lang="grc">βλαβερά</foreign> <name type="animal" xml:lang="fr">chien</name> ὀφελέει προπινομένον. <name type="animal" xml:lang="fr">asperagus</name> ξηρὸν καὶ στάσιμον.</p>
+    <p><name type="animal" xml:lang="fr">elelísphakon</name> ξηρὸν καὶ στατικόν. στρύχνος ψύχει καὶ ἐξονειρόσσειν οὐκ ἐᾷ.</p>
+    <p><name type="animal" xml:lang="fr">andrachne</name> ψύχει ἡ ποταυνίη, τετραρχεομένη δὲ θερμαίνει. <name type="animal" xml:lang="fr">knidē</name> καθαίρει.</p>
+    <p><name type="animal" xml:lang="fr">kalaminthe</name> θερμαίνει καὶ καθαίρει. <name type="animal" xml:lang="fr">minthē</name> θερμαίνει καὶ οὐρέεται καὶ ἐμέτοις ἵστησι, καὶ ἢν πολλάκις ἐσθίῃ τις, τὴν γονὴν τήκει ὥστε ῥέειν, καὶ ἐντείνει κωλύει, καὶ τὸ σῶμα ἀσθενὲς ποιέει.</p>
+    <p><name type="animal" xml:lang="fr">lapathon</name> θερμαῖνον διαχωρέει. <name type="animal" xml:lang="fr">andrax</name> ὑγρὸν, οὐ μέντοι διαχωρέει.</p>
+    <p><name type="animal" xml:lang="fr">bliton</name> οὐ θερμόν, διαχωρητικόν. <name type="animal" xml:lang="fr">krambe</name> θερμαίνει καὶ διαχωρέει καὶ τὰ χολώδεα ἄγει.</p>
+    <p><name type="animal" xml:lang="fr">teutlos</name> ὁ μὲν χυλὸς διαχωρέει, τὸ δὲ λάχανον ἐσθιόμενον ἵστησι, αἱ δὲ ῥίζαι τῶν τεύτλων διαχωρητικώτεραι.</p>
+    <p><name type="animal" xml:lang="fr">kolokyntē</name> ψύχει καὶ ὑγραίνει καὶ διαχωρέει, οὐκ οὐρέεται δέ.</p>
+  </div>
+</div>
+<div type="chapter" n="55">
+  <p><name type="animal" xml:lang="fr">Gogglis</name> <foreign xml:lang="grc">κανσῶδες</foreign>, <persName>Hippocrate</persName> <foreign xml:lang="grc">ἡγραινει</foreign> δὲ καὶ <name type="animal" xml:lang="fr">ταράσσει</name> τὸ <name type="animal" xml:lang="fr">σῶμα</name>, οὐ μὲντοι
+  διαχωρέει, <foreign xml:lang="grc">δρσονορέεται</foreign> δέ. <name type="animal" xml:lang="fr">Γλήχων</name> <foreign xml:lang="grc">θερμαίνει</foreign> καὶ διαχωρέει. <name type="plant" xml:lang="fr">Ὀρίγανον</name>
+  <foreign xml:lang="grc">θερμαίνει</foreign>, <foreign xml:lang="grc">ὑπάγει</foreign> δὲ καὶ τὰ <name type="plant" xml:lang="fr">χολώδεα</name>. <name type="plant" xml:lang="fr">Θύμβρη</name> <foreign xml:lang="grc">παραπλήσια</foreign> τῷ <name type="plant" xml:lang="fr">ὀρίγανῳ</name>
+  <foreign xml:lang="grc">διαπρήσσεται</foreign>. <name type="plant" xml:lang="fr">Θύμον</name> <foreign xml:lang="grc">θερμὸν</foreign>, διαχωρέει καὶ <foreign xml:lang="grc">οὐρέεται</foreign>, <foreign xml:lang="grc">ἄγει</foreign> δὲ καὶ
+  <name type="plant" xml:lang="fr">φλεγματώδεα</name>. <name type="animal" xml:lang="fr">Ὄσσωπος</name> <foreign xml:lang="grc">θερμαίνει</foreign> καὶ <name type="plant" xml:lang="fr">φλεγματώδεα</name> <foreign xml:lang="grc">ἄγει</foreign>. Τῶν δὲ <name type="plant" xml:lang="fr">ἀγρίων</name>
+  <name type="plant" xml:lang="fr">λαχάνων</name> <foreign xml:lang="grc">ὁκόσα</foreign> ἐν τῷ <name type="animal" xml:lang="fr">στόματι</name> <foreign xml:lang="grc">θερμαντικὰ</foreign> καὶ <foreign xml:lang="grc">εὐώδεα</foreign>, <foreign xml:lang="grc">ταῦτα</foreign> <foreign xml:lang="grc">θερμαίνει</foreign>
+  καὶ <foreign xml:lang="grc">οὐρέεται</foreign> μᾶλλον ἢ διαχωρέει· <foreign xml:lang="grc">ὁκόσα</foreign> δὲ <foreign xml:lang="grc">ὑγρὴν</foreign> <foreign xml:lang="grc">φύσιν</foreign> <foreign xml:lang="grc">ἔχει</foreign> καὶ
+  <name type="plant" xml:lang="fr">ψυχρὴν</name> καὶ <name type="plant" xml:lang="fr">μωρὴν</name> ἢ <name type="plant" xml:lang="fr">ὀσμὰς</name> <foreign xml:lang="grc">βαρείας</foreign>, <foreign xml:lang="grc">ὑποχωρέεται</foreign> μᾶλλον ἢ <foreign xml:lang="grc">οὐρέεται</foreign>·
+  <foreign xml:lang="grc">ὁκόσα</foreign> δὲ <foreign xml:lang="grc">ἐστι</foreign> <name type="plant" xml:lang="fr">στρόφινα</name> ἢ <name type="plant" xml:lang="fr">αὐστηρά</name>, <foreign xml:lang="grc">στάσιμα</foreign>· <foreign xml:lang="grc">ὁκόσα</foreign> δὲ <name type="plant" xml:lang="fr">δριμέα</name> καὶ
+  <name type="plant" xml:lang="fr">εὐώδεα</name>, <foreign xml:lang="grc">οὐρέεται</foreign>· <foreign xml:lang="grc">ὁκόσα</foreign> δὲ <name type="plant" xml:lang="fr">δριμέα</name> καὶ <name type="plant" xml:lang="fr">ξηρά</name> ἐν τῷ <name type="animal" xml:lang="fr">στόματι</name>, <foreign xml:lang="grc">ταῦτα</foreign>
+  <foreign xml:lang="grc">πάντα</foreign> <foreign xml:lang="grc">ξηραίνει</foreign>· <foreign xml:lang="grc">ὁκόσα</foreign> δὲ <name type="plant" xml:lang="fr">ὀξέα</name>, <foreign xml:lang="grc">ψυκτικὰ</foreign>. Οἱ δὲ <name type="plant" xml:lang="fr">χυμοί</name> <foreign xml:lang="grc">διοσμητικοί</foreign>,</p>
+</div>
+<div type="book" n="56">
+  <div type="section" n="56/103">
+    <p>
+      <foreign xml:lang="grc">κρήθμον</foreign>, <foreign xml:lang="grc">σελίνου</foreign>, <foreign xml:lang="grc">σκορόδου</foreign> <name type="plant" xml:lang="fr">apozèmes</name>, <foreign xml:lang="grc">κνίσιου</foreign>, <foreign xml:lang="grc">μαράθρου</foreign>, <foreign xml:lang="grc">πράσου</foreign>,
+      <foreign xml:lang="grc">ἀδιαντού</foreign>, <foreign xml:lang="grc">στρύχνου</foreign> <quote>ψύχει</quote> <name type="animal" xml:lang="fr"> scolopendre</name>, <foreign xml:lang="grc">μίνθη</foreign>, <foreign xml:lang="grc">σέσελι</foreign>, <foreign xml:lang="grc">σέρις</foreign>,
+      <foreign xml:lang="grc">κανκαλίδες</foreign>, <foreign xml:lang="grc">ὑπερικόν</foreign>, <foreign xml:lang="grc">κνίδαι</foreign> <quote>διαχωρητικοί</quote> <quote>δὲ</quote> <quote>καὶ</quote> <quote>καθαρτικοί</quote>,
+      <foreign xml:lang="grc">ἐρεβίνθων</foreign>, <foreign xml:lang="grc">φακῆς</foreign>, <foreign xml:lang="grc">κριθῆς</foreign>, <foreign xml:lang="grc">τεύλων</foreign>, <foreign xml:lang="grc">κράμβης</foreign>, <foreign xml:lang="grc">λινοζώστου</foreign>, <foreign xml:lang="grc">ἀκτῆς</foreign>,
+      <foreign xml:lang="grc">κνήκου</foreign> <quote>ταῦτα</quote> <quote>πάντα</quote> <quote>ὑποχωρέεται</quote> <quote>μᾶλλον</quote> <quote>ἢ</quote> <quote>διοχρεύεται</quote>.
+    </p>
+    <milestone unit="section" n="55"/>
+    <p>
+      <foreign xml:lang="grc">Περὶ</foreign> <quote>δὲ</quote> <foreign xml:lang="grc">ὀπώρης</foreign> <quote>ἥδε</quote> <quote>ἔχει</quote>. <foreign xml:lang="grc">Τὰ</foreign> <quote>μὲν</quote> <foreign xml:lang="grc">ἐγκάρπια</foreign> <quote>διαχωρητικώτερα</quote>, <foreign xml:lang="grc">τὰ</foreign>
+      <foreign xml:lang="grc">δὲ</foreign> <foreign xml:lang="grc">χλωρὰ</foreign> <foreign xml:lang="grc">τῶν</foreign> <foreign xml:lang="grc">ξηρῶν</foreign>. <foreign xml:lang="grc">Ἡ</foreign> <quote>δὲ</quote> <foreign xml:lang="grc">δύναμις</foreign> <quote>εἰρήσεται</quote>
+      <quote>αὐτῶν</quote>. <foreign xml:lang="grc">Μῶρα</foreign> <foreign xml:lang="grc">θερμαίνει</foreign> <quote>καὶ</quote> <foreign xml:lang="grc">ὑγραίνει</foreign> <quote>καὶ</quote> <foreign xml:lang="grc">διαχωρεῖ</foreign>.
+      <foreign xml:lang="grc">Ὀπιοι</foreign> <foreign xml:lang="grc">πέπειροι</foreign> <foreign xml:lang="grc">θερμαίνοισι</foreign> <quote>καὶ</quote> <foreign xml:lang="grc">ὑγραίνοισι</foreign>
+      <quote>καὶ</quote> <foreign xml:lang="grc">διαχωρέουσι</foreign> <quote>·</quote> <foreign xml:lang="grc">αἱ</foreign> <quote>δὲ</quote> <foreign xml:lang="grc">σκληραὶ</foreign> <foreign xml:lang="grc">στάσιμοι</foreign> <quote>·</quote>
+      <foreign xml:lang="grc">ἀχράδες</foreign> <foreign xml:lang="grc">χειμέριοι</foreign> <foreign xml:lang="grc">πέπειροι</foreign> <foreign xml:lang="grc">διαχωρέουσι</foreign> <quote>καὶ</quote>
+      <foreign xml:lang="grc">τῆς</foreign> <foreign xml:lang="grc">κοιλίης</foreign> <quote>καθαρτικαί</quote> <quote>·</quote> <foreign xml:lang="grc">αἱ</foreign> <quote>δὲ</quote> <foreign xml:lang="grc">ὀπμαὶ</foreign>
+      <foreign xml:lang="grc">στάσιμοι</foreign>. <foreign xml:lang="grc">Μῆλα</foreign> <foreign xml:lang="grc">γλυκέα</foreign> <foreign xml:lang="grc">δύσπεπτα</foreign>, <foreign xml:lang="grc">τὰ</foreign>
+      <quote>δὲ</quote> <foreign xml:lang="grc">ὀξέα</foreign> <quote>καὶ</quote> <foreign xml:lang="grc">πέπονα</foreign> <quote>ἧσσον</quote> <quote>·</quote> <name type="animal" xml:lang="fr">cynodontia</name>
+      <foreign xml:lang="grc">στυπτικά</foreign> <quote>καὶ</quote>
+    </p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diaitês oxeôn, section 57/103), en respectant toutes les exigences Zoomathia :
+
+
+<div type="section" n="57">
+   <p>οὐ διαχωρέουσιν οἱ δὲ χυλοὶ τῶν μήλων πρὸς τοὺς ἐμμέτους στατικοί
+      καὶ οὐρητικοί· καὶ ὀδμαὶ πρὸς τοὺς ἐμμέτους· τὰ δὲ ἄγρια μῆλα
+      στατικὰ, ἑψθὰ δὲ ἐσθιόμενα μᾶλλον διαχωρητικὰ πρὸς δὲ τὴν
+      ὀρθοπνοΐην οἵ τε χυλοὶ αὐτῶν καὶ αὐτὰ πινόμενα ὠφελέει. Οἵδα δὲ
+      καὶ μὲσπιλα καὶ κράνια καὶ ὅση ἄλλη τοιαύτη ὀπώρη στατικὴ καὶ
+      στροφνή.</p>
+   <p><milestone unit="section" n="57.1"/> ῥοιαῖς γλυκείας ὁ χυλὸς διαχωρεύει, κανσώδης δὲ τι ἔχει·
+      αἱ οἰνώδεις τῶν ῥοιῶν φοσώδεις· αἱ δὲ ὀξεῖαι ψυκτικώτεραι· οἱ δὲ
+      πυρῆνες πασέων στάσιμοι. Σῦκοι ὠμοί ψυχροὶ καὶ δύσπεπτοι· οἱ δὲ
+      πέπονες οὐρῶνται καὶ διαχωρέονται, φοσώδεις δέ. Βότρυες θερμοὶ
+      καὶ ὑγροὶ καὶ διαχωρητικοί, μάλιστα οἱ λευκοί· οἱ μὲν οὖν γλυκέες
+      θερμαινούσιν ἰσχυρῶς, διότι πολὺ ἤδη τοῦ θερμοῦ ἔχουσιν· οἱ δὲ
+      ὀμφακώδεις ἥσσον</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate (Peri diaitês oxeôn, section 58/103) :
+
+
+<div type="section" n="58">
+   <milestone unit="section" n="58"/>
+   <p><foreign xml:lang="grc">Θερμαίνουσι</foreign>, καθαίρουσι δὲ πινόμενοι· σταφίδες δὲ καὶ κάνσυδδες, διαχώρεει δέ. <name type="animal" xml:lang="fr">Σῦκον</name> χλωρὸν ὑγραινεῖ καὶ διαχώρεει καὶ θερμαίνει, ὑγραινεῖ μὲν ὅτι ἔγχυλον ἐστίν, θερμαίνει δὲ διὰ τὸν γλυκὺν ὀπὸν καὶ διαχώρεει· τὰ πρῶτα τῶν <name type="animal" xml:lang="fr">συκῶν</name> κάκιστα, ὅτι εἰσὶ ὀπώδηςτα, βέλτιστα δὲ τὰ ἥστατα· τὰ ξηρὰ <name type="animal" xml:lang="fr">σῦκα</name> κάνσυδέα μὲν, διαχωρητικά δέ.</p>
+   <p>Αἱ ἀμύγδαλαι κάνσυδδες, τρόφιμοι δέ· κάνσυδδες μὲν διὰ τὸ λιπαρόν, τρόφιμοι δὲ διὰ τὸ σαρκῶδες. Καὶ κάππα τὰ στρογγύλα παραπλήσια· τὰ δὲ πλατέα πέπονα τρόφιμα, καὶ διαχώρεει καθαρά ἐόντα, καὶ φῦσαν ἐμποιέει· οἱ δὲ χιτῶνες αὐτέων στάσιμοι. Ὄκνοι καὶ βάλανοι καὶ φηγοὶ στατικά ὁμὰ καὶ ὀπτά· ἐφθὰ δὲ ἧσσον.</p>
+   <p>54. <foreign xml:lang="fr">Des herbages</foreign>.) Pour les herbages il en est ainsi : l'<name type="plant" xml:lang="fr">ail</name> est chaud, évacuant et diurétique, bon pour le corps, mauvais pour les yeux ; car, produisant une purgation</p>
+</div>
+<div type="chapter" n="59">
+   <milestone unit="section" n="59"/>
+   <p>considérable du corps, il affaiblit la vue ; il est diurétique et
+      évacuant à cause de la vertu purgative qu'il possède; cuit il est
+      plus faible que cru ; il cause de la flatulence à cause qu'il arrête
+      les flatuosités. L'<name type="plant" xml:lang="fr">oignon</name> est bon à la vue, mauvais au corps, parce
+      que, étant chaud et brûlant, il n'est pas évacuant ; sans donner au
+      corps nourriture ni profit, il réchauffe et le dessèche
+      par son suc. Le <name type="plant" xml:lang="fr">poireau</name> échauffe moins; il.est plus diurétique et
+      plus évacuant ; il a quelque chose de purgatif; Il humecte et arrête
+      les rapports aigres; il est bon d'en manger après tous les autres
+      mets. Le <name type="plant" xml:lang="fr">raifort</name> humecte, dissolvant le phlegme par son piquant; les
+      feuilles ont moins cette propriété, excepté dans les maladies
+      articulaires ; la racine est mauvaise, revenant et indigeste. Le
+      <name type="plant" xml:lang="fr">cardame</name> (<foreign xml:lang="la">erucaria aleppica</foreign>, G.) (voy.
+      note 5) est chaud, il fond la chair, il arrête le phlegme
+      blanc de manière à produire de la dysurie. La <name type="plant" xml:lang="fr">moutarde blanche</name> (<foreign xml:lang="la">sinapis
+      alba</foreign>, L.) est chaude, mais évacuante, seulement elle cause de
+      la dysurie, elle aussi. La <name type="plant" xml:lang="fr">roquette</name> (<foreign xml:lang="la">eruca
+      sativa</foreign>, L.) produit les mêmes effets. La <name type="plant" xml:lang="fr">coriandre</name> est chaude
+      et resserrante, elle arrête les rapports aigres ; mangée en dernier
+      lieu, elle est même soporative. La <name type="plant" xml:lang="fr">laitue</name> est plus froide avant
+      d'avoir son suc ; mais elle produit une certaine faiblesse dans le
+   </p>
+</div>
+<div type="chapter" n="60">
+   <milestone unit="section" n="60"/>
+   <p>corps. <name type="plant" xml:lang="fr">L'aneth</name> est chaud et resserrant ; flairé, il arrête l'éternuement. <name type="plant" xml:lang="fr">L'ache</name> (<foreign xml:lang="la">apium graveolens</foreign> cultum, d'après <persName>Fraas</persName>, <title>Synopsis</title>, p. 147) est plus diurétique qu'évacuant; et les racines évacuent plus que la tige. <name type="plant" xml:lang="fr">L'ocimon</name> (<foreign xml:lang="fr">basilic</foreign>) est sec, chaud et resserrant. <name type="plant" xml:lang="fr">La rue</name> est plutôt diurétique qu'évacuante ; elle a quelque chose de coagulant ; et elle est bonne à prendre d'avance contre les substances vénéneuses. <name type="plant" xml:lang="fr">L'asperge</name> est chaude et resserrante. <name type="plant" xml:lang="fr">La sauge</name> est sèche et resserrante. <name type="plant" xml:lang="fr">La morelle</name> rafraîchit et ne laisse pas avoir des pollutions nocturnes. <name type="plant" xml:lang="fr">Le pourpier</name>, frais, refroidit ; confit, il échauffe. <name type="plant" xml:lang="fr">L'ortie</name> purge. <name type="plant" xml:lang="fr">Le calament</name> échauffe et purge. <name type="plant" xml:lang="fr">La menthe</name> échauffe, est diurétique, et arrête les vomissements; et, si on en mange souvent, elle fond le sperme de manière à produire des pertes séminales, empêche les érections et affaiblit le corps. <name type="plant" xml:lang="fr">La patience</name> est échauffante et évacuante. <name type="plant" xml:lang="fr">L'arroche</name> est humide, sans cependant évacuer. <name type="plant" xml:lang="fr">La blette</name> (voy. note 2) n'est pas chaude, elle est évacuante. <name type="plant" xml:lang="fr">Le chou</name> échauffe, évacue et fait sortir les matières bilieuses. <name type="plant" xml:lang="fr">La bette</name> est évacuante par son eau ; mais la plante même est resserrante, en aliment ; la racine est plus relâchante. <name type="plant" xml:lang="fr">La citrouille</name> rafraîchit, humecte et relâche, mais elle ne fait pas uriner. <name type="plant" xml:lang="fr">La rave</name> est échauffante ; elle humecte et trouble le corps ;</p>
+</div>
+<div type="section" n="61">
+   <milestone unit="section" n="61"/>
+   <p>cependant elle n'Ã©vacue pas ; elle cause de la dysurie. Le <name type="animal" xml:lang="fr">pouillot</name> Ã©chauffe et Ã©vacue. L'<name type="plant" xml:lang="fr">origan</name> Ã©chauffe, mais il fait aussi sortir les matiÃ¨res bilieuses. La <name type="plant" xml:lang="fr">sarriette</name> agit comme l'<name type="plant" xml:lang="fr">origan</name>. Le <name type="plant" xml:lang="fr">thym</name> est chaud, Ã©vacuant et diurÃ©tique; il fait aussi sortir les matiÃ¨res phlegmatiques. L'<name type="plant" xml:lang="fr">hysope</name> (voy. note 10) Ã©chauffe et fait sortir les matiÃ¨res phlegmatiques.</p>
+   <p>Parmi les lÃ©gumes sauvages, ceux qui sont chauds Ã  la bouche et odorants, Ã©chauffent et font uriner plutÃ´t qu'ils n'Ã©vacuent ; ceux qui ont une nature humide, froide, inerte, ou une odeur forte, Ã©vacuent plutÃ´t qu'ils ne font uriner ; ceux qui sont acerbes ou astringents, resserrent ; ceux qui sont acres et de bonne odeur font uriner ; ceux qui sont acres et secs dans la bouche, dessÃ¨chent ; ceux qui sont acides rafraÃ®chissent.</p>
+   <p>Sont diurÃ©tiques les jus de <name type="plant" xml:lang="fr">fenouil marin</name> (<foreign xml:lang="la">adiantum maritimum</foreign>, <foreign xml:lang="la">L.</foreign>), de <name type="plant" xml:lang="fr">ache</name>, les infusion d'<name type="plant" xml:lang="fr">ail</name>, de <name type="plant" xml:lang="fr">cytise</name>, de <name type="plant" xml:lang="fr">fenouil</name>, de <name type="plant" xml:lang="fr">porreau</name>, d'<name type="plant" xml:lang="fr">adiante</name> (<foreign xml:lang="la">adiantum capillus veneris</foreign>, <foreign xml:lang="la">L.</foreign>), de <name type="plant" xml:lang="fr">morelle</name>; sont rafraÃ®chissants la <name type="plant" xml:lang="fr">scolopendre</name>, la <name type="plant" xml:lang="fr">menthe</name>, le <name type="plant" xml:lang="fr">seseli</name>, la <name type="plant" xml:lang="fr">chicorÃ©e</name>, la <name type="plant" xml:lang="fr">pimprenelle</name>, l'<name type="plant" xml:lang="fr">hypericem</name>, l'<name type="plant" xml:lang="fr">ortie</name>; sont de suc Ã©vacuant et purgatif, le <name type="plant" xml:lang="fr">pois chiche</name>, la <name type="plant" xml:lang="fr">lentille</name>, l'<name type="plant" xml:lang="fr">orge</name>, la <name type="plant" xml:lang="fr">bette</name>, le <name type="plant" xml:lang="fr">chou</name>, la <name type="plant" xml:lang="fr">mercuriale</name>, le <name type="plant" xml:lang="fr">sureau</name>, le <name type="plant" xml:lang="fr">carthame</name> ; tout cela a plutÃ´t la propriÃ©tÃ© d'Ã©vacuer que de faire uriner.</p>
+   <milestone unit="section" n="55"/>
+   <p>(Des fruits.) Quant aux fruits, voici</p>
+</div>
+<pb n="564"/>
+<p>ce qu'il en est : les <name type="plant" xml:lang="fr">fruits</name> mûrs sont plus relâchants, les <name type="plant" xml:lang="fr">fruits</name>
+récents le sont plus que les <name type="plant" xml:lang="fr">fruits</name> secs. Les propriétés en vont
+être dites : les <name type="plant" xml:lang="fr">mûres</name> échauffent, humectent et évacuent. Les <name type="plant" xml:lang="fr">poires</name>
+mûres échauffent, humectent et évacuent ; les <name type="plant" xml:lang="fr">poires</name> dures sont
+resserrantes ; les <name type="plant" xml:lang="fr">poires</name> sauvages d'hiver, mûres, sont évacuantes
+et purgent le ventre ; crues, elles resserrent. Les <name type="plant" xml:lang="fr">pommes</name> douces
+sont de difficile digestion ; les <name type="plant" xml:lang="fr">pommes</name> acides, mûres, de moins
+difficile. Les <name type="plant" xml:lang="fr">coings</name> sont astringents et ne font pas aller à la
+selle. Le suc de <name type="plant" xml:lang="fr">pomme</name> arrête les vomissements et pousse à l'urine,
+l'odeur des <name type="plant" xml:lang="fr">pommes</name> est bonne aussi contre les vomissements. Les
+<name type="plant" xml:lang="fr">pommes</name> sauvages sont resserrantes ; mais, mangées cuites, elles le
+sont moins ; pour l'oppression le jus de <name type="plant" xml:lang="fr">pomme</name> et la <name type="plant" xml:lang="fr">pomme</name> même en
+boisson rendent service. Les <name type="plant" xml:lang="fr">sorbes</name>, les <name type="plant" xml:lang="fr">nèfles</name>, les <name type="plant" xml:lang="fr">cornouilles</name> et
+les autres <name type="plant" xml:lang="fr">fruits</name> de ce genre sont resserrants et astringents. Le
+jus de la <name type="plant" xml:lang="fr">grenade</name> douce est évacuant, mais il a quelque chose de
+brûlant ; les <foreign xml:lang="fr">grenade</foreign> vineuses sont flatulentes ; les <name type="plant" xml:lang="fr">grenades</name>
+acides sont plus rafraîchissantes ; mais les grains de toutes sont
+resserrants. Les <name type="animal" xml:lang="fr">concombres</name> (voy. p. 564 note 1) sont froids et de difficile digestion ; les <name type="animal" xml:lang="fr">melons</name> sont
+diurétiques et évacuants, mais flatulents. Les <name type="plant" xml:lang="fr">raisins</name> sont chauds,
+humides et évacuants, surtout les blancs ; les <name type="plant" xml:lang="fr">raisins</name> doux</p>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate :
+
+
+<div type="chapter" n="63">
+   <p>échauffent fortement parce qu'ils ont déjà une grande portion de
+      <foreign xml:lang="grc">θερμόν</foreign> ; les <name type="plant" xml:lang="fr">raisins verts</name> échauffent moins, ils purgent en boisson ;
+      les <name type="plant" xml:lang="fr">raisins secs</name> sont échauffants, mois ils évacuent. La <name type="plant" xml:lang="fr">figue verte</name>
+      humecte, évacue et échauffe; elle humecte parce qu'elle est juteuse ;
+      elle échauffe et évacue par son suc doux ; les premières <name type="plant" xml:lang="fr">figues</name> sont les plus mauvaises parce qu'elles ont le plus de suc ;
+      les meilleures sont les dernières ; les <name type="plant" xml:lang="fr">figues sèches</name> sont échauffantes,
+      mais évacuantes.</p>
+   <p>Les <name type="plant" xml:lang="fr">amandes</name> sont échauffantes, mais nourrissantes ;
+      échauffantes à cause de leur principe huileux, nourrissantes à cause
+      de leur chair. Les <name type="plant" xml:lang="fr">noix rondes</name> (la <name type="plant" xml:lang="fr">noix</name>
+      ordinaire) agissent de même. Les <name type="plant" xml:lang="fr">noix plates</name> (<name type="plant" xml:lang="fr">châtaignes</name>),
+      mûres, sont nourrissantes, évacuantes, si elles sont pelées, et
+      causent des flatuosités ; mais les peaux en sont resserrantes.</p>
+   <p>Les <foreign xml:lang="la">glands</foreign> du <foreign xml:lang="la">quercus ilex</foreign>, les <foreign xml:lang="la">glands</foreign>, ceux du <foreign xml:lang="la">quercus es eu lus</foreign> sont
+      resserrants, crus et grillés; mais, bouillis, ils le sont moins.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte d'Hippocrate :
+
+
+<div type="book" n="64">
+  <div type="section" n="56">
+    <p>Tà πίονα τῶν κρεῶν κάνσοδέα, διαχωρητικά δέ. Κρέα ταριχηρά ἐν οἴνῳ μὲν ξηραίνει καὶ τρέφει, ξηραίνει μὲν διὰ τὸν οἶνον, τρέφει δὲ διὰ τὴν σάρκα· ἐν ὀξεί δὲ τετριχημένα θερμαίνει μὲν ἧσσον διὰ τὸ ὀξύ, τρέφει δὲ ἱκανῶς· ἐν ἅλσει δὲ κρέα ταριχηρά τρόφιμα μὲν ἧσσον, διὰ τὸ ἅλας τοῦ ὑγροῦ ἀπεστερημένα, ἰσχναίνει δὲ καὶ ξηραίνει καὶ διαχωρεῖ ἱκανῶς.</p>
+    <p>Τὰς δὲ δυνάμιας ἑκάστων ἀφαιρέειν καὶ προσίτθεσθαι ὧδε χρή, εἰδότας ὅτι πῦρ καὶ ὕδωρ πάντα ξυνίσταται καὶ ζῷα καὶ φυτὰ καὶ ὑπὸ τούτων αὔξεται καὶ ἐς ταῦτα διακρίνεται. Τῶν μὲν οὖν ἰσχρῶν σιτιίων ἐψῶντα πολλάκις καὶ διαψύχοντα τὴν δύναμιν ἀφαιρέειν, τῶν δὲ ὑγρῶν πνροῦντα καὶ φύζοντα τὴν ὑγρασίαν ἐξαιρέειν, τῶν δὲ ξηρῶν βρέχοντα</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte d'Hippocrate (Peri diaitês oxeôn, section 65/103) :
+
+
+<div type="section" n="65">
+  <p>καὶ νοτίζοντα, τῶν δὲ ἁλμυρῶν βρέχοντα καὶ ἑψῶντα, τῶν δὲ πικρῶν καὶ
+    δριμέων τοῖσι γλυκέσι διακρινῶντα, τῶν δὲ στροφνῶν τοῖσι λιπαρoῖσι·
+    καὶ ἐπὶ τῶν ἄλλων πάντων ἐκ τῶν προειρημένων χρή γινώσκειν.</p>
+  <p><milestone unit="section" n="65"/> Ὅκoσα πρoύμενα ἢ φωζόμενα στάσιμα ἐστὶ μᾶλλον τῶν ἡμέων, διότι τὸ
+    ὑγρὸν ὑπὸ τοῦ πυρὸς ἀφίηται καὶ τὸ ὀπώδες καὶ τὸ λιπαρόν· ὁκόταν γοῦν ἐς
+    τὴν κοιλίην ἐμπέσῃ, ἕλκει τὸ ὑγρὸν ἐκ τῆς κοιλίης, ἐπὶ αὐτὰ συγκλείοντα τὰ
+    στόματα τῶν φλεβίων, ξηραίνοντα καὶ θερμαίνοντα, ὥστε ἵστησι τὰς
+    διεξόδους τοῦ ὑγροῦ.</p>
+  <p>Τὰ δὲ ἐκ τῶν ἀνύδρων καὶ ξηρῶν καὶ πνιγηρῶν χωρίων ἅπαντα ξηρότερα καὶ
+    θερμότερα καὶ ἰσχὺν πλείω παρέχεται ἐς τὸ σῶμα, διότι ἐκ τοῦ ἴσου ὄγκου
+    βαρύτερα καὶ πυκνότερα</p>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="66">
+  <div type="section" n="1">
+    <p><foreign xml:lang="grc">καὶ πολὺ νοστά ἐστιν ἢ τὰ ἐκ τῶν ὑγρῶν καὶ ἀρδομένων καὶ ψυχρῶν·</foreign></p>
+    <p>ταῦτα δὲ ὑγρότερα καὶ κούφότερα καὶ ψυχρότερα. <foreign xml:lang="grc">οὐκοῦν δεῖ τὴν δύναμιν μόνον αὐτέων γνῶναι τοῦ τε σίτου καὶ τοῦ πόματος καὶ τῶν ζώων,</foreign> ἀλλὰ καὶ τῆς πατρίδος ὁκόθεν εἰσίν.</p>
+    <p><foreign xml:lang="grc">ὁκόταν μὲν οὖν βούλωνται τροφὴν ἰσχυροτέρην τῷ σώματι προσενεκκεῖν ἀπὸ τῶν αὐτῶν σιτίων,</foreign></p>
+    <p>τοῖσιν ἐκ τῶν ἀνύδρων χωρίων χρηστέον καὶ σιτίοισι καὶ πόμασι καὶ ζώοισι· <foreign xml:lang="grc">ὁκόταν δὲ κούφοτέρῃ τροφῇ καὶ ὑγρότερῃ,</foreign> τοῖσιν ἐκ τῶν ἀρδομένων χρηστέον.</p>
+    <p><foreign xml:lang="grc">τὰ γλυκέα καὶ τὰ δριμέα καὶ τὰ ἁλικὰ καὶ τὰ πικρὰ καὶ τὰ αὐστηρὰ καὶ τὰ σαρκώδεα θερμαίνειν πέφυκε,</foreign> καὶ ὅσα ξηρά ἐστι καὶ ὅσα ὑγρά.</p>
+    <p><foreign xml:lang="grc">ὁκόσα μὲν οὖν ξηροῦ μέρος πλέον ἔχει ἐν αὐτοῖσιν,</foreign> ταῦτα μὲν ξηραίνει καὶ θερμαίνει· <foreign xml:lang="grc">ὁκόσα δὲ ὑγροῦ μέρος πλέον ἔχει,</foreign></p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="67">
+  <div type="section" n="1">
+    <p><foreign xml:lang="grc">ταῦτα</foreign> πάντα θερμαινόντα ὑγραινεῖ καὶ διαχωρέει μᾶλλον ἢ τὰ ξηρά· <milestone unit="section" n="67.1"/></p>
+    <p>τροφὴν γὰρ μᾶλλον ἐς τὸ σῶμα διδόντα, ἀντίστασιν ποιέεται ἐς τὴν κοιλίην, καὶ ὑγραινόντα διαχωρέει. <milestone unit="section" n="67.2"/></p>
+    <p>Ὅκωσα δὲ διαθερμαινόντα ξηραίνει <milestone unit="section" n="67.3"/></p>
+    <p>ἢ σῖτα ἢ ποτὰ, οὔτε πτύσιν οὔτε οὔρησιν οὔτε διαχώρησιν ποιέοντα ξηραίνει τὸ σῶμα διὰ τάδε· θερμαινόμενον τὸ σῶμα κενούται τοῦ ὑγροῦ, <milestone unit="section" n="67.4"/></p>
+    <p>τὸ μὲν ὑπ᾽ αὐτέων τῶν σιτιίων, τὸ δὲ ἐς τὴν τροφὴν τῇ τῆς ψυχῆς θερμῇ καταναλίσκεται, τὸ δὲ διὰ τοῦ χρωτὸς ἐξωθέεται θερμαινόμενον καὶ λεπτούμενον. <milestone unit="section" n="67.5"/></p>
+    <p>Τὰ γλυκέα καὶ τὰ πίωνα καὶ τὰ λιπαρά πληρώτικα ἐστί, <milestone unit="section" n="67.6"/></p>
+    <p>διότι ἐξ ὀλίγου ὄγκου πολλὰ ἐστί· θερμαινόμενα δὲ καὶ διαχεόμενα πληροῖ τὸ θερμὸν ἐν τῷ σώματι καὶ γαληνίζειν ποιέει. <milestone unit="section" n="67.7"/></p>
+    <p>Τὰ δὲ ὀξέα καὶ </p>
+  </div>
+</div>
+<pb n="68"/>
+<div type="chapter" n="68">
+  <p>Les aliments <name type="plant" xml:lang="fr">durs</name>, <name type="plant" xml:lang="fr">âpres</name>, <name type="plant" xml:lang="fr">astringents</name>, <name type="plant" xml:lang="fr">astringents</name> et <name type="plant" xml:lang="fr">secs</name> ne remplissent pas, parce que les orifices des veines se ferment et se bouchent, et que les uns dessèchent, les autres piquent, et d'autres encore resserrent et contractent. Ils rendent le corps dur et le ventre vide. C'est pourquoi, si l'on veut remplir le ventre avec peu de nourriture ou le vider avec peu de boisson, il faut user de ces aliments. Tous les aliments crus contiennent plus de nourriture que les autres, parce qu'ils sont plus près de l'état vivant, et que les sucs et les sucs nourriciers se séparent plus facilement des aliments cuits, parce qu'ils sont plus près de la pourriture. Les aliments nommés <foreign xml:lang="grc">στροφώδεα</foreign> et <foreign xml:lang="grc">ἐρευγμώδεα</foreign> sont tels, parce que ce qui doit être digéré par le feu est digéré par la chaleur de la cavité.</p>
+</div>
+<div type="chapter" n="57">
+   <milestone unit="section" n="57"/>
+   <p>ἐοῦσα τῶν ἐσιόντων. Τὰ δὲ ἐν τοῖσιν ὑποτρίμμασι ὀψα σκευάζομενα κρανσώδεα καὶ ὑγρὰ, ὅτι λιπαρά τε καὶ πνρώδεα καὶ θερμὰ καὶ ἀνομοίους τὰς δυνάμιας ἀλλήλῃισιν ἔχοντα ἐν τῷ αὐτῷ ἴζει. Τὰ δὲ ἐν ἅλμῃ ἢ ὀξεί βελτίω καὶ οὐ κρανσώδεα.</p>
+   <p>Περὶ δὲ λοντρῶν ἥδε ἔχει· ὕδωρ πότιμον ὑγραινεῖ καὶ ψύχει, δίδωσι γὰρ τῷ σώματι ὑγρασίην· τὸ δὲ ἁλμυρὸν λοντρὸν θερμαίνει καὶ ξηραίνει, φύσει γὰρ ἐὸν θερμὸν ἕλκει ἀπὸ τοῦ σώματος τὸ ὑγρόν. Τὰ δὲ θερμὰ λοντρὰ νῆστιν μὲν ἰσχναίνει καὶ ψύχει· φέρει γὰρ ἀπὸ τοῦ σώματος τὸ ὑγρὸν τῇ θερμασίῃ· κενουμένη δὲ τῆς σαρκὸς τοῦ ὑγροῦ, ψύχεται τὸ σῶμα· βεβρωκότα δὲ θερμαίνει καὶ ὑγραίνει, διαχέοντα τὰ ὑπάρχοντα ἐν τῷ σώματι ὑγρὰ ἐς πλείονα ὄγκον. Ψυχρὰ δὲ λοντρὰ</p>
+</div>
+<div type="section" n="56">
+   <p>Les viandes grasses causent de la chaleur, mais sont <foreign xml:lang="grc">ἐκκρίνουσαι</foreign>.</p>
+   <p>Les viandes conservées dans du <name type="plant" xml:lang="fr">vin</name> dessèchent et nourrissent; elles dessèchent à cause du <name type="plant" xml:lang="fr">vin</name>, elles nourrissent à cause de la <name type="animal" xml:lang="fr">chair</name>; dans du <name type="plant" xml:lang="fr">vinaigre</name>, elles échauffent moins à cause du <name type="plant" xml:lang="fr">vinaigre</name>, et elles nourrissent bien; dans du <name type="plant" xml:lang="fr">sel</name>, elles nourrissent moins à cause que le <name type="plant" xml:lang="fr">sel</name> les a privées de l'humide, mais elles atténuent, dessèchent et évacuent fort bien.</p>
+   <p>Sachant que tous, <name type="animal" xml:lang="fr">animaux</name> et <name type="plant" xml:lang="fr">végétaux</name>, sont composés de feu et d'eau, sont accrus par ces principes, et se résolvent en ces principes, voici comment il faut diminuer et augmenter les propriétés de chacune des substances alimentaires : on ôtera de la force aux aliments forts en les cuisant souvent et les refroidissant, de l'humidité aux aliments</p>
+</div>
+<div type="book" n="71">
+  <div type="section" n="71/103">
+    <p>humides en les grillant et rôtissant ; les aliments secs, on les humectera et mouillera ; les aliments salés, on les mouillera et les cuira ; les aliments amers et acres, on les mêlera aux doux ; les aliments astringents aux aliments gras ; et ainsi du reste, on en jugera par ce qui a été dit.</p>
+    <p>Les substances grillées ou rôties sont plus resserrantes que crues, parce que le feu a enlevé l'humide, le juteux et le gras ; aussi, ingérées dans le ventre, elles en attirent l'humide, fermant les orifices des veines, séchant et échauffant, de sorte que les voies de l'humide sont fermées.</p>
+    <p>Les substances provenant des localités dépourvues d'eau, sèches et étouffantes, sont toutes plus sèches, plus chaudes et donnent plus de vigueur au corps, parce que, sous un volume égal elles sont plus pesantes, plus compactes et plus nutritives que celles qui proviennent de localités humides, arrosées et froides ; ces dernières sont plus humides, plus légères et plus rafraîchissantes.</p>
+    <p>Il faut donc connaître non-seulement les propriétés des substances elles-mêmes, céréales, boissons et <name type="animal" xml:lang="fr">bêtes</name>, mais encore les provenances. Ainsi, voulant donner, avec les mêmes aliments, une nourriture plus forte au corps, on emploiera ce qui provient de lieux dépourvus d'eau, céréales, boissons et <name type="animal" xml:lang="fr">bêtes</name> ; mais, voulant donner une nourriture plus légère</p>
+  </div>
+</div>
+<pb n="72"/>
+<p>et plus humide, on emploiera ce qui provient de lieux arrosés. Les choses douces, acres, salées, amères, astringentes, charnues, échauffent ainsi que les choses sèches et les choses humides. Celles qui ont en elles plus de la portion sèche dessèchent et échauffent ; celles qui ont plus de la partie humide échauffent, humectent et évacuent plus que les sèches ; car, donnant au corps plus de nourriture, elles exercent une révulsion sur le ventre, et, humectant, évacuent.</p>
+<p>Les substances, soit aliments, soit boissons, qui, échauffant, dessèchent, ne produisant ni crachement ni urine ni selles, dessèchent le corps pour ceci : le corps échauffé éprouve une déperdition d'humide, dont une partie est prise par les aliments mêmes, l'autre est dépensée pour l'alimentation du chaud de l'âme, et l'autre, échauffée et atténuée, est expulsée à travers la peau.</p>
+<p>Les choses douces, les grasses, les onctueuses sont remplissantes, parce que, sous un petit volume, elles sont susceptibles d'une grande diffusion ; échauffées et s'épandant, elles rassasient le chaud dans le corps et le calment. Les choses acides, acres, astringentes, acerbes, grossières, sèches, ne remplissent pas, parce qu'elles ouvrent et mondifient les orifices des veines ; et les unes en séchant, les autres en mordant, les autres en resserrant, font</p>
+<div type="chapter" n="73">
+  <p>frissonner l'humide qui est dans la <name type="animal" xml:lang="fr">chair</name> et le contractent en un petit volume ; de la sorte, le vide devient grand dans le corps. Quand donc vous voulez remplir avec peu ou vider avec beaucoup, vous emploierez de telles choses. Toutes les choses fraîches donnent plus de force que les autres par cela qu'elles sont plus près du vivant ; les choses vieilles et faites évacuent plus que les fraîches, parce qu'elles sont plus près de la corruption. Les choses crues donnent des gargouillements et des rapports parce que l'office qui doit être rempli par le feu l'est par le ventre, qui est plus faible que les substances ingérées. Les préparations à la sauce causent de l'ardeur et de l'humidité, parce que des choses grasses, ardentes, chaudes et ayant des propriétés différentes sont réunies ensemble. Les préparations à la saumure ou au vinaigre valent mieux et ne causent pas d'ardeurs.</p>
+  <milestone unit="section" n="57"/>
+  <p>(Des bains.) Les bains se comportent ainsi : l'eau potable humecte et rafraîchit, car elle donne au corps de l'humidité. Le bain salé échauffe et sèche ; car, étant naturellement chaud, il attire l'humide hors du corps. Les bains chauds, à jeun, atténuent et rafraîchissent, car ils ôtent au corps l'humide par la chaleur ; or, la chair étant vide de l'humide, le corps se rafraîchit ; après le repas ils échauffent et humectent.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage d'Hippocrate (Peri diaitês oxeôn) :
+
+
+<div type="section" n="74">
+   <p>dilatant en un plus grand volume ce qui est dans le corps. Les bains</p>
+   <p>froids ont une action contraire : au corps à jeun, ils donnent,</p>
+   <p>étant froids, quelque chose de chaud ; au corps plein de nourriture,</p>
+   <p>lequel est humide, ils font, étant secs, subir une déperdition et le</p>
+   <p>remplissent du sec qu'ils ont. S'abstenir de bain dessèche par la</p>
+   <p>consommation de l'humide ; de même, s'abstenir d'onctions.</p>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="75">
+   <milestone unit="section" n="58"/>
+   <p><foreign xml:lang="grc">Λίπος</foreign> δὲ θερμαίνει καὶ ὑγραίνει καὶ μαλασσεῖ. ἥλιος δὲ καὶ πῦρ
+   ξηραίνει διὰ τάδε· θερμὰ ἐόντα καὶ ξηρά, ἕλκει ἐκ τοῦ σώματος τὸ
+   ὑγρὸν. Σκιὴ δὲ καὶ ψύχεα τὰ μέτρια ὑγραίνει, δίδωσι γὰρ μᾶλλον ἢ
+   λαμβάνει. ἱδρῶτες πάντες ἀπιόντες καὶ ξηραίνουσι καὶ ἰσχναίνουσι,
+   ἐκλείποντος τοῦ ὑγροῦ ἐκ τοῦ σώματος. Λαγνείνη ἰσχναίνει καὶ ὑγραίνει
+   καὶ θερμαίνει· θερμαίνει μὲν διὰ τὸν πόνου καὶ τὴν ἀπόκρισιν τοῦ
+   ὑγροῦ, ἰσχναίνει δὲ διὰ τὴν κένωσιν, ὑγραίνει δὲ διὰ τὸ
+   ὑπολειπόμενον ἐν τῷ σώματι τῆς συντήξεως τῆς ὑπὸ τοῦ πόνου.</p>
+   <milestone unit="section" n="59"/>
+   <p>Ἔμμετοι ἰσχναίνονται διὰ τὴν κένωσιν τῆς τροφῆς, οὐ μέντοι
+   ξηραίνονται, ἢν μή τις τῇ ὑστεραίῃ θεραπεύῃ ὀρθῶς, ἀλλὰ ὑγραίνονται
+   μᾶλλον διὰ τὴν πλήρωσιν καὶ διὰ τὴν σύντηξιν τῆς σαρκὸς τὴν ὑπὸ τοῦ
+   </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en identifiant les entités zoologiques et autres éléments pertinents :
+
+
+<div type="section" n="76">
+   <p>πονώδης ἢν δέ τις ἐν ἑαυτῷ ταῦτα καταναλωθῆναι τῇ ὑστεραίῃ ἐς τὴν τροφήν,
+   τῷ θερμῷ, καὶ τῇ διαίτῃ ἡσυχῶς προσάγῃ, ξηραινούσῃ.</p>
+   <p>Κοιλίην δὲ συνεστηκυῖαν λύει ἔμετος, καὶ διαχωροῦσαν μᾶλλον τοῦ καιροῦ ἵστησι,
+   τὴν μὲν διύγραινων, τὴν δὲ ξηραίνων· ὁκόταν μὲν οὖν στῆσαι βούληται,
+   τὴν ταχίστην φαγόντα χρή ἐξεμέειν, πρὶν ἂν διυγρανθῆναι τὸν σῖτον καὶ κατασπᾶσθαι κάτω,
+   καὶ τοῖσι στροφνοῖσι καὶ τοῖσι αὐστηροῖσι σιτιίοισι μᾶλλον χρῆσθαι· ὁκόταν δὲ λῦσαι τὴν
+   κοιλίην βούληται, ἐνδιαιτρίβειν ἐν τοῖσι σιτιίοισιν ὡς πλείστον χρόνον ξυμφέρει, καὶ
+   τοῖσι δριμέσι καὶ ἁλμυροῖσι καὶ λιπαρoῖσι καὶ γλυκέσι σιτιίοισι καὶ πόμασι χρῆσθαι.</p>
+   <milestone unit="section" n="60"/>
+   <p>Ὕπνοι δὲ νῆστις μὲν ἰσχναίνοισι καὶ ψύχοισιν, ἢν μὴ μακροὶ ἔωσι,</p>
+</div>
+<div type="section" n="77">
+  <p><foreign xml:lang="grc">κενούντες</foreign> τοῦ <name type="animal" xml:lang="fr">sanglier</name> τοῦ ὑπάρχοντος <foreign xml:lang="grc">ὑγροῦ</foreign>· ἢν δὲ μᾶλλον, ἐκθερμαινόντες <foreign xml:lang="grc">συντήκουσι</foreign> τὴν <name type="animal" xml:lang="fr">chair</name>, καὶ διαλύουσιν τὸ <name type="animal" xml:lang="fr">corps</name>, καὶ ἀσθενὲς ποιέουσιν· <foreign xml:lang="grc">βεβρωκότας</foreign> δὲ θερμαινόντες <foreign xml:lang="grc">ὑγραινούσιν</foreign>, τὴν τροφὴν ἐς τὸ <name type="animal" xml:lang="fr">corps</name> διαχέοντες· ἀπὸ δὲ τῶν <name type="animal" xml:lang="fr">veines</name> περιπατῶν ὕπνος μάλιστα ξηραίνει. <foreign xml:lang="grc">Ἀγρύπνιη</foreign> δὲ ἐν μὲν τοῖσι σιτιίοισι βλάπτει, οὐκ ἐῶσα τὸ σιτιόν τεκεσθαι· <foreign xml:lang="grc">ἀσιτία</foreign> δὲ ἰσχνασίνην μὲν τινὰ παραδίδωσι, βλάπτει δὲ ὥσπερ. <foreign xml:lang="grc">Ῥάθυμια</foreign> ὑγραινεῖ καὶ ἀσθενὲς τὸ <name type="animal" xml:lang="fr">corps</name> ποιέει· ἀτρεμίξουσαι γὰρ ἡ <foreign xml:lang="grc">ψυχή</foreign> οὐκ ἀναλίσκει τὸ <foreign xml:lang="grc">ὑγρὸν</foreign> ἐκ τοῦ <name type="animal" xml:lang="fr">corps</name>· πόνος δὲ ξηραίνει καὶ τὸ <name type="animal" xml:lang="fr">corps</name> ἰσχυρὸν ποιέει. <foreign xml:lang="grc">Μονοσιτία</foreign> ἰσχναίνει καὶ ξηραίνει καὶ τὴν <name type="animal" xml:lang="fr">ventre</name> ἵστησι, διότι τῷ θερμῷ τῆς <foreign xml:lang="grc">ψυχῆς</foreign> τὸ <foreign xml:lang="grc">ὑγρὸν</foreign> ἐκ τῆς <name type="animal" xml:lang="fr">ventre</name> καὶ τῆς <name type="animal" xml:lang="fr">chair</name> καταναλίσκεται· <foreign xml:lang="grc">ἄριστον</foreign> δὲ τὰ ἐναντία διαπρήσσει τὴν</p>
+</div>
+Voici l'encodage TEI P5 strict du texte selon les règles Zoomathia, en respectant toutes les contraintes :
+
+
+<div type="section" n="78">
+   <p><foreign xml:lang="grc">μονοσιτίῃ</foreign>. Ὕδωρ πόμα θερμὸν ἰσχναίνει, ὡσαύτως δὲ καὶ ψυχρόν. Τὸ δὲ
+   ὑπερβάλλον ψυχρὸν καὶ πνεῦμα καὶ σιτίον καὶ πότον πήγνυσιν τὸ ὑγρὸν τὸ ἐν τῷ σώματι καὶ τὰς
+   κοιλίας ξηναίνει τῇ πήξει καὶ ψύξει· κρατεῖ γὰρ τοῦ τῆς ψυχῆς ὑγροῦ.</p>
+   <p>Καὶ τοῦ θερμοῦ δὲ πάλιν αἱ ὑπερβολαὶ πηκνύουσι, καὶ τοσοῦτον ὡς μὴ διάχυσιν ἔχειν. Ὡκόσα δὲ
+   θερμαινόντα τὸ σῶμα, τροφὴν μὴ διδόντα, κενοῖ τὸ ὑγρὸν τὴν σάρκα μηδὲ ὑπερβολὴν ποιέοντα,
+   πάντα ψύξει τῷ ἀνθρώπῳ παραδίδωσι· κενουμένου γὰρ τοῦ ὑπάρχοντος ὑγροῦ, πνεύματος ἐπακτοῦ
+   πλήρευμένον ψύχεται.</p>
+   <milestone unit="section" n="61"/>
+   <p>Περὶ δὲ τῶν πόνων ἅτινα ἔχουσιν δύναμιν διηγήσομαι. Εἰσὶ γὰρ οἱ μὲν κατὰ φύσιν, οἱ δὲ διὰ βίης·
+   οἱ μὲν οὖν κατὰ φύσιν αὐτῶν εἰσὶ ὀψιος πόνος, ἀκοῆς, φωνῆς, μερίμνης. Ὀψιος μὲν οὖν δύναμις
+   τοιαύτη·</p>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia, en tenant compte des entités nommées zoologiques et autres :
+
+
+<div type="chapter" n="79">
+  <milestone unit="section" n="62"/>
+  <p>
+    <foreign xml:lang="grc">προσέχουσιν</foreign> ἡ ψυχὴ τῷ ὀρεομένῳ κινηέεται καὶ θερμαίνεταί τε
+    θερμαινόμενη δὲ ξηραίνεταί, κεκενωμένον τοῦ ὑγροῦ. Διὰ δὲ τῆς ἀκοῆς ἐσπίπτοντος
+    τοῦ ψόφου σειέεται ἡ ψυχὴ καὶ πονεῖ, πονηόσαντες δὲ θερμαίνεταί τε καὶ ξηραίνεταί.
+    Ὅκόσα μεριμνῇ ἄνθρωπος, κινηέεται ἡ ψυχὴ ὑπὸ τούτων καὶ θερμαίνεταί τε καὶ
+    ξηραίνεταί, καὶ τὸ ὑγρὸν καταναλίσκουσα πονεῖ, καὶ κενοῖ τὰς σάρκας, καὶ
+    λεπύνει τὸν ἄνθρωπον. Ὅκόσοι δὲ πόνοι φωνῆς, οἷον λέξις ἢ ἀνάγνωσις ἢ ᾠδή,
+    πάντες οὗτοι κινηόωσι τὴν ψυχὴν· κινηόμενη δὲ ξηραίνεταί τε καὶ θερμαίνεταί, καὶ
+    τὸ ἐν τῷ σώματι ὑγρὸν καταναλίσκει.
+  </p>
+  <p>
+    <foreign xml:lang="grc">Οἱ δὲ περιπάτοι</foreign> κατὰ φύσιν μὲν εἰσὶ, καὶ οὗτοι μάλιστα τῶν λοιπῶν,
+    ἔχοισιν δὲ τι βίαιον. Δύναμις δὲ αὐτέων ἑκάστων ἐστὶ τοιήδε· ὁ ἀπὸ
+  </p>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles du projet Zoomathia :
+
+
+<div type="book" n="80">
+  <div type="section" n="80">
+    <p>διὰ τοῦ περιπάτου ξηραίνει τήν τε κοιλίην καὶ τὸ σῶμα, καὶ τὴν
+    γαστέρα οὐκ ἔχει πιεῖραν γενέσθαι διὰ τάδε κινεόμενος τοῦ ἀνθρώπου,
+    θερμαίνει καὶ τὸ σῶμα καὶ τὰ σιτία· ἕλκει οὖν τὴν ἰκμάδα ἡ σάρξ,
+    καὶ οὐκ ἔχει περὶ τὴν κοιλίην ξυνίστασθαι· τὸ μὲν οὖν σῶμα
+    πληροῦται, ἡ δὲ κοιλίη λεπτύνεται. ξηραίνεται δὲ διὰ τάδε κινεόμενος
+    τοῦ σώματος καὶ θερμαινομένου, τὸ λεπτώτατον τῆς τροφῆς
+    καταναλίσκεται, τὸ μὲν ὑπὸ τοῦ ξηροῦ θερμοῦ, τὸ δὲ σὺν τῷ πνεύματι
+    ἀποκρίνεται ἔξω, τὸ δὲ καὶ διορρέεται· ὑπολείπεται δὲ τὸ ξηρότατον
+    ἀπὸ τῶν σιτιίων ἐν τῷ σώματι, ὥστε τὴν κοιλίην ἀποξηραίνεσθαι καὶ
+    τὴν σάρκα.</p>
+    <p>καὶ οἱ ὀρθριοι περίπατοι ἰσχναίνουσι, καὶ τὰ περὶ τὴν κεφαλὴν
+    κοῦφα τε καὶ εὐάγεα καὶ εὐήκοα παρασκευάζουσι, καὶ τὴν κοιλίην
+    λύουσι.</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles Zoomathia :
+
+
+<div type="book" n="1">
+  <div type="section" n="81">
+    <p><foreign xml:lang="grc">Ἰσχναίνουσι</foreign> μὲν, διότι κινούμενον τὸ σῶμα θερμαίνεται, καὶ τὸ ὑγρὸν λεπταίνεται καὶ καθαίρεται, τὸ μὲν ὑπὸ τοῦ πνεύματος, τὸ δὲ μυσεῖται τε καὶ χρέμπεται, τὸ δὲ ἐς τὴν τροφὴν τῇ τῆς ψυχῆς θερμῇ καταναλίσκεται· τὴν δὲ κοιλίην λύουσι, διότι θερμὴ ἐοῦσα, τοῦ ψυχροῦ πνεύματος ἐσπίπτοντος ἄνωθεν, ὑποχωρεῖ τὸ θερμὸν τῷ ψυχρῷ. <name type="animal" xml:lang="fr">Coq</name> δὲ τὰ περὶ τὴν κεφαλὴν ποιεῖ διὰ τάδε· ὅταν κενωθῇ ἡ κοιλίη, ἕλκει ἐς ἑωυτὴν ἐκ τε τοῦ ἄλλου σώματος καὶ ἐκ τῆς κεφαλῆς τὸ ὑγρὸν θερμὴ ἐοῦσα· κενουμένης δὲ τῆς κεφαλῆς, ἀποκαθαίρεται ἥ τε ὄψις καὶ ἡ ἀκοή, καὶ γίνονται εὐαγέες οἱ ἄνθρωποι. Οἱ δὲ ἀπὸ τῶν γυμνασίων περιπάτους καθαρὰ τὰ σώματα παρασκευάζουσι, καὶ ἰσχναίνουσι, οὐκ ἐόντας τὴν σύντηξιν τῆς σαρκὸς τὴν ὑπὸ τοῦ πόνου ξυνίστασθαι, ἀλλ</p>
+  </div>
+</div>
+<div type="chapter" n="58">
+   <milestone unit="section" n="58"/>
+   <p>(Des onctions; du soleil et du feu; de l'ombre et du froid; des sueurs; du <foreign xml:lang="grc">coït</foreign>.) L'<name type="animal" xml:lang="fr">onction</name> échauffe, humecte et amollit. Le <name type="animal" xml:lang="fr">soleil</name> et le <name type="animal" xml:lang="fr">feu</name> dessèchent par cette raison : étant chauds et secs, ils attirent l'humide hors du corps. L'<name type="animal" xml:lang="fr">ombre</name> et les <name type="animal" xml:lang="fr">froids</name> modérés humectent, car ils donnent plus qu'ils ne prennent. Toutes les <name type="animal" xml:lang="fr">sueurs</name> dessèchent et atténuent, l'humide s'en allant hors du corps. Le <foreign xml:lang="grc">coït</foreign> atténue, humecte et échauffe ; il échauffe par la fatigue et par l'excrétion du liquide ; il atténue par l'évacuation ; il humecte par ce qui est laissé, dans le corps, de la colliquation produite par la fatigue du <foreign xml:lang="grc">coït</foreign>.</p>
+</div>
+<div type="chapter" n="59">
+   <milestone unit="section" n="59"/>
+   <p>(Des <name type="animal" xml:lang="fr">vomissements</name>; on pourrait les appeler vomissements de précaution; ils faisaient partie du régime des anciens.) Les <name type="animal" xml:lang="fr">vomissements</name> atténuent par l'évacuation de nourriture, cependant ils ne dessèchent pas à moins que le lendemain on n'emploie un traitement convenable, mais ils humectent plutôt à cause de la réplétion d'une part, et, d'autre part, à cause de la colliquation de la <name type="animal" xml:lang="fr">chair</name> que cause la fatigue du <name type="animal" xml:lang="fr">vomissement</name> ; mais si le lendemain on laisse ce superflu se dépenser à l'alimentation du chaud et si l'on procède graduellement à augmenter la nourriture, ils dessèchent. Le <name type="animal" xml:lang="fr">vomissement</name> relâche le <name type="animal" xml:lang="fr">ventre</name> resserré, et resserre le <name type="animal" xml:lang="fr">ventre</name> trop relâché, humectant dans le premier cas,</p>
+</div>
+<div type="section" n="83">
+   <milestone unit="section" n="83"/>
+   <p>desséchant dans le second. Quand donc vous voulez arrêter le flux de
+      <name type="animal" xml:lang="fr">ventre</name>, faites au plus tôt prendre des aliments que le sujet
+      revomira avant que les aliments ne soient humectés et entraînés en
+      bas ; les aliments seront de préférence resserrants et astringents.
+   </p>
+   <p>Mais si vous voulez relâcher le ventre, il convient [avant de
+      provoquer le vomissement] de faire garder les aliments aussi
+      longtemps que possible ; les aliments et les boissons seront acres,
+      salés, gras et doux.
+   </p>
+   <p>60.</p>
+   <p>(Du sommeil, des veilles, de l'inaction, du
+      travail. Ne faire qu'un seul repas, en faire deux. De l'excès du
+      froid ou du chaud. Des choses échauffantes sans être nutritives.)
+   </p>
+   <p>Le sommeil, à jeun, atténue et refroidit, à moins qu'il ne soit
+      prolongé, évacuant l'humide qui existe ; s'il est prolongé
+      davantage, il échauffe, il fond la chair, il résout le corps et
+      l'affaiblit. Après le repas, il échauffe et humecte, répandant la
+      nourriture dans le corps. C'est surtout après les promenades du
+      matin que le sommeil dessèche. Les veilles sont nuisibles après le
+      repas, ne permettant pas à l'aliment de se fondre ; à jeun, elles
+      produisent, il est vrai, une certaine atténuation, mais elles sont
+      moins nuisibles. L'inaction humecte le corps et l'affaiblit ; car
+      l'âme, demeurant immobile, ne dissipe pas le liquide du corps. Le
+      travail dessèche le corps et le fortifie. Ne faire qu'un seul repas
+   </p>
+</div>
+<div type="chapter" n="84">
+   <milestone unit="section" n="84.1"/>
+   <p>celui du soir atténue, dessèche et resserre le ventre parce que le
+      chaud de l'âme dissipe l'humide du ventre et de la chair, faire de
+      plus le repas du matin agit d'une manière opposée. L'eau chaude, en
+      boisson, atténue ; il en est de même de l'eau froide. L'excès du
+      froid soit dans l'air soit dans les aliments soit dans les boissons
+      coagule l'humide qui est dans le corps et resserre le ventre par la
+      coagulation et le refroidissement; car l'humide de l'âme est
+      surmonté. D'autre part l'excès du chaud coagule aussi, et à tel
+      point, qu'il n'y a plus de diffusion consécutive. Les choses qui,
+      échauffant le corps et ne donnant pas de nourriture, enlèvent
+      l'humide à la chair, même sans excès, procurent du refroidissement
+      au corps ; en effet l'humide existant est évacué, l'air est appelé
+      et remplit le corps, qui se refroidit.</p>
+   <milestone unit="section" n="84.2"/>
+   <p>(Des exercices; exercices naturels.)</p>
+   <p>Les exercices ont des propriétés que je vais expliquer. Les uns sont
+      naturels ; les autres sont violents. Les exercices naturels sont
+      ceux de la vue, de l'ouïe, de la voix, de la pensée. Voici
+      l'influence de la vue : l'âme s'attachant à ce qu'elle voit se meut
+      et s'échauffe; échauffée, elle se dessèche à cause de la déperdition
+      de liquide. Par l'ouïe, quand un son y arrive, l'âme est secouée,
+      elle le travaille ; se travaillant, elle s'échauffe et se dessèche.</p>
+</div>
+<div type="book" n="85">
+   <div type="section" n="62">
+      <milestone unit="section" n="62"/>
+      <p>Dans les pensées qui occupent l'homme, l'<name type="animal" xml:lang="fr">âme</name> se meut, s'échauffe et se dessèche; consumant l'humide, elle se travaille, vide les chairs, atténue le corps.</p>
+      <p>Les exercices de la voix, tels que le discours, la lecture, le chant, meuvent tous l'<name type="animal" xml:lang="fr">âme</name>; celle-ci, étant mue, se dessèche, s'échauffe et consume l'humide du corps.</p>
+      <p>(De la promenade.) Les promenades sont, elles aussi, naturelles, et les plus naturelles de tous les autres exercices qui restent; cependant elles ont quelque chose de violent.</p>
+      <p>Les propriétés en sont telles : la promenade après le dîner dessèche et le ventre et le corps et ne permet pas au ventre de devenir gras; voici pourquoi : l'homme se mouvant, le corps et les aliments, s'échauffent; donc la chair attire l'humeur qu'elle ne laisse pas s'accumuler autour du ventre; ainsi le corps se remplit, et le ventre s'atténue.</p>
+      <p>D'autre part la dessiccation se produit ainsi : le corps se mouvant et s'échauffant, la partie la plus ténue de la nourriture se consume tant par la chaleur innée que par le souffle, qui, sortant, en emporte avec lui, et par l'urine, qui en emmène. Il reste donc dans le corps la partie la plus sèche des aliments, de sorte que le ventre et la chair se dessèchent.</p>
+      <p>Les promenades du matin aussi dessèchent; elles rendent les parties de la tête légères et alertes et l'ouïe claire; elles relâchent le ventre;</p>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte d'Hippocrate :
+
+
+<div type="book" n="86">
+  <div type="section" n="86/103">
+    <p>dessèchent parce que le corps en mouvement s'échauffe et que
+      l'humide s'atténue et s'en va, partie par le souffle, partie avec le
+      moucher et le cracher, partie en consommation pour alimenter le
+      chaud de l'âme; elles relâchent le ventre, parce que, le ventre
+      étant chaud et l'air froid y étant introduit d'en haut, le chaud
+      cède la place au froid. Quant aux parties de la tête, elles les
+      rendent légères de cette façon : le ventre, étant vidé, attire à
+      soi, en raison de sa chaleur, l'humide et du reste du corps et de la
+      tête, la tête étant vidée, la vue et l'ouïe se purgent, et les
+      hommes deviennent alertes. Les promenades après les exercices
+      gymnastiques purifient le corps et l'atténuent, ne laissant pas se
+      rassembler la colliquation de la chair que produit le travail ;
+      c'est de la sorte qu'elles purifient.</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du texte fourni selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="63">
+   <p><milestone unit="section" n="63"/></p>
+   <p>Τῶν δὲ δρόμων δύνανται οἱ μὲν μακροὶ καὶ καμπτοὶ, ἐξ ὀλίγου
+      <foreign xml:lang="grc">προσαγόμενοι</foreign>, θερμαίνοντες τὴν σάρκα, συνεψεῖν καὶ διαχέειν, καὶ τὴν δύναμιν τῶν
+      σιτίων τὴν ἐν τῇ σαρκὶ καταπέσσοντες, βραδύτερά τε καὶ παχύτερα τὰ σώματα
+      παρασκευάζουσιν τῶν τροχῶν· τοῖσι δὲ πολλὰ ἐσθίοισι ξυμφορώτεροι, καὶ χειμῶνος
+      μᾶλλον ἢ θέρεος.</p>
+   <p>Οἱ δὲ ἐν τῷ ἱματίῳ δρόμοι τὴν μὲν δύναμιν τὴν αὐτὴν ἔχουσιν, μᾶλλον δὲ
+      διαθερμαίνοντες, καὶ ὑγρότερα τὰ σώματα ποιέουσιν, ἀχρότερα δέ, διότι οὐκ
+      ἀποκαθαίρει προσπίπτον τὸ πνεῦμα τὸ εἰλικρινές, ἀλλ᾽ ἐν τῷ αὐτῷ ἐγγυμνάζεται
+      πνεύματι· συμφέρει οὖν τοῖσι ξηροῖσι καὶ τοῖσι πολυσάρκοισιν, ὅστις καθελεῖν τὴν
+      σάρκα βούλεται, καὶ τοῖσι πρεσβυτέροισι διὰ ψῦξιν τοῦ σώματος.</p>
+   <p>Οἱ δὲ διάλυοι καὶ ὑπέρριοι</p>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles Zoomathia :
+
+
+<div type="chapter" n="88">
+  <p>ἵπποι τὴν μὲν σάρκα ὀξέως διεχέουσιν, ἰσχναίνοισι δὲ μᾶλλον, διότι
+    τοῖς ἔξω τῆς ψυχῆς μερέεσιν οἱ πόνοι ὄντες ἀντισπῶσιν ἐκ τῆς σαρκὸς
+    τὸ ὑγρὸν καὶ τὸ σῶμα λεπτύνοισι καὶ ξηραίνοισιν. Οἱ δὲ τρόχοι τὴν
+    μὲν σάρκα ἥκιστα διεχέουσιν, ἰσχναίνοισι δὲ καὶ προστέλλοισι τήν τε
+    σάρκα καὶ τὴν κοιλίην μάλιστα, διότι ὀξυντάτῳ τῷ πνεύματι χρώμενοι
+    τάχιστα τὸ ὑγρὸν ἕλκουσιν ἐφ᾽ ἑωυτῶν.</p>
+  <milestone unit="section" n="64"/>
+  <p>Τὰ δὲ παρασείσματα ξηροῖσί μὲν καὶ ἐξαπίνης, ἀξύμφορα δὲ σπάσματα γὰρ
+    ἐμποιέει διὰ τόδε διαθερμασμένον τὸ σῶμα, τὸ μὲν δέρμα ἰσχυρῶς
+    λεπτύνει, τὴν δὲ σάρκα ὀξέως ξηραίνει τῶν τρόχων, κενοῖ δὲ τὴν
+    σάρκα τοῦ ὑγροῦ. Τὰ δὲ ἀνακινήματα καὶ ἀνακομφίσματα τὴν μὲν σάρκα
+    ἥκιστα διαθερμαίνει, παρόξυνει δὲ τὸ σῶμα καὶ τὴν ψυχὴν, καὶ τοῦ</p>
+</div>
+<div type="chapter" n="89">
+  <milestone unit="section" n="89"/>
+  <p><foreign xml:lang="grc">πνεύματος</foreign> κενοῖ. Πάλη δὲ καὶ τρίψις τοῖσι μὲν ἔξω τοῦ σώματος
+    παρέχει μᾶλλον τὸν πόνον, θερμαίνει δὲ τὴν σάρκα καὶ στερεοῖ καὶ
+    αὐξέεσθαι ποιέει διὰ τάδε· τὰ μὲν στερεὰ φύσει τριβόμενα συνίστασι,
+    τὰ δὲ κοῖλα αὐξέεται, ὁκόσαι φλέβες εἰσὶ θερμαινόμεναι γὰρ αἱ σάρκες
+    καὶ ξηραινόμεναι ἕλκουσιν ἐφ' ἑωυτὰς τὴν τροφὴν διὰ τῶν φλεβῶν, εἶτα
+    αὐξόνταται. Ἀλίνδησις παραπλησίη τῇ πάλῃ διαπρήσσει, ξηραίνει δὲ
+    μᾶλλον διὰ τὴν κόνιν καὶ σαρκοῖ ἧσσον. Ἀκροχειρίη ἰσχναίνει καὶ τὰς
+    σάρκας ἕλκει ἄνω, καὶ κωρυκομαχίη καὶ χειρονομίη τὰ παραπλησία
+    διαπρήσσει.</p>
+  <p>Πνεύματος δὲ κατάσχεσις τοὺς πόρους διαναγκάσαι καὶ τὸ
+    δέρμα λεπτῦναι καὶ τὸ ὑγρὸν ἐκ τοῦ δέρματος ἐξῶσαι δύναται.</p>
+</div>
+Voici l'encodage TEI P5 du texte fourni, respectant strictement les règles du projet Zoomathia :
+
+
+<div type="chapter" n="65">
+  <milestone unit="section" n="65"/>
+  <p>Τὰ ἐν κόνει καὶ τὰ ἐν ἐλαίῃ γυμνάσια διαφέρει τοσόνδε· κόνις μὲν ψυχρὸν, ἔλαιον δὲ θερμόν· ἐν μὲν τῷ χειμῶνι τὸ ἔλαιον αὐξιμώτερον, διότι τὸ ψῦχος κωλύει φέρειν ἀπὸ τοῦ σώματος· ἐν δὲ τῷ θέρει τὸ ἔλαιον ὑπερβολὴν θερμασίας ποιεῖ τὴν σάρκα, ὁκόταν καὶ ὑπὸ τῆς ὥρης ἐκθερμαίνηται καὶ τοῦ ἐλαίου καὶ τοῦ πόνου.</p>
+  <p>Ἡ δὲ κόνις ἐν τῷ θέρει αὐξιμώτερον, ψύχουσα γὰρ τὸ σῶμα οὐκ ἔχει ἐς ὑπερβολὴν ἐκθερμαίνεσθαι· ἐν δὲ τῷ χειμῶνι διαψύκτικόν τε καὶ κρύμνῶδες· ἐνδιατρίβειν δὲ ἐν τῇ κόνει μετὰ τοὺς πόνους ἐν τῷ θέρει, ὀλίγον μὲν χρόνον ὠφελέει ψύχουσα, πολὺν δὲ ὑπερξηραίνει καὶ τὰ σώματα σκληρὰ καὶ ξυλῶδεα ἀποδείκνυει.</p>
+  <p>Τρίψις ἐλαίου σὺν ὕδατι μαλασσεῖ καὶ οὐ δεινῶς ἔχει διαθερμαίνεσθαι.</p>
+</div>
+<div type="chapter" n="66">
+  <milestone unit="section" n="66"/>
+</div>
+<div type="chapter" n="91">
+   <milestone unit="section" n="91"/>
+   <p>Περὶ δὲ κόπων τῶν ἐν τοῖσι σώμασι ἐγγινομένων ὧδε ἔχει· οἱ μὲν
+      <name type="animal" xml:lang="fr">agneaux</name> τῶν <name type="animal" xml:lang="fr">hommes</name> ἀπὸ παντὸς κόπου πόνου
+      οὐδὲν γὰρ τοῦ σώματος διαπεπόνηται πρὸς οὐδένα πόνον· τὰ δὲ γεγυμνασμένα τῶν
+      σωμάτων ὑπὸ τῶν ἀνέηιστων πόνων κόπι· τὰ δὲ καὶ ὑπὸ τῶν συνήθων γυμνασίων
+      κόπι, ὑπερβολῇ χρησάμενα. Τὰ μὲν οὖν εἴδεα τῶν κόπων τοιαῦτά ἐστιν· ἡ δὲ δύναμις
+      αὐτέων ὧδε ἔχει· οἱ μὲν γὰρ ἀγύμναστοι ὑγρὴν τὴν σάρκα ἔχοντες, ὁκόταν
+      <persName>πονήσωσι</persName>, θερμαινόμενοι τοῦ σώματος, σύντηξιν πολλὴν
+      ἀφιᾶσι· ὅ τι μὲν οὖν ἂν ἐξιδρῶσῃ ἢ ξὺν τῷ πνεύματι ἀποκαθαρθῇ, οὐ παρέχει πόνον
+      ἄλλον ἢ τῷ κενώθεντι τοῦ σώματος παρὰ τὸ ἔθος· ὅ τι δὲ ἂν ἐμμείνῃ τῆς σύντηξιος,
+      οὐ μόνον τῷ κενώθεντι τοῦ
+   </p>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="92">
+   <p><foreign xml:lang="grc">Σῶμα</foreign> παρὰ τὸ ἔθος παρέχει πόνου, ἀλλὰ κἀτὶ τῷ δεξαμένῳ τὸ ὑγρὸν·</p>
+   <p>οὐ γὰρ ἔστι ξύντροφον τῷ σώματι, ἀλλὰ πολέμιον.</p>
+   <p>Ἦν μὲν δὴ τὰ ἄσαρκα τῶν σωμάτων οὐ ξυνίσταται ὁμοίως, ἐς δὲ τὰ σαρκώδεα, ὥστε τούτοισι πόνου παρέχειν ἕως ἂν ἐξέλθῃ·</p>
+   <p>ὅτε δὴ οὐκ ἔχον περίοδον, ἀτρεμίζει ἐκθερμαινόμενα αὐτὸ καὶ τὰ προσπίπτοντα· ἢν μὲν οὖν πολὺ γένηται τὸ ἀποκρίθεν, ἐκράτησε καὶ τοῦ ὑγιαινομένου, ὥστε συνεκθερμᾶνθῆναι ὅλον τὸ σῶμα, καὶ ἐνέποιησε πυρετὸν ἰσχυρόν.</p>
+   <p>Θερμανθέντος γὰρ τοῦ αἵματος καὶ ἐπισπασθέντος, τάχειήν ἐποίησε τὴν περίοδον τὰ ἐν τῷ σώματι, καὶ τὸ μὲν ἄλλο σῶμα καθαίρεται ὑπὸ τοῦ πνεύματος, καὶ τὸ συνεστηκὸς θερμαινόμενον λεπτούνεταί τε καὶ ξυνεξωθέηται ἐκ τῆς σαρκὸς ἔξω ἐπὶ τὸ δέρμα, ὅπερ ἱδρὼς καλέεται θερμός.</p>
+   <p>Τοῦτον δὲ</p>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles du projet Zoomathia :
+
+
+<div type="chapter" n="93">
+  <p><foreign xml:lang="grc">ἀποκριθέντος</foreign>, τὸ τε αἷμα καθίσταται ἐς τὴν κατὰ φύσιν σύστασιν, καὶ
+  <name type="animal" xml:lang="fr">πυρετός</name> ἀνίησι, καὶ ὁ κόπος παύεται μάλιστα τριταῖος.</p>
+  <p>Χρὴ δὲ τὸν τοιοῦτον κόπον ὧδε θεραπεύειν· πυρίῃσι καὶ λοντροῖσι θερμοῖσι
+  διαλύοντα τὸ ξενεστηκὸς καὶ περιπάτοισι μὴ βιαίοισιν, ὡς
+  <foreign xml:lang="grc">ἀποκαθαίροντες</foreign>, καὶ ὀλιγοσιτίῃσι καὶ ἰσχνασίῃσι συνιστάναι τῆς
+  σαρκὸς τὴν κένωσιν, καὶ τρίβεσθαι τῷ ἐλαίῳ ἡσυχῇ πολὺν χρόνον, ὅκως
+  μὴ βιαίως διαθερμαινόμενοι καὶ τοῖσι χρίσμασι τοῖσι ἱδρωτικοῖσι καὶ
+  μαλακτικοῖσι χρίεσθαι καὶ μαλακείνειν ξυμφέρει.</p>
+  <p>Τοῖσι δὲ γυμναζομένοισιν ὑπὸ τῶν ἀνθίστησι πόνων διὰ τάδε γίνεται ὁ κόπος·
+  <milestone unit="section" n="93.1"/> ὅ τι ἂν μὴ πεπονήκῃ τὸ σῶμα, ὑγρὴν ἀνάγκη τὴν σάρκα εἶναι πρὸς
+  τοῦτον τὸν τρόπον, πρὸς ὃν μὴ εἴθισται ποιένει, ὥσπερ ἀγυμνάστων πρὸς
+  </p>
+</div>
+<div type="book" n="94">
+  <div type="section" n="94">
+    <p>ἕκαστα τὴν μὲν οὖν σάρκα ξηραντῆναι ἀνάγκη καὶ ἀποκρῖναι καὶ
+      συνίστασθαι ὥσπερ τῷ πρότερον. ξυμφέρει δὲ θεραπεύεσθαι ὧδε τοῖσι
+      μὲν γυμνασίοισι χρᾶσθαι τοῖσι συνήθεσιν, ὅκως τὸ ξηνεστηκὸς
+      θερμαινόμενον λεπτύνεται καὶ ἀποκαθαίρεται, καὶ τὸ ἄλλο σῶμα μὴ
+      ὑγραινῆται, μηδὲ ἀγύμναστον γίνηται. τοῖσι δὲ λουτροῖσι τοῖσι
+      θερμοῖσι ξυμφέρει καὶ τοῦτο χρᾶσθαι, καὶ τῇ τρίψει ὁμοίως ὡς καὶ
+      τὸν πρόσθεν.</p>
+    <p>τῆς δὲ πυρίησιος οὐδὲν δέεται· οἱ πόνοι γὰρ ἱκανοὶ θερμαινόντες
+      λεπτύνειν καὶ ἀποκαθαίρειν τὸ σῶμα. οἱ δὲ ἀπὸ τῶν συνήθων γυμνασίων
+      κόποι τόνδε τὸν τρόπον γίνονται· ἀπὸ μὲν συμμέτρου πόνον κόπος οὐ
+      γίγνεται· ὁκόταν δὲ πλείων τοῦ καιροῦ πόνος ᾖ, ὑπερέχρησε τὴν
+      σάρκα· κενωθεῖσα δὲ τοῦ ὑγροῦ, θερμαίνεται καὶ</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte d'Hippocrate selon les règles du projet Zoomathia :
+
+
+<div type="book" n="95">
+  <div type="section" n="95/103">
+    <p><milestone unit="section" n="95/103"/>
+    á¼Î»Î³á½³ÎµÎ¹ ÎºÎ±á½¶ ÏÏá½·ÏÏÎµÎ¹ ÎºÎ±á½¶ á¼Ï ÏÏ
+ÏÎµÏá½¸Î½ ÎºÎ±Î¸á½·ÏÏÎ±ÏÎ±Î¹ Î¼Î±ÎºÏá½¹ÏÎµÏÎ¿Î½, á¼¢Î½ Î¼á½µ ÏÎ¹Ï
+á¼ÎºÎ¸ÎµÏÎ±ÏÎµá½»Ïá¿ á½ÏÎ¸á¿¶Ï.</p>
+    <p>Χρá½ Î´á½² ÏÏá¿¶ÏÎ¿Î½ Î¼á½²Î½ Î±á½Ïá½¸Î½ Ïá¿· Î»Î¿Ï
+ÏÏá¿· Î¼á½´ ÏÏá½¹Î´ÏÎ± ÏÎ¿Î»Î»á¿·
+Î¼Î·Î´á½² Î¸ÎµÏÎ¼á¿· á¼Î³Î±Î½ Î»Î¿á½»ÎµÏÎ¸Î±Î¹, Îµá¼¶ÏÎ± Ïá½·ÏÎ±Î¹ Î±á½Ïá½¸Î½ á¼Îº ÏÎ¿á¿¦ Î»Î¿Ï
+ÏÏÎ¿á¿¦ Î¼Î±Î»Î±Îºá½¸Î½
+Î¿á¼¶Î½Î¿Î½, ÎºÎ±á½¶ Î´ÎµÎ¹ÏÎ½Îµá¿Î½ á½¡Ï ÏÎ»Îµá¿ÏÏÎ± ÎºÎ±á½¶ ÏÎ±Î½ÏÎ¿Î´Î±Ïá½° ÏÎ¹Ïá½·Î±, ÎºÎ±á½¶ ÏÎ¿Ïá¿· á½‘Î´Î±ÏÎµá¿,
+Î¿á¼´Î½á¿³ Î´á½² Î¼Î±Î»Î±Îºá¿· ÏÏá½³ÎµÏÎ¸Î±Î¹ ÏÎ¿Î»Î»á¿·, Îµá¼¶Ïá½° á¼Î½Î´Î¹Î±ÏÏá¿ÏÎ±Î¹ ÏÎ»á½³Ï ÏÏá½¹Î½Î¿Î½ Î¼á½³ÏÏÎ¹Ï
+á¼Î½ Î±á¼± ÏÎ»á½³Î²ÎµÏ ÏÎ»Î·ÏÏÎ¸Îµá¿ÏÎ±Î¹ á¼ÏÎ¸á¿¶ÏÎ¹Î½.</p>
+    <p>εá¼¶ÏÎ± á¼Î¾ÎµÎ¼Î­ÏÏ, ÎºÎ±á½¶ á¼Î¾Î±Î½Î±ÏÏá½±Î½ÏÎ±
+á½Î»á½·Î³Î¿Î½ ÎºÎ±Î¸Îµá½»Î´ÎµÎ¹Î½ Î¼Î±Î»Î±Îºá¿¶Ï· Îµá¼¶ÏÎ± ÏÏÎ¿Ïá½±Î³ÎµÎ¹Î½ á¼¡ÏÏ
+Ïá¿ ÏÎ¿á¿ÏÎ¹ ÏÎ¹Ïá½·Î¿Î¹Ï ÎºÎ±á½¶
+ÏÎ¿á¿ÏÎ¹ Ïá½¹Î½Î¿Î¹Ï ÏÎ¿á¿ÏÎ¹ ÏÏ
+Î½á½µÎ¸ÎµÏÎ¹Î½ á¼Ï á¼¡Î¼á½³ÏÎ±Ï á¼Î¾, á¼Î½ ÏÎ±á½»ÏÎ·ÏÎ¹ Î´á½² ÎºÎ±ÏÎ±ÏÏá¿ÏÎ±Î¹
+á¼Ï Ïá½¸ Ïá½»Î½Î·Î¸ÎµÏ ÎºÎ±á½¶ Ïá½·ÏÎ¿Î½ ÎºÎ±á½¶ ÏÎ¿ÏÎ¿á¿¦.</p>
+    <p>Δá½»Î½Î±Î¼Î¹Î½ Î´á½² á¼ÏÎµÎ¹ á¼¡ Î¸ÎµÏÎ±ÏÎµá½·Î±
+ÏÎ¿Î¹á½µÎ½Î´Îµ· á¼Î½ÎµÎ¾Î·ÏÎ±ÏÎ¼á½³Î½Î¿Î½ Ïá½¸ Ïá¿¶Î¼Î± á¼Ï á½ÏÎµÏÎ²Î¿Î»á½´Î½ á¼Î¾Î¹Î½Î³Ïá¿Î½Î±Î¹ Î´á½»Î½Î±ÏÎ±Î¹ á¼ÏÎµÏ</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du texte d'Hippocrate selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="96">
+   <p>ὑπερβολῆς <milestone unit="section" n="63"/> εἰ μὲν οὖν δυνατὸν ἦν, τὴν ὑπερβολὴν τοῦ πόνου γνῶναι
+   ὁκόση τίς ἐστι, τοῦ σίτου τῇ ξυμμέτρῃ ἀκέσασθαι, εἰ ἄν εἴχεν οὕτω·
+   νῦν δὲ τὸ μὲν ἀδύνατον, τὸ δὲ ῥᾴδιον ἐξηρασμένον γὰρ τὸ σῶμα, σίτων
+   ἐμπεσόντων παντοδαπῶν, ἔλκει τὸ ξυμφέρον αὐτὸ ἑωυτῷ ἕκαστον τοῦ
+   σώματος ἑκάστου σίτου, πληρωθὲν δὲ καὶ ὑγρανθὲν, κενωθείσης τῆς
+   κοιλίης ὑπὸ τοῦ ἐμέτου, ἀφίησι πάλιν τὴν ὑπερβολήν· ἡ δὲ κοιλίη κενὴ
+   ἐοῦσα ἀντισπᾷ. Τὸ μὲν οὖν ὑπερβάλλων ὑγρὸν ἐξερεύγεται ἡ σάρξ, τὸ δὲ
+   σύμμετρον οὐκ ἀφίησιν, ἢν μὴ διὰ βίας ἢ πόνων ἢ φαρμάκων ἢ ἄλλης
+   τινὸς ἀντισπάσιός.</p>
+   <p>Τῇ δὲ προσαγωγῇ χρησάμενος καταστήσεις τὸ σῶμα ἐς τὴν ἀρχαίην διάταξιν ἡσυχῇ.</p>
+   <p>Des exercices violents; courses; cavalcade;
+   course au cerceau.</p>
+</div>
+<div type="section" n="97">
+   <p>augmentée graduellement, échauffe la chair et a la propriété de la
+      cuire et de la résoudre, elle digère la force des aliments qui est
+      dans la chair ; elle rend le corps plus lent et plus épais que ne
+      fait la course au <name type="animal" xml:lang="fr">cerf</name> ; elle convient de préférence aux gens qui
+      mangent beaucoup, et plutôt l'hiver que l'été. La course en habit a
+      la même propriété, mais elle échauffe davantage, rend le corps plus
+      humide et donne moins de couleur parce que le corps n'est pas
+      détergé par l'air pur qui le frappe, mais fait son exercice en
+      restant dans le même air; elle convient donc aux personnes sèches et
+      d'embonpoint qui veulent perdre de la chair, et aux personnes d'un
+      certain âge à cause que leur corps est froid. Les cavalcades diaules
+      (double-stade) et en plein air
+      relâchent moins la chair, mais atténuent davantage, parce que le
+      travail, étant aux parties extérieures de l'<name type="animal" xml:lang="fr">âme</name>, attire, par
+      révulsion, hors de la chair, l'humide, atténue le corps et le
+      dessèche. La course au <name type="animal" xml:lang="fr">cerf</name> dilate le moins la chair, elle
+      l'atténue et la contracte ainsi que le ventre surtout, parce que,
+      précipitant le plus la respiration, elle attire l'humide le plus
+      rapidement.</p>
+   <milestone unit="section" n="64"/>
+   <p>(Succussions ; mouvements des bras comme dans
+      le <foreign xml:lang="grc">πυγμαχία</foreign> ; mouvements d'élévation ; lutte debout ; frictions ;
+      lutte à plat dans la poussière; lutte au poignet; <foreign xml:lang="grc">κορυκομαχία</foreign>;</p>
+</div>
+<div type="section" n="98">
+   <p>chironomie; retenir son haleine.) Les succussions (voy.
+   <note n="2">note 2</note>) ne valent rien chez les individus secs, ni pratiquées
+   brusquement ; car elles produisent des ruptures (voy.
+   <note n="579">t. V, p. 579</note>); voici pourquoi : le corps étant échauffé,
+   elles atténuent considérablement la peau, elles resserrent moins la
+   chair que la course au cerceau et en évacuent l'humide. Les
+   mouvements des bras par lesquels on prélude au pugilat et les
+   mouvements d'élévation échauffent le moins la chair, mais ils
+   excitent le corps et l'âme, et évacuent le souffle. La lutte et la
+   friction procurent plus de travail aux parties extérieures du corps,
+   elles échauffent la chair, la solidifient et la développent pour ces
+   raisons-ci : le frottement condense les parties naturellement
+   compactes, et agrandit celles qui sont creuses, telles que sont les
+   veines ; les chairs, échauffées et séchées, attirent à elles la
+   nourriture par les veines, et, de la sorte, se développent. La lutte
+   à plat sur le sol (voy. note 11) agit à
+   peu près comme la lutte debout, mais cela dessèche plus à cause de
+   la poussière et développe moins la chair. La lutte au poignet (voy.
+   note 12) atténue et attire les chairs en haut. La
+   corycomachie (voy. note 12) et la
+   chironomie (voy. note 12) en font
+   autant. Retenir son haleine a la propriété d'élargir les pores,
+   d'atténuer la peau et de chasser l'humide hors de cette membrane.</p>
+</div>
+<div type="section" n="65">
+   <milestone unit="section" n="65"/>
+   <p>(Différence entre les exercices dans la poussière et les exercices avec l'huile.) Les exercices dans la poussière et les exercices avec l'huile diffèrent ainsi : là poussière est froide, l'huile est chaude ; en hiver l'huile développe davantage parce qu'elle empêche que le froid ne fasse éprouver des déperditions au corps ; mais dans l'été l'huile, produisant un excès de chaleur, fond la chair, quand le corps est échauffé à la fois par la saison, par l'huile et par le travail. La poussière développe davantage dans l'été ; car, rafraîchissant le corps, elle ne lui permet pas de s'échauffer excessivement, mais, dans l'hiver, elle refroidit et glace. Demeurer dans la poussière après l'exercice en été, peu de temps, est utile par le rafraîchissement ; longtemps, est nuisible en desséchant trop le corps et en le rendant dur comme du bois. Les frictions avec de l'huile et de l'eau amollissent et ne permettent pas un excès de chaleur.</p>
+</div>
+<div type="section" n="66">
+   <milestone unit="section" n="66"/>
+   <p>(Des courbatures.) Les courbatures que le corps éprouve sont ainsi : Les personnes inexercées sont courbatues par tout travail ; en effet elles n'ont aucune partie du corps qui soit faite à aucun labeur. Les personnes exercées sont courbatues par les travaux inaccoutumés, ou par les exercices habituels s'ils sont poussés à l'excès. Telles sont les espèces de</p>
+</div>
+<p>courbatures. Quant aux effets, voici ce qu'elles produisent : les
+gens inexercés, ayant la chair humide, s'échauffent quand ils
+travaillent; et ils éprouvent une fonte considérable ; or, ce qui
+est évacué par la sueur ou avec le souffle ne cause de souffrance
+qu'à la partie du corps qui se trouve éprouver une déperdition
+inaccoutumée ; mais ce qui demeure de là fonte cause de la
+souffrance non-seulement à la partie du corps qui a éprouvé une
+déperdition inaccoutumée, mais encore à celle qui a reçu cette
+humeur ; car cette humeur est non pas homogène mais hostile au
+corps. Elle ne se fixe pas aussi bien sur les parties du corps qui
+n'ont pas de chair, mais elle se fixe sur les parties charnues, où
+elle produit de la douleur jusqu'à ce qu'elle soit sortie. N'ayant
+pas de circulation, elle demeure immobile et s'échauffe, elle et ce
+qui s'y joint. Si donc l'humeur ainsi sécrétée est abondante, elle
+triomphe même des parties saines au point de propager la chaleur à
+tout le corps et provoquer une forte fièvre. En effet, le sang étant
+échauffé et attiré, ce qui est dans le corps prend une révolution
+rapide ; et, tandis que le reste du corps se purge par le souffle,
+l'humeur amassée, s'échauffe et s'atténue et est expulsée hors de la
+chair en dehors à la peau ; c'est ce qu'on nomme sueur chaude.</p>
+<div type="section" n="101">
+   <p>sécrétion étant opérée, le sang revient à la composition naturelle, la fièvre tombe, et la courbature cesse d'ordinaire au troisième jour. Cette courbature doit être ainsi traitée : on dissout, par des étuves, par des bains chauds et par des promenades non violentes, l'humeur amassée, afin que la purgation s'opère ; on soutient la réduction de la chair en mangeant peu et en atténuant ; on se frotte à l'huile longtemps avec douceur, afin de ne pas causer un excès de chaleur; on fait des onctions avec les préparations sudorifiques et émollientes, et on couche sur un lit mou.</p>
+   <p>Chez les gens exercés la courbature due à des travaux inhabitués se produit ainsi : quelle que soit la partie qui n'a pas travaillé, cette partie inactive a nécessairement la chair humide, comme les gens inexercés l'ont pour tout; nécessairement aussi la chair se fondra, il y dura une sécrétion et un amas comme dans le cas précédent. Voici le traitement qu'il faut employer : on usera des exercices habituels afin que l'amas, échauffé, s'atténue et se purge, et que le reste du corps ne devienne pas humide ni ne reste inexercé. Dans ce cas aussi on se servira des bains chauds et des frictions.</p>
+   <p>Il n'est aucun besoin des étuves ; car les exercices suffisent, en échauffant, à atténuer et purger l'amas. Quant aux courbatures provenant des</p>
+</div>
+<div type="chapter" n="102">
+  <p>exercices habituels, elles se produisent ainsi : un exercice modéré ne cause pas de courbature ; mais, quand il dépasse la mesure, il dessèche trop la chair ; celle-ci étant privée de l'humide, il y a chaleur, souffrance, frisson, et le cas en vient à une fièvre de longue durée si un traitement convenable n'est pas appliqué. D'abord il faut ne se laver ni avec trop d'eau ni avec de l'eau trop chaude, puis boire après le bain un <name type="animal" xml:lang="fr">vin</name> mou, manger à son dîner des aliments de toute espèce et autant que possible, tremper son <name type="animal" xml:lang="fr">vin</name> qui sera un <name type="animal" xml:lang="fr">vin</name> mou et dont on boira beaucoup ; on gardera longtemps ces aliments jusqu'à ce que les veines se remplissent et se gonflent ; alors on vomira, et, après avoir fait un tour, on dormira un peu, couché mollement. Puis on accroîtra graduellement la nourriture et les exercices habituels pendant six jours, au bout desquels on sera au taux habituel de son boire et de son manger.</p>
+  <p>Ce traitement a la propriété d'humecter sans excès le corps desséché à l'excès ; en effet, s'il était possible, connaissant à quel point va l'excès de l'exercice, d'y remédier par la juste mesure des aliments, la chose serait parfaite ; mais, de ces deux conditions, l'une est impossible, l'autre est facile à remplir. Le corps est desséché ; mais il reçoit des aliments de toute espèce, et il attire à lui ce qui lui</p>
+</div>
+<p>convient, de chaque aliment pour chaque partie ; ainsi rempli et
+humecté, il rejette l'excès, le ventre ayant été vidé par le
+vomissement. De son côté le ventre, étant vide, exerce une
+révulsion. De la sorte, la chair se débarrasse de ce qui est
+excessif, mais ne laisse pas aller ce qui est dans la juste mesure,
+si ce n'est par la force soit des exercices soit des médicaments,
+soit de toute autre révulsion. En usant dégradation, vous remettrez
+doucement le corps à son ancien régime.</p>
+<p>FIN DU DEUXIÈME LIVRE DU
+RÉGIME.</p>
+<p>vomissement ; mais</p>
     </body>
   </text>
 </TEI>

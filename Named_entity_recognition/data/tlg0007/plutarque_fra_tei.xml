@@ -16,13 +16,13 @@
         <respStmt>
           <resp>Encodage automatique TEI P5</resp>
           <name>zoomathia_encoder.py v3.0</name>
-          <date when="2026-06-30">2026-06-30</date>
+          <date when="2026-07-02">2026-07-02</date>
         </respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
         <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
-        <date when="2026-06-30">2026-06-30</date>
+        <date when="2026-07-02">2026-07-02</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
         </availability>
@@ -61,6 +61,1827 @@
   </teiHeader>
   <text>
     <body>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte fourni, en respectant la structure demandée et en encodant toutes les entités nommées Zoomathia :
+
+
+<div type="chapter" n="1">
+   <p>Que les <name type="animal" xml:lang="fr">bêtes</name> ont l'usage de la raison</p>
+
+   <p><persName>Plutarque</persName> : oeuvres morales : QUE LES <name type="animal" xml:lang="fr">BÊTES</name> ONT L'USAGE DE LA RAISON</p>
+
+   <milestone unit="section" n="1"/>
+
+   <p><persName>ULYSSE</persName>. Oui, <persName>Circé</persName>, il me semble maintenant que je comprends bien ce que vous venez de m'apprendre et que je ne l'oublierai point. Mais je voudrais savoir de vous, si parmi ceux que d'<persName>hommes</persName> vous avez changés en <name type="animal" xml:lang="fr">loups</name> et en <name type="animal" xml:lang="fr">lions</name> vous avez quelques <foreign xml:lang="grc">Grecs</foreign>.</p>
+
+   <p><persName>CIRCÉ</persName>. J'en ai un grand nombre, ô mon <persName>Ulysse</persName> adoré. Mais pourquoi cette question?</p>
+
+   <p><persName>ULYSSE</persName>. Parce que je crois, à ne vous rien cacher, que j'acquerrais des titres bien honorables à l'admiration de la Grèce, titres que je recevrai de vos mains, si, grâce à votre bienveillance, je rendais à mes compagnons la forme humaine, et si je ne les laissais pas avec indifférence vieillir contre nature dans des corps d'<name type="animal" xml:lang="fr">animaux</name>, condition si déplorable et si humiliante.</p>
+</div>
+Voici l'encodage TEI P5 du texte selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="2">
+   <milestone unit="section" n="2.88"/>
+   <p><persName>Circé</persName>. Voilà un homme qui dans sa folie veut rendre non seulement ses <name type="animal" xml:lang="fr">compagnons</name>, mais ceux qui lui sont étrangers, victimes de son désir de la gloire !</p>
+   <p><persName>Ulysse</persName>. C'est une autre sorte de breuvage destiné à troubler ma raison, que vous me préparez en parlant ainsi. Oui, <persName>Circé</persName>, de moi vous ferez complètement une <name type="animal" xml:lang="fr">bête</name>, si vous parvenez à me persuader que ce soit un malheur de redevenir homme, de <name type="animal" xml:lang="fr">bête</name> qu'on était.</p>
+   <p><persName>Circé</persName>. Eh quoi! Ne vous êtes vous pas montré cent fois plus absurde en ce qui vous regarde vous-même? Vous renoncez à passer avec moi une vie qui pourrait être immortelle et exempte de vieillesse, pour aller retrouver une femme mortelle, et, permettez-moi de le dire, une créature maintenant décrépite. Vous avez hâte d'affronter derechef des maux sans nombre, espérant que cette constance vous rendra plus célèbre et plus renommé encore que vous ne l'êtes aujourd'hui. Au lieu de la réalité vous courez après un bonheur imaginaire, vous poursuivez un fantôme.</p>
+   <p><persName>Ulysse</persName>. Admettons, <persName>Circé</persName>, qu'il en soit comme vous dites. A quoi bon nous quereller sans cesse sur le même sujet? Accordez-moi plutôt la délivrance de ces malheureux : ce sera pour moi une véritable faveur.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, avec une attention particulière aux entités nommées zoologiques et aux autres éléments structurants :
+
+
+<div type="section" n="3">
+  <p>CIRCÉ. La chose n'est pas si simple, par <name type="deity">Hécate</name> : attendu
+  que ce sont des personnages de condition. Mais demandez
+  leur d'abord s'ils y consentent. En cas de refus vous
+  aurez recours, mon cher, à la dialectique pour les persuader.
+  Si vous n'y parvenez pas, et qu'ils soient les plus
+  forts dans la discussion, ce sera bien assez d'avoir rendu et
+  vous-même et vos amis victimes de votre imprudente
+  détermination.</p>
+
+  <p><persName>ULYSSE</persName>. Pourquoi vous moquer de moi, bienheureuse
+  <name type="deity">déesse</name>? Comment pourront-ils me répondre ou me comprendre,
+  tant qu'ils resteront <name type="animal" xml:lang="fr">ânes</name>, <name type="animal" xml:lang="fr">pourceaux</name> et <name type="animal" xml:lang="fr">lions</name>?</p>
+
+  <p>CIRCÉ. Tranquillisez-vous, ô le plus ambitieux des
+  hommes. Je vous les présenterai capables de vous comprendre
+  et de discourir avec vous. Ou plutôt, il suffira qu'un
+  seul vous entende et vous réponde au nom de tous ses
+  camarades. Tenez, discutez avec celui-ci.</p>
+
+  <p><persName>ULYSSE</persName>. Et de quel nom, <persName>Circé</persName>, l'appellerons-nous? Quel
+  était-il parmi les hommes?</p>
+
+  <p>CIRCÉ. Qu'importe cela pour votre discussion? Du reste,
+  appelez-le, si cela vous plaît, <persName>Gryllus</persName>. Quant à moi, je vous
+  céderai la place, afin qu'il ne se croie pas obligé de parler
+  contre ses opinions pour me faire la cour.</p>
+
+  <milestone unit="section" n="2"/>
+
+  <p><persName>GRYLLUS</persName>. Bonjour, <persName>Ulysse</persName>.</p>
+
+  <p><persName>ULYSSE</persName>. Par <name type="deity">Jupiter</name>, bonjour aussi, <persName>Gryllus</persName>.</p>
+
+  <p><persName>GRYLLUS</persName>. Quelles questions veux-tu m'adresser?</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte de Plutarque, avec une attention particulière aux entités nommées zoologiques et aux autres éléments demandés :
+
+
+<div type="chapter" n="4">
+   <p>ULYSSE. Vous êtes nés <name type="animal" xml:lang="fr">hommes</name>, je le sais. Je vous plains
+   tous de la condition où vous voilà réduits; mais il est bien
+   naturel que ma compassion s'augmente, quand ce sont des
+   <persName>Grecs</persName> que frappe une telle affliction. Aussi viens-je
+   d'adresser mes supplications à <name type="deity">Circé</name>, afin qu'elle délivre
+   celui de vous qui le désirera, et que, le rétablissant dans sa
+   forme première, elle le renvoie au milieu de nous.</p>
+
+   <p>GRYLLUS. Halte-là, <persName>Ulysse</persName> ! N'ajoute pas un mot de plus.
+   Apprends que tu nous inspires à tous un profond mépris.
+   C'est bien la peine, en vérité, d'avoir le renom d'habile
+   homme, et de passer pour doué d'une prudence à nulle autre
+   pareille! Quoi! Tu as eu peur d'échanger une condition
+   pire contre une meilleure! Tu n'y as pas réfléchi. Comme
+   les enfants redoutent les potions médicinales, et reculent
+   devant le malaise passager qui, de malades et d'irréfléchis
+   qu'ils sont, les rendra mieux portants et plus sensés; de
+   même tu as repoussé l'occasion qui t'était offerte de devenir
+   autre. A l'heure qu'il est tu trembles et redoutes en secret
+   que <name type="deity">Circé</name>, avec qui tu vis, ne fasse de toi, sans que tu
+   t'en doutes, un <name type="animal" xml:lang="fr">sanglier</name> ou un <name type="animal" xml:lang="fr">loup</name>. Tu voudrais, quand
+   nous vivons au sein de l'abondance et de la félicité, nous
+   déterminer à quitter et de tels biens et celle qui nous
+   les procure, pour nous embarquer avec toi, pour redevenir
+   <name type="animal" xml:lang="fr">hommes</name>, c'est-à-dire, créatures misérables entre toutes !</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour ce passage de Plutarque, en respectant toutes les règles Zoomathia et les contraintes spécifiées :
+
+
+<div type="chapter" n="5">
+   <milestone unit="section" n="5.88"/>
+   <p><persName>ULYSSE</persName>. Je vois, <name type="animal" xml:lang="fr">Gryllus</name>, que ce n'est pas ton corps
+   seulement, mais encore ton intelligence qui a été dénaturée
+   par ce fatal breuvage, et qu'il t'a rempli d'idées tout à fait
+   déraisonnables et dépravées. Ou bien, il faut qu'un certain
+   charme d'habitude t'ait ensorcelé en faveur du corps qui
+   est aujourd'hui le tien.</p>
+
+   <p><persName>GRYLLUS</persName>. Ni l'un, ni l'autre, ô <persName>roi des Céphalléniens</persName>. Et
+   si tu aimes mieux procéder par des raisonnements que par
+   des injures, nous t'aurons prouvé bientôt, forts de notre
+   expérience des deux conditions, que nous sommes sages en
+   préférant celle-ci à l'autre.</p>
+   <p><persName>ULYSSE</persName>. En vérité, je suis impatient de t'entendre.</p>
+</div>
+<div type="section" n="3">
+   <p>GRYLLUS. Autant que moi je le suis de m'expliquer. Je dois commencer d'abord par les vertus dont je vois que vous êtes si fiers. Vous croyez l'emporter de beaucoup sur les <name type="animal" xml:lang="fr">animaux</name> par la justice, par la prudence, par la bravoure et par les autres vertus. Or, réponds-moi, le plus éclairé des humains. J'ai entendu ce que tu contais à <persName>Circé</persName> de la terre habitée par les <name type="animal" xml:lang="fr">Cyclopes</name> : terre, où sans qu'on la cultive le moins du monde, sans que personne y plante rien, la nature est d'une bonté et d'une générosité incroyable, produisant d'elle-même toutes sortes de fruits. Eh bien, dis : préfères-tu cette terre-là à ton <placeName>Ithaque</placeName>, vrai pays de <name type="animal" xml:lang="fr">chèvres</name>, sol montueux, qui à grand'peine, au prix de travaux nombreux et de fatigues excessives, ne rend à ceux qui le cultivent que des productions insignifiantes, chétives et sans valeur ? Et ne va pas, te formalisant de mes paroles, me répondre contrairement à ta pensée, par amour de ta patrie.</p>
+   <milestone unit="section" n="3"/>
+   <p>ULYSSE. Je n'ai pas besoin de mentir. J'aime, je chéris ma patrie et mon sol natal par-dessus tout, en même temps que je loue et que j'admire cette autre contrée.</p>
+</div>
+Voici l'encodage TEI P5 conforme aux règles strictes du projet Zoomathia pour le texte de Plutarque :
+
+
+<div type="section" n="7">
+   <p>GRYLLUS. Ainsi donc, nous constaterons ce premier point :
+      à savoir que l'homme le plus sensé de tous croit devoir accorder
+      ses <name type="animal" xml:lang="fr">louanges</name> et son admiration à certaines choses, et
+      sa préférence, son affection à d'autres. Je suppose que tu
+      répondras dans un sens analogue, si je te parle de l'<name type="animal" xml:lang="fr">âme</name>. Car il en est de même pour elle que pour un sol : la meilleure
+      est celle qui sans travail produit la vertu comme un
+      fruit naturel.</p>
+   <p>ULYSSE. C'est un point que je t'accorde aussi.</p>
+   <p>GRYLLUS. Te voilà donc amené à convenir que l'<name type="animal" xml:lang="fr">âme</name> des
+      <name type="animal" xml:lang="fr">bêtes</name> est mieux organisée naturellement pour que la vertu
+      y naisse et s'y perfectionne. Sans nulle prescription, sans
+      nul enseignement, comme une terre qu'on n'a ni semée ni
+      labourée, leur <name type="animal" xml:lang="fr">âme</name> porte et développe naturellement la
+      vertu qui leur convient.</p>
+   <p>ULYSSE. Et quelle vertu, <persName>seigneur Gryllus</persName>, accordez-vous
+      donc aux <name type="animal" xml:lang="fr">bêtes</name>?</p>
+</div>
+<div type="section" n="8">
+   <p>GRYLLUS. Dis plutôt, quelle vertu ne leur accordé-je pas, à un degré bien autrement plus remarquable qu'au plus sage d'entre les hommes. Examine d'abord, si tu le veux, la question du <name type="animal" xml:lang="fr">courage</name>. Tu es particulièrement fier du tien, et tu n'as garde de laisser ignorer qu'on t'appelle le hardi, le ravageur de villes. Misérable que tu es ! Employant la ruse et tous les artifices possibles contre des hommes qui ne connaissent qu'une manière franche et généreuse de faire la guerre, contre des hommes étrangers à la tromperie et aux mensonges, tu déguises ta fourberie sous le nom de la vertu la plus incompatible avec la fourberie.</p>
+   <p>Vois les combats des <name type="animal" xml:lang="fr">animaux</name> entre eux et leurs combats contre vous. Comme tout s'y passe sans ruse et sans artifice ! C'est au grand jour, c'est à nu, qu'ils déploient leur audace, et c'est bien leur force véritable qu'ils mettent au service de leur vengeance. Ils n'ont pas besoin qu'une loi les appelle sous les drapeaux, qu'on leur fasse craindre l'appellation injurieuse de déserteurs. Une fierté naturelle leur inspire l'horreur de la domination. Jusqu'à la dernière extrémité ils résistent pour conserver leur indépendance. Ils ne cèdent pas pour avoir été vaincus ; ils ne perdent jamais courage, et ils meurent au milieu des combats. Chez plusieurs, au moment où ils vont expirer, la force avec la fierté se retire et se concentre dans une petite partie de leur corps, et lutte contre l'<name type="animal" xml:lang="fr">ennemi</name> qui va leur donner le trépas.</p>
+</div>
+<div type="section" n="9">
+   <p>C'est cette partie d'eux-mêmes qui bondit, qui s'indigne : jusqu'à ce que, comme du feu, elle soit complétement éteinte et anéantie. Jamais ils n'ont recours aux prières, à des supplications, avec le dessein d'apitoyer leur adversaire. Jamais ils n'avouent leur défaite. <name type="animal" xml:lang="fr">Un lion</name> ne se résigne pas à devenir, par un effet de sa lâcheté, l'esclave d'un <name type="animal" xml:lang="fr">lion</name>, ni <name type="animal" xml:lang="fr">un cheval</name>, d'un <name type="animal" xml:lang="fr">cheval</name>. <persName>Un homme</persName>, au contraire, se reconnaît esclave d'un autre, et accepte de gaieté de coeur avec l'esclavage le titre de lâche dont ce nom est synonyme.</p>
+   <p>Tous les <name type="animal" xml:lang="fr">animaux</name> qu'à force de piéges et d'artifices <persName>l'homme</persName> tient sous sa puissance n'ont pas plus tôt acquis la plénitude de leurs forces que, repoussant la nourriture qu'il leur offre, et résistant à la soif, ils se donnent eux-mêmes la mort parce qu'ils la préfèrent à la servitude. Pour ce qui est de leurs petits, soit <name type="animal" xml:lang="fr">oiseaux</name>, soit <name type="animal" xml:lang="fr">quadrupèdes</name>, que leur âge rend aisés à conduire et débonnaires, c'est en leur prodiguant mille séductions trompeuses, mille douceurs perfides que <persName>l'homme</persName> les ensorcelle, jusqu'à ce qu'à force de leur faire goûter des plaisirs et un régime contraire à leur nature, il leur enlève à la longue toute leur énergie. Alors seulement ils consentent et se résignent à devenir ce qu'on appelle apprivoisés, autrement dit, dépouillés de toute leur fierté native.</p>
+   <p>Est-il une preuve plus évidente, que les <name type="animal" xml:lang="fr">bêtes</name> sont très heureusement douées sous le rapport du courage?</p>
+</div>
+Voici l'encodage TEI P5 du texte selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="10">
+  <milestone unit="section" n="10.1"/>
+  <p>Au contraire, les hommes n'ont de l'assurance qu'en
+    forçant leur nature. Je vais l'établir, mon très cher <persName>Ulysse</persName>,
+    par un argument qui te convaincra. Chez les animaux, il y
+    a équilibre parfait dans la vigueur des deux sexes. La femelle
+    ne le cède en rien au mâle, soit pour supporter les
+    fatigues indispensables, soit pour défendre sa progéniture.</p>
+  <p>A coup sûr tu as entendu parler d'une certaine <name type="animal" xml:lang="fr">laie</name> de
+    <placeName>Cromnyon</placeName>, qui, toute <name type="animal" xml:lang="fr">laie</name> qu'elle était, donna beaucoup de
+    mal à <persName>Thésée</persName>. Le <name type="animal" xml:lang="fr">sphinx</name>, ce fameux monstre femelle qui
+    s'était installé sur le mont <placeName>Phicius</placeName>, n'aurait tiré aucun parti
+    de son habileté à compliquer des énigmes et des questions
+    embarrassantes, si sa force et son courage n'avaient pas déjà
+    fait trembler devant lui les habitants de la cité de <placeName>Cadmus</placeName>.</p>
+  <p>C'est encore dans ce même pays, que parurent, dit-on, la
+    <name type="animal" xml:lang="fr">renarde</name> de <placeName>Telmesse</placeName>, qui exerça tant de dégâts, et, dans
+    son voisinage, la <name type="animal" xml:lang="fr">dragonne</name> qui à <placeName>Delphes</placeName> se mesura en
+    combat singulier avec <name type="deity">Apollon</name>, au sujet de l'oracle. Ne sait-on
+    pas que la <name type="animal" xml:lang="fr">jument</name> <foreign xml:lang="grc">Étha</foreign> fut acceptée par votre roi d'un
+    <persName>Sicyonien</persName> qui achetait ainsi le droit de ne pas partir à la
+    guerre. C'était un excellent calcul, que de préférer à un
+    homme lâche une noble et généreuse bête.</p>
+  <p>Toi-même, qui
+    souvent as vu des <name type="animal" xml:lang="fr">panthères</name> et des <name type="animal" xml:lang="fr">lionnes</name>, tu as été à même
+    de reconnaître que ces femelles ne cèdent en rien à leurs
+    mâles sous le rapport du courage et de la vigueur. Compare
+    leur ta femme qui, pendant que tu fais la guerre, reste</p>
+</div>
+<div type="section" n="11">
+   <p>tranquillement assise chez elle à son foyer, sans oser même, ce que font les <name type="animal" xml:lang="fr">hirondelles</name>, résister à ceux qui veulent s'emparer de sa personne et de son logis. Pourtant c'est une <persName>Lacédémonienne</persName>.</p>
+   <p>Te citerai-je encore les <persName>Cariennes</persName> ou les <persName>Méoniennes</persName>? Ce que j'ai dit prouve à l'évidence que la bravoure n'est pas une qualité naturelle de l'<name type="animal" xml:lang="fr">espèce humaine</name>; car les <name type="animal" xml:lang="fr">femmes</name> auraient aussi leur part de vigueur.</p>
+   <p>Si bien que c'est par la contrainte des lois, sans spontanéité, sans initiative, que vous pratiquez la bravoure. Vous vous rendez esclaves, en cela, des usages, du blâme, de l'opinion des étrangers, et cette vaillance est toute de convention.</p>
+   <p>Si vous affrontez les fatigues et les dangers, ce n'est pas le courage qui vous y excite, c'est la crainte d'autres fatigues, d'autres dangers plus considérables.</p>
+   <p>Ainsi donc, de même que parmi tes compagnons celui qui a su gagner de vitesse sur les autres, prend la rame la plus légère à manoeuvrer, non parce qu'il en fait peu de cas, mais parce qu'il en redoute et en fuit une plus lourde; de même, l'<persName>homme</persName> qui endure des coups afin de ne pas recevoir de blessures, et qui se défend contre un ennemi plutôt que de subir des mauvais traitements ou la mort, est moins brave contre le danger qu'il n'est timide en face de cette autre perspective.</p>
+   <p>C'est ainsi que j'ai reconnu dans votre courage à tous une lâcheté prudente, et dans votre hardiesse une frayeur habile à éviter un mal par un autre.</p>
+</div>
+<div type="section" n="12">
+   <p>Du reste, pour parler d'une manière générale, si vous croyez en fait de bravoure valoir mieux que les <name type="animal" xml:lang="fr">bêtes</name>, pourquoi vos poètes, quand ils parlent des hommes qui combattent le plus vigoureusement contre les ennemis, les appellent-ils « des mortels au cœur de <foreign xml:lang="grc">λέων</foreign> », des « mortels comparables au <name type="animal" xml:lang="fr">sanglier</name> pour leur vigueur »? Pas un d'eux ne s'avise de dire d'un <name type="animal" xml:lang="fr">lion</name>, qu'il a le cœur d'un homme, d'un <name type="animal" xml:lang="fr">sanglier</name>, qu'il vaut un homme pour la vigueur.</p>
+   <p>Mais, si je raisonne bien, de même que pour qualifier ceux qui sont légers, les poètes donnent aux pieds des coureurs la rapidité du vent, que par une hyperbole d'image ils appellent « semblables aux <name type="deity">dieux</name> » ceux qui sont beaux; de même, ils font des rapprochements entre les mortels les plus vaillants au combat et les créatures les plus valeureuses par leur nature.</p>
+   <p>Quelle est la raison de cette supériorité? C'est que le courage est en quelque sorte ce qui donne la fermeté et la trempe aux âmes. Or c'est avec leur âme, simplement et purement, que les <name type="animal" xml:lang="fr">bêtes</name> affrontent les combats, tandis que vous autres vous y mêlez le raisonnement, comme on mêle de l'eau avec du vin. Voilà pourquoi votre âme fléchit en face du danger et vient à défaillir dans un moment critique.</p>
+   <p>Quelques-uns d'entre vous vont jusqu'à dire qu'il ne faut en aucune façon déployer de l'ardeur dans les combats, qu'il faut supprimer ces transports généreux pour faire usage d'une raison bien</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque, en respectant toutes les règles et priorités :
+
+
+<div type="chapter" n="13">
+   <p>calme. Voilà qui est le mieux du monde au point de
+   vue de la conservation et de la santé personnelle, mais au point de
+   vue de l'énergie et de la vigueur c'est une théorie honteuse.
+   N'y a-t-il pas inconséquence flagrante ! Vous accusez la
+   nature de ce qu'elle n'a point armé vos corps d'aiguillons,
+   de ce qu'elle ne vous a pas donné des dents en forme de
+   défenses, des serres recourbées, et, d'autre part, votre armure
+   naturelle qui est votre <name type="animal" xml:lang="fr">âme</name>, vous l'annulez, vous en
+   arrêtez l'essor.</p>
+   <milestone unit="section" n="5"/>
+   <p><persName>ULYSSE</persName>. Oh ! oh ! maître <name type="animal" xml:lang="fr">Gryllus</name> ! te voilà, ce semble,
+   devenu un rhéteur consommé! Ta bauge est une chaire
+   d'où tu pérores avec toute l'ardeur imaginable pour soutenir
+   cette nouvelle thèse. Et pourquoi n'as-tu pas, sans
+   t'interrompre, discouru sur la tempérance?</p>
+</div>
+<div type="section" n="14">
+   <p>GRYLLUS. C'est que je croyais que tu allais réfuter d'abord ce que je viens de dire. Mais non : tu es pressé de m'entendre parler de la tempérance, attendu que tu possèdes une femme qui est un modèle de chasteté, et parce que tu penses avoir donné, pour ce qui te regarde, une preuve de tempérance en refusant les faveurs amoureuses de <persName>Circé</persName>.</p>
+   <p>Mais rien de tout cela n'établit que tu l'emportes sur les animaux en matière de continence. Eux, non plus, ne désirent pas s'unir à des êtres d'une nature supérieure à eux. Ils s'en tiennent aux plaisirs et aux amours qu'ils peuvent goûter avec ceux de leur espèce.</p>
+   <p>Il n'y a donc pas lieu d'être frappé d'admiration si, comme en Égypte ce <name type="animal" xml:lang="fr">bouc</name> de Mendès qui, renfermé avec un grand nombre de femmes des plus belles, n'éprouve aucun désir et se sent bien plus d'ardeur pour ses <name type="animal" xml:lang="fr">chèvres</name>, si, dis-je, toi aussi, tu préfères les jouissances amoureuses que tu connais, et si tu te soucies peu, étant homme, de coucher avec une <name type="deity">déesse</name>.</p>
+   <p>Quant à la chasteté de <persName>Pénélope</persName>, mille <name type="animal" xml:lang="fr">corneilles</name> s'en vont protester par leurs croassements et prouver que c'est une dérision. Oui, les <name type="animal" xml:lang="fr">corneilles</name> ont droit de la mépriser. Toutes les <name type="animal" xml:lang="fr">corneilles</name>, sans en excepter une seule, se condamnent au veuvage aussitôt qu'elles perdent leur mâle, et cela, non pas pour quelques mois, mais durant neuf générations d'hommes.</p>
+   <p>Ta belle <persName>Pénélope</persName> est donc dépassée neuf fois en sagesse par la première <name type="animal" xml:lang="fr">corneille</name> que tu voudras.</p>
+</div>
+<div type="section" n="15">
+   <p>Mais puisque mon talent de rhéteur ne t'a pas échappé, permets que je fasse usage des divisions oratoires, et qu'après avoir donné la définition de la tempérance, je passe en revue les différentes espèces de désirs. La tempérance consiste à borner ses désirs, à les régler, en supprimant ceux qui sont étrangers et superflus pour ne garder que les nécessaires et y mettre de l'opportunité et de la modération.</p>
+   <milestone unit="section" n="15.1"/>
+   <p>Or, dans les désirs même tu remarques sans doute des différences innombrables. Ainsi, par exemple, le désir du manger, celui du boire, outre qu'ils offrent une jouissance naturelle, sont encore des besoins. Au contraire, les désirs amoureux, bien qu'ils aient leur principe dans la nature, sont tels que l'on peut fort bien vivre en se les interdisant; aussi les appelle-t-on naturels, mais non pas nécessaires.</p>
+   <milestone unit="section" n="15.2"/>
+   <p>Il en est d'autres qui ne sont ni nécessaires, ni naturels, et que vous imposent du dehors des opinions fausses, résultat d'un jugement erroné. Ces désirs de convention deviennent tellement nombreux qu'ils étouffent presque entièrement les naturels. C'est comme une faction étrangère qui, au sein d'une cité, veut faire la loi aux vrais citoyens.</p>
+   <milestone unit="section" n="15.3"/>
+   <p>Les <name type="animal" xml:lang="fr">animaux</name> n'ont pas une âme qui se laisse dominer et envahir par ces passions étrangères. Leur manière de vivre les tient éloignés de toute fausse opinion, comme d'une mer dangereuse, et ils ne songent pas le moins du monde à la sensualité et au superflu.</p>
+</div>
+<p>observent-ils constamment les lois de la tempérance et la
+modération dans leurs désirs, aussi restreints que naturels.</p>
+<p>Moi qui te parle, j'étais jadis, comme tu l'es aujourd'hui,
+dominé par la soif de l'<name type="animal" xml:lang="fr">or</name>. Il n'y avait pas de possession
+qui me semblât digne d'être mise en parallèle avec l'<name type="animal" xml:lang="fr">or</name>. </p>
+<p>L'<name type="animal" xml:lang="fr">argent</name> et l'<name type="animal" xml:lang="fr">ivoire</name> m'exaltaient aussi. Celui qui accumulait
+ces objets en plus grande quantité était à mes yeux un
+être privilégié et chéri du ciel, eût-il été <persName>Phrygien</persName> ou <persName>Carien</persName>, </p>
+<p>eût-il été plus lâche que <persName>Delon</persName>, plus éprouvé par l'infortune
+que <persName>Priam</persName>. Dans cet état, mes désirs me tenaient
+toujours en haleine. Je ne recueillais aucun charme, aucune
+joie de mes autres biens, quoiqu'ils fussent nombreux et
+suffisants. Je maudissais mon existence. Je me regardais
+comme privé et déshérité des avantages les plus grands,
+comme abandonné des <name type="deity">dieux</name>. Je me rappelle, à ce propos, </p>
+<p>qu'un jour en <placeName>Crète</placeName> je te vis revêtu, pour je ne sais quelle
+solennité, d'un superbe manteau. Ce n'était ni ta prudence
+que j'enviais, ni ta valeur, mais bien cette étoffe si
+merveilleusement travaillée et d'un tissu si délicat, ce manteau
+du <name type="animal" xml:lang="fr">pourpre</name> si moelleux et si éclatant. Voilà ce qui excitait
+ma convoitise, ce qui me mettait hors de moi. Il y avait
+aussi certaine agrafe en <name type="animal" xml:lang="fr">or</name>, espèce de joujou ciselé avec
+une perfection merveilleuse. Je m'attachais à tes pas;
+j'étais sous le charme, comme le sont les <name type="animal" xml:lang="fr">femmes</name>. Maintenant
+je suis débarrassé, je suis purgé de ces fausses admirations.</p>
+<div type="chapter" n="17">
+   <milestone unit="section" n="17.1"/>
+   <p>L'<name type="animal" xml:lang="fr">or</name> et l'<name type="animal" xml:lang="fr">argent</name> sont pour moi comme les autres <name type="plant" xml:lang="fr">pierres</name>. </p>
+   <p>Je passe à côté sans y prendre garde. Tes <foreign xml:lang="fr">tuniques</foreign> et tes <foreign xml:lang="fr">tapis</foreign> ne me seraient pas, je te le jure, plus agréables pour dormir, quand j'ai la <name type="animal" xml:lang="fr">panse</name> pleine, qu'un <name type="animal" xml:lang="fr">bourbier</name> bien profond et bien moelleux. </p>
+   <p>C'est ainsi qu'aucune de toutes ces convoitises factices n'élit domicile au sein de nos <name type="animal" xml:lang="fr">âmes</name>. </p>
+   <p>Mais les désirs et les voluptés nécessaires abondent dans notre existence. Ce ne sont même plus des nécessités : ce sont des jouissances naturelles, que nous goûtons sans avidité et sans désordre. </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque (section 18/88) :
+
+
+<div type="section" n="18">
+  <p>Et d'abord, passons en revue ces sensualités physiques.</p>
+  <p>Le plaisir particulier que cause à notre odorat l'émanation des bonnes odeurs n'est pas seulement une satisfaction simple et peu coûteuse; il contribue encore de la façon la plus utile à guider notre discernement pour notre nourriture.</p>
+  <p>On dit, et rien n'est plus vrai, que la langue fait reconnaître les saveurs douces, les fortes et les amères, quand les différents sucs, mêlés et confondus ensemble, sont appréciés par le sens du goût.</p>
+  <p>Mais, avant même que le palais fasse son office, notre odorat juge de la valeur des différents sucs; et il n'y a pas de dégustateurs royaux qui sachent prononcer avec une exactitude égale à la nôtre.</p>
+  <p>Notre odorat nous indique ce qui nous est bon, ce que nous pouvons manger; il repousse ce qui nous est contraire; il ne permet pas que nous y touchions, que nous en blessions notre palais.</p>
+  <p>Il nous en signale, il nous en dénonce le danger avant que ce danger nous soit préjudiciable.</p>
+  <p>Pour le reste, ce sens ne nous cause pas, comme à vous, des préoccupations fatigantes : nous n'avons pas besoin de parfums tels que ceux que vous composez avec le <name type="plant" xml:lang="fr">cinnamome</name> et le <name type="plant" xml:lang="fr">nard</name>, avec certaines feuilles, avec certains roseaux de l'<placeName>Arabie</placeName>.</p>
+  <p>C'est là pour vous une occasion de faire des teintures, de préparer des drogues, et vous appelez cela faire de la parfumerie.</p>
+  <p>Vous êtes obligés de combiner ainsi une foule de substances que vous vous incorporez : ce qui est une</p>
+</div>
+<div type="section" n="19">
+   <p>sensualité indigne d'hommes et faite pour de petites maîtresses
+   seulement. Vous y dépensez beaucoup d'argent, pour n'en
+   retirer aucun profit. Et pourtant, tel qu'il est, ce besoin
+   factice a si fort corrompu, non seulement toutes les femmes,
+   mais encore la majorité des hommes, que vous ne
+   consentez pas à coucher avec vos moitiés si elles ne se
+   rapprochent de vous exhalant les parfums et saupoudrées
+   d'<name type="plant" xml:lang="fr">aromates</name>.</p>
+   <p>Au contraire le <name type="animal" xml:lang="fr">sanglier</name> n'est attiré vers la <name type="animal" xml:lang="fr">laie</name>, le
+   <name type="animal" xml:lang="fr">bouc</name>, vers la <name type="animal" xml:lang="fr">chèvre</name>, chaque autre mâle, vers sa femelle, que
+   par la fraîche odeur de rosée et d'<name type="plant" xml:lang="fr">herbe</name> des champs qu'exhale
+   cette moitié de lui-même. C'est une tendresse commune
+   qui préside à leur rapprochement, sans que les femelles,
+   par une coquetterie raffinée, provoquent les désirs à force de
+   ruses, de séductions et de refus, sans que les mâles, dans
+   leurs transports impudiques, poursuivent à prix d'argent et
+   par de fatigantes assiduités le droit de se reproduire.</p>
+   <p>Parmi
+   nous l'amour est sans artifices. Il est opportun; il ne se
+   vend point; il se produit à une saison fixe de l'année, comme
+   le mouvement de la végétation. Allumé à la fois dans les
+   veines de tous les <name type="animal" xml:lang="fr">animaux</name>, c'est un désir qui ne tarde pas
+   à s'éteindre. Dès que la femelle a conçu elle n'accepte plus
+   les recherches du mâle, et celui-ci n'essaye pas de les continuer.
+   Tant il est vrai que chez nous la volupté est peu de
+   chose et qu'à nos yeux elle est à peu près sans force et sans
+   valeur! Tout est pour la nature.</p>
+</div>
+<div type="section" n="20">
+   <p>Aussi l'amour des <name type="animal" xml:lang="fr">mâles</name> avec les <name type="animal" xml:lang="fr">mâles</name>, des <name type="animal" xml:lang="fr">femelles</name> avec
+   les <name type="animal" xml:lang="fr">femelles</name>, est-il un goût qui ne s'est pas, jusqu'ici du moins,
+   produit parmi les <name type="animal" xml:lang="fr">animaux</name>. Chez vous cette odieuse passion
+   égare les <persName>personnages</persName> les plus graves et les plus courageux.
+   Sans parler des hommes de rien, <persName>Agamemnon</persName> parcourut
+   la <placeName>Béotie</placeName> en poursuivant comme un chasseur <persName>Argynnus</persName> qui le fuyait.
+   Il accusait faussement et la mer et les
+   <name type="animal" xml:lang="fr">aquilons</name>, puis enfin il se plongeait bravement, le bel
+   amoureux, dans les eaux du <placeName>lac Copaïs</placeName> pour y éteindre l'ardeur
+   de son désir et s'y débarrasser de sa flamme. <persName>Hercule</persName>,
+   pareillement, occupé à courir après un de ses compagnons
+   encore imberbe, abandonna les plus braves de son équipage
+   et fit manquer le but de l'expédition. Sur le frontispice
+   du temple d'<name type="deity">Apollon Ptoüs</name>, quelqu'un de vous traça furtivement
+   cette inscription : « ô bel <persName>Achille</persName>! » bien qu'<persName>Achille</persName>
+   eût déjà un fils; et j'ai entendu dire que cette inscription
+   subsiste encore. Si un <name type="animal" xml:lang="fr">coq</name> n'ayant pas de <name type="animal" xml:lang="fr">poules</name> auprès de
+   lui vient à saillir un autre <name type="animal" xml:lang="fr">coq</name>, il est brûlé tout vif, et un
+   <persName>devin</persName>, un interprète des prodiges ne manque pas de déclarer
+   que c'est un fait grave, un présage terrible. Tant il
+   est vrai que les hommes eux-mêmes s'accordent à reconnaître
+   que la modération convient mieux aux <name type="animal" xml:lang="fr">bêtes</name>, et que
+   celles-ci dans leurs désirs ne font pas violence à la nature !
+   Chez vous l'intempérance n'est pas réprimée par le secours
+   des lois, et la nature est impuissante à la contenir dans de</p>
+</div>
+<div type="section" n="21">
+   <p>justes limites. C'est un torrent qui se précipite. La consommation
+      de vos désirs amoureux donne bien souvent naissance
+      à des monstruosités qui déshonorent la nature, qui bouleversent
+      et confondent ses lois. Des hommes ont cherché à
+      s'accoupler avec des <name type="animal" xml:lang="fr">chèvres</name>,
+      avec des <name type="animal" xml:lang="fr">truies</name>,
+      avec des <name type="animal" xml:lang="fr">juments</name>,
+      des femmes se sont passionnées pour des animaux
+      mâles; et de ces mariages naissent parmi vous les
+      <name type="deity">Minotaures</name>,
+      les <name type="deity">Egypans</name>, et aussi, je pense, les
+      <name type="deity">Sphinx</name> et les
+      <name type="deity">Centaures</name>. Sans doute, pressé par la faim un
+      <name type="animal" xml:lang="fr">chien</name> a
+      quelquefois mangé de l'<name type="animal" xml:lang="fr">homme</name>,
+      un <name type="animal" xml:lang="fr">oiseau</name> en a aussi goûté
+      quelquefois; mais jamais une bête n'a tenté de s'accoupler
+      à une créature <name type="animal" xml:lang="fr">humaine</name>,
+      tandis que pour satisfaire cette
+      sensualité et bien d'autres les hommes abusent des bêtes
+      par la violence et au mépris de toutes les lois.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage de Plutarque :
+
+
+<div type="chapter" n="22">
+  <p>Que si les hommes montrent tant de bassesse et
+    d'intempérance dans les plaisirs dont je viens de parler, on
+    reconnaît encore bien davantage, quand il s'agit des besoins,
+    comme ils sont loin des <name type="animal" xml:lang="fr">bêtes</name> pour la modération.
+    Je parle ici des besoins du manger et du boire. Nous autres
+    nous n'y goûtons quelque plaisir qu'en y trouvant de l'utilité.
+    Mais vous, c'est la sensualité que vous poursuivez,
+    plutôt qu'une réfection naturelle; (et, du reste, de nombreuses
+    et longues maladies vous en punissent. Ces maladies
+    nées d'une même source, qui est la réplétion, vous
+    remplissent de flatuosités de toute espèce dont vous avez grand'peine à vous débarrasser).</p>
+  <milestone unit="section" n="8"/>
+  <p>En premier lieu, à chaque espèce d'<name type="animal" xml:lang="fr">animaux</name> est attribué un aliment spécial :
+    aux uns l'<name type="plant" xml:lang="fr">herbe</name> des champs ; aux autres une certaine
+    <name type="plant" xml:lang="fr">racine</name>, un certain <name type="plant" xml:lang="fr">fruit</name>.
+    Ceux qui sont <name type="animal" xml:lang="fr">carnivores</name> ne se tournent
+    vers aucune autre espèce de nourriture, et n'enlèvent pas
+    aux plus faibles celle qui leur est réservée. Le <name type="animal" xml:lang="fr">lion</name> laisse
+    la <name type="animal" xml:lang="fr">biche</name>, le <name type="animal" xml:lang="fr">loup</name> laisse la
+    <name type="animal" xml:lang="fr">brebis</name> vivre de ce que naturellement
+    elles doivent manger. Mais l'<persName>homme</persName>, dans sa gourmandise,
+    porte ses désirs sur tout domaine : il essaye, il
+    goûte de tout. Comme s'il n'avait pas encore reconnu quel
+    aliment lui est propre et particulier, il est, de tous les êtres,
+    le seul <foreign xml:lang="la">omnivore</foreign>. D'abord il se nourrit de <name type="animal" xml:lang="fr">chair</name>, sans qu'aucune
+    disette, aucune insuffisance l'y oblige, puisque toujours
+    chaque saison lui prodigue successivement des <name type="plant" xml:lang="fr">plantes</name>
+  </p>
+</div>
+<div type="chapter" n="23">
+   <p>et des graines qu'il <foreign xml:lang="grc">vendange</foreign>, qu'il récolte, qu'il cueille, et
+puisque jamais le nombre ne lui en fait défaut. Mais, par
+sensualité et par dégoût des aliments nécessaires, il en va
+chercher d'autres, qui ne lui conviennent point, qui sont
+impurs, et qu'il se procure en égorgeant des <name type="animal" xml:lang="fr">animaux</name>.
+L'<persName>homme</persName> n'est-il pas cent fois plus cruel que les <name type="animal" xml:lang="fr">bêtes</name> les
+plus sauvages? Le sang, le carnage, la chair sont pour le
+<name type="animal" xml:lang="fr">milan</name>, pour le <name type="animal" xml:lang="fr">loup</name> ou le <name type="animal" xml:lang="fr">dragon</name>, une nourriture appropriée
+à leurs besoins ; pour l'<persName>homme</persName>, c'est un régal. Ensuite,
+comme il consomme toute espèce de choses, il ne
+s'abstient pas, ce que font les <name type="animal" xml:lang="fr">bêtes</name>, d'un grand nombre
+d'aliments. Il ne se borne pas, comme elles, à déclarer
+la guerre à une petite quantité d'<name type="animal" xml:lang="fr">animaux</name> pour se procurer
+ce dont il a besoin. Il n'y a ni <name type="animal" xml:lang="fr">volatile</name>, ni <name type="animal" xml:lang="fr">poisson</name>, pour
+ainsi dire, ni <name type="animal" xml:lang="fr">animal</name> de terre, qui échappe au tribut que
+vous levez pour vos <placeName>tables</placeName>, appelées par vous « tables douces
+et hospitalières ».</p>
+</div>
+<pb n="9"/>
+<div type="section" n="24">
+  <p>Je veux bien que ce soient là seulement des accessoires
+  pour relever la fadeur du manger. Mais pourquoi
+  mettre la barbarie au service de votre sensualité ?</p>
+  <p>L'<name type="animal" xml:lang="fr">intelligence</name> des <name type="animal" xml:lang="fr">bêtes</name> n'ouvre carrière à aucun des arts
+  qui sont inutiles et vains. Ceux qu'elles pratiquent sont le
+  produit de la nécessité, et non d'une importation étrangère
+  ou d'une science achetée à grands frais.</p>
+  <p>Les <name type="animal" xml:lang="fr">animaux</name> ne
+  s'étudient pas péniblement à ajuster et à coller, d'une façon
+  assez peu solide, des propositions les unes au bout des autres.
+  C'est en eux-mêmes et suivant les indications de leur nature,
+  qu'ils obéissent aux raisonnements les plus réguliers.</p>
+  <p>Nous
+  entendons dire qu'en <placeName>Égypte</placeName> tout le monde est médecin.
+  Mais il n'y a pas un seul <name type="animal" xml:lang="fr">animal</name> qui ne possède un fonds naturel
+  de science médicale, non seulement pour se guérir,
+  mais encore pour régler sa nourriture, pour mesurer l'emploi
+  de sa force, pour chasser, pour se garantir; enfin, chacun
+  d'eux a une teinture naturelle des arts libéraux dans
+  la proportion qui lui convient.</p>
+  <p>De qui, nous autres <name type="animal" xml:lang="fr">pourceaux</name>, avons-nous appris à aller, quand nous sommes
+  malades, chercher des <name type="animal" xml:lang="fr">écrevisses</name> à la rivière ? Qui a
+  enseigné aux <name type="animal" xml:lang="fr">tortues</name> à prendre de l'<name type="plant" xml:lang="fr">origan</name> quand elles ont
+  mangé de la <name type="animal" xml:lang="fr">vipère</name> ? aux <name type="animal" xml:lang="fr">chèvres</name> de <placeName>Crète</placeName>, blessées par
+  le chasseur, à courir après le <name type="plant" xml:lang="fr">dictame</name>, qui aussitôt qu'elles
+  en ont goûté fait tomber le trait attaché à leur flanc?</p>
+  <p>Diras-tu, ce qui est vrai, que leur maître en cela est la</p>
+</div>
+<div type="section" n="25">
+   <p>nature? Ce sera au principe le plus excellent et le plus
+   sage que tu feras alors remonter la prudence des <name type="animal" xml:lang="fr">bêtes</name>. Que si vous répugnez à leur appliquer ces mots de raison, de prudence, c'est le cas d'en chercher un qui soit plus
+   beau et plus honorable, puisque par leurs actes les <name type="animal" xml:lang="fr">bêtes</name>
+   révèlent un pouvoir réellement plus précieux et plus admirable. Elles ne sont dépourvues ni d'instruction, ni d'éducation ;
+   elles tirent d'elles-mêmes toutes leurs lumières
+   et n'ont rien à demander à d'autres créatures. Ce n'est pas
+   faiblesse chez elles : c'est vigueur et perfection d'une nature
+   bien dotée. Elles envoient promener ces maîtres étrangers,
+   qui ne vendent leurs connaissances aux autres qu'à beaux
+   deniers comptants</p>
+   <p>Aussi toutes les sciences, toutes les études auxquelles
+   l'<persName>homme</persName> se livre pour son luxe ou son amusement, les
+   <name type="animal" xml:lang="fr">bêtes</name>, grâce à leur intelligence, à leur merveilleuse sagacité,
+   et en dépit de leur conformation physique, les <name type="animal" xml:lang="fr">bêtes</name>,
+   dis-je, s'en pénètrent le plus facilement du monde. Je ne
+   parle pas des petits <name type="animal" xml:lang="fr">quadrupèdes</name> qui savent suivre à la
+   piste, des jeunes <name type="animal" xml:lang="fr">poulains</name> qu'on dresse à marcher en cadence, des <name type="animal" xml:lang="fr">chiens</name> qui sautent à travers des cercles tournants.
+   On voit sur nos théâtres des <name type="animal" xml:lang="fr">chevaux</name> et des <name type="animal" xml:lang="fr">boeufs</name>
+   qui se couchent, qui dansent, qui s'arrêtent avec une
+   ponctualité surprenante. Ils exécutent, en faisant preuve
+   d'une merveilleuse exactitude, des mouvements assez peu
+   faciles pour l'<persName>homme</persName>, et l'on reconnaît en eux une docilité</p>
+</div>
+<div type="section" n="26">
+   <p>singulière à apprendre et à retenir par coeur une foule de choses qui ne sont pourtant d'aucune utilité. Voudrais-tu mettre en doute que nous soyons de bons écoliers? Apprends que nous sommes aussi des maîtres. Les <name type="animal" xml:lang="fr">perdrix</name>, quand elles prennent la fuite en avant de leurs petits, les habituent à se cacher derrière une motte de terre qu'ils dressent devant eux avec leurs pattes et à se renverser sur le dos.</p>
+   <p>Vois les jeunes <name type="animal" xml:lang="fr">cigognes</name>, sur les toits: en présence des personnages expérimentés de la bande et sous leur direction, elles essayent à prendre leur vol. Les <name type="animal" xml:lang="fr">rossignols</name> donnent à leurs petits des leçons de chant ; et ceux qui, ayant été pris de trop bonne heure, sont élevés entre les mains des hommes, gazouillent beaucoup moins bien : on dirait des élèves privés trop tôt de leur maître.</p>
+   <p>C'est depuis que je suis entré dans cette enveloppe-ci, que je m'étonne des raisonnements par lesquels les sophistes m'avaient fait croire que tous les animaux, l'<name type="animal" xml:lang="fr">homme</name> excepté, sont dépourvus de sens et de raison.</p>
+   <milestone unit="section" n="10"/>
+   <p><persName>ULYSSE</persName>. Ainsi donc maintenant, <persName>Gryllus</persName>, tu as changé d'opinion, et tu déclares que la <name type="animal" xml:lang="fr">brebis</name>, que l'<name type="animal" xml:lang="fr">âne</name> sont des êtres raisonnables !</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque, en respectant toutes les règles Zoomathia :
+
+
+<div type="section" n="27">
+  <p>GRYLLUS. Ce sont précisément ces derniers <name type="animal" xml:lang="fr">animaux</name>,
+  mon très cher <persName>Ulysse</persName>, qui doivent nous faire conjecturer
+  que la nature des <name type="animal" xml:lang="fr">bêtes</name> n'est rien moins qu'étrangère à la
+  raison et à la sagacité. Car de même qu'un <name type="plant" xml:lang="fr">arbre</name> n'est ni
+  plus ni moins animé qu'un autre, mais que tous sont frappés
+  également d'insensibilité, attendu que nul d'entre eux
+  ne possède une âme ; de même on ne trouverait pas qu'un
+  <name type="animal" xml:lang="fr">animal</name> eût l'intelligence plus paresseuse et plus indocile
+  qu'un autre, si tous les <name type="animal" xml:lang="fr">animaux</name> n'étaient pas doués de raison
+  et de sagacité, et si les uns en avaient plus ou moins
+  que les autres. Et fais attention que la stupidité et la torpeur
+  de certains d'entre eux n'en fait que mieux éclater l'habileté
+  et la finesse de certains autres: comme quand avec le <name type="animal" xml:lang="fr">renard</name>,
+  avec le <name type="animal" xml:lang="fr">loup</name>, avec l'<name type="animal" xml:lang="fr">abeille</name>, tu compareras l'<name type="animal" xml:lang="fr">âne</name> et la
+  <name type="animal" xml:lang="fr">brebis</name>; comme, encore, quand tu établiras un parallèle
+  entre toi et <persName>Polyphème</persName>, entre ton aïeul <persName>Autolycus</persName> et <persName>Homère</persName>
+  le Corinthien. Car je ne crois pas qu'il y ait autant
+  de distance entre une <name type="animal" xml:lang="fr">bête</name> et une autre que la raison,
+  l'intelligence et la mémoire en mettent entre deux <persName>hommes</persName>.</p>
+
+  <p>ULYSSE. Fais-y attention, <persName>Gryllus</persName> : tu vas dire quelque
+  chose de bien étrange et de bien forcé, si tu laisses la raison
+  à des êtres qui n'ont aucune notion de <name type="deity">Dieu</name>.</p>
+
+  <p>GRYLLUS. Comment, après cela, nier, ô <persName>Ulysse</persName>, qu'avec
+  toute ta finesse et ton habileté, tu sois fils de <persName>Sisyphe</persName>?</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque, en respectant toutes les règles et en priorisant l'encodage des entités nommées Zoomathia :
+
+
+<div type="book" n="V">
+  <div type="section" n="1">
+    <p>Pourquoi l'eau de la mer n'est-elle pas favorable à la végétation des arbres ?</p>
+    <p>[911c] Est-ce par la même raison qu'elle n'est pas propre à la nourriture des <name type="animal" xml:lang="fr">animaux</name>? Car une plante, suivant Platon, <quote><persName>Platon</persName></quote>, <persName>Anaxagore</persName> et <persName>Démocrite</persName>, est un <name type="animal" xml:lang="fr">animal</name> terrestre. De ce qu'elle nourrit et abreuve les <name type="animal" xml:lang="fr">plantes</name> marines, aussi bien que les <name type="animal" xml:lang="fr">poissons</name>, il ne s'ensuit pas qu'elle serve à la végétation des <name type="plant" xml:lang="fr">arbres</name> et des <name type="plant" xml:lang="fr">plantes</name> terrestres.</p>
+    <p>Elle est trop épaisse pour pouvoir s'insinuer [jusqu'à leurs racines, et trop pesante pour s'élever dans leur tige et dans leurs branches. Ce qui prouve, entre plusieurs autres raisons, qu'elle est pesante et chargée d'une matière terreuse, c'est que les <name type="animal" xml:lang="fr">vaisseaux</name> et les <name type="animal" xml:lang="fr">nageurs</name> s'y soutiennent mieux que dans l'eau douce.</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque, en respectant toutes les règles et en priorisant les entités nommées Zoomathia :
+
+
+<div type="chapter" n="29">
+   <p>Est-ce que la
+      <persName>sécheresse</persName> est très nuisible aux arbres, et que l'eau de la mer est dessiccative
+      ? Voilà pourquoi le <name type="plant" xml:lang="fr">sel</name> empêche la putréfaction, et que ceux qui se baignent
+      dans la mer ont très promptement la peau sèche et rude (02).
+      <milestone unit="section" n="29.1"/>
+      <pb n="364"/>
+      Est-ce parceque l'<name type="plant" xml:lang="fr">huile</name> est ennemie des <name type="plant" xml:lang="fr">plantes</name>, et fait périr celles qui en
+      sont arrosées ? Or, l'eau de la mer est grasse
+   </p>
+   <p>et onctueuse; aussi
+      s'enflamme-t-elle aisément et défend-on d'en jeter sur le feu (03).
+   </p>
+   <p>Est-ce parce que
+      l'eau de la mer n'est point potable à cause de l'<foreign xml:lang="la">amertume</foreign> que lui communique, suivant <persName>Aristote</persName>, une terre brûlée dont elle est chargée? Ainsi la <name type="plant" xml:lang="fr">lessive</name> se
+      fait en jetant de l'eau douce sur de la <name type="plant" xml:lang="fr">cendre</name>, à travers de laquelle l'eau se
+      filtrant perd sa qualité potable, comme dans le corps humain la <name type="disease">fièvre</name> altère
+      les humeurs et les convertit en <foreign xml:lang="la">bile</foreign>. Quant aux arbres et aux <name type="plant" xml:lang="fr">plantes</name> qui
+      croissent, dit-on, dans la <placeName>mer Rouge</placeName>, ils ne portent aucun fruit et tirent leur
+      végétation des <name type="water">rivières</name>, qui, en se déchargeant dans la mer, y déposent beaucoup
+      <milestone unit="section" n="29.2"/>
+      de <name type="substance">limon</name>. Aussi ces productions végétales naissent-elles toujours assez près des
+      bords.
+   </p>
+   <div type="section" n="2">
+      <p>Pourquoi les eaux de <name type="water">pluie</name> sont-elles plus propres à la végétation des arbres et
+      des <name type="plant" xml:lang="fr">plantes</name>, que les autres eaux dont on
+      les arrose ?
+      </p>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Plutarque (Peri tês eis ta eggona philostorgias, 30/88) :
+
+
+<div type="section" n="30">
+  <p>Est-ce, comme le
+  <persName>Létus</persName> (<quote>04</quote>), parce que la pluie, qui entr'ouvre
+  la terre par sa chute, y forme plusieurs conduits par où l'eau pénètre jusqu'aux
+  racines? Ou cette raison est-elle fausse? et <persName>Létus</persName> <milestone unit="section" n="912a"/> se trompe-t-il faute d'avoir
+  observé que les <name type="plant" xml:lang="fr">plantes marécageuses</name>, telles que le <name type="plant" xml:lang="fr">roseau</name>, le <name type="plant" xml:lang="fr">jonc</name> et la
+  <name type="plant" xml:lang="fr">mousse</name>, ne peuvent ni croître ni verdir quand les pluies ne tombent pas dans
+  leur saison ?</p>
+
+  <p>Est-ce, comme le dit <persName>Aristote</persName>, parce que l'eau de pluie est fraîche
+  et nou- <pb n="365"/>
+  velle, au lieu que
+  celle des étangs est ancienne et croupie? Ou cette raison a-t-elle plus de
+  vraisemblance que de vérité? Car les eaux des <name type="place" xml:lang="fr">fontaines</name> et des <name type="place" xml:lang="fr">rivières</name> sont
+  toujours fraîches et nouvelles, puisque, suivant <persName>Héraclite</persName>, on ne descend pas
+  deux fois dans le même <name type="place" xml:lang="fr">fleuve</name>, parce que ses eaux se renouvellent sans cesse.
+  Cependant elles sont moins favorables à la végétation que les eaux de pluie. En
+  effet, les eaux du ciel sont légères, et mêlées d'un air vif et subtil, dont les
+  molécules fines et déliées pénètrent <milestone unit="section" n="912b"/> aisément jusqu'aux racines de la plante, et
+  montent dans sa tige. C'est de ce mélange d'air que viennent les bulles d'eau
+  que la pluie forme en tombant sur la terre.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour ce passage de Plutarque :
+
+
+<div type="chapter" n="31">
+  <p>Ou bien l'<name type="animal" xml:lang="fr">eau</name>
+  pluviale est-elle plus nourrissante parce qu'elle est plus facilement élaborée
+  par les substances dont elle est l'aliment? car c'est là ce qui en fait la
+  coction. Au contraire, quand un aliment a trop de substance pour être facilement
+  élaboré, il ne se digère pas. Ainsi les aliments simples, légers, et qui n'ont
+  pas beaucoup de suc, se décomposent aisément. Et telle est l'<name type="animal" xml:lang="fr">eau</name> de pluie :
+  formée dans la région de l'<name type="animal" xml:lang="fr">air</name> et du <name type="animal" xml:lang="fr">vent</name>, elle tombe pure et sans mélange. Mais
+  l'<name type="animal" xml:lang="fr">eau</name> des fontaines, modifiée par les divers sols qu'elle traverse, y contracte
+  plusieurs qualités qui la rendent plus difficile à élaborer et plus lente à se
+  convertir, par sa coction, dans la substance des corps qu'elle fait végéter. <milestone unit="section" n="912c"/> Au
+  contraire, les <name type="animal" xml:lang="fr">eau</name>s de pluie se décomposent plus promptement, et ce qui le
+  prouve, c'est qu'elles ont plus de facilité à se corrompre que les <name type="animal" xml:lang="fr">eau</name>s des
+  puits et des <name type="animal" xml:lang="fr">rivière</name>s. Or, la coction est une sorte de corruption, suivant
+  Empédocle, qui dit: </p>
+
+  <quote>
+    <p>Sous l'écorce du
+    <name type="plant" xml:lang="fr">bois</name> l'humidité s'altère,
+    Et nous produit du <name type="plant" xml:lang="fr">vin</name> la liqueur salutaire.</p>
+  </quote>
+
+  <p>Ou enfin la raison
+  la plus simple et la plus naturelle, n'est-ce pas que l'<name type="animal" xml:lang="fr">eau</name> de la pluie, tombant
+  du milieu des <name type="animal" xml:lang="fr">air</name>s, où elle est battue par les <name type="animal" xml:lang="fr">vent</name>s, est plus douce et</p>
+</div>
+<div type="section" n="32">
+   <p>plus saine ? Aussi
+   les troupeaux la préfèrent-ils à toutes les autres ; et quand les <name type="animal" xml:lang="fr">grenouilles</name>
+   sentent venir la pluie, l'attente d'une eau qui adoucira celle de leurs marais
+   et en fera comme un assaisonnement agréable leur fait pousser des cris de joie.
+   <persName>Aratus</persName> regarde ces cris comme un des signes <foreign xml:lang="grc">[912d]</foreign> de la pluie :</p>
+
+   <quote>
+      <lg>
+         <l>Aussitôt des</l>
+         <l><name type="animal" xml:lang="fr">serpents</name> la misérable proie</l>
+         <l>Remplissent leur marais de cris perçants de joie.</l>
+      </lg>
+   </quote>
+
+   <milestone unit="section" n="III"/>
+
+   <p>Pourquoi les bergers donnent-ils du sel à leurs troupeaux ?</p>
+
+   <p>Est-ce , comme bien
+   des gens le croient, afin qu'ils mangent davantage et qu'ils deviennent plus
+   gras? L'acide du sel provoque leur appétit, et, en ouvrant les pores de leur
+   peau, il facilite la digestion. Voilà pourquoi le médecin <persName>Apollonius</persName>, fils
+   d'<persName>Hérophile</persName>, voulait qu'on nourrît les gens maigres et secs, non d'aliments doux
+   et de pain de <name type="plant" xml:lang="fr">froment</name>, mais de viandes salées, <foreign xml:lang="grc">[912e]</foreign> dont les parties aiguës causent
+   une espèce de frottement qui distribue la nourriture dans toutes les parties du
+   corps.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Plutarque :
+
+
+<div type="section" n="33">
+   <p>Est-ce pour
+      entretenir la santé de leurs troupeaux en prévenant un excès d'embonpoint,
+      qu'ils les accoutument à lécher du sel? Il est certain qu'ils tombent malades
+      quand ils sont trop gras, et le sel fond et dissipe leur graisse. Il fait aussi
+      qu'après qu'ils ont été égorgés, on les écorche plus facilement, parce que
+      l'acide du sel a rendu plus déliée et plus flexible la graisse qui leur collait
+      la peau à la chair. D'ailleurs, l'usage du sel donne au sang plus de fluidité,
+      et empêche les humeurs de s'épaissir. Un autre avantage de cet aliment, c'est
+      qu'il rend les <name type="animal" xml:lang="fr">animaux</name> plus ardents et plus propres à se reproduire. Les
+      <name type="animal" xml:lang="fr">chiennes</name> <milestone unit="section" n="912f"/> qui mangent des viandes salées conçoivent plutôt que les autres ; et,
+      dans les vaisseaux chargés de sel,</p>
+   <pb n="367"/>
+   <p>on voit plus de
+      <name type="animal" xml:lang="fr">souris</name> que dans les autres navires , parce que ces <name type="animal" xml:lang="fr">animaux</name> s'y accouplent plus
+      souvent <milestone unit="section" n="05"/>.</p>
+</div>
+<div type="section" n="IV">
+   <p>Pourquoi les eaux de pluie , qui tombent avec des tonnerres et des éclairs ,
+      et que , pour cette raison , on appelle <foreign xml:lang="la">fulgurales</foreign> ,
+      sont-elles plus propres à
+      arroser que les autres ?</p>
+</div>
+<div type="section" n="34">
+   <p>Est-ce parce qu'
+   elles contiennent plus d' <name type="animal" xml:lang="fr">esprits</name> à cause de l'agitation de l'air, et que le
+   mouvement qu'il donne à l'eau fait qu'elle se distribue mieux dans les <name type="plant" xml:lang="fr">plantes</name>? Est-ce que les <name type="animal" xml:lang="fr">tonnerres</name> et [<pb n="913a"/>] les <name type="animal" xml:lang="fr">éclairs</name> étant produits par le combat du chaud et du froid dans l'atmosphère (ce qui fait que le <name type="animal" xml:lang="fr">tonnerre</name> est rare en hiver et fréquent au printemps et en automne à cause de la température inégale de ces deux saisons), la chaleur, en donnant à l'eau une plus grande <foreign xml:lang="la">coction</foreign>, la rend plus convenable et plus salutaire aux <name type="plant" xml:lang="fr">plantes</name>?</p>
+
+   <p>Est-ce parce que les
+   <name type="animal" xml:lang="fr">tonnerres</name> et les <name type="animal" xml:lang="fr">éclairs</name> sont plus fréquents au printemps par la raison que nous venons de dire, et que les <name type="plant" xml:lang="fr">pluies</name> de cette saison sont nécessaires aux <name type="plant" xml:lang="fr">semences</name> avant l'été ? Aussi les <placeName>pays</placeName> où le printemps est <name type="plant" xml:lang="fr">pluvieux</name>, comme en <placeName>Sicile</placeName>, sont-ils abondants en bons <name type="plant" xml:lang="fr">fruits</name>.</p>
+
+   <milestone unit="section" n="V"/>
+
+   <p>Pourquoi, des huit
+   <name type="animal" xml:lang="fr">saveurs</name> que nous connaissons, la <name type="animal" xml:lang="fr">saveur</name> <foreign xml:lang="la">salée</foreign> est-elle la seule qui ne se trouve en aucun <name type="plant" xml:lang="fr">fruit</name>? Le <name type="plant" xml:lang="fr">fruit</name> de l'<name type="plant" xml:lang="fr">olivier</name> est amer dans le principe, et celui de la <name type="plant" xml:lang="fr">vigne</name> est acide ; [<pb n="913b"/>] mais en mûrissant, l'amertume de l'<name type="plant" xml:lang="fr">olive</name> se change en une liqueur grasse et onctueuse, et l'acidité du <name type="plant" xml:lang="fr">raisin</name> en <name type="animal" xml:lang="fr">saveur</name> <foreign xml:lang="la">vineuse</foreign>. L'âpreté des <name type="plant" xml:lang="fr">dattes</name> et l'aigreur des <name type="plant" xml:lang="fr">grenades</name> se convertissent en un suc doux. Quelques espèces de <name type="plant" xml:lang="fr">grenades</name> et de <name type="plant" xml:lang="fr">pommes</name> sont simplement acides, et l'âcreté est commune à un grand nombre de <name type="plant" xml:lang="fr">graines</name> et de <name type="plant" xml:lang="fr">racines</name>.</p>
+</div>
+<div type="chapter" n="35">
+   <milestone unit="section" n="35"/>
+   <p>Est-ce que la saveur
+      <foreign xml:lang="grc">ἁλμυρία</foreign> n'est point naturelle aux fruits , et qu'elle ne s'y forme qu'après que
+      leurs saveurs primitives ont été altérées ? Aussi ne peut-elle servir de
+      nourriture aux <name type="animal" xml:lang="fr">animaux</name> qui vivent d'<name type="plant" xml:lang="fr">herbes</name> et de <name type="plant" xml:lang="fr">grain</name>; elle est seulement pour
+      quelques-uns l'assaisonnement de leur nourriture, et prévient en eux le dégoût
+      et la satiété. <pb n="913c"/> Est-ce que, comme en faisant bouillir de l'eau de mer, on lui ôte
+      son <foreign xml:lang="grc">ἅλς</foreign> et son <foreign xml:lang="grc">ὀξύτης</foreign>, de même , dans les substances naturellement chaudes, la
+      saveur salée est émoussée par la chaleur ?</p>
+</div>
+<div type="section" n="36">
+  <milestone unit="section" n="36"/>
+  <p>Ou bien la saveur
+    <name type="plant" xml:lang="fr">plantes</name> n'est-elle, comme le veut <persName>Platon</persName>, qu'une eau filtrée à travers leur
+    tige? Or, l'eau de la <placeName>mer</placeName>, quand elle a été filtrée, a déposé son <name type="animal" xml:lang="fr">sel</name>, qui est
+    formé de ses parties les plus grossières et les plus terreuses. Aussi, quand on
+    creuse auprès de ses bords, y trouve-t-on des dépôts d'eau douce. On puise même
+    au milieu de la <placeName>mer</placeName> de l'eau douce dans des vases de <name type="plant" xml:lang="fr">cire</name> au travers desquels
+    elle filtre et se dégage de ce qu'elle contient de parties terreuses et salées.
+    D'ailleurs, l'eau de la <placeName>mer</placeName>, en filtrant à travers l'<name type="plant" xml:lang="fr">argile</name>, devient potable ,
+    parce que cette matière ne laisse point d'issue <foreign xml:lang="grc">[913d]</foreign> aux parties grossières et
+    terreuses que l'eau contient. D'après cela, il est vraisemblable que les <name type="plant" xml:lang="fr">plantes</name>
+    ne reçoivent pas du dehors la saveur salée , ou que , si elle se produit dans
+    leur tige, elles ne la communiquent point aux fruits. La ténuité de leurs pores
+    fait que les parties grossières et terreuses qui constituent ce <name type="animal" xml:lang="fr">sel</name> ne peuvent
+    pas s'y insinuer. </p>
+
+  <p>Faut-il enfin
+    regarder la saveur salée comme faisant</p>
+
+  <pb n="369"/>
+
+  <p>partie de la saveur
+    amère? <persName>Homère</persName> semble le faire entendre , lorsqu'il dit d'<persName>Ulysse</persName> : </p>
+
+  <quote>
+    <p>Sa bouche vomissait
+      des flots d'une onde amère.</p>
+  </quote>
+
+  <p><persName>Platon</persName> prétend que
+    ces deux saveurs ont la propriété de sécher et de déterger, mais la saveur salée
+    moins que l'amère, parce qu'elle n'a pas autant d'âpreté. Le salé diffère de
+    l'amer <foreign xml:lang="grc">[913e]</foreign> en ce qu'il a moins de sécheresse, quoique cependant il soit dessiccatif. </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Plutarque, en respectant les entités nommées Zoomathia et la structure demandée :
+
+
+<div type="section" n="37">
+   <p>Pourquoi, quand
+   on marche fréquemment entre des arbres couverts de rosée, les parties du corps
+   qui y touchent deviennent-elles galeuses ?</p>
+
+   <p>Est-ce, comme le dit
+   <persName>Létus</persName>, parce que les parties déliées et subtiles qui composent la rosée raclent
+   et éraillent la peau, ou bien, comme les graines mouillées sont sujettes à se
+   moisir, arrive-t-il aussi que les parties les plus tendres et les plus colorées
+   de la peau étant ramollies et gercées par la rosée, il s'y forme une
+   efflorescence nuisible qui s'attache aux parties du corps les moins sanguines,
+   comme les <name type="animal" xml:lang="fr">jambes</name> et les <name type="animal" xml:lang="fr">pieds</name>, et en écorche <milestone unit="section" n="913f"/> la superficie ? On ne peut douter
+   que la rosée n'ait une vertu mordicante, puisqu'elle fait maigrir les gens gras,
+   et que les femmes chargées d'embonpoint recueillent de la rosée dans du linge ou
+   dans de la <name type="plant" xml:lang="fr">laine</name>, et s'en frottent le corps afin de se faire maigrir.</p>
+
+   <milestone unit="section" n="VII"/>
+
+   <p>Pourquoi les <name type="animal" xml:lang="fr">navires</name> vont-ils plus lentement l'hiver sur les <placeName>rivières</placeName>, et qu'il
+   n'en est pas de même sur la <placeName>mer</placeName> ?</p>
+
+   <p>Est-ce parce que
+   l'air des <placeName>rivières</placeName>, toujours pesant et difficile à mouvoir, est encore plus
+   condensé par le froid
+   <milestone unit="section" n="914a"/>
+   de l'hiver et
+   retarde la marche des <name type="animal" xml:lang="fr">navires</name>, ou est-ce l'eau des <placeName>rivières</placeName> qui éprouve cette
+   condensation plutôt que l'air ? Le froid, en la resserrant, la rend plus épaisse
+   et plus pesante, comme on peut l'observer dans les <foreign xml:lang="la">clepsydres</foreign>, où elle coule
+   plus lentement l'hiver que l'été.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque, avec une attention particulière aux entités nommées Zoomathia :
+
+
+<div type="chapter" n="VIII">
+   <milestone unit="section" n="VIII"/>
+   <p>Pourquoi les eaux douces se refroidissent-elles quand on les remue, et que la
+   <name type="water">mer</name> s'échauffe lorsqu'elle est agitée?</p>
+
+   <p>Est-ce parce que la
+   <foreign xml:lang="grc">θερμότης</foreign> étant étrangère et accidentelle aux
+   <name type="water">eaux douces</name>, le mouvement l'en fait
+   sortir et la dissipe ; au lieu que la <foreign xml:lang="grc">θερμότης</foreign> étant naturelle à l'
+   <name type="water">eau de la mer</name>, les
+   <name type="animal" xml:lang="fr">vents</name> ne font que l'exciter et l'augmenter davantage ? Une preuve de sa
+   <foreign xml:lang="grc">θερμότης</foreign>, c'est sa transparence et la propriété qu'elle a de ne point geler,
+   quoiqu'elle soit terreuse et pesante.</p>
+</div>
+
+<div type="section" n="IX">
+   <milestone unit="section" n="IX"/>
+   <p>Pourquoi l'
+   <name type="water">eau de la mer</name> est-elle, pendant l'hiver, moins âpre au goût ?</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque :
+
+
+<div type="chapter" n="X">
+   <milestone unit="section" n="X"/>
+   <p>Pourquoi mêle-t-on de l'<name type="liquid">eau</name> de <name type="animal" xml:lang="fr">mer</name> dans le <name type="plant" xml:lang="fr">vin</name>?</p>
+
+   <p>On raconte que des pêcheurs reçurent ordre d'un oracle de plonger <persName>Bacchus</persName> dans la <name type="animal" xml:lang="fr">mer</name>; et ceux qui sont loin de la <name type="animal" xml:lang="fr">mer</name> mettent dans le <name type="plant" xml:lang="fr">vin</name> du <name type="substance">plâtre</name> de <placeName>Zacynthe</placeName> (07), cuit au four.</p>
+</div>
+Voici l'encodage TEI P5 du texte fourni selon les règles strictes du projet Zoomathia :
+
+
+<div type="section" n="40">
+   <p>Est-ce que la
+      chaleur de l'eau de mer sert de préservatif contre le froid, ou plutôt, n'est-ce
+      pas pour l'affaiblir et lui- ôter sa rudesse ? Ou, comme le <name type="animal" xml:lang="fr">vin</name> est sujet à se
+      tourner en eau et à s'éventer, les substances terreuses qu'on y met
+      préviennent-elles cette altération par leur vertu astringente ? Quant à l'eau de
+      la mer, le sel qu'elle
+   </p>
+   <pb n="372"/>
+   <p>contient subtilise
+      et dissout les substances hétérogènes qui se trouvent dans le <name type="animal" xml:lang="fr">vin</name>, <foreign xml:lang="grc">[914e]</foreign> et empêche
+      qu'il ne contracte une odeur désagréable ou un goût fade. D'ailleurs ,
+      les
+      parties terreuses et grossières du <name type="animal" xml:lang="fr">vin</name> s'attachant à ces corps étrangers et
+      pesants qu'on y mêle, la lie se précipite au fond du tonneau, et le <name type="animal" xml:lang="fr">vin</name> se
+      clarifie.
+   </p>
+   <milestone unit="section" n="XI"/>
+   <p>Pourquoi ceux qui voyagent sur mer, même par un temps calme, éprouvent-ils plus
+      de nausées que ceux qui naviguent sur des <name type="animal" xml:lang="fr">rivières</name>?
+   </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences, avec une structure minimale et une attention particulière aux entités nommées Zoomathia :
+
+
+<div type="section" n="41">
+  <p>Est-ce qu'entre nos
+  sensations et nos passions diverses, il n'en est point qui soulèvent plus
+  fortement le <name type="animal" xml:lang="fr">cœur</name> que les odeurs et la peur? Dès qu'un <persName>homme</persName> est vivement
+  affecté par la crainte du péril, il tremble, il frissonne, et son estomac en
+  est dérangé. Ceux qui naviguent sur des <name type="animal" xml:lang="fr">fleuves</name> n'éprouvent aucun de ces
+  accidents; leur odorat est accoutumé à l'eau douce des <name type="plant" xml:lang="fr">rivières</name>, et la
+  navigation est sans danger. Sur mer, <milestone unit="section" n="1"/> ils respirent une odeur désagréable et à
+  laquelle ils ne sont point faits. Ils craignent la <name type="animal" xml:lang="fr">tempête</name> dans le beau temps,
+  dont la jouissance présente ne les rassure pas sur l'avenir. Ainsi le calme
+  extérieur ne leur sert de rien pour leur tranquillité personnelle, et la peur
+  qui tourmente leur âme remplit leur corps d'agitation et de trouble.</p>
+
+  <div type="section" n="XII">
+    <p>Pourquoi l'<name type="plant" xml:lang="fr">huile</name>
+    qu'on répand sur la <name type="animal" xml:lang="fr">mer</name> la rend-elle calme et transparente?</p>
+
+    <p>Est-ce, comme le dit
+    <persName>Aristote</persName>, parce que le <name type="animal" xml:lang="fr">vent</name> qui glisse sur la surface unie de l'<name type="plant" xml:lang="fr">huile</name> n'a plus
+    d'action sur les flots et ne peut y exciter aucun mouvement? Cette raison a
+    assez de vraisemblance pour la surface de la <name type="animal" xml:lang="fr">mer</name>;</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Plutarque, en respectant les entités nommées Zoomathia et la structure demandée :
+
+
+<div type="chapter" n="42">
+  <milestone unit="section" n="42.1"/>
+  <p>mais on dit que les plongeurs qui prennent de l'<name type="animal" xml:lang="fr">huile</name> dans leur bouche, et l'en font sortir en soufflant quand ils sont au fond de la mer, voient clair au travers de l'eau ; or, on ne saurait rapporter cet effet à la cause précédente: Cela viendrait-il donc de ce que l'<name type="animal" xml:lang="fr">huile</name>, qui est un liquide très doux, divise et unit l'eau de la mer, naturellement chargée de substances terreuses et d'une surface inégale? Mais lors même que l'eau se rapproche et se resserre, elle laisse toujours de petites ouvertures qui donnent passage à la vue, et lui font apercevoir les objets de la mer. Serait-ce que l'air qui se trouve mêlé avec l'eau de la mer est lumineux et transparent à cause de sa chaleur naturelle, et qu'il ne devient inégal et ténébreux que quand on l'agite? Lors donc que l'<name type="animal" xml:lang="fr">huile</name> vient par sa densité à aplanir l'inégalité de l'air, alors il devient uni et transparent.</p>
+  <milestone unit="section" n="42.2"/>
+  <p>Pourquoi les filets des pêcheurs pourrissent-ils plutôt en hiver qu'en été, tandis qu'il arrive tout le contraire aux autres substances ?</p>
+  <p>Est-ce, comme le pense <persName>Théophraste</persName>, parce que le chaud cédant à l'action du froid qui le presse, et le resserre de tous côtés, le fond de la mer en devient plus chaud; ce qui arrive aussi dans l'intérieur de la terre? C'est ce qui fait que les eaux des fontaines sont plus tièdes en hiver, et qu'on voit les lacs et les rivières fumer</p>
+  <pb n="374"/>
+</div>
+Voici l'encodage TEI P5 du texte fourni selon les règles strictes du projet Zoomathia :
+
+
+<div type="section" n="43">
+  <p>davantage dans cette
+  saison, parce que la chaleur est concentrée au fond de leur lit par le froid qui
+  le surmonte ? Ou bien est-il vrai que les filets ne pourrissent réellement pas;
+  mais qu'après avoir été gelés et roidis par le froid, <milestone unit="section" n="1"/> [915c] ils sont facilement rompus
+  par les vagues, comme s'ils étaient pourris ? La gelée les travaille et les
+  fatigue comme les arcs trop tendus se brisent, d'autant que dans l'hiver la mer
+  est plus souvent agitée. Voilà pourquoi les pêcheurs donnent à leurs filets une
+  teinture qui, rendant le tissu plus serré, empêche qu'ils ne se relâchent et ne
+  se rompent trop facilement ; car s'ils n'étaient pas teints, ils tromperaient
+  mieux les poissons, parce que la couleur naturelle du <name type="plant" xml:lang="fr">lin</name>, qui approche de celle
+  de l'air, est peu sensible dans l'eau. </p>
+
+  <div type="section" n="XIV">
+    <p>Pourquoi les <persName>Doriens</persName> font-ils une mauvaise récolte en <name type="plant" xml:lang="fr">foin</name> ?</p>
+
+    <p>Est-ce parce qu'il
+    ne faut pas serrer le <name type="plant" xml:lang="fr">foin</name> quand il est humide ? On le fauche qu'il est encore
+    vert, et il pourrit promptement <milestone unit="section" n="2"/> [915d] s'il reçoit la pluie. Au contraire, si le
+    <name type="plant" xml:lang="fr">froment</name> est mouillé avant la moisson, la pluie lui sert de préservatif contre la
+    chaleur des vents du midi, qui empêchent que le grain ne se resserre dans l'épi,
+    et le font s'ouvrir et se relâcher, à moins que la terre, arrosée par la pluie,
+    ne l'humecte et ne la rafraîchisse. </p>
+  </div>
+
+  <div type="section" n="XV">
+    <p>Pourquoi le <name type="plant" xml:lang="fr">froment</name> vient-il mieux dans une terre grasse et forte, et forge dans
+    un terrain sec et sablonneux?</p>
+  </div>
+</div>
+<div type="section" n="44">
+   <p>Est-ce parce que les
+      <name type="plant" xml:lang="fr">grains</name> d'une substance plus solide ont besoin de plus de nourriture, et que les
+      plus faibles en demandent une moins abondante et plus légère? Or, l'
+      <name type="plant" xml:lang="fr">orge</name> est
+      plus faible et moins compacte que le
+      <name type="plant" xml:lang="fr">froment</name>:
+   </p>
+   <pb n="375"/>
+   <p>aussi est-elle moins
+      nourrissante. Une preuve de sa légèreté, c'est qu'elle mûrit dans l'espace de
+      trois mois, <foreign xml:lang="grc">[915e]</foreign> et qu'elle vient mieux dans un terrain sec, parce qu'elle a moins de
+      suc, et qu'il lui faut peu de nourriture; ce qui fait qu'elle croît promptement
+      <foreign xml:lang="grc">(09)</foreign>.
+   </p>
+   <milestone unit="section" n="XVI"/>
+   <p>Pourquoi dit-on : Semez le
+      <name type="plant" xml:lang="fr">froment</name> dans la boue, et l'
+      <name type="plant" xml:lang="fr">orge</name> dans la poussière ?
+   </p>
+   <p>Est-ce, comme nous
+      l'avons déjà dit, parce qu'il faut au
+      <name type="plant" xml:lang="fr">froment</name> une plus forte nourriture, et que
+      l'
+      <name type="plant" xml:lang="fr">orge</name> ne pourrait supporter une humidité trop abondante qui la noierait? Est-ce
+      que le
+      <name type="plant" xml:lang="fr">froment</name> étant plus compacte et approchant de la nature du bois, il germe
+      mieux dans un terrain humide, où il est amolli et détrempé ; que l'
+      <name type="plant" xml:lang="fr">orge</name>, moins
+      dense, a besoin, quand elle commence à germer, d'un terrain sec? Est-ce qu'un
+      sol de cette nature est, par sa chaleur, plus convenable et moins nuisible à
+      l'
+      <name type="plant" xml:lang="fr">orge</name>, qui est naturellement froide? Craint-on de semer le
+      <name type="plant" xml:lang="fr">froment</name> dans un
+      terrain sec, parce que les
+      <name type="animal" xml:lang="fr">fourmis</name>
+      <foreign xml:lang="grc">[915f]</foreign> vont sur-le-champ s'y établir pour en
+      emporter les
+      <name type="plant" xml:lang="fr">grains</name>, au lieu qu'elles ne peuvent pas transporter si facilement
+      les
+      <name type="plant" xml:lang="fr">grains</name> d'
+      <name type="plant" xml:lang="fr">orge</name>, qu'elles ont même de la peine à les remuer, à cause de leur
+      grosseur?
+   </p>
+   <milestone unit="section" n="XVII"/>
+</div>
+<div type="section" n="45">
+   <p>Pourquoi les pêcheurs, pour faire leurs lignes, préfèrent-ils les poils des
+      <name type="animal" xml:lang="fr">chevaux</name> à ceux des <name type="animal" xml:lang="fr">juments</name> ?</p>
+   <p>Est-ce que dans le
+      <name type="animal" xml:lang="fr">mâle</name> les poils sont, comme tout le reste, plus forts que dans la femelle ? <milestone unit="section" n="916a"/> ou
+      croient-ils que dans les <name type="animal" xml:lang="fr">juments</name>, les poils de la queue sont moins bons
+   </p>
+   <pb n="376"/>
+   <p>que ceux des
+      <name type="animal" xml:lang="fr">chevaux</name>, parce qu'ils sont toujours baignés [de] l'<name type="animal" xml:lang="fr">urine</name> de ces animaux ?</p>
+
+   <div type="section" n="XVIII">
+      <p>Pourquoi l'apparition d'un <name type="animal" xml:lang="fr">calmar</name> sur la mer est-elle le signe d'une grande
+         tempête ?
+      </p>
+      <p>Est-ce que tous les
+         <name type="animal" xml:lang="fr">poissons</name> du genre de ceux que les <persName>Lirecs</persName> appellent <foreign xml:lang="fr">mous</foreign> sont très sensibles au
+         froid, parce qu'ils ont la chair délicate et qu'ils sont nus, car ils n'ont ni
+         peau, ni écailles, ni coquille, et que tout ce qu'ils ont de dur et d'osseux est
+         en dedans de leur corps; c'est pour cela qu'on les appelle <foreign xml:lang="fr">mous</foreign> ? Leur grande
+         sensibilité au froid fait qu'ils pressentent de loin la tempête. Quand le <name type="animal" xml:lang="fr">polype</name>
+         court vers la terre, et qu'il s'attache aux <placeName>rochers</placeName>, c'est un pronostic du vent
+         qui va s'élever; <milestone unit="section" n="916b"/> de même le <name type="animal" xml:lang="fr">calmar</name> saute hors de l'eau quand il veut éviter le
+         froid et l'agitation qui se préparent au fond de la mer; car il est, de tous les
+         <name type="animal" xml:lang="fr">poissons</name> <foreign xml:lang="fr">mous</foreign>, celui qui a la chair la plus tendre et la plus susceptible des
+         impressions extérieures.
+      </p>
+   </div>
+
+   <div type="section" n="XIX">
+      <p>Pourquoi le <name type="animal" xml:lang="fr">polype</name> change-t-il [de] couleur ?</p>
+   </div>
+</div>
+<div type="section" n="46">
+   <p>Est-ce, comme le dit <persName>Théophraste</persName>, parce que cet <name type="animal" xml:lang="fr">animal</name>, naturellement timide, change de couleur quand ses esprits sont troublés, comme il arrive à l'<name type="animal" xml:lang="fr">homme</name> dans la <foreign xml:lang="la">peur</foreign>. De là le proverbe :</p>
+   <quote>
+      <lg>
+         <l>Le lâche craint</l>
+         <l>souvent et change de couleur.</l>
+      </lg>
+   </quote>
+   <p>Mais s'il est vraisemblable que la crainte opère ce changement de couleur, suffit-elle pour lui faire prendre les teintes des objets dont il s'approche, par exemple de chaque <name type="plant" xml:lang="fr">rocher</name> auquel il s'attache? Ce qui a fait dire à <persName>Pindare</persName> :</p>
+   <pb n="377"/>
+   <quote>
+      <lg>
+         <l>Du <name type="animal" xml:lang="fr">polype</name> imitez la</l>
+         <l>couleur variable :</l>
+         <l>Comme à tous les objets sa peau devient semblable ;</l>
+         <l>Ainsi de chaque peuple adoptant les humeurs,</l>
+         <l>Prenez habilement leur esprit et leurs mœurs.</l>
+      </lg>
+   </quote>
+   <milestone unit="section" n="916c"/>
+   <p><persName>Théognis</persName> a dit aussi :</p>
+   <quote>
+      <lg>
+         <l>Imitez le <name type="animal" xml:lang="fr">polype</name> et</l>
+         <l>sa changeante humeur,</l>
+         <l>De chaque objet qu'il touche il retient la couleur.</l>
+      </lg>
+   </quote>
+   <p>Aussi, dit-on que les hommes qui excellent en finesse et en ruse, et qui veulent tromper sans être découverts, ont soin d'imiter le <name type="animal" xml:lang="fr">polype</name>, et que cette facilité à changer est pour eux comme un vêtement qu'ils prennent et qu'ils quittent à leur gré. La crainte peut donc être une première cause de ce changement de couleur dans le <name type="animal" xml:lang="fr">polype</name>.</p>
+   <p>Mais il faut en chercher ailleurs la principale cause. Vous savez ce que dit <persName>Empédocle</persName> :</p>
+   <milestone unit="section" n="916d"/>
+   <quote>
+      <lg>
+         <l>Chaque corps a</l>
+         <l>toujours ses émanations.</l>
+      </lg>
+   </quote>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Plutarque :
+
+
+<div type="chapter" n="47">
+  <p>Elles sortent
+    <pb n="378"/>
+    continuellement, non seulement des <name type="animal" xml:lang="fr">animaux</name>, des <name type="plant" xml:lang="fr">plantes</name>, de la terre et de la
+    mer, mais encore des pierres, du cuivre et du fer. Tous les corps s'usent peu à
+    peu, et l'odeur qu'ils exhalent atteste qu'il en émane sans cesse une portion de
+    leur substance qui les épuise insensiblement. Ces émanations font que les corps
+    s'attirent les uns les autres, qu'ils s'accrochent, qu'ils s'unissent, qu'ils se
+    frappent, se poussent et s'environnent mutuellement. Cela est vrai surtout des
+    pierres qui, placées sur le bord de la mer, sont toujours baignées et battues
+    par les vagues qui en emportent sans cesse quelques légers fragments. Ils ne
+    s'attachent pas aux <milestone unit="section" n="916e"/> autres corps, mais glissent sur ceux dont les pores sont
+    étroits et serrés, et ils passent à travers ceux dont les pores sont larges et
+    ouverts. Or, il suffit de jeter les yeux sur un <name type="animal" xml:lang="fr">polype</name> pour voir que sa peau est
+    percée d'une infinité de pores, comme un rayon de miel, et qu'elle est propre à</p>
+</div>
+<div type="section" n="48">
+   <p>recevoir toutes</p>
+   <p>sortes d'émanations. Lors donc qu'il a peur, il serre et comprime son corps ; en sorte que les émanations des corps qui l'environnent s'arrêtent à la surface de sa peau et s'y conservent. Les rides que forme alors sa peau molle, qui se fronce de peur, sont comme des sillons tortueux qui empêchent que les émanations qu'il reçoit ne se dissipent, qui, au contraire, les rassemblent et les fixent à la surface de son corps avec la couleur <foreign xml:lang="grc">[916f]</foreign> des objets d'où elles partent  (10)...</p>
+   <p>Une preuve frappante de la cause que j'assigne ici de ce phénomène, c'est que le polype ne prend pas la couleur de tous les objets dont il approche, ni le <name type="animal" xml:lang="fr">caméléon</name> la couleur blanche, mais seulement celle des corps dont les émanations sont proportionnées à leurs pores (11).</p>
+   <milestone unit="section" n="XX"/>
+   <p>Pourquoi les larmes des <name type="animal" xml:lang="fr">sanglier</name>s sont-elles douces, et celles des <name type="animal" xml:lang="fr">cerf</name>s, salées et d'un goût désagréable ?</p>
+   <p><foreign xml:lang="grc">[917a]</foreign> La chaleur et le froid respectifs de ces animaux paraissent en être la cause. Le <name type="animal" xml:lang="fr">cerf</name> est naturellement froid ; le <name type="animal" xml:lang="fr">sanglier</name> est chaud et bouillant, son tempérament est de feu. Aussi le <name type="animal" xml:lang="fr">cerf</name> prend-il la fuite à la première attaque; l'autre fait tête à ceux qui viennent l'assaillir, et surtout quand la colère lui arrache des larmes. La grande chaleur qui se porte alors à ses yeux lorsque, suivant <persName>Homère</persName>,</p>
+   <quote>
+      <p>Ses crins sont hérissés, ses yeux sont pleins de flamme ;</p>
+   </quote>
+</div>
+<div type="section" n="49">
+   <p>cette chaleur fait
+      que les larmes qui en découlent sont douces. D'autres, comme <persName>Empédocle</persName>, croient
+      que les
+   </p>
+   <pb n="379"/>
+   <p>larmes sont une
+      sécrétion du <name type="animal" xml:lang="fr">sanglier</name> qui a été troublé, comme le petit-lait s'exprime du <name type="animal" xml:lang="fr">lait</name> qu'on
+      agite. Ainsi, le <name type="animal" xml:lang="fr">sanglier</name> étant noir et mordant, [917b] celui du <name type="animal" xml:lang="fr">cerf</name> léger et
+      aqueux, il est naturel que ce qui est exprimé dans la colère de l'un et dans la
+      frayeur de l'autre participe à ses qualités (12).
+   </p>
+   <milestone unit="section" n="XXI"/>
+   <p>Pourquoi les <name type="animal" xml:lang="fr">truies</name> font-elles des petits plusieurs fois l'année et chacune en
+      différents temps, au lieu que les <name type="animal" xml:lang="fr">laies</name> ne font des <foreign xml:lang="fr">marcassins</foreign> qu'une fois
+      seulement, et toutes à peu près à la même époque, c'est-à-dire au commencement
+      de l'été, d'où est venu ce proverbe :
+   </p>
+   <p>
+      <quote>
+         La <name type="animal" xml:lang="fr">laie</name> a des
+         petits, les nuits seront sans pluie ?
+      </quote>
+   </p>
+</div>
+<div type="chapter" n="50">
+   <p>Est-ce la grande
+      quantité de nourriture qui rend les <name type="animal" xml:lang="fr">truies</name> si fécondes ? car on dit communément
+      : <persName>Vénus</persName> se plaît toujours au sein de l'abondance. Cette nourriture abondante
+      produit une fréquente sécrétion de semence dans les animaux et dans les <name type="plant" xml:lang="fr">plantes</name>.</p>
+   <milestone unit="section" n="917c"/>
+   <p>Or, les <name type="animal" xml:lang="fr">laies</name> cherchent-elles elles-mêmes leur nourriture avec beaucoup de
+      travail et de crainte, tandis que les <name type="animal" xml:lang="fr">truies</name> l'ont toujours à discrétion, soit
+      dans les productions spontanées de la <name type="plant" xml:lang="fr">terre</name>, soit dans les aliments qu'on leur
+      prépare ? Cette différence vient-elle de ce que les unes sont dans une oisiveté
+      continuelle et les autres toujours en action? Les <name type="animal" xml:lang="fr">truies</name> sont naturellement
+      paresseuses et ne s'éloignent guère de ceux qui les gardent. Les <name type="animal" xml:lang="fr">laies</name>
+      gravissent sur les <name type="mountain" subtype="mountain">montagnes</name> et courent de côté et d'autre, ce qui fait que tout
+      ce qu'elles mangent est employé à les
+      <pb n="380"/>
+      nourrir, et qu'il
+      n'en reste presque point pour la semence. Est-ce parce que les <name type="animal" xml:lang="fr">truies</name> sont
+      toujours en troupe avec leurs mâles, ce qui les échauffe et les invite à
+      s'accoupler ; car, comme dit <persName>Empédocle</persName> en parlant des hommes ,</p>
+   <quote>
+      <foreign xml:lang="grc">Ὁ βλέμμα μόνος ἐξάπτει ἔρωτος ἐρῶντα.</foreign>
+   </quote>
+</div>
+<div type="section" n="51">
+  <p>Les <name type="animal" xml:lang="fr">laies</name>, au contraire, vivent solitairement et ne paissent pas avec les <name type="animal" xml:lang="fr">mâles</name>. Ainsi, leurs désirs, rarement excités, les portent moins à s'accoupler. <milestone unit="section" n="917d"/> Est-il vrai, comme le dit <persName>Aristote</persName>, que l'épithète qu'<persName>Homère</persName> donne au <name type="animal" xml:lang="fr">sanglier</name> signifie qu'il n'a qu'un des organes générateurs, parce que ces <name type="animal" xml:lang="fr">animaux</name> se froissent souvent ces parties en les frottant contre les arbres?</p>
+
+  <div type="section" n="XXII">
+    <p>Pourquoi la patte de l'<name type="animal" xml:lang="fr">ours</name> passe-t-elle pour douce au tact, et ta chair très bonne à manger ?</p>
+
+    <p>C'est que les parties du corps qui digèrent le mieux la nourriture ont la chair plus délicate, et que les parties qui digèrent le mieux sont celles qu'un mouvement et un exercice habituels font transpirer davantage. L'<name type="animal" xml:lang="fr">ours</name> agit de ses pieds de devant beaucoup plus que d'aucune autre partie de son corps. Il les exerce quand il marche et quand il court, et ils lui servent comme de mains pour saisir lotit ce qu'il veut prendre.</p>
+  </div>
+
+  <div type="section" n="XXIII">
+    <p>Pourquoi, dans le printemps, les <name type="animal" xml:lang="fr">chiens</name> ont-ils plus de peine à suivre les <name type="animal" xml:lang="fr">animaux</name> à la piste ?</p>
+
+    <p><milestone unit="section" n="917e"/> Est-ce parce que les <name type="animal" xml:lang="fr">chiens</name>, qui, comme le dit <persName>Empédocle</persName>,</p>
+
+    <quote>
+      <foreign xml:lang="grc">ἐν σκολιοῖσι δὲ γυίοις ἴχνιον ἀνδρὸς ἐφίππου</foreign>
+      <foreign xml:lang="fr">En suivant à l'odeur la trace de la bête.</foreign>
+    </quote>
+    <pb n="381"/>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Plutarque, avec une structure minimale et toutes les entités nommées zoologiques correctement marquées :
+
+
+<div type="section" n="52">
+  <p>sont attirés par les émanations qui sortent de son corps et qu'<name type="animal" xml:lang="fr">elle</name> laisse en passant dans les bois, ne les reçoivent au printemps qu'affaiblies et confondues avec les odeurs des <name type="plant" xml:lang="fr">plantes</name> et des <name type="plant" xml:lang="fr">arbrisseaux</name>, qui, dans cette saison, sont presque tous en fleur? et ces odeurs, en se mêlant aux émanations des <name type="animal" xml:lang="fr">animaux</name>, mettent les <name type="animal" xml:lang="fr">chiens</name> en défaut et leur font perdre la trace. Voilà pourquoi l'on ne chasse jamais près du <placeName>mont Etna</placeName>, en <placeName>Sicile</placeName>, <pb n="917f"/> parce que les prairies voisines sont couvertes toute l'année de <name type="plant" xml:lang="fr">plantes</name> odoriférantes, dont les émanations continuelles font perdre la trace des <name type="animal" xml:lang="fr">animaux</name> (13). D'ailleurs, selon la Fable, ce fut là que <persName>Pluton</persName> ravit <persName>Proserpine</persName> pendant qu'<persName>elle</persName> cueillait des <name type="plant" xml:lang="fr">fleurs</name> ; et les habitants, par respect pour ce lieu, qu'ils regardent comme un asile sacré, ne font point la chasse aux <name type="animal" xml:lang="fr">animaux</name> qui y habitent.</p>
+
+  <milestone unit="section" n="XXIV"/>
+
+  <p>Pourquoi, dans la pleine lune, suit-on plus difficilement la trace des <name type="animal" xml:lang="fr">animaux</name>?</p>
+
+  <p>Est-ce encore par la raison que je viens de dire ? Dans la pleine lune la rosée est très abondante ; <pb n="918a"/> aussi le poète <persName>Alcmane</persName> dit-il que la rosée est fille de <name type="deity">Jupiter</name> et de la lune :</p>
+
+  <quote>
+    <p>Fille de <name type="deity">Jupiter</name> et de l'<foreign xml:lang="grc">ἀστὴρ</foreign> des nuits,<lb/>
+    La rosée alimente et fait mûrir nos <name type="plant" xml:lang="fr">fruits</name>.</p>
+  </quote>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte de Plutarque :
+
+
+<div type="chapter" n="53">
+   <milestone unit="section" n="53.1"/>
+   <p>La <name type="plant" xml:lang="fr">rosée</name> est une
+   pluie faible et légère, comme la lumière de la <foreign xml:lang="grc">σελήνη</foreign> n'est qu'une clarté débile.
+   Elle pompe aussi bien que le <name type="animal" xml:lang="fr">soleil</name> les vapeurs de notre globe ; mais, ne
+   pouvant les attirer bien haut, elle les laisse retomber aussitôt sur la surface
+   de la terre.</p>
+
+   <pb n="382"/>
+
+   <milestone unit="section" n="53.2"/>
+   <p>XXV. <milestone unit="section" n="53.2.1"/>
+   Pourquoi la <foreign xml:lang="grc">πάχνη</foreign> rend-elle la trace des <name type="animal" xml:lang="fr">animaux</name> plus difficile à suivre ?</p>
+
+   <p>Est-ce parce que les
+   <name type="animal" xml:lang="fr">animaux</name>, s'écartant peu de leur gîte à cause du froid, ne laissent pas au loin
+   des traces de leur passage? On dit même qu'ils ménagent les aliments qui sont à
+   leur portée afin de trouver aisément leur pâture dans le voisinage et de n'avoir
+   pas à souffrir du <name type="plant" xml:lang="fr">froid</name> en allant la chercher [<quote>[918b]</quote>] trop loin. Ou faut-il non
+   seulement que la trace de l'<name type="animal" xml:lang="fr">animal</name> soit imprimée sur la terre, mais encore que
+   l'odorat du <name type="animal" xml:lang="fr">chien</name> soit averti par l'odeur que la bête y a laissée ? ce qui est
+   plus facile en été, où la voie des <name type="animal" xml:lang="fr">animaux</name> est amollie par la chaleur, au lieu
+   que le grand <name type="plant" xml:lang="fr">froid</name>, resserrant cette odeur, l'empêche de se répandre et de venir
+   frapper l'organe du <name type="animal" xml:lang="fr">chien</name>. Voilà pourquoi le <name type="plant" xml:lang="fr">vin</name> et les <name type="plant" xml:lang="fr">parfums</name> exhalent moins
+   d'odeur pendant l'<name type="plant" xml:lang="fr">hiver</name>, parce que l'air condensé par le <name type="plant" xml:lang="fr">froid</name> concentre en
+   lui-même les exhalaisons qui en émanent et empêchent qu'elles ne se répandant au
+   loin.</p>
+
+   <milestone unit="section" n="53.3"/>
+   <p>XXVI. <milestone unit="section" n="53.3.1"/>
+   Pourquoi les <name type="animal" xml:lang="fr">animaux</name>, quand ils sont malades, savent-ils chercher les remèdes
+   qui leur sont propres, et souvent se guérir par leur usage ?</p>
+</div>
+<div type="section" n="54">
+   <p>Les <name type="animal" xml:lang="fr">chiens</name>, par exemple, mangent du <name type="plant" xml:lang="fr">chiendent</name> pour se délivrer de la bile qui les incommode. Les <name type="animal" xml:lang="fr">pourceaux</name> vont chercher des <name type="animal" xml:lang="fr">écrevisses</name> [<pb n="383"/>] pour se guérir du mal de tête. Quand la <name type="animal" xml:lang="fr">tortue</name> a mangé de la <name type="animal" xml:lang="fr">vipère</name>, elle a recours à l'<name type="plant" xml:lang="fr">origan</name> pour lui servir de contrepoison. Lorsqu'un <name type="animal" xml:lang="fr">ours</name> est dégoûté, il tire sa langue auprès d'une fourmilière, et quand elle est couverte de <name type="animal" xml:lang="fr">fourmis</name>, il les avale et se guérit.</p>
+   <p>Ces <name type="animal" xml:lang="fr">animaux</name> cependant ne doivent la connaissance de ces remèdes ni au hasard ni à l'expérience.</p>
+</div>
+<div type="section" n="55">
+   <p>Serait-ce que, comme les <name type="animal" xml:lang="fr">abeilles</name> sont attirées par le <name type="plant" xml:lang="fr">miel</name> et les <name type="animal" xml:lang="fr">vautours</name> par les cadavres, de même les <name type="animal" xml:lang="fr">pourceaux</name> le sont par les <name type="animal" xml:lang="fr">écrevisses</name>, les <name type="animal" xml:lang="fr">tortues</name> par l'<name type="plant" xml:lang="fr">origan</name> et les <name type="animal" xml:lang="fr">ours</name> par les <name type="animal" xml:lang="fr">fourmis</name>, et que cette attraction est l'effet des émanations odorantes qui sortent de ces derniers animaux, et non d'un sentiment qui enseigne aux premiers ce qui leur est utile? <milestone unit="section" n="918d"/> Cela vient-il de la constitution de leur corps, qui cause, dans les animaux malades dont les humeurs sont altérées, des appétits extraordinaires, des aigreurs, des fadeurs ou d'autres sensations étranges, comme il arrive même aux femmes grosses, qu'on voit manger quelquefois des pierres et de la terre ? Aussi les médecins habiles connaissent-ils, par les appétits et les goûts de leurs malades, si leur état est sans ressource ou s'ils guériront de leur maladie.</p>
+   <p>Le médecin <persName>Mnésithée</persName> (14) raconte qu'un pulmonique qui, au commencement de sa maladie, eut envie de manger des <name type="plant" xml:lang="fr">oignons</name>, fut guéri, et qu'un autre, qui avait demandé des <name type="plant" xml:lang="fr">figues</name>, mourut : c'est que les appétits et les goûts suivent les dispositions du corps, et que les dispositions sont analogues à la nature des maladies. <milestone unit="section" n="918e"/> Il est donc vraisemblable que les animaux dont les maladies ne sont pas décidément mortelles, se trouvent dans des dispositions qui produisent en eux des appétits par lesquels ils sont poussés vers les remèdes qui leur sont propres.</p>
+</div>
+<div type="section" n="56">
+   <p>Pourquoi le vin nouveau se conserve-t-il longtemps doux quand le vaisseau qui le contient est exposé à un air froid ?</p>
+   <p>Est-ce que le changement de la saveur douce en li-</p>
+   <pb n="384"/>
+   <p>queur vineuse, étant une sorte décoction produite par la chaleur, le froid empêche que ce changement ne s'opère ? Ou, au contraire, la saveur douce n'est-elle pas naturelle au raisin ? et n'est-ce pas ce qui fait dire qu'il mûrit lorsqu'il devient doux ? Or, le froid, qui concentre la chaleur du vin nouveau et l'empêche de s'évaporer, <quote>[918f]</quote> lui conserve longtemps sa douceur. C'est ce qui fait que lorsqu'on vendange par la pluie, le vin nouveau ne fermente pas si bien, parce qu'il ne peut bouillir que par l'action de la chaleur, et que le froid la comprime et l'empêche d'agir.</p>
+   <milestone unit="section" n="XXVIII"/>
+   <p>Pourquoi, de tous les <name type="animal" xml:lang="fr">animaux</name> sauvages qu'on prend dans des filets, l'<name type="animal" xml:lang="fr">ours</name> est-il celui qui les déchire le moins, au lieu que les <name type="animal" xml:lang="fr">loups</name> et les <name type="animal" xml:lang="fr">renards</name> ont coutume de les rompre avec les dents ?</p>
+</div>
+<div type="section" n="57">
+   <p>Est-ce que les dents de <name type="animal" xml:lang="fr">ours</name> étant placées bien avant dans sa gueule, il ne peut saisir les cordes des filets, parce que ses lèvres, qui sont larges et épaisses, se mettent entre deux? <milestone unit="section" n="919a"/> Est-ce qu'ayant plus de force dans ses pattes de devant, il s'en sert pour arracher les toiles? Ou bien use-t-il à la fois des pattes et des dents, des premières pour défaire les filets, et des secondes pour se défendre contre les <persName>chasseurs</persName>. Mais rien ne lui sert davantage que de se rouler, car au lieu d'avoir besoin de ses dents pour déchirer les toiles, souvent il passe par-dessous et s'échappe.</p>
+
+   <div type="section" n="XXIX">
+      <p>Pourquoi sommes-nous plus étonnés de voir des sources d'eau chaude que des sources d'eau froide, quoique la chaleur soit la cause des premières, et le froid celle des autres?</p>
+
+      <p>Il ne faut pas croire, avec quelques physiciens, que la chaleur étant une qualité réelle, <milestone unit="section" n="919b"/> le froid ne soit qu'une simple privation de chaleur, car il s'ensuivrait alors que ce qui n'a point d'existence produirait un être réel. Mais il semble qu'on soit porté naturellement à admirer ce qui est rare, et qu'on recherche avec plus d'empressement ce qu'il n'est pas ordinaire de voir.</p>
+
+      <quote>
+         <lg>
+            <l>Regarde au haut des</l>
+            <l>airs cet espace azuré,</l>
+            <l>Du globe où nous vivons vêtement coloré.</l>
+         </lg>
+      </quote>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia, en intégrant toutes les entités nommées et la structure demandée :
+
+
+<div type="section" n="XXX">
+   <p>Combien la nuit il
+      étale de merveilles ! Que de beautés il nous offre pendant le jour ! Cependant
+      la plupart des hommes ne les admirent pas : ils ne sont pas frappés ni des
+      couleurs de l'arc-en-ciel, ni des teintes si variées des <name type="plant" xml:lang="fr">nuages</name>, ni des éclairs
+      qui les entr'ouvrent et les sillonnent par des traits si vifs de lumière... <milestone unit="section" n="15"/> </p>
+</div>
+
+<div type="section" n="XXX">
+   <p>Pourquoi
+      compare-t-on à des <name type="animal" xml:lang="fr">boucs</name> les <name type="plant" xml:lang="fr">vignes</name> et les jeunes <name type="plant" xml:lang="fr">plantes</name> qui ne portent point
+      de fruit? </p>
+
+   <p>[919c] Est-ce parce que les
+      <name type="animal" xml:lang="fr">boucs</name> qui sont trop gras sont peu propres à engendrer et que l'excès de leur
+      graisse fait qu'ils ont de la peine à s'accoupler avec leurs femelles? Car les
+      germes productifs dans ces <name type="animal" xml:lang="fr">animaux</name> sont le superflu des aliments qui servent à
+      leur nourriture. Quand donc un <name type="animal" xml:lang="fr">animal</name> ou un <name type="plant" xml:lang="fr">arbre</name> est trop épais et trop gras,
+      c'est une preuve qu'il consume pour son accroissement tout ce qu'il prend de
+      nourriture, et qu'il n'en reste point ou presque point de superflu. </p>
+</div>
+
+<div type="section" n="XXXI">
+   <p>Pourquoi la <name type="plant" xml:lang="fr">vigne</name> sèche-t-elle lorsqu'on l'arrose avec du <name type="plant" xml:lang="fr">vin</name>, même de celui
+      qu'elle a produit ? </p>
+
+   <p>Est-ce qu'il en est
+      de la <name type="plant" xml:lang="fr">vigne</name> comme des ivrognes, qui </p>
+
+   <pb n="386"/>
+
+   <p>deviennent chauves
+      parce que la chaleur du <name type="plant" xml:lang="fr">vin</name> fait évaporer l'humidité de leur cerveau? Est-ce que
+      la liqueur vineuse est un effet de l'altération du <name type="plant" xml:lang="fr">vin</name>, comme le prétend
+      <persName>Empédocle</persName> ? </p>
+
+   <p>[919d] Sous l'écorce du
+      bois l'humidité s'altère,
+      <quote>Et nous produit du <name type="plant" xml:lang="fr">vin</name> la liqueur salutaire.</quote>
+   </p>
+</div>
+<div type="chapter" n="59">
+   <milestone unit="section" n="59.1"/>
+   <p>Lors donc qu'on arrose la <name type="plant" xml:lang="fr">vigne</name> avec du <name type="animal" xml:lang="fr">vin</name>, cette liqueur est pour elle comme un feu qui consume l'humidité destinée à la nourrir. Ou bien le <name type="animal" xml:lang="fr">vin</name>, qui est astringent, empêche-t-il, en pénétrant jusqu'aux racines du cep, dont il resserre et condense les pores, que l'<name type="animal" xml:lang="fr">eau</name>, qui doit abreuver la plante et la faire bourgeonner, ne s'élève dans sa tige ? Ou est-il contre la nature de la <name type="plant" xml:lang="fr">vigne</name> qu'elle reçoive de nouveau dans son sein ce qui en a été tiré ? Car l'humidité qui est dans les plantes et qui les a fait fleurir ne peut plus servir à leur nourriture, [919e] ni faire une seconde fois partie de leur substance.</p>
+
+   <milestone unit="section" n="59.2"/>
+   <p>Les questions dont <persName>Plutarque</persName> se propose la solution dans ce traité appartiennent toutes à la physique, comme le litre l'indique. Nous avons déjà observé que ce n'était pas la partie brillante de la philosophie des anciens. Tout cependant n'y est pas à rejeter. Au milieu des erreurs qui y dominent on voit briller des traits de lumière. Si quelques unes de ces questions sont indifférentes ou oiseuses, si d'autres ne sont pas résolues par les principes d'une saine physique, plusieurs sont intéressantes par leur objet, et offrent des solutions satisfaisantes.</p>
+
+   <milestone unit="section" n="59.3"/>
+   <p>L'<name type="animal" xml:lang="fr">eau</name> de la <placeName>mer</placeName> contient une matière grasse qu'on a crue longtemps un bitume minéral, mais que les physiciens modernes regardent comme une substance animale qui provient des <name type="animal" xml:lang="fr">animaux</name> marins.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en priorisant l'encodage des entités nommées zoologiques (bien que ce passage n'en contienne pas explicitement) :
+
+
+<div type="section" n="03">
+   <p>La substance grasse que l'eau de la mer contient est cause qu'elle s'enflamme plus aisément qu'aucune autre espèce d'eau, et qu'elle augmente l'action du feu. Auguste dut en grande partie la victoire d'<placeName>Actium</placeName> au feu que ses soldats mirent aux vaisseaux d'<persName>Antoine</persName>, et dont ils augmentèrent tellement les progrès en y jetant de l'eau de la mer, qu'il ne fut plus possible d'arrêter l'incendie.</p>
+</div>
+
+<div type="section" n="04">
+   <p>Je ne connais d'autre écrivain de ce nom qu'un historien latin, surnommé <persName>Pomponius</persName>, qui avait écrit sur les mœurs des <persName>Romains</persName>. J'ignore si c'est de lui que <persName>Plutarque</persName> parle.</p>
+</div>
+
+<div type="section" n="05">
+   <p>C'est une vérité généralement reconnue que cette influence du sel sur la santé des troupeaux, sur leur fécondité, sur la beauté et la finesse de leurs laines. Il est d'expérience que, dans les pays où le sel est assez commun pour qu'ils puissent en faire un usage ordinaire, ils sont rarement sujets à des maladies contagieuses. Que de motifs pour faciliter partout cet usage ! et c'est précisément ce qu'on ne fait pas.</p>
+</div>
+
+<div type="section" n="06">
+   <p>Le mont <placeName>Pangée</placeName> est situé le long du fleuve <placeName>Nestus</placeName>, dans le voisinage de l'ancienne <placeName>Macédoine</placeName>. Il avait d'abord porté le nom de mont <placeName>Caramamus</placeName>.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en priorisant les entités nommées zoologiques :
+
+
+<pb n="07"/>
+<div type="section" n="7">
+  <p>Zacynthe, <placeName>aujourd'hui Zante</placeName>, avait fait partie des États d'<persName>Ulysse</persName>; c'est une des îles les plus agréables de la mer de Grèce, au couchant de la <placeName>Morée</placeName> ; elle est très fertile, et surtout en <name type="plant" xml:lang="fr">raisins de Corinthe</name>. Il y a un <name type="animal" xml:lang="fr">lac</name> d'où, suivant <persName>Hérodote</persName>, liv. IV, ch. 195, on lirait de la <name type="plant" xml:lang="fr">poix</name>. Il en fournit encore beaucoup, et elle est très bonne à calfeutrer les <name type="animal" xml:lang="fr">vaisseaux</name>.</p>
+</div>
+
+<pb n="08"/>
+<div type="section" n="8">
+  <p>Cette propriété, de l'<name type="plant" xml:lang="fr">huile</name>, de calmer les <name type="animal" xml:lang="fr">vagues</name> de la mer, rapportée par <persName>Aristote</persName>, <persName>Pline</persName> et <persName>Plutarque</persName> avait été mise par nos modernes au rang des fables absurdes dont la physique des anciens nous offre plus d'un exemple. Elle a été cependant attestée par les témoignages les plus graves et les plus nombreux. On en trouve les preuves dans une lettre écrite à la <placeName>Société royale de Londres</placeName>, par le célèbre <persName>Franklin</persName>, et précédée d'une autre lettre sur le même sujet, à un ami de ce grand physicien. Elles contiennent un grand nombre de faits qui ne permettent guère, ce semble, de révoquer en doute cette propriété.</p>
+</div>
+
+<pb n="09"/>
+<div type="section" n="9">
+  <p>Il y a une <name type="plant" xml:lang="fr">espèce d'orge</name>, appelée <foreign xml:lang="la">orge carrée</foreign>, qu'on sème en hiver. Les autres espèces, qui se sèment au printemps, mûrissent de bonne heure, et viennent mieux dans un terrain doux que dans un sol argileux.</p>
+</div>
+
+<pb n="10"/>
+<div type="section" n="10">
+  <p>Il y a ici une lacune dans le texte.</p>
+</div>
+
+<pb n="11"/>
+<div type="section" n="11">
+  <p>Ce changement de couleur dans le <name type="animal" xml:lang="fr">caméléon</name> est confirmé par les observateurs modernes; mais il ne paraît pas qu'il prenne constamment celle des objets dont il approche.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="section" n="62">
+   <milestone unit="section" n="62"/>
+   <p>(12)
+      La
+      conséquence que <persName>Plutarque</persName> tire ici parait contraire à la proposition énoncée
+      dans le titre de la question. Si le sang du <name type="animal" xml:lang="fr">sanglier</name> est noir et mordant, et que
+      les larmes, qui s'en expriment doivent tenir de ses qualités, il semble qu'elles
+      ne devraient pas être douces. Peut-être y a-t-il quelque altération dans le
+      texte.
+   </p>
+   <p>(13)
+      <persName>Cicéron</persName>, dans son oraison de <foreign xml:lang="la">Signis</foreign> contre <persName>Verrès</persName>, atteste ce que dit ici
+      <persName>Plutarque</persName>. On peut y lire la charmante description qu'il fait de ces prairies
+      délicieuses, où régnait un printemps perpétuel.
+   </p>
+   <p>(14)
+      <persName>Mnésithée</persName> était un médecin d'<placeName>Athènes</placeName> cité avec beaucoup d'éloges par <persName>Galien</persName> et
+      <persName>Pausanias</persName>.
+   </p>
+   <p>(15)
+      La
+      fin de cette question est mutilée.
+   </p>
+</div>
+<div type="section" n="63">
+   <milestone unit="section" n="63"/>
+   <p>Que les <name type="animal" xml:lang="fr">bêtes</name> ont l'usage de la raison</p>
+   <p><persName>Plutarque</persName> : oeuvres morales : QUE LES BÊTES ONT L'USAGE DE LA RAISON</p>
+</div>
+<div type="section" n="63">
+   <p>
+      <persName>ULYSSE</persName>. Oui, <persName>Circé</persName>, il me semble maintenant que je
+      comprends bien ce que vous venez de m'apprendre et que
+      je ne l'oublierai point. Mais je voudrais savoir de vous, si
+      parmi ceux que d'hommes vous avez changés en <name type="animal" xml:lang="fr">loups</name> et
+      en <name type="animal" xml:lang="fr">lions</name> vous avez quelques <foreign xml:lang="grc">Ἕλληνες</foreign>.
+   </p>
+   <p>
+      <persName>CIRCÉ</persName>. J'en ai un grand nombre, ô mon <persName>Ulysse</persName> adoré.
+      Mais pourquoi cette question?
+   </p>
+   <p>
+      <persName>ULYSSE</persName>. Parce que je crois, à ne vous rien cacher, que
+      j'acquerrais des titres bien honorables à l'admiration de la
+      Grèce, titres que je recevrai de vos mains, si, grâce à votre
+      bienveillance, je rendais à mes compagnons la forme humaine,
+      et si je ne les laissais pas avec indifférence vieillir
+      contre nature dans des corps d'<name type="animal" xml:lang="fr">animaux</name>, condition si
+      déplorable et si humiliante.
+   </p>
+   <p>
+      <persName>CIRCÉ</persName>. Voilà un homme qui dans sa folie veut rendre
+      non seulement ses compagnons, mais ceux qui lui sont
+      étrangers, victimes de son désir de la gloire !
+   </p>
+   <p>
+      <persName>ULYSSE</persName>. C'est une autre sorte de breuvage destiné à
+      troubler ma raison, que vous me préparez en parlant ainsi.
+      Oui, <persName>Circé</persName>, de moi vous ferez complètement une <name type="animal" xml:lang="fr">bête</name>, si
+      vous parvenez à me persuader que ce soit un malheur de
+      redevenir homme, de <name type="animal" xml:lang="fr">bête</name> qu'on était.
+   </p>
+</div>
+Voici l'encodage TEI P5 du texte selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="64">
+  <milestone unit="section" n="64.1"/>
+  <p><persName>CIRCÉ</persName>. Eh quoi! Ne vous êtes vous pas montré cent fois
+  plus absurde en ce qui vous regarde vous-même? Vous
+  renoncez à passer avec moi une vie qui pourrait être immortelle
+  et exempte de vieillesse, pour aller retrouver une
+  femme mortelle, et, permettez-moi de le dire, une créature
+  maintenant décrépite. Vous avez hâte d'affronter derechef
+  des maux sans nombre, espérant que cette constance vous
+  rendra plus célèbre et plus renommé encore que vous ne
+  l'êtes aujourd'hui. Au lieu de la réalité vous courez après
+  un bonheur imaginaire, vous poursuivez un fantôme.</p>
+
+  <milestone unit="section" n="64.2"/>
+  <p><persName>ULYSSE</persName>. Admettons, <persName>Circé</persName>, qu'il en soit comme vous
+  dites. A quoi bon nous quereller sans cesse sur le même
+  sujet? Accordez-moi plutôt la délivrance de ces malheureux :
+  ce sera pour moi une véritable faveur.</p>
+
+  <milestone unit="section" n="64.3"/>
+  <p><persName>CIRCÉ</persName>. La chose n'est pas si simple, par <name type="deity">Hécate</name> : attendu
+  que ce sont des personnages de condition. Mais demandez
+  leur d'abord s'ils y consentent. En cas de refus vous
+  aurez recours, mon cher, à la dialectique pour les persuader.
+  Si vous n'y parvenez pas, et qu'ils soient les
+  plus forts dans la discussion, ce sera bien assez d'avoir rendu et
+  vous-même et vos amis victimes de votre imprudente
+  détermination.</p>
+
+  <milestone unit="section" n="64.4"/>
+  <p><persName>ULYSSE</persName>. Pourquoi vous moquer de moi, bienheureuse
+  <name type="deity">déesse</name>? Comment pourront-ils me répondre ou me comprendre,
+  tant qu'ils resteront <name type="animal" xml:lang="fr">ânes</name>, <name type="animal" xml:lang="fr">pourceaux</name> et <name type="animal" xml:lang="fr">lions</name>?</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Plutarque, en respectant les entités nommées Zoomathia et la structure demandée :
+
+
+<div type="chapter" n="65">
+   <p>CIRCÉ. Tranquillisez-vous, ô le plus ambitieux des
+hommes. Je vous les présenterai capables de vous comprendre
+et de discourir avec vous. Ou plutôt, il suffira qu'un
+seul vous entende et vous réponde au nom de tous ses
+camarades. Tenez, discutez avec celui-ci.</p>
+</div>
+
+<div type="section" n="65.1">
+   <p>ULYSSE. Et de quel nom, Circé, l'appellerons-nous? Quel
+était-il parmi les hommes?</p>
+
+   <p>CIRCÉ. Qu'importe cela pour votre discussion? Du reste,
+appelez-le, si cela vous plaît, <name type="animal" xml:lang="fr">Gryllus</name>. Quant à moi, je vous
+céderai la place, afin qu'il ne se croie pas obligé de parler
+contre ses opinions pour me faire la cour.</p>
+</div>
+
+<div type="section" n="65.2">
+   <milestone unit="section" n="2"/>
+   <p><name type="animal" xml:lang="fr">GRYLLUS</name>. Bonjour, <persName>Ulysse</persName>.</p>
+
+   <p><persName>ULYSSE</persName>. Par <name type="deity">Jupiter</name>, bonjour aussi, <name type="animal" xml:lang="fr">Gryllus</name>.</p>
+
+   <p><name type="animal" xml:lang="fr">GRYLLUS</name>. Quelles questions veux-tu m'adresser?</p>
+
+   <p><persName>ULYSSE</persName>. Vous êtes nés hommes, je le sais. Je vous plains
+tous de la condition où vous voilà réduits; mais il est bien
+naturel que ma compassion s'augmente, quand ce sont des
+<foreign xml:lang="grc">Γραικοί</foreign> que frappe une telle affliction. Aussi viens-je
+d'adresser mes supplications à <persName>Circé</persName>, afin qu'elle délivre
+celui de vous qui le désirera, et que, le rétablissant dans sa
+forme première, elle le renvoie au milieu de nous.</p>
+</div>
+<div type="section" n="66">
+   <p><persName>GRYLLUS</persName>. Halte-là, <persName>Ulysse</persName> ! N'ajoute pas un mot de plus. </p>
+   <p>Apprends que tu nous inspires à tous un profond mépris. </p>
+   <p>C'est bien la peine, en vérité, d'avoir le renom d'habile <name type="animal" xml:lang="fr">homme</name>, et de passer pour doué d'une prudence à nulle autre pareille! Quoi! Tu as eu peur d'échanger une condition pire contre une meilleure! Tu n'y as pas réfléchi. Comme les <name type="animal" xml:lang="fr">enfants</name> redoutent les <name type="plant" xml:lang="fr">potions médicinales</name>, et reculent devant le malaise passager qui, de <name type="animal" xml:lang="fr">malades</name> et d'<foreign xml:lang="fr">irréfléchis</foreign> qu'ils sont, les rendra mieux portants et plus sensés; de même tu as repoussé l'occasion qui t'était offerte de devenir autre. A l'heure qu'il est tu trembles et redoutes en secret que <name type="deity">Circé</name>, avec qui tu vis, ne fasse de toi, sans que tu t'en doutes, un <name type="animal" xml:lang="fr">sanglier</name> ou un <name type="animal" xml:lang="fr">loup</name>. Tu voudrais, quand nous vivons au sein de l'abondance et de la félicité, nous déterminer à quitter et de tels biens et celle qui nous les procure, pour nous embarquer avec toi, pour redevenir <name type="animal" xml:lang="fr">hommes</name>, c'est-à-dire, créatures misérables entre toutes !</p>
+
+   <milestone unit="section" n="66"/>
+   <p><persName>ULYSSE</persName>. Je vois, <persName>Gryllus</persName>, que ce n'est pas ton corps seulement, mais encore ton intelligence qui a été dénaturée par ce fatal breuvage, et qu'il t'a rempli d'idées tout à fait déraisonnables et dépravées. Ou bien, il faut qu'un certain charme d'habitude t'ait ensorcelé en faveur du corps qui est aujourd'hui le tien.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Plutarque, en respectant toutes les entités nommées Zoomathia et la structure demandée :
+
+
+<div type="section" n="67">
+   <p>GRYLLUS. Ni l'un, ni l'autre, ô <persName>roi des Céphalléniens</persName>. Et
+      si tu aimes mieux procéder par des raisonnements que par
+      des injures, nous t'aurons prouvé bientôt, forts de notre
+      expérience des deux conditions, que nous sommes sages en
+      préférant celle-ci à l'autre.</p>
+   <p>ULYSSE. En vérité, je suis impatient de t'entendre.</p>
+   <milestone unit="section" n="68"/>
+   <p>GRYLLUS. Autant que moi je le suis de m'expliquer.
+      Je dois commencer d'abord par les vertus dont je vois que
+      vous êtes si fiers. Vous croyez l'emporter de beaucoup sur
+      les <name type="animal" xml:lang="fr">animaux</name> par la justice, par la prudence, par la bravoure
+      et par les autres vertus. Or, réponds-moi, le plus éclairé
+      des humains. J'ai entendu ce que tu contais à <persName>Circé</persName> de la
+      terre habitée par les <name type="animal" xml:lang="fr">Cyclopes</name> : terre, où sans qu'on la cultive
+      le moins du monde, sans que personne y plante rien, la
+      nature est d'une bonté et d'une générosité incroyable,
+      produisant d'elle-même toutes sortes de fruits. Eh bien, dis:
+      préfères-tu cette terre-là à ton <placeName>Ithaque</placeName>, vrai pays de <name type="animal" xml:lang="fr">chèvres</name>,
+      sol montueux, qui à grand'peine, au prix de travaux nombreux
+      et de fatigues excessives, ne rend à ceux qui le
+      cultivent que des productions insignifiantes, chétives et sans
+      valeur? Et ne va pas, te formalisant de mes paroles, me
+      répondre contrairement à ta pensée, par amour de ta patrie.</p>
+   <p>ULYSSE. Je n'ai pas besoin de mentir. J'aime, je chéris
+      ma patrie et mon sol natal par-dessus tout, en même temps
+      que je loue et que j'admire cette autre contrée.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Plutarque :
+
+
+<div type="section" n="68">
+   <p>GRYLLUS. Ainsi donc, nous constaterons ce premier point : à savoir que l'homme le plus sensé de tous croit devoir accorder ses louanges et son admiration à certaines choses, et sa préférence, son affection à d'autres. Je suppose que tu répondras dans un sens analogue, si je te parle de l'<name type="animal" xml:lang="fr">âme</name>.</p>
+   <p>Car il en est de même pour elle que pour un sol : la meilleure est celle qui sans travail produit la vertu comme un fruit naturel.</p>
+   <p>ULYSSE. C'est un point que je t'accorde aussi.</p>
+   <milestone unit="section" n="69"/>
+   <p>GRYLLUS. Te voilà donc amené à convenir que l'<name type="animal" xml:lang="fr">âme</name> des <name type="animal" xml:lang="fr">bêtes</name> est mieux organisée naturellement pour que la vertu y naisse et s'y perfectionne. Sans nulle prescription, sans nul enseignement, comme une terre qu'on n'a ni semée ni labourée, leur <name type="animal" xml:lang="fr">âme</name> porte et développe naturellement la vertu qui leur convient.</p>
+   <p>ULYSSE. Et quelle vertu, <persName>seigneur Gryllus</persName>, accordez-vous donc aux <name type="animal" xml:lang="fr">bêtes</name>?</p>
+</div>
+<div type="section" n="69">
+   <p><persName>GRYLLUS</persName>. Dis plutôt, quelle vertu ne leur accordé-je pas, à un degré bien autrement plus remarquable qu'au plus sage d'entre les hommes. Examine d'abord, si tu le veux, la question du <name type="animal" xml:lang="fr">courage</name>. Tu es particulièrement fier du tien, et tu n'as garde de laisser ignorer qu'on t'appelle le hardi, le ravageur de villes. Misérable que tu es ! Employant la ruse et tous les artifices possibles contre des hommes qui ne connaissent qu'une manière franche et généreuse de faire la guerre, contre des hommes étrangers à la tromperie et aux mensonges, tu déguises ta fourberie sous le nom de la vertu la plus incompatible avec la fourberie.</p>
+   <p>Vois les combats des <name type="animal" xml:lang="fr">animaux</name> entre eux et leurs combats contre vous. Comme tout s'y passe sans ruse et sans artifice ! C'est au grand jour, c'est à nu, qu'ils déploient leur audace, et c'est bien leur force véritable qu'ils mettent au service de leur vengeance. Ils n'ont pas besoin qu'une loi les appelle sous les drapeaux, qu'on leur fasse craindre l'appellation injurieuse de déserteurs. Une fierté naturelle leur inspire l'horreur de la domination. Jusqu'à la dernière extrémité ils résistent pour conserver leur indépendance. Ils ne cèdent pas pour avoir été vaincus ; ils ne perdent jamais courage, et ils meurent au milieu des combats. Chez plusieurs, au moment où ils vont expirer, la force avec la fierté se retire et se concentre dans une petite partie de leur corps, et lutte contre l'<name type="animal" xml:lang="fr">ennemi</name> qui va leur donner le trépas.</p>
+</div>
+<div type="section" n="70">
+   <p>C'est cette partie d'eux-mêmes qui bondit, qui s'indigne : jusqu'à ce que, comme du feu, elle soit complétement éteinte et anéantie.</p>
+   <p>Jamais ils n'ont recours aux prières, à des supplications, avec le dessein d'apitoyer leur adversaire. Jamais ils n'avouent leur défaite.</p>
+   <p>Un <name type="animal" xml:lang="fr">lion</name> ne se résigne pas à devenir, par un effet de sa lâcheté, l'esclave d'un <name type="animal" xml:lang="fr">lion</name>, ni un <name type="animal" xml:lang="fr">cheval</name>, d'un <name type="animal" xml:lang="fr">cheval</name>.</p>
+   <p>Un <name type="animal" xml:lang="fr">homme</name>, au contraire, se reconnaît esclave d'un autre, et accepte de gaieté de cœur avec l'esclavage le titre de lâche dont ce nom est synonyme.</p>
+   <p>Tous les <name type="animal" xml:lang="fr">animaux</name> qu'à force de pièges et d'artifices l'<name type="animal" xml:lang="fr">homme</name> tient sous sa puissance n'ont pas plus tôt acquis la plénitude de leurs forces que, repoussant la nourriture qu'il leur offre, et résistant à la soif, ils se donnent eux-mêmes la mort parce qu'ils la préfèrent à la servitude.</p>
+   <p>Pour ce qui est de leurs petits, soit <name type="animal" xml:lang="fr">oiseaux</name>, soit <name type="animal" xml:lang="fr">quadrupèdes</name>, que leur âge rend aisés à conduire et débonnaires, c'est en leur prodiguant mille séductions trompeuses, mille douceurs perfides que l'<name type="animal" xml:lang="fr">homme</name> les ensorcelle, jusqu'à ce qu'à force de leur faire goûter des plaisirs et un régime contraire à leur nature, il leur enlève à la longue toute leur énergie.</p>
+   <p>Alors seulement ils consentent et se résignent à devenir ce qu'on appelle apprivoisés, autrement dit, dépouillés de toute leur fierté native.</p>
+   <p>Est-il une preuve plus évidente, que les <name type="animal" xml:lang="fr">bêtes</name> sont très heureusement douées sous le rapport du courage?</p>
+</div>
+<div type="section" n="71">
+   <p>Au contraire, les hommes n'ont de l'assurance qu'en
+   forçant leur nature. Je vais l'établir, mon très cher <persName>Ulysse</persName>,
+   par un argument qui te convaincra. Chez les <name type="animal" xml:lang="fr">animaux</name>, il y
+   a équilibre parfait dans la vigueur des deux sexes. La <name type="animal" xml:lang="fr">femelle</name>
+   ne le cède en rien au <name type="animal" xml:lang="fr">mâle</name>, soit pour supporter les
+   fatigues indispensables, soit pour défendre sa progéniture.
+   </p>
+   <p>A coup sûr tu as entendu parler d'une certaine <name type="animal" xml:lang="fr">laie</name> de
+   <placeName>Cromnyon</placeName>, qui, toute <name type="animal" xml:lang="fr">laie</name> qu'elle était, donna beaucoup de
+   mal à <persName>Thésée</persName>. Le <name type="animal" xml:lang="fr">sphinx</name>, ce fameux monstre <foreign xml:lang="grc">θῆλυς</foreign> qui
+   s'était installé sur le mont <placeName>Phicius</placeName>, n'aurait tiré aucun parti
+   de son habileté à compliquer des énigmes et des questions
+   embarrassantes, si sa force et son courage n'avaient pas déjà
+   fait trembler devant lui les habitants de la cité de <placeName>Cadmus</placeName>.
+   </p>
+   <p>C'est encore dans ce même pays, que parurent, dit-on, la
+   <name type="animal" xml:lang="fr">renarde</name> de <placeName>Telmesse</placeName>, qui exerça tant de dégâts, et, dans
+   son voisinage, la <name type="animal" xml:lang="fr">dragonne</name> qui à <placeName>Delphes</placeName> se mesura en
+   combat singulier avec <name type="deity">Apollon</name>, au sujet de l'<name type="plant" xml:lang="fr">oracle</name>. Ne sait-on
+   pas que la <name type="animal" xml:lang="fr">jument</name> <foreign xml:lang="grc">Ἔθα</foreign> fut acceptée par votre roi d'un
+   <persName>Sicyonien</persName> qui achetait ainsi le droit de ne pas partir à la
+   guerre. C'était un excellent calcul, que de préférer à un
+   homme lâche une noble et généreuse <name type="animal" xml:lang="fr">bête</name>.
+   </p>
+   <p>Toi-même, qui
+   souvent as vu des <name type="animal" xml:lang="fr">panthères</name> et des <name type="animal" xml:lang="fr">lionnes</name>, tu as été à même
+   de reconnaître que ces <name type="animal" xml:lang="fr">femelles</name> ne cèdent en rien à leurs
+   <name type="animal" xml:lang="fr">mâles</name> sous le rapport du courage et de la vigueur. Compare
+   leur ta <name type="animal" xml:lang="fr">femme</name> qui, pendant que tu fais la guerre, reste
+   </p>
+</div>
+<div type="chapter" n="72">
+   <milestone unit="section" n="72"/>
+   <p>tranquillement assise chez elle à son foyer, sans oser même, ce que font les <name type="animal" xml:lang="fr">hirondelles</name>, résister à ceux qui veulent s'emparer de sa personne et de son logis. Pourtant c'est une <persName>Lacédémonienne</persName>.</p>
+   <p>Te citerai-je encore les <placeName>Cariennes</placeName> ou les <placeName>Méoniennes</placeName>? Ce que j'ai dit prouve à l'évidence que la bravoure n'est pas une qualité naturelle de l'espèce humaine; car les femmes auraient aussi leur part de vigueur.</p>
+   <p>Si bien que c'est par la contrainte des lois, sans spontanéité, sans initiative, que vous pratiquez la bravoure. Vous vous rendez esclaves, en cela, des usages, du blâme, de l'opinion des étrangers, et cette vaillance est toute de convention.</p>
+   <p>Si vous affrontez les fatigues et les dangers, ce n'est pas le courage qui vous y excite, c'est la crainte d'autres fatigues, d'autres dangers plus considérables.</p>
+   <p>Ainsi donc, de même que parmi tes compagnons celui qui a su gagner de vitesse sur les autres, prend la rame la plus légère à manoeuvrer, non parce qu'il en fait peu de cas, mais parce qu'il en redoute et en fuit une plus lourde; de même, l'homme qui endure des coups afin de ne pas recevoir de blessures, et qui se défend contre un ennemi plutôt que de subir des mauvais traitements ou la mort, est moins brave contre le danger qu'il n'est timide en face de cette autre perspective.</p>
+   <p>C'est ainsi que j'ai reconnu dans votre courage à tous une lâcheté prudente, et dans votre hardiesse une frayeur habile à éviter un mal par un autre.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Plutarque :
+
+
+<div type="section" n="73">
+   <p>Du reste, pour parler d'une manière générale, si vous croyez en fait de bravoure valoir mieux que les <name type="animal" xml:lang="fr">bêtes</name>, pourquoi vos poètes, quand ils parlent des hommes qui combattent le plus vigoureusement contre les ennemis, les appellent-ils « des mortels au cœur de <name type="animal" xml:lang="fr">lion</name> », des « mortels comparables au <name type="animal" xml:lang="fr">sanglier</name> » pour leur vigueur ? Pas un d'eux ne s'avise de dire d'un <name type="animal" xml:lang="fr">lion</name>, qu'il a le cœur d'un homme, d'un <name type="animal" xml:lang="fr">sanglier</name>, qu'il vaut un homme pour la vigueur.</p>
+   <p>Mais, si je raisonne bien, de même que pour qualifier ceux qui sont légers, les poètes donnent aux pieds des coureurs la rapidité du vent, que par une hyperbole d'image ils appellent « semblables aux dieux » ceux qui sont beaux; de même, ils font des rapprochements entre les mortels les plus vaillants au combat et les créatures les plus valeureuses par leur nature.</p>
+   <p>Quelle est la raison de cette supériorité ? C'est que le courage est en quelque sorte ce qui donne la fermeté et la trempe aux âmes. Or c'est avec leur âme, simplement et purement, que les <name type="animal" xml:lang="fr">bêtes</name> affrontent les combats, tandis que vous autres vous y mêlez le raisonnement, comme on mêle de l'eau avec du vin. Voilà pourquoi votre âme fléchit en face du danger et vient à défaillir dans un moment critique.</p>
+   <p>Quelques-uns d'entre vous vont jusqu'à dire qu'il ne faut en aucune façon déployer de l'ardeur dans les combats, qu'il faut supprimer ces transports généreux pour faire usage d'une raison bien</p>
+</div>
+Voici l'encodage TEI P5 du texte selon les règles strictes du projet Zoomathia :
+
+
+<p>calme. Voilà qui est le mieux du monde au point de vue de
+la conservation et de la santé personnelle, mais au point de
+vue de l'énergie et de la vigueur c'est une théorie honteuse.
+N'y a-t-il pas inconséquence flagrante ! Vous accusez la
+nature de ce qu'elle n'a point armé vos corps d'aiguillons,
+de ce qu'elle ne vous a pas donné des <name type="animal" xml:lang="fr">dents</name> en forme de
+défenses, des <name type="animal" xml:lang="fr">serres</name> recourbées, et, d'autre part, votre armure
+naturelle qui est votre <name type="animal" xml:lang="fr">âme</name>, vous l'annulez, vous en
+arrêtez l'essor. </p>
+<milestone unit="section" n="74"/>
+<p>ULYSSE. Oh ! oh ! maître <persName>Gryllus</persName> ! te voilà, ce semble,
+devenu un rhéteur consommé! Ta <name type="animal" xml:lang="fr">bauge</name> est une chaire
+d'où tu pérores avec toute l'ardeur imaginable pour soutenir
+cette nouvelle thèse. Et pourquoi n'as-tu pas, sans
+t'interrompre, discouru sur la <foreign xml:lang="grc">σώφροσυνη</foreign>?</p>
+<div type="section" n="75">
+   <p>GRYLLUS. C'est que je croyais que tu allais réfuter d'abord ce que je viens de dire. Mais non : tu es pressé de m'entendre parler de la tempérance, attendu que tu possèdes une femme qui est un modèle de chasteté, et parce que tu penses avoir donné, pour ce qui te regarde, une preuve de tempérance en refusant les faveurs amoureuses de <persName>Circé</persName>.</p>
+   <p>Mais rien de tout cela n'établit que tu l'emportes sur les <name type="animal" xml:lang="fr">animaux</name> en matière de continence. Eux, non plus, ne désirent pas s'unir à des êtres d'une nature supérieure à eux. Ils s'en tiennent aux plaisirs et aux amours qu'ils peuvent goûter avec ceux de leur espèce. Il n'y a donc pas lieu d'être frappé d'admiration si, comme en <placeName>Égypte</placeName> ce <name type="animal" xml:lang="fr">bouc</name> de <placeName>Mendès</placeName> qui, renfermé avec un grand nombre de femmes des plus belles, n'éprouve aucun désir et se sent bien plus d'ardeur pour ses <name type="animal" xml:lang="fr">chèvres</name>, si, dis-je, toi aussi, tu préfères les jouissances amoureuses que tu connais, et si tu te soucies peu, étant homme, de coucher avec une <name type="deity">déesse</name>.</p>
+   <p>Quant à la chasteté de <persName>Pénélope</persName>, mille <name type="animal" xml:lang="fr">corneilles</name> s'en vont protester par leurs croassements et prouver que c'est une dérision. Oui, les <name type="animal" xml:lang="fr">corneilles</name> ont droit de la mépriser. Toutes les <name type="animal" xml:lang="fr">corneilles</name>, sans en excepter une seule, se condamnent au veuvage aussitôt qu'elles perdent leur mâle, et cela, non pas pour quelques mois, mais durant neuf générations d'hommes.</p>
+   <p>Ta belle <persName>Pénélope</persName> est donc dépassée neuf fois en sagesse par la première <name type="animal" xml:lang="fr">corneille</name> que tu voudras.</p>
+</div>
+<pb n="6"/>
+<div type="section" n="76">
+  <p>Mais puisque mon talent de rhéteur ne t'a pas échappé, permets que je fasse usage des divisions oratoires, et qu'après avoir donné la définition de la tempérance, je passe en revue les différentes espèces de désirs. La tempérance consiste à borner ses désirs, à les régler, en supprimant ceux qui sont étrangers et superflus pour ne garder que les nécessaires et y mettre de l'opportunité et de la modération.</p>
+  <p>Or, dans les désirs même tu remarques sans doute des différences innombrables. Ainsi, par exemple, le désir du <name type="animal" xml:lang="fr">manger</name>, celui du <name type="animal" xml:lang="fr">boire</name>, outre qu'ils offrent une jouissance naturelle, sont encore des besoins. Au contraire, les désirs amoureux, bien qu'ils aient leur principe dans la nature, sont tels que l'on peut fort bien vivre en se les interdisant; aussi les appelle-t-on naturels, mais non pas nécessaires.</p>
+  <p>Il en est d'autres qui ne sont ni nécessaires, ni naturels, et que vous imposent du dehors des opinions fausses, résultat d'un jugement erroné. Ces désirs de convention deviennent tellement nombreux qu'ils étouffent presque entièrement les naturels. C'est comme une faction étrangère qui, au sein d'une cité, veut faire la loi aux vrais citoyens.</p>
+  <p>Les <name type="animal" xml:lang="fr">animaux</name> n'ont pas une âme qui se laisse dominer et envahir par ces passions étrangères. Leur manière de vivre les tient éloignés de toute fausse opinion, comme d'une mer dangereuse, et ils ne songent pas le moins du monde à la sensualité et au superflu.</p>
+</div>
+<div type="chapter" n="77">
+   <p>observent-ils constamment les lois de la tempérance et la
+      modération dans leurs désirs, aussi restreints que naturels.</p>
+   <p>Moi qui te parle, j'étais jadis, comme tu l'es aujourd'hui,
+      dominé par la soif de l'<name type="animal" xml:lang="fr">or</name>. Il n'y avait pas de possession
+      qui me semblât digne d'être mise en parallèle avec l'<name type="animal" xml:lang="fr">or</name>.
+      L'<name type="animal" xml:lang="fr">argent</name> et l'<name type="animal" xml:lang="fr">ivoire</name> m'exaltaient aussi. Celui qui accumulait
+      ces objets en plus grande quantité était à mes yeux un
+      être privilégié et chéri du ciel, eût-il été <persName>Phrygien</persName> ou <persName>Carien</persName>,
+      eût-il été plus lâche que <persName>Delon</persName>, plus éprouvé par l'infortune
+      que <persName>Priam</persName>. Dans cet état, mes désirs me tenaient
+      toujours en haleine. Je ne recueillais aucun charme, aucune
+      joie de mes autres biens, quoiqu'ils fussent nombreux et
+      suffisants. Je maudissais mon existence. Je me regardais
+      comme privé et déshérité des avantages les plus grands,
+      comme abandonné des <name type="deity">dieux</name>. Je me rappelle, à ce propos,
+      qu'un jour en <placeName>Crète</placeName> je te vis revêtu, pour je ne sais quelle
+      solennité, d'un superbe manteau. Ce n'était ni ta prudence
+      que j'enviais, ni ta valeur, mais bien cette étoffe si
+      merveilleusement travaillée et d'un tissu si délicat, ce manteau
+      du <name type="animal" xml:lang="fr">pourpre</name> si moelleux et si éclatant. Voilà ce qui excitait
+      ma convoitise, ce qui me mettait hors de moi. Il y avait
+      aussi certaine agrafe en <name type="animal" xml:lang="fr">or</name>, espèce de joujou ciselé avec
+      une perfection merveilleuse. Je m'attachais à tes pas;
+      j'étais sous le charme, comme le sont les <name type="animal" xml:lang="fr">femmes</name>. Maintenant
+      je suis débarrassé, je suis purgé de ces fausses admirations.</p>
+</div>
+<div type="section" n="78">
+   <p>L'<name type="animal" xml:lang="fr">or</name> et l'<name type="animal" xml:lang="fr">argent</name> sont pour moi comme les autres <name type="plant" xml:lang="fr">pierres</name>. Je passe à côté sans y prendre garde. Tes <foreign xml:lang="fr">tuniques</foreign> et tes <foreign xml:lang="fr">tapis</foreign> ne me seraient pas, je te le jure, plus agréables pour dormir, quand j'ai la <name type="animal" xml:lang="fr">panse</name> pleine, qu'un <name type="animal" xml:lang="fr">bourbier</name> bien profond et bien moelleux.</p>
+   <p>C'est ainsi qu'aucune de toutes ces convoitises factices n'élit domicile au sein de nos <name type="animal" xml:lang="fr">âmes</name>. Mais les désirs et les voluptés nécessaires abondent dans notre existence. Ce ne sont même plus des nécessités : ce sont des jouissances naturelles, que nous goûtons sans avidité et sans désordre.</p>
+</div>
+<pb n="7"/>
+<div type="section" n="79">
+  <p>Et d'abord, passons en revue ces sensualités physiques.</p>
+  <p>Le plaisir particulier que cause à notre odorat l'émanation des bonnes odeurs n'est pas seulement une satisfaction simple et peu coûteuse; il contribue encore de la façon la plus utile à guider notre discernement pour notre nourriture.</p>
+  <p>On dit, et rien n'est plus vrai, que la langue fait reconnaître les saveurs douces, les fortes et les amères, quand les différents sucs, mêlés et confondus ensemble, sont appréciés par le sens du goût.</p>
+  <p>Mais, avant même que le palais fasse son office, notre odorat juge de la valeur des différents sucs; et il n'y a pas de dégustateurs royaux qui sachent prononcer avec une exactitude égale à la nôtre.</p>
+  <p>Notre odorat nous indique ce qui nous est bon, ce que nous pouvons manger; il repousse ce qui nous est contraire; il ne permet pas que nous y touchions, que nous en blessions notre palais.</p>
+  <p>Il nous en signale, il nous en dénonce le danger avant que ce danger nous soit préjudiciable.</p>
+  <p>Pour le reste, ce sens ne nous cause pas, comme à vous, des préoccupations fatigantes : nous n'avons pas besoin de parfums tels que ceux que vous composez avec le <name type="plant" xml:lang="fr">cinnamome</name> et le <name type="plant" xml:lang="fr">nard</name>, avec certaines feuilles, avec certains roseaux de l'<placeName>Arabie</placeName>.</p>
+  <p>C'est là pour vous une occasion de faire des teintures, de préparer des drogues, et vous appelez cela faire de la parfumerie. Vous êtes obligés de combiner ainsi une foule de substances que vous vous incorporez : ce qui est une</p>
+</div>
+<p>sensualité indigne d'hommes et faite pour de petites maîtresses
+seulement. Vous y dépensez beaucoup d'argent, pour n'en
+retirer aucun profit. Et pourtant, tel qu'il est, ce besoin
+factice a si fort corrompu, non seulement toutes les femmes,
+mais encore la majorité des hommes, que vous ne
+consentez pas à coucher avec vos moitiés si elles ne se
+rapprochent de vous exhalant les parfums et saupoudrées
+d'<name type="plant" xml:lang="fr">aromates</name>.</p>
+<p>Au contraire le <name type="animal" xml:lang="fr">sanglier</name> n'est attiré vers la <name type="animal" xml:lang="fr">laie</name>, le
+<name type="animal" xml:lang="fr">bouc</name>, vers la <name type="animal" xml:lang="fr">chèvre</name>, chaque autre mâle, vers sa femelle, que
+par la fraîche odeur de rosée et d'<name type="plant" xml:lang="fr">herbe</name> des champs qu'exhale
+cette moitié de lui-même. C'est une tendresse commune
+qui préside à leur rapprochement, sans que les femelles,
+par une coquetterie raffinée, provoquent les désirs à force de
+ruses, de séductions et de refus, sans que les mâles, dans
+leurs transports impudiques, poursuivent à prix d'argent et
+par de fatigantes assiduités le droit de se reproduire.</p>
+<p>Parmi
+nous l'amour est sans artifices. Il est opportun; il ne se
+vend point; il se produit à une saison fixe de l'année, comme
+le mouvement de la végétation. Allumé à la fois dans les
+veines de tous les <name type="animal" xml:lang="fr">animaux</name>, c'est un désir qui ne tarde pas
+à s'éteindre. Dès que la femelle a conçu elle n'accepte plus
+les recherches du mâle, et celui-ci n'essaye pas de les continuer.
+Tant il est vrai que chez nous la volupté est peu de
+chose et qu'à nos yeux elle est à peu près sans force et sans
+valeur! Tout est pour la nature.</p>
+Voici l'encodage TEI P5 strictement conforme à vos exigences, avec toutes les entités nommées Zoomathia correctement balisées :
+
+
+<p> Aussi l'amour des <name type="animal" xml:lang="fr">mâles</name> avec les <name type="animal" xml:lang="fr">mâles</name>, des <name type="animal" xml:lang="fr">femelles</name> avec
+les <name type="animal" xml:lang="fr">femelles</name>, est-il un goût qui ne s'est pas, jusqu'ici du moins,
+produit parmi les <name type="animal" xml:lang="fr">animaux</name>. Chez vous cette odieuse passion
+égare les <persName>personnages</persName> les plus graves et les plus courageux.
+Sans parler des hommes de rien, <persName>Agamemnon</persName> parcourut
+la <placeName>Béotie</placeName> en poursuivant comme un chasseur <persName>Argynnus</persName> qui le fuyait.
+Il accusait faussement et la mer et les
+<name type="animal" xml:lang="fr">aquilons</name>, puis enfin il se plongeait bravement, le bel
+amoureux, dans les eaux du <placeName>lac Copaïs</placeName> pour y éteindre l'ardeur
+de son désir et s'y débarrasser de sa flamme. <persName>Hercule</persName>,
+pareillement, occupé à courir après un de ses compagnons
+encore imberbe, abandonna les plus braves de son équipage
+et fit manquer le but de l'expédition. Sur le frontispice
+du temple d'<name type="deity">Apollon Ptoüs</name>, quelqu'un de vous traça furtivement
+cette inscription : « ô bel <persName>Achille</persName>! » bien qu'<persName>Achille</persName>
+eût déjà un fils; et j'ai entendu dire que cette inscription
+subsiste encore. Si un <name type="animal" xml:lang="fr">coq</name> n'ayant pas de <name type="animal" xml:lang="fr">poules</name> auprès de
+lui vient à saillir un autre <name type="animal" xml:lang="fr">coq</name>, il est brûlé tout vif, et un
+devin, un interprète des prodiges ne manque pas de déclarer
+que c'est un fait grave, un présage terrible. Tant il
+est vrai que les hommes eux-mêmes s'accordent à reconnaître
+que la modération convient mieux aux <name type="animal" xml:lang="fr">bêtes</name>, et que
+celles-ci dans leurs désirs ne font pas violence à la nature !
+Chez vous l'intempérance n'est pas réprimée par le secours
+des lois, et la nature est impuissante à la contenir dans de
+</p>
+<div type="section" n="82">
+   <p>justes limites. C'est un torrent qui se précipite. La consommation
+      de vos désirs amoureux donne bien souvent naissance
+      à des monstruosités qui déshonorent la nature, qui bouleversent
+      et confondent ses lois. Des hommes ont cherché à
+      s'accoupler avec des <name type="animal" xml:lang="fr">chèvres</name>, avec des <name type="animal" xml:lang="fr">truies</name>, avec des <name type="animal" xml:lang="fr">juments</name>,
+      des femmes se sont passionnées pour des animaux
+      mâles; et de ces mariages naissent parmi vous les <name type="deity">Minotaures</name>,
+      les <foreign xml:lang="la">Egypans</foreign>, et aussi, je pense, les <name type="deity">Sphinx</name> et les
+      <name type="deity">Centaures</name>. Sans doute, pressé par la faim un <name type="animal" xml:lang="fr">chien</name> a
+      quelquefois mangé de l'<name type="animal" xml:lang="fr">homme</name>, un <name type="animal" xml:lang="fr">oiseau</name> en a aussi goûté
+      quelquefois; mais jamais une bête n'a tenté de s'accoupler
+      à une créature <name type="animal" xml:lang="fr">humaine</name>, tandis que pour satisfaire cette
+      sensualité et bien d'autres les hommes abusent des bêtes
+      par la violence et au mépris de toutes les lois.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Plutarque, en respectant les entités nommées Zoomathia et la structure demandée :
+
+
+<pb n="8"/>
+<div type="section" n="8">
+  <p>Que si les hommes montrent tant de bassesse et
+  d'<foreign xml:lang="grc">ἀκολασία</foreign> dans les plaisirs dont je viens de parler, on
+  reconnaît encore bien davantage, quand il s'agit des besoins,
+  comme ils sont loin des <name type="animal" xml:lang="fr">bêtes</name> pour la modération.
+  Je parle ici des besoins du manger et du boire. Nous autres
+  nous n'y goûtons quelque plaisir qu'en y trouvant de l'utilité.
+  Mais vous, c'est la sensualité que vous poursuivez,
+  plutôt qu'une réfection naturelle; (et, du reste, de nombreuses
+  et longues maladies vous en punissent. Ces maladies
+  nées d'une même source, qui est la réplétion, vous
+  remplissent de flatuosités de toute espèce dont vous avez grand'peine à vous débarrasser).</p>
+  <milestone unit="section" n="8"/>
+  <p>En premier lieu, à chaque
+  espèce d'<name type="animal" xml:lang="fr">animaux</name> est attribué un aliment spécial :
+  aux uns l'<name type="plant" xml:lang="fr">herbe</name> des champs ; aux autres une certaine
+  <name type="plant" xml:lang="fr">racine</name>, un certain <name type="plant" xml:lang="fr">fruit</name>.
+  Ceux qui sont <name type="animal" xml:lang="fr">carnivores</name> ne se tournent
+  vers aucune autre espèce de nourriture, et n'enlèvent pas
+  aux plus faibles celle qui leur est réservée. Le <name type="animal" xml:lang="fr">lion</name> laisse
+  la <name type="animal" xml:lang="fr">biche</name>, le <name type="animal" xml:lang="fr">loup</name> laisse la
+  <name type="animal" xml:lang="fr">brebis</name> vivre de ce que naturellement
+  elles doivent manger. Mais l'<persName>homme</persName>, dans sa gourmandise,
+  porte ses désirs sur tout domaine : il essaye, il
+  goûte de tout. Comme s'il n'avait pas encore reconnu quel
+  aliment lui est propre et particulier, il est, de tous les êtres,
+  le seul <foreign xml:lang="la">omnivorus</foreign>. D'abord il se nourrit de <name type="animal" xml:lang="fr">chair</name>, sans qu'aucune
+  disette, aucune insuffisance l'y oblige, puisque toujours
+  chaque saison lui prodigue successivement des <name type="plant" xml:lang="fr">plantes</name>
+</p>
+</div>
+<div type="chapter" n="84">
+  <p>et des graines qu'il vendange, qu'il récolte, qu'il cueille, et
+  puisque jamais le nombre ne lui en fait défaut. Mais, par
+  sensualité et par dégoût des aliments nécessaires, il en va
+  chercher d'autres, qui ne lui conviennent point, qui sont
+  impurs, et qu'il se procure en égorgeant des <name type="animal" xml:lang="fr">animaux</name>.</p>
+  <p>L'<persName>homme</persName> n'est-il pas cent fois plus cruel que les <name type="animal" xml:lang="fr">bêtes</name> les
+  plus sauvages? Le sang, le carnage, la chair sont pour le
+  <name type="animal" xml:lang="fr">milan</name>, pour le <name type="animal" xml:lang="fr">loup</name> ou le <name type="animal" xml:lang="fr">dragon</name>, une nourriture appropriée
+  à leurs besoins ; pour l'<persName>homme</persName>, c'est un régal. Ensuite,
+  comme il consomme toute espèce de choses, il ne
+  s'abstient pas, ce que font les <name type="animal" xml:lang="fr">bêtes</name>, d'un grand nombre
+  d'aliments. Il ne se borne pas, comme elles, à déclarer
+  la guerre à une petite quantité d'<name type="animal" xml:lang="fr">animaux</name> pour se procurer
+  ce dont il a besoin. Il n'y a ni <name type="animal" xml:lang="fr">volatile</name>, ni <name type="animal" xml:lang="fr">poisson</name>, pour
+  ainsi dire, ni <name type="animal" xml:lang="fr">animal</name> de terre, qui échappe au tribut que
+  vous levez pour vos tables, appelées par vous « tables douces
+  et hospitalières ».</p>
+</div>
+<div type="section" n="85">
+   <p>Je veux bien que ce soient là seulement des accessoires
+      pour relever la fadeur du manger. Mais pourquoi
+      mettre la barbarie au service de votre sensualité ?
+      L'intelligence des <name type="animal" xml:lang="fr">bêtes</name> n'ouvre carrière à aucun des arts
+      qui sont inutiles et vains. Ceux qu'elles pratiquent sont le
+      produit de la nécessité, et non d'une importation étrangère
+      ou d'une science achetée à grands frais. Les <name type="animal" xml:lang="fr">animaux</name> ne
+      s'étudient pas péniblement à ajuster et à coller, d'une façon
+      assez peu solide, des propositions les unes au bout des autres.
+      C'est en eux-mêmes et suivant les indications de leur nature,
+      qu'ils obéissent aux raisonnements les plus réguliers. Nous
+      entendons dire qu'en <placeName>Égypte</placeName> tout le monde est médecin.
+      Mais il n'y a pas un seul <name type="animal" xml:lang="fr">animal</name> qui ne possède un fonds naturel
+      de science médicale, non seulement pour se guérir,
+      mais encore pour régler sa nourriture, pour mesurer l'emploi
+      de sa force, pour chasser, pour se garantir; enfin, chacun
+      d'eux a une teinture naturelle des arts libéraux dans
+      la proportion qui lui convient. De qui, nous autres <name type="animal" xml:lang="fr">pourceaux</name>, avons-nous appris à aller, quand nous sommes
+      malades, chercher des <name type="animal" xml:lang="fr">écrevisses</name> à la rivière ? Qui a
+      enseigné aux <name type="animal" xml:lang="fr">tortues</name> à prendre de l'<name type="plant" xml:lang="fr">origan</name> quand elles ont
+      mangé de la <name type="animal" xml:lang="fr">vipère</name> ? aux <name type="animal" xml:lang="fr">chèvres</name> de <placeName>Crète</placeName>, blessées par
+      le chasseur, à courir après le <name type="plant" xml:lang="fr">dictame</name>, qui aussitôt qu'elles
+      en ont goûté fait tomber le trait attaché à leur flanc?
+      Diras-tu, ce qui est vrai, que leur maître en cela est la
+   </p>
+</div>
+<div type="section" n="86">
+   <p>nature? Ce sera au principe le plus excellent et le plus
+   sage que tu feras alors remonter la prudence des <name type="animal" xml:lang="fr">bêtes</name>. Que si vous répugnez à leur appliquer ces mots de raison,
+   de prudence, c'est le cas d'en chercher un qui soit plus
+   beau et plus honorable, puisque par leurs actes les <name type="animal" xml:lang="fr">bêtes</name>
+   révèlent un pouvoir réellement plus précieux et plus admirable. Elles ne sont dépourvues ni d'instruction, ni d'éducation ;
+   elles tirent d'elles-mêmes toutes leurs lumières
+   et n'ont rien à demander à d'autres créatures. Ce n'est pas
+   faiblesse chez elles : c'est vigueur et perfection d'une nature
+   bien dotée. Elles envoient promener ces maîtres étrangers,
+   qui ne vendent leurs connaissances aux autres qu'à beaux
+   deniers comptants</p>
+   <p>Aussi toutes les sciences, toutes les études auxquelles
+   l'<persName>homme</persName> se livre pour son luxe ou son amusement, les
+   <name type="animal" xml:lang="fr">bêtes</name>, grâce à leur intelligence, à leur merveilleuse sagacité,
+   et en dépit de leur conformation physique, les <name type="animal" xml:lang="fr">bêtes</name>,
+   dis-je, s'en pénètrent le plus facilement du monde. Je ne
+   parle pas des petits <name type="animal" xml:lang="fr">quadrupèdes</name> qui savent suivre à la
+   piste, des jeunes <name type="animal" xml:lang="fr">poulains</name> qu'on dresse à marcher en cadence, des <name type="animal" xml:lang="fr">chiens</name> qui sautent à travers des cercles tournants.
+   On voit sur nos théâtres des <name type="animal" xml:lang="fr">chevaux</name> et des <name type="animal" xml:lang="fr">boeufs</name>
+   qui se couchent, qui dansent, qui s'arrêtent avec une
+   ponctualité surprenante. Ils exécutent, en faisant preuve
+   d'une merveilleuse exactitude, des mouvements assez peu
+   faciles pour l'<persName>homme</persName>, et l'on reconnaît en eux une docilité</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en priorisant l'encodage des entités zoologiques :
+
+
+<pb n="87"/>
+<div type="section" n="1">
+  <p>singulière à apprendre et à retenir par coeur une foule de choses qui ne sont pourtant d'aucune utilité. Voudrais-tu mettre en doute que nous soyons de bons écoliers? Apprends que nous sommes aussi des maîtres. Les <name type="animal" xml:lang="fr">perdrix</name>, quand elles prennent la fuite en avant de leurs petits, les habituent à se cacher derrière une motte de terre qu'ils dressent devant eux avec leurs pattes et à se renverser sur le dos.</p>
+  <p>Vois les jeunes <name type="animal" xml:lang="fr">cigognes</name>, sur les toits: en présence des personnages expérimentés de la bande et sous leur direction, elles essayent à prendre leur vol. Les <name type="animal" xml:lang="fr">rossignols</name> donnent à leurs petits des leçons de chant ; et ceux qui, ayant été pris de trop bonne heure, sont élevés entre les mains des hommes, gazouillent beaucoup moins bien : on dirait des élèves privés trop tôt de leur maître.</p>
+  <p>C'est depuis que je suis entré dans cette enveloppe-ci, que je m'étonne des raisonnements par lesquels les sophistes m'avaient fait croire que tous les animaux, l'homme excepté, sont dépourvus de sens et de raison.</p>
+</div>
+<milestone unit="section" n="10"/>
+<div type="section" n="2">
+  <p><persName>ULYSSE</persName>. Ainsi donc maintenant, <persName>Gryllus</persName>, tu as changé d'opinion, et tu déclares que la <name type="animal" xml:lang="fr">brebis</name>, que l'<name type="animal" xml:lang="fr">âne</name> sont des êtres raisonnables !</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia :
+
+
+<div type="section" n="88">
+   <p>GRYLLUS. Ce sont précisément ces derniers <name type="animal" xml:lang="fr">animaux</name>,
+mon très cher <persName>Ulysse</persName>, qui doivent nous faire conjecturer
+que la nature des <name type="animal" xml:lang="fr">bêtes</name> n'est rien moins qu'étrangère à la
+raison et à la sagacité. Car de même qu'un <name type="plant" xml:lang="fr">arbre</name> n'est ni
+plus ni moins animé qu'un autre, mais que tous sont frappés
+également d'insensibilité, attendu que nul d'entre eux
+ne possède une âme ; de même on ne trouverait pas qu'un
+<name type="animal" xml:lang="fr">animal</name> eût l'intelligence plus paresseuse et plus indocile
+qu'un autre, si tous les <name type="animal" xml:lang="fr">animaux</name> n'étaient pas doués de raison
+et de sagacité, et si les uns en avaient plus ou moins
+que les autres. Et fais attention que la stupidité et la torpeur
+de certains d'entre eux n'en fait que mieux éclater l'habileté
+et la finesse de certains autres: comme quand avec le <name type="animal" xml:lang="fr">renard</name>,
+avec le <name type="animal" xml:lang="fr">loup</name>, avec l'<name type="animal" xml:lang="fr">abeille</name>, tu compareras l'<name type="animal" xml:lang="fr">âne</name> et la
+<name type="animal" xml:lang="fr">brebis</name>; comme, encore, quand tu établiras un parallèle
+entre toi et <persName>Polyphème</persName>, entre ton aïeul <persName>Autolycus</persName> et <persName>Homère</persName> le Corinthien. Car je ne crois pas qu'il y ait autant
+de distance entre une <name type="animal" xml:lang="fr">bête</name> et une autre que la raison,
+l'intelligence et la mémoire en mettent entre deux hommes.</p>
+
+   <p>ULYSSE. Fais-y attention, <persName>Gryllus</persName> : tu vas dire quelque
+chose de bien étrange et de bien forcé, si tu laisses la raison
+à des êtres qui n'ont aucune notion de <name type="deity">Dieu</name>.</p>
+
+   <p>GRYLLUS. Comment, après cela, nier, ô <persName>Ulysse</persName>, qu'avec
+toute ta finesse et ton habileté, tu sois fils de <persName>Sisyphe</persName>?</p>
+</div>
     </body>
   </text>
 </TEI>

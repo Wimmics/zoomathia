@@ -16,13 +16,13 @@
         <respStmt>
           <resp>Encodage automatique TEI P5</resp>
           <name>zoomathia_encoder.py v3.0</name>
-          <date when="2026-06-30">2026-06-30</date>
+          <date when="2026-07-02">2026-07-02</date>
         </respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
         <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
-        <date when="2026-06-30">2026-06-30</date>
+        <date when="2026-07-02">2026-07-02</date>
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
         </availability>
@@ -61,6 +61,1462 @@
   </teiHeader>
   <text>
     <body>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, pour le premier morceau de l'*Économique* de Xénophon (1/99) :
+
+
+<div type="book" n="1">
+   <milestone unit="section" n="1"/>
+   <p>Xénophon : économique</p>
+   <pb n="1"/>
+   <p>RETOUR À L’ENTRÉE DU SITE</p>
+   <p>TABLE DES MATIÈRES</p>
+   <p>DE XENOPHON</p>
+   <p>XENOPHON</p>
+   <p><foreign xml:lang="grc">Οἰκονομικός</foreign></p>
+   <p>autre traduction (Talbot) (bilingue)</p>
+   <p>Oeuvres complètes de Xénophon.</p>
+   <p>Traductions de DE DACIER, AUGER, LARCHER, LÉVESQUE, DUMAS, GAIL, etc. revues et corrigées par Émile PESSONNEAUX. Paris, t. I, Bibliothèque-Charpentier, 1895</p>
+   <p>XÉNOPHON</p>
+   <p>ÉCONOMIQUE.</p>
+</div>
+<div type="chapter" n="1">
+   <p>J'entendis un jour <persName>Socrate</persName> parler en ces termes sur l'économie : «Dis-moi, <persName>Critobule</persName>, donne-t-on à l'économie le nom d'art, comme à la médecine, à la métallurgie et à l'architecture? — Je le crois, <persName>Socrate</persName>. — On peut déterminer l'objet de ces arts. Peut-on également déterminer celui de l'économie? — L'objet d'un bon économe, si je ne me trompe, est de bien gouverner sa maison. — Et la maison d'un autre, si on l'en chargeait, est-ce qu'il ne serait pas en état de la gouverner comme la sienne? Un architecte peut aussi bien travailler pour un autre que pour lui : il doit en être de même de l'économe. — C'est mon avis, <persName>Socrate</persName>. — Un homme qui, versé dans la science économique, se trouverait sans biens, pourrait donc administrer la maison d'un autre, et recevoir un salaire comme en reçoit l'architecte qu'on emploie? — Assurément; et même un salaire considérable, si, après s'être chargée de l'administration d'une maison, il l'améliorait par son talent à remplir ses devoirs. — <persName>Critobule</persName>, qu'est-ce que nous entendons par une maison? Est-ce la même chose qu'une habitation? ou ce mot doit-il s'entendre même des biens que l'on possède hors de son habitation? — Il me semble, <persName>Socrate</persName>, que tous nos biens font partie de la maison, quand même nous n'en aurions aucun dans la ville où nous résidons. — Mais n'y a-t-il pas des gens qui ont des ennemis? — Sans</p>
+</div>
+<div type="section" n="3">
+   <p>doute; il en est même qui en ont beaucoup. — Dirons-nous que ces ennemis
+   fassent partie de nos possessions? — Il serait plaisant, en vérité, qu'un
+   économe qui augmenterait le nombre des ennemis de sa maison vît encore sa
+   conduite récompensée. — Tu disais pourtant qu'on entend par maison tout ce
+   que l'on a. — Sur ma foi, je voulais dire tout ce que l'on possède de bon :
+   car ce qui est mauvais, pourrais-je l'appeler une possession? — Si je ne me
+   trompe, tu appelles bien ce qui est utile? — Justement; car ce qui est
+   nuisible est plutôt un mal qu'un bien. — Et si quelqu'un achète un <name type="animal" xml:lang="fr">cheval</name>
+   sans savoir le mener, et qu'il fasse une chute et se blesse, ce <name type="animal" xml:lang="fr">cheval</name> ne
+   sera donc plus un bien pour lui? — Non, si par le mot bien on entend ce qui
+   est utile. — Les terres mêmes ne sont donc plus des biens pour qui perd à
+   leur culture? — Assurément, elles n'en sont plus, dès qu'au lieu de nourrir
+   le cultivateur elles sont cause qu'il tombe dans l'indigence. — Tu en diras
+   donc autant des <name type="animal" xml:lang="fr">brebis</name>? Elles ne sont plus des biens pour le propriétaire
+   qui se ruine, parce qu'il ne sait pas en tirer parti. — Je le pense ainsi,
+   Socrate. — Critobule, tu entends donc par bien ce qui est utile, mais non ce
+   qui est nuisible ? — Précisément. — La même chose est donc un bien pour qui
+   sait en user, et n'en est pas un pour qui ne le sait pas. C'est ainsi qu'une</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences, en respectant toutes les règles et en priorisant les entités nommées Zoomathia :
+
+
+<div type="book" n="4">
+   <div type="chapter" n="99">
+      <milestone unit="section" n="4.99"/>
+      <p>flûte est un bien pour un homme qui en joue parfaitement, tandis qu'elle ne
+         sert pas plus à l'ignorant que de <name type="animal" xml:lang="fr">cailloux</name>, à moins qu'il ne la vende;
+         et, dans cette nouvelle supposition, nous disons : Une flûte est un bien
+         pour l'ignorant qui la vend; elle n'en est pas un pour celui qui la garde
+         lorsqu'il ne sait pas en jouer. — Cette réflexion, <persName>Socrate</persName>, est une juste
+         conséquence de nos principes, puisque nous venons de dire qu'il n'y a de
+         bien que ce qui est utile. La flûte ne peut être un bien pour l'ignorant qui
+         ne la vend pas, puisqu'elle ne lui sert de rien. Elle sera un bien, s'il la
+         vend. — Dis s'il sait la vendre : car, si elle tombe entre les mains d'un
+         autre ignorant, elle ne sera pas plus un bien qu'auparavant, du moins
+         d'après ton raisonnement. — C'est-à-dire, <persName>Socrate</persName>, que l'argent même n'est
+         pas un bien, si l'on ne sait s'en servir. — Toi-même, <persName>Critobule</persName>, tu me
+         parais avouer que le nom de bien convient seulement à ce qui peut être
+         utile. Si donc quelqu'un emploie son argent, par exemple, à l'acquisition
+         d'une maîtresse qui altère sa santé, son âme et sa raison, dira-t-on que
+         l'argent lui soit utile? Non certes, ou nous donnerons le nom de bien à la
+         <name type="plant" xml:lang="fr">jusquiame</name>, qui rend maniaques ceux qui en mangent. Que l'argent, si l'on ne
+         sait pas en user, soit donc rejeté si loin qu'il ne soit plus même au rang
+         des biens. «Et les amis, si on a le talent de mettre à profit l'amitié,
+      </p>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage de Xénophon (Économique, 5/99) :
+
+
+<div type="book" n="5">
+  <div type="section" n="99">
+    <p>comment les appellerons-nous? — Des biens, Socrate; et ne sont-ils pas
+      <name type="animal" xml:lang="fr">bœufs</name>, puisqu'ils nous servent plus
+      encore que ces utiles <name type="animal" xml:lang="fr">animaux</name>? —
+      Les ennemis, d'après ton propre raisonnement, sont donc aussi un bien pour qui
+      sait les rendre utiles? — Je le crois ainsi. — Il est donc d'un bon économe
+      d'en user si sagement avec ses ennemis, qu'il sache en tirer parti? — Oui
+      certes; et en effet, combien ne vois-tu pas de maisons de particuliers ou de rois
+      redevables de leur opulence à la guerre? — Voici qui est bien dit, selon moi.
+      Mais que penser, Socrate, lorsque nous voyons des gens qui, avec des talents et
+      des moyens pour agrandir leurs possessions à l'aide du travail, se condamnent
+      à l'oisiveté, et rendent par là leurs talents inutiles? N'en résulte-t-il pas,
+      du moins à l'égard de ces hommes-là, que ni les talents ni les possessions ne
+      sont des biens? — Est-ce des esclaves que tu veux me parler, Critobule? — Non,
+      en vérité; mais de citoyens reconnus pour nobles, qui, versés les uns dans
+      l'art militaire, les autres dans les arts de la paix, languissent pourtant dans
+      l'inaction, faute de maîtres, à ce que je crois. — Faute de maîtres! Comment n'en
+      auraient-ils pas, puisque, formant des vœux pour le bonheur, et voulant faire ce
+      qui le procure, ils se trouvent dans leurs tentatives arrêtés par des tyrans? —
+      Et quels sont donc ces tyrans qui</p>
+  </div>
+</div>
+<div type="book" n="6">
+  <div type="section" n="99">
+    <p>commandent en se tenant invisibles? — Invisibles, Critobule ! Partout on les
+    voit; même tu n'ignores pas combien ils sont <name type="animal" xml:lang="fr">méchants</name>, si tu regardes comme
+    ennemis cruels la mollesse, la lâcheté, la négligence. «Il est d'autres
+    maîtres non moins perfides, tels que les jeux de hasard et les sociétés
+    frivoles qui se cachent sous le masque de la volupté. Avec le temps, ceux
+    mêmes qui ont été trompés reconnaissant que ces jeux, que ces sociétés
+    inutiles ne sont que de véritables maux déguisés sous l'apparence des
+    plaisirs, puisqu'en asservissant ils empêchent de vaquer à d'utiles travaux.
+    Quelques-uns, à la vérité, loin d'obéir à ces despotes, se montrent au
+    contraire très actifs, très industrieux : néanmoins ils se ruinent, ils
+    perdent toute ressource; car ils ont aussi des maîtres qui certes commandent
+    bien durement. Ils sont esclaves, les uns de la gourmandise, les autres de
+    l'incontinence, ceux-ci de l'ivrognerie, ceux-là d'une folle ambition et de
+    la prodigalité ; et chacun de ces maîtres exerce sur ceux <foreign xml:lang="grc">qu'ils</foreign> subjuguent
+    un si cruel empire que, tant qu'ils les voient jeunes et en état de
+    travailler, ils les contraignent de leur apporter tout leur gain, de fournir
+    à tous leurs caprices. S'aperçoivent-ils que la vieillesse les rend
+    incapables de travailler, ils les abandonnent à une décrépitude
+    ignominieuse, et vont chercher d'autres victimes. Contre ces ennemis de</p>
+  </div>
+</div>
+<div type="chapter" n="7">
+   <p>notre <persName>Critobule</persName>, il faut soutenir des combats non moins terribles
+   que contre ceux qui tenteraient, les armes à la main, de nous réduire en
+   servitude. Un ennemi généreux, après avoir donné des fers, a plus d'une
+   fois, par sa modération, forcé les vaincus à devenir plus sages et à vivre
+   désormais plus heureux; au lieu que ces impérieux despotes, tant qu'ils
+   dominent, travaillent sans relâche à ruiner le corps, l'âme et la maison des
+   hommes.»</p>
+</div>
+Voici l'encodage TEI P5 du passage selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="2">
+  <milestone unit="section" n="8"/>
+  <p>«Je crois, dit alors <persName>Critobule</persName>,</p>
+  <p>te comprendre à merveille. Il me semble d'ailleurs qu'en interrogeant mon
+  <foreign xml:lang="grc">καρδία</foreign>, je le trouve libre de ces honteuses passions : en sorte que, si tu me
+  conseilles ce que je dois faire pour amélliorer ma maison, les tyrans dont tu
+  me parles ne m'empêcheront pas de mettre tes avis à profit. Fais-moi donc
+  part, en toute confiance, de tes salutaires leçons. »</p>
+  <p>«Penses-tu, <persName>Socrate</persName>, que nous soyons assez riches, et que nous n'ayons plus rien
+  à désirer ? — Si c'est de moi que tu parles, <persName>Critobule</persName>, je crois qu'il ne me faut plus rien
+  au delà de ce que je possède; je suis assez riche. Pour toi, je te trouve
+  bien pauvre; quelquefois même, en vérité, tu m'inspires de la pitié. — Par
+  tous les dieux, répondit <persName>Critobule</persName> riant aux éclats, quelle somme, crois-tu,
+  <persName>Socrate</persName>, que l'on trouvât de tous mes biens, si on venait à les vendre, et
+  quelle somme trouverait-on des tiens ? — À rencontrer un bon acquéreur, je
+  pense que, de toute ma maison et de tout ce qui m'appartient, je ferais
+  aisément cinq mines : toi, tu trouverais, je suis sûr, de tes biens, cent
+  fois davantage. — Quoi ! tu sais cela, et t'imagines n'avoir aucun besoin !
+  et ma pauvreté te fait pitié ! — Oui, parce qu'en effet ce que j'ai me
+  procure le nécessaire, tandis que toi, avec le train brillant que tu mènes
+  et que l'on attend de toi, tu ne pourrais pas subsister même ayant une</p>
+</div>
+<div type="book" n="9">
+  <milestone unit="section" n="9"/>
+  <p>fortune triple de ce que tu possèdes à présent. — Et pourquoi, <persName>Socrate</persName> ? —</p>
+  <p>D'abord, <persName>Critobule</persName>, je te vois obligé à de grands et nombreux sacrifices,</p>
+  <p>sous peine de t'attirer le courroux des <name type="deity">dieux</name> et la défaveur des hommes.</p>
+  <p>Ensuite ton rang exige que tu accueilles avec magnificence quantité</p>
+  <p>d'étrangers : que tu donnes à dîner à tes concitoyens, et leur rendes toute</p>
+  <p>sorte de bons offices; sinon, tu restes sans partisans. Ce n'est pas tout :</p>
+  <p>je sais qu'à présent même le gouvernement te charge d'énormes impositions;</p>
+  <p>ce sont des <name type="animal" xml:lang="fr">chevaux</name> à entretenir, des fêtes publiques à payer, des combats</p>
+  <p>de gymnase à présider, des clientèles à soutenir. S'il survient une guerre,</p>
+  <p>aussitôt nommé triérarque, on te chargera de dépenses et de contributions si</p>
+  <p>fortes, qu'il ne te sera pas facile d'y faire honneur ; et si tu ne fournis</p>
+  <p>pas noblement à tout, ils te puniront avec la même sévérité que s'ils te</p>
+  <p>surprenaient volant leurs biens. Par dessus tout cela, je vois que tu te</p>
+  <p>crois riche ; tu négliges les moyens de faire fortune, tu t'occupes de</p>
+  <p>bagatelles, comme si tu n'avais rien de mieux à penser : voilà ce qui excite</p>
+  <p>ma pitié. Je crains qu'il ne t'arrive des malheurs irrémédiables, que tu ne</p>
+  <p>tombes dans une affreuse indigence. Quant à moi, s'il me manquait quelque</p>
+  <p>chose, tu sais toi-même qu'il y a telles personnes dont les modiques</p>
+  <p>bienfaits verseraient l'abondance dans mon humble maison : tes amis, au</p>
+</div>
+<div type="chapter" n="10">
+   <p>contraire, qui ont plus de moyens pour soutenir leur état que tu n'en es pour soutenir le tien, ne songent qu'à tirer parti de toi. — À cela, <persName>Socrate</persName>, je n'ai point à répliquer : mais il en est temps, viens à mon secours; que je ne devienne pas réellement un objet de pitié. — Est-ce que tu ne t'apercevrais pas de ton inconséquence ? — Quoi ! <persName>Critobule</persName>, tout à l'heure, lorsque je te disais que je suis riche, tu t'es moqué de moi, comme si je ne savais pas même ce que c'est que richesse ; tu as tenu bon jusqu'à ce que tu m'aies convaincu, forcé d'avouer que mes biens n'égalaient pas la centième partie des tiens ; et tu veux, à présent, que je te protège, et que mes soins t'empêchent de tomber dans une véritable pauvreté. — C'est que je te vois, <persName>Socrate</persName>, en possession d'un moyen sûr de faire fortune. Or, celui qui de peu sait tirer parti, avec de grands fonds procurerait une grande fortune. — Oublies-tu donc encore que tout à l'heure tu disais (et il ne m'était pas même permis d'ouvrir la bouche), tu disais que ni les <name type="animal" xml:lang="fr">chevaux</name>, ni les terres, ni les <name type="animal" xml:lang="fr">troupeaux</name>, ni l'argent, que rien enfin n'était un bien pour qui ne savait point s'en servir? On peut bien tirer des revenus de pareilles possessions; mais moi, qui de ma vie n'en ai eu en propre, comment veux-tu que je sache les faire valoir? — Cependant, <persName>Socrate</persName>, nous avons été d'avis que, quand un homme n'aurait en propre aucun bien, la science de</p>
+</div>
+<div type="book" n="11">
+  <div type="chapter" n="99">
+    <p>l' économie n'en existerait pas moins. Qui t'empêche donc d'avoir ce talent ?</p>
+    <p>— Eh mais, ce qui peut empêcher un homme de savoir jouer de la <foreign xml:lang="fr">flûte</foreign>, quand il n'a jamais eu de <foreign xml:lang="fr">flûte</foreign> à lui, et que personne ne lui en a prêté pour en prendre des leçons : voilà où j'en suis par rapport à l'<foreign xml:lang="fr">économie</foreign>.</p>
+    <p>L'instrument nécessaire pour s'y exercer, ce sont les biens ; or, jamais je n'en ai eu, et jamais autre que toi n'a eu l'idée de m'en confier. Ceux qui apprennent pour la première fois à jouer de la <foreign xml:lang="fr">cithare</foreign> gâteraient même les <foreign xml:lang="fr">lyres</foreign> ; de même moi, si j'essayais sur tes biens la pratique de l'<foreign xml:lang="fr">économie</foreign>, peut-être ruinerais-je ta maison.</p>
+    <p>— Tu as grande envie de m'échapper, <persName>Socrate</persName>, et bien de la répugnance à porter avec moi la charge d'une pénible administration.</p>
+    <p>— Non, par <name type="deity">Jupiter</name> ! non : c'est au contraire avec grand plaisir que je te ferai part de ce que je sais : mais si tu venais chez moi me demander du feu, et que, n'en ayant pas, je t'indiquasse une autre maison où tu pusses t'en procurer, tu n'aurais pas, je crois, sujet de te plaindre de moi.</p>
+    <p>De même si tu venais me demander de l'eau, et que, n'en ayant pas, je te conduisisse chez quelqu'un qui en eût, je suis sûr que tu ne te plaindrais pas de moi.</p>
+    <p>Si, me priant de t'enseigner la musique, je t'adressais à des maîtres plus habiles que moi, et qui encore te sauraient gré de prendre leurs leçons, sur cela quel reproche aurais-tu à me faire ? —</p>
+  </div>
+</div>
+<div type="book" n="12">
+  <milestone unit="section" n="12.1"/>
+  <p>— Aucun, du moins qui fût fondé. — Eh bien ! je vais t'indiquer des gens plus habiles que moi dans la science dont tu me supplies de te donner des leçons.</p>
+  <p>J'avoue que j'ai soigneusement cherché quels étaient les meilleurs maîtres d'<placeName>Athènes</placeName> en chaque genre : car j'avais remarqué un jour que la même profession qui réduisait les uns à l'indigence, en conduisait d'autres à la fortune.</p>
+  <p>Cette singularité, qui me frappa, me parut mériter d'être approfondie. Je ne trouvai, en y réfléchissant, rien que de fort naturel.</p>
+  <p>Je voyais en effet que ceux qui exerçaient sans principes ces professions ne manquaient pas de se ruiner, tandis que ceux dont les opérations étaient sagement combinées faisaient sans peine une fortune rapide.</p>
+  <p>À l'école de tels maîtres, et avec l'aide du ciel, je crois que tu pourrais être un excellent administrateur de tes biens.»</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage demandé :
+
+
+<div type="chapter" n="3">
+   <p>En entendant ces mots, <persName>Critobule</persName> reprit : Je ne te laisserai point aller, <persName>Socrate</persName>, que tu ne me donnes les leçons que tu m'as annoncées en présence des amis que voici. — Eh bien! <persName>Critobule</persName>, si d'abord je te montre des gens qui construisent à grands frais des maisons incommodes, tandis que d'autres, avec beaucoup moins de frais, bâtissent des maisons où ils trouvent tout ce qu'il faut, est-ce que cela seul ne te paraîtra pas une leçon d'économie — Assurément. — Si je te fais voir, ce qui en est une suite, des gens qui possèdent une quantité prodigieuse d'ustensiles de toute espèce, sans pouvoir s'en servir au besoin, sans savoir s'ils sont en bon ou mauvais état, et qui à cause de cela se tourmentent sans cesse, et sans cesse tourmentent leurs domestiques; si je t'en fais remarquer d'autres qui, n'ayant pas plus, et ayant moins d'ustensiles que les premiers, trouvent tout sous la main quand ils veulent s'en servir? — La raison, <persName>Socrate</persName>, n'en est-elle pas que chez les uns tout est pêle-mêle, tandis que chez les autres chaque chose est à sa place ? — A une place convenable, oui, mais non pas à une place prise au hasard. — Voila, si je ne me trompe, encore une réflexion qui a rapport à l'économie. — Si je te montre ici des esclaves presque tous enchaînés, et qui bien souvent s'échappent; là, des serviteurs qui,
+</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage de Xénophon (Économique, 14/99) :
+
+
+<div type="book" n="14">
+  <div type="chapter" n="99">
+    <p>songent qu'à travailler, et se plaisent à rester auprès de leurs maîtres, ne
+    paraîtrai-je pas t'avoir présenté un fait très curieux d'économie ? -- Très
+    remarquable, assurément. — Si je te cite des agriculteurs qui suivent les
+    mêmes procédés, et dont les uns cependant accusent l'agriculture de leur
+    indigence, tandis que cet art procure à d'autres l'abondance et toutes les
+    commodités de la vie ? — Ma foi, je croirais peut-être qu'outre les dépenses
+    indispensables, les premiers en font de ruineuses pour leur maison. -- Il
+    est possible, <persName>Critobule</persName>, qu'il se trouve des gens tels que tu le dis ;
+    ce n'est pas d'eux que je parle, mais de ceux qui, se disant agriculteurs, ne
+    peuvent fournir même aux dépenses nécessaires. — Et quelle serait la cause
+    de cette détresse ? — Je te conduirai chez eux ; tu verras de tes propres
+    yeux et jugeras. — Oui, si je puis. — Viens donc éprouver si tu es capable
+    de ce discernement. Tu sais que, pour aller à la comédie, tu te lèves de
+    très grand matin, que tu fais une très longue course, que souvent tu me
+    pries avec instance de t'accompagner, tandis que, pour ton instruction sur
+    l'économie, tu ne m'as jamais rien proposé de semblable. — Je te parais donc
+    bien ridicule ? — C'est plutôt à tes propres yeux que tu dois paraître tel.
+    «Si je te fais voir encore des gens qui, pour avoir élevé des <name type="animal" xml:lang="fr">chevaux</name>,
+    en</p>
+  </div>
+</div>
+<div type="book" n="15">
+  <div type="section" n="99">
+    <p>sont venus au point de manquer du nécessaire, tandis que d'autres vivent
+    dans une grande aisance, se félicitant des gains que leur procure la même
+    entreprise ? — J'en vois tous les jours, et même j'en connais de l'une et de
+    l'autre espèce, sans être pour cela du nombre de ceux qui s'enrichissent. —
+    Ils sont pour toi dans le cas des tragiques et des comiques que tu regardes,
+    non pas, je pense, pour devenir poète, mais uniquement pour le plaisir de
+    voir et d'entendre : et en ce point tu pourrais bien avoir raison, car tu ne
+    veux point devenir poète. Mais, étant obligé d'élever des <name type="animal" xml:lang="fr">chevaux</name>, ne
+    vois-tu pas que tu es fou de négliger les connaissances de ce genre, surtout
+    lorsqu'elles te sont aussi utiles pour ton usage particulier que lucratives
+    pour le commerce ? — Tu veux donc, <persName>Socrate</persName>, que j'élève des <name type="animal" xml:lang="fr">poulains</name> ? — Pas
+    plus, sur ma foi, que je ne veux que tu élèves de petits enfants pour en
+    faire ensuite tes laboureurs. Mais je crois qu'il est pour les hommes, pour
+    les <name type="animal" xml:lang="fr">chevaux</name>, un certain âge où déjà l'on peut se servir d'eux et où ils nous
+    deviennent de plus en plus utiles. "Je puis encore te citer des maris qui se
+    comportent si sagement à l'égard de leurs femmes, qu'ils trouvent en elles
+    des ressources pour la prospérité de leur maison, tandis que d'autres les
+    élèvent de manière à accélérer leur ruine. — Quand cela arrive, <persName>Socrate</persName>, à
+    </p>
+  </div>
+</div>
+<div type="chapter" n="16">
+   <milestone unit="section" n="16.1"/>
+   <p>qui faut-il s'en prendre de l'homme ou de la femme ? — Lorsqu'un <name type="animal" xml:lang="fr">troupeau</name> est ordinairement en mauvais état, c'est le berger que l'on accuse. Un <name type="animal" xml:lang="fr">cheval</name> est-il très-méchant, on s'en prend au cavalier. Si une femme bien dirigée par son mari, se gouverne mal, elle seule est coupable; mais que le mari la laisse dans l'ignorance de l'honnête et du beau, et qu'il l'emploie quoique manquant d'instruction, n'est-ce pas le mari qu'on doit justement blâmer ?</p>
+   <p><persName>Critobule</persName>, tu ne vois ici que de bons amis ; parle-nous bien franchement : est-il quelqu'un qui entre plus dans tes affaires que ta femme? — Personne. — Cependant, existe-t-il des gens avec qui tu t'entretiennes moins qu'avec ta femme ? — Il y en a bien peu. — Quand tu l'as épousée, n'était-ce pas un enfant, ou du moins une femme qui n'avait rien vu, rien entendu ? — C'est très vrai. — Il serait donc bien plus étonnant qu'elle sût ce qu'elle doit dire ou faire qu'il ne le serait qu'elle se gouvernât mal.</p>
+   <p>— Ces maris que tu dis qui possèdent de bonnes femmes, est-ce qu'ils les ont élevées eux-mêmes ? — C'est une question qui mérite examen ; mais <persName>Aspasie</persName>, à qui je te présenterai, t'instruira de cela plus pertinemment que moi. Pour moi, je pense qu'une bonne compagne est tout à fait de moitié avec le mari pour l'avantage commun. C'est l'homme le plus souvent qui, par son travail, fait venir le bien à la maison ; et la femme</p>
+</div>
+<p>qui, presque toujours, se charge de l'<foreign xml:lang="grc">employer</foreign> aux <name type="animal" xml:lang="fr">dépenses</name> nécessaires. </p>
+<p>L'<foreign xml:lang="grc">emploi</foreign> est-il bien fait, la maison prospère; l'est-il mal, elle tombe en décadence.»</p>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage du *Oikonomikos* de Xénophon (Chapitre IV, section 18/99) :
+
+
+<div type="chapter" n="4">
+   <p>«Si tu le juges utile, continua Socrate, je puis du moins, à ce que je crois, te montrer des artistes distingués. — Dans tous les arts ! à quoi bon ? car il n'est ni facile d'en trouver qui excellent dans tous les arts, ni possible d'être habile soi-même dans tous. N'est-ce pas bien assez des beaux-arts, dont la culture ne peut que m'honorer ? Fais-moi-les connaître aussi bien que ceux qui les exercent; et même, autant qu'il est en toi, aide-moi de tes lumières en cette partie. — Je t'approuve, Critobule : car les arts appelés <foreign xml:lang="grc">μηχανικαὶ</foreign> sont décriés, et c'est avec raison que les gouvernements en font peu de cas. Condamnés pour l'ordinaire à rester assis, à vivre dans les ténèbres, quelquefois même auprès d'un feu continuel, ceux qui les exercent et ceux qui les apprennent ruinent tout à fait leur santé, et, le corps une fois énervé, l'âme est-elle susceptible d'une grande énergie ? Surtout on n'a plus le temps de rien faire ni pour ses amis ni pour l'<name type="deity">État</name>, en sorte que de tels hommes sont jugés mauvais amis et mauvais défenseurs de leur pays. Aussi, dans quelques républiques, principalement dans celles qui se signalent par la gloire des armes, il est défendu à tout citoyen d'exercer une profession <foreign xml:lang="grc">μηχανική</foreign>. — Quant à moi, Socrate, quel art me conseilles-tu de cultiver? — Ne rougissons point d'imiter le roi de Perse : persuadé que l'<name type="animal" xml:lang="fr">agriculture</name> et l'art
+</p>
+</div>
+<p>militaire sont les plus beaux et les plus <foreign xml:lang="grc">καλοὶ</foreign> et les plus nécessaires des arts, ce prince
+les cultive avec une ardeur égale. — Quoi ! Socrate, tu t'imagines que le
+roi de Perse donne quelque soin à l'agriculture? — Examinons sa conduite,
+nous verrons probablement s'il y donne quelque soin. «Nous trouvons qu'il
+s'occupe particulièrement de l'art militaire parce que, de quelque nation
+qu'il lève des tributs, il prescrit à chaque gouverneur le nombre de
+cavaliers, d'archers, de frondeurs, de <name type="animal" xml:lang="fr">gerrophores</name> qu'il doit nourrir, soit
+pour contenir ses propres sujets, soit pour défendre ses États contre toute
+invasion. Il leur prescrit encore d'entretenir une garnison dans les
+citadelles. Le gouverneur à qui l'ordre en est donné fournit la citadelle de
+subsistances. Le roi, de son côté, se fait tous les ans présenter un état
+tant des troupes mercenaires que de ceux à qui il est enjoint de prendre les
+armes; et il les fait venir tous dans le lieu indiqué pour le rassemblement
+: les garnisons en sont seules exceptées. Le roi fait en personne la revue
+des troupes voisines de sa résidence; il confie l'inspection de celles qui
+en sont éloignées à des officiers dévoués. Les commandants de places, les
+chiliarques, les satrapes qui ont des troupes portées au complet, et qui
+présentent des escadrons bien montés, des bataillons bien armés, sont
+comblés d'honneurs et de biens. Ceux des gouverneurs de provinces qui ne</p>
+<div type="book" n="20">
+  <div type="section" n="99">
+    <p>surveillent pas les commandants de garnisons, ou qui se rendent coupables de
+      malversations, sont punis sévèrement, cassés et remplacés. «D'après une
+      telle conduite, nous jugeons, sans crainte de nous tromper, qu'il s'occupe
+      de l'art militaire. Mais il fait plus encore : quelque pays de sa domination
+      qu'il parcoure, il y porte un œil curieux; où il ne peut aller en personne,
+      il envoie des commissaires chargés de lui faire un rapport fidèle.
+      Remarque-t-il une province habitée, bien cultivée, enrichie de toutes les
+      <name type="plant" xml:lang="fr">plantations</name> et productions dont le sol est susceptible :
+      il augmente le département du gouverneur, il le comble de présents, il lui accorde une
+      place d'honneur à sa cour : si au contraire il voit un pays inculte et peu
+      peuplé, soit à cause de ses vexations, soit enfin de sa négligence, il punit
+      sévèrement le gouverneur, le destitue ensuite et le remplace. Une telle
+      conduite ne prouve-t-elle pas qu'il veille avec le même zèle à ce que chaque
+      pays soit cultivé par ses habitants, à ce qu'il se défende par le secours de
+      ses garnisons? «Aussi est-ce pour remplir ce double objet qu'il nomme des
+      officiers. Le même ne réunit pas les deux fonctions à la fois: mais l'un a
+      dans son district les propriétaires et les ouvriers sur lesquels il prélève
+      des tributs; le commandement de la garnison est confié à l'autre. Lorsque
+      l'officier militaire ne veille pas, autant qu'il le doit, à la sûreté du</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du passage selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="21">
+  <p>pays, alors l'<persName>officier civil</persName>, qui a aussi l'inspection des travaux de la
+  campagne, se plaint du <persName>commandant de la forteresse</persName>, dont la négligence
+  empêche les habitants de travailler, vu qu'ils ne sont point gardés. Si, au
+  contraire, malgré la protection donnée aux travaux champêtres, le <persName>gouverneur</persName>
+  laisse le pays inculte et peu peuplé, alors le <persName>commandant de la citadelle</persName>
+  peut aussi l'accuser à son tour. En effet, que les habitants cultivent mal
+  le pays, ils se trouvent hors d'état de fournir des vivres à la <name type="animal" xml:lang="fr">garnison</name> et
+  de payer les tributs. Dans les provinces qui ont un <persName>satrape</persName>, c'est lui qui a
+  inspection sur les deux officiers. — Si telle est, <persName>Socrate</persName>, la conduite du
+  <name type="deity">roi</name>, il me semble qu'il s'occupe autant de l'agriculture que de l'art
+  militaire. — Ce n'est pas tout, <persName>Critobule</persName> : quelque part qu'il séjourne,
+  dans quelque pays qu'il aille, il veille à ce qu'il y ait de ces jardins
+  appelés <foreign xml:lang="fr">paradis</foreign>, qui sont remplis des plus belles et des meilleures
+  productions de la terre ; et il y reste aussi longtemps que le permet la
+  saison. — D'après ce que tu me dis, <persName>Socrate</persName>, je conçois que partout où il
+  séjourne, c'est par lui-même qu'il doit veiller à ce que les <foreign xml:lang="fr">paradis</foreign> soient
+  bien entretenus, plantés de beaux arbres, et enrichis de toutes les autres
+  productions. — <persName>Critobule</persName>, on dit encore que, lorsque le <name type="deity">roi</name> distribue ses
+  largesses, les premiers qu'il fait venir ce sont les plus vaillants des</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage fourni :
+
+
+<div type="book" n="22">
+  <div type="section" n="99">
+    <milestone unit="section" n="22/99"/>
+    <p>guerriers, parce qu'il est inutile de cultiver de grandes terres, s'il n'y a
+    pas de soldats pour les protéger. Viennent ensuite les cultivateurs les plus
+    habiles à fertiliser leur pays. En effet, dit le roi, l'homme même le plus
+    courageux ne peut vivre sans laboureur qui le nourrisse. "Aussi un prince
+    justement célèbre, <persName>Cyrus</persName>, disait-il un jour à ceux qu'il avait appelés pour
+    les récompenser : «On pourrait sans injustice déférer les deux prix à moi
+    seul: car je prétends être le plus habile soit à cultiver mes terres, soit à
+    défendre mes moissons.» — <persName>Cyrus</persName>, j'en conclus, mon cher <persName>Socrate</persName>, ne se
+    glorifiait pas moins, s'il a dit cela, de son intelligence en agriculture
+    que de ses talents dans l'art militaire. Certes, s'il eût vécu, <persName>Cyrus</persName> eût
+    été bien digne de commander. La preuve en est que, quand il marcha contre
+    son frère pour lui disputer la couronne, il n'y eut pas, dit-on, un seul
+    soldat qui passât du camp de <persName>Cyrus</persName> dans celui d'<persName>Artaxerxe</persName>, tandis que les
+    soldats d'<persName>Artaxerxe</persName> venaient par milliers se ranger sous les drapeaux de
+    <persName>Cyrus</persName>. Rien, selon moi, ne montre mieux le mérite d'un général que la
+    confiance d'une armée qui le suit, résolue à braver avec lui les plus
+    pressants dangers. Or, tant que ce grand prince eut les armes à la main, ses
+    officiers combattirent à ses côtés. À peine fut-il mort, qu'ils moururent en
+    combattant tous autour de son corps, à l'exception d'<persName>Ariée</persName>, qui se trouvait</p>
+  </div>
+</div>
+<div type="book" n="23">
+  <milestone unit="section" n="23.99"/>
+  <p>à l'aile gauche de son armée. «C'est ce même <persName>Cyrus</persName> à qui <persName>Lysandre</persName> vint un
+    jour apporter des présents de la part des alliés. Ce prince (je vais
+    raconter le fait tel que <persName>Lysandre</persName> le raconta lui-même à l'un de ses hôtes de
+    <placeName>Mégare</placeName>), ce prince, entre autres démonstrations d'amitié, lui avait fait
+    voir lui-même ses jardins de <placeName>Sardes</placeName>. Frappé de la beauté des arbres, de leur
+    plantation symétrique, de l'alignement des allées, de la régularité du
+    quinconce, de la suavité de ces parfums qui semblaient accompagner leurs
+    pas; charmés de ce spectacle, le général lacédémonien lui dit : «<persName>Cyrus</persName>, la
+    beauté de ce lieu m'enchante; tout ici me ravit : mais ce que j'admire bien
+    plus, c'est le talent de l'artiste qui a dessiné le plan et qui en a
+    surveillé l'exécution. — Eh bien, lui répliqua <persName>Cyrus</persName>, flatté de ce qu'il
+    entendait, eh bien, <persName>Lysandre</persName>, c'est moi qui ai dessiné le plan et qui l'ai
+    fait exécuter; je puis même dire qu'il y a des arbres que j'ai plantés de ma
+    propre main.» <persName>Lysandre</persName>, à ces mots, jetant les yeux sur lui, frappé de la
+    beauté de ses vêtements, de l'odeur de ses parfums, de l'éclat de ses
+    colliers, de la richesse de ses bracelets, de la magnificence de toute sa
+    parure : «Quoi ! c'est toi, <persName>Cyrus</persName>, qui, de tes propres mains, as planté de
+    ces arbres? — Cela t'étonne, <persName>Lysandre</persName>? Je te jure par le dieu <name type="deity">Mithra</name> que, quand je me porte bien, je ne prends pas de nourriture avant que des</p>
+</div>
+<p>évolutions militaires, des travaux rustiques, quelque fort exercice, ne m'aient couvert de sueur. — Ah! <persName>Cyrus</persName>, répondit <persName>Lysandre</persName> en lui serrant la main, pourrais-je ne pas te donner le nom d'heureux? Tu en es digne, puisque tu es vertueux.»</p>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Xénophon (Oeconomicus, chapitre V, section 25/99) :
+
+
+<div type="chapter" n="5">
+   <milestone unit="section" n="25"/>
+   <p>«Ce que je te dis là, <persName>Critobule</persName>, c'est pour t'apprendre que même les plus heureux des mortels ne peuvent se passer de l'agriculture. En effet, les soins qu'on lui donne, en procurant des plaisirs purs, augmentent l'aisance, fortifient le corps, et mettent en état de remplir tous les devoirs de l'homme libre. D'abord, non contente de donner le nécessaire à celui qui la cultive, la terre fournit encore à ses plaisirs. Ces <name type="plant" xml:lang="fr">fleurs</name>, qui ornent les autels et les statues des <name type="deity">dieux</name>, et qui font quelquefois la parure des hommes, c'est elle qui nous les offre, en flattant notre odorat, en charmant nos yeux. Comme l'art d'élever les troupeaux se lie étroitement avec l'agriculture, c'est encore elle qui produit les <name type="plant" xml:lang="fr">végétaux</name> et nourrit les <name type="animal" xml:lang="fr">animaux</name>; de sorte qu'elle nous fournit des <name type="animal" xml:lang="fr">victimes</name> pour fléchir les <name type="deity">dieux</name>, et des mets pour nos tables.</p>
+   <p>D'ailleurs, si elle nous offre tant de biens, elle ne permet pas qu'ils soient le prix de l'indolence ; elle veut que l'on s'habitue à supporter les ardeurs de l'été, les glaces de l'hiver. De plus, elle donne de la vigueur à ceux qui la cultivent de leurs propres mains; quant à ceux qui en surveillent les travaux, elle en fait des hommes, en les éveillant de grand matin, en les obligeant à de grandes marches. En effet, à la campagne comme à la ville, les opérations les plus essentielles se font à des temps</p>
+</div>
+<div type="chapter" n="26">
+   <p>marqués. Si l'on veut avoir un <name type="animal" xml:lang="fr">cheval</name> au service de la république, où
+   peut-on le nourrir mieux qu'à la campagne ? Veut-on servir dans
+   l'infanterie, c'est à la campagne que l'on se fait un corps robuste. La
+   terre ne favorise pas moins les plaisirs du chasseur, puisqu'elle offre une
+   nourriture facile aux <name type="animal" xml:lang="fr">chiens</name> et au <name type="animal" xml:lang="fr">gibier</name>. Les <name type="animal" xml:lang="fr">chevaux</name> eux-mêmes et les
+   <name type="animal" xml:lang="fr">chiens</name> tirent leur nourriture de la terre ; mais ceux-ci, à leur tour, se
+   rendent utiles à leur bienfaitrice : le <name type="animal" xml:lang="fr">cheval</name>, en portant son maître aux
+   champs de grand matin pour inspecter les travaux et en lui donnant la
+   faculté d'en revenir tard ; le <name type="animal" xml:lang="fr">chien</name>, en défendant contre les animaux
+   féroces et <name type="plant" xml:lang="fr">moissons</name> et <name type="animal" xml:lang="fr">troupeaux</name>, et en procurant la tranquillité même aux
+   lieux les plus solitaires. «Comme elle semble offrir ses productions au
+   premier venu, et qu'elle se laisse dépouiller par le plus fort, elle
+   encourage aussi les cultivateurs à la défendre les armes à la main. Est-il
+   un art qui forme mieux à courir, à sauter, à lancer le javelot, qui
+   enrichisse plus ceux qui en font profession; qui offre à l'amateur des
+   charmes plus touchants? Vous paraissez; aussitôt, vous tendant les bras,
+   elle vous offre ses trésors, vous invite à choisir. Peut-on recevoir ses
+   hôtes avec plus de munificence qu'elle? En hiver, où trouve-t-on plus
+   aisément qu'à la campagne un bon feu, soit pour se défendre du froid, soit</p>
+</div>
+<div type="book" n="27">
+  <div type="section" n="99">
+    <p>pour chauffer les étuves ? En été, où chercher ailleurs qu'à la campagne une
+      onde fraîche, un doux zéphyr, un ombrage hospitalier? Quel art offre aux
+      dieux des prémices plus dignes d'eux, célèbre en leur honneur de plus riches
+      fêtes? Est-il, pour des domestiques, un séjour préférable à celui de la
+      campagne? est-il un séjour plus agréable pour la femme, plus désiré des
+      enfants, plus riant pour des amis? Quant à moi, je serais surpris qu'un
+      homme libre eût quelque possession plus attrayante, qu'il trouvât des
+      occupations ou plus douces ou plus utiles au bonheur de la vie. «Ce n'est
+      pas tout : la terre enseigne d'elle-même la justice aux âmes attentives; car
+      elle comble de bienfaits ceux qui la comblent de soins. »Que l'habitant des
+      campagnes soit arrêté dans ses travaux par de nombreuses armées, aguerri par
+      une éducation mâle, doué d'une âme forte et d'un corps robuste, il peut,
+      avec l'aide de la <name type="deity">Divinité</name>, fondre sur les terres d'un ennemi destructeur,
+      et lui prendre de quoi fournir à sa nourriture. Souvent même, à la guerre,
+      il est plus aisé de se nourrir à la pointe de l'épée qu'avec les instruments
+      agraires. »L'agriculture nous apprend encore à nous aider réciproquement;
+      car il faut des hommes pour marcher contre l'ennemi : c'est avec des hommes
+      que la terre se cultive. Un bon cultivateur inspirera donc à ses ouvriers de</p>
+  </div>
+</div>
+<div type="chapter" n="28">
+   <p>l'ardeur et de la docilité, semblable au général qui, marchant à l'ennemi,
+   récompense ceux de ses soldats qui montrent de la bravoure, et punit ceux
+   qui troublent l'ordre et la discipline. Aussi souvent que le général, il
+   encouragera ses travailleurs. En effet, l'attrait de l'espérance n'est pas
+   moins nécessaire aux esclaves qu'aux hommes libres; il l'est même plus
+   encore aux premiers, afin qu'ils veuillent rester auprès de leurs maîtres.</p>
+   <quote>
+      <p>«On a dit une grande vérité, que l'agriculture est la mère et la nourrice
+      des autres arts. Est-elle en vigueur, tout fleurit avec elle : mais partout
+      où la terre est condamnée à la stérilité, les arts meurent, je dirai presque
+      et sur terre et sur mer.</p>
+   </quote>
+   <p>— Ce que tu dis, <persName>Socrate</persName>, me paraît admirable; mais
+   songes-tu à tant d'accidents qu'il est impossible à l'homme de prévoir? La
+   grêle, le givre, la sécheresse, les grandes pluies, la rouille, d'autres
+   ennemis, ne viennent-ils pas souvent nous ravir le fruit de nos plus belles
+   combinaisons, de nos plus nobles travaux? Combien de fois une cruelle
+   épizootie n'a-t-elle pas désolé les troupeaux les mieux soignés !</p>
+   <p>— La puissance des <name type="deity">dieux</name> ne s'étend pas moins,
+   <persName>Critobule</persName>, sur l'agriculture que sur l'art militaire.
+   Je te croyais instruit de cette vérité. Ne vois-tu pas qu'avant de commencer
+   une action, l'homme se les rend propices, qu'il les consulte sur ce qu'il doit
+   faire ou ne pas faire, en interrogeant les</p>
+</div>
+<p>entrailles des victimes ou le chant des <name type="animal" xml:lang="fr">oiseaux</name>? Crois-tu que, pour
+l'agriculture, tu aies moins besoin de leur protection? Sache bien que le
+sage les implore pour en obtenir soit une abondante récolte de fruits secs
+et de fruits à suc, soit la conservation de ses <name type="animal" xml:lang="fr">bœufs</name>, de ses <name type="animal" xml:lang="fr">chevaux</name>, de
+ses <name type="animal" xml:lang="fr">brebis</name>, en un mot, de tout ce qu'il possède.»</p>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, pour le chapitre VI du *Oeconomicus* de Xénophon, en respectant toutes les consignes (pas de structure TEI complète, balises fermées, encodage mot à mot, priorité aux entités Zoomathia) :
+
+
+<div type="chapter" n="6">
+   <p><quote>« Tu as bien raison, Socrate, </quote> quand tu me dis de ne rien entreprendre sans implorer la protection des dieux, puisqu'ils ne sont pas moins nos <name type="deity">maîtres</name> au sein de la paix qu'au milieu des combats. Je me conformerai à ce sage avis. Mais voudrais-tu revenir où tu en es resté sur l'<foreign xml:lang="grc">οἰκονομικός</foreign>, et achever tes détails à cet égard? D'après ce que j'ai entendu, je crois déjà voir, bien mieux qu'auparavant, ce qu'il faut faire pour vivre dans l'aisance. — Que demandes-tu? Est-ce de revenir sur tous les principes que nous avons développés et dont nous avons reconnu la justesse, pour nous trouver encore, s'il est possible, tout à fait d'accord sur le reste de la discussion? — On aime, Socrate, quand on est en société d'intérêt, à se rendre réciproquement un compte exact et clair : nous devons de même, nous qui sommes en société de pensées, désirer de nous bien entendre dans la discussion. — Critobule, nous avons établi que l'<foreign xml:lang="grc">οἰκονομικός</foreign> était un art, et nous l'avons défini l'art de faire prospérer une maison. Par maison, nous entendions toutes nos possessions ensemble; par possessions, ce qui était utile à la vie de chacun; et le nom d'<foreign xml:lang="grc">ὠφέλιμος</foreign> (<foreign xml:lang="la">utilis</foreign>), nous ne le trouvions applicable qu'à tous les objets dont on savait tirer parti. Nous avons dit qu'il était impossible d'apprendre tous les arts, et nous avons jugé que les <placeName>États</placeName> ne devaient
+</p>
+</div>
+<p>aucune considération aux arts qu'on appelle <foreign xml:lang="fr">mécaniques</foreign>, parce qu'ils
+dégradent à la fois le corps et l'esprit. On en aurait, disions-nous, une
+preuve convaincante, si, lors d'une invasion, l'on partageait les artisans
+et les laboureurs en deux classes, et qu'on demandât aux uns et aux autres
+s'il faut défendre les campagnes ou sortir des champs pour garder les murs.
+Nous étions persuadés que, dans cette supposition, les laboureurs
+opineraient pour la défense, tandis que les artisans seraient d'avis de ne
+point combattre, mais de rester, sans essuyer ni fatigue ni péril, dans
+l'état de repos auquel les accoutume leur éducation. «Nous avons encore
+prouvé que l'agriculture, qui procure le nécessaire, était la profession la
+plus digne de l'homme honnête et vertueux et le premier des arts. Cette
+profession, disons-nous, est celle qu'on apprend le plus facilement, et
+qu'on exerce avec le plus de plaisir. En donnant au corps de belles formes
+et une bonne constitution, elle n'occupe pas assez l'esprit pour faire
+négliger les amis ou la chose publique. »<quote>L'agriculture, disons-nous encore,
+inspire du courage à l'homme, puisque c'est en dehors des remparts qu'elle
+fournit le nécessaire et la nourriture à ceux qui l'exercent. Elle est, dans
+tous les gouvernements, la plus honorée des professions, parce qu'elle donne
+à l'État les citoyens les plus vertueux et les mieux intentionnés.</quote> — Je</p>
+<div type="chapter" n="32">
+  <p>suis, à ce qu'il me semble, pleinement convaincu que l'agriculture est une
+    profession honorable, utile et douce. Mais pourquoi la terre est-elle une
+    source riche et féconde pour les uns, tandis qu'elle ne produit rien aux
+    autres? La cause, m'as-tu dit, t'en est connue : je suis curieux de la
+    connaître aussi, afin de faire ce qui est bon et d'éviter ce qui est
+    préjudiciable. — Je dois, pour commencer, <persName>Critobule</persName>,
+    te raconter comment un jour j'abordai un de ces hommes qui portent et
+    méritent le nom d'hommes comme il faut. — Je suis d'autant plus impatient
+    de t'entendre, <persName>Socrate</persName>, que je désire moi-même me rendre
+    digne de ce surnom. — Je vais donc te dire comment je parvins à m'entretenir
+    avec lui. J'avais fort peu de temps pour visiter les meilleurs ciseleurs,
+    les plus habiles peintres, les statuaires et autres artistes, et pour
+    contempler à loisir leurs ouvrages les plus vantés; mais j'étais
+    singulièrement avide de rencontrer un de ces hommes à qui l'on donne le nom
+    respectable d'hommes comme il faut. Je voulais juger par quelles actions ils
+    le méritaient. "Et d'abord, comme le mot beau est joint au mot bon, quand
+    je voyais quelqu'un d'une belle figure, j'allais le trouver, et je tâchais
+    de découvrir si parfois le bon était camarade du beau. Mais qu'il s'en
+    fallait que cela fût ainsi ! Je crus apercevoir que quelques-unes de ces
+    belles figures révélaient des âmes corrompues. Je ne</p>
+</div>
+<p>fis donc plus d'attention à la beauté, et je me proposai de m'adresser à un
+de nos <name type="animal" xml:lang="fr">hommes</name> comme il faut. <name type="animal" xml:lang="fr">Hommes</name>, <name type="animal" xml:lang="fr">femmes</name>, <name type="animal" xml:lang="fr">étrangers</name>, <name type="animal" xml:lang="fr">citoyens</name>, tout le
+monde appelait de ce nom <persName>Ischomaque</persName> : ce fut lui que j'essayai d'aborder.»</p>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Économique, chapitre VII) :
+
+
+<div type="chapter" n="7">
+   <milestone unit="section" n="7.1"/>
+   <p>Un jour donc je le vis assis sous le portique de <name type="deity">Jupiter Libérateur</name>. Il me paraissait libre de toute affaire ; je m'approchai et me plaçai à côté de lui. « Pourquoi, <persName>Ischomaque</persName>, toi qui d'ordinaire n'es pas désœuvré, restes-tu ici les bras croisés, toi que je vois pour l'ordinaire occupé et perdant rarement le temps dans la place publique ? — Tu ne m'y verrais pas, <persName>Socrate</persName>, à présent du moins, si je n'étais convenu d'y attendre des étrangers. — Mais quand tu n'attends personne, à quoi, je te prie, passes-tu le temps ; que fais-tu ? Je suis impatient d'apprendre de toi quelle occupation te mérite le nom d'homme comme il faut : car je ne vois pas en toi cette complexion délicate d'un homme habituellement renfermé chez lui. — Ce qui me mérite le nom d'homme comme il faut ! » répliqua en souriant <persName>Ischomaque</persName>, flatté de ce titre, du moins à ce qu'il me parut : vraiment, <persName>Socrate</persName>, je ne sais si l'on me nomme ainsi quand on te parle de moi ; mais s'agit-il d'un échange pour une charge de triérarque ou de chorège, ce n'est pas l'homme comme il faut que l'on demande : on m'appelle tout uniment comme on appelait mon père, <persName>Ischomaque</persName>, et il faut comparaître. Pour répondre à ce que tu me demandais ensuite, <persName>Socrate</persName>, je reste peu à la maison ; car c'est ma femme que regardent les soins du ménage, et assurément elle s'en acquitte à merveille. » — <persName>Ischomaque</persName>,
+</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Xénophon (Économique, 35/99) :
+
+
+<div type="chapter" n="35">
+  <milestone unit="section" n="35/99"/>
+  <p>je serais bien curieux de savoir si c'est toi qui, par tes <foreign xml:lang="grc">leç</foreign>ons, as rendu</p>
+  <p>ta femme ce qu'elle est, ou si tu l'as reçue de son père et de sa mère</p>
+  <p>instruite des devoirs de son sexe. — <persName>Socrate</persName>, eh! comment me l'eût-on donnée</p>
+  <p>instruite? à peine avait-elle quinze ans quand je l'épousai. On l'avait</p>
+  <p>jusque-là soumise aux lois d'une austère surveillance : on voulait qu'elle</p>
+  <p>ne vît, n'entendît presque rien qu'elle ne fît que le moins possible de</p>
+  <p>questions. N'était-ce pas assez, je te prie, de trouver en elle une femme</p>
+  <p>qui sût filer la laine pour en faire des habits, qui eût vu de quelle</p>
+  <p>manière on distribue la tâche aux servantes? Pour la sobriété, <persName>Socrate</persName>, on</p>
+  <p>l'y avait parfaitement bien formée, et c'est assurément, pour l'homme comme</p>
+  <p>pour la femme, une instruction très précieuse. — Et sur les autres points,</p>
+  <p>est-ce encore toi, <persName>Ischomaque</persName>, qui as rendu ta femme capable des soins qui</p>
+  <p>la regardent? — Oui, mais pas avant d'avoir sacrifié aux <name type="deity">dieux</name>, avant de</p>
+  <p>leur avoir demandé, pour moi, la grâce de la bien instruire; pour elle, le</p>
+  <p>don de bien apprendre ce qui pouvait contribuer à notre bonheur commun. — Ta</p>
+  <p>femme sacrifiait donc avec toi? elle mêlait donc ses prières aux tiennes? —</p>
+  <p>Assurément : même elle promettait, à la face des <name type="deity">dieux</name>, de ne jamais</p>
+  <p>s'écarter de ses devoirs, et je voyais bien qu'elle serait docile à mes</p>
+  <p>leçons. — Au nom des <name type="deity">dieux</name>, <persName>Ischomaque</persName>, dis-moi quelle fut ta premiè</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Oeconomicus 36/99) :
+
+
+<div type="section" n="36">
+   <p>leçon ; car je t'écouterai avec plus de plaisir que si tu me faisais le récit d'un combat gymnique ou de la plus belle course de <name type="animal" xml:lang="fr">chevaux</name>.</p>
+   <p>— Quand elle fut habituée à mon caractère et familiarisée avec moi de manière à me parler librement, je lui fis à peu près les questions suivantes : « Dis-moi, ma femme, commences-tu à comprendre pourquoi je t'ai prise, et pourquoi tes parents t'ont donné un mari ? Ce n'était pas qu'il nous fût difficile de trouver avec qui partager un même lit ; tu en es assurément convaincue ainsi que moi ; mais il s'agissait de s'assortir le mieux possible, pour avoir ensemble une maison et des enfants. Après avoir délibéré, moi pour moi, et tes parents pour toi, je t'ai choisie de même que tes parents m'ont probablement choisi comme le parti le plus convenable. Si <name type="deity">Dieu</name> nous donne un jour des enfants, nous chercherons ensemble les moyens de leur donner la meilleure éducation ; car c'est encore un bonheur qui nous sera commun, de trouver en eux des défenseurs, doux appui de nos vieux ans. Dès ce moment, cette maison nous appartient à tous deux. Tous mes biens à moi, je les mets en commun ; toi, tu en as fait autant de ce que tu en as apporté. Il ne s'agit plus désormais d'examiner lequel de nous deux a fourni plus que l'autre. Une vérité dont il faut se pénétrer, c'est que le plus intelligent en ménage aura le plus apporté à la communauté. — Et en quoi pourrai-je</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour ce passage de Xénophon (Économique, 37/99) :
+
+
+<div type="chapter" n="37">
+  <milestone unit="section" n="37"/>
+  <p>t'aider me répondit ma femme. De quoi suis-je donc capable? N'est-ce pas sur</p>
+  <p>toi que tout doit rouler? Ma mère m'a toujours dit que mon affaire à moi,</p>
+  <p>c'est de me bien conduire. — Eh ! mais, ma femme, mon père me recommandait</p>
+  <p>la même chose. Or il est du devoir d'un homme et d'une femme sensés de se</p>
+  <p>comporter de manière qu'ils administrent le mieux possible les biens qu'ils</p>
+  <p>possèdent, et qu'ils en acquièrent de nouveaux par des moyens justes et</p>
+  <p>honnêtes. — Mais en quoi vois-tu que je puisse coopérer avec toi à</p>
+  <p>l'accroissement de notre maison ? — En remplissant de ton mieux les</p>
+  <p>fonctions que la nature te destine, et que, d'accord avec la nature, la loi</p>
+  <p>ratifie. — Quelles sont donc ces fonctions ? — Je les crois moi de la plus</p>
+  <p>haute importance, ou l'on dira que la <name type="animal" xml:lang="fr">mère-abeille</name> n'est occupée dans sa</p>
+  <p>ruche que des plus viles fonctions. Les <name type="deity">dieux</name>, ô ma femme! me semblent avoir</p>
+  <p>bien réfléchi avant d'unir les deux sexes pour la plus grande utilité de</p>
+  <p>l'un et de l'autre. D'abord, afin d'empêcher l'extinction de l'espèce</p>
+  <p><name type="animal" xml:lang="fr">animale</name>, les deux sexes se réunissent pour engendrer. Un autre avantage de</p>
+  <p>cette union, c'est de procurer, du moins à l'homme, des soutiens de sa</p>
+  <p>vieillesse. Ensuite, les hommes ne vivent pas en plein air comme le <name type="animal" xml:lang="fr">bétail</name> ;</p>
+  <p>il est évident qu'il leur faut des maisons. L'homme, devant amasser des</p>
+  <p>provisions chez lui, doit avoir, il est vrai, des ouvriers qui travaillent</p>
+</div>
+<div type="chapter" n="38">
+  <milestone unit="section" n="38"/>
+  <p>en plein air; car c'est en plein air qu'on défriche, qu'on sème, qu'on plante, qu'on fait paître les <name type="animal" xml:lang="fr">troupeaux</name>; et c'est avec tous ces soins qu'on se procure le nécessaire.</p>
+  <p>Mais aussi, les provisions une fois rentrées dans la maison, il faut quelqu'un qui les conserve et s'occupe des travaux qui ne peuvent avoir lieu qu'au logis. D'ailleurs, ce n'est que sous une habitation couverte qu'il est possible de nourrir un enfant nouveau-né. C'est là seulement qu'on peut préparer les aliments que donne la terre, ou convertir en habits la laine des <name type="animal" xml:lang="fr">troupeaux</name>.</p>
+  <p>Ces fonctions, soit intérieures, soit extérieures, demandent travail et surveillance; aussi <name type="deity">Dieu</name> a-t-il fait l'homme pour les premières, comme la femme pour les secondes. En donnant à l'homme un corps robuste et une âme forte qui le mettent en état de supporter le froid, le chaud, les voyages, la guerre, il l'a chargé des travaux du dehors; mais en donnant à la femme une plus faible complexion, <name type="deity">Dieu</name> ne paraît-il pas l'avoir restreinte aux soins de l'intérieur?</p>
+  <p>La nature ordonne à la femme de nourrir ses enfants nouveau-nés; aussi lui donne-t-elle, bien plus qu'à l'homme, le besoin d'aimer sa naissante progéniture. Comme c'est encore la femme qui est chargée de la conservation des provisions, <name type="deity">Dieu</name>, qui sait que la timidité ne nuit pas à la vigilance, a fait la femme plus timide que l'homme.</p>
+  <p>D'un autre côté, comme il faut</p>
+</div>
+<p>repousser ceux qui viendraient troubler les travaux du dehors, elle donne
+plus d'<foreign xml:lang="fr">intrépidité</foreign> à l'homme; mais, l'un et l'autre devant donner et
+recevoir, elle a rendu l'un et l'autre également susceptibles de soins et de
+mémoire : aussi ne peut-on pas aisément décider lequel, en ce point,
+l'emporte du mâle ou de la femelle. Dieu les a rendus pareillement
+susceptibles de tempérance; il a permis que celui des deux dont l'âme forte
+porterait plus loin cette vertu en reçût une plus belle récompense.
+Cependant, comme aucun des deux n'est parfait, ils vivent dans une
+dépendance réciproque; et leur union leur est d'autant plus utile, que ce
+qui manque à l'un, l'autre peut le suppléer. Instruits, ma femme, de ces
+fonctions qui nous sont prescrites par la Divinité, efforçons-nous de nous
+acquitter le mieux qu'il est possible de celles qui regardent chacun de
+nous. Telle est aussi sur ce point l'intention de la loi en unissant l'homme
+et la femme. Si Dieu donne des enfants en commun, la loi veut de même qu'ils
+soient de moitié dans les soins du ménage. La loi déclare encore honnête et
+beau tout ce qui est conforme aux facultés que le ciel a départies aux deux
+sexes. Il est en effet plus honnête pour une femme de garder la maison que
+de s'absenter souvent; de même qu'un homme renfermé chez lui est bien moins
+à sa place que lorsqu'il est occupé des affaires du dehors. Lorsque l'homme</p>
+<pb n="40"/>
+<div type="chapter" n="40">
+  <p>agit contre l'intention de la nature, ce désordre n'échappe pas aux regards de la <name type="deity">Divinité</name>. Il est puni lorsqu'il néglige ses propres devoirs, ou qu'il prend la place de la femme. Je remarque que, soumise aux volontés de <name type="deity">Dieu</name>, la <name type="animal" xml:lang="fr">mère-abeille</name> remplit des fonctions semblables à celles qui te sont imposées.</p>
+  <p>Eh! qu'est-ce que les occupations de la <name type="animal" xml:lang="fr">mère-abeille</name> ont de conforme avec celles de mon sexe ? — Elle garde la ruche, sans permettre aux <name type="animal" xml:lang="fr">abeilles</name> de rester oisives; elle envoie aux champs celles qui sont destinées aux travaux du dehors; elle voit, elle reçoit ce que chacune d'elles apporte; elle garde les provisions pour un temps, et les distribue sagement lorsque le moment d'en faire usage est arrivé.</p>
+  <p>Elle préside encore à la construction régulière et prompte des cellules, et prend soin de la nourriture des essaims qui viennent d'éclore. Les jeunes <name type="animal" xml:lang="fr">abeilles</name> une fois élevées et en état de travailler, elle les envoie, sous la conduite de l'une d'entre elles, fonder une colonie.</p>
+  <p>Est-ce qu'il faudra que je tienne la même conduite ? — Oui certes ; il faudra que tu restes à la maison, que tu fasses accompagner ceux de tes domestiques chargés des travaux du dehors, que tu présides aux travaux de ceux qui restent dans l'intérieur. Tu recevras ce qu'on y apportera, tu distribueras les provisions qu'on doit employer.</p>
+  <p>A l'égard du superflu, tu devras veiller et pourvoir à ce qu'on n'épuise pas</p>
+</div>
+Voici l'encodage TEI P5 du passage de Xénophon selon les règles du projet Zoomathia :
+
+
+<div type="book" n="41">
+  <milestone unit="section" n="41/99"/>
+  <p>dans un mois les provisions d'une année tout entière. Les laines apportées, </p>
+  <p>tu feras filer des habits pour ceux à qui tu en dois fournir; tu auras </p>
+  <p>encore à veiller à ce que les aliments secs soient bons à manger. Une des </p>
+  <p>fonctions de ton sexe, qui peut-être ne te plaira pas, c'est de donner tes </p>
+  <p>soins à ceux des domestiques qui tomberont malades. — Que dis-tu? je n'aurai </p>
+  <p>pas de plus grand plaisir, puisque, reconnaissants de mes bons offices, ils </p>
+  <p>doubleront leur attachement pour moi.» Enchanté de sa réponse, je lui dis: </p>
+  <p>«N'est-ce pas, ma femme, un intérêt aussi tendre que la <name type="animal" xml:lang="fr">mère-abeille</name>, qui </p>
+  <p>lui concilie un tel amour, que, si elle quitte la ruche, aucune des <name type="animal" xml:lang="fr">abeilles</name> </p>
+  <p>ne croit pouvoir y rester? Toutes s'empressent de suivre leur reine. — Je </p>
+  <p>suis surprise, reprit ma femme, que l'exercice de l'autorité ne </p>
+  <p>t'appartienne pas plus qu'à moi ? Quelle étrange surveillance j'exercerais </p>
+  <p>dans l'intérieur, si tu ne veillais à ce qu'on apportât quelque chose du </p>
+  <p>dehors ! — Et mes soins à moi ne seraient-ils pas ridicules, si je n'avais </p>
+  <p>personne pour conserver ce que j'apporte? Vois-tu quelle pitié inspirent ces </p>
+  <p>fous que l'on dit vouloir remplir un tonneau percée, parce que l'on connaît </p>
+  <p>l'inutilité de leur travail? — Assurément. Qu'une telle conduite les rend </p>
+  <p>malheureux ! — Tu auras, ma femme, d'autres soins agréables à prendre : par </p>
+  <p>exemple, lorsque d'une esclave que tu auras prise ne sachant pas filer tu </p>
+</div>
+<div type="chapter" n="42">
+   <milestone unit="section" n="42/99"/>
+   <p>feras une bonne <name type="animal" xml:lang="fr">fileuse</name> dont les services doubleront pour toi ; lorsque
+   d'une intendante ou d'une femme de charge maladroite et d'un service
+   désagréable tu auras fait une femme intelligente en ménage, fidèle, prompte
+   au service, un trésor en un mot ; lorsque tu seras en droit soit de
+   récompenser les serviteurs sages et utiles, soit de punir les mauvais. La
+   plus douce de tes jouissances, ce sera quand, devenue plus parfaite que moi,
+   tu m'auras rendu ton serviteur ; quand, loin de craindre que l'âge n'éloigne
+   de toi la considération, tu sentiras au contraire que, plus tu te montreras
+   bonne ménagère, gardienne vigilante de nos <name type="animal" xml:lang="fr">enfants</name>, plus tu verras, avec les
+   ans, s'accroître les respects de toute la maison. Car ce n'est point la
+   beauté qui donne droit à l'estime, au respect ; ce sont les vertus." Tel est
+   à peu près, <persName>Socrate</persName>, le premier entretien que je me rappelle avoir eu avec
+   ma femme.»</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences, en respectant toutes les règles et en priorisant les entités nommées Zoomathia :
+
+
+<div type="chapter" n="8">
+   <milestone unit="section" n="8.1"/>
+   <p>Ischomaque, as-tu remarqué que cet entretien ait fait assez d'impression sur elle pour augmenter sa vigilance?</p>
+   <p>— Assurément. Je la vis même s'affecter et rougir, un jour qu'elle ne put me donner sur ma demande une chose qui devait se trouver dans la maison.</p>
+   <p>«Ma femme, lui dis-je, ne t'afflige pas de ne pouvoir me donner ce que je demande. On est bien pauvre, il est vrai, quand on n'a point à son usage ce dont on éprouve le besoin : mais celui qui ne trouve pas ce qu'il cherche éprouve une privation moins dure que celui qui ne cherche pas parce qu'il sait qu'il ne possède rien. Au reste, il y va non de ta faute, mais de la mienne, puisqu'en te livrant nos meubles, je ne t'ai point indiqué leur place pour que tu susses où les ranger, où les prendre.</p>
+   <p>Rien, ma femme, de plus beau dans le monde, rien de plus utile que l'ordre.</p>
+   <p>Un chœur est une réunion d'hommes. Que chacun prétende y exécuter à son gré la partie qu'il lui plaît, quelle confusion désagréable pour les spectateurs! Mais quand tous exécutent avec ensemble les mouvements et les chants, quel charme et pour les yeux et pour les oreilles!</p>
+   <p>Il en est de même d'une armée. Qu'elle se porte sans ordre ; <name type="animal" xml:lang="fr">ânes</name>, hoplites, troupes légères, bagage, cavalerie, chariots, que tout soit pêle-mêle : dès lors, c'est une confusion universelle, une proie facile pour l'ennemi, un coup d'œil désolant pour les</p>
+</div>
+<p>amis. Quel mouvement à exécuter où tout s'embarrasse, où celui qui court est
+arrêté par celui qui marche, celui qui est à son rang par celui qui court,
+le cavalier par le <name type="animal" xml:lang="fr">chariot</name>, le
+<name type="animal" xml:lang="fr">chariot</name> par le <name type="animal"
+xml:lang="fr">mulet</name>, l'<foreign xml:lang="grc">hoplite</foreign> par le
+bagage? Le moyen de combattre au milieu d'un tel chaos ? Ceux qui se voient
+contraints de fuir l'<foreign xml:lang="fr">ennemi</foreign> qui vient sur eux
+culbuteront nécessairement dans leur fuite les hommes armés. Au contraire, quoi
+de plus beau pour des yeux amis qu'une armée bien rangée ? Pour des ennemis, quoi
+de plus difficile à vaincre ? Qui ne contemplera pas avec complaisance chez les
+siens une infanterie marchant en ordre, des cavaliers galopant en escadrons
+réguliers ? Quel ennemi ne tremblera pas en voyant <foreign xml:lang="grc">hoplites</foreign>,
+cavaliers, <foreign xml:lang="grc">peltastes</foreign>, <foreign xml:lang="grc">archers</foreign>,
+<foreign xml:lang="grc">frondeurs</foreign>, tous distribués en corps bien distincts, et
+suivant en rang leurs officiers ? Dans une armée qui avance en un si bel ordre,
+y eût-il plusieurs milliers d'hommes, ils marchent tous aussi aisément que si
+chacun d'eux était seul; car les derniers rangs s'emboîtent exactement dans ceux
+qui précèdent. Pourquoi une <name type="animal" xml:lang="fr">galère</name>
+chargée d'hommes fait-elle trembler l'<foreign xml:lang="fr">ennemi</foreign>, tandis
+qu'elle porte dans l'âme de ceux qui la montent le présage de la victoire ? C'est
+qu'elle marche rapidement. Pourquoi les navigateurs ne s'embarrassent-ils pas
+réciproquement ? C'est que chacun est assis en ordre; c'est que les
+<name type="animal" xml:lang="fr">rameurs</name> se courbent en ordre</p>
+Voici l'encodage TEI P5 du texte de Xénophon selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="45">
+  <milestone unit="section" n="45/99"/>
+  <p>sur leurs rames, et les retirent en arrière avec le même ordre; c'est
+  qu'enfin ils ne sont pas moins fidèles à l'ordre quand ils s'embarquent ou
+  débarquent. Je crois me former une juste idée de la confusion, quand je me
+  représente un laboureur serrant dans le même grenier de l'<name type="plant" xml:lang="fr">orge</name>,
+  du <name type="plant" xml:lang="fr">froment</name>,
+  des <name type="plant" xml:lang="fr">légumes</name>, et obligé ensuite, s'il veut un gâteau, du pain, un plat de
+  légumes, de faire un triage qu'il devait trouver tout fait au besoin.
+  Épargne-toi, ma femme, une pareille confusion veux-tu bien administrer notre
+  maison, trouver sans peine ce qui est nécessaire, et pouvoir, si je te
+  demande quelque chose, me l'offrir avec grâce, essayons de mettre tout en
+  place convenable. Cette précaution une fois prise, indiquons à la femme de
+  charge où elle doit prendre et remettre. Par là nous connaîtrons ce que nous
+  aurons perdu et ce qui nous reste. La place elle-même nous avertira de ce
+  qui manque; un coup d'œil nous fera découvrir ce qui demande nos soins.
+  Enfin, l'arrangement une fois pris, tout se trouvera sous la main.»</p>
+  <p>Oh ! Socrate, le jour où je montai sur ce grand vaisseau phénicien, quel ordre,
+  quelle régularité frappa mes regards ! J'admirai quantité d'objets
+  rassemblés, sans être confondus, dans un fort petit coin. Tu sais qu'un
+  vaisseau, pour entrer au port ou prendre le large, a besoin de quantité de
+  câbles, de toiles et de pièces de bois; qu'il ne vogue qu'à l'aide de</p>
+</div>
+<div type="chapter" n="46">
+   <p>beaucoup d'agrès; qu'il lui faut beaucoup de machines pour se défendre de
+   l'attaque des vaisseaux ennemis. Sans parler des armes des troupes, un
+   vaisseau porte, pour chaque division de convives, les meubles nécessaires
+   dans une maison ; il est encore chargé des marchandises que le capitaine
+   transporte à son profit. Eh bien tout cela n'occupait que la place d'une
+   salle ordinaire à dix lits. Je remarquai que tous ces effets étaient si bien
+   placés, qu'ils ne s'embarrassaient pas, qu'ils n'étaient point épars,
+   difficiles à trouver, à détacher: nul retard sitôt qu'on avait besoin d'une
+   chose. Je trouvai dans le commandant de la proue un tel esprit d'ordre, que,
+   même éloigné de son vaisseau, il eût pu faire l'énumération de tout et
+   indiquer la place de chaque chose, aussi facilement qu'un homme qui sait son
+   alphabet vous dira combien le nom de <persName>Socrate</persName> a de lettres, et l'ordre de
+   chacune. J'ai vu ce même officier profiter d'un moment de loisir pour faire
+   l'inspection de tous les effets nécessaires dans un vaisseau. Surpris de
+   tant de soins, je lui demandai ce qu'il faisait. Il me répondit : «Mon ami,
+   j'examine, en cas d'accident, en quel état est le navire, s'il y a quelque
+   chose de déplacé, ou qui soit mal agencé. Lorsque <name type="deity">Dieu</name> envoie des tempêtes,
+   ce n'est pas le moment ni de chercher ce qui manque, ni de donner ce qui se
+   présente mal. <name type="deity">Dieu</name> s'irrite et sévit contre les lâches : s'il est assez bon</p>
+</div>
+<div type="book" n="47">
+  <div type="section" n="47">
+    <p>pour ne pas perdre les hommes dont tout le mérite se borne à ne point faire de fautes, ces hommes doivent s'estimer très-heureux : et, s'il protège et sauve ceux qui ne négligent rien, il a droit à la plus grande reconnaissance.»</p>
+    <p>Quand j'eus admiré ce bel ordre, je dis à ma femme : «Si dans un navire, tout étroit qu'il est, on trouve de la place ; si, au milieu d'une forte tempête, chacun reste à son poste ; si, malgré la consternation générale, chacun sait pourtant où prendre ce qu'il lui faut, nous qui avons une maison composée de vastes pièces, une maison solidement bâtie sur la terre, n'y aurait-il pas de l'indolence à nous de ne pas donner à chaque ustensile une place convenable et facile à trouver ?</p>
+    <p>Je dis plus : ne serait-ce pas de notre part une grande ineptie? Je viens de dire combien il est avantageux de ranger tous les effets, combien il est facile de leur trouver une place, de les distribuer dans la maison de la manière la plus convenable.</p>
+    <p>Qu'il est agréable encore de voir des <name type="animal" xml:lang="fr">chaussures</name> placées de suite, des habits séparés les uns des autres, des tapis, des vases d'airain et tout ce qui a rapport au service de la table, serrés avec ordre !</p>
+    <p>Un beau coup d'œil encore, non pour un homme léger qui s'en moquerait, mais pour un homme grave et sensé, c'est de voir même des <name type="animal" xml:lang="fr">marmites</name> rangées avec intelligence.</p>
+    <p>La symétrie donne à tout une grâce singulière. Tous ces</p>
+  </div>
+</div>
+<div type="section" n="48">
+   <p>meubles, tous ces ustensiles ne peuvent-ils pas en quelque sorte être comparés à nos <name type="animal" xml:lang="fr">chœurs</name> ? Les intervalles de chaque compartiment, quand rien ne traîne, frappent les regards : tel un <name type="animal" xml:lang="fr">chœur</name> qui, beau par lui-même, charme encore les yeux par la régularité de sa forme circulaire.</p>
+   <p>Ma femme, nous pouvons aisément et sans risque acquérir la preuve de ce que j'avance. Mais ne va pas non plus te décourager, comme s'il nous était bien difficile de trouver un serviteur en état d'étudier la place de chaque meuble, et doué d'une assez bonne mémoire pour les remettre où il les aura pris.</p>
+   <p>Dans la ville il y a, comme tu le sais, dix mille fois plus d'objets que chez nous : cependant si tu dis à tel esclave d'aller faire une emplette au marché et de te l'apporter, il ne sera point embarrassé ; tu verras qu'il sait où aller, à quel marchand s'adresser. Pourquoi ? c'est que la chose que tu lui demandes se trouve en un lieu fixe.</p>
+   <p>Mais que deux personnes se cherchent réciproquement, elles désespéreront souvent de pouvoir se rencontrer. La raison en est simple, c'est qu'elles ne sont point convenues du rendez-vous.»</p>
+   <p>Voilà à peu près, si ma mémoire est fidèle, mon entretien avec ma femme sur l'ordre à mettre dans nos effets et sur leur usage.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Économique, chapitre IX) :
+
+
+<div type="chapter" n="9">
+   <milestone unit="section" n="9"/>
+   <p>« En bien, Ischomaque, ta femme te parut-elle faire quelque attention aux leçons que tu avais à cœur de lui donner ? — Pouvait-elle, Socrate, faire autrement que de me promettre tous ses soins ? Comment n'eût-elle pas fait éclater sa joie, en voyant tant de facilité succéder à tant d'embarras ? Elle me pria de ranger les meubles au plus tôt ainsi que je l'avais dit. — Ischomaque, comment t'y pris-tu ? — Avant tout, ne fallait-il pas lui montrer le parti qu'on peut tirer de la maison ? Elle ne brille point par les ornements ; mais les différentes pièces en sont tellement distribuées, que nos effets pouvaient y être serrés de la manière la plus convenable. Chaque place semblait appeler elle-même la chose qui devait y être mise. La chambre nuptiale, qui est dans la partie la plus sûre de la maison, demandait naturellement ce qu'il y avait de plus précieux en tapis et en vaisselle. La partie la plus sèche voulait le blé, comme la plus fraîche voulait le vin. La plus éclairée invitait à y travailler, à y placer ce qui devait être en vue. Je lui montrai ensuite l'appartement des hommes. Cet appartement très orné était frais en été et chaud en hiver. Je lui fis remarquer aussi que, dans sa partie méridionale, la maison se développait de manière qu'elle avait évidemment du soleil en hiver, et de l'ombrage en été. Je lui fis observer encore que le logement des hommes</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le passage de Xénophon (Économique, 50/99) :
+
+
+<div type="book" n="50">
+  <div type="section" n="50">
+    <p>n'était séparé que par les bains de celui des femmes, de peur que l'on ne sortît rien par fraude, et que nos esclaves ne fissent des enfants contre notre vœu; car, si les bons domestiques redoublent d'attachement pour nous quand ils sont de la famille, les mauvais acquièrent en famille de grands moyens pour nuire à leurs maîtres.</p>
+    <p>Après tous ces détails, nous fîmes un triage de nos effets. Nous commençâmes par réunir tout ce qui est utile aux sacrifices; vinrent ensuite la toilette des femmes pour les jours de fête, les habits des hommes pour les jours de fête, et ceux destinés à la guerre; les tapis pour l'appartement des femmes, les tapis pour l'appartement des hommes; les chaussures d'homme, les chaussures de femme.</p>
+    <p>Nous séparâmes les armes des instruments destinés aux travaux des femmes, les ustensiles de la boulangerie de ceux de la cuisine; ce qui servait au bain, de ce qui appartenait au service de table; ce qui doit servir tous les jours, de ce qui n'est destiné qu'aux repas d'apparat.</p>
+    <p>Nous fîmes la même chose pour les provisions d'un mois, et pour celles qui, tout calcul fait, doivent durer un an. Avec cette prévoyance on sait si l'on peut gagner la fin de l'année.</p>
+    <p>Après ce triage de nos différents effets, nous les fîmes porter à la place qui leur convenait. Les ustensiles qui devaient être journellement dans les mains des esclaves, tels que ceux qui servent soit à faire le pain, soit à</p>
+  </div>
+</div>
+<div type="book" n="51">
+  <div type="chapter" n="99">
+    <milestone unit="section" n="51.99"/>
+    <p>la cuisine, soit aux travaux des femmes, et d'autres de même sorte, nous les
+      livrâmes aux gens qui devaient en faire usage, en leur enjoignant de les
+      bien conserver. Quant à ceux que nous employons aux jours de fête et de
+      réception, ou dans des circonstances tout à fait rares, nous les confiâmes à
+      la femme de charge; nous lui montrâmes la place qu'ils devaient occuper, et
+      nous en dressâmes un état par écrit, en lui disant de ne donner à chaque
+      domestique que ce qui était nécessaire, de bien se souvenir de ce qu'elle
+      donnait, à qui elle donnait, et, quand on lui rapporterait tel ou tel
+      ustensile, de le remettre où elle l'aurait pris. Nous établîmes femme de
+      charge celle de la maison qui, après un mûr examen, nous parut le plus en
+      garde contre l'<name type="animal" xml:lang="fr">ivresse</name>, la gourmandise, le sommeil, le libertinage ; celle
+      qui nous parut douée de la meilleure mémoire, et capable soit de prévoir les
+      punitions que lui attirerait sa négligence, soit de songer aux moyens de
+      nous plaire et de mériter des récompenses. Nous lui inspirions de l'amitié
+      pour nous, en nous réjouissant avec elle lorsque nous étions joyeux, en nous
+      affligeant avec elle, si nous avions du chagrin. Nous lui donnions le désir
+      d'améliorer notre fortune en la lui faisant connaître, en partageant notre
+      bonheur avec elle. Nous excitions en elle l'amour de la justice, en
+      préférant l'honnête homme au fripon, en lui montrant que le premier vivait</p>
+  </div>
+</div>
+<div type="book" n="52">
+  <div type="chapter" n="99">
+    <p>plus riche, plus indépendant que l'autre. Voici sur quel pied nous l'avons
+    mise chez nous. Après cela, je dis à ma femme : «Tout ce que nous venons de
+    faire est inutile, si tu ne veilles pas toi-même au maintien de l'ordre.
+    Dans les États bien policés, les citoyens ne croient pas suffisant de se
+    donner de bonnes lois ; ils choisissent en outre des magistrats qui,
+    conservateurs et sentinelles vigilantes de la loi, louent ceux qui la
+    suivent, punissent ceux qui la violent. Ma femme, regarde-toi comme la
+    conservatrice des lois de notre ménage. Tel qu'un commandant de garnison qui
+    fait la revue de ses troupes, procède, lorsque tu le juges convenable, à la
+    revue de nos meubles; vois s'ils sont bien tenus; fais ton inspection comme
+    le conseil fait celle des <name type="animal" xml:lang="fr">chevaux</name> et des
+    <name type="animal" xml:lang="fr">cavaliers</name>. Reine de ta maison, use
+    de tout ton pouvoir pour honorer et louer ceux qui le mériteront, pour
+    réprimander et châtier ceux qui en seront dignes.» Je lui fis observer, en
+    outre, qu'elle aurait tort de m'en vouloir de ce que je lui donnais, dans
+    notre ménage, plus d'occupation qu'aux domestiques. Ceux-ci, lui disais-je,
+    ont tout en maniement pour porter, conserver, garder, mais rien à leur
+    usage, à moins d'une permission expresse; tandis qu'un maître peut se servir
+    de ce qu'il possède, et comme il l'entend. Celui qui gagne le plus à la
+    conservation et qui perd le plus au dépérissement de ses meubles est aussi</p>
+  </div>
+</div>
+<div type="chapter" n="53">
+   <milestone unit="section" n="53/99"/>
+   <p>le plus intéressé à la surveillance : voilà ce que je lui fis comprendre. —</p>
+   <p>Eh bien! après t'avoir écouté, ta femme se prêta-t-elle à ce que tu désirais? — Pourquoi non? «Tu me jugerais mal, me répondit-elle, si tu pensais que j'accepte à regret des fonctions et des soins dont tu me démontres la nécessité. Tu me ferais bien plus de peine en m'abandonnant à ma négligence. Il est naturel à une bonne mère, il lui en coûte moins de soigner ses <name type="animal" xml:lang="fr">enfants</name> que de les délaisser. Il est de même dans la nature qu'une femme raisonnable trouve plus de plaisir à prendre soin de ses possessions, auxquelles l'attache le sentiment de la propriété, qu'à les négliger.»</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Xénophon (Oikonomikos, chapitre 54/99) :
+
+
+<div type="book" n="54">
+  <div type="chapter" n="X">
+    <p>En entendant, reprit Socrate, la réponse de la femme d'<persName>Ischomaque</persName>, je dis : «Par <name type="deity">Junon</name>! une telle réponse, <persName>Ischomaque</persName>, me prouve que ta femme a l'âme virile. — Ce n'est pas tout. Je veux te raconter avec quelle résolution généreuse elle profita de mes avis. — Dis, <persName>Ischomaque</persName> : <persName>Zeuxis</persName> me montrerait une beauté, chef-d'œuvre de son pinceau, que j'aimerais mieux contempler la vertu d'une femme vivante.</p>
+    <p>Un jour, <persName>Socrate</persName>, je la vis toute couverte de <name type="plant">céruse</name> afin de paraître plus blanche qu'elle ne l'était, et de <foreign xml:lang="la">rouge</foreign> pour se donner un faux incarnat. Une élégante chaussure semblait ajouter à sa taille. «Réponds, ma femme : si je te montrais l'état de mes biens au plus juste, sans te rien exagérer, sans te rien cacher, consulterais-je mieux nos intérêts communs, me trouverais-tu plus digne de tendresse que si j'essayais de te tromper en te disant que j'ai plus que je ne possède, en te montrant de l'argent de mauvais aloi, des colliers de bois recouvert en métal, de la pourpre que je donnerais pour vraie, tandis qu'elle serait de mauvaise teinte?</p>
+    <p>— Que les dieux t'en préservent ! Si tu étais l'homme que tu me dépeins, de la vie je n'aurais une sincère affection pour toi. — En nous unissant, ma femme, ne nous sommes-nous pas fait un don mutuel de nos corps? — C'est ce que disent les hommes. — Me recevrais-tu plus amoureusement dans tes bras, si, au lieu de</p>
+  </div>
+</div>
+<div type="section" n="55">
+   <p>te donner un corps. sain, fortifié par l'exercice et d'une belle carnation, je me présentais à toi frotté de <name type="animal" xml:lang="fr">vermillon</name>, les yeux peints, te faisant illusion, et te donnant, au lieu de ma personne, du <name type="animal" xml:lang="fr">vermillon</name> à voir et à toucher? — Certes, j'aimerais mieux te toucher que du <name type="animal" xml:lang="fr">vermillon</name>, voir la couleur de ton teint et le vif éclat de tes yeux que des couches de fard. — Crois, ma femme, que je ne préfère pas la céruse ni le rouge à tes véritables couleurs. Les <name type="deity">dieux</name> ont voulu que le <name type="animal" xml:lang="fr">coursier</name> plût à la <name type="animal" xml:lang="fr">jument</name>, le <name type="animal" xml:lang="fr">taureau</name> à la <foreign xml:lang="grc">γηθύν</foreign>, le <name type="animal" xml:lang="fr">bélier</name> à la <name type="animal" xml:lang="fr">brebis</name> : les hommes croient aussi qu'un homme est très agréable lorsqu'il n'emploie aucun fard. Des étrangers peuvent bien être dupes de pareilles supercheries; mais des <persName>époux</persName> qui vivent toujours ensemble se trahissent nécessairement s'ils essayent de se tromper. Ils se surprendront au sortir du lit avant la toilette; une goutte de sueur, une larme décèlera l'artifice, ou bien ils se verront au bain dans toute la vérité de la nature.» — Et que te répondit-elle? — Elle se corrigea; elle se montra devant moi avec une parure simple et modeste : ce fut sa réponse. Elle me demanda pourtant si je pourrais lui indiquer le moyen non seulement de paraître, mais d'être véritablement belle. Je lui conseillai de ne pas rester continuellement assise comme les <name type="animal" xml:lang="fr">esclaves</name>. Elle assisterait en bonne</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage de Xénophon (Économique, 56/99) :
+
+
+<div type="chapter" n="56">
+  <p>maîtresse aux travaux des femmes; avec l'aide des <name type="deity">dieux</name>, elle s'efforcerait ou de leur enseigner ce qu'elle saurait mieux, ou d'apprendre ce qu'elle saurait moins bien; elle aurait l'œil à la boulangerie, serait présente aux mesurages de la femme de charge, ferait sa ronde pour examiner si tout est bien en place. Ce serait pour elle une promenade en même temps qu'un acte de surveillance.</p>
+  <p>Détremper le pain et le pétrir, battre et serrer les habits et les tapisseries, voilà encore un bon exercice. Un tel régime, disais-je, fera l'assaisonnement de ses mets, lui donnera une meilleure santé, une plus belle carnation.</p>
+  <p>D'ailleurs, si son air contraste avec celui d'une esclave, si elle est plus proprement et plus convenablement vêtue, elle n'en sera que plus séduisante, surtout si c'est d'elle-même et non malgré elle qu'elle cherche à lui plaire.</p>
+  <p>Quant à ces épouses continuellement assises avec un air de fierté, qu'on les range dans la classe des femmes amies de la parure et de l'artifice.</p>
+  <p>Apprends, <persName>Socrate</persName>, qu'aujourd'hui la mienne suit les leçons que je lui ai données, et se conduit comme je viens de te dire.»</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Xénophon (Oeconomicus, chapitre XI, section 57/99) :
+
+
+<div type="chapter" n="11">
+  <milestone unit="section" n="57"/>
+  <p>Ischomaque, tu en as, je crois, assez dit sur les devoirs de ta femme; et certes, cette première partie de ton plan contient son éloge et le tien.</p>
+  <p>Parle-moi à présent de tes propres fonctions. Ce sera un plaisir pour toi de te rappeler tes titres à la considération publique.</p>
+  <p>Pour moi, quand j'aurai entendu toute l'exposition de ton plan, pénétré, si je puis, des devoirs du citoyen vertueux, je t'assurerai de toute ma reconnaissance.</p>
+  <p>— En vérité, Socrate, je vais bien volontiers te tracer mon plan ordinaire de conduite, afin que tu me redresses si tu y trouves quelque chose de répréhensible.</p>
+  <p>— Te redresser, toi l'homme de bien par excellence! Moi, ton maître? moi qui passe pour un conteur de fadaises, pour un homme qui mesure l'air; moi à qui l'on fait si sottement un crime de ma pauvreté!</p>
+  <p>Une semblable accusation, Ischomaque, m'eût jeté dans un grand abattement, sans la rencontre que je fis du <name type="animal" xml:lang="fr">cheval</name> de Nicias, tout récemment arrivé de Lacédémone.</p>
+  <p>Voyant que tout le monde suivait, considérait cet animal, qu'on ne tarissait pas sur ses louanges, je m'approchai de l'écuyer, et lui demandai bonnement si ce <name type="animal" xml:lang="fr">cheval</name> avait une grande fortune.</p>
+  <p>Sur cette question, l'écuyer, ne me jugeant pas beaucoup de cervelle, me dit en me regardant d'un air de pitié : «Est-ce qu'un <name type="animal" xml:lang="fr">cheval</name> a des rentes?»</p>
+  <p>Oh! comme je vais la tête levée depuis que je sais que même un <name type="animal" xml:lang="fr">cheval</name> </p>
+</div>
+Voici l'encodage TEI P5 du passage demandé, conforme aux règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="58">
+  <p>cheval <name type="animal" xml:lang="fr">pauvre</name> peut sans crime devenir un bon <name type="animal" xml:lang="fr">cheval</name>, s'il a un bon naturel.</p>
+  <p>Comme il ne m'est pas non plus défendu de devenir un homme estimable,</p>
+  <p>trace-moi en entier le plan de ta conduite, afin que, si je puis m'instruire à ton école, je m'applique dès demain à marcher sur tes pas; car c'est un bon jour que le jour de demain, pour commencer l'étude de la vertu.</p>
+  <p>— Tu badines, <persName>Socrate</persName> ; je vais néanmoins te raconter quels sont mes goûts et mes occupations, comment je tâche de passer ma vie.</p>
+  <p>Convaincu que jamais la <name type="deity">Divinité</name> n'accorde ses faveurs à l'homme qui ne connaît pas ses devoirs, ou néglige de les accomplir; que même la prudence et l'activité ne les obtiennent pas toujours, je commence par honorer les dieux.</p>
+  <p>Je m'efforce de mériter, par mes prières, la force, la santé, la considération, la bienveillance de mes amis, l'avantage de sortir honorablement des combats; je leur demande enfin des richesses, acquises par des voies honorables.</p>
+  <p>— Tu aimes donc et les richesses et les soins qu'exige la conservation d'une grande fortune?</p>
+  <p>— Rien n'est plus dans mon caractère. Il me paraît si doux, <persName>Socrate</persName>, de rendre un culte magnifique aux dieux, de secourir mes amis dans le besoin, de contribuer de tout mon pouvoir à l'embellissement de la ville!</p>
+  <p>— En effet, <persName>Ischomaque</persName>, voilà de belles actions, et qui ne sont vraiment possibles qu'à un citoyen opulent. Comment n'en conviendrait-on pas, quand</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le passage de Xénophon (Économique, 59/99) :
+
+
+<div type="chapter" n="59">
+  <p>on voit tant de citoyens hors d'état de subsister sans la générosité
+    d'autrui, tant d'autres s'estimant heureux de se procurer le strict
+    nécessaire? Quel autre nom donner que celui de <name type="animal" xml:lang="fr">riches</name> et de <name type="animal" xml:lang="fr">puissants</name> à des
+    citoyens qui, doués du talent de bien administrer leurs affaires
+    domestiques, savent encore se procurer une assez grande aisance pour
+    embellir la ville ou secourir leurs amis? Il existe de tels hommes;
+    plusieurs de nous en pourraient citer. Mais dis-moi, <persName>Ischomaque</persName>, ce que tu
+    fais pour te bien porter (tu as commencé par là), pour être si robuste, pour
+    échapper honorablement aux dangers de la guerre : tu me parleras ensuite des
+    moyens qui conduisent à. la fortune; et je t'écouterai avec plaisir. — Tous
+    ces avantages, <persName>Socrate</persName>, ont entre eux une liaison intime. Un homme qui a le
+    nécessaire pour sa nourriture doit, s'il travaille, se fortifier la santé;
+    s'il continue de travailler, devenir encore plus robuste : form
+    <foreign xml:lang="grc">εἰς τὸ πολεμικὸν ἔργον</foreign>, il s'en tire honorablement; actif, industrieux, ennemi de la
+    mollesse, il augmente ses revenus. Je le conçois, <persName>Ischomaque</persName>, quand tu me
+    dis que l'homme qui travaille, qui s'occupe, qui s'exerce, obtient plus
+    sûrement ces avantages : mais quels exercices te procurent une bonne
+    constitution et un corps robuste? comment t'endurcis-tu au métier de la
+    guerre? à quels moyens dois-tu le superflu qui te met en état d'aider tes</p>
+</div>
+<div type="chapter" n="60">
+   <p>amis et de contribuer à la prospérité publique? Voilà ce que je serais
+      curieux d'apprendre. — Ma coutume, <persName>Socrate</persName>, est de sortir du lit à l'heure
+      où je puis encore trouver au logis les personnes que je dois voir. Quand
+      j'ai quelque affaire dans la ville, je m'en occupe; cela me sert de
+      promenade. Si rien d'indispensable ne me retient à la ville, mon serviteur
+      mène devant moi mon <name type="animal" xml:lang="fr">cheval</name> à la campagne, et la promenade que je fais de la
+      ville aux champs me plaît cent fois plus que celle du <foreign xml:lang="grc">Xyste</foreign>. Dès que je suis
+      arrivé, je vais voir ce que font mes ouvriers, s'ils plantent, s'ils
+      labourent, s'ils sèment, s'ils font rentrer les récoltes. J'examine leur
+      méthode; j'y substitue la mienne, lorsque celle-ci me semble préférable. Mon
+      inspection finie, je monte à cheval, je fais manœuvrer l'<name type="animal" xml:lang="fr">animal</name> comme à la
+      guerre. Chemins de traverse, collines, fossés, ruisseaux, je franchis tout;
+      et autant qu'il est possible, au milieu de ces exercices, je prends garde
+      d'estropier mon <name type="animal" xml:lang="fr">cheval</name>. Quand j'ai fait ma course, mon esclave laisse
+      l'<name type="animal" xml:lang="fr">animal</name> se rouler, puis le ramène en portant à la ville les provisions du
+      ménage. Pour moi, je rentre à la maison, moitiè en courant, moitiè en me
+      promenant; puis je me frotte avec une étrille; je dîne ensuite, de manière
+      que, le reste du jour, mon estomac ne soit ni surchargé ni souffrant de la
+      faim. — Par <name type="deity">Junon</name> ! j'approuve fort une telle conduite. User d'un régime qui</p>
+</div>
+Voici l'encodage TEI P5 du passage de Xénophon selon les règles strictes du projet Zoomathia :
+
+
+<pb n="61"/>
+<div type="book" n="61">
+  <div type="section" n="61">
+    <p>donne tout à la fois la force, la santé, la science militaire, des
+    richesses, voilà qui me paraît admirable. Certes, tu prouves assez bien que
+    tu fais ce qu'il faut pour te procurer chacun de ces avantages; car, grâce
+    aux <name type="deity">dieux</name>, on te voit ordinairement robuste et bien portant, et l'on sait
+    que tu es mis au nombre de nos meilleurs cavaliers, de nos plus riches
+    citoyens. — Avec tout cela, <persName>Socrate</persName>, je suis indignement calomnié. Peut-être
+    pensais-tu que je dirais qu'on me donne le nom d'homme comme il faut. —
+    J'allais te demander encore, <persName>Ischomaque</persName>, si tu te mets en état de rendre
+    compte de tes actions, ou de juger celles des autres s'il en est besoin. —
+    Est-ce que, selon toi, je ne me prépare pas continuellement, soit à me
+    justifier, lorsque je ne nuis à personne et que je fais le plus de bien que
+    je puis, soit à dénoncer, lorsqu'en public comme en particulier mes regards
+    poursuivent les pervers sans pouvoir se reposer sur un homme de bien? — Mais
+    dis-moi, <persName>Ischomaque</persName>, appuies-tu ces défenses et ces accusations du secours
+    de la parole ? — Jamais, <persName>Socrate</persName>, je ne cesse de dire ce que j'ai sur le
+    cœur. Ou quelqu'un de la maison accuse ou il se justifie; j'écoute alors, et
+    je tâche de confondre le mensonge : tantôt je me plains à mon ami de
+    celui-ci, tantôt je loue celui-là; ou bien encore je réconcilie des parents,
+    en m'efforçant de leur montrer qu'ils ont beaucoup plus d'intérêt à être
+  </p>
+</div>
+</div>
+<div type="section" n="62">
+   <p>amis qu'ennemis. Sommes-nous réunis devant le stratège, nous blâmons l'un,
+   ou nous prenons le parti d'un autre qui est accusé injustement, ou bien nous
+   censurons ceux d'entre nous qui obtiennent des distinctions qu'ils n'ont pas
+   méritées. Souvent, dans nos délibérations, nous louons un projet que nous
+   voulons qu'on adopte, nous blâmons celui qui nous déplaît. Plus d'une fois
+   je me suis vu condamné à une peine, à une amende déterminée. — Par qui,
+   <persName>Ischomaque</persName>? Voilà du nouveau pour moi. — Par ma
+   <name type="animal" xml:lang="fr">femme</name>. — Et comment te défends-tu
+   avec elle ? — À merveille, quand heureusement j'ai la vérité pour moi; mais,
+   quand je ne l'ai pas, j'ai beau faire, il m'est impossible de faire une bonne
+   cause d'une mauvaise. — Parce que sans doute ce qui est faux, tu ne peux le
+   rendre vrai.»</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon, *Oikonomikos* (Chapitre XII, section 63/99) :
+
+
+<div type="chapter" n="12">
+   <p>Mais, <persName>Ischomaque</persName>, que je ne te retienne pas si tu veux t'en aller.</p>
+   <p>— Je ne te quitterai certainement pas, <persName>Socrate</persName>, que l'assemblée ne soit finie.</p>
+   <p>— Oui! Oh! je vois combien tu es jaloux du surnom d'homme comme il faut ! Tu as sans doute beaucoup d'affaires ; mais comme tu as donné parole à tes hôtes, tu les attends pour ne pas les tromper.</p>
+   <p>— Je ne néglige pas non plus ces affaires dont tu parles, <persName>Socrate</persName>; j'ai des régisseurs à ma campagne.</p>
+   <p>— Quand tu as besoin d'un régisseur, <persName>Ischomaque</persName>, cherches-tu un esclave intelligent, et fais-tu des démarches pour te le procurer, comme tu en fais lorsque tu rencontres un bon artisan? ou bien est-ce toi qui les formes toi-même.</p>
+   <p>— C'est moi, moi seul qui m'applique à les former. Un homme qui doit me représenter en mon absence a-t-il besoin de savoir autre chose que ce que je sais moi-même ?</p>
+   <p>Si, pour présider à tous les travaux, je me connais assez de lumières, ne puis-je les communiquer à d'autres?</p>
+   <p>— Celui qui te représentera en ton absence doit premièrement avoir de l'attachement pour toi et tout ce qui t'appartient; car, sans cela, à quoi servirait le plus habile fermier?</p>
+   <p>— À rien, <persName>Socrate</persName>; aussi est-ce le premier sentiment que je tâche de lui inspirer pour moi et les miens.</p>
+   <p>— De grâce, comment t'y prends-tu ?</p>
+   <p>— En leur faisant du bien toutes les fois que les dieux m'en font à moi-même.</p>
+</div>
+<div type="chapter" n="64">
+   <p>C'est-à-dire que le bien que tu fais à tes <name type="animal" xml:lang="fr">fermiers</name> excite leur attachement,</p>
+   <p>et qu'ils veulent alors que tu sois heureux. — Je ne vois pas, <persName>Socrate</persName>, de</p>
+   <p>meilleur moyen pour provoquer l'attachement. — Lorsqu'un <name type="animal" xml:lang="fr">esclave</name></p>
+   <p>t'affectionne, <persName>Ischomaque</persName>, est-il dès lors un bon régisseur? Presque tous</p>
+   <p>les hommes soupirent après leur bien-être : cependant, combien en vois-tu</p>
+   <p>qui ne veulent pas se donner de peine pour se procurer les biens qu'ils</p>
+   <p>désirent ! — Quand je veux avoir de bons régisseurs, je les forme à</p>
+   <p>l'exactitude et à l'amour du travail. — Et comment? par tous les <name type="deity">dieux</name>! Je</p>
+   <p>n'aurais jamais cru qu'il existât un art de rendre les hommes laborieux et</p>
+   <p>vigilants. — Ne va pas t'imaginer qu'ils soient tous également en état de</p>
+   <p>profiter de ces leçons. — Quels sont ceux avec qui l'on peut réussir ? que</p>
+   <p>je les connaisse bien. — D'abord, <persName>Socrate</persName>, jamais on ne rendra soigneux ceux</p>
+   <p>qui sont adonnés au <name type="animal" xml:lang="fr">vin</name> : l'ivrognerie engendre l'oubli de tous les devoirs.</p>
+   <p>— N'y a-t-il que ceux-là ? en est-il encore d'autres? — Assurément : les</p>
+   <p><name type="animal" xml:lang="fr">dormeurs</name>. Ils ne pourront ni faire l'ouvrage en dormant, ni veiller sur les</p>
+   <p>autres. — En est-il encore que l'on ne puisse former à la vigilance? — Les</p>
+   <p><name type="animal" xml:lang="fr">libertins</name>. Oui, <persName>Socrate</persName>, de tels hommes ne peuvent s'intéresser qu'à l'objet</p>
+   <p>de leur passion. Est-il, en effet, un espoir plus doux, une occupation plus</p>
+   <p>attrayante que celle de l'<foreign xml:lang="fr">amour</foreign>? un supplice plus cruel que celui de</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, pour le passage demandé de l’*Économique* de Xénophon :
+
+
+<pb n="65"/>
+<div type="chapter" n="65">
+  <p>s'arracher à ce que l'on aime pour remplir un devoir? Quand je rencontre de pareils hommes, je renonce même à tenter de les former. — Et ceux qui sont intéressés, est-il impossible d'en faire de bons régisseurs? — Non, en vérité, non, Socrate, la chose n'est point du tout impossible. Ce sont eux au contraire qui ont les meilleures dispositions. Il n'y a qu'une chose à leur prouver, que le gain est la récompense du travail. — Quant à ceux qui, doués de la sagesse que tu exiges, sont pourtant peu sensibles à l'appât du gain, comment les formes-tu à la vigilance que tu désires? — Rien de plus simple, Socrate. Quand je les vois appliqués, je leur donne des louanges et des distinctions. Se négligent-ils, j'essaye de piquer leur amour-propre par mes actes et mes paroles.</p>
+  <p>— Laissons de côté toute discussion sur les bonnes ou mauvaises qualités de ceux que tu formes à la vigilance, et dis-moi s'il est possible que l'homme négligent inspire à d'autres l'ardeur qu'il n'a pas. — Pas plus, en vérité, qu'un homme qui ne sait point la musique n'est en état de faire des musiciens. Nous apprenons avec peine ce qu'on nous enseigne mal. Quand le maître lui-même nous montre de la négligence, l'esclave sera-t-il soigneux? Pour le dire en un mot, je ne crois pas avoir jamais vu de bons serviteurs à un maître négligent, tandis que, si j'ai trouvé de mauvais serviteurs à un <name type="animal" xml:lang="fr">maître</name> soigneux, ils étaient du moins</p>
+</div>
+<div type="section" n="66">
+   <p>châtiés de leur paresse. Quiconque veut avoir des gens attentifs doit avoir
+   l'œil à tout, se faire rendre compte de tout, se montrer empressé soit à
+   témoigner sa reconnaissance d'une bonne action, soit à punir la négligence.
+   On cite d'un <persName>Barbare</persName> un mot remarquable, selon moi. Le roi de <placeName>Perse</placeName> venait
+   d'acheter un superbe <name type="animal" xml:lang="fr">cheval</name> ; voulant lui donner au plus tôt de
+   l'embonpoint, il demande à un habile écuyer le moyen de l'engraisser en peu
+   de temps. «L'œil du maître,» répondit celui-ci. Ce mot s'applique à tout.
+   Avec l'œil du maître, tout s'embellit et prospère.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage de Xénophon (Oikonomikos, chapitre XIII) :
+
+
+<div type="chapter" n="13">
+   <p>Quand tu auras fortement pénétré un de tes régisseurs de la nécessité d'être vigilant dans toutes les parties que tu lui confies, sera-t-il dès lors bon administrateur, ou lui faudra-t-il encore d'autres connaissances? — Assurément.</p>
+   <p>Il lui reste à savoir ce qu'il doit faire, dans quel temps et comment. Autrement serait-il plus utile qu'un médecin qui viendrait matin et soir visiter son malade, ne sachant ce qu'il convient d'ordonner? — Quand il connaîtra la méthode qu'il doit suivre, lui manquera-t-il quelque chose, ou sera-t-il dès lors un régisseur accompli? — Il faut, selon moi, qu'il possède l'art de commander aux travailleurs. — Est-ce encore toi qui l'y formes? — J'y fais tous mes efforts. — Par tous les dieux, de quelle manière t'y prends-tu? — D'une manière si simple, que tu vas rire.</p>
+   <p>Ceci n'est point un badinage, Ischomaque; car celui qui enseigne l'art de commander à des hommes peut aussi former de bons maîtres; et le sage qui forme de bons maîtres ne peut-il pas enseigner à gouverner les peuples ? Les railleries ne sont donc point permises envers un tel homme : on lui doit, selon moi, les plus grands éloges.</p>
+   <p>Il existe dans les <name type="animal" xml:lang="fr">animaux</name> deux puissants mobiles de l'obéissance : le châtiment quand ils sont rebelles, les bons aliments quand ils se prêtent au service. Le jeune <name type="animal" xml:lang="fr">coursier</name> n'est docile que parce qu'on le flatte</p>
+</div>
+<div type="section" n="68">
+   <p>lorsqu'il est doux, et que, rétif, on le soumet à de difficiles manœuvres
+   jusqu'à ce qu'il sache obéir à la volonté de l'écuyer. N'est-ce pas d'après
+   les mêmes principes que les petits <name type="animal" xml:lang="fr">chiens</name>, qui n'ont ni l'intelligence de
+   l'homme ni la faculté d'articuler les sons, apprennent cependant à courir en
+   rond, à gambader, à faire des culbutes et autres tours semblables?
+   Obéissants, ils obtiennent ce qu'il leur faut; on les punit s'ils se
+   refusent à l'obéissance. La parole n'est pas une arme moins puissante à
+   l'égard des hommes : on les soumet en leur prouvant qu'il leur importe
+   d'être soumis. Quant aux esclaves, leur éducation, si rapprochée de celle de
+   la brute, est très favorable pour les plier à l'obéissance. Qu'on
+   satisfasse leur gourmandise, on a beaucoup fait auprès d'eux. La louange est
+   encore l'aiguillon des âmes généreuses. Elle devient un besoin aussi
+   impérieux pour elles que pour d'autres le boire et le manger. Voici les
+   moyens que j'emploie, et à l'aide desquels je crois me procurer des hommes
+   plus soumis : je les indique à ceux que je désire établir mes régisseurs.
+   D'ailleurs je les seconde encore ainsi : lorsque je dois fournir des
+   vêtements ou des chaussures à mes travailleurs, je ne veux pas que tout soit
+   de même qualité; j'en demande de très bonne et d'inférieure, afin de donner
+   le meilleur vêtement aux plus habiles ouvriers, à titre de récompense, et</p>
+</div>
+<div type="section" n="69">
+   <p>l'habillement de moindre qualité à ceux qui méritent moins. J'ai remarqué
+   que les bons esclaves étaient fort découragés lorsque tout se fait par leurs
+   mains et qu'ils voient qu'on a les mêmes procédés pour ceux qui ne
+   travaillent pas, et qui au besoin ne partagent pas volontiers les péricles.
+   Moi personnellement, je me garde bien de mettre la moindre égalité entre les
+   bons et les mauvais serviteurs. Si je vois mes régisseurs distribuer le
+   meilleur aux meilleurs esclaves, je les en loue. Mais un ouvrier obtient-il
+   des préférences ou par de vaines complaisances ou par des flatteries, loin
+   de fermer les yeux sur un tel abus, je réprimande mon régisseur, et je tâche
+   de lui prouver qu'en cela même il consulte mal ses intérêts.»</p>
+</div>
+<div type="chapter" n="14">
+   <p>Enfin, Ischomaque, lorsqu'il sait assez bien commander pour obtenir de la soumission, le crois-tu parfait? ou lui manque-t-il quelque qualité, en possédant celles dont tu viens de parler? — Assurément. Il faut aussi que le bien de son maître soit sacré pour lui, et qu'il ne dérobe rien. Que sert, en effet, de cultiver une terre par l'entremise d'un homme qui, assez hardi pour piller le bien qu'il administre, rendrait inutiles les travaux des champs?</p>
+   <p>— Est-ce toi encore qui te charges de ces leçons de justice? — Oui, mais il s'en faut bien que je trouve tous les esprits disposés à les recevoir. Je puise en partie dans les lois de <persName>Dracon</persName>, en partie dans celles de <persName>Solon</persName>, pour amener mes domestiques à cette sorte de justice qu'il entre dans mon plan de leur enseigner : car il me semble que ces deux législateurs ont donné beaucoup de lois propres à l'inspirer.</p>
+   <p>«Des châtiments y sont prononcés contre le vol; la prison pour le voleur pris sur le fait; la peine de mort contre le vol fait avec effraction. Pourquoi ont-ils décerné ces peines, si ce n'est dans la vue de rendre infructueux un gain sordide ? C'est en leur mettant sous les yeux quelques-unes de ces lois que je tâche de rendre mes domestiques fidèles dans leur administration : j'emprunte aussi quelques articles des lois royales. Le premier code, en effet, n'offre que des châtiments au</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage donné :
+
+
+<p>prévari­cateur; au lieu que les lois royales, en punissant l'injustice,
+promettent des récompenses à la fidélité ; de sorte que l'homme injuste qui
+voit l'homme juste devenir plus riche sait très bien, précisément parce
+qu'il a l'âme intéressée, s'abstenir de toute injustice. Ceux que je vois,
+malgré mes bienfaits, s'étudier à me tromper, je les mets hors de service;
+leur cupidité est incurable. Ceux en qui je remarque un air satisfait du
+sort heureux que leur assure la fidélité, et qui de plus sont sensibles à la
+louange, je les traite en hommes libres. Ils trouvent chez moi l'aisance et
+les égards dus à leur probité; car, si je ne me trompe, l'honnête homme
+diffère de l'homme intéressé, en ce qu'il n'envisage que les éloges et
+l'honneur, soit lorsqu'il travaille, soit lorsqu'il brave les dangers, soit
+lorsqu'il s'abstient de tout gain honteux.»</p>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Xénophon (Oeconomicus, chapitre XV) :
+
+
+<div type="chapter" n="15">
+   <milestone unit="section" n="15.1"/>
+   <p>«Je suppose que tu as inspiré à ton régisseur et le désir de te voir prospérer, et cette ardeur nécessaire pour qu'il travaille à ton bien-être; tu lui as donné les instructions nécessaires pour obtenir le plus d'avantages possible; tu l'as en outre formé à commander : par-dessus tout cela, il aime à te présenter la plus grande quantité possible de fruits mûris dans leur saison, agissant en cela comme tu agirais pour toi-même; je ne demanderai plus s'il manque quelque chose encore à un tel homme : c'est un trésor qu'un pareil régisseur; mais revenons, <persName>Ischomaque</persName>, sur une question que nous avons très légèrement effleurée.</p>
+   <milestone unit="section" n="15.2"/>
+   <p>— Laquelle? — <persName>Ischomaque</persName>, tu as dit, je crois, que l'important était de savoir comment chaque chose doit se faire ; que la vigilance devenait inutile dès que l'on ne savait ni ce que l'on doit faire ni d'après quel plan on doit le faire. Grâce à la clarté de ton langage, j'ai très bien compris quelles instructions il faut donner à un régisseur ; car je crois concevoir comment tu prétends l'attacher à tes intérêts, le rendre laborieux, capable de commander, et juste. Quant aux principes que doit étudier celui qui veut devenir bon agriculteur, quant à ce qu'il doit faire, à la méthode qu'il doit suivre, aux temps favorables à ses opérations, nous avons parlé de cela un peu à la hâte. Si tu me disais qu'il faut être versé</p>
+</div>
+<div type="chapter" n="73">
+   <p>dans l'<foreign xml:lang="grc">γράμματι</foreign> lorsqu'on veut soit écrire sous la dictée, soit lire ce que l'on a écrit, j'entendrais seulement qu'il faut posséder l'art de l'écriture; mais avec cela je n'en serais pas un plus habile écrivain.</p>
+   <p>De même à présent je n'ai pas de peine à comprendre qu'un bon régisseur doit connaître l'agriculture; mais, quand je le sais, je n'en suis pas plus avancé sur les principes de cet art.</p>
+   <p>Si, dans ce moment même, je me décidais à cultiver un champ, je ressemblerais à un médecin qui ferait ses visites, qui examinerait l'état de ses malades, sans savoir quel remède appliquer à leurs maux.</p>
+   <p>Pour que je ne ressemble pas à ce médecin, donne-moi les instructions relatives à l'agriculture.</p>
+   <quote>
+      <p>— Ischomaque repartit : C'est-à-dire que tu veux des leçons d'agriculture.</p>
+      <p>C'est qu'en effet, Ischomaque, l'agriculture enrichit ceux qui la connaissent, tandis qu'elle laisse vivre dans la détresse le cultivateur ignorant, quelque peine qu'il se donne.</p>
+   </quote>
+   <quote>
+      <p>— Tu vas juger, Socrate, combien cet art est ami de l'homme.</p>
+      <p>Tu le sais, nous appelons nobles tous les <name type="animal" xml:lang="fr">animaux</name> qui, distingués par leur beauté, leur grandeur, leur utilité, se laissent apprivoiser par l'homme : comment ne pas donner ce nom au plus utile, au plus doux, au plus honorable des arts, à cet art chéri des <name type="deity">dieux</name> et des hommes, et, par-dessus cela, le plus facile à apprendre ?</p>
+   </quote>
+   <p>Socrate, il n'a pas l'inconvénient des autres arts qui exigent</p>
+</div>
+<p>une longue expérience avant que ceux qui les étudient en vivent honorablement. Regarde travailler le cultivateur, écoute-le raisonner; bientôt, si tu le veux, tu seras en état d'en donner des leçons. Je te crois même déjà très avancé, sans que tu t'en doutes. Les artistes semblent en général réserver pour eux seuls le secret de leur art. L'agriculteur au contraire, le plus habile soit à planter, soit à semer, est content lorsqu'on l'observe. Questionnez-le sur les procédés qui lui réussissent, il n'a rien de caché pour vous : tant l'agriculture inspire de générosité à ceux qui l'exercent. — Voici un beau début, qui certes ne peut qu'inviter celui qui l'entend à te questionner. Cette étude est si noble! Que ce soit une raison pour toi de me donner de plus grands détails. Il n'y a point de honte pour toi à m'enseigner des choses faciles : moi seul je dois rougir de les ignorer, surtout lorsqu'elles sont d'une si haute importance.</p>
+<div type="chapter" n="16">
+   <milestone unit="section" n="16.1"/>
+   <p>D'abord, <persName>Socrate</persName>, je veux te
+      prouver que mal à propos on attribue de grandes difficultés à cet art,
+      soumis à tant de règles par des philosophes habiles en paroles, mais peu
+      exacts dans la pratique.</p>
+   <p>Selon eux, pour être bon agriculteur, il faut
+      connaître la nature du sol. — Sur ce point, <persName>Ischomaque</persName>, ont-ils donc grand
+      tort? Si l'on ignore ce que peut porter un terrain, comment saura-t-on ce
+      qu'on doit semer ou planter?</p>
+   <p>— C'est une connaissance qu'on acquiert même
+      sur le terrain d'autrui, en regardant quels <name type="plant" xml:lang="fr">arbres</name>, quels <name type="plant" xml:lang="fr">fruits</name> il produit.</p>
+   <p>Mais une fois qu'elle est acquise, qu'on se garde bien d'aller contre la
+      volonté des <name type="deity">dieux</name>. Ce n'est point en plantant ou semant selon nos besoins
+      que nous obtiendrons de meilleures récoltes ; c'est en examinant ce que la
+      nature aime à produire, à nourrir dans son sein.</p>
+   <p>Si, par une suite de la
+      négligence des propriétaires, elle n'instruit pas sur le parti qu'on en doit
+      tirer, bien souvent la terre voisine donnera de plus sûrs enseignements que
+      le propriétaire voisin. Même en friche, elle indique encore sa nature.</p>
+   <p>Si sa
+      végétation naturelle est belle, elle vous donnera, bien cultivée, de belles
+      récoltes. Voila, même pour les moins instruits, la manière de juger la
+      nature d'un sol.</p>
+   <p>— Dès ce moment, <persName>Ischomaque</persName>, je prends courage. Je vois que
+      je ne dois pas renoncer à l'agriculture, dans la crainte de mal juger de la</p>
+</div>
+Voici l'encodage TEI P5 du passage selon les règles strictes du projet Zoomathia :
+
+
+<div type="section" n="76">
+   <p>propriété d'un terrain. D'ailleurs, ceci me fait songer aux <name type="animal" xml:lang="fr">pêcheurs</name> : dans
+   leurs courbes maritimes, vous ne les voyez ni s'arrêter par curiosité ni
+   ralentir leur course. Quoiqu'en longeant rapidement une côte, ils
+   prononceront, à l'inspection des fruits, sur la bonne ou mauvaise qualité
+   d'une terre. Ils mépriseront celle-ci, ils vanteront celle-là; et je vois
+   qu'en général c'est ainsi que jugent de la bonté d'une terre ceux qui se
+   connaissent en agriculture. — Par où veux-tu, <persName>Socrate</persName>, que commencent mes
+   leçons d'agriculture? Je vois que, dans ce que je vais dire sur cette
+   matière, tu en sais déjà beaucoup. — La première connaissance que je
+   voudrais acquérir, comme la plus digne d'un philosophe, c'est par quels
+   procédés je me procurerais la plus abondante moisson d'<name type="plant" xml:lang="fr">orge</name> ou de <name type="plant" xml:lang="fr">blé</name>, si je
+   voulais être agriculteur. — Sais-tu qu'avant d'ensemencer une terre, il faut
+   labourer ? — Oui. — Si nous faisons le premier labour en hiver ? — Nous ne
+   trouverons que de la boue. — Tu choisirais donc l'été ? —La terre serait
+   trop dure à remuer pour l'attelage. — Je soupçonne que c'est au printemps
+   qu'il faut commencer ce travail. — C'est en effet dans cette saison surtout,
+   <persName>Ischomaque</persName>, que la terre plus friable se remue. — J'ajoute, <persName>Socrate</persName>,
+   qu'alors les mauvaises herbes, coupées par la charrue et recouvertes
+   ensuite, servent d'engrais sans répandre de graine qui les reproduise. »</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Oeconomicus 77/99) :
+
+
+<div type="chapter" n="77">
+   <p>sais pareillement, je pense, que, pour bien rapporter, la terre doit être
+      <foreign xml:lang="grc">ἀποκαθαιρομένη</foreign> de <name type="plant" xml:lang="fr">mauvaises herbes</name> et ouvrir son sein à toute la chaleur des
+      <name type="animal" xml:lang="fr">rayons</name> solaires. — Je suis entièrement de ton avis, <persName>Ischomaque</persName>. — Selon toi,
+      peut-on s'y prendre autrement qu'en donnant à son champ le plus de façons
+      possible pendant l'été? — Veux-tu que les <name type="plant" xml:lang="fr">mauvaises herbes</name> s'enlèvent, que
+      les chaleurs les dessèchent, que le <name type="animal" xml:lang="fr">soleil</name> échauffe bien la terre? je suis
+      convaincu qu'il n'est pas de meilleur moyen que de labourer au fort de l'été
+      et au milieu du jour. — Si, au lieu de <name type="animal" xml:lang="fr">charrue</name>, c'est avec la <name type="animal" xml:lang="fr">bêche</name> qu'on
+      laboure, n'est-il pas évident que le <name type="animal" xml:lang="fr">journalier</name> doit mettre de côté les
+      <name type="plant" xml:lang="fr">mauvaises herbes</name>? — Oui, et de plus les coucher de sorte qu'elles sèchent à
+      la surface du sol, et remuer la terre pour lui ôter sa crudité et faciliter
+      sa coction.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Xénophon (Oeconomicus, chapitre XVII) :
+
+
+<div type="chapter" n="17">
+   <p>Tu vois, <persName>Socrate</persName>, que, sur l'article du labourage, nous sommes tous deux du même avis.</p>
+   <p>Il est vrai.</p>
+   <p>Sur le temps des semailles as-tu une opinion particulière? ou bien suivrais-tu la méthode jugée la meilleure, soit par les cultivateurs qui nous ont précédés, soit par ceux d'aujourd'hui?</p>
+   <p>L'automne venu, tous les mortels portent leurs regards vers le ciel; ils attendent qu'une pluie salutaire permette d'ensemencer les champs.</p>
+   <p>Personne, <persName>Ischomaque</persName>, ne se décide volontiers à ensemencer un terrain sec : l'on sait combien ont perdu ceux qui l'ont fait avant l'ordre de la <name type="deity">Divinité</name>.</p>
+   <p>Sur ce point, <persName>Socrate</persName>, il n'y a donc qu'une opinion?</p>
+   <p>Assurément, parce qu'on n'est jamais partagé sur ce que règle la <name type="deity">Divinité</name>.</p>
+   <p>Par exemple, tous les hommes ensemble croient qu'il vaut mieux, en hiver, porter, si l'on peut, des vêtements épais.</p>
+   <p>Tous croient qu'il vaut mieux faire du feu lorsqu'on a du bois.</p>
+   <p>On diffère pourtant d'avis, <persName>Socrate</persName>, sur l'article des semailles.</p>
+   <p>On se demande quel est le moment le meilleur de la saison, le commencement, le milieu ou la fin.</p>
+   <p>C'est que <name type="deity">Dieu</name> ne fixe pas invariablement la marche de l'année.</p>
+   <p>Il faut une année semer de bonne heure, très tard une autre ; une troisième, ni trop tôt ni trop tard.</p>
+   <p>Trouves-tu plus expédient, <persName>Socrate</persName>, d'adopter l'un de ce termes, soit que l'on ait peu de terres à ensemencer, ou de commencer</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Économique, 79/99) :
+
+
+<div type="chapter" n="79">
+  <p>au premier terme, en prolongeant les semailles jusqu'au dernier? — Je crois,</p>
+  <p><persName>Ischomaque</persName>, que le plus avantageux est de semer aux trois termes. Il vaut mieux, selon moi, se voir chaque année une récolte suffisante que d'avoir tantôt abondance et tantôt disette.</p>
+  <p>— Voici donc le disciple encore une fois de l'avis du maître, et même il prononce avant lui. — <persName>Ischomaque</persName>, y a-t-il aussi différentes règles pour jeter la semence? — <persName>Socrate</persName>, voilà encore une chose qui mérite attention. Tu sais probablement que c'est avec la main qu'on doit jeter la semence.</p>
+  <p>— Oui, car je l'ai vu. — Les uns ont le talent de la jeter également, les autres ne l'ont pas. — Il faut donc exercer la main, comme le cithariste exerce ses doigts à seconder ses intentions? — Oui, <persName>Socrate</persName>.</p>
+  <p>— Mais si une terre est maigre et qu'une autre soit grasse? — Que dis-tu ? Par une terre maigre entends-tu une terre faible, et par une terre grasse une terre forte? — Précisément. — Donnerais-tu aux deux terres la même quantité de semence, ou laquelle des deux en exige plus que l'autre?</p>
+  <p>— J'ai coutume, <persName>Ischomaque</persName>, de verser plus d'eau dans un vin plus fort; et s'il y a quelque fardeau à porter, de charger davantage l'homme robuste: s'agit-il de nourrir un certain nombre de personnes, j'en donnerai davantage au citoyen qui a le plus de moyens. Et une terre faible se fortifiera-t-elle</p>
+</div>
+<pb n="80"/>
+<div type="chapter" n="80">
+  <p>comme une <name type="animal" xml:lang="fr">bête</name> de somme bien nourrie en lui donnant beaucoup de grains ? —</p>
+  <p>Tu badines, <persName>Socrate</persName> : sache pourtant qu'après avoir confiée la semence à la terre, si tu la retournes lorsque le germe, échauffé par les influences du ciel, sera monté en herbe, c'est une nourriture que tu donnes à ton champ, c'est un engrais qui le fortifie. Si au contraire tu laisses ta semence croître librement jusqu'à la maturité du grain, il sera aussi difficile à la terre que j'ai supposée faible d'en produire beaucoup qu'à une <name type="animal" xml:lang="fr">truie</name> languissante de nourrir de gros <foreign xml:lang="la">marcassins</foreign>. — Tu dis donc, <persName>Ischomaque</persName>, qu'il faut jeter moins de semence dans une terre faible? —</p>
+  <p>Assurément, <persName>Socrate</persName>. Toi-même tu en conviens, puisque tu penses qu'on doit charger un homme faible d'un moindre fardeau. — Et le <name type="plant" xml:lang="fr">sarcloir</name>, <persName>Ischomaque</persName>, pourquoi le fait-on passer au milieu des grains? — Tu sais apparemment que l'hiver il tombe beaucoup de pluies. — Est-il possible de l'ignorer? —</p>
+  <p>Supposons donc des grains ensevelis sous la boue, et des racines mises à nu par l'épanchement des eaux; supposons encore que, favorisées par l'humidité, des plantes s'élèvent avec le bon grain et l'étouffent. — Tout cela peut arriver. — Eh bien, <persName>Socrate</persName>, les moissons alors n'ont-elles pas besoin de secours?— Assurément, <persName>Ischomaque</persName>. — Comment, selon toi, venir au secours du grain enterré sous la boue? — En le débarrassant du limon qui l'affaisse. —</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage donné :
+
+
+<div type="book" n="81">
+   <div type="chapter" n="99">
+      <p>Et de celui dont la racine est à nu ? — En le recouvrant de terre. — Si les
+      <name type="plant" xml:lang="fr">mauvaises herbes</name> étouffent le bon grain en s'élevant avec lui; si elles lui
+      ôtent un suc nourricier, pareilles au <name type="animal" xml:lang="fr">frelon</name> paresseux qui dérobe à
+      l'<name type="animal" xml:lang="fr">abeille</name> les sucs qu'à grands frais elle dépose dans la ruche pour sa
+      nourriture? — On chasse le <name type="animal" xml:lang="fr">frelon</name> de la ruche : il faudra de même
+      impitoyablement arracher les <name type="plant" xml:lang="fr">mauvaises herbes</name>. — Tu approuves donc à présent
+      l'usage du <name type="plant" xml:lang="fr">sarcloir</name>? — Tout à fait. Je songe à l'importance d'amener des
+      comparaisons justes. Avec celle des <name type="animal" xml:lang="fr">frelons</name>, tu m'as bien plus mis en colère
+      contre les <name type="plant" xml:lang="fr">mauvaises herbes</name>, que lorsque tu me parlais sans comparaison.»</p>
+   </div>
+</div>
+Voici l'encodage TEI P5 du texte selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="18">
+   <p>Après cela il s'agit de moissonner. Si tu as sur cela des connaissances, ne me les refuse pas. — Oui, à condition que je ne te trouverai pas aussi savant que moi. Tu sais qu'il faut couper le <name type="plant" xml:lang="fr">blé</name>. — Belle demande! — Le coupe-t-on sous le vent ou à contre-vent? — Pas à contre-vent ; car et les yeux et les mains auraient, je crois, à souffrir, si le vent renvoyait contre le moissonneur la paille et l'<name type="plant" xml:lang="fr">épi</name>. — Couperas-tu la paille près de l'épi ou à fleur de terre ? — Si le brin est court, je le couperais au pied, pour que la paille fût de suffisante grandeur. S'il est haut, je ferais bien de le scier à mi-<foreign xml:lang="la">chaume</foreign>, pour épargner un travail inutile aux fouleurs et aux vanneurs. Quant au <foreign xml:lang="la">chaume</foreign> qu'on laisse sur terre, je pense qu'il la fertilise si on le brûle : si on le jette dans le réceptacle du fumier, il augmente la masse d'engrais.</p>
+   <p>— Tu le vois, <persName>Socrate</persName>, tu es pris sur le fait, et convaincu d'en savoir autant que moi sur la manière de moissonner. — Je le croirais presque ; mais voyons si je sais aussi comment il faut battre. — Tu sais que ce sont les <name type="animal" xml:lang="fr">bêtes de somme</name> qu'on emploie à ce travail. — Comment ne le saurais-je pas ? Je sais de plus qu'on nomme indistinctement <name type="animal" xml:lang="fr">bêtes de somme</name> les <name type="animal" xml:lang="fr">bœufs</name>, les <name type="animal" xml:lang="fr">chevaux</name>, les <name type="animal" xml:lang="fr">mulets</name>. — Tu penses que ces animaux ne savent que fouler le grain sur lequel on les conduit ? — Ils ne peuvent en effet en savoir</p>
+</div>
+<div type="chapter" n="83">
+  <p>davantage. — Mais qui veillera, <persName>Socrate</persName>, à ce que rien ne soit broyé que ce
+  qui doit l'être, et que le battage se fasse d'une manière égale ? — Les
+  ouvriers de l'aire, assurément. En retournant la paille en tout sens, en
+  mettant sous les pieds des <name type="animal" xml:lang="fr">animaux</name> ce qui n'y a point encore passé, ils
+  obtiendront un foulage égal, et promptement achevé. — Te voilà, à cet égard,
+  aussi instruit que moi. — Après cela, <persName>Ischomaque</persName>, nous nettoyons le <name type="plant" xml:lang="fr">blé</name> en
+  le vannant. — Assurément : mais, dis-moi, <persName>Socrate</persName>, sais-tu que si tu
+  commences à vanner contre le vent, toute l'aire se couvrira de balles? —
+  Cela doit être. Par une conséquence nécessaire, toute la balle reviendra sur
+  le grain. — Il serait en effet singulier qu'elle passât par-dessus le tas de
+  <name type="plant" xml:lang="fr">blé</name> pour aller se rendre dans la partie de l'aire où il n'y a rien. — Et si
+  l'on commence à vanner sous le vent ? — Il est clair qu'alors les pailles se
+  trouveront naturellement dans le réceptacle qui leur est destiné. — Quand tu
+  auras nettoyé le grain jusqu'au milieu de l'aire, continueras-tu en le
+  laissant ainsi épars, ou pousseras-tu le grain pur autour du poteau central,
+  de telle sorte qu'il occupe le moins de place possible ? — Oui vraiment ; je
+  l'y pousserai de manière que la paille, passant par-dessus, se rende dans la
+  partie vide de l'aire, et que je ne sois pas obligé de vanner deux fois la</p>
+</div>
+<div type="section" n="84">
+   <p>même paille. — Certes, tu pourrais enseigner à d'autres la manière de vanner
+   promptement. — Je ne me connaissais pas un talent que pourtant je possédais
+   depuis bien des années. Que sais-je, moi ? sans m'en douter, ne serais-je
+   pas <name type="animal" xml:lang="fr">orfèvre</name>, joueur de flûte, peintre ? Personne, il est vrai, ne m'en a
+   donné des leçons : mais en ai-je reçu sur l'agriculture ? Or, je m'aperçois
+   que l'agriculture est un métier comme les autres. — Ne t'ai-je pas dit,
+   depuis longtemps, que l'agriculture est le plus noble des arts, parce qu'on
+   l'apprend facilement ? — Je le vois bien, <persName>Ischomaque</persName>, puisque, tout instruit
+   que j'étais de la manière de semer, j'ignorais mon talent.»</p>
+</div>
+Voici l'encodage TEI P5 du passage selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="19">
+   <p>«L'art de planter appartient-il à l'agriculture? — Assurément, Socrate. — Comment donc se fait-il que je n'entende rien à planter lorsque je sais semer ? — Toi, Socrate, tu ne sais pas planter ? — Eh ! comment le saurais je, moi qui ne connais ni les terrains propres aux plantations, ni la profondeur ni la largeur qu'il convient de donner aux fosses, ni à quel point il faut enfoncer le <name type="plant" xml:lang="fr">jeune plant</name> pour qu'il devienne beau ? — Ça donc, apprends ce que tu ne sais pas. Tu as vu, je suis sûr, des fosses que l'on creuse pour planter des <name type="plant" xml:lang="fr">arbres</name>. — Oui, bien souvent. — En as-tu vu qui eussent plus de trois pieds de profondeur? — Celles que j'ai vues n'avaient pas plus de deux pieds et demi. — En as-tu vu qui excédassent trois pieds en largeur ? — Elles n'avaient pas plus de deux pieds et demi. — Réponds à cette autre question : En as-tu vu qui eussent moins d'un pied de profondeur ? — Jamais moins d'un pied et demi. Plantés à fleur de terre, les <name type="animal" xml:lang="fr">arbres</name> tomberaient au premier coup de bêche. — Tu sais donc, Socrate qu'on ne donne aux fosses ni plus de deux pieds et demi, ni moins d'un et demi de profondeur. — Le moyen, mon cher Ischomaque, de ne pas comprendre ce qui frappe tous les yeux! — Distingues-tu, à la vue, un terrain sec d'avec un terrain humide? — Le terrain des environs de <placeName>Lycabette</placeName> est sec ; celui qui avoisine le <name type="animal" xml:lang="fr">marais</name> de
+</p>
+</div>
+<div type="chapter" n="86">
+   <milestone unit="section" n="86.1"/>
+   <p>Phalère est humide. Je jugerais d'un terrain quelconque par sa ressemblance avec ceux-là. — Feras-tu la fosse de ton <name type="plant" xml:lang="fr">plant</name> dans un terrain sec ou humide ? — Dans un terrain sec. En creusant un terrain humide, on rencontre de l'<name type="animal" xml:lang="fr">eau</name>. Or, on ne saurait planter dans l'<name type="animal" xml:lang="fr">eau</name>. — Bien dit ; mais as-tu remarqué quel temps l'on choisit, quand les fosses sont faites, pour planter chaque espèce d'<name type="plant" xml:lang="fr">arbres</name> ? — Oui, certes. — Tu veux, sans doute, que tes <name type="plant" xml:lang="fr">plants</name> prennent racine le plus promptement possible. Mais crois-tu que, mis dans une terre labourée, le pivot de la bouture perce plus tôt à travers une terre meuble qu'à travers une terre durcie faute de culture? — Il est clair qu'il viendra plus tôt en terre meuble que dans celle qui ne l'est pas. — Faut-il mettre sous la <name type="plant" xml:lang="fr">plante</name> une couche de terre? — Sans contredit.—Mais crois-tu que la bouture prenne mieux racine, plantée en ligne verticale ? ou bien, après avoir fléchi horizontalement la partie inférieure, la recouvrirais-tu de terre, de manière à lui faire décrire un gamma renversé ? — C'est ainsi que je planterais, par là on renferme plus d'<foreign xml:lang="fr">yeux</foreign> dans la terre. Des <foreign xml:lang="fr">yeux</foreign> de la partie supérieure, je vois sortir les branches. Ceux de la partie inférieure doivent de même, je crois, produire des <name type="animal" xml:lang="fr">racines</name>. Or, si le <name type="plant" xml:lang="fr">plant</name> jette beaucoup de <name type="animal" xml:lang="fr">racines</name> en terre, je crois qu'il se fortifiera promptement. — À cet égard tu es encore aussi instruit que moi. Te</p>
+</div>
+<p>borneras-tu à combler le fossé, ou apporterais-tu une grande attention à fouler la terre autour du jeune <name type="plant" xml:lang="fr">arbrisseau</name> ? — Assurément je la foulerais : car, sans cette précaution, je suis sûr qu'à force d'eau, la terre deviendrait de la boue, et au premier soleil elle se dessécherait jusqu'au fond; de sorte qu'on aurait à craindre ou l'humidité qui pourrirait le plant, ou des vides qui dessécheraient ses racines trop échauffées.</p>
+<p>— Tu en sais autant que moi, <persName>Socrate</persName>, sur la manière de planter la <name type="plant" xml:lang="fr">vigne</name>.</p>
+<p>— Et le <name type="plant" xml:lang="fr">figuier</name>, est-ce ainsi qu'on le plante ? — Oui, ainsi que tous les <name type="plant" xml:lang="fr">arbres fruitiers</name>; car une méthode bonne à l'égard de la <name type="plant" xml:lang="fr">vigne</name> ne peut être vicieuse pour les autres <name type="plant" xml:lang="fr">arbres</name>.</p>
+<p>— Et l'<name type="plant" xml:lang="fr">olivier</name>, <persName>Ischomaque</persName>, comment le planterons-nous ? — Tu le sais parfaitement ; tu veux encore m'éprouver. Comme cet <name type="plant" xml:lang="fr">arbre</name> se plante ordinairement le long des <placeName>chemins</placeName>, tu vois qu'on lui fait une fosse plus profonde. Tu vois aussi des <name type="animal" xml:lang="fr">marcottes</name> dans toutes les plantations ; tu observes qu'on les enduit d'une terre grasse et que l'on couvre leur extrémité supérieure.</p>
+<p>— Je vois tout cela. — Eh bien ! qu'y a-t-il que tu voies et ne comprennes pas ? Ignores-tu comment on met une coquille sur l'enduit ? — Je n'ignore en vérité rien de ce que tu viens de dire : mais je songe en moi-même pourquoi, lorsque tu me demandais sur-le-champ si je savais planter, je t'ai dit non. Je me croyais hors</p>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage de Xénophon (Oeconomicus 88/99) :
+
+
+<div type="section" n="88">
+   <p>d' état de parler sur cette matière : puis aux questions que tu m'as faites
+   successivement, j'ai répondu, s'il faut t'en croire, précisément ce que tu
+   sais, toi le <persName>cultivateur</persName> par excellence ! Interroger, c'est donc enseigner ?
+   Je me rappelle quel art tu y mettais. Conduisant mon esprit à travers des
+   idées connues, puis lui offrant d'autres idées liées par leur rapport avec
+   les premières, tu m'as prouvé que je savais ce que je croyais ignorer. —
+   Mais, si je te questionnais sur l'argent de bon et de mauvais aloi,
+   pourrais-je te persuader que tu sais distinguer le vrai titre du faux? Si je
+   te parlais de <name type="animal" xml:lang="fr">joueurs de flûte</name>, de peintres et autres artistes, est-ce que
+   je te persuaderas que tu sais jouer de la flûte, peindre ou exercer
+   d'autres professions semblables ? — Peut-être que oui, puisque tu m'as
+   prouvé que j'étais savant en <name type="animal" xml:lang="fr">agriculture</name>, quoique je susse bien qu'on ne
+   m'en avait jamais donné de leçons. — La conséquence n'est pas juste,
+   <persName>Socrate</persName>. Depuis longtemps je dis que l'agriculture est art débonnaire, si
+   ami de l'homme, que, pour peu que l'on entende et voie, on y devient habile.
+   C'est elle-même qui nous enseigne la manière d'obtenir les plus grands
+   succès; et, pour le prouver tout de suite, la <name type="plant" xml:lang="fr">vigne</name>, en grimpant sur un
+   arbre voisin, n'enseigne-t-elle pas à lui donner un appui? Lorsque ses
+   raisins sont encore jeunes, et que de toutes parts elle étend ses pampres,</p>
+</div>
+<p>est-ce que par là-même elle n'avertit pas d'<foreign xml:lang="grc">ombrager</foreign> les <name type="plant" xml:lang="fr">grappes</name> exposées
+aux feux brûlants de l'<foreign xml:lang="la">æstas</foreign> ? Le temps arrive où le <name type="deity">soleil</name> mûrit les <name type="plant" xml:lang="fr">raisins</name>,
+elle se dépouille de ses <name type="plant" xml:lang="fr">feuilles</name>, et nous avertit d'aider à la maturité de
+son <name type="plant" xml:lang="fr">fruit</name> en le mettant à nu. Par un effet naturel de sa fécondité, ici elle
+nous montre des <name type="plant" xml:lang="fr">fruits</name> mûrs, là des <name type="plant" xml:lang="fr">raisins</name> encore verts, et nous dit ainsi
+qu'il faut les cueillir comme les <name type="plant" xml:lang="fr">figues</name>, à mesure qu'ils mûrissent.»</p>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Xénophon, avec une attention particulière aux entités nommées Zoomathia :
+
+
+<div type="book" n="90">
+   <div type="chapter" n="20">
+      <p><milestone unit="section" n="20.1"/>« Si tout ce qui a rapport à l'agriculture s'apprend si facilement, <persName>Ischomaque</persName> ; si tous les hommes en connaissent aussi bien les principes, comment s'accordent-ils si peu dans la pratique ? Pourquoi les uns vivent-ils au sein de l'abondance, augmentant chaque jour leur fortune, tandis que les autres, ne pouvant même se procurer le nécessaire, font encore des dettes ? — Je vais te le dire, <persName>Socrate</persName>. En agriculture, ce n'est ni le savoir qui enrichit, ni l'ignorance qui ruine. </p>
+      <p>Jamais tu n'entendras dire : Telle maison est ruinée parce que le laboureur a semé inégalement, parce qu'on n'a point planté comme il le fallait, parce qu'on a planté sans connaître les terrains propres à la <name type="plant" xml:lang="fr">vigile</name>, parce qu'on ne savait pas qu'avant d'ensemencer un terrain, on doit labourer, parce qu'on ignorait qu'il faut donner de l'engrais à la terre. On dira plutôt : Cet homme ne récolte point de <name type="plant" xml:lang="fr">blé</name>, parce qu'il ne songe ni à ensemencer son champ, ni à le fumer. Cet autre n'a pas de <name type="plant" xml:lang="fr">vin</name>, car il n'a soin ni de planter des <name type="plant" xml:lang="fr">vignes</name>, ni de faire valoir celles qu'il possède. Tel autre ne recueille ni <name type="plant" xml:lang="fr">figues</name> ni <name type="plant" xml:lang="fr">olives</name> ; mais il ne s'en occupe pas, mais il ne fait rien pour en avoir. C'est, mon cher <persName>Socrate</persName>, de cette différence dans la pratique, bien plus que dans les grandes découvertes dans les travaux agraires, que résulte cette différence de fortune parmi les agriculteurs. </p>
+   </div>
+</div>
+<div type="book" n="91">
+   <p>«Dans des expéditions militaires, tel général l'emporte sur tel autre. </p>
+   <p>A-t-il plus de talent ? Non; mais il déploie plus d'activité. Il met en pratique des principes connus de tous les gens de guerre, du simple particulier même, tandis que l'autre les néglige. Par exemple, il n'est pas un militaire qui ne sache qu'en allant à l'ennemi, il vaut mieux marcher en ordre, pour être, au besoin, en état de combattre : c'est une règle que tous connaissent, mais que tous n'observent pas.</p>
+   <p>Personne n'ignore combien il est utile de placer jour et nuit des postes avancés : ceux-ci le font, ceux-là ne le font pas. Vous ne trouverez personne qui ne sache que, quand on doit traverser une gorge, il vaut mieux s'emparer des positions favorables que de ne le pas faire. Il en est pourtant qui négligent ce soin: d'autres ne le négligent pas.</p>
+   <p>Tout le monde vous dira qu'il n'y a rien de meilleur que le fumier en agriculture. On le voit se former de lui-même ; on sait comment il se fait; on peut s'en procurer la quantité nécessaire : cependant les uns prennent la peine d'en rassembler; les autres n'y pensent pas.</p>
+   <p>«Celui qui règne dans les cieux nous envoie des pluies qui convertissent toutes les fosses en mares. La terre, d'un autre côté, produit toute sorte de <name type="plant" xml:lang="fr">plantes</name> parasites, dont on doit la délivrer lorsqu'on veut semer. Une fois arrachées, jetez-les dans l'eau : le temps vous donnera ce qui plaît à la </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Oeconomicus) :
+
+
+<pb n="92"/>
+<div type="section" n="92">
+  <p>terre. Quelle <name type="plant" xml:lang="fr">herbe</name> en effet, quelle terre ne se convertit pas en fumier
+  dans des eaux stagnantes ? «Tout le monde sait encore quels soins demande un
+  terrain ou trop humide pour y semer, ou imprégné de trop de sels pour faire
+  des plants; que c'est par des tranchées qu'on facilite l'écoulement des eaux
+  ; que l'on corrige un terrain imprégné de trop de sels, en y mêlant des
+  substances non salines, humides ou sèches. Quelques-uns s'en occupent,
+  d'autres n'y songent pas. «Supposons qu'on ignore absolument ce que peut
+  produire un sol; qu'on n'en ait vu ni <name type="plant" xml:lang="fr">plante</name> ni <name type="plant" xml:lang="fr">fruit</name>; qu'on n'ait personne
+  à consulter : n'est-il pas plus facile, pour qui que ce soit, de connaître
+  la qualité d'un sol que celle d'un <name type="animal" xml:lang="fr">cheval</name> ou d'un <name type="animal" xml:lang="fr">homme</name>? Jamais la terre
+  n'en imposa par de trompeuses apparences; elle dit franchement ce qu'elle
+  peut ou ne peut point. «Comme elle n'exige que des connaissances nettes et
+  précises, elle nous apprend à bien distinguer les gens lâches d'avec les
+  gens actifs : elle paye avec usure les soins qu'on lui donne. Aussi, bien
+  différente des autres arts, qui permettent aux paresseux de prétexter leur
+  ignorance, elle fait hautement le procès à l'homme abject et vil; personne
+  en effet ne se persuade qu'on puisse vivre sans le nécessaire : celui qui
+  refuse de cultiver la terre, lorsqu'il n'a pas d'autre profession pour
+  subsister, prouve donc qu'il projette de vivre voleur, brigand ou mendiant,</p>
+</div>
+<div type="section" n="93">
+   <p>ou qu'il a tout à fait perdu l'esprit. «Une autre vérité encore, c'est qu'en
+      agriculture les bons ou mauvais succès tiennent à ce que celui-ci, qui a
+      beaucoup d'ouvriers, veille à ce qu'ils travaillent tout le temps marqué,
+      tandis que celui-là se montre négligent à cet égard. En effet, un homme en
+      vaut dix quand il emploie son temps; peut-on lui comparer celui qui
+      abandonne le travail avant l'heure ? Laissez vos ouvriers agir mollement
+      tout le jour : il y aura, pour résultat de l'ouvrage, une différence de
+      moitié. Dans une route de deux cents stades, deux voyageurs également jeunes
+      et robustes laisseront entre eux une distance de cent stades, si l'un ne
+      perd point de vue l'objet de sa course, tandis que l'autre, ne se gênant
+      point, se repose, regarde çà et là, prend le frais à l'ombre des <name type="plant" xml:lang="fr">forêts</name> ou
+      sur les bords des <name type="plant" xml:lang="fr">fontaines</name>. De même, par rapport à l'ouvrage, quelle
+      disparité entre des hommes qui exécutent ce qu'on leur commande, et ceux
+      qui, loin d'obéir, trouvent des prétextes pour ne pas s'occuper, ou sont
+      abandonnés à leur indolence! Il y a certainement autant de différence entre
+      bien ou mal travailler, qu'entre travailler sans interruption ou rester
+      entièrement oisif. Que des journaliers chargés de délivrer ma <name type="plant" xml:lang="fr">vigne</name> des
+      mauvaises herbes la bêchent de sorte qu'elles y viennent et plus vigoureuses
+      et en plus grande quantité, ne dirons-nous pas qu'il n'y a rien de fait?</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Oeconomicus 94/99) :
+
+
+<pb n="94"/>
+<div type="chapter" n="94">
+  <p>Voilà ce qui ruine les maisons, bien plus qu'une profonde ignorance. En effet, si vous prélevez tous les frais sur le bien même, et que les travaux ne soient pas conduits de manière qu'ils vous indemnisent de vos dépenses, faut-il, vous étonner de voir à l'aisance succéder la misère? <quote>«Il est, pour les cultivateurs laborieux et sérieusement occupés, un moyen infaillible de fortune que mon père adoptait et qu'il m'a transmis.</quote></p>
+  <p>Jamais il ne me permettait d'acheter un champ bien cultivé. Une terre se trouvait-elle inculte et non plantée, par la négligence ou la gêne des propriétaires, c'était celle-là qu'il conseillait d'acquérir. Il disait qu'une terre bien cultivée coûtait beaucoup sans être susceptible d'amélioration; et il pensait que, ne pouvant s'améliorer, elle n'avait plus le même attrait. Suivant lui, le vrai moyen de jouir, c'était de posséder ou des <name type="animal" xml:lang="fr">troupeaux</name>, ou un bien quelconque qui prospère de jour en jour.</p>
+  <p>Or, nul rapport plus sensible que celui d'un champ devenu fertile à tous égards, d'inculte qu'il était. Apprends, <persName>Socrate</persName>, que déjà nous avons porté nos fonds bien au delà de leur première valeur. Notre combinaison est si belle et si simple, que, quand tu m'auras écouté, tu t'en iras aussi savant que moi, en état même, si tu le veux, de communiquer ta science à d'autres.</p>
+  <p>Mon père ne tenait son savoir de personne; et, pour l'acquérir, il ne se mit pas l'esprit à la</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Économique, 95/99) :
+
+
+<div type="chapter" n="95">
+  <p>torture. L'amour seul de l'agriculture et du travail lui avait fait
+    chercher, comme il le disait lui-même, un champ où il trouvât, en
+    s'occupant, plaisir et profit; car l'homme d'<placeName>Athènes</placeName> le plus passionné pour
+    l'agriculture, c'était sans contredit mon père. — Gardait-il son champ quand
+    il l'avait défriché? ou le vendait-il, s'il en trouvait un bon prix? —
+    Vraiment, il le vendait; et aussitôt, par amour du travail, il en achetait
+    un autre inculte qui exerçât son goût pour les travaux agraires. — À
+    t'entendre, <persName>Ischomaque</persName>, ton père avait pour l'agriculture le même goût qu'un
+    marchand de <name type="plant" xml:lang="fr">blé</name> a pour son commerce; et comme celui-ci l'aime avec passion,
+    entend-il parler d'un pays qui regorge de <name type="plant" xml:lang="fr">blé</name>, aussitôt ses vaisseaux
+    voguent sur la mer <foreign xml:lang="grc">Αἰγαῖος</foreign>, sur le Pont <foreign xml:lang="la">Euxinus</foreign>, sur la mer de <placeName>Sicile</placeName> : il
+    arrive, fait le plus de provisions possible, puis s'en retourne par mer,
+    après avoir chargé de ses marchandises le vaisseau même qui porte sa
+    personne. S'il a besoin d'argent, ce n'est pas au hasard, ni au premier
+    endroit qu'il les décharge : il n'apporte son <name type="plant" xml:lang="fr">blé</name>, il ne le livre que dans
+    les pays où il entend dire que cette denrée est montée au plus haut prix.
+    C'est à peu près ainsi que ton père chérit l'agriculture. — <persName>Socrate</persName>, tu
+    plaisantes. Pour moi, je pense qu'un homme qui vend ses maisons à mesure
+    qu'il les bâtit, et qui ensuite en construit d'autres, n'en est pas moins un</p>
+</div>
+<div type="section" n="96">
+   <p>vrai amateur de <name type="animal" xml:lang="fr">bâtisse</name>. — En vérité, <persName>Ischomaque</persName>, je pense, ainsi que toi, qu'on aime naturellement ce dont on se flatte de tirer avantage.»</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Xénophon, *Oikonomikos*, chapitre XXI :
+
+
+<div type="chapter" n="21">
+   <milestone unit="section" n="21"/>
+   <p>Mais comme tout ce discours vient à l'appui de ton sujet! Tu voulais me prouver que l'<name type="animal" xml:lang="fr">agriculture</name> est le plus facile des arts : ce que tu viens de me dire m'en a parfaitement convaincu. — J'en suis ravi.</p>
+   <p>Quant au talent de commander, Socrate, talent nécessaire en <name type="animal" xml:lang="fr">agriculture</name>, en politique, en économie, à la tête des armées, je conviens avec toi que tous n'en sont pas également pourvus.</p>
+   <p>Représentons-nous un vaisseau qui vogue en pleine mer : on veut, à force de rames, achever un trajet; mais tel chef de rameurs, par ses actions et ses discours, sait animer tous les esprits : on travaille avec ardeur. Bientôt on débarque couvert de sueur, le chef se louant des rameurs, les rameurs se louant du chef.</p>
+   <p>Tel autre est si dépourvu d'intelligence, qu'il emploie au même trajet le double de journées; il arrive au port sans être fatigué, mais détestant l'équipage qui déteste son chef.</p>
+   <p>J'en dis autant des généraux. Entre les mains de celui-ci, des soldats deviennent paresseux, lâches, ne voulant, ne daignant obéir qu'à la dernière extrémité, se faisant même honneur de leur résistance à leur chef, incapables de rougir d'un échec déshonorant.</p>
+   <p>Que ces mêmes hommes et d'autres passent dans les mains de chefs favorisés du ciel, pleins de valeur et de talent, ils rougiraient de la moindre lâcheté. Persuadés qu'il est mieux d'obéir, ils se font gloire de</p>
+</div>
+<p>leur soumission. S'agit-il d'endurer les fatigues? ils les endurent tous de
+bonne grâce. Loin de se décourager sous un bon commandant, l'armée tout
+entièr<span rend="sup">e</span> n'est plus qu'un seul individu avide de gloire, ami des p
+érils, n'ayant qu'une ambition, celle d'avoir les yeux de ce commandant pour
+témoins de ses exploits. Qu'ils sont puissants les hommes suivis de pareils
+soldats! Les généraux redoutables à mes yeux ne sont pas ceux qui, fiers de
+leur force et de leur taille, habiles à lancer le javelot, bons archers,
+excellents écuyers, vont au premier rang, munis d'un solide bouclier, braver
+les dangers. Je ne regarde comme tels que ceux qui savent convaincre le
+soldat de la nécessité de les suivre au travers du feu et de tous les
+périls. Certes, le surnom de magnanime appartient à celui que suit une
+multitude ainsi animée. Lorsqu'il s'avance, qui n'appellera pas puissant le
+bras de cet homme à qui tant de bras obéissent? Et n'est-on pas un grand
+homme, lorsqu'on fait de grandes choses plus par le génie que par les forces
+du corps? Il en est de même dans l'administration domestique. L'intendant,
+le régisseur rendent-ils les ouvriers ardents au travail, appliqués,
+assidus? par eux la maison prospère, ils y versent l'abondance. Je ferai peu
+de cas d'un maître qui, pouvant punir sévèrement l'ouvrier paresseux et
+récompenser avec magnificence le bon travailleur, ne fait pourtant aucune</p>
+<p>impression lorsqu'il paraît. Mais je dirai de celui dont la présence met
+tout en mouvement, dont les regards inspirent à tous les cœurs de l'ardeur,
+de l'émulation, une ambition qui tourne au profit de chacun, je dirai d'un
+tel homme : il a l'âme d'un roi. «Voilà, selon moi, le grand talent en
+agriculture comme dans toute œuvre qui se fait par des hommes. Je suis bien
+loin de dire qu'il suffise ou d'un exemple ou d'une leçon pour acquérir ce
+talent : je prétends au contraire qu'on a besoin d'instruction et d'un
+naturel heureux pour y atteindre : je dis plus, d'une inspiration d'en haut.
+En effet, je ne puis croire que ce soit le fait de l'homme, mais celui de la
+divinité, d'exercer un paisible empire sur les cœurs! Mais les dieux ne
+l'accordent qu'à la véritable prudence. Quant au stérile avantage de
+commander aux hommes en tyran, ils le donnent, selon moi, à ceux qui sont
+dignes de vivre comme ce <persName>Tantale</persName>, éternellement tourmenté, dit-on, dans les
+enfers par la crainte de mourir deux fois.»</p>
     </body>
   </text>
 </TEI>
