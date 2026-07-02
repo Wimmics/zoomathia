@@ -69,7 +69,7 @@ When the VM starts, it will download the English knowledge base.
 Wait until the download completes and the service starts up before using spacy NER.
 
 
-## Annotation pipeline
+## Pipeline
 
 ### XML to CSV transformation
 
