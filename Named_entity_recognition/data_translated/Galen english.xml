@@ -1,17 +1,13 @@
-<TEI.2>
-	<teiHeader type="text" status="new">
-		<fileDesc>
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader><fileDesc>
 			<titleStmt>
 				<title>On the Natural Faculties.</title>
 				<author>Galen</author>
 				<editor role="translator">A.J. Brock</editor>
 				<funder>National Library of Medicine History of Medicine Division</funder>
 			</titleStmt>
-			<publicationStmt>
-				<publisher>Trustees of Tufts University</publisher>
-				<pubPlace>Medford, MA</pubPlace>
-				<authority>Perseus Project</authority>
-			</publicationStmt>
+			<publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
 			<sourceDesc>
 				<biblStruct>
 					<monogr>
@@ -26,23 +22,20 @@
 					</monogr>
 				</biblStruct>
 			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>      
-			<refsDecl doctype="TEI.2">
-				<state unit="chapter"/>
-				<state unit="section" n="chunk"/>
+		</fileDesc><encodingDesc>      
+			<refsDecl>
+				<refState unit="chapter"/>
+				<refState unit="section" n="chunk"/>
 			</refsDecl>
-			<refsDecl doctype="TEI.2">
-				<state unit="page" />
+			<refsDecl>
+				<refState unit="page"/>
 			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
+		</encodingDesc><profileDesc>
 			<langUsage>
-				<language id="en">English</language>
+				<language ident="en">English</language>
 			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
+		</profileDesc></teiHeader>
+	<text xml:lang="en">
 		<body>
 			<div1 type="book" n="1">
 				<div2 type="section" n="1"> 
@@ -195,7 +188,7 @@
 					<p>Now, if the movement of urine does not depend on the tendency of a vacuum to become refilled, it is clear that neither does that of the blood nor that of the bile; or if that of these latter does so, then so also does that of the former. For they must all be accomplished in one and the same way, even according to Erasistratus himself. This matter, however, will be discussed more fully in the book following this.</p>
 				</div2>
 			</div1>
-			<div1 type="book" n="2" org="uniform" sample="complete"><head>BOOK TWO</head>
+			<div1 type="book" n="2"><head>BOOK TWO</head>
 				<div2 type="section" n="1">
 					<p>In the previous book we demonstrated that not only Erasistratus, but also all others who would say anything to the purpose about urinary secretion, must acknowledge that the kidneys possess some faculty which attracts to them this particular quality existing in the urine. Besides this we drew attention to the fact that the urine is not carried through the kidneys into the bladder by one method, the blood into parts of the animal by another, and the yellow bile separated out on yet another principle. For when once there has been demonstrated in any one organ, the drawing, or so-called epispastic faculty, there is then no difficulty in transferring it to the rest. Certainly Nature did not give a power such as this to the kidneys without giving it also to the vessels which abstract the biliary fluid, nor did she give it to the latter without also it to each of the other parts. And, assuredly, if this is true, we must marvel that Erasistratus should make statements concerning the delivery of nutriment from the food-canal which are so false as to be detected even by Asclepiades. Now, Erasistratus considers it absolutely certain that, if anything flows from the veins, one of two things must happen: either a completely empty space will result, or the contiguous quantum of fluid will run in and take the place of that which has been evacuated. Asclepiades, however, holds that not one of two, but one of three things must be said to result in the emptied vessels: either there will be an entirely empty space, or the contiguous portion will flow in, or the vessel will contract. For whereas, in the case of reeds and tubes it is true to say that, if these be submerged in water, and are emptied of the air which they contain in their lumens, then either a completely empty space will be left, or the contiguous portion will move onwards; in the case of veins this no longer holds, since their coats can collapse and so fall in upon the interior cavity. It may be seen, then, how false this hypothesis- by Zeus, I cannot call it a demonstration!- of Erasistratus is.</p>
 					<p>And, from another point of view, even if it were true, it is superfluous, if the stomach has the power of compressing the veins, as he himself supposed, and the veins again of contracting upon their contents and propelling them forwards. For, apart from other considerations, no plethora would ever take place in the body, if delivery of nutriment resulted merely from the tendency of a vacuum to become refilled. Now, if the compression of the stomach becomes weaker the further it goes, and cannot reach to an indefinite distance, and if, therefore, there is need of some other mechanism to explain why the blood is conveyed in all directions, then the principle of the refilling of a vacuum may be looked on as a necessary addition; there will not, however, be a plethora in any of the parts coming after the liver, or, if there be, it will be in the region of the heart and lungs; for the heart alone of the parts which come after the liver draws the nutriment into its right ventricle, thereafter sending it through the arterioid vein to the lungs (for Erasistratus himself will have it that, owing to the membranous excrescences,no other parts save the lungs receive nourishment from the heart). If, however, in order to explain how plethora comes about, we suppose the force of compression by the stomach to persist indefinitely, we have no further need of the principle of the refilling of a vacuum, especially if we assume contraction of the veins in addition- as is, again, agreeable to Erasistratus himself.
@@ -286,7 +279,7 @@
 					<p>But let this discussion come to an end here, and I shall add in the third book all that remains.</p>
 				</div2>
 			</div1>
-			<div1 type="book" n="3" org="uniform" sample="complete"><head>BOOK THREE</head>
+			<div1 type="book" n="3"><head>BOOK THREE</head>
 				<div2 type="section" n="1">
 					<p>It has been made clear in the preceding discussion that nutrition occurs by an alteration or assimilation of that which nourishes to that which receives nourishment, and that there exists in every part of the animal a faculty which in view of its activity we call, in general terms, alterative, or, more specifically,  assimilative and nutritive. It was also shown that a sufficient supply of the matter which the part being nourished makes into nutriment for itself is ensured by virtue of another faculty which naturally attracts its proper juice [humour] that juice is proper to each part which is adapted for assimilation, and that the faculty which attracts the juice is called, by reason of its activity, attractive or epispastic. It has also been shown that assimilation is preceded by adhesion, and this, again, by presentation, the latter stage being, as one might say, the end or goal of the activity corresponding to the attractive faculty. For the actual bringing up of nutriment from the veins into each of the parts takes place through the activation of the attractive faculty,  whilst to have been finally brought up and presented to the part is the actual end for which we desired such an activity; it is attracted in order that it may be presented. After  this, considerable time is needed for the nutrition of the animal; whilst a thing may be even rapidly attracted, on the other hand to become adherent, altered, and entirely assimilated to the part which is being nourished and to become a part of it, cannot take place suddenly, but requires a considerable amount of time. But if the nutritive juice, so presented, does not remain in the part, but withdraws to another one, and keeps flowing away, and constantly changing and shifting its position, neither adhesion nor complete assimilation will take place in any of them. Here too, then, the [animal's] nature has need of some other faculty for  ensuring a prolonged stay of the presented juice at the part, and this not a faculty which comes in from somewhere outside but one which is resident in the part which is to be nourished. This faculty, again, in view of its activity our predecessors were obliged to call retentive.</p>
 					<p>Thus our argument has clearly shown the necessity for the genesis of such a faculty, and whoever has an appreciation of logical sequence must be firmly persuaded from what we have said that, if it be laid down and proved by previous demonstration that Nature is artistic and solicitous for the animal's welfare, it necessarily follows that she must also possess a faculty of this kind.
@@ -429,4 +422,4 @@
 			</div1>
 		</body>
 	</text>
-</TEI.2>
+</TEI>

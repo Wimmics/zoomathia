@@ -5,14 +5,61 @@ import os
 import glob
 from tqdm import tqdm
 from deep_translator import GoogleTranslator
-from urllib.error import HTTPError
+
+from py4j.java_gateway import JavaGateway
+import time
+from time import sleep
+import subprocess
+import atexit
+import ujson as json
 
 import spacy
+from spacy.matcher import PhraseMatcher
+from spacy.lang.en.stop_words import STOP_WORDS
+
+java_process = subprocess.Popen(
+    ['java', '-jar', '-Dfile.encoding=UTF-8', 'corese-library-python-4.4.1.jar'])
+sleep(1)
+gateway = JavaGateway()
+
+def exit_handler():
+    gateway.shutdown()
+    print('\n' * 2)
+    print('Gateway Server Stop!')
+
+atexit.register(exit_handler)
+
+Graph = gateway.jvm.fr.inria.corese.core.Graph
+Load = gateway.jvm.fr.inria.corese.core.load.Load
+Transformer = gateway.jvm.fr.inria.corese.core.transform.Transformer
+QueryProcess = gateway.jvm.fr.inria.corese.core.query.QueryProcess
+RDF = gateway.jvm.fr.inria.corese.core.logic.RDF
+RESULTFORMAT = gateway.jvm.fr.inria.corese.core.print.ResultFormat
+coreseFormat = gateway.jvm.fr.inria.corese.sparql.api.ResultFormatDef
+
+MAX_TRIES = 50
+
+def sparqlQuery(graph, query):
+    exec = QueryProcess.create(graph)
+    return exec.query(query)
+
+def convert_sparql_to_json(mapping_object):
+    sparql_formater = RESULTFORMAT.create(mapping_object)
+    sparql_formater.setSelectFormat(coreseFormat.JSON_FORMAT)
+
+    json_convert = json.loads(sparql_formater.toString())
+    return json_convert
+
+def load(graph ,path):
+    ld = Load.create(graph)
+    ld.parse(path)
+
+    return graph
 
 API_ENDPOINT_URL = "http://nerd.huma-num.fr/nerd/service"
 DBPEDIA_LOCAL = 'http://localhost:2222/rest'
 
-nlp_model = spacy.load("en_core_web_sm")
+nlp_model = spacy.load("en_core_web_lg")
 
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 ANNOTATION_AUTO = True
@@ -22,43 +69,105 @@ def split_and_translate(text, lang_target, max_chunk_length=1000):
     translated_chunks = []
 
     for chunk in chunks:
-        translated_chunk = GoogleTranslator(source='auto', target=lang_target).translate(chunk)
-        if translated_chunk is not None:
-            translated_chunks.append(translated_chunk)
+        tries = 0
+        success = False
+        while not success:
+            try:
+                translated_chunk = GoogleTranslator(source='auto', target=lang_target).translate(chunk)
+                if translated_chunk is not None:
+                    translated_chunks.append(translated_chunk)
+
+                success = True
+
+            except Exception as e:
+                tries += 1
+                wait = min(5 * tries, 60)
+                print(f" Echec connexion à Google Translate (Tentative {tries}). Reessai dans {wait}s...")
+                time.sleep(wait)
 
     translated_text = ' '.join(translated_chunks)
     return translated_text
 
 
+def is_stop_word(word):
+    if word.text.lower() not in STOP_WORDS:
+        return False
+    elif len(word) == 1:
+        token = word[0]
+        return token.pos_ != "PROPN"
+    else:
+        return all(token.pos_ != "PROPN"
+                   for token in word)
+
+
 def get_NER_from_dbpedia(element,lg="en"):
+    if not element or element.strip() == "":
+        return []
     if "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.remove_pipe("entityfishing")
     if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe('dbpedia_spotlight',
                            config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.3})
-    try:
-        en_text = nlp_model(element)
-    except Exception as err:
-        print(err)
-        print(element)
-        print(FILE)
-        return []
+    return process_nlp(element, nlp_model)
 
-    return en_text.ents
 
 def get_NER_from_wikidata(element, lg="en"):
+    if not element or element.strip() == "":
+        return []
     if "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.remove_pipe("dbpedia_spotlight")
     if not "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
         nlp_model.add_pipe("entityfishing", config={"language": "en", "api_ef_base": API_ENDPOINT_URL})
+    return process_nlp(element,nlp_model)
 
-    en_text = nlp_model(element)
-    return en_text.ents
+
+def process_nlp(element,nlp_model):
+    error = None
+
+    for tries in range(MAX_TRIES):
+        try:
+            en_text = nlp_model(element)
+            return en_text.ents
+
+        except Exception as e:
+            attente = min(5 * ++tries, 60)
+            print(f"Echec du traitement nlp (Tentative {tries}). Reessai dans {attente}s...")
+            if tries==MAX_TRIES:
+                error = e
+            time.sleep(attente)
+
+    print(error)
+    print(f"Echec lors du traitement avec le nlp sur {element}. Ignore.")
+    print(FILE)
+    return []
+
+
+def find_thesaurus_entities(translated_paragraph, annotations, paragraph):
+    if not translated_paragraph or translated_paragraph.strip() == "":
+        return
+    pipes_to_disable = ["dbpedia_spotlight", "entityfishing", "ner"]
+    active_disables = [pipe for pipe in pipes_to_disable if pipe in nlp_model.pipe_names]
+    with nlp_model.select_pipes(disable=active_disables):
+        doc = nlp_model(translated_paragraph)
+
+    matches = matcher(doc)
+    for match_id, start, end in matches:
+        span = doc[start:end]
+        if not is_stop_word(span):
+            annotations.append([
+                paragraph,
+                thesaurus_dict[nlp_model.vocab.strings[match_id]],
+                span.text,
+                1,
+                "zoomathia_match"
+            ])
 
 
 def extract_dbpedia(entities, annotations, paragraph):
     for ent in entities:
         if ent.kb_id_ == None or ent.kb_id_ == '':
+            continue
+        if is_stop_word(ent):
             continue
         if ent.kb_id_ is not None:
             annotations.append([paragraph,
@@ -71,6 +180,8 @@ def extract_dbpedia(entities, annotations, paragraph):
 def extract_wikidata(entities, annotations, paragraph):
     for ent in entities:
         if ent._.url_wikidata is None or ent._.url_wikidata == '':
+            continue
+        if is_stop_word(ent):
             continue
         if ent._.nerd_score is not None and ent._.nerd_score >= 0.3:
 
@@ -87,13 +198,15 @@ def extract_sourcedesc_data(source):
         *Those information cannot be found in the body*
     """
 
-    date = strip_text(source.sourceDesc.date.text) if source.sourceDesc.date else strip_text(
-        source.titleStmt.date.text) if source.titleStmt.date else strip_text(source.publicationStmt.date.text)
-    editor = strip_text(source.titleStmt.editor.text) if source.titleStmt.editor else "Unknown editor"
-    author = strip_text(source.titleStmt.author.text) if source.titleStmt.author else strip_text(
-        source.sourceDesc.author.text) if source.sourceDesc.author else 'Author not found'
-    oeuvre_title = strip_text(source.titleStmt.title.text)
-    oeuvre_id = strip_text(source.titleStmt.title.text).replace(" ", "_").lower()
+    date = strip_text(source.sourceDesc.date.text) if source.sourceDesc and source.sourceDesc.date \
+        else strip_text(source.titleStmt.date.text) if source.titleStmt and source.titleStmt.date else strip_text(
+        source.publicationStmt.date.text) if source.publicationStmt and source.publicationStmt.date else "date not found"
+    editor = strip_text(source.titleStmt.editor.text) if source.titleStmt and source.titleStmt.editor else "Unknown editor"
+    author = strip_text(source.titleStmt.author.text) if source.titleStmt and source.titleStmt.author else \
+        strip_text(
+            source.sourceDesc.author.text) if source.sourceDesc and source.sourceDesc.author else 'Author not found'
+    oeuvre_title = clean_uri(source.titleStmt.title.text) if source.titleStmt and source.titleStmt.title else "title not found"
+    oeuvre_id = oeuvre_title.replace(" ", "_").lower() if oeuvre_title != "title not found" else "id_not_found"
 
     return oeuvre_id, oeuvre_title, author, date, editor
 
@@ -110,6 +223,17 @@ def strip_text(txt):
     txt = txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("\"", "").replace("- ", "")
     return re.sub(r"\s+", " ", txt)
 
+
+def clean_uri(txt):
+    if not txt or txt.strip() == "":
+        return ""
+    try:
+        translated_txt = GoogleTranslator(source='auto', target="en").translate(txt)
+    except Exception as e:
+        print(f"[WARNING] Erreur de traduction du titre/auteur pour: '{txt}' : {e}")
+        translated_txt = txt
+    txt = translated_txt.strip().replace("\r", "").replace("\n", "").replace("\t", "").replace("\"", "").replace("- ", "")
+    return re.sub(r"\s+", " ", txt)
 
 def strip_paragraph_text(txt):
     txt = txt.strip().replace("\r", "").replace("\n", " ").replace("\t", "").replace("\"", "'").replace("- ", "")
@@ -148,6 +272,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     else:
                         translated_paragraph = split_and_translate(paragraph_text, "en")
 
+                    find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                     extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                     dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
@@ -172,6 +297,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 else:
                     translated_paragraph = split_and_translate(paragraph_text, "en")
 
+                find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                 wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                 extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                 dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
@@ -189,7 +315,6 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         p_id = 1
         for p in tqdm(parent_division.find_all(["p"])):
             if not p.find_parent('p'):
-                # remove useless empty text (maybe error of generation)
                 if strip_text(p.text) == "":
                     continue
 
@@ -207,6 +332,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                         else:
                             translated_paragraph = split_and_translate(paragraph_text, "en")
 
+                        find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                         wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                         extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                         dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
@@ -227,6 +353,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                         else:
                             translated_paragraph = split_and_translate(paragraph_text, "en")
 
+                        find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                         wikidata_entities = get_NER_from_wikidata(translated_paragraph)
                         extract_wikidata(wikidata_entities, annotation_data ,f"{parent_uri}/text/{paragraph_id}" )
                         dbpedia_entities = get_NER_from_dbpedia(translated_paragraph)
@@ -286,12 +413,7 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
         else:
             if depth == 0:
                 link_data.append([parent_uri, "Oeuvre", tag_div_id, tag_div_title, f"{parent_uri}/{tag_div_id}"])
-            extract_paragraph(tag_div,
-                              [parent_uri,
-                               tag_div_type, tag_div_id, tag_div_title],
-                              current_uri, link_data, paragraph_data, annotation_data)
-
-
+            extract_paragraph(tag_div,[parent_uri, tag_div_type, tag_div_id, tag_div_title],current_uri, link_data, paragraph_data, annotation_data)
 
 
 def extraction_data(FILE,CSV):
@@ -300,7 +422,7 @@ def extraction_data(FILE,CSV):
         xml_parser = bs(xml_file, "lxml-xml")
         oeuvre_id, oeuvre_title, author, date, editor = extract_sourcedesc_data(xml_parser)
         body_parser = xml_parser.body
-
+        # translate author and oeuvre_id
         link_data = []
         link_labels = ["parent_uri", "type", "id", "title", "child"]
         paragraph_data = []
@@ -309,7 +431,10 @@ def extraction_data(FILE,CSV):
         annotation_data = []
         annotation_labels = ["paragraph_uri", "concept_uri", "mention", "score", "origin"]
 
-        uri = f"http://ns.inria.fr/zoomathia/{strip_text(author).replace(' ', '_')}/{oeuvre_id}"
+        text_tag = xml_parser.find("text")
+        lang_suffix = text_tag.get("xml:lang", "") if text_tag else ""
+        uri = f"http://ns.inria.fr/zoomathia/{clean_uri(author).replace(' ', '_')}/{oeuvre_id}/{lang_suffix}"
+
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
         extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0)
@@ -323,10 +448,42 @@ def extraction_data(FILE,CSV):
         pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
 
 
+def get_all_thesaurus_concepts(g):
+    q = """
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        SELECT DISTINCT ?concept ?label WHERE { 
+            ?concept a skos:Concept ;
+                     skos:prefLabel ?label .
+            FILTER(lang(?label) = "en")
+        }
+        """
+
+    res = convert_sparql_to_json(sparqlQuery(g, q))
+    thesaurus_dict = {}
+
+    for item in res["results"]["bindings"]:
+        concept_uri = item["concept"]["value"]
+        entity_label = item["label"]["value"]
+
+        thesaurus_dict[entity_label] = concept_uri
+
+    return thesaurus_dict
+
 if __name__ == "__main__":
-    directory_path = './'
+
+    g = Graph()
+    g = load(g, "th310.ttl")
+
+    thesaurus_dict = get_all_thesaurus_concepts(g)
+
+    matcher = PhraseMatcher(nlp_model.vocab, attr="LEMMA")
+    for concept_name in thesaurus_dict.keys():
+        matcher.add(concept_name, [nlp_model(concept_name)])
+
+    directory_path = ('./texts/')
     xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
+
         print(xml_file)
         FILE = xml_file
         CSV = ".".join(FILE.split("\\")[-1].split(".")[0:-1])
