@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="und">inconnu</title>
+        <author>
+          <persName>inconnu</persName>
+          
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-06">2026-07-06</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-06">2026-07-06</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia"></idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">inconnu</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>inconnu</term>
+          <term>inconnu</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="book" n="1">
+   <p>Plutarch • On Meat-Eating <quote>I</quote></p>
+   <p>This webpage reproduces one of the two essays</p>
+   <p><foreign xml:lang="la">De esu carnium</foreign></p>
+   <p>by</p>
+   <p><persName>Plutarch</persName></p>
+   <p>as published in Vol. <name type="number">XII</name></p>
+   <p>and I believe it to be free of errors.</p>
+   <p><foreign xml:lang="la">(Vol. XII)</foreign></p>
+   <p><persName>Plutarch</persName>,</p>
+   <p><foreign xml:lang="la">Moralia</foreign></p>
+   <p><foreign xml:lang="en">On the Eating of Flesh: <quote>I</quote></foreign></p>
+   <milestone unit="section" n="993"/>
+   <div type="chapter" n="1">
+      <div type="section" n="1">
+         <p>Can you really ask what reason <name type="animal" xml:lang="und">Pythagoras</name>⁠<note place="foot">1</note> had for abstaining from flesh? For my part I rather wonder both by what accident and in what state of soul or mind <name type="animal" xml:lang="und">B</name>the first man⁠<note place="foot">2</note> who did so, touched his mouth to gore and brought his lips to the flesh of a dead creature, he who set forth tables of dead, stale⁠<note place="foot">3</note> bodies and ventured to call food and nourishment the parts that had a little before bellowed and cried, moved and lived.</p>
+         <p>How could his eyes endure the slaughter when throats were slit and hides flayed and limbs torn from limb? How could his nose endure the stench? How was it that the pollution did not turn away his taste, which made contact with the sores of others and sucked juices and serums from mortal wounds?</p>
+         <p><quote>The skins shivered; and upon the spits the flesh bellowed,</quote></p>
+         <p><quote>Both cooked and raw; the voice of kine was heard.⁠<note place="foot">4</note></quote></p>
+         <p>Though this is an invention and a myth, yet that sort of dinner is really portentous — when a man craves the</p>
+      </div>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<pb n="543"/>
+<p>meat that is still bellowing, giving instructions which tell us on what <name type="animal" xml:lang="und">animals</name> we are to feed while they are still alive uttering their cries, and organizing various methods of seasoning and roasting and serving. It is the man who first began these practices that one should seek out, not him who all too late desisted.</p>
+<div type="chapter" n="2">
+  <milestone unit="section" n="2.1"/>
+  <p>Or would everyone declare that the reason for those who first instituted flesh-eating was the necessity of their poverty? It was not while they passed their time in lawful desires <foreign xml:lang="und">Dnor</foreign> when they had necessaries in abundance that after indulgence in unnatural and antisocial pleasures they resorted to such a practice. If, at this moment, they could recover feelings and voice, they might, indeed, remark: "Oh blessed and beloved of the <name type="deity">gods</name>, you who live now, what an age has fallen to your lot wherein you enjoy and assimilate a heritage abounding in good things! How many <name type="plant" xml:lang="und">plants</name> grow for you! What <foreign xml:lang="und">vintages</foreign> you gather! What wealth you may draw from the <placeName>plains</placeName> and what pleasant sustenance from <name type="plant" xml:lang="und">trees</name>! Why, you may even live luxuriously without the stain of blood. But as for us, it was a most dismal and fearful portion of the world's history that confronted us, falling as we did into great and unbearable poverty brought on by our first appearance among the living. As yet the <placeName>heavens</placeName> and the <name type="animal" xml:lang="und">stars</name> were concealed <foreign xml:lang="und">Eby</foreign> dense air that was contaminated with turbid moisture, not easily to be penetrated, and fire and furious wind. Not yet was</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="section" n="3">
+   <p>the sun established undeviating</p>
+   <p>In his firm course,</p>
+   <p>Dividing day and night; he brought them back</p>
+   <p>Again and crowned them with the fruitful hours</p>
+   <p>All wreathed with bloom, while violence</p>
+   <p>had been done to earth by rivers pouring forth their floods at random and most parts were deformed by pools.⁠<note n="8"/></p>
+   <p>Earth was made a wilderness by deep quagmires and the unfruitful growth of thickets and <name type="plant" xml:lang="und">forests</name>; nor was there as yet any agricultural production or professional tool or any resource of skill.</p>
+   <p>Our hunger gave us no respite nor was there any seed at that time awaiting the annual season of sowing.</p>
+   <p>What wonder if, contrary to nature, we made use of the flesh of <name type="animal" xml:lang="und">beasts</name> when even mud was eaten and the bark of <name type="plant" xml:lang="und">trees</name> devoured,</p>
+   <p>Fand to light on sprouting <name type="plant" xml:lang="und">grass</name> or the root of a <name type="plant" xml:lang="und">rush</name> was a piece of luck?</p>
+   <p>When we had tasted and eaten <name type="plant" xml:lang="und">acorns</name> we danced for joy around some <name type="plant" xml:lang="und">oak</name>,⁠<note n="9"/></p>
+   <p>calling it "life-giving"⁠<note n="10"/> and "mother" and "nurse."</p>
+   <p>This was the only festival that those times had discovered; all else was a medley of anguish and gloom.</p>
+   <p>But you who live now, what madness, what frenzy drives you to the pollution of shedding blood, you who have such a superfluity of necessities?</p>
+   <p>Why slander the earth by implying that she cannot support you?</p>
+   <p>Why impiously offend law-giving <name type="deity">Demeter</name>⁠<note n="11"/></p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni :
+
+
+<pb n="547"/>
+<div type="chapter" n="3">
+  <div type="section" n="1">
+    <p>bring shame upon <name type="deity">Dionysus</name>, lord of the cultivated vine,<note n="12"> the gracious one</note> as if you did not receive enough from their hands? Are you not ashamed to mingle domestic crops with blood and gore? You call <name type="animal" xml:lang="und">serpents</name> and <name type="animal" xml:lang="und">panthers</name> and <name type="animal" xml:lang="und">lions</name> savage, but you yourselves, by your own foul slaughters, leave them no room to outdo you in cruelty;<milestone unit="section" n="3.1"/> for their slaughter is their living, yours is a mere appetizer.<note n="13"/></p>
+    <p>It is certainly not <name type="animal" xml:lang="und">lions</name> and <name type="animal" xml:lang="und">wolves</name> that we eat out of self-defence; on the contrary, we ignore these and slaughter harmless, tame creatures without stings or teeth to harm us, creatures that, I swear, <name type="deity">Nature</name> appears to have produced for the sake of their beauty and grace. . . .<note n="14"/></p>
+    <p>A young <name type="animal" xml:lang="und">lamb</name> I met near <placeName>Barattano</placeName> (<placeName>Umbria</placeName>, <placeName>central Italy</placeName>), <foreign xml:lang="en">April 2004</foreign>.</p>
+    <p>[It is as though one, seeing the <name type="placeName">Nile</name> overflow its banks, filling the landscape with its fertile and productive stream, should not marvel at this, its nourishing of plants and its fruitfulness in such crops as are most to be cultivated and contribute most to the support of life, but should espy a <name type="animal" xml:lang="und">crocodile</name> swimming there somewhere or an <name type="animal" xml:lang="und">asp</name> being swept along or a thousand other savage creatures <milestone unit="section" n="3.1"/> and should cite them as the reasons for his censure and this compulsion to do as he does.<note n="15"/></p>
+    <p>Or, I swear, it is as though one fixed one's gaze on this land and its soil covered with cultivated crops and heavy with ears of wheat, and then, looking beneath these rich harvests, one were to catch sight somewhere of a</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour ce morceau de texte, en respectant les entités nommées Zoomathia et la structure demandée :
+
+
+<div type="section" n="5">
+   <p>growth of <name type="plant" xml:lang="und">darnel</name> or <name type="plant" xml:lang="und">broom-rape</name> and, without more ado, ceasing to reap the benefit and claim the booty of the good crops, burst into a tirade about the weeds. Another example: if one should see an orator making a speech at some trial where he was advocate, a speech in which his eloquence in full flood was advancing to the succour of someone in jeopardy or (so help me) to the conviction or denunciation of rash acts or defaults — <foreign xml:lang="la">Da</foreign> flood of eloquence not simple or jejune, but charged with many (or rather all kinds of) emotional appeals for the simultaneous influencing of the many different kinds of minds in the audience or jury, which must either be roused and won over or (by heaven!) soothed and made gentle and calm — then if one neglected to observe and take into account this main point and issue of the matter, but merely picked out flaws of style that the flood of oratory, as it moved to its goal, had swept along by the momentum of its current, flaws that came rushing out and slipped by with the rest — and seeing . . . of some popular leader. . .</p>
+   <milestone unit="section" n="4"/>
+   <milestone unit="section" n="1"/>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le morceau fourni :
+
+
+<pb n="551"/>
+<p>But nothing abashed us, not the flower-like tinting of the flesh, not the persuasiveness of the harmonious voice, not the cleanliness of their habits or the unusual intelligence that may be found in the poor wretches. No, for the sake of a little flesh we deprive them of sun, of light, of the duration of life to which they are entitled by birth and being.</p>
+<p>Then we go on to assume that when they utter cries and squeaks their speech is inarticulate, that they do not, begging for mercy, entreating, seeking justice,</p>
+<p>each one of them say, "I do not ask to be spared in case of necessity; only spare me your arrogance! Kill me to eat, but not to please your palate!"</p>
+<p>Oh, the cruelty of it! What a terrible thing it is to look on when the tables of the rich are spread, <name type="person">men</name> who employ cooks and spicers to groom the dead! And it is even more terrible to look on when they are taken away, for more is left than has been eaten. So the <name type="animal" xml:lang="und">beasts</name> died for nothing!</p>
+<p>There are others who refuse when the dishes are already set before them and will not have them cut into or sliced. Though they bid spare the dead, they did not spare the living.<note n="17"/></p>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia :
+
+
+<pb n="995"/>
+<div type="section" n="7">
+  <p>We declare, then, that it is absurd for them to say that the practice of flesh-eating is based on Nature. For that man is not naturally carnivorous is, in the first place, obvious from the structure of his body.<note n="18" type="footnote">18</note></p>
+  <p>A man's frame is in no way similar to those creatures who were made for flesh-eating: he has no hooked beak or sharp nails or jagged teeth, <note n="19" type="footnote">19</note></p>
+  <p>no strong stomach or warmth of vital fluids able to digest and assimilate a heavy diet of flesh. If you declare that you are naturally designed for such a diet, then first kill for yourself what you want to eat. Do it, however, only through your own resources,</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<pb n="553"/>
+<div type="section" n="8">
+  <p>Unaided by cleaver or cudgel or any kind of axe. Rather, just as <name type="animal" xml:lang="und">wolves</name> and <name type="animal" xml:lang="und">bears</name> and <name type="animal" xml:lang="und">lions</name> themselves slay what they eat, so you are to fell an <name type="animal" xml:lang="und">ox</name> with your fangs or a <name type="animal" xml:lang="und">boar</name> with your jaws, or tear a <name type="animal" xml:lang="und">lamb</name> or <name type="animal" xml:lang="und">hare</name> in bits. Fall upon it and eat it still living, as animals do.<milestone unit="section" n="20"/></p>
+  <p>But if you wait for what you eat to be dead, if you have qualms about enjoying the flesh while life is still present, why do you continue, contrary to nature, to eat what possesses life? Even when it is lifeless and dead, however, no one eats the flesh just as it is; men boil it and roast it, altering it by fire and drugs, recasting and diverting and smothering with countless condiments the taste of gore so that the palate may be deceived and accept what is foreign to it.</p>
+  <p>It was, indeed, a witty remark of the <persName>Spartan</persName><milestone unit="section" n="21"/> who bought a little <name type="animal" xml:lang="und">fish</name> in an inn <foreign xml:lang="la">Cand</foreign> gave it to the innkeeper to prepare. When the latter asked for cheese and vinegar and oil,<milestone unit="section" n="22"/> the <persName>Spartan</persName> said, "If I had those, I should not have bought a <name type="animal" xml:lang="und">fish</name>." But we are so refined in our blood-letting that we term flesh a supplementary food;<milestone unit="section" n="23"/> and then we need "supplements" for the flesh itself, mixing oil, wine, honey, fish paste, vinegar, with <name type="plant" xml:lang="und">Syrian</name> and <name type="plant" xml:lang="und">Arabian</name> spices,<milestone unit="section" n="24"/> as though we were really embalming a corpse for</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="section" n="9">
+   <p>burial. The fact is that meat is so softened and dissolved and, in a way, predigested that it is hard for digestion to cope with it; and if digestion loses the battle, the meats affect us with dreadful pains and malignant forms of indigestion.</p>
+   <milestone unit="section" n="6"/>
+   <milestone unit="section" n="1"/>
+   <p><persName>Diogenes</persName> ventured to eat a raw <name type="animal" xml:lang="und">octopus</name> in order to put an end to the inconvenience of preparing cooked food. In the midst of a large throng he veiled his head and, as he brought the flesh to his mouth, said, "It is for you that I am risking my life." Good heavens, a wondrous fine risk! Just like <persName>Pelopidas</persName> for the liberty of the <placeName>Thebans</placeName> or <persName>Harmodius</persName> and <persName>Aristogiton</persName> for that of the <placeName>Athenians</placeName>, this philosopher risked his life struggling with a raw <name type="animal" xml:lang="und">octopus</name> — in order to brutalize our lives!</p>
+   <p>Note that the eating of flesh is not only physically against nature, <foreign xml:lang="la">E</foreign> but it also makes us spiritually coarse and gross by reason of satiety and surfeit. "For wine and indulgence in meat make the body strong and vigorous, but the soul weak."<note n="28"/></p>
+   <p>And in order that I may not offend athletes, I shall take my own people as examples. It is a fact that the <persName>Athenians</persName> used to call us <placeName>Boeotians</placeName> <foreign xml:lang="und">beef-witted</foreign> and insensitive and foolish, precisely because we stuffed ourselves.<note n="30"/></p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<pb n="557"/>
+<div type="section" n="10">
+  <p>men are <name type="animal" xml:lang="und">swine</name>";⁠31 . . . and <persName>Menander</persName>⁠32 says, "Who have jaws"; and <persName>Pindar</persName>⁠33 "And then to learn . . ."; "A dry soul is wisest" according to <persName>Heraclitus</persName>.⁠34</p>
+  <p>Empty jars make a noise when struck, but full ones do not resound to blows.⁠35</p>
+  <p><foreign xml:lang="grc">Thin</foreign> bronze objects will pass the sounds from one to another in a circle until you dampen and deaden the noise with your hand as the beat goes round.⁠36</p>
+  <p>The <name type="animal" xml:lang="und">eye</name>⁠37 when it is flooded by an excess of moisture grows dim and weakened for its proper task.</p>
+  <p>When we examine the <name type="celestial" xml:lang="und">sun</name> through dank atmosphere and a fog of gross vapours, we do not see it clear and bright, but submerged and misty, with elusive rays.</p>
+  <p>In just the same way, then, when the body is turbulent and surfeited and burdened with improper food, the lustre and light of the soul inevitably come through it blurred and confused, aberrant and inconstant, since the soul lacks the brilliance and intensity to penetrate to the minute and obscure issues of active life.</p>
+</div>
+<div type="section" n="7.1">
+  <p>But apart from these considerations, do you not find here a wonderful means of training in social responsibility? Who could wrong a human being</p>
+  <p><persName>996</persName>when he found himself so gently and humanely disposed</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni :
+
+
+<pb n="559"/>
+<p>toward other non-human creatures? Two days ago in a discussion I quoted the remark of <persName>Xenocrates</persName>,<milestone unit="note" n="38"/> that the Athenians punished the man who had flayed a <name type="animal" xml:lang="en">ram</name> while it was still alive; yet, as I think, he who tortures a living creature is no worse than he who slaughters it outright. But it seems that we are more observant of acts contrary to convention than of those that are contrary to nature.</p>
+<p>In that place, then, I made my remarks in a popular vein. I still hesitate, however, to attempt a discussion of the principle underlying my opinion, great as it is, and mysterious and incredible, as <persName>Plato</persName><milestone unit="note" n="39"/> says, with merely clever men of mortal opinions, just as a steersman hesitates to shift his course<milestone unit="note" n="40"/> in the midst of a storm, or a playwright to raise his god from the machine in the midst of a play. Yet perhaps it is not unsuitable to set the pitch and announce the theme by quoting some verses of <persName>Empedocles</persName>.<milestone unit="note" n="41"/> . . . By these lines he means, though he does not say so directly, that human souls are imprisoned in mortal bodies as a punishment for murder, the eating of animal flesh, and cannibalism.<milestone unit="note" n="C"/> This doctrine, however, seems to be even older, for the stories told about the sufferings and dismemberment of <persName>Dionysus</persName><milestone unit="note" n="42"/> and the outrageous assaults of the <name type="deity">Titans</name> upon him, and their punishment and blasting by thunderbolt after they had tasted his blood — all this is a myth which in its inner meaning has to do with rebirth. For to
+</p>
+<div type="section" n="12">
+   <p>that faculty in us which is unreasonable and disordered and violent, and does not come from the gods, but from evil spirits, the ancients gave the name <name type="deity">Titans</name>,<milestone unit="note" n="43"/> that is to say, those that are punished and subjected to correction. . . .<milestone unit="note" n="44"/></p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en traitant le texte comme un fragment de prose sans structure de livre/chapitre identifiable (puisque le contexte est perdu) :
+
+
+<pb n="15"/>
+<p>These words, plainly out of context as the passage stands, are too vague to be rendered with any certainty.</p>
+<pb n="16"/>
+<p>The rest of this perplexing fragment has been lost, so that we do not know what the object of these three comparisons is.</p>
+<pb n="17"/>
+<p>Post believes that there is another lacuna after this chapter; and Stephanus posited another one after the first sentence of chapter 5, rightly, if Bernardakis' emendation is not accepted.</p>
+<pb n="18"/>
+<p>988E supra and the note.</p>
+<pb n="19"/>
+<p>Cf. <name type="work">Mor.</name> 87B, 642C.</p>
+<pb n="20"/>
+<p>“Let the advocate of animal food force himself to a decisive experiment on its fitness, and, as <persName>Plutarch</persName> recommends, tear a living <name type="animal" xml:lang="en">lamb</name> with his teeth, and, plunging his <foreign xml:lang="en">[hand]</foreign> into its vitals, slake his thirst with the steaming blood” (<quote><persName>Shelley</persName>, op. <foreign xml:lang="la">cit.</foreign></quote>).</p>
+<pb n="21"/>
+<p>Cf. <name type="work">Mor.</name> 234E‑F, where it is meat, not fish, that is bought; see also 128C.</p>
+<pb n="22"/>
+<p>To make a sauce for the fish. The innkeeper's action was natural enough, in view of <persName>Hegesander</persName>'s comment (<quote><persName>Athenaeus</persName>, 564A</quote>) that apparently everyone liked the seasonings, not the fish, since no one wanted fish plain and unseasoned.</p>
+<pb n="23"/>
+<p>991D (and the note), 993B, 994Bº supra.</p>
+<pb n="24"/>
+<p>990B supra.</p>
+<pb n="25"/>
+<p>Cf. 956B supra where the context is quite different. See also <persName>Athenaeus</persName>, 341E; <persName>Lucian</persName>, <name type="work">Vit. Auctio</name> 10; <persName>Julian</persName>, <name type="work">Oration</name>, VI.181A, 191C ff.; <persName>Diogenes Laertius</persName>, VI.76; al.</p>
+<pb n="26"/>
+<p>Cf. <name type="work">Life of Pelopidas</name>, chapters 7‑11.</p>
+<pb n="27"/>
+<p>Cf. Thucydides, VI.54‑59.</p>
+<pb n="28"/>
+<p>A quotation from the medical writer <persName>Androcydes</persName>; see <quote>Mor. 472B</quote> and the note.</p>
+<pb n="29"/>
+<p>Cf. <persName>Rhys Roberts</persName>, <title>The Ancient Boeotians</title>, pp1‑5.</p>
+<pb n="30"/>
+<p>The passage that follows is badly mutilated; it probably contained other quotations and fuller ones than the MSS. indicate.</p>
+<pb n="31"/>
+<p>Cf. the proverbial "sow and <name type="deity" xml:lang="und">Athena</name>" (<title>Life of Demosthenes</title>, xi.5, 851B and <quote>Mor. 803D</quote>) and the <title>Introduction to the Gryllus</title>.</p>
+<pb n="32"/>
+<p><persName>Kock</persName>, <title>Com. Att. Frag.</title>, III, p238 (<quote>frag. 748 Koerte</quote>); the words probably mean "Who are greedy fellows."</p>
+<pb n="33"/>
+<p><title>Olympians</title>, VI.89, which continues "whether we are truly arraigned by that ancient gibe, 'Boeotian <name type="animal" xml:lang="und">swine</name>.'" <quote>(For this interpretation see G. Norwood, <title>Pindar</title>, pp82 and 237.)</quote></p>
+<pb n="34"/>
+<p><persName>Diels-Kranz</persName>, <title>Frag. der Vorsok.</title> I, p100, <quote>frag. B 118</quote>; cf. the note on <quote>Mor. 432F</quote>.</p>
+<pb n="35"/>
+<p>Cf. <quote>Mor. 721B‑D</quote>.</p>
+<pb n="36"/>
+<p><quote>Mor. 721C‑D</quote> suggests that <persName>Plutarch</persName> is talking about a single cauldron with a wave going around it rather than about a circular arrangement of tuning forks. "Sounding brass": cf. <persName>L. Parmentier</persName>, <title>Recherches sur l'Isis et Osiris</title> (<title>Mém. Acad. Roy. Belg.</title> II, vol. II, 1912/13), pp31 ff.</p>
+<pb n="37"/>
+<p>Cf. <quote>Mor. 714D</quote>.</p>
+<pb n="38"/>
+<p>See <persName>Heinze</persName>, <title>Xenokrates</title>, p151, <quote>frag. 99</quote>.</p>
+<pb n="39"/>
+<p><title>Phaedrus</title>, 245C.</p>
+<pb n="40"/>
+<p>The Greek is both difficult and ambiguous; perhaps "hesitates to set his ship in motion while a storm is raging."</p>
+<pb n="41"/>
+<p>The verses have fallen out, but may be, in part, those quoted infra, 998C, or a similar passage.</p>
+<div type="chapter" n="5">
+   <p>See I. M. Linforth, <persName>The Arts of Orpheus</persName>, chapter 5, <quote>The Dismemberment of Dionysus</quote>, and especially pp334 ff., on this passage. A good illustration is the fragment of <persName>Dionysius</persName> in D. L. <persName>Page</persName>, <persName>Greek Literary Papyri</persName>, I (L. C. L.), pp538‑541.</p>
+   <milestone unit="section" n="43"/>
+   <p>See <persName>Hesiod</persName>'s etymology, <persName>Theogony</persName>, 209 f. For this <quote>Greek equivalent of original sin</quote> see <persName>Shorey</persName> on <persName>Plato</persName>, <persName>Laws</persName>, 701C (<quote>What Plato Said</quote>, p629), <persName>Mor.</persName> 975B</p>
+   <p>supra; and <persName>Dodds</persName>, <persName>The Greeks and the Irrational</persName>, pp155 and 177.</p>
+   <milestone unit="section" n="44"/>
+   <p>The first discourse breaks off at this point.</p>
+   <p>(Details here.)</p>
+   <p><name type="animal" xml:lang="und">Eating Meat</name></p>
+   <p>(orientation page)</p>
+   <p><persName>Plutarch</persName></p>
+   <p><foreign xml:lang="la">Latin</foreign> &amp; <foreign xml:lang="grc">Greek</foreign></p>
+   <p>A page or image on this site is in the public domain ONLY if its URL has a total of one *asterisk. If the URL has two **asterisks, the item is copyright someone else, and used by permission or fair use. If the URL has none the item is © Bill Thayer.</p>
+   <p>my copyright page</p>
+   <p>for details and contact information.</p>
+   <p>6 Sep 19</p>
+   <p><name type="animal" xml:lang="und">Accessibility</name></p>
+   <milestone unit="section" n="1"/>
+   <p>===== <foreign xml:lang="la">De Esu Carnium</foreign> II =====</p>
+   <p><persName>Plutarch</persName> • <foreign xml:lang="en">On Meat-Eating</foreign> (II)</p>
+   <p>This webpage reproduces one of the two essays</p>
+   <p><foreign xml:lang="la">De esu carnium</foreign></p>
+   <p>by</p>
+   <p><persName>Plutarch</persName></p>
+   <p>as published in Vol. XII</p>
+   <p>and I believe it to be free of errors.</p>
+   <p>(Vol. XII)</p>
+   <p><persName>Plutarch</persName>,</p>
+   <p><foreign xml:lang="la">Moralia</foreign></p>
+   <p><foreign xml:lang="en">On the Eating of Flesh</foreign>: II</p>
+   <milestone unit="section" n="996d"/>
+   <p>1</p>
+   <milestone unit="section" n="1"/>
+   <p><name type="animal" xml:lang="und">Reason</name> urges us with fresh ideas and fresh zeal to attack again our yesterday's discourse⁠<note n="1">on the eating of flesh</note>. It is indeed difficult, as <persName>Cato</persName>⁠<note n="2">remarked</note>, to talk to bellies which have no ears. And the potion of familiarity has been drunk, like that of <name type="deity" xml:lang="und">Circe</name>⁠<note n="3"/></p>
+   <p><quote>ECommingling pains and pangs, tricks and tears;</quote>⁠<note n="4"/></p>
+</div>
+<div type="section" n="16">
+   <p>nor is it easy to extract the hook of flesh-eating, entangled as it is and embedded in the love of pleasure. And, like the Egyptians
+      <milestone unit="section" n="5"/>
+      <quote>who extract the viscera of the dead and cut them open in view of the sun, then throw them away as being the cause of every single sin that the man had committed</quote>, it would be well for us to excise our own gluttony and lust to kill and become pure for the remainder of our lives, since it is not so much our belly that drives us to the pollution
+   </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en identifiant les entités nommées zoologiques :
+
+
+<div type="section" n="17">
+   <p>p565 of slaughter; it is itself polluted by our incontinence. Yet if, for heavens sake, it is really impossible for us to be far from error <pb n="565"/><foreign xml:lang="la">F</foreign> because we are on such terms of familiarity with it, let us at least be ashamed of our ill doing and resort to it only in reason. We shall eat flesh, but from hunger, not as a luxury. We shall kill an <name type="animal" xml:lang="und">animal</name>, but in pity and sorrow, not degrading or torturing it — which is the current practice in many cases, some thrusting red-hot spits into the throats of <name type="animal" xml:lang="und">swine</name> <milestone unit="section" n="997"/> so that by the plunging in of the iron the blood may be emulsified and, as it circulates through the body, may make the flesh tender and delicate. Others jump upon the udders of <name type="animal" xml:lang="und">sows</name> <milestone unit="section" n="6"/> about to give birth and kick them so that, when they have blended together blood and milk and gore (<name type="deity">Zeus</name> the Purifier!) and the unborn young have at the same time been destroyed at the moment of birth, they may eat the most inflamed part of the creature. Still others sew up the eyes of <name type="animal" xml:lang="und">cranes</name> <milestone unit="section" n="7"/> and <name type="animal" xml:lang="und">swans</name>, <milestone unit="section" n="8"/> shut them up in darkness and fatten them, making flesh appetizing with strange compounds and spicy mixtures.</p>
+</div>
+<p>From these practices it is perfectly evident that it is not for nourishment or need or necessity,
+<milestone unit="section" n="18"/> Bbut out of satiety and insolence and luxury that they have turned this lawless custom into a pleasure.</p>
+<p>Then, just as with women who are insatiable in seeking pleasure, their lust tries everything, goes astray, and explores the gamut of profligacy until at last it ends in unspeakable practices;
+<milestone unit="section" n="28"/> so intemperance in eating passes beyond the necessary ends of nature and resorts to cruelty and lawlessness to give</p>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia :
+
+
+<pb n="567"/>
+<div type="section" n="19">
+  <p>variety to appetite. For it is in their own company that organs of sense are infected and won over and become licentious when they do not keep to natural standards.</p>
+  <p>Just so the art of hearing has fallen sick, corrupting musical taste. From this our luxury and debauchery conceives a desire for shameful caresses and effeminate titillations.</p>
+  <p>These taught the <name type="animal" xml:lang="en">sight</name> not to take pleasure in warlike exercises⁠<note n="9">?</note> or gesticulations or refined dances or statues and paintings, but to regard the slaughter and death of men, their wounds and combats, as the most precious sort of spectacle.⁠<note n="10">?</note></p>
+  <p>Just so intemperate intercourse follows a lawless meal, inharmonious music follows a shameful debauch, barbarous spectacles follow shameless songs and sounds, insensitivity and cruelty toward human kind follow savage exhibitions in the theatre.</p>
+  <p>It was for this reason that the <name type="deity">godlike Lycurgus</name>⁠<note n="11">?</note> gave directions in certain <foreign xml:lang="grc"> rhetrae</foreign>⁠<note n="12">?</note> that the doors and roofs of houses should be fashioned by saw and axe alone</p>
+  <p>and no other tool should be used — not of course because he had a quarrel with gimlets and adzes and other instruments for delicate work.</p>
+  <p>It was because he knew that through such rough-hewn work you will not be introdu­cing a gilded couch, nor will you be so rash as to bring silver tables and purple rugs and precious stones into a simple house.</p>
+  <p>The corollary</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte fourni :
+
+
+<div type="section" n="20">
+  <p>of such a house and couch and table and cup is a dinner which is unpretentious and a lunch which is truly democratic; but all manner of luxury and extravagance follow the lead of an evil way of life</p>
+  <p>As new-weaned <name type="animal" xml:lang="und">foal</name> beside his mother runs.⁠<note n="13"/></p>
+  <milestone unit="section" n="3"/>
+  <milestone unit="section" n="1"/>
+  <p>For what sort of dinner is not costly for which a living creature loses its life? Do we hold a life cheap? <foreign xml:lang="und">EI</foreign> do not yet go so far as to say that it may well be the life⁠<note n="14"/></p>
+  <p>of your mother or father or some friend or child, as <persName>Empedocles</persName>⁠<note n="15"/></p>
+  <p>declared. Yet it does, at least, possess some perception, hearing, seeing, imagination, intelligence, which last every creature receives from Nature to enable it to acquire what is proper for it and to evade what is not.</p>
+  <p>Do but consider which are the philosophers who serve the better to humanize us: those⁠<note n="16"/></p>
+  <p>who bid us eat our children and friends and fathers and wives after their death,⁠<note n="17"/></p>
+  <p>or <persName>Pythagoras</persName>⁠<note n="18"/></p>
+  <p>and <persName>Empedocles</persName> who try to accustom us to act justly towards other creatures also?</p>
+  <p>You ridicule a man who abstains from eating <name type="animal" xml:lang="und">mutton</name>. But are we, they⁠<note n="19"/></p>
+  <p>will say, to refrain from laughter when we see you sli­cing off portions from a dead father or mother <foreign xml:lang="und">Fand</foreign> sending them to absent friends and inviting those who are at hand, heaping their</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte fourni :
+
+
+<pb n="571"/>
+<p>plates with flesh? But as it is, perhaps we commit a sin when we touch these books of theirs without cleansing our hands and faces, our feet and ears — unless, by Heaven, it is a purification of those members to speak on such a subject as this, "washing," as <name type="deity">Plato</name>⁠<note place="foot" n="20">Plato</note> says, <quote>"the brine from one's ears with the fresh water of discourse."</quote> If one should compare these two sets of books and doctrines,⁠<note place="foot" n="21">these two sets of books and doctrines</note> the former may serve as philosophy for the <name type="people">Scyths</name> and <name type="place">Sogdians</name> and the <name type="people">Black Cloaks</name>, whose story as told by <persName>Herodotus</persName>⁠<note place="foot" n="22">Herodotus</note> gains no credit;⁠<note place="foot" n="23">gains no credit</note> but the precepts of <persName>Pythagoras</persName>⁠<note place="foot" n="24">Pythagoras</note> and <persName>Empedocles</persName> were the laws for the ancient <name type="people">Greeks</name>, along with their diet of wheat. . . .⁠<note place="foot" n="25">diet of wheat</note> <milestone unit="section" n="4.1"/>[Because there is no question of justice between us and the irrational <name type="animal" xml:lang="und">animals</name>.]</p>
+<p>Who, then, were they who later decreed this?</p>
+<p>The first to forge the highway's murderous sword,<note place="foot" n="26">murderous sword</note>
+And first to eat the flesh of ploughing <name type="animal" xml:lang="und">ox</name>.</p>
+<p>This is the way, you may be sure, in which tyrants begin their course of bloody slaughters. <milestone unit="section" n="4.1.1"/>Just as, for instance, at <placeName>Athens</placeName>⁠<note place="foot" n="27">Athens</note> they put to death initially the worst of the sycophants, and likewise in the second and third instances; but next, having become accustomed to bloodshed they allowed <persName>Niceratus</persName>,⁠<note place="foot" n="28">Niceratus</note> the</p>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni :
+
+
+<div type="section" n="22">
+   <p>p573 son of Nicias, to be killed and the general Theramenes⁠<note n="29">29</note> and the philosopher Polemarchus⁠<note n="30">30</note>. Just so, at the beginning it was some wild and harmful <name type="animal" xml:lang="und">animal</name> that was eaten, then a bird or fish that had its flesh torn. And so when our murderous instincts had tasted blood and grew practised on wild <name type="animal" xml:lang="und">animals</name>, they advanced to the labouring <name type="animal" xml:lang="und">ox</name> and the well-behaved <name type="animal" xml:lang="und">sheep</name> and the housewarding <name type="animal" xml:lang="und">cock</name>; thus, little by little giving a hard edge to our insatiable appetite, we have advanced to wars and the slaughter and murder of human beings. Yet if someone once demonstrates that souls in their rebirths make use of common bodies and that what is now rational reverts to the irrational, and again what is now wild becomes tame, and that Nature changes everything and assigns new dwellings</p>
+   <quote>
+      <p>Clothing souls with unfamiliar coat of flesh;⁠<note n="31">31</note></p>
+   </quote>
+   <p>will not this deter the unruly element in those who have adopted the doctrine from implanting disease and indigestion⁠<note n="32">32</note> in our bodies and perverting our souls to an ever more cruel lawlessness, as soon as we are broken of the habit of not entertaining a guest or celebrating a marriage or consorting with our friends without bloodshed and murder?</p>
+   <milestone unit="section" n="5"/>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le morceau 23/28, en respectant toutes les règles et priorités :
+
+
+<p>Yet even if the argument of the migration of souls from body to body is not demonstrated to the point of complete belief, there is enough doubt to make us quite cautious and fearful. It is as though in a clash of armies by night⁠<milestone unit="section" n="33"/> you had drawn your sword and were rushing at a man whose fallen body was hidden by his armour and should hear someone remarking that he wasn't quite sure, but that he thought and believed that the prostrate figure was that of your son or brother or father or tent-mate — which would be the better course: to approve a false suspicion and spare your enemy as your friend, or to disregard an uncertain authority and kill your friend as your foe? The latter course you will declare to be shocking.</p>
+<p>Consider also <persName>Merope</persName>⁠<milestone unit="section" n="34"/> in the play raising her axe against her son himself because she believes him to be that son's murderer and saying</p>
+<p>This blow I give you is more costly yet —</p>
+<p>what a stir she rouses in the theatre as she brings them to their feet in terror lest she wound the youth before the old man can stop her! Now suppose one old man stood beside her saying, "Hit him! He's your enemy," and another who said, "Don't strike! He is your son": which would be the greater misdeed, to omit the punishment of an enemy because of the son, or to slay a child under the impulse of</p>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en identifiant les entités nommées zoologiques :
+
+
+<div type="section" n="24">
+   <p>anger against an enemy? In a case, then, where it is not hate or anger or self-defence or fear for ourselves that induces us to murder, <pb n="577"/><quote>F</quote>but the motive of pleasure, and the victim stands there under our power with its head bent back and one of our philosophers says, "Kill it! It's only a <name type="animal" xml:lang="und">brute beast</name>"; but the other says, "Stop! What if the soul of some <persName>relative</persName> or <persName>friend</persName> has found its way into this body?" — Good God! Of course the risk is equal or much the same in the two cases — if I refuse to eat flesh, or if I, disbelieving, kill my <persName>child</persName> or some other <persName>relative</persName>!</p>
+   <milestone unit="section" n="999"/>
+   <milestone unit="section" n="6"/>
+   <milestone unit="section" n="1"/>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte fourni, en respectant les priorités Zoomathia et les contraintes structurelles :
+
+
+<pb n="579"/>
+<div type="chapter" n="7">
+  <p>There remains yet another contention with the <name type="deity">Stoics</name>⁠<note type="editorial" n="35">Cf. Plutarch's introduction to the second essay on the Fortune of Alexander (Mor. 333D).</note> about flesh-eating, and this is not "equal," either. For what is this great "tension"⁠<note type="editorial" n="36">Odyssey, X.236.</note> on the belly and the kitchen? Why, when they count pleasure effeminate and denounce it as being neither a good nor an "advanced principle "⁠<note type="editorial" n="37a">Cf. Mor. 131D</note> nor "commensurate with Nature,"⁠<note type="editorial" n="37b">Cf. Mor. 198D; Life of Cato Major, 8 (340A).</note> are they so concerned with these pleasures? It would certainly be consistent for them, since they banish perfume and cakes from their banquets, to be more squeamish about blood and flesh. But as it is, confining as it were their philosophy to their ledgers, they economize on their dinners in trivial and needless details while they do not deprecate this inhuman and murderous item of expense. "Of course," they say, "we human beings have no compact of justice with irrational <name type="animal" xml:lang="und">animals</name>."⁠<note type="editorial" n="38">BNor, one might reply, have you with perfume or exotic sweetmeats either.</note></p>
+  <milestone unit="section" n="7.1"/>
+  <p>Refrain from <name type="animal" xml:lang="und">animals</name> also, if you are expelling the useless and unnecessary element in pleasure from all its lurking-places.</p>
+  <milestone unit="section" n="7.2"/>
+  <p>Let us, however, now examine the point whether we really have no compact of justice with <name type="animal" xml:lang="und">animals</name>; and let us do so in no artificial or sophistical manner, but fixing our attention on our own emotions and conversing like human beings with ourselves and weighing . . .<milestone unit="section" n="7.3"/></p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en identifiant les entités nommées zoologiques (bien que le texte ne contienne pas de noms d'animaux explicites) :
+
+
+<pb n="372"/>
+<div type="section" n="154a">
+   <p>Perhaps a verse of <persName>Empedocles</persName>: <quote><foreign xml:lang="la">Diels-Kranz, Frag. der Vorsok. I</foreign>, p372, frag. 154a; cf. <foreign xml:lang="de">Wilamowitz, Hermes</foreign>, XL, p165. (<persName>Andrews</persName> prefers to adopt the reading <foreign xml:lang="grc">κυκεών</foreign>, "potion," assuming a verbal form, "dulls" or "blunts," in the preceding or following line.)</quote></p>
+</div>
+
+<milestone unit="section" n="5"/>
+<div type="section" n="5">
+   <p>Cf. <persName>Herodotus</persName>, II.86;</p>
+   <p><persName>Diodorus</persName>, I.91;</p>
+   <p><persName>Plutarch</persName>, <title>Mor.</title> 159B; <persName>Porphyry</persName>, <title>De Abstinentia</title>, IV.10 (244, ed. <persName>Nauck</persName>).</p>
+</div>
+
+<milestone unit="section" n="6"/>
+<div type="section" n="6">
+   <p><persName>Pliny</persName>, <title>Nat. Hist.</title> XI.210‑211</p>
+   <p>is not quite so gruesome.</p>
+</div>
+
+<milestone unit="section" n="7"/>
+<div type="section" n="7">
+   <p><persName>Pliny</persName>, <title>Nat. Hist.</title> X.60.</p>
+</div>
+
+<milestone unit="section" n="8"/>
+<div type="section" n="8">
+   <p><persName>Wyttenbach</persName> reasonably suggested "geese," but see <persName>Athenaeus</persName>, 131F; 393C‑D.</p>
+</div>
+
+<milestone unit="section" n="9"/>
+<div type="section" n="9">
+   <p>See <persName>Plato</persName>, <title>Laws</title>, 816B.</p>
+</div>
+
+<milestone unit="section" n="10"/>
+<div type="section" n="10">
+   <p>Referring to the gladiatorial combats which came to be substituted for the more refined exhibitions of an earlier age. <persName>Plutarch</persName> urges the expulsion of such practices from the State in <persName>Plutarch</persName>, <title>Mor.</title> 822C; for further examples of this kind of opposition to <placeName>Roman</placeName> policy see <persName>H. Fuchs</persName>, <title>Der geistige Widerstand gegen Rom</title>, p49, n60.</p>
+</div>
+
+<milestone unit="section" n="11"/>
+<div type="section" n="11">
+   <p><title>Life of Lycurgus</title>, XIII.5‑6 (47B‑C); <persName>Plutarch</persName>, <title>Mor.</title> 189E, 227C, 285C; <title>Comment. on Hesiod</title>, 42 (<persName>Bernardakis</persName>, VII, p72).</p>
+</div>
+
+<milestone unit="section" n="12"/>
+<div type="section" n="12">
+   <p>Or "unwritten laws"; the <name type="deity">MSS.</name> here say "in the three rhetrae."</p>
+</div>
+
+<milestone unit="section" n="13"/>
+<div type="section" n="13">
+   <p><persName>Semonides</persName>, frag. 5; see <persName>Plutarch</persName>, <title>Mor.</title> 446E and the note.</p>
+</div>
+
+<milestone unit="section" n="14"/>
+<div type="section" n="14">
+   <p>That is, "the reincarnated life."</p>
+</div>
+
+<milestone unit="section" n="15"/>
+<div type="section" n="15">
+   <p>As in frag. B 137 (<foreign xml:lang="la">Diels-Kranz, Frag. der Vorsok. I</foreign>, p275).</p>
+</div>
+
+<milestone unit="section" n="16"/>
+<div type="section" n="16">
+   <p>Cf. <persName>von Arnim</persName>, <title>S. V. F. III</title>, p186.</p>
+</div>
+
+<milestone unit="section" n="17"/>
+<div type="section" n="17">
+   <p>That is, they tell us to eat meat without compunction, because human beings are only mortal, and their souls are not reincarnated in <name type="animal" xml:lang="und">animals</name>.</p>
+</div>
+
+<milestone unit="section" n="18"/>
+<div type="section" n="18">
+   <p>Cf. 993A</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en priorisant l'encodage des entités nommées :
+
+
+<pb n="27"/>
+<p>supra. The argument is somewhat weakened by the fact (certainly well known to <persName>Plutarch</persName>, e.g. <quote>Mor. 286D‑E</quote>) that <persName>Pythagoras</persName> placed an even more stringent taboo on beans than he did on meat.</p>
+<milestone unit="section" n="19"/>
+<p><persName>Pythagoras</persName> and <persName>Empedocles</persName>.</p>
+<milestone unit="section" n="20"/>
+<p><persName>Phaedrus</persName>, 243D; cf. <quote>Mor. 627F, 706E, 711D</quote>.</p>
+<milestone unit="section" n="21"/>
+<p>That is, of the two schools of philosophy mentioned above in 997E.</p>
+<milestone unit="section" n="22"/>
+<p><persName>Plutarch</persName> seems to have confused the Black Cloaks
+(<persName>Herodotus</persName>, IV.20, but cf. IV.107) with the <placeName>Issedones</placeName>
+(IV.26); and perhaps the <placeName>Sogdians</placeName>
+(III.93)
+with the <placeName>Padaei</placeName>
+(III.99); cf. also
+I.216
+and
+III.38.</p>
+<milestone unit="section" n="23"/>
+<p>But this clause looks like a semi-learned addition.</p>
+<milestone unit="section" n="24"/>
+<p>Cf. 964E‑F
+supra.</p>
+<milestone unit="section" n="25"/>
+<p>There seems to be a lacuna here followed by an interpolation from chapter 6 or 7.</p>
+<milestone unit="section" n="26"/>
+<p><persName>Aratus</persName>, <foreign xml:lang="la">Phaenomena</foreign>, 131 f.; cf. <persName>Lucilius</persName> parody in the <placeName>Palatine Anthology</placeName>, XI.136.</p>
+<milestone unit="section" n="27"/>
+<p>Cf. 959D
+supra and the note.</p>
+<milestone unit="section" n="28"/>
+<p>Cf. <persName>Xenophon</persName>, <foreign xml:lang="la">Hellenica</foreign>, II.3.39.</p>
+<milestone unit="section" n="29"/>
+<p>Cf. <persName>Xenophon</persName>, <foreign xml:lang="la">Hellenica</foreign>, II.3.56.</p>
+<milestone unit="section" n="30"/>
+<p>The son of <persName>Cephalus</persName> and brother-in‑law of <persName>Lysias</persName>; a prominent character in <persName>Plato</persName>, <foreign xml:lang="la">Republic</foreign>, I. For the circumstances of his death see <persName>Lysias</persName>' oration <quote>Against Eratosthenes</quote>. It is, however, somewhat unlikely that <persName>Plutarch</persName> should call <persName>Polemarchus</persName> "the philosopher" even though he appeared in the <foreign xml:lang="la">Republic</foreign> and his philosophic bent was mentioned in the <foreign xml:lang="la">Phaedrus</foreign> (257B); so that, once again, we may be faced with interpolation.</p>
+<milestone unit="section" n="31"/>
+<p><persName>Diels-Kranz</persName>, <foreign xml:lang="de">Frag. der Vorsok.</foreign> I, p362; <persName>Empedocles</persName>, frag. 126.</p>
+<milestone unit="section" n="32"/>
+<p>Cf. <quote>Mor. 128B‑E</quote>.</p>
+<milestone unit="section" n="33"/>
+<p>Cf. <persName>Matthew Arnold</persName>, <foreign xml:lang="en">Dover Beach</foreign>:
+</p>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en traitant le texte comme un fragment de prose sans structure de livre/chapitre identifiable (les numéros de sections 34-39 sont traités comme des milestones) :
+
+
+<pb n="500"/>
+<p>And we are here as on a darkling plain
+Swept with confused alarms of struggle and flight,
+Where ignorant armies clash by night.</p>
+<milestone unit="section" n="34"/>
+<p>Nauck, Trag. Graec. Frag. p500, frag. 456 from the <placeName>Cresphontes</placeName>.</p>
+<p><persName>Aristotle</persName>, <title>Poetics</title>, XIV.19 (1454 A5) tells us that all turns out well: <persName>Merope</persName> recognizes her son before she can kill him; but it was a close thing, a <persName>Plutarch</persName> implies.</p>
+<milestone unit="section" n="35"/>
+<p>Cf. <persName>von Arnim</persName>, <title>S. V. F. III</title>,
+p91, No. 374.</p>
+<milestone unit="section" n="36"/>
+<p>A technical term of <name type="deity">Stoic</name> philosophy.</p>
+<milestone unit="section" n="37a"/>
+<milestone unit="section" n="37b"/>
+<p>Further <name type="deity">Stoic</name> technical terms.</p>
+<milestone unit="section" n="38"/>
+<p>Cf. 970B
+supra.</p>
+<milestone unit="section" n="39"/>
+<p>The rest is lacking.
+(Details here.)</p>
+<p>Eating Meat
+(orientation page)</p>
+<p><persName>Plutarch</persName>
+Latin &amp; Greek</p>
+<p>A page or image on this site is in the public domain ONLY if its URL has a total of one *asterisk. If the URL has two **asterisks, the item is copyright someone else, and used by permission or fair use. If the URL has none the item is © Bill Thayer.</p>
+<p>my copyright page
+for details and contact information.</p>
+<p>13 Apr 18
+Accessibility</p>
+    </body>
+  </text>
+</TEI>
