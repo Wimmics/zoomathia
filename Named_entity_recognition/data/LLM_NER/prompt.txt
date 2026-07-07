@@ -1,0 +1,10 @@
+I want you to perform a Named Entity Recognition (NER) on the followinng paragraph. A thesaurus is given to you as an example of the previous exctractions made on texts of the same corpus. You can find concepts that are similar to those in the thesaurus, or propose new annotations that could be relevant for the project (then you will write "new annotation" in the thesaurus_uri field).
+You must respond ONLY with a valid JSON object that has the exact following structure:
+{
+  "entities": [
+    {
+      "mention": "The entity exctracted",
+      "thesaurus_url": "The corresponding thesaurus ULR",
+    }
+  ]
+}
