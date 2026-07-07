@@ -1,0 +1,1199 @@
+============================================================
+RAPPORT D'ERREURS XML - Projet Zoomathia
+============================================================
+Fichiers analyses : 139
+
+✅ Fichiers valides : 34
+   a_verifier_16/Pseudo-Dioscorides Alexipharmaca (De venenis eorumque praecautione et medicatione)_tei.xml
+   phi0887/grattius_tei.xml
+   stoa0022/epist_tei.xml
+   stoa0022/hymns_tei.xml
+   stoa0022/mysteriis_tei.xml
+   stoa004/avianus_tei.xml
+   stoa0117/eucherius_tei.xml
+   stoa0159/13_tei.xml
+   stoa0159/1_tei.xml
+   stoa0159/sententiae3_tei.xml
+   stoa0209/nemesianus4_tei.xml
+   stoa0216/ovid.amor1_tei.xml
+   stoa0216/ovid.her10_tei.xml
+   stoa0216/ovid.her11_tei.xml
+   stoa0216/ovid.her12_tei.xml
+   stoa0216/ovid.her13_tei.xml
+   stoa0216/ovid.her14_tei.xml
+   stoa0216/ovid.her15_tei.xml
+   stoa0216/ovid.her16_tei.xml
+   stoa0216/ovid.her17_tei.xml
+   stoa0216/ovid.her1_tei.xml
+   stoa0216/ovid.her21_tei.xml
+   stoa0216/ovid.her4_tei.xml
+   stoa0216/ovid.her6_tei.xml
+   stoa0216/ovid.her8_tei.xml
+   stoa0216/ovid.her9_tei.xml
+   stoa0216/ovid.tristia4_tei.xml
+   stoa0216/ovid.tristia5_tei.xml
+   tlg0062/lucien_dipsades_fra_tei.xml
+   tlg0062/lucien_sacrifices_fra_tei.xml
+   tlg2034/porphyre_abstinence_book2_eng_tei.xml
+   tlg2040/basile_homily7_eng_tei.xml
+   tlg2040/basile_homily8_eng_tei.xml
+   tlg2040/basile_homily9_eng_tei.xml
+
+❌ Fichiers invalides : 105
+
+  Fichier : a_verifier_16/Pseudo-Dioscorides Theriaca (De iis, quae virus ejaculantur, animalibus libellus, in quo et de rabioso cane)_tei.xml
+  Erreur  : Opening and ending tag mismatch: teiHeader line 73 and TEI, line 1253, column 7
+  Ligne   : 1253
+  Contexte:
+        1250: </div>
+        1251:     </body>
+        1252:   </text>
+    >>> 1253: </TEI>
+
+  Fichier : a_verifier_20/Philumenus _tei.xml
+  Erreur  : xmlParseEntityRef: no name, line 76, column 123
+  Ligne   : 76
+  Contexte:
+        73: 
+        74: **Note d'encodage :**
+        75: 
+    >>> 76: Le fragment fourni est extrêmement court et correspond à un titre d'œuvre accompagné d'une indication d'auteur abrégée (`&1Philumenus &Med.`), sans texte de contenu développé. L'encodage reflète fidèlement ces seuls éléments :
+        77: 
+        78: - `<head>` pour le titre de l'œuvre *De venenatis animalibus eorumque remediis*
+
+  Fichier : phi0684/varro.rr1_tei.xml
+  Erreur  : Opening and ending tag mismatch: name line 1304 and body, line 1627, column 12
+  Ligne   : 1627
+  Contexte:
+        1624:     <persName>Varro</persName>
+        1625:   </p>
+        1626: </div>
+    >>> 1627:     </body>
+        1628:   </text>
+        1629: </TEI>
+
+  Fichier : phi0684/varro.rr2_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 498 and div, line 499, column 9
+  Ligne   : 499
+  Contexte:
+        496:     <p><foreign xml:lang="la">Semestribus</foreign> <name type="animal" xml:lang="la">vitulis</name> obiciunt <name type="plant" xml:lang="la">furfures</name> <name type="plant" xml:lang="la">triticios</name> et <name type="plant" xml:lang="la">farinam</name> <name type="plant" xml:lang="la">hordeaceam</name> et teneram <name type="plant" xml:lang="la">herbam</name> et ut bibant mane et vesperi curant.</p>
+        497:     <p>De <foreign xml:lang="la">sanitate</foreign> sunt complura, quae exscripta de <persName>Magonis</persName> libris <name type="animal" xml:lang="la">armentarium</name> meum crebro ut aliquid legat curo.</p>
+        498:     <p>Numerus de <name type="animal" xml:lang="la">tauris</name> et <name type="animal" xml:lang="la">vaccis</name> sic habendus, ut in sexaginta unus sit <foreign xml:lang="la">anniculus</foreign>, alter <foreign xml:lang="la">bimus</foreign>. Quidam habent aut minorem aut maiorem numerum; nam apud <persName>Atticum</persName> duo <name type="animal" xml:lang="la">tauri</name> in
+    >>> 499:   </div>
+        500: </div>
+        501: Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage demandé de Varron, *De re rustica* (Livre II, chapitres VI-VII) :
+
+  Fichier : phi0684/varro.rr3_tei.xml
+  Erreur  : Couldn't find end of Start Tag milestone line 544, line 544, column 111
+  Ligne   : 544
+  Contexte:
+        541: 
+        542: Une fois le texte fourni, je produirai l'encodage TEI P5 complet en respectant scrupuleusement les règles du projet Zoomathia :
+        543: 
+    >>> 544: - Balisage structurel (`<div type="book">`, `<div type="chapter">`, `<div type="section">`, `<p>`, `<milestone/>`
+        545: - Identification des plantes, personnes, lieux et divinités
+        546: - Citations avec `<quote>`
+
+  Fichier : phi0975/phaedrus_fables_eng_tei.xml
+  Erreur  : ID fn13 already defined, line 3576, column 21
+  Ligne   : 3576
+  Contexte:
+        3573:       slothful delay should not hinder the execution of our purposes.
+        3574:     </p>
+        3575: 
+    >>> 3576:     <p xml:id="fn13">
+        3577:       [Footnote V.13: <hi rend="italic">His forehead covered with hair</hi>)--Ver.
+        3578:       2. From this figure of Time or Opportunity, Time came to be represented in
+
+  Fichier : stoa0022/epistvaria_tei.xml
+  Erreur  : Opening and ending tag mismatch: persName line 318 and body, line 3198, column 12
+  Ligne   : 3198
+  Contexte:
+        3195:     (Rom. XIII, 7). Nam cum privato detulerim corde intimo, quomodo non deferrem imperatori? Sed qui vobis deferri vultis, patimini ut deferamus ei, quem imperii vestri vultis auctorem probari.
+        3196:   </p>
+        3197: </div>
+    >>> 3198:     </body>
+        3199:   </text>
+        3200: </TEI>
+
+  Fichier : stoa0159/10_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 1332 and p, line 1333, column 7
+  Ligne   : 1333
+  Contexte:
+        1330: <div type="chapter">
+        1331:   <p>
+        1332:     id est porro iactata. <milestone unit="section" n="217"/> Proscriptus, cuius bona palam et aperte scribuntur. Praescriptus ordinem significat, sicut et praescriptiones apud iurisconsultos. <milestone unit="section" n="218"/> Procinctus, expeditus et armatus; unde et 'in procinctu', id est cum belli causa arma sumebant. Praecinctus, eo quod ante se ponat aliquid, quo praecingitur. Vnde et de Domino dictum est <quote source="Iohann. 13,5">(Iohann. 13,5): 'Praecinctus est linteo, et lavit pedes discipulorum suorum'</quote> <milestone unit="section" n="219"/> Praedo est qui populando alienam provinciam invadit: praedo ab abigendo praedas dictus; et praedo qui praedam habet. Praedator, hoc est cui de praeda debetur aliquid. <milestone unit="section" n="220"/> Plagiator, <foreign xml:lang="grc">ΑΠΟ ΤΟΥ ΠΛΑΓΙΟΥ</foreign>, id est oblico, quod non certa via grassatur sed pelliciendo dolis. Piratae sunt praedones maritimi, ab incendio navium transeuntium quas capiebant dicti. Nam <foreign xml:lang="grc">ΠΥΡΑ</foreign> ignis est. <milestone unit="section" n="221"/> Pugillator, qui de manu in manu nummorum aliquid subtrahit. Peculator, pro eo quod sit pecuniae publicae defraudator. Proditor, pro eo quod detegit. Item proditor perditor, ut <quote source="Virg. Aen. 1,252">(Virg. Aen. 1,252):
+    >>> 1333:   </p>
+        1334:   <lg>
+        1335:     <l>Vnius ob iram</l>
+
+  Fichier : stoa0159/11_tei.xml
+  Erreur  : Opening and ending tag mismatch: foreign line 1315 and body, line 1593, column 12
+  Ligne   : 1593
+  Contexte:
+        1590:     </p>
+        1591:   </div>
+        1592: </div>
+    >>> 1593:     </body>
+        1594:   </text>
+        1595: </TEI>
+
+  Fichier : stoa0159/12_tei.xml
+  Erreur  : Opening and ending tag mismatch: placeName line 2816 and body, line 3125, column 12
+  Ligne   : 3125
+  Contexte:
+        3122:     </p>
+        3123:   </div>
+        3124: </div>
+    >>> 3125:     </body>
+        3126:   </text>
+        3127: </TEI>
+
+  Fichier : stoa0159/14_tei.xml
+  Erreur  : Opening and ending tag mismatch: name line 771 and body, line 1668, column 12
+  Ligne   : 1668
+  Contexte:
+        1665:   </div>
+        1666: 
+        1667: </div>
+    >>> 1668:     </body>
+        1669:   </text>
+        1670: </TEI>
+
+  Fichier : stoa0159/15_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 75 and p, line 75, column 441
+  Ligne   : 75
+  Contexte:
+        72:     <div type="section" n="1">
+        73:       <milestone unit="section" n="1.1.1"/>
+        74:       <head>DE CIVITATIBVS</head>
+    >>> 75:       <p>[1] De auctoribus, conditarum urbium plerumque dissensio invenitur, adeo ut nec urbis quidem <placeName>Romae</placeName> origo possit diligenter agnosci. Nam <persName>Sallustius</persName> dicit (<quote><bibl><author>Cat.</author></bibl> 6): 'Vrbem <placeName>Romam</placeName>, sicuti ego accepi, condere atque habitare initio <foreign xml:lang="la">Troiani</foreign> et cum his <foreign xml:lang="la">Aborigines</foreign>.'</p>
+        76:       <p>Alii dicunt ab <persName>Evandro</persName>, secundum quod <persName>Vergilius</persName> (<quote><bibl><author>Aen.</author></bibl> 8,313):</p>
+        77:       <quote>
+
+  Fichier : stoa0159/16_tei.xml
+  Erreur  : Specification mandates value for attribute la, line 147, column 486
+  Ligne   : 147
+  Contexte:
+        144:     </div>
+        145:     <div type="section" n="3">
+        146:       <milestone unit="section" n="3"/>
+    >>> 147:       <p><name type="animal" xml:lang="la">Crepido</name> extremitas saxi abrupta; unde et <name type="animal" xml:lang="la">crepido</name> vocata quod sit abrupti saxi altitudo, sicut <quote>'haeret pede pes densus'</quote> (<persName>Virg.</persName> <foreign xml:lang="la">Aen.</foreign> 10,361); unde et vocatur. <name type="animal" xml:lang="la">Cautes</name> aspera saxa in mari, dictae a cavendo, quasi <name type="animal" xml:lang="la">cautae</name>. <name type="animal" xml:la>Murices</name> petrae in litore similes <name type="animal" xml:lang="la">muricis</name> vivis, acutissimae et navibus perniciosae.</p>
+        148:     </div>
+        149:     <div type="section" n="4">
+
+  Fichier : stoa0159/17_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 116 and p, line 116, column 119
+  Ligne   : 116
+  Contexte:
+        113:     <div type="section" n="1">
+        114:       <p><persName>DE FRVMENTIS</persName>.</p>
+        115:       <p>Prima <name type="deity">Ceres</name> coepit uti frugibus in <placeName>Graecia</placeName> et habere segetes translatis aliunde seminibus.</p>
+    >>> 116:       <p>Huius meminit <persName>Ovidius</persName> dicens (<quote><foreign xml:lang="la">Metam.</foreign> 5,341):</p>
+        117:       <quote>
+        118:         <p>Prima <name type="deity">Ceres</name> unco glebam dimovit aratro,</p>
+
+  Fichier : stoa0159/18_tei.xml
+  Erreur  : attributes construct error, line 211, column 106
+  Ligne   : 211
+  Contexte:
+        208:       <milestone unit="section" n="5.16.3"/>
+        209:       <head type="main">VII. DE HASTIS.</head>
+        210:       <p><name type="animal" xml:lang="la">Hasta</name> est contus cum ferro; cuius diminutivum facit <name type="animal" xml:lang="la">hastilia</name>. Nomen autem <name type="animal" xml:lang="la">hasta</name> ab <name type="animal" xml:lang="la">astu</name> sumpsit; unde et <name type="animal" xml:lang="la">astutia</name>.</p>
+    >>> 211:       <p><name type="animal" xml:lang="la">Contum</name> ferrum non habet, sed tantum <name type="animal"xml:lang="la">cuspide</name> acuto est. <persName>Vergilius</persName> (<foreign xml:lang="la">Aen.</foreign> 5,208):</p>
+        212:       <p><quote>Eferatasque trudes et acuto <name type="animal" xml:lang="la">cuspide</name> contos.</quote></p>
+        213:     </div>
+
+  Fichier : stoa0159/19_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 299 and div, line 301, column 10
+  Ligne   : 301
+  Contexte:
+        298:       <p><milestone unit="section" n="2"/> Malleus vocatus quia, dum quid calet et molle est, caedit et producit. Marcus malleus maior; et dictus marcus quod maior sit ad caedendum et fortior. Martellus, mediocris. Marculus malleus pusillus. <quote><persName>Lucilius</persName> (1165):</quote></p>
+        299:       <p><quote>Et velut in fabrica fervens cum <name type="animal" xml:lang="la">marculus</name> ferrum
+        300: multorum magnis ictibus tundit.</quote>
+    >>> 301:    </div>
+        302: </div>
+        303: Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte fourni, en respectant la structure hiérarchique et les balises spécifiques aux entités zoologiques et autres :
+
+  Fichier : stoa0159/20_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 170 and div, line 172, column 9
+  Ligne   : 172
+  Contexte:
+        169:     <milestone unit="section" n="24"/>
+        170:     <p><name type="animal" xml:lang="la">Lardum</name>, eo quod in <placeName>domo</placeName> repositum conservatur; nam antiqui <placeName>domos</placeName> <placeName>lares</placeName> dicebant. <name type="animal" xml:lang="la">Taxea</name> <name type="animal" xml:lang="la">lardus</name> est <foreign xml:lang="fr">Gallice</foreign> dictum. <quote>Vnde et <persName>Afranius</persName> in <title>Rosa</title> (284):
+        171:      Gallum sagatum pingui pastum <name type="animal" xml:lang="la">taxea</name>.</quote>
+    >>> 172:   </div>
+        173: </div>
+        174: Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte d'Isidore de Séville (Etymologiae, Livre 20, section 4/15) :
+
+  Fichier : stoa0159/2_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 282 and p, line 282, column 104
+  Ligne   : 282
+  Contexte:
+        279: 
+        280: <div type="chapter" n="11">
+        281:    <milestone unit="section" n="11.1"/>
+    >>> 282:    <p>Sententia est dictum inpersonale, ut (<quote><foreign xml:lang="la">Ter. Andr.</foreign> 68):</p>
+        283:    <p>Obsequium amicos, veritas odium parit.</p>
+        284:    <p>Huic si persona fuerit adiecta, chria erit, ita: "offendit <name type="person">Achilles</name> <name type="person">Agamemnonem</name> vera dicendo,"<foreign xml:lang="la">Metrophanes</foreign> promeruit gratiam <name type="person">Mithridatis</name> obsequendo"</p>
+
+  Fichier : stoa0159/3_tei.xml
+  Erreur  : Couldn't find end of Start Tag milestone line 169, line 169, column 31
+  Ligne   : 169
+  Contexte:
+        166: Notes :
+        167: 1. J'ai encodé tous les noms d'animaux avec `<name type="animal">` comme demandé
+        168: 2. J'ai respecté la structure en livres/chapitres avec les attributs `n`
+    >>> 169: 3. J'ai ajouté les `<milestone/>`
+        170: 5. Le fragment est autonome et valide XML
+        171: 6. Toutes les balises sont correctement fermées
+
+  Fichier : stoa0159/4_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 168 and p, line 168, column 249
+  Ligne   : 168
+  Contexte:
+        165: <div type="book" n="5">
+        166:   <div type="chapter" n="14">
+        167:     <p>plerumque per <name type="animal" xml:lang="la">aerias</name> potestates fiat, tamen sine arbitrio omnipotentis <name type="deity">Dei</name> omnino non fit. <milestone unit="section" n="18"/></p>
+    >>> 168:     <p>Dicta autem <name type="animal" xml:lang="la">pestilentia</name>, quasi <foreign xml:lang="la">pastulentia</foreign>, quod veluti incendium depascat, ut (<quote><persName>Virgilius</persName> <foreign xml:lang="la">Aen.</foreign> 5,683):</p>
+        169:     <quote>
+        170:       <p>Toto descendit corpore <name type="animal" xml:lang="la">pestis</name>.</p>
+
+  Fichier : stoa0159/5_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 337 and div, line 338, column 9
+  Ligne   : 338
+  Contexte:
+        335:     <milestone unit="section" n="20"/> <p>Infitiatio est negatio debitae rei, cum a creditore deposcitur. Idem et abiuratio, id est rei creditae abnegatio.</p>
+        336:     <milestone unit="section" n="21"/> <p>Ambitus iudicium in eum est, qui largitione honorem capit et ambit, amissurus dignitatem, quam munere invadit.</p>
+        337:     <milestone unit="section" n="22"/> <p>Peculatus iudicium in eos datur qui fraudem aerario faciunt, pecuniamque publicam intervertunt. Nam a pecunia peculatu
+    >>> 338:   </div>
+        339: </div>
+        340: <div type="book" n="12">
+
+  Fichier : stoa0159/6_tei.xml
+  Erreur  : attributes construct error, line 83, column 146
+  Ligne   : 83
+  Contexte:
+        80:     <p>De animalibus.</p>
+        81:     <p>Animal autem dictum est, quia animam habet, id est uiuendi principium, unde et homines animalia dicuntur. Sunt autem animalia uel <name type="animal" xml:lang="la">canes</name>, uel <name type="animal" xml:lang="la">leones</name>, uel <name type="animal" xml:lang="la">aquilae</name>, uel <name type="animal" xml:lang="la">serpentes</name>, uel <name type="animal" xml:lang="la">dracones</name>, uel <foreign xml:lang="grc">ζῷα</foreign> ceteraque genera bestiarum.</p>
+        82:     <p>Sunt enim animalia aut <foreign xml:lang="grc">ἔναιμα</foreign>, id est sanguinem habentia, aut <foreign xml:lang="grc">ἄναιμα</foreign>, id est sine sanguine. Sanguinem autem habentia sunt quae <name type="animal" xml:lang="la">homo</name>, <name type="animal" xml:lang="la">equus</name>, <name type="animal" xml:lang="la">bos</name>, <name type="animal" xml:lang="la">canis</name>, <name type="animal" xml:lang="la">lupus</name> ceteraque quadrupedia.</p>
+    >>> 83:     <p>Sine sanguine uero <name type="animal" xml:lang="la">serpens</name>, <name type="animal" xml:lang="la">lacerta</name>, <name type="animal"xml:lang="la">testudo</name>, <name type="animal" xml:lang="la">musca</name>, <name type="animal" xml:lang="la">apes</name> et omne genus reptilium.</p>
+        84:   </div>
+        85: </div>
+
+  Fichier : stoa0159/7_tei.xml
+  Erreur  : attributes construct error, line 310, column 208
+  Ligne   : 310
+  Contexte:
+        307:     <milestone unit="section" n="12.41.3"/>
+        308:     <p>Sunt etiam <name type="animal" xml:lang="la">bestiae</name> silvestres, ut <name type="animal" xml:lang="la">leones</name>, <name type="animal" xml:lang="la">tigres</name>, <name type="animal" xml:lang="la">lupae</name>, <name type="animal" xml:lang="la">ursi</name>, <name type="animal" xml:lang="la">apri</name>.</p>
+        309:     <milestone unit="section" n="12.41.4"/>
+    >>> 310:     <p>Volucrum autem genera sunt <name type="animal" xml:lang="la">aquilae</name>, <name type="animal" xml:lang="la">accipitres</name>, <name type="animal" xml:lang="la">vultures</name>, <name type="animal"xml:lang="la">corvi</name>, <name type="animal" xml:lang="la">picae</name>.</p>
+        311:     <milestone unit="section" n="12.41.5"/>
+        312:     <p>Sunt etiam <name type="animal" xml:lang="la">serpentes</name> et <name type="animal" xml:lang="la">dracones</name>, qui etiam volare dicuntur, licet non habeant alas.</p>
+
+  Fichier : stoa0159/8_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 72 and div, line 73, column 13
+  Ligne   : 73
+  Contexte:
+        70:          <p><persName>ISIDORI HISPALENSIS EPISCOPI</persName> <foreign xml:lang="la">ETYMOLOGIARUM SIVE ORIGINUM LIBER VIII</foreign></p>
+        71:          <p><foreign xml:lang="la">DE ECCLESIA ET SECTIS</foreign></p>
+        72:          <p><persName>I</persName>. <foreign xml:lang="la">DE ECCLESIA ET SYNAGOGA</foreign>. <persName>[1]</persName> <foreign xml:lang="la">Ecclesia</foreign> Graecum est, quod in Latinum vertitur <foreign xml:lang="la">convocatio</foreign>, propter quod omnes ad se vocet. <foreign xml:lang="la">Catholica</foreign>, universalis, <foreign xml:lang="grc">APO TOU KATH OLON</foreign>, id est secundum totum. Non enim sicut <foreign xml:lang="la">conventicula</foreign> haereticorum in aliquibus regionum partibus coartatur, sed per totum terrarum orbem dilatata diffunditur. <persName>[2]</persName> Quod etiam <persName>Apostolus</persName> adprobat ad <placeName>Romanos</placeName> dicens (1,8): <quote>'Gratias ago Deo meo pro omnibus vobis, quia fides vestra adnuntiatur in universo mundo.'</quote> Hinc et <foreign xml:lang="la">universitas</foreign> ab uno cognominata est, propter quod in unitatem colligitur. Vnde <name type="deity">Dominus</name> in <foreign xml:lang="la">Evangelio</foreign> (<foreign xml:lang="la">Luc.</foreign> 11,23): <quote>'Qui mecum non colligit, spargit.'</quote> <persName>[3]</persName> Cur autem <foreign xml:lang="la">Ecclesia</foreign> cum una sit, a <persName>Iohanne</persName> septem scribuntur, nisi ut una <foreign xml:lang="la">catholica</foreign> septiformi plena <name type="deity">Spiritu</name> designetur? Sicut [et] de <name type="deity">Domino</name> novimus dixisse <persName>Salomonem</persName> (<foreign xml:lang="la">Proverb.</foreign> 9,1): <quote>'Sapientia aedificavit sibi domum et excidit columnas septem,'</quote> quae tamen septem una esse non ambigitur, dicente <persName>Apostolo</persName> (1 <foreign xml:lang="la">Timoth.</foreign> 3,15): <quote>'Ecclesia Dei vivi, quae est columna et firmamentum veritatis.'</quote> <persName>[4]</persName> Inchoavit autem <foreign xml:lang="la">Ecclesia</foreign> a loco ubi venit de caelo <name type="deity">Spiritus sanctus</name>, et inplevit uno loco sedentes. <persName>[5]</persName> Pro peregrinatione autem praesenti <foreign xml:lang="la">Ecclesia</foreign> <placeName>Sion</placeName> dicitur, eo quod ab huius peregrinationis longitudine posita promissionem rerum caelestium speculetur; et idcirco <placeName>Sion</placeName>, id est <foreign xml:lang="la">speculatio</foreign>, nomen accepit. <persName>[6]</persName> Pro futura vero patriae pace <placeName>Hierusalem</placeName> vocatur. Nam <placeName>Hierusalem</placeName> <foreign xml:lang="la">pacis visio</foreign> interpretatur. Ibi enim absorpta omni adversitate <foreign xml:lang="la">pacem</foreign>, quae est <name type="deity">Christus</name>, praesenti possidebit obtutu. <persName>[7]</persName> <foreign xml:lang="la">Synagoga</foreign> Graece <foreign xml:lang="la">congregatio</foreign> dicitur, quod proprium nomen <name type="deity">Iudaeorum</name> populus tenuit. Ipsorum enim proprie <foreign xml:lang="la">synagoga</foreign> dici solet, quamvis et <foreign xml:lang="la">ecclesia</foreign> dicta sit. <persName>[8]</persName> Nostram vero <persName>Apostoli</persName> numquam <foreign xml:lang="la">synagogam</foreign> dixerunt, sed semper <foreign xml:lang="la">ecclesiam</foreign>, sive discernendi causa, sive quod inter <foreign xml:lang="la">congregationem</foreign>, unde <foreign xml:lang="la">synagoga</foreign>, et <foreign xml:lang="la">convocationem</foreign>, unde <foreign xml:lang="la">ecclesia</foreign> nomen accepit, distet aliquid; quod scilicet congregari et <name type="animal" xml:lang="la">pecora</name> solent, quorum et greges proprie dicimus; convocari autem magis est utentum ratione, sicut sunt homines.
+    >>> 73:       </div>
+        74:    </div>
+        75: </div>
+
+  Fichier : stoa0159/9_tei.xml
+  Erreur  : Specification mandates value for attribute la, line 86, column 386
+  Ligne   : 86
+  Contexte:
+        83:     <p>De animalibus autem quid sit animal breuiter dicendum est. Animal enim dicitur ab anhelitu, id est spiritu, quia omne animal spiritu uiuat. Sunt autem animalia uel fera uel mansueta, uel uolucres uel pisces, uel reptilia, uel insecta.</p>
+        84:     <p>Fera autem dicuntur quae in siluis degunt, sicut <name type="animal" xml:lang="la">lupus</name>, <name type="animal" xml:lang="la">ursus</name>, <name type="animal" xml:lang="la">leopardus</name>. Mansueta uero quae domari solent, sicut <name type="animal" xml:lang="la">canis</name>, <name type="animal" xml:lang="la">cattus</name>, <name type="animal" xml:lang="la">boues</name>.</p>
+        85:     <milestone unit="section" n="2.38.2"/>
+    >>> 86:     <p>Volucres autem dicuntur quae pennas habent et in aere uolant, sicut <name type="animal" xml:lang="la">aquila</name>, <name type="animal" xml:lang="la">coruus</name>, <name type="animal" xml:lang="la">columba</name>. Pisces uero qui in aquis degunt, sicut <name type="animal" xml:lang="la">piscis</name>, <name type="animal" xml:lang="la">cetus</name>, <name type="animal" xml:la>delphinus</name>.</p>
+        87:     <p>Reptilia uero quae in terra repunt, sicut <name type="animal" xml:lang="la">serpens</name>, <name type="animal" xml:lang="la">lacerta</name>, <name type="animal" xml:lang="la">testudo</name>. Insecta autem quae in aere uolant uel in terra reptant, sicut <name type="animal" xml:lang="la">musca</name>, <name type="animal" xml:lang="la">crabro</name>, <name type="animal" xml:lang="la">formica</name>.</p>
+        88:   </div>
+
+  Fichier : stoa0159/historia_tei.xml
+  Erreur  : Specification mandates value for attribute la, line 98, column 148
+  Ligne   : 98
+  Contexte:
+        95:     <p>Aera CCXCIV. Anno imperii <persName>Valeriani</persName> et <persName>Gallieni</persName> primo, <name type="animal" xml:lang="la">Gothi</name>, descensis montibus <name type="animal" xml:lang="la">Alpibus</name>, quibus inhabitabant, <placeName>Graeciam</placeName>, <placeName>Macedoniam</placeName>, <placeName>Pontum</placeName>, <placeName>Asiam</placeName> atque <placeName>Illyricum</placeName> vastaverunt. Ex quibus <placeName>Illyricum</placeName> et <placeName>Macedoniam</placeName> ferme annis XV tenuerunt. Deinde a <persName>Claudio Imperatore</persName> superati sedes proprias repetunt. Romani autem <persName>Claudium Augustum</persName> pro eo quod tam fortissimam gentem a finibus reipublicae removisset, insigni gloria honorantes, in foro illi aureum clypeum, in capitolio auream statuam collocaverunt.</p>
+        96: 
+        97:     <milestone unit="section" n="5"/>
+    >>> 98:     <p>Aera CCCLXIX, anno XXVI imperii <persName>Constantini</persName>, <name type="animal" xml:lang="la">Gothi</name>, <name type="animal" xml:la>Sarmatarum</name> regionem aggressi, copiosissimis super Romanos irruerunt agminibus, vehementi virtute cuncta gladio et depraedatione vastantes. Adversus quos idem <persName>Constantinus</persName> aciem instruxit, ingentique certamine vix superatos ultra <placeName>Danubium</placeName> expulit, ne diversis gentibus virtutis gloria clarus, sed de <name type="animal" xml:lang="la">Gothorum</name> victoria amplius gloriosus. Quem Romani, acclamante senatu, publica laude prosecuti sunt quod tantam gentem vicerit, quod patriam rempublicam reformaverit.</p>
+        99: 
+        100:     <milestone unit="section" n="6"/>
+
+  Fichier : stoa0159/sententiae1_tei.xml
+  Erreur  : Opening and ending tag mismatch: milestone line 1180 and body, line 1399, column 12
+  Ligne   : 1399
+  Contexte:
+        1396: </div>
+        1397: 
+        1398: <p>Explicit Liber Primus.</p>
+    >>> 1399:     </body>
+        1400:   </text>
+        1401: </TEI>
+
+  Fichier : stoa0159/sententiae2_tei.xml
+  Erreur  : Couldn't find end of Start Tag milestone line 1572, line 1572, column 49
+  Ligne   : 1572
+  Contexte:
+        1569: 1. **Structure** :
+        1570:    - Les livres 39 et 40 sont encodés comme des `<div type="book">`.
+        1571:    - Le chapitre 40.1 est marqué comme `<div type="chapter">` (bien que le texte ne semble pas contenir de chapitre formel, cette structure est conservée pour respecter la hiérarchie).
+    >>> 1572:    - Les sections sont encodées avec `<milestone/>`.
+        1573: 
+        1574: 2. **Entités nommées** :
+
+  Fichier : stoa0209/nemesianus1_tei.xml
+  Erreur  : Opening and ending tag mismatch: persName line 106 and name, line 106, column 56
+  Ligne   : 106
+  Contexte:
+        103:    <p><quote>Et parere decet iussis et grata iubentur.</quote>
+        104:    <quote>Namque fuit dignus senior, quem carmine <name type="deity">Phoebus</name>,</quote>
+        105:    <quote><name type="deity">Pan</name> <name type="plant" xml:lang="la">calamis</name>, <name type="deity">fidibus</name> <persName>Linus</persName> aut <persName>Oeagrius</persName> <name type="deity">Orpheus</name></quote>
+    >>> 106:    <quote>concinerent totque acta <persName>viri</name> laudesque sonarent.</quote>
+        107:    <quote>Sed quia tu nostrae laudem deposcis <name type="plant" xml:lang="la">avenae</name>,</quote>
+        108:    <quote>accipe quae super haec <name type="plant" xml:lang="la">cerasus</name>, quam cernis ad <name type="placeName">amnem</name></quote>
+
+  Fichier : stoa0209/nemesianus2_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 101 and l, line 101, column 111
+  Ligne   : 101
+  Contexte:
+        98:   </lg>
+        99: 
+        100:   <lg type="strophe" subtype="speech" who="Idas">
+    >>> 101:     <l n="20"><quote>"Quae colitis silvas, <name type="deity" xml:lang="la">Dryades</name>, quaeque antra,</l>
+        102:     <l n="21"><name type="deity" xml:lang="la">Napaeae</name>,</l>
+        103:     <l n="22">et quae marmoreo pede, <name type="deity" xml:lang="la">Naides</name>, uda secatis</l>
+
+  Fichier : stoa0209/nemesianus3_tei.xml
+  Erreur  : error parsing attribute name, line 123, column 5
+  Ligne   : 123
+  Contexte:
+        120:   <l n="27">Quin et <persName>Silenus</persName> parvum veteranus alumnum</l>
+        121:   <l n="28">aut gremio fovet aut resupinis sustinet ulnis,</l>
+        122:   <l n="29">evocat aut risum digito motuve quietem</l>
+    >>> 123:   <l="30">allicit aut tremulis quassat crepitacula palmis.</l>
+        124: </lg>
+        125: 
+
+  Fichier : stoa0216/ovid.amor2_tei.xml
+  Erreur  : Opening and ending tag mismatch: name line 884 and foreign, line 884, column 67
+  Ligne   : 884
+  Contexte:
+        881:   </lg>
+        882:   <lg type="strophe">
+        883:     <l n="17">Nec belli est nova causa mei. nisi rapta fuisset</l>
+    >>> 884:     <l n="18"><name type="deity" xml:lang="grc">Tyndaris</foreign>, <placeName>Europae</placeName> pax <placeName>Asiaeque</placeName> foret.</l>
+        885:     <l n="19">femina silvestris <name type="animal" xml:lang="la">Lapithas</name> populumque biformem</l>
+        886:     <l n="20">turpiter adposito vertit in arma mero;</l>
+
+  Fichier : stoa0216/ovid.amor3_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 546 and p, line 546, column 64
+  Ligne   : 546
+  Contexte:
+        543:     <p>currendi vires eripiente metu.</p>
+        544:     <p>sera tamen scindens inimico pollice crinem</p>
+        545:     <p>edidit indignos ore tremente sonos:</p>
+    >>> 546:     <p><quote>'o utinam mea lecta forent patrioque sepulcro</p>
+        547:     <p>condita, cum poterant virginis ossa legi!</p>
+        548:     <p>cur, modo Vestalis, taedas invitor ad ullas</p>
+
+  Fichier : stoa0216/ovid.artis1_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 368 and div, line 369, column 9
+  Ligne   : 369
+  Contexte:
+        366:     <p>Hinc aliquis vulnus referens in pectore dixit <milestone unit="section" n="260"/></p>
+        367:     <p>'Non haec, ut fama est, unda salubris erat.'</p>
+        368:     <p>Ecce suburbanae templum nemorale <name type="deity">Dianae</name>
+    >>> 369:   </div>
+        370: </div>
+        371: Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage 6/13 des *Halieutica* d'Ovide, avec une attention particulière aux entités nommées Zoomathia et à la structure demandée :
+
+  Fichier : stoa0216/ovid.artis2_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 119 and l, line 119, column 83
+  Ligne   : 119
+  Contexte:
+        116: </lg>
+        117: 
+        118: <lg type="strophe">
+    >>> 119:   <l n="25"><quote>'Sit modus exilio,'</quote> dixit <quote>'iustissime Minos:</l>
+        120:   <l n="26">Accipiat cineres terra paterna meos.</l>
+        121:   <l n="27">Et quoniam in patria, fatis agitatus iniquis,</l>
+
+  Fichier : stoa0216/ovid.artis3_tei.xml
+  Erreur  : error parsing attribute name, line 161, column 5
+  Ligne   : 161
+  Contexte:
+        158: </lg>
+        159: <lg type="strophe">
+        160:   <l n="57">Dum facit ingenium, petite hinc praecepta, <foreign xml:lang="la">puellae</foreign>,</l>
+    >>> 161:   <l="58">Quas pudor et leges et sua iura sinunt.</l>
+        162:   <l n="59">Venturae memores iam nunc estote senectae:</l>
+        163:   <l n="60">Sic nullum vobis tempus abibit iners.</l>
+
+  Fichier : stoa0216/ovid.fasti1_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 357 and p, line 357, column 86
+  Ligne   : 357
+  Contexte:
+        354:   <div type="section" n="225">
+        355:     <p>'multa quidem didici: sed cur navalis in aere </p>
+        356:     <p>altera signata est, altera forma biceps?'</p>
+    >>> 357:     <p><quote>'noscere me duplici posses ut imagine' <persName>dixit</persName>, </p>
+        358:     <p>ni vetus ipsa dies extenuasset opus.</p>
+        359:     <p>causa ratis superest: <name type="deity" xml:lang="la">Tuscum</name> rate venit ad amnem </p>
+
+  Fichier : stoa0216/ovid.fasti2_tei.xml
+  Erreur  : Opening and ending tag mismatch: persName line 489 and name, line 489, column 209
+  Ligne   : 489
+  Contexte:
+        486:   </div>
+        487: 
+        488:   <div type="section" n="381">
+    >>> 489:     <p><foreign xml:lang="la">Forsitan</foreign> et <foreign xml:lang="la">quaeras</foreign> <foreign xml:lang="la">cur</foreign> <persName>sit</persName> <name type="place">locus</name> <persName>ille</name> <name type="place">Lupercal</name>,</p>
+        490:     <p><foreign xml:lang="la">quaeve</foreign> <name type="deity" xml:lang="la">diem</name> <foreign xml:lang="la">tali</foreign> <name type="place">nomine</name> <foreign xml:lang="la">causa</foreign> <foreign xml:lang="la">notet</foreign>.</p>
+        491:     <p><name type="deity" xml:lang="la">Silvia</name> <name type="deity" xml:lang="la">Vestalis</name> <name type="animal" xml:lang="la">caelestia</name> <name type="animal" xml:lang="la">semina</name> <foreign xml:lang="la">partu</foreign></p>
+
+  Fichier : stoa0216/ovid.fasti3_tei.xml
+  Erreur  : error parsing attribute name, line 138, column 5
+  Ligne   : 138
+  Contexte:
+        135:   <l n="41">interea crescente <name type="person">Remo</name>, crescente <name type="person">Quirino</name>,</l>
+        136:   <l n="42">caelesti tumidus pondere venter erat.</l>
+        137:   <l n="43">quo minus emeritis exiret cursibus annus</l>
+    >>> 138:   <l="44">restabant nitido iam duo signa deo:</l>
+        139: </lg>
+        140: 
+
+  Fichier : stoa0216/ovid.fasti4_tei.xml
+  Erreur  : error parsing attribute name, line 332, column 5
+  Ligne   : 332
+  Contexte:
+        329:   <l n="47">septima mortali Merope tibi, Sisyphe, nupsit;</l>
+        330:   <l n="48">paenitet, et facti sola pudore latet:</l>
+        331:   <l n="49">sive quod Electra Troiae spectare ruinas</l>
+    >>> 332:   <l="50">non tulit, ante oculos opposuitque manum.</l>
+        333: </lg>
+        334: 
+
+  Fichier : stoa0216/ovid.fasti5_tei.xml
+  Erreur  : Specification mandates value for attribute book, line 89, column 55
+  Ligne   : 89
+  Contexte:
+        86: 1. J'ai utilisé des noms d'animaux marins typiques des *Halieutica* (dauphins, thons, glaucus, chevaux marins/hippocampes).
+        87: 2. Le grec φιλανθρωπία est marqué comme <foreign> avec son code de langue.
+        88: 3. Neptune est encodé comme <name type="deity">.
+    >>> 89: 4. La structure suit exactement les règles : <div book> → <div chapter> → <p> → balises d'entités.
+        90: 5. Le morceau est un fragment XML valide autonome.
+        91: 
+
+  Fichier : stoa0216/ovid.fasti6_tei.xml
+  Erreur  : Opening and ending tag mismatch: placeName line 375 and name, line 375, column 74
+  Ligne   : 375
+  Contexte:
+        372:       <p><placeName xml:lang="la">Tertia</placeName> post <name type="deity" xml:lang="la">Nonas</name> removere <name type="animal" xml:lang="la">Lycaona</name> <name type="deity" xml:lang="la">Phoebe</name></p>
+        373:       <p>fertur, et a tergo non habet <name type="animal" xml:lang="la">Ursa</name> metum.</p>
+        374:       <p>tunc ego me memini ludos in gramine <placeName xml:lang="la">Campi</placeName></p>
+    >>> 375:       <p>aspicere et dici, lubrice <placeName xml:lang="la">Thybri</name>, tuos.</p>
+        376:       <p>festa dies illis qui lina madentia ducunt,</p>
+        377:       <p>quique tegunt parvis aera recurva cibis.</p>
+
+  Fichier : stoa0216/ovid.her18_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 217 and div, line 218, column 7
+  Ligne   : 218
+  Contexte:
+        215:   <p>iam nostros curvi norunt <name type="animal" xml:lang="la">delphines</name> amores</p>
+        216:   <p>ignotum nec me piscibus esse reor.</p>
+        217:   <p>iam patet attritus solitarum limes aquarum,
+    >>> 218: </div>
+        219: Voici l'encodage TEI P5 strict du passage demandé, conforme aux règles du projet Zoomathia :
+        220: 
+
+  Fichier : stoa0216/ovid.her19_tei.xml
+  Erreur  : Opening and ending tag mismatch: lg line 286 and body, line 425, column 12
+  Ligne   : 425
+  Contexte:
+        422:   <l n="7">interea, quoniam nanti freta pervia non sunt,</l>
+        423:   <l n="8">leniat invisas littera missa moras.</l>
+        424: </lg>
+    >>> 425:     </body>
+        426:   </text>
+        427: </TEI>
+
+  Fichier : stoa0216/ovid.her20_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 308 and p, line 308, column 108
+  Ligne   : 308
+  Contexte:
+        305:     <p>esse tuam vinctam <name type="deity" xml:lang="la">numine</name> teste fidem.</p>
+        306:     <p>ne tamen ignoret, <name type="object" xml:lang="la">scripti</name> sententia quae sit,</p>
+        307:     <p>lecta tibi quondam nunc quoque <name type="object" xml:lang="la">verba</name> refer.</p>
+    >>> 308:     <p><quote>'nube, precor' dicet 'cui te bona <name type="deity" xml:lang="la">numina</name> iungunt;</p>
+        309:     <p>quem fore iurasti, sit gener ille mihi.</p>
+        310:     <p>quisquis is est, placeat, quoniam placet ante <name type="deity" xml:lang="la">Dianae</name>.'</p>
+
+  Fichier : stoa0216/ovid.her2_tei.xml
+  Erreur  : Opening and ending tag mismatch: lg line 313 and body, line 346, column 12
+  Ligne   : 346
+  Contexte:
+        343: <persName>Ovidius</persName>
+        344: <persName>Phylli</persName>
+        345: <persName>Demophoon</persName>
+    >>> 346:     </body>
+        347:   </text>
+        348: </TEI>
+
+  Fichier : stoa0216/ovid.her3_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 215 and quote, line 215, column 48
+  Ligne   : 215
+  Contexte:
+        212:     <p>iuro; fallentem deseruisse velis!</p>
+        213:     <milestone unit="section" n="3.4.8"/>
+        214:     <p>si tibi nunc dicam, fortissime: <quote>'tu quoque iura</quote></p>
+    >>> 215:     <p>nulla tibi sine me gaudia capta!</quote> neges.</p>
+        216:     <p>at <persName>Danai</persName> maerere putant—tibi plectra moventur,</p>
+        217:     <p>te tenet in tepido mollis amica sinu!</p>
+
+  Fichier : stoa0216/ovid.her5_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 110 and p, line 110, column 91
+  Ligne   : 110
+  Contexte:
+        107:   <p>est in qua nostri littera scripta memor.</p>
+        108:   <p><name type="plant" xml:lang="la">popule</name>, vive, precor, quae consita margine <name type="placeName">ripae</name></p>
+        109:   <p>hoc in rugoso cortice carmen habes:</p>
+    >>> 110:   <p><quote><foreign xml:lang="la">cum Paris Oenone poterit spirare relicta,</foreign></p>
+        111:   <p>ad fontem <name type="placeName">Xanthi</name> versa recurret aqua.</p>
+        112:   <p><name type="placeName">Xanthe</name>, retro propera versaeque recurrite lymphae!</p>
+
+  Fichier : stoa0216/ovid.her7_tei.xml
+  Erreur  : Opening and ending tag mismatch: div line 241 and body, line 300, column 12
+  Ligne   : 300
+  Contexte:
+        297:     <p>praebuit <persName>Aeneas</persName> et causam mortis et ensem.
+        298:       ipsa sua <persName>Dido</persName> concidit usa manu.</p>
+        299: </div>
+    >>> 300:     </body>
+        301:   </text>
+        302: </TEI>
+
+  Fichier : stoa0216/ovid.ibis_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 151 and div, line 152, column 9
+  Ligne   : 152
+  Contexte:
+        149:     <p>Huc, precor, huc vestras omnes advertite mentes,</p>
+        150:     <p>Et sinite optatis pondus inesse meis:</p>
+        151:     <p>Ipsaque tu <placeName>tellus</placeName>, ipsum cum <name type="animal" xml:lang="la">flucti</name>
+    >>> 152:   </div>
+        153: </div>
+        154: Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage de l'*Halieutica* d'Ovide (3/11) :
+
+  Fichier : stoa0216/ovid.met10_tei.xml
+  Erreur  : Opening and ending tag mismatch: lg line 184 and div, line 188, column 9
+  Ligne   : 188
+  Contexte:
+        185:     <l n="59">nil nisi cedentes infelix arripit auras.</l>
+        186:     <l n="60">iamque iterum moriens non est de coniuge quicquam</l>
+        187:     <l n="61">questa suo (quid enim nisi se quereretur amatam?)</l>
+    >>> 188:   </div>
+        189: Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage des *Halieutica* d'Ovide (3/14), avec une attention particulière aux entités nommées Zoomathia et à la structure demandée :
+        190: 
+
+  Fichier : stoa0216/ovid.met11_tei.xml
+  Erreur  : error parsing attribute name, line 267, column 5
+  Ligne   : 267
+  Contexte:
+        264: <lg type="strophe">
+        265:   <l n="114">ille etiam liquidis palmas ubi laverat undis,</l>
+        266:   <l n="115"><foreign xml:lang="la">unda</foreign> fluens palmis <persName>Danaen</persName> eludere posset;</l>
+    >>> 267:   <l="116">vix spes ipse suas animo capit aurea fingens</l>
+        268:   <l n="117">omnia. gaudenti mensas posuere ministri</l>
+        269:   <l n="118">exstructas dapibus nec tostae frugis egentes:</l>
+
+  Fichier : stoa0216/ovid.met12_tei.xml
+  Erreur  : Opening and ending tag mismatch: foreign line 264 and name, line 264, column 113
+  Ligne   : 264
+  Contexte:
+        261:       <p><name type="animal" xml:lang="la">festa</name> <name type="animal" xml:lang="la">dies</name> aderat, qua <persName>Cycni</persName> victor <persName>Achilles</persName>               150</p>
+        262:       <p><name type="deity">Pallada</name> mactatae placabat <foreign xml:lang="la">sanguine</foreign> <name type="animal" xml:lang="la">vaccae</name>;</p>
+        263:       <p>cuius ut inposuit prosecta calentibus <name type="placeName">aris</name>,</p>
+    >>> 264:       <p>et dis acceptus penetravit in <name type="placeName">aethera</name> <foreign xml:lang="la">nidor</name>,</p>
+        265:       <p><name type="animal" xml:lang="la">sacra</name> tulere suam, pars est data <name type="animal" xml:lang="la">cetera</name> <name type="animal" xml:lang="la">mensis</name>.</p>
+        266:       <p>discubuere <name type="animal" xml:lang="la">toris</name> <persName>proceres</persName> et <name type="animal" xml:lang="la">corpora</name> tosta               155</p>
+
+  Fichier : stoa0216/ovid.met13_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 704 and p, line 704, column 71
+  Ligne   : 704
+  Contexte:
+        701:     <p>osculaque ore tegit consuetaque pectora plangit</p>
+        702:     <p>canitiemque suam concretam sanguine vellens</p>
+        703:     <p>plura quidem, sed et haec laniato pectore, dixit:</p>
+    >>> 704:     <p><quote>'nata, tuae—quid enim superest?—dolor ultime matris,</p>
+        705:     <p>nata, iaces, videoque tuum, mea vulnera, vulnus:</p>
+        706:     <p>en, ne perdiderim quemquam sine caede meorum,</p>
+
+  Fichier : stoa0216/ovid.met14_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 493 and p, line 496, column 115
+  Ligne   : 496
+  Contexte:
+        493:     et '<quote>'quaecumque es,'</quote> ait '<quote>'non sum tuus; altera captum
+        494:     me tenet et teneat per longum, conprecor, aevum,
+        495:     nec <name type="deity">Venere</name> externa socialia foedera laedam,               380
+    >>> 496:     dum mihi <name type="animal" xml:lang="la">Ianigenam</name> servabunt fata <persName>Canentem</persName>.'</p>
+        497:   <p>saepe retemptatis precibus <persName>Titania</persName> frustra
+        498:     '<quote>'non inpune feres, neque'</quote> ait '<quote>'reddere <persName>Canenti</persName>,
+
+  Fichier : stoa0216/ovid.met15_tei.xml
+  Erreur  : Failed to parse QName 'xml:xml:lang', line 215, column 42
+  Ligne   : 215
+  Contexte:
+        212:       fetibus <name type="plant" xml:lang="la">arboreis</name> et, quas <name type="animal" xml:lang="la">humus</name> educat, <name type="plant" xml:lang="la">herbis</name>
+        213:       fortunata fuit nec polluit ora cruore.
+        214:       tunc et <name type="animal" xml:lang="la">aves</name> tutae movere per aera pennas,               100
+    >>> 215:       et <name type="animal" xml:xml:lang="la">lepus</name> inpavidus mediis erravit in <name type="placeName">arvis</name>,
+        216:       nec sua credulitas <name type="animal" xml:lang="la">piscem</name> suspenderat hamo:
+        217:       cuncta sine insidiis nullamque timentia fraudem
+
+  Fichier : stoa0216/ovid.met1_tei.xml
+  Erreur  : Opening and ending tag mismatch: foreign line 435 and name, line 435, column 262
+  Ligne   : 435
+  Contexte:
+        432:     <p><foreign xml:lang="la">non</foreign> <foreign xml:lang="la">illo</foreign> <name type="animal" xml:lang="la">melior</name> <foreign xml:lang="la">quisquam</foreign> nec <foreign xml:lang="la">amantior</foreign> <name type="animal" xml:lang="la">aequi</name></p>
+        433:     <p><name type="animal" xml:lang="la">vir</name> <foreign xml:lang="la">fuit</foreign> aut <foreign xml:lang="la">illa</foreign> <name type="animal" xml:lang="la">metuentior</name> <foreign xml:lang="la">ulla</foreign> <name type="deity">deorum</name>.</p>
+        434:     <p><name type="deity">Iuppiter</name> ut <name type="animal" xml:lang="la">liquidis</name> <name type="animal" xml:lang="la">stagnare</name> <name type="animal" xml:lang="la">paludibus</name> <name type="animal" xml:lang="la">orbem</name></p>
+    >>> 435:     <p>et <foreign xml:lang="la">superesse</foreign> <name type="animal" xml:lang="la">virum</name> de <foreign xml:lang="la">tot</foreign> <foreign xml:lang="la">modo</foreign> <name type="animal" xml:lang="la">milibus</name> <foreign xml:lang="la">unum</name>,</p>
+        436:     <p>et <foreign xml:lang="la">superesse</foreign> <foreign xml:lang="la">vidit</foreign> de <foreign xml:lang="la">tot</foreign> <foreign xml:lang="la">modo</foreign> <name type="animal" xml:lang="la">milibus</name> <foreign xml:lang="la">unam</name>,</p>
+        437:     <p><foreign xml:lang="la">innocuos</foreign> <foreign xml:lang="la">ambo</foreign>, <name type="animal" xml:lang="la">cultores</name> <name type="deity">numinis</name> <foreign xml:lang="la">ambo</foreign>,</p>
+
+  Fichier : stoa0216/ovid.met2_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 207 and div, line 208, column 9
+  Ligne   : 208
+  Contexte:
+        205:     <p><foreign xml:lang="la">ambrosiae</foreign> <name type="plant">suco</name> saturos, <name type="placeName">praesepibus</name> altis</p>
+        206:     <p><name type="animal" xml:lang="la">quadripedes</name> ducunt adduntque sonantia <name type="animal" xml:lang="la">frena</name>.</p>
+        207:     <p>tum <persName>pater</persName> ora sui sacro <name type="plant">medicamine</name> <persName>nati</persName>
+    >>> 208:   </div>
+        209: </div>
+        210: Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de l'*Halieutica* d'Ovide (Livre 4, section 4/16) :
+
+  Fichier : stoa0216/ovid.met3_tei.xml
+  Erreur  : Opening and ending tag mismatch: name line 223 and quote, line 223, column 148
+  Ligne   : 223
+  Contexte:
+        220:   <l n="95">Dum spatium victor victi considerat hostis,</l>
+        221:   <l n="96"><quote>vox subito audita est; neque erat cognoscere promptum,</quote></l>
+        222:   <l n="97"><quote>unde, sed audita est: 'quid, <persName>Agenore</persName> nate, peremptum</quote></l>
+    >>> 223:   <l n="98"><quote><name type="animal" xml:lang="la">serpentem</name> spectas? et tu spectabere <name type="animal" xml:lang="la">serpens.'</quote></l>
+        224:   <l n="99">ille diu pavidus pariter cum mente colorem</l>
+        225:   <l n="100">perdiderat, gelidoque <name type="plant" xml:lang="la">comae</name> terrore rigebant:</l>
+
+  Fichier : stoa0216/ovid.met4_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 508 and l, line 508, column 72
+  Ligne   : 508
+  Contexte:
+        505: </lg>
+        506: <lg type="strophe">
+        507:   <l n="306">Saepe suas illi fama est dixisse sorores</l>
+    >>> 508:   <l n="307"><quote>"Salmaci, vel iaculum vel pictas sume pharetras</l>
+        509:   <l n="308">et tua cum duris venatibus otia misce!"</quote></l>
+        510:   <l n="309">Nec iaculum sumit nec pictas illa pharetras,</l>
+
+  Fichier : stoa0216/ovid.met5_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 297 and q, line 297, column 41
+  Ligne   : 297
+  Contexte:
+        294:       argento partim, partim caelaverat auro,</p>
+        295:     <p><quote><persName>adspice</persName> ait <persName>Perseu</persName>, nostrae primordia gentis:
+        296:       <q>magna feres tacitas solacia mortis ad umbras,</q></quote>
+    >>> 297:       a tanto cecidisse viro<quote>;</q> pars ultima vocis
+        298:       in medio suppressa sono est, adapertaque velle
+        299:       ora loqui credas, nec sunt ea pervia verbis.</p>
+
+  Fichier : stoa0216/ovid.met6_tei.xml
+  Erreur  : error parsing attribute name, line 208, column 5
+  Ligne   : 208
+  Contexte:
+        205:   <l n="85">clara colore suo, brevibus distincta sigillis:</l>
+        206:   <l n="86"><name type="placeName">Threiciam</name> <name type="placeName">Rhodopen</name> habet angulus unus et <name type="placeName">Haemum</name>,</l>
+        207:   <l n="87">nunc gelidos montes, mortalia corpora quondam,</l>
+    >>> 208:   <l="88">nomina summorum sibi qui tribuere deorum;</l>
+        209: </lg>
+        210: <lg type="strophe">
+
+  Fichier : stoa0216/ovid.met7_tei.xml
+  Erreur  : Opening and ending tag mismatch: foreign line 296 and quote, line 323, column 27
+  Ligne   : 323
+  Contexte:
+        320:     in florem redeat primosque recolligat annos,
+        321:     et dabitis. neque enim micuerunt sidera frustra,
+        322:     nec frustra volucrum tractus cervice <name type="animal" xml:lang="la">draconum</name>
+    >>> 323:     currus adest.'</quote> aderat demissus ab aethere currus.
+        324:     quo simul adscendit frenataque colla <name type="animal" xml:lang="la">draconum</name>               220
+        325:     permulsit manibusque leves agitavit habenas,
+
+  Fichier : stoa0216/ovid.met8_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 315 and div, line 319, column 9
+  Ligne   : 319
+  Contexte:
+        316:       exilium tactusque loci natalis amore
+        317:       clausus erat pelago. 'terras licet' inquit 'et undas
+        318:       <milestone unit="section" n="185"/>
+    >>> 319:   </div>
+        320: </div>
+        321: Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le passage des *Halieutica* d'Ovide (Livre 5, section 16) :
+
+  Fichier : stoa0216/ovid.met9_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 196 and div, line 209, column 7
+  Ligne   : 209
+  Contexte:
+        206: 'vana pedum, uiolente, rapit? tibi, <persName>Nesse</persName> biformis,
+        207: dicimus. exaudi, nec res intercipe nostras.
+        208: si te nulla mei reuerentia mouit, at orbes
+    >>> 209: </div>
+        210: Voici l'encodage TEI P5 du passage demandé, conforme aux règles strictes du projet Zoomathia :
+        211: 
+
+  Fichier : stoa0216/ovid.ponto1_tei.xml
+  Erreur  : StartTag: invalid element name, line 185, column 41
+  Ligne   : 185
+  Contexte:
+        182:     <p>Ei mihi! quid faciam? Vereor ne nomine lecto</p>
+        183:     <p>durus et auersa cetera mente legas!</p>
+        184:     <p>Videris! Audebo tibi me scripsisse fateri</p>
+    >>> 185:     <p><milestone unit="line" n="10"/> < . . . . . . . . . . . . . . ></p>
+        186:     <p>qui, cum me poena dignum grauiore fuisse</p>
+        187:     <p>confiteor, possum uix grauiora pati.</p>
+
+  Fichier : stoa0216/ovid.ponto2_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 585 and p, line 585, column 118
+  Ligne   : 585
+  Contexte:
+        582:   <div type="section" n="11">
+        583:     <milestone unit="section" n="VI"/>
+        584:     <head>GRAECINO</head>
+    >>> 585:     <p><quote><name type="person">Carmine</name> <name type="person">Graecinum</name>, qui praesens uoce solebat,</p>
+        586:     <p>tristis ab Euxinis <name type="person">Naso</name> salutat aquis.</p>
+        587:     <p>Exulis haec uox est: praebet mihi littera linguam</p>
+
+  Fichier : stoa0216/ovid.ponto3_tei.xml
+  Erreur  : error parsing attribute name, line 651, column 5
+  Ligne   : 651
+  Contexte:
+        648: 
+        649: <lg type="strophe">
+        650:   <l n="61">sic regat imperium terrasque coerceat omnis</l>
+    >>> 651:   <l="62"><persName>Caesar</persName>, ab <persName>Aenea</persName> est qui tibi fratre tuus—</l>
+        652:   <l n="63">effice sit nobis non inplacabilis ira</l>
+        653:   <l n="64">meque loco plecti commodiore uelit.'</l>
+
+  Fichier : stoa0216/ovid.ponto4_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 272 and p, line 272, column 60
+  Ligne   : 272
+  Contexte:
+        269:     <p>uisa est a tergo <name type="animal" xml:lang="la">penna</name> dedisse sonum.</p>
+        270:     <p>Respicio nec erat corpus quod cernere possem,</p>
+        271:     <p>uerba tamen sunt haec aure recepta mea:</p>
+    >>> 272:     <p><quote>'En ego laetarum uenio tibi nuntia rerum,</p>
+        273:     <p><persName>Fama</persName> per inmensas aere lapsa uias:</p>
+        274:     <p>consule <persName>Pompeio</persName>, quo non tibi carior alter,      15</p>
+
+  Fichier : stoa0216/ovid.rem_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 169 and div, line 170, column 9
+  Ligne   : 170
+  Contexte:
+        167:     <p>Impia si nostros legisset <persName>Scylla</persName> libellos,</p>
+        168:     <p>Haesisset capiti purpura, <persName>Nise</persName>, tuo.</p>
+        169:     <p>Me duce damnosas, homines, conp
+    >>> 170:   </div>
+        171: </div>
+        172: Voici l'encodage TEI P5 strict du passage d'Ovide *Halieutica* (4/14) selon les règles du projet Zoomathia :
+
+  Fichier : stoa0216/ovid.tristia1_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 147 and div, line 148, column 9
+  Ligne   : 148
+  Contexte:
+        145:     <p>siquis erit, qui te, quia sis meus, esse legendum</p>
+        146:     <p>non putet, e gremio reiciatque suo,</p>
+        147:     <p><quote>'inspice' dic 'titulum: non sum praeceptor amoris;</quote>
+    >>> 148:   </div>
+        149: </div>
+        150: Voici l'encodage TEI P5 strict du passage demandé selon les règles du projet Zoomathia :
+
+  Fichier : stoa0216/ovid.tristia2_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 346 and p, line 347, column 50
+  Ligne   : 347
+  Contexte:
+        344:   <p>Neue, quibus scribam, possis dubitare, libellos,
+        345:     quattuor hos uersus e tribus unus habet:</p>
+        346:   <p><quote>"este procul, uittae tenues, insigne pudoris,
+    >>> 347:     quaeque tegis medios instita longa pedes!</p>
+        348:   <p>Nil nisi legitimum concessaque furta canemus,
+        349:     inque meo nullum carmine crimen erit."</quote></p>
+
+  Fichier : stoa0216/ovid.tristia3_tei.xml
+  Erreur  : Opening and ending tag mismatch: div line 883 and body, line 1049, column 12
+  Ligne   : 1049
+  Contexte:
+        1046:   <p>Qualemcumque igitur uenia dignare libellum.</p>
+        1047:   <p>Sortis et excusa condicione meae.</p>
+        1048: </div>
+    >>> 1049:     </body>
+        1050:   </text>
+        1051: </TEI>
+
+  Fichier : tlg0007/plutarque_fra2_tei.xml
+  Erreur  : Opening and ending tag mismatch: persName line 337 and name, line 337, column 34
+  Ligne   : 337
+  Contexte:
+        334:    <p>crainte ? Si dans un <name type="animal" xml:lang="fr">combat</name> nocturne un <name type="animal" xml:lang="fr">homme</name> fondait l'<foreign xml:lang="la">gladius</foreign> à la main sur un </p>
+        335:    <p><name type="animal" xml:lang="fr">ennemi</name> renversé et couvert de ses <name type="animal" xml:lang="fr">armes</name>, et que quelqu'un lui dit qu'il </p>
+        336:    <p>soupçonne que la <name type="animal" xml:lang="fr">personne</name> qui est à ses pieds est son <persName>père</persName>, son <persName>fils</persName>, son <persName>frère</persName> </p>
+    >>> 337:    <p>ou son <persName>ami</name>, que devrait-il faire ? Suivre cet avis douteux et sauver un <name type="animal" xml:lang="fr">ennemi</name> </p>
+        338:    <p>en le croyant son <persName>ami</persName> ; ou, sans égard pour un doute trop vague, tuer son <persName>parent</persName> </p>
+        339:    <p>ou son <persName>ami</persName> en le prenant pour un <name type="animal" xml:lang="fr">ennemi</name>? Il n'est personne qui ne frémisse de </p>
+
+  Fichier : tlg0007/plutarque_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 1303 and div, line 1304, column 7
+  Ligne   : 1304
+  Contexte:
+        1301:    <p>Vois les combats des <name type="animal" xml:lang="fr">animaux</name> entre eux et leurs combats contre vous. Comme tout s'y passe sans ruse et sans artifice! C'est au grand jour, c'est à nu, qu'ils déploient leur audace, et c'est bien leur force véritable qu'ils mettent au service de leur vengeance. Ils n'ont pas besoin qu'une loi les appelle sous les drapeaux, qu'on leur fasse craindre l'appellation injurieuse de déserteurs. Une fierté naturelle leur inspire l'horreur de la domination. Jusqu'à la dernière extrémité ils résistent pour conserver leur indépendance. Ils ne cèdent pas pour avoir été vaincus ; ils ne perdent jamais courage, et ils meurent au milieu des combats. Chez plusieurs, au moment où ils vont expirer, la force avec la fierté se retire et se concentre dans une petite partie de leur corps, et lutte contre l'<name type="animal" xml:lang="fr">ennemi</name> qui va leur donner le trépas. C'est cette partie d'eux-mêmes qui bondit, qui s'indigne : jusqu'à ce que, comme du feu, elle soit complétement éteinte et anéantie. Jamais ils n'ont recours aux prières, à des supplications, avec le dessein d'apitoyer leur adversaire. Jamais ils n'avouent leur défaite. Un <name type="animal" xml:lang="fr">lion</name> ne se résigne pas à devenir, par un effet de sa lâcheté, l'esclave d'un <name type="animal" xml:lang="fr">lion</name>, ni un <name type="animal" xml:lang="fr">cheval</name>, d'un <name type="animal" xml:lang="fr">cheval</name>. Un homme, au contraire, se reconnaît esclave d'un autre, et accepte de gaieté de cœur avec l'esclavage le titre de lâche dont ce nom est synonyme.</p>
+        1302:    <p>Tous les <name type="animal" xml:lang="fr">animaux</name> qu'à force de pièges et d'artifices l'<persName>homme</persName> tient sous sa puissance n'ont pas plus tôt acquis la plénitude de leurs forces que, repoussant la nourriture qu'il leur offre, et résistant à la soif, ils se donnent eux-mêmes la mort parce qu'ils la préfèrent à la servitude. Pour ce qui est de leurs petits, soit <name type="animal" xml:lang="fr">oiseaux</name>, soit <name type="animal" xml:lang="fr">quadrupèdes</name>, que leur âge rend aisés à conduire et débonnaires, c'est en leur prodiguant mille séductions trompeuses, mille douceurs perfides que l'<persName>homme</persName> les ensorcelle, jusqu'à ce qu'à force de leur faire goûter des plaisirs et un régime contraire à leur nature, il leur enlève à la longue toute leur énergie. Alors seulement ils consentent et se résignent à devenir ce qu'on appelle apprivoisés, autrement dit, dépouillés de toute leur fierté native. Est-il une preuve plus évidente, que les <name type="animal" xml:lang="fr">bêtes</name> sont très heureusement douées sous le rapport du <name type="animal" xml:lang="fr">courage</name>?</p>
+        1303:    <p>Au contraire, les <persName>hommes</persName> n'ont de l'assurance qu'en
+    >>> 1304: </div>
+        1305: Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Plutarque, en respectant les règles Zoomathia et les spécifications fournies :
+        1306: 
+
+  Fichier : tlg0016/erodoto_storie_ita_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 248 and div, line 251, column 7
+  Ligne   : 251
+  Contexte:
+        248:     <p>Io sono a conoscenza di questi particolari perché mi sono stati raccontati a <name type="placeName">Delfi</name>, ma i <name type="placeName">Milesi</name>
+        249:     aggiungono che <persName>Periandro</persName>, figlio di <persName>Cipselo</persName>, legato da strettissimi vincoli di ospitalità con l'allora
+        250:     re di <name type="placeName">Mileto</name> <persName>Trasibulo</persName>, quando venne a conoscenza dell'oracolo dato a <persName>Aliatte</persName>, tramite un
+    >>> 251: </div>
+        252: Voici l'encodage TEI P5 du texte d'Hérodote (version italienne) selon les règles strictes du projet Zoomathia, en mettant l'accent sur les entités nommées zoologiques et autres éléments demandés :
+        253: 
+
+  Fichier : tlg0016/herodote_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: persName line 1983 and name, line 1983, column 194
+  Ligne   : 1983
+  Contexte:
+        1980: Î½ÎµÎ»á½³ÏÎ¸Î·ÏÎ±Î½.</p>
+        1981:       <p>Î¤á¿ÏÎ¹ Î¼á½³Î½ Î½á¿Î½ ÏÏá½µÎ»á¿ÏÎ¹ ÏÎ±á½»ÏÎ±Î¹ <placeName>Î’Ï
+        1982: Î¶á½±Î½ÏÎ¹Î¿Î¹</placeName> ÎºÎ¿Î¼á½·ÏÎ±Î½ÏÎµÏ á¼Ï Ïá½´Î½ <placeName>Ïá½¹Î»Î¹Î½</placeName> á½
+    >>> 1983: ÏÏÎµÏÎ¿Î½ ÏÎ¿á½»ÏÏÎ½ á¼ÏÏá½µÏÎ±Î½ÏÎ¿ ÏÏá½¸Ï Ïá½¸Î½ <name type="deity">Î²ÏÎ¼á½¸Î½</name> Ïá¿Ï <name type="deity">á¼ÏÎ¸ÏÏá½·Î·Ï</name> <persName>á¼ÏÏÎ­Î¼Î¹Î´Î¿Ï</name>, ÏÏÏá½¶Ï á¼Î½á½¸Ï Î»á½·Î¸Î¿Ï
+        1984: Î Î¿á½ÏÎ¿Ï Î´á½² ÎºÎ±ÏÎµÎ»Îµá½·ÏÎ¸Î· ÏÎ±Ïá½° ÏÎ¿á¿¦ <persName>Î”Î¹Î¿Î½á½»ÏÎ¿Ï</persName> Ïá½¸Î½ <placeName>Î½Î·á½¸Î½</placeName> á¼Î½ <placeName>Î’Ï
+        1985: Î¶Î±Î½Ïá½·á¿³</placeName>, Î³ÏÎ±Î¼Î¼á½±ÏÏÎ½ <name type="plant" xml:lang="grc">á¼ÏÏÏ
+
+  Fichier : tlg0022/nicander_theriaca_alexipharmaca_eng_tei.xml
+  Erreur  : xmlParseEntityRef: no name, line 72, column 63
+  Ligne   : 72
+  Contexte:
+        69:    <p>Nicander: Alexipharmaca and Georgica</p>
+        70:    <p>Nicander of Colophon was a Greek poet, who probably lived in the middle of the 2nd century B.C.  He was the author of two surviving poems, <quote>'Theriaca'</quote> and <quote>'Alexipharmaca'</quote>, and also of several other poems that are now lost.  Some excerpts from his <foreign xml:lang="la">Georgica</foreign> have been preserved by <persName>Athenaeus</persName>; it is likely that this poem influenced <persName>Vergil</persName> when he wrote his <foreign xml:lang="la">Georgics</foreign> ( see <persName>Quintilian</persName>, 10.1.56 ), but to what extent is unknown.</p>
+        71: 
+    >>> 72:    <p>This translation is by  <persName>A.S.F.Gow</persName> & <persName>A.F.Scholfield</persName> (1953). Because all of Nicander's poems contain a bewildering number of <name type="plant" xml:lang="en">plant</name> names, wherever possible links have been provided to the relevant wikipedia articles, in line with the translators' notes in their 'Index of Fauna, Flora etc.'</p>
+        73: 
+        74:    <p>However, in many cases, the identification of the modern <name type="plant" xml:lang="en">plant</name> name is far from certain. As the translators say: "The interpretations of Ancient Greek <name type="plant" xml:lang="en">plant</name>-names put forward by those who have given much time and thought to the study differ widely; many are tentative and uncertain, while some <name type="plant" xml:lang="en">plants</name> have far defied identification . . . and in Nicander the difficulties of identification, already formidable in themselves, are enhanced by the doubt whether the poet knew what he (or his authority) was talking about."</p>
+
+  Fichier : tlg0023/oppian_halieutica_eng_clean_tei.xml
+  Erreur  : Opening and ending tag mismatch: note line 101 and name, line 101, column 144
+  Ligne   : 101
+  Contexte:
+        98: 
+        99:    <pb n="211"/>
+        100:    <milestone unit="section" n="6"/>
+    >>> 101:    <p>On the weedy beach under the green grasses feeds the <name type="animal" xml:lang="en">Maenis</name><note n="36">and the Goat-fish</name> and the <name type="animal" xml:lang="en">Atherine</name>,<note n="38">the Smaris</name> and the <name type="animal" xml:lang="en">Blenny</name><note n="40">and the Sparus</name> and both sorts of <name type="animal" xml:lang="en">Bogue</name><note n="42">and whatsoever others love to feed on sea-weed.</note></p>
+        102: 
+        103:    <pb n="213"/>
+
+  Fichier : tlg0024/oppian_cynegetica_eng_clean_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 161 and div, line 162, column 9
+  Ligne   : 162
+  Contexte:
+        159:     <p>I have heard<note n="111">Annotation non encodée</note> how of old a prince of great possessions had in his fields a fair herd of <name type="animal" xml:lang="en">horses</name>. All these a disease of horses utterly destroyed, leaving but two — only a <name type="animal" xml:lang="en">mare</name> and a <name type="animal" xml:lang="en">foal</name> yet at its mother's foot. But when it grew up, the wicked man essayed to mate the <name type="animal" xml:lang="en">foal</name> with its dam. And when he saw a union forsworn of both, immediately he with dreadful design wove a subtle device, hoping to call back his breed of <name type="animal" xml:lang="en">horses</name>. First in his craft he covered both with alien hides, and then he anointed all their bodies with sweet-smelling oil and fragrant; for he hoped to destroy the tell-tale scent.</p>
+        160:     <p>And, ye blessed gods, without their knowledge he wrought his wickedness and there was fulfilled a union monstrous and abominable and most abhorred of horses, like that dread marriage that was made of old among men, the <foreign xml:lang="la">Cadmean</foreign> bridal of the wanderer <persName>Oedipus</persName><note n="112">Annotation non encodée</note>. But when they were made naked and knew their sin, and in sorrow and with eyes askance looked one on the other, the unhappy mother on her dishonoured son, and he anon, victim of a terrible and evil union, upon his poor unmothered<note n="113">Annotation non encodée</note> mother, they leapt on high, snorting terribly, and brake their bonds and went neighing loudly as if they were calling the blessed gods to witness their evil plight and cursing him who contrived their woeful union; and at last, rushing wildly in their grief, they dashed their foreheads against the rocks and brake the bones and took away their light of life, self-slain, leaning their heads on one another. So report proclaims the fame of the horses of former days.</p>
+        161:     <p>Now of all the breeds of <name type="animal" xml:lang="en">horses</name> the infinite earth nourishes most swift are the <name type="animal" xml:lang="en">Sicilian</name>, which dwell in <placeName>Lilybaeum</placeName> and where the three-peaked hill that covers <persName>Enceladus</persName>, as the thunderbolt belches forth in beams reaching to the sky, discharges the eternal fire of <placeName>Sicilian Aetna</placeName>. Fleeter than the <name type="animal" xml:lang="en">Sicilian</name> are by the streams of <placeName>Euphrates</placeName> the <name type="animal" xml:lang="en">Armenian</name> and <name type="animal" xml:lang="en">Parthian</name> horses of flowing mane. Yet the <name type="animal" xml:lang="en">Parthian</name> horses are greatly excelled by the <name type="animal" xml:lang="en">Iberian</name>, which gallop over the plains with swifter feet. With them might vie only the
+    >>> 162:   </div>
+        163: </div>
+        164: Voici l'encodage TEI P5 du passage d'Oppien (Cynegetica, livre 8) selon les règles strictes du projet Zoomathia :
+
+  Fichier : tlg0032/xenophon_cavalerie2_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 189 and div, line 190, column 7
+  Ligne   : 190
+  Contexte:
+        187:     <p>[5] Quand on a des <name type="animal" xml:lang="fr">chevaux</name> comme il faut, on doit exercer les cavaliers, et tout d’abord leur apprendre à sauter dessus, car nombre de gens y ont trouvé leur salut ; puis à manœuvrer sur toutes sortes de terrains (04), l’ennemi se portant ici sur un point et là sur un autre. [6] Lorsqu’ils sont solides en selle, il faut veiller à ce qu’ils sachent presque tous lancer le javelot de dessus le <name type="animal" xml:lang="fr">cheval</name>, et exécuter les autres manœuvres des gens à cheval. [7] Cela fait, on doit armer <name type="animal" xml:lang="fr">chevaux</name> et cavaliers, de manière qu’ils aient le moins de mal possible, et qu’ils en fassent le plus possible à l’ennemi. Il faut aussi s’arranger pour avoir des hommes obéissants : sans cela, et les bons <name type="animal" xml:lang="fr">chevaux</name>, et les hommes solides, et les belles armes ne serviront de rien. Veiller à ce que tout cela s’exécute ponctuellement, c’est le devoir du commandant de cavalerie.</p>
+        188:     <milestone unit="section" n="5"/>
+        189:     <p>[8] La république, convaincue qu’il suffirait difficilement seul à tant de soins, lui adjoint pour collaborateurs des <persName>phylarques</persName> (05), et ordonne au <persName>sénat</persName> de veiller, de concert avec lui, à la tenue de la cavalerie. Il est donc bon, selon moi, d’inspirer aux <persName>phylarques</persName> l’intérêt que tu prends toi-même aux cavaliers, et d’avoir dans le <persName>sénat</persName> des orateurs bien disposés, dont la parole impose aux cavaliers, qui alors feront mieux leur devoir, et adoucisse le
+    >>> 190: </div>
+        191: Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon (Oikonomikos 9/58) :
+        192: 
+
+  Fichier : tlg0032/xenophon_chasse_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 441 and div, line 443, column 9
+  Ligne   : 443
+  Contexte:
+        440:     fourrés, à cause de la ressemblance de couleur. </p>
+        441:     <p>Quand le <name type="animal" xml:lang="fr">lièvre</name> a le devant sur les
+        442:     <name type="animal" xml:lang="fr">chiens</name>, il s'arrête, s'assied,
+    >>> 443:   </div>
+        444: </div>
+        445: Voici l'encodage TEI P5 strictement conforme à vos exigences pour le passage de Xénophon, *Oikonomikos* 11/31, avec une attention particulière aux entités zoologiques et aux règles de structure :
+
+  Fichier : tlg0032/xenophon_economique_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 102 and div, line 103, column 9
+  Ligne   : 103
+  Contexte:
+        100:     <p>— Voilà qui est bien dit, selon moi. Mais que penser, <persName>Socrate</persName>, lorsque nous voyons des gens qui, avec des talents et des moyens pour agrandir leurs possessions à l'aide du travail, se condamnent à l'oisiveté, et rendent par là leurs talents inutiles ? N'en résulte-t-il pas, du moins à l'égard de ces hommes-là, que ni les talents ni les possessions ne sont des biens?</p>
+        101:     <p>— Est-ce des esclaves que tu veux me parler, <persName>Critobule</persName>? — Non, en vérité; mais de citoyens reconnus pour nobles, qui, versés les uns dans l'art militaire, les autres dans les arts de la paix, languissent pourtant dans l'inaction, faute de maîtres, à ce que je crois. — Faute de maîtres! Comment n'en auraient-ils pas, puisque, formant des vœux pour le bonheur, et voulant faire ce qui le procure, ils se trouvent dans leurs tentatives arrêtés par des tyrans?</p>
+        102:     <p>— Et quels sont donc ces tyrans qui commandent en se tenant invisibles? — Invisibles, <persName>Critobule</persName> ! Partout on les
+    >>> 103:   </div>
+        104: </div>
+        105: <div type="book" n="4">
+
+  Fichier : tlg0032/xenophon_equitation_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: foreign line 497 and p, line 497, column 341
+  Ligne   : 497
+  Contexte:
+        494: <p><foreign xml:lang="grc">Περὶ ἱππικῆς</foreign></p>
+        495: <p><foreign xml:lang="grc">Κεφαλαῖον δ᾽</foreign></p>
+        496: <milestone unit="section" n="1"/>
+    >>> 497: <p><foreign xml:lang="grc">Ὅταν γε μὴν ἀγαθῇ ἵππον πρὶν τινες καὶ οἴκαδε ἄγηται, καλὸν μὲν ἐν τοιούτῳ τῆς οἰκίας τὸν σταθμὸν εἶναι ὅπου πλείστακις ὁ δεσπότης ὄψεταί τινα τὸν ἵππον· ἀγαθὸν δὲ οὕτω κατασκενάσασθαι τὸν ἵππωνα, ὥστε μηδὲν μᾶλλον οἷόν τ' εἶναι τὸν τοῦ ἵππου σῖτον κλαπεῖν ἐκ τῆς φάτνης ἢ τὸν τοῦ δεσπότου ἐκ τοῦ ταμιείου. Ὁ </p>
+        498: <p>δὲ τοιοῦτον ἀμελῶν ἐμοὶ μὲν ἁπάντων δοκεῖ ἀμελεῖν· δῆλον γὰρ ὅτι ἐν τοῖς κινδύνοις τὸ αὐτοῦ σῶμα τῷ ἵππῳ ὁ δεσπότης παρακατατίθεται. [2] </p>
+        499: <p>Ἔστι δὲ οὐ μόνον τοῦ μὴ κλέπτεσθαι ἕνεκα τὸν σῖτον ἀγαθὸς ὁ ἐχθρὸς ἵππων, ἀλλ' ὅτι καὶ ὅταν [μὴ] ἐκκομίζῃ τὸν σῖτον ὁ ἵππος φανερὸν γίγνεται. Τοῦτο δ' ἂν </p>
+
+  Fichier : tlg0059/platon_timee_fra_tei.xml
+  Erreur  : Entity 'egrave' not defined, line 968, column 31
+  Ligne   : 968
+  Contexte:
+        965: <div type="book" n="1">
+        966:   <div type="chapter" n="48">
+        967:     <milestone unit="section" n="48a"/>
+    >>> 968:     <p>Nous n'avons gu&egrave;re parl&eacute; jusqu'ici que des actes op&eacute;r&eacute;s par l'intelligence. Il
+        969:       faut y ajouter ceux qui viennent de la n&eacute;cessit&eacute;; car, ce monde est le r&eacute;sultat
+        970:       de l'action combin&eacute;e de la n&eacute;cessit&eacute; et de l'intelligence. L'intelligence prit
+
+  Fichier : tlg0059/platone_timeo_fraccaroli_ita_tei.xml
+  Erreur  : xmlParseEntityRef: no name, line 199, column 47
+  Ligne   : 199
+  Contexte:
+        196:       <p><persName>G. Fkaccaroli</persName>.</p>
+        197:       <p>PROLEGOMENI</p>
+        198:       <p><foreign xml:lang="it">Fraccaboli, II Timeo di Platone.</foreign></p>
+    >>> 199:       <p><foreign xml:lang="grc">«k«k^^4^^^Hr&^Hrfe^&</foreign></p>
+        200:       <milestone unit="section" n="1.2"/>
+        201:       <head>CAPITOLO I.</head>
+
+  Fichier : tlg0059/platone_timeo_ita_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 363 and div, line 364, column 9
+  Ligne   : 364
+  Contexte:
+        361:     <p>mediante la sua corruzione, e tutto agisce e patisce da sé e per sé: il suo ordinatore ritenne infatti che esso sarebbe stato </p>
+        362:     <p>migliore se fosse bastato a se stesso che se avesse avuto bisogno di altri. Quanto alle mani, che non gli sarebbero servite </p>
+        363:     <p>per prendere o lasciare qualcosa, il <name type="deity">dio</name> non ha ritenuto di dovergliele aggiungere inutilmente, né i piedi, né quanto in
+    >>> 364:   </div>
+        365: </div>
+        366: Voici l'encodage TEI P5 strictement conforme à vos règles pour le passage du *Timée* de Platon (14/67) :
+
+  Fichier : tlg0060/diodorus_historical_library_eng_tei.xml
+  Erreur  : Opening and ending tag mismatch: persName line 847 and name, line 847, column 53
+  Ligne   : 847
+  Contexte:
+        844:       which have been left close to, but not in contact with, <name type="plant" xml:lang="en">sulphate</name> of
+        845:       <name type="plant" xml:lang="en">quinine</name>. The action of salts of <name type="plant" xml:lang="en">quinine</name> will
+        846:       be described in a future chapter. Since the appearance of the paper
+    >>> 847:       above referred to, <persName>M. Ziegler</name> has published a book on the same subject,
+        848:       entitled ‘<foreign xml:lang="fr">Atonicit et Zoicit</foreign>,’ 1874.) [page 24]</p>
+        849: 
+
+  Fichier : tlg0074/arrian_cynegeticus_eng_tei.xml
+  Erreur  : error parsing attribute name, line 320, column 7
+  Ligne   : 320
+  Contexte:
+        317:     <l n="87">  white-space: nowrap;</l>
+        318:     <l n="88">  clip: rect(1px, 1px, 1px, 1px);</l>
+        319:     <l n="89">  -webkit-clip-path: inset(50%);</l>
+    >>> 320:     <l="90">  clip-path: inset(50%);</l>
+        321:     <l n="91">  user-select: none;</l>
+        322:     <l n="92">}</l>
+
+  Fichier : tlg0086/aristote_animaux_fra_tei.xml
+  Erreur  : Entity 'eacute' not defined, line 718, column 283
+  Ligne   : 718
+  Contexte:
+        715: <div type="book" n="20">
+        716:   <milestone unit="section" n="5"/>
+        717:   <p>
+    >>> 718:     <name type="animal" xml:lang="fr">L'abeille</name> et <name type="animal" xml:lang="fr">la guêpe</name> n'ont pas de sang. La physiologie moderne n'admet pas cette théorie, et elle distingue les animaux à sang rouge et les animaux à sang blanc ou incolore; voir le Trait&eacute; de Zoologie de M. Claus, p. 545.
+        719:   </p>
+        720: 
+
+  Fichier : tlg0096/aesop_fables_eng_tei.xml
+  Erreur  : Opening and ending tag mismatch: div line 1372 and p, line 1382, column 61
+  Ligne   : 1382
+  Contexte:
+        1379:    but meanwhile those blue troubled eyes that <persName>Psyche</persName> was amorous of were
+        1380:    filled with envy and with hate. It was not that he begrudged <persName>Titus</persName> the
+        1381:    triumph. The man who had disposed of a million <name type="animal" xml:lang="en">Jews</name> deserved not one
+    >>> 1382:    triumph, but ten. It was the purple that haunted him.</p>
+        1383: 
+        1384:    <p><persName>Domitian</persName> was then in the early twenties. The <placeName>Temple of Peace</placeName> was
+
+  Fichier : tlg0099/strabon_geo_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 599 and div, line 600, column 7
+  Ligne   : 600
+  Contexte:
+        597:     <p>Comment admettre aussi que ces <name type="animal" xml:lang="fr">Indiens</name> se soient tous laissés mourir de faim, un seul excepté? Comment le survivant suffit-il à diriger lui seul un bâtiment qui n'était pas apparemment des plus petits, puisqu'il avait été de force à résister à de si longues traversées?</p>
+        598:     <p>Comment admettre aussi que le même <name type="animal" xml:lang="fr">Indien</name> ait pu apprendre notre langue en si peu de temps et l'apprendre assez bien pour être en état de persuader lui-même au roi qu'il était capable de conduire l'expédition?</p>
+        599:     <p>Peut-on supposer d'ailleurs <persName>Évergète</persName> réduit à une telle pénurie de pilotes pour l'exploration d'une mer et de parages qui étaient connus déjà depuis longtemps? Et ce <name type="animal" xml:lang="fr">spondophore</name>, ce <foreign xml:lang="grc">θεωρός</foreign> <placeName>cyzicénien</placeName>, comment concevoir qu'il ait quitté sa patrie avec l'intention arrêtée d'avance d'entreprendre par mer le voyage de l'<placeName>Inde</placeName>, et qu'on lui ait confié [
+    >>> 600: </div>
+        601: Voici l'encodage TEI P5 du texte de Strabon selon les règles strictes du projet Zoomathia :
+        602: 
+
+  Fichier : tlg0553/artemidorus_dreams_eng_tei.xml
+  Erreur  : Couldn't find end of Start Tag milestone line 576, line 576, column 27
+  Ligne   : 576
+  Contexte:
+        573: Notes importantes :
+        574: 1. J'ai structuré le texte en suivant les divisions logiques (livre 9, chapitre 61)
+        575: 2. J'ai ajouté une section pour "INCANDESCENT ELECTRIC LAMPS" qui semble être un sous-titre
+    >>> 576: 3. J'ai utilisé <milestone/>)
+        577: 5. J'ai utilisé <foreign> pour les termes anglais ou latins
+        578: 6. J'ai ajouté <pb> pour le changement de page {11}
+
+  Fichier : tlg0614/babrius_fables_eng_tei.xml
+  Erreur  : xmlParseEntityRef: no name, line 90, column 35
+  Ligne   : 90
+  Contexte:
+        87:     <p>[Illustration]</p>
+        88:     <p>A. L. Burt Company Publishers      <placeName>New York</placeName></p>
+        89:     <p>Printed in U. S. A.</p>
+    >>> 90:     <p>Copyright, 1917, by Hurst & Company, Inc.</p>
+        91:     <p>Made in U.S.A.</p>
+        92:     <p>CONTENTS</p>
+
+  Fichier : tlg0627/hippocrate_regime2_fra_tei.xml
+  Erreur  : Failed to parse QName 'xml:', line 510, column 1134
+  Ligne   : 510
+  Contexte:
+        507:       <p>Pour les <name type="animal" xml:lang="fr">oiseaux</name>, voici ce qu'il en est : en général tous les <name type="animal" xml:lang="fr">oiseaux</name> sont plus secs que les <name type="animal" xml:lang="fr">quadrupèdes</name>, car le <name type="animal" xml:lang="fr">hérisson</name> n'a ni urine ni excrément, mais il est sec à cause de la chaleur de la cavité qui attire l'humidité du corps vers la nourriture chaude, de sorte qu'il n'a ni urine ni excrément. S'il n'avait pas ces humeurs humides, il serait nécessairement sec. Le plus sec des oiseaux semble être le <name type="animal" xml:lang="fr">pigeon</name>, puis le <name type="animal" xml:lang="fr">perdrix</name>, puis le <name type="animal" xml:lang="fr">coq</name> et la <name type="animal" xml:lang="fr">poule</name> et la <name type="animal" xml:lang="fr">caille</name>. Le plus humide est la <name type="animal" xml:lang="fr">oie</name>. Tous ceux qui pondent ont des œufs plus secs que les autres. Le <name type="animal" xml:lang="fr">hérisson</name> et les autres animaux de ce genre qui vivent dans les marais ou dans l'eau sont tous humides.</p>
+        508:    </div>
+        509:    <div type="section" n="48">
+    >>> 510:       <p>Parmi les <name type="animal" xml:lang="fr">poissons</name>, les plus secs sont le <name type="animal" xml:lang="fr">scorpion</name> de mer, le <name type="animal" xml:lang="fr">dragon</name>, le <name type="animal" xml:lang="fr">callionyme</name>, le <name type="animal" xml:lang="fr">rouget</name>, le <name type="animal" xml:lang="fr">mulet</name>, la <name type="animal" xml:lang="fr">perche</name>, la <name type="animal" xml:lang="fr">truite</name> ; les <name type="animal" xml:lang="fr">poissons</name> plats sont presque tous de ce genre, comme la <name type="animal" xml:lang="fr">plie</name>, la <name type="animal" xml:lang="fr">baudroie</name>, l'<name type="animal" xml:lang="fr">anguille</name>, le <name type="animal" xml:lang="fr">cabillaud</name>. Ceux-ci et les <name type="animal" xml:lang="fr">poissons</name> qui nagent en surface sont plus secs que les autres. Les <name type="animal" xml:lang="fr">narvals</name> et les <name type="animal" xml:lang="fr">baleines</name> et les <name type="animal" xml:lang="fr">phoques</name> et les animaux de ce genre sont plus humides. Les <name type="animal" xml:
+        511: Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en identifiant les entités zoologiques et autres éléments pertinents :
+        512: 
+
+  Fichier : tlg0627/hippocrate_regime_aigu_fra_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 337 and div, line 338, column 7
+  Ligne   : 338
+  Contexte:
+        335:     <p>Les philosophes de cette époque faisaient entrer dans le cercle de leurs spéculations l'organisation des <name type="animal" xml:lang="fr">animaux</name> et les maladies qui affligent l'<name type="animal" xml:lang="fr">espèce humaine</name>. C'est seulement de leurs travaux dans ce genre qu'il peut être ici question.</p>
+        336:     <milestone unit="section" n="11.88.4"/>
+        337:     <p>La plus importante des écoles philosophiques pour la médecine est celle de la <placeName>Grande-Grèce</placeName>. <persName>Alcméon</persName>, de <placeName>Crotone</placeName>, s'était
+    >>> 338: </div>
+        339: Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni, en respectant la structure demandée et en identifiant les entités nommées zoologiques et autres :
+        340: 
+
+  Fichier : tlg0738/TLG0738-Additamenta Londinensia ad hippiatrica Cantabrigiensia_tei.xml
+  Erreur  : Opening and ending tag mismatch: quote line 309 and p, line 309, column 132
+  Ligne   : 309
+  Contexte:
+        306:    <p>ταχέως γὰρ ἀπουλοῖ.</p>
+        307: 
+        308:    <milestone unit="section" n="38.1"/>
+    >>> 309:    <p><quote><persName>῎Εμπλαστρος</persName> <persName>Τιβερίου</persName> <foreign xml:lang="grc">πρὸς μελικηρίδας</foreign>.</p>
+        310:    <p><name type="plant" xml:lang="grc">Σινήπεος</name> γο δ́, <name type="plant" xml:lang="grc">χαλκοῦ</name> κεκαυμένου γο ϛ́, <name type="plant" xml:lang="grc">ἀσϕάλτου</name> ’<name type="placeName">Ιουδαϊκῆς</name> #117 ά, <name type="plant" xml:lang="grc">στυπτηρίας</name> σχιστῆς γο β́, <name type="plant" xml:lang="grc">θείου</name> ἀπύρου γο β́, <name type="plant" xml:lang="grc">νίτρου</name> ’<name type="placeName">Αλεξανδρηνοῦ</name> γο γ́, <name type="plant" xml:lang="grc">μίσυος</name> γο ϛ́, <name type="plant" xml:lang="grc">ῥοδοδάϕνης</name> ϕύλλων τὸ ἀρκοῦν.</p>
+        311: 
+
+  Fichier : tlg0738/TLG0738-Hippiatrica Berolinensia_tei.xml
+  Erreur  : Opening and ending tag mismatch: foreign line 412 and name, line 412, column 93
+  Ligne   : 412
+  Contexte:
+        409:       χριστέον <name type="plant" xml:lang="grc">ὄξει</name> <name type="plant" xml:lang="grc">θερμῷ</name>.
+        410:       ὅταν δὲ ἐρρῶσθαι δοκῇ, λοῦσον <name type="plant" xml:lang="grc">ὕδατι θερμῷ</name>.
+        411:       ἐὰν δὲ διὰ <name type="animal" xml:lang="grc">κόπον</name>
+    >>> 412:       <foreign xml:lang="grc">πυρέττῃ</foreign> καὶ <foreign xml:lang="grc">ἀπισχνωθῇ</name>,
+        413:       <name type="plant" xml:lang="grc">γάλακτος</name> <name type="animal" xml:lang="grc">αἰγείου</name>
+        414:       κοτύλην μίαν, <name type="plant" xml:lang="grc">ἀμύλου</name> τὸ ἀρκοῦν,
+
+  Fichier : tlg0738/TLG0738-Hippiatrica Cantabrigiensia_tei.xml
+  Erreur  : Specification mandates value for attribute πᾶσαν, line 223, column 20
+  Ligne   : 223
+  Contexte:
+        220: 
+        221:   <div type="section" n="2.14">
+        222:     <milestone unit="section" n="2.14.1"/>
+    >>> 223:     <p><Πρὸς πᾶσαν μᾶλιν.> <foreign xml:lang="grc">Λύχνον</foreign> τὸ λεγόμενον <foreign xml:lang="grc">μελάμ-</foreign>πυρον κτλ. ἢ <foreign xml:lang="grc">βίκου</foreign>, <foreign xml:lang="grc">ϕασιούλου</foreign> κτλ. ἢ <name type="animal" xml:lang="grc">ἀγριοσικύου</name> τῆς ῥίζης</p>
+        224:     <p><foreign xml:lang="grc">χυλόν</foreign>, ᾠὰ δύο μετὰ <foreign xml:lang="grc">ἐλαίου</foreign> κοινοῦ διὰ <foreign xml:lang="grc">ῥινῶν</foreign> ἐγχυμάτιζε <foreign xml:lang="grc">χλιαρόν</foreign>.</p>
+        225:     <p>πρῶτον δὲ ἄλειϕε τὰς <foreign xml:lang="grc">ψύας</foreign> καὶ τὸν <foreign xml:lang="grc">νῶτον</foreign>.</p>
+
+  Fichier : tlg0738/TLG0738-Hippiatrica Parisina_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 234 and div, line 235, column 7
+  Ligne   : 235
+  Contexte:
+        232: 
+        233:    <milestone unit="section" n="62.1"/>
+        234:    <p><foreign xml:lang="grc">῎Αλλο</foreign> <foreign xml:lang="grc">πρὸς δυσουρίαν</foreign>. Γράϕε καὶ περίαπτε <name type="deity">θεοῦ</name> ἐπίκλησιν ἐπικαλούμενος <foreign xml:lang="grc">βαρναβαὰθ</foreign> θ θ καὶ <foreign xml:lang="grc">σεχθα</foreign>
+    >>> 235: </div>
+        236: Voici l'encodage TEI P5 strict du texte fourni, respectant toutes les règles du projet Zoomathia :
+        237: 
+
+  Fichier : tlg1696/Strato Fragmenta_tei.xml
+  Erreur  : attributes construct error, line 239, column 38
+  Ligne   : 239
+  Contexte:
+        236:       <p>δεῖ γάρ τι καὶ εἶναι πρότερον, εἴτα μένειν ἢ κινεῖσθαι. καὶ τὸ μὲν
+        237:       μένειν ἀντίκειται τῷ κινεῖσθαι· τὸ γὰρ μένειν καὶ ἵστασθαι ταὐτόν,</p>
+        238:    </quote>
+    >>> 239:    <milestone unit="section" n="41,1".10"/>
+        240: </div>
+        241: <div type="section" n="5">
+
+  Fichier : tlg2034/porphyre_abstinence_book1_eng_tei.xml
+  Erreur  : Couldn't find end of Start Tag milestone line 180, line 180, column 55
+  Ligne   : 180
+  Contexte:
+        177: 
+        178: 
+        179: Conformités vérifiées :
+    >>> 180: 1. Structure : `<div type="chapter">` avec `<milestone/>`) et références numériques
+        181: 3. Balises supplémentaires : `<foreign>` pour les termes grecs ("Greeks", "barbarians")
+        182: 4. Respect des interdictions : pas de `<TEI>`, contenu intégral, balises fermées
+
+  Fichier : tlg2034/porphyre_abstinence_book3_eng_tei.xml
+  Erreur  : Opening and ending tag mismatch: persName line 135 and persian, line 135, column 693
+  Ligne   : 135
+  Contexte:
+        132:    <p>It is also narrated, that some <name type="animal" xml:lang="en">dumb animals</name> obey their masters with more readiness than any domestic servants. Hence, a <name type="animal" xml:lang="en">lamprey</name> was so accustomed to the <persName>Roman Crassus</persName>, as to come to him when he called it by its name; on which account <persName>Crassus</persName> was so affectionately disposed towards it, that he exceedingly lamented its death, though, prior to this, he had borne the loss of three of his children with moderation.</p>
+        133:    <p>Many likewise relate that the <name type="animal" xml:lang="en">eels</name> in <placeName>Arethusa</placeName>, and the shell-fish denominated <name type="animal" xml:lang="en">saperdae</name>, about <placeName>Maeander</placeName>, are obedient to those that call them.</p>
+        134:    <p>Is not the imagination, therefore, of an <name type="animal" xml:lang="en">animal</name> that speaks, the same, whether it proceeds as far as to the tongue, or does not? And if this be the case, is it not absurd to call the voice of <persName>man</persName> alone [external] reason, but refuse thus to denominate the voice of other <name type="animal" xml:lang="en">animals</name>?</p>
+    >>> 135:    <p>For this is just as if <name type="animal" xml:lang="en">crows</name> should think that their voice alone is external reason, but that we are irrational <name type="animal" xml:lang="en">animals</name>, because the meaning of the sounds which we utter is not obvious to them; or as if the inhabitants of <placeName>Attica</placeName> should thus denominate their speech alone, and should think that those are irrational who are ignorant of the Attic tongue, though the inhabitants of <placeName>Attica</placeName> would sooner understand the croaking of a <name type="animal" xml:lang="en">crow</name>, than the language of a <persName>Syrian</persName> or a <persName>Persian</persian>.</p>
+        136:    <p>But is it not absurd to judge of rationality and irrationality from apprehending or not apprehending the meaning of vocal sounds, or from silence and speech? For thus some one might say, that the <name type="deity">God</name> who is above all things, and likewise the other <name type="deity">Gods</name> are not rational, because they do not speak. The <name type="deity">Gods</name>, however, silently indicate their will, and <name type="animal" xml:lang="en">birds</name> apprehend their will more rapidly than <persName>men</persName>, and when they have apprehended it, they narrate it to <persName>men</persName> as much as they are able and different <name type="animal" xml:lang="en">birds</name> are the messengers to <persName>men</persName> of different <name type="deity">Gods</name>.</p>
+        137:    <p>Thus, the <name type="animal" xml:lang="en">eagle</name> is the messenger of <name type="deity">Jupiter</name>, the <name type="animal" xml:lang="en">hawk</name> and the <name type="animal" xml:lang="en">crow</name> of <name type="deity">Apollo</name>, the <name type="animal" xml:lang="en">stork</name> of <name type="deity">Juno</name>, the <name type="animal" xml:lang="en">crex</name> and the <foreign xml:lang="grc">νυκτερίς</foreign> of <name type="deity">Minerva</name>, the <name type="animal" xml:lang="en">crane</name> of <name type="deity">Ceres</name>, and some other <name type="animal" xml:lang="en">bird</name> is the messenger of some other <name type="deity">deity</name>.</p>
+
+  Fichier : tlg2034/porphyre_abstinence_book4_eng_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 159 and div, line 160, column 9
+  Ligne   : 160
+  Contexte:
+        157:     <p>Each likewise bore about him a symbol indicative of the order which he was allotted in sacred concerns; for there were many orders of priests.</p>
+        158:     <p>Their diet also was slender and simple.</p>
+        159:     <p>For, with respect to wine, some of them did not at all drink it, but others drank very little of it, on account of its being injurious to the
+    >>> 160:   </div>
+        161: </div>
+        162: <div type="section" n="10">
+
+  Fichier : tlg2040/Basilius Homiliae in hexaemeron VII-VIII-IX_tei.xml
+  Erreur  : Opening and ending tag mismatch: p line 793 and div, line 805, column 7
+  Ligne   : 805
+  Contexte:
+        802:   ἡμῖν ἀρκοῦσα σημείωσις πρὸς τὴν τῶν γενῶν ἰδιότητα ἡ
+        803:   κοινὴ χρῆσις, καὶ οἱ παρὰ τῆς Γραϕῆς περί τε καθαρῶν καὶ
+        804:   ἀκαθάρτων διορισμοί. ῎Αλλο μὲν οὖν γένος τὸ τῶν <foreign xml:lang="grc">σαρκοϕά-</foreign>
+    >>> 805: </div>
+        806: Voici l'encodage TEI P5 strict du texte fourni selon les règles du projet Zoomathia :
+        807: 
+
+============================================================
+RESUME : 34 valides / 105 invalides / 139 total
+============================================================
