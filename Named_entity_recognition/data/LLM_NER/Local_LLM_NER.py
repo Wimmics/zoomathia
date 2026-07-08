@@ -7,7 +7,6 @@ from tqdm import tqdm
 from deep_translator import GoogleTranslator
 
 from py4j.java_gateway import JavaGateway
-import time
 from time import sleep
 import subprocess
 import atexit
@@ -30,15 +29,9 @@ atexit.register(exit_handler)
 
 Graph = gateway.jvm.fr.inria.corese.core.Graph
 Load = gateway.jvm.fr.inria.corese.core.load.Load
-Transformer = gateway.jvm.fr.inria.corese.core.transform.Transformer
 QueryProcess = gateway.jvm.fr.inria.corese.core.query.QueryProcess
-RDF = gateway.jvm.fr.inria.corese.core.logic.RDF
 RESULTFORMAT = gateway.jvm.fr.inria.corese.core.print.ResultFormat
 coreseFormat = gateway.jvm.fr.inria.corese.sparql.api.ResultFormatDef
-
-MAX_TRIES = 50
-API_ENDPOINT_URL = "http://nerd.huma-num.fr/nerd/service"
-DBPEDIA_LOCAL = 'http://localhost:2222/rest'
 
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 ANNOTATION_AUTO = True
@@ -382,7 +375,7 @@ def extraction_data(FILE,CSV):
 def get_all_thesaurus_concepts(g):
     q = """
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        SELECT DISTINCT ?concept ?label WHERE { 
+        SELECT DISTINCT ?label WHERE { 
             ?concept a skos:Concept ;
                      skos:prefLabel ?label .
             FILTER(lang(?label) = "en")
@@ -390,15 +383,14 @@ def get_all_thesaurus_concepts(g):
         """
 
     res = convert_sparql_to_json(sparqlQuery(g, q))
-    thesaurus_dict = {}
+    thesaurus = []
 
     for item in res["results"]["bindings"]:
-        concept_uri = item["concept"]["value"]
         entity_label = item["label"]["value"]
 
-        thesaurus_dict[entity_label] = concept_uri
+        thesaurus.append(entity_label)
 
-    return thesaurus_dict
+    return thesaurus
 
 if __name__ == "__main__":
 
@@ -406,6 +398,16 @@ if __name__ == "__main__":
     g = load(g, "../th310.ttl")
 
     thesaurus = get_all_thesaurus_concepts(g)
+
+    try:
+        gateway.shutdown()
+        if java_process.poll() is None:
+            java_process.terminate()
+        atexit.unregister(exit_handler)
+    except Exception as e:
+        print(f"Gateway could not be closed: {e}")
+        pass
+
 
     directory_path = ('../texts/')
     xml_files = find_xml_files(directory_path)

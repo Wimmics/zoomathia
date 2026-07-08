@@ -7,7 +7,6 @@ from tqdm import tqdm
 from deep_translator import GoogleTranslator
 
 from py4j.java_gateway import JavaGateway
-import time
 from time import sleep
 import subprocess
 import atexit
