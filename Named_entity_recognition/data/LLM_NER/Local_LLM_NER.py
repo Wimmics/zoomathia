@@ -7,6 +7,7 @@ from tqdm import tqdm
 from deep_translator import GoogleTranslator
 
 from py4j.java_gateway import JavaGateway
+import time
 from time import sleep
 import subprocess
 import atexit
@@ -35,7 +36,7 @@ coreseFormat = gateway.jvm.fr.inria.corese.sparql.api.ResultFormatDef
 
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 ANNOTATION_AUTO = True
-TRANSLATION_AUTO = False
+TRANSLATION_AUTO = True
 
 MODEL = "qwen:1.8b"
 PROMPT_PATH = os.path.join(os.path.dirname(__file__), "prompt.txt")
@@ -93,7 +94,7 @@ def get_LLM_entities(element):
     if not element or element.strip() == "":
         return {}
 
-    full_input = f"{PROMPT}\n\nThesaurus :\n {thesaurus}\n\nTexte à analyser :\n{element}"
+    full_input = f"{PROMPT}\n\nThesaurus :\n {thesaurus}\n\nText to analyse :\n{element}"
 
     try:
         response = chat(
@@ -101,6 +102,7 @@ def get_LLM_entities(element):
             messages=[{'role': 'user', 'content': full_input}],
             format='json'
         )
+        print(response.message.content)
         return json.loads(response.message.content)
     except Exception as e:
         print(f"[WARNING] Erreur lors de l'appel LLM ou du parsing : {e}")
@@ -109,12 +111,18 @@ def get_LLM_entities(element):
 def extract_LLM(entities, annotations, paragraph):
     if not entities or "entities" not in entities:
         return
+
+    ent_list = entities.get("entities", [])
+    if not isinstance(ent_list, list):
+        return
+
     try:
-        for ent in entities.get("entities", []):
-            if ent is None or ent == '' or not isinstance(ent, dict):
+        for ent in ent_list:
+            if not isinstance(ent, str) or not ent.strip():
                 continue
-            mention = ent.get("mention", "")
-            thesaurus_url = ent.get("thesaurus_url", "")
+
+            mention = ent.strip()
+            thesaurus_url = ""
 
             if mention and thesaurus_url:
                 annotations.append([paragraph,
@@ -363,13 +371,13 @@ def extraction_data(FILE,CSV):
 
         extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0)
 
-        pd.DataFrame(link_data, columns=link_labels).to_csv('./output/' + CSV + "_link.csv", index=False,
+        pd.DataFrame(link_data, columns=link_labels).to_csv('../output/' + CSV + "_link.csv", index=False,
                                                             encoding='UTF-8')
-        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv('./output/' + CSV + "_paragraph.csv", index=False,
+        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv('../output/' + CSV + "_paragraph.csv", index=False,
                                                                       encoding='UTF-8')
-        pd.DataFrame(metadata, columns=metadata_labels).to_csv('./output/' + CSV + "_metadata.csv", index=False,
+        pd.DataFrame(metadata, columns=metadata_labels).to_csv('../output/' + CSV + "_metadata.csv", index=False,
                                                      encoding='UTF-8')
-        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('./output/' + CSV + "_annotations.csv",index=False)
+        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('../output/' + CSV + "_annotations.csv",index=False)
 
 
 def get_all_thesaurus_concepts(g):
@@ -409,9 +417,9 @@ if __name__ == "__main__":
         pass
 
 
-    directory_path = ('../texts/')
+    directory_path = ('../test/')
     xml_files = find_xml_files(directory_path)
-    for xml_file in xml_files[2:]:
+    for xml_file in xml_files:
 
         print(xml_file)
         FILE = xml_file
