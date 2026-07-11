@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="en">Ἔργα καὶ ἡμέραι</title>
+        <author>
+          <persName>HESIODUS</persName>
+          
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-11">2026-07-11</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-11">2026-07-11</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia"></idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="en">anglais</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>inconnu</term>
+          <term>anglais</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="1">Muses of Pieria who give glory through song, come hither,</l>
+    <l n="2">tell of <name type="deity">Zeus</name> your father and chant his praise.</l>
+    <l n="3">Through him mortal men are famed or un-famed,</l>
+    <l n="4">sung or unsung alike, as great <name type="deity">Zeus</name> wills.</l>
+    <l n="5">For easily he makes strong, and easily he brings the strong man low;</l>
+    <l n="6">easily he humbles the proud and raises the obscure,</l>
+    <l n="7">and easily he straightens the crooked and blasts the proud,—</l>
+    <l n="8"><name type="deity">Zeus</name> who thunders aloft and has his dwelling most high.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Attend thou with eye and ear, and make judgements straight with righteousness.</l>
+    <l n="10">And I, <persName>Perses</persName>, would tell of true things.</l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="11">So, after all, there was not one kind of <name type="deity">Strife</name> alone,</l>
+    <l n="12">but all over the earth there are two.</l>
+    <l n="13">As for the one, a man would praise her when he came to understand her;</l>
+    <l n="14">but the other is blameworthy: and they are wholly different in nature.</l>
+    <l n="15">For one fosters evil war and battle, being cruel:</l>
+    <l n="16">her no man loves; but perforce, through the will of the deathless gods,</l>
+    <l n="17">men pay harsh <name type="deity">Strife</name> her honour due.</l>
+    <l n="18">But the other is the elder daughter of dark <name type="deity">Night</name>,</l>
+    <l n="19">and the son of <persName>Cronos</persName> who sits above and dwells in the aether,</l>
+    <l n="20">set her in the roots of the earth: and she is far kinder to men.</l>
+    <l n="21">She stirs up even the shiftless to toil;</l>
+    <l n="22">for a man grows eager to work when he considers his neighbour,</l>
+    <l n="23">a rich man who hastens to plough and <name type="plant">plant</name> and put his house in good order;</l>
+    <l n="24">and neighbour vies with his neighbour as he hurries after wealth.</l>
+    <l n="25">This <name type="deity">Strife</name> is wholesome for men.</l>
+    <l n="26">And <name type="animal" xml:lang="en">potter</name> is angry with <name type="animal" xml:lang="en">potter</name>,</l>
+    <l n="27">and craftsman with craftsman, and <name type="animal" xml:lang="en">beggar</name> is jealous of <name type="animal" xml:lang="en">beggar</name>,</l>
+    <l n="28">and <name type="animal" xml:lang="en">minstrel</name> of <name type="animal" xml:lang="en">minstrel</name>.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="25">Perses, lay up these things in your heart, and do not let that</l>
+  <l n="26">Strife who delights in mischief hold your heart back from work,</l>
+  <l n="27">while you peep and peer and listen to the wrangles of the court-house.</l>
+  <l n="28">Little concern has he with quarrels and courts who has not a year’s</l>
+  <l n="29">victuals laid up betimes, even that which the earth bears,</l>
+  <l n="30"><name type="deity">Demeter</name>’s grain.</l>
+  <l n="31">When you have got plenty of that, you can raise disputes and strive</l>
+  <l n="32">to get another’s goods. But you shall have no second chance to deal</l>
+  <l n="33">so again: nay, let us settle our dispute here with true judgement</l>
+  <l n="34">divided our inheritance, but you seized the greater share and carried</l>
+  <l n="35">it off, greatly swelling the glory of our bribe-swallowing lords who</l>
+  <l n="36">love to judge such a cause as this.</l>
+  <l n="37">Fools! They know not how much more the half is than the whole,</l>
+  <l n="38">nor what great advantage there is in <name type="plant" xml:lang="en">mallow</name></l>
+  <l n="39">and <name type="plant" xml:lang="en">asphodel</name> 1301.</l>
+</lg>
+<div>
+  <lg type="strophe">
+    <l n="42">For the gods keep hidden from men the means of life.</l>
+    <l n="43">Else you would easily do work enough in a day to supply you</l>
+    <l n="44">for a full year even without working; soon would you put away</l>
+    <l n="45">your rudder over the smoke, and the fields worked by <name type="animal" xml:lang="en">ox</name></l>
+    <l n="46">and sturdy <name type="animal" xml:lang="en">mule</name> would run to waste.</l>
+    <l n="47">But <name type="deity">Zeus</name> in the anger of his heart hid it,</l>
+    <l n="48">because <persName>Prometheus</persName> the crafty deceived him;</l>
+    <l n="49">therefore he planned sorrow and mischief against men.</l>
+    <l n="50">He hid fire; but that the noble son of <persName>Iapetus</persName></l>
+    <l n="51">stole again for men from <name type="deity">Zeus</name> the counsellor</l>
+    <l n="52">in a hollow fennel-stalk, so that <name type="deity">Zeus</name> who delights in thunder</l>
+    <l n="53">did not see it.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="54">But afterwards <name type="deity">Zeus</name> who gathers the clouds</l>
+    <l n="55">said to him in anger:</l>
+    <l n="56">‘<persName>Son of Iapetus</persName>, surpassing all in cunning,</l>
+    <l n="57">you are glad that you have outwitted me and stolen fire—a great plague</l>
+    <l n="58">to you yourself and to men that shall be.</l>
+    <l n="59">But I will give men as the price for fire an evil thing</l>
+    <l n="60">in which they may all be glad of heart while they embrace their own destruction.’</l>
+  </lg>
+</div>
+<lg type="strophe">
+   <l n="60">So said the father of men and gods, and laughed aloud.</l>
+   <l n="61">And he bade famous <persName>Hephaestus</persName> make haste and mix earth with water</l>
+   <l n="62">and to put in it the voice and strength of human kind, and fashion a sweet, lovely maiden-shape,</l>
+   <l n="63">like to the immortal goddesses in face; and <persName>Athene</persName> to teach her needlework</l>
+   <l n="64">and the weaving of the varied web; and golden <name type="deity">Aphrodite</name> to shed grace upon her head</l>
+   <l n="65">and cruel longing and cares that weary the limbs. And he charged <persName>Hermes</persName> the guide,</l>
+   <l n="66">the Slayer of <foreign xml:lang="grc">Argus</foreign>, to put in her a shameless mind</l>
+   <l n="67">and a deceitful nature.</l>
+</lg>
+<lg type="strophe">
+   <l n="68">So he ordered.</l>
+   <l n="69">And they obeyed the lord <persName>Zeus</persName> the son of <persName>Cronos</persName>.</l>
+   <l n="70">Forthwith the famous Lame God moulded clay in the likeness of a modest maid,</l>
+   <l n="71">as the son of <persName>Cronos</persName> purposed.</l>
+   <l n="72">And the goddess bright-eyed <persName>Athene</persName> girded and clothed her,</l>
+   <l n="73">and the divine <name type="deity">Graces</name> and queenly <persName>Persuasion</persName></l>
+   <l n="74">put necklaces of gold upon her, and the rich-haired <persName>Hours</persName> crowned her head</l>
+   <l n="75">with spring flowers. And <persName>Pallas Athene</persName> bedecked her form with all manners of finery.</l>
+   <l n="76">Also the Guide, the Slayer of <foreign xml:lang="grc">Argus</foreign>, contrived within her lies</l>
+   <l n="77">and crafty words and a deceitful nature at the will of loud thundering <persName>Zeus</persName>,</l>
+   <l n="78">and the Herald of the gods put speech in her.</l>
+   <l n="79">And he called this woman <persName>Pandora</persName></l>
+   <l n="80">1302, because all they who dwelt on <placeName>Olympus</placeName> gave each a gift,</l>
+   <l n="81">a plague to men who eat bread.</l>
+</lg>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe" n="6">
+    <l n="83">But when he had finished the sheer, hopeless snare,</l>
+    <l n="84">the Father sent <name type="deity">glorious <foreign xml:lang="grc">Argeïphontes</foreign></name>,</l>
+    <l n="85">the swift messenger of the gods, to take it to <persName>Epimetheus</persName></l>
+    <l n="86">as a gift. And <persName>Epimetheus</persName> did not think on what</l>
+    <l n="87"><persName>Prometheus</persName> had said to him, bidding him never take a gift</l>
+    <l n="88">of <name type="deity">Olympian <foreign xml:lang="grc">Zeus</foreign></name>, but to send it back</l>
+    <l n="89">for fear it might prove to be something harmful to men. But he took the gift,</l>
+    <l n="90">and afterwards, when the evil thing was already his, he understood.</l>
+  </lg>
+  <lg type="strophe" n="7">
+    <l n="90">For ere this the tribes of men lived on earth remote and free</l>
+    <l n="91">from ills and hard toil and heavy sickness which bring the <name type="deity">Fates</name></l>
+    <l n="92">upon men; for in misery men grow old quickly. But the woman</l>
+    <l n="93">took off the great lid of the jar <pb n="1303"/> with her hands</l>
+    <l n="94">and scattered all these and her thought caused sorrow and mischief to men.</l>
+    <l n="95">Only <name type="deity"><foreign xml:lang="grc">Elpis</foreign></name> remained there</l>
+    <l n="96">in an unbreakable home within under the rim of the great jar,</l>
+    <l n="97">and did not fly out at the door; for ere that, the lid of the jar</l>
+    <l n="98">stopped her, by the will of <name type="deity"><foreign xml:lang="grc">Aigiochos</foreign></name> <foreign xml:lang="grc">Zeus</foreign></l>
+    <l n="99">who gathers the clouds. But the rest, countless <name type="animal">plagues</name>,</l>
+    <l n="100">wander amongst men; for earth is full of evils and the sea is full.</l>
+    <l n="101">Of themselves <name type="animal">diseases</name> come upon men continually</l>
+    <l n="102">by day and by night, bringing mischief to mortals silently;</l>
+    <l n="103">for wise <name type="deity">Zeus</name> took away speech from them.</l>
+    <l n="104">So is there no way to escape the will of <name type="deity">Zeus</name>.</l>
+  </lg>
+  <lg type="strophe" n="8">
+    <l n="106">Or if you will, I will sum you up another tale well and skilfully—</l>
+    <l n="107">and do you lay it up in your heart,—how the gods and mortal men</l>
+    <l n="108">sprang from one source.</l>
+  </lg>
+</div>
+<lg type="strophe">
+   <l n="109">First of all the deathless gods who dwell on Olympus made a golden race of mortal men</l>
+   <l n="110">who lived in the time of Cronos when he was reigning in heaven.</l>
+   <l n="111">And they lived like gods without sorrow of heart, remote and free from toil and grief:</l>
+   <l n="112">miserable age rested not on them; but with legs and arms never failing</l>
+   <l n="113">they made merry with feasting beyond the reach of all evils.</l>
+   <l n="114">When they died, it was as though they were overcome with sleep,</l>
+   <l n="115">and they had all good things; for the fruitful earth unforced bare them fruit abundantly</l>
+   <l n="116">and without stint. They dwelt in ease and peace upon their lands</l>
+   <l n="117">with many good things, rich in flocks and loved by the blessed gods.</l>
+</lg>
+<div>
+  <lg type="strophe">
+    <l n="121">But after earth had covered this generation—they are called pure spirits dwelling on the earth, and are kindly, delivering from harm, and guardians of mortal men;</l>
+    <l n="122">for they roam everywhere over the earth, clothed in mist and keep watch on judgements and cruel deeds, givers of wealth;</l>
+    <l n="123">for this royal right also they received;—</l>
+    <l n="124">then they who dwell on Olympus made a second generation which was of silver and less noble by far.</l>
+    <l n="125">It was like the golden race neither in body nor in spirit.</l>
+    <l n="126">A child was brought up at his good mother’s side an hundred years, an utter simpleton, playing childishly in his own home.</l>
+    <l n="127">But when they were full grown and were come to the full measure of their prime,</l>
+    <l n="128">they lived only a little time in sorrow because of their foolishness,</l>
+    <l n="129">for they could not keep from sinning and from wronging one another,</l>
+    <l n="130">nor would they serve the immortals,</l>
+    <l n="131">nor sacrifice on the holy altars of the blessed ones as it is right for men to do wherever they dwell.</l>
+    <l n="132">Then <name type="deity">Zeus</name> the son of <persName>Cronos</persName> was angry and put them away,</l>
+    <l n="133">because they would not give honour to the blessed gods who live on <placeName>Olympus</placeName>.</l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="140">But when earth had covered this generation also—</l>
+    <l n="141">they are called blessed spirits of the underworld by men,</l>
+    <l n="142">and, though they are of second order, yet honour attends them also—</l>
+    <l n="143">Zeus the Father made a third generation of mortal men,</l>
+    <l n="144">a brazen race, sprung from <name type="plant" xml:lang="en">ash-trees</name>;</l>
+    <l n="145">and it was in no way equal to the silver age,</l>
+    <l n="146">but was terrible and strong.</l>
+    <l n="147">They loved the lamentable works of <name type="deity">Ares</name></l>
+    <l n="148">and deeds of violence;</l>
+    <l n="149">they ate no bread,</l>
+    <l n="150">but were hard of heart like <foreign xml:lang="en">adamant</foreign>,</l>
+    <l n="151">fearful men.</l>
+    <l n="152">Great was their strength and unconquerable the arms</l>
+    <l n="153">which grew from their shoulders on their strong limbs.</l>
+    <l n="154">Their armour was of <name type="plant" xml:lang="en">bronze</name>,</l>
+    <l n="155">and their houses of <name type="plant" xml:lang="en">bronze</name>,</l>
+    <l n="156">and of <name type="plant" xml:lang="en">bronze</name> were their implements:</l>
+    <l n="157">there was no black <name type="plant" xml:lang="en">iron</name>.</l>
+    <l n="158">These were destroyed by their own hands</l>
+    <l n="159">and passed to the dank house of chill <name type="deity">Hades</name>,</l>
+    <l n="160">and left no name:</l>
+    <l n="161">terrible though they were, black <name type="deity">Death</name> seized them,</l>
+    <l n="162">and they left the bright light of the <name type="deity">sun</name>.</l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="156">But when earth had covered this generation also,</l>
+    <l n="157">Zeus the son of Cronos made yet another, the fourth,</l>
+    <l n="158">upon the fruitful earth, which was nobler and more righteous,</l>
+    <l n="159">a god-like race of <name type="animal" xml:lang="en">men</name> who are called demi-gods,</l>
+    <l n="160">the race before our own, throughout the boundless earth.</l>
+    <l n="161">Grim war and dread battle destroyed a part of them,</l>
+    <l n="162">some in the land of <placeName>Cadmus</placeName> at seven-gated <placeName>Thebe</placeName></l>
+    <l n="163">when they fought for the flocks of <persName>Oedipus</persName>,</l>
+    <l n="164">and some, when it had brought them in ships over the great sea gulf</l>
+    <l n="165">to <placeName>Troy</placeName> for rich-haired <persName>Helen</persName>’s sake:</l>
+    <l n="166">there death’s end enshrouded a part of them.</l>
+    <l n="167">But to the others father <name type="deity">Zeus</name> the son of <name type="deity">Cronos</name></l>
+    <l n="168">gave a living and an abode apart from <name type="animal" xml:lang="en">men</name>,</l>
+    <l n="169a">and made them dwell at the ends of earth.</l>
+    <l n="169b">And they live untouched by sorrow in the islands of the blessed</l>
+    <l n="169c">along the shore of deep swirling <name type="animal" xml:lang="en">Ocean</name>,</l>
+    <l n="169d">happy heroes for whom the grain-giving earth bears honey-sweet fruit</l>
+    <l n="169e">flourishing thrice a year, far from the deathless gods,</l>
+    <l n="169f">and <name type="deity">Cronos</name> rules over them;</l>
+    <l n="169g">for the father of <name type="animal" xml:lang="en">men</name> and gods released him from his bonds.</l>
+    <l n="169h">And these last equally have honour and glory.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="169c-169d">And again far-seeing <name type="deity">Zeus</name> made yet another generation,</l>
+    <l n="169d">the fifth, of <name type="animal" xml:lang="en">men</name> who are upon the bounteous earth.</l>
+  </lg>
+</div>
+<div type="poem">
+  <head>Ἔργα καὶ ἡμέραι</head>
+  <lg type="strophe">
+    <l n="170">Thereafter, would that I were not among the men of the fifth generation,</l>
+    <l n="171">but either had died before or been born afterwards.</l>
+    <l n="172">For now truly is a race of <name type="animal" xml:lang="en">iron</name>,</l>
+    <l n="173">and men never rest from labour and sorrow by day,</l>
+    <l n="174">and from perishing by night;</l>
+    <l n="175">and the <name type="deity">gods</name> shall lay sore trouble upon them.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="176">But, notwithstanding, even these shall have some good mingled with their evils.</l>
+    <l n="177">And <name type="deity">Zeus</name> will destroy this race of mortal men also</l>
+    <l n="178">when they come to have grey hair on the temples at their birth.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="179">The father will not agree with his children,</l>
+    <l n="180">nor the children with their father,</l>
+    <l n="181">nor guest with his host,</l>
+    <l n="182">nor comrade with comrade;</l>
+    <l n="183">nor will brother be dear to brother as aforetime.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="184">Men will dishonour their parents as they grow quickly old,</l>
+    <l n="185">and will carp at them,</l>
+    <l n="186">chiding them with bitter words,</l>
+    <l n="187">hard-hearted they, not knowing the fear of the <name type="deity">gods</name>.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="188">They will not repay their aged parents the cost their nurture,</l>
+    <l n="189">for might shall be their right:</l>
+    <l n="190">and one man will sack another’s city.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="191">There will be no favour for the man who keeps his oath</l>
+    <l n="192">or for the just or for the good;</l>
+    <l n="193">but rather men will praise the evil-doer</l>
+    <l n="194">and his violent dealing.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="195">Strength will be right and reverence will cease to be;</l>
+    <l n="196">and the wicked will hurt the worthy man,</l>
+    <l n="197">speaking false words against him,</l>
+    <l n="198">and will swear an oath upon them.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="199"><name type="deity">Envy</name>, foul-mouthed, delighting in evil,</l>
+    <l n="200">with scowling face, will go along with wretched men one and all.</l>
+    <l n="201">And then <name type="deity">Aidos</name> and <name type="deity">Nemesis</name>,</l>
+    <l n="202">with their sweet forms wrapped in white robes, will go from th</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="202">e wide-pathed earth and forsake mankind to join the company of the deathless gods:</l>
+  <l n="203">and bitter sorrows will be left for mortal men, and there will be no help against evil.</l>
+</lg>
+<pb n="202"/>
+<lg type="strophe">
+  <l n="204">And now I will tell a fable for princes who themselves understand.</l>
+  <l n="205">Thus said the <name type="animal" xml:lang="en">hawk</name> to the <name type="animal" xml:lang="en">nightingale</name> with speckled neck,</l>
+  <l n="206">while he carried her high up among the clouds, gripped fast in his talons,</l>
+  <l n="207">and she, pierced by his crooked talons, cried pitifully.</l>
+  <l n="208">To her he spoke disdainfully:</l>
+  <l n="209">‘Miserable thing, why do you cry out?</l>
+  <l n="210">One far stronger than you now holds you fast,</l>
+  <l n="211">and you must go wherever I take you, songstress as you are.</l>
+  <l n="212">And if I please I will make my meal of you, or let you go.</l>
+  <l n="213">He is a fool who tries to withstand the stronger,</l>
+  <l n="214">for he does not get the mastery and suffers pain besides his shame.’</l>
+  <l n="215">So said the swiftly flying <name type="animal" xml:lang="en">hawk</name>, the long-winged <name type="animal" xml:lang="en">bird</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="212">But you, <persName>Perses</persName>, listen to right and do not foster violence;</l>
+  <l n="213">for violence is bad for a poor man.</l>
+  <l n="214">Even the prosperous cannot easily bear its burden,</l>
+  <l n="215">but is weighed down under it when he has fallen into delusion.</l>
+  <l n="216">The better path is to go by on the other side towards justice;</l>
+  <l n="217">for <name type="deity">Justice</name> beats <name type="animal" xml:lang="en">Outrage</name> when she comes at length to the end of the race.</l>
+  <l n="218">But only when he has suffered does the fool learn this.</l>
+  <l n="219">For <name type="deity">Oath</name> keeps pace with wrong judgements.</l>
+  <l n="220">There is a noise when <name type="deity">Justice</name> is being dragged in the way</l>
+  <l n="221">where those who devour bribes and give sentence with crooked judgements, take her.</l>
+  <l n="222">And she, wrapped in mist, follows to the city and haunts of the people,</l>
+  <l n="223">weeping, and bringing mischief to men,</l>
+  <l n="224">even to such as have driven her forth in that they did not deal straightly with her.</l>
+</lg>
+<lg type="strophe">
+  <l n="225">But they who give straight judgements to strangers and to the men of the land,</l>
+  <l n="226">and go not aside from what is just, their city flourishes, and the people prosper in it:</l>
+  <l n="227">Peace, the nurse of children, is abroad in their land,</l>
+  <l n="228">and all-seeing Zeus never decrees cruel war against them.</l>
+  <l n="229">Neither famine nor disaster ever haunt men who do true justice;</l>
+  <l n="230">but light-heartedly they tend the fields which are all their care.</l>
+  <l n="231">The earth bears them victual in plenty,</l>
+  <l n="232">and on the mountains the <name type="plant" xml:lang="en">oak</name> bears <name type="plant" xml:lang="en">acorns</name> upon the top</l>
+  <l n="233">and <name type="animal" xml:lang="en">bees</name> in the midst.</l>
+  <l n="234">Their woolly <name type="animal" xml:lang="en">sheep</name> are laden with fleeces;</l>
+  <l n="235">their women bear children like their parents.</l>
+  <l n="236">They flourish continually with good things,</l>
+  <l n="237">and do not travel on ships, for the grain-giving earth bears them fruit.</l>
+</lg>
+<lg type="strophe">
+  <l n="238">But for those who practise violence and cruel deeds far-seeing <persName>Zeus</persName>,</l>
+  <l n="239">the son of <persName>Cronos</persName>, ordains a punishment.</l>
+  <l n="240">Often even a whole city suffers for a bad man who sins</l>
+  <l n="241">and devises presumptuous deeds,</l>
+  <l n="242">and the son of <persName>Cronos</persName> lays great trouble upon the people,</l>
+  <l n="243">famine and plague together,</l>
+  <l n="244">so that the men perish away, and their women do not bear children,</l>
+  <l n="245">and their houses become few, through the contriving of <persName>Olympian Zeus</persName>.</l>
+  <l n="246">And again, at another time, the son of <persName>Cronos</persName></l>
+  <l n="247">either destroys their wide army, or their walls, or else makes an end of their ships on the sea.</l>
+</lg>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe" n="1">
+    <l n="248">You princes, mark well this punishment you also;</l>
+    <l n="249">for the deathless gods are near among men and mark all those</l>
+    <l n="250">who oppress their fellows with crooked judgements,</l>
+    <l n="251">and reck not the anger of the gods.</l>
+    <l n="252">For upon the bounteous earth Zeus has thrice ten thousand spirits,</l>
+    <l n="253">watchers of mortal men, and these keep watch on judgements</l>
+    <l n="254">and deeds of wrong as they roam, clothed in mist, all over the earth.</l>
+    <l n="255">And there is virgin Justice, the daughter of Zeus,</l>
+    <l n="256">who is honoured and reverenced among the gods who dwell on Olympus,</l>
+    <l n="257">and whenever anyone hurts her with lying slander,</l>
+    <l n="258">she sits beside her father, Zeus the son of Cronos,</l>
+    <l n="259">and tells him of men’s wicked heart,</l>
+    <l n="260">until the people pay for the mad folly of their princes</l>
+    <l n="261">who, evilly minded, pervert judgement and give sentence crookedly.</l>
+    <l n="262">Keep watch against this, you princes,</l>
+    <l n="263">and make straight your judgements,</l>
+    <l n="264">you who devour bribes;</l>
+    <l n="264a">put crooked judgements altogether from your thoughts.</l>
+  </lg>
+  <lg type="strophe" n="2">
+    <l n="265">He does mischief to himself who does mischief to another,</l>
+    <l n="266">and evil planned harms the plotter most.</l>
+  </lg>
+  <lg type="strophe" n="3">
+    <l n="267">The eye of <name type="deity">Zeus</name>, seeing all and understanding all,</l>
+    <l n="268">beholds these things too, if so he will,</l>
+    <l n="269">and fails not to mark what sort of justice is this</l>
+    <l n="270">that the city keeps within it.</l>
+    <l n="271">Now, therefore, may neither I myself be righteous among men,</l>
+    <l n="272">nor my son—for then it is a bad thing to be righteous—</l>
+    <l n="273">if indeed the unrighteous shall have the greater right.</l>
+    <l n="274">But I think that all-wise <name type="deity">Zeus</name> will not yet bring that to pass.</l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe" n="16">
+    <l n="274">But you, <persName>Perses</persName>, lay up these things within your heart and listen now to right, ceasing altogether to think of violence.</l>
+    <l n="275">For the son of <name type="deity">Cronos</name> has ordained this law for men, that <name type="animal" xml:lang="en">fishes</name> and <name type="animal" xml:lang="en">beasts</name> and <name type="animal" xml:lang="en">winged fowls</name> should devour one another, for right is not in them;</l>
+    <l n="276">but to mankind he gave right which proves far the best.</l>
+    <l n="277">For whoever knows the right and is ready to speak it, far-seeing <name type="deity">Zeus</name> gives him prosperity;</l>
+    <l n="278">but whoever deliberately lies in his witness and forswears himself, and so hurts <name type="deity">Justice</name> and sins beyond repair,</l>
+    <l n="279">that man’s generation is left obscure thereafter.</l>
+    <l n="280">But the generation of the man who swears truly is better thenceforward.</l>
+  </lg>
+  <lg type="strophe" n="17">
+    <l n="286">To you, foolish <persName>Perses</persName>, I will speak good sense.</l>
+    <l n="287"><name type="animal" xml:lang="en">Badness</name> can be got easily and in shoals: the road to her is smooth, and she lives very near us.</l>
+    <l n="288">But between us and <name type="animal" xml:lang="en">Goodness</name> the gods have placed the sweat of our brows:</l>
+    <l n="289">long and steep is the path that leads to her, and it is rough at the first;</l>
+    <l n="290">but when a man has reached the top, then is she easy to reach, though before that she was hard.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="293">That man is altogether best who considers all things himself and marks what will be better afterwards and at the end;</l>
+  <l n="294">and he, again, is good who listens to a good adviser;</l>
+  <l n="295">but whoever neither thinks for himself nor keeps in mind what another tells him,</l>
+  <l n="296">he is an unprofitable man.</l>
+</lg>
+<lg type="strophe">
+  <l n="297">But do you at any rate, always remembering my charge, work, high-born <persName>Perses</persName>,</l>
+  <l n="298">that <name type="animal" xml:lang="en">Hunger</name> may hate you,</l>
+  <l n="299">and venerable <name type="deity">Demeter</name> richly crowned may love you</l>
+  <l n="300">and fill your barn with food;</l>
+  <l n="301">for <name type="animal" xml:lang="en">Hunger</name> is altogether a meet comrade for the sluggard.</l>
+</lg>
+<lg type="strophe">
+  <l n="302">Both gods and men are angry with a man who lives idle,</l>
+  <l n="303">for in nature he is like the stingless <name type="animal" xml:lang="en">drones</name></l>
+  <l n="304">who waste the labour of the <name type="animal" xml:lang="en">bees</name>,</l>
+  <l n="305">eating without working;</l>
+  <l n="306">but let it be your care to order your work properly,</l>
+  <l n="307">that in the right season your barns may be full of victual.</l>
+</lg>
+<lg type="strophe">
+  <l n="308">Through work men grow rich in flocks and substance,</l>
+  <l n="309">and working they are much better loved by the immortals.</l>
+  <l n="310">Work is no disgrace: it is idleness which is a disgrace.</l>
+</lg>
+<lg type="strophe">
+  <l n="311">But if you work, the idle will soon envy you as you grow rich,</l>
+  <l n="312">for fame and renown attend on wealth.</l>
+  <l n="313">And whatever be your lot, work is best for you,</l>
+  <l n="314">if you turn your misguided mind away from other men’s property to your work</l>
+  <l n="315">and attend to your livelihood as I bid you.</l>
+</lg>
+<lg type="strophe">
+  <l n="316">An evil shame is the needy man’s companion,</l>
+  <l n="317">shame which both greatly harms and prospers men:</l>
+  <l n="318">shame is with poverty,</l>
+  <l n="319">but confidence with wealth.</l>
+</lg>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="320">Wealth should not be seized: god-given wealth is much better;</l>
+    <l n="321">for if a man take great wealth violently and perforce,</l>
+    <l n="322">or if he steal it through his tongue, as often happens</l>
+    <l n="323">when gain deceives men’s sense and dishonour tramples down honour,</l>
+    <l n="324">the gods soon blot him out and make that man’s house low,</l>
+    <l n="325">and wealth attends him only for a little time.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="326">Alike with him who does wrong to a suppliant or a guest,</l>
+    <l n="327">or who goes up to his brother’s bed and commits unnatural sin</l>
+    <l n="328">in lying with his wife, or who infatuately offends against fatherless children,</l>
+    <l n="329">or who abuses his old father at the cheerless threshold of old age</l>
+    <l n="330">and attacks him with harsh words,</l>
+    <l n="331">truly Zeus himself is angry,</l>
+    <l n="332">and at the last lays on him a heavy requittal for his evil doing.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="333">But do you turn your foolish heart altogether away from these things,</l>
+    <l n="334">and, as far as you are able, sacrifice to the deathless gods purely and cleanly,</l>
+    <l n="335">and burn rich meats also,</l>
+    <l n="336">and at other times propitiate them with libations and incense,</l>
+    <l n="337">both when you go to bed and when the holy light has come back,</l>
+    <l n="338">that they may be gracious to you in heart and spirit,</l>
+    <l n="339">and so you may buy another’s holding and not another yours.</l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="342">Call your <persName>friend</persName> to a feast; but leave your <name type="animal" xml:lang="en">enemy</name> alone;</l>
+    <l n="343">and especially call him who lives near you:</l>
+    <l n="344">for if any mischief happen in the place, <name type="animal" xml:lang="en">neighbours</name> come ungirt,</l>
+    <l n="345">but <persName>kinsmen</persName> stay to gird themselves.</l>
+    <l n="346">A bad <name type="animal" xml:lang="en">neighbour</name> is as great a plague as a good one is a great blessing;</l>
+    <l n="347">he who enjoys a good <name type="animal" xml:lang="en">neighbour</name> has a precious possession.</l>
+    <l n="348">Not even an <name type="animal" xml:lang="en">ox</name> would die but for a bad <name type="animal" xml:lang="en">neighbour</name>.</l>
+    <l n="349">Take fair measure from your <name type="animal" xml:lang="en">neighbour</name> and pay him back fairly with the same measure,</l>
+    <l n="350">or better, if you can;</l>
+    <l n="351">so that if you are in need afterwards, you may find him sure.</l>
+  </lg>
+</div>
+<pb n="352"/>
+<lg type="strophe">
+<l n="352">Do not get <name type="animal" xml:lang="en">base gain</name>: <name type="animal" xml:lang="en">base gain</name> is as bad as ruin.</l>
+<l n="353">Be friends with the friendly, and visit him who visits you.</l>
+<l n="354">Give to one who gives, but do not give to one who does not give.</l>
+<l n="355">A man gives to the free-handed, but no one gives to the close-fisted.</l>
+<l n="356"><name type="animal" xml:lang="en">Give</name> is a good girl, but <name type="animal" xml:lang="en">Take</name> is bad and she brings death.</l>
+<l n="357">For the man who gives willingly, even though he gives a great thing, rejoices in his gift and is glad in heart;</l>
+<l n="358">but whoever gives way to shamelessness and takes something himself, even though it be a small thing, it freezes his heart.</l>
+<l n="359">He who adds to what he has, will keep off bright-eyed <name type="animal" xml:lang="en">hunger</name>;</l>
+<l n="360">for if you add only a little to a little and do this often, soon that little will become great.</l>
+<l n="361">What a man has by him at home does not trouble him:</l>
+<l n="362">it is better to have your stuff at home, for whatever is abroad may mean loss.</l>
+<l n="363">It is a good thing to draw on what you have;</l>
+<l n="364">but it grieves your heart to need something and not to have it, and I bid you mark this.</l>
+<l n="365">Take your fill when the cask is first opened and when it is nearly spent,</l>
+<l n="366">but midways be sparing: it is poor saving when you come to the lees.</l>
+</lg>
+<pb n="370"/>
+<lg type="strophe">
+<l n="370">Let the wage promised to a friend be fixed;</l>
+<l n="371">even with your brother smile—and get a witness;</l>
+<l n="372">for trust and mistrust, alike ruin men.</l>
+</lg>
+<lg type="strophe">
+<l n="373">Do not let a flaunting woman coax and cozen and deceive you:</l>
+<l n="374">she is after your barn.</l>
+<l n="375">The man who trusts womankind trusts deceivers.</l>
+</lg>
+<lg type="strophe">
+   <l n="376">There should be an only <name type="animal" xml:lang="en">son</name>, to feed his father’s house, for so wealth will increase in the home;</l>
+   <l n="377">but if you leave a second <name type="animal" xml:lang="en">son</name> you should die old.</l>
+   <l n="378">Yet <name type="deity">Zeus</name> can easily give great wealth to a greater number.</l>
+   <l n="379">More hands mean more work and more increase.</l>
+</lg>
+<lg type="strophe">
+   <l n="381">If your heart within you desires wealth, do these things and work with work upon work.</l>
+   <l n="382"> </l>
+</lg>
+<lg type="strophe">
+  <l n="383">When the <name type="animal" xml:lang="en">Pleiades</name>, daughters of <persName>Atlas</persName>, are rising</l>
+  <l n="384">, begin your harvest, and your ploughing when they are going to set</l>
+  <l n="385">. Forty nights and days they are hidden and appear again as the year moves round,</l>
+  <l n="386">when first you sharpen your sickle.</l>
+  <l n="387">This is the law of the plains, and of those who live near the sea,</l>
+  <l n="388">and who inhabit rich country, the glens and dingles far from the tossing sea,</l>
+  <l n="389">—strip to sow and strip to plough and strip to reap,</l>
+  <l n="390">if you wish to get in all <name type="plant" xml:lang="en">Demeter</name>’s fruits in due season,</l>
+  <l n="391">and that each kind may grow in its season.</l>
+  <l n="392">Else, afterwards, you may chance to be in want, and go begging to other men’s houses,</l>
+  <l n="393">but without avail; as you have already come to me.</l>
+  <l n="394">But I will give you no more nor give you further measure.</l>
+  <l n="395">Foolish <persName>Perses</persName>!</l>
+  <l n="396">Work the work which the <name type="deity" xml:lang="en">gods</name> ordained for men,</l>
+  <l n="397">lest in bitter anguish of spirit you with your wife and children seek your livelihood</l>
+  <l n="398">amongst your neighbours, and they do not heed you.</l>
+  <l n="399">Two or three times, may be, you will succeed,</l>
+  <l n="400">but if you trouble them further, it will not avail you,</l>
+  <l n="401">and all your talk will be in vain,</l>
+  <l n="402">and your word-play unprofitable.</l>
+  <l n="403">Nay, I bid you find a way to pay your debts and avoid hunger.</l>
+</lg>
+<lg type="strophe">
+  <l n="405">First of all, get a house, and a woman and an ox for the plough—a slave woman and not a wife,</l>
+  <l n="406">to follow the oxen as well—and make everything ready at home,</l>
+  <l n="407">so that you may not have to ask of another, and he refuses you,</l>
+  <l n="408">and so, because you are in lack, the season pass by and your work come to nothing.</l>
+  <l n="409">Do not put your work off till to-morrow and the day after;</l>
+  <l n="410">for a sluggish worker does not fill his barn,</l>
+  <l n="411">nor one who puts off his work:</l>
+  <l n="412">industry makes work go well, but a man who puts off work is always at hand-grips with ruin.</l>
+</lg>
+<lg type="strophe">
+  <l n="414">When the piercing power and sultry heat of the sun abate,</l>
+  <l n="415">and almighty <name type="deity">Zeus</name> sends the autumn rains</l>
+  <l n="416">, and men’s flesh comes to feel far easier,—</l>
+  <l n="417">for then the star <foreign xml:lang="grc">Sirius</foreign> passes over the heads of men,</l>
+  <l n="418">who are born to misery, only a little while by day</l>
+  <l n="419">and takes greater share of night,—</l>
+  <l n="420">then, when it showers its leaves to the ground</l>
+  <l n="421">and stops sprouting, the wood you cut with your axe</l>
+  <l n="422">is least liable to worm.</l>
+  <l n="423">Then remember to hew your timber: it is the season for that work.</l>
+  <l n="424">Cut a mortar <foreign xml:lang="grc">three feet wide</foreign></l>
+  <l n="425">and a pestle <foreign xml:lang="grc">three cubits long</foreign></l>
+  <l n="426">, and an axle of <foreign xml:lang="grc">seven feet</foreign></l>
+  <l n="427">, for it will do very well so;</l>
+  <l n="428">but if you make it <foreign xml:lang="grc">eight feet long</foreign></l>
+  <l n="429">, you can cut a beetle <foreign xml:lang="grc">from it as well</foreign>.</l>
+  <l n="430">Cut a felloe <foreign xml:lang="grc">three spans across</foreign></l>
+  <l n="431">for a waggon of <foreign xml:lang="grc">ten palms’ width</foreign>.</l>
+  <l n="422">Hew also many bent timbers,</l>
+  <l n="433">and bring home a plough-tree when you have found it,</l>
+  <l n="434">and look out on the mountain or in the field</l>
+  <l n="435">for one of <name type="plant">holm-oak</name>;</l>
+  <l n="436">for this is the strongest for <name type="animal" xml:lang="en">oxen</name> to plough with</l>
+  <l n="437">when one of <name type="deity">Athena</name>’s handmen</l>
+  <l n="438">has fixed in the share-beam and fastened it to the pole with dowels.</l>
+  <l n="439">Get two ploughs ready work on them at home,</l>
+  <l n="440">one all of a piece, and the other jointed.</l>
+  <l n="441">It is far better to do this, for if you should break one of them,</l>
+  <l n="442">you can put the <name type="animal" xml:lang="en">oxen</name> to the other.</l>
+  <l n="443">Poles of <name type="plant">laurel</name> or <name type="plant">elm</name> are most free from worms,</l>
+  <l n="444">and a share-beam of <name type="plant">oak</name></l>
+  <l n="445">and a plough-tree of <name type="plant">holm-oak</name>.</l>
+  <l n="446">Get two <name type="animal" xml:lang="en">oxen</name>, bulls of nine years;</l>
+  <l n="447">for their strength is unspent and they are in the prime of their age:</l>
+  <l n="448">they are best for work. They will not fight in th</l>
+</lg>
+<div type="poem">
+  <lg type="strophe">
+    <l n="448">e furrow and break the plough and then leave the work undone.</l>
+    <l n="449">Let a brisk fellow of forty years follow them,</l>
+    <l n="450">with a loaf of four quarters <pb n="1315"/> and eight slices <pb n="1316"/> for his dinner,</l>
+    <l n="451">one who will attend to his work and drive a straight furrow</l>
+    <l n="452">and is past the age for gaping after his fellows,</l>
+    <l n="453">but will keep his mind on his work.</l>
+    <l n="454">No younger man will be better than he at scattering the seed</l>
+    <l n="455">and avoiding double-sowing; for a man less staid gets disturbed,</l>
+    <l n="456">hankering after his fellows.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="457">Mark, when you hear the voice of the <name type="animal" xml:lang="en">crane</name> <pb n="1317"/></l>
+    <l n="458">who cries year by year from the clouds above,</l>
+    <l n="459">for she give the signal for ploughing</l>
+    <l n="460">and shows the season of rainy winter;</l>
+    <l n="461">but she vexes the heart of the man who has no <name type="animal" xml:lang="en">oxen</name>.</l>
+    <l n="462">Then is the time to feed up your horned <name type="animal" xml:lang="en">oxen</name> in the byre;</l>
+    <l n="463">for it is easy to say: ‘Give me a yoke of <name type="animal" xml:lang="en">oxen</name> and a waggon,’</l>
+    <l n="444">and it is easy to refuse: ‘I have work for my <name type="animal" xml:lang="en">oxen</name>.’</l>
+    <l n="465">The man who is rich in fancy thinks his waggon as good as built already—the fool!</l>
+    <l n="466">He does not know that there are a hundred timbers to a waggon.</l>
+    <l n="467">Take care to lay these up beforehand at home.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="458">So soon as the time for ploughing is proclaimed to men, then make haste,</l>
+  <l n="459">you and your slaves alike, in wet and in dry, to plough in the season for ploughing,</l>
+  <l n="460">and bestir yourself early in the morning so that your fields may be full.</l>
+  <l n="461">Plough in the spring; but fallow broken up in the summer will not belie your hopes.</l>
+  <l n="462">Sow fallow land when the soil is still getting light: fallow land is a defender from harm</l>
+  <l n="463">and a soother of children.</l>
+</lg>
+<lg type="strophe">
+  <l n="465">Pray to <name type="deity">Zeus</name> of the Earth and to pure <name type="deity">Demeter</name></l>
+  <l n="466">to make <name type="plant">Demeter</name>’s holy grain sound and heavy, when first you begin ploughing,</l>
+  <l n="467">when you hold in your hand the end of the plough-tail and bring down your stick</l>
+  <l n="468">on the backs of the <name type="animal" xml:lang="en">oxen</name> as they draw on the pole-bar by the yoke-straps.</l>
+  <l n="469">Let a slave follow a little behind with a mattock and make trouble for the <name type="animal" xml:lang="en">birds</name></l>
+  <l n="470">by hiding the seed; for good management is the best for mortal men as bad management is the worst.</l>
+  <l n="471">In this way your corn-ears will bow to the ground with fullness if the <name type="deity">Olympian</name> himself gives a good result at the last,</l>
+  <l n="472">and you will sweep the cobwebs from your bins and you will be glad, I ween, as you take of your garnered substance.</l>
+  <l n="473">And so you will have plenty till you come to grey <foreign xml:lang="en">springtime</foreign>,</l>
+  <l n="474">and will not look wistfully to others, but another shall be in need of your help.</l>
+</lg>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="479">But if you plough the good ground at the solstice</l>
+    <l n="480">you will reap sitting, grasping a thin crop in your hand,</l>
+    <l n="481">binding the sheaves awry, dust-covered, not glad at all;</l>
+    <l n="482">so you will bring all home in a basket and not many will admire you.</l>
+    <l n="483">Yet the will of <name type="deity">Zeus</name> who holds the aegis is different at different times;</l>
+    <l n="484">and it is hard for mortal men to tell it;</l>
+    <l n="485">for if you should plough late, you may find this remedy—</l>
+    <l n="486">when the <name type="animal" xml:lang="en">cuckoo</name> first calls in the leaves of the <name type="plant" xml:lang="en">oak</name></l>
+    <l n="487">and makes men glad all over the boundless earth,</l>
+    <l n="488">if <name type="deity">Zeus</name> should send rain on the third day</l>
+    <l n="489">and not cease until it rises neither above an <name type="animal" xml:lang="en">ox</name>’s hoof</l>
+    <l n="490">nor falls short of it,</l>
+    <l n="491">then the late-plougher will vie with the early.</l>
+    <l n="492">Keep all this well in mind, and fail not to mark grey spring as it comes and the season of rain.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="493">Pass by the smithy and its crowded lounge in winter time</l>
+    <l n="494">when the cold keeps men from field work,—</l>
+    <l n="495">for then an industrious man can greatly prosper his house—</l>
+    <l n="496">lest bitter winter catch you helpless and poor</l>
+    <l n="497">and you chafe a swollen foot with a shrunk hand.</l>
+    <l n="498">The idle man who waits on empty hope,</l>
+    <l n="499">lacking a livelihood, lays to heart mischief-making;</l>
+    <l n="500">it is not an wholesome hope that accompanies a needy man</l>
+    <l n="501">who lolls at ease while he has no sure livelihood.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="502">While it is yet midsummer command your slaves:</l>
+    <l n="503">'It will not always be summer, build barns.'</l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="504">Avoid the month Lenaeon</l>
+    <l n="505">, wretched days, all of them fit to skin an <name type="animal" xml:lang="en">ox</name></l>
+    <l n="506">, and the frosts which are cruel when <name type="deity">Boreas</name> blows over the earth.</l>
+    <l n="507">He blows across horse-breeding <placeName>Thrace</placeName> upon the wide sea and stirs it up,</l>
+    <l n="508">while earth and the forest howl. On many a high-leafed <name type="plant" xml:lang="en">oak</name></l>
+    <l n="509">and thick <name type="plant" xml:lang="en">pine</name> he falls and brings them to the bounteous earth in mountain glens:</l>
+    <l n="510">then all the immense wood roars and the beasts shudder and put their tails between their legs,</l>
+    <l n="511">even those whose hide is covered with fur; for with his bitter blast he blows even through them</l>
+    <l n="512">although they are shaggy-breasted. He goes even through an <name type="animal" xml:lang="en">ox</name>’s hide;</l>
+    <l n="513">it does not stop him. Also he blows through the <name type="animal" xml:lang="en">goat</name>’s fine hair.</l>
+    <l n="514">But through the fleeces of <name type="animal" xml:lang="en">sheep</name>, because their wool is abundant,</l>
+    <l n="512">the keen wind <name type="deity">Boreas</name> pierces not at all;</l>
+    <l n="513">but it makes the old man curved as a wheel.</l>
+    <l n="514">And it does not blow through the tender maiden who stays indoors with her dear mother,</l>
+    <l n="515">unlearned as yet in the works of golden <name type="deity">Aphrodite</name>,</l>
+    <l n="516">and who washes her soft body and anoints herself with oil</l>
+    <l n="517">and lies down in an inner room within the house,</l>
+    <l n="518">on a winter’s day when the Boneless One <quote>1322</quote> gnaws his foot in his fireless house and wretched home;</l>
+    <l n="519">for the sun shows him no pastures to make for, but goes to and fro over the land and city of dusky men <quote>1323</quote>,</l>
+    <l n="520">and shines more sluggishly upon the whole race of the <foreign xml:lang="grc">Hellenes</foreign>.</l>
+    <l n="521">Then the horned and unhorned denizens of the wood, with teeth chattering pitifully,</l>
+    <l n="522">flee through the copses and glades, and all</l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="536">they seek shelter, have this one care, to gain thick coverts or some hollow rock.</l>
+    <l n="537">Then, like the <name type="deity">Three-legged One</name> whose back is broken and whose head looks down upon the ground,</l>
+    <l n="538">like him, I say, they wander to escape the white snow.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="540">Then put on, as I bid you, a soft coat and a tunic to the feet</l>
+    <l n="541">to shield your body,—and you should weave thick woof on thin warp.</l>
+    <l n="542">In this clothe yourself so that your hair may keep still</l>
+    <l n="543">and not bristle and stand upon end all over your body.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="1">Lace on your feet close-fitting boots of the hide of a <name type="animal" xml:lang="en">slaughtered ox</name>, thickly lined with felt inside.</l>
+  <l n="2">And when the season of frost comes on, stitch together skins of firstling <name type="animal" xml:lang="en">kids</name> with <name type="animal" xml:lang="en">ox</name>-sinew,</l>
+  <l n="3">to put over your back and to keep off the rain.</l>
+  <l n="4">On your head above wear a shaped cap of felt to keep your ears from getting wet,</l>
+  <l n="5">for the dawn is chill when <name type="deity">Boreas</name> has once made his onslaught,</l>
+  <l n="6">and at dawn a fruitful mist is spread over the earth from starry heaven upon the fields of blessed men:</l>
+  <l n="7">it is drawn from the ever flowing rivers and is raised high above the earth by windstorm,</l>
+  <l n="8">and sometimes it turns to rain towards evening, and sometimes to wind when <name type="deity">Thracian Boreas</name> huddles the thick clouds.</l>
+  <l n="9">Finish your work and return home ahead of him,</l>
+  <l n="10">and do not let the dark cloud from heaven wrap round you</l>
+  <l n="11">and make your body clammy and soak your clothes.</l>
+  <l n="12">Avoid it; for this is the hardest month, wintry, hard for <name type="animal" xml:lang="en">sheep</name> and hard for men.</l>
+  <l n="13">In this season let your <name type="animal" xml:lang="en">oxen</name> have half their usual food,</l>
+  <l n="14">but let your man have more; for the helpful nights are long.</l>
+  <l n="15">Observe all this until the year is ended</l>
+  <l n="16">and you have nights and days of equal length,</l>
+  <l n="17">and <name type="placeName">Earth</name>, the mother of all, bears again her various fruit.</l>
+</lg>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe" n="31">
+    <l n="564">When Zeus has finished sixty wintry days after the solstice,</l>
+    <l n="565">then the star <name type="animal" xml:lang="en">Arcturus</name> leaves the holy stream of <name type="deity">Ocean</name></l>
+    <l n="566">and first rises brilliant at dusk.</l>
+    <l n="567">After him the shrilly wailing daughter of <persName>Pandion</persName>,</l>
+    <l n="568">the <name type="animal" xml:lang="en">swallow</name>, appears to men when spring is just beginning.</l>
+    <l n="569">Before she comes, prune the vines, for it is best so.</l>
+  </lg>
+  <lg type="strophe" n="32">
+    <l n="571">But when the <name type="animal" xml:lang="en">House-carrier</name> climbs up the plants from the earth</l>
+    <l n="572">to escape the <name type="deity">Pleiades</name>,</l>
+    <l n="573">then it is no longer the season for digging vineyards,</l>
+    <l n="574">but to whet your sickles and rouse up your slaves.</l>
+    <l n="575">Avoid shady seats and sleeping until dawn in the harvest season,</l>
+    <l n="576">when the sun scorches the body.</l>
+    <l n="577">Then be busy, and bring home your fruits,</l>
+    <l n="578">getting up early to make your livelihood sure.</l>
+    <l n="579">For dawn takes away a third part of your work,</l>
+    <l n="580">dawn advances a man on his journey and advances him in his work,—</l>
+    <l n="581">dawn which appears and sets many men on their road,</l>
+    <l n="582">and puts yokes on many <name type="animal" xml:lang="en">oxen</name>.</l>
+  </lg>
+</div>
+<div type="poem">
+  <lg type="strophe">
+    <l n="582">But when the <name type="plant" xml:lang="en">artichoke</name> flowers</l>
+    <l n="583">and the chirping <name type="animal" xml:lang="en">grass-hopper</name> sits in a tree</l>
+    <l n="584">and pours down his shrill song continually from under his wings</l>
+    <l n="585">in the season of wearisome heat,</l>
+    <l n="586">then <name type="animal" xml:lang="en">goats</name> are plumpest and <name type="plant" xml:lang="en">wine</name> sweetest;</l>
+    <l n="587">women are most wanton, but men are feeblest,</l>
+    <l n="588">because <name type="deity" xml:lang="en">Sirius</name> parches head and knees</l>
+    <l n="589">and the skin is dry through heat.</l>
+    <l n="590">But at that time let me have a shady rock and <name type="plant" xml:lang="en">wine</name> of <placeName>Biblis</placeName>,</l>
+    <l n="591">a clot of curds and milk of drained <name type="animal" xml:lang="en">goats</name></l>
+    <l n="592">with the flesh of an <name type="animal" xml:lang="en">heifer</name> fed in the woods,</l>
+    <l n="593">that has never calved, and of firstling <name type="animal" xml:lang="en">kids</name>;</l>
+    <l n="594">then also let me drink bright <name type="plant" xml:lang="en">wine</name>,</l>
+    <l n="595">sitting in the shade, when my heart is satisfied with food,</l>
+    <l n="596">and so, turning my head to face the fresh <name type="deity" xml:lang="en">Zephyr</name>,</l>
+    <l n="597">from the everflowing spring which pours down unfouled thrice pour an offering of water,</l>
+    <l n="598">but make a fourth libation of <name type="plant" xml:lang="en">wine</name>.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="599">Set your slaves to winnow <name type="deity" xml:lang="en">Demeter</name>’s holy grain,</l>
+    <l n="600">when strong <name type="deity" xml:lang="en">Orion</name> first appears,</l>
+    <l n="601">on a smooth threshing-floor in an airy place.</l>
+    <l n="602">Then measure it and store it in jars.</l>
+    <l n="603">And so soon as you have safely stored all your stuff indoors,</l>
+    <l n="604">I bid you put your bondman out of doors</l>
+    <l n="605">and look out for a servant-girl with no children;</l>
+    <l n="606">—for a servant with a child to nurse is troublesome.</l>
+    <l n="607">And look after the <name type="animal" xml:lang="en">dog</name> with jagged teeth;</l>
+    <l n="608">do not grudge him his food, or some time the <name type="deity" xml:lang="en">Day-sleeper</name> may take your stuff.</l>
+    <l n="609">Bring in fodder and litter so as to have enough for your <name type="animal" xml:lang="en">oxen</name> and <name type="animal" xml:lang="en">mules</name>.</l>
+    <l n="610">After that, let your men rest their poor knees</l>
+    <l n="611">and unyoke your pair of <name type="animal" xml:lang="en">oxen</name>.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <head>Works and Days (ll. 609-617)</head>
+  <l n="609">But when Orion and Sirius are come into mid-heaven,</l>
+  <l n="610">and rosy-fingered Dawn sees Arcturus,</l>
+  <l n="611">then cut off all the <name type="plant" xml:lang="en">grape-clusters</name>, <persName>Perses</persName>,</l>
+  <l n="612">and bring them home. Show them to the sun ten days and ten nights:</l>
+  <l n="613">then cover them over for five, and on the sixth day</l>
+  <l n="614">draw off into vessels the gifts of joyful <name type="deity">Dionysus</name>.</l>
+  <l n="615">But when the <name type="animal" xml:lang="en">Pleiades</name> and <name type="animal" xml:lang="en">Hyades</name> and strong <name type="animal" xml:lang="en">Orion</name> begin to set</l>
+  <l n="616">, then remember to plough in season:</l>
+  <l n="617">and so the completed year will fitly pass beneath the earth.</l>
+</lg>
+<div type="poem">
+   <head>Works and Days</head>
+   <lg type="strophe">
+      <l n="618">But if desire for uncomfortable sea-faring seize you;</l>
+      <l n="619">when the <name type="animal" xml:lang="en">Pleiades</name> plunge into the misty sea</l>
+      <l n="620">to escape <name type="deity" xml:lang="en">Orion</name>’s rude strength, then truly gales of all kinds rage.</l>
+      <l n="621">Then keep ships no longer on the sparkling sea,</l>
+      <l n="622">but bethink you to till the land as I bid you.</l>
+      <l n="623">Haul up your ship upon the land and pack it closely</l>
+      <l n="622">with stones all round to keep off the power of the winds</l>
+      <l n="623">which blow damply, and draw out the bilge-plug</l>
+      <l n="624">so that the rain of heaven may not rot it.</l>
+      <l n="625">Put away all the tackle and fittings in your house,</l>
+      <l n="626">and stow the wings of the sea-going <name type="animal" xml:lang="en">ship</name> neatly,</l>
+      <l n="627">and hang up the well-shaped rudder over the smoke.</l>
+      <l n="628">You yourself wait until the season for sailing is come,</l>
+      <l n="629">and then haul your swift <name type="animal" xml:lang="en">ship</name> down to the sea</l>
+      <l n="630">and stow a convenient cargo in it,</l>
+      <l n="631">so that you may bring home profit,</l>
+      <l n="632">even as your father and mine, foolish <persName>Perses</persName>, used to sail on shipboard</l>
+      <l n="633">because he lacked sufficient livelihood.</l>
+      <l n="634">And one day he came to this very place</l>
+      <l n="635">crossing over a great stretch of sea;</l>
+      <l n="636">he left <placeName>Aeolian Cyme</placeName> and fled,</l>
+      <l n="637">not from riches and substance,</l>
+      <l n="638">but from wretched poverty which <name type="deity" xml:lang="en">Zeus</name> lays upon men,</l>
+      <l n="639">and he settled near <placeName>Helicon</placeName> in a miserable hamlet, <placeName>Ascra</placeName>,</l>
+      <l n="640">which is bad in winter, sultry in summer, and good at no time.</l>
+   </lg>
+   <lg type="strophe">
+      <l n="641">But you, <persName>Perses</persName>, remember all works in their season</l>
+      <l n="642">but sailing especially.</l>
+      <l n="643">Admire a small <name type="animal" xml:lang="en">ship</name>,</l>
+      <l n="644">but put your freight in a large one;</l>
+      <l n="645">for the greater the lading, the greater will be your piled gain,</l>
+      <l n="646">if only the winds will keep back their harmful gales.</l>
+   </lg>
+</div>
+<lg type="strophe">
+  <l n="646">If ever you turn your misguided heart to trading</l>
+  <l n="647">and with to escape from debt and joyless hunger,</l>
+  <l n="648">I will show you the measures of the loud-roaring sea,</l>
+  <l n="649">though I have no skill in sea-faring nor in ships;</l>
+  <l n="650">for never yet have I sailed by ship over the wide sea,</l>
+  <l n="651">but only to <placeName>Euboea</placeName> from <placeName>Aulis</placeName></l>
+  <l n="652">where the <persName>Achaeans</persName> once stayed through much storm</l>
+  <l n="653">when they had gathered a great host from divine <placeName>Hellas</placeName></l>
+  <l n="654">for <placeName>Troy</placeName>, the land of fair women.</l>
+  <l n="655">Then I crossed over to <placeName>Chalcis</placeName>,</l>
+  <l n="656">to the games of wise <persName>Amphidamas</persName></l>
+  <l n="657">where the sons of the great-hearted hero proclaimed and appointed prizes.</l>
+  <l n="658">And there I boast that I gained the victory with a song</l>
+  <l n="659">and carried off an handled tripod which I dedicated</l>
+  <l n="660">to the <name type="deity">Muses</name> of <placeName>Helicon</placeName>,</l>
+  <l n="661">in the place where they first set me in the way of clear song.</l>
+  <l n="662">Such is all my experience of many-pegged ships;</l>
+  <l n="663">nevertheless I will tell you the will of <name type="deity">Zeus</name> who holds the aegis;</l>
+  <l n="664">for the <name type="deity">Muses</name> have taught me to sing in marvellous song.</l>
+</lg>
+<lg type="strophe">
+  <l n="663">Fifty days after the solstice</l>
+  <l n="664">1334 , when the season of wearisome heat is come to an end,</l>
+  <l n="665">is the right time for me to go sailing.</l>
+  <l n="666">Then you will not wreck your ship,</l>
+  <l n="667">nor will the sea destroy the sailors,</l>
+  <l n="668">unless <name type="deity">Poseidon</name> the Earth-Shaker be set upon it,</l>
+  <l n="669">or <name type="deity">Zeus</name>, the king of the deathless gods, wish to slay them;</l>
+  <l n="670">for the issues of good and evil alike are with them.</l>
+  <l n="671">At that time the winds are steady,</l>
+  <l n="672">and the sea is harmless.</l>
+  <l n="673">Then trust in the winds without care,</l>
+  <l n="674">and haul your swift ship down to the sea</l>
+  <l n="675">and put all the freight on board;</l>
+  <l n="676">but make all haste you can to return home again</l>
+  <l n="677">and do not wait till the time of the new wine and autumn rain</l>
+  <l n="678">and oncoming storms with the fierce gales of <foreign xml:lang="en">Notus</foreign></l>
+  <l n="679">who accompanies the heavy autumn rain of <name type="deity">Zeus</name></l>
+  <l n="680">and stirs up the sea and makes the deep dangerous.</l>
+</lg>
+<div type="poem">
+  <head type="main">Works and Days</head>
+  <lg type="strophe">
+    <l n="678">Another time for men to go sailing is in spring</l>
+    <l n="679">when a man first sees leaves on the topmost shoot of a <name type="plant" xml:lang="en">fig-tree</name></l>
+    <l n="680">as large as the foot-print that a <name type="animal" xml:lang="en">cow</name> makes;</l>
+    <l n="681">then the sea is passable, and this is the spring sailing time.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="682">For my part I do not praise it, for my heart does not like it.</l>
+    <l n="683">Such a sailing is snatched, and you will hardly avoid mischief.</l>
+    <l n="684">Yet in their ignorance men do even this, for wealth means life to poor mortals;</l>
+    <l n="685">but it is fearful to die among the waves.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="686">But I bid you consider all these things in your heart as I say.</l>
+    <l n="687">Do not put all your goods in hallow ships;</l>
+    <l n="688">leave the greater part behind, and put the lesser part on board;</l>
+    <l n="689">for it is a bad business to meet with disaster among the waves of the sea,</l>
+  </lg>
+  <lg type="strophe">
+    <l n="690">as it is bad if you put too great a load on your waggon</l>
+    <l n="691">and break the axle, and your goods are spoiled.</l>
+    <l n="692">Observe due measure: and proportion is best in all things.</l>
+  </lg>
+</div>
+<div>
+  <lg type="strophe">
+    <head>Ἔργα καὶ ἡμέραι</head>
+    <lg type="strophe">
+      <l n="695">Bring home a wife to your house when you are of the right age,</l>
+      <l n="696">while you are not far short of thirty years nor much above;</l>
+      <l n="697">this is the right age for marriage.</l>
+      <l n="698">Let your wife have been grown up four years,</l>
+      <l n="699">and marry her in the fifth.</l>
+      <l n="700">Marry a maiden, so that you can teach her careful ways,</l>
+      <l n="701">and especially marry one who lives near you,</l>
+      <l n="702">but look well about you and see that your marriage will not be a joke to your neighbours.</l>
+      <l n="703">For a man wins nothing better than a <name type="animal" xml:lang="en">good wife</name>,</l>
+      <l n="704">and, again, nothing worse than a bad one,</l>
+      <l n="705">a greedy soul who roasts her man without fire, strong though he may be, and brings him to a raw old age.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="706">Be careful to avoid the anger of the <name type="deity">deathless gods</name>.</l>
+      <l n="707">Do not make a friend equal to a brother;</l>
+      <l n="708">but if you do, do not wrong him first,</l>
+      <l n="709">and do not lie to please the tongue.</l>
+      <l n="710">But if he wrongs you first, offending either in word or in deed,</l>
+      <l n="711">remember to repay him double;</l>
+      <l n="712">but if he ask you to be his friend again and be ready to give you satisfaction, welcome him.</l>
+      <l n="713">He is a worthless man who makes now one and now another his friend;</l>
+      <l n="714">but as for you, do not let your face put your heart to shame.</l>
+    </lg>
+    <lg type="strophe">
+      <l n="715">Do not get a name either as lavish or as churlish;</l>
+      <l n="716">as a friend of rogues or as a slanderer of good men.</l>
+    </lg>
+  </lg>
+</div>
+<div type="poem">
+  <head>Ἔργα καὶ ἡμέραι</head>
+  <lg type="strophe">
+    <l n="717">Never dare to taunt a man with deadly poverty which eats out the heart;</l>
+    <l n="718">it is sent by the <name type="deity">deathless gods</name>.</l>
+    <l n="719">The best treasure a man can have is a sparing tongue,</l>
+    <l n="720">and the greatest pleasure, one that moves orderly;</l>
+    <l n="721">for if you speak evil, you yourself will soon be worse spoken of.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="722">Do not be boorish at a common feast where there are many guests;</l>
+    <l n="723">the pleasure is greatest and the expense is least.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="724">Never pour a libation of sparkling wine to <name type="deity">Zeus</name> after dawn</l>
+    <l n="725">with unwashen hands, nor to others of the <name type="deity">deathless gods</name>;</l>
+    <l n="726">else they do not hear your prayers but spit them back.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="727">Do not stand upright facing the <foreign xml:lang="grc">ἥλιον</foreign> when you make water,</l>
+    <l n="728">but remember to do this when he has set towards his rising.</l>
+    <l n="729">And do not make water as you go, whether on the road or off the road,</l>
+    <l n="730">and do not uncover yourself: the nights belong to the <name type="deity">blessed gods</name>.</l>
+    <l n="731">A scrupulous man who has a wise heart sits down</l>
+    <l n="732">or goes to the wall of an enclosed court.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="733">Do not expose yourself befouled by the fireside in your house, but avoid this.</l>
+    <l n="734">Do not beget children when you are come back from ill-omened burial,</l>
+    <l n="735">but after a festival of the <name type="deity">gods</name>.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="736">Never cross the sweet-flowing water of ever-rolling rivers afoot</l>
+    <l n="737">until you have prayed, gazing into the soft flood,</l>
+    <l n="738">and washed your hands in the clear, lovely water.</l>
+    <l n="739">Whoever crosses a river with hands unwashed of wickedness,</l>
+    <l n="740">the <name type="deity">gods</name> are angry with him</l>
+    <l n="741">and bring trouble upon him afterwards.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="742">At a cheerful festival of the gods do not cut the withered from the quick upon that which has five branches</l>
+  <l n="743">with bright steel.</l>
+</lg>
+<lg type="strophe">
+  <l n="744">Never put the ladle upon the mixing-bowl at a wine party, for malignant ill-luck is attached to that.</l>
+</lg>
+<lg type="strophe">
+  <l n="745">When you are building a house, do not leave it rough-hewn, or a <name type="animal" xml:lang="en">crow</name> may settle on it and croak.</l>
+</lg>
+<lg type="strophe">
+  <l n="746">Take nothing to eat or to wash with from uncharmed pots, for in them there is mischief.</l>
+</lg>
+<lg type="strophe">
+  <l n="747">Do not let a boy of twelve years sit on things which may not be moved</l>
+  <l n="748">, for that is bad, and makes a man unmanly; nor yet a child of twelve months, for that has the same effect.</l>
+</lg>
+<lg type="strophe">
+  <l n="749">A man should not clean his body with water in which a <persName>woman</persName> has washed, for there is bitter mischief in that also for a time.</l>
+</lg>
+<lg type="strophe">
+  <l n="750">When you come upon a burning sacrifice, do not make a mock of mysteries, for <name type="deity">Heaven</name> is angry at this also.</l>
+</lg>
+<lg type="strophe">
+  <l n="751">Never make water in the mouths of rivers which flow to the sea, nor yet in springs;</l>
+  <l n="752">but be careful to avoid this.</l>
+</lg>
+<lg type="strophe">
+  <l n="753">And do not ease yourself in them: it is not well to do this.</l>
+</lg>
+<lg type="strophe">
+  <l n="754">So do: and avoid the talk of men.</l>
+  <l n="755">For Talk is mischievous, light, and easily raised, but hard to bear and difficult to be rid of.</l>
+</lg>
+<lg type="strophe">
+  <l n="756">Talk never wholly dies away when many people voice her:</l>
+  <l n="757">even Talk is in some ways divine.</l>
+</lg>
+<div type="poem">
+   <head type="main">Works and Days</head>
+   <lg type="strophe">
+      <l n="765">Mark the days which come from Zeus, duly telling your slaves of them,</l>
+      <l n="766">and that the thirtieth day of the month is best for one to look over the work</l>
+      <l n="767">and to deal out supplies.</l>
+   </lg>
+   <lg type="strophe">
+      <l n="768">For these are days which come from Zeus the all-wise, when men discern aright.</l>
+   </lg>
+   <lg type="strophe">
+      <l n="770">To begin with, the first, the fourth, and the seventh—on which <persName>Leto</persName> bare <name type="deity">Apollo</name> with the blade of gold—each is a holy day.</l>
+      <l n="771">The eighth and the ninth, two days at least of the waxing month,</l>
+      <l n="772">are specially good for the works of man.</l>
+      <l n="773">Also the eleventh and twelfth are both excellent, alike for shearing <name type="animal" xml:lang="en">sheep</name></l>
+      <l n="774">and for reaping the kindly fruits; but the twelfth is much better than the eleventh,</l>
+      <l n="775">for on it the airy-swinging <name type="animal" xml:lang="en">spider</name> spins its web in full day,</l>
+      <l n="776">and then the <persName>Wise One</persName>, gathers her pile.</l>
+      <l n="777">On that day woman should set up her loom and get forward with her work.</l>
+   </lg>
+   <lg type="strophe">
+      <l n="780">Avoid the thirteenth of the waxing month for beginning to sow:</l>
+      <l n="781">yet it is the best day for setting <name type="plant" xml:lang="en">plants</name>.</l>
+   </lg>
+   <lg type="strophe">
+      <l n="782">The sixth of the mid-month is very unfavourable for <name type="plant" xml:lang="en">plants</name>,</l>
+      <l n="783">but is good for the birth of males, though unfavourable for a girl either to be born at all or to be married.</l>
+      <l n="784">Nor is the first sixth a fit day for a girl to be born,</l>
+      <l n="785">but a kindly for gelding <name type="animal" xml:lang="en">kids</name> and <name type="animal" xml:lang="en">sheep</name></l>
+      <l n="786">and for fencing in a sheep-cote.</l>
+      <l n="787">It is favourable for the birth of a boy,</l>
+      <l n="788">but such will be fond of sharp speech, lies, and cunning words,</l>
+      <l n="789">and stealthy converse.</l>
+   </lg>
+</div>
+<pb n="790"/>
+<lg type="strophe">
+  <l n="790">On the eighth of the month geld <name type="animal" xml:lang="en">the boar</name> and loud-bellowing <name type="animal" xml:lang="en">bull</name>,</l>
+  <l n="791">but hard-working <name type="animal" xml:lang="en">mules</name> on the twelfth.</l>
+</lg>
+<lg type="strophe">
+  <l n="792">On the great twentieth, in full day, a wise man should be born.</l>
+  <l n="793">Such an one is very sound-witted.</l>
+  <l n="794">The tenth is favourable for a male to be born;</l>
+  <l n="795">but, for a girl, the fourth day of the mid-month.</l>
+  <l n="796">On that day tame <name type="animal" xml:lang="en">sheep</name> and shambling, horned <name type="animal" xml:lang="en">oxen</name>,</l>
+  <l n="797">and the sharp-fanged <name type="animal" xml:lang="en">dog</name> and hardy <name type="animal" xml:lang="en">mules</name> to the touch of the hand.</l>
+  <l n="798">But take care to avoid troubles which eat out the heart on the fourth of the beginning and ending of the month;</l>
+  <l n="799">it is a day very fraught with fate.</l>
+</lg>
+<lg type="strophe">
+  <l n="800">On the fourth of the month bring home your bride,</l>
+  <l n="801">but choose the omens which are best for this business.</l>
+</lg>
+<lg type="strophe">
+  <l n="802">Avoid fifth days: they are unkindly and terrible.</l>
+  <l n="803">On a fifth day, they say, the <name type="deity">Erinyes</name> assisted at the birth of <name type="deity">Horcus</name> (<quote>Oath</quote>) whom <name type="deity">Eris</name> (<quote>Strife</quote>) bare to trouble the forsworn.</l>
+</lg>
+<lg type="strophe">
+  <l n="805">Look about you very carefully and throw out <name type="plant" xml:lang="en">Demeter</name>’s holy grain upon the well-rolled</l>
+  <l n="806">1343 threshing floor on the seventh of the mid-month.</l>
+  <l n="807">Let the woodman cut beams for house building and plenty of ships’ timbers,</l>
+  <l n="808">such as are suitable for ships.</l>
+  <l n="809">On the fourth day begin to build narrow ships.</l>
+</lg>
+<lg type="strophe">
+  <l n="810">The ninth of the mid-month improves towards evening;</l>
+  <l n="811">but the first ninth of all is quite harmless for men.</l>
+  <l n="812">It is a good day on which to beget or to be born both for a male and a female:</l>
+  <l n="813">it is never an wholly evil day.</l>
+</lg>
+<div type="poem">
+  <head>Ἔργα καὶ ἡμέραι</head>
+  <lg type="strophe">
+    <l n="814">Again, few know that the twenty-seventh of the month is best for opening a wine-jar,</l>
+    <l n="815">and putting yokes on the necks of <name type="animal" xml:lang="en">oxen</name> and <name type="animal" xml:lang="en">mules</name> and swift-footed <name type="animal" xml:lang="en">horses</name>,</l>
+    <l n="816">and for hauling a swift ship of many thwarts down to the sparkling sea;</l>
+    <l n="817">few call it by its right name.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="819">On the fourth day open a jar.</l>
+    <l n="820">The fourth of the mid-month is a day holy above all.</l>
+    <l n="821">And again, few men know that the fourth day after the twentieth is best while it is morning:</l>
+    <l n="821a">towards evening it is less good.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="822">These days are a great blessing to men on earth;</l>
+    <l n="823">but the rest are changeable, luckless, and bring nothing.</l>
+    <l n="824">Everyone praises a different day but few know their nature.</l>
+    <l n="825">Sometimes a day is a stepmother, sometimes a mother.</l>
+    <l n="826">That man is happy and lucky in them who knows all these things</l>
+    <l n="827">and does his work without offending the <name type="deity">deathless gods</name>,</l>
+    <l n="828">who discerns the omens of <name type="animal" xml:lang="en">birds</name> and avoids transgressions.</l>
+  </lg>
+  <p><quote><persName>Proclus</persName> on <rs type="work">Works and Days</rs>, 828: Some make the Divination by <name type="animal" xml:lang="en">Birds</name>, which <persName>Apollonius of Rhodes</persName> rejects as spurious, follow this verse (<rs type="work">Works and Days</rs>, 828).</quote></p>
+  <p><quote><persName>Athenaeus</persName> xi, p. 491 d: And the author of “<rs type="work">The Astronomy</rs>”, which is attributed forsooth to <persName>Hesiod</persName>, always calls them (the <foreign xml:lang="grc">Πλειάδες</foreign>) <name type="animal" xml:lang="en">Peleiades</name>:</quote></p>
+  <lg type="strophe">
+    <l n="828a"><quote>‘but mortals call them <name type="animal" xml:lang="en">Peleiades</name>’;</quote></l>
+    <l n="828b"><quote>and again, ‘the stormy <name type="animal" xml:lang="en">Peleiades</name> go down’;</quote></l>
+    <l n="828c"><quote>and again, ‘then the <name type="animal" xml:lang="en">Peleiades</name> hide away....’</quote></l>
+  </lg>
+</div>
+<div type="poem">
+  <head type="title" xml:lang="en">Works and Days</head>
+  <lg type="strophe">
+    <l n="1">Scholiast on <persName>Pindar</persName>, <foreign xml:lang="la">Nem.</foreign> ii. 16: The <name type="animal" xml:lang="en">Pleiades</name>.... whose stars are these:—</l>
+    <l n="2"><quote>‘Lovely <foreign xml:lang="grc">Τηϋγέτη</foreign>, and dark-faced <foreign xml:lang="grc">Ἠλέκτρα</foreign>, and <foreign xml:lang="grc">Ἀλκυόνη</foreign>, and bright <foreign xml:lang="grc">Ἀστερόπη</foreign>, and <foreign xml:lang="grc">Κελαινώ</foreign>, and <foreign xml:lang="grc">Μαῖα</foreign>, and <foreign xml:lang="grc">Μερόπη</foreign>, whom glorious <name type="deity">Atlas</name> begot....’</quote></l>
+    <l n="3">((<foreign xml:lang="la">LACUNA</foreign>))</l>
+    <l n="4">‘In the mountains of <placeName>Cyllene</placeName> she (<foreign xml:lang="grc">Μαῖα</foreign>) bare <persName>Hermes</persName>, the herald of the gods.’</l>
+  </lg>
+  <lg type="strophe">
+    <head type="sub">Fragment #2—Scholiast on <persName>Aratus</persName> 254:</head>
+    <l n="1">But <name type="deity">Zeus</name> made them (the sisters of <persName>Hyas</persName>) into the stars which are called <name type="animal" xml:lang="en">Hyades</name>.</l>
+    <l n="2"><persName>Hesiod</persName> in his Book about Stars tells us their names as follows:</l>
+    <l n="3">‘<name type="animal" xml:lang="en">Nymphs</name> like the <name type="deity">Graces</name> 1401 , <foreign xml:lang="grc">Φαεσύλη</foreign> and <foreign xml:lang="grc">Κορωνίς</foreign> and rich-crowned <foreign xml:lang="grc">Κλεηΐς</foreign> and lovely <foreign xml:lang="grc">Φακώ</foreign> and long-robed <foreign xml:lang="grc">Εὐδώρα</foreign>, whom the tribes of men upon the earth call <name type="animal" xml:lang="en">Hyades</name>.’</l>
+  </lg>
+</div>
+<div type="prose">
+  <p>Fragment #3—Pseudo-Eratosthenes <quote>Catast. frag. 1: 1402 The Great Bear.</quote>—<persName>Hesiod</persName> says she (<name type="deity">Callisto</name>) was the daughter of <persName>Lycaon</persName> and lived in <placeName>Arcadia</placeName>. She chose to occupy herself with <name type="animal" xml:lang="en">wild-beasts</name> in the mountains together with <name type="deity">Artemis</name>, and, when she was seduced by <name type="deity">Zeus</name>, continued some time undetected by the goddess, but afterwards, when she was already with child, was seen by her bathing and so discovered. Upon this, the goddess was enraged and changed her into a <name type="animal" xml:lang="en">beast</name>. Thus she became a <name type="animal" xml:lang="en">bear</name> and gave birth to a son called <persName>Arcas</persName>. But while she was in the mountains, she was hunted by some <name type="animal" xml:lang="en">goat-herds</name> and given up with her babe to <persName>Lycaon</persName>. Some while after, she thought fit to go into the forbidden precinct of <name type="deity">Zeus</name>, not knowing the law, and being pursued by her own son and the <placeName>Arcadians</placeName>, was about to be killed because of the said law; but <name type="deity">Zeus</name> delivered her because of her connection with him and put her among the stars, giving her the name Bear because of the misfortune which had befallen her.</p>
+  <p><quote>Comm. Supplem. on Aratus, p. 547 M. 8:</quote> Of <name type="animal" xml:lang="en">Bootes</name>, also called the <name type="animal" xml:lang="en">Bear-warden</name>. The story goes that he is <persName>Arcas</persName> the son of <name type="deity">Callisto</name> and <name type="deity">Zeus</name>, and he lived in the country about <placeName>Lycaeum</placeName>. After <name type="deity">Zeus</name> had seduced <name type="deity">Callisto</name>, <persName>Lycaon</persName>, pretending not to know of the matter, entertained <name type="deity">Zeus</name>, as <persName>Hesiod</persName> says, and set before him on the table the babe which he had cut up.</p>
+</div>
+<div>
+  <p>Fragment #4—Pseudo-Eratosthenes, Catast. fr. xxxii: Orion.]—Hesiod says that he was the son of <persName>Euryale</persName>, the daughter of <persName>Minos</persName>, and of <name type="deity">Poseidon</name>, and that there was given him as a gift the power of walking upon the waves as though upon land. When he was come to <placeName>Chios</placeName>, he outraged <persName>Merope</persName>, the daughter of <persName>Oenopion</persName>, being drunken; but <persName>Oenopion</persName> when he learned of it was greatly vexed at the outrage and blinded him and cast him out of the country. Then he came to <placeName>Lemnos</placeName> as a beggar and there met <name type="deity">Hephaestus</name> who took pity on him and gave him <name type="animal">Cedalion</name> his own servant to guide him. So <persName>Orion</persName> took <name type="animal">Cedalion</name> upon his shoulders and used to carry him about while he pointed out the roads. Then he came to the east and appears to have met <name type="deity">Helius</name> (the Sun) and to have been healed, and so returned back again to <persName>Oenopion</persName> to punish him; but <persName>Oenopion</persName> was hidden away by his people underground. Being disappointed, then, in his search for the king, <persName>Orion</persName> went away to <placeName>Crete</placeName> and spent his time hunting in company with <name type="deity">Artemis</name> and <name type="deity">Leto</name>. It seems that he threatened to kill every <name type="animal">beast</name> there was on earth; whereupon, in her anger, <name type="deity">Earth</name> sent up against him a <name type="animal">scorpion</name> of very great size by which he was stung and so perished. After this <name type="deity">Zeus</name>, at one prayer of <name type="deity">Artemis</name> and <name type="deity">Leto</name>, put him among the stars, because of his manliness, and the <name type="animal">scorpion</name> also as a memorial of him and of what had occurred.</p>
+</div>
+<div type="fragment">
+  <p>Fragment #5—Diodorus iv. 85: Some say that great earthquakes occurred, which broke through the neck of land and formed the straits <pb n="1403"/>, the sea parting the mainland from the island. But <persName>Hesiod</persName>, the poet, says just the opposite: that the sea was open, but <name type="animal" xml:lang="en">Orion</name> piled up the promontory by <placeName>Peloris</placeName>, and founded the close of <name type="deity">Poseidon</name> which is especially esteemed by the people thereabouts. When he had finished this, he went away to <placeName>Euboea</placeName> and settled there, and because of his renown was taken into the number of the stars in heaven, and won undying remembrance.</p>
+  <p>Fragment #1—Scholiast on <persName>Pindar</persName>, <foreign xml:lang="la">Pyth.</foreign> vi. 19: ‘And now, pray, mark all these things well in a wise heart. First, whenever you come to your house, offer good sacrifices to the eternal gods.’</p>
+  <p>Fragment #2—<persName>Plutarch</persName> <foreign xml:lang="la">Mor.</foreign> 1034 E: ‘Decide no suit until you have heard both sides speak.’</p>
+  <p>Fragment #3—<persName>Plutarch</persName> <foreign xml:lang="la">de Orac. defectu</foreign> ii. 415 C: ‘A chattering <name type="animal" xml:lang="en">crow</name> lives out nine generations of aged men, but a <name type="animal" xml:lang="en">stag</name>’s life is four times a crow’s, and a <name type="animal" xml:lang="en">raven</name>’s life makes three stags old, while the <name type="animal" xml:lang="en">phoenix</name> outlives nine ravens, but we, the rich-haired <name type="deity">Nymphs</name>, daughters of <name type="deity">Zeus</name> the aegis-holder, outlive ten phoenixes.’</p>
+  <p>Fragment #4—<persName>Quintilian</persName>, i. 15: Some consider that children under the age of seven should not receive a literary education... That <persName>Hesiod</persName> was of this opinion very many writers affirm who were earlier than the critic <persName>Aristophanes</persName>; for he was the first to reject the <foreign xml:lang="la">Precepts</foreign>, in which book this maxim occurs, as a work of that poet.</p>
+</div>
+<div>
+   <p>Fragment #1—Comm. on Aristotle, <foreign xml:lang="la">Nicomachean Ethics</foreign>. v. 8: The verse, however (the slaying of Rhadamanthys), is in Hesiod in the <foreign xml:lang="grc">Ἔργα καὶ ἡμέραι</foreign> and is as follows: ‘If a man sow evil, he shall reap evil increase; if men do to him as he has done, it will be true justice.’</p>
+   <p>Fragment #2—Proclus on Hesiod, <foreign xml:lang="en">Works and Days</foreign>, 126: Some believe that the <name type="animal" xml:lang="en">Silver Race</name> (is to be attributed to) the <name type="plant" xml:lang="en">earth</name>, declaring that in the <foreign xml:lang="grc">Ἔργα καὶ ἡμέραι</foreign> Hesiod makes <name type="animal" xml:lang="en">silver</name> to be of the family of <name type="plant" xml:lang="en">Earth</name>.</p>
+   <p>Fragment #1—Pliny, <foreign xml:lang="la">Natural History</foreign> vii. 56, 197: Hesiod says that those who are called the <name type="animal" xml:lang="en">Idaean Dactyls</name> taught the smelting and tempering of <name type="animal" xml:lang="en">iron</name> in <placeName>Crete</placeName>.</p>
+   <p>Fragment #2—Clement, <foreign xml:lang="la">Stromateis</foreign> i. 16. 75: <persName>Celmis</persName>, again, and <persName>Damnameneus</persName>, the first of the <name type="animal" xml:lang="en">Idaean Dactyls</name>, discovered <name type="animal" xml:lang="en">iron</name> in <placeName>Cyprus</placeName>; but <name type="animal" xml:lang="en">bronze</name> smelting was discovered by <persName>Delas</persName>, another <name type="animal" xml:lang="en">Idaean</name>, though Hesiod calls him <persName>Scythes</persName> 1501 .</p>
+</div>
+    </body>
+  </text>
+</TEI>
