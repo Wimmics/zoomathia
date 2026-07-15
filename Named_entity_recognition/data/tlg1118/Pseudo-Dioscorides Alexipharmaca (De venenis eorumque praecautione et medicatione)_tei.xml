@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Alexipharmaca</title>
+        <author>
+          <persName>PS-DIOSCORIDE</persName>
+          
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-15">2026-07-15</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-15">2026-07-15</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia"></idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">grec</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>inconnu</term>
+          <term>grec</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <div type="chapter" n="1">
+    <p>De venenis eorumque praecautione et medicatione (= Alexipharmaca)</p>
+    <p><persName>Pseudo-Dioscorides</persName> <persName>Medicus</persName></p>
+  </div>
+</div>
+<div type="book" n="2">
+  <div type="chapter" n="26">
+    <p>
+      <foreign xml:lang="grc">t</foreign>.1
+    </p>
+    <p>
+      [<persName>ΠΕΔΑΝΙΟΥ ΔΙΟΣΚΟΡΙΔΟΥ</persName>]
+    </p>
+    <p>
+      <foreign xml:lang="grc">ΠΕΡΙ ΔΗΛΗΤΗΡΙΩΝ ΦΑΡΜΑΚΩΝ ΚΑΙ</foreign>
+      <foreign xml:lang="grc">ΤΗΣ ΑΥΤΩΝ ΠΡΟΦΥΛΑΚΗΣ ΚΑΙ</foreign>
+      <foreign xml:lang="grc">ΘΕΡΑΠΕΙΑΣ</foreign>.
+    </p>
+    <p>
+      <foreign xml:lang="grc">Pr</foreign>.<foreign xml:lang="grc">t</foreign>
+    </p>
+    <p>
+      <foreign xml:lang="grc">ΤΟ ΠΡΟΟΙΜΙΟΝ</foreign>.
+    </p>
+    <p>
+      <foreign xml:lang="grc">Pr</foreign>.1
+    </p>
+    <p>
+      [<foreign xml:lang="grc">’Αποδόντες ἐν τοῖς προγραϕεῖσι βιβλίοις, ϕίλτατε ῎Αρειε,</foreign>
+      <foreign xml:lang="grc">τὸν περὶ ἀρωμάτων καὶ ἐλαίων καὶ μύρων καὶ δένδρων καὶ</foreign>
+      <foreign xml:lang="grc">τῶν ἐξ αὐτῶν καρπῶν καὶ δακρύων, ἔτι τε ζώων καὶ μέλιτος καὶ γάλακτος καὶ στέατος καὶ τῶν λεγομένων σιτηρῶν</foreign>
+      <foreign xml:lang="grc">καὶ λαχάνων, ἔτι τε τὸν σύμπαντα περὶ ῥιζῶν καὶ βοτανῶν</foreign>
+      <foreign xml:lang="grc">καὶ χυλισμάτων καὶ οἴνων καὶ μεταλλικῶν λόγον· ἐν τούτῳ,</foreign>
+      <foreign xml:lang="grc">τελευταίῳ ὑπάρχοντι τῆς ὅλης πραγματείας, καταλεξόμεθα περὶ</foreign>
+      <foreign xml:lang="grc">τῆς τῶν ὠϕελεῖν ἡμᾶς ἢ βλάπτειν δυναμένων ϕαρμάκων ἐνεργείας. Παραιτησάμενοι οὖν τὴν πολυλογίαν ἐπάνιμεν ἐπὶ τὸ</foreign>
+      <foreign xml:lang="grc">προκείμενον.</foreign>]
+    </p>
+    <p>
+      <foreign xml:lang="grc">Pr</foreign>.10
+    </p>
+    <p>
+      <foreign xml:lang="grc">Μεριζομένου δὲ τοῦ τοιούτου διχῆ· εἴς τε προϕυλακὴν</foreign>
+      <foreign xml:lang="grc">τοῦ μηδὲ τὴν ἀρχὴν λαθεῖν, ἢ εἰ καί ποτε λάθοι διδόμενα, ἀνενέργητα γενέσθαι, καὶ εἰς τὸ βοηθηματικὸν τῶν πεπωκότων, πρῶτον δίειμι περὶ τοῦ προϕυλακτικοῦ τρόπου,</foreign>
+      <foreign xml:lang="grc">δυςχεροῦς ὄντος, ὡς οἱ ἀρχαῖοι ὑπέλαβον, διὰ τὸ τοὺς λάθρα διδόντας οὕτω μηχανᾶσθαι, ὡς καὶ τοὺς ἐμπειροτάτους ἐξαπατᾷν· τὰς μὲν γὰρ πικρίας ἐξαιροῦνται τῶν ϕθαρτικῶν ϕαρμάκων ταῖς μιγνυμέναις γλυκύτησι· τὰς δὲ δυςωδίας ταῖς τῶν ἀρωμάτων καταμίξεσιν ἢ ταῖς τῶν ὑλῶν ἐπ'</foreign>
+      <foreign xml:lang="grc">ὠϕελείᾳ δοκουσῶν προςϕέρεσθαι, μάλιστα δ' ἐν ταῖς ἀσθενείαις, ὡς ἀψινθίῳ, ἢ τραγοριγάνῳ, ἢ ὑσσώπῳ, ἢ θύμβρᾳ,</foreign>
+      <foreign xml:lang="grc">θύμῳ τε καὶ ὀριγάνῳ, ἢ ἀβροτόνῳ, ἢ ἴριδι, ἢ καστορίῳ,</foreign>
+      <foreign xml:lang="grc">καὶ εἴ τι δοκεῖ κατάλληλον τοῖς κακουργουμένοις ϕαρμάκοις ἔχειν ποιότητα· ἐπὶ δὲ τῶν πινομένων ἐν οἴνοις</foreign>
+    </p>
+  </div>
+</div>
+<div type="book" n="3">
+  <div type="section" n="26">
+    <p>σκληροῖς, ἢ ἐν <foreign xml:lang="grc">ζωμοῖς</foreign>, ἢ ἐν <foreign xml:lang="grc">γλυκεῖ</foreign>, ἢ ἐν <foreign xml:lang="grc">μελικράτῳ</foreign>, ἢ ἐν
+      <foreign xml:lang="grc">γλεύκει</foreign>, ἢ ἐν <foreign xml:lang="grc">χυλοῖς</foreign>, ἢ ἐν <name type="plant" xml:lang="grc">ϕακῷ</name>, ἢ ἐν <foreign xml:lang="grc">ἀλϕίτοις</foreign>, ἢ ἐν ἄλλοις τισὶ τῶν
+      προςϕερομένων συσσιτοποιοῦντες· ὅθεν τὸν ὑποπτεύοντα δεῖ παραιτεῖσθαι τὰ κατηρτυμένα τῶν ἐδεσμάτων καὶ πᾶσαν
+      ἐπιτεταμένην ποιότητα γεύσεων, ὅσαι εἰσὶ διὰ τῶν <foreign xml:lang="grc">γλυκέων</foreign> ἢ <foreign xml:lang="grc">ἁλυκῶν</foreign> ἢ <foreign xml:lang="grc">ὀξέων</foreign>
+      διαϕυλάττεσθαι·</p>
+    <p>καὶ τοὺς δεδιψηκότας ἢ πεινῶντας δι' ἐπιτάσεως μὴ ἀθρόως πίνειν ἢ ἐσθίειν, προςέχοντας τῇ ποιότητι τούτων,
+      μάλιστα δὲ <foreign xml:lang="grc">ψυχρὸν ὕδωρ</foreign> προλαμβάνειν πίνοντας· ἀποπληρωθείσης γὰρ τῆς ὀρέξεως,
+      εὐκατάλεπτοι γίνονται τὸ λοιπὸν αἱ ποιότητες· καὶ ἐπὶ μὲν τῶν ἀσθενούντων, καλῶς παραιτούμεθα τὰς τῶν δοκούντων
+      ἐπ' ὠϕελείᾳ δίδοσθαι <name type="plant" xml:lang="grc">ϕαρμάκων</name> πόσεις, ἃς εἰςϕέρουσιν οἱ κακουργοῦντες τὰ
+      <name type="animal" xml:lang="grc">δηλητήρια</name>· ὥςτε διὰ τοῦτο δυςεπιχειρήτους γίνεσθαι τοὺς νοσοῦντας· καὶ ἡ μὲν
+      πρὸς τὸ μὴ εὐχερῶς ἁλίσκεσθαι πλανωμένους ἔϕοδος αὕτη.</p>
+    <p>Ἐτέρα δέ ἐστιν ἀνυσιμωτέρα· δεῖ τοὺς ὑποπτεύοντάς τι τοιοῦτον προλαμβάνειν τι, καὶ ἀδύνατα κατασκευάζειν τὰ
+      <name type="plant" xml:lang="grc">ϕάρμακα</name>· ὥςτε τὰς <name type="plant" xml:lang="grc">ἰσχάδας</name> μασσωμένους μετὰ <name type="plant" xml:lang="grc">βασιλικῶν</name>
+      <name type="plant" xml:lang="grc">καρύων</name>, καὶ τὰ καλούμενα <name type="plant" xml:lang="grc">κεδρόμηλα</name>, <name type="plant" xml:lang="grc">βουνιάδος</name> τε
+      <name type="plant" xml:lang="grc">σπέρματος</name> ὁλκὴν μετ' <foreign xml:lang="grc">οἴνου</foreign> ἢ <foreign xml:lang="grc">καλαμίνθης</foreign> τῶν <foreign xml:lang="grc">ϕύλλων</foreign> ὁμοίως,
+      ἢ <foreign xml:lang="grc">μίλτου</foreign> τῆς καλουμένης <foreign xml:lang="grc">λημνίας</foreign> <foreign xml:lang="grc">σφραγίδος</foreign> τὸ αὐτὸ πλῆθος σὺν <foreign xml:lang="grc">οἴνῳ</foreign>·
+      ἢ <foreign xml:lang="grc">πηγάνου</foreign> <foreign xml:lang="grc">ϕύλλα</foreign> καὶ <name type="plant" xml:lang="grc">καρύων</name> <name type="plant" xml:lang="grc">βασιλικῶν</name> τὸ ἐντός· ἢ
+      <foreign xml:lang="grc">ἁλῶν</foreign> <foreign xml:lang="grc">χόνδρον</foreign> καὶ <name type="plant" xml:lang="grc">ἰσχάδας</name> δύο νήστεις προςϕερέσθωσαν, καὶ ὑπ'
+      οὐδενὸς ὁτιοῦν βλαβήσονται <name type="plant" xml:lang="grc">ϕαρμάκου</name>.</p>
+    <p>Καὶ ἀντίδοτα δὲ προςλαμβανόμενα μετ' <foreign xml:lang="grc">οἴνου</foreign> τὸ αὐτὸ ποιοῦσιν· ὧν ἐστι</p>
+  </div>
+</div>
+<div type="book" n="4">
+  <div type="section" n="26">
+    <p>
+      ἡ διὰ τοῦ <name type="animal" xml:lang="grc">σκίγκου</name>, καὶ ἡ διὰ τῶν αἱμάτων, καὶ ἡ καλουμένη μιθριδάτειος.
+    </p>
+    <p>
+      ’Αντιπάσχουσι δὲ πολλάκις καὶ ἰδιοσυγκρίσεις σωμάτων,
+      αἱ προδιαθέσεις διά τινας <name type="plant" xml:lang="grc">βρωμάτων</name> ἢ <name type="plant" xml:lang="grc">πομάτων</name> ποιότητας, ἢ πλῆθος <name type="plant" xml:lang="grc">οἴνου</name>· ἐκλύουσι γὰρ τὰς ἐνεργείας τῶν
+      ἐπειςαγομένων <foreign xml:lang="grc">ϕαρμάκων</foreign>, καὶ τὴν ἀνάδοσιν αὐτῶν κωλύουσι, προπεπληρωμένων τῶν πόρων ὑπὸ προληϕθείσης
+      <name type="plant" xml:lang="grc">τροϕῆς</name>.
+    </p>
+    <p>
+      ’Επειδὴ δὲ καὶ περιστάσεις τινὲς ἐν ἀποδημίᾳ δίχα ἐπιβουλῆς πολλάκις ἐπιϕέρουσιν ὁμοίους κινδύνους, ἀναγκαῖον
+      <pb n="60"/>
+      ὑπολαμβάνω καὶ περὶ τούτου διαλαβεῖν· δεήσει γὰρ πρῶτον
+      μὲν ἐν ὑπαίθροις <placeName>τόποις</placeName>, ὡς δυνατὸν, ἕψειν, καὶ ἑτοιμάζειν
+      τὰ πρὸς βρῶσιν καὶ πόσιν· δεύτερον δ' ἐν ὑποστέγῳ ἐπιμελῶς καταμανθάνειν τὰς ὀροϕάς· πολλάκις γὰρ ἐκ τῶν ὑπερκειμένων πίπτει <name type="animal" xml:lang="grc">ζωΰϕια</name> <foreign xml:lang="grc">ϕθοροποιὰ</foreign>, ὥςπερ <name type="animal" xml:lang="grc">ϕαλάγγια</name> καὶ ἄλλα τινὰ <name type="animal" xml:lang="grc">ἑρπετὰ</name>, καὶ ὁ καλούμενος <name type="animal" xml:lang="grc">ἀσκαλαβώτης</name>.
+    </p>
+    <p>
+      Καὶ τοῖς ἐπιχέουσι τὸν <name type="plant" xml:lang="grc">οἶνον</name>, <placeName>ἀγγείοις</placeName> ἐναργῶς καὶ ἐπιμελῶς προςέχειν δεῖ· ἕλκεται γὰρ ὑπὸ τῆς ὀσμῆς τοῦ <name type="plant" xml:lang="grc">οἴνου</name> τὰ <name type="animal" xml:lang="grc">ἑρπετὰ</name>, ἅτινα πολλάκις πιόντα μὲν τὸν ἰὸν ἀπήμεσαν, ἐμπεσόντα δὲ ἀπέθανον, καὶ ἀπωλείας ἐγένοντο αἴτια τοῖς προσενεγκαμένοις.
+    </p>
+    <p>
+      <pb n="70"/>
+      Πρὸς μὲν τὸ ἀνεπιβούλευτον εἶναι καὶ προϕυλάσσεσθαι ταῦτα εἰρήσθω.
+    </p>
+    <p>
+      Εἰ δέ τινες ἑκουσίᾳ γνώμῃ προσενέγκοιντο, ἢ καὶ ἐξ
+      ἐπιβουλῆς τινων λάβοιεν, δεήσει μηδὲν ἀναβαλλομένους βοηθεῖν· εἰς γὰρ τὸ περιμένειν τὰ παρακολουθοῦντα σημεῖα ἑκάστου τῶν <foreign xml:lang="grc">ϕαρμάκων</foreign>, ἀνίατόν ἐστι, δυςβοηθήτων αὐτῶν
+      διὰ τὸν χρόνον γινομένων. ’Εὰν μὲν οὖν οἱ προσενεγκάμενοι νοήσαντες ὁμολογήσωσι τὸ ποθὲν <foreign xml:lang="grc">ϕάρμακον</foreign>, ἤ τινες
+    </p>
+  </div>
+</div>
+<div type="book" n="5">
+  <div type="section" n="26">
+    <p>τῶν συμπαρόντων, παραχρῆμα ἐλθόντες ἐπὶ τὰ κατάλληλα βοηθήματα, ῥᾳδίως εἰς τὸ κατὰ ϕύσιν καὶ οἰκεῖον αὔξομεν αὐτοὺς κατάστημα· οὐ συγκατατιθέμενοι τοῖς λέγουσιν ἐπ' αὐτῶν κατὰ πᾶν ἀθεράπευτα γίνεσθαι.</p>
+    <p>Πῶς γὰρ τὰ μὲν ἐπὶ τῶν ἐν τῷ σώματι γινομένων αἰτίων πάθη θεραπείαν ἐπιδέχεται, τὰ δὲ ὑπὸ τῶν ἔξωθεν συμπίπτοντα <name type="animal" xml:lang="grc">ϕαρμάκων</name> ἀθεράπευτα τυγχάνει; ὁμοίως γὰρ πάντα τὰ περὶ τὰ σώματα γινόμενα νοσήματα θεράπευτά τε καὶ ἀθεράπευτα, κατὰ τὰ μεγέθη τῶν προςπιπτόντων αἰτίων καὶ τὰς προδιαθέσεις καὶ ἐπιτηδειότητας τῶν σωμάτων· εἰ δέ τινες αὐτῶν καταληϕθέντες ἀϕωνίαις ἢ παρανοίαις ἢ ἄλλῳ, διὰ τὸ μὴ βούλεσθαι ἐξάγειν αὐτὸ, ἀσυμϕανὲς ἡμῖν ποιοῦσι τὸ <foreign xml:lang="grc">ϕάρμακον</foreign>, τότε δεῖ ταχέως ἔρχεσθαι ἐπὶ τὰ κοινῶς ἁρμόττοντα τοῖς οἱονδήποτε <foreign xml:lang="grc">ϕάρμακον</foreign> πεπωκόσιν·</p>
+    <p>οὐδὲν δὲ δύναται κοινότερον βοήθημα δίδοσθαι, τοῦ τὸ δοθὲν <foreign xml:lang="grc">ϕάρμακον</foreign>, πρὸ τοῦ ἐνισχύσαι, διὰ τοῦ ἔγγιστα τόπου κενοῦν εἰς τὸ ἐκτός· ὅθεν μηδὲν ἀναβαλλομένους προσϕέρειν δεῖ ἔλαιον θερμὸν, ἢ κατ' ἰδίαν, ἢ μεθ' ὕδατος ἐμεῖν ἀναγκάζοντας· εἰ δὲ μὴ παρείη ἔλαιον, τῶν τόπων μὴ ϕερόντων, βούτυρον ἀντὶ ἐλαίου μεθ' ὕδατος θερμοῦ ἢ <name type="plant" xml:lang="grc">μαλάχης</name>, ἢ <name type="plant" xml:lang="grc">λινοσπέρμου</name>, ἢ <name type="animal" xml:lang="grc">τράγου</name>, ἢ <name type="plant" xml:lang="grc">τήλεως</name>, ἢ <name type="plant" xml:lang="grc">κνίδης</name> <name type="plant" xml:lang="grc">σπέρματος</name>, ἢ <name type="plant" xml:lang="grc">χόνδρου</name> <name type="plant" xml:lang="grc">ἀϕεψήματος</name>· οὐ μόνον γὰρ κενώσει ταῦτα διὰ τῶν ἐμέτων, χαλασμὸν εὐχερῶς</p>
+  </div>
+</div>
+<div type="section" n="6">
+  <p>ναυτίαν ἐμποιοῦντα, ἀλλὰ καὶ ὑπάξει τὴν κοιλίαν, καὶ ἐναντιωθήσεται τῇ κακίᾳ τῶν <name type="plant" xml:lang="grc">ϕαρμάκων</name>, ἀμβλυντικὰ τῶν δριμυτήτων καθεστῶτα· ἔστι δὲ ἐναργῶς καταλαβέσθαι τοῦτο· εἰ γάρ τις ἑλκῶσαι προαιρούμενος δι' <name type="animal" xml:lang="grc">ἀσβέστου</name>, ἢ <name type="plant" xml:lang="grc">τρυγὸς</name>, ἢ <name type="animal" xml:lang="grc">κανθαρίδος</name>, ἤ τινος ἄλλου δριμέως, τὸ σῶμα ὑποχρίσει ἐλαίῳ, οὐχὶ ἑλκωθήσεται ὑπὸ τούτου· καὶ μὴν οὐδ' <pb n="110"/> εἴ τις στύψαι θελήσει ἰσχυρῶς ἢ ψύξαι, δύναται προλιπαίνων· ἔτι μὴν καὶ ἔμετος οὐ μόνον καθ' ὃ κενοῖ καὶ ἐκκρίνει τὸ βλάπτον ὠϕελεῖ, ἀλλ' ὅτι καὶ δείκνυσι τὸ ληϕθὲν ἐνίοτε, ἔκ τε ὀσμῆς, ἢ θρόμβων, ἢ χρώματός τινος· ἐκ</p>
+  <p>μὲν γὰρ τῆς ὀσμῆς καὶ πικρίας <name type="plant" xml:lang="grc">μηκώνειον</name>· ἐκ δὲ χρόας <name type="plant" xml:lang="grc">ψιμύθιον</name> ἢ <name type="plant" xml:lang="grc">γύψον</name>· ἀπὸ δὲ θρόμβου <name type="animal" xml:lang="grc">γάλα</name> ἢ τὸ <name type="animal" xml:lang="grc">νεοσϕαγὲς</name> <name type="animal" xml:lang="grc">αἷμα</name>· ἀπὸ δὲ βρώμου καὶ ποιότητος τοῦ ἐμουμένου καὶ ὀσμῆς, <name type="animal" xml:lang="grc">λαγωὸν</name> θαλάττιον καὶ <name type="animal" xml:lang="grc">ϕρῦνον</name>· ὡς διὰ τοῦτο μᾶλλον ἢ δι' ἕτερον ἐνίοις δύνασθαι βοηθεῖν, ἐρχομένους ἐπὶ τὰ ἑκάστῳ ἁρμόζοντα βοηθήματα· παραμίγνυται δὲ τῷ ἐλαίῳ <name type="plant" xml:lang="grc">μαλάχης</name> ἀϕέψημα, ἢ <name type="plant" xml:lang="grc">γλαύκιον</name>, ἢ στέαρ <foreign xml:lang="grc">χήνειον</foreign>, ἢ <foreign xml:lang="grc">ζωμὸς</foreign> ἐκ λιπαρῶν κρεῶν γεγονὼς, ἢ κονία ἡ διὰ τῶν ξύλων. Κομισάμενοι δὲ διὰ τῶν ἐμέτων ἐπιμελῶς, διὰ τὸ μηδὲν ὑπολείπεσθαι ἐν τῇ κοιλίᾳ, τὸ ἐμμεῖναν ἐν τοῖς ἐντέροις κλύσματι <pb n="120"/> δριμεῖ κομιούμεθα. Ποιεῖ δὲ καὶ τὸ <name type="plant" xml:lang="grc">νίτρον</name> λεῖον σὺν <foreign xml:lang="grc">ὑδρο-</foreign><pb n="121"/> μέλιτι παραλαμβανόμενον, καὶ οἶνοι πολλοὶ καὶ παλαιοὶ πινόμενοι, καὶ <foreign xml:lang="grc">ζωμοὶ</foreign> <name type="animal" xml:lang="grc">ὀρνίθειοι</name>, <name type="animal" xml:lang="grc">ἰχθύες</name> λιπαροί, καὶ κρέα παλαιὰ καὶ λιπαρά, καὶ τὰ διὰ στέατος ἢ βουτύρου <foreign xml:lang="grc">προςϕάτου</foreign>· ὑπάγοντα γὰρ τὴν κοιλίαν, ὥςπερ εἶπον, καὶ τὸν στόμαχον ἀναλύοντα, ἑτοιμότερον κατασκευάζει τὸν στόμαχον</p>
+</div>
+<div type="section" n="7/26">
+   <p>πρὸς τὸν ἔμετον· <name type="animal" xml:lang="grc">ἀμβλύνει</name> τε τὴν δριμύτητα αὐτῶν, καὶ
+      παρεμπλασσόμενα τοῖς πόροις, κωλύει τὴν ὀξύτητα τῆς τῶν
+      <foreign xml:lang="grc">ϕαρμάκων</foreign> δυνάμεως. Δίδονται δὲ καὶ ἁρμόζοντα <foreign xml:lang="grc">ϕάρμακα</foreign>
+      κοινῶς· ὧν ἐστιν ἡ <name type="plant" xml:lang="grc">λημνία</name> μίλτος, <name type="plant" xml:lang="grc">ἀγαρικὸν</name>, <name type="plant" xml:lang="grc">ἀβρότονον</name>, <foreign xml:lang="grc">ἐρύ-
+      σιμον</foreign>, <foreign xml:lang="grc">ἠρυγγίου</foreign> ῥίζα, <name type="plant" xml:lang="grc">σταϕυλίνου</name> σπέρμα καὶ <name type="plant" xml:lang="grc">καλαμίνθης</name>,
+      <name type="plant" xml:lang="grc">νάρδος</name> κελτικὴ, <name type="animal" xml:lang="grc">καστόριον</name>, <name type="plant" xml:lang="grc">νάρθηκος</name> χλωροῦ ἐντεριώνη, <foreign xml:lang="grc">νηρίου</foreign> τοῦ καλουμένου <name type="plant" xml:lang="grc">ῥοδοδένδρου</name> ἄνθος, <name type="plant" xml:lang="grc">πρασίου</name> χυλὸς,
+      <name type="plant" xml:lang="grc">σίλϕιον</name>, καὶ ὁ ὀπὸς αὐτοῦ, καὶ ἡ ῥίζα, ἣν καὶ <foreign xml:lang="grc">μαγύδαριν</foreign>
+      ἐκάλεσαν, <name type="plant" xml:lang="grc">σαγάπηνον</name>, <name type="plant" xml:lang="grc">ὀποπάναξ</name>, <name type="plant" xml:lang="grc">πευκεδάνου</name> ὀπὸς, <name type="plant" xml:lang="grc">ἀριστολοχία</name> μακρὰ, <name type="plant" xml:lang="grc">πηγάνου</name> ἀγρίου σπέρμα, <name type="plant" xml:lang="grc">κέστρου</name>, τῆς <name type="plant" xml:lang="grc">βετονικῆς</name> καλουμένης, τὰ
+      <name type="plant" xml:lang="grc">ϕύλλα</name>. Δίδοται δὲ ἕκαστον σὺν οἴνῳ <pb n="101"/> πλῆθος· ποιεῖ καὶ <name type="plant" xml:lang="grc">πολίου</name> ἀϕέψημα [καὶ <name type="plant" xml:lang="grc">σέσελι</name>]
+      καὶ <name type="plant" xml:lang="grc">πίσσα</name> ὑγρὰ ἐκλειχομένη· γενναιότατα δὲ βοηθοῦσι καὶ
+      <name type="animal" xml:lang="grc">ἀντίδοτοι</name>, ὧν τὰς σκευασίας ἐπὶ τέλει ἀναγράψομεν· κοινῶς
+      <pb n="140"/>
+      δὲ βοηθητέον τούτοις τὸν τρόπον τοῦτον.</p>
+   <p>Δυνατὸν δὲ καὶ ἐκ τῶν παρακολουθούντων συμπτωμάτων κοινὰ καὶ τὰ βοηθήματα συμπαραλαμβάνεσθαι. Σχεδὸν γὰρ αἱ τῶν πλείστων <foreign xml:lang="grc">ϕαρμάκων</foreign> δυνάμεις εἰς ὁμοιοτρόπους περιάγουσι τὸ σῶμα διαθέσεις· δι' ἣν αἰτίαν ἐπὶ τῶν
+      πλείστων τὰ κοινὰ βοηθήματα ἀνύει, ποικίλα μὲν γὰρ τὰ
+      δηλητήρια <foreign xml:lang="grc">ϕάρμακα</foreign>, κοιναὶ δὲ καὶ οὐ πολλαὶ αἱ ἐξ αὐτῶν
+      γινόμεναι διαθέσεις· ἀδύνατον γὰρ πάντα τὰ συμπτώματα
+      ἑνὶ παρακολουθῆσαι· εἰ γὰρ ἦν τοῦτο, παρεῖλκεν ἂν ἡ καθ' ἕκαστον
+      <foreign xml:lang="grc">ϕάρμακον</foreign> διὰ τῶν βοηθημάτων παράδοσις. Τό τε
+      <pb n="150"/>
+      γὰρ <name type="animal" xml:lang="grc">ἀλγεῖν</name> στόμαχόν τε καὶ κοιλίαν καὶ ἔντερα, ἧπαρ τε
+      καὶ <name type="animal" xml:lang="grc">νεϕροὺς</name> καὶ <name type="animal" xml:lang="grc">κύστιν</name>, ἔτι δὲ <name type="animal" xml:lang="grc">λύζειν</name> καὶ <name type="animal" xml:lang="grc">δάκνεσθαι</name> καὶ</p>
+</div>
+<div type="section" n="8">
+   <p>τρέμειν, <name type="animal" xml:lang="grc">ἀϕώνους</name> τε εἶναι καὶ περιψύχεσθαι, σπᾶσθαί τε καὶ
+      ἀσϕυκτεῖν καὶ δυςπνοεῖν καὶ καταϕέρεσθαι καὶ σκοτοῦσθαι
+      καὶ πνίγεσθαι καὶ διψᾷν καὶ αἱμορῥαγεῖν, πυρέσσειν τε καὶ
+      δυςουρεῖν καὶ στροϕοῦσθαι καὶ ἐμεῖν πυκνὰ ἢ ναυτιᾷν,
+      ἐρυθραίνεσθαι καὶ πελιδνοῦσθαι καὶ ὠχριᾷν, παραϕρονεῖν τε καὶ ῥέγχειν καὶ παρίεσθαι, καὶ ἄλλα πολλὰ ποιεῖν,
+      καὶ διάϕορα πάσχειν· ἑνὶ μόνῳ δύςκολον εὑρεῖν παρεπόμενον, ἕκαστον μερισθὲν εἰς καθολικὰς διαθέσεις ὀλίγων
+      <pb n="160"/>
+      ἀριθμὸν καὶ κοινῶν ὑποδεῖξαι συμπτωμάτων. Διὸ καὶ ἐϕ' ἑνὸς ἑκάστου τῶν προειρημένων οὐκ εὔκολον τὸ εἰλημμένον
+      ϕάρμακον γινώσκεσθαι· τὸ γὰρ δάκνεσθαι τὸ στόμα καὶ
+      γλῶτταν, ϕλεγμαίνειν στόμαχον καὶ κοιλίαν τε καὶ νεϕροὺς
+      καὶ κύστιν, δυςουρεῖν τε ἰσχυρῶς, ἐνίοτε δὲ καὶ αἷμα δι' οὔρων πορεύεσθαι, καὶ λακιδοῦσθαι, διαπεπρῆσθαί τε πολλὰ
+      μέρη τοῦ σώματος, οὐ μόνον ἐπὶ <name type="animal" xml:lang="grc">κανθαρίδων</name> εὑρίσκεται παρακολουθοῦντα, ἀλλὰ καὶ ἐπὶ <name type="animal" xml:lang="grc">πιτυοκάμπης</name> καὶ <name type="animal" xml:lang="grc">βουπρήστεως</name>
+      καὶ <name type="animal" xml:lang="grc">σαλαμάνδρας</name>· τό τε καταϕέρεσθαι, ἢ καροῦσθαι, ἢ
+      ῥέγχειν, πελιοῦσθαί τε καὶ νωθριᾷν καὶ καταψύχεσθαι καὶ
+      <pb n="170"/>
+      ναρκᾷν, ἀναισθητεῖν δὲ ἢ ὀδαξεῖσθαι τὸ ὅλον σῶμα, οὐ
+      μόνον τοῖς τὸ <name type="plant" xml:lang="grc">μηκώνειον</name> πεπωκόσι παρέπεται, ἀλλὰ καὶ τοῖς
+      <name type="plant" xml:lang="grc">μανδραγόραν</name> ἢ <name type="plant" xml:lang="grc">κώνειον</name> προςενεγκαμένοις· τό τε παραϕρονεῖν
+      οὐ μόνον <name type="plant" xml:lang="grc">ὑοσκύαμος</name> ἐπιϕέρει, ἀλλὰ καὶ τὰ τοξικὰ καλούμενα
+      τῶν ϕαρμάκων· καὶ <name type="plant" xml:lang="grc">ἀκόνιτον</name> δὲ, καὶ τὸ μέλι τὸ γεννώμενον
+      ἐν <placeName>‘Ηρακλείᾳ</placeName> τῇ ποντικῇ· καὶ τὸ πνίγεσθαι δὲ οὐ μόνον ἐπὶ</p>
+</div>
+<div type="section" n="9">
+  <p>μυκήτων <name type="animal" xml:lang="grc">ὁρᾶται</name>, ἀλλὰ καὶ ἐπὶ <name type="animal" xml:lang="grc">αἵματος</name> <placeName>ταυρείου</placeName> καὶ <name type="plant" xml:lang="grc">γάλακτος</name> καὶ <name type="plant" xml:lang="grc">ἀκονίτου</name> καὶ <name type="plant" xml:lang="grc">γύψου</name> καὶ <name type="plant" xml:lang="grc">ψιμυθίου</name>· καὶ καθόλου δύςκολον, ἐὰν θέλῃς εὑρεῖν σημεῖον δυνάμενόν τι τῶν πινομένων καὶ γενομένων <foreign xml:lang="grc">ϕαρμάκων</foreign> δηλῶσαι, καὶ μάλισθ' ὅτι</p>
+  <p><quote>Pr</quote>.180 κοινὰ καὶ τοῖς ἄλλοις ἐπιγινομένοις πάθεσι παρακολουθεῖ ταῦτα· πλὴν ἐπὶ μὲν τῶν ὀξέως ἀναιρούντων ἐστί που καὶ σημειώσασθαι τὸ βλαπτόμενον, ὡς παραδώσομεν. ’Επὶ δὲ τῶν χρονίας διαθέσεις παρασκευαζόντων, δύςκολον οὐδὲν πρὸς τὴν θεραπείαν τοῦ περὶ τὴν σημείωσιν δυςχεροῦς βλάπτοντος· ἐκϕυγόντα γὰρ τὴν ὀξύτητα τῆς ἐνεργείας τὰ <foreign xml:lang="grc">ϕάρμακα</foreign>, καὶ μεταληϕθέντα εἰς χρονίους, κοινῶς λαμβάνει τοῖς λοιποῖς πάθεσι τὰς κατασκευὰς καὶ τὰς βοηθείας, τῆς ἰδιότητος τῶν πινομένων <foreign xml:lang="grc">ϕαρμάκων</foreign> μηκέτ' ἐνούσης.</p>
+  <p>Διαθέσεως δὲ χρονίου κατεσκευασμένης, ὑπ' αὐτῶν ἡ διάθεσις πάντων εἰς ἕν τι γένος τῶν χρονίων ἐμπίπτει παθῶν, ἐϕ' ὧν εὐχερές ἐστι καὶ τὴν θεραπείαν ἀναλαμβάνειν. Καὶ τὰ μὲν κοινῶς βοηθοῦντα ταῦτ' ἐστιν. Οἷς ἀκολούθως ἀναγράψομεν καὶ τὰ ἰδίᾳ ἑκάστοις ἁρμόζοντα, προεκθέμενοι ὑϕ' ἓν ὅσα <foreign xml:lang="grc">ϕθαρτικὴν</foreign> ἢ <foreign xml:lang="grc">κακωτικὴν</foreign> ἔχει δύναμιν ἑκάστης τάξεως, καὶ ἵνα πεϕυλαγμένως εἴ τινα τῶν πρὸς ὑγείαν ἀναγεγραμμένων <foreign xml:lang="grc">ϕαρμάκων</foreign> ἔχοιέν τινα τούτων μεμιγμένα ἐχόντων, οἷς χρῶνται οἱ <persName>ϕιλιατροῦντες</persName>. Τὸ γὰρ ἀπερίσκεπτον μεγάλας ἐπιϕέρει βλάβας, καὶ πολλάκις διὰ τὴν συνεχῆ χρῆσιν αὐτῶν ἀπωλείας αἰτία γίνεται·</p>
+  <p><quote>Pr</quote>.200 ζῶα μὲν οὖν ἐστι <foreign xml:lang="grc">ϕθαρτικὰ</foreign> τάδε· <name type="animal" xml:lang="grc">κανθαρὶς</name>, <name type="animal" xml:lang="grc">βούπρηστις</name>, <name type="animal" xml:lang="grc">σαλαμάνδρα</name>, <name type="animal" xml:lang="grc">πιτυοκάμπη</name>, <name type="animal" xml:lang="grc">λαγωὸς</name></p>
+</div>
+<div type="book" n="10">
+  <div type="section" n="26">
+    <p>θαλάσσιος, <name type="animal" xml:lang="grc">ϕρῦνος</name>, <name type="animal" xml:lang="grc">βάτραχος</name> ἕλειος <foreign xml:lang="grc">ἄϕωνος</foreign>, <name type="animal" xml:lang="grc">βδέλλαι</name> καταποθεῖσαι· σπερμάτων δὲ <name type="animal" xml:lang="grc">ὑοσκύαμος</name>, <name type="plant" xml:lang="grc">κόριον</name>, <name type="plant" xml:lang="grc">κώνειον</name>, <name type="plant" xml:lang="grc">μέλανθιον</name>, <name type="plant" xml:lang="grc">ψύλλιον</name>· ὀπισμάτων δὲ <name type="plant" xml:lang="grc">μηκώνειον</name>, <name type="plant" xml:lang="grc">ὀποκάρπασον</name>,</p>
+    <p><name type="plant" xml:lang="grc">θαψίας</name> χυλὸς, <name type="plant" xml:lang="grc">ἐλατήριον</name>, <name type="plant" xml:lang="grc">μανδραγόρας</name>· <name type="plant" xml:lang="grc">ῥιζῶν</name> δὲ <name type="plant" xml:lang="grc">χαμαιλέων</name>,</p>
+    <p><name type="plant" xml:lang="grc">ἀκόνιτον</name>, <name type="plant" xml:lang="grc">θαψία</name>, <name type="plant" xml:lang="grc">ἐλλέβορος</name>, <name type="plant" xml:lang="grc">ἰξίας</name>, <name type="plant" xml:lang="grc">ἀγαρικὸν</name> τὸ μέλαν, <name type="plant" xml:lang="grc">ἐϕήμερον</name>, ὃ ἔνιοι <foreign xml:lang="grc">κολχικὸν</foreign> καλοῦσι, διὰ τὸ ἐν <placeName>Κολχίδι</placeName> γίνεσθαι·</p>
+    <p><name type="plant" xml:lang="grc">ἐρνωδῶν</name> δὲ καὶ <name type="plant" xml:lang="grc">ποῶν</name> <name type="plant" xml:lang="grc">σμίλαξ</name>, ἣν ἔνιοι <foreign xml:lang="grc">θύμαλον</foreign>, ‘<persName>Ρωμαῖοι</persName> δὲ <foreign xml:lang="grc">τάξον</foreign> καλοῦσι, <name type="plant" xml:lang="grc">στρύχνον</name> <foreign xml:lang="grc">μανικὸν</foreign>, ὃ καὶ <foreign xml:lang="grc">δορύκνιον</foreign> καλοῦσι, ἥ τε <name type="plant" xml:lang="grc">σαρδώνιος</name> πόα, εἶδος οὖσα <name type="animal" xml:lang="grc">βατραχίου</name>,</p>
+    <p><quote>"Pr".210</quote></p>
+    <p><name type="plant" xml:lang="grc">μήκων</name> <name type="plant" xml:lang="grc">κερατῖτις</name>, <name type="plant" xml:lang="grc">ϕαρικὸν</name>, <name type="plant" xml:lang="grc">τοξικὸν</name>, <name type="plant" xml:lang="grc">πήγανον</name> <foreign xml:lang="grc">ἄγριον</foreign>, <name type="animal" xml:lang="grc">μύκητες</name>· ἀπὸ <name type="animal" xml:lang="grc">ζώων</name> δὲ αἷμα <name type="animal" xml:lang="grc">ταύρειον</name> νεαρὸν, καὶ τὸ ἐμπυτιασθὲν γάλα, μέλι τε τὸ ἐν <placeName>‘Ηρακλείᾳ</placeName> τῇ <placeName>ποντικῇ</placeName> γεννώμενον·</p>
+    <p><name type="plant" xml:lang="grc">μεταλλικὰ</name> δὲ <name type="plant" xml:lang="grc">γύψος</name>, <name type="plant" xml:lang="grc">ψιμύθιον</name>, <name type="plant" xml:lang="grc">τίτανος</name>, <name type="plant" xml:lang="grc">ἀρσενικὸν</name>, <name type="plant" xml:lang="grc">σανδαράχαι</name> δύο, <name type="plant" xml:lang="grc">λιθάργυρος</name>, <name type="plant" xml:lang="grc">ἀδάρκη</name>, <name type="plant" xml:lang="grc">μόλυβδος</name>, καὶ ἡ καλουμένη <name type="plant" xml:lang="grc">ὑδράργυρος</name>. Τῶν δὲ συμϕύλων οἶνος ἀθρόως ποθεὶς πολὺς ἀπὸ <placeName>βαλανείου</placeName>, ἢ γλυκὺ, ἢ ψυχρὸν ὕδωρ</p>
+    <p>ὁμοίως.</p>
+    <div type="chapter" n="1">
+      <p>[Περὶ <name type="animal" xml:lang="grc">Κανθαρίδων</name>.] Τοῖς οὖν <name type="animal" xml:lang="grc">κανθαρίδας</name></p>
+      <p>προσενεγκαμένοις παρέπεται χαλεπώτατα σημεῖα· σχεδὸν γὰρ</p>
+      <p>ἀπὸ τοῦ στόματος μέχρι κύστεως πάντα δάκνεσθαι δοκεῖ αὐτοῖς. καὶ κατὰ τὴν γεῦσιν <name type="plant" xml:lang="grc">πίσσῃ</name> ἢ <name type="plant" xml:lang="grc">κεδρίᾳ</name> ὅμοιόν τι ἐγγίνεσθαι· ϕλεγμαίνουσι δὲ τὸ δεξιὸν ὑποχόνδριον καὶ δυςουροῦσι· πολλάκις δὲ αἷμα προΐενται δι' οὔρων· ϕέρεται δ' αὐτοῖς κατὰ κοιλίαν ὅμοια τοῖς ἐπὶ δυςεντερικῶν· λειποθυμίαις τε καὶ ἄσαις καὶ σκοτοδινίαις περιπίπτουσιν· ἐπὶ τέλει δὲ παραϕέρουσι τὴν διάνοιαν.</p>
+      <p>Δεῖ οὖν πρὸ τοῦ παρακολουθῆσαί τι τοιοῦτον ἀναγκάζειν ἐμεῖν, διδόντας αὐτοῖς τὸ</p>
+    </div>
+  </div>
+</div>
+<div type="section" n="11">
+   <p>ἔλαιον ἢ ἄλλο τι τῶν προειρημένων, καὶ μετὰ τὸ κομίσασθαι
+      τὰ πλεῖστα διὰ τῶν ἐμέτων ἐνιέναι διὰ κλυστῆρος χυλὸν
+      χόνδρου, ἢ <name type="animal" xml:lang="grc">ὀρύζης</name>, ἢ <name type="animal" xml:lang="grc">τράγου</name>, ἢ πτισάνης, ἢ <name type="plant" xml:lang="grc">μαλάχης</name> ἀϕέψημα, ἢ <name type="plant" xml:lang="grc">λινοσπέρμου</name>, ἢ <name type="plant" xml:lang="grc">τήλεως</name>, ἢ τῶν ῥιζῶν τῆς <name type="plant" xml:lang="grc">ἀλθαίας</name>,
+      ἣν <foreign xml:lang="la">ἰβίσκον</foreign> ὀνομάζουσι <persName>‘Ρωμαῖοι</persName>· ἐπιδιδόναι τε αὐτοῖς νίτρον
+      σὺν ὑδρομέλιτι πρὸς τὸ καταβιβάσαι καὶ ἐκνίψαι τὰ ἔτι
+      παρακείμενα τῷ στομάχῳ καὶ ἐντέροις· καὶ ἐὰν μὴ διακοπῇ,
+      κενοῦν δεῖ, μελίκρατον ἐνιέντας μετὰ νίτρου, καὶ ἐπιδιδόναι
+      οἶνον ἢ γλυκὺ, συντετριμμένων αὐτῷ <name type="animal" xml:lang="grc">στροβίλων</name> καὶ <name type="animal" xml:lang="grc">σικύων</name>
+      σπέρματος, ἢ γάλακτος, ἢ μελικράτου, ἢ στέαρ <name type="animal" xml:lang="grc">χήνειον</name> συντετηκὸς ἐν γλυκεῖ· τὰ δὲ ϕλεγμαίνοντα μέρη καταπλάσσοντας
+      <name type="plant" xml:lang="grc">κριθῶν</name> ἀλεύρῳ ἑψημένῳ μετὰ μελικράτου· καταρχὰς μὲν οὖν
+      παραλαμβανόμενα τὰ καταπλάσματα βλάπτει, διὰ τὸ ὑπὸ
+      τῆς γενομένης θερμασίας κατέχεσθαι τὸ δοθὲν, στηρίζον ἐπὶ
+      τοὺς τόπους ὄντας κυρίους· χρονισθέντων δὲ ὠϕελεῖ τὰς
+      χαλεπωτάτας ϕλεγμονὰς, παρηγοροῦντα καὶ παραμυθούμενα
+      τὰς ἀλγηδόνας· ἐν δὲ τούτῳ τῷ καιρῷ ἁρμόζει, προλιπάναντας
+      ἐλαίῳ θερμαντικῷ τὸ σῶμα, λούειν καθιέντας εἰς ἔμβασιν·
+      ἑκάστῳ δὲ ἡ ἰατρεία, διὰ τῆς ἐπιϕανείας τὰ ἐπιβλαβῆ
+      παρατεθέντα τῷ σώματι ἐκκρίνεσθαι· καὶ καθόλου παντοίως
+      δεῖ κινεῖν τὰς ἐκκρίσεις, πρὸς τὸ μὴ ἔμμονον κατασκευὴν
+      λαμβάνειν τὴν διάθεσιν· διδόναι δὲ καὶ <name type="animal" xml:lang="grc">κρέα</name>
+      <name type="animal" xml:lang="grc">ὀρνίθεια</name> καὶ <name type="animal" xml:lang="grc">ἄρνεια</name>, <name type="animal" xml:lang="grc">δελϕάκεια</name> καὶ
+      <name type="animal" xml:lang="grc">ἐρίϕεια</name>, λιπαρὰ δὲ ταῦτα καὶ ἁπαλώτατα καὶ καθεψημένα σὺν
+      <name type="plant" xml:lang="grc">λινοσπέρμῳ</name>· εὐκοίλια γάρ ἐστι καὶ</p>
+</div>
+<div type="section" n="12">
+   <p>ἀμβλυντικὰ τῶν δριμέων· καὶ οἶνον γλυκὺν καὶ πολύν· ἁρμόζει δ' ἐπ' αὐτῶν καὶ <name type="plant" xml:lang="grc">λιβάνου</name> ϕλοιὸς, καὶ <name type="plant" xml:lang="grc">γῆς</name> τῆς καλουμένης <name type="plant" xml:lang="grc">ἀστέρος</name>, ἑκάστου <foreign xml:lang="grc">#101 δ́</foreign>, μετὰ γλυκέος λαμβανομένη· <name type="plant" xml:lang="grc">γλήχων</name> τε μεθ' ὕδατος τριϕθεὶς, καὶ <name type="plant" xml:lang="grc">ἴρινον</name> ἢ <name type="plant" xml:lang="grc">ῥόδινον</name> <foreign xml:lang="grc">[μῦρον]</foreign> μετὰ <name type="plant" xml:lang="grc">πηγάνου</name> ἀϕεψήματος, καὶ <name type="plant" xml:lang="grc">ἀμπέλου</name> ἀκρέ<foreign xml:lang="grc">1.40</foreign> μονες ἁπαλοὶ λεῖοι μετὰ γλυκέος· δυνατώτατα δὲ πάντων βοηθοῦσιν αἱ ἀντίδοτοι, πινόμεναι σὺν <foreign xml:lang="grc">μελικράτῳ</foreign> πλῆθος <foreign xml:lang="grc">#101 δ́</foreign>.</p>
+</div>
+<div type="section" n="26">
+   <p><quote>[Περὶ πιτυοκάμπης.]</quote> Τοῖς δὲ <name type="animal" xml:lang="grc">πιτυοκάμπην</name> λαβοῦσιν εὐθέως πόνος περὶ τὸ στόμα καὶ τὸν οὐρανίσκον παρακολουθεῖ· γλώσσης τε ϕλεγμονὴ ἰσχυρὰ καὶ στομάχου καὶ κοιλίας· καὶ ἐντέρων πόνος ἰσχυρὸς μετὰ τοῦ δοκεῖν ὀδάξεσθαι τὰ ἐντός· πύρωσίς τε καθ' ὅλον τὸ σῶμα, καὶ ἄση. Τούτοις βοηθητέον ὁμοίως τοῖς τὰς <name type="animal" xml:lang="grc">κανθαρίδας</name> πεπωκόσιν· ἰδίως δ' ἐπ' αὐτῶν παραληψόμεθα ἀντὶ <name type="plant" xml:lang="grc">ἐλαίου</name> τοῦ λιτοῦ καὶ <name type="plant" xml:lang="grc">ἰρίνου</name> τὸ <name type="plant" xml:lang="grc">μήλινον</name>, κατασκευαζόμενον ἐκ <name type="plant" xml:lang="grc">μήλων</name> κυδωνίων καὶ <name type="plant" xml:lang="grc">ἐλαίου</name>.</p>
+   <div type="section" n="3">
+      <p><quote>[Περὶ βουπρήστεως.]</quote> Τοῖς δὲ <name type="animal" xml:lang="grc">βούπρηστιν</name> πεπωκόσι δοκεῖ κατὰ τὴν γεῦσιν ὅμοιόν τι βρωμώδει <name type="plant" xml:lang="grc">νίτρῳ</name>· παρακολουθεῖ δὲ ἄλγημα στομάχου καὶ κοιλίας σϕοδρόν· ὄγκος τε στομάχου καὶ κοιλίας, ὁμοίως ὑδρωπικοῖς· καὶ περιτείνεται αὐτοῖς ἡ ἐπιϕάνεια ὅλου τοῦ σώματος· τά τε οὖρα ἐπέχεται. Βοηθεῖ δὲ αὐτοῖς ὅσα καὶ τοῖς <name type="animal" xml:lang="grc">κανθαρίδας</name> πεπωκόσιν· ἰδίως δὲ ὠϕελοῦνται μετὰ τὸ τῶν ἐμέτων καὶ τοῦ <name type="plant" xml:lang="grc">κλυστῆρος</name> κενωθῆναι, <name type="plant" xml:lang="grc">σῦκα</name> ξηρὰ λαμβάνοντες· καὶ τὸ ἀϕέψημα δὲ αὐτῶν σὺν οἴνῳ· παρακμάζοντος δὲ τοῦ κατ' ὀξύτητα κινδύνου, ὠϕελοῦνται <name type="plant" xml:lang="grc">θηβαϊκὰς</name> <name type="plant" xml:lang="grc">βαλάνους</name> ἐσθίοντες.</p>
+   </div>
+</div>
+<div type="chapter" n="4">
+   <p>ἢ λελεασμένας σὺν οἰνομέλιτι ἢ γάλακτι πίνοντες, ἢ καὶ
+      <name type="animal" xml:lang="grc">ἀπίων</name> ἅπαν τὸ γένος ἐσθίοντες καὶ γάλα γυναικεῖον πίνοντες.</p>
+   <div type="section" n="1">
+      <p>[Περὶ <name type="animal" xml:lang="grc">σαλαμάνδρας</name>.] Τοῖς δὲ <name type="animal" xml:lang="grc">σαλαμάνδραν</name>
+         λαβοῦσι παρέπεται γλώσσης ϕλεγμονὴ, καὶ διανοίας ἐμποδισμὸς, καὶ τρόμος μετὰ νάρκης ἢ ϕρίκης τινὸς καὶ ἐκλύσεως· πελιοῦται δέ τινα μέρη κυκλοτερῶς αὐτοῖς τοῦ σώματος· ὡς πολλάκις ἐμμείναντος τοῦ ϕαρμάκου, σηπόμενα
+         ἀπορῥεῖν· ἐϕ' ὧν πάντα ποιησάμενοι, ὅσα καὶ ἐπὶ <name type="animal" xml:lang="grc">κανθαρίδων</name>, ἰδιαίτερον αὐτοῖς προςϕέρομεν ϕάρμακον, <name type="plant" xml:lang="grc">ῥητίνην</name> τὴν
+         <name type="plant" xml:lang="grc">πιτυΐνην</name>, ἢ <name type="plant" xml:lang="grc">χαλβάνην</name> σὺν μέλιτι ἀντὶ ἐκλεικτοῦ, καὶ <name type="plant" xml:lang="grc">χαμαιπίτυος</name> ἀϕέψημα, συνεκλεανθέντων αὐτῷ
+         <name type="plant" xml:lang="grc">στροβίλων</name>, ἢ <name type="plant" xml:lang="grc">κνίδης</name>
+      </p>
+   </div>
+   <div type="section" n="10">
+      <p>ϕύλλα συνεψηθέντα <name type="plant" xml:lang="grc">κρίμνοις</name> μετ' ἐλαίου· ποιεῖ δὲ ἐπ' αὐτῶν καὶ <name type="animal" xml:lang="grc">χελώνης</name> θαλάσσης ἢ <name type="animal" xml:lang="grc">χελώνης</name> χερσαίας ὠὰ,
+         ὁποῖα ἂν ᾖ ἑψημένα, καὶ <name type="animal" xml:lang="grc">βατραχίων</name> ζωμὸς, συγκαθεψηθείσης αὐτοῖς <name type="plant" xml:lang="grc">ἠρυγγίου</name> ῥίζης.</p>
+   </div>
+</div>
+<div type="chapter" n="5">
+   <div type="section" n="1">
+      <p>[Περὶ <name type="plant" xml:lang="grc">ἐϕημέρου</name>.] Τοῖς δὲ τὸ <name type="plant" xml:lang="grc">ἐϕήμερον</name>
+         λαβοῦσιν, ὃ ἔνιοι <foreign xml:lang="grc">κολχικὸν</foreign> καλοῦσιν ἢ <foreign xml:lang="grc">βολβὸν</foreign> ἄγριον, παρακολουθεῖ κνησμὸς καθ' ὅλον τὸ σῶμα, ὡς ὑπὸ <name type="plant" xml:lang="grc">σκίλλης</name> ἢ <name type="plant" xml:lang="grc">κνίδης</name>
+         ἐρεθιζομένοις· τὰ δὲ ἐντὸς ἀναδάκνονται· καυσοῦνται δὲ τὸν στόμαχον μετὰ βάρους ἱκανοῦ· ἐπισχύοντος δὲ τοῦ πάθους, κατὰ κοιλίαν ϕέρεται αἱματώδη, ξύσμασι
+         μεμιγμένα· οἷς βοηθητέον, καθάπερ καὶ τοῖς <name type="animal" xml:lang="grc">σαλαμάνδραν</name> πεπωκόσι, διά τε ἐμέτων καὶ κλυσμάτων· πρὸ δὲ τοῦ ἐνισχύσαι τὸ ϕάρμακον, μεταδοτέον αὐτοῖς <name type="plant" xml:lang="grc">δρυὸς</name>
+         τῶν ϕύλλων ἢ <name type="plant" xml:lang="grc">βαλάνων</name> ἢ <name type="plant" xml:lang="grc">σιδίων</name> ἀϕέψημα· ἢ <name type="plant" xml:lang="grc">ἑρπύλλου</name> σὺν γάλακτι πίνειν, ἢ
+         <name type="plant" xml:lang="grc">πολυγόνου</name> χυλὸν, ἢ <name type="plant" xml:lang="grc">ἀμπέλου</name> ἀκρεμόνων, ἢ <name type="plant" xml:lang="grc">βάτου</name>, ἢ <name type="plant" xml:lang="grc">νάρθηκος</name> ἁπαλοῦ τῆς ἐντεριώνης, ἢ
+         <name type="plant" xml:lang="grc">μύρτου</name> μετ' οἴνου·
+      </p>
+   </div>
+</div>
+<div type="section" n="14">
+   <p>αὐτὰ δὲ τὰ <name type="plant" xml:lang="grc">μύρτα</name> λεῖα κοπέντα καὶ ἀποβραχέντα ἐν ὕδατι</p>
+   <p>βοηθεῖ, τοῦ ἐξ αὐτῶν ὑγροῦ λαμβανομένου· ποιεῖ δὲ ὡςαύτως καὶ ὁ τῶν <name type="plant" xml:lang="grc">σαρδιανῶν βαλάνων</name> ὑμὴν μέσος, ὠμὸς</p>
+   <p>λαμβανόμενος, μετά τινος τῶν προειρημένων χυλῶν· <name type="plant" xml:lang="grc">ὀρίγανός</name> τε σὺν <name type="plant" xml:lang="grc">κονίᾳ</name> ποθεῖσα· ἀκριβῶς δὲ βοηθοῦνται οἱ τὸ</p>
+   <p><name type="animal" xml:lang="grc">ὄνειον</name> ἢ <name type="animal" xml:lang="grc">βόειον</name> <foreign xml:lang="grc">γάλα</foreign> θερμὸν πίνοντες καὶ κατέχοντες ἐν τῷ</p>
+   <p>στόματι· ὥςτε τοὺς εὐπορήσαντας τούτου, ἄλλου μηδενὸς</p>
+   <p>χρῄζειν βοηθήματος.</p>
+</div>
+<div type="section" n="20">
+   <p>[Περὶ <name type="animal" xml:lang="grc">δορυκνίου</name>.] Δορυκνίου δὲ ποθέντος,</p>
+   <p>ὅ ἔνιοι <name type="plant" xml:lang="grc">στρύχνον</name> <foreign xml:lang="grc">μανικὸν</foreign> ἐκάλεσαν, παρακολουθεῖ ὥςπερ</p>
+   <p>γάλακτος ποιότης ἐν τῇ γεύσει, καὶ <foreign xml:lang="grc">λυγμοὶ</foreign> συνεχεῖς, γλώττης</p>
+   <p>τε ὑγρότης, καὶ <foreign xml:lang="grc">αἵματος</foreign> ἀναγωγὴ ἀθρόα· κατὰ κοιλίαν</p>
+   <p>δὲ αὐτοῖς μυξώδη <foreign xml:lang="grc">ϕέρεται</foreign>, ὡς ἐπὶ <foreign xml:lang="grc">δυςεντερικῶν</foreign>. Οἷς βοηθεῖ πρὸ τοῦ τούτων τι παρακολουθῆσαι, ἃ καὶ τοῖς προειρημένοις· ὅ τε ἔμετος καὶ τὸ κλύσμα, καὶ ὅσα δύναται τὸ ποθὲν ἐκκρίναι <foreign xml:lang="grc">ϕάρμακον</foreign>·</p>
+   <p>ἰδίως δ' ἐπ' αὐτῶν βοηθεῖ τὸ <foreign xml:lang="grc">μελίκρατον</foreign>, ἢ <name type="animal" xml:lang="grc">ὄνειον</name> ἢ <name type="animal" xml:lang="grc">αἴγειον</name> <foreign xml:lang="grc">γάλα</foreign>, καὶ γλυκὺς <foreign xml:lang="grc">οἶνος</foreign> <foreign xml:lang="grc">χλιαρὸς</foreign></p>
+   <p>μετ' <foreign xml:lang="grc">ἀνίσου</foreign> πινόμενος, καὶ <foreign xml:lang="grc">ἀμύγδαλα</foreign> πικρά, στήθη τε <name type="animal" xml:lang="grc">ὀρνίθεια</name> καθεψημένα·</p>
+   <p>καὶ πάντα τὰ <foreign xml:lang="grc">κογχύλια</foreign> ὠμὰ καὶ ὀπτὰ</p>
+   <p>ἐσθιόμενα, καὶ <name type="animal" xml:lang="grc">κάραβοι</name>, καὶ <name type="animal" xml:lang="grc">ἀστακοὶ</name>, καὶ ὁ ἐξ αὐτῶν <foreign xml:lang="grc">ζωμὸς</foreign> πινόμενος.</p>
+</div>
+<div type="section" n="26">
+   <p>[Περὶ <name type="plant" xml:lang="grc">ἀκονίτου</name>.] Τὸ δὲ <name type="plant" xml:lang="grc">ἀκόνιτον</name> εὐθέως</p>
+   <p>ἅμα τῷ πίνεσθαι γλυκαίνει τὴν γλῶσσαν μετά τινος στύψεως,</p>
+   <p>καὶ ἀπὸ τοῦ γλυκασμοῦ <foreign xml:lang="grc">σκοτοδινίαν</foreign>, καὶ μάλιστα ἐν τῷ</p>
+   <p>ἐξανίστασθαι, καὶ ὑγρότητας ὀϕθαλμῶν ἐπιϕέρει, βάρος τε</p>
+   <p>θώρακος καὶ ὑποχονδρίου, μετὰ τοῦ πολλὰ <foreign xml:lang="grc">πνεύματα</foreign> ἀποδίδοσθαι· ἐϕ' ὧν δι' ἐμέτων ἐκκομισθῆναι δεῖ τὸ <foreign xml:lang="grc">ϕάρμακον</foreign>,</p>
+</div>
+<div type="section" n="15">
+   <p>ἢ καὶ διὰ κλυστῆρος ὑποβιβασθῆναι τὴν κοιλίαν· χρησόμεθα δὲ προποτισμῷ <name type="plant" xml:lang="grc">ὀριγάνῳ</name>, ἢ <name type="plant" xml:lang="grc">πηγάνῳ</name>, ἢ <name type="plant" xml:lang="grc">πρασίῳ</name>, ἢ
+   <name type="plant" xml:lang="grc">ἀψινθίου</name> ζέματι μετ' οἴνου <name type="plant" xml:lang="grc">ἀψινθίτου</name>, ἢ <name type="plant" xml:lang="grc">εὐζώμου</name>, ἢ
+   <name type="plant" xml:lang="grc">ἀβροτόνου</name>, ἢ <name type="plant" xml:lang="grc">χαμελαίας</name>, ἢ <name type="plant" xml:lang="grc">χαμαιπίτυος</name>· ἁρμόζει δὲ αὐτοῖς καὶ
+   <name type="plant" xml:lang="grc">ὀποβαλσάμου</name> ὁλκὴ #101 ά, σὺν <name type="plant" xml:lang="grc">μέλιτι</name> καὶ <name type="plant" xml:lang="grc">γάλακτι</name>, μετὰ
+   <name type="plant" xml:lang="grc">καστορίου</name> καὶ <name type="plant" xml:lang="grc">πεπέρεως</name> καὶ <name type="plant" xml:lang="grc">πηγάνου</name> ἴσης ὁλκῆς σὺν οἴνῳ·
+   καὶ <name type="animal" xml:lang="grc">πυτία</name> <name type="animal" xml:lang="grc">ἐρίϕου</name>, ἢ <name type="animal" xml:lang="grc">λαγωοῦ</name> ἢ <name type="animal" xml:lang="grc">νεβροῦ</name> σὺν ὄξει· καὶ <name type="plant" xml:lang="grc">σιδήρου</name>
+   σκωρία, ἢ αὐτὸς ὁ <name type="plant" xml:lang="grc">σίδηρος</name>, ἢ <name type="plant" xml:lang="grc">χρυσὸς</name>, ἢ <name type="plant" xml:lang="grc">ἄργυρος</name> διάπυρος
+   ἐν οἴνῳ σβεσθέντα, τοῦ ὑγροῦ λαμβανομένου· κονία τε
+   σὺν οἴνῳ· καὶ <name type="animal" xml:lang="grc">ὄρνιθος</name> καθεψηθείσης ἢ κρεῶν λιπαρῶν
+   <name type="animal" xml:lang="grc">βοείων</name> ζωμὸς λαμβανόμενος σὺν οἴνῳ· λέγεται δὲ καὶ ἡ
+   <name type="plant" xml:lang="grc">χαμαιπίτυς</name> ἰδίως ἐπ' αὐτῶν ἁρμόζειν.</p>
+</div>
+<div type="section" n="16">
+   <p>[Περὶ τοῦ ἐν ‘Ηρακλείᾳ μέλιτος.] ‘Ομοίως
+   δὲ πάσχουσι καὶ οἱ ἐν ‘Ηρακλείᾳ τῇ <placeName>ποντικῇ</placeName> τὸ <name type="plant" xml:lang="grc">μέλι</name> γεννώμενον
+   <name type="animal" xml:lang="grc">ϕαγόντες</name> ἢ πιόντες· ἐϕ' ὧν ἁρμόζει τὰ αὐτὰ τῷ <name type="plant" xml:lang="grc">ἀκονίτῳ</name>· εἰσὶ δὲ εὐβοήθητοι, μάλιστα ὠϕελούμενοι ὑπὸ <name type="plant" xml:lang="grc">οἰνομέλιτος</name>, συνεχῶς αὐτὸ πίνοντες, μιγνυμένων αὐτῷ <name type="plant" xml:lang="grc">πηγάνου</name>
+   ϕύλλων.</p>
+</div>
+<div type="section" n="17">
+   <p>[Περὶ κορίου.] Τὸ δὲ <name type="plant" xml:lang="grc">κόριον</name> λαθεῖν μὲν οὐ
+   δύναται διὰ τὴν ὀσμήν· ποθὲν δὲ τὴν ϕωνὴν δασύνει, καὶ
+   μανίαν ἐπιϕέρει ὁμοίαν τοῖς διὰ μέθην· λαλοῦσι γοῦν μετ'
+   αἰσχρολογίας· καθ' ὅλου δὲ τοῦ σώματος αὐτῶν ἡ ὀσμὴ
+   διαϕαίνεται τοῦ <name type="plant" xml:lang="grc">κορίου</name>. Βοηθεῖ δὲ αὐτοῖς μετὰ τὸ ἐξεραθῆναι διὰ τοῦ <name type="plant" xml:lang="grc">ἰρίνου</name> ἐλαίου, ὡς προείρηται, ἄκρατος σὺν
+   <name type="plant" xml:lang="grc">ἀψινθίῳ</name> πινόμενος, καὶ καθ' ἑαυτὸν, ἢ ὠά τε κενωθέντα
+   ἐπὶ τὸ αὐτὸ, καὶ διεθέντα σὺν <foreign xml:lang="grc">ἅλμῃ</foreign>, ῥοϕούμενα· καὶ
+   <foreign xml:lang="grc">ἅλμη</foreign> δὲ πινομένη, καὶ ζωμὸς ἁλμυρὸς ἔκ τε <name type="animal" xml:lang="grc">ὄρνιθος</name> καὶ</p>
+</div>
+<div type="section" n="16">
+   <p>
+      <name type="animal" xml:lang="grc">χηνός</name>· γλυκὺς τε σὺν κονίᾳ παραλαμβανόμενος.
+   </p>
+</div>
+<div type="section" n="10">
+   <p>
+      <foreign xml:lang="grc">[Περὶ ψυλλίου.]</foreign> Καὶ τὸ <name type="plant" xml:lang="grc">ψύλλιον</name> δὲ καλούμενον ποθὲν ἐπιϕέρει ψύξιν ὅλου τοῦ σώματος καὶ νάρκην μετ' ἐκλύσεως καὶ ἀδημονίας· ᾧ βοηθεῖ πάντα ὅσα τοῖς <name type="plant" xml:lang="grc">κόριον</name> πεπωκόσι.
+   </p>
+</div>
+<div type="section" n="11">
+   <p>
+      <foreign xml:lang="grc">[Περὶ κωνείου.]</foreign> Κώνειον δὲ ποθὲν ἐπιϕέρει σκοτώματα καὶ ἀχλὺν, ὥστε μηδ' ἐπ' ὀλίγον βλέπειν, λυγμόν τε καὶ διανοίας παραϕορὰν, καὶ ψύξιν ἄκρων· ἐπὶ τέλει δὲ σπώμενοι πνίγονται, στάσιν λαμβάνοντος τοῦ κατὰ τὴν ἀρτηρίαν πνεύματος. Καταρχὰς μὲν οὖν, ὡς καὶ ἐπὶ τῶν ἄλλων, διὰ τῶν ἐμέτων αὐτὸ κομιούμεθα· ἔπειτα κενώματι χρησάμενοι τὸ εἰς τὰ ἔντερα παρολισθηκὸς ἐκκρινοῦμεν· καὶ τότε, ὡς ἐπὶ τὸ μέγιστον βοήθημα, ἐπὶ τὴν ἀκρατοποσίαν παραγινόμεθα, διδόντες μεταξὺ διαστήματα, ἐν οἷς πιεῖν διδόμενον βοηθεῖ <name type="plant" xml:lang="grc">γάλα</name> <name type="animal" xml:lang="grc">ὄνειον</name> ἢ <name type="plant" xml:lang="grc">ἀψίνθιον</name>, μετὰ <name type="plant" xml:lang="grc">πεπέρεως</name> καὶ οἴνου καὶ <name type="plant" xml:lang="grc">καστορίου</name>· καὶ <name type="plant" xml:lang="grc">πήγανον</name> καὶ <name type="plant" xml:lang="grc">ἡδύοσμον</name> σὺν οἴνῳ· καὶ <name type="plant" xml:lang="grc">καρδαμώμου</name> ἢ <name type="plant" xml:lang="grc">στύρακος</name> <foreign xml:lang="grc">#101 ά</foreign> ἢ <name type="plant" xml:lang="grc">πεπέρεως</name> μετὰ <name type="plant" xml:lang="grc">κνίδης</name> σπέρματος σὺν οἴνῳ· ἢ <name type="plant" xml:lang="grc">δάϕνης</name> τὰ ϕύλλα· ὁμοίως τε <name type="plant" xml:lang="grc">σιλϕίου</name> ὀπὸς σὺν ἐλαίῳ ἢ γλυκεῖ· καὶ ὁ γλυκὺς οἶνος καθ' ἑαυτὸν πινόμενος πολὺς, ἱκανῶς ἁρμόζει.
+   </p>
+</div>
+<div type="section" n="12">
+   <p>
+      <foreign xml:lang="grc">[Περὶ σμίλακος.]</foreign> ‘Η δὲ καλουμένη <name type="plant" xml:lang="grc">σμίλαξ</name>, ὑπ' ἐνίων δὲ <name type="plant" xml:lang="grc">θύμιον</name>, παρὰ δὲ <persName>‘Ρωμαίοις</persName> <name type="plant" xml:lang="grc">τάξος</name>, ποθεῖσα ἐπιϕέρει ψύξιν καθ' ὅλου τοῦ σώματος, καὶ πνιγμὸν, ὀξύν τε θάνατον· οἷς βοηθεῖ πάντα ἃ καὶ τοῖς τὸ <name type="plant" xml:lang="grc">κώνειον</name> πεπωκόσι.
+   </p>
+</div>
+<div type="section" n="13">
+   <p>
+      <foreign xml:lang="grc">[Περὶ ὀποῦ καρπάσου.]</foreign> Καὶ ὁ τῆς <name type="plant" xml:lang="grc">καρπάσου</name> ὀπὸς ποθεὶς <name type="plant" xml:lang="grc">κάρον</name> ἐπιϕέρει καὶ πνιγμὸν ὀξύν· βοηθοῦνται δὲ καὶ οὗτοι, ὑϕ' ὧν καὶ οἱ τὸ <name type="plant" xml:lang="grc">κώνειον</name> πεπωκότες.
+   </p>
+</div>
+<div type="section" n="17">
+  <p>
+    Περὶ τῆς <name type="plant" xml:lang="grc">σαρδωνίας πόας</name>. ‘Η δὲ <name type="plant" xml:lang="grc">σαρδώνιος</name> λεγομένη <name type="plant" xml:lang="grc">πόα</name>, <name type="animal" xml:lang="grc">βατραχίου</name> εἶδος οὖσα, ποθεῖσα ἢ βρωθεῖσα, παραϕορὰν διανοίας ἐπιϕέρει καὶ σπάσματα μετὰ συνολκῆς χειλέων, ὥστε γέλωτος ϕαντασίαν παρέχειν, ὑϕ' ἧς διαθέσεως καὶ ὁ <foreign xml:lang="grc">σαρδώνιος γέλως</foreign> οὐκ εὐϕήμως ἐν τῷ βίῳ καθωμίληται· ἐϕ' ὧν ἰδίως καὶ μετὰ τὸν ἔμετον ἁρμόζει <name type="plant" xml:lang="grc">μελίκρατον</name> πολὺ διδόμενον καὶ <name type="plant" xml:lang="grc">γάλα</name>· ἐμβροχή τε καὶ λιπασμὸς ὅλου τοῦ σώματος διὰ θερμαντικῶν ϕαρμάκων, καὶ ἐμβάσεις δι' ὑδρελαίου θερμοῦ· ὑπαλείϕειν μέντοι δεῖ ἱκανῶς καὶ ἀνατρίβειν μετὰ τὴν ἔμβασιν αὐτούς· καθόλου δὲ, ὡς πρὸς σπασμὸν, ὅλην τὴν θεραπείαν δεῖ ποιεῖσθαι.
+  </p>
+</div>
+
+<div type="section" n="18">
+  <p>
+    Περὶ <name type="plant" xml:lang="grc">ὑοσκυάμου</name>. <name type="plant" xml:lang="grc">Ὑοσκύαμος</name> δὲ ποθεὶς ἢ βρωθεὶς παρακοπὴν τοῖς μεθύουσιν ὁμοίαν ἐπιϕέρει· ἔστι δὲ εὐίατος, βοηθούμενος <name type="plant" xml:lang="grc">μελικράτῳ</name> πολλῷ ποτιζομένῳ, καὶ <name type="plant" xml:lang="grc">γάλακτι</name> μάλιστα <foreign xml:lang="grc">ὀνείῳ</foreign>· εἰ δὲ μή γε, <foreign xml:lang="grc">αἰγείῳ</foreign> ἢ <foreign xml:lang="grc">βοείῳ</foreign>, ἢ <name type="plant" xml:lang="grc">σύκων ξηρῶν</name> ἀϕεψήματι· ποιοῦσι δ' ἐπ' αὐτῶν καὶ στρόβιλοι, καὶ τὸ <foreign xml:lang="grc">σικύων σπέρμα</foreign> σὺν <foreign xml:lang="grc">γλυκεῖ</foreign> λαμβανόμενον, καὶ <foreign xml:lang="grc">ἁλμυρὸς οἶνος</foreign> σὺν <foreign xml:lang="grc">στέατι ὑείῳ νεαρῷ</foreign> καὶ <foreign xml:lang="grc">γλυκεῖ</foreign> σὺν ὕδατι ἁρμόζει, καὶ <name type="plant" xml:lang="grc">κνίδης σπέρμα</name> ὁμοίως, ἢ <foreign xml:lang="grc">νίτρον</foreign> σὺν ὕδατι· ἁρμόζει καὶ <name type="plant" xml:lang="grc">κιχώριον</name>, καὶ <name type="plant" xml:lang="grc">νάπυ</name>, καὶ <name type="plant" xml:lang="grc">κάρδαμον</name>, καὶ <name type="plant" xml:lang="grc">ῥάϕανος</name>, καὶ <name type="plant" xml:lang="grc">κρόμμυα</name>, καὶ <name type="plant" xml:lang="grc">σκόροδα</name>, ἕκαστον τούτων σὺν <foreign xml:lang="grc">οἴνῳ</foreign> λαμβανόμενον· ἡσυχάζειν δὲ αὐτοὺς ἀναγκάζειν δεῖ, ὅπως τὸν οἶνον πεπωκότες ἐκπέψωσιν.
+  </p>
+</div>
+
+<div type="section" n="19">
+  <p>
+    Περὶ <name type="plant" xml:lang="grc">μανδραγόρου</name>. <name type="plant" xml:lang="grc">Μανδραγόρου</name> δὲ ποθέντος εὐθέως κάρος ἐπακολουθεῖ καὶ ἔκλυσις, καταϕορά τε
+  </p>
+</div>
+<div type="section" n="18">
+  <p>ἰσχυρὰ, κατὰ μηδὲν διαϕέρουσα πάθους τοῦ λεγομένου <name type="animal" xml:lang="grc">ληθάργου</name>· ᾧ, πρὸ τοῦ τι τούτων συμβῆναι, ἁρμόζει ὅ, τε ἔμετος, καὶ <name type="plant" xml:lang="grc">μελίκρατον</name>, καὶ μετὰ τοῦτο καὶ <name type="plant" xml:lang="grc">νίτρον</name> καὶ <name type="plant" xml:lang="grc">ἀψίνθιον</name> σὺν <foreign xml:lang="grc">γλυκεῖ</foreign> ἢ <foreign xml:lang="grc">οἴνῳ</foreign> <foreign xml:lang="grc">γλυκάζοντι</foreign> λαμβανόμενα· καὶ ἡ τῆς
+   <name type="animal" xml:lang="grc">κεϕαλῆς</name> ἐμβροχὴ διὰ <name type="plant" xml:lang="grc">ῥοδίνου</name> καὶ <foreign xml:lang="grc">ὄξους</foreign>· καὶ διέγερσις καὶ
+   κίνησις τοῦ <name type="animal" xml:lang="grc">σώματος</name>.</p>
+  <p>Καὶ ἡ δι' <foreign xml:lang="grc">ὀσϕραντικῶν</foreign> καὶ <name type="plant" xml:lang="grc">εὐπατορίου</name> καὶ <name type="plant" xml:lang="grc">πεπέρεως</name> καὶ <name type="plant" xml:lang="grc">νάπυος</name> καὶ <name type="plant" xml:lang="grc">καστορίου</name> καὶ <name type="plant" xml:lang="grc">πηγάνου</name> <foreign xml:lang="grc">ὄξει</foreign> τετριμμένων· καὶ <name type="plant" xml:lang="grc">πίσσης</name> <foreign xml:lang="grc">ὑγρᾶς</foreign>, καὶ τῶν κεκαυμένων καὶ ἐσβεσμένων <name type="animal" xml:lang="grc">ἐλλυχνίων</name>· δυςανακλήτως δὲ αὐτῶν ἐχόντων, καὶ <foreign xml:lang="grc">πταρμικὰ</foreign> ἐπάγειν, καὶ τοῖς ἄλλοις κοινοῖς βοηθήμασι χρῆσθαι καὶ ἐπὶ τούτων.</p>
+</div>
+<div type="section" n="19">
+  <p>[Περὶ <name type="plant" xml:lang="grc">μήκωνος</name> <name type="plant" xml:lang="grc">ὀποῦ</name>.] <name type="plant" xml:lang="grc">Μήκωνος</name> δὲ <name type="plant" xml:lang="grc">ὀποῦ</name>
+   ποθέντος παρακολουθεῖ καταϕορὰ μετὰ καταψύξεως καὶ
+   κνησμοῦ ἐπιτεταμένου, ὡς πολλάκις, ἐνισχύοντος τοῦ <name type="animal" xml:lang="grc">ϕαρμάκου</name>, ἐπιγίνεσθαι τοςοῦτον κνησμὸν, ὥστε διεγείρεσθαι ὑπ' αὐτοῦ· <foreign xml:lang="grc">ὀσμὴ</foreign> δὲ τοῦ <name type="animal" xml:lang="grc">ϕαρμάκου</name> δι' ὅλου τοῦ <name type="animal" xml:lang="grc">σώματος</name> ἐκδίδοται· οἷς βοηθεῖ μετὰ τὸν τοῦ <name type="plant" xml:lang="grc">ἐλαίου</name> ἔμετον, καὶ κλυσθῆναι
+   <foreign xml:lang="grc">δριμεῖ</foreign> <foreign xml:lang="grc">κλύσματι</foreign>, <name type="plant" xml:lang="grc">ὀξύμελι</name> σὺν <foreign xml:lang="grc">ἁλσὶ</foreign> πινόμενον, ἢ <name type="plant" xml:lang="grc">μέλι</name> σὺν <name type="plant" xml:lang="grc">ῥοδίνῳ</name>
+   <foreign xml:lang="grc">θερμῷ</foreign>· καὶ <foreign xml:lang="grc">ἄκρατος</foreign> πολὺς σὺν <name type="plant" xml:lang="grc">ἀψινθίῳ</name> ἢ <name type="plant" xml:lang="grc">κινναμώμῳ</name>· ἢ <foreign xml:lang="grc">ὄξος</foreign>
+   <foreign xml:lang="grc">θερμὸν</foreign> καθ' ἑαυτό· <name type="plant" xml:lang="grc">νίτρον</name> τε σὺν <foreign xml:lang="grc">ὕδατι</foreign>, καὶ <name type="plant" xml:lang="grc">ὀρίγανον</name> σὺν
+   <foreign xml:lang="grc">κονίᾳ</foreign>, <name type="plant" xml:lang="grc">πηγάνου</name> τε <foreign xml:lang="grc">ἀγρίου</foreign> <name type="plant" xml:lang="grc">σπέρμα</name> σὺν <name type="plant" xml:lang="grc">πεπέρει</name> καὶ <foreign xml:lang="grc">οἴνῳ</foreign> καὶ
+   <name type="plant" xml:lang="grc">πάνακι</name>, <name type="plant" xml:lang="grc">πέπερί</name> τε μετὰ <name type="plant" xml:lang="grc">καστορίου</name> καὶ <name type="plant" xml:lang="grc">ὀξυμέλιτος</name>, ἢ μετὰ
+   <name type="plant" xml:lang="grc">θύμβρας</name> ἢ <name type="plant" xml:lang="grc">ὀριγάνου</name> σὺν <foreign xml:lang="grc">οἴνῳ</foreign>· δεῖ δὲ καὶ τούτους διεγείρειν τοῖς <foreign xml:lang="grc">ὀσϕραντικοῖς</foreign> καλουμένοις, καὶ ἐμβιβάζειν εἰς <foreign xml:lang="grc">θερμὸν</foreign>, καὶ πυριᾷν, διὰ τὸν ἐπιγινόμενον κνησμόν· ὀνήσει αὐτοὺς καὶ μετὰ τὸ <name type="animal" xml:lang="grc">λουτρὸν</name> χρῆσθαι <name type="plant" xml:lang="grc">ζωμοῖς</name> <foreign xml:lang="grc">λιπαροῖς</foreign> μετὰ <foreign xml:lang="grc">οἴνου</foreign></p>
+</div>
+<div type="section" n="19">
+   <p>ἢ γλυκέως, καὶ μυελὸς δὲ μετ' ἐλαίου πινόμενος.</p>
+</div>
+<div type="section" n="18.1">
+   <p><foreign xml:lang="grc">[Περὶ μήκωνος κερατίτιδος.]</foreign> ‘Η δὲ λεγομένη κερατῖτις <name type="animal" xml:lang="grc">μήκων</name> ἐν τῷ βρωθῆναι ἢ ποθῆναι τὰ αὐτὰ ἐπιϕέρουσα τῷ ὀπῷ τῆς μήκωνος συμπτώματα, τοῖς αὐτοῖς βοηθήμασιν ὑποπίπτει.</p>
+</div>
+<div type="section" n="19.1">
+   <p><foreign xml:lang="grc">[Περὶ ϕαρικοῦ.]</foreign> Τὸ δὲ καλούμενον ϕαρικὸν τὴν μὲν γεῦσιν πᾶσαν <name type="plant" xml:lang="grc">νάρδῳ</name> ἀγρίᾳ ἔοικεν· ἐπιϕέρει δὲ παράλυσιν, ποθὲν μετὰ παρακοπῆς καὶ σπασμοῦ. Δεῖ δὲ μετὰ τὸ ἐξεράσαι αὐτοὺς ποτίζειν οἴνον <name type="plant" xml:lang="grc">ἀψινθίτην</name>, σὺν <name type="plant" xml:lang="grc">κινναμώμῳ</name>, ἢ <name type="plant" xml:lang="grc">σμύρνῃ</name>, ἢ <name type="plant" xml:lang="grc">νάρδῳ</name> <foreign xml:lang="grc">κιλικίᾳ</foreign>, ἣν ἔνιοι <foreign xml:lang="grc">νῆριν</foreign> ἐκάλεσαν· ἢ <name type="plant" xml:lang="grc">ναρδοστάχυος</name> ὁλκὰς β́, ἢ <name type="plant" xml:lang="grc">σμύρνης</name> β́ ὀβόλους, μεμιγμένους σὺν γλυκεῖ, <name type="plant" xml:lang="grc">ἴριδι</name> τε καὶ <name type="plant" xml:lang="grc">κροκίνῳ</name> ἄνθει σὺν οἴνῳ· δεῖ δὲ καταπλάσσειν τὴν κεϕαλὴν αὐτῶν ξυρήσαντες, <name type="plant" xml:lang="grc">κριθίνῳ</name> ἀλεύρῳ σὺν <name type="plant" xml:lang="grc">πηγάνῳ</name> λείῳ καὶ <name type="plant" xml:lang="grc">ὄξει</name>.</p>
+</div>
+<div type="section" n="20.1">
+   <p><foreign xml:lang="grc">[Περὶ τοξικοῦ.]</foreign> Τὸ δὲ <name type="plant" xml:lang="grc">τοξικὸν</name> δοκεῖ μὲν ὠνομάσθαι ἐκ τοῦ τὰ τόξα τῶν βαρβάρων ὑπ' αὐτοῦ χρίεσθαι. παρακολουθεῖ δὲ τοῖς πεπωκόσι <name type="animal" xml:lang="grc">χειλῶν</name> καὶ <name type="animal" xml:lang="grc">γλώττης</name> ϕλεγμονή· μανία τε ἀκατάσχετος ποικίλαις ἐπιβάλλουσα ϕαντασίαις· ὡς καὶ διὰ τοῦτο δυςιάτους εἶναι ἐν ταῖς θεραπείαις· σπανίως δὲ καὶ σώζεσθαί τινας τῶν πεπωκότων. Δεῖ μέντοι συνέχειν αὐτοὺς δεσμοῖς ἀναγκάζοντας, καὶ βιαζομένους γλυκὺν οἶνον σὺν <name type="plant" xml:lang="grc">ῥοδίνῳ</name> πίνειν καὶ ἐξεμεῖν· τὸ τε τῆς <name type="plant" xml:lang="grc">γογγυλίδος</name> σπέρμα πινόμενον σὺν οἴνῳ· ἰδίως δ' ἐπ' αὐτῶν ἁρμόζει καὶ ἡ τῆς <name type="plant" xml:lang="grc">πενταϕύλλου</name> ῥίζα, <name type="animal" xml:lang="grc">αἷμά</name> τε <name type="animal" xml:lang="grc">τράγου</name> ἢ <name type="animal" xml:lang="grc">αἰγὸς</name>, ὁμοίως λαμβανόμενα· <name type="plant" xml:lang="grc">δρυὸς</name> τε ϕλοιὸς ἢ <name type="plant" xml:lang="grc">ϕηγοῦ</name> ἢ <name type="plant" xml:lang="grc">πρίνου</name>, γάλακτι συνεκλεανθείς· καὶ <name type="plant" xml:lang="grc">μῆλα</name> κυδώνια ἐσθιόμενα λεῖα· ἢ σὺν <name type="plant" xml:lang="grc">γλήχωνι</name> καὶ ὕδατι πινόμενα, <name type="plant" xml:lang="grc">ἄμωμόν</name> τε</p>
+</div>
+<div type="chapter" n="20">
+   <p>βαλσάμου <name type="plant" xml:lang="grc">καρπὸς</name> σὺν <foreign xml:lang="grc">οἴνῳ</foreign>· καὶ εἴ τινες αὐτοῦ ϕύγοιεν τὸν
+    <name type="animal" xml:lang="grc">κίνδυνον</name>, πολὺν <name type="animal" xml:lang="grc">χρόνον</name> <name type="animal" xml:lang="grc">κλινοπετεῖς</name> διαμένουσι, καὶ ἀναστάντες ἐπτοημένοι τὸν λοιπὸν <name type="animal" xml:lang="grc">χρόνον</name> διάγουσιν.</p>
+</div>
+<div type="section" n="21">
+   <p><persName>21.1</persName>
+    [<foreign xml:lang="grc">Περὶ ἰξίου</foreign>.] <persName>’Ιξίας</persName> δὲ, ὃς καὶ <name type="animal" xml:lang="grc">οὐλόϕονον</name>
+    <foreign xml:lang="grc">καλεῖται</foreign>, ἐν τῷ <foreign xml:lang="grc">πίνεσθαι</foreign> οἷόν τι <foreign xml:lang="grc">ὠκίμῳ</foreign> κατὰ τὴν <foreign xml:lang="grc">ὀσμὴν</foreign>
+    καὶ κατὰ τὴν <foreign xml:lang="grc">γεῦσιν</foreign> ἐμϕαίνει· ἐπιϕέρει δὲ <name type="animal" xml:lang="grc">γλώσσης</name> <name type="animal" xml:lang="grc">ϕλεγμονὴν</name> ἰσχυρὰν καὶ
+    <name type="animal" xml:lang="grc">παρακοπήν</name>· καὶ τὰς <name type="animal" xml:lang="grc">ἐκκρίσεις</name> ἐπέχει πάσας·
+    <name type="animal" xml:lang="grc">βορβορυγμούς</name> τε καὶ <name type="animal" xml:lang="grc">ψόϕους</name> μετὰ <name type="animal" xml:lang="grc">λειποθυμίας</name> ἐπιϕέρει, δίχα τοῦ
+    <foreign xml:lang="grc">προχωρεῖν</foreign> τι. Βοηθεῖ δὲ αὐτοῖς, μετὰ τὸ <foreign xml:lang="grc">ἐξεμέσαι</foreign> τὸ <foreign xml:lang="grc">πλεῖον</foreign>, ἢ μετὰ τὸ τὴν
+    <name type="animal" xml:lang="grc">κοιλίαν</name> <foreign xml:lang="grc">λυθῆναι</foreign>, <foreign xml:lang="grc">πινόμενον</foreign> <name type="plant" xml:lang="grc">ἀψινθίου</name>
+    <foreign xml:lang="grc">ἀπόβρεγμα</foreign> σὺν <foreign xml:lang="grc">οἴνῳ</foreign> πολλῷ ἢ <foreign xml:lang="grc">ὀξυμέλιτι</foreign>· <name type="plant" xml:lang="grc">πηγάνου</name> τε
+    <foreign xml:lang="grc">ἀγρίου</foreign> <name type="plant" xml:lang="grc">σπέρμα</name>, ἢ <name type="plant" xml:lang="grc">σιλϕίου</name> <name type="plant" xml:lang="grc">ῥίζα</name>· ὁμοίως τε
+    <name type="plant" xml:lang="grc">τραγο</name><persName>21.10</persName>
+    <name type="plant" xml:lang="grc">ρίγανου</name> <foreign xml:lang="grc">ἀϕέψημα</foreign> σύν τινι τῶν <foreign xml:lang="grc">προειρημένων</foreign>, ἢ
+    <foreign xml:lang="grc">γάλακτι</foreign>, ἢ <name type="plant" xml:lang="grc">τερεβινθίνῃ</name> <name type="plant" xml:lang="grc">ῥητίνῃ</name>, ἢ <name type="plant" xml:lang="grc">νάρδῳ</name>, ἢ
+    <name type="plant" xml:lang="grc">καστορίῳ</name>, ἢ <name type="plant" xml:lang="grc">σιλϕίῳ</name>, <foreign xml:lang="grc">ἑκάστου</foreign> <foreign xml:lang="grc">ὀβολός</foreign>·
+    <foreign xml:lang="grc">ἁρμόζουσιν</foreign> σὺν <foreign xml:lang="grc">οἴνῳ</foreign> καὶ οἱ τῆς <name type="plant" xml:lang="grc">βασιλικῆς</name>
+    <name type="plant" xml:lang="grc">καρύας</name> <name type="plant" xml:lang="grc">καρποὶ</name> σὺν <name type="plant" xml:lang="grc">ῥητίνῃ</name>, καὶ
+    <name type="plant" xml:lang="grc">καστορίῳ</name>, καὶ <name type="plant" xml:lang="grc">πηγάνῳ</name>, <foreign xml:lang="grc">ἑκάστου</foreign> #101 <foreign xml:lang="grc">ά</foreign>.
+    <foreign xml:lang="grc">ὁμοίως</foreign> <name type="plant" xml:lang="grc">χαμελαίας</name> ἢ <name type="plant" xml:lang="grc">θαψίας</name> <foreign xml:lang="grc">ὀβολοὶ</foreign> <foreign xml:lang="grc">β́</foreign> σὺν
+    <foreign xml:lang="grc">μελικράτῳ</foreign>, καὶ <foreign xml:lang="grc">ὄξος</foreign> <foreign xml:lang="grc">θερμὸν</foreign> <foreign xml:lang="grc">πινόμενον</foreign>.</p>
+</div>
+<div type="section" n="22">
+   <p><persName>22.1</persName>
+    [<foreign xml:lang="grc">Περὶ ψιμυθίου</foreign>.] Τὸ δὲ <name type="plant" xml:lang="grc">ψιμύθιον</name> <foreign xml:lang="grc">λαθεῖν</foreign>
+    οὐ <foreign xml:lang="grc">δύναται</foreign> διὰ τὸ <name type="animal" xml:lang="grc">χρῶμα</name>· <foreign xml:lang="grc">ἑκουσίως</foreign> γὰρ <foreign xml:lang="grc">ληϕθὲν</foreign>,
+    <foreign xml:lang="grc">λευκαίνει</foreign> τὸν <name type="animal" xml:lang="grc">οὐρανίσκον</name> καὶ τὰ <name type="animal" xml:lang="grc">οὖλα</name> καὶ τὴν
+    <name type="animal" xml:lang="grc">γλῶτταν</name> καὶ τὸ <foreign xml:lang="grc">μεταξὺ</foreign> τῶν <name type="animal" xml:lang="grc">ὀδόντων</name>·
+    <foreign xml:lang="grc">ἐπιϕέρει</foreign> δὲ <name type="animal" xml:lang="grc">λυγμοὺς</name> καὶ <name type="animal" xml:lang="grc">βῆχα</name> καὶ <name type="animal" xml:lang="grc">γλώττης</name>
+    <foreign xml:lang="grc">ξηρότητα</foreign> καὶ <name type="animal" xml:lang="grc">ψῦξιν</name> <name type="animal" xml:lang="grc">ἀκρωτηρίων</name>, μετὰ
+    <name type="animal" xml:lang="grc">παρακοπῆς</name> καὶ <name type="animal" xml:lang="grc">δυςκινησίας</name>. Οἷς <foreign xml:lang="grc">ἁρμόζει</foreign>
+    <foreign xml:lang="grc">μελίκρατον</foreign> <foreign xml:lang="grc">διδόναι</foreign>, ἢ <name type="plant" xml:lang="grc">σύκων</name> ἢ <name type="plant" xml:lang="grc">μαλάχης</name>
+    <foreign xml:lang="grc">ἀϕέψημα</foreign>, ἢ <foreign xml:lang="grc">γάλα</foreign> <foreign xml:lang="grc">θερμὸν</foreign>, ἢ <name type="plant" xml:lang="grc">σήσαμον</name> <foreign xml:lang="grc">λεῖον</foreign>
+    μετ' <foreign xml:lang="grc">οἴνου</foreign>, ἢ <name type="plant" xml:lang="grc">κονίαν</name> <name type="plant" xml:lang="grc">κληματίνην</name>, ἢ
+    <name type="plant" xml:lang="grc">ἀμαράκινον</name> <foreign xml:lang="grc">ἔλαιον</foreign>, ἢ <foreign xml:lang="grc">ἴρινον</foreign>· <name type="animal" xml:lang="grc">περσικῶν</name> τε
+    <name type="animal" xml:lang="grc">ὀστᾶ</name> σὺν <name type="plant" xml:lang="grc">κρίμνου</name> <foreign xml:lang="grc">ἀϕεψήματι</foreign>, <name type="animal" xml:lang="grc">περιστερῶν</name> δὲ
+    <name type="animal" xml:lang="grc">ὠὰ</name>
+    <persName>22.10</persName>
+   </p>
+</div>
+<div type="book" n="23">
+  <p>σὺν <name type="plant" xml:lang="grc">λιβάνῳ</name> ἢ <name type="plant" xml:lang="grc">κριθίνῳ</name> <foreign xml:lang="grc">ἀϕεψήματι</foreign>· ἢ <name type="plant" xml:lang="grc">κοκκυμήλων</name> <foreign xml:lang="grc">κόμμι</foreign>, ἢ
+  <name type="plant" xml:lang="grc">πτελέας</name> τὸ ἐν ταῖς <foreign xml:lang="grc">ϕύσκαις</foreign> <foreign xml:lang="grc">ὑγρὸν</foreign>, μετὰ <foreign xml:lang="grc">χλιαροῦ</foreign> <foreign xml:lang="grc">ὕδατος</foreign>·
+  <foreign xml:lang="grc">ἁρμόζει</foreign> δὲ ἐπ' αὐτῶν καὶ <name type="plant" xml:lang="grc">θαψίας</name> <foreign xml:lang="grc">χυλὸς</foreign> ἢ <name type="plant" xml:lang="grc">σκαμμωνίας</name> <foreign xml:lang="grc">ὀποῦ</foreign>
+  <foreign xml:lang="grc">τριώβολον</foreign> <foreign xml:lang="grc">πινόμενα</foreign>.</p>
+</div>
+
+<div type="section" n="23.1">
+  <p>[Περὶ <foreign xml:lang="grc">μυκήτων</foreign>.] <foreign xml:lang="grc">Μυκήτων</foreign> δὲ οἱ μὲν τῷ
+  <foreign xml:lang="grc">γένει</foreign> <foreign xml:lang="grc">βλάπτουσιν</foreign>, οἱ δὲ τῷ <foreign xml:lang="grc">πλήθει</foreign>· <foreign xml:lang="grc">ἐπιϕέρουσι</foreign> δὲ <foreign xml:lang="grc">πάντες</foreign>
+  <foreign xml:lang="grc">πνιγμοὺς</foreign> <foreign xml:lang="grc">ἐοικότας</foreign> <foreign xml:lang="grc">ἀγχόναις</foreign>.</p>
+</div>
+
+<div type="section" n="23.3">
+  <p>Οἷς <foreign xml:lang="grc">εὐθέως</foreign> <foreign xml:lang="grc">βοηθεῖν</foreign> δεῖ <foreign xml:lang="grc">κοινῶς</foreign>, <foreign xml:lang="grc">ἀναγκάζοντας</foreign> <foreign xml:lang="grc">ἐμεῖν</foreign> δι' <foreign xml:lang="grc">ἐλαίου</foreign>·
+  <foreign xml:lang="grc">θαυμαστῶς</foreign> δὲ <foreign xml:lang="grc">ὠϕελοῦνται</foreign> <foreign xml:lang="grc">πίνοντες</foreign> <name type="plant" xml:lang="grc">κονίαν</name> <name type="plant" xml:lang="grc">κληματίνην</name>, ἢ ἐξ <name type="plant" xml:lang="grc">ἀχραδίνου</name> <foreign xml:lang="grc">ξύλου</foreign>, μετὰ <foreign xml:lang="grc">ὀξυκράτου</foreign> καὶ <foreign xml:lang="grc">ἁλῶν</foreign> ἢ <foreign xml:lang="grc">νίτρου</foreign>·
+  καὶ <foreign xml:lang="grc">συνεψόμεναι</foreign> δὲ αἱ <name type="plant" xml:lang="grc">ἀχράδες</name> ἢ
+  τὰ <foreign xml:lang="grc">ϕύλλα</foreign> τοῖς <foreign xml:lang="grc">μύκησιν</foreign>, <foreign xml:lang="grc">ἀϕαιροῦνται</foreign> τὸ <foreign xml:lang="grc">πνιγῶδες</foreign> αὐτῶν·
+  <foreign xml:lang="grc">ἐσθιόμεναι</foreign> δὲ <foreign xml:lang="grc">ὠϕελοῦσιν</foreign>· <foreign xml:lang="grc">βοηθεῖ</foreign> δὲ αὐτοῖς <name type="animal" xml:lang="grc">ἀλεκτορίδων</name>
+  <foreign xml:lang="grc">ὠὰ</foreign> <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">ὀξυκράτῳ</foreign> <foreign xml:lang="grc">πινόμενα</foreign>, μετ' <name type="plant" xml:lang="grc">ἀριστολοχίας</name> <foreign xml:lang="grc">ὁλκῆς</foreign> <foreign xml:lang="grc">ά</foreign>,
+  ἢ <name type="plant" xml:lang="grc">ἀψίνθιον</name> <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">οἴνῳ</foreign>· <foreign xml:lang="grc">μέλι</foreign> τε <foreign xml:lang="grc">ἐσθιόμενον</foreign> καὶ <foreign xml:lang="grc">πινόμενον</foreign>
+  <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">ὕδατι</foreign>· <name type="plant" xml:lang="grc">μελισσόϕυλλόν</name> τε <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">νίτρῳ</foreign>, <name type="plant" xml:lang="grc">πάνακός</name> τε <foreign xml:lang="grc">ῥίζα</foreign>
+  καὶ <foreign xml:lang="grc">καρπὸς</foreign> <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">οἴνῳ</foreign>· <foreign xml:lang="grc">τρύξ</foreign> τε <foreign xml:lang="grc">οἴνου</foreign> <foreign xml:lang="grc">κεκαυμένη</foreign> <foreign xml:lang="grc">μεθ' ὕδατος</foreign>, καὶ <foreign xml:lang="grc">χαλκοῦ</foreign> <foreign xml:lang="grc">ᾶνθος</foreign> <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">ὄξει</foreign>, <name type="plant" xml:lang="grc">ῥάϕανός</name> τε ἢ <name type="plant" xml:lang="grc">νάπυ</name> ἢ
+  <name type="plant" xml:lang="grc">κάρδαμα</name> <foreign xml:lang="grc">ἐσθιόμενα</foreign>.</p>
+</div>
+
+<div type="section" n="24.1">
+  <p>[Περὶ <foreign xml:lang="grc">γύψου</foreign>.] Καὶ ἡ <name type="animal" xml:lang="grc">γύψος</name> <foreign xml:lang="grc">πνιγμὸν</foreign> <foreign xml:lang="grc">ἐπιϕέρει</foreign> <foreign xml:lang="grc">λιθουμένη</foreign>·
+  ὅθεν καὶ τούτοις <foreign xml:lang="grc">ἁρμόζει</foreign> <foreign xml:lang="grc">διδόναι</foreign> τὰ πρὸς
+  τοὺς <foreign xml:lang="grc">μύκητας</foreign> <foreign xml:lang="grc">βοηθήματα</foreign>· καὶ ἐπὶ τούτων τὸ τῆς <name type="plant" xml:lang="grc">μαλάχης</name>
+  <foreign xml:lang="grc">ἀϕέψημα</foreign>, ὃ <foreign xml:lang="grc">παραληπτέον</foreign> <foreign xml:lang="grc">ἀντὶ</foreign> τοῦ <foreign xml:lang="grc">ἐλαίου</foreign>· <foreign xml:lang="grc">λιπαρὸν</foreign> γὰρ ὂν
+  καὶ ἐν τῷ <foreign xml:lang="grc">ἐξεμεῖσθαι</foreign> <foreign xml:lang="grc">ὄλισθον</foreign> <foreign xml:lang="grc">ἐμποιοῦν</foreign>, οὐκ <foreign xml:lang="grc">ἐᾷ</foreign> <foreign xml:lang="grc">καταξύεσθαι</foreign>
+  τὰ <foreign xml:lang="grc">σώματα</foreign>· <foreign xml:lang="grc">λιθουμένη</foreign> γὰρ ἡ <name type="animal" xml:lang="grc">γύψος</name> <foreign xml:lang="grc">ἐργάζεται</foreign> τοῦτο· <foreign xml:lang="grc">ἁρμόζει</foreign> δὲ καὶ τὸ <foreign xml:lang="grc">ἔλαιον</foreign> <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">μελικράτῳ</foreign> ἢ <name type="plant" xml:lang="grc">σύκων</name> <foreign xml:lang="grc">ἀϕεψήματι</foreign>· καὶ
+  <name type="plant" xml:lang="grc">κονία</name> <name type="plant" xml:lang="grc">συκίνη</name> ἢ <name type="plant" xml:lang="grc">κληματίνη</name> <foreign xml:lang="gr">σὺν</foreign> <foreign xml:lang="grc">οἴνῳ</foreign> <foreign xml:lang="grc">πολλῷ</foreign> <foreign xml:lang="grc">πινομένη</foreign>· καὶ
+  <name type="plant" xml:lang="grc">ὀρίγανος</name> ἢ <name type="plant" xml:lang="grc">θύμος</name> <foreign xml:lang="grc">σὺν</foreign> <name type="plant" xml:lang="grc">κονίᾳ</name>, ἢ <foreign xml:lang="grc">ὄξει</foreign>, ἢ <foreign xml:lang="grc">γλυκεῖ</foreign>· <foreign xml:lang="grc">δεῖ</foreign> δὲ τού</p>
+</div>
+<div type="chapter" n="25">
+  <p>τους ὑποκλύζειν τῷ τῆς <name type="plant" xml:lang="grc">μαλάχης</name> ἀϕεψήματι.</p>
+  <p><name type="section" n="1">[Περὶ <name type="animal" xml:lang="grc">αἵματος</name> <name type="animal" xml:lang="grc">ταυρείου</name>.]</name> Αἷμα δὲ <name type="animal" xml:lang="grc">ταύρειον</name> νεοσϕαγὲς ποθὲν δύςπνοιαν ἐπιϕέρει καὶ πνιγμόν· ἐμϕράττον τοὺς περὶ τὰ παρίσθμια καὶ τὴν κατάποσιν πόρους μετὰ σπασμοῦ ἰσχυροῦ· εὑρίσκεταί τε ἐπ' αὐτῶν ἡ γλῶττα ἐρυθρά, καὶ ὀδόντες βεβαμμένοι, καὶ θρομβία μεταξὺ αὐτῶν. ’Εϕ' ὧν τὸν ἔμετον παραιτούμεθα, τῶν θρόμβων μᾶλλον ἐν τῷ στομάχῳ σϕηνουμένων, διὰ τὸ μετεωρίζεσθαι αὐτοὺς κατὰ τὴν ὁλκήν. Διδόναι δὲ, ὅσα δύναται τὴν πῆξιν διαλύσαι τοῦ <name type="animal" xml:lang="grc">αἵματος</name>, καὶ τὴν κοιλίαν ὑπάγειν· τούς τε <name type="plant" xml:lang="grc">ὀλύνθους</name>, πλήρεις ὄντας τοῦ ὀποῦ, σὺν ὀξυκράτῳ· καὶ νίτρον δὲ καθ' ἑαυτὸ ὠϕελεῖ· καὶ πυτία ἅπασα σὺν ὄξει, καὶ <name type="plant" xml:lang="grc">σιλϕίου</name> ῥίζῃ ἢ τῷ ὀπῷ· ὁμοίως καὶ <name type="plant" xml:lang="grc">κράμβης</name> σπέρμα, κονία τε συκίνη, καὶ κονύζης ϕύλλα σὺν <name type="plant" xml:lang="grc">πεπέρει</name>, καὶ <name type="animal" xml:lang="grc">βάτου</name> χολὸς σὺν ὄξει· δεῖ δὲ τὴν κοιλίαν ὑπάγειν. Εἴωθε δὲ τοῖς σωζομένοις ἀποδίδοσθαι διὰ τῆς ἕδρας δυςώδη καὶ ῥοώδη· καταπλάσσειν δὲ καὶ στόμαχον καὶ τὴν κοιλίαν ἀλεύρῳ κριθίνῳ μετὰ μελικράτου.</p>
+</div>
+<div type="chapter" n="26">
+  <p><name type="section" n="1">[Περὶ <foreign xml:lang="grc">γάλακτος</foreign> ἐμπυτιασθέντος.]</name> Καὶ τοῖς λαβοῦσιν ἐμπυτιασθὲν <foreign xml:lang="grc">γάλα</foreign> ἄθρουν, πολὺς πνιγμὸς γίνεται, διὰ τὸ θρομβοῦσθαι· οἷς βοηθοῦντας προςϕέρειν δεῖ, ὥςπερ ἀντίδοτον, πυτίαν σὺν ὄξει, πολλάκις ἀναγκάζοντας πίνειν· καὶ <name type="plant" xml:lang="grc">καλαμίνθης</name> τὰ ϕύλλα ξηρά, ἢ τὸν χυλὸν ὁμοίως· ἢ <name type="plant" xml:lang="grc">σιλϕίου</name> ῥίζαν ἢ τὸν ὀπὸν σὺν ὀξυκράτῳ· <name type="plant" xml:lang="grc">θύμον</name> τε σὺν οἴνῳ, καὶ τὴν πιλοποιητικὴν κονίαν· ἁλυκὸν δὲ μηδὲν προςϕερέσθω· μᾶλλον γὰρ πήγνυται καὶ τυροῦται τὸ <foreign xml:lang="grc">γάλα</foreign>· ἀλλ' οὐδὲ τούτους ἐμεῖν δεῖ· ἐνιστάμενον γὰρ ἐπὶ τὰ τοῦ</p>
+</div>
+<div type="section" n="23">
+   <p>στομάχου στενὰ τεθρομβωμένον πνίγει.</p>
+</div>
+<div type="section" n="26">
+   <p><name type="chapter" n="27.1">[Περὶ λιθαργύρου.]</name> Λιθάργυρος δὲ ποθεῖσα βάρος ἐπιϕέρει <name type="animal" xml:lang="grc">στομάχῳ</name> καὶ <name type="animal" xml:lang="grc">κοιλίᾳ</name> καὶ <name type="animal" xml:lang="grc">ἐντέροις</name>, μετὰ στρόϕων ἐπιτεταμένων· ἐνίοτε δὲ καὶ τιτρώσκει τὰ ἔντερα διὰ τὸ βάρος· καὶ ἐπέχει τὰ οὖρα· παροιδεῖ δὲ αὐτῶν τὸ σῶμα, καὶ μολυβδώδη ἀπρέπειαν λαμβάνει· ἐϕ' ὧν ἁρμόζει μετὰ τὸν ἔμετον πινόμενα σὺν <foreign xml:lang="grc">οἴνῳ</foreign>, <name type="plant" xml:lang="grc">ὁρμίνου ἀγρίου σπέρμα</name>, <name type="plant" xml:lang="grc">σμύρνης</name> #101, ἢ <name type="plant" xml:lang="grc">ἀψίνθιον</name>, <name type="plant" xml:lang="grc">ὕσσωπον</name>, <name type="plant" xml:lang="grc">σελίνου σπέρμα</name>, ἢ πέπερι, ἢ <name type="plant" xml:lang="grc">κύπρου ἄνθος</name> σὺν <foreign xml:lang="grc">οἴνῳ</foreign>· <name type="animal" xml:lang="grc">περιστερῶν</name> τε <name type="animal" xml:lang="grc">ἀγρίων</name> ἄϕοδος ξηρὰ μετὰ <name type="plant" xml:lang="grc">νάρδου</name> ἢ <foreign xml:lang="grc">οἴνου</foreign>.</p>
+   <p><name type="chapter" n="28.1">[Περὶ ὑδραργύρου.]</name> ‘Υδράργυρος δὲ ποθεῖσα τὰ αὐτὰ ἐπιϕέρει τῇ λιθαργύρῳ, καὶ ἐπὶ τούτων δεῖ τοῖς αὐτοῖς βοηθήμασι χρῆσθαι· δοκεῖ δὲ αὐτοὺς ὠϕελεῖν γάλα πολὺ πινόμενον· ἐμείτωσαν δὲ καὶ οὗτοι.</p>
+   <p><name type="chapter" n="29.1">[Περὶ τιτάνου, σανδαράχης καὶ ἀρσενικοῦ.]</name> Τίτανος, σανδαράχη καὶ <name type="plant" xml:lang="grc">ἀρσενικὸν</name> ποθέντα, τὰ αὐτὰ ἀλγήματα <name type="animal" xml:lang="grc">κοιλίας</name> καὶ <name type="animal" xml:lang="grc">ἐντέρων</name> ἐπιϕέρει μετὰ δηγμοῦ σϕοδροῦ· ὅθεν προσϕέρειν δεῖ ἅπαντα, ὅσα μετὰ τοῦ κιρνάναι, δύναται τὸ εὐμενὲς, καὶ πρὸς τὴν <name type="animal" xml:lang="grc">κοιλίαν</name> ὀλισθηρὸν παρέχειν· οἷός ἐστιν ὁ τοῦ <name type="plant" xml:lang="grc">ἰβίσκου</name> καὶ τῆς <name type="plant" xml:lang="grc">μαλάχης</name> χυλὸς, λίαν ὀλισθηρὸς ὑπάρχων· παρέχειν δὲ δεῖ καὶ ἀϕέψημα <name type="plant" xml:lang="grc">λινοσπέρμου</name>, ἢ <name type="animal" xml:lang="grc">τράγου</name>, ἢ <name type="plant" xml:lang="grc">ὀρύζης</name>· καὶ γάλα πολὺ σὺν <foreign xml:lang="grc">μελικράτῳ</foreign> καὶ <foreign xml:lang="grc">ζωμοὺς</foreign> λιπαροὺς καὶ εὐχύμους.</p>
+   <p><name type="chapter" n="30.1">[Περὶ λαγωοῦ θαλασσίου.]</name> <name type="animal" xml:lang="grc">Λαγωοῦ</name> δὲ <name type="animal" xml:lang="grc">θαλασσίου</name> ποθέντος, παρακολουθεῖ <foreign xml:lang="grc">γεῦσις</foreign> ὁμοία <name type="animal" xml:lang="grc">ἰχθύσι</name> βρωμώδεσιν· ἐν δὲ τῷ χρονίσαι <name type="animal" xml:lang="grc">κοιλία</name> τε ἀλγεῖ, καὶ <name type="animal" xml:lang="grc">οὖρα</name> ἐπέχεται· εἴ ποτε δὲ ἐκκριθείη, πορϕυρίζοντα τῇ χρόᾳ ὁρᾶται·</p>
+</div>
+<div type="section" n="24">
+  <p>ἀποστροϕή τε καὶ μῖσος πρὸς πάντα <name type="animal" xml:lang="grc">ἰχθύς</name>· καὶ ἱδροῦσι δυςώδη· παρέπεται δὲ αὐτοῖς καὶ ἔμετος χολώδης, ἐνίοτε αἵματι μεμιγμένος· οἷς δοτέον γάλα <name type="animal" xml:lang="grc">ὄνος</name>, ἢ γλυκὺ συνεχῶς, καὶ μαλάχης ῥίζης καὶ τῶν ϕύλλων τὸ ἀϕέψημα, ἢ κυκλαμίνου ῥίζαν λείαν σὺν οἴνῳ· ἢ ἐλλεβόρου μέλανος ἢ σκαμμονίας ὀποῦ <foreign xml:lang="grc">#101 ά</foreign> μετὰ μελικράτου· ῥοῶν τε πυρῆνας, ἢ κεδρίας λείας μετ' οἴνου· ποιεῖ καὶ <name type="animal" xml:lang="grc">χήν</name> αἷμα ποθὲν θερμόν· μὴ δυνάμενοι δὲ οὗτοι <name type="animal" xml:lang="grc">ἰχθύς</name> προςενέγκασθαι, μόνους τοὺς ποταμίους <name type="animal" xml:lang="grc">καρκίνος</name> ἑϕθοὺς ἐσθίουσι, καὶ πίνοντες οἶνον μεμιγμένον ἐπ' αὐτῶν, πέσσουσιν ὠϕελούμενοι· τεκμήριον δ' ἐστὶν ἐπ' αὐτῶν σωτηρίας, ὅταν ἄρξωνται <name type="animal" xml:lang="grc">ἰχθύς</name> προςϕέρεσθαι.</p>
+</div>
+<div type="section" n="26">
+  <p>[Περὶ <name type="animal" xml:lang="grc">ϕρῦνος</name>.] <name type="animal" xml:lang="grc">ϕρῦνος</name> ἢ <name type="animal" xml:lang="grc">βάτραχος</name> ἕλειος προςενεχθεὶς ἐπιϕέρει οἰδήματα σώματος μετὰ ὠχρότητος ἐπιτεταμένης, ὡς δοκεῖν πύξῳ ἐοικέναι, δυςπνοεῖν τε καὶ δυςωδίᾳ ὀδωδέναι τὸ στόμα· καὶ λυγμὸς αὐτοῖς ἕπεται, ἐνίοτε δὲ καὶ σπέρματος ἀπροαίρετος ἔκκρισις. Εὐβοήθητοί τε τυγχάνουσι μετὰ τὸν ἔμετον λαμβάνοντες ἄκρατον πολὺν, καὶ καλάμου ῥίζης <foreign xml:lang="grc">#101 β́</foreign>, ἢ κυπείρου τὸ αὐτό· δεῖ δὲ αὐτοὺς καὶ ἀναγκάζειν συντόνως περιπατεῖν καὶ τρέχειν, διὰ τὸ ἐν αὐτοῖς ναρκῶδες· λούειν τε καθ' ἑκάστην ἡμέραν.</p>
+  <p>[Περὶ <name type="animal" xml:lang="grc">βδέλλα</name>.] <name type="animal" xml:lang="grc">βδέλλας</name> τὰς καταπινομένας σὺν τῷ ὕδατι καὶ προςϕυομένας τῇ καταπόσει ἢ τῷ στόματι τῆς κοιλίας, ἑλκούσας τὰ μέρη, καὶ ϕαντασίαν ἐκμυζήσεως παρεχούσας, ὅπερ καὶ σημεῖόν ἐστι τοῦ <name type="animal" xml:lang="grc">βδέλλα</name> καταπεπόσθαι, ἀποβάλλει ἅλμη καταρῥοϕουμένη, καὶ ὀπὸς κυρηναϊκὸς, ἢ ϕύλλα <name type="plant" xml:lang="grc">σίλϕιον</name> ἢ <name type="plant" xml:lang="grc">τέυτλον</name>, σὺν ὄξει πινόμενα,</p>
+</div>
+<div type="book" n="25">
+  <p>ἢ <name type="animal" xml:lang="grc">χιὼν</name> σὺν ὀξυκράτῳ· ἀναγαργαριζέσθωσαν δὲ νίτρῳ σὺν
+  ὕδατι καὶ <name type="plant" xml:lang="grc">χαλκάνθῳ</name> σὺν ὄξει ἀνεθέντι· πρὸς τὰς δὲ τῷ
+  βρόγχῳ προσϕυείσας, ἐμβιβάσας εἰς ἔμβασιν θερμὴν, δίδου</p>
+  <p>ψυχρὸν ὕδωρ ἐν τῷ στόματι διακρατεῖν, καὶ ἐξελεύσονται.</p>
+</div>
+<div type="chapter" n="32">
+  <p><foreign xml:lang="grc">[Περὶ τῶν ἐπ' ὠϕελείᾳ διδομένων, πολλάκις δὲ ἐπικινδύνων.]</foreign> Προνοητέον δὲ καὶ τῶν ἐπ' ὠϕελείᾳ
+  διδομένων, ἐπιϕερόντων δὲ πολλάκις κίνδυνον οὐχ ἥττονα τῶν
+  ἄλλων ϕαρμάκων· ὡς <name type="plant" xml:lang="grc">ἐλλεβόρου</name> λευκοῦ, καὶ <name type="plant" xml:lang="grc">θαψίας</name>, καὶ
+  <name type="plant" xml:lang="grc">ἐλατηρίου</name>, καὶ <name type="plant" xml:lang="grc">ἀγαρικοῦ</name> τοῦ μέλανος· πνιγμὸν γὰρ ἐπιϕέρει ταῦτα ἢ ὑπερκάθαρσιν· ἐϕ' ὧν τοὺς πνιγμοὺς μὲν θεραπεύσομεν, ὡς προείρηται ἐπὶ <name type="animal" xml:lang="grc">μυκήτων</name> καὶ τῶν ὁμοίων·
+  τὰς δὲ ὑπερκαθάρσεις τοῖς δυναμένοις ἐπέχειν τὰς ἐκκρίσεις
+  στελοῦμεν.</p>
+</div>
+<div type="section" n="33">
+  <p>Καὶ τῶν μὲν δοκούντων ἐπ' ὀλίγον βλάπτειν,
+  ἐνίοτε δὲ κινδύνους ἐπιϕερόντων, οὐκ ἀμελητέον· ὧν ἐστι τὸ
+  <name type="plant" xml:lang="grc">ἄγριον πήγανον</name>, καὶ τὸ <name type="plant" xml:lang="grc">μελάνθιον</name>, καὶ οἱ <name type="animal" xml:lang="grc">νέαροι πάπποι</name>·
+  ἄνθη δέ ἐστιν <name type="plant" xml:lang="grc">ἀκάνθης</name> τῆς καλουμένης <foreign xml:lang="grc">κάκτου</foreign>· ἐϕ' ὧν ἔμετος μόνος παραληϕθεὶς ἀποκαθίστησι τοὺς λαμβάνοντας.</p>
+</div>
+<div type="chapter" n="34">
+  <p><foreign xml:lang="grc">[Περὶ τῶν συμϕύλων ἡμῖν, ὕδατός τε ψυχροῦ καὶ οἴνου.]</foreign> Καὶ τὸ ψυχρὸν ὕδωρ ἀθρόον ποθὲν, ἢ
+  ἄκρατος πολὺς καὶ γλυκὺς <name type="plant" xml:lang="grc">οἶνος</name> ποθεὶς, μάλιστα ἀπὸ <placeName>βαλανείου</placeName> ἢ <placeName>δρόμου</placeName> καὶ τῶν εὐτόνων <foreign xml:lang="grc">γυμνασίων</foreign> πνιγμοὺς καὶ
+  ἀλγήματα ἐπιϕέρει· ἐϕ' ὧν ϕλεβοτομία ταχέως παραληϕθεῖσα
+  καὶ κένωμα λύει τὸν ἐπηρτημένον κίνδυνον.</p>
+  <p>Καὶ περὶ μὲν τῶν σημείων τοῖς λαβοῦσι τὰ θανάσιμα
+  τῶν ϕαρμάκων, καὶ τῆς ἁρμοζούσης αὐτοῖς θεραπείας, ἔτι
+  δὲ προϕυλακτικῆς ἀγωγῆς, ἐπὶ τοσoῦτον ἡμῖν εἰρήσθω· ὑπο</p>
+</div>
+<div type="section" n="26">
+   <p>γράψομεν δὲ καὶ τὰς <name type="animal" xml:lang="grc">ἀντιδότους</name> ἀναγκαιότατα καὶ γενναιότατα βοηθοῦσας, αἷς ἐχρήσαντο, τῇ τε <persName>Μιθριδατείῳ</persName>, καὶ
+   τῇ δι' <name type="animal" xml:lang="grc">αἱμάτων</name>, καὶ τῇ διὰ <name type="animal" xml:lang="grc">σκίγκων</name>· ἃς διὰ τὸ ἐν ταῖς <name type="animal" xml:lang="grc">ἀντιδότοις</name> ἀκριβέστατα ἀναγεγράϕθαι παρῃτησάμην ἀναγράϕειν
+   ἐνταῦθα.</p>
+</div>
+    </body>
+  </text>
+</TEI>
