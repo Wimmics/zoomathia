@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">De Aucupio</title>
+        <author>
+          <persName>NEMESIANUS, MARCUS AURELIUS OLYMPUS</persName>
+          
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-16">2026-07-16</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-16">2026-07-16</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia"></idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>inconnu</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="section" n="1">
+   <p>et <name type="animal" xml:lang="la">tetracem</name>, <placeName>Romae</placeName> quem nunc vocitare <name type="animal" xml:lang="la">taracem</name>
+coeperunt. <name type="animal" xml:lang="la">avium</name> est multo stultissima; namque
+cum <name type="animal" xml:lang="la">pedicas</name> necti sibi contemplaverit adstans,
+immemor ipse sui tamen in dispendia currit.</p>
+   <p>tu vero adductos <name type="animal" xml:lang="la">laquei</name> cum senseris orbes
+appropera et praedam <name type="animal" xml:lang="la">pennis</name> crepitantibus aufer.</p>
+   <p>nam celer oppressi fallacia vincula <name type="animal" xml:lang="la">colli</name>
+excutit et rauca subsannat voce <persName>magistri</persName>
+<pb n="514"/>
+consilium et laeta fruitur iam pace solutus.</p>
+   <p>hic prope <placeName>Peltinum</placeName> ad radices <placeName>Apennini</placeName>
+nidificat, patulis qua se sol obicit agris,
+persimilis <name type="plant" xml:lang="la">cineri</name> collum, <name type="animal" xml:lang="la">maculosasque</name> terga
+inficiunt pullae <name type="animal" xml:lang="la">cacabantis</name> imagine guttae.</p>
+   <p><placeName>Tarpeiae</placeName> est custos <placeName>arcis</placeName> non corpore maior
+nec qui te <name type="animal" xml:lang="la">volucres</name> docuit, <persName>Palamede</persName>, figuras.</p>
+   <p>saepe ego nutantem sub iniquo pondere vidi
+<name type="animal" xml:lang="la">mazonomi</name> <persName>puerum</persName>, portat cum prandia, <placeName>circo</placeName>
+quae <persName>consul</persName> <persName>praetorve</persName> novus construxit ovanti.</p>
+   <p>cum nemus omne suo viridi spoliatur honore,
+fultus <name type="animal" xml:lang="la">equi</name> niveis silvas pete protinus altas
+exuviis: praeda est facilis et amoena <name type="animal" xml:lang="la">scolopax</name>.</p>
+   <p>corpore non <placeName>Paphis</placeName> <name type="animal" xml:lang="la">avibus</name> maiore videbis.</p>
+   <p>illa sub aggeribus primis, qua proluit umor,
+pascitur, exiguos sectans obsonia <name type="animal" xml:lang="la">vermes</name>.</p>
+   <p>at non illa oculis, quibus est obtusior, etsi
+sint nimium grandes, sed acutis naribus instat:
+impresso in terram rostri mucrone sequaces
+<name type="animal" xml:lang="la">vermiculos</name> trahit et vili dat praemia <name type="deity" xml:lang="la">gulae</name>.</p>
+</div>
+    </body>
+  </text>
+</TEI>
