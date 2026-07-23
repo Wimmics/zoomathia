@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Περὶ ἀφθαρσίας κόσμου</title>
+        <title type="alt" xml:lang="fr">Sur l'éternité du monde</title>
+        <title type="alt" xml:lang="en">On the eternity of the world</title>
+        <author>
+          <persName>PHILO ALEXANDRINUS</persName>
+          <idno type="zoomathia">tlg0018</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-23">2026-07-23</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-23">2026-07-23</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">tlg0018</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">grec</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>grec</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <p>Philo Alexandrinus: <foreign xml:lang="en">On Husbandry</foreign></p>
+  <div type="section" n="1">
+    <p><foreign xml:lang="en">ON HUSBANDRY</foreign></p>
+    <p><foreign xml:lang="en">Yonge's title, A Treatise on the Tilling of the Earth by Noah.</foreign></p>
+    <p>Where Noah first did plant the <name type="plant" xml:lang="en">vine</name>,</p>
+    <p>And with the fruit thereof did make the <name type="drink" xml:lang="en">wine</name>.</p>
+    <p>Then did he teach the <name type="animal" xml:lang="en">ox</name> to plough the ground,</p>
+    <p>And with his strength did till the fruitful land.</p>
+    <p>The <name type="animal" xml:lang="en">bees</name> he taught to make the <name type="substance" xml:lang="en">honey</name> sweet,</p>
+    <p>And in the combs to lay the golden meat.</p>
+    <p>The <name type="animal" xml:lang="en">sheep</name> he taught to yield the fleece so fine,</p>
+    <p>And in the fields to feed on <name type="plant" xml:lang="en">grass</name> divine.</p>
+  </div>
+</div>
+<div type="book" n="2">
+  <div type="section" n="89">
+    <p>On Husbandry</p>
+    <p><quote>And Noah began to be a husbandman; and he planted a vineyard, and he drank of the wine, and he was drunk in his House.<ref target="ge 9:20"/></quote></p>
+    <p>The generality of men not understanding the nature of things, do also of necessity err with respect to the composition of names; for those who consider affairs anatomically, as it were, are easily able to affix appropriate names to things, but those who look at them in a confused and irregular way are incapable of such accuracy.</p>
+    <p>But Moses, through the exceeding abundance of his knowledge of all things, was accustomed to affix the most felicitous and expressive appellations to them.</p>
+    <p>Accordingly, in many passages of the law, we shall find this opinion, which we have expressed, confirmed by the fact, and not least in the passage which we have cited at the beginning of this treatise, in which the just Noah is represented as a husbandman.</p>
+    <p>For what man is there who is at all hasty in forming an opinion, who would not think that the being a husbandman (<foreign xml:lang="grc">γεωργία</foreign>), and the occupying one's self in cultivating the ground (<foreign xml:lang="grc">ἡ γεωεργασία</foreign>), were the same thing?</p>
+    <p>And yet in real truth, not only are these things not the same, but they are even very much separated from one another, so as to be opposed to, and at variance with one another.</p>
+  </div>
+</div>
+<div type="book" n="3">
+  <div type="chapter" n="89">
+    <p>For a man without any skill may labour at taking care of the land; but if a man is called a husbandman, he, from his mere name, is believed to be no unskilful man, but a farmer of experience, inasmuch as his</p>
+  </div>
+</div>
+<div type="section" n="4">
+   <p>name (<name type="animal" xml:lang="grc">γέωργος</name>) has been derived from agricultural skill (<foreign xml:lang="grc">γεωργικὴ τέχνη</foreign>), of which he is the namesake. (5) And besides all this, we must likewise consider this other point, that the tiller of the ground (<foreign xml:lang="grc">ὁ γεωργὸς ἔργατης</foreign>) looks only to one end, namely, to his wages; for he is altogether a hireling, and has no care whatever to till the land well. But the husbandman (<foreign xml:lang="grc">ὁ γεωργός</foreign>) would be glad also to contribute something of his own, and to spend in addition some of his private resources for the sake of improving the soil, and of avoiding blame from those who understand the business; for his desire is to derive his revenues every year not from any other source, but from his agricultural labours, when they have been brought into a productive state. (6) He therefore occupies himself with improving the character of wild <name type="plant" xml:lang="grc">δένδρα</name>, and making them fruitful, and with further improving the character of fruitful <name type="plant" xml:lang="grc">δένδρα</name> by his care, and with reducing by pruning those branches which through superfluity of nourishment are too luxuriant, and with inducing those which are contracted and crowded to grow by the extension of their young shoots. Moreover, those <name type="plant" xml:lang="grc">δένδρα</name> which are of good sorts, and which make many shoots, he propagates by extending them under the earth in ditches of no very great depth, and those which do not produce good fruit he endeavours to improve by the insertion of other kinds into their roots, connecting them by the most natural union. For the same thing happens likewise in t</p>
+</div>
+<div type="book" n="5">
+  <div type="section" n="89">
+    <p>he</p>
+    <p>case of men, that they firmly unite into their own family adopted sons, who are unconnected with them in blood, but whom they make their own on account of their <foreign xml:lang="en">virtues</foreign>.  The <persName>husbandman</persName>, therefore, takes up innumerable <name type="plant" xml:lang="grc">shoots</name>, with their roots entire, which have by natural process become barren, as far as bearing fruit is concerned, and which even do great injury to those <name type="plant" xml:lang="grc">plants</name> which do bear by reason of their being planted near them. Such, then, is the art which is applied to those <name type="plant" xml:lang="grc">plants</name> which grow out of the ground. And now let us turn our consideration to the husbandry of the soul in its turn.</p>
+  </div>
+</div>
+<div type="book" n="6">
+  <div type="section" n="89">
+    <p>First of all, therefore, the husbandman is not anxious to plant or to sow anything that is unproductive, but only all such things as are worth cultivation, and as bear fruit, which will bring a yearly produce to their master man.</p>
+    <p>For nature has pointed him out as the master of all <name type="animal" xml:lang="grc">ζῷα</name> and <name type="plant" xml:lang="grc">δένδρα</name>, and all other things whatever which are perishable;</p>
+    <p>and what can man be but the kind that is in every one of us, which is accustomed to reap the advantage from all that is sown or planted?</p>
+    <p>But since milk is the food of infants, but cakes made of wheat are the food of fullgrown men, so also the soul must have a milk-like nourishment in its age of childhood, namely, the elementary instruction of encyclical science.</p>
+    <p>But the perfect food which is fit for men consists of explanations dictated by prudence, and temperance, and every virtue.</p>
+    <p>For these things being sown and implanted in the mind will bring forth most advantageous fruit, namely, good and praiseworthy actions.</p>
+    <p>By means of this husbandry, all the trees of the passions and vices, which so forth and grow up to a height, bringing forth pernicious fruits, are rooted up, and cut down, and cleared away, so that not even the smallest fragment of them is left, from which any new shoots of evil actions can subsequently spring up.</p>
+    <p>And if, besides, there are any trees which produce no fruit at all, neither good nor bad,</p>
+  </div>
+</div>
+<div type="book" n="7">
+  <div type="section" n="89">
+    <p>the husbandman will cut them down too, but still he will not suffer them to be completely destroyed, but he will apply them to some appropriate use, making them into stakes and fixing them as pales all round his homestead, or using them as a fence for a city to serve instead of a wall.</p>
+  </div>
+</div>
+<div type="section" n="8">
+   <p>For Moses says, "Every <name type="plant" xml:lang="grc">tree</name> which bringeth not forth fruit good to eat thou shalt cut down; and thou shalt make it into stakes against the <placeName>city</placeName> which shall make war upon them."{2} {#De 20:20.}</p>
+   <p>And these <name type="plant" xml:lang="grc">trees</name> are likened to those powers developed in words alone, which have nothing in them but mere speculation,</p>
+   <p>among which we must class medical science, when unconnected with practice, by which it is natural that such persons may be cured, and also the oratorical and hireling species of rhetoric, which is conversant not about the discovery of the truth, but solely about the means of deceiving the hearers by plausible persuasion;</p>
+   <p>and in the same class we must place all those parts of dialectics and geometry which have no connection with a proper regulation of the character or morals, but which only sharpen the mind, not suffering it to exercise a dull apprehension towards each question which is raised and submitted to it, but always to dissect the question and divide it, so as to distinguish the peculiar character of each thing from the common qualities of the whole genus.</p>
+   <p>At all events, men say, that the ancients compared the principles of philosophy, as being threefold, to a field; likening natural philosophy to <name type="plant" xml:lang="grc">trees</name> and <name type="plant" xml:lang="grc">plants</name>, and moral philosophy to <name type="plant" xml:lang="grc">fruits</name>, for the sake of which the <name type="plant" xml:lang="grc">plants</name> are planted;</p>
+   <p>and logical philosophy to the hedge or fence:</p>
+</div>
+<div type="section" n="9">
+   <p>for as the wall, which is erected around, is the guardian of the <name type="plant" xml:lang="grc">plants</name> and of the <foreign xml:lang="grc">καρπὸς</foreign> which are in the field, keeping off all those who wish to do them injury and to destroy them,</p>
+   <p>in the same manner, the logical part of philosophy is the strongest possible sort of protection to the other two parts, the moral and the natural philosophy;</p>
+   <p>(16) for when it simplifies twofold and ambiguous expressions, and when it solves specious plausibilities entangled in <name type="animal" xml:lang="grc">sophisms</name>, and utterly destroys seductive deceits, the greatest allurement and ruin to the soul, by means of its own expressive and clear language, and its unambiguous demonstrations,</p>
+   <p>it makes the whole mind smooth like wax, and ready to receive all the innocent and very praiseworthy impressions of sound natural and moral philosophy.</p>
+</div>
+<div type="book" n="10">
+  <div type="section" n="89">
+    <p>These then are the professions and promises made by the husbandry of the soul, "I will cut down all the <name type="plant" xml:lang="grc">δένδρα</name> of <foreign xml:lang="grc">ἀφροσύνης</foreign>, and <foreign xml:lang="grc">ἀκολασίας</foreign>, and <foreign xml:lang="grc">ἀδικίας</foreign>, and <foreign xml:lang="grc">δειλίας</foreign>;</p>
+    <p>and I will eradicate all the <name type="plant" xml:lang="grc">φυτῶν</name> of <foreign xml:lang="grc">ἡδονῆς</foreign>, and <foreign xml:lang="grc">ἐπιθυμίας</foreign>, and <foreign xml:lang="grc">ὀργῆς</foreign>, and <foreign xml:lang="grc">πάθους</foreign>, and of all similar <foreign xml:lang="grc">ἐπιτηδευμάτων</foreign>, even if they have raised their heads as high as heaven.</p>
+    <p>And I will burn out their roots, darting down the attack of flame to the very foundations of the earth, so that no portion, nay, no trace, or shadow whatever, of such things shall be left;</p>
+    <p>and I will destroy these things, and I will implant in those souls which are of a childlike age, young shoots, whose fruit shall nourish them.</p>
+    <p>And those shoots are as follows: the practice of writing and reading with facility;</p>
+    <p>an accurate study and investigation of the works of wise poets;</p>
+    <p>geometry, and a careful study of rhetorical speeches, and the whole course of encyclical education.</p>
+    <p>And in those souls which have arrived at the age of puberty or of manhood, I will implant things which are even better and more perfect, namely, the tree of <foreign xml:lang="grc">φρονήσεως</foreign>, the tree of <foreign xml:lang="grc">ἀνδρείας</foreign>, the tree of <foreign xml:lang="grc">σωφροσύνης</foreign>, the tree of <foreign xml:lang="grc">δικαιοσύνης</foreign>, the tree of every respective <foreign xml:lang="grc">ἀρετῆς</foreign>.</p>
+  </div>
+</div>
+<div type="book" n="11">
+  <div type="section" n="89">
+    <p>And if there be any <name type="plant" xml:lang="eng">tree</name> belonging to what is called the wild class, which does not bear eatable fruit, but which is able to be a fence to and a protector of that which is eatable, that also I will manage, not for its own sake, but because it is calculated by nature to be of use to what</p>
+    <p><foreign xml:lang="lat">On Husbandry</foreign></p>
+    <p>s necessary and very useful.</p>
+  </div>
+</div>
+<div type="section" n="12">
+   <p>Therefore, the allwise <persName>Moses</persName> attributes to the just man a knowledge of the husbandry of the soul, as an act consistent with his character, and thoroughly suited to him, saying, "<quote>Noah began to be a husbandman.</quote>" But to the unjust man he attributes the task of tilling the ground, which is an employment bearing the heaviest burdens without any knowledge.</p>
+   <p>For "<quote>Cain</quote>," says he, "was a tiller of the ground;" and a little afterwards, when he is detected in having contracted the pollution of fratricide, it is said, "<quote>Cursed art thou by the earth, which opened her mouth to receive the word of thy brother from thy hand, with which thou tillest the earth, and it shall not put forth its strength to give unto thee.</quote>"</p>
+   <p>How then could any one show more manifestly, that the lawgiver looks upon the wicked man as a tiller of the earth, and not as a husbandman, than by such language as we here see used? We must not indeed suppose that what is here said, is said of a man who is able to work by his hands or by his feet, or by any other of the powers of his body, or of any mountain land, or of any champaign country, but that is applicable to the powers existing in every one of us; for it happens that the soul of the wicked man is not concerned about any thing else except about his earthly body, and about all the pleasures of that body.</p>
+   <p>Moreover, the general crowd of men, travelling over the different climates of the earth and penetrating to its furthest boundaries, and travers</p>
+</div>
+<div type="book" n="13">
+  <div type="chapter" n="89">
+    <p>ἐν δὲ τῷδε τῷ λόγῳ περὶ τῶν ζῴων ἐστὶν ἡμῖν ἐπισκέψασθαι τὰς ἀρετάς.</p>
+  </div>
+</div>
+<div type="book" n="14">
+  <p>the seas, and investigating the things that lie hid in the recesses of the ocean, and leaving no single part of the whole universe unexplored, is continually providing from every quarter the means by which it can increase pleasure. (24)</p>
+  <p>For as fishermen let down their nets at times to the most extraordinary depths, comprehending a vast surface of the sea in their circle, in order to catch the greatest possible number of fish enclosed within their nets, like people shut up within the walls of a besieged city; so in the same manner the greatest part <name type="animal" xml:lang="grc">ἰχθύς</name> having extended their universal nets to take everything, as the poets somewhere say, not only over the parts of the sea, but also over the whole nature of earth, and air, and water, seek to catch everything from every quarter for the enjoyment and attainment of pleasure. (25)</p>
+  <p>For they dig mines in the earth, and they sail across the seas, and they achieve every other work both of peace and war, providing unbounded materials for pleasure, as for their queen, being utterly uninitiated in that husbandry of the soul which sows and plants the virtues and reaps their fruit, which is a happy life. But they labouring to procure, and reducing to a system those things which are pleasant to the flesh, cultivate with all imaginable care that composite mass, that carefully fashioned statue, the narrow house of the soul, which, from its birth to its death it can never lay aside, but which it is compelled to bear till the day of its death,</p>
+</div>
+<div type="book" n="15">
+  <div type="section" n="89">
+    <p>burdensome as it is.</p>
+  </div>
+</div>
+<div type="chapter" n="16">
+   <p>We have now therefore explained, in what respect, the occupation of tilling the ground differs from husbandry, and a tiller of the ground from a husbandman. And we must now consider whether there are not some other species akin to these already mentioned, but which, through the common names borne by them and others, conceal the real difference which exists between them. At least there are two which we have discovered by investigation, concerning which we will say what is fitting, if it is in our power.</p>
+   <p>Therefore, as we found a tiller of the earth and a husbandman, though there did not appear to be any difference between them (till we came to investigate the allegorical meaning concealed under each name), nevertheless very far removed from one another in fact, such also shall we find to be the case with a shepherd and a keeper of sheep. For the lawgiver sometimes speaks of the occupation of a shepherd, and sometimes of that of a keeper of sheep.</p>
+   <p>And those who do not examine expressions with any excessive accuracy, ill perhaps fancy that these two appellations are synonimous terms for the same employment. They are, however, in reality the names of things which are widely different in the meaning affixed to their concealed ideas.</p>
+   <p>For if it is customary to give both the names of shepherd and keeper of sheep to those who have the management of flocks, still they do not give these names to that reason which is the superintendant of the flock of the soul; for</p>
+</div>
+<div type="section" n="17">
+   <p>ὁ μὲν γὰρ ἀγαθὸς καὶ πιστὸς ποιμήν ἐστι, τὸν δὲ φαῦλον καὶ ἄπιστον ποιμένα λέγουσιν· ἐν δὲ τίνι δὴ τρόπῳ τοῦτο δείξομεν εὐθύς.</p>
+</div>
+<div type="section" n="18">
+   <p>Nature has made <name type="animal" xml:lang="eng">cattle</name> akin to every individual among us, the soul putting forth two young branches as from one root;</p>
+   <p>one of which being entire and undivided, and being left in its integrity is called the mind;</p>
+   <p>but the other part is separated by six divisions into seven natures, five outward senses, and two other organs, the organs of speech, and that of generation.</p>
+</div>
+<div type="section" n="19">
+   <p>But all this multitude of external senses and organs being destitute of reason is compared to a <name type="animal" xml:lang="eng">sheep</name>,</p>
+   <p>but since it is composed of many parts, it of necessity stands in need of a governor by the unvarying law of nature.</p>
+   <p>Whenever therefore a man who is ignorant how to govern, and at the same time wealthy, rises up and appoints himself governor,</p>
+   <p>he becomes the cause of innumerable evils to the flocks,</p>
+</div>
+<div type="section" n="20">
+   <p>for he supplies all necessary things in superabundance, and the flock being immoderately glutted with them becomes insolent through the superfluity of food;</p>
+   <p>for insolence is the genuine offspring of satiety.</p>
+   <p>Accordingly, they become insolent and exult, and shake off all restraint, and being scattered in small divisions they break the appointed order of the Lord.</p>
+</div>
+<div type="section" n="21">
+   <p>But he who, for a while, was then governor, being deserted by the flock under his orders, appears stripped of his authority,</p>
+   <p>and runs about earnestly endeavouring, if possible, to collect the scattered flock together and to unite it again;</p>
+</div>
+<div type="book" n="19">
+  <div type="section" n="89">
+    <p>but when he finds that he is unable to do this he groans and weeps, blaming his own remissness, and reproaching himself as the cause of all that has happened. (34)</p>
+    <p>In this manner, also, the offspring of the outward senses, when the mind is supine and indolent, being satiated in the most unbounded degree with a superfluity of the pleasures of the outward senses, toss their heads, and frisk about, and rove about, at random, wherever they please;</p>
+    <p>the eyes being opened wide to embrace every object of sight, and hastening even to feast themselves on objects which ought not to be looked at;</p>
+    <p>and the ears eagerly receiving every kind of voice, and never being satisfied, but always thirsting for superfluity and the indulgence of vain curiosity and sometimes even for such delights as are but little suited to a free man.</p>
+  </div>
+</div>
+<div type="section" n="20">
+   <p>VIII. (35) Since on what other account can we imagine, that in every quarter of the habitable globe, the theatres are every day filled with incalculable myriads of spectators? For they, being wholly under the dominion of sounds and sights, and allowing their ears and their eyes to be carried away without any restraint, go in pursuit of <name type="animal" xml:lang="grc">ἀηδόνων</name> and singers to the harp, and every description of effeminate and unmanly music; and, moreover, eagerly receiving dancers and every other kind of actors, because they place themselves and move in all kinds of effeminate positions and motions, they are continually by their applause exciting the factions of the theatre, never thinking either of the propriety of their own conduct or of that of the general body of the citizens; but, miserable as they are, upsetting all their own plan of life for the sake of their eyes and ears.</p>
+</div>
+<div type="section" n="36">
+   <p>And there are others who are still more unfortunate and miserable than these men, who have released their sense of taste out of prison as it were; and that sense, immediately rushing, in an unrestrained manner, to every kind of meat and drink, selects from the things that are already prepared, and also cherishes an indiscriminate and insatiable hunger for what is not present. So that, even if the channels of the belly are filled, its ever unsatisfied appetites, raging and ravening around, continue to look and stalk about in every direction, lest there should any where be any fragment which has been overlooked</p>
+   <p>d, that it may swallow that up also like a devouring fire.</p>
+</div>
+<div type="section" n="37">
+   <p>And this gluttony is followed by its usual natural attendant,</p>
+   <p>an eagerness for the connections of the sexes,</p>
+   <p>which brings in its train a strange frenzy, an unrestrainable madness</p>
+   <p>and a most grievous fury; for, when men are oppressed by the indulgence</p>
+   <p>of gluttony and delicate food, and by much unmixed wine and drunkenness,</p>
+   <p>they are no longer able to restrain themselves, but hastening to amorous</p>
+   <p>gratifications they revel and disturb the doors, until they are at last</p>
+   <p>able to rest when they have drawn off the great violence of their passion.</p>
+</div>
+<div type="section" n="22">
+   <p>On which account nature, as it would seem, has placed the organs of such connection beneath the belly, being previously aware that they do not delight in hunger, but that they follow upon satiety and then rise up to fulfil their peculiar operations.</p>
+   <p>Those, then, who permit the flock committed to their charge to satiate themselves all at once with all the things that they desire, we must call keepers of sheep; but those, on the contrary, we should entitle shepherds, who supply their flocks with only so much as is necessary and proper for them; cutting off and utterly rejecting all superfluous and useless extravagance and abundance, which is not less injurious than want and deficiency, and who guard with great prudence against the possibility of the flock becoming diseased through their want of care and indolence, praying that those diseases, which at times are liable to attack flocks from external causes, may not visit theirs.</p>
+</div>
+<div type="section" n="23">
+   <p>And they take equal care that it may not straggle about at random and get scattered, holding out to them as an object of fear one who will chastise those who never obey reason, and inflicting continual punishment, moderate when applied to those who err only in such a degree as admits of a remedy, but very severe when laid upon those whose wickedness is uncurable; for though in its essence it may appear an abominable thing, nevertheless punishment is the greatest good to foolish persons, great as the remedies of the physician are to those who are ill in the body.</p>
+</div>
+<div type="chapter" n="24">
+   <p>X. (41) These, then, are the occupations of shepherds who prefer those things which are useful, though mixed with unpleasantness, to those which are pleasant but pernicious. Thus, at all events, the occupation of a shepherd has come to be considered a respectable and profitable employment, so that the race of poets has been accustomed to call kings the shepherds of the people; but the law giver gives this title to the wise, who are the only real kings, for he represents them as rulers of all men of irrational passions, as of a flock of <name type="animal" xml:lang="grc">προβάτων</name>.</p>
+   <p>(42) On this account he has attributed to <persName>Jacob</persName>, the man who was made perfect by practice, a skill in the science of a shepherd, saying: "For he is the shepherd of <persName>Laban</persName>'s <name type="animal" xml:lang="grc">προβάτων</name>."{3}{<quote><foreign xml:lang="la">#ge 30:36.</foreign></quote>} That is, of the <name type="animal" xml:lang="grc">προβάτων</name> of the foolish soul, which thinks only those things good which are the objects of the outward senses and apparent to them, being deceived and enslaved by colours and shadows; for the name, <placeName>Laban</placeName>, being interpreted, means "whitening."</p>
+</div>
+<div type="section" n="25">
+   <p>He also attributes the same skill to the all-wise <persName>Moses</persName>, {4}{#ex 3:1.} for he also is represented as the shepherd of the mind which embraces pride in preference to truth, and which receives appearance rather than reality; for the interpretation of the name <name type="person" xml:lang="grc">Jethro</name> is "superfluous," and superfluity is pride adopted for the purpose of introducing error into correct life; which is the cause why different things are looked upon as right in different cities, and not those principles which ought to be looked upon as just everywhere, inasmuch as it never sees, not even in a dream, the common and immovable principles of the justice of nature.</p>
+   <p>For, it is said, that "Moses was the shepherd of the <name type="animal" xml:lang="grc">sheep</name> of <persName>Jethro</persName>, the priest of <placeName>Midian</placeName>." (44)</p>
+   <p>And this man himself prays that the flock may not be left without a shepherd, meaning by the flock the whole multitude of the parts of the soul; but that they may meet with a good shepherd, who will lead them away from the nets of folly, and injustice, and all wickedness, and conduct them to the doctrines of learning and all other virtue; for, says <persName>Moses</persName>, "Let the <name type="deity">Lord</name> the <name type="deity">God</name> of spirits and of all flesh look down upon man and upon this Assembly."{5}{#nu 27:16.}</p>
+   <p>And then, a little further on, he adds, "And the assembly of the <name type="deity">Lord</name> shall not be like <name type="animal" xml:lang="grc">sheep</name> who have no shepherd."</p>
+</div>
+<div type="section" n="26">
+   <p>XI.</p>
+   <p>(45) But is it not well worth praying for, that the flock which is akin to each individual of us, and of so much value, may not be left without any superintendent or governor, so that we may not, through being filled with a love of the worst of all constitutions, an <foreign xml:lang="grc">ὀχλοκρατία</foreign>, which is a base copy of the best form, <foreign xml:lang="grc">δημοκρατία</foreign>, pass our lives for ever and amid tumults, and disorders, and intestine seditions?</p>
+   <p>(46) Certainly it is not <foreign xml:lang="grc">ἀναρχία</foreign> alone that is an evil, through being the parent of <foreign xml:lang="grc">ὀχλοκρατία</foreign>, but also the insurrection of any lawless and violent force against authority; for the tyrant who, by his own nature is hostile, is, in the case of cities, a man, but in the case of the body and the soul, and all transactions having reference to either, he is a mind resembling the <name type="animal" xml:lang="grc">θηρίον</name>, besieging the citadel of each individual;</p>
+</div>
+<div type="section" n="27">
+   <p>but not only are these dominations unprofitable, but so also are the governments and authority of other persons, who are very gentle, for gentleness is a line of conduct very likely to be despised, and injurious to both parties, both to the rulers and the subjects. To the one from the disregard with which their subjects treat them, so that they are unable to manage any matter, whether of public or of their own private business successfully, are sometimes even compelled to abdicate their authority; and to the others, because of their continual disrespect to their governors, disregarding all persuasion, so that they contract a habit of selfwilled insolence, a possession of great evil.</p>
+   <p>We must then think that one of these classes of governors differs in no respect from keepers of sheep,</p>
+   <p>while the others resemble the sheep themselves,</p>
+   <p>for the governors persuade the governed to be luxurious,</p>
+   <p>through the extravagance of the supplies with which they provide them;</p>
+   <p>and the governed being unable to bear their satiety become insolent;</p>
+   <p>but what is really desirable is,</p>
+   <p>that our mind should govern all our conduct,</p>
+   <p>like a goatherd,</p>
+   <p>or a cowherd,</p>
+   <p>or a shepherd,</p>
+   <p>or, in short, like any herdsman of any kind;</p>
+   <p>choosing in preference to what is pleasant</p>
+   <p>that which is for the advantage both of himself and of his flock.</p>
+</div>
+<div type="section" n="28">
+   <p>XII.</p>
+   <p>But the providence of God is the principal and almost the only cause that the divisions of the soul are not left entirely without any governor, and that they have met with a blameless and in all respects good shepherd.</p>
+   <p>In consequence of whose appointment it is impossible that the company of the mind should become scattered; for it will of necessity appear in one and the same order, looking to the authority of its one governor, since the heaviest burden of all is to be compelled to obey a variety of rulers.</p>
+   <p>Thus, indeed, being a shepherd is a good thing, so that it is justly attributed, not only to kings, and to wise men, and to souls who are perfectly purified, but also to God, the ruler of all things; and he who confirms this is not any ordinary person, but a prophet, whom it is good to believe, he namely who wrote the psalms;</p>
+   <p>for he speaks thus, <quote>The Lord is my shepherd, and he shall cause me to lack Nothing;</quote>{6}{<foreign xml:lang="la">psalm 23:1.</foreign>}</p>
+   <p>and let every one in his turn say the same thing, for it is very becoming to every man who loves God to study such a song as this, but above all this world should sing it.</p>
+   <p>For God, like a shepherd and a king, governs (as if they were a flock of sheep) the earth, and the water, and the air, and the fire, and all the plants, and living creatures that are in them, whether mortal or divine;</p>
+</div>
+<div type="section" n="29">
+   <p>and he regulates the nature of the heaven, and the periodical revolutions of the sun and moon, and the variations and harmonious movements of the <name type="animal" xml:lang="grc">stars</name>, ruling them according to law and justice;</p>
+   <p>appointing, as their immediate superintendent, his own right reason,</p>
+   <p>his first-born son, who is to receive the charge of this sacred company,</p>
+   <p>as the lieutenant of the great king;</p>
+   <p>for it is said somewhere, <quote>Behold, I am he! I will send my messenger before thy face,<note type="source" target="#ex 23:20"/></quote></p>
+   <p>who shall keep thee in the Road.</p>
+   <p>Let therefore all the world, the greatest and most perfect flock of the living <name type="deity">God</name>,</p>
+   <p>say <quote>The Lord is my shepherd, and he shall cause me to lack nothing,</quote></p>
+   <p>and let every separate individual say the same thing;</p>
+   <p>not with the voice which proceeds from his tongue and his mouth,</p>
+   <p>extending only through a scanty portion of the air,</p>
+   <p>but with the wide spreading voice of the mind,</p>
+   <p>which reaches to the very extremities of this universe;</p>
+   <p>for it is impossible that there should be a deficiency of anything that is necessary,</p>
+   <p>where <name type="deity">God</name> presides, who is in the habit of bestowing good things in all fulness and completeness</p>
+   <p>in all living beings.</p>
+</div>
+<div type="book" n="30">
+   <div type="section" n="89">
+      <p>On Husbandry</p>
+      <p>But there is a very beautiful encouragement to equality contained in the song before mentioned; for in real truth, the man who appears to have everything else, and yet who is impatient under the authority of one master, is incomplete in his happiness, and is poor; but if a soul is governed by <name type="deity">God</name>, having that one and only thing on which all other things depend, it is very naturally in no need of other things, regarding not blind riches, but only such as are endowed with real and acute Sight.</p>
+      <p>{8}{<foreign xml:lang="la">i have again followed Mangey's proposed translation for this text which he pronounces corrupt and unintelligible.</foreign>}</p>
+      <p>All true disciples have come to conceive an earnest and unalterable love for that; and therefore laughing at the mere keeping of sheep, they have directed their attention to the attainment of a shepherd's knowledge;</p>
+      <p>and a proof of this is to be found in the case of <persName>Joseph</persName>,</p>
+      <p>(55) who was always studying that knowledge which is conversant about the body and vain opinions, not being able to rule and govern irrational nature (for it is customary for old men to be appointed to offices of irresponsible authority; but this man is always young, even if after a lapse of time he may come to support old age, which has at last reached him);</p>
+      <p>and being accustomed to nourish this and to lead it on to growth, he expects to be able to persuade the lovers of virtue to change and come over to him,</p>
+   </div>
+</div>
+<div type="section" n="31">
+   <p>in order that in so changing to irrational and <name type="animal" xml:lang="grc">ἄλογα</name> and inanimate objects, they may have</p>
+</div>
+<div type="chapter" n="32">
+   <p>no leisure for applying themselves to the studies of a rational soul. (57) For Moses represents Joseph as saying, <quote>If the king,</quote> that is to say, the mind, the king of the body, <quote>shall ask you, What is your occupation? answer, We are men, the keepers of <name type="animal" xml:lang="grc">Cattle</name>.</quote>{9}{#ge 46:33.} When they hear this they are naturally impatient, not liking the idea, while they are rulers, of confessing that they hold the rank of subordinates; (58) for those who supply food to the outward senses, through the abundance of the objects perceptible only by them, become the slaves of those who are nourished, like servants who pay to their mistresses a compulsory reverence every day; but those who preside over them are rulers, and they bridle the vehement impetuosity with which they are hurried on to luxury. (59) At first therefore, although they do not hear what is said with any pleasure, they will still keep silence, thinking it unseemly to discuss the difference between the employment of a keeper of <name type="animal" xml:lang="grc">cattle</name> and a shepherd, before those who do not understand it; but subsequently, when a contest about these things arises, they will contend with all their power, and will never desist till they have carried their point by main force, having exhibited the liberality, and nobleness, and royal character of their nature to the living <name type="deity">God</name>. Accordingly when the king asks, <quote>What is your occupation?</quote> they will answer <quote>We are shepherds, we and our fathers.</quote></p>
+</div>
+<div type="book" n="33">
+  <div type="section" n="89">
+    <p>Would they not then appear to boast as much of their occupation as shepherds, as the king himself, who is conversing with them, does of his mighty power and dominion?</p>
+    <p>At least they are testifying their high opinion of the profession of life which they have adopted, not in honour of themselves alone, but of their father also, as being worthy of all possible care and diligence;</p>
+    <p>and yet, if the discussion had been merely about the care of <name type="animal" xml:lang="grc">goats</name> or <name type="animal" xml:lang="grc">sheep</name>, perhaps they would have been ashamed to make such an admission through desire to avoid dishonour;</p>
+    <p>for such occupations are accounted inglorious and mean among those who are loaded with great prosperity, without being at the same time endowed with prudence, and especially among kings.</p>
+    <p>And the Egyptian character is by nature most especially haughty and boastful whenever so slight a breeze of prosperity does merely blow upon it, so that men of that nation look upon the pursuits of life and objects of ambition of ordinary men, as subjects for laughter and downright ridicule.</p>
+    <p>But since the matter before us, at present, is to consider the rational and irrational powers in the soul, those persons will naturally boast, who are persuaded that they are able to master the irrational faculties, by taking the rational ones for their allies.</p>
+  </div>
+</div>
+<div type="section" n="34">
+   <p>If therefore any envious or captious person should blame us, and say, "How then have ye, who are devoted to the employment of shepherds, and who profess to be occupied in the care and management of the flocks which belong to you, ever thought of approaching the country of the body and the passions, namely Egypt? and why have ye not turned your voyage in another direction? You must say to him in reply, with all freedom of speech, <quote>We have come hither as sojourners, not as inhabitants.</quote>"</p>
+   <p>For in reality every soul of a wise man has heaven for its country, and looks upon earth as a strange land, and considers the house of wisdom his own home; but the house of the body, a lodging-house, on which it proposes to sojourn for a while.</p>
+   <p>Therefore since the mind, the ruler of the flock, having taken the flock of the soul, using the law of nature as its teacher, governs it consistently and vigorously, rendering it worthy of approbation and great praise; but when it manages it sluggishly and indulgently, with a disregard of law, then it renders it blameable.</p>
+   <p>Very naturally, therefore, the one will assume the name of a king, being addressed as a shepherd, but the other will only have the title of a confectioner, or of a baker, being called a keeper of sheep, supplying the means of feasting and gluttonous eating to cattle accustomed to gorge themselves to satiety.</p>
+</div>
+<div type="section" n="35">
+   <p>XV</p>
+   <p>(67) I have now therefore explained, in no superficial manner, in what way a <name type="animal" xml:lang="eng">husbandman</name> differs from a <name type="animal" xml:lang="eng">tiller</name> of the <name type="plant" xml:lang="eng">ground</name>, and a <name type="animal" xml:lang="eng">shepherd</name> from a <name type="animal" xml:lang="eng">keeper</name> of <name type="animal" xml:lang="eng">sheep</name>. There is also a third point, having some connection with what has already been said, which we will now proceed to speak of. For I consider that a <name type="animal" xml:lang="eng">horseman</name> and a <name type="animal" xml:lang="eng">rider</name> differ; meaning by this statement, not merely that one man who is carried on a <name type="animal" xml:lang="eng">neighing animal</name> differs from another man who is carried on a similar <name type="animal" xml:lang="eng">beast</name>, but the motion of the one is different from the motion of the other; therefore the man who gets on a <name type="animal" xml:lang="eng">horse</name> without any skill in <foreign xml:lang="eng">horsemanship</foreign>, is correctly called a <name type="animal" xml:lang="eng">rider</name>,</p>
+   <p>(68) and he has given himself up to an irrational and restive <name type="animal" xml:lang="eng">animal</name>, to such a degree that it is absolutely inevitable that he must be carried wherever the <name type="animal" xml:lang="eng">animal</name> chooses to go, and if he fails to see beforehand a <name type="plant" xml:lang="eng">chasm</name> in the <name type="plant" xml:lang="eng">earth</name>, or a deep <name type="plant" xml:lang="eng">pit</name>, it has happened before now that such a man, in consequence of the impetuosity of his <name type="animal" xml:lang="eng">course</name>, has been thrown headlong down a <name type="placeName" xml:lang="eng">precipice</name> and dashed to pieces.</p>
+</div>
+<div type="section" n="36">
+   <p>But a horseman, on the other hand, when he is about to mount, takes the bridle in his hand, and then taking hold of the mane on the <name type="animal" xml:lang="grc">horse</name>'s neck, he leaps on; and though he appears to be carried by the <name type="animal" xml:lang="grc">horse</name>, yet, if one must tell the truth, he in reality guides the <name type="animal" xml:lang="grc">animal</name> that carries him, as a pilot guides a ship. For the pilot too, appearing to be carried by the ship which he is managing, does in real truth guide it, and conducts it to whatever harbour he is himself desirous to hasten.</p>
+   <p>While, therefore, the <name type="animal" xml:lang="grc">horse</name> goes on in obedience to the rein, the horseman pats the <name type="animal" xml:lang="grc">horse</name>, as if praising it; but when it goes on with too great impetuosity, and is carried away beyond moderation, then he pulls it back with force and vigour, so as to restrain its speed. But if the <name type="animal" xml:lang="grc">horse</name> continue to be disobedient, then he takes the whole bridle, and pulls him back, and drags back his neck, so that he is compelled to stop.</p>
+   <p>And for all his restiveness and his continued disregard of the rein, there are whips and spurs prepared, and all other instruments of punishment which have been invented by horse-breakers. And it is not wonderful: for when the horseman mounts, the art of horsemanship mounts too; so that there then being two parties borne by the <name type="animal" xml:lang="grc">horse</name>, and skilful in horsemanship, they will very naturally get the better of one <name type="animal" xml:lang="grc">animal</name> who is subjected to them, and who is incapable of acquiring skill.</p>
+</div>
+<div type="section" n="37">
+   <p>Therefore now, leaving the consideration of these <name type="animal" xml:lang="grc">ἵπποι</name> neighing animals, and of the parties carried by them, investigate, if you will, the condition of your own soul.</p>
+   <p>For in its several parts you will find both <name type="animal" xml:lang="grc">ἵπποι</name> horses and a rider in the fashion of a charioteer, just as you do in external things.</p>
+   <p>Now, the horses are appetite and passion, the one being male and the other female.</p>
+   <p>On this account, the one giving itself airs, wishes to be unrestrained and free, and holds its head erect, as a <name type="animal" xml:lang="grc">ἄρρεν</name> male animal naturally does; and the other, not being free, but of a slavish disposition, and rejoicing in all kinds of crafty wickedness, devours the house, and destroys the house, for she is female.</p>
+   <p>And the rider and charioteer is one, namely the mind.</p>
+   <p>When, indeed, the mounts with prudence, he is a charioteer; but when he does so with folly, then he is but a rider.</p>
+   <p>For a fool, through ignorance, is unable to keep hold of the reins; but they, falling from his hands, drop on the ground.</p>
+   <p>And the animals, immediately that they have got the better of the reins, run on in an ill-regulated and unrestrained course.</p>
+</div>
+<div type="section" n="38">
+   <p>But the man who has mounted behind them, not being able to take hold of anything by which he may steady himself, falls, and lacerating his knees and his hands and his face, like a miserable man as he is, he bitterly weeps over his disaster; and after hanging by his feet to the chariot after he has been overturned, he is suspended, with his face upwards, lying on his back; and as the chariot proceeds, he is dragged along, and injured in his head, and neck, and both his shoulders;</p>
+   <p>and then, being hurried on in this direction and in that, and being dashed against everything which lies in the way, he endures a most pitiable death.</p>
+   <p>He then meets with an end, such as I have been describing;</p>
+   <p>and the chariot, being lightened by his fall and bounding along violently, when, at last, it is dashed to the ground in the rebound, is easily broken to pieces, so that it can never again be joined or fastened together.</p>
+   <p>And the <name type="animal" xml:lang="grc">ζῷα</name>, being now released from everything which could restrain them, proceed at random, and are frantic, and do not cease galloping on, till they are tripped up and fall, or till they are hurried over some high precipice, and so are dashed to pieces and destroyed.</p>
+</div>
+<div type="book" n="39">
+  <div type="section" n="89">
+    <p>In this manner, then, it seems that the whole chariot of the soul is destroyed, with its passengers; and all through the carelessness or unskilfulness of the driver.</p>
+    <p>But it is desirable for them that such <name type="animal" xml:lang="grc">horses</name>, and such drivers, and riders, so wholly without skill, should be destroyed, in order that the faculties of virtue may be roused; for when folly has fallen, it follows of necessity that wisdom must rise up.</p>
+    <p>On this account <persName>Moses</persName>, in his passages of exhortation, says, <quote>“If thou goest forth to battle against thy enemies, and if thou seest numbers of <name type="animal" xml:lang="grc">horses</name>, and riders, and people, be not afraid, because the Lord thy God is with Thee.”<note n="10" type="biblical">#de 20:1.</note></quote></p>
+    <p>For we must neglect anger and desire, and, in short, all the passions, and indeed the whole company of reasonings, which are mounted upon each of the passions as upon <name type="animal" xml:lang="grc">horses</name>, even if they believe that they can exert irresistible strength; at least, all those must do so who have the power of the great <name type="deity">King</name> holding a shield over them, and in every place, and at every time, fighting in their defence.</p>
+  </div>
+</div>
+<div type="section" n="40">
+   <p>But the divine army is the body of virtues, the champions of the souls that love God, whom it becomes, when they see the adversary defeated, to sing a most beautiful and becoming hymn to the God who giveth the victory and the glorious triumph; and two choruses, the one proceeding from the conclave of the men, and the other from the company of the women, will stand up and sing in alternate songs a melody responsi</p>
+   <p>ve to one another's voices.</p>
+   <p>And the chorus of men will have <persName>Moses</persName> for their leader;</p>
+   <p>and that of the women will be under the guidance of <persName>Miriam</persName>, "the purified outward Sense."{11}{#ex 15:20.}</p>
+   <p>For it is just that hymns and praises should be uttered in honour of God without any delay,</p>
+   <p>both in accordance with the suggestions of the intellect and the perceptions of the outward senses,</p>
+   <p>and that each instrument should be struck in harmony,</p>
+   <p>I mean those both of the mind and of the outward sense, in gratitude and honour to the holy Saviour.</p>
+   <p>Accordingly, all the men sing the song on the sea-shore,</p>
+   <p>not indeed with a blind mind, but seeing sharply, <persName>Moses</persName> being the leader of the song;</p>
+   <p>and women sing, who are in good truth the most excellent of their sex,</p>
+   <p>having been enrolled in the lists of the republic of virtue, <persName>Miriam</persName> being their leader.</p>
+</div>
+<div type="section" n="41">
+   <p>XVIII. (82) And the same hymn is sung by both the choruses</p>
+   <p>And the same hymn is sung by both the choruses, having a most admirable burden of the song which is beautiful to be sung.</p>
+   <p>And it is as follows: Let us sing unto the <name type="deity">Lord</name>, for he has been glorified gloriously; the <name type="animal" xml:lang="grc">ἵππος</name> and his rider hath he thrown into the Sea.{12}{#ex 15:1.}</p>
+   <p>(83) For no one, if he searches ever so eagerly, can ever discover a more excellent victory than that by which the most mighty army, four-footed, restive, and proud as it was, of the passions and vices was overthrown.</p>
+   <p>For the vices are four in genus, and the passions likewise are equal in number.</p>
+   <p>Moreover, the mind, which is the character of them all, the one which hates virtue and loves the passions, has fallen and perished--the mind, which delighted in pleasures and appetites, and deeds of injustice and wickedness, and likewise in acts of rapine and of covetousness.</p>
+   <p>(84) Very beautifully, therefore, does the lawgiver in his recommendations, teach us not to elect as a chief, a man who is a breeder of <name type="animal" xml:lang="grc">ἵππος</name>, thinking that such a one is altogether unsuited to exercise authority, inasmuch as he is in a frenzy about pleasures and appetites, and intolerable loves, and rages about like an unbridled and unmanageable <name type="animal" xml:lang="grc">ἵππος</name>.</p>
+</div>
+<div type="chapter" n="42">
+   <p>For he speaks thus, Thou shalt not be able to set over thyself a man that is a stranger, because he is not thy brother; because he will not multiply for himself his <name type="animal" xml:lang="grc">ἵππος</name>, and will not turn his people towards <placeName>Egypt</placeName>.{13}{#de 17:15.}</p>
+   <p>(85) Therefore, according to the most holy <persName>Moses</persName>, no man that was a breeder of <name type="animal" xml:lang="grc">ἵππος</name> was ever born fit for dominion; and yet some one perhaps may say that power in cavalry is a great strength to the king, not inferior either to infantry or to a naval force, but in many places far more advantageous than either, and especially in those cases in which one has need of swiftness of motion without delay, but prompt and energetic, when the times do not admit of delay, but are at the very crisis of action, so that those who arrive too late are very naturally not considered to have been sluggish so much as to have been wholly useless, the opportunity for action having passed by like a cloud.</p>
+</div>
+<div type="chapter" n="19">
+   <p>And we would say to these people: My good men, the lawgiver is removing no protection whatever from the ruler, nor is he in any respect mutilating the army of his power which he has collected, by cutting off the force of cavalry which is the most efficient part of his army;</p>
+   <p>but he is endeavouring to the best of his power to increase and strengthen it, in order that his allies, contributing to its strength and number, may most easily destroy their enemies.</p>
+   <p>(87) For who else is equally skilful in marshalling and arraying armies, and in distributing them in squadrons, and in appointing captains of regiments and leaders of squadrons, and other commanders of large and small bodies,</p>
+   <p>and in displaying a knowledge of all the other suggestions of tactics and strategy, and in explaining the principles of the military art to those who will avail themselves of them skilfully, through the great superabundance of his knowledge of such matters?</p>
+   <p>(88) But the question is not now about his force of cavalry, which it is necessary to collect around the rulers for the destruction of their enemies and the protection of their friends;</p>
+   <p>but concerning the irrational, and immoderate, and unmanageable impetuosity of the soul, which it is desirable to check, lest it should turn all its people towards Egypt, the country of the body,</p>
+</div>
+<div type="section" n="44">
+   <p>and labour with all its might to render it devoted to pleasures and to the passions, rather than to the service of virtue and of <name type="deity">God</name>; since it follows inevitably that</p>
+   <p>he who has acquired a body of cavalry for himself, must, as he said himself, proceed on the road which leads to <placeName>Egypt</placeName>. For when the wave rises high and dashes over each side of the soul (looking upon it as a ship), that is to say, over the mind and the outward sense, being lifted up by evident passions and iniquities which blow fiercely upon it, so that the soul leans on one side and is nearly overbalanced; then, as is natural, the mind becoming water-logged, goes down, and the deep in which it is sunk and overwhelmed is the body, which is compared to <placeName>Egypt</placeName>.</p>
+   <p>Beware, therefore, never to occupy yourself in this kind of horse-breeding, for they who pursue the other kind are themselves also blameable, for how can they not be?</p>
+   <p>inasmuch as by them irrational <name type="animal" xml:lang="grc">ζῷα</name> are exceedingly humoured, and from their houses troops of well-fed <name type="animal" xml:lang="grc">ἵπποι</name> continually go forth;</p>
+   <p>while to the men who conduct them, not a person is found who ever gives the slightest contribution to relieve their wants, nor any present to increase their superfluities.</p>
+</div>
+<div type="section" n="45">
+   <p>But, nevertheless, they err in a lighter degree;
+   for these men who breed <name type="animal" xml:lang="grc">horses</name> to contend for the prize, assert that by so doing they are adorning the sacred games and the assemblies, which are held in honour everywhere,
+   and they affirm that they are the causes not only of pleasure to the spectators, and of that kind of delight which arises from beholding the spectacle,
+   but that they also give them an inducement to study and practise praiseworthy pursuits.
+   For they who attribute to <name type="animal" xml:lang="grc">animals</name> a desire for victory, using, out of their love of honour and rivalry in excellence, a certain unceasing exhortation, and encouragement, and eagerness, enduring pleasant labours,
+   will never desist from what is suitable and becoming to them, till they attain the end that they desire.</p>
+   <p>But these men seek pretexts to excuse themselves, while doing wrong,
+   but those who do wrong without excuse are they, who would make the mind a rider, and mount him upon his <name type="animal" xml:lang="grc">horse</name>, though ignorant of the science of horsemanship,
+   <name type="animal" xml:lang="grc">his horse</name> being that four-footed vice and passion;</p>
+</div>
+<div type="section" n="46">
+   <p>ἀλλ᾽ εἰ μὲν ἐπιστήμης ἱπποτροφικῆς ἀκηκοὼς μείζονα σπουδὴν αὐτῇ καὶ φροντίδα ἐπιθεὶς ἑαυτὸν ἱκανὸν ἡγήσαιο καὶ ἱκανὸν ἄνδρα εἶναι τῶν ἵππων ἐπιβάτην καὶ τῶν ἡνιῶν ἐπιχειρητὴν γενέσθαι,</p>
+   <p>οὕτω γὰρ κἂν ἀγριωθῶσιν, οὐκ ἐκπεσὼν τοῦ ἅρματος τραυματισθήσῃ δυσθεράπευτα, μηδὲ αἰτία γένοιο γέλωτος τοῖς ἐπὶ τῷ κακῶς ἔχειν ἀγαλλoμένοις·</p>
+   <p>ἀλλὰ μὴν οὐδὲ ὑπὸ τῶν ἐναντίων καταβληθήσῃ προσιοῦσιν ἢ ὑπερθεικνυμένων, ἅτε τῇ σῇ σπουδῇ τοὺς ἐπιόντας ὑπερδραμόντι καὶ καταλιπόντι τοὺς ὀπίσω γιγνομένους, καὶ τῶν ἐπὶ τοῦ ἐναντίου φερομένων ἀμελήσειν δύνασθαι διὰ τὴν ἐκ τῆς εὐλαβείας ἀσφάλειαν.</p>
+</div>
+<div type="section" n="21">
+   <p>It is not unnaturally, therefore, that <persName>Moses</persName>, singing his song of triumph on the destruction of the riders, nevertheless prays for complete safety for the horsemen; for these are able, putting their bridles into the mouths of the <name type="animal" xml:lang="grc">ἵπποι</name>, to check the impetuosity of their superabundant violence.</p>
+   <p>What then his prayer is must be told: he says, "Let <placeName>Dan</placeName> be a <name type="animal" xml:lang="grc">δράκων</name> in the way, sitting in the path, biting the heel of the <name type="animal" xml:lang="grc">ἵππος</name>; and the horseman shall fall backwards, awaiting the salvation of the <name type="deity">Lord</name>."{#ge 49:17.}</p>
+   <p>But we must explain what is the enigmatical meaning which he conceals under this prayer, the name of <placeName>Dan</placeName>, being interpreted, means "judgment;" therefore he here likens that power of the soul which investigates, and accurately examines, and distinguishes between, and, in some degree, decides on each part of the soul, to a <name type="animal" xml:lang="grc">δράκων</name> (and the <name type="animal" xml:lang="grc">δράκων</name> is an animal various in its movements, and exceedingly cunning, and ready to display its courage, and very powerful to repel those who begin acts of violence), but not to that friendly <name type="animal" xml:lang="grc">ὄφις</name>, the counsellor of life, which is wont to be called <persName>Eve</persName> in his national language, but to the one made by <persName>Moses</persName>, of the material of brass, which, when those who had been bitten by the poisonous <name type="animal" xml:lang="grc">ὄφεις</name>, and who were at the point of death beheld, they are said to have lived and not to have died.</p>
+</div>
+<div type="section" n="48">
+   <p>XXII</p>
+   <p>And these things thus expressed resemble visions and prodigies; I mean the account of one <name type="animal" xml:lang="grc">δράκων</name> uttering the voice of a man and pouring his sophistries into most innocent dispositions, and deceiving the woman with plausible arguments of persuasion; and of another becoming a cause of complete safety to those who looked upon it.</p>
+   <p>But, in the allegorical explanations of these statements, all that bears a fabulous appearance is got rid of in a moment, and the truth is discovered in a most evident manner. The <name type="animal" xml:lang="grc">ὄφις</name>, then, which appeared to the woman, that is to life depending on the outward senses and on the flesh, we pronounce to have been pleasure, crawling forward with an indirect motion, full of innumerable wiles, unable to raise itself up, ever cast down on the ground, creeping only upon the good things of the earth, seeking lurking places in the body, burying itself in each of the outward senses as in pits or caverns, a plotter against man, designing destruction to a being better than itself, eager to kill with its poisonous but painless bite.</p>
+   <p>But the brazen <name type="animal" xml:lang="grc">ὄφις</name>, made by <persName>Moses</persName>, we explain as being the disposition opposite to pleasure, namely, patient endurance, on which account it is that he is represented as having made it of brass, which is a very strong material.</p>
+</div>
+<div type="section" n="49">
+   <p>He, then, who with sound judgment contemplates the appearance of patient endurance, even if he has been previously bitten by the allurements of pleasures, must inevitably live; for the one holds over his soul a death to be averted by no prayers, but self-restraint proffers him health and preservation of life; and temperance, which repels evils, is a remedy and perfect antidote for intemperance.</p>
+   <p>(99) And every wise man looks upon what is good as dear to him, which is also altogether calculated to ensure his preservation. So that when Moses prays that it may happen to <name type="animal" xml:lang="grc">Δαν</name>, either himself, to be that <name type="animal" xml:lang="grc">ὄφις</name> (for the words may be understood in either sense), he means a <name type="animal" xml:lang="grc">ὄφις</name> closely resembling the one which has been made by himself, but not like the one which appeared to <persName>Εὔα</persName>, for then the prayer is an entreaty for good things;</p>
+   <p>(100) therefore the character of patient endurance is good, and capable of receiving immortality, which is the perfect good. But the character of pleasure is evil, bringing in its train the greatest of all punishments, <name type="death">death</name>. On which account Moses says, "Let <name type="animal" xml:lang="grc">Δαν</name> become a <name type="animal" xml:lang="grc">ὄφις</name>," and that not in any other place rather than in the road.</p>
+</div>
+<div type="section" n="50">
+  <p>For the indulgences of intemperance and gluttony, and whatever other vices the immoderate and insatiable pleasures, when completely filled with an abundance of all external things, produce and bring forth, do not allow the soul to proceed onwards by the plain and straight road, but compel it to fall into ravines and gulfs, until they utterly destroy it; but those practices which adhere to patience, and endurance, and moderation, and all other virtues, keep the soul in the straight road, leaving no stumbling block in the way, against which it can stumble and fall.</p>
+  <p>Very naturally, therefore, has Moses declared that temperance clings to the right way, because it is plain that the contrary habit, intemperance, is always straying from the road.</p>
+</div>
+<div type="section" n="23">
+   <p>And the expression, "Sitting in the path," suggests some such meaning as this, as I persuade myself: a path is a road calculated for riding <name type="animal" xml:lang="en">horses</name> and driving <foreign xml:lang="la">carriages</foreign> on, well beaten by men and beasts.</p>
+   <p>This road they say is very like pleasures, for almost from their earliest birth to extreme old age men proceed and walk along it, and with great indolence and easiness of temper spend all their lives in it, and not men only, but every species of <name type="animal" xml:lang="en">animal</name> whatever; for there is no single thing which is not attracted by the allurements of pleasure, and which is not, at times, entangled in its multifarious nets, and from which it is very difficult to escape.</p>
+   <p>But the paths of prudence, and temperance, and the other virtues, even though they may not be utterly untravelled, are, at all events, not beaten much; for the number of those who proceed by those roads, and who philosophise in a genuine spirit, and who form associations with virtue alone, disregarding, once for all, all other allurements, is very small.</p>
+   <p>Therefore he sits constantly in the road, and not once only, who has an eagerness for, and a care for, patient endurances, in order to watch from his ambush and attack pleasure, to which men in general are accustomed, that fountain of everlasting evils, and so to keep it off, and to eradicate it from the whole district of the soul.</p>
+</div>
+<div type="chapter" n="52">
+  <p>Then, as <persName>Moses</persName> says, proceeding to the natural consequence of his position, he will of necessity bite the heel of the <name type="animal" xml:lang="grc">ἵππος</name>; for it is the especial attribute of patient endurance and temperance to shake and overturn the foundations of vice, which lifts its head on high, and of exerted, and quickly-moved, and unmanageable passion.</p>
+</div>
+<div type="section" n="24">
+  <p>XXIV</p>
+</div>
+<div type="section" n="54">
+   <p>Moses, therefore, represents the <name type="animal" xml:lang="grc">ὄφις</name> that appeared to Eve as planning the death of man, for he records, that God says in his curses, "He shall bruise thy head, and thou shalt bruise his heel." But he represents the <name type="animal" xml:lang="grc">ὄφις</name> of Dan, which is the one which we are now discussing, as biting the heel of the <name type="animal" xml:lang="grc">ἵππος</name> and not of the man,</p>
+   <p>for the <name type="animal" xml:lang="grc">ὄφις</name> of Eve, being the symbol of pleasure, as has been already shown, attacks man, that is to say, the reasoning power which is in every one of us; for the enjoyment and free use of excessive pleasure is the destruction of the mind;</p>
+   <p>and the <name type="animal" xml:lang="grc">ὄφις</name> of Dan being a sort of image of vigorous virtue and of patient endurance, will bite the <name type="animal" xml:lang="grc">ἵππος</name>, who is the emblem of passion and wickedness, because temperance is occupied about the over throw and destruction of these things. Accordingly, when they are bitten and when they have fallen, "the horseman also," says Moses, "will fall;"</p>
+   <p>and the meaning which he conceals under this enigmatical expression is such as this, that we must think it an excellent thing and an object worthy of all labour, that our mind shall not be mounted upon any one of the passions or vices, but that whenever an attempt is made by force to put it upon one of them, we must endeavour to leap off and fall, for such falls produce the most glorious victories. On which account one of the ancients, when challenged to a contest of abuse, said, "I will never engage in such a contest as that in</p>
+</div>
+<div type="section" n="55">
+   <p>ὁ δὲ νικηθεὶς ἢ μᾶλλον ἢ ἧττον ἀτιμότερος γίνεται.</p>
+</div>
+<div type="chapter" n="25">
+   <p>Do you, therefore, my friend, never enter into a contest of evil, and never contend for the pre-eminence in such practices, but rather exert yourself with all your might to escape from them.</p>
+   <p>And if ever, being under the compulsion of some power which is mightier than yourself, you are compelled to engage in such a strife, take care to be without delay defeated;</p>
+   <p>for then you, being defeated, will be a glorious conqueror, and those who have gained the victory will have got the worst.</p>
+   <p>And do not ever entrust it to a herald to proclaim the victory of your rival or to the judge to crown;</p>
+   <p>but do you go yourself and offer to him the acknowledgment of victory and the palm, and crown him, if he will, and bind him with wreaths of triumph, and proclaim him as conqueror yourself, pronouncing with a loud and piercing voice such a proclamation as this:</p>
+   <p>“O ye spectators, and ye who have offered prizes at these games!</p>
+   <p>In this contest which you have proposed to us of appetite, and passion, and intemperance, and folly, and injustice, I have been defeated, and this man whom ye behold has gained the victory.</p>
+   <p>And he has gained it by such a superabundance of excellence, that even we, who might very naturally have envied our conquerors, do not grudge him the triumph.”</p>
+   <p>Therefore, in all these unholy contests, surrender the prizes to others;</p>
+   <p>but, as for those which are really holy, study yourself to gain the crown in them.</p>
+</div>
+<div type="section" n="57">
+   <p>And think not those contests holy which the different <foreign xml:lang="grc">c</foreign> ities propose in their triennial festivals, when they build theatres and receive many myriads of people;</p>
+   <p>for in those he who has overthrown any one in wrestling, or who has cast him on his back or on his face upon the ground,</p>
+   <p>or he who is very skilful in wrestling or in the pancratium, carries off the first prize,</p>
+   <p>though he may be a man who has never abstained from any act of violence or of injustice.</p>
+</div>
+<div type="chapter" n="26">
+   <p>There are some men, again, who, having armed and strongly fortified both their hands in a most hard and terrible manner, like iron, attack their adversaries, and batter their heads and faces, and the other parts of their bodies, and whenever they are able to plant a blow, they inflict great fractures, and then claim the decision in their favour, and the crown of victory, by means of their merciless cruelty.</p>
+   <p>But what man in his senses would not laugh at the other competitions of runners, and candidates for the prize in the pentathlon, to see men studying with all their energies to leap the longest distance, and measuring spaces and distances, and contending with one another in swiftness of foot? men whom, not only those more active <name type="animal" xml:lang="grc">ἀλκίμους πρὸς φυγὴν</name> <name type="animal" xml:lang="grc">ἐλάφους</name>, or a <name type="animal" xml:lang="grc">δορκάδα</name>, but even the very smallest beasts, such as a <name type="animal" xml:lang="grc">κύνα</name>, or a <name type="animal" xml:lang="grc">λᾶγω</name>, without making any extraordinary haste, would outrun, though they were to exert themselves with all their speed, and to put themselves out of breath.</p>
+   <p>Of all these contests, then, there is not one which is truly sacred; no, not though all the men in the world should combine to bear witness in their favour, but they must be convicted by themselves of bearing false witness if they do so: for they who admire these things have established laws against men who behave with insolent violence, and have affixed punishments to assaults, and have appointed judges to decide on every action of that kind.</p>
+   <p>How, then, is it natural for the same</p>
+</div>
+<div type="section" n="59">
+   <p>persons to be indignant at those who insult and assault others privately, and to establish in their cases punishments which cannot be avoided, but yet, in the case of those who commit these assaults publicly, and in assemblies of the people, and in theatres, to establish by law that they shall receive crowns, and that proclamations shall be made in their honour, and all sorts of other glorious circumstances? (118) For when two opposite opinions are established concerning any one thing, whether it be person or action, it follows of necessity that one or other of them must be wrong, and the other right, for it is impossible for them both to be right: which is the two, then, will you praise deservedly? Will you not say that that sentence is right which orders those who begin acts of violence to be punished? You would justly blame the contrary law, which commands such persons to be honoured; that nothing sacred may be blamed, every such thing must be altogether glorious.</p>
+</div>
+<div type="section" n="60">
+   <p>XXVII.</p>
+   <p>(119) Therefore the Olympian contest is the only one that justly deserves to be called sacred; meaning by this, not that which the inhabitants of <placeName>Elis</placeName> celebrate, but that which is instituted for the acquisition of the divine, and Olympian, and genuine virtues. Now, as competitors in this contest, all those have their names inscribed who are very weak in their bodies, but very vigorous in their souls; and then, having stripped off their clothes, and smeared themselves in the dust, they do all those actions which belong to skill and to power, omitting nothing which may conduce to their gaining the victory.</p>
+   <p>(121) And those who are thought worthy of the second or of the third place, must not be cast down; for these prizes are proposed for the acquisition of virtue. But to those who are unable to attain to the very highest eminence, even the acquisition of a moderate prize is serviceable. And it is even said that such is more stable, since it avoids the envy which always sticks to those who are excessively eminent.</p>
+</div>
+<div type="section" n="122">
+   <p>Therefore it is said in a way to convey much instruction, "The horseman will fall," that if any one falls from vice, he may be raised up by leaning on good things, and so may stand upright again.</p>
+   <p>And in a still more instructive manner is that other expression used, which bids one not leap off in front, but "fall backwards," since it is always advantageous to be behind-hand in vice and passion;</p>
+</div>
+<div type="section" n="123">
+   <p>for it is always good to be beforehand in doing what is good, but to be slack in doing what is disgraceful: and, on the other hand, it is good to come close to the one, but to stand aloof from and to be as far as possible removed from the other.</p>
+   <p>And that man is free from all disorder, to whom it happens to be removed at a distance from the errors of passion. Accordingly, Moses says that he is "awaiting the salvation which comes from God,"{<quote><foreign xml:lang="grc">#ge 49:18</foreign></quote>} in order that, as far as he is removed from committing iniquity, so far he may also advance in well-doing.</p>
+</div>
+<div type="section" n="28">
+   <p>Everything, then, that is requisite has now been said on the subject of a <name type="animal" xml:lang="eng">horseman</name> and a <name type="animal" xml:lang="eng">rider</name>, and a keeper of sheep and a <name type="animal" xml:lang="eng">shepherd</name>, and a tiller of the ground and a <name type="animal" xml:lang="eng">husbandman</name>; and all the difference existing between each of these pairs has been very accurately defined, as far as it was in our power.</p>
+   <p>It is time now to turn to what follows. (125) <persName>Moses</persName>, then, introduces the man who is desirous of virtue as not possessing a complete knowledge of the whole business of a <name type="animal" xml:lang="eng">husbandman</name>, but only as labouring with diligence at its principles and rudiments; for he says, "Noah began to be a Husbandman."{#ge 9:20.}</p>
+   <p>And the beginning, as the proverb of the old writers has it, is half of the whole; as yet, therefore, he is half of the distance removed from the end, and where the end is not attained, it has been often injurious to many persons, to have begun great enterprises.</p>
+   <p>At all events, before now, some persons whose minds were not right, through their thoughts revolving in continued changes, have conceived a notion of some good things, but have derived no advantage from it; for it has happened that, as they did not attain the end which they desired, they have been overwhelmed by the impetuosity of a number of adverse circumstances coming against them, and so that good conception has been destroyed.</p>
+</div>
+<div type="section" n="63">
+   <p>Was it not on this account that when <persName>Cain</persName> fancied that he had offered up a blameless sacrifice, an oracle came to him bidding him not to feel confidence as a man who had presented a well approved offering?</p>
+   <p>for that he had not sacrificed with holy and perfect victims. And the oracle is as follows: <quote>“If thou dost not bring thy offering properly, and if thou dost not distribute it Rightly.”<note type="source" target="#ge 4:7"/></quote></p>
+   <p>What is right, then, here is the honour of <name type="deity">God</name>, and that which is not properly distributed is not right.</p>
+   <p>But let us now examine what meaning is contained under this expression.</p>
+   <p>There are some persons who look upon piety as consisting in the affirmation that all things have been made by <name type="deity">God</name>, both what is good and the contrary;</p>
+   <p>to whom we would say that one portion of your opinion is praiseworthy, but the other portion blameable.</p>
+   <p>One portion is praiseworthy, because it properly honours that which alone is worthy to receive honour;</p>
+   <p>but that portion is blameable, which does so without any discrimination or division.</p>
+   <p>For it was not proper to confuse and mingle everything together, nor to declare <name type="deity">God</name> the cause of everything without distinction,</p>
+   <p>but to make a difference, and to pronounce him the cause only of those things which are good;</p>
+</div>
+<div type="section" n="64">
+   <p>ἀλλὰ γὰρ ἄτοπον μὲν ἐστι περὶ μὲν τῶν ἱερέων μεριμνᾶν, ὅπως σῶμα μὲν αὐτῶν ἀπήρτιστον ᾖ καὶ παντὸς ἐλλείματος καὶ φθοράς ἀπήλλακται,</p>
+   <p>περὶ δὲ τῶν ζῴων τῶν εἰς θυσίαν προσφερομένων σφόδρα ἐπιμελεῖσθαι,</p>
+   <p>ὅπως μηδὲν ἔχῃ τῶν ἐλλειμάτων μηδὲ τὸ ἐλάχιστον οἷόν τε ἦν,</p>
+   <p>καὶ ἀνθρώπους καταστῆσαι καὶ λέγειν οὓς δεῖ καὶ πόσους ἐπὶ τούτῳ τῷ ἔργῳ καθιστάναι,</p>
+   <p>οὓς δὴ τινες ἐπιμελητὰς τῶν ἐλλειμάτων καλοῦσιν, ὅπως ἀπήρτιστα καὶ ἀτέλεστα πρὸς τὸν βωμὸν ἀχθῇ τὰ θύματα,</p>
+   <p>τὰς δὲ περὶ θεοῦ δόξας ἐν τῇ ψυχῇ ἑκάστου ἀκριβῶς ἐῶντα ἐν σκότῳ κεῖσθαι</p>
+   <p>καὶ μὴ φροντίζειν ὅπως ἂν ὑπὸ τῆς ὀρθῆς λογικῆς κρίσεως διακριθεῖεν.</p>
+</div>
+<div type="section" n="65">
+   <p>Do you not see that the law pronounces the <name type="animal" xml:lang="en">camel</name> to be an unclean beast, because it chews the cud and does not part the Hoof.{18}{#le 11:4.}</p>
+   <p>And yet, if we considered this sentence as it is expressed in its literal sense, I do not see what reason there is in it when it is interpreted; but if we look at it in its allegorical meaning, it is very clear and inevitable.</p>
+   <p>For as the animal which chews the cud, again masticates the food which is put before it and devoured by it, when it again rises up to its teeth, so also the soul of the man who is fond of learning, when it has received any speculative opinions by hearing them, does not abandon them to forgetfulness, but quietly by itself revolves over every one of them again in its mind in all tranquillity, and so comes to the recollection of them all.</p>
+   <p>But it is not every memory which is good, but only that which is exerted on good subjects, since it is a most pernicious thing that what is bad should not be forgotten; on which account, with a view to perfection, it is necessary that the hoofs should be parted, in order that so the faculty of memory, being divided into two sections, the word which flows through the mouth may divide the lips, as being things which nature has made of a two-fold character, and may also separate the advantageous species of memory from that which is mischievous.</p>
+</div>
+<div type="section" n="66">
+   <p>Again, the dividing the hoof without chewing the cud does not by itself appear to bring any advantage with it. For what advantage is there in distinguishing the natures of things beginning at the top, and going down to the most unimportant points, and yet not to be able to do so in one's self, not to have one's own divisions clearly distinguished, which by some persons are with great felicity named <foreign xml:lang="grc">ἄτομα</foreign> and <foreign xml:lang="grc">ἀμερῆ</foreign> <foreign xml:lang="grc">μερή</foreign>?</p>
+   <p>(135) for all these things are manifest displays of intelligence and excessive accuracy, sharpened to a degree of the most acute comprehension. But they have no influence in causing virtue, or in making men live a life free from reproach.</p>
+</div>
+<div type="book" n="67">
+  <p>On Husbandry, Noah's Work as Planter, On Dreams, On the Eternity of the World</p>
+  <div type="section" n="1">
+    <p>Accordingly, in their daily discussions, the company of sophists all over the world annoys the ears of those whom they meet,</p>
+    <p>by discussing with minute accuracy, and expounding precisely, all expressions of a double and ambiguous character, and distinguishing everything which appears to occur to the recollection</p>
+    <p>(and a great many things are fixed deeply in it).</p>
+  </div>
+  <div type="section" n="2">
+    <p>Do not these men divide the elements of grammatical speech into consonants and vowels?</p>
+    <p>And do not some men divide speech into their first principles, noun, verb, and conjunction?</p>
+  </div>
+  <div type="section" n="3">
+    <p>Do not musicians again divide their own science into rhythm, and part, and melody?</p>
+    <p>and subdivide melody into the chromatic, the enharmonic, and the diatonic species, into the divisions of fourths, and fifths, and the diapason, and into combined and distinct melodies?</p>
+  </div>
+  <div type="section" n="4">
+    <p>Do not geometricians divide their science into two generic lines, the straight line, and the circumference?</p>
+    <p>And do not other professors of other arts draw careful distinctions between the species which exist in each of their arts, going accurately through them all from beginning to end?</p>
+  </div>
+  <div type="section" n="5">
+    <p>And the whole company of students of philosophy may argue with them on their line of conduct, each going through the studies to which he is accustomed;</p>
+    <p>because, of all existing things some are corporeal, and some incorporeal;</p>
+  </div>
+</div>
+<div type="chapter" n="68">
+   <p>some again are inanimate, and some have vitality;</p>
+   <p>some are endowed with, others destitute of reason;</p>
+   <p>some are mortal, others divine; and of mortal</p>
+   <p>Some human are male, and some female, these being the two divisions of the human race.</p>
+   <p>Again, of incorporeal things, some are perfect and others imperfect; and of perfect things, some are questions and interrogations, others are imprecatory or adjurative; and there are other kinds which have special differences in the elementary principles of such things.</p>
+   <p>Again, there are some things which the dialecticians are accustomed to call actions;  and of these some are simple, and others are not simple; and of those which are not simple some are conjunctive, and others are adjunctive in a greater or lesser degree; moreover some are disjunctive, and there are others which come under a similar description.</p>
+   <p>Again, some are true, some are false, some are doubtful; some possible and some impossible; some are corruptible, others incorruptible; some necessary, and others not necessary; some are easy of solution, others difficult to understand; and there are other classifications akin to these.</p>
+   <p>Again, of those which are imperfect there are proximate divisions into what are called categorems and accidents, and other classifications which are subordinate to these.</p>
+</div>
+<div type="chapter" n="32">
+   <p>And although the intellect, when it has sharpened itself so as to render itself more acute than before (as a physician gives strength to bodies),</p>
+   <p>dissects the natures of things, but yet derives no advantage with respect to the acquisition of virtue;</p>
+   <p>it will divide the hoof, being able to divide, and to distinguish, and to discriminate between each separate thing;</p>
+   <p>but it will not chew the cud so as to avail itself of any useful food which may be able, by means of its recollections,</p>
+   <p>to soften the asperity of the soul which has been engendered by sins, and to produce a really gentle and pleasant motion.</p>
+   <p>Therefore a vast number of those who are called sophists, being admired in their respective cities,</p>
+   <p>and having attracted almost all the world to look upon them with honour, on account of the accuracy of their definitions</p>
+   <p>and their excessive cleverness in inventions, have grown old while vehemently bound by the passions,</p>
+   <p>and have passed their whole life in them, in no respect differing from private individuals who are of no account</p>
+   <p>and are held in no consideration.</p>
+   <p>For which reason the lawgiver very admirably compares those of the sophists who live in this manner to the race of</p>
+   <p><name type="animal" xml:lang="grc">ὗς</name>, who live a life in no respect pure or brilliant, but confused and disorderly,</p>
+   <p>and who are devoted to the basest habits.</p>
+</div>
+<div type="section" n="70">
+   <p>For he says that the <name type="animal" xml:lang="grc">ὗς</name> is an unclean animal, because it divides the hoof and does not chew the cud, just as he has pronounced the <name type="animal" xml:lang="grc">κάμηλος</name> unclean for the contrary reason because it chews the cud and does not divide the hoof. But as many animals as partake of both these qualities are very appropriately described as clean, because they have avoided impropriety in both the aforementioned particulars. For division without memory, and care, and a diligent examination of what is best, is but an imperfect good; but the combination and union of the two in the same animal is a most perfect good.</p>
+</div>
+<div type="section" n="71">
+   <p>And even the enemies of the soul are afraid of this perfection, whom, as they are no longer able to stand up against it, a genuine peace gets the mastery over.</p>
+   <p>And all those who have attained to a half-perfect or half-established wisdom, are too weak to be able to make any effectual opposition to the brood of <name type="animal" xml:lang="grc">ἁμαρτίαι</name>, which have become confined by long usage, and which have gained strength by time.</p>
+   <p>On this account, when in the time of war the general makes a levy of his army, he does not summon all the youth, not even, though it displays all imaginable willingness and spontaneous readiness to come forward to repel the enemy.</p>
+   <p>But he commands some to depart and to remain at home, in order that by continued exercise they may acquire such an amount of military power and skill as may afterwards be sufficient to secure the victory.</p>
+   <p>And the order of this levy is made through the medium of the heralds of the army when the war is at hand, and already at the very gates.</p>
+   <p>And the heralds will make this announcement: “What man is there who has built a new house, and has not handselled it? Let him go and return to his house, that he may not die in the war, and another man handsel it instead of him.</p>
+   <p>And what man is there who has planted a vineyard and has not received any joy from the fruit thereof? Let him go and turn away back to his house, that he may not die in the war, and another man be delighted with the fruit of his vineyard.”</p>
+</div>
+<div type="section" n="72">
+   <p>And what man has espoused a wife,</p>
+   <p>and has not received her? Let him go and return back to his house,</p>
+   <p>that he may not die in the war, and another man take his <name type="animal" xml:lang="grc">γυναικός</name>.</p>
+</div>
+<div type="section" n="73">
+   <p>For why, I should say, O <persName>most excellent man</persName>, do you not think it more proper to summon these men to follow you to the contest of war rather than the others, men who have acquired marriages, and houses, and <name type="plant" xml:lang="grc">vineyards</name>, and all other kinds of possessions in abundance?</p>
+   <p>For they will most cheerfully undergo dangers, even if they be altogether most formidable, for the sake of the safety of all these things.</p>
+   <p>Since those men who have none of these things which have been enumerated will be very likely to exhibit indifference and inactivity in the war, as having no very important pledges at stake.</p>
+   <p>Or do you think that, just in proportion to the absence of any enjoyment from the possession of such things that they have hitherto felt, will be their apprehension lest they never be able to enjoy such things, and that this will give them energy?</p>
+   <p>For what advantage from all the possessions that they may have acquired is left to those who have been subdued in war?</p>
+   <p>But will they not be taken prisoners?</p>
+   <p>Then they will immediately suffer for their absence from the field of battle;</p>
+   <p>for while they are sitting at home and wallowing in luxury, it is evidently inevitable that their enemies, who are conducting all the operations of the war with energy, will, not merely without any loss, but even without the slightest exertion, make themselves masters of all that they possess.</p>
+</div>
+<div type="section" n="74">
+   <p>But the multitude of their other allies will cheerfully encounter the contest on behalf of these things.</p>
+   <p>At first sight, indeed, it seems absurd to rely upon the energies or fortune of others;</p>
+   <p>and especially when it is both an individual and a common danger, involving defeat,</p>
+   <p>and slavery, and utter destruction, which hangs over men's heads, who are able of themselves</p>
+   <p>to encounter the toils and perils of war, and who are not hindered by any disease,</p>
+   <p>or by old age, or by any other disaster.</p>
+   <p>It is rather fitting that those, whom the danger chiefly concerns, should seize their arms</p>
+   <p>and stand in the front battalions and hold their shields over their allies,</p>
+   <p>fighting cheerfully and with a spirit which even courts dangers.</p>
+</div>
+<div type="section" n="35">
+   <p>Ἆρ᾽ οὖν οὐκ ἂν ἐπιδείξαιντο οὐ μόνον προδοσίας ἀλλὰ καὶ μεγίστης ἀναλγησίας ὑποδείγματα, εἰ τοῖς ἑτέρων ἀγῶσι χρῆσθαι ἐῶσιν ἑαυτούς, αὐτοὶ δὲ περὶ τὰ οἰκεῖα πράγματα ἐνδιατρίβοιεν;</p>
+   <p>Ἆρ᾽ οὖν οἱ μὲν ἑτέρους ἐθέλειν ὑπομένειν ἀγῶνας καὶ κινδύνους ὑπὲρ σωτηρίας, ἣν αὐτοὶ φοβεῖσθαι μὴ ὑποστῶσιν;</p>
+   <p>Ἆρ᾽ οὖν οἱ μὲν ἑτέρους ἑκουσίως ἐνεγκεῖν σιτοδείαν καὶ γῆς ἐπίπεδον καὶ τῶν ἄλλων σωματικῶν τε καὶ ψυχικῶν κακῶν ἕνεκα τῆς νίκης, οὗτοι δὲ τὰς οἰκίας αὐτῶν κονιάμασι καὶ ἀνοήτοις κοσμοῦντες κενοῖς ἢ τὰς ἀρούρας ἀμῶντες καὶ τὴν τοῦ τρύγου ἑορτὴν ἀγορεύοντες ἢ πρὸς τὰς παρθένους αἳ πάλαι αὐτοῖς ἐνυμφεύθησαν ἐπιπολῆς γινόμενοι καὶ σὺν αὐταῖς κοιμώμενοι, ὡς εἰς γάμου καιρὸν ἀκαιρότατον ἀσχολούμενοι, τοιαύταις ματαιότησι διατρίβοιεν;</p>
+   <p>Καλὸν μὲν οὖν τείχεσι φροντίζειν καὶ προσόδους ἀθροίζειν καὶ συμπόσια θορυβεῖν καὶ οἴνῳ ἀνακέχυσθαι καὶ γάμους ἐκδίδοσθαι καὶ γηράσκοντα γύναια μνάσκεσθαι (ὡς ἡ παροιμία λέγει)· ἀλλὰ ταῦτα μὲν εἰρήνης ἔργα, ταῦτα δὲ ἐν καιρῷ πολέμου πανταχόθεν ἐπιφερομένου σφοδρῶς, ὅτε μήτε πατὴρ μήτε ἀδελφὸς μήτε οὐδεὶς τῶν οἰκείων τῶν πολεμικῶν μόχθων μεταλαμβάνει·</p>
+</div>
+<div type="section" n="76">
+   <p>when this, I say, is the case, must we not say that universal cowardice has occupied the whole house?</p>
+   <p>Oh, but you will say there are at all events myriads of relations who are fighting in their cause.</p>
+   <p>Then, while they are encountering danger to their lives, must not those who are spending their time in luxury and delicate living appear to surpass even the worst of <name type="animal" xml:lang="grc">θηρίον</name> in the excess of their inhumanity?</p>
+   <p>(155)</p>
+   <p>Again, they will say, but it is hard that others, without enduring any labour themselves, should reap the fruits of our labours.</p>
+   <p>Which, then, is worst, that enemies should come into one's inheritance while one is still alive, or that friends and relations should do so after one is dead?</p>
+   <p>It is absurdity even to compare things which are so widely different;</p>
+   <p>(156)</p>
+   <p>and yet it is not inconsistent with reason, not only that all the property which belongs to these men who shun military service, but that even they themselves, too, may become the property of their enemies when they have obtained the mastery.</p>
+   <p>So those, indeed, who die in defence of the general safety, even if they have not enjoyed as yet any advantage from those possessions which they previously had, meet with death in its most pleasant form, considering that, by their saving the others, their property goes to those whom they desired to have for their successors.</p>
+</div>
+<div type="section" n="77">
+  <p>Therefore the words of the law here admit, perhaps, of all these and even of still more excuses; but that no one of those who study evil cunning, through his ingenuity in devising excuses, may feel any confidence in their validity, we will proceed with the allegory, and say that, in the first place, the law does not only think it right for men to labour for the acquisition of good things, but also for the enjoyment of those which they have already acquired; and that it looks upon happiness as consisting in the exercise of perfect virtue, which makes life safe and complete.</p>
+  <p>In the second place, that the question here is not about a house, or a vineyard, or a betrothed and espoused wife, in order that he may marry her as an accepted suitor, and that he who planted the vineyard may gather the fruit thereof and press it out, and then, drinking the unmixed wine, may be gladdened in his heart, and that the man who has built a house may dwell in it; but the question is rather about the faculties of the soul, to which the beginnings, and progress, and perfection of all praiseworthy actions are owing.</p>
+  <p>Now, the beginnings have usually especial connection with a suitor; for as he who courts a wife is about to become her husband, since he is not so already,</p>
+</div>
+<div type="section" n="78">
+   <p>ὡς οὖν καὶ ὁ τὴν ἀγαθὴν ἔχων διάθεσιν ἐλπίζει γαμήσειν τὴν καλῶς τε καὶ ἁγνῶς πεφυκυῖαν παρθένιον, παιδείαν, αὐτῇ παραχρῆμα μνηστεύεται·</p>
+   <p>ἡ δὲ προκοπὴ πρὸς τὸν γεωργόν ἐστιν ἀφορμή·</p>
+   <p>ὥσπερ γὰρ τῷ φυτευταῖς ἐπιμέλεια τῶν δένδρων αὔξησις ἐστὶν ἐπιτήδειος, οὕτω καὶ τῷ περὶ τὴν μαθήσεως σπουδάζοντι τὰ τῆς σοφίας θεωρήματα μεγίστην εἶναι βελτίωσιν ἐπιτήδειος·</p>
+   <p>καὶ τελειότης μάλιστα οἰκοδομίας ἐστὶν ἐπιτήδεια, ὅταν μὲν ἐκτελεσθῇ, μὴ δὲ ἐγκατασταθῇ πω καὶ στερεωθῇ.</p>
+</div>
+<div type="book" n="79">
+  <p>But in all these different circumstances, at the beginning, or in the progress, or at the end of any undertaking, it is alike becoming to men to live without contention,</p>
+  <p>and not engage in the war of the sophists, which is always stirring up a quarrelsome confusion,</p>
+  <p>which tends to the adulteration of the truth; since the truth is dear to peace, which is at variance with their interests.</p>
+  <p>For if they come to this contest, being private individuals engaging in a struggle against men experienced in warfare,</p>
+  <p>they will by all means be defeated; and one who is only beginning, because he is destitute of experience;</p>
+  <p>the one who is in a state of progress, because he is still imperfect;</p>
+  <p>and the one who is perfect, because he is not yet thoroughly practised in virtue.</p>
+  <p>But just as it is necessary that plaster, after it has been applied to a wall, must become solid and acquire firmness,</p>
+  <p>so also it is indispensable that the souls of those who have attained to perfection,</p>
+  <p>must become strengthened, and be established on firmer foundations by continual study and incessant practice.</p>
+  <p>And those who do not arrive at this point are by philosophers indeed called wise men,</p>
+  <p>but it is without their own knowledge: for they say that it is impossible for them who have advanced as far as the perfection of wisdom,</p>
+  <p>and who have now for the first time reached its summit to be aware of their own perfection;</p>
+</div>
+<div type="section" n="80">
+   <p>for they affirm that it is impossible for both these things to happen at the same time, namely the arrival at the desired goal, and the apprehension that one has arrived there; but they affirm that on the border between the two, there is ignorance, of such a sort, that it is not far removed from knowledge, but that it is very near to it, and close to its doors.</p>
+   <p>When a man has acquired this, and thoroughly comprehends it, and is entirely acquainted with the powers of his adversaries, it will be his task to war against the company of contentious sophists, for there is good hope that such a man may conquer; but he who is still impeded by the cloud of ignorance in front of him, and who is not yet able to pour forth the light of knowledge, may safely remain at home; that is to say, it is well for him not to enter into a contest with respect to those matters with which he is not thoroughly acquainted, but he had better rest and keep quiet.</p>
+</div>
+<div type="section" n="81">
+   <p>ὁ δὲ ὑπὸ τῆς αὐταρκείας ἀρθεὶς ἄνθρωπος, μὴ γινώσκων τὴν τῶν ἀντιπάλων δύναμιν ἢ τέχνην, πρὸς τὸ μηδὲν ἐλθεῖν ἀνάγκη διαφθαρήσεται, καὶ τὸν τῆς γνώσεως θάνατον ὑπομενεῖ, ὃς ἔστι πικρότερος τοῦ τὴν ψυχὴν ἀπὸ τοῦ σώματος χωρίζοντος.</p>
+   <p>τούτου δὲ δεῖ γίνεσθαι τοὺς ἑαυτοὺς ἐξαπατᾶσθαι ἐῶντας ὑπὸ τῶν σοφιστῶν· ἐπειδὰν γὰρ μὴ δύνωνται τὰς σοφιστείας αὐτῶν ἐξευρεῖν, ἀληθείας οἰόμενοι τὰς ἀπάτας, τὸν αὐτὸν τρόπον ἀποθνήσκουσι τῆς τοῦ γνῶναι ζωῆς, ὃ πάσχουσιν οἱ καὶ ὑπὸ κολάκων ἐξαπατώμενοι· καὶ γὰρ ἐν τούτοις τὴν μὲν ψυχὴν ὑγιῆ καὶ γνήσιον οὖσαν ἐκβάλλει καὶ καθαιρεῖ φιλία τις φθαρεῖσα τὴν αὑτῆς φύσιν.</p>
+</div>
+<div type="chapter" n="38">
+   <p>We must therefore advise those who are beginning to learn not to go forth into such contests, for they have not sufficient knowledge; and we must counsel those who are making some progress to abstain from them, because they are not perfect; and those who have now for the first time just attained to perfection, we must urge to forbear, because in some degree their perfection has escaped their own notice.</p>
+   <p>But of those who disregard our warnings, Moses says, <quote>One man will inhabit his house, and another will obtain his vineyard, and another will marry a wife.</quote> And the meaning of this is something of this kind: the powers which have been enumerated, of careful beginning, and improvement, and perfection, will never fail altogether, but will at different times approach and unite themselves with different persons, and will not be always forming the same souls, but will change about, resembling seals;</p>
+   <p>for seals, when they have stamped an impression on one piece of wax, without suffering any alteration themselves, though they impress on it a form which is derived from themselves, remain in the same condition as before; and if the piece of wax which has been stamped, be melted, and the impression effaced, then another piece may be substituted in its place. So that, my good friends, do not think, that when you yourselves perish, your powers perish with you; for they, being immortal, have, on account of their own glory, embraced ten thousand other persons before</p>
+</div>
+<div type="section" n="83">
+   <p>they came to you, who, they perceived, did not behave like you, out of an aversion to danger, shunning their society, but who rather came forward to meet them, and showed an eagerness to consult their safety.</p>
+   <p>And if any one is a friend of virtue, let him pray that all good things may be implanted in him, and may appear in his soul, like some symmetrical proportion conducing to beauty in a <name type="animal" xml:lang="grc">ἀετός</name> or a picture, considering that there are innumerable persons watching at hand, to whom nature will give all these things instead of giving them to him, namely, facility of learning, improvement, and perfection; but it is better that he should shine out rather than they, guarding safely the graces which have been bestowed on him by <name type="deity">God</name>; and that he himself should not, by carrying forward destruction, afford an easy prey to his unsparing enemies.</p>
+</div>
+<div type="section" n="84">
+   <p>On Husbandry, Noah's Work as Planter, On Dreams, On the Eternity of the World</p>
+   <p>Are we then to say that there is but little use in a beginning to which a fortunate end does not set its seal?</p>
+   <p>It has often indeed happened that even some who have attained to perfection have still been thought imperfect,</p>
+   <p>from appearing to have improved through their own earnestness alone, and not according to the will of God.</p>
+   <p>And on this account, being exceedingly elated by their vain opinion, and elevated to a great height,</p>
+   <p>they have fallen from a high position to the lowest depths, and so been destroyed.</p>
+   <p><quote>For if,</quote> says Moses, <quote>you have built a new house, you shall also erect a battlement on the house,</quote></p>
+   <p>and then shall commit no murder in your house if any one falls from it.<pb n="20"/>{#de 22:8.}</p>
+   <p>For the most grievous of all falls is for a man to stumble and fall from the honour due to God;</p>
+   <p>crowning himself rather than God, and committing domestic murder.</p>
+   <p>For he who does not duly honour the living God kills his own soul:</p>
+   <p>so that the building of education which he has erected is of no advantage to him.</p>
+   <p>But instruction has a nature which never grows old;</p>
+   <p>on which account Moses calls its house a new house,</p>
+   <p>for all other things are gradually destroyed by time.</p>
+   <p>But instruction, in proportion as it advances towards perfection, is fresh and vigorous,</p>
+</div>
+<div type="chapter" n="85">
+   <p>looking blooming with an ever-flourishing appearance, and putting itself in motion with continual studies.</p>
+   <p>And in his hortatory admonitions Moses recommends that those who have received the most abundant possession of good things should not look upon themselves as the causes of their acquisition,</p>
+   <p>but should remember God who gave them strength to acquire the Power.<quote><foreign xml:lang="grc">{21}{#de 8:18.}</foreign></quote></p>
+   <p>This then is the utmost limit of good fortune, and the other things are its beginnings,</p>
+   <p>so that those who forget the end cannot possibly derive any advantage from the acquisitions which they have made.</p>
+   <p>And so the falls which these men endure are self-incurred,</p>
+   <p>through their own self-sufficiency, because they could not endure to call the loving and all-accomplishing God the cause of their good things.</p>
+</div>
+<div type="section" n="86">
+   <p>There are also some people who, letting loose every cable of piety, hasten to make a speedy voyage, in the hope of anchoring in its harbours.</p>
+   <p>And afterwards, when they are at no great distance off, but are just on the point of reaching the haven, on a sudden there comes a violent wind, blowing in their teeth and coming upon them closely, which drives back the vessel which was proceeding onwards in its straight course, in such a manner as to destroy a great many of the things which were of use to contribute to a fair voyage;</p>
+   <p>no one then could blame those people for being still tossed about by the sea, for the slowness, which they have displayed in completing their voyage, has been unintentional on their part.</p>
+   <p>Who then can be likened to them rather than he who prayed what is called the great prayer? <quote>For if,</quote> says Moses, <quote>any one dies in his presence suddenly, then immediately the head of his vow shall be polluted and he shall be Shaved;</quote>{22}{#nu 6:9.} and then after saying a few more sentences he thus proceeds, <quote>And the former days shall not be taken into the computation, because the head of his vow was polluted.</quote></p>
+   <p>Now by the two expressions <foreign xml:lang="grc">αἰφνίδιον</foreign> and <foreign xml:lang="grc">εὐθύς</foreign>, the involuntary character of the deviation of the soul is manifested.</p>
+   <p>For with reference to intentional sins there is need of time to consider where, and when, and how a thing is to be done.</p>
+</div>
+<div type="section" n="87">
+   <p>But unintentional sins are committed suddenly, without any consideration, and, if it be possible to say such a thing they strike upon the man without any time at all.</p>
+   <p>For it is very difficult, as in the case of runners, for men, when they first begin to travel by the road which leads to piety, to keep their course straight onward without stumbling and without being out of breath; since there are innumerable hindrances to every human being,</p>
+   <p>but above all things, that which is the one and only thing in the way of doing good, namely the abstaining from any intentional misdeeds, is of service also to keep off the incalculable number of voluntary sins; and, in the second place, even of those which are involuntary, they are but few which are committed, and they do not cling to a person for any very long time.</p>
+</div>
+<div type="book" n="88">
+  <p>Very beautifully, therefore, has <persName>Moses</persName> said that the days of unintentional error do not come into the computation (<foreign xml:lang="grc">alogos</foreign>); not only because the error was one without calculation, but also because it is not possible to give an account (<foreign xml:lang="grc">logos</foreign>) of involuntary offences. Therefore, it often happens, when we are asked the reason of such and such a thing, that we say that we do not know, and that we cannot tell, in that we were not present when they were done, and also that we were ignorant of their being done.</p>
+  <p>It is, therefore, a very rare thing when <name type="deity">God</name> gives to any one to keep his life in a steady course from the beginning to the end, without either stumbling or falling; but escaping both kinds of offences, unintentional as well as intentional, with great s</p>
+</div>
+<div type="chapter" n="89">
+   <p>On Husbandry, Noah's Work as Planter, On Dreams, On the Eternity of the World
+   peed and owing to the celerity and impetuosity of one's motions.  (181) These things then are here said about beginning and end, because of the instance of the just Noah, who, after he had acquired the first and elementary principles of the knowledge of husbandry, was unable to reach its furthest limits. For it is said that "he began to be a husbandman," not that he arrived at the extreme end of complete knowledge: but what is said about his planting we will discuss subsequently.</p>
+</div>
+    </body>
+  </text>
+</TEI>
