@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="fr">Οἰκονομικός</title>
+        <title type="alt" xml:lang="fr">Économique</title>
+        <title type="alt" xml:lang="en">Economics</title>
+        <author>
+          <persName>XENOPHON</persName>
+          <idno type="zoomathia">tlg0032</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-24">2026-07-24</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-24">2026-07-24</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">tlg0032</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr">francais</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>francais</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <div type="chapter" n="1">
+    <p>
+      <persName>Xénophon</persName> : de l'<foreign xml:lang="grc">ἱππικῆς</foreign> (<foreign xml:lang="fr">Traduction Talbot</foreign>) – bilingue
+    </p>
+    <p>
+      <persName>XENOPHON</persName>
+    </p>
+    <p>
+      DE L’ÉQUITATION
+    </p>
+    <p>
+      <foreign xml:lang="fr">Traduction française</foreign> · <persName>Eugène TALBOT</persName>
+    </p>
+    <p>
+      <foreign xml:lang="grc">Περὶ ἱππικῆς</foreign> <foreign xml:lang="grc">Κεφάλαιον</foreign> <foreign xml:lang="grc">αʹ</foreign>
+    </p>
+    <p>
+      [1] <foreign xml:lang="grc">Ἐπειδὴ</foreign> <foreign xml:lang="grc">διὰ</foreign> <foreign xml:lang="grc">τὸ</foreign> <foreign xml:lang="grc">συμβῆναι</foreign> <foreign xml:lang="grc">ἡμῖν</foreign> <foreign xml:lang="grc">πολὺν</foreign> <foreign xml:lang="grc">χρόνον</foreign> <foreign xml:lang="grc">ἱππεύειν</foreign> <foreign xml:lang="grc">οἰόμεθα</foreign> <foreign xml:lang="grc">ἔμπειροι</foreign>
+      <foreign xml:lang="grc">ἱππικῆς</foreign> <foreign xml:lang="grc">γεγενῆσθαι</foreign>, <foreign xml:lang="grc">βουλόμεθα</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">τοῖς</foreign> <foreign xml:lang="grc">νεωτέροις</foreign> <foreign xml:lang="grc">τῶν</foreign> <foreign xml:lang="grc">φίλων</foreign> <foreign xml:lang="grc">δηλῶσαι</foreign>,
+      <foreign xml:lang="grc">ἧι</foreign> <foreign xml:lang="grc">ἂν</foreign> <foreign xml:lang="grc">νομίζομεν</foreign> <foreign xml:lang="grc">αὐτοὺς</foreign> <foreign xml:lang="grc">ὀρθότατα</foreign> <foreign xml:lang="grc">ἵπποις</foreign> <foreign xml:lang="grc">προσφέρεσθαι</foreign>.
+      <foreign xml:lang="grc">Συνέγραψε</foreign> <foreign xml:lang="grc">μὲν</foreign> <foreign xml:lang="grc">οὖν</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">Σίμων</foreign> <foreign xml:lang="grc">περὶ</foreign> <foreign xml:lang="grc">ἱππικῆς</foreign>, <foreign xml:lang="grc">ὃς</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">τὸν</foreign> <foreign xml:lang="grc">κατὰ</foreign> <foreign xml:lang="grc">τὸ</foreign>
+      <foreign xml:lang="grc">Ἐλευσίνιον</foreign> <foreign xml:lang="grc">Ἀθήνησιν</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">χαλκοῦν</foreign> <foreign xml:lang="grc">ἀνέθηκε</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">ἐν</foreign> <foreign xml:lang="grc">τῷ</foreign> <foreign xml:lang="grc">βάθρῳ</foreign> <foreign xml:lang="grc">τὰ</foreign> <foreign xml:lang="grc">ἑαυτοῦ</foreign>
+      <foreign xml:lang="grc">ἔργα</foreign> <foreign xml:lang="grc">ἐξετύπωσεν</foreign>· <foreign xml:lang="grc">ἡμεῖς</foreign> <foreign xml:lang="grc">γε</foreign> <foreign xml:lang="grc">μέντοι</foreign> <foreign xml:lang="grc">ὅσοις</foreign> <foreign xml:lang="grc">συνετύχομεν</foreign> <foreign xml:lang="grc">ταὐτὰ</foreign> <foreign xml:lang="grc">γνόντες</foreign>
+      <foreign xml:lang="grc">ἐκείνῳ</foreign>, <foreign xml:lang="grc">οὐκ</foreign> <foreign xml:lang="grc">ἐξαλείφομεν</foreign> <foreign xml:lang="grc">ἐκ</foreign> <foreign xml:lang="grc">τῶν</foreign> <foreign xml:lang="grc">ἡμετέρων</foreign>, <foreign xml:lang="grc">ἀλλὰ</foreign> <foreign xml:lang="grc">πολὺ</foreign> <foreign xml:lang="grc">ἥδιον</foreign> <foreign xml:lang="grc">παραδώσομεν</foreign>
+      <foreign xml:lang="grc">αὐτὰ</foreign> <foreign xml:lang="grc">τοῖς</foreign> <foreign xml:lang="grc">φίλοις</foreign>, <foreign xml:lang="grc">νομίζοντες</foreign> <foreign xml:lang="grc">ἀξιοπιστότερα</foreign> <foreign xml:lang="grc">εἶναι</foreign>, <foreign xml:lang="grc">ὅτι</foreign> <foreign xml:lang="grc">κἀκεῖνος</foreign> <foreign xml:lang="grc">κατὰ</foreign>
+      <foreign xml:lang="grc">ταὐτὰ</foreign> <foreign xml:lang="grc">ἡμῖν</foreign> <foreign xml:lang="grc">ἔγνω</foreign> <foreign xml:lang="grc">ἱππικὸς</foreign> <foreign xml:lang="grc">ὤν</foreign>· <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">ὅσα</foreign> <foreign xml:lang="grc">δὴ</foreign> <foreign xml:lang="grc">παρέλιπεν</foreign>
+      <foreign xml:lang="grc">ἡμεῖς</foreign> <foreign xml:lang="grc">πειρασόμεθα</foreign> <foreign xml:lang="grc">δηλῶσαι</foreign>.
+    </p>
+  </div>
+</div>
+<div type="book" n="2">
+   <div type="section" n="93">
+      <p>
+         <foreign xml:lang="grc">Πρῶτον δὲ γράψομεν, ὡς ἄν τις ἥκιστα ἐξαπατῷτο ἐν ἱππωνίαι.</foreign> Τοῦ μὲν τοίνυν ἔτι
+         <foreign xml:lang="grc">ἀδαμάστου</foreign>
+         <name type="animal" xml:lang="fr">poulain</name>
+         <foreign xml:lang="grc">δῆλον ὅτι τὸ σῶμα δεῖ δοκιμάζειν·</foreign> τῆς γὰρ ψυχῆς οὐ πάνυ σαφῆ τεκμήρια παρέχεται ὁ μήπω ἀναβαινόμενος.
+      </p>
+      <p>
+         <foreign xml:lang="grc">Τοῦ γε μὴν σώματος πρῶτόν φαμεν χρῆναι τοὺς πόδας σκοπεῖν.</foreign> Ὥσπερ γὰρ οἰκίας οὐδὲν ὄφελος ἂν εἴη, εἰ τὰ ἄνω πάνυ καλὰ ἔχοι μὴ ὑποκειμένων οἵων δεῖ θεμελίων, οὕτω καὶ
+         <name type="animal" xml:lang="fr">cheval</name>
+         <foreign xml:lang="grc">πολεμιστηρίου οὐδὲν ἂν ὄφελος εἴη, οὐδ' εἰ τἆλλα πάντα ἀγαθὰ ἔχοι, κακόπους δ' εἴη·</foreign> οὐδενὶ γὰρ ἂν δύναιτο τῶν ἀγαθῶν χρῆσθαι.
+      </p>
+      <p>
+         <foreign xml:lang="grc">Πόδας δ' ἄν τις δοκιμάζοι πρῶτον μὲν τοὺς ὅνυχας σκοπῶν·</foreign> οἱ γὰρ παχεῖς πολὺ τῶν λεπτῶν διαφέρουσιν εἰς εὐποδίαν· ἔπειτα οὐδὲ τοῦτο δεῖ λανθάνειν,
+         <foreign xml:lang="grc">πότερον αἱ ὁπλαί εἰσιν ὑψηλαὶ [ἢ ταπειναὶ] καὶ ἔμπροσθεν καὶ ὄπισθεν ἢ χαμηλαί.</foreign>
+         <foreign xml:lang="grc">Αἱ μὲν γὰρ ὑψηλαὶ πόρρω ἀπὸ τοῦ δαπέδου ἔχουσι τὴν χελιδόνα καλουμένην, αἱ δὲ ταπειναὶ ὁμοίως βαίνουσι τῷ τε ἰσχυροτάτῳ καὶ τῷ μαλακωτάτῳ τοῦ ποδός, ὥσπερ οἱ βλαισοὶ τῶν ἀνθρώπων·</foreign> καὶ τῷ ψόφῳ δὲ ἔφη
+         <persName>Simon</persName>
+         <foreign xml:lang="grc">δήλους εἶναι τοὺς εὔποδας, καλῶς λέγων·</foreign> ὥσπερ γὰρ κύμβαλον ψοφεῖ πρὸς τῷ δαπέδῳ ἡ κοίλη ὁπλή.
+      </p>
+   </div>
+</div>
+<div type="chapter" n="3">
+   <p xml:lang="grc">Ἐπεὶ δὲ ἠρξάμεθα ἐντεῦθεν, ταύτῃ καὶ ἀναβησόμεθα πρὸς τὸ ἄλλο σῶμα.</p>
+   <p xml:lang="fr">Il faut donc que les os soient ni trop droits en haut des <name type="animal" xml:lang="fr">chevilles</name>, ni trop bas en bas des <name type="animal" xml:lang="fr">pattes de chien</name> ; car s'ils sont trop résistants, ils blessent le cavalier et font saigner ces jambes. Mais il ne faut pas non plus que les os soient trop bas : les <name type="animal" xml:lang="fr">chiens</name> seraient alors écorchés et meurtris, soit dans les mottes de terre, soit sur les pierres, quand le <name type="animal" xml:lang="fr">cheval</name> avance.</p>
+   <p xml:lang="grc">Τῶν γε μὴν κνημῶν τὰ ὀστᾶ παχέα χρὴ εἶναι· ταῦτα γάρ ἐστι στήριγγες τοῦ σώματος· οὐ μέντοι φλεψὶ γε οὐδὲ σαρξὶ παχέα· εἰ δὲ μή, ὅταν ἐν σκληροῖς ἐλαύνηται, ἀνάγκη αἵματος ταῦτα πληροῦσθαι καὶ κρισσοὺς γίγνεσθαι, καὶ παχύνεσθαι μὲν τὰ σκέλη, ἀφίστασθαι δὲ τὸ δέρμα. Χαλῶντος δὲ τούτου πολλάκις καὶ ἡ περόνη ἀποστᾶσα χωλὸν ἀπέδειξε τὸν ἵππον.</p>
+</div>
+<div type="chapter" n="4">
+   <p><foreign xml:lang="grc">Τά γε μὴν γόνατα ἢν βαδίζων ὁ πῶλος ὑγρῶς κάμπτῃ, εἰκάζοις ἂν καὶ ἱππεύοντα ὑγρὰ ἕξειν τὰ σκέλη· πάντες γὰρ προϊόντος τοῦ χρόνου ὑγροτέρως κάμπτουσιν ἐν τοῖς γόνασι.</foreign></p>
+   <p><foreign xml:lang="grc">Τὰ δὲ ὑγρὰ δικαίως εὐδοκιμεῖ· ἀπταιστότερον γὰρ καὶ ἀκοπώτερον τὸν <name type="animal" xml:lang="fr">cheval</name> τῶν σκληρῶν σκελῶν παρέχει.</foreign></p>
+   <div type="section" n="7">
+      <p><foreign xml:lang="grc">Μηροί γε μέντοι οἱ ὑπὸ ταῖς ὠμοπλάταις ἢν παχεῖς ὦσιν, ἰσχυρότεροί τε καὶ εὐπρεπέστεροι ὥσπερ ἀνδρὸς φαίνονται. Καὶ μὴν στέρνα πλατύτερα ὄντα καὶ πρὸς κάλλος καὶ πρὸς ἰσχὺν καὶ πρὸς τὸ μὴ ἐπαλλὰξ ἀλλὰ διὰ πολλοῦ τὰ σκέλη φέρειν εὐφυέστερα.</foreign></p>
+      <p><foreign xml:lang="grc">Ἀπό γε μὴν τοῦ στέρνου ὁ μὲν αὐχὴν αὐτοῦ μὴ ὥσπερ κάπρου προπετὴς πεφύκοι, ἀλλ' ὥσπερ <name type="animal" xml:lang="fr">coq</name> ὀρθὸς πρὸς τὴν κορυφὴν ἥκοι, λαγαρὸς δὲ εἴη τὰ κατὰ τὴν συγκαμπήν, ἡ δὲ κεφαλὴ ὀστώδης οὖσα μικρὰν σιαγόνα ἔχοι. Οὕτως ὁ μὲν τράχηλος πρὸ τοῦ ἀναβάτου ἂν εἴη, τὸ δὲ ὄμμα πρὸ τῶν ποδῶν ὁρώιη.</foreign></p>
+      <p><foreign xml:lang="grc">Καὶ βιάζεσθαι δὲ ἥκιστ' ἂν δύναιτο ὁ τοιοῦτον σχῆμα ἔχων καὶ εἰ πάνυ θυμοειδὴς εἴη· οὐ γὰρ ἐγκάμπτοντες ἀλλ' ἐκτείνοντες τὸν τράχηλον καὶ τὴν κεφαλὴν βιάζεσθαι οἱ <name type="animal" xml:lang="fr">chevaux</name> ἐπιχειροῦσι.</foreign></p>
+   </div>
+   <div type="section" n="9">
+      <p><foreign xml:lang="grc">Σκοπεῖν δὲ χρὴ καὶ εἰ ἀμφότεραι μαλακαὶ αἱ γνάθοι ἢ σκληρὰ ἢ ἕτεραι. Ἑτερόγναθοι γὰρ ὡς τὰ πολλὰ οἱ μὴ ὁμοίας τὰς γνάθους ἔχοντες γίγνονται.</foreign></p>
+   </div>
+</div>
+<div type="book" n="5">
+   <div type="section" n="93">
+      <p>Καὶ μὴν τὸ <foreign xml:lang="grc">ἐξόφθαλμον</foreign> εἶναι ἐγρηγορὸς μᾶλλον φαίνεται τοῦ <foreign xml:lang="grc">κοιλοφθάλμου</foreign>, καὶ ἐπὶ πλεῖον δ' ἂν ὁ τοιοῦτος ὁρώιη. [10]</p>
+      <p>Καὶ μυκτῆρές γε οἱ ἀναπεπταμένοι τῶν συμπεπτωκότων εὐπνοώτεροί τε ἅμα εἰσὶ καὶ γοργότερον τὸν <name type="animal" xml:lang="fr">cheval</name> ἀποδεικνύουσι. </p>
+      <p>Καὶ γὰρ ὅταν ὀργίζηται <name type="animal" xml:lang="fr">cheval</name> <name type="animal" xml:lang="fr">cheval</name> ἢ ἐν ἱππασίαι θυμῶται, εὐρύνει μᾶλλον τοὺς μυκτῆρας. </p>
+      <p>[11]</p>
+      <p>Καὶ μὴν κορυφὴ μὲν μείζων, ὦτα δὲ μικρότερα <foreign xml:lang="grc">ἱππωδεστέραν</foreign> τὴν κεφαλὴν ἀποφαίνει. Ἡ δ' αὖ <foreign xml:lang="grc">ὑψηλὴ</foreign> <foreign xml:lang="grc">ἀκρωμία</foreign> τῷ τε <name type="animal" xml:lang="fr">cheval</name> ἀσφαλεστέραν τὴν ἕδραν καὶ τοῖς ὤμοις [καὶ τῷ σώματι] ἰσχυροτέραν τὴν πρόσφυσιν παρέχεται. <foreign xml:lang="grc">Ῥάχις</foreign> γε μὴν ἡ διπλῆ τῆς ἁπλῆς καὶ ἐγκαθῆσθαι μαλακωτέρα καὶ ἰδεῖν ἡδίων. [12] Καὶ πλευρὰ δὲ ἡ βαθυτέρα καὶ πρὸς τὴν γαστέρα ὀγκωδεστέρα ἅμα εὐεδρότερόν τε καὶ ἰσχυρότερον καὶ εὐχιλότερον ὡς ἐπὶ πολὺ τὸν <name type="animal" xml:lang="fr">cheval</name> παρέχεται.</p>
+      <p>Ὀσφῦς γε μὴν ὅσῳ ἂν πλατυτέρα τε καὶ βραχυτέρα ἦι, τοσούτῳ ῥᾶιον μὲν ὁ <name type="animal" xml:lang="fr">cheval</name> τὰ πρόσθεν αἴρεται, ῥᾶιον δὲ τὰ ὄπισθεν προσάγεται· καὶ ὁ κενεὼν δὲ οὕτω μικρότατος φαίνεται, ὅσπερ μέγας ὢν μέρος μὲν τι καὶ αἰσχύνει, μέρος δέ τι καὶ ἀσθενέστερον καὶ δυσφορώτερον αὖ τὸν <name type="animal" xml:lang="fr">cheval</name> παρέχεται. [13]</p>
+      <p>Τά γε μὴν <foreign xml:lang="grc">ἰσχία</foreign> πλατέα μὲν εἶναι χρὴ καὶ εὔσαρκα, ἵνα ἀκόλουθα ἦι ταῖς πλευραῖς καὶ τοῖς στέρνοις· ἢν δὲ πάντα στερεὰ ἦι,</p>
+   </div>
+</div>
+<div type="section" n="6">
+   <p><foreign xml:lang="grc">κουφότερα</foreign> ἂν τὰ πρὸς τὸν <foreign xml:lang="grc">δρόμον</foreign> εἴη
+   καὶ <foreign xml:lang="grc">ὀξύτερον</foreign> μᾶλλον αὖ τὸν <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">παρέχοιτο</foreign>. <quote>[14]</quote></p>
+   <p><foreign xml:lang="grc">Μηρούς</foreign> γε μὴν τοὺς ὑπὸ τῇ <foreign xml:lang="grc">οὐρᾶι</foreign> ἢν ἅμα
+   <foreign xml:lang="grc">πλατείαι</foreign> τῇ <foreign xml:lang="grc">γραμμῇ</foreign> <foreign xml:lang="grc">διωρισμένους</foreign> ἔχῃ, οὕτω καὶ τὰ ὄπισθεν <name type="animal" xml:lang="fr">jambes</name> διὰ
+   <foreign xml:lang="grc">πολλοῦ</foreign> <foreign xml:lang="grc">ὑποθήσει</foreign>. Τοῦτο δὲ ποιῶν ἅμα
+   <foreign xml:lang="grc">γοργοτέραν</foreign> τε καὶ <foreign xml:lang="grc">ἰσχυροτέραν</foreign> ἕξει τὴν <foreign xml:lang="grc">ὑπόβασίν</foreign> τε καὶ <foreign xml:lang="grc">ἱππασίαν</foreign> καὶ
+   <foreign xml:lang="grc">ἅπαντα</foreign> <foreign xml:lang="grc">βελτίων</foreign> ἔσται <foreign xml:lang="grc">ἑαυτοῦ</foreign>. Τεκμήραιο δ' ἂν
+   καὶ <foreign xml:lang="grc">ἀπ' ἀνθρώπων</foreign>· <foreign xml:lang="grc">ὅταν</foreign> γάρ τι <foreign xml:lang="grc">ἀπὸ</foreign> τῆς <foreign xml:lang="grc">γῆς</foreign> <foreign xml:lang="grc">ἄρασθαι</foreign> <foreign xml:lang="grc">βούλωνται</foreign>,
+   <foreign xml:lang="grc">διαβαίνοντες</foreign> πάντες μᾶλλον ἢ <foreign xml:lang="grc">συμβεβηκότες</foreign> <foreign xml:lang="grc">ἐπιχειροῦσιν</foreign> <foreign xml:lang="grc">αἴρεσθαι</foreign>. <quote>[15]</quote></p>
+   <p><foreign xml:lang="grc">Τούς</foreign> γε μὴν <foreign xml:lang="grc">ὄρχεις</foreign> δεῖ μὴ <foreign xml:lang="grc">μεγάλους</foreign> τὸν <name type="animal" xml:lang="fr">cheval</name>
+   ἔχειν, ὃ οὐκ ἔστι <foreign xml:lang="grc">πώλου</foreign> <foreign xml:lang="grc">κατιδεῖν</foreign>. Περὶ γε μὴν
+   τῶν <foreign xml:lang="grc">κάτωθεν</foreign>, <foreign xml:lang="grc">ἀστραγάλων</foreign> ἢ <foreign xml:lang="grc">κνημῶν</foreign> καὶ <foreign xml:lang="grc">κυνηπόδων</foreign> καὶ <foreign xml:lang="grc">ὁπλῶν</foreign>, ταὐτὰ
+   <foreign xml:lang="grc">λέγομεν</foreign>, <foreign xml:lang="grc">ἅπερ</foreign> περὶ τῶν <foreign xml:lang="grc">ἔμπροσθεν</foreign>.</p>
+</div>
+<div type="section" n="7">
+   <p><foreign xml:lang="grc">Γράψαι</foreign> δὲ <foreign xml:lang="grc">βούλομαι</foreign> καὶ <foreign xml:lang="grc">ἐξ</foreign> <foreign xml:lang="grc">ὧν</foreign> ἂν περὶ <foreign xml:lang="grc">μεγέθους</foreign>
+   <foreign xml:lang="grc">ἥκιστα</foreign> <foreign xml:lang="grc">ἀποτυγχάνοι</foreign> τις. <foreign xml:lang="grc">Ὅτου</foreign> γὰρ ἂν ὦσιν αἱ
+   <foreign xml:lang="grc">κνῆμαι</foreign> <foreign xml:lang="grc">εὐθὺς</foreign> <foreign xml:lang="grc">γιγνομένου</foreign> <foreign xml:lang="grc">ὑψηλόταται</foreign>, οὗτος <foreign xml:lang="grc">μέγιστος</foreign> <foreign xml:lang="grc">γίγνεται</foreign>.
+   <foreign xml:lang="grc">Προϊόντος</foreign> γὰρ τοῦ <foreign xml:lang="grc">χρόνου</foreign> πάντων τῶν
+   <foreign xml:lang="grc">τετραπόδων</foreign> αἱ μὲν <foreign xml:lang="grc">κνῆμαι</foreign> <foreign xml:lang="grc">εἰς</foreign> <foreign xml:lang="grc">μέγεθος</foreign> οὐ <foreign xml:lang="grc">μάλα</foreign> <foreign xml:lang="grc">αὔξονται</foreign>, πρὸς δὲ
+   ταύτας <foreign xml:lang="grc">ὡς</foreign> ἂν <foreign xml:lang="grc">συμμέτρως</foreign> ἔχῃ, <foreign xml:lang="grc">συναύξεται</foreign> καὶ τὸ <foreign xml:lang="grc">ἄλλο</foreign> <foreign xml:lang="grc">σῶμα</foreign>.</p>
+</div>
+<div type="section" n="8">
+   <p><foreign xml:lang="grc">Εἶδος</foreign> μὲν δὴ <foreign xml:lang="grc">πώλου</foreign> οὕτω <foreign xml:lang="grc">δοκιμάζοντες</foreign> μάλιστ' ἂν <foreign xml:lang="grc">ἡμῖν</foreign> <foreign xml:lang="grc">δοκοῦσι</foreign>
+   <foreign xml:lang="grc">τυγχάνειν</foreign> <foreign xml:lang="grc">εὔποδος</foreign> καὶ <foreign xml:lang="grc">ἰσχυροῦ</foreign> καὶ <foreign xml:lang="grc">εὐσάρκου</foreign> καὶ <foreign xml:lang="grc">εὐσχήμονος</foreign> καὶ
+   <foreign xml:lang="grc">εὐμεγέθους</foreign>. <foreign xml:lang="grc">Εἰ</foreign> δέ <foreign xml:lang="grc">τινες</foreign> <foreign xml:lang="grc">αὐξανόμενοι</foreign>
+   <foreign xml:lang="grc">μεταβάλλουσιν</foreign>, <foreign xml:lang="grc">ὅμως</foreign> οὕτω <foreign xml:lang="grc">θαρροῦντες</foreign> <foreign xml:lang="grc">δοκιμάζωμεν</foreign>· <foreign xml:lang="grc">πολὺ</foreign> γὰρ <foreign xml:lang="grc">πλείονες</foreign>
+   <foreign xml:lang="grc">εὔχρηστοι</foreign> <foreign xml:lang="grc">ἐξ</foreign> <foreign xml:lang="grc">αἰσχρῶν</foreign> ἢ <foreign xml:lang="grc">ἐκ</foreign> <foreign xml:lang="grc">τοιούτων</foreign> <foreign xml:lang="grc">αἰσχροὶ</foreign> <foreign xml:lang="grc">γίγνονται</foreign>.</p>
+</div>
+<div type="book" n="7">
+  <div type="chapter" n="1">
+    <p>DE L’ÉQUITATION (01).</p>
+    <p>CHAPITRE PREMIER.</p>
+    <p>Des moyens de connaître la bonté d’un <name type="animal" xml:lang="fr">cheval</name>.</p>
+    <p>[1] Une longue pratique de l’équitation nous donnant à penser que nous en avons quelque expérience, nous voulons indiquer aux jeunes gens de nos amis la méthode que nous croyons la meilleure pour bien manier un <name type="animal" xml:lang="fr">cheval</name>. Un traité d’équitation a été publié avant le nôtre par <persName>Simon</persName> (02), qui a érigé, à <placeName>Athènes</placeName>, le <name type="animal" xml:lang="fr">cheval</name> d’airain qu’on voit dans l’<placeName>Éleusinium</placeName> (03), et qui a gravé ses faits et gestes sur la base. Tous les points où nous serons d’accord avec lui, nous ne les supprimerons pas dans notre ouvrage ; nous aurons, au contraire, le plus vif plaisir à les présenter à nos amis, convaincu que nous inspirerons plus de confiance, toutes les fois que l’opinion de ce célèbre écuyer sera conforme à la nôtre : quant à ce qu’il a omis, nous essayerons d’y suppléer.</p>
+    <p>Et d’abord nous allons indiquer le moyen de n’être pas trompé dans l’achat des <name type="animal" xml:lang="fr">chevaux</name>. Il est clair que l’on doit commencer par examiner le corps du <name type="animal" xml:lang="fr">poulain</name> à dompter que l’on achète, car il ne donne pas encore d’indices de son caractère, n’ayant jamais été monté. [2]</p>
+    <p>Nous disons donc que, dans le corps, les pieds sont le premier objet à considérer. En effet, de même qu’une maison ne sera d’aucune utilité, quelle que soit la beauté des étages supérieurs, si les fondations ne sont pas</p>
+  </div>
+</div>
+<div type="chapter" n="8">
+   <p>construites comme il faut, ainsi un <name type="animal" xml:lang="fr">cheval</name> de guerre ne servira de rien, fût-il bon pour tout le reste, s’il a de mauvais pieds ; ce vice rend inutiles les autres qualités. [3]</p>
+   <p>Pour juger du pied, il faut d’abord examiner la corne. Épaisse, le <name type="animal" xml:lang="fr">cheval</name> aura de meilleurs pieds que si elle est mince. Ensuite, il ne faut pas oublier de voir si le sabot est haut en avant comme en arrière, ou bien s’il est bas : haut, il éloigne de terre la partie appelée la sole ; bas, le <name type="animal" xml:lang="fr">cheval</name> appuierait également sur les parties dures et sur les parties molles du pied, comme les hommes cagneux. Simon dit que les <name type="animal" xml:lang="fr">chevaux</name> qui ont de bonnes jambes se reconnaissent au bruit de leur marche ; il a raison : un sabot bien évidé résonne sur le sol comme une cymbale.</p>
+   <p>[4]</p>
+   <p>Puisque nous avons commencé d’en bas, nous allons suivre en remontant le reste du corps. Il faut que les os (04) qui sont au-dessus de la corne et au-dessous du boulet ne soient point droits comme ceux d’une <name type="animal" xml:lang="fr">chèvre</name> ; ce qui provoque des réactions trop dures pour le cavalier et des inflammations aux jambes ainsi faites ; mais il ne faut pas non plus que ces os soient inclinés, parce que le boulet perdrait ses poils et s’écorcherait, quand on lancerait le <name type="animal" xml:lang="fr">cheval</name> dans les terres labourées ou dans les endroits pierreux.</p>
+   <p>[5]</p>
+   <p>Les canons (05) doivent être épais, vu qu’ils sont les colonnes du corps</p>
+</div>
+<div type="chapter" n="9">
+   <p>mais cette épaisseur ne doit provenir ni des veines, ni de la chair. Autrement, sur un terrain dur, ces parties se remplissent forcément de sang, il survient des varices, la jambe grossit, et la peau se détache ; or, souvent, quand ce relâchement arrive, le <name type="animal" xml:lang="fr">péroné</name> se déplace et rend le <name type="animal" xml:lang="fr">cheval</name> boiteux.</p>
+   <p>[6]
+   Si, en marchant, le jeune <name type="animal" xml:lang="fr">cheval</name> fléchit mollement le jarret, vous pouvez présumer que, sous le cavalier, il aura les jambes souples : car tous les <name type="animal" xml:lang="fr">chevaux</name>, avec l’âge, fléchissent le genou avec plus de souplesse. On a raison, d’ailleurs, d’estimer les mouvements moelleux : un <name type="animal" xml:lang="fr">cheval</name> qui les a bronche moins et fatigue moins le cavalier que celui qui a la jambe roide.</p>
+   <p>[7] Quand la partie de la jambe placée sous l’omoplate est charnue, elle offre apparemment, comme chez l’homme, plus de force et plus de grâce. Plus le poitrail est large, plus cette disposition est heureuse sous le rapport de la beauté comme de la vigueur, et parce qu’elle donne aux jambes un écartement qui empêche l’embarras de l’allure.</p>
+   <p>[8] Au sortir de la poitrine, le cou ne doit pas pencher comme celui d’un <name type="animal" xml:lang="fr">sanglier</name>, mais il doit remonter en ligne droite comme chez le <name type="animal" xml:lang="fr">coq</name>, et être évidé à l’endroit de la flexion. La tête doit être sèche et la ganache petite, de sorte que l’<name type="animal" xml:lang="fr">animal</name> ait son cou devant le cavalier, et qu’il voie bien à ses pieds. Un <name type="animal" xml:lang="fr">cheval</name> dans cette</p>
+</div>
+<div type="chapter" n="10">
+   <p>attitude ne forcera jamais la main, quelque fougueux qu’on le suppose : car ce n’est pas en se ramenant, mais en tendant le cou et la tête, que les <name type="animal" xml:lang="fr">chevaux</name> essayent de s’emporter.</p>
+   <p>[9] Il faut encore examiner si les deux barres sont sensibles, dures ou inégales : car d’ordinaire les <name type="animal" xml:lang="fr">chevaux</name> qui les ont inégales ont la bouche fausse (10).</p>
+   <p>L’œil à fleur de tête est plus vif que l’œil enfoncé, et la vue a plus d’étendue. [10]</p>
+   <p>Les naseaux ouverts annoncent plus d’haleine, et donnent au <name type="animal" xml:lang="fr">cheval</name> une expression plus terrible que des narines resserrées : c’est, en effet, lorsqu’il est irrité contre un autre, ou lorsqu’il s’anime contre le cavalier, qu’il ouvre davantage les naseaux.</p>
+   <p>[11] Le front large, les oreilles petites, caractérisent mieux la tête du <name type="animal" xml:lang="fr">cheval</name>. Le garrot élevé offre au cavalier une assiette plus sûre, ainsi que le moyen de mieux se lier aux épaules. Les reins doubles sont plus doux pour le cavalier (11) qu’une épine saillante et sont plus agréables à l’œil. [12]</p>
+   <p>La côte ample et un peu arrondie vers le ventre contribue à donner au <name type="animal" xml:lang="fr">cheval</name> de l’agrément, du fonds et de la facilité d’entretien.</p>
+   <p>Plus le rein sera large et court, plus le <name type="animal" xml:lang="fr">cheval</name> aura d’aisance à enlever le devant et à engager l’arrière-main (12). En outre, le flanc en paraîtra plus court, tandis que, lorsqu’il est long, il défigure le <name type="animal" xml:lang="fr">cheval</name> et lui donne l’air faible et pesant.</p>
+</div>
+<div type="section" n="11">
+   <p>La croupe doit être large et charnue, allant de répondre aux reins et au poitrail.</p>
+   <p>Si l’ensemble est fort, il donnera plus de légèreté pour la course et rendra le <name type="animal" xml:lang="fr">cheval</name> plus agile.</p>
+   <p>Les cuisses, au-dessous de la queue, doivent être séparées par une large raie : de la sorte, les jambes de derrière étant bien espacées, le <name type="animal" xml:lang="fr">cheval</name> y gagnera de la légèreté et de la force dans ses aplombs et dans ses allures, et son ensemble sera parfait. La preuve en est chez l’homme : s’il veut enlever de terre un fardeau, c’est en écartant les jambes et non en les rapprochant qu’il essaye d’y parvenir (13).</p>
+   <p>Il ne faut pas que le <name type="animal" xml:lang="fr">cheval</name> ait les testicules grands ; ce qu’on ne peut apercevoir dans le poulain. Quant aux jarrets, aux canons, aux boulets et aux pieds de derrière, on peut y appliquer ce que nous avons dit de l’avant-main.</p>
+   <p>Je veux indiquer à présent le moyen de ne pas se tromper de beaucoup sur la taille future d’un jeune <name type="animal" xml:lang="fr">cheval</name>. Le poulain qui, en naissant, a les jambes longues, annonce qu’il sera très grand : car, avec les années, les jambes des quadrupèdes ne prennent pas beaucoup d’accroissement, mais c’est le reste du corps qui s’accroît pour se mettre en harmonie avec elles.</p>
+   <p>Ceux qui font ces observations en achetant un poulain auront, je crois, un jour un <name type="animal" xml:lang="fr">cheval</name> bien chaussé, robuste, étoffé, bien fait et</p>
+</div>
+<div type="chapter" n="2">
+   <p>d’une bonne grandeur. Quoiqu’il y en ait qui ’changent dans la crue, les avis que je donne n’en sont pas moins sûrs, car on voit plus de <name type="animal" xml:lang="fr">poulains</name> difformes devenir de beaux <name type="animal" xml:lang="fr">chevaux</name> qu’on n’en voit se déformer en grandissant.</p>
+   <p><foreign xml:lang="grc">Περὶ ἱππικῆς</foreign><lb/>
+<foreign xml:lang="grc">Κεφάλαιον βʹ</foreign></p>
+   <div type="section" n="1">
+      <p><foreign xml:lang="grc">Ὅπως γε μὴν δεῖ πωλεύειν <o>οὐ</o> δοκεῖ ἡμῖν γραπτέον εἶναι· τάττονται μὲν γὰρ δὴ ἐν ταῖς πόλεσιν ἱππεύειν οἱ τοῖς χρήμασί τε ἱκανώτατοι καὶ τῆς πόλεως οὐκ ἐλάχιστον μετέχοντες· πολὺ δὲ κρεῖττον τοῦ πωλοδαμνεῖν [εἶναι] τῷ μὲν νέῳ εὐεξίας τε ἐπιμελεῖσθαι τῆς ἑαυτοῦ καὶ ἱππικὴν [ἐν ἢ] ἐπιστάμενῳ ἤδη ἱππάζεσθαι μελετᾶν, τῷ δὲ πρεσβυτέρῳ τοῦ τε οἴκου καὶ τῶν φίλων καὶ τῶν πολιτικῶν καὶ τῶν πολεμικῶν μᾶλλον ἢ ἀμφὶ πώλευσιν διατρίβειν.</foreign></p>
+      <p><foreign xml:lang="grc">Ὁ μὲν δὴ ὥσπερ ἐγὼ γιγνώσκων περὶ πωλείας δῆλον ὅτι ἐκδώσει τὸν πῶλον.</foreign></p>
+      <p><foreign xml:lang="grc">Χρὴ μέντοι, ὥσπερ τὸν παῖδα ὅταν ἐπὶ τέχνην ἐκδῷ, συγγραψάμενον ἃ δεήσει ἐπιστάμενον ἀποδοῦναι οὕτως ἐκδιδόναι. ταῦτα γὰρ ὑπομνήματα ἔσται τῷ πωλοδάμνῃ ὧν δεῖ ἐπιμεληθῆναι, εἰ μέλλει τὸν μισθὸν ἀπολήψεσθαι.</foreign></p>
+   </div>
+</div>
+<div type="chapter" n="13">
+   <p><quote><foreign xml:lang="grc">Ὅπως</foreign> μέντοι πρᾶιός τε καὶ χειροήθης καὶ φιλάνθρωπος ὁ <name type="animal" xml:lang="fr">poulain</name> ἐκδιδῶται τῷ <name type="animal" xml:lang="fr">πωλοδάμνῃ</name> ἐπιμελητέον. τὸ γὰρ τοιοῦτον οἴκοι τε τὰ πλεῖστα καὶ διὰ τοῦ <name type="animal" xml:lang="fr">ἱπποκόμου</name> ἀποτελεῖται, ἢν ἐπίστηται τὸ μὲν πεινῆν καὶ διψῆν καὶ μυωπίζεσθαι παρασκευάζειν μετ' ἐρημίας γίγνεσθαι τῷ <name type="animal" xml:lang="fr">πώλῳ</name>, τὸ δὲ φαγεῖν καὶ πιεῖν καὶ τὸ τῶν λυπούντων ἀπαλλάττεσθαι δι' ἀνθρώπων. τούτων γὰρ γιγνομένων ἀνάγκη μὴ μόνον φιλεῖσθαι ἀλλὰ καὶ ποθεῖσθαι ὑπὸ πώλων ἀνθρώπους.</quote></p>
+</div>
+<div type="section" n="4">
+   <p><quote>Καὶ ἅπτεσθαι δὲ χρὴ ὧν ψηλαφωμένων ὁ <name type="animal" xml:lang="fr">cheval</name> μάλιστα ἥδεται. ταῦτα δ' ἐστὶ τά τε λασιώτατα καὶ οἷς αὐτὸς ἥκιστ' ἂν δύναιτο ὁ <name type="animal" xml:lang="fr">ἵππος</name>, ἤν τι λυπῇ αὐτόν, ἐπικουρεῖν.</quote></p>
+</div>
+<div type="section" n="5">
+   <p><quote>Προστετάχθω δὲ τῷ <name type="animal" xml:lang="fr">ἱπποκόμῳ</name> καὶ τὸ δι' ὄχλου διάγειν καὶ παντοδαπαῖς μὲν ὄψεσι παντοδαποῖς δὲ ψόφοις πλησιάζειν. τούτων δέ, ὅσα ἂν ὁ <name type="animal" xml:lang="fr">poulain</name> φοβῆται, οὐ χαλεπαίνοντα δεῖ ἀλλὰ πραΰνοντα διδάσκειν ὅτι οὐ δεινά ἐστι. καὶ περὶ μὲν πωλείας ἀρκεῖν μοι δοκεῖ τῷ ἰδιώτῃ εἰπεῖν τοσαῦτα πράττειν.</quote></p>
+</div>
+<div type="chapter" n="2">
+   <head>De l’élève et du dressage.</head>
+   <p>[1] Pour ce qui regarde l’élève des <name type="animal" xml:lang="fr">poulains</name>, je ne vois rien à dire. La cavalerie, en effet, se recrute dans nos villes parmi les citoyens les plus riches, ceux qui ont la plus grande part aux affaires. Or, au lieu de dresser des <name type="animal" xml:lang="fr">poulains</name>, il importe beaucoup plus à un jeune homme de fortifier sa santé et de s’instruire dans l’équitation, ou, s’il sait déjà monter, de s’exercer au maniement du <name type="animal" xml:lang="fr">cheval</name>. D’autre part, il convient mieux à un vieillard de s’occuper de sa maison, de ses amis, des affaires politiques ou militaires, que de passer son temps à élever des <name type="animal" xml:lang="fr">chevaux</name>.</p>
+   <p>[2] Celui donc qui pensera comme moi, donnera son <name type="animal" xml:lang="fr">poulin</name> à dresser. Il doit en être, sous ce rapport, comme d’un enfant qu’on met en apprentissage ; on fixera par écrit ce que le <name type="animal" xml:lang="fr">cheval</name> doit savoir quand on le reprendra dressé. Ce sera, pour le dresseur, un programme à suivre exactement, s’il veut toucher le prix convenu.</p>
+   <p>[3] On veillera toutefois à ce que le <name type="animal" xml:lang="fr">poulin</name> soit livré au dresseur déjà souple, maniable, ami de l’homme. Or, c’est surtout à la maison que le palefrenier lui fait acquérir ces qualités, s’il prend soin que l’<name type="animal" xml:lang="fr">animal</name>, laissé à lui-même, ait à endurer la faim, la soif, les piqûres des <name type="animal" xml:lang="fr">mouches</name>, et qu’il doive, au contraire, aux mains de l’homme le boire, le manger, la fin de toute espèce d’incommodité.</p>
+</div>
+<div type="book" n="15">
+  <div type="chapter" n="93">
+    <p>Par ce moyen, les jeunes <name type="animal" xml:lang="fr">chevaux</name> non-seulement aimeront l’homme, mais le désireront auprès d’eux.</p>
+    <p>[4]</p>
+    <p>Il faut surtout caresser les parties où le <name type="animal" xml:lang="fr">cheval</name> aime à être touché. Ce sont celles où le poil est le plus épais, et que le <name type="animal" xml:lang="fr">cheval</name> ne peut défendre, lorsque quelque chose l’incommode.</p>
+    <p>[5] Ordonnez aussi au palefrenier de mener le <name type="animal" xml:lang="fr">poulain</name> dans la foule, de l’approcher de toute espèce d’objets, de toute espèce de bruits. S’il en a peur, ce n’est pas en le rudoyant, mais en le prenant par la douceur, qu’on lui montrera que rien de cela n’est à craindre.</p>
+    <p>Ces conseils sur l’élève du <name type="animal" xml:lang="fr">poulain</name> me paraissent devoir suffire à ceux qui n’en ont pas la pratique.</p>
+    <p>Περὶ ἱππικῆς Κεφάλαιον γʹ</p>
+  </div>
+</div>
+<div type="book" n="16">
+   <div type="section" n="1">
+      <p>Ὅταν γε μὴν ἱππαζόμενον ὠνῆταί τις, ὑπομνήματα γράψομεν ἃ δεῖ καταμανθάνειν τὸν μέλλοντα μὴ ἐξαπατᾶσθαι ἐν ἱππωνίαι.</p>
+      <p>Πρῶτον μὲν τοίνυν μὴ λαθέτω αὐτὸν τίς <foreign xml:lang="grc">ἡ</foreign> ἡλικία· ὁ γὰρ μηκέτι ἔχων γνώμονας οὔτ' ἐλπίσιν εὐφραίνει οὔτε ὁμοίως εὐαπάλλακτος γίγνεται.</p>
+   </div>
+   <div type="section" n="2">
+      <p>Ὁπότε δὲ ἡ νεότης σαφής, δεῖ αὖ μὴ λαθεῖν πῶς μὲν εἰς τὸ στόμα δέχεται τὸν <foreign xml:lang="grc">χαλινόν</foreign>, πῶς δὲ περὶ τὰ ὦτα τὴν <foreign xml:lang="grc">κορυφαίαν</foreign>.</p>
+      <p>Ταῦτα δ' ἥκιστ' ἂν λανθάνοι, εἰ ὁπῶντος μὲν τοῦ ὠνουμένου ἐμβάλλοιτο ὁ <foreign xml:lang="grc">χαλινός</foreign>, ὁρῶντος δ' ἐξαιροῖτο.</p>
+   </div>
+   <div type="section" n="3">
+      <p>Ἔπειτα δὲ προσέχειν δεῖ τὸν νοῦν πῶς ἐπὶ τὸν νῶτον δέχεται τὸν ἀναβάτην.</p>
+      <p>Πολλοὶ γὰρ <name type="animal" xml:lang="fr">ἵπποι</name> χαλεπῶς προσίενται ἃ πρόδηλα αὐτοῖς ἐστιν ὅτι προσέμενοι πονεῖν ἀναγκασθήσονται.</p>
+   </div>
+   <div type="section" n="4">
+      <p>Σκεπτέον δὲ καὶ τόδε, εἰ ἀναβαθεὶς ἐθέλει ἀφ' <name type="animal" xml:lang="fr">ἵππων</name> ἀποχωρεῖν ἢ εἰ παρ' ἑστηκότας <name type="animal" xml:lang="fr">ἱππεύων</name> μὴ ἐκφέρει πρὸς τούτους.</p>
+      <p>Εἰσὶ δὲ οἳ διὰ κακὴν ἀγωγὴν καὶ πρὸς τὰς οἴκαδε ἀφόδους φεύγουσιν ἐκ τῶν <foreign xml:lang="grc">ἱππασιῶν</foreign>.</p>
+   </div>
+   <div type="section" n="5">
+      <p>Τούς γε μὴν <foreign xml:lang="grc">ἑτερογνάθους</foreign> μηνύει μὲν καὶ ἡ <foreign xml:lang="grc">πέδη</foreign> καλουμένη <foreign xml:lang="grc">ἱππασία</foreign>, πολὺ δὲ μᾶλλον καὶ τὸ μεταβάλλεσθαι τὴν <foreign xml:lang="grc">ἱππασίαν</foreign>.</p>
+      <p>Πολλοὶ γὰρ οὐκ ἐγχειροῦσιν ἐκφέρειν, ἢν μὴ ἅμα συμβῇ ἥ τε <foreign xml:lang="grc">ἄδικος γνάθος</foreign> καὶ ἡ πρὸς οἶκον ἐκφορά.</p>
+   </div>
+</div>
+<div type="chapter" n="17">
+   <p>Δεῖ γε μὴν εἰδέναι καὶ εἰ ἀφεθεὶς εἰς τάχος ἀναλαμβάνεται ἐν βραχεῖ καὶ εἰ ἀποστρέφεσθαι ἐθέλει. <quote>[6]</quote></p>
+   <p>Ἀγαθὸν δὲ μὴ ἄπειρον εἶναι εἰ καὶ πληγῇ ἐγερθεὶς ἐθέλει ὁμοίως πείθεσθαι. Ἄχρηστον μὲν γὰρ δήπου καὶ οἰκέτης καὶ στράτευμα ἀπειθές· <name type="animal" xml:lang="fr">ἵππος</name> δὲ ἀπειθὴς οὐ μόνον ἄχρηστος, ἀλλὰ πολλάκις καὶ ὅσαπερ <name type="deity">προδότης</name> διαπράττεται.</p>
+   <p><quote>[7]</quote></p>
+   <p>Ἐπεὶ δὲ πολεμιστήριον <name type="animal" xml:lang="fr">ἵππον</name> ὑπεθέμεθα ὠνεῖσθαι, ληπτέον πεῖραν ἁπάντων ὅσωνπερ καὶ ὁ πόλεμος πεῖραν λαμβάνει. Ἔστι δὲ ταῦτα, τάφρους διαπηδᾶν, τειχία ὑπερβαίνειν, ἐπ' ὄχθους ἀνορούειν, ἀπ' ὄχθων καθάλλεσθαι· καὶ πρὸς ἄναντες δὲ καὶ κατὰ πρανοῦς καὶ πλάγια ἐλαύνοντα πεῖραν λαμβάνειν· πάντα γὰρ ταῦτα καὶ τὴν ψυχὴν εἰ καρτερὰ καὶ τὸ σῶμα εἰ ὑγιὲς δοκιμάζει. <quote>[8]</quote></p>
+   <p>Οὐ μέντοι τὸν μὴ καλῶς πάνυ ταῦτα ποιοῦντα ἀποδοκιμαστέον. Πολλοὶ γὰρ οὐ διὰ τὸ μὴ δύνασθαι, ἀλλὰ διὰ τὸ ἄπειροι εἶναι τούτων ἐλλείπονται.</p>
+   <p>Μαθόντες δὲ καὶ ἐθισθέντες καὶ μελετήσαντες καλῶς ἂν ταῦτα πάντα ποιοῖεν, εἴ γ' ἄλλως ὑγιεῖς καὶ μὴ κακοὶ εἶεν. <quote>[9]</quote></p>
+   <p>Τούς γε μέντοι ὑπόπτας φύσει φυλακτέον. Οἱ γὰρ ὑπέρφοβοι βλάπτειν μὲν τοὺς πολεμίους ἀφ' ἑαυτῶν οὐκ ἐῶσι, τὸν δὲ ἀναβάτην ἔσφηλάν τε πολλάκις καὶ εἰς τὰ χαλεπώτατα ἐνέβαλον.</p>
+   <p>Δεῖ δὲ καὶ εἴ τινα χαλεπότητα ἔχοι ὁ <name type="animal" xml:lang="fr">ἵππος</name> καταμανθάνειν, εἴτε πρὸς <name type="animal" xml:lang="fr">ἵππους</name> εἴτε πρὸς ἀνθρώπους, καὶ εἰ δυσγάργαλίς γε εἴη· πάντα γὰρ ταῦτα χαλεπὰ τοῖς κεκτημένοις γίγνεται. <quote>[10]</quote></p>
+</div>
+<div type="book" n="18">
+   <div type="section" n="11">
+      <p>Τὰς δὲ γε τῶν <name type="animal" xml:lang="fr">chevaux</name> καὶ ἀναβάσεων
+         ἀποκωλύσεις καὶ τἆλλα δὴ νεύματα πολὺ ἂν ἔτι μᾶλλον καταμάθοι τις,
+         εἰ πεπονηκότος ἤδη τοῦ <foreign xml:lang="grc">ἵππου</foreign> πάλιν πειρῷτο ποιεῖν ταὐτὰ ὅσαπερ πρὶν
+         ἄρξασθαι ἱππεύειν. Ὅσοι δ' ἂν πεπονηκότες
+         ἐθέλωσι πάλιν ὑποδύεσθαι πόνους ἱκανὰ τεκμήρια παρέχονται ταῦτα
+         ψυχῆς καρτερᾶς.</p>
+   </div>
+   <div type="section" n="12">
+      <p>Ὡς δὲ συνελόντι εἰπεῖν, ὅστις εὔπους μὲν εἴη,
+         πρᾶιος δὲ, ἀρκούντως δὲ ποδώκης, ἐθέλοι δὲ καὶ δύναιτο πόνους
+         ὑποφέρειν, πείθοιτο δὲ μάλιστα, οὗτος ἂν εἰκότως ἀλυπότατός τ' εἴη
+         καὶ σωτηριώτατος τῷ ἀναβάτῃ ἐν τοῖς πολεμικοῖς. Οἱ
+         δὲ ἢ διὰ βλακείαν ἐλάσεως πολλῆς δεόμενοι ἢ διὰ τὸ ὑπέρθυμοι εἶναι
+         πολλῆς θωπείας τε καὶ πραγματείας ἀσχολίαν μὲν ταῖς χερσὶ τοῦ
+         ἀναβάτου παρέχουσιν, ἀθυμίαν δ' ἐν τοῖς κινδύνοις.</p>
+   </div>
+</div>
+<div type="chapter" n="3">
+   <p>De l’<name type="animal" xml:lang="fr">cheval</name> dressé.</p>
+   <p>[1] Quand on achètera un <name type="animal" xml:lang="fr">cheval</name> dressé, il faudra se rappeler les recommandations suivantes, écrites pour ceux qui ne veulent pas être trompés dans leur achat. D’abord qu’on n’oublie pas de s’assurer de l’âge (14) : le <name type="animal" xml:lang="fr">cheval</name> qui ne marque plus ne donne pas d’espérances pour la suite et n’est pas d’une défaite aussi facile. [2]</p>
+   <p>Quand on est sûr qu’il a de la jeunesse, il faut s’assurer comment il reçoit le mors à la bouche, et la têtière aux oreilles. L’acheteur le saura en faisant brider et débrider le <name type="animal" xml:lang="fr">cheval</name> devant lui. [3]</p>
+   <p>Il faut ensuite porter son attention à la manière dont il reçoit le cavalier sur son dos ; car il y a beaucoup de <name type="animal" xml:lang="fr">chevaux</name> qui reçoivent mal ce qu’ils sentent être pour eux l’annonce d’un travail forcé. [4]</p>
+   <p>On observera ensuite si, lorsqu’il est monté, il ne refuse pas de quitter les autres <name type="animal" xml:lang="fr">chevaux</name>, si, en passant près de <name type="animal" xml:lang="fr">chevaux</name> arrêtés, il n’essaye pas d’y emporter son homme : car il y a des <name type="animal" xml:lang="fr">bêtes</name> si mal dressées, qu’elles s’enfuient du manège dans l’écurie. [5]</p>
+   <p>On s’assurera qu’un <name type="animal" xml:lang="fr">cheval</name> a la bouche fausse (15), en le soumettant à l’exercice qu’on appelle l’entrave, mais surtout par le changement de main. La plupart, en effet, ne cherchent à s’emporter que quand ils s’appuient sur la partie insensible de la bouche, et qu’ils sont entraînés vers la maison.</p>
+</div>
+<div type="chapter" n="20">
+   <p>Il faut encore savoir si le <name type="animal" xml:lang="fr">cheval</name>, lancé à toutes jambes, s’arrête court et veut se retourner ;<pb n="6"/><note type="source" n="6"/></p>
+   <p>et il est bon de connaître, par expérience, si, averti par une correction sévère, il veut encore obéir <pb n="16"/><note type="source" n="16"/>.</p>
+   <p>On ne peut rien faire d’un valet ou d’une armée désobéissante ; de même un <name type="animal" xml:lang="fr">cheval</name> rétif est non-seulement inutile, mais souvent il agit en traître.</p>
+   <p>[7]</p>
+   <p>Quand nous avons l’intention d’acheter un <name type="animal" xml:lang="fr">cheval</name> de campagne, il faut essayer d’abord s’il est dressé à toutes les manœuvres que la guerre exige ; c’est à savoir de franchir les fossés, sauter les murs, s’élancer de haut en bas et de bas en haut sur des tertres, galoper dans les montées, dans les descentes ou sur le flanc des collines. Toutes ces épreuves montrent s’il a le corps sain et le cœur généreux.</p>
+   <p>[8]</p>
+   <p>Il ne faudrait pourtant pas rejeter un <name type="animal" xml:lang="fr">cheval</name> qui ne ferait pas tout cela dans la perfection ; chez un grand nombre de <name type="animal" xml:lang="fr">chevaux</name>, ce sont moins les moyens que l’expérience qui manque.</p>
+   <p>Le montage, l’habitude, l’exercice, les amèneront à bien faire, du moment qu’ils sont bien portants et qu’ils ont du cœur.</p>
+   <p>[9] Il faut se méfier toutefois d’un <name type="animal" xml:lang="fr">cheval</name> sur l’œil : le <name type="animal" xml:lang="fr">cheval</name> ombrageux ne permet pas de donner sur l’ennemi ; souvent même il renverse son cavalier et lui cause de fâcheux accidents.</p>
+   <p>[10]</p>
+   <p>On doit encore observer s’il est méchant soit avec les <name type="animal" xml:lang="fr">chevaux</name>, soit avec les hommes, et</p>
+</div>
+<div type="book" n="21">
+  <div type="section" n="93">
+    <p>s’il est trop chatouilleux ; car avec de pareils défauts il donne beaucoup de peine à son maître.</p>
+    <p>[11]</p>
+    <p>Pour connaître plus facilement si le <name type="animal" xml:lang="fr">cheval</name> se refuse à être bridé, monté, et s’il résiste aux autres exercices qu’on exige de lui, il faut, à la fin des exercices, essayer de lui faire recommencer tout ce qui les précède. S’il se prête aux mêmes manœuvres, c’est une preuve certaine de son courage. [12]</p>
+    <p>En résumé, un <name type="animal" xml:lang="fr">cheval</name> qui a de bons pieds, un caractère doux, des jarrets suffisamment légers, la volonté et les moyens de supporter le travail, ne causera probablement aucun accident à son cavalier et le sauvera dans les dangers de la guerre. Mais les <name type="animal" xml:lang="fr">chevaux</name> lâches qui ne vont qu’à force d’aiguillon, de même que ceux qui, par trop d’ardeur, exigent beaucoup d’attention et de caresses, occupent trop la main du cavalier et découragent dans les moments critiques (17).</p>
+    <p>Περὶ ἱππικῆς<br/>
+    Κεφάλαιον δʹ</p>
+  </div>
+</div>
+<div type="book" n="22">
+   <div type="section" n="1">
+      <p>Ὅταν γε μὴν ἀγασθεὶς <name type="animal" xml:lang="fr">cheval</name> πρίηταί τις καὶ οἴκαδε ἀγάγηται, καλὸν μὲν ἐν τοιούτῳ τῆς οἰκίας τὸν σταθμὸν εἶναι ὅπου πλειστάκις ὁ δεσπότης ὄψεται τὸν <name type="animal" xml:lang="fr">cheval</name>· ἀγαθὸν δὲ οὕτω κατεσκευάσθαι τὸν ἱππῶνα, ὥστε μηδὲν μᾶλλον οἷόν τ' εἶναι τὸν τοῦ <name type="animal" xml:lang="fr">cheval</name> σῖτον κλαπῆναι ἐκ τῆς φάτνης ἢ τὸν τοῦ δεσπότου ἐκ τοῦ ταμιείου. Ὁ δὲ τούτου ἀμελῶν ἐμοὶ μὲν ἑαυτοῦ δοκεῖ ἀμελεῖν· δῆλον γὰρ ὅτι ἐν τοῖς κινδύνοις τὸ αὑτοῦ σῶμα τῷ <name type="animal" xml:lang="fr">cheval</name> ὁ δεσπότης παρακατατίθεται.</p>
+   </div>
+   <div type="section" n="2">
+      <p>Ἔστι δὲ οὐ μόνον τοῦ μὴ κλέπτεσθαι ἕνεκα τὸν σῖτον ἀγαθὸς ὁ ἐχυρὸς ἱππών, ἀλλ' ὅτι καὶ ὅταν [μὴ] ἐκκομίζῃ τὸν σῖτον ὁ <name type="animal" xml:lang="fr">cheval</name> φανερὸν γίγνεται. Τούτου δ' ἄν τις αἰσθανόμενος γιγνώσκοι ὅτι ἢ τὸ σῶμα ὑπεραιμοῦν δεῖται θεραπείας ἢ κόπου ἐνόντος δεῖται ἀναπαύσεως, ἢ κριθίασις ἢ ἄλλη τις ἀρρωστία ὑποδύεται. Ἔστι δὲ ὥσπερ ἀνθρώπῳ, οὕτω καὶ <name type="animal" xml:lang="fr">cheval</name> ἀρχόμενα πάντα εὐιατότερα ἢ ἐπειδὰν ἐνσκιρωθῇ τε καὶ ἐξαμαρτηθῇ τὰ νοσήματα.</p>
+   </div>
+   <div type="section" n="3">
+      <p>Ὥσπερ δὲ τοῦ <name type="animal" xml:lang="fr">cheval</name> σίτου τε καὶ γυμνασίων ἐπιμελητέον, ὅπως ἂν τὸ σῶμα ἰσχύῃ, οὕτω καὶ τοὺς πόδας ἀσκητέον. Τὰ μὲν τοίνυν ὑγρὰ τε καὶ λεῖα τῶν σταθμῶν λυμαίνεται καὶ ταῖς εὐφυέσιν ὁπλαῖς· τὰ δέ, ὡς μὲν μὴ ὑγρὰ εἶναι, ἀπόρρυτα, ὡς δὲ μὴ λεῖα, λίθους ἔχοντα κατορωρυγμένους, προσαλλήλους, παραπλησίους ὁπλαῖς τὸ μέγεθος ... τὰ γὰρ τοιαῦτα σταθμὰ ... καὶ ἐφεστηκότων ἅμα στερεοῖ τοὺς πόδας.</p>
+   </div>
+   <div type="section" n="4">
+      <p>Ἔπειτά γε μὴν τῷ ἱπποκόμῳ ἐξακτέον μὲν τὸν <name type="animal" xml:lang="fr">cheval</name> ὅπου ψήξει, μεταδετέον δὲ μετὰ τὸ ἄριστον ἀπὸ τῆς φάτνης, ἵν' ἥδιον ἐπὶ τὸ δεῖπνον ἴῃ.</p>
+   </div>
+</div>
+<div type="book" n="23">
+  <div type="section" n="93">
+    <p>
+      <foreign xml:lang="grc">Ὧδε δ' ἂν αὖ ὁ</foreign>
+      ἔξω σταθμὸς βέλτιστος εἴη καὶ τοὺς πόδας καρτερύνοι, εἰ λίθων
+      στρογγύλων ἀμφιδόχμων ὅσον μνααίων ἁμάξας τέτταρας καὶ πέντε χύδην
+      καταβάλοι, περιχειλώσας σιδήρῳ, ὡς ἂν μὴ σκεδαννύωνται· ἐπὶ γὰρ
+      τούτων ἑστηκὼς ὥσπερ ἐν ὁδῷ λιθώδει ἀεὶ μέρος <name type="animal" xml:lang="fr">τι</name> τῆς ἡμέρας
+      πορεύοιτο <foreign xml:lang="grc">ἄν</foreign>· <quote>[5]</quote> ἀνάγκη δὲ
+      καὶ ψηχόμενον καὶ μυωπιζόμενον χρῆσθαι ταῖς ὁπλαῖς καθάπερ ὅταν
+      βαδίζῃ. Καὶ τὰς <name type="animal" xml:lang="fr">χελιδόνας</name> δὲ τῶν ποδῶν οἱ
+      οὕτω κεχυμένοι λίθοι στερεοῦσιν. Ὡς δὲ περὶ
+      τῶν ὁπλῶν ὅπως στερεαὶ ἔσονται ἐπιμελητέον, οὕτω καὶ τὰ περὶ τὸ
+      στόμα αὖ ὅπως μαλακὰ ἔσται ἐπιμελεῖσθαι δεῖ. Τὰ
+      δ' αὐτὰ ἀνθρώπου τε σάρκα καὶ <name type="animal" xml:lang="fr">ἵππου</name> στόμα ἁπαλύνει.
+    </p>
+  </div>
+</div>
+<div type="chapter" n="4">
+   <head>De l’écurie, de la nourriture et des moyens de fortifier le pied.</head>
+   <p>[1] Lorsque, épris d’un <name type="animal" xml:lang="fr">cheval</name>, on en a fait l’acquisition et qu’on l’a
+      mené chez soi, il est bon que l’écurie soit dans une partie de la
+      maison où le <persName>maître</persName> puisse avoir souvent l’œil sur son <name type="animal" xml:lang="fr">cheval</name> : il
+      n’est pas mauvais non plus qu’elle soit faite de manière qu’on ne
+      puisse pas plus voler de nourriture au râtelier du <name type="animal" xml:lang="fr">cheval</name> qu’au
+      buffet du <persName>maître</persName>. Négliger ce soin, c’est, selon moi, se négliger
+      soi-même, puisqu’il est clair que, dans les dangers, le <persName>maître</persName>
+      confie sa personne à son <name type="animal" xml:lang="fr">cheval</name>.</p>
+   <p>[2] Et ce n’est pas seulement à voir si
+      l’on ne dérobe rien au <name type="animal" xml:lang="fr">cheval</name> que sert une écurie bien disposée,
+      mais à s’assurer si le <name type="animal" xml:lang="fr">cheval</name> lui-même ne jette point son manger.
+      Quand on s’aperçoit de ce dégoût, on a la preuve certaine que le
+      <name type="animal" xml:lang="fr">cheval</name> a trop de sang, et qu’il faut l’en délivrer, que,
+      trop fatigué, il a besoin de repos, qu’il a une indigestion d’<name type="plant" xml:lang="fr">orge</name> ou
+      qu’il couve quelque autre maladie (18). Il en est du <name type="animal" xml:lang="fr">cheval</name> comme de
+      l’<name type="animal" xml:lang="fr">homme</name> : tous les maux débutants sont plus faciles à guérir que
+      quand ils sont invétérés ou que la cure a été manquée.</p>
+   <p>[3] Mais, s’il faut au <name type="animal" xml:lang="fr">cheval</name> de la nourriture et de l’exercice pour lui
+      fortifier le corps, il n’est pas moins nécessaire de lui soigner les
+      jambes (19). Une cour humide et unie gâte les meilleurs pieds.</p>
+</div>
+<div type="chapter" n="25">
+   <p>éviter l’humidité, il faut donner de la pente, et, pour que le sol ne soit pas uni, on fera un lit de pierres enfoncées l’une à côté de l’autre, et à peu près de la grosseur du <name type="animal" xml:lang="fr">sabot</name>. Une cour ainsi disposée fortifiera les pieds du <name type="animal" xml:lang="fr">cheval</name>, même au repos.</p>
+   <p>[4] Seulement le palefrenier doit l’y conduire pour le panser, et l’y attacher, en l’ôtant de sa mangeoire après le dîner, afin qu’il soupe avec plus d’appétit.</p>
+   <p>On rendra également sa cour excellente, et on fortifiera les pieds du <name type="animal" xml:lang="fr">cheval</name>, en y répandant quatre ou cinq tombereaux de cailloux, ronds, gros comme le poing, du poids d’une mine (20), et entourés d’une bordure de fer, pour qu’ils ne s’éparpillent pas. En se tenant là-dessus, le <name type="animal" xml:lang="fr">cheval</name> s’exercera une partie du jour, comme sur une route pierreuse. D’ailleurs, tandis qu’on l’étrille ou qu’il s’agite pour chasser les <name type="animal" xml:lang="fr">mouches</name>, [5] il se sert nécessairement de ses pieds comme s’il marchait. Un autre avantage, c’est que ces pierres roulantes lui durciront les fourchettes. Cependant, autant il faut durcir les sabots, autant on doit chercher à rendre la bouche tendre (21).</p>
+   <p>Or, on attendrit par les mêmes moyens la peau de l’homme et la bouche du <name type="animal" xml:lang="fr">cheval</name>.</p>
+   <p><foreign xml:lang="grc">Περὶ ἱππικῆς Κεφάλαιον εʹ</foreign></p>
+</div>
+<div type="chapter" n="26">
+   <p n="1">Ἱππικοῦ δὲ ἀνδρὸς ἡμῖν δοκεῖ εἶναι καὶ τὸν <name type="animal" xml:lang="fr">cheval</name> πεπαιδευκέναι ἃ
+      δεῖ περὶ τὸν <name type="animal" xml:lang="fr">cheval</name> πράττειν. Πρῶτον μὲν
+      τοίνυν τῆς ἐπιφατνιδίας φορβειᾶς ἐπίστασθαι αὐτὸν δεῖ μήποτε τὸ ἅμμα
+      ποιεῖσθαι ἔνθαπερ ἡ κορυφαία περιτίθεται. Πολλάκις
+      γὰρ κνῶν ὁ <name type="animal" xml:lang="fr">cheval</name> ἐπὶ τῇ φάτνῃ τὴν κεφαλήν, εἰ μὴ ἀσινὴς ἡ φορβειὰ
+      περὶ τὰ ὦτα ἔσται, πολλάκις ἂν ἕλκη ποιοίη. Ἑλκουμένων
+      γε μὴν τούτων ἀνάγκη τὸν <name type="animal" xml:lang="fr">cheval</name> καὶ περὶ τὸ χαλινοῦσθαι καὶ περὶ τὸ
+      ψήχεσθαι δυσκολώτερον εἶναι.</p>
+   <p n="2">Ἀγαθὸν δὲ καὶ τὸ τετάχθαι τῷ ἱπποκόμῳ καθ' ἡμέραν τὴν κόπρον καὶ τὰ ὑποστρώματα τοῦ <name type="animal" xml:lang="fr">cheval</name> ἐκφέρειν εἰς ἕν
+      χωρίον. Τοῦτο γὰρ ποιῶν αὐτός τ' ἂν ῥᾶιστα
+      ἀπαλλάττοι καὶ ἅμα τὸν <name type="animal" xml:lang="fr">cheval</name> ὠφελοίη.</p>
+   <p n="3">Εἰδέναι δὲ χρὴ τὸν ἱπποκόμον καὶ τὸν κημὸν
+      περιτιθέναι τῷ <name type="animal" xml:lang="fr">cheval</name>, καὶ ὅταν ἐπὶ ψῆξιν καὶ ὅταν ἐπὶ καλίστραν
+      ἐξάγῃ. Καὶ ἀεὶ δὲ ὅποι ἂν ἀχαλίνωτον ἄγῃ
+      κημοῦν δεῖ. Ὁ γὰρ κημὸς ἀναπνεῖν μὲν οὐ
+      κωλύει, δάκνειν δὲ οὐκ ἐᾶι· καὶ τὸ ἐπιβουλεύειν δὲ περικείμενος
+      μᾶλλον ἐξαιρεῖ τῶν <name type="animal" xml:lang="fr">chevaux</name>·</p>
+   <p n="4">καὶ μὴν δεσμεύειν τὸν <name type="animal" xml:lang="fr">cheval</name> ἄνωθεν τῆς κεφαλῆς δεῖ· πάντα γὰρ ὁπόσα
+      ἂν δύσκολ' ἦι περὶ τὸ πρόσωπον ὁ <name type="animal" xml:lang="fr">cheval</name> ἐκνεύειν πέφυκεν ἄνω· ἐκνεύων
+      γε μὴν οὕτω δεδεμένος χαλᾶι μᾶλλον ἢ διασπᾶι τὰ δεσμά.</p>
+</div>
+<div type="chapter" n="27">
+   <p>
+      <foreign xml:lang="grc">Ἐπειδὰν</foreign> δὲ ψήχῃ, ἄρχεσθαι μὲν ἁπὸ τῆς κεφαλῆς
+      καὶ τῆς <name type="animal" xml:lang="fr">chaîte</name>· μὴ γὰρ καθαρῶν τῶν ἄνω ὄντων μάταιον τὰ κάτω
+      καθαίρειν. Ἔπειτα δὲ κατὰ μὲν τὸ ἄλλο σῶμα
+      πᾶσι τοῖς τῆς καθάρσεως ὀργάνοις ἀνιστάντα δεῖ τὴν τρίχα σοβεῖν τὴν
+      κόνον κατὰ φύσιν τῆς τριχός· τῶν δ' ἐν τῇ ῥάχει τριχῶν ἄλλῳ μὲν
+      ὀργάνῳ οὐδενὶ δεῖ ἅπτεσθαι, ταῖς δὲ χερσὶ τρίβειν καὶ ἁπαλύνειν
+      ἧιπερ φύσει κέκλινται· ἥκιστα γὰρ ἂν βλάπτοι τὴν ἕδραν τοῦ <name type="animal" xml:lang="fr">cheval</name>.
+   </p>
+   <p>
+      Ὕδατι δὲ καταπλύνειν τὴν κεφαλὴν χρή· ὀστώδης
+      γὰρ οὖσα, εἰ σιδήρῳ ἢ ξύλῳ καθαίροιτο, λυποῖ ἂν τὸν <name type="animal" xml:lang="fr">cheval</name>.
+      Καὶ τὸ προκόμιον δὲ χρὴ βρέχειν· καὶ γὰρ
+      αὗται εὐμήκεις οὖσαι αἱ τρίχες ὁρᾶν μὲν οὐ κωλύουσι τὸν <name type="animal" xml:lang="fr">cheval</name>,
+      ἀποσοβοῦσι δὲ ἀπὸ τῶν ὀφθαλμῶν τὰ λυποῦντα. Καὶ
+      τοὺς <name type="deity">dieux</name> δὲ οἴεσθαι χρὴ δεδωκέναι ταύτας τὰς τρίχας <name type="animal" xml:lang="fr">cheval</name> ἀντὶ τῶν
+      μεγάλων ὤτων ἃ ὄνοις τε καὶ ἡμιόνοις ἔδοσαν ἀλεξητήρια πρὸ τῶν
+      ὀμμάτων.
+   </p>
+</div>
+<div type="section" n="93">
+   <p>
+      Καὶ οὐρὰν δὲ καὶ <name type="animal" xml:lang="fr">chaîte</name> πλύνειν χρή, ἐπείπερ
+      αὔξειν δεῖ τὰς τρίχας, τὰς μὲν ἐν τῇ οὐρᾶι, ὅπως ἐπὶ πλεῖστον
+      ἐξικνούμενος ἀποσοβῆται ὁ <name type="animal" xml:lang="fr">cheval</name> τὰ λυποῦντα, τὰς δὲ ἐν τῷ τραχήλῳ,
+      ὅπως τῷ ἀναβάτῃ ὡς ἀφθονωτάτη ἀντίληψις ἦι.
+   </p>
+   <p>
+      Δέδοται δὲ παρὰ θεῶν καὶ ἀγλαΐας ἕνεκεν <name type="animal" xml:lang="fr">cheval</name>
+      <name type="animal" xml:lang="fr">chaîte</name>, καὶ προκόμιον δὲ καὶ οὐρά. Τεκμήριον
+      δέ· αἱ γὰρ ἀγελαῖαι τῶν <name type="animal" xml:lang="fr">chevaux</name> οὐχ ὁμοίως ὑπομένουσι τοὺς ὄνους ἐπὶ
+      τῇ ὀχείαι ἕως ἂν κομῶσιν· οὗ ἕνεκα καὶ ἀποκείρουσι πρὸς τὴν ὀχείαν
+      τὰς <name type="animal" xml:lang="fr">juments</name> ἅπαντες οἱ ὀνοβατοῦντες.
+   </p>
+</div>
+<div type="chapter" n="28">
+   <p>
+      <foreign xml:lang="grc">Τήν</foreign> γε μὴν τῶν <name type="animal" xml:lang="fr">chevaux</name> κατάπλυσιν ἀφαιροῦμεν·
+      <foreign xml:lang="grc">ὠφελεῖ</foreign> μὲν γὰρ οὐδέν, <foreign xml:lang="grc">βλάπτει</foreign> δὲ τὰς ὁπλὰς <foreign xml:lang="grc">ἡ</foreign> καθ' ἑκάστην <foreign xml:lang="grc">ἡμέραν</foreign>
+      <foreign xml:lang="grc">βρέξις</foreign>. <foreign xml:lang="grc">Καὶ</foreign> τὴν ὑπὸ <foreign xml:lang="grc">γαστέρα</foreign> δὲ ἄγαν κάθαρσιν
+      <foreign xml:lang="grc">μειοῦν</foreign> <foreign xml:lang="grc">χρή</foreign>· <foreign xml:lang="grc">αὕτη</foreign> γὰρ <foreign xml:lang="grc">λυπεῖ</foreign> μὲν μάλιστα τὸν <name type="animal" xml:lang="fr">cheval</name>, ὅσῳ δ' ἂν
+      <foreign xml:lang="grc">καθαρώτερα</foreign> <foreign xml:lang="grc">ταῦτα</foreign> <foreign xml:lang="grc">γένηται</foreign>, τοσούτῳ πλείω τὰ <foreign xml:lang="grc">λυποῦντα</foreign> ἁθροίζει ὑπὸ τὴν
+      <foreign xml:lang="grc">γαστέρα</foreign>· <foreign xml:lang="grc">[10]</foreign> <foreign xml:lang="grc">ἢν</foreign> δὲ <foreign xml:lang="grc">καὶ</foreign> πάνυ
+      <foreign xml:lang="grc">διαπονήσηταί</foreign> τις <foreign xml:lang="grc">ταῦτα</foreign>, οὐ <foreign xml:lang="grc">φθάνει</foreign> [<foreign xml:lang="grc">τ'</foreign>] <foreign xml:lang="grc">ἐξαγόμενος</foreign> ὁ <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">καὶ</foreign> εὐθὺς
+      <foreign xml:lang="grc">ὅμοιός</foreign> <foreign xml:lang="grc">ἐστι</foreign> τοῖς <foreign xml:lang="grc">ἀκαθάρτοις</foreign>. <foreign xml:lang="grc">Ταῦτα</foreign> μὲν οὖν
+      <foreign xml:lang="grc">ἐᾶν</foreign> <foreign xml:lang="grc">χρή</foreign>· <foreign xml:lang="grc">ἀρκεῖ</foreign> δὲ <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">ἡ</foreign> τῶν <name type="animal" xml:lang="fr">chevaux</name> <foreign xml:lang="grc">ψῆξις</foreign> αὐταῖς ταῖς <foreign xml:lang="grc">χερσὶ</foreign>
+      <foreign xml:lang="grc">γιγνομένη</foreign>.
+   </p>
+</div>
+<div type="chapter" n="5">
+   <p>Des devoirs du palefrenier.</p>
+   <p>[1] Je crois qu’un homme de cheval doit avoir un palefrenier qui sache s’y prendre avec les <name type="animal" xml:lang="fr">chevaux</name>. Il doit donc savoir qu’il ne faut jamais nouer le licou à l’endroit où pose la têtière, parce que le <name type="animal" xml:lang="fr">cheval</name>, en se frottant souvent la tête à la mangeoire, s’écorcherait les oreilles, si le licou n’était pas bien placé ; or, ces parties une fois endommagées, le <name type="animal" xml:lang="fr">cheval</name> serait plus difficile à brider et à panser.</p>
+   <p>[2] Il est bon aussi d’enjoindre au palefrenier d’enlever chaque jour le fumier et la litière, et de les porter dans un endroit désigné : l’habitude une fois prise, il le fera sans peine, et le <name type="animal" xml:lang="fr">cheval</name> s’en trouvera mieux.</p>
+   <p>[3] Le palefrenier doit aussi savoir que, quand il mène son <name type="animal" xml:lang="fr">cheval</name> au pansage et à l’endroit où il se roule, il faut lui mettre la muselière, ce qu’il faut faire encore chaque fois qu’on ne met pas la bride : la muselière, en effet, permet au <name type="animal" xml:lang="fr">cheval</name> de respirer et l’empêche de mordre ; et il n’est rien qui l’empêche plus sûrement de jouer de mauvais tours.</p>
+   <p>[4] C’est à la partie supérieure de la tête qu’il faut attacher le <name type="animal" xml:lang="fr">cheval</name> : car tout ce qui le gêne autour de la face, il cherche à s’en débarrasser, en haussant la tête, et, par ce mouvement, attaché comme nous l’avons dit, il relâche le lien plutôt qu’il ne le rompt.</p>
+   <p>[5] Pour le pansement, commencer par la tête et la crinière ;</p>
+</div>
+<div type="section" n="30">
+   <p>le haut n’est pas propre, inutile de nettoyer le bas ; puis, pour tout le corps, relever le poil avec tous les instruments de pansage, et abattre la poussière à contre-sens. Le poil des <name type="animal" xml:lang="fr">reins</name> seul ne doit être touché avec aucun instrument, mais frotté et lissé avec la main dans le sens naturel ; de cette façon, l’on ne risquera pas de blesser la place où s’assied le cavalier. [6]</p>
+   <p>Laver la tête : comme cette partie est tout osseuse, si on la nettoyait avec du fer ou du bois, on ferait mal au <name type="animal" xml:lang="fr">cheval</name>. Mouiller le toupet : la longueur des crins ne gêne pas la vue et sert à écarter de l’œil les objets qui pourraient l’offenser. Il faut croire que les <name type="deity">dieux</name> ont donné au <name type="animal" xml:lang="fr">cheval</name> un long toupet, comme aux <name type="animal" xml:lang="fr">ânes</name> et aux <name type="animal" xml:lang="fr">mulets</name> de longues oreilles, pour qu’ils se garantissent les yeux de ce qui pourrait leur nuire.</p>
+   <p>[7] Laver également la queue et la crinière, puisqu’il faut laisser pousser des crins à la queue, pour que le <name type="animal" xml:lang="fr">cheval</name>, atteignant le plus loin possible, éloigne ce qui le gêne ; à la crinière, pour que le cavalier ait sous la main un point d’appui solide.</p>
+   <p>[8] D’ailleurs les <name type="deity">dieux</name> ont donné comme ornements au <name type="animal" xml:lang="fr">cheval</name> la crinière, le toupet et la queue. La preuve, c’est que les juments des haras ne se laissent pas saillir par les <name type="animal" xml:lang="fr">ânes</name>, tant qu’elles ont tous leurs crins ; et voilà pourquoi tout le monde les fait tondre quand on veut les faire saillir par des <name type="animal" xml:lang="fr">ânes</name>.</p>
+   <p>[9]</p>
+</div>
+<div type="chapter" n="6">
+   <p>Nous supprimons le lavage des <name type="animal" xml:lang="fr">jambes</name> ; cette ablution journalière est inutile ; elle nuit même à la corne, tandis que l’eau conserve la <name type="animal" xml:lang="fr">crinière</name> et la <name type="animal" xml:lang="fr">queue</name> longues et touffues. On évitera aussi de laver le dessous du ventre : cette opération chagrine beaucoup le <name type="animal" xml:lang="fr">cheval</name>, et, plus cette partie est propre, plus les <name type="animal" xml:lang="fr">mouches</name> s’y portent et le gênent : [<foreign xml:lang="grc">10</foreign>]</p>
+   <p>d’ailleurs on se donnerait pour rien toutes les peines à cet égard, car le <name type="animal" xml:lang="fr">cheval</name> n’est pas plus tôt sorti de l’écurie qu’il ressemble bien vite à ceux qu’on n’a pas nettoyés. On renoncera donc à ce soin : pour les <name type="animal" xml:lang="fr">jambes</name>, il suffira de les frotter avec les mains.</p>
+   <p><foreign xml:lang="grc">Περὶ ἱππικῆς Κεφάλαιον ςʹ</foreign></p>
+</div>
+<div type="book" n="32">
+   <div type="section" n="1">
+      <p>
+         <foreign xml:lang="grc">Δηλώσομεν δὲ καὶ τοῦτο</foreign>, ὡς ἂν ἀβλαβέστατα μὲν τις ἑαυτῷ, τῷ δ'
+         <name type="animal" xml:lang="fr">cheval</name>
+         ὠφελιμώτατα
+         <foreign xml:lang="grc">τὰ πρόσθεν</foreign> ψήχοι. Ἢν μὲν γὰρ ἐς τὸ αὐτὸ βλέπων τῷ
+         <name type="animal" xml:lang="fr">cheval</name>
+         καθαίρῃ, κίνδυνος καὶ τῷ γόνατι καὶ τῇ ὁπλῇ εἰς τὸ πρόσωπον πληγῆναι·
+      </p>
+   </div>
+   <div type="section" n="2">
+      <p>
+         ἢν δὲ ἀντία τῷ
+         <name type="animal" xml:lang="fr">cheval</name>
+         ὁπῶν καὶ ἔξω τοῦ σκέλους, ὅταν καθαίρῃ, κατὰ τὴν ὠμοπλάτην καθίζων ἀποτρίβῃ, οὕτω πάθοι μὲν ἂν οὐδέν, δύναιτο δ' ἂν καὶ τὴν
+         <foreign xml:lang="grc">χελιδόνα</foreign> τοῦ
+         <name type="animal" xml:lang="fr">cheval</name>
+         θεραπεύειν ἀναπτύσσων τὴν ὁπλήν. Ὡς δ' αὔτως καὶ τὰ ὄπισθεν σκέλη καθαιρέτω.
+      </p>
+   </div>
+   <div type="section" n="3">
+      <p>
+         Εἰδέναι δὲ χρὴ τὸν περὶ τὸν
+         <name type="animal" xml:lang="fr">cheval</name>
+         ὅτι καὶ ταῦτα καὶ τἆλλα πάντα ὅσα πράττειν δεῖ ὡς ἥκιστα χρὴ κατὰ
+         <foreign xml:lang="grc">τὸ</foreign> πρόσωπον τε καὶ οὐρὰν ἀντίον ἑαυτὸν ποιήσαντα προσιέναι· ἢν γὰρ ἐπιχειρῇ ἀδικεῖν, κατ' ἀμφότερα ταῦτα κρείττων ὁ
+         <name type="animal" xml:lang="fr">cheval</name>
+         ἀνθρώπου. Ἐκ πλαγίου δ' ἄν τις προσιὼν ἀβλαβέστατα μὲν ἑαυτῷ, πλεῖστα δ' ἂν
+         <name type="animal" xml:lang="fr">cheval</name>
+         δύναιτο χρῆσθαι.
+      </p>
+   </div>
+</div>
+<div type="chapter" n="33">
+   <p><foreign xml:lang="grc">Ἐπειδὰν δὲ ἄγειν δέῃ τὸν ἵππον</foreign>, τὴν μὲν ὄπισθεν ἀγωγὴν διὰ τάδε οὐκ
+   ἐπαινοῦμεν, ὅτι τῷ μὲν ἄγοντι οὕτως ἥκιστα ἔστι φυλάξασθαι, τῷ δὲ
+   <name type="animal" xml:lang="fr">cheval</name> οὕτως μάλιστα ἔξεστι ποιῆσαι ὅ τι ἂν βούληται.</p>
+   <p><foreign xml:lang="grc">Τὸ δ' αὖ ἔμπροσθεν μακρῷ τῷ ἀγωγεῖ προϊόντα διδάσκειν ὑφηγεῖσθαι τὸν
+   ἵππον</foreign> διὰ τάδε αὖ ψέγομεν· ἔξεστι μὲν γὰρ τῷ <name type="animal" xml:lang="fr">cheval</name> καθ' ὁπότερ' ἂν
+   βούληται τῶν πλαγίων κακουργεῖν, ἔξεστι δὲ ἀναστρεφόμενον ἀντίον
+   γίγνεσθαι τῷ ἄγοντι.</p>
+   <p><foreign xml:lang="grc">Ἀθρόοι δὲ δὴ ἵπποι</foreign> πῶς ἄν ποτε ἀλλήλων
+   δύναιντο ἀπέχεσθαι οὕτως ἀγόμενοι; ἐκ πλαγίου δὲ <name type="animal" xml:lang="fr">cheval</name> ἐθισθεὶς
+   παράγεσθαι ἥκιστα μὲν ἂν καὶ <name type="animal" xml:lang="fr">chevaux</name> καὶ <persName>ἄνθρωποι</persName> δύναιτ' ἂν
+   κακουργεῖν, κάλλιστα δ' ἂν παρεσκευασμένος τῷ ἀναβάτῃ εἴη καὶ εἴ
+   ποτε ἐν τάχει ἀναβῆναι δεήσειεν.</p>
+</div>
+<div type="section" n="93">
+   <p><foreign xml:lang="grc">Ἵνα δὲ ὁ ἱπποκόμος</foreign> καὶ τὸν <name type="animal" xml:lang="fr">cheval</name> χαλινὸν ὀρθῶς
+   ἐμβάλῃ, πρῶτον μὲν προσίτω κατὰ τὰ ἀριστερὰ τοῦ <name type="animal" xml:lang="fr">cheval</name>· ἕπειτα τὰς
+   μὲν ἡνίας περιβαλὼν περὶ τὴν κεφαλὴν καθέτω ἐπὶ τῇ ἀκρωμίαι, τὴν δὲ
+   κορυφαίαν τῇ δεξιᾶι αἰρέτω, τὸ δὲ στόμιον τῇ ἀριστερᾶι προσφερέτω.</p>
+   <p><foreign xml:lang="grc">Κἂν μὲν δέχηται</foreign>, δῆλον ὅτι περιτιθέναι δεῖ
+   τὸν κεκρύφαλον· ἐὰν δὲ μὴ ὑποχάσκῃ, ἔχοντα δεῖ πρὸς τοῖς ὀδοῦσι τὸν
+   χαλινὸν τὸν μέγαν δάκτυλον τῆς ἀριστερᾶς χειρὸς εἴσω τῆς γνάθου τῷ
+   <name type="animal" xml:lang="fr">cheval</name> ποιῆσαι. Οἱ γὰρ πολλοὶ τούτου γιγνομένου χαλῶσι τὸ στόμα. Ἢν δὲ
+   μηδ' οὕτω δέχηται, πιεσάτω τὸ χεῖλος περὶ τῷ κυνόδοντι· καὶ πάνυ
+   τινὲς ὀλίγοι οὐ δέχονται τοῦτο πάσχοντες.</p>
+</div>
+<div type="book" n="34">
+   <div type="section" n="9">
+      <p>
+         <foreign xml:lang="grc">Δεδιδάχθω</foreign> δὲ καὶ τάδε ὁ
+         <persName>ἱπποκόμος</persName>, πρῶτον μὲν μήποτε ἄγειν τῆς ἡνίας τὸν
+         <name type="animal" xml:lang="fr">cheval</name>· τοῦτο γὰρ ἑτερογνάθων ποιεῖ·
+         ἔπειτα δὲ ὅσον δεῖ ἀπέχειν τὸν χαλινὸν τῶν γνάθων. Ὁ μὲν γὰρ ἄγαν πρὸς
+         αὐταῖς τυλοῖ τὸ στόμα, ὥστε μὴ εὐαίσθητον εἶναι, ὁ δὲ ἄγαν εἰς ἄκρον τὸ
+         στόμα καθιέμενος ἐξουσίαν παρέχει συνδάκνοντι τὸ στόμιον μὴ πείθεσθαι.
+      </p>
+   </div>
+   <div type="section" n="10">
+      <p>
+         Χρὴ δὲ τὸν <persName>ἱπποκόμον</persName> καὶ τὰ τοιάδε παρατηρεῖν, εἰ μὴ
+         ῥαιδίως τὸν χαλινὸν ὁ <name type="animal" xml:lang="fr">cheval</name> δέχεται,
+         αἰσθανόμενος ὅτι δεῖ πονεῖν. Οὕτω γὰρ δὴ μέγα ἐστὶ τὸ λαμβάνειν ἐθέλειν τὸν
+         <name type="animal" xml:lang="fr">cheval</name> τὸν χαλινὸν ὡς ὁ μὴ δεχόμενος
+         παντάπασιν ἄχρηστος.
+      </p>
+   </div>
+   <div type="section" n="11">
+      <p>
+         Ἢν δὲ μὴ μόνον ὅταν πονεῖν μέλλῃ χαλινῶται, ἀλλὰ καὶ ὅταν ἐπὶ τὸν
+         <name type="plant" xml:lang="fr">blé</name> καὶ ὅταν ἐξ ἱππασίας εἰς οἶκον
+         ἀπάγηται, οὐδὲν ἂν εἴη θαυμαστὸν εἰ ἁρπάζοι τὸν χαλινὸν αὐτόματος
+         προτεινόμενον.
+      </p>
+   </div>
+</div>
+<div type="chapter" n="35">
+   <p n="12">
+      <foreign xml:lang="grc">Ἀγαθὸν δὲ τὸν ἱπποκόμον καὶ ἀναβάλλειν</foreign>
+      <foreign xml:lang="grc">ἐπιιστασθαι</foreign>
+      <foreign xml:lang="grc">τὸν Περσικὸν τρόπον</foreign>, <foreign xml:lang="grc">ὅπως</foreign> αὐτὸς <foreign xml:lang="grc">τε</foreign> <foreign xml:lang="grc">ὁ</foreign> <persName>δεσπότης</persName>, <foreign xml:lang="grc">ἤν</foreign> <foreign xml:lang="grc">ποτε</foreign>
+      <foreign xml:lang="grc">ἀρρωστήσῃ</foreign> <foreign xml:lang="grc">ἢ</foreign> <foreign xml:lang="grc">πρεσβύτερος</foreign> <foreign xml:lang="grc">γένηται</foreign>, <foreign xml:lang="grc">ἔχῃ</foreign> <foreign xml:lang="grc">τὸν</foreign> <foreign xml:lang="grc">εὐπετῶς</foreign> <foreign xml:lang="grc">ἀναβιβάσοντα</foreign> <foreign xml:lang="grc">καὶ</foreign>
+      <foreign xml:lang="grc">ἄλλῳ</foreign> <foreign xml:lang="grc">ἤν</foreign> <foreign xml:lang="grc">τινι</foreign> <foreign xml:lang="grc">βούληται</foreign> <foreign xml:lang="grc">τὸν</foreign> <foreign xml:lang="grc">ἀναβαλοῦντα</foreign> <foreign xml:lang="grc">ἐπιχαρίσηται</foreign>.
+   </p>
+   <p n="13">
+      <foreign xml:lang="grc">Τὸ</foreign> <foreign xml:lang="grc">δὲ</foreign> <foreign xml:lang="grc">μήποτε</foreign> <foreign xml:lang="grc">σὺν</foreign> <foreign xml:lang="grc">ὀργῇ</foreign> <foreign xml:lang="grc">ἵππῳ</foreign> <foreign xml:lang="grc">προσφέρεσθαι</foreign>, <foreign xml:lang="grc">ἓν</foreign>
+      <foreign xml:lang="grc">τοῦτο</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">δίδαγμα</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">ἔθισμα</foreign> <foreign xml:lang="grc">πρὸς</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">ἄριστον</foreign>. <foreign xml:lang="grc">Ἀπρονόητον</foreign>
+      <foreign xml:lang="grc">γὰρ</foreign> <foreign xml:lang="grc">ἡ</foreign> <foreign xml:lang="grc">ὀργή</foreign>, <foreign xml:lang="grc">ὥστε</foreign> <foreign xml:lang="grc">πολλάκις</foreign> <foreign xml:lang="grc">ἐξεργάζεται</foreign> <foreign xml:lang="grc">ὧν</foreign> <foreign xml:lang="grc">μεταμέλειν</foreign> <foreign xml:lang="grc">ἀνάγκη</foreign>.
+   </p>
+   <p n="14">
+      <foreign xml:lang="grc">Καὶ</foreign> <foreign xml:lang="grc">ὅταν</foreign> <foreign xml:lang="grc">δὲ</foreign> <foreign xml:lang="grc">ὑποπτεύσας</foreign> <foreign xml:lang="grc">τι</foreign> <foreign xml:lang="grc">ὁ</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">μὴ</foreign> <foreign xml:lang="grc">θέλῃ</foreign>
+      <foreign xml:lang="grc">πρὸς</foreign> <foreign xml:lang="grc">τοῦτο</foreign> <foreign xml:lang="grc">προσιέναι</foreign>, <foreign xml:lang="grc">διδάσκειν</foreign> <foreign xml:lang="grc">δεῖ</foreign> <foreign xml:lang="grc">ὅτι</foreign> <foreign xml:lang="grc">οὐ</foreign> <foreign xml:lang="grc">δεινόν</foreign> <foreign xml:lang="grc">ἐστι</foreign> <foreign xml:lang="grc">μάλιστα</foreign> <foreign xml:lang="grc">μὲν</foreign>
+      <foreign xml:lang="grc">οὖν</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">εὐκαρδίῳ</foreign>, <foreign xml:lang="grc">εἰ</foreign> <foreign xml:lang="grc">δὲ</foreign> <foreign xml:lang="grc">μή</foreign>, <foreign xml:lang="grc">ἁπτόμενον</foreign> <foreign xml:lang="grc">αὐτὸν</foreign> <foreign xml:lang="grc">τοῦ</foreign> <foreign xml:lang="grc">δεινοῦ</foreign> <foreign xml:lang="grc">δοκοῦντος</foreign>
+      <foreign xml:lang="grc">εἶναι</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">τὸν</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">πράιως</foreign> <foreign xml:lang="grc">προσάγοντα</foreign>.
+   </p>
+   <p n="15">
+      <foreign xml:lang="grc">Οἱ</foreign> <foreign xml:lang="grc">δὲ</foreign> <foreign xml:lang="grc">πληγαῖς</foreign> <foreign xml:lang="grc">ἀναγκάζοντες</foreign> <foreign xml:lang="grc">ἔτι</foreign> <foreign xml:lang="grc">πλείω</foreign> <foreign xml:lang="grc">φόβον</foreign>
+      <foreign xml:lang="grc">παρέχουσιν</foreign>· <foreign xml:lang="grc">οἴονται</foreign> <foreign xml:lang="grc">γὰρ</foreign> <foreign xml:lang="grc">οἱ</foreign> <name type="animal" xml:lang="fr">chevaux</name>, <foreign xml:lang="grc">ὅταν</foreign> <foreign xml:lang="grc">τι</foreign> <foreign xml:lang="grc">χαλεπὸν</foreign> <foreign xml:lang="grc">πάσχωσιν</foreign> <foreign xml:lang="grc">ἐν</foreign> <foreign xml:lang="grc">τῷ</foreign>
+      <foreign xml:lang="grc">τοιούτῳ</foreign>, <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">τούτου</foreign> <foreign xml:lang="grc">τὰ</foreign> <foreign xml:lang="grc">ὑποπτευόμενα</foreign> <foreign xml:lang="grc">αἴτια</foreign> <foreign xml:lang="grc">εἶναι</foreign>.
+   </p>
+   <p n="16">
+      <foreign xml:lang="grc">Ἐπειδάν</foreign> <foreign xml:lang="grc">γε</foreign> <foreign xml:lang="grc">μὴν</foreign> <foreign xml:lang="grc">ὁ</foreign> <foreign xml:lang="grc">ἱπποκόμος</foreign> <foreign xml:lang="grc">τὸν</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">παραδῷ</foreign>
+      <foreign xml:lang="grc">τῷ</foreign> <foreign xml:lang="grc">ἀναβάτῃ</foreign>, <foreign xml:lang="grc">τὸ</foreign> <foreign xml:lang="grc">μὲν</foreign> <foreign xml:lang="grc">ἐπίστασθαι</foreign> <foreign xml:lang="grc">ὑποβιβάζεσθαι</foreign> <foreign xml:lang="grc">τὸν</foreign> <name type="animal" xml:lang="fr">cheval</name>, <foreign xml:lang="grc">ὥστε</foreign> <foreign xml:lang="grc">εὐπετὲς</foreign>
+      <foreign xml:lang="grc">εἶναι</foreign> <foreign xml:lang="grc">ἀναβῆναι</foreign>, <foreign xml:lang="grc">οὐ</foreign> <foreign xml:lang="grc">μεμφόμεθα</foreign>· <foreign xml:lang="grc">τόν</foreign> <foreign xml:lang="grc">γε</foreign> <foreign xml:lang="grc">μέντοι</foreign> <foreign xml:lang="grc">ἱππέα</foreign> <foreign xml:lang="grc">νομίζομεν</foreign> <foreign xml:lang="grc">χρῆναι</foreign>
+      <foreign xml:lang="grc">μελετᾶν</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">μὴ</foreign> <foreign xml:lang="grc">παρέχοντος</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">δύνασθαι</foreign> <foreign xml:lang="grc">ἀναβαίνειν</foreign>. <foreign xml:lang="grc">Ἄλλοτε</foreign> <foreign xml:lang="grc">μὲν</foreign>
+      <foreign xml:lang="grc">γὰρ</foreign> <foreign xml:lang="grc">ἄλλοῖος</foreign> <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">παραπίπτει</foreign>, <foreign xml:lang="grc">ἄλλοτε</foreign> <foreign xml:lang="grc">δ'</foreign> <foreign xml:lang="grc">ἄλλως</foreign> <foreign xml:lang="grc">ὁ</foreign> <foreign xml:lang="grc">αὐτὸς</foreign> <foreign xml:lang="grc">ὑπηρετεῖ</foreign>.
+   </p>
+</div>
+<div type="chapter" n="6">
+   <head>Suite du précédent.</head>
+   <p n="1">Nous allons indiquer la méthode de pansage la plus sûre pour le
+      <name type="animal" xml:lang="fr">palefrenier</name> et la plus utile pour le
+      <name type="animal" xml:lang="fr">cheval</name>. Si on se place
+      directement dans le sens où regarde l’
+      <name type="animal" xml:lang="fr">animal</name> pour le nettoyer, on
+      s’expose à en être frappé au visage avec les genoux ou avec les
+      pieds ;</p>
+   <p n="2">si, au contraire, on lui fait face pour le panser, en se
+      mettant hors de la portée de sa jambe et accroupi le long de
+      l’épaule, on n’aura rien à redouter et l’on sera à même de lui
+      nettoyer la sole en lui levant les pieds. On s’y prendra de même
+      pour les jambes de derrière.</p>
+   <p n="3">Une chose que l’
+      <name type="person">homme d’écurie</name> doit
+      savoir, c’est que, soit pour le pansage, soit pour tout ce qu’il a à
+      faire, il faut aborder le
+      <name type="animal" xml:lang="fr">cheval</name> le moins possible par devant ou par
+      derrière : car, si le
+      <name type="animal" xml:lang="fr">cheval</name> veut nuire, de ces deux côtés il a
+      l’avantage sur l’
+      <name type="person">homme</name>, tandis qu’en l’approchant par le flanc on
+      sera en sûreté et certain d’en venir à bout.</p>
+   <p n="4">Pour mener un
+      <name type="animal" xml:lang="fr">cheval</name> en main, je n’approuve pas la méthode de le
+      faire marcher derrière soi, parce que, d’une part, le
+      <name type="person">conducteur</name> n’est pas à même de le surveiller, et que, de
+      l’autre, le
+      <name type="animal" xml:lang="fr">cheval</name> peut faire tout ce qu’il veut.</p>
+   <p n="5">Lui apprendre à marcher devant soi, en le conduisant au moyen d’une
+      grande longe, est un moyen que nous désapprouvons également, parce qu’il
+      peut ou blesser de tel côté qu’il voudra, ou se retourner pour faire tête à
+      son
+      <name type="person">conducteur</name>.</p>
+</div>
+<div type="chapter" n="37">
+   <p n="6">Et si l’on en a plusieurs à conduire, comment les empêcher de s’attaquer les uns les autres ? Au lieu qu’un <name type="animal" xml:lang="fr">cheval</name> accoutumé à marcher à côté de vous ne pourra nuire ni aux hommes ni aux <name type="animal" xml:lang="fr">chevaux</name>, et en même temps il sera à belle pour le montoir, si l’on est obligé de sauter dessus en toute hâte.</p>
+   <p n="7">Pour bien brider un <name type="animal" xml:lang="fr">cheval</name>, le palefrenier commence par l’aborder du côté gauche ; puis, lui passant les rênes pardessus la tête, il les pose sur le garrot ; il tient ensuite la têtière avec la main droite, et de la main gauche il présente le mors.</p>
+   <p n="8">Si le <name type="animal" xml:lang="fr">cheval</name> le reçoit, il est clair qu’il faut le coiffer ; mais s’il refuse d’ouvrir la bouche, alors on tient le mors contre les dents et l’on introduit dans la bouche le doigt du milieu de la main gauche : presque tous les <name type="animal" xml:lang="fr">chevaux</name> cèdent à cette pression. Si cependant il refuse encore, on presse fortement la lèvre auprès du crochet (23), et il est très-peu d’<name type="animal" xml:lang="fr">animaux</name> qui refusent, maniés ainsi.</p>
+   <p n="9">Le palefrenier doit encore savoir, premièrement qu’il ne faut pas mener le <name type="animal" xml:lang="fr">cheval</name> par la bride, ce qui lui gâte la bouche ; en second lieu, à quelle distance des molaires le mors doit se placer : trop près, il durcit la bouche et la rend insensible ; trop descendu vers l’extrémité de la bouche, le <name type="animal" xml:lang="fr">cheval</name> a la faculté de le prendre aux dents et de ne plus obéir.</p>
+   <p n="10">On prendra bien garde d’irriter le </p>
+</div>
+<div type="chapter" n="38">
+   <p>cheval pendant cette opération, si l’on veut qu’elle serve à quelque chose. En effet, il est si essentiel que le <name type="animal" xml:lang="fr">cheval</name> veuille prendre le mors, que celui qui refuse est complètement inutile.</p>
+   <p>[11] Si on le bride, non-seulement quand il doit travailler, mais encore quand on le mène au repos ou qu’on le reconduit du manège à la maison, il ne serait pas étonnant qu’il prît le mors de lui-même.</p>
+   <p>[12]</p>
+   <p>C’est une bonne chose que le palefrenier sache enlever à <name type="animal" xml:lang="fr">cheval</name>, à la mode perse, afin que le maître, malade ou âgé, ait un homme qui le place commodément à <name type="animal" xml:lang="fr">cheval</name>, et qu’il puisse procurer à qui bon lui semblerait le même service. [13] Ne jamais user de colère avec les <name type="animal" xml:lang="fr">chevaux</name> est un bon précepte, une excellente habitude.</p>
+   <p>La colère ne raisonne pas, et elle fait souvent faire des choses dont on est forcé de se repentir. [14] Quand un <name type="animal" xml:lang="fr">cheval</name> s’effraye d’un objet et refuse d’en approcher, il faut lui faire comprendre qu’il n’a rien à craindre, surtout si c’est un <name type="animal" xml:lang="fr">cheval</name> de cœur ; autrement, il faut aller toucher soi-même ce qui lui fait ombrage et l’y amener ensuite avec douceur. [15]</p>
+   <p>Ceux qui les y contraignent à force de coups ne font qu’augmenter leur frayeur : car les <name type="animal" xml:lang="fr">chevaux</name> s’imaginent que la douleur qu’ils éprouvent dans cette circonstance leur vient de l’objet qui les effraye.</p>
+   <p>[16] Quand le palefrenier, en présentant le <name type="animal" xml:lang="fr">cheval</name> au cavalier, le fait</p>
+</div>
+<div type="book" n="39">
+   <div type="chapter" n="7">
+      <p>plier de manière à rendre le lever plus facile, c’est une manière que je ne blâme nullement ; je crois pourtant nécessaire de s’exercer à monter sans que le <name type="animal" xml:lang="fr">cheval</name> baisse la croupe ; car le hasard vous fait tomber tantôt sur un <name type="animal" xml:lang="fr">cheval</name>, tantôt sur un autre, et l’on n’a pas toujours là le même palefrenier.</p>
+      <p>
+         <foreign xml:lang="grc">Περὶ ἱππικῆς</foreign>
+         <foreign xml:lang="grc">Κεφάλαιον ζʹ</foreign>
+      </p>
+      <p>[1] Ὅταν γε μὴν παραδέξηται τὸν <foreign xml:lang="grc">ἵππον</foreign> ὡς ἀναβησόμενος, νῦν αὖ γράψομεν ὅσα ποιῶν ὁ <persName>ἱππεὺς</persName> καὶ ἑαυτῷ καὶ τῷ <foreign xml:lang="grc">ἵππῳ</foreign> ὠφελιμώτατος ἂν ἐν τῇ <foreign xml:lang="grc">ἱππικῇ</foreign> εἴη. Πρῶτον μὲν τοίνυν τὸν <foreign xml:lang="grc">ῥυταγωγέα</foreign> χρὴ ἐκ τῆς <foreign xml:lang="grc">ὑποχαλινιδίας</foreign> ἢ ἐκ τοῦ <foreign xml:lang="grc">ψαλίου</foreign> ἠρτημένον εὐτρεπῆ εἰς τὴν ἀριστερὰν χεῖρα λαβεῖν, καὶ οὕτω χαλαρὸν ὡς μήτ' ἂν [ἀνιὼν] τῶν τριχῶν παρὰ τὰ ὦτα λαβόμενος μέλλῃ ἀναβήσεσθαι μήτ' ἂν ἀπὸ δόρατος ἀναπηδᾶι, σπᾶν τὸν <foreign xml:lang="grc">ἵππον</foreign>.</p>
+   </div>
+</div>
+<div type="chapter" n="40">
+   <p>
+      <foreign xml:lang="grc">Τῇ</foreign> δεξιᾶι δὲ τὰς ἡνίας παρὰ τὴν ἀκρωμίαν λαμβανέτω ὁμοῦ τῇ χαίτῃ, ὅπως
+      μηδὲ καθ' ἕνα τρόπον ἀναβαίνων σπάσῃ τῷ χαλινῷ τὸ στόμα τοῦ <name type="animal" xml:lang="fr">cheval</name>.
+   </p>
+   <p>
+      Ἐπειδὰν δὲ ἀνακουφίσῃ ἑαυτὸν εἰς τὴν ἀνάβασιν, τῇ μὲν ἀριστερᾶι ἀνιμάτω τὸ σῶμα, τὴν δὲ δεξιὰν ἐκτείνων
+      συνεπαιρέτω ἑαυτόν [οὕτω γὰρ ἀναβαίνων οὐδὲ ὄπισθεν αἰσχρὰν θέαν παρέξει συγκεκαμμένῳ τῷ σκέλει], καὶ μηδὲ τὸ γόνυ ἐπὶ τὴν ῥάχιν τοῦ
+      τιθέτω <name type="animal" xml:lang="fr">cheval</name>, ἀλλ' ὑπερβησάτω ἐπὶ τὰς δεξιὰς πλευρὰς τὴν κνήμην.
+      Ὅταν δὲ περιενέγκῃ τὸν πόδα, τότε καὶ τὼ γλουτὼ καθέτω ἐπὶ τὸν <name type="animal" xml:lang="fr">cheval</name>.
+   </p>
+   <p>
+      Ἢν δὲ τύχῃ ὁ <persName>ἱππεὺς</persName> τῇ μὲν ἀριστερᾶι ἄγων τὸν <name type="animal" xml:lang="fr">cheval</name>, τῇ δὲ δεξιᾶι τὸ
+      δόρυ ἔχων, ἀγαθὸν μὲν ἡμῖν δοκεῖ εἶναι τὸ καὶ ἐκ τῶν δεξιῶν μελετῆσαι ἀναπηδᾶν. Μαθεῖν δ' οὐδὲν δεῖ ἄλλο ἢ ἃ μὲν τότε τοῖς
+      δεξιοῖς τοῦ σώματος ἐποίει τοῖς ἀριστεροῖς ποιεῖν, ἃ δὲ τότε τοῖς ἀριστεροῖς τοῖς δεξιοῖς.
+   </p>
+   <p>
+      τούτου δ' ἕνεκεν καὶ ταύτην ἐπαινοῦμεν τὴν ἀνάβασιν, ὅτι ἅμα τε ἀναβεβηκὼς ἂν εἴη καὶ κατεσκευασμένος πάντα, εἴ τι δέοι ἐξαίφνης
+      πρὸς πολεμίους ἀγωνίζεσθαι.
+   </p>
+</div>
+<div type="chapter" n="41">
+   <p><foreign xml:lang="grc">Ἐπειδάν</foreign> γε μὴν καθέζηται ἐάν τε ἐπὶ ψιλοῦ ἐάν
+      τε ἐπὶ τοῦ <name type="animal" xml:lang="fr">ἵππου</name>, οὐ τὴν ὥσπερ ἐπὶ [τοῦ]
+      δίφρου ἕδραν ἐπαινοῦμεν, ἀλλὰ τὴν ὥσπερ εἰ ὀρθὸς ἂν διαβεβηκὼς εἴη τοῖν
+      σκελοῖν. Τοῖν τε γὰρ μηροῖν οὕτως ἂν ἔχοιτο μᾶλλον τοῦ <name type="animal"
+      xml:lang="fr">ἵππου</name>, καὶ ὀρθὸς ὢν ἐρρωμενεστέρως ἂν δύναιτο καὶ
+      ἀκοντίσαι καὶ πατάξαι ἀπὸ τοῦ <name type="animal" xml:lang="fr">ἵππου</name>,
+      <foreign xml:lang="grc">εἰ δέοι</foreign>.</p>
+   <p>Χρὴ δὲ καὶ χαλαρὰν ἀπὸ τοῦ γόνατος ἀφεῖσθαι τὴν κνήμην σὺν τῷ ποδί.
+      Σκληρὸν μὲν γὰρ ἔχων τὸ σκέλος <foreign xml:lang="grc">εἰ</foreign> προσκόψειέ
+      τῳ, προσκεκλασμένος ἂν εἴη· ὑγρὰ δὲ οὖσα ἡ κνήμη, <foreign
+      xml:lang="grc">εἴ</foreign> τι καὶ προσπίπτοι αὐτῇ, ὑπείκοι ἂν καὶ τὸν
+      μηρὸν οὐδὲν μετακινοίη.</p>
+</div>
+<div type="section" n="6">
+   <p>Δεῖ δὲ τὸν <persName>ἱππέα</persName> καὶ τὸ ἄνωθεν τῶν ἑαυτοῦ ἰσχίων
+      σῶμα ὡς ὑγρότατον ἐθίζειν εἶναι. Οὕτω γὰρ ἂν πονεῖν τε ἔτι μᾶλλον δύναιτο
+      καὶ <foreign xml:lang="grc">εἰ</foreign> ἕλκοι τις αὐτὸν ἢ ὠθοίη <foreign
+      xml:lang="grc">ἧττον</foreign> ἂν σφάλλοιτο.</p>
+</div>
+<div type="section" n="7">
+   <p><foreign xml:lang="grc">Ἐπειδάν</foreign> γε μὴν καθέζηται, πρῶτον μὲν ἠρεμεῖν
+      δεῖ διδάσκειν τὸν <name type="animal" xml:lang="fr">ἵππον</name>, ἕως ἂν καὶ
+      ὑποσπάσηται, ἤν τι δέηται, καὶ ἡνίας ἰσώσηται καὶ δόρυ λάβῃ ὡς ἂν
+      εὐφορώτατον εἴη· ἔπειτα δὲ ἐχέτω τὸν ἀριστερὸν βραχίονα πρὸς ταῖς πλευραῖς·
+      οὕτω γὰρ εὐσταλέστατός τε ὁ <persName>ἱππεὺς</persName> ἔσται καὶ ἡ χεὶρ
+      ἐγκρατεστάτη.</p>
+</div>
+<div type="section" n="8">
+   <p><foreign xml:lang="grc">Ἡνίας</foreign> γε μὴν ἐπαινοῦμεν ὁποῖαι ἴσαι τέ εἰσι
+      καὶ μὴ ἀσθενεῖς μηδὲ ὀλισθηραὶ μηδὲ παχεῖαι, ἵνα καὶ τὸ δόρυ ὅταν δέῃ
+      δέχεσθαι ἡ χεὶρ δύνηται.</p>
+</div>
+<div type="chapter" n="42">
+   <p>
+      <foreign xml:lang="grc">Ὅταν</foreign> δὲ προχωρεῖν σημήνῃ τῷ <name type="animal" xml:lang="fr">cheval</name>, βάδην μὲν ἀρχέσθω· τοῦτο γὰρ ἀταρακτότατον.
+      Ἡνιοχείτω δέ, ἢν μὲν κυφαγωγότερος ἦι ὁ <name type="animal" xml:lang="fr">cheval</name>, ἀνωτέρω ταῖς χερσίν, ἢν δὲ μᾶλλον ἀνακεκυφώς, κατωτέρω· οὕτω γὰρ ἂν μάλιστα κοσμοίη τὸ σχῆμα.
+   </p>
+   <p>
+      Μετὰ δὲ ταῦτα τὸν αὐτοφυᾶ διατροχάζων διαχαλώιη τ' ἂν ἀλυπότατα τὸ σῶμα καὶ εἰς τὸ ἐπιρραβδοφορεῖν ἥδιστ' ἂν ἀφικνοῖτο.
+      Ἐπείπερ δὲ καὶ ἀπὸ τῶν ἀριστερῶν ἄρχεσθαι εὐδοκιμώτερον, ὧδ' ἂν μάλιστα ἀπὸ τούτων ἄρχοιτο, εἰ διατροχάζοντος μὲν, ὁπότε ἐμβαίνοι τῷ δεξιῷ, τότε σημαίνοι τῷ <name type="animal" xml:lang="fr">cheval</name> τὸ ἐπιρραβδοφορεῖν.
+   </p>
+   <p>
+      Τὸ γὰρ ἀριστερὸν μέλλων αἴρειν ἐκ τούτου ἂν ἄρχοιτο, καὶ ὁπότε ἐπὶ τὰ εὐώνυμα ἀναστρέφοι, τότε καὶ τῆς ἐπισκελίσεως ἄρχοιτο.
+      Καὶ γὰρ πέφυκεν ὁ <name type="animal" xml:lang="fr">cheval</name> εἰς μὲν τὰ δεξιὰ στρεφόμενος τοῖς δεξιοῖς ἀφηγεῖσθαι, εἰς εὐώνυμα δὲ τοῖς ἀριστεροῖς.
+   </p>
+   <p>
+      <foreign xml:lang="grc">Ἱππασίαν</foreign> δ' ἐπαινοῦμεν τὴν πέδην καλουμένην· ἐπ' ἀμφοτέρας γὰρ τὰς γνάθους στρέφεσθαι ἐθίζει.
+      Καὶ τὸ μεταβάλλεσθαι δὲ τὴν <foreign xml:lang="grc">ἱππασίαν</foreign> ἀγαθόν, ἵνα ἀμφότεραι αἱ γνάθοι καθ' ἑκάτερον τῆς <foreign xml:lang="grc">ἱππασίας</foreign> ἰσάζωνται.
+   </p>
+</div>
+<div type="chapter" n="43">
+   <p>
+      <foreign xml:lang="grc">Ἐπαινοῦμεν</foreign> δὲ καὶ τὴν <foreign xml:lang="grc">ἑτερομήκη</foreign> <name type="plant" xml:lang="fr">pédil</name> μᾶλλον
+      τῆς <foreign xml:lang="grc">κυκλοτεροῦς</foreign>. <foreign xml:lang="grc">Ἥδιον</foreign> μὲν γὰρ οὕτως ἂν στρέφοιτο ὁ <name type="animal" xml:lang="fr">cheval</name> ἤδη πλήρης
+      ὢν τοῦ <foreign xml:lang="grc">εὐθέος</foreign>, καὶ τό τε <foreign xml:lang="grc">ὀρθοδρομεῖν</foreign> καὶ τὸ <foreign xml:lang="grc">ἀποκάμπτειν</foreign> ἅμα μελετώιη
+      ἄν.
+   </p>
+   <p>
+      <foreign xml:lang="grc">Δεῖ</foreign>
+      δὲ καὶ <foreign xml:lang="grc">ὑπολαμβάνειν</foreign> ἐν ταῖς <foreign xml:lang="grc">στροφαῖς</foreign>· οὐ γὰρ <foreign xml:lang="grc">ῥάιδιον</foreign> τῷ <name type="animal" xml:lang="fr">cheval</name> οὐδ' ἀσφαλὲς ἐν τῷ <foreign xml:lang="grc">τάχει</foreign> ὄντα
+      κάμπτειν ἐν <foreign xml:lang="grc">μικρῷ</foreign>, ἄλλως τε κἂν <foreign xml:lang="grc">ἀπόκροτον</foreign> ἢ <foreign xml:lang="grc">ὀλισθηρὸν</foreign> ἦι τὸ <foreign xml:lang="grc">χωρίον</foreign>.
+   </p>
+   <p>
+      <foreign xml:lang="grc">Ὅταν</foreign> γε μὴν <foreign xml:lang="grc">ὑπολαμβάνῃ</foreign>, ὡς <foreign xml:lang="grc">ἥκιστα</foreign> μὲν χρὴ τὸν <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">πλαγιοῦν</foreign> τῷ
+      <foreign xml:lang="grc">χαλινῷ</foreign>, ὡς <foreign xml:lang="grc">ἥκιστα</foreign> δ' αὐτὸν <foreign xml:lang="grc">πλαγιοῦσθαι</foreign>· εἰ δὲ μή, εὖ χρὴ εἰδέναι ὅτι <foreign xml:lang="grc">μικρὰ</foreign>
+      <foreign xml:lang="grc">πρόφασις</foreign> <foreign xml:lang="grc">ἀρκέσει</foreign> <foreign xml:lang="grc">κεῖσθαι</foreign> καὶ αὐτὸν καὶ τὸν <name type="animal" xml:lang="fr">cheval</name>.
+   </p>
+</div>
+<div type="section" n="17">
+   <p>
+      <foreign xml:lang="grc">Ἐπειδάν</foreign> γε μὴν ἐκ τῆς <foreign xml:lang="grc">στροφῆς</foreign> εἰς τὸ <foreign xml:lang="grc">εὐθύ</foreign>
+      <foreign xml:lang="grc">βλέπῃ</foreign> ὁ <name type="animal" xml:lang="fr">cheval</name>, ἐν τούτῳ πρὸς τὸ <foreign xml:lang="grc">θᾶττον</foreign> αὐτὸν <foreign xml:lang="grc">ὁρμάτω</foreign>. <foreign xml:lang="grc">Δῆλον</foreign> γὰρ ὅτι
+      καὶ ἐν τοῖς <foreign xml:lang="grc">πολέμοις</foreign> αἱ <foreign xml:lang="grc">στροφαί</foreign> εἰσι τοῦ <foreign xml:lang="grc">διώκειν</foreign> ἢ τοῦ <foreign xml:lang="grc">ἀποχωρεῖν</foreign>
+      <foreign xml:lang="grc">ἕνεκα</foreign>. <foreign xml:lang="grc">Ἀγαθὸν</foreign> οὖν τὸ <foreign xml:lang="grc">στραφέντα</foreign> <foreign xml:lang="grc">ταχύνειν</foreign> <foreign xml:lang="grc">μελετᾶν</foreign>.
+   </p>
+</div>
+<div type="section" n="18">
+   <p>
+      <foreign xml:lang="grc">Ὅταν</foreign> δὲ <foreign xml:lang="grc">ἱκανῶς</foreign> ἤδη δοκῇ τὸ <foreign xml:lang="grc">γυμνάσιον</foreign> τῷ <name type="animal" xml:lang="fr">cheval</name>
+      <foreign xml:lang="grc">ἔχειν</foreign>, <foreign xml:lang="grc">ἀγαθὸν</foreign> καὶ <foreign xml:lang="grc">διαναπαύσαντα</foreign> <foreign xml:lang="grc">ὁρμῆσαι</foreign> αὖθις <foreign xml:lang="grc">ἐξαίφνης</foreign> εἰς τὸ
+      <foreign xml:lang="grc">τάχιστον</foreign>, καὶ <foreign xml:lang="grc">ἀφ'</foreign> <name type="animal" xml:lang="fr">chevaux</name> μὲντοι, μὴ πρὸς <name type="animal" xml:lang="fr">chevaux</name>· καὶ ἐκ τοῦ
+      <foreign xml:lang="grc">ταχέος</foreign> αὖ ὡς <foreign xml:lang="grc">ἐγγυτάτω</foreign> <foreign xml:lang="grc">ἠρεμίζειν</foreign>, καὶ ἐκ τοῦ <foreign xml:lang="grc">ἑστάναι</foreign> δὲ <foreign xml:lang="grc">στρέψαντα</foreign> [δεῖ]
+      πάλιν <foreign xml:lang="grc">ὁρμᾶν</foreign>· <foreign xml:lang="grc">πρόδηλον</foreign> γὰρ ὅτι ἔσται ποτὲ ὅτε <foreign xml:lang="grc">ἑκατέρου</foreign> τούτων <foreign xml:lang="grc">δεήσει</foreign>·
+   </p>
+</div>
+<div type="section" n="19">
+   <p>
+      <foreign xml:lang="grc">ὅταν</foreign> γε μὴν <foreign xml:lang="grc">καταβαίνειν</foreign> ἤδη <foreign xml:lang="grc">καιρὸς</foreign> ἦι, μήτε ἐν <name type="animal" xml:lang="fr">chevaux</name> ποτὲ
+      <foreign xml:lang="grc">καταβαίνειν</foreign> μήτε παρὰ <foreign xml:lang="grc">σύστασιν</foreign> <name type="animal" xml:lang="fr">hommes</name> μήτ' ἔξω τῆς <foreign xml:lang="grc">ἱππασίας</foreign>, ἀλλ'
+      ὅπουπερ καὶ <foreign xml:lang="grc">πονεῖν</foreign> <foreign xml:lang="grc">ἀναγκάζεται</foreign> ὁ <name type="animal" xml:lang="fr">cheval</name>, ἐνταῦθα καὶ τῆς
+      <foreign xml:lang="grc">ῥαιστώνης</foreign> <foreign xml:lang="grc">τυγχανέτω</foreign>.
+   </p>
+</div>
+<div type="chapter" n="7">
+   <head>De la position à cheval, et des exercices du manège.</head>
+   <p>[1] Supposons que le cavalier s’est fait amener son <name type="animal" xml:lang="fr">cheval</name> et qu’il va monter : nous allons dire quels principes d’équitation il doit suivre pour son avantage et pour celui du <name type="animal" xml:lang="fr">cheval</name>. Il faut d’abord que de la main gauche le cavalier saisisse convenablement les rênes auprès du mors ou de la gourmette, et que ces rênes soient lâches, de manière que, soit qu’il empoigne, pour monter, les crins voisins des oreilles, soit qu’il s’enlève au moyen de sa pique, il ne tire point son <name type="animal" xml:lang="fr">cheval</name>.</p>
+   <p>[2] De la main droite, il prendra les rênes près du garrot avec une poignée de crins, de sorte qu’en montant il ne tire point avec le mors sur la bouche de la bête. </p>
+   <p>[3] Quand il aura pris son élan pour se mettre en selle, il doit s’enlever de terre en s’aidant de la main gauche et en étendant en même temps la main droite. Par là, son ascension, même par derrière, ne sera point disgracieuse. Ensuite, la jambe une fois pliée, qu’il ne pose point le genou sur le dos du <name type="animal" xml:lang="fr">cheval</name>, mais qu’il passe la cuisse par-dessus pour arriver au côté droit ; puis, le pied, grâce à ce mouvement gyratoire, se trouvant à sa place, l’homme s’établira sur ses fesses. </p>
+   <p>Comme il peut arriver à un cavalier de mener son <name type="animal" xml:lang="fr">cheval</name> de la main gauche et de tenir sa javeline de la droite, nous trouvons bon qu’il s’accoutume à </p>
+</div>
+<div type="chapter" n="45">
+   <p>monter du côté droit. Toute sa science se réduit alors à faire de la gauche ce qu’il faisait de la droite, et de la droite ce qu’il faisait de la gauche. [4]</p>
+   <p>Je loue fort cette méthode, parce que, aussitôt monté, on est prêt à tout, s’il faut soudainement en venir aux mains avec l’ennemi.</p>
+   <p>[5]</p>
+   <p>Le cavalier, monté à poil ou sur selle, ne doit pas, à mon gré, se tenir assis comme sur un siège, mais droit, comme s’il était debout, les jambes écartées. De cette manière on tient mieux son <name type="animal" xml:lang="fr">cheval</name> entre les cuisses, et cette attitude droite donne plus de force soit pour lancer le javelot, soit pour frapper de près, [6] au besoin. À partir du genou, la jambe et le pied doivent tomber librement. Roide, la jambe pourrait se casser au moindre heurt, au lieu que, pendante, si quelque chose la heurte, elle cède et ne dérange pas la cuisse (24).</p>
+   <p>[7]</p>
+   <p>Le cavalier doit aussi s’accoutumer à mettre la plus grande souplesse dans le haut du corps, à partir des hanches ; il en aura plus de liberté dans les mouvements (25) et risquera moins d’être renversé, s’il vient à être pressé ou tiré.</p>
+   <p>[8]</p>
+   <p>Lorsqu’il est monté, il doit apprendre à son <name type="animal" xml:lang="fr">cheval</name> à rester tranquille jusqu’à ce qu’il ait fait disparaître les plis qui peuvent le gêner, qu’il ait ajusté ses rênes et pris sa lance de la manière la plus commode. Il doit alors placer le bras gauche près du</p>
+</div>
+<div type="chapter" n="46">
+   <p>corps, moyen d’avoir plus de tournure et la main plus puissante.</p>
+   <p>[9]</p>
+   <p>J’aime les rênes égales, fortes, qui ne soient ni glissantes ni épaisses, afin que la main puisse tenir en même temps la lance en cas de besoin.</p>
+   <p>[10]</p>
+   <p>Lorsque le <name type="animal" xml:lang="fr">cheval</name> est prévenu de partir, il faut commencer par le mettre au pas ; c’est le moyen d’éviter tout désordre. Tenez la main haute, s’il porte bas, et basse, s’il lève le nez ; c’est ainsi que vous lui donnerez une bonne position. [11]</p>
+   <p>Laissez-le ensuite trotter naturellement ; il s’assouplira ainsi sans souffrance, et se présentera graduellement au galop. Or, comme il est reçu de partir au galop du pied gauche, le plus sûr, pour y réussir, c’est, quand on est au trot, de saisir l’instant où le pied gauche est levé pour indiquer le galop : [12]</p>
+   <p>car, si le <name type="animal" xml:lang="fr">cheval</name> est sur le point de lever le pied gauche, il commencera par là ; puis, si vous tournez à gauche, il entamera le galop de ce côté, vu qu’il est dans la nature du <name type="animal" xml:lang="fr">cheval</name> d’avancer la partie droite, quand il tourne à droite, et la gauche, quand il tourne à gauche. [13]</p>
+   <p>Nous approuvons l’exercice appelé l’entrave : le <name type="animal" xml:lang="fr">cheval</name> y apprend à sentir les deux mains ; et l’on fera bien d’y passer d’une barre à l’autre, afin que toutes deux deviennent également sensibles.</p>
+   <p>[14]</p>
+   <p>Je préfère l’exercice de l’ovale à celui du cercle. Le <name type="animal" xml:lang="fr">cheval</name>, fatigué</p>
+</div>
+<div type="chapter" n="47">
+   <p>de la ligne droite, prendra plus facilement cette leçon, qui le formera tout ensemble à courir devant lui, et à s’arrondir.</p>
+   <p>[15] Il faut soutenir la main dans les tournants ; car il n’est ni facile ni sûr de tourner de vitesse dans un petit espace, et d’ailleurs le terrain peut être incliné ou glissant. [16] En le soutenant, il faut se porter sur les hanches le moins possible et ne se point trop pencher soi-même ; autrement, on doit savoir que, dans cette position, la plus petite chose peut faire tomber <name type="animal" xml:lang="fr">cheval</name> et cavalier.</p>
+   <p>[17] Lorsque, la ligne circulaire parcourue, le <name type="animal" xml:lang="fr">cheval</name> se retrouve en ligne droite, c’est le moment de le lancer au galop : car on sait qu’à la guerre les demi-tours se font pour charger et pour battre en retraite. Il importe donc d’habituer le <name type="animal" xml:lang="fr">cheval</name> à galoper après une conversion.</p>
+   <p>[18] Quand on croira que le <name type="animal" xml:lang="fr">cheval</name> a suffisamment travaillé, il sera bon, après un moment de repos, de le lancer soudain au grand galop, en le portant vers les autres <name type="animal" xml:lang="fr">chevaux</name> ou en l’isolant ; puis, une fois lancé, de l’arrêter court, et, après un temps d’arrêt, de le lancer encore. Il est évident que le <persName>cavalier</persName> aura besoin de tous ces mouvements.</p>
+   <p>[19] Le moment de mettre pied à terre est-il arrivé, ne descendez ni parmi d’autres <name type="animal" xml:lang="fr">chevaux</name>, ni près de la foule, ni hors du champ de manœuvre ; mais qu’à l’endroit où le <name type="animal" xml:lang="fr">cheval</name> est contraint de</p>
+</div>
+<div type="book" n="48">
+   <div type="chapter" n="9">
+      <p>travailler, il y trouve aussi le repos.</p>
+      <p><foreign xml:lang="grc">Περὶ ἱππικῆς Κεφάλαιον ηʹ</foreign></p>
+      <p>[1]</p>
+      <p>Ἐπείπερ δὲ ἔστιν ὅπου τρέχειν δεήσει τὸν <name type="animal" xml:lang="fr">ἵππον</name> καὶ πρανῆ καὶ ὄρθια καὶ πλάγια, ἔστι δ' ὅπου διαπηδᾶν, ἔστι δ' ὅπου καὶ ἐκπηδᾶν, ἔνθα δὲ καθάλλεσθαι, καὶ ταῦτα πάντα διδάσκειν τε δεῖ καὶ μελετᾶν καὶ αὑτὸν καὶ τὸν <name type="animal" xml:lang="fr">ἵππον</name>. Οὕτω γὰρ ἂν σωτήριοί τε εἶεν ἀλλήλοις καὶ καθόλου χρησιμώτεροι ἂν δοκοῖεν εἶναι. [2]</p>
+      <p>Εἰ δέ τις διλογεῖν ἡμᾶς οἴεται, ὅτι περὶ τῶν αὐτῶν λέγομεν νῦν τε καὶ πρόσθεν, οὐ διλογία ταῦτ' ἐστίν. Ὅτε μὲν γὰρ ἐωνεῖτο, πειρᾶσθαι ἐκελεύομεν εἰ δύναιτο ὁ <name type="animal" xml:lang="fr">ἵππος</name> ταῦτα ποιεῖν· νῦν δὲ διδάσκειν φαμὲν χρῆναι τὸν ἑαυτοῦ καὶ γράψομεν ὡς δεῖ διδάσκειν.</p>
+   </div>
+</div>
+<div type="chapter" n="49">
+   <p><foreign xml:lang="grc">Τὸν μὲν γὰρ παντάπασιν ἄπειρον τοῦ διαπηδᾶν</foreign> λαβόντα δεῖ τοῦ ἀγωγέως καταβεβλημένου προδιαβῆναι αὐτὸν τὴν τάφρον, ἔπειτα δὲ ἐντείνειν δεῖ τῷ ἀγωγεῖ ὡς διάλληται.</p>
+   <p><foreign xml:lang="grc">Ἢν δὲ μὴ ἐθέλῃ, ἔχων τις μάστιγα ἢ ῥάβδον ἐμβαλέτω ὡς ἰσχυρότατα·</foreign> καὶ οὕτως ὑπεραλεῖται οὐ τὸ μέτρον, ἀλλὰ πολὺ πλέον τοῦ καιρίου· καὶ τὸ λοιπὸν οὐδὲν δεήσει παίειν, ἀλλ' ἢν μόνον ἴδῃ ὄπισθέν τινα ἐπελθόντα, ἁλεῖται.</p>
+   <p><foreign xml:lang="grc">Ἐπειδὰν δὲ οὕτω διαπηδᾶν ἐθισθῇ,</foreign> καὶ ἀναβεβηκὼς ἐπαγέτω τὸ μὲν πρῶτον μικράς, ἔπειτα δὲ καὶ μείζους. <foreign xml:lang="grc">Ὅταν δὲ μέλλῃ πηδᾶν, παισάτω αὐτὸν τῷ μύωπι.</foreign> <foreign xml:lang="grc">Ὡσαύτως δὲ καὶ τὸ ἀναπηδᾶν καὶ τὸ καταπηδᾶν διδάσκειν παίσαντα τῷ μύωπι.</foreign> <foreign xml:lang="grc">Ἀθρόῳ γὰρ τῷ σώματι ταῦτα πάντα ποιῶν</foreign> καὶ ἑαυτῷ ὁ <name type="animal" xml:lang="fr">cheval</name> καὶ τῷ ἀναβάτῃ ἀσφαλέστερον ποιήσει μᾶλλον ἢ ἂν ἐκλείπῃ τὰ ὄπισθεν ἢ διαπηδῶν ἢ ἀνορούων ἢ καθαλλόμενος.</p>
+</div>
+<div type="chapter" n="50">
+   <p><foreign xml:lang="grc">Εἴς γε μὴν τὸ κάταντες πρῶτον χρὴ ἐν μαλακῷ χωρίῳ διδάσκειν,</foreign> καὶ τελευτῶν, ἐπειδὰν τοῦτο ἐθισθῇ, πολὺ ἥδιον τὸ πρανὲς τοῦ ὀρθίου δραμεῖται. <foreign xml:lang="grc">Ἃ δὲ φοβοῦνταί τινες μὴ ἀπορρηγνύωνται τοὺς ὤμους κατὰ τὰ πρανῆ ἐλαυνόμενοι,</foreign> θαρρούντων μαθόντες ὅτι <persName>Persai</persName> καὶ <persName>Odrysoi</persName> ἅπαντες τὰ κατάντη ἁμιλλώμενοι οὐδὲν ἧττον τῶν <persName>Hellēnes</persName> ὑγιεῖς τοὺς <name type="animal" xml:lang="fr">chevaux</name> ἔχουσι.</p>
+</div>
+<div type="chapter" n="50">
+  <p>
+    <foreign xml:lang="grc">Παρήσομεν</foreign> δὲ οὐδὲ ὅπως τὸν <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">ὑπηρετεῖν</foreign> δεῖ πρὸς ἕκαστα τούτων. Χρὴ γὰρ <foreign xml:lang="grc">ὁρμῶντος</foreign> μὲν ἐξαίφνης τοῦ <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">προνεύειν</foreign>· ἧττον γὰρ ἂν καὶ <foreign xml:lang="grc">ὑποδύοι</foreign> ὁ <name type="animal" xml:lang="fr">cheval</name> καὶ <foreign xml:lang="grc">ἀναβάλλοι</foreign> τὸν <name type="animal" xml:lang="fr">cheval</name>· <foreign xml:lang="grc">ἐν μικρῷ</foreign> δὲ <foreign xml:lang="grc">ἀναλαμβανομένου</foreign> <foreign xml:lang="grc">ἀναπίπτειν</foreign>· ἧττον γὰρ ἂν αὐτὸς <foreign xml:lang="grc">κόπτοιτο</foreign>.
+  </p>
+  <p>
+    <foreign xml:lang="grc">Τάφρον</foreign> δὲ <foreign xml:lang="grc">διαλλομένου</foreign> καὶ πρὸς <foreign xml:lang="grc">ὄρθιον</foreign> <foreign xml:lang="grc">ἱεμένου</foreign> καλὸν <foreign xml:lang="grc">χαίτης</foreign> <foreign xml:lang="grc">ἐπιλαμβάνεσθαι</foreign>, ὡς μὴ ὁ <name type="animal" xml:lang="fr">cheval</name> τῷ τε <foreign xml:lang="grc">χωρίῳ</foreign> ἅμα καὶ τῷ <foreign xml:lang="grc">χαλινῷ</foreign> <foreign xml:lang="grc">βαρύνηται</foreign>. <foreign xml:lang="grc">Εἴς</foreign> γε μὴν τὸ <foreign xml:lang="grc">πρανὲς</foreign> καὶ <foreign xml:lang="grc">ἑαυτὸν</foreign> <foreign xml:lang="grc">ὑπτιώτερον</foreign> <foreign xml:lang="grc">ποιητέον</foreign> καὶ τοῦ <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">ἀντιληπτέον</foreign> τῷ <foreign xml:lang="grc">χαλινῷ</foreign>, ὡς μὴ <foreign xml:lang="grc">προπετῶς</foreign> εἰς τὸ <foreign xml:lang="grc">κάταντες</foreign> μήτε αὐτὸς μήτε ὁ <name type="animal" xml:lang="fr">cheval</name> <foreign xml:lang="grc">φέρηται</foreign>.
+  </p>
+</div>
+<div type="chapter" n="51">
+   <p>
+      <foreign xml:lang="grc">Ὀρθῶς</foreign> δ' ἔχει καὶ τὸ ἄλλοτε μὲν ἐν ἄλλοις τόποις, ἄλλοτε δὲ μακράς, ἄλλοτε δὲ βραχείας τὰς
+      <name type="animal" xml:lang="fr">ἱππασίας</name> ποιεῖσθαι. <foreign xml:lang="grc">Ἀμισέστερ</foreign>α γὰρ καὶ ταῦτα τῷ
+      <name type="animal" xml:lang="fr">ἵππῳ</name> τοῦ ἀεὶ ἐν τοῖς αὐτοῖς τόποις καὶ ὁμοίας τὰς
+      <name type="animal" xml:lang="fr">ἱππασίας</name> ποιεῖσθαι.
+   </p>
+   <p>
+      <foreign xml:lang="grc">Ἐπεὶ</foreign> δὲ δεῖ ἐν παντοίοις τε χωρίοις τὸν
+      <name type="animal" xml:lang="fr">ἱππέα</name> ἀνὰ κράτος ἐλαύνοντα ἔποχον εἶναι καὶ ἀπὸ τοῦ
+      <name type="animal" xml:lang="fr">ἵππου</name> τοῖς ὅπλοις καλῶς δύνασθαι χρῆσθαι, ὅπου μὲν ἔστι χωρία ἐπιτήδεια καὶ
+      <name type="animal" xml:lang="fr">θηρία</name>, ἄμεμπτος ἡ ἐν θήραις μελέτη τῆς
+      <name type="animal" xml:lang="fr">ἱππικῆς</name>· ὅπου δὲ ταῦτα μὴ ὑπάρχει, ἀγαθὴ ἄσκησις καὶ ἢν δύο
+      <name type="animal" xml:lang="fr">ἱππόται</name> συνθεμένω ὁ μὲν φεύγῃ ἐπὶ τοῦ
+      <name type="animal" xml:lang="fr">ἵππου</name> παντοῖα χωρία καὶ τὸ δόρυ εἰς τοὔπισθεν μεταβαλόμενος ὑποχωρῇ, ὁ δὲ διώκῃ
+      <foreign xml:lang="grc">ἐσφαιρωμένα</foreign> τε ἔχων ἀκόντια καὶ δόρυ ὡσαύτως πεπραγματευμένον, καὶ ὅπου μὲν ἂν εἰς
+      <foreign xml:lang="grc">ἀκόντιον</foreign> ἀφικνῆται, <foreign xml:lang="grc">ἀκοντίζῃ</foreign> τὸν φεύγοντα τοῖς
+      <foreign xml:lang="grc">σφαιρωτοῖς</foreign>, ὅπου δ' ἂν εἰς δόρατος πληγήν, τῷ δόρατι παίῃ τὸν ἀλισκόμενον.
+   </p>
+   <p>
+      <foreign xml:lang="grc">Ἀγαθὸν</foreign> δὲ κἂν ποτε συμπέσωσιν, ἑλκύσαντα ἐφ' ἑαυτὸν τὸν πολέμιον ἐξαίφνης ἀπῶσαι· τοῦτο γὰρ
+      <foreign xml:lang="grc">καταβλητικόν</foreign>. <foreign xml:lang="grc">Ὀρθῶς</foreign> δὲ ἔχει καὶ τῷ ἑλκομένῳ ἐπελαύνειν τὸν
+      <name type="animal" xml:lang="fr">ἵππον</name>· τοῦτο γὰρ ποιῶν ὁ ἑλκόμενος καταβάλοι ἂν μᾶλλον τὸν ἕλκοντα ἢ καταπέσοι.
+   </p>
+</div>
+<div type="section" n="12">
+   <p><foreign xml:lang="grc">Ἢν</foreign> δέ ποτε καὶ στρατοπέδου ἀντικαθημένου
+   ἀνθιππεύωσιν ἀλλήλοις, καὶ διώκωσι μὲν μέχρι τῆς πολεμίας φάλαγγος
+   τοὺς ἀντίους, φεύγωσι δὲ μέχρι τῆς φιλίας, ἀγαθὸν καὶ ἐνταῦθα
+   ἐπίστασθαι ὅτι ἕως μὲν ἂν παρὰ τοὺς φίλους τις ἦι, καλὸν καὶ ἀσφαλὲς
+   τὸ ἐν πρώτοις ἀναστρέψαντα ἀνὰ κράτος ἐπικεῖσθαι, ὅταν δ' ἐγγὺς τῶν
+   ἐναντίων γίγνηται, ὑποχείριον τὸν <name type="animal" xml:lang="fr">cheval</name> ἔχειν. Οὕτω γὰρ ἂν ὡς τὸ
+   εἰκὸς μάλιστα δύναιτο βλάπτων τοὺς ἐναντίους μὴ βλάπτεσθαι ὑπ'
+   αὐτῶν.</p>
+</div>
+
+<div type="section" n="13">
+   <p><persName>Ἀνθρώποις</persName> μὲν οὖν ἄνθρωπον ἔδοσαν οἱ <name type="deity">θεοὶ</name>
+   λόγῳ διδάσκειν ἃ δεῖ ποιεῖν, <name type="animal" xml:lang="fr">cheval</name> δὲ δῆλον ὅτι λόγῳ μὲν οὐδὲν ἂν
+   διδάξαις· ἢν δὲ ὅταν μὲν ποιήσῃ ὡς ἂν βούλοιο, ἀντιχαρίσῃ τι αὐτῷ,
+   ὅταν δὲ ἀπειθῇ, κολάζῃς, οὕτω μάλιστ' ἂν μάθοι τὸ δέον ὑπηρετεῖν.</p>
+
+   <p>Καὶ ἔστι μὲν τοῦτο ἐν βραχεῖ εἰπεῖν, δι' ὅλης
+   δὲ τῆς ἱππικῆς παρακολουθεῖ. Καὶ γὰρ <name type="animal" xml:lang="fr">cheval</name> χαλινὸν μᾶλλον ἂν λαμβάνοι, εἴ
+   ὁπότε δέξαιτο ἀγαθὸν τι αὐτῷ ἀποβαίνοι· καὶ διαπηδώιη δ' ἂν καὶ
+   ἐξάλλοιτο καὶ τἆλλα πάντα ὑπηρετοίη ἄν, εἰ προσδοκώιη, ὁπότε τὰ
+   σημαινόμενα πράξειε, ῥαιστώνην τινά.</p>
+</div>
+<div type="chapter" n="8">
+   <head>Du saut des fossés, du galop dans les descentes et dans les montées. Manœuvre préparatoire à la guerre.</head>
+   <p>[1] Comme il faut que le <name type="animal" xml:lang="fr">cheval</name>, suivant l’occurrence, coure sur des pentes rapides, droites, obliques, qu’il saute en long, de bas en haut et de haut en bas, le <persName>cavalier</persName> doit apprendre toutes ces manœuvres et y exercer son <name type="animal" xml:lang="fr">cheval</name>, moyen infaillible de se sauver et de se servir l’un l’autre. [2]</p>
+   <p>Si l’on croit que nous tombons dans une redite, parce que nous avons parlé de cela plus haut, nous répondons que ce n’en est pas une. En effet, quand il s’agissait de l'achat, nous recommandions d’essayer si le <name type="animal" xml:lang="fr">cheval</name> serait propre à ces manœuvres ; à présent, nous disons qu’il faut l’instruire, et nous allons exposer comment on l’instruit.</p>
+   <p>[3] Quand on a un <name type="animal" xml:lang="fr">cheval</name> qui ne sait pas du tout sauter un fossé, on le prend par la longe, qu’on tient lâche, et l’on saute le premier ; puis on tire la longe à soi pour le faire sauter ; [4]</p>
+   <p>s’il refuse, on a là quelqu’un muni d’un fouet ou d’une baguette, qui le pousse vigoureusement. Il saute alors, non pas ce qui est nécessaire, mais beaucoup plus qu’il ne faut. A l’avenir, il n’y aura plus besoin de le frapper ; dès qu’il sentira quelqu’un derrière lui, il sautera.</p>
+   <p>[5] Une fois accoutumé à sauter ainsi, on le monte et on le présente à de petits obstacles, puis à de plus grands : au moment où il va</p>
+</div>
+<div type="section" n="54">
+   <p>s’élancer, on l’<name type="animal" xml:lang="fr">éperonne</name>. Pour sauter de haut en bas et de bas en haut, on l’<name type="animal" xml:lang="fr">éperonne</name> de même : car, en se ramassant pour le mouvement, il est bien plus sûr pour lui même et pour le cavalier, que s’il s’arrêtait sur cul dans le fossé, la descente ou la montée.</p>
+   <p>[6]</p>
+   <p>Pour l’exercer à la descente, on choisira d’abord une terre molle :</p>
+   <p>l’habitude une fois prise, il courra plus volontiers en descendant qu’en montant. Ceux qui redoutent de briser les épaules de leurs <name type="animal" xml:lang="fr">chevaux</name> en galopant dans les descentes, qu’ils se rassurent : les <persName>Perses</persName> et les <persName>Odryses</persName> font tous des courses sur des pentes rapides, et leurs <name type="animal" xml:lang="fr">chevaux</name> sont aussi nets que ceux des <persName>Grecs</persName>.</p>
+   <p>[7]</p>
+   <p>Nous ne manquerons pas de dire comment l’<persName>homme</persName> doit se comporter dans chacun de ces mouvements. Quand le <name type="animal" xml:lang="fr">cheval</name> part tout à coup, il faut d’abord porter le corps en avant, afin que le <name type="animal" xml:lang="fr">cheval</name> puisse moins se dérober et jeter à bas son <persName>homme</persName> ; l’instant d’après, s’il s’arrête court, on le porte en arrière, ce qui affaiblit la secousse.</p>
+   <p>[8]</p>
+   <p>Quand on saute un fossé, ou qu’on gravit une montée, il est bon de prendre une poignée de crins, afin d’éviter que le <name type="animal" xml:lang="fr">cheval</name> soit gêné à la fois par la nature du terrain et par l’appui du mors. À la descente, on portera le corps en arrière et on soutiendra la bride, de peur que <persName>homme</persName> et <name type="animal" xml:lang="fr">cheval</name> ne culbutent.</p>
+   <p>[9]</p>
+   <p>Il n’est pas mauvais de varier le lieu des exercices, et de les</p>
+</div>
+<div type="section" n="55">
+   <p>faire durer tantôt plus, tantôt moins. Le <name type="animal" xml:lang="fr">cheval</name> se dégoûte moins que s’il travaille toujours de la même manière et dans le même endroit. [10]</p>
+   <p>Comme il est nécessaire par tous pays que le cavalier, en galopant, soit bien lié à sa monture, et qu’il puisse de dessus son <name type="animal" xml:lang="fr">cheval</name> bien user de ses armes, il ne faut pas blâmer l’exercice de la chasse à courre sur des terrains favorables et giboyeux. Si l’on n’en a pas à proximité, voici un bon exercice : deux cavaliers se concertent : l’un fuit à toute bride sur toute espèce de terrains et s’éloigne la lance en arrière ; l’autre le poursuit avec des javelots arrondis par le bout et une lance de même forme. Il faut qu’arrivés à la portée du trait, ce dernier lance ses javelots arrondis sur le fuyard, et que, à portée de la lance, il le frappe de son arme. [11]</p>
+   <p>C’est encore une chose excellente, quand ils en viennent aux mains, de tirer à soi son adversaire, puis de le repousser tout à coup ; rien ne vaut mieux pour le jeter à bas. De son côté, celui qui est tiré fera bien de lancer aussitôt son <name type="animal" xml:lang="fr">cheval</name>. Par là, il culbutera son adversaire, au lieu d’en être culbuté.</p>
+   <p>[12]</p>
+   <p>Supposons maintenant deux camps assis l’un en face de l’autre ; on escarmouche des deux parts : on poursuit ses adversaires jusqu’à la phalange opposée, et l’on se replie ensuite sur la sienne. Or, voici, en pareil cas, ce qu’il est bon de savoir : tant que l’on</p>
+</div>
+<div type="book" n="56">
+   <p>n’est pas loin de son parti, le meilleur et le plus sûr, c’est, après une demi-volte, de se lancer sur l’ennemi et de <name type="animal" xml:lang="fr">lai</name> tenir vigoureusement tête ; puis, quand on arrive près du parti opposé, de retenir son <name type="animal" xml:lang="fr">cheval</name> en main. De la sorte, on fait certainement du mal aux ennemis, qui ne peuvent vous faire aucun mal.</p>
+   <p>[13]</p>
+   <p>L’<persName>homme</persName> a dans la parole, que lui ont donnée les <name type="deity">dieux</name>, le moyen d’enseigner à l’<persName>homme</persName> ce qu’il doit faire ; mais il est clair qu’on ne peut, avec le même moyen, rien apprendre au <name type="animal" xml:lang="fr">cheval</name>. Fait-il ce que vous voulez, caressez-le ; châtiez-le, s’il désobéit : voilà comme il apprendra à bien faire son service (26).</p>
+   <p>[14] Ceci, toutefois, n’est pas long à dire, mais exige une pratique continuelle de l’équitation. Le <name type="animal" xml:lang="fr">cheval</name> recevra le mors plus volontiers si, en le recevant, il en résulte pour lui quelque bien ; il sautera les fossés, il s’élancera de bas en haut, il fera tout ce qu’on exigera de lui, si l’obéissance lui procure un peu de repos.</p>
+   <div type="chapter" n="9">
+      <p><foreign xml:lang="grc">Περὶ ἱππικῆς</foreign></p>
+      <p><foreign xml:lang="grc">Κεφάλαιον θʹ</foreign></p>
+      <p>[1] <foreign xml:lang="grc">Καὶ τὰ μὲν δὴ εἰρημένα ταῦτ' ἐστίν, ὡς ἂν ἥκιστα μὲν ἐξαπατῷτο καὶ πῶλον καὶ ἵππον ὠνούμενος, ἥκιστα δ' ἂν διαφθείροι χρώμενος, μάλιστα δ' ἂν ἵππον ἀποδεικνύοι, εἰ δέοι, ἔχοντα ὧν ἱππεὺς δεῖται εἰς πόλεμον.</foreign></p>
+      <p><foreign xml:lang="grc">Καιρὸς δ' ἴσως γράψαι καί, εἴ ποτε συμβαίη θυμοειδεστέρῳ ἵππῳ τοῦ καιρίου χρῆσθαι ἢ βλακωδεστέρῳ, ὡς ἂν ὀρθότατα ἑκατέρῳ χρῷτο.</foreign></p>
+   </div>
+</div>
+<div type="chapter" n="57">
+   <p><foreign xml:lang="grc">Πρῶτον μὲν τοίνυν</foreign></p>
+   <p><foreign xml:lang="grc">χρὴ τοῦτο γνῶναι, ὅτι ἐστὶ θυμὸς ἵππῳ ὅπερ ὀργὴ ἀνθρώπῳ.</foreign> <foreign xml:lang="grc">Ὥσπερ οὖν</foreign>
+   <foreign xml:lang="grc">ἄνθρωπον ἥκιστ' ἂν ὀργίζοι τις [ὁ] μήτε λέγων χαλεπὸν μηδὲν μήτε</foreign>
+   <foreign xml:lang="grc">ποιῶν, οὕτω καὶ ἵππον θυμοειδῆ ὁ μὴ ἀνιῶν ἥκιστ' ἂν ἐξοργίζοι.</foreign></p>
+   <p><foreign xml:lang="grc">Εὐθὺς μὲν οὖν χρὴ ἐν τῇ ἀναβάσει ἐπιμελεῖσθαι ὡς ἂν ἥκιστ' ἀναβαίνων</foreign>
+   <foreign xml:lang="grc">λυποίη·</foreign> <foreign xml:lang="grc">ἐπειδὰν δὲ ἀναβῇ, ἠρεμήσαντα πλείω χρόνον ἢ τὸν ἐπιτυχόντα</foreign>
+   <foreign xml:lang="grc">οὕτω προκινεῖν αὐτὸν ὡς πραιοτάτοις σημείοις·</foreign></p>
+
+   <p><foreign xml:lang="grc">ἔπειτα δ' ἐκ τοῦ</foreign>
+   <foreign xml:lang="grc">βραδυτάτου ἀρχόμενον οὕτως αὖ εἰς τὸ θᾶττον προάγειν, ὡς ἂν μάλιστα</foreign>
+   <foreign xml:lang="grc">λανθάνοι αὑτὸν ὁ ἵππος εἰς τὸ ταχὺ ἀφικνούμενος.</foreign></p>
+
+   <p><foreign xml:lang="grc">Ὅ τι δ' ἂν</foreign>
+   <foreign xml:lang="grc">ἐξαίφνης σημήνῃ, θυμοειδῆ ἵππον ὥσπερ ἄνθρωπον ταράττει τὰ ἐξαπίναια</foreign>
+   <foreign xml:lang="grc">καὶ ὁράματα καὶ ἀκούσματα καὶ παθήματα.</foreign> <foreign xml:lang="grc">Εἰδέναι δὲ χρὴ ὅτι καὶ ἐν</foreign>
+   <foreign xml:lang="grc">ἵππῳ τὰ ἐξαπίναια τάραχον ἐξεργάζεται.</foreign></p>
+
+   <p><foreign xml:lang="grc">Ἢν δὲ καὶ εἰς τὸ θᾶττον</foreign>
+   <foreign xml:lang="grc">ὁρμώμενον τοῦ καιροῦ ὑπολαμβάνειν βούλῃ τὸν θυμοειδῆ, οὐ δεῖ</foreign>
+   <foreign xml:lang="grc">ἐξαπιναίως σπᾶν, ἀλλ' ἠρεμαίως προσάγεσθαι τῷ χαλινῷ, πραΰνοντα, οὐ</foreign>
+   <foreign xml:lang="grc">βιαζόμενον ἠρεμεῖν.</foreign></p>
+
+   <p><foreign xml:lang="grc">Καὶ αἵ τε μακραὶ ἐλάσεις μᾶλλον ἢ αἱ πυκναὶ</foreign>
+   <foreign xml:lang="grc">ἀποστροφαὶ πραΰνουσι τοὺς ἵππους, καὶ αἱ ἡσυχαῖοι μὲν, πολυχρόνιοι</foreign>
+   <foreign xml:lang="grc">δὲ καθέψουσι καὶ πραΰνουσι καὶ οὐκ ἀνεγείρουσι τὸν θυμοειδῆ.</foreign></p>
+
+   <p><foreign xml:lang="grc">Εἰ</foreign>
+   <foreign xml:lang="grc">δέ τις οἴεται, ἢν ταχὺ καὶ πολλὰ ἐλαύνηται, ἀπειπεῖν ποιήσας τὸν</foreign>
+   <foreign xml:lang="grc">ἵππον πραϋνεῖν, τἀναντία γιγνώσκει τοῦ γιγνομένου.</foreign> <foreign xml:lang="grc">Ἐν γὰρ τοῖς</foreign>
+   <foreign xml:lang="grc">τοιούτοις ὁ θυμοειδὴς καὶ ἄγειν βίαι μάλιστα ἐπιχειρεῖ καὶ σὺν τῇ</foreign>
+   <foreign xml:lang="grc">ὀργῇ, ὥσπερ ἄνθρωπος ὀργίλος, πολλάκις καὶ ἑαυτὸν καὶ τὸν ἀναβάτην</foreign>
+   <foreign xml:lang="grc">πολλὰ ἀνήκεστα ἐποίησεν.</foreign></p>
+</div>
+<div type="chapter" n="8">
+   <p>
+      <foreign xml:lang="grc">Ἐπιλαμβάνειν</foreign> δὲ χρὴ <name type="animal" xml:lang="fr">cheval</name> θυμοειδῆ καὶ
+      τότε τοῦ εἰς τὸ τάχιστον ὁρμᾶν, τοῦ δὲ δὴ παραβάλλειν <name type="animal" xml:lang="fr">cheval</name> καὶ
+      παντάπασιν ἀπέχεσθαι· σχεδὸν γὰρ οἱ θυμοειδέστατοι καὶ φιλονικότατοι
+      τῶν <name type="animal" xml:lang="fr">chevaux</name> γίγνονται.
+   </p>
+</div>
+
+<div type="chapter" n="9">
+   <p>
+      Καὶ χαλινοὶ δὲ οἱ λεῖοι ἐπιτηδειότεροι τῶν
+      τραχέων. <foreign xml:lang="grc">Ἐὰν</foreign> δὲ καὶ τραχὺς ἐμβληθῇ, τῇ χαλαρότητι λείῳ δεῖ αὐτὸν
+      ἀφομοιοῦν.
+   </p>
+   <p>
+      Ἀγαθὸν δὲ ἐθίζειν αὑτὸν καὶ τὸ ἡρεμεῖν, μάλιστα ἐπὶ
+      θυμοειδοῦς <name type="animal" xml:lang="fr">cheval</name>, καὶ τὸ ὡς ἥκιστα ἄλλῳ τινὶ ἅπτεσθαι ἢ οἷς τοῦ
+      καθῆσθαι ἀσφαλῶς ἕνεκα ἁπτόμεθα.
+   </p>
+</div>
+
+<div type="section" n="10">
+   <p>
+      <foreign xml:lang="grc">Εἰδέναι</foreign> δὲ χρὴ ὅτι δίδαγμά τί
+      ἐστι καὶ τὸ ποππυσμῷ μὲν πραΰνεσθαι, κλωσμῷ δὲ ἐγείρεσθαι, καὶ εἴ
+      τις ἐξ ἀρχῆς ἐπὶ μὲν κλωσμῷ τὰ πραέα, ἐπὶ δὲ ποππυσμῷ τὰ χαλεπὰ
+      προσφέροι, μάθοι ἂν ὁ <name type="animal" xml:lang="fr">cheval</name> ποππυσμῷ μὲν ἐγείρεσθαι, κλωσμῷ δὲ
+      πραΰνεσθαι.
+   </p>
+   <p>
+      <foreign xml:lang="grc">Οὕτως</foreign> οὖν δεῖ καὶ παρὰ κραυγὴν καὶ παρὰ σάλπιγγα
+      μήτ' αὐτὸν φαίνεσθαι τεθορυβημένον τῷ <name type="animal" xml:lang="fr">cheval</name> μήτε μὴν ἐκείνῳ θορυβῶδες
+      μηδὲν προσφέρειν, ἀλλ' εἰς τὸ δυνατὸν καὶ ἀναπαύειν ἐν τῷ τοιούτῳ
+      καὶ ἄριστα καὶ δεῖπνα, εἰ ἐγχωροίη, προσφέρειν.
+   </p>
+</div>
+
+<div type="section" n="11">
+   <p>
+      <foreign xml:lang="grc">Κάλλιστον</foreign> δὲ
+      συμβούλευμα τὸ ἄγαν θυμοειδῆ <name type="animal" xml:lang="fr">cheval</name> μὴ κτᾶσθαι εἰς πόλεμον. Βλᾶκα γε
+      μὴν <name type="animal" xml:lang="fr">cheval</name> ἀρκεῖν μοι δοκεῖ γράψαι πάντα τἀναντία ποιεῖν ὅσων τῷ
+      θυμοειδεῖ χρῆσθαι συμβουλεύομεν.
+   </p>
+</div>
+<div type="chapter" n="9">
+   <p>Des chevaux vicieux.</p>
+   <p>[1] Dans ce qui a été dit jusqu’ici, nous avons indiqué le moyen de déjouer la fraude dans l’acquisition d’un <name type="animal" xml:lang="fr">poulain</name> et d’un <name type="animal" xml:lang="fr">cheval</name>, et la manière de s’en servir sans le gâter, surtout si le cavalier veut le montrer comme ayant toutes les qualités requises pour un <name type="animal" xml:lang="fr">cheval</name> de guerre. Le moment paraît être venu d’enseigner à tirer, au besoin, le meilleur parti possible d’un <name type="animal" xml:lang="fr">cheval</name> trop vif ou trop paresseux.</p>
+   <p>[2] Et d’abord il faut se faire cette idée, que la fougue, chez le <name type="animal" xml:lang="fr">cheval</name>, est la même chose que la colère chez l’<persName>homme</persName>. L’<persName>homme</persName> ne se met pas en colère quand on ne l’offense ni en paroles ni en actions ;</p>
+   <p>de même on n’irrite point un <name type="animal" xml:lang="fr">cheval</name> fougueux en évitant de le chagriner.[3] Il faut donc tout d’abord, en le montant, avoir soin de ne pas lui causer de souffrance. Une fois à cheval, tenez-le en place plus longtemps que tout autre, et portez-le en avant par les moyens les plus doux (27). Vous commencez par les allures les plus lentes, puis vous passez successivement au trot et au galop, sans que le <name type="animal" xml:lang="fr">cheval</name> s’en aperçoive. [4] Tout ordre transmis brusquement par le cavalier trouble un <name type="animal" xml:lang="fr">cheval</name> ardent, comme tout ce qu’un <persName>homme</persName> voit, entend ou souffre contre son attente. Il faut savoir que tout ce qui est subit lui donne de l’inquiétude. [5] Voulez-vous retenir un <name type="animal" xml:lang="fr">cheval</name> ardent qui</p>
+</div>
+<div type="book" n="60">
+   <div type="section" n="6">
+      <p>cherche à gagner, il ne faut pas, pour l’arrêter, tirer tout d’un
+         coup, mais user moelleusement de la bride, le ralentissant avec
+         douceur, et non de force (28).</p>
+      <p>[6] Les exercices sur la ligne droite apaisent mieux les <name type="animal" xml:lang="fr">chevaux</name> que les changements de direction répétés, et les allures modérées éteignent peu à peu l’ardeur du <name type="animal" xml:lang="fr">cheval</name>, dont elles calment la fougue au lieu de l’animer.</p>
+      <p>[7] Croire que des courses vives et fréquentes, où l’on fait renoncer le <name type="animal" xml:lang="fr">cheval</name>, servent à le calmer, c’est se tromper du tout au tout : car, mené ainsi, le <name type="animal" xml:lang="fr">cheval</name> ardent essaye de son côté de gagner de violence ; et, dans sa fougue, comme l’<name type="animal" xml:lang="fr">homme</name> colère, il peut se faire, ainsi qu’à son cavalier, des maux sans remède.</p>
+      <p>[8] On prendra garde qu’un <name type="animal" xml:lang="fr">cheval</name> ardent ne parte avec trop de vitesse, mais on évitera surtout qu’il ne lutte de vitesse avec un autre <name type="animal" xml:lang="fr">cheval</name> : car presque tous les <name type="animal" xml:lang="fr">chevaux</name> qui ont le plus d’émulation sont aussi les plus fougueux.</p>
+      <p>[9] Les mors doux leur conviennent mieux que les durs ; et, si le <name type="animal" xml:lang="fr">cheval</name> est embouché avec un dur, rendez-le doux par la légèreté de la main (29).</p>
+      <p>Il est bon de s’accoutumer soi-même à être calme, surtout sur un <name type="animal" xml:lang="fr">cheval</name> ardent, et à n’avoir avec lui que les points de contact qui nous sont indispensables pour l’assiette (30).</p>
+      <p>[10] Un précepte excellent à connaître, c’est qu’on calme un <name type="animal" xml:lang="fr">cheval</name> par un sifflement et qu’on</p>
+   </div>
+</div>
+<div type="section" n="61">
+   <p>l’<name type="animal" xml:lang="fr">cheval</name> excite par un coup de langue. Toutefois, si, dès le commencement, on faisait suivre le coup de langue d’une caresse, et le sifflet d’une correction, le <name type="animal" xml:lang="fr">cheval</name> apprendrait à partir au sifflement, et à s’arrêter au coup de langue (31).</p>
+   <p>De même, il ne faut pas, au cri de guerre ou au son de la trompette, paraître troublé à son <name type="animal" xml:lang="fr">cheval</name>, et lui présenter rien qui le trouble ; mais, autant que possible, calmez-le, et même, si vous le pouvez, offrez-lui son déjeuner ou son souper.</p>
+   <p>Le meilleur conseil à suivre, c’est de ne jamais choisir un <name type="animal" xml:lang="fr">animal</name> fougueux pour <name type="animal" xml:lang="fr">cheval</name> de campagne. Quant au <name type="animal" xml:lang="fr">cheval</name> froid, il me suffira de dire qu’on doit le traiter par une méthode opposée à celle qui convient au <name type="animal" xml:lang="fr">cheval</name> ardent.</p>
+</div>
+<div type="section" n="93">
+   <p><foreign xml:lang="grc">Περὶ ἱππικῆς</foreign></p>
+   <p><foreign xml:lang="grc">Κεφάλαιον ιʹ</foreign></p>
+</div>
+<div type="section" n="62">
+   <p><quote><foreign xml:lang="grc">Ἢν δέ τίς ποτε βουληθῇ χρῆσθαι τῷ χρησίμῳ εἰς πόλεμον ἵππῳ ὡς μεγαλοπρεπεστέρῳ τε καὶ περιβλεπτοτέρῳ ἱππάζεσθαι</foreign>, τοῦ μὲν ἕλκειν τε τὸ στόμα τῷ χαλινῷ καὶ μυωπίζειν τε καὶ μαστιγοῦν τὸν <name type="animal" xml:lang="fr">cheval</name>, ἃ οἱ πολλοὶ ποιοῦντες λαμπρύνειν οἴονται, ἀπέχεσθαι δεῖ· πάντα γὰρ τἀναντία οὗτοί γε ποιοῦσιν ὧν βούλονται.</quote></p>
+   <p><quote><foreign xml:lang="grc">Τά τε γὰρ στόματα ἕλκοντες ἄνω ἀντὶ τοῦ προορᾶν ἐκτυφλοῦσι τοὺς ἵππους</foreign> καὶ <foreign xml:lang="grc">μυωπίζοντες</foreign> καὶ <foreign xml:lang="grc">παίοντες</foreign> <foreign xml:lang="grc">ἐκπλήττουσιν</foreign>, <foreign xml:lang="grc">ὡς τεταράχθαι</foreign> καὶ <foreign xml:lang="grc">κινδυνεύειν</foreign>. Ταῦτα δ' ἐστὶν <name type="animal" xml:lang="fr">chevaux</name> ἔργα τῶν μάλιστα ἀχθομένων <foreign xml:lang="grc">ἱππασίαι</foreign> καὶ αἰσχρὰ καὶ οὐ καλὰ ποιούντων.</quote></p>
+   <p><quote><foreign xml:lang="grc">Ἐὰν δέ τις διδάξῃ τὸν ἵππον ἐν χαλαρῷ μὲν τῷ χαλινῷ ἱππεύειν</foreign>, <foreign xml:lang="grc">ἄνω δὲ τὸν αὐχένα αἴρειν</foreign>, <foreign xml:lang="grc">ἀπὸ δὲ τῆς κεφαλῆς κυρτοῦσθαι</foreign>, <foreign xml:lang="grc">οὕτως ἂν ἀπεργάζοιτο ποιεῖν τὸν ἵππον οἵοισπερ καὶ αὐτὸς ἥδεταί τε καὶ ἀγάλλεται</foreign>.</quote></p>
+   <p><quote><foreign xml:lang="grc">Τεκμήριον δὲ ὅτι τούτοις ἥδεται</foreign>· <foreign xml:lang="grc">ὅταν γὰρ αὐτὸς σχηματοποιεῖσθαι θέλῃ παρ' ἵππους</foreign>, <foreign xml:lang="grc">μάλιστα δὲ ὅταν παρὰ θηλείας</foreign>, <foreign xml:lang="grc">τότε αἴρει τε τὸν αὐχένα ἄνω</foreign> καὶ <foreign xml:lang="grc">κυρτοῖ μάλιστα τὴν κεφαλὴν γοργούμενος</foreign>, <foreign xml:lang="grc">καὶ τὰ μὲν σκέλη ὑγρὰ μετεωρίζει</foreign>, <foreign xml:lang="grc">τὴν δὲ οὐρὰν ἄνω ἀνατείνει</foreign>.</quote></p>
+   <p><quote><foreign xml:lang="grc">Ὅταν οὖν τις αὐτὸν εἰς ταῦτα προάγῃ ἅπερ αὐτὸς σχηματοποιεῖται</foreign>, <foreign xml:lang="grc">ὅταν μάλιστα καλλωπίζηται</foreign>, <foreign xml:lang="grc">οὕτως ἡδόμενόν τε τῇ ἱππασίαι</foreign> καὶ <foreign xml:lang="grc">μεγαλοπρεπῆ</foreign> καὶ <foreign xml:lang="grc">γοργὸν</foreign> καὶ <foreign xml:lang="grc">περίβλεπτον</foreign> <foreign xml:lang="grc">ἀποφαίνει τὸν ἵππον</foreign>.</quote></p>
+</div>
+<div type="chapter" n="63">
+   <p>
+      <foreign xml:lang="grc">Ὡς οὖν ἡγούμεθα ταῦτ' ἂν</foreign>
+      ἀπεργασθῆναι νῦν αὖ πειρασόμεθα διηγεῖσθαι.
+   </p>
+   <p>
+      <foreign xml:lang="grc">[6]</foreign>
+      Πρῶτον μὲν τοίνυν χρὴ οὐ μεῖον δυοῖν <name type="animal" xml:lang="fr">chevaux</name> χαλινοῖν κεκτῆσθαι.
+      Τούτων δὲ ἔστω ὁ μὲν λεῖος, τοὺς τροχοὺς εὐμεγέθεις ἔχων, ὁ δ' ἕτερος τοὺς μὲν τροχοὺς καὶ βαρεῖς καὶ ταπεινούς, τοὺς δ' ἐχίνους ὀξεῖς, ἵνα,
+      <foreign xml:lang="grc">ὁπόταν μὲν τοῦτον λάβῃ</foreign>, ἀσχάλλων τῇ τραχύτητι διὰ τοῦτο ἀφίῃ, <foreign xml:lang="grc">ὅταν δὲ τὸν λεῖον μεταλάβῃ</foreign>, τῇ μὲν λειότητι αὐτοῦ ἡσθῇ,
+      <foreign xml:lang="grc">ἃ δ' ἂν ὑπὸ τοῦ τραχέος παιδευθῇ</foreign>, ταὐτὰ δὲ καὶ ἐν τῷ λείῳ ποιῇ.
+   </p>
+   <p>
+      <foreign xml:lang="grc">[7]</foreign>
+      <foreign xml:lang="grc">Ἢν δ' αὖ καταφρονήσας τῆς λειότητος θαμινὰ ἀπερείδηται ἐν αὐτῷ</foreign>, τούτου ἕνεκα τοὺς τροχοὺς μεγάλους τῷ λείῳ προστίθεμεν, ἵνα χάσκειν ἀναγκαζόμενος ὑπ' αὐτῶν ἀφίῃ τὸ στόμιον.
+   </p>
+   <p>
+      <foreign xml:lang="grc">Οἷόν τε δὲ καὶ τὸν τραχὺν παντοδαπὸν ποιεῖν</foreign> καὶ κατειλοῦντα καὶ κατατείνοντα.
+      <foreign xml:lang="grc">Ὁποῖοι δ' ἂν ὦσι χαλινοί</foreign>, πάντες ὑγροὶ ἔστωσαν.
+   </p>
+   <p>
+      <foreign xml:lang="grc">[8]</foreign>
+      <foreign xml:lang="grc">Τὸν μὲν γὰρ σκληρόν</foreign>, <foreign xml:lang="grc">ὅπῃ ἂν ὁ ἵππος λάβῃ</foreign>, ὅλον ἔχει πρὸς ταῖς γνάθοις, <foreign xml:lang="grc">ὥσπερ καὶ ὀβελίσκον</foreign>,
+      <foreign xml:lang="grc">ὁπόθεν ἄν τις λάβῃ</foreign>, ὅλον αἴρει.
+   </p>
+   <p>
+      <foreign xml:lang="grc">[9]</foreign>
+      <foreign xml:lang="grc">Ὁ δὲ ἕτερος ὥσπερ ἡ ἅλυσις ποιεῖ</foreign>· ὃ γὰρ ἂν ἔχῃ τις αὐτοῦ, τοῦτο μόνον ἄκαμπτον μένει, τὸ δὲ ἄλλο ἀπήρτηται.
+      <foreign xml:lang="grc">Τὸ δὲ φεῦγον ἐν τῷ στόματι ἀεὶ θηρεύων ἀφίησιν ἀπὸ τῶν γνάθων τὸ στόμιον</foreign>· τούτου ἕνεκα καὶ οἱ κατὰ μέσον ἐκ τῶν ἀξόνων δακτύλιοι κρεμάννυνται,
+      <foreign xml:lang="grc">ὅπως τούτους διώκων τῇ τε γλώττῃ καὶ τοῖς ὀδοῦσιν ἀμελῇ τοῦ ἀναλαμβάνειν πρὸς τὰς γνάθους τὸν χαλινόν</foreign>.
+   </p>
+</div>
+<div type="book" n="64">
+   <div type="section" n="10">
+      <p>
+         <foreign xml:lang="grc">Εἰ δέ τις ἀγνοεῖ</foreign>, τί τὸ ὑγρὸν τοῦ <name type="animal" xml:lang="fr">χαλινοῦ</name> καὶ τί τὸ σκληρόν, γράψομεν καὶ τοῦτο. Ὑγρὸν μὲν γάρ ἐστιν ὅταν οἱ ἄξονες εὐρείας καὶ λείας ἔχωσι τὰς συμβολάς, ὥστε ῥαιδίως κάμπτεσθαι· καὶ πάντα δὲ ὁπόσα περιτίθεται περὶ τοὺς ἄξονας ἢν εὐρύστομα ἦι καὶ μὴ σύμπυκνα, ὑγρότερά ἐστιν.
+      </p>
+   </div>
+   <div type="section" n="11">
+      <p>
+         <foreign xml:lang="grc">Ἢν δὲ χαλεπῶς ἕκαστα τοῦ <name type="animal" xml:lang="fr">χαλινοῦ</name> διατρέχῃ καὶ συνθέῃ</foreign>, τοῦτ' ἐστὶ τὸ σκληρὸν εἶναι. Ὁποῖος δ' ἄν τις ἦι, τούτῳ τάδε γε πάντα ταὐτὰ ποιητέον, ἤνπερ γε βούληται ἀποδείξασθαι τὸν <name type="animal" xml:lang="fr">ἵππον</name> οἷονπερ εἴρηται·
+      </p>
+   </div>
+   <div type="section" n="12">
+      <p>
+         <foreign xml:lang="grc">ἀνακρουστέον μὲν τὸ στόμα τοῦ <name type="animal" xml:lang="fr">ἵππου</name> οὔτε ἄγαν χαλεπῶς ὥστ' ἐκνεύειν</foreign>, οὔτε ἄγαν ἡσύχως ὡς μὴ αἰσθάνεσθαι· <foreign xml:lang="grc">ἐπειδὰν δὲ ἀνακρουόμενος αἴρῃ τὸν αὐχένα</foreign>, δοτέον εὐθὺς τὸν <name type="animal" xml:lang="fr">χαλινόν</name>. Καὶ τἆλλα δὲ δεῖ, ὥσπερ οὐ παυόμεθα λέγοντες, ἐν ὧι ἂν καλῶς ὑπηρετῇ, χαρίζεσθαι τῷ <name type="animal" xml:lang="fr">ἵππῳ</name>.
+      </p>
+   </div>
+   <div type="section" n="13">
+      <p>
+         <foreign xml:lang="grc">Καὶ ὅταν δ' αἴσθηται ἡδόμενον τὸν <name type="animal" xml:lang="fr">ἵππον</name> τῇ τε ὑψαυχενίαι καὶ τῇ χαλαρότητι</foreign>, ἐν τούτῳ οὐδὲν δεῖ χαλαπὸν προσφέρειν ὡς πονεῖν ἀναγκάζοντα, ἀλλὰ θωπεύειν ὡς ἱππάσασθαι βουλόμενον· οὕτω γὰρ μάλιστα θαρρῶν πρόεισιν εἰς τὴν ταχεῖαν <foreign xml:lang="grc">ἱππασίαν</foreign>.
+      </p>
+   </div>
+   <div type="section" n="14">
+      <p>
+         <foreign xml:lang="grc">Ὡς δὲ καὶ τῷ ταχὺ θεῖν <name type="animal" xml:lang="fr">ἵππος</name> ἥδεται τεκμήριον·</foreign> ἐκφυγὼν γὰρ οὐδεὶς βάδην πορεύεται, ἀλλὰ θεῖ. Τούτῳ γὰρ πέφυκεν ἥδεσθαι, ἢν μή τις πλείω τοῦ καιροῦ θεῖν ἀναγκάζῃ· ὑπερβάλλον δὲ τὸν καιρὸν οὐδὲν τῶν πάντων ἡδὺ οὔτε <name type="animal" xml:lang="fr">ἵππῳ</name> οὔτε <name type="animal" xml:lang="fr">ἀνθρώπῳ</name>.
+      </p>
+   </div>
+</div>
+<div type="section" n="65">
+   <p>
+      <quote>
+         <foreign xml:lang="grc">Ὅταν γε μὴν</foreign> εἰς τὸ ἱππάζεσθαι μετὰ τοῦ <name type="animal" xml:lang="fr">cheval</name> ἀφιγμένος ἦι, εἰθισμένος μὲν δήπου ἡμῖν ἦν ἐν τῇ πρώτῃ ἱππασίαι ἐκ τῶν στροφῶν εἰς τὸ θᾶττον ὁρμᾶσθαι.
+      </quote>
+   </p>
+   <p>
+      <quote>
+         <foreign xml:lang="grc">Ἢν δέ τις τοῦτο [μὲν] μεμαθηκότος αὐτοῦ ἅμα ἀντιλαμβάνηταί</foreign> τε τῷ χαλινῷ καὶ σημήνῃ τῶν ὁρμητηρίων τι, οὕτως ὑπὸ μὲν τοῦ χαλινοῦ πιεσθείς, ὑπὸ δὲ τοῦ ὁρμᾶν σημανθῆναι ἐγερθείς, [καὶ] προβάλλεται μὲν τὰ στέρνα, αἴρει δὲ ἄνω τὰ σκέλη ὀργιζόμενος, οὐ μέντοι ὑγρά γε· οὐ γὰρ μάλα ὅταν λυπῶνται <foreign xml:lang="grc">ὑγροῖς</foreign> τοῖς σκέλεσιν <name type="animal" xml:lang="fr">chevaux</name> χρῶνται.
+      </quote>
+   </p>
+   <p>
+      <quote>
+         <foreign xml:lang="grc">Ἢν δέ τις οὕτως ἀνεζωπυρημένῳ αὐτῷ δῷ τὸν χαλινόν</foreign>, ἐνταῦθ' ὑφ' ἡδονῆς τῷ διὰ τὴν χαλαρότητα τοῦ στομίου λελύσθαι νομίζειν, <name type="animal" xml:lang="fr">cheval</name> μὲν τῷ σχήματι, ὑγροῖν δὲ τοῖν σκελοῖν γαυριώμενος φέρεται, παντάπασιν ἐκμιμούμενος τὸν πρὸς <name type="animal" xml:lang="fr">chevaux</name> καλλωπισμόν.
+      </quote>
+   </p>
+   <p>
+      <quote>
+         <foreign xml:lang="grc">Καὶ οἱ θεώμενοι τὸν ἵππον τοιοῦτον ἐπικαλοῦσιν ἐλευθέριόν</foreign> τε καὶ ἐθελουργὸν καὶ ἱππαστὴν καὶ θυμοειδῆ καὶ σοβαρὸν καὶ ἅμα ἡδύν τε καὶ γοργὸν ἰδεῖν. Καὶ ταῦτα μὲν δή, <foreign xml:lang="grc">ἢν τούτων τις ἐπιθυμήσῃ</foreign>, μέχρι τούτων ἡμῖν γεγράφθω.
+      </quote>
+   </p>
+</div>
+<div type="chapter" n="10">
+   <p>Du <name type="animal" xml:lang="fr">cheval</name> de guerre ; de la beauté des allures et de la mise en main.</p>
+   <p>[1] Si l’on veut avoir un <name type="animal" xml:lang="fr">cheval</name> de guerre qui ait de belles allures et qui se fasse regarder, il ne faut pas lui lever la tête en même temps qu’on l’actionne du fouet et de l’éperon (32) : beaucoup de gens croient lui donner ainsi du brillant, mais il arrive à ces gens-là le contraire de ce qu’ils veulent. [2] En effet, en lui relevant trop la tête, on empêche le <name type="animal" xml:lang="fr">cheval</name> de voir devant soi, on le rend aveugle ; en l’éperonnant et en le fouettant, on l’effraye au point qu’il se trouble et vous met en danger : or, c’est justement ce qui arrive aux <name type="animal" xml:lang="fr">chevaux</name> qui se plient avec le plus de peine aux exercices du manège, et qui s’y comportent mal, au lieu de s’y distinguer. [3] Mais si l’on apprend à un <name type="animal" xml:lang="fr">cheval</name> à manœuvrer à brides lâches, et à relever le cou en ramenant la tête, on lui fera faire ainsi ce qui lui plaît et ce qui le flatte. [4] La preuve qu’il y prend plaisir, c’est que, lorsqu’il approche d’une troupe de <name type="animal" xml:lang="fr">chevaux</name> et surtout de <name type="animal" xml:lang="fr">juments</name>, il relève le cou et ramène la tête avec fierté, lève les jambes avec souplesse, et porte la queue haute. [5] Si donc on exige de lui l’habitude qui lui donne le meilleur air, on se créera un <name type="animal" xml:lang="fr">cheval</name> heureux de sa prestance, superbe, brillant, regardé.</p>
+   <p>Comment croyons-nous qu’on y arrive, nous allons essayer de le dire.</p>
+</div>
+<div type="section" n="6">
+   <p>D’abord il faut avoir toujours deux embouchures, jamais moins. L’une sera lisse, avec des <name type="plant" xml:lang="fr">olives</name> d’une bonne grandeur ; l’autre aura des <name type="plant" xml:lang="fr">olives</name> lourdes et étroites, avec des cannelures coupantes. Si le <name type="animal" xml:lang="fr">cheval</name> vient à saisir celle-ci, sa dureté le rebutera et la lui fera lâcher, tandis que, s’il prend la première, il s’y plaira, à cause de sa douceur, et exécutera avec le mors doux ce qu’il aura appris avec le dur.</p>
+   <p>Toutefois il peut en venir à braver l’embouchure douce et à peser dessus ; c’est pour cela que nous avons mis de grandes <name type="plant" xml:lang="fr">olives</name> à l’embouchure douce, afin de le forcer à ouvrir la bouche et à lâcher le fer.</p>
+   <p>On peut d’ailleurs corriger autant qu’on veut la dureté du mors, en lâchant ou en retenant la main (<quote>(33)</quote>) ; mais, quelle que soit l’embouchure dont on se sert, elle doit être coulante.</p>
+   <p>Si elle est roide, le <name type="animal" xml:lang="fr">cheval</name> la tiendra tout entière, de quelque manière qu’il l’ait prise ; comme une broche qu’on fixe tout entière, quel que soit le point par lequel on la saisit.</p>
+   <p>L’autre fait l’effet d’une chaîne : ce qu’on en tient seul est fixe ; le reste fléchit ; et le <name type="animal" xml:lang="fr">cheval</name>, cherchant continuellement la partie qui lui échappe, lâche le mors. C’est aussi pour cela que l’on suspend des anneaux (<quote>(34)</quote>) au milieu du mors, afin que le <name type="animal" xml:lang="fr">cheval</name>, en cherchant à les prendre avec la langue et les dents, ne pense pas à saisir le mors (<quote>(35)</quote>).</p>
+</div>
+<div type="section" n="68">
+   <p>Si l’on ne sait pas ce que l’on entend par embouchure coulante ou dure, nous allons l’expliquer. Une embouchure est coulante, lorsque les brisures des axes sont assez larges et assez polies pour jouer aisément, et que toutes les pièces qui sont traversées par les axes ont une ouverture qui leur permet de glisser et de rouler sans peine.</p>
+   <p>Au contraire, lorsque toutes les parties du mors se séparent ou se réunissent difficilement, l’embouchure est dure. Mais, quelle qu’elle soit, voici ce qu’on doit faire pour donner au <name type="animal" xml:lang="fr">cheval</name> la beauté d’allure dont il a été question.</p>
+   <p>Il faut lever la main sans dureté, car le <name type="animal" xml:lang="fr">cheval</name> secouerait la tête ; ni trop mollement, il ne le sentirait pas (36). Si, au temps d’arrêt, il lève la tête, rendez aussitôt la main (37). Il faut ensuite, nous ne nous lassons pas de le dire, il faut, si le <name type="animal" xml:lang="fr">cheval</name> a bien fait, l’en récompenser.</p>
+   <p>Vous apercevez-vous qu’il se plaît dans une belle position de tête et dans un léger appui, ne faites rien qui puisse le chagriner, comme si vous vouliez en exiger quelque chose ; au contraire, flattez-le, comme si vous n’aviez plus rien à lui demander. Par ce moyen il prend confiance, et arrive plus sûrement aux allures rapides.</p>
+   <p>Le <name type="animal" xml:lang="fr">cheval</name> aime à courir : la preuve, c’est que, quand il s’échappe, il ne prend point le pas, mais le galop. Il est dans sa nature d’aimer une course rapide, à moins que</p>
+</div>
+<div type="chapter" n="11">
+   <p>l’on ne l’y force trop longtemps : passé la mesure, il n’y a de plaisir ni pour l’homme ni pour le <name type="animal" xml:lang="fr">cheval</name>.</p>
+   <p>[15] Lors doncque le <name type="animal" xml:lang="fr">cheval</name> arrive à prendre une allure fière, accoutumé d’ailleurs dès les premiers exercices à partir de vitesse après une demi-volte, si, montant un <name type="animal" xml:lang="fr">cheval</name> ainsi dressé, le cavalier le retient de la main et lui indique en même temps de partir, alors, retenu par la bride et poussé par les aides, il s’anime, se précipite le poitrail en avant et les jambes en haut, mais sans souplesse, vu que les jambes d’un <name type="animal" xml:lang="fr">cheval</name> n’ont jamais de souplesse quand il souffre. [16] Si, au contraire, après lui avoir fait sentir l’éperon, vous lui rendez la main, le peu de tension des rênes lui fait croire qu’il est libre, et, dans le plaisir qu’il en éprouve, il prend une position magnifique, imitant, par le moelleux et la fierté de son allure, le <name type="animal" xml:lang="fr">cheval</name> qui fait le beau auprès des autres <name type="animal" xml:lang="fr">chevaux</name>. [17] Et alors ceux qui le voient disent que voilà un <name type="animal" xml:lang="fr">cheval</name> généreux, dispos, bien dressé, plein de cœur, superbe, à la fois doux et terrible à voir (38).</p>
+   <p>Si donc il est quelqu’un qui souhaite pareil succès, que cela soit écrit pour lui.</p>
+   <p><foreign xml:lang="grc">Περὶ ἱππικῆς</foreign><foreign xml:lang="grc">Κεφάλαιον ιαʹ</foreign></p>
+</div>
+<div type="chapter" n="70">
+   <p><foreign xml:lang="grc">Ἢν δέ τις ἄρα βουληθῇ</foreign> καὶ <foreign xml:lang="grc">πομπικῷ</foreign> καὶ <foreign xml:lang="grc">μετεώρῳ</foreign> καὶ <foreign xml:lang="grc">λαμπρῷ</foreign> <name type="animal" xml:lang="fr">cheval</name> χρήσασθαι, οὐ μάλα μὲν τὰ τοιαῦτα ἐκ παντὸς <name type="animal" xml:lang="fr">cheval</name> γίγνεται, ἀλλὰ δεῖ ὑπάρξαι αὐτῷ καὶ τὴν ψυχὴν μεγαλόφρονα καὶ τὸ σῶμα εὔρωστον.</p>
+   <p>Οὐ μέντοι ὅ γε οἴονταί τινες τὸν τὰ σκέλη ὑγρὰ ἔχοντα καὶ τὸ σῶμα αἴρειν δυνήσεσθαι, οὕτως ἔχει· ἀλλὰ μᾶλλον ὃς ἂν τὴν ὀσφῦν ὑγράν τε καὶ βραχεῖαν καὶ ἰσχυρὰν ἔχῃ <foreign xml:lang="grc">[καὶ οὐ τὴν κατ' οὐρὰν λέγομεν, ἀλλ' ἣ πέφυκε μεταξὺ τῶν πλευρῶν καὶ τῶν ἰσχίων κατὰ τὸν κενεῶνα]</foreign>, οὗτος δυνήσεται πόρρω ὑποτιθέναι τὰ ὀπίσθια σκέλη ὑπὸ τὰ ἐμπρόσθια.</p>
+</div>
+<div type="section" n="3">
+   <p>
+      <foreign xml:lang="grc">Ἢν οὖν τις ὑποτιθέντος αὐτοῦ</foreign> ἀνακρούῃ τῷ
+      <name type="animal" xml:lang="fr">cheval</name> χαλινῷ, ὀκλάζει μὲν τὰ ὀπίσθια ἐν
+      τοῖς ἀστραγάλοις, αἴρει δὲ τὸ πρόσθεν σῶμα, ὥστε τοῖς ἐξ ἐναντίας φαίνεσθαι τὴν
+      γαστέρα καὶ τὰ αἰδοῖα. Δεῖ δὲ καὶ ὅταν ταῦτα ποιῇ διδόναι αὐτῷ τὸν χαλινόν,
+      ὅπως τὰ κάλλιστα <name type="animal" xml:lang="fr">cheval</name> ἑκόντα ποιῆσαι
+      δοκῇ τοῖς ὁρῶσιν.
+   </p>
+</div>
+<div type="section" n="4">
+   <p>
+      Εἰσὶ μέντοι οἳ καὶ ταῦτα διδάσκουσιν οἱ μὲν ῥάβδῳ ὑπὸ τοὺς ἀστραγάλους κρούοντες,
+      οἱ δὲ καὶ βακτηρίαι παρατρέχοντά τινα κελεύοντες ὑπὸ τὰς μηριαίας παίειν.
+   </p>
+</div>
+<div type="section" n="5">
+   <p>
+      Ἡμεῖς γε μὲν τοι τὸ κράτιστον τῶν διδασκαλίων νομίζομεν, ὥσπερ ἀεὶ λέγομεν,
+      ἢν ἐν παντὶ παρέπηται τὸ ἐν ὧι ἂν ποιήσῃ τῷ ἀναβάτῃ κατὰ γνώμην τυγχάνειν
+      ῥαιστώνης παρ' αὐτοῦ.
+   </p>
+</div>
+<div type="section" n="6">
+   <p>
+      <quote>
+         <foreign xml:lang="grc">Ἃ μὲν γὰρ ὁ ἵππος ἀναγκαζόμενος ποιεῖ, ὥσπερ καὶ Σίμων λέγει</foreign>
+      </quote>
+      , οὔτ' ἐπίσταται οὔτε καλὰ ἐστιν οὐδὲν μᾶλλον ἢ εἴ τις ὀρχηστὴν μαστιγῶν καὶ
+      κεντρίζων <foreign xml:lang="grc">ῥυθμίζοι</foreign>· πολὺ γὰρ ἂν πλείω
+      ἀσχημονοίη ἢ καλὰ ποιοίη ὁ τοιαῦτα πάσχων καὶ <name type="animal"
+      xml:lang="fr">cheval</name> καὶ ἄνθρωπος. Ἀλλὰ δεῖ ἁπὸ σημείων ἑκόντα πάντα
+      τὰ κάλλιστα καὶ λαμπρότατα ἐπιδείκνυσθαι.
+   </p>
+</div>
+<div type="section" n="7">
+   <p>
+      <foreign xml:lang="grc">Ἢν</foreign> δὲ καί, ὅταν μὲν <name type="animal" xml:lang="fr">ἵππος</name> ἱππάζηται μέχρι, πολλοῦ ἱδρῶτος ἐλαύνηται, ὅταν δὲ καλῶς μετεωρίζῃ ἑαυτόν, ταχύ τε καταβαίνηται καὶ ἀποχαλινῶται, εὖ χρὴ εἰδέναι ὅτι ἑκὼν εἶσιν εἰς τὸ μετεωρίζειν ἑαυτόν·
+   </p>
+   <p>
+      ἐπὶ τῶν τοιούτων δὴ ἱππαζόμενοι <name type="animal" xml:lang="fr">ἵπποι</name> καὶ <name type="deity">θεοὶ</name> καὶ <name type="deity">ἥρωες</name> γράφονται, καὶ ἄνδρες οἱ καλῶς χρώμενοι αὐτοῖς μεγαλοπρεπεῖς φαίνονται.
+   </p>
+   <p>
+      Οὕτω δὲ καὶ ἔστιν ὁ μετεωρίζων ἑαυτὸν <name type="animal" xml:lang="fr">ἵππος</name> σφόδρα <foreign xml:lang="grc">[ἢ καλὸν ἢ δεινὸν ἢ]</foreign> ἀγαστὸν <foreign xml:lang="grc">[ἢ θαυμαστόν]</foreign>, ὡς πάντων τῶν ὁρώντων καὶ νέων καὶ γεραιτέρων τὰ ὄμματα κατέχειν. Οὐδεὶς γοῦν οὔτε ἀπολείπει αὐτὸν οὔτε ἀπαγορεύει θεώμενος, ἔστ' ἄν περ ἐπιδεικνύηται τὴν λαμπρότητα.
+   </p>
+</div>
+<div type="section" n="8">
+   <p>
+      <foreign xml:lang="grc">Ἢν</foreign> γε μήν ποτε συμβῇ τινι τῶν τοιοῦτον <name type="animal" xml:lang="fr">ἵππων</name> κεκτημένων ἢ φυλαρχῆσαι ἢ ἱππαρχῆσαι, οὐ δεῖ αὐτὸν τοῦτο σπουδάζειν, ὅπως αὐτὸς μόνος λαμπρὸς ἔσται, ἀλλὰ πολὺ μᾶλλον ὅπως ὅλον τὸ ἑπόμενον ἀξιοθέατον φανεῖται.
+   </p>
+</div>
+<div type="section" n="9">
+   <p>
+      <foreign xml:lang="grc">Ἢν</foreign> μὲν οὖν ἡγῆται <foreign xml:lang="grc">[ὡς μάλιστα ἐπαινοῦσι τοὺς τοιούτους ἵππους,]</foreign> ὃς ἂν ἀνωτάτω αἰρόμενος καὶ πυκνότατα τὸ σῶμα βραχύτατον προβαίνῃ, δῆλον ὅτι καὶ βάδην ἕποιντ' ἂν οἱ ἄλλοι <name type="animal" xml:lang="fr">ἵπποι</name> αὐτῷ. Ἐκ δὲ ταύτης τῆς ὄψεως τί ἂν καὶ λαμπρὸν γένοιτ' ἄν;
+   </p>
+   <p>
+      <foreign xml:lang="grc">Ἢν</foreign> δὲ ἐξεγείρας τὸν <name type="animal" xml:lang="fr">ἵππον</name> ἡγῇ μήτε τῷ ἄγαν ταχεῖ μήτε τῷ ἄγαν βραδεῖ, ὡς δ' εὐθυμότατοι <name type="animal" xml:lang="fr">ἵπποι</name> καὶ γοργότατοι καὶ <foreign xml:lang="grc">[πονεῖν]</foreign> εὐσχημονέστατοι γίγνονται, – ἐὰν ἡγῇ αὐτοῖς οὕτως, ἁθρόος μὲν <foreign xml:lang="grc">&lt;ἂν&gt;</foreign> ὁ κτύπος, ἁθρόον δὲ τὸ φρύαγμα καὶ τὸ φύσημα τῶν <name type="animal" xml:lang="fr">ἵππων</name> συμπαρέποιτο, ὥστε οὐ μόνον αὐτὸς ἀλλὰ καὶ πάντες οἱ συμπαρεπόμενοι ἀξιοθέατοι ἂν φαίνοιντο.
+   </p>
+</div>
+<div type="section" n="73">
+   <p><foreign xml:lang="grc">Ἤν</foreign> γε μήν τις καλῶς μὲν <name type="animal" xml:lang="fr">ἵππος</name>ήσῃ, τρέφῃ δὲ ὡς πόνους δύνασθαι
+ὑποφέρειν, ὀρθῶς δὲ χρῆται καὶ ἐν τοῖς πρὸς πόλεμον μελετήμασι καὶ
+ἐν ταῖς πρὸς ἐπίδειξιν <foreign xml:lang="grc">ἱππασίαις</foreign> καὶ ἐν τοῖς πολεμικοῖς ἀγωνίσμασι,
+τί ἔτι ἐμποδὼν τούτῳ μὴ οὐχὶ πλείονός τε ἀξίους <name type="animal" xml:lang="fr">ἵππους</name> ποιεῖν ἢ
+οἵους ἂν παραλαμβάνῃ, καὶ εὐδοκίμους μὲν <name type="animal" xml:lang="fr">ἵππους</name> ἔχειν, εὐδοκιμεῖν δὲ
+αὐτὸν ἐν τῇ <foreign xml:lang="grc">ἱππικῇ</foreign>, ἢν μή τι <name type="deity">δαιμόνιον</name> κωλύῃ;</p>
+</div>
+<div type="chapter" n="11">
+   <p>Du <name type="animal" xml:lang="fr">cheval</name> de parade et des moyens de le dresser.</p>
+   <p>[2] Si vous voulez un <name type="animal" xml:lang="fr">cheval</name> de parade qui s’enlève, qui ait de l’éclat, vous n’aurez pas ces avantages de toute espèce de <name type="animal" xml:lang="fr">chevaux</name>, mais il en faut un qui réunisse une grande âme à un corps vigoureux (40). Il y a des gens qui se figurent que tout <name type="animal" xml:lang="fr">cheval</name> qui a du moelleux est capable de s’enlever ; il n’en va point ainsi. Ce sera plutôt celui dont le rein est court, souple et fort ; et je veux désigner ici non les parties qui avoisinent la queue, mais celles qui s’étendent entre les côtes et les cuisses vers les flancs : un <name type="animal" xml:lang="fr">cheval</name> ainsi fait pourra engager franchement les jambes de derrière sous son avant-main.</p>
+   <p>[3] Si, après l’avoir placé dans cette position, vous marquez un temps d’arrêt, il s’assiéra sur les jarrets, relèvera l’avant-main de manière à montrer à ceux qui lui font face son ventre et ses testicules. Quand il fait ce mouvement, rendez-lui la main, et alors on verra qu’il prend lui-même la plus belle pose du <name type="animal" xml:lang="fr">cheval</name> (41).</p>
+   <p>[4] Quelques personnes ont aussi pour méthode, afin d’apprendre ce mouvement au <name type="animal" xml:lang="fr">cheval</name>, les unes de toucher le dessous des genoux avec une baguette ; les autres, de faire courir à côté du <name type="animal" xml:lang="fr">cheval</name> un homme qui lui frappe avec un bâton le dessous des bras (42).</p>
+   <p>[5] Mais le meilleur moyen de l’instruire, selon nous et d’après notre recommandation,</p>
+</div>
+<div type="section" n="75">
+   <p>incessante, c’est que, quand le <name type="animal" xml:lang="fr">cheval</name> a accompli quelque chose au
+      gré du cavalier, on lui accorde un instant de relâche. [6] En effet,
+      comme le dit <persName>Simon</persName>, dans ce qu’il fait malgré lui le <name type="animal" xml:lang="fr">cheval</name> ne met
+      pas plus d’intelligence ni de grâce qu’un <name type="animal" xml:lang="fr">danseur</name> qu’on fouetterait
+      ou piquerait de l’aiguillon. Attendez-vous à trouver disgracieux
+      plutôt qu’élégants l’homme et le <name type="animal" xml:lang="fr">cheval</name> traités de cette sorte.
+      C’est uniquement par les signes que le <name type="animal" xml:lang="fr">cheval</name> doit être amené à
+      exécuter de plein gré les mouvements les plus beaux et les plus
+      brillants.</p>
+   <p>[7] Aussi, lorsque le <name type="animal" xml:lang="fr">cheval</name> ira aux allures ordinaires,
+      poussez-le
+      jusqu’à le mettre en sueur ; lorsqu’il s’enlèvera bien, mettez
+      aussitôt pied à terre, débridez-le, et soyez sûr qu’il sera tout
+      disposé de lui-même à s’enlever (43). [8] C’est sur des <name type="animal" xml:lang="fr">chevaux</name> prenant
+      cette belle attitude qu’on nous représente les <name type="deity">dieux</name> et les <name type="deity">héros</name>, et les
+      hommes qui manient bien les <name type="animal" xml:lang="fr">chevaux</name> ont je ne sais quel air
+      de grandeur. [9] En effet, un <name type="animal" xml:lang="fr">cheval</name> qui se dresse est quelque chose de
+      si beau, de si frappant, de si magnifique, qu’il fixe les regards de
+      tous ceux qui le voient, jeunes ou
+      vieux. On ne peut ni le quitter, ni se lasser de le considérer,
+      quand il se montre ainsi dans tout son éclat. [10] Celui qui a le bonheur
+      de posséder un pareil <name type="animal" xml:lang="fr">cheval</name>, <persName>phylarque</persName> ou commandant de cavalerie,
+      n’ambitionnera pas de briller seul ; il voudra bien plus encore que
+   </p>
+</div>
+<div type="chapter" n="76">
+   <p>toute sa suite <name type="animal" xml:lang="fr">cheval</name> frappe les regards. [11] Or, s’il marche en tête, monté sur un <name type="animal" xml:lang="fr">cheval</name> que tout le monde vante, mais qui, tout en s’enlevant fréquemment de sa hauteur, n’avance que fort peu, il est clair que les <name type="animal" xml:lang="fr">chevaux</name> de sa suite ne pourront aller qu’au pas. Et qu’y a-t-il de brillant dans un semblable spectacle ? [12] Si, au contraire, animant votre <name type="animal" xml:lang="fr">cheval</name>, vous conduisez votre troupe ni trop vite ni trop lentement, mais en prenant le pas qui convient aux <name type="animal" xml:lang="fr">chevaux</name> de grand cœur, pleins de feu et d’un extérieur propre aux manœuvres, si vous marchez ainsi en tête de vos cavaliers, on n’entendra qu’un bruit de pas cadencés, un soufflement et un hennissement collectif, et ce n’est pas vous seulement, mais toute votre troupe, qui offrira un magnifique coup d’œil.</p>
+   <p>[13] Enfin, si un homme sait bien acheter les <name type="animal" xml:lang="fr">chevaux</name>, les élever à supporter la fatigue, les manier avec dextérité dans les exercices militaires, les manœuvres et les combats, quel obstacle y a-t-il à ce qu’il les rende d’un prix bien plus élevé qu’il ne les a reçus, qu’il leur crée une renommée, et qu’il se rende fameux lui-même dans l’équitation, si quelque <name type="deity">dieu</name> ne s’y oppose ?</p>
+   <div type="section" n="12">
+      <p>Περὶ ἱππικῆς<br/>
+      Κεφάλαιον ιβʹ</p>
+   </div>
+</div>
+<div type="chapter" n="77">
+   <p>Γράψαι δὲ βουλόμεθα καὶ ὡς δεῖ
+      ὡπλίσθαι τὸν μέλλοντα ἐφ' <name type="animal" xml:lang="fr">ἵππου</name> κινδυνεύειν. Πρῶτον μὲν τοίνυν φαμὲν
+      χρῆναι πρὸς τὸ σῶμα τὸν θώρακα πεποιῆσθαι. Τὸν μὲν γὰρ καλῶς
+      ἁρμόττοντα <foreign xml:lang="grc">[ἐκεῖνον]</foreign> φέρει τὸ σῶμα, τὸν δὲ ἄγαν χαλαρὸν οἱ ὦμοι
+      μόνοι φέρουσιν. Ὅ γε μὴν λίαν στενὸς δεσμός, οὐχ ὅπλον ἐστίν.</p>
+   <p>Ἐπεὶ δὲ καὶ ὁ αὐχήν ἐστι τῶν καιρίων, φαμὲν χρῆναι καὶ τούτῳ ἐξ
+      αὐτοῦ τοῦ θώρακος ὅμοιον τῷ αὐχένι στέγασμα πεποιῆσθαι. Τοῦτο γὰρ
+      ἅμα κόσμον τε παρέξει καί, ἢν οἷον δεῖ εἰργασμένον ἦι, δέξεται ὅταν
+      βουληθῇ τῷ ἀναβάτῃ τὸ πρόσωπον μέχρι τῆς ῥινός.</p>
+   <p>Κράνος γε μὴν
+      κράτιστον εἶναι νομίζομεν τὸ βοιωτιουργές· τοῦτο γὰρ αὖ στεγάζει
+      μάλιστα πάντα τὰ ὑπερέχοντα τοῦ θώρακος, ὁρᾶν δὲ οὐ κωλύει. Ὁ δ' αὖ
+      θώραξ οὕτως εἰργάσθω ὡς μὴ κωλύειν μήτε καθίζειν μήτ' ἐπικύπτειν.</p>
+   <p>Τὰ δὲ περὶ τὸ ἦτρον καὶ τὰ αἰδοῖα <foreign xml:lang="grc">[καὶ τὰ]</foreign> κύκλῳ αἱ πτέρυγες
+      τοσαῦται καὶ τοιαῦται ἔστωσαν ὥστε στέγειν τὰ βέλη.</p>
+   <p>Ἐπεὶ δὲ καὶ
+      ἡ ἀριστερὰ χεὶρ ἤν τι πάθῃ, καταλύει τὸν <persName>ἱππέα</persName>, καὶ ταύτῃ ἐπαινοῦμεν
+      τὸ ηὑρημένον ὅπλον τὴν χεῖρα καλουμένην. Τόν τε γὰρ ὦμον σκεπάζει
+      καὶ τὸν βραχίονα καὶ τὸν πῆχυν καὶ τὸ ἐχόμενον τῶν ἡνιῶν, καὶ
+      ἐκτείνεται δὲ καὶ συγκάμπτεται· πρὸς δὲ τούτοις καὶ τὸ διαλεῖπον τοῦ
+      θώρακος ὑπὸ τῇ μασχάλῃ καλύπτει.</p>
+   <p>Τήν γε μὴν δεξιὰν ἐπαίρειν δεῖ,
+      ἤν τε ἀκοντίσαι ἤν τε πατάξαι βουληθῇ. Τοῦ μὲν δὴ θώρακος τὸ κωλῦον
+      ταύτῃ ἀφαιρετέον· ἀντὶ δὲ τούτου πτέρυγας ἐν τοῖς γιγγλύμοις</p>
+</div>
+<div type="section" n="78">
+   <p>
+      <foreign xml:lang="grc">προσθετέον</foreign> ὅπως, ὅταν μὲν
+      <foreign xml:lang="grc">διαίρηται</foreign>, ὁμοίως
+      <foreign xml:lang="grc">ἀναπτύσσωνται</foreign>, ὅταν δὲ
+      <foreign xml:lang="grc">καταίρηται</foreign>,
+      <foreign xml:lang="grc">ἐπικλείωνται</foreign>. [
+      <foreign xml:lang="grc">7</foreign>] Τῷ γε μὴν
+      <foreign xml:lang="grc">βραχίονι</foreign> τὸ ὥσπερ
+      <foreign xml:lang="grc">κνημὶς</foreign>
+      <foreign xml:lang="grc">παρατιθέμενον</foreign>
+      <foreign xml:lang="grc">βέλτιον</foreign> ἡμῖν δοκεῖ εἶναι ἢ
+      <foreign xml:lang="grc">συνδεθὲν</foreign>
+      <foreign xml:lang="grc">τῷ</foreign>
+      <foreign xml:lang="grc">ὅπλῳ</foreign>. Τό γε μὴν
+      <foreign xml:lang="grc">ψιλούμενον</foreign>
+      <foreign xml:lang="grc">αἰρομένης</foreign> τῆς
+      <foreign xml:lang="grc">δεξιᾶς</foreign>
+      <foreign xml:lang="grc">στεγαστέον</foreign> ἐγγὺς τοῦ
+      <foreign xml:lang="grc">θώρακος</foreign> ἢ
+      <foreign xml:lang="grc">μοσχείῳ</foreign> ἢ
+      <foreign xml:lang="grc">χαλκείῳ</foreign>· εἰ δὲ μή,
+      <foreign xml:lang="grc">ἐν τῷ ἐπικαιροτάτῳ</foreign>
+      <foreign xml:lang="grc">ἀφύλακτον</foreign> ἔσται.
+   </p>
+</div>
+<div type="section" n="8">
+   <p>
+      <foreign xml:lang="grc">Ἐπεὶ δ' ἤνπερ τι πάσχῃ ὁ ἵππος</foreign>, ἐν παντὶ κινδύνου καὶ ὁ ἀναβάτης γίγνεται, ὁπλίζειν δεῖ καὶ τὸν <name type="animal" xml:lang="fr">cheval</name> προμετωπιδίῳ καὶ προστερνιδίῳ καὶ παραμηριδίοις· ταῦτα γὰρ ἅμα καὶ τῷ ἀναβάτῃ παραμηρίδια γίγνεται. Πάντων δὲ μάλιστα τοῦ <name type="animal" xml:lang="fr">cheval</name> τὸν κενεῶνα δεῖ σκεπάζειν· καιριώτατον γὰρ ὂν καὶ ἀφαυρότατόν ἐστι· δυνατὸν δὲ σὺν τῷ ἐφιππίῳ καὶ αὐτὸν σκεπάσαι.
+   </p>
+</div>
+<div type="section" n="9">
+   <p>
+      Χρὴ δὲ καὶ τὸ ἔποχον τοιοῦτον ἐρράφθαι ὡς ἀσφαλέστερόν τε τὸν <persName>ἱππέα</persName> καθῆσθαι καὶ τὴν ἕδραν τοῦ <name type="animal" xml:lang="fr">cheval</name> μὴ σίνεσθαι. Καὶ τὰ μὲν δὴ ἄλλα οὕτω καὶ ὁ <name type="animal" xml:lang="fr">cheval</name> καὶ ὁ <persName>ἱππεὺς</persName> ὡπλισμένοι ἂν εἶεν.
+   </p>
+</div>
+<div type="section" n="10">
+   <p>
+      Κνῆμαι δὲ καὶ πόδες ὑπερέχοιεν μὲν ἂν εἰκότως τῶν παραμηριδίων, ὁπλισθείη δ' ἂν καὶ ταῦτα, εἰ ἐμβάδες γένοιντο σκύτους, ἐξ οὗπερ αἱ κρηπῖδες ποιοῦνται· οὕτω γὰρ ἂν ἅμα ὅπλον τε κνήμαις καὶ ποσὶν ὑποδήματ' ἂν εἴη.
+   </p>
+</div>
+<div type="section" n="11">
+   <p>
+      <foreign xml:lang="grc">Ὡς μὲν δὴ μὴ βλάπτεσθαι θεῶν ἵλεων ὄντων ταῦτα ὅπλα.</foreign>
+   </p>
+   <p>
+      <foreign xml:lang="grc">Ὡς δὲ τοὺς ἐναντίους βλάπτειν</foreign>, μάχαιραν μὲν μᾶλλον ἢ ξίφος ἐπαινοῦμεν· ἐφ' ὑψηλοῦ γὰρ ὄντι τῷ <persName>ἱππεῖ</persName> κοπίδος μᾶλλον ἡ πληγὴ ἢ ξίφους ἀρκέσει.
+   </p>
+</div>
+<div type="section" n="12">
+   <p>
+      Ἀντί γε μὴν δόρατος καμακίνου, ἐπειδὴ καὶ ἀσθενὲς καὶ δύσφορόν ἐστι, τὰ κρανέϊνα δύο παλτὰ μᾶλλον ἐπαινοῦμεν. Καὶ γὰρ ἐξαφεῖναι τὸ ἕτερον δυνατὸν τῷ ἐπισταμένῳ, καὶ τῷ λειπομένῳ οἷόν τε χρῆσθαι καὶ εἰς τὸ ἀντίον καὶ εἰς τὰ πλάγια καὶ εἰς τοὔπισθεν· καὶ ἅμα ἰσχυρότερά τε τοῦ δόρατος καὶ εὐφορώτερά ἐστιν.
+   </p>
+</div>
+<div type="chapter" n="13">
+   <p><foreign xml:lang="grc">Ἀκόντισμά</foreign> γε μὴν τὸ μακρότατον ἐπαινοῦμεν· καὶ γὰρ ἀποστρέψαι καὶ μεταλαβεῖν παλτὸν οὕτω μᾶλλον ὁ χρόνος ἐγχωρεῖ. Γράψομεν δὲ ἐν βραχεῖ καὶ ὡς ἄν τις κράτιστα <foreign xml:lang="grc">ἀκοντίζοι</foreign>. Ἢν γὰρ προβαλλόμενος μὲν τὰ ἀριστερά, ἐπανάγων δὲ τὰ δεξιά, ἐξανιστάμενος δὲ ἐκ τῶν μηρῶν, μικρὸν ἐπανακύπτουσαν τὴν λόγχην ἀφῇ, οὕτω σφοδρότατόν τε καὶ μακρότατον οἴσεται τὸ <foreign xml:lang="grc">ἀκόντιον</foreign>, εὐστοχώτατον μέντοι, ἐὰν κατὰ τὸν σκοπὸν ἀφιεμένη ἀεὶ ὁρᾶι ἡ λόγχη.</p>
+</div>
+<div type="chapter" n="14">
+   <p>Καὶ ταῦτα μὲν δὴ ἰδιώτῃ καὶ ὑπομνήματα καὶ μαθήματα καὶ μελετήματα γεγράφθω ἡμῖν. Ἃ δὲ ἱππάρχῳ προσῆκεν εἰδέναι τε καὶ πράττειν ἐν ἑτέρῳ λόγῳ δεδήλωται.</p>
+</div>
+<div type="chapter" n="12">
+   <head>De l’armure du cavalier et du jet des javelots (44).</head>
+   <p>[1] Nous voulons décrire aussi comment doit s’armer celui qui veut, à cheval, s’exposer au danger. Nous disons donc d’abord qu’il doit avoir une cuirasse bien faite pour le corps : justement appliquée, c’est tout le corps qu’elle porte ; trop large, les épaules seules en sont accablées ; trop étroite, c’est une prison, et non pas une armure.</p>
+   <p>[2] Comme le cou est une partie exposée aux blessures mortelles, nous disons qu’il faut le garantir au moyen d’un hausse-col tenant à la cuirasse : car, outre qu’il servira d’ornement, il pourra, s’il est bien fait, couvrir jusqu’au nez le bas de la figure du cavalier.</p>
+   <p>[3] Nous regardons comme les meilleurs casques, ceux qu’on fabrique en <placeName>Béotie</placeName> : ils couvrent toutes les parties qui sont hors de la cuirasse, et ne gênent point la vue. Que la cuirasse soit faite de manière à n’empêcher le cavalier ni de s’asseoir, ni de se baisser.</p>
+   <p>[4] Que le bas-ventre, les parties et ce qui les entoure, soient couverts d’<name type="animal" xml:lang="fr">écailles</name> assez fortes et assez nombreuses pour les protéger.</p>
+   <p>[5] Comme une blessure à la main gauche met un cavalier hors de combat, j’approuve l’arme qu’on a imaginée pour la défendre, et qu’on appelle <foreign xml:lang="la">manica</foreign>. Elle garantit l’épaule, le bras, le coude et le poignet qui tient la bride ; elle s’étend et se plie à volonté ; elle couvre, en outre, le défaut de la cuirasse.</p>
+</div>
+<div type="chapter" n="82">
+   <p>sous l’<name type="animal" xml:lang="fr">aisselle</name>. [6] Il faut lever la main droite, soit pour lancer le
+      <foreign xml:lang="grc">ἀκόντιον</foreign>, soit pour frapper l’<persName>ennemi</persName> : on doit donc faire disparaître
+      de la cuirasse tout ce qui gêne ce mouvement, et y substituer des
+      écailles à charnières qui s’étendent quand le bras se lève, et se
+      replient quand il s’abaisse. [7] Nous trouvons meilleur que l’armure du
+      bras soit mobile et s’y applique comme une jambière, que si elle
+      était fixée au reste de l’armure : quant à la partie qui reste nue,
+      lorsque la main droite est levée, il faut la garantir près de la
+      cuirasse, soit avec du cuir de <name type="animal" xml:lang="fr">veau</name>, soit d’une lame d’<foreign xml:lang="la">aes</foreign> ;
+      autrement, l’endroit où les blessures sont le plus dangereuses
+      demeurerait à découvert.</p>
+   <p>[8] Comme le cavalier court le plus grand péril s’il arrive quelque
+      chose à son <name type="animal" xml:lang="fr">cheval</name>, il faut aussi armer le <name type="animal" xml:lang="fr">cheval</name> d’un chanfrein,
+      d’un poitrail et de garde-flancs : cette dernière pièce pourra
+      couvrir en même temps les cuisses du cavalier. Mais ce qu’il faut
+      défendre surtout, c’est le ventre du <name type="animal" xml:lang="fr">cheval</name> : les blessures y sont
+      mortelles, et c’est la partie la plus tendre : la housse peut être
+      employée à cette fin. [9] Il faut la coudre de manière que le cavalier y
+      soit bien assis et que la selle ne blesse point le <name type="animal" xml:lang="fr">cheval</name>. Quant aux
+      autres parties du <name type="animal" xml:lang="fr">cheval</name> et du cavalier, elles seront armées comme
+      il suit : [10] les jambes et les pieds se prolongeant visiblement au delà</p>
+</div>
+<div type="section" n="83">
+   <p>des cuissards, on les garnira de bottes du <name type="animal" xml:lang="fr">cuir</name> dont on fait les
+      semelles. Par là les jambes seront défendues et les pieds chaussés.</p>
+   <p>[11] Telle est l’armure qu’il faut avoir afin de n’être point blessé, sauf l’assistance des
+      <name type="deity">dieux</name>. Pour blesser l’ennemi, nous préférons
+      le sabre à l’épée : un coup de taille, porté de la hauteur du
+      cavalier, vaut mieux qu’un coup d’estoc.</p>
+   <p>[12] Au lieu d’une lance
+      allongée, qui est cassante et incommode à la main, nous aimons mieux
+      deux javelots de <name type="plant" xml:lang="fr">cornouiller</name>. En effet, un homme qui sait manier ces
+      deux javelots peut en lancer un, et garder l’autre pour s’en servir
+      en avant, de côté, en arrière : d’autre part, ces javelots sont plus
+      forts que la lance et plus maniables.</p>
+   <p>[13] Le jet de loin nous agrée de préférence
+      : de cette sorte, on a plus
+      de temps pour se retourner et pour saisir le second. Voici, en bref,
+      la meilleure manière de lancer un javelot avec le plus de force :
+      portez en avant la gauche du corps, retirez la droite en arrière,
+      dressez-vous sur les cuisses, jetez le javelot la pointe un peu en
+      l’air ; alors il partira avec la plus grande vitesse, portera
+      très-loin et frappera très-juste, si la pointe n’a pas dévié de
+      l’objet visé.</p>
+   <p>Tels sont les avis, instructions et exercices que nous nous
+      proposions d’écrire pour les novices : quant à ce que doit savoir et
+      pratiquer le commandant de cavalerie, nous l’avons exposé dans un
+      autre traité (45).</p>
+</div>
+<div type="chapter" n="84">
+   <p>J’ai eu pour me guider dans ce traité tout à fait technique,
+      outre les secours de l’érudition classique, tels que l’édition
+      spéciale de Zeune, la <foreign xml:lang="la">traduction</foreign> de P. L. Courier et celle du baron de Curnieu,
+      le livre tout moderne de M. le comte Savary de Lancosme-Brèves, intitulé : <title>Guide de l’ami du <name type="animal" xml:lang="fr">cheval</name></title>, t. I, année
+      1855. C’est à ce judicieux et savant écrivain que j’emprunterai une
+      grande partie de mes annotations, emprunts que je marquerai des
+      lettres L. B.</p>
+   <p>Il était d’<placeName>Athènes</placeName>. <persName>Pline l’Ancien</persName> en fait mention dans son
+      <title><foreign xml:lang="la">Hist. nat.</foreign></title>, XXXIV, xix, 15. On croit que l’ouvrage qu’il avait composé se
+      nommait <foreign xml:lang="grc">Ἵπποςκοπικός</foreign> ou <foreign xml:lang="la">Le parfait maréchal</foreign>.</p>
+   <p><placeName>Temple de Cérès et de Proserpine</placeName>, dans celui des deux <placeName>Céramiques</placeName>
+      qui était à l’intérieur d’<placeName>Athènes</placeName>.</p>
+   <p><name type="animal" xml:lang="fr">Les paturons</name>.</p>
+   <p>Partie de la jambe comprise entre le boulet et le genou. C’est ce
+      manque d’épaisseur qui produit ce qu’on nomme tendon failli, défaut
+      ordinaire des <name type="animal" xml:lang="fr">chevaux</name> fins. L. B.</p>
+   <p><name type="animal" xml:lang="fr">La cheville</name>.</p>
+   <p><name type="animal" xml:lang="fr">La mâchoire inférieure</name>. La petitesse et la sécheresse de la tête
+      sont un signe de légèreté et de beauté. L. B. — Cf. <persName>Virgile</persName>, <title><foreign xml:lang="la">Gèorg.</foreign></title>,
+      II, 5 et suivants.</p>
+   <p>Parties extérieures de la bouche.</p>
+   <p>Nous verrons au chapitre m ce qu’on entend par bouche fausse.</p>
+   <p>On conçoit que, montant à poil, l’épine saillante devait
+      présenter un siège peu commode au cavalier. L. B.</p>
+   <p><name type="animal" xml:lang="fr">Le train de derrière</name>.</p>
+</div>
+<div type="section" n="85">
+   <p>Cela prouve que <persName>Xénophon</persName> savait que plus la base de sustentation d’un corps a de largeur par rapport à sa hauteur, plus le corps est solidement établi sur le sol. L. B.</p>
+</div>
+<div type="section" n="86">
+   <p>L’auteur ne nous dit pas comment on doit s’assurer de l’âge du <name type="animal" xml:lang="fr">cheval</name>. Est-ce à l’usure des dents ou à l’aspect de la physionomie ? Nous retrouverons plus tard l’époque où l’on a commencé à juger de l’âge d’un <name type="animal" xml:lang="fr">cheval</name> par l’examen de la mâchoire inférieure ; cependant tout porte à croire qu’au temps de <persName>Xénophon</persName> l’on n’était pas sans connaître ce moyen, puisqu’il se sert de l’expression <foreign xml:lang="fr">marquer</foreign>. L. B.</p>
+</div>
+<div type="section" n="87">
+   <p><persName>Xénophon</persName> entend par là le <name type="animal" xml:lang="fr">cheval</name> qui résiste de la tête, et se jette du côté opposé par une grande sensibilité de barre. Nous croyons qu’on attribuait souvent alors à la bouche du <name type="animal" xml:lang="fr">cheval</name> ce qui provenait de la mauvaise main du cavalier ou du manque d’équilibre de la masse : car rarement un <name type="animal" xml:lang="fr">cheval</name> résiste à l’action du mors, lorsque les rênes sont tenues par une main habile. L. B.</p>
+</div>
+<div type="section" n="86">
+   <p>(16) Ces deux recommandations sont d’un homme essentiellement pratique : j’ai toujours fait subir cette épreuve au <name type="animal" xml:lang="fr">cheval</name> que j’ai voulu acheter. En effet, si, lancé à toutes jambes, il s’arrête court, le cavalier peu expérimenté passera par-dessus les oreilles ; et si, après une attaque sévère, le <name type="animal" xml:lang="fr">cheval</name> retient ses forces et ne se porte pas en avant, c’est un signe qu’il n’est pus franc, et tout cavalier inhabile ne doit pas acheter un pareil <name type="animal" xml:lang="fr">animal</name>. L. B.</p>
+</div>
+<div type="section" n="87">
+   <p>(17) Ce chapitre nous prouve que cet écuyer célèbre (<persName>Xénophon</persName>) connaissait parfaitement le <name type="animal" xml:lang="fr">cheval</name> de guerre, et il était difficile qu’il poussât plus loin ses connaissances hippiques, étant toujours occupé à faire la guerre. Il dressait le <name type="animal" xml:lang="fr">cheval</name> comme le ferait aujourd’hui un hardi coureur de steeple-chase, solide et bien botté, bien éperonné, avec cette différence toutefois qu’il se rendait un compte exact de l’<name type="animal" xml:lang="fr">animal</name> qu’il avait entre les jambes, et qu’il est très-rare qu’un gentleman possède de telles connaissances. L. B.</p>
+</div>
+<div type="section" n="88">
+   <p>(18) <persName>Xénophon</persName> signale ici un genre de mal connu sous le nom de <foreign xml:lang="la">lampas</foreign> (engorgement de l’intérieur de la bouche) et l’indigestion, qui est une indisposition très-rare de nos <name type="animal" xml:lang="fr">chevaux</name>. L. B.</p>
+</div>
+<div type="section" n="89">
+   <p>(19) Dans ces temps éloignés de nous, on ne ferrât pas les <name type="animal" xml:lang="fr">chevaux</name>, mais on cherchait à habituer la sole aux terrains les plus durs. L. B.</p>
+</div>
+<div type="section" n="90">
+   <p>(20) Quatre cent trente-six grammes.</p>
+</div>
+<div type="chapter" n="87">
+   <p>On voit que Xénophon appelle l’attention sur les deux points les plus importants dans la locomotion : 1° les quatre <name type="animal" xml:lang="fr">pieds</name> formant la base de sustentation ; 2° la bouche servant à la direction et à la conduite de l’<name type="animal" xml:lang="fr">animal</name>. Pour rendre la bouche du <name type="animal" xml:lang="fr">cheval</name> fraîche et tendre, on avait l’habitude alors de la laver avec de l’eau tiède et de l’<name type="plant" xml:lang="fr">huile</name>. L. B.</p>
+</div>
+<div type="chapter" n="88">
+   <p>M. de Lancosme-Brèves trouve ce chapitre et le suivant de nature à mériter l’attention la plus grande de tout homme de <name type="animal" xml:lang="fr">cheval</name>.</p>
+</div>
+<div type="section" n="23">
+   <p>Dent <name type="animal" xml:lang="fr">canine</name>.</p>
+</div>
+<div type="section" n="24">
+   <p>Les préceptes de tenue donnés ici par <persName>XénopUon</persName> sont en partie ceux de l’école franco-italienne, d’après lesquels le corps du cavalier, placé en selle, se divise en trois parties, dont deux mobiles et une immobile. Celle-ci comprend depuis les hanches jusqu’au-dessous des genoux ; les deux parties mobiles sont le haut du corps et les jambes. Le cavalier doit avoir la tête droite, les épaules bien effacées et tombantes, les coudes près du corps, le buste droit et penchant plutôt en arrière qu’en avant, les cuisses tournées en dedans et posées à plat sur la selle, les genoux aussi en dedans, les jambes tombantes, les étriers longs et n’y chaussant le pied que jusqu’à la racine du <name type="animal" xml:lang="fr">pouce</name>, les pointes des pieds tournées en dedans dans la direction de l’épaule du <name type="animal" xml:lang="fr">cheval</name>. À toutes les allures, même au grand trot et au galop, le cavalier doit conserver cette position. — Voy. L'Encyclopédie moderne de <persName>F. Didot</persName>, t. XIV, p. 299, article <placeName>ÉQUITATION</placeName>, par le général <persName>Marbot</persName>.</p>
+</div>
+<div type="section" n="25">
+   <p>Je lis <foreign xml:lang="grc">ποεῖν</foreign> au lieu de <foreign xml:lang="grc">πονεῖν</foreign> ou de <foreign xml:lang="grc">πνεῖν</foreign>.</p>
+</div>
+<div type="section" n="26">
+   <p>Nous pouvons expliquer cette phrase en disant que le <name type="animal" xml:lang="fr">cheval</name> trouvera sa récompense par la conduite sage et la douceur de son <persName>cavalier</persName>, qui saura, à propos, le retenir s’il fait mal, le laisser aller s’il fait bien, et qu’alors l’<name type="animal" xml:lang="fr">animal</name>, étant mis à son aise, ira toujours convenablement, parce qu’il sait qu’il peut compter sur une récompense. <persName>L. B.</persName></p>
+</div>
+<div type="chapter" n="89">
+   <p>(27) M. de Lancosme-Brères loue cette recommandation comme sage et indispensable ; seulement il regrette que <persName>Xénophon</persName> n’ait pas indiqué explicitement quels sont les moyens à employer.</p>
+   <p>(28) Cette remarque est très-logique : ce n’est que par le raisonnement et les moyens doux qu’on parvient à calmer la trop grande ardeur du <name type="animal" xml:lang="fr">cheval</name>. L. B.</p>
+   <p>(29) Recommandation bien sage, mais d’autant plus difficile à exécuter que <persName>Xénophon</persName> et ses successeurs n’ont pas indiqué ce qu’il fallait faire pour avoir la main légère. L. B.</p>
+   <p>(30) Ce qui veut dire qu’il ne faut pas toujours avoir les jambes et les talons plaqués sur le corps de l’<name type="animal" xml:lang="fr">animal</name>, pour ne pas l’exciter mal à propos. L. B.</p>
+   <p>(31) Cette remarque est très-judicieuse, et j’en ai fait souvent l’application pour les départs et les arrêts. On porte le corps en arrière, premier temps, en disant halte ou stop ; puis on approche la main du corps, second temps. Le <name type="animal" xml:lang="fr">cheval</name>, pour éviter l’opposition faite par la main au second temps, qui lui est toujours plus ou moins sensible, s’arrête de suite. Veut-on faire partir un <name type="animal" xml:lang="fr">cheval</name>, on peut dire go on ou partez, puis on approche les jambes, premier temps, et on avance la main de bas en haut vers la tête du <name type="animal" xml:lang="fr">cheval</name> ; il est rare que le <name type="animal" xml:lang="fr">cheval</name> ne parte pas avant que les jambes aient agi. L. B.</p>
+   <p>(32) Cette recommandation est une idée lumineuse qui conduit à la mise en main. L. B.</p>
+</div>
+<div type="chapter" n="90">
+   <p>(33) Autrement dit : en jouant des rênes et en donnant des demi-temps d’arrêt.</p>
+   <p>(34) C’est ce qu’on nomme des <name type="animal" xml:lang="fr">jouettes</name>.</p>
+   <p>(35) M. de Lancosme-Brèves trouve qu’il est impossible d’expliquer avec plus de lucidité les moindres parties de l’embouchure dont <persName>Xénophon</persName> se servait pour brider les <name type="animal" xml:lang="fr">chevaux</name>.</p>
+   <p>(36) Nous croyons que <persName>Xénophon</persName> parle ici dans l’hypothèse de donner de l’élévation à l’avant-main ; lever peut vouloir dire aussi soutenir, car on ne lève la main que pour relever la tête ou s’emparer de l’impulsion. L. B.</p>
+   <p>(37) Nous voyons combien <persName>Xénophon</persName> est aux ordres d’une encolure roide et indocile. Nous croyons qu’au temps d’arrêt le <name type="animal" xml:lang="fr">cheval</name> ne doit pas lever la tête, et que, s’il veut la lever, il faut ne pas rendre la main, mais la maintenir. Il est juste, néanmoins, de dire qu’une fois la tête en l’air, si le cavalier tire sur la tête avec le mors, le <name type="animal" xml:lang="fr">cheval</name> peut se cabrer : c’est donc pour éviter cette défense, que <persName>Xénophon</persName> ne savait pas paralyser, qu’il conseille de rendre la main. L. B.</p>
+   <p>(38) On trouvera un commentaire lumineux de ce passage dans l’article ÉQUITATION du général <persName>Marbot</persName> dans le t. XIV de l'Encyclopédie moderne de F. <persName>Didot</persName>, p. 297.</p>
+   <p>(39) Ce chapitre est remarquable en ce qu’il nous initie aux qualités qui sont la conséquence de certaines formes extérieures. L. B.</p>
+</div>
+<div type="chapter" n="91">
+   <p>(40) On voit par là que, si <persName>Xénophon</persName>
+   n’avait ni le don natif ni la science d’équilibrer un <name type="animal" xml:lang="fr">cheval</name>
+   défectueux, il le connaissait du moins et pouvait le désigner. L. B.</p>
+</div>
+
+<div type="chapter" n="92">
+   <p>(41) <persName>Xénophon</persName> donne ici le moyen de faire faire une courbette au
+   <name type="animal" xml:lang="fr">cheval</name>. Cette recommandation est remarquable pour l’époque à
+   laquelle elle a été faite, et indique assez comment il faut s’y
+   prendre pour asseoir son <name type="animal" xml:lang="fr">cheval</name>. L. B. :</p>
+</div>
+
+<div type="chapter" n="93">
+   <p>(42) Et non pas cuisse, comme l’ont écrit quelques traducteurs.</p>
+   <p>(43) Cette remarque est juste. Un <name type="animal" xml:lang="fr">cheval</name> qui est monté méthodiquement
+   et qui a un travail tracé à l’avance, sachant qu’après tel mouvement
+   il a telle récompense, exécute son travail avec plus de plaisir. L. B.</p>
+</div>
+<div type="chapter" n="44">
+   <p>Nous croyons que le lecteur nous saura gré de rapprocher de ce chapitre un extrait de la <persName>Milice</persName> et <foreign xml:lang="la">armes</foreign> de <persName>Cl. Fauchet</persName>. On verra que l’armure du <name type="animal" xml:lang="fr">cavalier</name> et du <name type="animal" xml:lang="fr">cheval</name>, telle que la représente <persName>Xénophon</persName>, se reproduit presque complètement dans celle des chevaliers du moyen âge. « Quant aux hommes de <name type="animal" xml:lang="fr">cheval</name>, ils chaussoient des chausses faites de mailles, des espérons à mollettes aussi larges que la <name type="plant" xml:lang="fr">paume</name> de la <name type="animal" xml:lang="fr">main</name>.... puis endossoient un gobisson. C’estoit un vestement long, iusques sur les <name type="animal" xml:lang="fr">cuisses</name> et contre-pointe. Dessus ce gobisson ou gambeson ils auoient une <name type="plant" xml:lang="fr">chemise</name> de mailles longue iusques au dessous des <name type="animal" xml:lang="fr">genouïlz</name>, appelé <foreign xml:lang="fr">Auber</foreign> ou <foreign xml:lang="fr">Hauber</foreign>, ie croy du mot <foreign xml:lang="la">albus</foreign>, pource que les mailles de <name type="animal" xml:lang="fr">fer</name> bien polies, forbies et reluisantes, en sembloient plus blanches. A ces chemises estoient cousues les chausses... Un capuchon ou coëffe, aussi de maille y tenoit pour mettre la <name type="animal" xml:lang="fr">tête</name> dedans : lequel capuchon se reiettoit derrière, après que le chevalier s’estoit oste le heaulme, et quand ils vouloient se rafraîchir sans leuer tout leur harnois. Ajoutez un baudrier auquel pendoit vne espee appellee <foreign xml:lang="de">brance</foreign> en <placeName>thiois</placeName> ou <placeName>alleman</placeName>, et aucunes fois des nostres <foreign xml:lang="fr">fauchon</foreign>. Ils portoient aussi vne aultre sorte d’espee nommée <foreign xml:lang="fr">badelaire</foreign> qui semble auoir este large.... Encores auoit le <name type="animal" xml:lang="fr">chevalier</name> vn petit <name type="animal" xml:lang="fr">coustau</name> nommé <foreign xml:lang="fr">misericorde</foreign>, pource que de </p>
+</div>
+<div type="chapter" n="93">
+   <p>ce ferrement volontiers estaient occis les <name type="animal" xml:lang="fr">chevaliers</name> abbattus....</p>
+   <p>Les <name type="animal" xml:lang="fr">chevaliers</name> portoient aussi vn escu, voire couvert de lames d’<name type="animal" xml:lang="fr">escailles</name> d’<name type="plant" xml:lang="fr">yuoire</name>.... ledit escu pendu à leur col, a vne courroye....</p>
+   <p>Et pour la dernière arme deffensiue, vn elme ou heaume, fait de plusieurs pièces de fer, eslevees en pointe : et lequel couuroit la teste, le visage et chignon du col, auec la visière et ventaille, lesquelles se pouvaient lever et baisser pour prendre vent et haleine....</p>
+   <p>Leur <name type="animal" xml:lang="fr">cheval</name> estoit volontiers housse, c’est-à-dire couuert et caparassonné de soye : aux armes et blason du <name type="animal" xml:lang="fr">chevalier</name> et pour la guerre de <foreign xml:lang="fr">cutr boüilly</foreign> : ou de bardes de fer.</p>
+   <p>» On trouvera dans nos Chansons de geste, notamment dans les chansons de <persName>Roland</persName>, d’<persName>Alexandre</persName>, des <persName>Saxons</persName>, d’<placeName>Antioche</placeName>, de curieuses descriptions d’armure d’hommes et de <name type="animal" xml:lang="fr">chevaux</name> qui confirment ce que dit <persName>Fauchet</persName>.</p>
+   <p>(45) Le Commandant de cavalerie, qui vient immédiatement après celui-ci.</p>
+</div>
+    </body>
+  </text>
+</TEI>
