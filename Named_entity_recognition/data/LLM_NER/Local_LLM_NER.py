@@ -38,8 +38,8 @@ SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 ANNOTATION_AUTO = True
 TRANSLATION_AUTO = True
 
-MODEL = "qwen:1.8b"
-PROMPT_PATH = os.path.join(os.path.dirname(__file__), "prompt.txt")
+MODEL = "qwen2.5:32b-instruct"
+PROMPT_PATH = os.path.join(os.path.dirname(__file__), "qwen-prompt.txt")
 
 if not os.path.exists(PROMPT_PATH):
     raise FileNotFoundError(f"\n[ERROR] The prompt file hasn't been found at : '{PROMPT_PATH}'")
@@ -94,7 +94,7 @@ def get_LLM_entities(element):
     if not element or element.strip() == "":
         return {}
 
-    full_input = f"{PROMPT}\n\nThesaurus :\n {thesaurus}\n\nText to analyse :\n{element}"
+    full_input = f"{PROMPT}\nText to analyse :\n{element}"
 
     try:
         response = chat(
@@ -102,7 +102,8 @@ def get_LLM_entities(element):
             messages=[{'role': 'user', 'content': full_input}],
             format='json'
         )
-        print(response.message.content)
+        print(full_input)
+        print(f"\nréponse du LLM: {response.message.content}")
         return json.loads(response.message.content)
     except Exception as e:
         print(f"[WARNING] Erreur lors de l'appel LLM ou du parsing : {e}")
@@ -112,7 +113,7 @@ def extract_LLM(entities, annotations, paragraph):
     if not entities or "entities" not in entities:
         return
 
-    ent_list = entities.get("entities", [])
+    ent_list = entities.get("extracted_entities", [])
     if not isinstance(ent_list, list):
         return
 

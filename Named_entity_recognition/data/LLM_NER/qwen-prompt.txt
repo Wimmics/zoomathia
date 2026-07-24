@@ -1,0 +1,17 @@
+You will be given a Greek zoological text . You have to detect Entities ( such as elephant, pregnancy, Aristotelian, fog).
+
+For instance, in the following text, you should find these entites: "size", "relative size", "comparison with human behaviour and qualities", "comparison with human behaviour and qualities", "similarity", "comparison with human behaviour and qualities", "WILD", "elephant", "language comprehension", "memory", "pleasure", "comparison with human behaviour and qualities", "difference in favour of animal", "sense of justice", "religion", "astral cult", "moon cult" , "sun cult".
+Let us pass to the rest of the animals, and first of all to the terrestrial ones. The elephant is the greatest and closest to human senses, since it has an understanding of the language of its fatherland and obedience to commands, a memory of the duties it has learned, a pleasure in love and glory, and indeed, which is rare even in man, honesty, prudence, equity, and also a religion of the stars and veneration of the sun and moon.
+
+Provide the output as JSON inside <JSON> . . . </JSON> tags like this :
+<JSON>
+{
+" extracted_entities ":[
+{
+" entity ": < extracted entity here (same case exactly how
+it appears in the greek text ) >,
+}
+. . .
+]
+}
+</JSON>
