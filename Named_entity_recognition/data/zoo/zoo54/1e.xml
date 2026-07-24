@@ -1,0 +1,1857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="en">Timotheus of Gaza, On Animals (traduction anglaise)</title>
+        <author>
+          <persName>BODENHEIMER</persName>
+          
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-10">2026-07-10</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-10">2026-07-10</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia"></idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="en">anglais</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>inconnu</term>
+          <term>anglais</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <p>Jb 66 | 949086</p>
+  <p>COLLECTION DE TRAVAUX DE L'ACADEMIE INTERNATIONALE D'HISTOIRE DES SCIENCES</p>
+  <p>(Honorée d'une subvention de I'<name type="institution">UNESCO</name>) ; .</p>
+  <p>GAD 066</p>
+  <p>N° 3 a oa</p>
+  <p><persName>TIMOTHEUS OF GAZA</persName></p>
+  <p>ON ANIMALS</p>
+  <p><foreign xml:lang="grc">ΜΕΡΙ ΖΟΟΝ</foreign></p>
+  <p>FRAGMENTS OF A BYZANTINE PARAPHRASE OF</p>
+  <p>AN ANIMAL-BOOK OF THE 57<hi rend="sup">TH</hi> CENTURY A.D.</p>
+  <p>TRANSLATION, COMMENTARY AND INTRODUCTION</p>
+  <p>BY</p>
+  <p><persName>Prof. F. S. BODENHEIMER</persName>, D.Sc. and <persName>A. RABINOWITZ</persName>, M.A.</p>
+  <p><placeName>ACADEMIE INTERNATIONALE E. J. BRILL</placeName></p>
+  <p><placeName>D'HISTOIRE DES SCIENCES</placeName> EDITEURS</p>
+  <p><placeName>12 Rue Colbert — PARIS</placeName> ile 33a-35, <placeName>Oude Rijn — LEIDEN</placeName></p>
+</div>
+
+<div type="section" n="1">
+  <head>INTRODUCTION</head>
+  <div type="section" n="1.1">
+    <head>1. THE HISTORICAL AND LITERARY BACKGROUND</head>
+    <p>When <persName>Timotheus</persName> the <placeName>Gazaean</placeName> wrote his books, <placeName>Gaza</placeName>, the old <name type="animal" xml:lang="en">Philistine</name> town, had been a hellenized city for nearly 800 years.</p>
+    <p>After having been captured by <persName>Alexander the Great</persName> in 332 B.C., it soon developed into one of the most prosperous—and therefore coveted—cities of the East.</p>
+    <p>Owing to its geographical and strategical position, <placeName>Gaza</placeName> was the ‘key to <placeName>Egypt</placeName>’; to possess it was essential for every actual or potential ruler of <placeName>Syria</placeName>.</p>
+    <p>Small wonder that it changed hands repeatedly until the <name type="group">Romans</name> took possession, and even then suffered heavily through the vicissitudes of the political situation.</p>
+    <p>In 66 A.D. it was (probably only partly) destroyed by the <name type="group">Jews</name> rising against the <name type="group">Romans</name>.</p>
+    <p>However, the town recovered quickly and soon regained its position as centre of <name type="culture">Greek</name> civilization.</p>
+  </div>
+</div>
+<div type="chapter" n="2">
+   <p>Yet another factor was to no little extent responsible for the importance of the town: Commerce.— There is good evidence that as far back as in the 18th century B.C., the town had served as an <name type="placeName">emporium</name> for import and export, the main customers being <placeName>Arabia</placeName> and <placeName>Egypt</placeName>. Lying in the heart of an agricultural country where many <name type="animal">Caravan-routes</name> met, <placeName>Gaza</placeName> owed its prosperity to the trade in grain, wine, silver and, above all, spices. The rulers of the city and country changed, but the economic needs of the adjacent territories remained the same throughout the centuries, and so did <placeName>Gaza</placeName>’s rôle as an <name type="placeName">entrepôt</name>. Even the foundation of <placeName>Alexandria</placeName> could not do much to shake the importance of <placeName>Gaza</placeName>, because the latter’s interests were directed eastwards whilst <placeName>Alexandria</placeName> looked to the sea, to the West. It is true that <placeName>Gaza</placeName>, too, had its port (called <foreign xml:lang="grc">Μωτάτου</foreign>), but it always played a merely subsidiary rôle in the commercial life of the town.</p>
+   <p>It is only natural that a place where people of so many races and nations met, became in course of time an intellectual centre too. <persName>Greek</persName> culture had been received enthusiastically here, as well as in near <placeName>Ascalon</placeName>, and the seeds had fallen on fertile ground.</p>
+   <p>To give a full account of the rôle played by <placeName>Gaza</placeName> and <persName>Gazaeans</persName> in the evolution of later <persName>Greek</persName> Literature and Science, would be a task</p>
+</div>
+<div type="section" n="3">
+   <p>far exceeding the frame set to this introduction. Moreover, much
+      philological and historical research-work has yet to be done before an
+      adequate treatment of this subject can be attempted. Suffice it
+      therefore, to sketch here the broad lines of development.</p>
+   <p>The intellectual life of <placeName>Gaza</placeName> and the Surrounding cities and territories seems to have always been under the influence of <placeName>Alexandria</placeName>
+      the undisputed centre of Greek culture during the Hellenistic period.
+      This dependence <foreign xml:lang="en">is</foreign> illustrated by the fact that famous Gazaean</p>
+   <p>Although we know of Gazaean and <placeName>Ascalon</placeName> scholars and philosophers already in the <foreign xml:lang="en">1st</foreign> century <foreign xml:lang="la">B.C.</foreign>, it was not until the <foreign xml:lang="en">4th</foreign></p>
+   <p>thetoricians enjoyed also certain Privileges and immunities and
+      ranked among the most prominent citizens of their respective cities</p>
+   <p><persName>Procopius of Gaza</persName> 1 (465-528 <foreign xml:lang="en">A.D.</foreign>). Although a layman, he led</p>
+   <p><persName>INTRODUCTION</persName> 3</p>
+   <p>A few of his speeches have come down to us and they, together with
+      his numerous letters, form the main source for our knowledge of
+      Byzantine <placeName>Gaza</placeName>.</p>
+</div>
+<div type="section" n="4">
+   <p>His eminent pupil and successor, <persName>Cuorictus</persName>, ‘was only a rhetorician and not at all interested in theological questions. However, he spoke and taught pure <foreign xml:lang="grc">Attic</foreign> which could no longer: ‘be studied at <placeName>Athens</placeName> <pb n="1"/>, and he had cultivated an elaborate and refined style such as was never reached again by any of his successors or by any Byzantine author. Two of <persName>CHoricrus</persName>’ speeches contin’ very detailed descriptions of <placeName>Gazaean</placeName> churches, so detailed ‘indéed, that these harangues are much better known among experts of Byzantine art than among classical scholars. Perhaps his most famous speech was that delivered in defence of the stage-play<foreign xml:lang="fr">érs</foreign> ‘whose existence was threatened by an Imperial decree <quote>2</quote> (526 -A.D.) forbidding theatrical performances throughout the Empire. — Bae Ts j</p>
+   <p>Although the School of <placeName>Gaza</placeName> laid the main stréss ‘on oratory, we also hear of noted jurisprudents, philosophers ‘and- doctors who belonged to this circle. As a curiosity we may merition that even a Latin grammarian, a certain <persName>Hiertus</persName>, chose <placeName>Gaza</placeName> as his ‘sphere of action.</p>
+</div>
+<div type="section" n="5">
+   <p>Our picture of the <placeName>Gazaean</placeName> School would be incomplete, were we to omit to mention its other ‘faculty’, comprising the mathematicians and men of science. Unfortunately, our sources tell us but little about this aspect of <placeName>Gazaean</placeName> intellectual life, ‘but’ from scraps of surviving evidence we gain the impression that this branch of learning was by no means neglected. Thus we recall that <persName>Eutocius</persName> (ca. 500 A.D.), the celebrated commentator of <name type="person">ARCHIMEDES</name>, was a native of <placeName>Ascalon</placeName> though he studied his science at <placeName>Miletus</placeName>: A striking display of mathematical terms correctly used in the writing of <persName>Choricius</persName> shows that mathematics was taught in <placeName>Gaza</placeName>, perhaps even by <persName>Eutocius</persName> who probably returned to his own country after completing his studies abroad.</p>
+   <p>That mechanical and technical knowledge was highly developed there, is proven by a <placeName>Gazaean</placeName> treatise (formerly ascribed to <persName>Courtius</persName>) describing minutely a complicated clock and also by the poetical description by <persName>Ioannes</persName> of <placeName>Gaza</placeName> (ca. 640 A.D.) of the church of St. <placeName>Sophia</placeName> in <placeName>Constantinople</placeName>. Let us add that a passage in <persName>Choricius</persName> is our only authority for the use of luminous letters in ancient times.</p>
+   <p>There is one instance on record that an <persName>Athenian</persName> came to <placeName>Gaza</placeName> to study Attic.</p>
+   <p>The subject of zoology and its main representative in <placeName>Gaza</placeName> <persName>Timotheus</persName>, will be treated in a separate chapter.</p>
+</div>
+<div type="section" n="6">
+   <p>It is noteworthy that the zenith of the <placeName>Gazaean</placeName> School (ca. 500 A.D.)</p>
+   <p><persName>Christianity</persName> had established itself—not without hard struggle—</p>
+   <p>in <placeName>southern Palestine</placeName> about a century earlier, the Church had made</p>
+   <p>great efforts to win the favour of the <name type="animal" xml:lang="en">ma</name>.</p>
+   <p>their inmost hearts. Splendid churches were built, public buildings</p>
+   <p>a basilica and (at least) two theatres. Besides, the town was renowned</p>
+   <p>for the pompous feasts that were periodically celebrated here and</p>
+   <p>attracted large numbers of visitors from far and near. For <placeName>Gaza</placeName> had</p>
+   <p>way in order to enjoy this “stranger-loving” city.</p>
+   <p>vast but not least, the Imperial Court in <placeName>Constantinople</placeName> showed</p>
+   <p>itself always most benevolent towards the flourishing city and its</p>
+   <p><persName>Evtocta</persName> (401-460 A.D.) to a new built <placeName>Gazaean</placeName> church. The cit</p>
+   <p>in turn showed its gratitude by erecting statues to the <persName>io eLors</persName> a</p>
+   <p>celebrating their birthdays, etc. with great splendour.</p>
+   <p>To sum up, we may say that all our sources for the history of <placeName>Gaza</placeName></p>
+   <p>in early Byzantine times (i.e. until a.p. 530 approximately) show us</p>
+   <p>the town as a prosperous city and a centre of learning, a town “which</p>
+   <p>could admittedly not compete with the beauty, wealth and splendour</p>
+   <p>of <placeName>Antioch</placeName>, <placeName>Tyre</placeName> or <placeName>Caesarea</placeName>, but which was inferi</p>
+   <p>virtue of its citizens”</p>
+</div>
+<div type="section" n="7">
+   <p>me possess but few details about the life of <persName>Timotheus</persName>.</p>
+   <p>Besides the fact that he was a pupil of <persName>Horapotto</persName> (see p. 2 above) almost everything we know of our author is summed up in a short article by the Byzantine Lexicographer <persName>Surpas</persName> (ca. 950 A.D.)</p>
+   <p>follows: <foreign xml:lang="grc">pI Tans as</foreign></p>
+   <p>* This epithet is given to <placeName>Gaza</placeName> by a 6th century <persName>pilgrim</persName> <persName>Cuorictus</persName>, VIII 33 ff, (ed. Foerster-Richtsteig). <foreign xml:lang="grc">Sermon: Tey</foreign></p>
+   <div type="section" n="5">
+      <p><persName>Timotheus</persName> the <placeName>Gazaean</placeName>, a learned man, lived at the time of the Emperor <persName>Anastasius</persName> to whom he addressed a tragedy on the so called ‘chrysargyron’-tax.</p>
+      <p>He also wrote epically four books on the <name type="animal" xml:lang="en">quadrupeds</name> of <placeName>India</placeName> and <placeName>Egypt</placeName>, and (those) which <placeName>Libya</placeName> rears, and on exotic as well as portentous <name type="animal" xml:lang="en">birds</name>, and on <name type="animal" xml:lang="en">snakes</name>.</p>
+   </div>
+   <div type="section" n="a">
+      <p>On analysing the above passage we get the following facts about <persName>Timotheus</persName>:</p>
+      <p>a) He was a <placeName>Gazaean</placeName>: This statement is unanimously confirmed by all sources that mention <persName>Timotheus</persName>. To this external testimony we can add a piece of internal evidence, namely chapter 24, 2 which clearly suggests that he had himself seen the <name type="animal" xml:lang="en">animals</name> and their guardian passing through <placeName>Gaza</placeName>.</p>
+      <p>b) He lived at the time of the Emperor <persName>Anastasius</persName> 1. This fact, too, is borne out by external and internal evidence; cp. the same chapter.</p>
+   </div>
+</div>
+<div type="section" n="8">
+   <p>c) He wrote a tragedy on the <foreign xml:lang="en">‘chrysargyron’</foreign>-<name type="tax">tax</name> and addressed it to the <persName>Emperor Anastasius</persName>: Modern readers may find it rather unusual to submit in the form of a tragedy a memorandum on a burdensome <name type="tax">tax</name>, yet this drama—together with representations made by some monks from <placeName>Jerusalem</placeName>—induced the <persName>Emperor</persName> to abolish <foreign xml:lang="en">*</foreign> the hated <name type="tax">tax</name> (A.D. 501). Thus the <quote>‘tragedy’</quote> had a happy end. Most modern scholars think that this <quote>‘tragedy’</quote> was simply a speech, or perhaps a poetical address, because real tragedy <foreign xml:lang="en">4</foreign> had died out centuries earlier. One may ask in wonder why <persName>Timotheus</persName> who, as a scholar, had no actual interest in opposing a business-<name type="tax">tax</name>, intervened in this matter. There is little doubt that he did so at the request of his fellow-citizens who deemed a sophist to be the fit person to address the <persName>Emperor</persName>, just as the <placeName>Jerusalemites</placeName> had put their trust in clerical intercessors. For sophists and clerics stood uppermost on the social ladder.</p>
+   <p>d) He wrote in metrical language four books on exotic <name type="animal" xml:lang="en">animals</name>. This was apparently <persName>Timotheus’</persName> most important work because most later Byzantine sources know him only as zoologist. The title of the book is quoted in different forms such as <quote>‘On the Indian <name type="animal" xml:lang="en">animals’</name></quote>, <quote>‘On the quadrupeds and their innate wonderful qualities’</quote> or shortly <quote>stories</quote></p>
+</div>
+<div type="book" n="9">
+   <div type="section" n="82">
+      <p>In modern Greek ‘tragoody’ means any song or melodrama.—<quote>A part of this ‘tragedy’ seems to be preserved in a manuscript found in the library of the monastery on Mt. Athos.</quote></p>
+      <p>INTRODUCTION</p>
+      <p>on animals’.—About fifty years ago, distinguished classical scholars either the cit bake On asia t Pinion, because not only Surp. also the Oxonian fragments (see low) confirm the novel al ica character of this work. Besides, didactic ms’ poenis were quite in y ae ae ge where the two Oppians had er fine evanien he eee seen ton seems to have ‘persisted for centuries, for we a, ager ae ammals by as late a writer as MANUEL PITTES -D.). Diets and USENER state that they have discov-</p>
+      <p>“wrote epically” in their liter i : al m : Wet ms Place among the Gazaean a and Timotheus maintains n x : s by Timothe fragments of a hitherto unknown grammatical treatise Bis te uS Were published by Cramer (cp. p. XX below). It b e title “General rules on the combinati i ears through ora Solu iaana, Byzantine age. The poet IOANNES TZETZES (x1th 1ons the name of Timotheus along with those of AELIAN</p>
+      <p>H. Diets and H. Usener; see chapter 5 ( ARISTOTLE, De arte poetica</p>
+      <p>words constitute iambic feet,</p>
+      <p>About a.p. 10 A.D.. 1050. , Compare Paraphrast is not known P: note 8 to chapter 24, 2. The name of the Bibliography) of this intro-</p>
+      <p>5» P. 1449 a 26 observes that most Greek</p>
+      <p>{INTRODUCTION 7</p>
+   </div>
+</div>
+<div type="section" n="10">
+   <p>teachers. It may therefore be concluded that these ‘Tales from <persName>Timotheus</persName>’ as we may call them served not only the general reader, but
+      were also used as a school-book; this, in turn, became apparently
+      so popular that it superseded the original work and consigned it to
+      oblivion until the real <persName>Timotheus</persName> eventually became lost.</p>
+</div>
+<div type="section" n="11">
+   <p><persName>How</persName> the paraphrase of <persName>Timotheus</persName>’ book ‘On animals’ came down
+      to us will be told in chapter four of this introduction.</p>
+</div>
+<div type="section" n="12">
+   <head>3. THE PLACE OF <persName>TIMOTHEUS</persName> AMONG THE ANCIENT
+      ZOOLOGISTS</head>
+   <div type="subsection" n="a">
+      <head>a) THE MAIN SOURCES FROM THE ZOOLOGICAL POINT OF VIEW</head>
+      <p>Perhaps the most surprising result of an analysis of the sources of
+         <persName>Timotheus</persName>’ book ‘On animals’, as far as they can be judged from
+         parallels in older writers, is that undoubtedly either a full text or a
+         very good excerpt of the <name type="animal" xml:lang="en">Historia Animalium</name> of <persName>ARISTOTLE</persName>—but no
+         other of <persName>ARISTOTLE</persName>’s zoological writings—was well known to <persName>Timotheus</persName>. Exactly one third of the parallels, most of them indicating
+         by their wording the direct use of the <name type="animal" xml:lang="en">Historia Animalium</name>, are referable
+         to this book. This percentage is considerably larger than is found
+         in any other animal book of late antiquity. Many sentences in <persName>Timotheus</persName> are almost quotations from the <foreign xml:lang="la">Hist. Anim.</foreign>, and once even
+         the name of <persName>ARISTOTLE</persName> is mentioned. It is interesting to note the
+         distribution of the paralleis over the nine books of the <foreign xml:lang="la">Hist. Anim.</foreign>:</p>
+      <p>Books of <foreign xml:lang="la">H.A.</foreign> I Il Il <foreign xml:lang="la">IV</foreign> Vv <foreign xml:lang="la">VI</foreign> <foreign xml:lang="la">VII</foreign> <foreign xml:lang="la">VIIiIix</foreign>
+         No. of parallels ) | 2 ‘ > 4 to a8
+         in <persName>Timotheus</persName> EE</p>
+   </div>
+</div>
+<div type="section" n="11">
+   <p>Percentage of</p>
+   <p>no. of his paral- /</p>
+   <p>lels to all nine</p>
+   <p>books</p>
+   <p>4 51 — 34 68 186 — 32.2 30.5</p>
+   <p>/</p>
+   <p>Almost one third of the parallels are from the eighth and a similar proportion from the ninth (pseudo-Aristotelian) book, another fifth from the sixth book, and the remainder (18.7%) from four other books, while two books furnish no parallel. Now, books I-V contain the morphology and anatomy of the animals, which topics obviously found little favour in the eyes of Timotheus. Book VII discusses human reproduction, whilst no part of the Timothean fragments</p>
+   <p>8 INTRODUCTION</p>
+   <p>ee wah an. No wonder therefore that the seventh book is not adduced. The <name type="animal" xml:lang="en">Temaining</name> three books the mai i</p>
+   <p>Timotheus drew, deal with: BSE Non sehich</p>
+   <p>Book VI—reproduction of <name type="animal" xml:lang="en">animals</name>; always a topic of great and detailed interest in animal books of the Middle East.</p>
+   <p>Book VIII—<name type="animal" xml:lang="en">animal</name> ethology and zoo</p>
+   <p>Book IX—<name type="animal" xml:lang="en">animal</name> psychol pears</p>
+   <p>— a! psychology, <name type="animal" xml:lang="en">animal</name> ecology j i i i</p>
+   <p>migration nice oe sy including hibernation,</p>
+   <p>4 The mere anecdotal and more “interesting” books of the Historia</p>
+   <p><name type="animal" xml:lang="en">Animalium</name> are conspicuously prominent in the parallels. And this is</p>
+   <p>easily understandable, as <persName>Timotheus of Gaza</persName> himself was no zoolo-</p>
+   <p>— but a collector and compiler of interesting notes about <name type="animal" xml:lang="en">animals</name></p>
+   <p>such as are found in <persName>PLINY</persName> or in the Physiologus, in <persName>AELIAN</persName> or in the</p>
+   <p>Pseudo-aristotelian De Mirabilibus Auscultationibus, only better</p>
+   <p>arranged than in the latter two works. :</p>
+</div>
+<div type="book" n="12">
+  <div type="section" n="82">
+    <p>known <foreign xml:lang="la">€pic</foreign> poem from the early 3rd century A.D., on the big game of the Middle East, has recently been made easily accessible by, the edition and translation of <persName>A. W. Mair</persName> in <placeName>Loeb’s Classical Library</placeName></p>
+    <p>The thirty-three Parallels from that book show that <persName>Timotheus</persName> <foreign xml:lang="la">hi</foreign></p>
+    <p>really intimate acquaintance with that magnificent collection of sea-lore is certain. It can Safely be assumed that in the lost parts sea-life, the <name type="animal" xml:lang="en">Halieutica</name> must have Played a dominant role <foreign xml:lang="la">a siike</foreign>.</p>
+    <p>Third <foreign xml:lang="la">m</foreign> importance as source for <persName>Timotheus</persName> (thirty-two parallels) are the animal Stories of <persName>AELIAN</persName> (circa A.D. 150). It seems almost certain that <persName>Timotheus</persName> knew this amusing collection of animal fables</p>
+    <p>have not withstood the weathering of the centuries,</p>
+    <p>The same may be said about two other sources. <persName>PLutarcy</persName> (circa</p>
+  </div>
+</div>
+<div type="chapter" n="13">
+   <p>A.D. 100), mainly in his <name type="deity">Moralia</name>, viz. <quote>De Sollertia Animalium</quote> and <quote>De Iside et Osivide</quote>, yields a number of parallels which may very well be due to direct quotation by <persName>Timotheus</persName>.</p>
+   <p>This also holds good for the parallels from the <name type="book">Geoponica</name> (compiled in the 6th century A.D. from various older authors) which may be not direct quotations but drawn from other books of the ‘sympathy’-type initiated by the <name type="book">Physica</name> of <persName>Botos Demoxritos</persName> (2nd century B.C.).</p>
+   <p><persName>WELLMANN</persName> (see below, <name type="book">Bibliography B</name>) has properly pointed out that the <name type="book">Physica</name> is the first of a series of typical animal books of later antiquity about the antipathies and sympathies of <name type="animal" xml:lang="en">animals</name>, as well as their pharmaceutical and magic qualities.</p>
+   <p>Chapters 7, 10 and 17, 2 of our paraphrase give typical illustrations of what might have been found in these books, which are mainly preserved in the <name type="book">Geoponica</name>.</p>
+   <p><persName>Timotheus</persName> has six close parallels to this latter work.</p>
+</div>
+<div type="chapter" n="14">
+   <p>Parallels to the <name type="deity">Historia Naturalis</name> of <persName>Puixy</persName> the Elder (died a.D. 79),
+at least nine in number, are unconvincing. We do not assume that
+<name type="person">Timotheus</name> was actually acquainted with this work. It is much more
+probable that identical or similar sources were used. The trend of
+<name type="animal">Pity</name> is often rather divergent from the version given by <name type="person">Timotheus</name>.
+There is no parallel between these two writers that could not equally
+have been based on any one of a number of other sources available
+to <name type="person">Timotheus</name>. Further parallels from <name type="deity">Priny</name> could easily be adduced,
+but we have no indication that the <name type="deity">Historia Naturalis</name> was actually
+used by <name type="person">Timotheus</name> nor does it appear that he drew upon any other
+Latin sources.</p>
+   <p>Really astonishing is the scarcity of parallels (three only) with
+the older <name type="deity">Physiologi</name>. It is almost impossible that a learned Palestinian writer of 500 4.p. should not have been fully familiar with
+their contents. We can only assume that either by some scientific
+snobbery <name type="person">Timotheus</name> disdained to draw from this source or that the
+School of <placeName>Gaza</placeName> was in general opposed to the theological and moralizing insertions and tendencies with which these books were tainted.
+The few actual parallels from the <name type="deity">Phystologus</name> could all have been
+taken from earlier, pagan and Christian writers, such as <persName>HoRAPOLLO</persName></p>
+</div>
+<div type="chapter" n="15">
+   <p>(late 5th century a.D.). This is, for instance, true of the very peculiar story on the use of the <name type="animal" xml:lang="en">oryx</name> as a ‘calendar-<name type="animal" xml:lang="en">animal</name>’ (chapter 23, 3) which is found in the <placeName>Smyrna</placeName> <name type="animal" xml:lang="en">Physiologus</name>, but also in older <placeName>Alexandrian</placeName> writers. As the parallels are so scarce, we are inclined to assume that they were all taken from the older <placeName>Alexandrian</placeName> literature.</p>
+   <p>’ A‘number of passages in <persName>Timotheus</persName> suggests yet another probable</p>
+   <p><persName>Io</persName></p>
+   <p><persName>Hesoiaie Gee Vita Apollonii</persName> of <persName>PHILOSTRATUS</persName> (civca A.D 200). — <persName>US</persName> (5th century B C.) was well know. 5% tis</p>
+   <p>: ACK n, of course, but it- ic</p>
+   <p>doubtful if the five Parallels adduced go back to direct <foreign xml:lang="la">Glo<choice><abbr>t</abbr><expan>tation</expan></choice>s</foreign> from that writer.—A i“</p>
+   <p>—A numbe :</p>
+   <p>following table: t of other references are shown in the</p>
+   <p>Literary parallels to the book ‘On animals’ by <persName>Timotheus</persName>’</p>
+   <p>Number of P,</p>
+   <p>Source f ercentage</p>
+</div>
+<div type="chapter" n="16">
+   <p>I. <persName>ARISTOTLE</persName>, <title type="work">Historia Animalium</title>. . ae |</p>
+   <p>2. <persName>Oppian</persName>, <title type="work">Cynegetica</title>...... z att</p>
+   <p>3. <persName>Aelian</persName>, <title type="work">De Animalibus</title> ........... - ae</p>
+   <p>4. <persName>PLuTaRcu</persName>, <title type="work">Moralia</title> .......000 os a</p>
+   <p>5. <persName>Philostratus</persName>, <title type="work">Vita Apollonii</title> . oo, - a</p>
+   <p>6. <persName>Herodotus</persName>, <title type="work">Historiae</title> 1... ° 8</p>
+   <p>7. <persName>Botos Democritus</persName>, <title type="work">Geoponica</title> . ae é nt</p>
+   <p>8. <persName>Oppian</persName>, <title type="work">Halieutica</title> 2.00.0, 5 a</p>
+   <p>9. <persName>Pliny</persName>, <title type="work">Historia Naturalis</title>... : -</p>
+   <p>10. <persName>Galen</persName>, <title type="work">Medical works</title>.....000 2 a</p>
+   <p>11. <title type="work">The Physiologus</title> beeeeeee ce, Mo, ; _</p>
+   <p>12. <persName>Nicander</persName> (c. 135 B.C.), <title type="work">Alexipharmaca</title> _ : 06</p>
+   <p>13. <persName>Ambrose</persName> (c. A.D. 370), <title type="work">Hexaemeron</title> .. I "</p>
+   <p>14. <persName>Claudianus</persName> (died c. A.D. 408), <title type="work">De raptu Proserpinae</title> ........00 .</p>
+   <p>15. <persName>Clemens Alexandrinus</persName> (2nd century A.D.), <title type="work">Protrepticus</title> ......0.000 . I 6</p>
+   <p><title type="work">Protrepticus</title> a ee 0.</p>
+   <p>Total of goes to Timotheus’ book ‘On —— a animals’ ..,,</p>
+   <p>SHS BE Taconic SHEE Sve eam omy om 175 99.8%</p>
+</div>
+<div type="section" n="1">
+   <p>b) THE ANIMAL LIST OF <persName>TIMOTHEUS</persName></p>
+   <p><persName>Sumpas</persName> (see P. 4 above) tells us that the animal book of <persName>Timotheus</persName> was originally an epic poem in four books. The prose paraphrase which</p>
+   <p>~~» We are reasonably certain that</p>
+   <p>Se ko of “<name type="animal" xml:lang="en">terrestrial quadrupeds</name>” (mammals, <name type="animal" xml:lang="en">reptiles</name> and</p>
+   <p>ae a oa as ve = the <name type="animal" xml:lang="en">ostrich</name> is contained in our fragment. Of the</p>
+   <p>foe te H introductory chapters, one was certainly devoted to the <name type="animal" xml:lang="en">lion</name>. other two chapters may have been of a general and intro-</p>
+</div>
+<div type="section" n="2">
+   <p>INTRODUCTION If</p>
+</div>
+<div type="book" n="1">
+   <div type="section" n="17">
+      <p>ductory character, or possibly devoted to man or <name type="animal" xml:lang="en">bear</name>, or one chapter to each of these last two. The animal list of the fragment does not contain: The birds (including the <name type="animal" xml:lang="en">bats</name>), the <name type="animal" xml:lang="en">fishes</name> (including the invertebrates and <foreign xml:lang="la">tammals</foreign> of the water; the <name type="animal" xml:lang="en">seal</name> (ch. 57a) may be a fragment of the book on aquatic animals), any of the terrestrial invertebrates, such as <name type="animal" xml:lang="en">insects</name>, <name type="animal" xml:lang="en">spiders</name>, <name type="animal" xml:lang="en">snails</name>, <name type="animal" xml:lang="en">earthworms</name>, etc.—The creatures of the air and of the waters were certainly described each in a special book. The same is quite probable for the <name type="animal" xml:lang="en">insects</name> and their like. If this surmise be correct, we have before us the major part of the first book of <persName>Timotheus</persName>’ ‘On animals’, the other three being wanting entirely except the fragment beginning with the <name type="animal" xml:lang="en">seal</name>.</p>
+      <p>These conclusions are suggestive, but not proven. The terrestrial quadrupeds form the bulk of the animal lists in all early animal books. And their share in the book is the greater, the smaller the zoological knowledge of the writer. It is thus quite possible that the fragments here translated contain the larger part of two of the four books.</p>
+   </div>
+</div>
+<div type="chapter" n="18">
+   <p>The reader may point out that the primitive major taxonomic division is not that of <name type="deity">ARISTOTLE</name>. But he must recall that <name type="deity">ARISTOTLE</name> himself has never given any précis of his animal system. This system was only reconstituted about hundred years ago by prolonged and painstaking analyses carried out by scholars like <persName>J. B. MEYER</persName>, <persName>AUBERT</persName>, <persName>WIMMER</persName>, etc. And the most decisive conclusions come from the other zoological books of <name type="deity">ARISTOTLE</name>, not alone from the <foreign xml:lang="la">Historia Animalium</foreign>.</p>
+   <p>Thus it is entirely reasonable to assume that somebody perfectly familiar with the <foreign xml:lang="la">Historia Animalium</foreign> may be equally unfamiliar with the animal system of <name type="deity">ArisToTLE</name>. And this obviously is the case with <persName>Timotheus of Gaza</persName> who was certainly no brilliant zoologist.</p>
+   <p>The group of the terrestrial quadrupeds in the 52 chapters of the <persName>Timotheus</persName> fragment contain 58 animals which are distributed over the modern system as follows (the name of each animal is followed by the number of the chapter dealing with that animal):</p>
+   <div type="section" n="1">
+      <p><name type="animal" xml:lang="en">I2</name></p>
+      <p>I. <name type="animal" xml:lang="en">Mammalia</name>:</p>
+      <p>II. <name type="animal" xml:lang="en">Aves</name>:</p>
+      <p>
+         <foreign xml:lang="en">INTRODUCTION</foreign>
+      </p>
+      <p>
+         <foreign xml:lang="en">No. of</foreign>
+         <foreign xml:lang="en">No. of</foreign>
+         <foreign xml:lang="en">references:</foreign>
+         <foreign xml:lang="en">references:</foreign>
+      </p>
+      <p>46| <name type="animal" xml:lang="en">1. Simia</name>: 2|<name type="animal" xml:lang="en">Inuus</name> 51, <name type="animal" xml:lang="en">Cercopithecus</name></p>
+      <p>2. <name type="animal" xml:lang="en">Insectivora</name>:</p>
+      <p>3. <name type="animal" xml:lang="en">Carnivora</name>:</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>I</p>
+      <p>Til. <name type="animal" xml:lang="en">Reptilia</name>: ;</p>
+      <p>IV. <name type="animal" xml:lang="en">Amphibia</name>: 2</p>
+      <p>V. <name type="animal" xml:lang="en">Fabulous or undetermined animals</name> : 3</p>
+      <p>
+         <foreign xml:lang="en">Total: —</foreign>
+      </p>
+      <p>
+         <foreign xml:lang="en">Appendix: Marine</foreign>
+      </p>
+      <p>
+         <foreign xml:lang="en">mammals:</foreign>
+      </p>
+      <p>
+         <foreign xml:lang="en">Grand total:</foreign>
+      </p>
+      <p>I</p>
+      <p>
+         <foreign xml:lang="en">a es</foreign>
+      </p>
+      <p>58 species of</p>
+      <p>4. <name type="animal" xml:lang="en">Rodentia</name>:</p>
+      <p>
+         <foreign xml:lang="en">errestrial vertebrates.</foreign>
+      </p>
+      <p>52.</p>
+   </div>
+</div>
+<div type="chapter" n="19">
+   <p>hedgehog <name type="animal" xml:lang="en">6</name>, shrew <name type="animal" xml:lang="en">39a</name></p>
+   <p>striped <name type="animal" xml:lang="en">4</name> and spotted</p>
+   <p>hyena <name type="animal" xml:lang="en">50</name>, tiger <name type="animal" xml:lang="en">9</name>, le-
+opard <name type="animal" xml:lang="en">12</name>, <name type="animal" xml:lang="en">14</name>, chee-
+oe <name type="animal" xml:lang="en">Ae Santee 46</name>, cat
+<name type="animal" xml:lang="en">36</name>, marten <name type="animal" xml:lang="en">37</name>, weasel
+<name type="animal" xml:lang="en">39</name>, ichneumon <name type="animal" xml:lang="en">43</name>, fox
+<name type="animal" xml:lang="en">5</name>, jackal <name type="animal" xml:lang="en">13</name>, wolf ve
+dog <name type="animal" xml:lang="en">26</name></p>
+   <p>squirrel <name type="animal" xml:lang="en">20</name>, mouse <name type="animal" xml:lang="en">38</name>,</p>
+   <p>molerat <name type="animal" xml:lang="en">40</name>, marmot <name type="animal" xml:lang="en">56</name>,</p>
+   <p>beaver <name type="animal" xml:lang="en">54</name>, hare <name type="animal" xml:lang="en">18</name>,</p>
+   <p>porcupine <name type="animal" xml:lang="en">8</name></p>
+   <p>Artiodactyla: <name type="animal" xml:lang="en">21</name> | horse <name type="animal" xml:lang="en">27</name>, wild horse <name type="animal" xml:lang="en">49</name></p>
+   <p>zebra <name type="animal" xml:lang="en">10</name>, mule <name type="animal" xml:lang="en">30</name>, donkey <name type="animal" xml:lang="en">31</name>, onager <name type="animal" xml:lang="en">22</name>, wild
+soat <name type="animal" xml:lang="en">15</name>, Cretan goat
+<name type="animal" xml:lang="en">16</name>, wild sheep <name type="animal" xml:lang="en">34</name>, hip-
+po <name type="animal" xml:lang="en">44</name>, rhino <name type="animal" xml:lang="en">45</name>, ga-
+zelle <name type="animal" xml:lang="en">17</name>, oryx <name type="animal" xml:lang="en">23</name>, gi-
+raffe <name type="animal" xml:lang="en">24</name>, elephant <name type="animal" xml:lang="en">25</name></p>
+   <p>bison <name type="animal" xml:lang="en">21</name>, cattle <name type="animal" xml:lang="en">28</name>,</p>
+   <p>aurochs <name type="animal" xml:lang="en">29a</name>, North
+African buffalo <name type="animal" xml:lang="en">29</name>, dro-
+medary <name type="animal" xml:lang="en">32</name>, gnu <name type="animal" xml:lang="en">53</name></p>
+   <p>ostrich <name type="animal" xml:lang="en">22a</name></p>
+   <p>tortoise and turtle <name type="animal" xml:lang="en">IQ</name>,
+Varanus <name type="animal" xml:lang="en">41</name>, <name type="animal" xml:lang="en">48</name>(?
+crocodile <name type="animal" xml:lang="en">42</name>, chame-
+leon <name type="animal" xml:lang="en">47</name></p>
+   <p>frog <name type="animal" xml:lang="en">55</name>, salamander <foreign xml:lang="la">(?)</foreign></p>
+   <p><name type="animal" xml:lang="en">53a</name></p>
+   <p>griffin <name type="animal" xml:lang="en">ga</name>, Indian dragon
+<name type="animal" xml:lang="en">25a</name>, soubos <name type="animal" xml:lang="en">35</name></p>
+   <p><name type="animal" xml:lang="en">57</name> species of terrestrial quadrupeds.</p>
+   <p>seal <name type="animal" xml:lang="en">57a</name></p>
+   <p>Besides, there are mentioned <name type="animal" xml:lang="en">57</name> species of marine fish, mammals,
+birds and molluscs of which, however, not all can be ascribed with
+certainty to Timotheus.</p>
+</div>
+<div type="section" n="20">
+   <p>There is hardly an original observation or remark in our fragment of Timotheus, and where it seems that there is one, it is merely the record of a curiosity by a historiographer, such as the remark on the <name type="animal" xml:lang="en">giraffe</name> travelling from <placeName>Aqaba</placeName> to <placeName>Istanbul</placeName> through <placeName>Gaza</placeName>.</p>
+   <p>That Timotheus himself was utterly unfamiliar with many of the animals treated by him is obvious from a number of facts. Suffice it to mention that the <name type="animal" xml:lang="en">leopard</name> appears under three different names in three different chapters, and that the striated and the spotted <name type="animal" xml:lang="en">hyenas</name> are described in two chapters as distant as 4 and 50.</p>
+   <p>A number of exotic, rare animals are mentioned, such as <name type="animal" xml:lang="en">gnu</name>, <name type="animal" xml:lang="en">zebra</name>, <name type="animal" xml:lang="en">giraffe</name> etc., but obviously the knowledge of Timotheus about them is not more penetrating than that about the common animals of his country.</p>
+   <p>He was more concerned with animal lore than with natural history. Not direct observation of animals, but books about them constituted his sources. Yet, therein he differed by no means from the overwhelming majority of naturalists from the epigones of <persName>Aristotle</persName> to the Renaissance.</p>
+</div>
+<div type="chapter" n="21">
+   <p>The extant paraphrase of <persName>Timotheus</persName>’ poem ‘<title>On animals</title>’ which was written about A.D. 500, most probably in <placeName>Southern Palestine</placeName> (cp. ch. 24, 2), represents an independent type of animal book: It is not a book on animal sympathies and properties in the style of the <title>Physica</title> of <persName>BoLos DEMoKRITOs</persName>; it is not a mere collection of anecdotes for pleasant reading as the books of <persName>AELIAN</persName>; there is no dealing with animal psychology as in one of <persName>PLUTARCH</persName>’s treatises; it is—at least in the present paraphrase—not a verbose poem splendidly depicting nature and intermixed with lengthy and plastic mythological tales, as are the epics of the <persName>Opprans</persName>; and certainly it is not a weighty textbook of zoology in the sense of the zoological writings of <persName>ARIsTOTLE</persName>. All these books served, however, as sources to <persName>Timotheus</persName> who composed from abstracts of them as well as of other, less important books, his animal compendium; the aim of his work might perhaps best be described by a subtitle, as ‘<quote>“What the educated philosopher (the equivalent for the Victorian gentleman) should know about animals’</quote>.</p>
+</div>
+<div type="chapter" n="22">
+   <p>The <title>Historia Animalium</title> of <persName>ARIsTOTLE</persName>, the animal stories of <persName>AELIAN</persName> and the <title>Cynegetica</title> of <persName>Oppian</persName> offer the majority of those</p>
+</div>
+<div type="section" n="22">
+   <p>ggest the direct utilisat; igi</p>
+   <p>Ss ation of the original tex</p>
+   <p>ee nave briefly discussed why other writers, such as <persName>Privy</persName> bi he</p>
+   <p><persName>Cioponite</persName> eee have been neglected. <persName>PLutarcy</persName> and the</p>
+   <p>ainly have bee i ion i</p>
+   <p><persName>Sekowenn</persName> n used, either the collection itself or</p>
+   <p>The</p>
+   <p>fe See ba and very often close parallels from nearly all the</p>
+   <p>ison, <foreign xml:lang="la">€ fistortia Animalium</foreign> of <persName>AriSTOTLE</persName> prove clearly th</p>
+   <p>ed wor was well known around 500 a.p. in <placeName>Palestine</placeName> This fact</p>
+   <p>on ee mention, as <persName>Pliny</persName> who wrote many centuries baton</p>
+   <p>S, has not drawn directly upon the writings of <persName>Avusratce</persName></p>
+   <p>of the world.</p>
+</div>
+<div type="section" n="23">
+   <p>4. THE TEXT AND THE TRANSLATION</p>
+   <p>a) THE TEXT</p>
+   <p>The text here translated contains excerpts</p>
+   <p>ee em | treatise on <name type="animal" xml:lang="en">catia</name> <name type="animal" xml:lang="en">oan mia</name> ae</p>
+   <p>ea he oes on paper, the <placeName>Codex Augustanus</placeName>. This MS.</p>
+   <p><placeName>Sirah</placeName> ol ae re until 1806 when the town was annexed by</p>
+   <p>fie, hens OR os oy MSS. were transferred to <placeName>Munich</placeName>. Since</p>
+   <p>oalulogne tens peonged i. the <placeName>Hoj- und Staatsbibliothek</placeName> there, its</p>
+   <p>csdier Guta dh ae ar. Besides the excerpts mentioned, this</p>
+   <p>the <foreign xml:lang="la">De animalibus</foreign> of <persName>Reva 0 aga</persName> i The tae</p>
+   <p>experts originally comprised 56</p>
+   <p>no longer extant in the MS. owin</p>
+   <p>53 chapters now cover 8 leaves</p>
+   <p>The first scholar on Tecord to</p>
+   <p>make use of the <placeName>Augsburg</placeName> MS. was</p>
+   <p>: o Shall refer to this as the MS</p>
+   <p>€ are not aware whethe t i</p>
+   <p>on <persName>Heras Gomme</persName> ee - be <foreign xml:lang="grc">Greek</foreign> MSS. of that library were damaged</p>
+</div>
+<div type="section" n="23">
+   <p>The great German scientist and polyhistor <persName>K. GESNER</persName> (1516-1565),</p>
+   <p>in his book <foreign xml:lang="la">De quadrupedibus</foreign> p. 743 (published 1603). There he gave
+   a Latin translation of <persName>TimoTHEvs</persName>’ chapter 56 (On the <name type="animal" xml:lang="en">arctomys</name>).
+   Of course, he did not know who was the author of the treatise—this
+   ‘was not discovered until approximately roo years ago (see page 16)
+   —so he simply called him ‘a certain Greek of a more recent
+   age’. The MS. itself had been lent to <persName>GESNER</persName> to assist him in his
+   editio princeps of <persName>AELIAN</persName>.</p>
+   <p>After that, the excerpts are not mentioned during two centuries.
+   It was in 1800 that <persName>C. F. MATTHAEI</persName> (1763-1822) turned his attention
+   to the <foreign xml:lang="la">Anonymus Augustanus</foreign> (as the author was called by <persName>J. G. SCHNEIDER</persName> *)and published a short article on him in the Literarischer
+   ‘Anzeiger of that year, p. 1055. Yet, <persName>MaTTHaEr</persName> did not rest at this,
+   but eventually produced the editio princeps of <persName>TimoTHEUS</persName> 3.</p>
+   <p>However, <persName>MATTHAEI</persName>’s edition met with little luck. It had been
+   printed in <placeName>Moscow</placeName> under the patronage of a noble Russian family,
+   and few copies had been sold when <persName>Napoleon</persName>’s Army entered the
+   Russian capital which soon after was consigned to the flames. We
+   have reason to believe that almost the entire edition of <persName>MATTHAEI</persName>’s
+   book was destroyed by that fire. Thus the Napoleonic wars which
+   had brought in their wake the removal of the <foreign xml:lang="la">Codex Augustanus</foreign> to
+   <placeName>Munich</placeName>, now again interfered with <persName>TrmoTHEUs</persName>’ treatise. Habent sua
+   fata libellz.</p>
+   <p>It is only natural that <persName>MATTHAEI</persName> fixed the date of his anonymus</p>
+</div>
+<div type="section" n="1">
+   <p>somewhere in the 2nd half of the 12th century, since he had no guide for his purpose except <div type="chapter" n="24"><p><name type="person">MonomaAcuus</name> is mentioned as contemporary (cp. <pb n="31"/> note 8).</p></div> Yet, the word ‘that’ (<foreign xml:lang="en">6t1</foreign>) which appears invariably at the beginning of each section of our treatise, might have given to <persName>MATTHAEI</persName> a hint that this MS. represented a paraphrase of, or an epitome of excerpts from, some older author on a zoological topic.</p>
+</div>
+<div type="section" n="2">
+   <p>In 1843, <persName>CRAMER</persName> published a number of previously unedited MSS. of the <placeName>Bodleian library</placeName> in <placeName>Oxford</placeName> (<foreign xml:lang="la">Anecdota Oxoniensia</foreign>), and among</p>
+   <p>them the 11th century <placeName>Codex Baroccianus 1</placeName> which contains the chapters 7 (in part), 29-32, 35 and 42-49 of <persName>Matruart</persName>’s <name type="person">Anonymus</name>. Moreover, the anonymity was now lifted, because there was a heading which clearly indicated that the chapters were “of <persName>Timotheus</persName> the <placeName>Gazaean</placeName> scholar (from his book) on quadrupeds and their innate wonderful qualities, Poetically put by him into beautiful words” (<foreign xml:lang="la">Analecta Oxoniensia</foreign> tom. IV P. 263 ff.).</p>
+</div>
+<div type="section" n="25">
+   <p>A few years after our text in the Augsburg MS. had been identified,</p>
+   <p><persName>Moritz Haupt</persName> (1808-1874) who was then professor at the university of <placeName>Berlin</placeName>, decided to publish it. For this purpose he had emended the text and had furnished it with short explanatory notes and parallel loci, most of which have been embodied in the notes to the present</p>
+   <p>however, bibliographical Scrutiny revealed that <name type="person">MATTHAE!</name>'s book had meanwhile become a ‘rarissima avis’, so Haupt reconsidered his decision and published the <name type="animal">Timotheus</name> excerpts in the German</p>
+   <p>Philological journal <foreign xml:lang="de">Hermes</foreign> vol. 3 Pp. I ff. It is the text 2 of this edition that has been translated by us.</p>
+   <p>(No. 2422), by <persName>H. Grarr</persName> in the <placeName>Bulletin de l’académie impériale des Sciences de St.-Petersbourg</placeName>, 1864, p. 21 ff. These fragments too, though not all of them can with certainty be ascribed to <name type="person">TIMOTHEUs of Gaza</name>, appear at the end of our translation (pp. 49-51).</p>
+   <p>b) THE TRANSLATION</p>
+   <p>As this paper appeals primarily to the scientist, we have tried to</p>
+   <p>Produce a translation as close as possible to the Greek text. We have therefore</p>
+   <p>ae</p>
+   <p>INTRODUCTION</p>
+   <p>f words and</p>
+   <p>i iginal as regards the order o</p>
+   <p>te from the origina pats</p>
+   <p>a se ah has been done for the benefit of <name type="person">aes Lee</name></p>
+   <p>—— a working-knowledge of Greek and occasionally</p>
+   <p>a</p>
+   <p>riginal. ; certain,</p>
+   <p>aes when the identification of an <name type="animal">animal</name> or -— <foreign xml:lang="en">specsenen</foreign></p>
+   <p>mm oted the authority followed, mostly the re a ae</p>
+   <p><name type="person">Legion</name>, <name type="person">eS LIDDELL-SCOTT-JONES-McKENZIE</name> (see <foreign xml:lang="en">LSJ</foreign> in</p>
+   <p>Lexicon by</p>
+   <p>of abbreviations below).</p>
+   <p>5. BIBLIOGRAPHY</p>
+</div>
+<div type="book" n="26">
+   <div type="section" n="82">
+      <p>q <name type="animal" xml:lang="en">Cony</name> ui secul XI. sub</p>
+      <p>Brevis historia animalium scriptoris anonym</p>
+      <p>" Savata</p>
+      <p>i li floruit. Graece. Nunc prim</p>
+      <p>i imperatore Constantinopo ee oa. Ge aes</p>
+      <p>oes vaDilaaomne fratrum dosimadsiun: fe cerremiaa aaaias se</p>
+      <p>Bre sce et i ad nostra tempora videtur perv f ae</p>
+      <p>oF cae a es tione Latina, edidit Christianus Fr ae</p>
+      <p>tidied Mose = Type NS. Vaewilojsky. 1811. (This is the editio princep:</p>
+      <p>Matthaei. Mosquae. N.S.</p>
+      <p>aniensis edidit J. A.</p>
+      <p>ibli Oxoniensis edidit J.</p>
+      <p>icibus MSS. Bibliothecae ime</p>
+      <p>aoe om wa heal hen p. 263 ff. (containing seven chapters only</p>
+      <p>Cramer, tomus ></p>
+      <p>cp. p. 15). . _—</p>
+      <p>i i de St.-Pétersbourg,</p>
+      <p>i if ie impériale des sciences : : ie Ee</p>
+      <p>ee aT ea fe apnea by M. Haupt as appendix to his edition. Cp. p \.</p>
+      <p>VII (1864) p. 21 ff.</p>
+      <p>vol 3 erlin 1869 p. 1 ff, (This is the edition on which the present translation</p>
+      <p>. (Bi im, .</p>
+      <p>, . os Il</p>
+      <p>oe: Opuscula (edited by U. v. Wilamowitz-Méllendorf) vol. I</p>
+      <p>! us: Ww</p>
+      <p>cones taney p. a. (Reprint of the foregoing).</p>
+      <p>* Peon . *</p>
+      <p>was reviewed by H. USENER, Gottinger Gelehrter Anzeiger 1892 p- IOII-1022).</p>
+      <p>theses and articles: vite,</p>
+      <p>ae, “aes s von Gaza; in Pauty-wissowa’s Realencyclopad:</p>
+      <p>STEIER, Timotheu :</p>
+      <p>ihe, 6, Band, 1937. -</p>
+      <p>» vain Akademische Abhandlungen 1906 p. 106 (On the MSS. containing</p>
+      <p>fragments of TiMOTHEUS). | seo a</p>
+      <p>E. Busser, Jahrbuch fiir classische Philologie 139 (1889) p.</p>
+      <p>OPpPIAN’s influence on TIMOTHEUS). va</p>
+      <p>*K. Seitz, Die Schule von Gaza, Heidelberg 1892 p. 30 ff.</p>
+   </div>
+</div>
+<div type="book" n="1">
+  <p>re n accessible to us</p>
+  <p>Books or publications marked with an asterisk were not</p>
+</div>
+
+<div type="section" n="1">
+  <p>18 INTRODUCTION</p>
+  <p>i: <persName>M. WELLMANN</persName>, Die... ... of the Bolos Demokritos and the Magier Anaxilaos
+  aus Larissa. Teil I. Sitzungsberichte der Berliner Akademie 1928, Philolo-
+  gisch-Historische Klasse No. 7 (shows <name type="animal" xml:lang="en">TimorHEus</name>’ book as representing the
+  type of ‘sympathy-books’ inaugurated by <persName>Boros DEMOKRITOS</persName>; cp. Pp. 9).</p>
+  <p><persName>Curist-ScHMID-STAEHLIN</persName>, Geschichte der griechischen Literatur II (Munich,
+  '1924).</p>
+  <p>Companion to Greek Studies I, 3 <name type="animal" xml:lang="en">Fauna</name>; by <persName>D’arcy W. Tompson</persName> (
+  Cambridge 1931).</p>
+  <p><persName>O. KELLER</persName>, Die Antike Tierwelt (two vols. Leipzig 1909, 1913).</p>
+  <p><persName>Breum</persName>’s Tierleben: 4th edition (13 vols. Leipzig 1922),</p>
+</div>
+
+<div type="section" n="2">
+  <p>6. AIDS TO THE READER</p>
+  <div type="section" n="2.1">
+    <p>a) List of Abbreviations:</p>
+    <p><name type="animal" xml:lang="en">H</name> = = loci adduced by <persName>M. Haupr</persName> which could not be verified by us.</p>
+    <p>l. = line.</p>
+    <p><name type="animal" xml:lang="en">LSJ</name> =<foreign xml:lang="la">A Greek-English Lexicon</foreign> by <persName>H. G. Lippexrz</persName> and <persName>R. Scott</persName>, New
+    Edition by <persName>H. S. Jones</persName> and <persName>R. McKENzIE</persName>, Oxford <foreign xml:lang="la">IQ4o</foreign>.</p>
+    <p><name type="animal" xml:lang="en">MS.</name> = Manuscript.</p>
+    <p><name type="animal" xml:lang="en">MSS.</name> = Manuscripts.</p>
+    <p><name type="animal" xml:lang="en">P-</name> = page.</p>
+    <p>indicate words Supplied by the translators.</p>
+    <p>indicate words which are evidently corrupt in the Greek text but for
+    which no fully satisfactory emendation has yet been found.</p>
+  </div>
+  <div type="section" n="2.2">
+    <p>b) Methods of reference:</p>
+    <p>- Crossreferences to <name type="animal" xml:lang="en">TIMOTHEUS</name> are given:</p>
+    <p>either by quoting page and line of <persName>Haupr</persName>’s edition which are also inserted
+    in the margin of our translation.</p>
+    <p>or by quoting chapter and paragraph.</p>
+    <p>Thus, a certain passa</p>
+    <p>8e, e.g. that on the ‘<name type="animal" xml:lang="en">Cappadocian goats</name>’ may be cited:
+    p. 12 l. 27 or ch. 16, 2.</p>
+  </div>
+</div>
+<div type="chapter" n="41">
+  <head>ON THE HYENA (<name type="animal" xml:lang="en">tata</name>)</head>
+  <p>That year by year it becomes alternately male and female.</p>
+  <p>That it has sharp and thick hair.</p>
+  <p>That it does not bow its neck since it has one bone instead of the vertebra (1. column).</p>
+  <p>That it mates with a <name type="animal" xml:lang="en">wolf</name> and bears the so-called <name type="animal" xml:lang="en">lonewolf</name> which does not join (the other <name type="animal" xml:lang="en">wolves</name>) but lives alone, preying on men and animals.</p>
+  <p>That it steals decomposing bodies from the graves that it sees by night as by day.</p>
+  <p>That (by) vomiting it induces the <name type="animal" xml:lang="en">dogs</name> to come forth and thus it catches them.</p>
+  <p>That it flatters the <name type="animal" xml:lang="en">dogs</name> and playing with (or on) their muzzle it chokes them.</p>
+  <p>That, walking in the moonlight, if there is a <name type="animal" xml:lang="en">dog</name> on a roof, it catches his shade from below (and thus) it drags the <name type="animal" xml:lang="en">dog</name> down from above.</p>
+  <p>That when it finds a sleeping (man) it stoops under his head, and seizing his neck, drinks the blood.</p>
+</div>
+<div type="chapter" n="5">
+   <p>CHAPTER 5—ON THE FOX</p>
+   <p><name type="animal" xml:lang="en">fox</name> is never tamed.</p>
+   <p>He knows how the <name type="animal" xml:lang="en">wolf</name> fears the <name type="plant" xml:lang="en">squill</name></p>
+   <p>not to be hurt by the <name type="animal" xml:lang="en">wolf</name>,</p>
+   <p><name type="animal" xml:lang="en">dog</name>s, he is not afraid</p>
+   <p>4,</p>
+   <p>rolling on <name type="plant" xml:lang="en">seed-land</name>,</p>
+   <p>produce (anything henceforth);</p>
+   <p>1.10 illness) of (</p>
+   <p>8 That it Passes ov</p>
+   <p><foreign xml:lang="grc">ὀτpuγνδν</foreign>.</p>
+   <p><name type="plant" xml:lang="en">cherry</name> (<foreign xml:lang="la">Physalis alhkekengi</foreign>)</p>
+   <p>and Democr</p>
+   <p>respectively.</p>
+   <p>people)</p>
+   <p>losing their hairs or not</p>
+   <p>er the frozen <placeName>Ister</placeName> 14 calle</p>
+   <p>1 Cp. <persName>Galenus</persName>, tom. 13,</p>
+   <p><name type="animal" xml:lang="en">hyena</name> helps sharpsightedness 2,</p>
+</div>
+<div type="chapter" n="30">
+   <p>as the <name type="animal" xml:lang="en">wolf</name> (fears) the <name type="plant" xml:lang="en">squill</name> 3,</p>
+   <p>of the <name type="animal" xml:lang="en">hyena</name>’s skin and he passes</p>
+   <p>comme) 5</p>
+   <p>it stretches itself as (if it were) dead in</p>
+   <p>e birds gather to eat (it) up, suddenly</p>
+   <p>of them and devours it. The <name type="animal" xml:lang="en">Sea-frog</name> 7</p>
+   <p>me.</p>
+   <p>d of the <name type="animal" xml:lang="en">seal</name>’s skin.</p>
+   <p>makes seven apertures to its earth 10</p>
+   <p>and being pursued by</p>
+   <p>(aperture) to the other and</p>
+   <p>1 and it sleeps under</p>
+   <p>bile of the <name type="animal" xml:lang="en">chameleon</name> which (latter is called)</p>
+   <p>Causes the place where it rolls not to</p>
+   <p>therefore, ‘<foreign xml:lang="la">alopecia</foreign>’ 13 is called (the</p>
+   <p>According to LSJ this word stands for</p>
+   <p>(H).</p>
+   <p><foreign xml:lang="grc">oxidAn</foreign> i.e, <name type="plant" xml:lang="en">Urginea maritima</name>,</p>
+   <p>* Cp. <persName>Pliny</persName>. <title>Natural History</title> 28 § ros,</p>
+   <p><foreign xml:lang="la">Vulpes vulpes</foreign>,</p>
+   <p>* Cp. <persName>Oppian</persName>, <title>Halieutica</title></p>
+   <p>f <placeName>Sardcotoc</placeName></p>
+   <p>° <persName>Bactrlexoc</persName>. LSJ suggests: 1) <name type="animal" xml:lang="en">cobra</name> 2) <name type="animal" xml:lang="en">wren</name> 3) <name type="animal" xml:lang="en">gold crest</name> 4) @ <name type="animal" xml:lang="en">sea fish</name>,</p>
+   <p>20 Cp. <persName>Oppian</persName>. <title>Cynegetica</title> 3, 449 ff.</p>
+   <p>11 See <persName>Page</persName></p>
+   <p>6, line x 5 above, Cp. <persName>Anatolius</persName></p>
+   <p><title>De anim.</title> 1, 36; <persName>Geoponica</persName> I5 I, 6.</p>
+   <p><foreign xml:lang="grc">guatyvatoc</foreign>.</p>
+   <p>3 Cp. <persName>Etymologicum Magnum</persName> s.v,</p>
+   <p><foreign xml:lang="grc">hymnum in Dianam</foreign> 79 (H).</p>
+   <p>14 Cp. <persName>Plutarch</persName>, <title>De sollertia</title></p>
+   <p><title>De anim.</title> 6, 2</p>
+   <p>4.</p>
+   <p>2.) <name type="animal" xml:lang="en">hound</name>’</p>
+   <p><persName>Fabricius</persName> in <title>Bibliotheca</title></p>
+   <p><title>De re rustica</title> 2, 69P. 284 and g42 (H); <persName>Pliny</persName>. <title>Natural History</title> 29 § 117.</p>
+   <p>two plants : 1.) <name type="plant" xml:lang="en">winter cherry</name> (<name type="plant" xml:lang="en">Solanum nigrum</name>). Cp. <persName>Anatolius</persName></p>
+   <p>119; <persName>Brehm</persName>’s <title>Tierleben</title>4</p>
+   <p><foreign xml:lang="grc">Bétpayoc</foreign>, Perhaps identical with the fish <foreign xml:lang="grc">ἀδτεβς</foreign> i.e, <name type="animal" xml:lang="en">Lophius Piscatorius</name>,</p>
+   <p><foreign xml:lang="grc">vérchn</foreign>. Cp. <persName>Abelian</persName>. <title>De animalibus</title> 6, 24 and <persName>Physiologus</persName>.</p>
+   <p>kind of <name type="animal" xml:lang="en">serpent</name>,</p>
+   <p><title>Graeca</title>, tom. 4 PP. 300 and 336</p>
+   <p>vol. 12 p. 173.</p>
+   <p>alled <foreign xml:lang="grc">BaSpayoc</foreign>,</p>
+   <p>Perhaps the <placeName>Egyptian</placeName></p>
+   <p><persName>GhermE</persName> (p. 74, 51); scholia in <persName>Callimachus</persName></p>
+   <p><title>animalium</title>, cap,</p>
+   <p>13 p.968 ff.; <persName>Arrian</persName>,</p>
+   <p>1. 15</p>
+   <p>]. 20</p>
+   <p>1. 25</p>
+</div>
+<div type="chapter" n="6">
+   <p>ON THE HEDGEHOG (<foreign xml:lang="grc">ἐχῖνος ὁ ἐπίγειος</foreign>)</p>
+   <p>1 That the <name type="animal" xml:lang="en">hedgehog</name> (when) fighting<supplied reason="omitted">s</supplied> kills the <name type="animal" xml:lang="en">snake</name> and piercing it with its spines it cuts it into pieces.</p>
+   <p>4 <name type="animal" xml:lang="en">Hedgehog</name> defeats the <name type="animal" xml:lang="en">fox</name> by fight, (the latter) being le to overpower the spines 5.</p>
+   <p>ee <name type="animal" xml:lang="en">hedgehog</name> foretelis the winds <supplied reason="omitted">that are</supplied> about to blow. For hedging up its earth (in the direction) from where the wind is — i ee i ide in the direction of the (wind) whi it opens it from the other side in : 5 already ceased (to blow)’. Therefore, anyone that has ae this is held to foreknow the winds when he announces which (winds) going to blow.</p>
+   <p>me That it comes in summertime <supplied reason="omitted">and</supplied> shaking the <name type="plant" xml:lang="en">grapes</name> from the <name type="plant" xml:lang="en">vines</name> and wallowing (on the soil) it empales the <name type="plant" xml:lang="en">grapes</name> and $0 it goes to its earth (just) as it is, pluming itself with the <foreign xml:lang="grc">πέλεκυ</foreign></p>
+   <p>5 That its gall <supplied reason="omitted">ground</supplied> with wax causes abortion</p>
+</div>
+<div type="chapter" n="7">
+   <p>That the wolf when it gets the first look on somebody <quote>dumbs him</quote> dumb and speechless for some hours.</p>
+   <p>That it is by nature hostile to sheep <quote>and preying upon them</quote>.</p>
+   <p>That when it has eaten immoderately blocks its throat.</p>
+   <p>That <name type="animal" xml:lang="en">wolf</name> is so hostile to <name type="animal" xml:lang="en">sheep</name> that (it) often (happens) that when <quote>as <foreign xml:lang="grc">αἴ τι</foreign> is sown on a lyre, the other sheep-strings do not sound</quote> <foreign xml:lang="grc">ἀνέσει</foreign> being struck do not tinkle.</p>
+   <p>That the year is called ‘wolf-year’ (<foreign xml:lang="grc">λύκειος</foreign>) from the <foreign xml:lang="grc">λύκος</foreign>.</p>
+   <p>That the meat of <name type="animal" xml:lang="en">sheep</name> (which were) killed by the <name type="animal" xml:lang="en">wolf</name> is pleasant to the taste, but clothes made from their (i.e. of those <name type="animal" xml:lang="en">sheep</name>) fleeces are not.</p>
+</div>
+<div type="chapter" n="33">
+   <p>That there are many kinds of <name type="animal" xml:lang="en">wolves</name>,</p>
+   <p>That if two <name type="animal" xml:lang="en">wolves</name>
+      Prey together on a <name type="animal" xml:lang="en">sheep</name> and tear it
+      with their teeth <foreign xml:lang="la">8</foreign>, the division is equal. ° <foreign xml:lang="la">muneer</foreign></p>
+   <p>That the <name type="animal" xml:lang="en">wolf</name> when it is ill, eats earth <foreign xml:lang="la">9</foreign>,</p>
+   <p><name type="animal" xml:lang="en">E</name> has the <name type="animal" xml:lang="en">parrot</name> as friend like the <name type="animal" xml:lang="en">roe</name> <foreign xml:lang="la">4</foreign> (which has) the
+      <name type="animal" xml:lang="en">partridges</name>*, like the <name type="animal" xml:lang="en">deers</name> <foreign xml:lang="la">13</foreign> (which have) the <name type="animal" xml:lang="en">francolins</name> <foreign xml:lang="la">14</foreign>, like the
+      <name type="animal" xml:lang="en">horses</name> (which have) the <name type="animal" xml:lang="en">bustards</name>}, like the <name type="animal" xml:lang="en">goats</name> when they bath
+      at water (courses) (have) the <name type="animal" xml:lang="en">sargue-fish</name> <foreign xml:lang="la">2</foreign>.</p>
+   <p>That the <name type="animal" xml:lang="en">wolf</name> has no vertebra, but (only) one bone, like the <name type="animal" xml:lang="en">lion</name>
+      and the <name type="animal" xml:lang="en">hyena</name> *. Therefore their course is straight.</p>
+</div>
+<div type="chapter" n="8">
+   <p>That if someone carries a tooth of it, he does not fear a <name type="animal" xml:lang="en">wolf</name>,</p>
+   <p>and a horse carrying same (i.e. a wolf’s tooth) becomes very swift.</p>
+   <p>That the <name type="animal" xml:lang="en">wolf</name> fears the <name type="plant" xml:lang="en">squill</name>* as the <name type="animal" xml:lang="en">lion</name> (fears) the <foreign xml:lang="grc">prinos</foreign> 5</p>
+   <p>and the <name type="animal" xml:lang="en">pard</name>® (fears) the <name type="plant" xml:lang="en">cornel shrub</name>’.</p>
+</div>
+<div type="chapter" n="9">
+   <p>That anyone holding a <name type="animal" xml:lang="en">toad</name>’s bone may take® the <name type="animal" xml:lang="en">wolf</name> along.</p>
+   <p>That a <name type="animal" xml:lang="en">wolf</name> eats iron and stones®. It hides, however, at the time of the <name type="animal" xml:lang="en">dog</name>-<name type="animal" xml:lang="en">star</name> until (the time) when the air cools down.</p>
+</div>
+<div type="section" n="1">
+   <p>That the <name type="animal" xml:lang="en">porcupine</name> has the size of a <name type="animal" xml:lang="en">wolf</name> at the most 11:</p>
+   <p>That it has on its back instead of hairs a sort of spines and big prickles of which the women having them gilded !2 make pins for their curls.</p>
+   <p>That it shoots them (i.e. the prickles) off?8 when fleeing and kills a man or often a hound 4.</p>
+</div>
+<div type="section" n="1">
+   <p>That in the war (waged by the <persName>Titans</persName>) against <persName>Kronos</persName> and <persName>Zeus</persName>,</p>
+   <p>beasts originated from the blood of the <persName>Titans</persName> all over the world.’</p>
+</div>
+<div type="section" n="35">
+   <p>Literally: takes <name type="animal" xml:lang="en">xopite1</name>;</p>
+   <p><name type="animal" xml:lang="en">zowtZer</name>.</p>
+   <p>° Cp. <persName>Oprian</persName>. <foreign xml:lang="la">Cyneg</foreign>. 3, 397 ff.</p>
+   <p><name type="animal" xml:lang="en">Hystrix hirsutirostris</name>.</p>
+   <p>Cp. <persName>Oppran</persName>. <foreign xml:lang="la">Cyneg</foreign>. 3, 393.</p>
+   <p>The MS. reads ‘having . . . ointed’ (<foreign xml:lang="grc">yptcacat</foreign>). The above reading ‘having ... gilded’ (<foreign xml:lang="grc">yptcaca:</foreign>) is taken from <persName>MaTTHAE!</persName>’s edition, <placeName>Moscow</placeName> 1811.</p>
+   <p>Cp. <persName>Oppran</persName>. <foreign xml:lang="la">Cyneg</foreign>. 3, 397 ff.</p>
+   <p>Cp. <persName>AELIAN</persName>. <foreign xml:lang="la">De an.</foreign> I, 31.</p>
+   <p><name type="animal" xml:lang="en">Felis tigris</name>.</p>
+   <p>Cp. <persName>Lopecx</persName>, <foreign xml:lang="la">Aglaophamus</foreign> p. 567 (H).</p>
+   <p>this is altered by Haupt to ‘lulls to sleep’ l. 10</p>
+   <p>l. 20</p>
+   <p>2 That the beasts of the</p>
+   <p>To them belongs also the</p>
+   <p>by the wind.</p>
+   <p>3 That she is not easil</p>
+   <p>4 That the hunters seiz</p>
+   <p>in vessels of glass; and</p>
+   <p>by the very swift mother, they dr</p>
+   <p>—</p>
+   <p>Ethiopians are bigger and more formidable.</p>
+   <p><name type="animal" xml:lang="en">tigress</name> which bears after having conceived</p>
+   <p>caught alive or tamed because she is exceedingly swift since she has been begotten by the wind 2.</p>
+   <p>e her cubs ® while she is away and put them</p>
+   <p>when they (i.e. the hunters) are overtaken</p>
+   <p>cupied with this (one) and is deceived by her</p>
+   <p>the glass 4, the horsemen holding the other catch, escape.</p>
+   <p>5 That her cub is tamed and be</p>
+   <p>with children and dogs.</p>
+   <p>Op one vessel, and while she is ocoung’s appearance in</p>
+   <p>fo)</p>
+   <p>comes sociable when being reared</p>
+   <p>6 That the <name type="animal" xml:lang="en">tigress</name> leaps against the griffin itself and seizes it when</p>
+   <p>it preys on her cubs, and</p>
+   <p>itself with her into the sea.</p>
+   <p>7 ‘That the <name type="animal" xml:lang="en">tigress</name> often kil</p>
+   <p>than (her and) even the</p>
+   <p><name type="animal" xml:lang="en">lion</name>.</p>
+   <p>she does not yield until with pain it throws</p>
+</div>
+<div type="chapter" n="ga">
+   <head>ON THE GRIFFIN</head>
+   <p>That the <name type="animal" xml:lang="en">griffin</name> has the breast and even the upper (parts) of a <name type="animal" xml:lang="en">horse</name>, the beak and wings of a <name type="animal" xml:lang="en">bird</name>, but the tail and back of a <name type="animal" xml:lang="en">lion</name>.</p>
+   <p>That the <name type="animal" xml:lang="en">griffin</name> is caught by men, and (of) quivers and (of) its claws big cups.</p>
+   <p>That they harness <foreign xml:lang="en">o</foreign> (load), and the <name type="animal" xml:lang="en">griffin</name> which is strong (enough) fastens its claws around it; and being unable to lift such a weight, a man is hidden under such a wagon, and when it gets caught, he jumps up and burns its wings.</p>
+   <p>They <foreign xml:lang="en">xen</foreign> to a wagon and its feathers they make load it with a heavy to carry off even an <name type="animal" xml:lang="en">Ox</name>, these (i.e. the claws) it cannot get free, and that a <name type="animal" xml:lang="en">griffin</name> which is strong (enough) fastens its claws around it; and being unable to lift such a weight, it remains caught; and that a man is hidden under such a wagon, and when it gets caught, he jumps up and burns its wings.</p>
+   <p>That it dies of hunger when it gets old because its beak grows crooked with time and hence does not allow it to partake of food.</p>
+</div>
+<div type="section" n="37">
+   <p>That the <name type="animal" xml:lang="en">zebra</name> resembles the wild asses. It is a very swift <name type="animal" xml:lang="en">animal</name>.</p>
+   <p>i <i>hy colour.</i></p>
+   <p>That it has a tattooed skin and an as</p>
+   <p>That they were harnessed and driven by charioteers in the theatre</p>
+   <p>J llous spectacle.</p>
+   <p>of Rome, and they presented a marve ;</p>
+   <p>4 That the Imperial princess<supplied reason="omitted">s</supplied> took part in processions on such</p>
+   <p>a chariot.</p>
+</div>
+<div type="chapter" n="11">
+   <head>ON THE PARD (<foreign xml:lang="grc">rdodaAuc</foreign>)</head>
+   <div type="section" n="3">
+      <p>That there are two kinds of <name type="animal" xml:lang="en">pards</name>, the big ones having a short...</p>
+      <p>tail 4. _</p>
+      <p>7 That the <name type="animal" xml:lang="en">pard</name> has a sting on its tail like (the one) on (the tail)</p>
+      <p>of the <name type="animal" xml:lang="en">lion</name>, and a carnivorous tongue ;</p>
+   </div>
+   <div type="section" n="3">
+      <p>That the <name type="animal" xml:lang="en">pards</name> were the female disciples of <persName>Dionysos</persName><note>°</note>, and that</p>
+      <p><persName>Pentheus</persName> insulted <persName>Dionysos</persName>, and they prayed that they tight pee</p>
+      <p>beasts and rend <persName>Pentheus</persName> in pieces, and this they became<supplied reason="omitted">d</supplied>? and kille</p>
+      <p>the man.</p>
+   </div>
+   <div type="section" n="4">
+      <p>That the <name type="animal" xml:lang="en">pards</name> like <name type="plant" xml:lang="en">wine</name><note>§</note> and hence they are caught by the hunters; great quantities of <name type="plant" xml:lang="en">wine</name> being provided, (<name type="animal" xml:lang="en">the pards</name>) get drunken</p>
+      <p>and fall asleep. .</p>
+   </div>
+   <div type="section" n="5">
+      <p>That they artfully catch the wild <name type="animal" xml:lang="en">goats</name> <note>®</note> (by) blocking the cross</p>
+      <p>oads with ordure and urine.</p>
+   </div>
+   <div type="section" n="6">
+      <p>That when they are suffering from the sickness called ‘<foreign xml:lang="grc">pardalianchos</foreign>’<note>!°</note> they eat ordure and recover.</p>
+   </div>
+   <div type="section" n="1">
+      <p>This subchapter is not indicated by a spécial heading in the oT ae</p>
+      <p>Literally: Tiger-horse; <persName>Casstus pio</persName> (3rd cent. AD.) <foreign xml:lang="grc">77</foreign>; ae fee,</p>
+      <p><persName>TORGIUS</persName> (ciyca 400 A.D.) were hitherto the only ancient authorities</p>
+   </div>
+   <div type="section" n="2">
+      <p>i i imal, the <name type="animal" xml:lang="en">Equus zebra</name>.</p>
+      <p><foreign xml:lang="de">El eso wie</foreign>: this ae ecsien may also mean: the youthful (oy newly</p>
+      <p>wed) empress.</p>
+      <p>3 <name type="animal" xml:lang="en">Felis pardus</name>. ;</p>
+   </div>
+</div>
+<div type="chapter" n="12">
+  <p>That it is born from th</p>
+  <p>2 That the lioness when s</p>
+  <p>hides the (new) born (cub)</p>
+  <p>rend her in pieces,</p>
+  <p>3 That she washes hers</p>
+  <p>for if the lion perceives (anything) :</p>
+  <p>: ything) he kills he</p>
+  <p>even with another (lioness), 8) uls her and nev</p>
+  <p>Aedzaedoc) 2</p>
+  <p>e intercourse of a lion and a <name type="animal" xml:lang="en">pard</name> 2,</p>
+  <p>he cubs (having conceived) from a <name type="animal" xml:lang="en">pard</name></p>
+  <p>and herself lest the lion may find her and</p>
+  <p>er again mates</p>
+</div>
+<div type="chapter" n="13">
+  <p>ON THE <name type="animal" xml:lang="en">JACKALS</name> (<foreign xml:lang="grc">θῶες</foreign>) 4</p>
+  <p>1 That there are two kinds of <name type="animal" xml:lang="en">jackals</name> 5,</p>
+  <p>2 That the <name type="animal" xml:lang="en">jackals</name> are hairy in winter and smooth-skinned in spring 6</p>
+  <p>3 That the <name type="animal" xml:lang="en">jackal</name> does not har :</p>
+  <p>: m</p>
+  <p>laying in wait (for <name type="animal" xml:lang="en">Fiera</name> =. @ <persName>man</persName>, but catches <name type="animal" xml:lang="en">dogs</name> and <name type="animal" xml:lang="en">deer</name>,</p>
+  <p>and that he may not harm it.</p>
+</div>
+<div type="chapter" n="14">
+  <p>ON THE <name type="animal" xml:lang="en">PANTHER</name> (</p>
+  <p>1 That the <name type="animal" xml:lang="en">panther</name> is born f i |</p>
+  <p>Tom its moth i</p>
+  <p>from as many animals as possible. Se aMerishieitsttsinostve</p>
+  <p>2 That the Indian</p>
+  <p>the animals and leads</p>
+</div>
+<div type="chapter" n="15">
+   <p>That the wild goat is <foreign xml:lang="grc">ἀτύαξ</foreign> or <foreign xml:lang="grc">ἀτύαξ</foreign> as if it were flying <name type="animal" xml:lang="en">Ty swift</name> and moves about on the cliffs</p>
+   <p><foreign xml:lang="grc">ἀτύαξ</foreign> is another name for <name type="animal" xml:lang="en">Felis pardus</name>.</p>
+   <p><foreign xml:lang="grc">ἀκέροκερως</foreign>—literally rendered—means ‘lion-pard’ (<foreign xml:lang="grc">λέωνπάρδος</foreign>). The reading adopted by Hane Of (<foreign xml:lang="grc">ἐξήγησις</foreign>):</p>
+   <p><name type="animal" xml:lang="en">Canis aureus</name>,</p>
+   <p><quote>Cp. Arist[ot]. H, A</quote></p>
+   <p><quote>Cp. ibid. P. 630a 16. 8 Be ae</quote></p>
+   <p><quote>i Cp. ibid. p. 630a 9.</quote></p>
+   <p>Again another name for <name type="animal" xml:lang="en">Felis pardus</name>,</p>
+   <p><quote><foreign xml:lang="grc">ἐν τῷ πρὸς Αἰλιανόν</foreign> Commentary to AELIAN. Variae historiae 5, 40 (H) :</quote></p>
+   <p><quote><foreign xml:lang="grc">τὸ δὲ Ἀκόσ</foreign> <name type="animal" xml:lang="en">Capra aegagrus</name>, is identical with the Greek ibex</quote></p>
+   <p>it jumps from the cliffs into the depth, down from the peaks, and does not hurt itself, except if it happens to tumble down, (in which case) it is dashed to pieces.</p>
+   <p>That the wild goat cherishes its father, and when he can no (longer) move with age}, it brings him fodder and water in its mouth and nourishes him, just as the <name type="animal" xml:lang="en">alkyons</name> <foreign xml:lang="grc">ἀλκυών</foreign> on the sea (nourish) the <name type="animal" xml:lang="en">kerylos</name> <foreign xml:lang="grc">κέρυλος</foreign>, their father.</p>
+   <p>That the wild goat loves its young more <foreign xml:lang="la">(than other animals do theirs)</foreign>, so that, when they are caught, it follows them and wants to share their lot.</p>
+   <p>That it has a hole in its horn <foreign xml:lang="la">(through which it draws air and breath as (if it were leading) to the snout)</foreign>; but if someone stops this (hole) it dies.</p>
+</div>
+<div type="chapter" n="16">
+   <p>That the <name type="animal" xml:lang="en">goats</name> in <placeName>Crete</placeName> <foreign xml:lang="en">(when)</foreign> being hit by an arrow eat a plant called <name type="plant" xml:lang="en">dittany</name> <foreign xml:lang="en">“</foreign> and immediately they drop the arrow and recover.</p>
+   <p>That the <name type="animal" xml:lang="en">goats</name> of the <placeName>Cappadocians</placeName> <foreign xml:lang="en">®</foreign> are shorn <foreign xml:lang="en">(and yield)</foreign> the <name type="animal" xml:lang="en">goat</name>-<name type="animal" xml:lang="en">wool</name>.</p>
+</div>
+
+<div type="chapter" n="17">
+   <p>That the <name type="animal" xml:lang="en">gazelle</name> <foreign xml:lang="en">®</foreign> <foreign xml:lang="en">(when)</foreign> being pursued stops for a short while and makes water, <foreign xml:lang="en">(then)</foreign> runs <foreign xml:lang="en">quicker</foreign> <foreign xml:lang="en">1°</foreign> and escapes.</p>
+   <p>That the <name type="animal" xml:lang="en">gazelles</name> and the <name type="animal" xml:lang="en">partridges</name> are friends <foreign xml:lang="en">"</foreign> of each other; hence they are caught by the hunters through <foreign xml:lang="en">(the presence of)</foreign> each other.</p>
+   <p><quote>Cp. Oppran. Cyneg. 2, 345 ff.</quote></p>
+   <p><foreign xml:lang="el">αἰθύη</foreign> i.e. <name type="animal" xml:lang="en">kingfishers</name>.</p>
+   <p><foreign xml:lang="el">γρυπός</foreign>; the MS. reads here <foreign xml:lang="el">‘χύρξος’</foreign> which name is nowhere else found. The emendation to <foreign xml:lang="el">‘κέρυλος’</foreign> by Mattuaet is justified by numerous parallels e.g. <persName>ANTIGONIUS</persName> <persName>CarRysTIUS</persName>, <title>Mirabilia</title> 27; <persName>AEL.</persName> <title>De an.</title> 5, 48.</p>
+   <p><quote>Cp. Oppian. Cyneg. 2, 356 ff.</quote></p>
+   <p><quote>Cp. ibid. 2, 338.</quote> See also <persName>WELLMANN</persName> <quote>(quoted n. 4)</quote> p. 59.</p>
+   <p><quote>Cp. Arist. H. A. 9, 6 p. 612 a 3.</quote> Apparently again <name type="animal" xml:lang="la">Capra aegagrus</name>.</p>
+   <p><name type="plant" xml:lang="en">Origanum dictamnus</name> <foreign xml:lang="en">(LSJ)</foreign>.</p>
+   <p><quote>Arist. H. A. 8, 28 p. 606 a 16</quote> points out that in <placeName>Lycia</placeName> <name type="animal" xml:lang="en">goats</name> are shorn as <name type="animal" xml:lang="en">sheep</name> elsewhere. Possibly an early reference to <name type="animal" xml:lang="en">Angora goats</name>.</p>
+   <p><foreign xml:lang="en">®</foreign> <quote>Cp. Oppran. Cyn. 4 439f.</quote> <name type="animal" xml:lang="la">Gazella gazella</name>, <name type="animal" xml:lang="la">G. dorcas</name>, <name type="animal" xml:lang="la">G. subgutturosa</name> etc.</p>
+   <p><foreign xml:lang="en">10</foreign> Literally: <foreign xml:lang="en">,more’</foreign> <foreign xml:lang="en">(instead of ‘quicker’)</foreign>.</p>
+   <p><quote>Cp. OppIan. 2, 317 ff.; p. 9 1.2 above.</quote></p>
+   <p>3 That wherever one returns from the troop to ease itself, there move the others too. And they join the <name type="animal" xml:lang="en">wild asses</name>.</p>
+</div>
+
+<div type="chapter" n="18">
+   <p>ON THE <name type="animal" xml:lang="en">HARE</name> <foreign xml:lang="el">(Aaxyeés)</foreign></p>
+</div>
+<div type="chapter" n="19">
+   <p>That the <name type="animal" xml:lang="en">doe</name> bears, a
+   <name type="animal" xml:lang="en">hare</name> in her womb, becomes
+   pregnant again and moreover goes to (have) intercourse.</p>
+   <p>That the <name type="animal" xml:lang="en">hare</name> becomes once male, once female.</p>
+   <p>That the <name type="animal" xml:lang="en">does</name> when pregnant are slow as if they were walking on
+   mud. In spring the <name type="animal" xml:lang="en">hares</name> are <foreign xml:lang="en">fatter</foreign>.</p>
+   <p>That they, being cowards, keep their eyes open while they are
+   asleep.</p>
+   <p>That the colour of their skins resembles the earth on which they
+   dwell.</p>
+   <p>That it, being sharp-sighted, flees the <name type="animal" xml:lang="en">eagle</name>.</p>
+   <p>That there is no <name type="animal" xml:lang="en">hare</name> in <placeName>Ithaca</placeName> &amp;
+   to the sea and perishes.</p>
+   <p>That the <name type="animal" xml:lang="en">tortoise</name> (χελώνη) 7</p>
+   <p>I That <persName>Hermes</persName> made the lyre of a <name type="animal" xml:lang="en">tortoise</name> 8
+   also called ‘<foreign xml:lang="en">chelys</foreign>’ —and gave it to <persName>Apollo</persName> (for the cattle he (i.e.</p>
+   <p>2 That when it devours a <name type="animal" xml:lang="en">snake</name></p>
+   <p>plant and is not harmed.</p>
+   <p>3 That the land-<name type="animal" xml:lang="en">tortoises</name> are different (from) the <name type="animal" xml:lang="en">turtle</name> &gt; for
+   (the latter) leaves the sea and lays its eggs on the land, and (out
+   of) those eggs which produce <name type="animal" xml:lang="en">tortoises</name> facing the sea, become the
+   <name type="animal" xml:lang="en">turtles</name>, but (of) those turned landwards became the land-<name type="animal" xml:lang="en">tortoises</name>,</p>
+   <p>—wherefore the lyre is</p>
+   <p>it eats afterwards the <name type="plant" xml:lang="en">origanum</name></p>
+</div>
+<div type="section" n="42">
+   <p>Cp. ibid. 3, 518,</p>
+   <p>Cp. p.5.7 above. No regular alteration is</p>
+   <p>mayets <foreign xml:lang="grc">uXAdov</foreign>; Haupt accepts MaTTHAEt’s <quote>quicker</quote>. '</p>
+   <p>Cp. Oppran, <name type="animal" xml:lang="en">Cyn.</name> 3, 511,</p>
+   <p>Cp. <persName>Arist.</persName> <name type="animal" xml:lang="en">H. A.</name> 8,28 p. 606a 2,</p>
+   <p><quote>Testudo graeca</quote> and <name type="animal" xml:lang="en">turtles</name>.</p>
+   <p>This is first told in the pseudo-<persName>Homeric</persName></p>
+   <p>approximately 600 B.c.</p>
+   <p><foreign xml:lang="grc">γένος</foreign>, i.e. <name type="animal" xml:lang="en">tortoise</name>,</p>
+   <p>Cp. <persName>Arist.</persName> <name type="animal" xml:lang="en">H. A.</name> 9,6 p. 612a 24;</p>
+   <p><quote>Σαρξοῦς</quote> <foreign xml:lang="grc">χέλυς</foreign>.</p>
+   <p>implied by this expression.</p>
+   <p>suggestion to read <foreign xml:lang="grc">τάχυς</foreign> i.e.</p>
+   <p><quote>Aγνυστος to Hermes</quote> composed</p>
+   <p>P. 12 l. 24 above.</p>
+</div>
+<div type="section" n="29">
+   <p>That the <name type="animal" xml:lang="en">tortoise</name> eats the fleas.</p>
+   <p>That when someone throws it on its back, it cannot turn about</p>
+   <p>on land and equally not in the sea.</p>
+   <p>When dried up by the sun on the shore, it can no more</p>
+   <p>dive back into the sea.</p>
+</div>
+<div type="chapter" n="20">
+   <p>ON THE <name type="animal" xml:lang="en">SQUIRREL</name> (<foreign xml:lang="grc">σκίουρος</foreign>)</p>
+   <p>That the <name type="animal" xml:lang="en">squirrel</name> is overshadowed by its tail like the <name type="animal" xml:lang="en">peacock</name></p>
+   <p>and hence it is called ‘shadow-tail’.</p>
+</div>
+<div type="chapter" n="21">
+   <p>ON THE <foreign xml:lang="grc">βουνασός</foreign> (<name type="animal" xml:lang="en">bounasos</name>)</p>
+   <p>That the <name type="animal" xml:lang="en">bounasos</name> is a big <name type="animal" xml:lang="en">animal</name> in <placeName>Paeonia</placeName>, having the form</p>
+   <p>and appearance of a <name type="animal" xml:lang="en">bull</name>. But its hide covers a whole house.</p>
+   <p>That because of the hairs over its eyes, it looks not straight on,</p>
+   <p>but sideways.</p>
+   <p>That the colour of its skin resembles the earth and the places</p>
+   <p>it dwells.</p>
+   <p>That it has horns (which are) harmless because (they are) bent</p>
+   <p>or hot and ill smelling <foreign xml:lang="grc">ordure</foreign> of the belly, it</p>
+   <p>burns the hunting hounds and men, because it shoots</p>
+   <p>(its dung) far off, and by that very <foreign xml:lang="grc">ordure</foreign> it feeds its young.</p>
+</div>
+<div type="chapter" n="22">
+   <p>That the <name type="animal" xml:lang="en">onager</name> is a very swift <name type="animal" xml:lang="en">animal</name> !4, and there is often a</p>
+   <p><foreign xml:lang="grc">¢ 1 $t.«,</foreign> which also refers to a jumping <name type="animal" xml:lang="en">spider</name> (Aristor. H. A. p. 622 b 31).</p>
+   <p>Cp. Oppian. Halieut. 5, 396.</p>
+   <p>4 <foreign xml:lang="grc">te ey Tean? (8bvata:)</foreign> has been supplied by the pega The omission in the Greek text can be explained as haplography of the orig inal phrase: ‘Siva. Sdvaran’, ;</p>
+   <p>5 Literally: ‘shadow-tail’. Series spp.</p>
+   <p>8 . Cyneg. 2, 580 ff. _</p>
+   <p># sosauae ie 1S] aad D’Arcy W. THompson (see ise n. Ce shee is ison ; e is also spelt ‘bonasos vaGos). :</p>
+   <p>mS ee is D. 630 a 18. Paeonia formed a part of northern Macedon. .</p>
+   <p>® Cp. Arist. ibid. a 27.</p>
+   <p>10 Cp. Arist. ibid. a 36 ff.</p>
+   <p>11 Cp. Arist. ibid. a 33.</p>
+   <p>12 Cp. Arist. ibid. p. 630b 9 ff.</p>
+   <p>A <name type="animal" xml:lang="en">animal</name> very stout’ (<foreign xml:lang="grc">xaybtatov</foreign>). The enadesion ‘very swift (<foreign xml:lang="grc">raxotatov</foreign>) was first suggested by MaTTHAEI; cp. p. 28 n. 4.</p>
+   <p>1, 315</p>
+</div>
+<div type="chapter" n="22a">
+   <p>That when it is pursued, by kicking with (its) feet it shoots stones and wards off the pursuers.</p>
+   <p>3 That the <name type="animal" xml:lang="en">ostrich</name> 3, the (so) called ‘sparrow-<name type="animal" xml:lang="en">camel</name>’ 4, does the same.</p>
+   <p>4 That the <name type="animal" xml:lang="en">ostrich</name> 5 is omnivorous and it often eats iron and dissolves it.</p>
+</div>
+<div type="chapter" n="23">
+   <p>That the ostrich and the wild ass are similar as regards the carrying <name type="animal" xml:lang="en">stones</name>,</p>
+   <div type="section" n="1">
+      <p>That the <name type="animal" xml:lang="en">beisa</name> is a horned animal, and (there is) another ‘<name type="animal" xml:lang="en">Oryx</name>’, a worm <foreign xml:lang="grc">(ὄστρακον)</foreign> (which looks) as if (it were) horned.</p>
+   </div>
+   <div type="section" n="2">
+      <p>That the rivers <placeName>Nile</placeName> and <placeName>Hydaspes</placeName> breed <name type="animal" xml:lang="en">beisas</name>.</p>
+   </div>
+   <div type="section" n="3">
+      <p>That the Egyptian priests revere the <name type="animal" xml:lang="en">beisas</name> since they announce beforehand the dog(-star) <name type="deity">Sirius</name> by remarkable sneezing.</p>
+   </div>
+   <div type="section" n="4">
+      <p>That they have always a scout, and when he warns them by sneezing that an animal is approaching, they immediately form lines of battle and guard the weaker ones (among them).</p>
+   </div>
+   <div type="section" n="5">
+      <p>Henceforth simply called <foreign xml:lang="grc">ὀτρουθιάς</foreign> without the addition ‘the big’.</p>
+   </div>
+   <div type="section" n="6">
+      <p>In their stomachs (?). The Byzantine zoologist <persName>Manuel</persName> <persName>Pures</persName> (14th century) in his <quote>Versus de animalium proprietate</quote>, line 150, reports that stones are found in the dissected body of an <name type="animal" xml:lang="en">ostrich</name>.</p>
+   </div>
+   <div type="section" n="7">
+      <p><name type="animal" xml:lang="en">Oryx leucoryx</name> (LSJ). <persName>Arist.</persName> <quote>H. A.</quote> 2,1 p. 499 b 20 mentions the <name type="animal" xml:lang="en">oryx</name> as cloven hoofed and with but one horn.</p>
+   </div>
+</div>
+<div type="chapter" n="24">
+   <p>That the <name type="animal" xml:lang="en">giraffe</name> accepts the approaching <name type="animal" xml:lang="en">lion</name>! or (any) other <name type="animal" xml:lang="en">animal</name> with its horns and kills him, and it happens (sometimes) that it itself is killed.</p>
+</div>
+<div type="chapter" n="25">
+   <p>That the <name type="animal" xml:lang="en">giraffe</name> is an Indian <name type="animal" xml:lang="en">animal</name>; and it is born from the interifferent <name type="animal" xml:lang="en">animals</name>.</p>
+   <p>sit @ tian dealing in Indian products and hailing from <placeName>Aila</placeName> passed through <placeName>Gaza</placeName>, bringing two <name type="animal" xml:lang="en">giraffes</name> and an <name type="animal" xml:lang="en">elephant</name> to <persName>Emperor Anastasius</persName>.</p>
+   <p>This was seen in our times too: for also to the <persName>Emperor Constantine Monomachus</persName> were these two <name type="animal" xml:lang="en">animals</name> (i.e. <name type="animal" xml:lang="en">giraffe</name> and <name type="animal" xml:lang="en">elephant</name>) brought from <placeName>India</placeName>, and were at each opportunity shown to the people as a marvel, in the theatre of <placeName>Constantinople</placeName>.</p>
+</div>
+<div type="chapter" n="26">
+   <p>That the <name type="animal" xml:lang="en">elephant</name> has no knees.</p>
+   <p>That it has a trunk with which it does everything as with a hand.</p>
+   <p>That it has big teeth or horns.</p>
+   <p>That singing women enchant it and lead it to the hunt, in the same manner as a virgin also leads out the <name type="animal" xml:lang="en">unicorn</name>.</p>
+</div>
+<div type="section" n="46">
+   <p>Cp. <persName>Oppian</persName>. <foreign xml:lang="la">Cyneg.</foreign> 2, 464 ff.</p>
+   <p><name type="animal" xml:lang="en">lopardalis</name> <name type="animal" xml:lang="en">giraffa</name>.</p>
+   <p>Toe eee Net ene meaning ‘<name type="animal" xml:lang="en">camel-pard</name>’, this statement are be influenced by the belief regarding the origin of the <name type="animal" xml:lang="en">penther</name>, <foreign xml:lang="la">eh</foreign> p. 121. 5 above.</p>
+   <p>One could also translate: ‘a man (coming) from <placeName>India</placeName>’!</p>
+   <p><persName>AeMorog</persName>. <persName>Aila</persName>, the biblical <placeName>Elath</placeName>, lay near <placeName>El-Aqaba</placeName> of today a fe southernmost point of <placeName>Palestine</placeName>, on the <name type="place">Red Sea</name>, The place was in Byzantine times the main harbour for the trade with <placeName>India</placeName> and <placeName>Ethiopia</placeName>, _ -</p>
+   <p>® This event is possibly commemorated in a mosaic pavement found in st (<placeName>Palestine</placeName>) showing a <name type="animal" xml:lang="en">giraffe</name>. See <persName>FirzGERaLp</persName>, <foreign xml:lang="la">A Sixth Century Monastery</foreign> a . 9 Pl. XVI (<placeName>Philadelphia</placeName> 1939). , : ;</p>
+   <p>AT ae oe The animals arrived at <placeName>Constantinople</placeName> in 496, according to icle of <persName>MARCELLINUS</persName>.</p>
+   <p>“ pions This passage, evidently added by the paraphrast, enables fix the date of the paraphrase. a</p>
+   <p>ae "A detailed description of this spectacle is given by <persName>MICHAEL ATTALIOTA</persName> - <foreign xml:lang="la">Historia</foreign> p. 48 ff. (<placeName>Bonn</placeName> edition). ;</p>
+   <p>enue alias <name type="animal" xml:lang="en">Elephas eaeatieis</name> and the African <name type="animal" xml:lang="en">Loxodonta africanus</name>.</p>
+   <p>Cp. <persName>Arist.</persName> <foreign xml:lang="la">H. A.</foreign> 1,11 p. 492b 18. _ ; ae</p>
+   <p>a8 ahs sentence being unclear, <persName>Haupt</persName> suggests 1 mead nee <foreign xml:lang="la">Lian</foreign> related to ‘<foreign xml:lang="ar">Carcadann</foreign>’ the Arabic word for <name type="animal" xml:lang="en">hinocer</name>:</p>
+   <p>of tin’ fae ee The legend of the <name type="animal" xml:lang="en">unicorn</name> tamed by a virgin is appersety found first in the <foreign xml:lang="la">Physiologus</foreign> which was compiled between 200 and 400 A.D.</p>
+</div>
+<div type="section" n="47">
+   <p>That they (i.e. the elephants) are caught among the <name type="animal" xml:lang="en">Moors</name> with trick(s) and in ditches.</p>
+   <p>That they are law-abiding and moderate, and have a leader and pass by rivers carrying their young, and heat a site <foreign xml:lang="la">pee</foreign> <foreign xml:lang="la">Sl</foreign> dies abate (the consequences of) the.</p>
+   <p>That each of them has only one spouse like the most moderate.</p>
+   <p>That the <name type="animal" xml:lang="en">dog</name>'s teeth also bring out the teeth of it is <foreign xml:lang="la">ki</foreign> bite of a <name type="animal" xml:lang="en">dog</name>.</p>
+   <p>That when one commits adultery among them, it is killed by the children, and <foreign xml:lang="la">allow</foreign> a <name type="animal" xml:lang="en">dog</name> to bark.</p>
+   <p>That the <name type="animal" xml:lang="en">dogs</name> see dreams, as says <persName>Aristotle</persName>.</p>
+   <p>That towards the rising of <name type="deity">Sirius</name>, <name type="animal" xml:lang="en">dogs</name> become rabid, but they are healed when bathed.</p>
+   <p>That they have the <name type="animal" xml:lang="en">dragons</name> as enemies and they often kill them.</p>
+   <p>That a <name type="animal" xml:lang="en">dog</name> eats a (certain) <name type="plant" xml:lang="en">herb</name> and a <name type="plant" xml:lang="en">cornflower</name>, it empties its bellies and (voids) the worms.</p>
+   <p>That the <name type="animal" xml:lang="en">dragons</name> have precious stones in their eyes. But the <name type="placeName">Indians</name> bewitching them put them to sleep and kill them and take away the stones. But often the hunters are drawn by them.</p>
+   <p>That <name type="animal" xml:lang="en">dogs</name> have three sicknesses: dog-quinsy, podagra and.</p>
+</div>
+<div type="section" n="48">
+   <p>the <name type="animal" xml:lang="en">dragons</name>) into their lairs and perish. 1. 30 <name type="animal" xml:lang="en">rabies</name>.</p>
+   <p>i i fear <name type="animal" xml:lang="en">water</name> (and) seldom</p>
+   <p>Io That the <placeName>Indians</placeName> when they eat the heart or the liver 6 of the <name type="animal" xml:lang="en">ro</name> That they gta — el * — we Pehvans ‘ vat dine</p>
+   <p>ive (i.e. survive). Drinking wi :</p>
+   <p>in sand me Ee ae mee mane | p. 17 mene bea _ those who sacrifice a <name type="animal" xml:lang="en">pup</name> and drink the curdled ne</p>
+   <p>(their) sounds 7,</p>
+   <p>tr That the <name type="animal" xml:lang="en">elephants</name> ha</p>
+   <p>with soldiers, and fight.</p>
+   <p>12 That they fear <name type="animal" xml:lang="en">Pigs</name>® and <name type="animal" xml:lang="en">mice</name> 1°. </p>
+   <p>ilk its stomach with <name type="plant" xml:lang="en">water</name>.</p>
+   <p>Men Baek wooden ‘owers filed | —— mika one shows a mirror to people who were bitten (by a <name type="animal" xml:lang="en">rabid dog</name>) and they see in it the image of a <name type="animal" xml:lang="en">dog</name>, (then) they die, but \2</p>
+   <p>1. 5 when (they see the image) of a <name type="animal" xml:lang="en">human being</name>, they live.</p>
+</div>
+<div type="chapter" n="26">
+   <p>CHAPTER 26—ON THE <name type="animal" xml:lang="en">Dog</name> (xdv)</p>
+   <p>i i ied it arently</p>
+   <p>I That the <name type="animal" xml:lang="en">dog</name> is the animal of <persName>Hermes</persName>.</p>
+   <p>* The word ,peoples’ is not found in the MS. Haupr supplied it app: y</p>
+   <p>on the authority of chapter ef =</p>
+   <p>i im. 4, Io p. 53 28.</p>
+   <p>1 The MS. reads ‘foams’ (<foreign xml:lang="grc">ἐπποτκ</foreign>); the emendation to ‘ditches’ (<foreign xml:lang="grc">ἕρροι</foreign>) * Hist. Anim, -</p>
+   <p>was first suggested by MatrHazr who adduced Artran,</p>
+</div>
+<div type="section" n="93">
+   <p>We are furthermore told by <persName>Pliny</persName> (ibid. § 104) that the meat of a <name type="animal" xml:lang="en">hyena</name> is an efficacious remedy against rabies. In the light of the quoted passages</p>
+</div>
+<div type="chapter" n="27">
+   <head>ON THE HORSE (<foreign xml:lang="grc">ἵππος</foreign>)</head>
+   <p>1 That from different peoples there are different horses as regards their virtue.</p>
+   <p>2 That a mare desiring intercourse, when she is shorn <note>2 <foreign xml:lang="grc">τὰς τρίχας</foreign></note> of her hairs (ie. tail and mane), is quiet as if she were stripped.</p>
+   <p>3 That the mucous humour of the mare is the so-called ‘<name type="animal" xml:lang="en">Hippomanes</name>’ <note>3</note>; licking this from the forehead(s) of the new born foals, the dams love them. But also women who deal in drugs and potions use this (substance) for love-(potions).</p>
+   <p>4 That horses have a bone in their hearts and some <name type="animal" xml:lang="en">cows</name> <note>4</note> (have it) too.</p>
+   <p>5 That the <name type="animal" xml:lang="en">stallion</name> lives 35 years but the <name type="animal" xml:lang="en">mare</name> 30 <note>5</note>; by the way, (there has been) a <name type="animal" xml:lang="en">horse</name> (which) lived 75 years.</p>
+</div>
+<div type="section" n="51">
+   <p>That <name type="animal" xml:lang="en">horses</name> cover and copulate as long as they live except two years of their youth and of their old age §,</p>
+   <p>That the <name type="animal" xml:lang="en">mares</name>, when other <name type="animal" xml:lang="en">dams</name> die, suckle their <name type="animal" xml:lang="en">foals</name> (i.e. <name type="animal" xml:lang="en">foals</name> of the dead <name type="animal" xml:lang="en">mares</name>) 7.</p>
+   <p>That when one wants a dappled <name type="animal" xml:lang="en">horse</name>, he draws (a picture of) such a <name type="animal" xml:lang="en">horse</name> near a spring, and the <name type="animal" xml:lang="en">mare</name> seeing the picture bears such (a dappled <name type="animal" xml:lang="en">foal</name>) %. And this is also (the case) with <name type="animal" xml:lang="en">doves</name>.</p>
+   <p>And in <placeName>Lacedaemon</placeName> in the chambers of pregnant women they draw (pictures of) beautiful <persName>youths</persName>.</p>
+   <p>That the <name type="animal" xml:lang="en">horse</name> does not cover his <name type="animal" xml:lang="en">dam</name> or <name type="animal" xml:lang="en">sister</name>.</p>
+   <p>That two fight for the female, and the victorious (one) keeps her as his own and intimate, and (the stallions) being enemies recognize the voice of each other at very long (distance).</p>
+   <p>Ir That the <name type="animal" xml:lang="en">horses</name> see dreams ”, but among men there are some who never dream, and when they once in their lives see (a dream), they (may) expect disaster or death.</p>
+   <p>That they (i.e. the <name type="animal" xml:lang="en">horses</name>) fear <name type="animal" xml:lang="en">camels</name> unless they are used to them.</p>
+   <p><name type="animal" xml:lang="la">Equus caballus</name> (domestic).</p>
+</div>
+<div type="chapter" n="28">
+   <p>That bulls fight strenuously against each other for the females.</p>
+   <p>That when the cowherd rubs against his hand the udder of a cow that needs to be covered, and adding some sweat takes fast hold of the bulls’ nostrils, he stops them from fight(ing).</p>
+   <p>That the cows have two udders and four teats.</p>
+   <p>That the blood of bulls curdles near the heart of those who drink it, and kills (them) 5. .</p>
+   <p>That the <name type="animal" xml:lang="en">Erythrean kine</name> shake their horns like the(ir) ears &amp;,</p>
+   <p>That the copulation of cattle like that of <name type="animal" xml:lang="en">deer</name> is carried out (by the bull) scaling’ (the cow), because of the sinewy (parts) 8.</p>
+   <p>That there is a four-horned bull who has sexual commerce with <name type="animal" xml:lang="en">horses</name>, and from him issue the so-called <foreign xml:lang="grc">kallaioi</foreign> horses.</p>
+   <p>That there is (a sort of) cattle called ‘grazing backwards’ from their grazing backwards !° which they are forced to do because of the length of their horns.</p>
+   <p>That there is a (kind of) horned cattle called <name type="animal" xml:lang="en">Bison</name> which have, as it were, a carnivorous tongue 1. They originate from the country <placeName>Bistonis</placeName> 22,</p>
+</div>
+<div type="chapter" n="29">
+   <p>That the <name type="animal" xml:lang="en">boubalos</name> resembles partly an <name type="animal" xml:lang="en">ox</name> and partly the <name type="animal" xml:lang="en">Libyan deer</name>.</p>
+</div>
+<div type="chapter" n="29a">
+   <p>That there is another <name type="animal" xml:lang="en">boubalos</name> beyond the Alps near the river <placeName>Rhine</placeName> <note type="reference">*</note>. But this <name type="animal" xml:lang="en">boubalos</name> is white and murderous.</p>
+   <p>When it is caught <note type="reference">4</note> and then set free, it goes back to its own forest <note type="reference">®</note>. This does also the smooth <name type="animal" xml:lang="en">lobster</name> in the sea <note type="reference">®</note>.</p>
+</div>
+<div type="chapter" n="30">
+   <p>That the <name type="animal" xml:lang="en">mules</name> being born from different species do not bear, and live a long time <note type="reference">?</note>.</p>
+   <p>That a she-<name type="animal" xml:lang="en">mule</name> in <placeName>Athens</placeName> lived 80 years <note type="reference">8</note>, distinguishing itself at work when the temple of <name type="deity">Athena</name> was built. The people (of <placeName>Athens</placeName>) passed a decree that this (mule) should not be kept away from the cornfield(s) nor from any other necessity for its subsistence.</p>
+</div>
+<div type="chapter" n="3I">
+   <p>That the urine has a cleaning effect <rs type="note" n="®">®</rs> on the <name type="animal" xml:lang="en">she-mules</name> as (has) the menstruous blood on women, (and) the <name type="animal" xml:lang="en">he-mule</name> smelling them (ie. the females) gets prematurely old.</p>
+   <div type="section" n="1">
+      <p>That <name type="animal" xml:lang="en">asses</name> in cold places soon perish <rs type="note" n="11">11</rs>,</p>
+   </div>
+   <div type="section" n="2">
+      <p>That among the <name type="placeName">Hyperboreans</name> they sacrifice <name type="animal" xml:lang="en">asses</name> <rs type="note" n="®">®</rs> to <name type="deity">Apollo</name></p>
+   </div>
+   <p><name type="plant" xml:lang="en">Bubalis mauretanica</name> (LSJ).</p>
+   <p>? This sub-chapter is not indicated under a special heading in the Greek text.</p>
+   <p>* The transalpine <name type="animal" xml:lang="en">boubalos</name> is the <name type="animal" xml:lang="en">aurochs</name> (<foreign xml:lang="la">Bos primigenius</foreign>),</p>
+   <p>* This refers apparently again to the ordinary <name type="animal" xml:lang="en">boubalos</name>.</p>
+   <p>5 Cp. <persName>Oppran</persName>. <foreign xml:lang="la">Cyneg.</foreign> 2, 306 ff.</p>
+   <p><rs type="note" n="®">®</rs> <foreign xml:lang="grc">davaxdc</foreign>. Cp. <persName>Oprran</persName>. <foreign xml:lang="la">Halieut.</foreign> i, 263 ff.</p>
+   <p>7 <persName>Codex B</persName> adds here: ‘that the <name type="animal" xml:lang="en">mare</name> then quickly admits the <name type="animal" xml:lang="en">donkey</name> to sexual commerce, when one shears her hairs (i.e. mane). Cp. p. 18, 9 above.</p>
+   <p>* Cp. <persName>Arist.</persName> <foreign xml:lang="la">H. A.</foreign> 6, 24 p. 577b 29.</p>
+   <p>® Cp. ibid. p. 587 a 2.</p>
+   <p>1° Cp. ibid. 8, 28 p. 606 b 4; <foreign xml:lang="la">De generatione animalium</foreign> 2,8 p. 748 a 24.</p>
+   <p>11 This passage may have been taken from <persName>CLEMENS ALEXANDRINUS</persName>, <foreign xml:lang="la">Protrepticus</foreign> 2, 29 (H). The <name type="placeName">Hyperboreans</name> were a fabulous people in the extreme North. It is noteworthy that tombs of <name type="animal" xml:lang="en">horses</name> and <name type="animal" xml:lang="en">asses</name> buried during the Hyksos period (ca. 1750-1500 B.C.) have been found during excavations in <placeName>Gaza</placeName>,</p>
+   <p>“1 <foreign xml:lang="grc">tvpa¢</foreign>. <persName>Haupt</persName> attributes this statement to an error which has sprung from a misunderstood Egyptian custom: According to <persName>Prutarcu</persName>, <foreign xml:lang="la">De Iside et Osiride</foreign> c. 30 p. 362, the evil god <name type="deity">Set-Typhon</name> was believed to resemble an</p>
+</div>
+<div type="chapter" n="32">
+   <p>That camels could carry a big load if they were not accustomed to be loaded while kneeling down <pb n="37"/> and (then) to get up with their loads on.</p>
+   <p>That they in the South cover bigger distances <pb n="N"/> than (any) other beast and by night they recognise their way by the stars. Hence the Indians (mounted) on them travel eastwards and steal the golden dust from the Indian ants <pb n="Ww"/>.</p>
+   <p>That whilst the ants stay inside their hills during the heat, the Indians steal their gold dust.</p>
+</div>
+<div type="section" n="56">
+   <p>That they (ic. the Indians) harness together three <name type="animal" xml:lang="en">camels</name> of which two are males, and in the middle a female that has dropped recently; and when they have loaded (the gold dust) they ride (away)</p>
+   <p>1 unaic. Cp. <persName>Arist.</persName> <foreign xml:lang="la">H. A.</foreign> 8, 25 p. 605 a 16.</p>
+   <p><foreign xml:lang="la">a</foreign> (see p. 19 n. 9) (p. 17) adduces a late Arab parallel.</p>
+   <p>3 <name type="animal" xml:lang="la">Equus asinus</name> (domestic).</p>
+   <p>s = ee Cp. <persName>Arist.</persName> <foreign xml:lang="la">H. A.</foreign> 9,1 p. 609a 31. According to LSJ this bird may be identified with the <name type="animal" xml:lang="en">linnet</name>.</p>
+   <p>Cp. <persName>ARIST.</persName> ibid. 5, 31 p. 5574 15. This statement was transmitted through the ages on the authority of <name type="deity">ARISTOTLE</name>, and it was a most courageous <foreign xml:lang="la">eau</foreign> of <persName>F, Rep!</persName> to give an illustration of a ‘‘<name type="animal" xml:lang="la">Pediculus asini</name>” in his famous book ‘<foreign xml:lang="la">De generatione insectorum</foreign>’ (Florence 1668).</p>
+   <p>e 6 Cp. <persName>ARIST.</persName> 2, I p. 499 b 12 and 19. The ‘<name type="animal" xml:lang="en">Indian ass</name>’ is possibly the <name type="animal" xml:lang="en">Indian rhinoceros</name> whose horn was reported to neutralise any poison.</p>
+   <p>7 <name type="animal" xml:lang="la">Camelus dromedarius</name>.</p>
+   <p>8 Literally: ‘sitting down’.</p>
+   <p>® Literally: ‘march more than...’. </p>
+   <p>10 Cp. <persName>HERODOTUS</persName> 3, 102 ff.</p>
+   <p>Pp. 21</p>
+   <p>1. 10</p>
+   <p>38 TRANSLATION</p>
+   <p>fleeing from the <name type="animal" xml:lang="en">ants</name> lest they may be caught; and if the males cannot follow, the female alone holds out and drags them (i.e. the males) along, since she is in a hurry because of her young.</p>
+   <p>5 That the <name type="animal" xml:lang="en">Bactrian camels</name> are two-humped.</p>
+   <p>6 That people castrate the males lest they may be unruly in war 1,</p>
+   <p>7 That the she-<name type="animal" xml:lang="en">camel</name> brings forth one young 7 only each time and never twins.</p>
+   <p>8 That the male when he sees a human being ® whilst he is mating, rages to kill (the onlooker).</p>
+</div>
+<div type="chapter" n="33">
+   <head>ON THE BOAR (<name type="animal" xml:lang="en">niga</name>)</head>
+   <p>1 That the <name type="animal" xml:lang="en">boar</name> has such a hot tooth that a hair touched (by it) burns, and through his bite the hairs of the <name type="animal" xml:lang="en">dog</name> fall off.</p>
+   <p>2 That <placeName>Libya</placeName> which produces all sorts of animals, produces no wild <name type="animal" xml:lang="en">swine</name>.</p>
+   <p>3 That the rut of the <name type="animal" xml:lang="en">boar</name> is (so) wild that the fleeing <name type="animal" xml:lang="en">sow</name> is often killed by him.</p>
+   <p>4 That the milk of <name type="animal" xml:lang="en">sows</name> does not curdle; but if a human being sucks from a <name type="animal" xml:lang="en">sow</name>, it becomes leprous.</p>
+   <p>5 That when a <name type="animal" xml:lang="en">boar</name> is at war with another one, he withdraws into a wood and keeps constantly training, and having hardened his skin he comes (forth) and fighting incessantly he kills and (sometimes) is killed.</p>
+   <p>6 That the <name type="animal" xml:lang="en">boar</name> alone of (all) animals becomes stronger when losing his genitals.</p>
+</div>
+<div type="chapter" n="34">
+   <p>That the <name type="animal" xml:lang="en">sheep</name> in <placeName>Libya</placeName> drop thrice a year at regular intervals.</p>
+   <p>That in <placeName>Libya</placeName> which is very hot and rich in pastures, the <name type="animal" xml:lang="en">sheep</name> become horned very quickly, and they drop incessantly, and milk is wanting at all there.</p>
+   <p>That in <placeName>Libya</placeName> there is a kind of <name type="animal" xml:lang="en">sheep</name>, wild but silly and easily caught; but their wool is useless.</p>
+   <p>That in <placeName>Scythia</placeName>, because of the cold winds, the <name type="animal" xml:lang="en">sheep</name> mostly bear but once at a time and have no horns.</p>
+   <p>That in <placeName>Crete</placeName> there are <name type="animal" xml:lang="en">sheep</name> with four horns.</p>
+   <p>That all <name type="animal" xml:lang="en">sheep</name> that are spotted have the blood vessels under their tongues spotted (too).</p>
+</div>
+<div type="chapter" n="35">
+   <p>That the <name type="animal" xml:lang="en">soubos</name> is, like a <name type="animal" xml:lang="en">sheep</name>, yellow and smooth; and it is liked by the <name type="animal" xml:lang="en">fish</name> (because) it is amphibious, and swimming it eats them while they are gathering round it. Yet it itself is often caught by the fishers.</p>
+</div>
+<div type="chapter" n="36">
+   <p>That the <name type="animal" xml:lang="en">cat</name> which is usually called by us (by its) Roman (name) ‘<foreign xml:lang="la">katta</foreign>’, is said to have sprung from the interbreeding of <name type="animal" xml:lang="en">pard</name>(s) in <placeName>Libya</placeName>.</p>
+   <p>And the female is said to be more harlot-like and to fawn upon the male during intercourse.</p>
+   <p>That the kids watch each other when they lie down to sleep, and</p>
+</div>
+<div type="section" n="59">
+   <p>Cp. <name type="person">Arist.</name> <foreign xml:lang="la">H. A.</foreign> 8, 28 p. 606a 18. oes aca <foreign xml:lang="grc">Lerner</foreign></p>
+   <p>— <quote>suggests the reading ‘all the year through’ (84 <foreign xml:lang="grc">κατὰ</foreign> <foreign xml:lang="grc">ἐνιαυτόν</foreign>) instead of ‘at all there’ (84 <foreign xml:lang="grc">πανταχῇ</foreign> <foreign xml:lang="grc">ἐνταῦθα</foreign>).</quote></p>
+   <p>6 Cp. <name type="person">Arist.</name> <foreign xml:lang="la">H. A.</foreign> 8, 28 p. 606a 20. —</p>
+   <p>7 The <name type="animal" xml:lang="en">lion</name> is correct (<name type="person">Oppian</name>, <name type="person">Keller</name>). ; ;</p>
+   <p>$ ee oe ‘<name type="person">Galen</name>, 2, 382-444. An unidentified animal, either <name type="animal" xml:lang="en">sheep</name> or <name type="animal" xml:lang="en">deer</name>.</p>
+   <p>° <name type="animal" xml:lang="la">Felis catus</name> (domestic). ; . .</p>
+   <p>10 <foreign xml:lang="la">ie ph ie</foreign> structure of this sentence being objectionable, it is probable that the whole sentence is corrupt.</p>
+   <p>11 Cp. <name type="person">Arist.</name> <foreign xml:lang="la">H. A.</foreign> 5,2 p. 5404 II. a a,</p>
+   <p>a8 <foreign xml:lang="grc">εἰς</foreign> weighs is read ‘into intercourse’ (<foreign xml:lang="grc">εἰς συνουσίαν</foreign>) instead of the transmitted ‘during intercourse’ (<foreign xml:lang="grc">ἐν συνουσίᾳ</foreign>).
+   <lb/>l. 30
+   <lb/>P. 23</p>
+</div>
+<div type="chapter" n="37">
+   <head>ON THE MARTEN</head>
+   <p>1 That the so-called ‘<foreign xml:lang="grc">ἴκτις</foreign>’ (i.e. <name type="animal" xml:lang="en">marten</name>) which we are wont to call ‘<foreign xml:lang="grc">αἴλουρος</foreign>’ (i.e. <name type="animal" xml:lang="en">cat</name>) creeps under the wall and devours the domestic <name type="animal" xml:lang="en">fowls</name>; but when it falls, it blows itself up and filling its skin with air it is not harmed.</p>
+   <p>2 If someone puts <name type="plant" xml:lang="en">rue</name> <persName>3</persName> on (the place) where the <name type="animal" xml:lang="en">fowls</name> are accustomed to be in the courtyard, (then) the beast (viz. the <name type="animal" xml:lang="en">marten</name>) does not approach them (so) quickly.</p>
+   <p>3 That the genitals of this beast are bony <persName>4</persName>, and they are applied for curing the bladder in cases of difficult micturition.</p>
+</div>
+<div type="chapter" n="38">
+   <head>ON <name type="animal" xml:lang="en">Mice</name> (<foreign xml:lang="grc">μυοδέρκαι</foreign>)</head>
+</div>
+<div type="chapter" n="39">
+   <p>That there is in <placeName>Libya</placeName> a common kind of <name type="animal" xml:lang="en">mice</name> and <name type="animal" xml:lang="en">hares</name>,</p>
+   <p>That the <name type="animal" xml:lang="en">mice</name> in <placeName>Libya</placeName> do not drink,</p>
+   <p>That <name type="animal" xml:lang="en">mice</name> often grow out of the late rain,</p>
+   <p>That <name type="animal" xml:lang="en">mice</name> bite sleeping persons, and one (<name type="animal" xml:lang="en">mouse</name>) bites the finger,</p>
+   <p>the other makes it swell and renders it unsensible.</p>
+   <p>That they dip their tails into lamps and draw the oil and lick it when they cannot put their heads in.</p>
+</div>
+<div type="chapter" n="39">
+   <head>ON THE <name type="animal" xml:lang="en">WEASEL</name> (<foreign xml:lang="ar">yaar</foreign>)</head>
+   <p>That the <name type="animal" xml:lang="en">weasel</name> drops (its young) through the ear, but—according to others—through the mouth.</p>
+   <p>That the <name type="animal" xml:lang="en">weasel</name>, when it fights against the <name type="animal" xml:lang="en">snake</name>, eats <name type="plant" xml:lang="en">rue</name> <foreign xml:lang="grc">α0</foreign> for the <name type="animal" xml:lang="en">snake</name> dreads this (<foreign xml:lang="en">herb</foreign>). Moreover, the <name type="animal" xml:lang="en">snakes</name> that eat each other, are deathbringing. But (<foreign xml:lang="en">the snake</foreign>) dreads human saliva,</p>
+   <p>Here is a lacune of approximately four letters,</p>
+   <p><name type="animal" xml:lang="en">Mustela foina</name>,</p>
+</div>
+<div type="chapter" n="40">
+   <p>That if shrew-mice <name type="animal" xml:lang="en">bite</name> when pregnant, they kill.</p>
+</div>
+<div type="chapter" n="41">
+   <p>That if the <name type="animal" xml:lang="en">shrew-mouse</name> <name type="animal" xml:lang="en">bites</name> someone on a road used by wagons,</p>
+   <p>then its bite is healed by the mud from the wagon wheel.</p>
+</div>
+<div type="chapter" n="42">
+   <p>CHAPTER 40—ON THE <name type="animal" xml:lang="en">MOLE-RAT</name> (<foreign xml:lang="grc">dondauk</foreign>)</p>
+   <div type="section" n="1">
+      <p>That the <name type="animal" xml:lang="en">mole rat</name> is a blind <name type="animal" xml:lang="en">weasel</name> which, creeping under <name type="plant" xml:lang="en">earth</name>, eats the roots of <name type="plant" xml:lang="en">plants</name> and dries them up.</p>
+      <p>It is caught by bait or in traps.</p>
+      <p>It is said that the <name type="animal" xml:lang="en">molerat</name> is <foreign xml:lang="grc">Ehieue i</foreign>; he was turned into a beast by the anger of <name type="deity">Helios</name> and therefore, when it is seen by <name type="deity">Helios</name>, the <name type="plant" xml:lang="en">earth</name> no longer receives it back.</p>
+   </div>
+</div>
+<div type="chapter" n="43">
+   <p>CHAPTER 41—ON THE <name type="animal" xml:lang="en">LAND CROCODILE</name> (<foreign xml:lang="grc">yepaaios xooxddethoc</foreign>)</p>
+   <div type="section" n="1">
+      <p>That the (<name type="animal" xml:lang="en">land</name>) <name type="animal" xml:lang="en">crocodile</name> dreads the <name type="plant" xml:lang="en">saffron</name> and thence has its name.</p>
+      <p>That its dung is useful for the eye.</p>
+      <p>That it fights with the <name type="animal" xml:lang="en">scorpion</name> and is not harmed provided it eats a certain <name type="plant" xml:lang="en">herb</name>.</p>
+   </div>
+</div>
+<div type="chapter" n="44">
+   <p>CHAPTER 42—ON THE <name type="animal" xml:lang="en">CROCODILE</name> (<foreign xml:lang="grc">xpoxé8erA0</foreign>)</p>
+   <div type="section" n="1">
+      <p>That <name type="animal" xml:lang="en">crocodiles</name> live in two rivers only, in the <placeName>Nile</placeName> and in the <placeName>Hydaspes</placeName>.</p>
+      <p>That it is called <name type="animal" xml:lang="en">crocodile</name>, taking the name of the <name type="animal" xml:lang="en">land-crocodile</name> or because it avoids the <name type="plant" xml:lang="en">saffron</name> with fear or because it has a saffron-like skin.</p>
+      <p>That when they <name type="animal" xml:lang="en">bite</name>, the teeth being fixed opposite each other, they do not get off unless they tear the flesh out.</p>
+   </div>
+</div>
+<div type="section" n="62">
+   <p>? poyahat. Refers to species of <name type="animal" xml:lang="en">Sorex</name> and <name type="animal" xml:lang="en">Crocidura</name>. This subchapter is not indicated under a special heading in the Greek text.</p>
+   <p>2 Cp. <persName>Arist.</persName> <quote>H. A.</quote> 8,24 p. 604b 10 ff.</p>
+   <p>« <foreign xml:lang="grc">Spaias iyphlue</foreign>, <name type="animal" xml:lang="en">S</name>: <foreign xml:lang="grc">ebrenbergi</foreign>, ete</p>
+   <p>+ @ ’ .</p>
+   <p>: <foreign xml:lang="grc">fecha</foreign> told in full detail by <persName>Oppran</persName>. <quote>Cyneg.</quote> 2, 612 ff.</p>
+   <p>8 The sun-god of the Greeks.</p>
+   <p><name type="animal" xml:lang="en">Varanus griseus</name>.</p>
+   <p><foreign xml:lang="grc">xpoxog</foreign> (<name type="plant" xml:lang="en">saffron</name>) + <foreign xml:lang="grc">Setdog</foreign> (afraid).</p>
+   <p>°° Cp. <persName>Pliny</persName>, <quote>Dh</quote> 28 § 108.</p>
+   <p>10 <name type="animal" xml:lang="en">Oticus</name>.</p>
+   <p>an Hi inte <placeName>Djalam</placeName>, a tributary of the <placeName>Indus</placeName>.</p>
+   <p>12 See note 8 above.</p>
+   <p>1. ro</p>
+   <p>1. 15</p>
+</div>
+<div type="section" n="63">
+   <p>42 TRANSLATION</p>
+   <p>4 That only the upper jaw of this animal is moved, not the lower jaw.</p>
+   <p>5 That iron does not pierce its skin,</p>
+   <p>6 That one bone runs through from its head to the tail and (therefore) it cannot crook.</p>
+   <p>7 That a man anointed with <name type="animal" xml:lang="en">crocodile</name> grease jumps into the <placeName>Nile</placeName>, and turning it (i.e. the crocodile) on its back by an enchantment, he catches it.</p>
+   <p>8 That it has a long and sharp tail by the strokes of which it often kills,</p>
+   <p>9 That it draws a <name type="animal" xml:lang="en">bull</name> into the river and devours him.</p>
+   <p>10 That if it bites someone, very many <name type="animal" xml:lang="en">cats</name> gather round the bitten man so that they make water upon him, and this they do until they kill him.</p>
+</div>
+<div type="section" n="63">
+   <p>Iz That its egg <name type="animal" xml:lang="en">crocodile</name> 3 is like that of a <name type="animal" xml:lang="en">goose</name>, and out of it comes a little <name type="animal" xml:lang="en">crocodile</name> like the land-(<name type="animal" xml:lang="en">crocodile</name>) but in time it grows to (a length of) 10 cubits and more; for as long as it lives it grows. However, it lays 60 4 eggs and has 60 teeth and lives 5 60 years and has 60 muscles and remains 60 days without food and has sexual commerce 60 (times).</p>
+   <p>12 That when you extract the first tooth from (its) left jaw, you easily abate the ague.</p>
+   <p>13 That the bird <name type="animal" xml:lang="en">trochilos</name> ® is friendly to him eating the decayed flesh and leeches out of (its) teeth.</p>
+   <p>14 That the <name type="animal" xml:lang="en">trochilos</name> watches over it when it sleeps 7 and when it (i.e. the <name type="animal" xml:lang="en">trochilos</name>) sees that hunters are approaching or rather the <name type="animal" xml:lang="en">ichneumon</name> (which lives) near the <placeName>Nile</placeName> and which is also called ‘enhydros’® or ,Hyllos’®, it (the <name type="animal" xml:lang="en">trochilos</name>) immediately screams and</p>
+</div>
+<div type="chapter" n="43">
+   <p>That the <name type="animal" xml:lang="en">ichneumon</name> <foreign xml:lang="grc">(ἰχνεύμων)</foreign> which is also called ‘<name type="animal" xml:lang="en">enhydros</name>’ or ‘<name type="animal" xml:lang="en">hyllos</name>’ is said to rub itself with mud in order to become slippery and to jump into the mouth of the <name type="animal" xml:lang="en">crocodile</name> and thus to eat up its liver and to kill (it).</p>
+</div>
+<div type="chapter" n="44">
+   <p>ON THE <name type="animal" xml:lang="en">Hippopotamus</name> <foreign xml:lang="grc">(ἱπποπόταμος)</foreign></p>
+</div>
+<div type="section" n="65">
+   <p>That the <name type="animal" xml:lang="en">hippopotamus</name> belongs to the amphibians and has an invulnerable skin as (is) on the <name type="animal" xml:lang="en">elephants</name>. It eats <name type="animal" xml:lang="en">crocodiles</name> and other aquatic monsters.</p>
+   <p>That the <name type="animal" xml:lang="en">hippopotamus</name> indicates the rising of the <placeName>Nile</placeName>; for it walks in the mud up to the level to which the water is going to rise.</p>
+   <p>That it goes up to the cornfields<footnote><p>®</p></footnote> and measures how large an area it is able to eat off, and then retiring slowly, it grazes; for it cannot bend its neck. It happens that, when after drinking it vomits the water on that area, (the place) becomes verdant again.</p>
+   <p>That by aid of virgins and women it is tamed (when) young.</p>
+   <p>That it kills its father and covers its mother<note><p>’</p></note>.</p>
+   <p>That its tooth is helpful for the condition of the stomach, and to the <placeName>Ethiopians</placeName> it serves as a remedy against gluttony; for they eat uncooked fish and drink muddy water and they will die if they do not tie the tooth round (themselves).</p>
+   <p>taken from <persName>Theophilus Alexandrinus</persName> (ca. 400 A.D.) p. 7, the <name type="animal" xml:lang="en">trochilos</name> is confounded with the <name type="animal" xml:lang="en">hyllos</name>; in the 2nd one which is an extract from <persName>Georgius Cedrenus</persName> tom. I p. 701 B., the <name type="animal" xml:lang="en">hydris</name> is characterised by a slightly enlarged version of the story told in chapter 43, 1st paragraph. Cp. also <persName>Georgius Pisides</persName> (ca. 630 A.D.), <foreign xml:lang="la">Hexaemeron</foreign> 965 ff., adduced by Haupt, <foreign xml:lang="la">Opuscula</foreign> III, additional note to this passage of the reprinted text of <persName>Timotheus</persName>.</p>
+   <p><name type="animal" xml:lang="en">Mungos ichneumon</name>.</p>
+   <p>Cp. <persName>Oppianus</persName>, <foreign xml:lang="la">Cyneg.</foreign> 3, 410 ff.</p>
+   <p>Cp. ibid. 3, 433 ff.</p>
+</div>
+<div type="chapter" n="45">
+   <p>That the rhinoceros is by its size well matched to the <name type="animal" xml:lang="en">hippopotamus</name>. It lives near the <placeName>Nile</placeName> (and) comes out of the ocean.</p>
+   <p>All over its <name type="animal" xml:lang="en">body</name> by which it can pierce eve -</p>
+   <p>and with it it often kills an <name type="animal" xml:lang="en">elephant</name>.</p>
+   <p>2 That all <name type="animal" xml:lang="en">rhinoceroses</name> are males &amp;</p>
+   <p>es ® but wherefrom the</p>
+   <p>1s not clear to anyone. ee Sens</p>
+   <p>3 That among the <placeName>Indians</placeName> they are called <name type="animal" xml:lang="en">oxen</name> 7, but</p>
+   <p>to the <placeName>Nile</placeName> (are called) <name type="animal" xml:lang="en">rhinoceroses</name>, od He</p>
+</div>
+<div type="chapter" n="46">
+   <p>I That there are two kinds of <name type="animal" xml:lang="en">lynx</name>; and the big ones hunt <name type="animal" xml:lang="en">deer</name>, the small ones <name type="animal" xml:lang="en">hares</name>; and the big ones have a saffronlike skin but the small ones have a tawny (skin).</p>
+   <p>2 That their urine becomes solid 9 lik 11. ;</p>
+   <p>called ‘lyncouria’ ike (curdled) milk and that is</p>
+   <p>a</p>
+   <p>3 That their species loves their offspring very much and that they are loved by <persName>Apollo</persName> as the <name type="animal" xml:lang="en">sphinxes</name> "= by <persName>Dionysus</persName>.</p>
+</div>
+<div type="chapter" n="47">
+   <p>i That the <name type="animal" xml:lang="en">chameleon</name> is the so-called ‘puff-cheek’ ¥%. It is of the</p>
+</div>
+<div type="section" n="67">
+   <p>The word <foreign xml:lang="grc">κεδνυάξ</foreign> may also mean ‘lun,</p>
+   <p>im ancient times ascribed to <name type="deity">Iunar</name> influence,</p>
+   <p>a Cp. Pp. 28 line 14 below.</p>
+   <p><name type="animal" xml:lang="en">Rhinoceros indicus</name>, <name type="animal" xml:lang="en">Diceros africanus</name>.</p>
+   <p>4 Cp. Oppran, Cyneg. 2, 555.</p>
+   <p>5 Cp. ibid. 2, 556; <persName>AELIAN</persName>. De an. 17, 44</p>
+   <p>* Cp. Oprran, Cyn. 2, 560.</p>
+   <p>7 Cp., however, P- 37 note 6,</p>
+   <p>® To lines 5-8, 11 cp. Oppran, C</p>
+   <p>“8,11 cp. - Lyneg. 3, 84 ff. A. W. Mair determin</p>
+   <p>phones es se (<name type="animal" xml:lang="en">Felis lynx</name>) and caracal (<name type="animal" xml:lang="en">F. caracal</name>). We think that ibe selerees</p>
+   <p>€¢ eeta (<name type="animal" xml:lang="en">Acinonyx jubatus</name>), at least for the bigger form, the ll</p>
+   <p>one possibly being the caracal. ; =e</p>
+   <p>o Cp. <persName>AELIAN</persName>. De anim. 4,17.</p>
+   <p><foreign xml:lang="grc">Ἀλφκονσολ</foreign> i i</p>
+   <p>mee γχουρτα, a kind of amber. The spelling of the word varies in the different</p>
+   <p>1 Besides the usual denotation i</p>
+   <p>, the word ‘sphinx’ may also signif ki</p>
+   <p>of ape (cp. chapter 52 below). By the way, there seems to be no paralie for a</p>
+   <p>mythological details conveyed by this passage °</p>
+   <p><name type="animal" xml:lang="en">Chamaeleo chamaeleon</name>.</p>
+   <p>13 See p. 20 note 12,</p>
+   <p>atic’, i.e. epileptic. Epilepsy was</p>
+   <p>1. 30</p>
+   <p>Pp. 27</p>
+   <p>TRANSLATION 45</p>
+   <p>same length as the crocodile, humped and thin to (the point of)</p>
+   <p>sharp ?.</p>
+   <p>2 That it.changes its colour to (resemble) the places at which it</p>
+   <p>dwells, like the polyp of the sea.</p>
+   <p>3 That the <name type="animal" xml:lang="en">geckos</name> and the ‘<name type="animal" xml:lang="en">galeotai</name>’ and the <name type="animal" xml:lang="en">lizards</name> strip</p>
+   <p>(themselves) of their skins, that is, when they are old, like the snakes,</p>
+   <p>and they hibernate like the bears and the crocodiles.</p>
+   <div type="chapter" n="48">
+      <head>ON THE SKINK (<foreign xml:lang="grc">σκότυλος</foreign>)</head>
+   </div>
+</div>
+<div type="chapter" n="49">
+  <p>That the <name type="animal" xml:lang="en">wild horse</name> is so stubborn that it can never be tamed or endure bondage; but if this is forced on it, it refuses food and weakened by hunger dies.</p>
+</div>
+
+<div type="chapter" n="50">
+  <p>That there is a beast named ‘<foreign xml:lang="grc">κορκότης</foreign>’ (i.e. <name type="animal" xml:lang="en">spotted hyena</name>), the size of a <name type="animal" xml:lang="en">wolf</name>; and when the shepherds call their own children</p>
+</div>
+<div type="section" n="69">
+   <p>Usually, this <name type="animal" xml:lang="en">animal</name> is identified with the <name type="animal" xml:lang="en">varan</name>. cp. ch. 41.—The Byzantine historian <persName>Acominatus Nicetas Choniates</persName> (ca. 1200<foreign xml:lang="la">4.D.</foreign>), vol. II p. 417 Bekker, relates that the Emperor <persName>Andronicus Comnenus I</persName> (1183-1185) ate <name type="animal" xml:lang="en">skinks</name>—which were by experts regarded as inedible—in order to stimulate both his appetite and his lust (Haupt, <quote>Opuscula III</quote>, additional note to this passage of the reprinted text of <persName>TrmoTHEus</persName>).</p>
+   <p>Cp. <quote>Prin. N. H. 28, 119</quote>.</p>
+   <p><name type="animal" xml:lang="la">Equus caballus</name> (<foreign xml:lang="la">ferus</foreign>).</p>
+   <p>Cp. <quote>Oppran. Cyneg. 3, 256 ff.</quote></p>
+   <p>This name is spelt in various ways, such as <foreign xml:lang="grc">χροκόττας</foreign>, <foreign xml:lang="grc">χροκόττας</foreign>, etc. It is <name type="animal" xml:lang="la">Hyaena crocuta</name>.</p>
+   <p>Cp. <persName>Aelian</persName>. <quote>De anim. 7, 22</quote>.</p>
+   <p>l. 10</p>
+   <p>l. 15</p>
+   <p>l. 20</p>
+   <p>l. 25</p>
+   <p>46 TRANSLATION</p>
+   <p>by name, it imitates the sounds of the names and secretly calls them similarly itself, and outside the village it seizes the <name type="animal" xml:lang="en">children</name> who are deceived by such sounds and run out of the flock, and devours them.</p>
+   <p>That there is another ‘<foreign xml:lang="grc">κορκότης</foreign>’, of human form.</p>
+   <p>That it is likely that the brute <name type="animal" xml:lang="en">animals</name> are rational (as may be concluded) from what has been proved concerning the doings of the <foreign xml:lang="grc">κορκότης</foreign>, and the <name type="animal" xml:lang="en">stork</name>, and the <name type="animal" xml:lang="en">lion</name>, the <name type="animal" xml:lang="en">nightingale</name>, the <name type="animal" xml:lang="en">turtle dove</name>, the <name type="animal" xml:lang="en">eagle</name>, the <name type="animal" xml:lang="en">purple coot</name>, the <name type="animal" xml:lang="en">elephant</name>, the <name type="animal" xml:lang="en">bee</name>, the <name type="animal" xml:lang="en">crane</name>, the <name type="animal" xml:lang="en">woodpecker</name>, the <name type="animal" xml:lang="en">swallow</name>, the <name type="animal" xml:lang="en">vulture</name>, the <name type="animal" xml:lang="en">raven</name>, the <name type="animal" xml:lang="en">glaukos</name>, the <name type="animal" xml:lang="en">hippopotamus</name>, the <name type="animal" xml:lang="en">crab</name>, the <name type="animal" xml:lang="en">partridge</name>, the <name type="animal" xml:lang="en">ibis</name>,</p>
+</div>
+<div type="chapter" n="51">
+   <head>ON THE APE (<foreign xml:lang="grc">μτ Syx0&lt;</foreign>)</head>
+   <p>That the <name type="animal" xml:lang="en">ape</name> is a very licentious and wily <name type="animal" xml:lang="en">animal</name> and it has a female of its own.</p>
+</div>
+<div type="section" n="70">
+   <p>That a merchant once kept such <name type="animal" xml:lang="en">ape</name> on a ship, and after he had beaten it for doing something wrong, <name type="animal" xml:lang="en">ape</name> stole the gold <foreign xml:lang="la">coins</foreign> belonging to the man, leapt up to the top of the mast and from there it tossed <foreign xml:lang="la">the gold</foreign> into the sea and hurled itself down at the same time.</p>
+   <p>That <foreign xml:lang="la">when</foreign> fleeing, it jumps from tree to tree and even carries its young on <foreign xml:lang="la">its back</foreign>.</p>
+   <p>That being imitative, it is caught by craft when it imitates <persName>the man</persName> who wants to catch it, and dipping into tar it is caught.</p>
+   <p>However, it is also caught in another way, by anointing its eyes with a harmful medicament.</p>
+   <p>That these <name type="animal" xml:lang="en">apes</name> gather with the <persName>Indians</persName> in the <name type="plant" xml:lang="en">Pepper</name>, deceived by craft and <foreign xml:lang="la">their own</foreign> inclination to imitate.</p>
+   <p>That a sick <name type="animal" xml:lang="en">lion</name> hunts it with cunning and devours it; for the meat of the <name type="animal" xml:lang="en">ape</name> benefits his <name type="animal" xml:lang="en">the lion’s</name> health.</p>
+   <p><quote>Cp. <persName>Pliny</persName> <foreign xml:lang="la">N. H.</foreign> 8, 107 who, however ‘crocotta’ as an Ethiopian animal that imi</quote></p>
+   <p><foreign xml:lang="grc">νoππoυpiov</foreign>, <foreign xml:lang="grc">Phorpyrio</foreign>,</p>
+   <p>As the <foreign xml:lang="grc">glaukos</foreign>, an eatable fish of grey colour is—if at all—remarkable only by the fact that it hibernates (<persName>Aristotle</persName> <foreign xml:lang="la">H. A.</foreign> 8,1 5 <foreign xml:lang="la">P.</foreign> 599 b 32 <foreign xml:lang="la">£.</foreign>), it may perhaps be conjectured that the <name type="animal" xml:lang="en">owl</name> (<foreign xml:lang="grc">γλαυξ</foreign>) which played a prominent rôle in Greek folklore and mythology, was originally mentioned here. However, it is not easy to decide what special sign of intelligence should entitle the <name type="animal" xml:lang="en">owl</name> to admission into the above galaxy of wise animals,</p>
+   <p>The tail-less <name type="animal" xml:lang="en">Inuus ecaudatus</name> of western North Africa.</p>
+   <p><quote>Cp. <persName>Aelian</persName>. <foreign xml:lang="la">De anim.</foreign> 7, 21 <foreign xml:lang="la">example of imitation</foreign></quote></p>
+</div>
+<div type="chapter" n="52">
+   <p>That the <name type="animal" xml:lang="en">sphinxes</name> are quick <foreign xml:lang="en">like birds</foreign>.</p>
+   <p>That they drink <name type="plant" xml:lang="en">wine</name> and get drunk.</p>
+   <p>That there are other small (<name type="animal" xml:lang="en">sphinxes</name>) in the country of the <placeName>5</placeName>, and they are on good terms with men and when they drink they <foreign xml:lang="en">forth the smell of wine like human beings</foreign>.</p>
+</div>
+<div type="chapter" n="53">
+   <p>That the <name type="animal" xml:lang="en">katobleps</name> is an animal which emits fire from its nostrils.</p>
+</div>
+<div type="chapter" n="53a">
+   <p>That the <name type="animal" xml:lang="en">salamander</name> is like a <name type="animal" xml:lang="en">lizard</name>, and passing through fire it cools and extinguishes it.</p>
+</div>
+<div type="section" n="72">
+   <p>j <name type="animal" xml:lang="en">monkey</name> (<foreign xml:lang="la">Cercopithecus pyrrhonotus</foreign>). —— ;</p>
+   <p>Oe camera, eean 16, fb ion mentions <name type="animal" xml:lang="en">Indian monkeys</name> with <name type="animal" xml:lang="en">lion</name> tails.</p>
+   <p>(<foreign xml:lang="la">Cercopithecus</foreign> bove.</p>
+   <p>s - <foreign xml:lang="la">Cercopithecus</foreign>). Cp. chapter 46,3 a ; ;</p>
+   <p>4 ae eee z this sentence being somewhat equivocal, Ee aeneaee lation seems possible: ‘‘.. . are quick as (if they were to make) after the ae " oo quotes the <persName>Latin poet Corippus</persName> (6th century AD), a a ave</p>
+   <p>Africa, as the only ancient source mentioning the ‘<name type="animal" xml:lang="en">Makares</name> : In ~ 2 a ( oem on <persName>Justinian</persName>’s war against the Moors) 2, 62, Corippus sae ane Macares who hide high up in the woods “ eacnenione ¥ anany ins’”’ i be recalled that <persName>HERODOTUs</persName> (3, 26) mentio’ a ,tains’’.—It will, however, re ce aan ae ree</p>
+   <p>i i “Island of the <name type="animal" xml:lang="en">Makares</name>’’ (usually in the <placeName>Libyan desert</placeName>, called ‘<foreign xml:lang="la">Is ana a CeeeBIeeee</foreign> Tm d’’), This confusion of the tribe ,Ma ( od ms) vnakes y difficult to distinguish the mythical from the pesca dade al cents in our ancient sources on that question. Yet, <persName>PoLysius</persName>, 2 aoe Meta lead us to the conclusion that the <name type="animal" xml:lang="en">Makares</name> (or <foreign xml:lang="la">Macae</foreign>, * they a ae times called) inhabited a region near the <placeName>Syrtis</placeName>.</p>
+   <p><persName>O. KELLER</persName>, ie eat lie welt I p. 10 (<placeName>Leipzig</placeName> 1913) conjectures <foreign xml:lang="la">Cercopithecus diana</foreign> o e 4 i i keys.</p>
+   <p>is i ore likely habitat of these <name type="animal" xml:lang="en">monkey</name></p>
+   <p>ong ag og eee the <name type="animal" xml:lang="en">African gnu</name>, called today <foreign xml:lang="la">Catoblepas gnu</foreign>. sce</p>
+   <p><persName>J Haupt</persName> compares <persName>CONSTANTINUS MaNassEs</persName> (12th century) 2, 39 i “fire-breathing katobleps’’. ; ;</p>
+   <p>a usin oe is not indicated in the <foreign xml:lang="la">Greek</foreign> text. It scarcely suits <name type="animal" xml:lang="en">Salamandra</name>.</p>
+</div>
+<div type="chapter" n="54">
+   <p>Me ames. The belief in the fire-extinguishing powers of <name type="animal" xml:lang="en">beaver</name> can be <foreign xml:lang="en">poate</foreign> back to <persName>Democritus</persName> (5th century B.c.); see <persName>WELLMANN</persName> (see p. 19 n. 10) p. 21 where numerous parallels to</p>
+   <pb n="19"/>
+   <pb n="21"/>
+</div>
+
+<div type="chapter" n="54">
+   <p>CHAPTER 54—ON THE <name type="animal" xml:lang="en">BEAVER</name> (<foreign xml:lang="grc">κάστορ</foreign>)</p>
+   <div type="section" n="1">
+      <p>Sedeatt twee rom having a large and wide belly is called ‘<name type="animal" xml:lang="en">castor</name>’</p>
+   </div>
+   <div type="section" n="2">
+      <p>That it is an amphibian and dwells in lairs near waters</p>
+   </div>
+   <div type="section" n="3">
+      <p>That it is bigger than the <name type="animal" xml:lang="en">ichneumon</name>, and with its teeth it fells big trees, eating the roots from below.</p>
+   </div>
+   <div type="section" n="4">
+      <p>That of it the castorian clothes are woven.</p>
+   </div>
+   <div type="section" n="5">
+      <p>That its testicles are essential for various medicines, and <name type="animal" xml:lang="en">beaver</name> is pursued therefore by hounds and men, and knowing the reason tears them (i.e. the testicles) off with its claws, and escapes. But when it, (already) without testicles, is pursued again, it shows that it has no (testicles).</p>
+   </div>
+   <div type="section" n="6">
+      <p>That it often changes its lairs for fear to be hunted. However, it is caught by night; for it dreads the fire and remains motionless and the hunter having a torch gets near and so he can seize it.</p>
+   </div>
+   <div type="section" n="7">
+      <p>That the <name type="animal" xml:lang="en">beaver</name> dwells by the waters and (so does) the <name type="animal" xml:lang="en">satherion</name> and the <name type="animal" xml:lang="en">latax</name> and the <name type="animal" xml:lang="en">enhydris</name> and the <name type="animal" xml:lang="en">sapérion</name> of which the Saperine garments are made.</p>
+   </div>
+</div>
+
+<div type="chapter" n="55">
+   <p>CHAPTER 55—ON <name type="animal" xml:lang="en">FROGS</name> (<foreign xml:lang="grc">Βατράχων</foreign>)</p>
+   <div type="section" n="1">
+      <p>That <name type="animal" xml:lang="en">frogs</name> often rise into existence out of clouds.</p>
+   </div>
+   <div type="section" n="2">
+      <p>That <name type="animal" xml:lang="en">frogs</name> die when the pond dries up and come to life again when it is filled with water.</p>
+   </div>
+   <div type="section" n="3">
+      <p>That often <name type="animal" xml:lang="en">snakes</name> as (does) the <name type="animal" xml:lang="en">chameleon</name> too.</p>
+   </div>
+</div>
+<div type="section" n="74">
+   <p><name type="animal" xml:lang="en">Castor fiber</name>.</p>
+   <p>‘belly’ is <foreign xml:lang="grc">γαστήρ</foreign> (yaorhp) i ; fe) :</p>
+   <p>ote) in Greek; a form ‘gastor’ d</p>
+   <p>“ Hohn tl of this word cp. Etymologium Maenum 5 eae Fora</p>
+   <p>tobably ‘s f % } the</p>
+   <p>wane y ‘saffron coloured clothes’. The word <foreign xml:lang="grc">ξέστωρ</foreign> has also the meaning</p>
+   <p>* Cp. p. 25, 1. 25 above: <persName>NICANDER</persName> Alexi</p>
+   <p>i : , <title>Alexipharmaca</title> 307.</p>
+   <p>: a aoe N. H. 8 § 108; <persName>AELIAN</persName>. De an. 6, 34; <title>Physiologus</title></p>
+   <p>- <persName>SCHNEIDER</persName>’s annotation to his editi ;</p>
+   <p>cabin, 4nd of Go (LS)). ion of Arist. H. A. tom. 3, Pp. 607 f,</p>
+   <p>hata, a water quadruped (LSJ)</p>
+   <p>ae Pp. 42 note 8.</p>
+   <p>carjptov. Nothing i i</p>
+   <p>namen ae othing seems to be known of this animal and the garments</p>
+   <p><name type="animal" xml:lang="en">Rana</name> spp.</p>
+   <p>™ Here follow about seven letters whi</p>
+   <p>which cannot be read in the MS. A hi</p>
+   <p>poke ae eae ceats of the whole passage may be found in <persName>AELIAN</persName>. <title>Variae Passages</title> » 3 where we are told by what craft frogs defend themselves against</p>
+   <p>the Nilotic <name type="animal" xml:lang="en">serpents</name>. <persName>AELIAN</persName>. De an. 4, 33 reports on the <name type="animal" xml:lang="en">chameleon</name>’s defence</p>
+</div>
+<div type="chapter" n="56">
+   <head>ON THE MARMOT (<foreign xml:lang="grc">ἀρχοκύων</foreign>)</head>
+   <p>That one <name type="animal" xml:lang="en">marmot</name> watches when the others are feeding and each brings it (i.e. to the watcher) a share of the food; but when that one neglects its watch and anything happens unawares, (then) they kill the watcher ®.</p>
+</div>
+<div type="chapter" n="57a">
+  <p>That a thunder-bolt never falls upon the skin of a <name type="animal" xml:lang="en">seal</name> ®; and indeed, for this reason the sailors cover the so-called mastheads of the ships with such hide(s). And similarly hail? will never hurt the <name type="plant" xml:lang="en">vine</name> if you tie round it a short piece of that skin.</p>
+  <p>That the teeth of the <name type="animal" xml:lang="en">seal</name> make dentition painless for children, but the skin being put round, averts the missile from heaven (i.e. lightning).</p>
+  <p>That if, after puncturing deep into the hide of a <name type="animal" xml:lang="en">seal</name> you use it as a basket for seeds, and sow the (seeds) which fall through by throwing them thinly on a piece of land so that a small quantity may suffice for a large area, (then) it is impossible that hail will fall in that place during that year; but the neighbours get the hail due to come down on that piece of land.</p>
+</div>
+<div type="chapter" n="57b">
+  <p>That in the <name type="animal" xml:lang="en">skiaina</name> ® grow two stones of which the right one is said to cure the right (part) of a mans head, and the left (one) (cures) the left (part).</p>
+</div>
+<div type="section" n="76">
+   <p><name type="animal" xml:lang="en">Arctomys mayrmota</name> or <name type="animal" xml:lang="en">Arctomys bobak</name>. ‘<name type="animal" xml:lang="en">Arctomys</name>’ means literally ‘bearmouse’. Haupt points out that this animal is mentioned by the Roman almanacmaker <persName>PoLemius Sitvius</persName> (5th century a.p.) chap. 5 and by <persName>St. JEROME</persName> in the letter to <persName>Sunia</persName> and <persName>Fretela</persName> where it deals with <foreign xml:lang="la">Psalm 103</foreign>, 18. (Vulgata numeration, ie. <foreign xml:lang="la">Psalm 104</foreign>, 18 in the Hebrew and English versions); there, Jerome remarks that the ‘<foreign xml:lang="he">Sefannim</foreign>’ (O°35W i.e. <name type="animal" xml:lang="en">conies</name>, <name type="animal" xml:lang="en">Procavia syrica</name>) of the Hebrew original are animals as big as a <name type="animal" xml:lang="en">hedgehog</name> and resembling <name type="animal" xml:lang="en">bears</name> and <name type="animal" xml:lang="en">mice</name>, „whence they are called in Palestine ‘arctomys’”. Haupt also quotes a Bremen codex of the <foreign xml:lang="la">Glossarium Cyrilli</foreign> where the ‘<foreign xml:lang="la">arcomys</foreign>’ (this spelling is also adopted by <persName>PoLemius Sitvius</persName>) is classed between the <name type="animal" xml:lang="en">hedgehog</name> and the <name type="animal" xml:lang="en">porcupine</name>.</p>
+</div>
+<div type="section" n="77">
+   <p>Here ends the Augsburg MS.</p>
+</div>
+<div type="section" n="78">
+   <p><name type="animal" xml:lang="en">Phoca monachus</name>.</p>
+</div>
+<div type="section" n="79">
+   <p>None of the following titles is indicated in the Greek text.</p>
+</div>
+<div type="section" n="80">
+   <p>Now follows the translation of the Parisian MS. Cp. Introduction p. XXI.</p>
+</div>
+<div type="section" n="81">
+   <p>Cp. <persName>PLutarcu</persName>. <title type="work">Symposium</title> 4, 2 p. 664; 5, 9 p. 684e; <persName>IonannEs Lypus</persName> <title type="work">De mensibus</title> 3, 52; 4,96; <title type="work">De ostentis</title> 45 (H).</p>
+</div>
+<div type="section" n="82">
+   <p>Cp. <title type="work">Geoponica</title> i, 14 3. . ;</p>
+   <p><foreign xml:lang="grc">ὀκταῖνα</foreign>, a sea fish, probably either <name type="animal" xml:lang="en">Corvina nigra</name> or <name type="animal" xml:lang="en">Umbrina cirrosa</name>.</p>
+</div>
+<div type="chapter" n="57">
+   <p>ON THE <name type="animal" xml:lang="en">KOCHLOS</name></p>
+   <p>That a certain oblong <name type="animal" xml:lang="en">kochlos</name> is caught in the sea, and is called ‘<foreign xml:lang="grc">πῦρ</foreign>’ for it resembles a hand in such a position; when its meat is boiled down in water, the water acquires a human mind and voice and cures people suffering from delirium and insanity.</p>
+</div>
+<div type="chapter" n="57d">
+   <p>That a <name type="animal" xml:lang="en">snail</name>’s shell tied to the belly of a pregnant woman, keeps her—say the people—until timely childbirth; but it also hinders the child during a woman’s pangs.</p>
+</div>
+
+<div type="chapter" n="57e">
+   <p>That a boiled <name type="animal" xml:lang="en">elops</name> unites opponents on friendship.</p>
+</div>
+
+<div type="chapter" n="57f">
+   <p>That the blood of the <name type="animal" xml:lang="en">kepphos</name> <foreign xml:lang="la">*</foreign> when applied to the muscles and joints of a man, makes him a good runner.</p>
+</div>
+
+<div type="chapter" n="57g">
+   <p>That they who boil in oil the tender fledgelings of <name type="animal" xml:lang="en">swans</name>, make (for themselves) a great remedy for the muscles.</p>
+</div>
+
+<div type="chapter" n="57h">
+   <p>If you want to fish an <name type="animal" xml:lang="en">octopus</name> <foreign xml:lang="la">*</foreign>, take olive branches, hang them down into the sea where is a cliff or a rocky beach, and all (the octopuses) will be caught <foreign xml:lang="la">®</foreign> by the(se) branches and you just draw them up.</p>
+   <p><foreign xml:lang="en">x64205</foreign>, a shell-fish with a spiral cell used for dying purple: <name type="animal" xml:lang="en">Murex</name>.</p>
+   <p><foreign xml:lang="en">zip</foreign> = fire. GRAFF compares Pin. N. H. 9 § 184. The beginning of this sentence is far from clear in the Greek original,</p>
+   <p><foreign xml:lang="la">*</foreign> This passage allows of an alternative translation:'... the water gets hold of a man’s mind and voice and cures.</p>
+   <p><foreign xml:lang="en">fio</foreign>. The MS. reads <foreign xml:lang="la">#0</foreign> which is meaningless, GRAFF conjectured <foreign xml:lang="grc">Ζωπ</foreign>.</p>
+   <p>According to D’Arcy THompson (see p. 26 n. 10) p. 48, the <name type="animal" xml:lang="en">elops</name> belongs to the sturgeons,</p>
+   <p><foreign xml:lang="grc">xéngos</foreign>. Perhaps: Stormy petrel (<foreign xml:lang="la">Thalassidroma pelagica</foreign>) (LSJ).</p>
+   <p><foreign xml:lang="la">®</foreign> <foreign xml:lang="grc">dxtéroug</foreign>. i.e. <name type="animal" xml:lang="en">Octopus vulgaris</name>. Cp. Oppian. Halieut. 4, 300 ff. Haupt opines that the remaining 16 lines should not be ascribed to Timotheus of Gaza.</p>
+</div>
+<div type="chapter" n="57i">
+   <p><quote>The MS. reads ‘they will wander about together’ (suprdavicovrat) ; however, GraFr’s emendation to ‘will be caught’ (cuprAaxqcovrat) is plausible.</quote></p>
+</div>
+<div type="chapter" n="57k">
+   <p>If you want to bring the <name type="animal" xml:lang="en">fish</name> of the <placeName>sea</placeName> together into one place, wind round a weel to catch a big lot.</p>
+   <p>If you want to catch with food a <name type="animal" xml:lang="en">fish</name> lying in the <placeName>sea</placeName>, take milk of the <name type="plant" xml:lang="en">spurge</name> and of the <name type="plant" xml:lang="en">cyclamen plant</name> and having chopped them up, mix it all by kneading it with flour and throw it as food to the <name type="animal" xml:lang="en">fish</name> wherever you see a lot of them, and eating (the mixture) they are thus conquered and float as though dead and you may collect them with the hand.</p>
+   <p>That if one shuts the heart of the bird <name type="animal" xml:lang="en">halcyon</name> into a golden capsule together with the skin of the bird, and carries it, (then) he will not be harmed by thunder or lightning. You will have an amulet against thunder if you keep at home a <name type="plant" xml:lang="en">heliotrope</name> on which you have inscribed <foreign xml:lang="grc">aphia aphryx</foreign>.</p>
+</div>
+<div type="section" n="79">
+   <p><quote>The sense is probably: . . . hiding in the sea. Cp. Opp1an. <foreign xml:lang="la">Halieut.</foreign> 4, 658 ff.</quote></p>
+</div>
+<div type="section" n="80">
+   <p><name type="plant" xml:lang="en">Bduados</name>, i.e. <name type="plant" xml:lang="en">Euphorbia</name> spp.</p>
+   <p><name type="plant" xml:lang="en">Cyclamen</name> spp.;</p>
+   <p>The <name type="animal" xml:lang="en">kingfisher</name>, <name type="animal" xml:lang="la">Alcedo atthis</name>.</p>
+   <p>® Also called ‘<foreign xml:lang="el">alkyon</foreign>’. Cp. p. 27 n. 2.</p>
+   <p>7 Apparently a magic formula.</p>
+</div>
+<div type="section" n="81">
+   <p>o</p>
+</div>
+<div type="section" n="82">
+   <p>INDEX</p>
+   <p>The numbers refer to chapters and paragraphs. E.g. 4, 2 means chapter 4 para. 2. See also Intyoduction p. 18. In cases where a whole chapter is devoted to an animal, the number of that chapter is given in Italics and no para. is quoted.</p>
+   <p><name type="animal" xml:lang="en">Ague</name> 42,12</p>
+   <p><name type="animal" xml:lang="en">Aigithos</name> 31,7</p>
+   <p><name type="animal" xml:lang="en">Aila</name> 24, 2</p>
+   <p><name type="animal" xml:lang="en">Alkyon</name> (see also <name type="animal" xml:lang="en">Halcyon</name>) 15, 3</p>
+   <p><name type="animal" xml:lang="en">Alopecia</name> 5, 7</p>
+   <p><name type="animal" xml:lang="en">Alopos</name> 5, 9</p>
+   <p><name type="animal" xml:lang="en">Alps</name> 29, 2</p>
+   <p><persName>Anastasius</persName> (Emperor) 24, 2</p>
+   <p><name type="animal" xml:lang="en">Ants</name>, Indian 32, 2-4</p>
+   <p><name type="animal" xml:lang="en">Ape</name> 5r</p>
+   <p><persName>Apollo</persName> 19, 1; 31,2; 46, 3</p>
+   <p><name type="animal" xml:lang="en">Arctomys</name> 56</p>
+   <p><persName>Aristotle</persName> 26, 5</p>
+   <p><name type="animal" xml:lang="en">Asp</name> 43,2</p>
+   <p><name type="animal" xml:lang="en">Ass</name> 31</p>
+   <p><name type="animal" xml:lang="en">Ass</name>, wild (see also <name type="animal" xml:lang="en">Onager</name>) 10, 1; 17,3; 22,6</p>
+   <p><persName>Athena</persName> 30, 2</p>
+   <p><placeName>Athens</placeName> 30, 2</p>
+   <p><name type="animal" xml:lang="en">Aurochs</name> (see <name type="animal" xml:lang="en">Boubalos</name>, trans-alpine)</p>
+   <p><name type="animal" xml:lang="en">Bactrian camel</name> 32, 5</p>
+   <p><name type="animal" xml:lang="en">Basilisk</name> 5, 2</p>
+   <p><name type="animal" xml:lang="en">Bear</name> 47, 3</p>
+   <p><name type="animal" xml:lang="en">Beaver</name> 44,7; 54</p>
+   <p><name type="animal" xml:lang="en">Bee</name> 50, 3</p>
+   <p><name type="animal" xml:lang="en">Beisa</name> 23</p>
+   <p><name type="animal" xml:lang="en">Bison</name> 28,9</p>
+   <p><name type="animal" xml:lang="en">Bistonis</name> 28, 9</p>
+   <p><name type="animal" xml:lang="en">Boar</name> 33</p>
+   <p><name type="animal" xml:lang="en">Boubalos</name> 29</p>
+   <p><name type="animal" xml:lang="en">Boubalos</name>, transalpine 29a</p>
+   <p><name type="animal" xml:lang="en">Bounasos</name> 2r</p>
+   <p><name type="animal" xml:lang="en">Bull</name> (see also <name type="animal" xml:lang="en">cattle</name>) 21, 1; 42, 9</p>
+   <p><name type="animal" xml:lang="en">Bustard</name> 7, 10</p>
+   <p><name type="animal" xml:lang="en">Camel</name> 27, 12; 32</p>
+   <p><persName>Cappadocians</persName> 16, 2</p>
+   <p><name type="animal" xml:lang="en">Castorian clothes</name> 54, 4</p>
+   <p><name type="animal" xml:lang="en">Cat</name> 36, 42,10</p>
+   <p><name type="animal" xml:lang="en">Cattle</name> (see also <name type="animal" xml:lang="en">bull</name>, <name type="animal" xml:lang="en">cow</name>, <name type="animal" xml:lang="en">Ox</name>) 28, 31,9</p>
+   <p><name type="animal" xml:lang="en">Chameleon</name> 5,6; 47; 55,3</p>
+   <p><name type="animal" xml:lang="en">Chelys</name> 19, 1</p>
+   <p><persName>Constantine</persName> Monomachus 24,2</p>
+   <p><placeName>Constantinople</placeName> 24, 2</p>
+   <p><name type="plant" xml:lang="en">Cornel shrub</name> 7,13</p>
+   <p><name type="plant" xml:lang="en">Cornflower</name> 26, 7</p>
+   <p><name type="animal" xml:lang="en">Cow</name> (see also <name type="animal" xml:lang="en">cattle</name>) 27, 4</p>
+   <p><name type="animal" xml:lang="en">Crab</name> 50, 3</p>
+   <p><name type="animal" xml:lang="en">Crane</name> 50, 3</p>
+   <p><placeName>Crete</placeName> 16,1; 34,5</p>
+   <p><name type="animal" xml:lang="en">Crocodile</name> 42; 43, 1; 44.15 47, 13 47, 3</p>
+   <p><name type="plant" xml:lang="en">Cyclamen</name> 57i, 2</p>
+   <p><placeName>Danube</placeName> 5, 8</p>
+   <p><name type="animal" xml:lang="en">Deer</name> 7, 10; 13, 3; 28, 6; 46, 1</p>
+</div>
+<div type="section" n="80">
+   <p><name type="animal" xml:lang="en">Deer</name>, <name type="animal" xml:lang="en">Libyan</name> 209, 1</p>
+</div>
+
+<div type="section" n="81">
+   <p><persName>Dionysos</persName> 11, 3; 46, 3</p>
+</div>
+
+<div type="section" n="82">
+   <p><name type="plant" xml:lang="en">Dittany</name> 16, 1</p>
+   <p><name type="animal" xml:lang="en">Dog</name> 4, 6-8; 4, 12; 5, 93 9, 53 13, 3; 26; 31,6; 33,1</p>
+   <p><name type="animal" xml:lang="en">Dog</name>—<name type="animal" xml:lang="en">quinsy</name> 26, 9</p>
+   <p><name type="animal" xml:lang="en">Dog</name>—<name type="animal" xml:lang="en">star</name> 7,15; 23,3</p>
+   <p><name type="animal" xml:lang="en">Donkey</name> see <name type="animal" xml:lang="en">ass</name></p>
+   <p><name type="animal" xml:lang="en">Dove</name> 27,8</p>
+   <p><name type="animal" xml:lang="en">Dragon</name> 25a</p>
+   <p><name type="animal" xml:lang="en">Eagle</name> 18, 6; 50, 3</p>
+   <p><placeName>Egypt</placeName> 31, 3</p>
+   <p><name type="animal" xml:lang="en">Egyptian</name> <persName>priests</persName> 23, 3</p>
+   <p><name type="animal" xml:lang="en">Elephant</name> 24,23; 25; 44,1; 45,1; 50,3</p>
+   <p><name type="animal" xml:lang="en">Elops</name> 57e</p>
+   <p><name type="animal" xml:lang="en">Enhydros</name> 42,14; 43,1; = <name type="animal" xml:lang="en">Enhydris</name> 54,7</p>
+   <p><foreign xml:lang="la">Epilepsy</foreign> see <foreign xml:lang="la">Lunar fears</foreign></p>
+   <p><name type="animal" xml:lang="en">Erythrean</name> <name type="animal" xml:lang="en">kine</name> 28, 5</p>
+   <p><name type="animal" xml:lang="en">Ethiopians</name> 9, 2; 44,5</p>
+   <p><foreign xml:lang="la">INDEX</foreign> 53</p>
+   <p><name type="animal" xml:lang="en">Fish</name> 35,1; 577.</p>
+   <p><name type="animal" xml:lang="en">Flea</name> 19, 4</p>
+   <p><name type="animal" xml:lang="en">Flute-player</name> 26, 3</p>
+   <p><name type="animal" xml:lang="en">Fowl</name>, <foreign xml:lang="la">domestic</foreign> 37, 1-2</p>
+   <p><name type="animal" xml:lang="en">Fox</name> 5; 6,2</p>
+   <p><name type="animal" xml:lang="en">Francolin</name> 7, 10</p>
+   <p><name type="animal" xml:lang="en">Frog</name> 55</p>
+   <p><name type="animal" xml:lang="en">Galeotai</name> 47, 3</p>
+   <p><name type="animal" xml:lang="en">Gecko</name> 47, 3</p>
+   <p><placeName>Gaza</placeName> 24,2</p>
+   <p><name type="animal" xml:lang="en">Gazelle</name> (see also <name type="animal" xml:lang="en">roe</name>) 17</p>
+   <p><name type="animal" xml:lang="en">Giraffe</name> 24</p>
+   <p><name type="animal" xml:lang="en">Glanders</name> 31, 5</p>
+   <p><persName>Glaukos</persName> 50, 3</p>
+   <p><name type="animal" xml:lang="en">Gnu</name> see <name type="animal" xml:lang="en">Katobleps</name></p>
+   <p><foreign xml:lang="la">Golden dust</foreign> 32, 2-4</p>
+   <p><name type="animal" xml:lang="en">Goat</name> 7, Io</p>
+   <p><name type="animal" xml:lang="en">Goat</name> in <placeName>Crete</placeName> 16</p>
+   <p><name type="animal" xml:lang="en">Goat</name> of the <placeName>Cappadocians</placeName> 16, 2</p>
+   <p><name type="animal" xml:lang="en">Goat</name>, <foreign xml:lang="la">wild</foreign> 11,5; 75</p>
+   <p><name type="animal" xml:lang="en">Goose</name> 42, II</p>
+   <p><name type="animal" xml:lang="en">Griffin</name> 9, 6-7; <foreign xml:lang="la">ga</foreign></p>
+   <p><foreign xml:lang="la">Hail</foreign> 57a, 1; 574, 3</p>
+   <p><name type="animal" xml:lang="en">Halcyon</name> (see also <name type="animal" xml:lang="en">Alkyon</name>) 57k</p>
+   <p><name type="animal" xml:lang="en">Hare</name> 18; 38,1; 46,1</p>
+   <p><name type="animal" xml:lang="en">Hedgehog</name> 6</p>
+   <p><name type="deity">Helios</name> 40, 1</p>
+   <p><name type="plant" xml:lang="en">Heliotrope</name> 57k, 1</p>
+   <p><persName>Hermes</persName> 19, 1; 26,1</p>
+   <p><name type="animal" xml:lang="en">Hind</name> 13,4</p>
+   <p><foreign xml:lang="la">Hippomanes</foreign> 27, 3</p>
+   <p><name type="animal" xml:lang="en">Hippopotamus</name> 44; 45,1; 50, 3</p>
+   <p><name type="animal" xml:lang="en">Horse</name> 7, 10; 7, 12; 9, 8; 27; 28, 7; 31, 8</p>
+   <p><name type="animal" xml:lang="en">Horse</name>, <foreign xml:lang="la">wild</foreign> 49</p>
+   <p><name type="animal" xml:lang="en">Hound</name> (see also <name type="animal" xml:lang="en">dog</name>) 5, 3; 5, 9; 8, 2; 21,5; 22,5; 54,5</p>
+   <p><placeName>Hydaspes</placeName> 23,2; 42,1</p>
+   <p><name type="animal" xml:lang="en">Hyena</name> 4; 7, 11; 26, 10</p>
+   <p><name type="animal" xml:lang="en">Hyena</name>, <foreign xml:lang="la">spotted</foreign> 50</p>
+   <p><persName>Hyllos</persName> 42, 14; 43,1</p>
+   <p><name type="animal" xml:lang="en">Hyperboreans</name> 31, 2</p>
+   <p><name type="animal" xml:lang="en">Ibis</name> 50, 3</p>
+   <p><name type="animal" xml:lang="en">Ichneumon</name> 42, 14; 43; 54,3</p>
+   <p><persName>Imperial princess</persName> 10, 4</p>
+   <p><placeName>India</placeName> 24, 2</p>
+   <p><foreign xml:lang="la">Indian</foreign> (<foreign xml:lang="la">adjective</foreign> <foreign xml:lang="la">applied</foreign> <foreign xml:lang="la">to</foreign> <foreign xml:lang="la">various</foreign> <name type="animal" xml:lang="en">animals</name> <foreign xml:lang="la">and</foreign> <foreign xml:lang="la">things</foreign>) 24, 1-2</p>
+   <p><name type="animal" xml:lang="en">Indian</name> <name type="animal" xml:lang="en">ants</name> 32, 2-4</p>
+   <p><name type="animal" xml:lang="en">Indian</name> <name type="animal" xml:lang="en">ass</name> 31, 10</p>
+   <p><name type="animal" xml:lang="en">Indian</name> <name type="animal" xml:lang="en">dog</name> 5,9</p>
+   <p><name type="animal" xml:lang="en">Indians</name> 25, 9-10; 32, 2-4; 45, 3; 51,5</p>
+   <p><placeName>Ister</placeName> 5,8 ,</p>
+   <p><placeName>Ithaca</placeName> 18, 7</p>
+</div>
+<div type="section" n="81">
+   <p><name type="animal" xml:lang="en">Jackal</name> 13</p>
+   <p><name type="animal" xml:lang="en">Jaundiced people</name> 26, 4</p>
+</div>
+<div type="section" n="82">
+   <p><name type="animal" xml:lang="en">Kallaioi-horses</name> 28, 7</p>
+   <p><name type="animal" xml:lang="en">Katobleps</name> 53</p>
+   <p><name type="animal" xml:lang="en">Kebos</name> 51, 7</p>
+   <p><name type="animal" xml:lang="en">Kepphos</name> 57 ¢</p>
+   <p><name type="animal" xml:lang="en">Kerylos</name> 15, 3</p>
+   <p><name type="animal" xml:lang="en">Kochlos</name> 57 ¢</p>
+   <p><name type="animal" xml:lang="en">Korkotos</name> 50, 1-3</p>
+   <p><persName>Kronos</persName>, 9, I</p>
+   <p><placeName>Lacedaemon</placeName> 27, 8</p>
+   <p><name type="animal" xml:lang="en">Laconian dog</name> 5,9</p>
+   <p><name type="animal" xml:lang="en">Land-crocodile</name> gr; 42, 2; 42, 11</p>
+   <p><name type="animal" xml:lang="en">Latax</name> 54,7 2</p>
+   <p><name type="animal" xml:lang="en">Leopard</name> 312</p>
+   <p><name type="animal" xml:lang="en">Leprous</name> (adjective) 33, 4</p>
+   <p><placeName>Libya</placeName> 33,2; 34, 2-3; 36, 1; 38, 1-3</p>
+   <p><name type="animal" xml:lang="en">Libyan deer</name> 29, 1</p>
+   <p><name type="animal" xml:lang="en">Lightning</name> 57a, 2;.57k, 1</p>
+   <p><name type="animal" xml:lang="en">Lion</name> 7, 11; 7, 13; 9, 7-8; 11, 2; 12, 1-3; 13, 4; 23, 5; 50, 3; 51, 5; 51,7</p>
+   <p><name type="animal" xml:lang="en">Lizard</name> 47, 3; 53,2</p>
+   <p><name type="animal" xml:lang="en">Lobster</name> 29, 3</p>
+   <p><name type="animal" xml:lang="en">Lone-wolf</name> 4, 4</p>
+   <p><name type="animal" xml:lang="en">Louse</name> 20, 9</p>
+   <p><name type="animal" xml:lang="en">Love-(potions)</name> 27, 3</p>
+   <p><name type="animal" xml:lang="en">Lunar fears</name> 44; 6</p>
+   <p><name type="animal" xml:lang="en">Lyncouria-</name> 46,.2.</p>
+   <p><name type="animal" xml:lang="en">Lynx</name> 46</p>
+   <p><name type="animal" xml:lang="en">Lyre</name> 19, 1</p>
+   <p><name type="animal" xml:lang="en">Makares</name> 52, 3</p>
+   <p><name type="animal" xml:lang="en">Marten</name> 36,2; 37 ©</p>
+   <p><name type="animal" xml:lang="en">Mole-rat</name> 4o</p>
+   <p><name type="animal" xml:lang="en">Mouse</name> 25, 12; 38</p>
+   <p><name type="animal" xml:lang="en">Mule</name> 27, 15; 30; 31,8</p>
+   <p><name type="animal" xml:lang="en">Nightingale</name> 50, 3</p>
+   <p><placeName>Nile</placeName> 23, 2; 42,1; 42,7; 42, 14; 44,2; 45,1; 45,3</p>
+   <p><name type="animal" xml:lang="en">Nisnas monkey</name> see <name type="animal" xml:lang="en">Kebos</name></p>
+   <p><name type="animal" xml:lang="en">Nun ape</name> see <name type="animal" xml:lang="en">Sphinx</name></p>
+   <p><placeName>Ocean</placeName> 45, 1°</p>
+   <p><name type="animal" xml:lang="en">Octopus</name> 57h</p>
+   <p><name type="animal" xml:lang="en">Onager</name> (see also <name type="animal" xml:lang="en">wild ass</name>) 22</p>
+   <p><name type="plant" xml:lang="en">Origanum</name> plant 109, 2</p>
+   <p><name type="animal" xml:lang="en">Oryx</name> 23,</p>
+   <p><name type="animal" xml:lang="en">Ostrich</name> 22 4</p>
+   <p><name type="animal" xml:lang="en">Ox</name> (see also <name type="animal" xml:lang="en">cattle</name>) 9, 10: 29,1; 45,3</p>
+   <p><name type="plant" xml:lang="en">Paeonia</name> 21, 1</p>
+   <p><name type="animal" xml:lang="en">Panther</name> 34</p>
+   <p><name type="animal" xml:lang="en">Pard</name> 7,13: rr; 36,1</p>
+   <p><name type="animal" xml:lang="en">Pardalianchos</name> rr, 6</p>
+   <p><name type="animal" xml:lang="en">Parrot</name> 7, 10</p>
+   <p><name type="animal" xml:lang="en">Partridge</name> 7, 10: 17,2; 50,3</p>
+   <p><name type="animal" xml:lang="en">Peacock</name> 20, 1</p>
+   <p><persName>Pentheus</persName> 11, 3</p>
+   <p><name type="plant" xml:lang="en">Pepper</name> 51, 1</p>
+   <p><persName>Phineus</persName> 40, 5</p>
+   <p><name type="animal" xml:lang="en">Pig</name> (see also <name type="animal" xml:lang="en">swine</name>) 25, 12</p>
+   <p><name type="animal" xml:lang="en">Podagra</name> 26, 9</p>
+   <p><name type="animal" xml:lang="en">Polyp</name> 47,2</p>
+   <p><name type="animal" xml:lang="en">Porcupine</name> 3</p>
+   <p><name type="animal" xml:lang="en">Pregnant woman</name> 27,8; 57d, 1</p>
+   <p><name type="plant" xml:lang="en">Prinos</name> 7, 13</p>
+   <p><name type="animal" xml:lang="en">Puff-cheek</name> 5,6; 47,1</p>
+   <p><name type="animal" xml:lang="en">Purple coot</name> 50, 3</p>
+   <p><name type="animal" xml:lang="en">Pyr</name> 57¢, 1</p>
+   <p><name type="animal" xml:lang="en">Rabies</name> 26, 9</p>
+   <p><name type="animal" xml:lang="en">Raven</name> 50, 3</p>
+   <p><name type="plant" xml:lang="en">Realgar</name> 27, 14</p>
+   <p><placeName>Rhine</placeName> 29, 2 .</p>
+   <p><name type="animal" xml:lang="en">Rhinoceros</name> (see also <name type="animal" xml:lang="en">Indian ass</name>) 45</p>
+   <p><name type="animal" xml:lang="en">Roe</name> (see also <name type="animal" xml:lang="en">gazelle</name>) 7, 10</p>
+   <p><persName>Romans</persName> 5,8</p>
+   <p><placeName>Rome</placeName> 10, 3</p>
+</div>
+<div type="section" n="82">
+   <p><name type="plant" xml:lang="en">Rue</name> 37,2; 39, 2</p>
+   <p><name type="plant" xml:lang="en">Saliva</name> 39, 2</p>
+   <p><name type="plant" xml:lang="en">Saffron</name> 41, 1; 42,2</p>
+   <p><name type="animal" xml:lang="en">Salamander</name> 53.4</p>
+   <p><name type="plant" xml:lang="en">Saperion</name> 54, 7</p>
+   <p><name type="plant" xml:lang="en">Saperine garments</name> 54,7</p>
+   <p><name type="animal" xml:lang="en">Sargue-fish</name> 7, 10</p>
+   <p><name type="plant" xml:lang="en">Satherion</name> 54, 7</p>
+   <p><name type="animal" xml:lang="en">Scorpion</name> 41, 3</p>
+   <p><placeName>Scythia</placeName> 34, 4</p>
+   <p><name type="animal" xml:lang="en">Sea-frog</name> 5,1</p>
+   <p><name type="animal" xml:lang="en">Seal</name> 5,7; 574</p>
+   <p><name type="animal" xml:lang="en">Sheep</name> 7, 2; 7, 4: 7, 6; 7, 8; 34; 35, 1</p>
+   <p><name type="animal" xml:lang="en">Shrew</name> 394</p>
+   <p><name type="deity" xml:lang="en">Sirius</name> (see also <name type="animal" xml:lang="en">dog-star</name>) 23, 3; 26, 6</p>
+   <p><name type="animal" xml:lang="en">Skiaina</name> 57d :</p>
+   <p><name type="animal" xml:lang="en">Snail</name> 57d, 1</p>
+   <p><name type="animal" xml:lang="en">Snake</name> 19, 2; 39,2; 47,3: 55, 3</p>
+   <p><name type="animal" xml:lang="en">Soubos</name> 35</p>
+   <p><name type="animal" xml:lang="en">Sphinx</name> 46, 3; 52</p>
+   <p><name type="plant" xml:lang="en">Spurge</name> 57i, 2</p>
+   <p><name type="plant" xml:lang="en">Squill</name> 4,11; 5, 5; 7.13</p>
+   <p><name type="animal" xml:lang="en">Squirrel</name> 20</p>
+   <p><name type="animal" xml:lang="en">Stork</name> 50, 3</p>
+   <p><name type="plant" xml:lang="en">Strychnon plant</name> 4, 11</p>
+   <p><name type="animal" xml:lang="en">Swallow</name> 50, 3</p>
+   <p><name type="animal" xml:lang="en">Swan</name> 572</p>
+   <p><name type="animal" xml:lang="en">Swine</name> (see also <name type="animal" xml:lang="en">pig</name>) 31, 10</p>
+   <p><name type="animal" xml:lang="en">Swine, wild</name> 33, 2</p>
+   <p><name type="animal" xml:lang="en">Thunder</name> 57, 1; 57k, 1</p>
+   <p><name type="animal" xml:lang="en">Tick</name> 26,8; 31,9</p>
+   <p><name type="animal" xml:lang="en">Tiger</name> 9</p>
+   <p><name type="deity" xml:lang="en">Titans</name> 9, 1</p>
+   <p><name type="animal" xml:lang="en">Toad</name> 7, 14</p>
+   <p><name type="animal" xml:lang="en">Torpedo</name> 5, 1</p>
+   <p><name type="animal" xml:lang="en">Tortoise</name> rg</p>
+   <p><name type="animal" xml:lang="en">Transalpine boubalos</name> 29</p>
+   <p><name type="animal" xml:lang="en">Trochilos</name> 42, 13-14</p>
+   <p><name type="animal" xml:lang="en">Turtle</name> 19, 3</p>
+   <p><name type="animal" xml:lang="en">Turtle-dove</name> 50, 3</p>
+   <p><name type="animal" xml:lang="en">Typhos</name> 31,3</p>
+   <p><name type="animal" xml:lang="en">Varan</name> see <name type="animal" xml:lang="en">Land-crocodile</name></p>
+   <p><name type="deity" xml:lang="en">Virgin</name> 25,4; 44,4</p>
+   <p><name type="animal" xml:lang="en">Vulture</name> 26, 3; 50, 3</p>
+   <p>i</p>
+   <p><name type="animal" xml:lang="en">Weasel</name> 39; 40, I. !</p>
+   <p><name type="animal" xml:lang="en">Wolf</name> 4, 4; 4, 11; 5. 5; 73-8, 1: 50, 1</p>
+   <p><name type="animal" xml:lang="en">Woodpecker</name> 50, 3 ; : i</p>
+   <p><name type="animal" xml:lang="en">Worms</name> 26, 7</p>
+   <p><name type="animal" xml:lang="en">Zebra</name> 70 se</p>
+   <p><name type="deity" xml:lang="en">Zeus</name> 9, 1 $</p>
+</div>
+    </body>
+  </text>
+</TEI>

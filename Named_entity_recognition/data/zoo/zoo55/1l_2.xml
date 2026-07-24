@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">De re rustica</title>
+        <title type="alt" xml:lang="fr">L’économie rurale</title>
+        <title type="alt" xml:lang="en">On agriculture</title>
+        <author>
+          <persName>VARRO</persName>
+          <idno type="zoomathia">phi0684</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-06-29">2026-06-29</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-06-29">2026-06-29</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">phi0684</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <head>M. TERENTI VARRONIS RERUM RUSTICARUM DE AGRI CULTURA LIBER PRIMUS</head>
+
+  <div type="chapter" n="1">
+    <head>I.</head>
+
+    <p>
+      Otium si essem consecutus, <persName>Fundania</persName>, commodius tibi haec scriberem,
+      quae nunc, ut potero, exponam cogitans esse properandum, quod, ut dicitur, si est
+      <foreign xml:lang="la">homo bulla</foreign>, eo magis senex. Annus enim octogesimus
+      admonet me ut sarcinas conligam, antequam proficiscar e vita. Quare, quoniam emisti
+      fundum, quem bene colendo fructuosum cum facere velis, meque ut id mihi habeam curare
+      roges, experiar; et non solum, ut ipse quoad vivam, quid fieri oporteat ut te moneam,
+      sed etiam post mortem. Neque patiar <persName>Sibyllam</persName> non solum cecinisse
+      quae, dum viveret, prodessent hominibus, sed etiam quae cum perisset ipsa, et id etiam
+      ignotissimis quoque hominibus; ad cuius libros tot annis post publice solemus redire,
+      cum desideramus, quid faciendum sit nobis ex aliquo portento: me, ne dum vivo quidem,
+      necessariis meis quod prosit facere. Quocirca scribam tibi tres libros indices, ad quos
+      revertare, siqua in re quaeres, quem ad modum quidque te in colendo oporteat facere.
+    </p>
+
+    <p>
+      Et quoniam, ut aiunt, dei facientes adiuvant, prius invocabo eos, nec, ut
+      <persName>Homerus</persName> et <persName>Ennius</persName>,
+      <name type="deity">Musas</name>, sed duodecim deos Consentis; neque tamen eos urbanos,
+      quorum imagines ad forum auratae stant, sex mares et feminae totidem, sed illos XII
+      deos, qui maxime agricolarum duces sunt. Primum, qui omnis fructos agri culturae caelo
+      et terra continent, <name type="deity">Iovem</name> et <name type="deity">Tellurem</name>:
+      itaque, quod ii parentes, magni dicuntur, <name type="deity">Iuppiter</name> pater
+      appellatur, <name type="deity">Tellus</name> terra mater. Secundo
+      <name type="deity">Solem</name> et <name type="deity">Lunam</name>, quorum tempora
+      observantur, cum quaedam seruntur et conduntur. Tertio
+      <name type="deity">Cererem</name> et <name type="deity">Liberum</name>, quod horum
+      fructus maxime necessari ad victum: ab his enim cibus et potio venit e fundo. Quarto
+      <name type="deity">Robigum</name> ac <name type="deity">Floram</name>, quibus propitiis
+      neque robigo <name type="plant" xml:lang="la">frumenta</name> atque
+      <name type="plant" xml:lang="la">arbores</name> corrumpit, neque non tempestive florent.
+      Itaque publice <name type="deity">Robigo</name> feriae Robigalia,
+      <name type="deity">Florae</name> ludi Floralia instituti. Item adveneror
+      <name type="deity">Minervam</name> et <name type="deity">Venerem</name>, quarum unius
+      procuratio <name type="plant" xml:lang="la">oliveti</name>, alterius hortorum; quo
+      nomine rustica Vinalia instituta. Nec non etiam precor
+      <name type="deity">Lympham</name> ac <name type="deity">Bonum Eventum</name>, quoniam
+      sine aqua omnis arida ac misera agri cultura, sine successu ac bono eventu frustratio
+      est, non cultura. Iis igitur deis ad venerationem advocatis ego referam sermones eos
+      quos de agri cultura habuimus nuper, ex quibus quid te facere oporteat animadvertere
+      poteris. in quis quae non inerunt et quaeres, indicabo a quibus scriptoribus repetas
+      et Graecis et nostris.
+    </p>
+
+  </div>
+
+</div>
+<div type="book" n="2">
+  <div type="chapter" n="1">
+    <p>
+      Qui <foreign xml:lang="grc">Graece</foreign> scripserunt dispersim alius de alia re, sunt plus quinquaginta. Hi sunt, quos tu habere in consilio poteris, cum quid consulere voles, <persName>Hieron</persName> <placeName>Siculus</placeName> et <persName>Attalus Philometor</persName>: de philosophis <persName>Democritus</persName> physicus, <persName>Xenophon Socraticus</persName>, <persName>Aristoteles</persName> et <persName>Theophrastus</persName> peripatetici, <persName>Archytas</persName> Pythagoreus: item <persName>Amphilochus</persName> <placeName>Atheniensis</placeName>, <persName>Anaxipolis</persName> <placeName>Thasius</placeName>, <persName>Apollodorus</persName> <placeName>Lemnius</placeName>, <persName>Aristophanes</persName> <placeName>Mallotes</placeName>, <persName>Antigonus</persName> <placeName>Cymaeus</placeName>, <persName>Agathocles</persName> <placeName>Chius</placeName>, <persName>Apollonius</persName> <placeName>Pergamenus</placeName>, <persName>Aristandros</persName> <placeName>Atheniensis</placeName>, <persName>Bacchius</persName> <placeName>Milesius</placeName>, <persName>Bion</persName> <placeName>Soleus</placeName>, <persName>Chaeresteus</persName> et <persName>Chaereas</persName> <placeName>Athenienses</placeName>, <persName>Diodorus</persName> <placeName>Prieneus</placeName>, <persName>Dion</persName> <placeName>Colophonius</placeName>, <persName>Diophanes</persName> <placeName>Nicaeensis</placeName>, <persName>Epigenes</persName> <placeName>Rhodios</placeName>, <persName>Euagon</persName> <placeName>Thasius</placeName>, <persName>Euphronii</persName> duo, unus <placeName>Atheniensis</placeName>, alter <placeName>Amphipolites</placeName>, <persName>Hegesias</persName> <placeName>Maronites</placeName>, <persName>Menandri</persName> duo, unus <placeName>Prieneus</placeName>, alter <placeName>Heracleotes</placeName>, <persName>Nicesius</persName> <placeName>Maronites</placeName>, <persName>Pythion</persName> <placeName>Rhodius</placeName>. De reliquis, quorum quae fuerit patria non accepi, sunt <persName>Androtion</persName>, <persName>Aeschrion</persName>, <persName>Aristomenes</persName>, <persName>Athenagoras</persName>, <persName>Crates</persName>, <persName>Dadis</persName>, <persName>Dionysios</persName>, <persName>Euphiton</persName>, <persName>Euphorion</persName>, <persName>Eubulus</persName>, <persName>Lysimachus</persName>, <persName>Mnaseas</persName>, <persName>Menestratus</persName>, <persName>Plentiphanes</persName>, <persName>Persis</persName>, <persName>Theophilus</persName>. Hi quos dixi omnes soluta oratione scripserunt; easdem res etiam quidam versibus, ut <persName>Hesiodus</persName> <placeName>Ascraeus</placeName>, <persName>Menecrates</persName> <placeName>Ephesius</placeName>. Hos nobilitate <persName>Mago</persName> <placeName>Carthaginiensis</placeName> praeteriit, <foreign xml:lang="la">poenica</foreign> lingua qui res dispersas comprendit libris XXIIX, quos <persName>Cassius Dionysius</persName> <placeName>Uticensis</placeName> vertit libris XX ac <foreign xml:lang="grc">Graeca</foreign> lingua <persName>Sextilio</persName> praetori misit: in quae volumina de <foreign xml:lang="grc">Graecis</foreign> libris eorum quos dixi adiecit non pauca et de <persName>Magonis</persName> dempsit instar librorum VIII. Hosce ipsos utiliter ad VI libros redegit <persName>Diophanes</persName> in <placeName>Bithynia</placeName> et misit <persName>Deiotaro</persName> regi. Quo brevius de ea re conor tribus libris exponere, uno de agri cultura, altero de re pecuaria, tertio de villaticis pastionibus, hoc libro circumcisis rebus, quae non arbitror pertinere ad agri culturam. Itaque prius ostendam, quae secerni oporteat ab ea, tum de his rebus dicam sequens naturales divisiones. Ea erunt ex radicibus trinis, et quae ipse in meis fundis colendo animadverti, et quae legi, et quae a peritis audii.
+    </p>
+  </div>
+
+  <div type="chapter" n="2">
+    <p>
+      Sementivis feriis in aedem <name type="deity">Telluris</name> veneram rogatus ab aeditumo, ut dicere didicimus a patribus nostris, ut corrigimur a recentibus urbanis, ab aedituo. Offendi ibi <persName>C. Fundanium</persName>, socerum meum, et <persName>C. Agrium</persName> equitem R. Socraticum et <persName>P. Agrasium</persName> publicanum spectantes in pariete pictam <placeName>Italiam</placeName>. Quid vos hic? inquam, num feriae sementivae otiosos huc adduxerunt, ut patres et avos solebant nostros? Nos vero, inquit <persName>Agrius</persName>, ut arbitror, eadem causa quae te, rogatio aeditumi. Itaque si ita est, ut annuis, morere oportet nobiscum, dum ille revertatur. Nam accersitus ab aedile, cuius procuratio huius templi est, nondum rediit et nos uti expectaremus se reliquit qui rogaret. Voltis igitur interea vetus proverbium, quod est <quote>Romanus sedendo vincit</quote>, usurpemus, dum ille venit?
+    </p>
+    <p>
+      Sane, inquit <persName>Agrius</persName>, et simul cogitans portam itineri dici longissimam esse ad subsellia sequentibus nobis procedit.
+    </p>
+  </div>
+</div>
+
+En attendant, voici la structure que j'utiliserai dès que vous me fournirez le texte :
+
+
+<div type="book" n="[N]">
+  <div type="chapter" n="[N]">
+    <div type="section" n="[N]">
+<p>
+        <!-- texte avec balises zoomathia -->
+        <name type="animal" xml:lang="la">...</name>
+        <persName>...</persName>
+        <placeName>...</placeName>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+**Merci de coller le texte latin** que vous souhaitez encoder et je produirai immédiatement l'encodage TEI P5 complet et conforme aux règles Zoomathia.
+<div type="book" n="1">
+  <div type="chapter" n="2">
+    <div type="section" n="1">
+      <p>
+        Cum consedissemus, <persName>Agrasius</persName>, Vos, qui multas perambulastis
+        terras, ecquam cultiorem <placeName>Italia</placeName> vidistis? inquit. Ego vero,
+        <persName>Agrius</persName>, nullam arbitror esse quae tam tota sit culta. Primum
+        cum orbis terrae divisus sit in duas partes ab <persName>Eratosthene</persName>
+        maxume secundum naturam, ad meridiem versus et ad septemtriones, et sine dubio
+        quoniam salubrior pars septemtrionalis est quam meridiana, et quae salubriora
+        illa fructuosiora, dicendum utique <placeName>Italiam</placeName> magis etiam
+        fuisse opportunam ad colendum quam <placeName>Asiam</placeName>, primum quod est
+        in <placeName>Europa</placeName>, secundo quod haec temperatior pars quam
+        interior. Nam intus paene sempiternae hiemes, neque mirum, quod sunt regiones
+        inter circulum septemtrionalem et inter cardinem caeli, ubi sol etiam sex
+        mensibus continuis non videtur. Itaque in oceano in ea parte ne navigari quidem
+        posse dicunt propter mare congelatum.
+      </p>
+    </div>
+    <div type="section" n="2">
+      <p>
+        <persName>Fundanius</persName>, Em ubi tu quicquam nasci putes posse aut coli
+        natum. Verum enim est illud <persName>Pacuvi</persName>,
+        <quote>sol si perpetuo sit aut nox, flammeo vapore aut frigore terrae fructos
+        omnis interire.</quote> Ego hic, ubi nox et dies modice redit et abit, tamen
+        aestivo die, si non diffinderem meo insiticio somno meridie, vivere non possum.
+        Illic in semenstri die aut nocte quem ad modum quicquam seri aut alescere aut
+        meti possit? Contra quid in <placeName>Italia</placeName> utensile non modo non
+        nascitur, sed etiam non egregium fit? Quod far conferam
+        <placeName>Campano</placeName>? Quod triticum <placeName>Apulo</placeName>? Quod
+        <name type="plant" xml:lang="la">vinum</name>
+        <placeName>Falerno</placeName>? Quod <name type="plant" xml:lang="la">oleum</name>
+        <placeName>Venafro</placeName>? Non <name type="plant" xml:lang="la">arboribus</name>
+        consita <placeName>Italia</placeName>, ut tota pomarium videatur? An
+        <placeName>Phrygia</placeName> magis
+        <name type="plant" xml:lang="la">vitibus</name> cooperta, quam
+        <persName>Homerus</persName> appellat
+        <foreign xml:lang="grc">ἀμπελόεσσαν</foreign>, quam haec? Aut tritico
+        <placeName>Argos</placeName>, quod idem poeta
+        <foreign xml:lang="grc">πολύπυρον</foreign>?
+      </p>
+    </div>
+    <div type="section" n="3">
+      <p>
+        In qua terra iugerum unum denos et quinos denos culleos fert vini, quot quaedam
+        in <placeName>Italia</placeName> regiones? An non
+        <persName>M. Cato</persName> scribit in libro Originum sic:
+        <quote>ager <placeName>Gallicus</placeName>
+        <placeName>Romanus</placeName> vocatur, qui viritim cis
+        <placeName>Ariminum</placeName> datus est ultra agrum
+        <placeName>Picentium</placeName>. In eo agro aliquotfariam in singula iugera
+        dena cullea vini fiunt</quote>? Nonne item in agro
+        <placeName>Faventino</placeName>, a quo ibi trecenariae appellantur
+        <name type="plant" xml:lang="la">vites</name>, quod iugerum trecenas amphoras
+        reddat? Simul aspicit me, Certe, inquit,
+        <persName>Libo Marcius</persName>, praefectus fabrum tuos, in fundo suo
+        <placeName>Faventiae</placeName> hanc multitudinem dicebat suas reddere
+        <name type="plant" xml:lang="la">vites</name>.
+      </p>
+    </div>
+    <div type="section" n="4">
+      <p>
+        Duo in primis spectasse videntur Italici homines colendo, possentne fructus pro
+        impensa ac labore redire et utrum saluber locus esset an non. Quorum si
+        alterutrum decolat et nihilo minus quis vult colere, mente est captus adque
+        adgnatos et gentiles est deducendus. Nemo enim sanus debet velle impensam ac
+        sumptum facere in cultura, si videt non posse refici, nec si potest reficere
+        fructus, si videt eos fore ut pestilentia dispereant. Sed, opinor, qui haec
+        commodius ostendere possint adsunt. Nam
+        <persName>C. Licinium Stolonem</persName> et
+        <persName>Cn. Tremelium Scrofam</persName> video venire: unum, cuius maiores de
+        modo agri legem tulerunt (nam Stolonis illa lex, quae vetat plus D iugera habere
+        civem R.), et qui propter diligentiam culturae Stolonum confirmavit cognomen,
+        quod nullus in eius fundo reperiri poterat stolo, quod effodiebat circum
+        <name type="plant" xml:lang="la">arbores</name> e radicibus quae nascerentur
+        e solo,
+      </p>
+    </div>
+  </div>
+</div>
+<div type="section" n="5">
+  <p>
+    quos <foreign xml:lang="la">stolones</foreign> appellabant. Eiusdem gentis
+    <persName>C. Licinius</persName>, tr. pl. cum esset, post reges exactos annis
+    CCCLXV primus populum ad leges accipiendas in septem iugera forensia e comitio
+    eduxit. Alterum collegam tuum, viginti virum qui fuit ad agros dividendos
+    <placeName>Campanos</placeName>, video huc venire,
+    <persName>Cn. Tremelium Scrofam</persName>, virum omnibus virtutibus politum,
+    qui de agri cultura Romanus peritissimus existimatur. An non iure? inquam.
+    Fundi enim eius propter culturam iucundiore spectaculo sunt multis, quam regie
+    polita aedificia aliorum, cum huius spectatum veniant villas, non, ut apud
+    <persName>Lucullum</persName>, ut videant pinacothecas, sed oporothecas.
+    Huiusce, inquam, pomarii summa
+    <placeName>sacra via</placeName>, ubi
+    <name type="plant" xml:lang="la">poma</name> veneunt contra aurum, imago.
+  </p>
+</div>
+
+Une fois que vous me fournirez le passage, je produirai l'encodage TEI P5 complet selon les règles Zoomathia, avec notamment :
+
+<div type="book" n="1">
+  <div type="chapter" n="1">
+    <div type="section" n="1">
+      <p>
+        Illi interea ad nos, et <persName>Stolo</persName>,
+        <quote>Num cena comessa, inquit, venimus? Nam non
+        <persName>L. Fundilium</persName> videmus, qui nos advocavit.</quote>
+        <quote>Bono animo este, inquit <persName>Agrius</persName>. Nam non modo
+        ovom illut sublatum est, quod ludis circensibus novissimi curriculi finem
+        facit quadrigis, sed ne illud quidem ovom vidimus, quod in cenali pompa
+        solet esse primum. Itaque dum id nobiscum una videatis ac venit
+        aeditumus, docete nos, agri cultura quam summam habeat, utilitatemne an
+        voluptatem an utrumque. Ad te enim rudem esse agri culturae nunc, olim
+        ad <persName>Stolonem</persName> fuisse dicunt.</quote>
+        <persName>Scrofa</persName>, <quote>Prius, inquit, discernendum, utrum
+        quae serantur in agro, ea sola sint in cultura, an etiam quae inducantur
+        in rura, ut <name type="animal" xml:lang="la">oves</name> et
+        <name type="animal" xml:lang="la">armenta</name>. Video enim, qui de
+        agri cultura scripserunt et Poenice et Graece et Latine, latius vagatos,
+        quam oportuerit.</quote>
+        <quote>Ego vero, inquit <persName>Stolo</persName>, eos non in omni re
+        imitandos arbitror et eo melius fecisse quosdam, qui minore pomerio
+        finierunt exclusis partibus quae non pertinent ad hanc rem. Quare tota
+        pastio, quae coniungitur a plerisque cum agri cultura, magis ad pastorem
+        quam ad agricolam pertinere videtur. Quocirca principes qui utrique rei
+        praeponuntur vocabulis quoque sunt diversi, quod unus vocatur vilicus,
+        alter magister pecoris. Vilicus agri colendi causa constitutus atque
+        appellatus a villa, quod ab eo in eam convehuntur fructus et evehuntur,
+        cum veneunt. A quo rustici etiam nunc quoque viam veham appellant
+        propter vecturas et vellam, non villam, quo vehunt et unde vehunt. Item
+        dicuntur qui vecturis vivunt velaturam facere.</quote>
+        <quote>Certe, inquit <persName>Fundanius</persName>, aliut pastio et
+        aliut agri cultura, sed adfinis et ut dextra tibia alia quam sinistra,
+        ita ut tamen sit quodam modo coniuncta, quod est altera eiusdem carminis
+        modorum incentiva, altera succentiva.</quote>
+        <quote>Et quidem licet adicias, inquam, pastorum vitam esse incentivam,
+        agricolarum succentivam auctore doctissimo homine
+        <persName>Dicaearcho</persName>, qui
+        <placeName>Graeciae</placeName> vita qualis fuerit ab initio nobis ita
+        ostendit, ut superioribus temporibus fuisse doceat, cum homines
+        pastoriciam vitam agerent neque scirent etiam arare terram aut serere
+        <name type="plant" xml:lang="la">arbores</name> aut putare; ab iis
+        inferiore gradu aetatis susceptam agri culturam. Quocirca ea succinit
+        pastorali, quod est inferior, ut tibia sinistra a dextrae
+        foraminibus.</quote>
+        <persName>Agrius</persName>, <quote>Tu, inquit, tibicen non solum adimis
+        domino <name type="animal" xml:lang="la">pecus</name>, sed etiam servis
+        peculium, quibus domini dant ut pascant, atque etiam leges colonicas
+        tollis, in quibus scribimus, colonus in agro surculario ne
+        <name type="animal" xml:lang="la">capra</name> natum pascat: quas etiam
+        astrologia in caelum recepit, non longe ab
+        <name type="animal" xml:lang="la">tauro</name>.</quote>
+        Cui <persName>Fundanius</persName>,
+        <quote>Vide, inquit, ne, Agri, istuc sit ab hoc, cum in legibus etiam
+        scribatur 'pecus quoddam'. Quaedam enim
+        <name type="animal" xml:lang="la">pecudes</name> culturae sunt inimicae
+        ac veneno, ut istae, quas dixisti,
+        <name type="animal" xml:lang="la">caprae</name>. Eae enim omnia novella
+        sata carpendo corrumpunt, non minimum
+        <name type="plant" xml:lang="la">vites</name> atque
+        <name type="plant" xml:lang="la">oleas</name>. Itaque propterea
+        institutum diversa de causa ut ex
+        <name type="animal" xml:lang="la">caprino</name> genere ad alii dei
+        aram hostia adduceretur, ad alii non sacrificaretur, cum ab eodem odio
+        alter videre nollet, alter etiam videre pereuntem vellet. Sic factum
+        ut</quote>
+      </p>
+    </div>
+  </div>
+</div>
+<div type="book" n="2">
+  <div type="chapter" n="1">
+    <div type="section" n="8">
+      <p>
+        <name type="deity">Libero patri</name>, repertori vitis, <name type="animal" xml:lang="la">hirci</name> immolarentur, proinde ut capite darent poenas; contra ut <name type="deity">Minervae</name> <name type="animal" xml:lang="la">caprini</name> generis nihil immolarent propter <name type="plant" xml:lang="la">oleam</name>, quod eam quam laeserit fieri dicunt sterilem: eius enim salivam esse fructuis venenum: hoc nomine etiam <placeName>Athenis</placeName> in arcem non inigi, praeterquam semel ad necessarium sacrificium, ne arbor <name type="plant" xml:lang="la">olea</name>, quae primum dicitur ibi nata, a <name type="animal" xml:lang="la">capra</name> tangi possit. Nec ullae, inquam, pecudes agri culturae sunt propriae, nisi quae agrum opere, quo cultior sit, adiuvare, ut eae quae iunctae arare possunt. <persName>Agrasius</persName>, Si istuc ita est, inquit, quo modo <name type="animal" xml:lang="la">pecus</name> removeri potest ab agro, cum stercus, quod plurimum prodest, greges <name type="animal" xml:lang="la">pecorum</name> ministrent? Sic, inquit <persName>Agrius</persName>, venalium greges dicemus agri culturam esse, si propter istam rem habendum statuerimus. Sed error hinc, quod <name type="animal" xml:lang="la">pecus</name> in agro esse potest et fructus in eo agro ferre, quod non sequendum. Nam sic etiam res aliae diversae ab agro erunt adsumendae, ut si habet plures in fundo textores atque institutos histonas, sic alios artifices.
+      </p>
+    </div>
+  </div>
+</div>
+<div type="book" n="1">
+  <div type="chapter" n="2">
+    <div type="section" n="9">
+      <p>
+<persName>Scrofa</persName>, Diiungamus igitur, inquit, pastionem a cultura, et siquis quid vult aliud. Anne ego, inquam, sequar <persName>Sasernarum</persName> patris et filii libros ac magis putem pertinere, figilinas quem ad modum exerceri oporteat, quam argentifodinas aut alia metalla, quae sine dubio in aliquo agro fiunt? Sed ut neque lapidicinae neque harenariae ad agri culturam pertinent, sic figilinae. Neque ideo non in quo agro idoneae possunt esse non exercendae, atque ex iis capiendi fructus: ut etiam, si ager secundum viam et opportunus viatoribus locus, aedificandae tabernae devorsoriae, quae tamen, quamvis sint fructuosae, nihilo magis sunt agri culturae partes. Non enim, siquid propter agrum aut etiam in agro profectus domino, agri culturae acceptum referre debet, sed id modo quod ex satione terra sit natum ad fruendum. Suscipit <persName>Stolo</persName>, Tu, inquit, invides tanto scriptori et obstrigillandi causa figlinas reprehendis, cum praeclara quaedam, ne laudes, praetermittas, quae ad agri culturam vehementer pertineant. Cum subrisisset <persName>Scrofa</persName>, quod non ignorabat libros et despiciebat, et <persName>Agrasius</persName> se scire modo putaret ac <persName>Stolonem</persName> rogasset ut diceret, coepit: Scribit <name type="animal" xml:lang="la">cimices</name> quem ad modum interfici oporteat his verbis: <quote><name type="plant" xml:lang="la">cucumerem anguinum</name> condito in aquam eamque infundito quo voles, nulli accedent; vel fel <name type="animal" xml:lang="la">bubulum</name> cum aceto mixtum, unguito lectum</quote>. <persName>Fundanius</persName> aspicit ad <persName>Scrofam</persName>, Et tamen verum dicit, inquit, hic, ut hoc scripserit in agri cultura. Ille, Tam hercle quam hoc, siquem glabrum facere velis, quod iubet <name type="animal" xml:lang="la">ranam</name> luridam coicere in aquam, usque qua ad tertiam partem decoxeris, eoque unguere corpus. Ego, Quod magis, inquam, pertineat ad <persName>Fundani</persName> valetudinem in eo libro, est satius dicas: nam huiusce pedes solent dolere, in fronte contrahere rugas. Dic sodes, inquit <persName>Fundanius</persName>: nam malo de meis pedibus audire, quam quem ad modum pedes <name type="plant" xml:lang="la">betaceos</name> seri oporteat. <persName>Stolo</persName> subridens, Dicam, inquit, eisdem quibus ille verbis scripsit (vel <placeName>Tarquennam</placeName> audivi, cum homini pedes dolere coepissent, qui tui meminisset, ei mederi posse): <quote>ego tui memini, medere meis pedibus, terra pestem teneto, salus hic maneto in meis pedibus</quote>. Hoc ter noviens cantare iubet, terram tangere, despuere, ieiunum cantare. Multa, inquam, item alia miracula apud <persName>Sasernas</persName> invenies, quae omnia sunt diversa ab agri cultura et ideo repudianda. Quasi vero, inquit, non apud ceteros quoque scriptores talia reperiantur. An non in magni illius <persName>Catonis</persName> libro, qui de agri cultura est editus, scripta sunt permulta similia, ut haec, quem ad modum placentam facere oporteat, quo pacto libum, qua ratione <name type="animal" xml:lang="la">pernas</name> sallere? Illud non dicis, inquit <persName>Agrius</persName>, quod scribit, <quote>si velis in convivio multum bibere cenareque libenter, ante esse oportet <name type="plant" xml:lang="la">brassicam</name> crudam ex aceto aliqua folia quinque</quote>.
+      </p>
+    </div>
+  </div>
+  <div type="chapter" n="3">
+</div>
+</div>
+<div type="book" n="1">
+  <div type="chapter" n="3">
+    <p>
+      Igitur, inquit <persName>Agrasius</persName>, quae diiungenda essent a cultura cuius modi sint,
+      quoniam discretum, de iis rebus quae scientia sit in colendo nos docete, ars id an quid aliud,
+      et a quibus carceribus decurrat ad metas. <persName>Stolo</persName> cum aspexisset
+      <persName>Scrofam</persName>, Tu, inquit, et aetate et honore et scientia quod praestas,
+      dicere debes. Ille non gravatus, Primum, inquit, non modo est ars, sed etiam necessaria ac
+      magna; eaque est scientia, quae sint in quoque agro serenda ac facienda, quo terra maximos
+      perpetuo reddat fructus.
+    </p>
+  </div>
+
+  <div type="chapter" n="4">
+    <p>
+      Eius principia sunt eadem, quae mundi esse <persName>Ennius</persName> scribit, aqua, terra,
+      anima et sol. Haec enim cognoscenda, priusquam iacias semina, quod initium fructuum oritur.
+      Hinc profecti agricolae ad duas metas dirigere debent, ad utilitatem et voluptatem. Utilitas
+      quaerit fructum, voluptas delectationem: priores partes agit quod utile est, quam quod
+      delectat. Nec non ea, quae faciunt cultura honestiorem agrum, pleraque non solum fructuosiorem
+      eadem faciunt, ut cum in ordinem sunt consita
+      <name type="plant" xml:lang="la">arbusta</name>
+      atque
+      <name type="plant" xml:lang="la">oliveta</name>,
+      sed etiam vendibiliorem atque adiciunt ad fundi pretium. Nemo enim eadem utilitati non
+      formosius quod est emere mavult pluris, quam si est fructuosus turpis. Utilissimus autem is
+      ager qui salubrior est quam alii, quod ibi fructus certus; contra [quod] in pestilenti
+      calamitas, quamvis in feraci agro, colonum ad fructus pervenire non patitur. Etenim ubi ratio
+      cum orco habetur, ibi non modo fructus est incertus, sed etiam colentium vita. Quare ubi
+      salubritas non est, cultura non aliud est atque alea domini vitae ac rei familiaris. Nec haec
+      non deminuitur scientia. Ita enim salubritas, quae ducitur e caelo ac terra, non est in nostra
+      potestate, sed in naturae, ut tamen multum sit in nobis, quo graviora quae sunt ea diligentia
+      leviora facere possimus. Etenim si propter terram aut aquam odore, quem aliquo loco eructat,
+      pestilentior est fundus, aut propter caeli regionem ager calidior sit, aut ventus non bonus
+      flet, haec vitia emendari solent domini scientia ac sumptu, quod permagni interest, ube sint
+      positae villae, quantae sint, quo spectent porticibus, ostiis ac fenestris. An non ille
+      <persName>Hippocrates</persName> medicus in magna pestilentia non unum agrum, sed multa oppida
+      scientia servavit? Sed quid ego illum voco ad testimonium? Non hic
+      <persName>Varro</persName> noster, cum <placeName>Corcyrae</placeName> esset exercitus ac
+      classis et omnes domus repletae essent aegrotis ac funeribus, immisso fenestris novis
+      <name type="animal" xml:lang="la">aquilone</name>
+      et obstructis pestilentibus ianuaque permutata ceteraque eius generis diligentia suos comites
+      ac familiam incolumes reduxit?
+    </p>
+  </div>
+</div>
+<div type="book" n="1">
+  <div type="chapter" n="5">
+    <p>
+      Sed quoniam agri culturae quod esset initium et finis dixi, relinquitur quot partes ea
+      disciplina habeat ut sit videndum. Equidem innumerabiles mihi videntur, inquit
+      <persName>Agrius</persName>, cum lego libros <persName>Theophrasti</persName> complures,
+      qui inscribuntur <foreign xml:lang="grc">phuton istorias</foreign> et alteri
+      <foreign xml:lang="grc">phutikon aition</foreign>. <persName>Stolo</persName>, Isti,
+      inquit, libri non tam idonei iis qui agrum colere volunt, quam qui scholas philosophorum;
+      neque eo dico, quo non habeant et utilia et communia quaedam. Quapropter tu potius agri
+      culturae partes nobis expone. <persName>Scrofa</persName>, Agri culturae, inquit, quattuor
+      sunt partes summae: e quis prima cognitio fundi, solum partesque eius quales sint; secunda,
+      quae in eo fundo opus sint ac debeant esse culturae causa; tertia, quae in eo praedio
+      colendi causa sint facienda; quarta, quo quicque tempore in eo fundo fieri conveniat. De
+      his quattuor generalibus partibus singulae minimum in binas dividuntur species, quod habet
+      prima ea quae ad solum pertinent terrae et iterum quae ad villas et stabula. Secunda pars,
+      quae moventur atque in fundo debent esse culturae causa, est item bipertita, de hominibus,
+      per quos colendum, et de reliquo instrumento. Tertia pars quae de rebus dividitur, quae ad
+      quamque rem sint praeparanda et ubi quaeque facienda. Quarta pars de temporibus, quae ad
+      solis circumitum annuum sint referenda et quae ad lunae menstruum cursum. De primis quattuor
+      partibus prius dicam, deinde subtilius de octo secundis.
+    </p>
+  </div>
+  <div type="chapter" n="6">
+  </div>
+</div>
+<div type="book" n="1">
+  <div type="chapter" n="7">
+    <p>
+      Igitur primum de solo fundi videndum haec quattuor, quae sit forma, quo in genere terrae,
+      quantus, quam per se tutus. Formae cum duo genera sint, una quam natura dat, altera quam
+      sationes imponunt, prior, quod alius ager bene natus, alius male, posterior, quod alius
+      fundus bene consitus est, alius male, dicam prius de naturali. Igitur cum tria genera sint
+      a specie simplicia agrorum, campestre, collinum, montanum, et ex iis tribus quartum, ut in
+      eo fundo haec duo aut tria sint, ut multis locis licet videre, e quibus tribus fastigiis
+      simplicibus sine dubio infimis alia cultura aptior quam summis, quod haec calidiora quam
+      summa, sic collinis, quod ea tepidiora quam infima aut summa: haec apparent magis ita esse
+      in latioribus regionibus, simplicia cum sunt. Itaque ubi lati campi, ibi magis aestus, et
+      eo in <placeName>Apulia</placeName> loca calidiora ac graviora, et ubi montana, ut in
+      <placeName>Vesuvio</placeName>, quod leviora et ideo salubriora: qui colunt deorsum, magis
+      aestate laborant, qui susum, magis hieme. Verno tempore in campestribus maturius eadem
+      illa seruntur quae in superioribus et celerius hic quam illic coguntur. Nec non susum quam
+      deorsum tardius seruntur ac metuntur. Quaedam in montanis prolixiora nascuntur ac firmiora
+      propter frigus, ut <name type="plant" xml:lang="la">abietes</name> ac
+      <name type="plant" xml:lang="la">sappini</name>, hic, quod tepidiora,
+      <name type="plant" xml:lang="la">populi</name> ac
+      <name type="plant" xml:lang="la">salices</name>: susum fertiliora, ut
+      <name type="plant" xml:lang="la">arbutus</name> ac
+      <name type="plant" xml:lang="la">quercus</name>, deosum, ut
+      <name type="plant" xml:lang="la">nuces graecae</name> ac
+      <name type="plant" xml:lang="la">mariscae fici</name>. In collibus humilibus societas maior
+      cum campestri fructu quam cum montano, in altis contra. Propter haec tria fastigia formae
+      discrimina quaedam fiunt sationum, quod segetes meliores existimantur esse campestres,
+      vineae collinae, silvae montanae. Plerumque hiberna iis esse meliora, qui colunt
+      campestria, quod tunc prata ibi herbosa, putatio arborum tolerabilior: contra aestiva
+      montanis locis commodiora, quod ibi tum et pabulum multum, quod in campis aret, ac cultura
+      arborum aptior, quod tum hic frigidior aer. Campester locus is melior, qui totus
+      aequabiliter in unam partem verget, quam is qui est ad libellam aequos, quod is, cum aquae
+      non habet delapsum, fieri solet uliginosus: eo magis, siquis est inaequabilis, eo
+      deterior, quod fit propter lacunas aquosus. Haec atque huiusce modi tria fastigia agri ad
+      colendum disperiliter habent momentum.
+    </p>
+  </div>
+</div>
+<div type="section" n="13">
+  <p>
+    <persName>Stolo</persName>, Quod ad hanc formam naturalem pertinet, de eo non incommode
+    <persName>Cato</persName> videtur dicere, cum scribit optimum agrum esse, qui sub radice
+    montis situs sit et spectet ad meridianam caeli partem. Subicit
+    <persName>Scrofa</persName>, De formae cultura hoc dico, quae specie fiant venustiora,
+    sequi ut maiore quoque fructu sint, ut qui habent
+    <name type="plant" xml:lang="la">arbusta</name>,
+    si sata sunt in quincuncem, propter ordines atque intervalla modica. Itaque maiores nostri
+    ex arvo aeque magno male consito et minus multum et minus bonum faciebant
+    <name type="plant" xml:lang="la">vinum</name>
+    et
+    <name type="plant" xml:lang="la">frumentum</name>,
+    quod quae suo quicque loco sunt posita, ea minus loci occupant, et minus officit aliud alii
+    ab sole ac luna et vento. Hoc licet coniectura videre ex aliquot rebus, ut
+    <name type="plant" xml:lang="la">nuces</name>
+    integras quas uno modio comprendere possis, quod putamina suo loco quaeque habet natura
+    composita, cum easdem, si fregeris, vix sesquimodio concipere possis. Praeterea quae
+    <name type="plant" xml:lang="la">arbores</name>
+    in ordinem satae sunt, eas aequabiliter ex omnibus partibus sol ac luna coquunt. Quo fit ut
+    <name type="plant" xml:lang="la">uvae</name>
+    et
+    <name type="plant" xml:lang="la">oleae</name>
+    plures nascantur et ut celerius coquantur. Quas res duas sequuntur altera illa duo, ut plus
+    reddant
+    <name type="plant" xml:lang="la">musti</name>
+    et
+    <name type="plant" xml:lang="la">olei</name>
+    et preti pluris.
+  </p>
+</div>
+<div type="section" n="14">
+  <p>
+    Sequitur secundum illud, quali terra solum sit fundi, a qua parte vel maxime bonus aut non bonus
+    appellatur. Refert enim, quae res in eo seri nascique et cuius modi possint: non enim eadem
+    omnia in eodem agro recte possunt. Nam ut alius est ad
+    <name type="plant" xml:lang="la">vitem</name>
+    appositus, alius ad frumentum, sic de ceteris alius ad aliam rem. Itaque
+    <placeName>Cretae</placeName>
+    ad
+    <placeName>Cortyniam</placeName>
+    dicitur
+    <name type="plant" xml:lang="la">platanus</name>
+    esse, quae folia hieme non amittat, itemque in
+    <placeName>Cypro</placeName>
+    , ut
+    <persName>Theophrastus</persName>
+    ait, una, item
+    <placeName>Subari</placeName>
+    , qui nunc
+    <placeName>Thurii</placeName>
+    dicuntur,
+    <name type="plant" xml:lang="la">quercus</name>
+    simili esse natura, quae est in oppidi conspectu: item contra atque apud nos fieri ad
+    <placeName>Elephantinen</placeName>
+    , ut neque
+    <name type="plant" xml:lang="la">ficus</name>
+    neque
+    <name type="plant" xml:lang="la">vites</name>
+    amittant folia. Propter eandem causam multa sunt bifera, ut
+    <name type="plant" xml:lang="la">vitis</name>
+    apud mare
+    <placeName>Zmyrnae</placeName>
+    ,
+    <name type="plant" xml:lang="la">malus</name>
+    in agro
+    <placeName>Consentino</placeName>
+    . Idem ostendit, quod in locis feris plura ferunt, in iis quae sunt culta meliora. Eadem de
+    causa sunt quae non possunt vivere nisi in loco aquoso aut etiam aqua, et id discriminatim alia
+    in lacubus, ut
+    <name type="plant" xml:lang="la">arundines</name>
+    in
+    <placeName>Reatino</placeName>
+    , alia in fluminibus, ut in
+    <placeName>Epiro</placeName>
+    arbores
+    <name type="plant" xml:lang="la">alni</name>
+    , alia in mari, ut scribit
+    <persName>Theophrastus</persName>
+    <name type="plant" xml:lang="la">palmas</name>
+    et
+    <name type="animal" xml:lang="la">squillas</name>
+    . In
+    <placeName>Gallia transalpina</placeName>
+    intus, ad
+    <placeName>Rhenum</placeName>
+    cum exercitum ducerem, aliquot regiones accessi, ubi nec
+    <name type="plant" xml:lang="la">vitis</name>
+    nec
+    <name type="plant" xml:lang="la">olea</name>
+    nec
+    <name type="plant" xml:lang="la">poma</name>
+    nascerentur, ubi agros stercorarent candida fossicia creta, ubi salem nec fossicium nec
+    maritimum haberent, sed ex quibusdam lignis combustis carbonibus salsis pro eo uterentur.
+    <persName>Stolo</persName>
+    ,
+    <persName>Cato</persName>
+    quidem, inquit, gradatim praeponens alium alio agrum meliorem dicit esse in novem
+    discriminibus, quod sit primus ubi
+    <name type="plant" xml:lang="la">vineae</name>
+    possint esse bono vino et multo, secundus ubi hortus inriguus, tertius ubi
+    <name type="plant" xml:lang="la">salicta</name>
+    , quartus ubi
+    <name type="plant" xml:lang="la">oliveta</name>
+    , quintus ubi pratum, sextus ubi campus frumentarius, septimus ubi caedua silva, octavus ubi
+    arbustum, nonus ubi
+    <name type="plant" xml:lang="la">glandaria silva</name>
+    .
+    <persName>Scrofa</persName>
+    , Scio, inquit, scribere illum; sed de hoc non consentiunt omnes, quod alii dant primatum bonis
+    pratis, ut ego, a quo antiqui prata parata appellarunt.
+    <persName>Caesar Vopiscus</persName>
+    , aedilicius causam cum ageret apud censores, campos
+    <placeName>Roseae</placeName>
+    <placeName>Italiae</placeName>
+    dixit esse sumen, in quo relicta pertica postridie non appareret propter herbam.
+  </p>
+</div>
+
+<div type="chapter" n="8">
+</div>
+<div type="book" n="1">
+  <div type="chapter" n="8">
+    <p>
+      Contra <name type="plant" xml:lang="la">vineam</name> sunt qui putent sumptu fructum devorare.
+      Refert, inquam, quod genus <name type="plant" xml:lang="la">vineae</name> sit, quod sunt multae
+      species eius. Aliae enim humiles ac sine ridicis, ut in
+      <placeName>Hispania</placeName>, aliae sublimes, quae appellantur iugatae, ut pleraeque in
+      <placeName>Italia</placeName>. Cuius generis nomina duo, pedamenta et iuga. Quibus stat rectis
+      <name type="plant" xml:lang="la">vinea</name>, dicuntur pedamenta; quae transversa iunguntur,
+      iuga: ab eo quoque <name type="plant" xml:lang="la">vineae</name> iugatae. Iugorum genera fere
+      quattuor, pertica, <name type="plant" xml:lang="la">harundo</name>,
+      <name type="plant" xml:lang="la">restes</name>,
+      <name type="plant" xml:lang="la">vites</name>: pertica, ut in
+      <placeName>Falerno</placeName>, <name type="plant" xml:lang="la">harundo</name>, ut in
+      <placeName>Arpano</placeName>, <name type="plant" xml:lang="la">restes</name>, ut in
+      <placeName>Brundisino</placeName>, <name type="plant" xml:lang="la">vites</name>, ut in
+      <placeName>Mediolanensi</placeName>. iugationis species duae, una derecta, ut in agro
+      <placeName>Canusino</placeName>, altera conpluviata in longitudinem et latitudinem iugata, ut in
+      <placeName>Italia</placeName> pleraeque. Haec ubi domo nascuntur,
+      <name type="plant" xml:lang="la">vinea</name> non metuit sumptum; ubi multa e propinqua villa,
+      non valde. Primum genus quod dixi maxime quaerit
+      <name type="plant" xml:lang="la">salicta</name>, secundum
+      <name type="plant" xml:lang="la">harundineta</name>, tertium
+      <name type="plant" xml:lang="la">iunceta</name> aut eius generis rem aliquam, quartum
+      <name type="plant" xml:lang="la">arbusta</name>, ubi traduces possint fieri
+      <name type="plant" xml:lang="la">vitium</name>, ut
+      <placeName>Mediolanenses</placeName> faciunt in arboribus, quas vocant
+      <name type="plant" xml:lang="la">opulos</name>,
+      <placeName>Canusini</placeName> in hardulatione in
+      <name type="plant" xml:lang="la">ficis</name>. Pedamentum item fere quattuor generum: unum
+      robustum, quod optimum solet afferri in <name type="plant" xml:lang="la">vineam</name> e
+      <name type="plant" xml:lang="la">querco</name> ac
+      <name type="plant" xml:lang="la">iunipiro</name> et vocatur ridica; alterum palus e pertica,
+      meliore dura, quo diuturnior; quem cum infimum terra solvit, puter evertitur et fit solum
+      summum: tertium, quod horum inopiae subsidio misit
+      <name type="plant" xml:lang="la">harundinetum</name>. Inde enim aliquot colligatas libris
+      demittunt in tubulos fictiles cum fundo pertuso, quas cuspides appellant, qua umor adventicius
+      transire possit. Quartum est pedamentum nativum eius generis, ubi ex arboribus in arbores
+      traductis <name type="plant" xml:lang="la">vitibus</name>
+      <name type="plant" xml:lang="la">vinea</name> fit, quos traduces quidam rumpos appellant.
+      <name type="plant" xml:lang="la">Vineae</name> altitudinis modus longitudo hominis, intervalla
+      pedamentorum, qua <name type="animal" xml:lang="la">boves</name> iuncti arare possint. Ea minus
+      sumptuosa <name type="plant" xml:lang="la">vinea</name>, quae sine iugo ministrat acratophoro
+      vinum. Huius genera duo: unum, in quo terra cubilia praebet
+      <name type="plant" xml:lang="la">uvis</name>, ut in
+      <placeName>Asia</placeName> multis locis, quae saepe
+      <name type="animal" xml:lang="la">vulpibus</name> et hominibus fit communis. Nec non si parit
+      humus <name type="animal" xml:lang="la">mures</name>, minor fit vindemia, nisi totas
+      <name type="plant" xml:lang="la">vineas</name> oppleris muscipulis, quod in insula
+      <placeName>Pandateria</placeName> faciunt. Alterum genus vineti, ubi ea modo removetur a terra
+      <name type="plant" xml:lang="la">vitis</name>, quae ostendit se adferre
+      <name type="plant" xml:lang="la">uvam</name>. Sub eam, ubi nascitur
+      <name type="plant" xml:lang="la">uva</name>, subiciuntur circiter bipedales e surculis
+      furcillae, ne vindemia facta denique discat pendere in palma aut funiculo aut vinctu, quod
+      antiqui vocabant cestum. Ibi dominus simul ac vidit occipitium vindemiatoris, furcillas reducit
+      hibernatum in tecta, ut sine sumptu harum opera altero anno uti possit. Hac consuetudine in
+      <placeName>Italia</placeName> utuntur <placeName>Reatini</placeName>. Haec ideo varietas
+      maxime, quod terra cuius modi sit refert. Ubi enim natura umida, ibi altius
+      <name type="plant" xml:lang="la">vitis</name> tollenda, quod in partu et alimonio vinum non ut
+      in calice quaerit aquam, sed solem. Itaque ideo, ut arbitror, primum e
+      <name type="plant" xml:lang="la">vinea</name> in arbores escendit
+      <name type="plant" xml:lang="la">vitis</name>.
+    </p>
+  </div>
+  <div type="chapter" n="9">
+  </div>
+</div>
+<div type="book" n="1">
+  <div type="chapter" n="9">
+    <p>
+Terra, inquam, cuius modi sit refert et ad quam rem bona aut non bona sit. Ea tribus modis
+      dicitur, communi et proprio et mixto. Communi, ut cum dicimus orbem terrae et terram
+      <placeName>Italiam</placeName> aut quam aliam. In ea enim et lapis et harena et cetera eius
+      generis sunt in nominando comprensa. Altero modo dicitur terra proprio nomine, quae nullo
+      alio vocabulo neque cognomine adiecto appellatur. Tertio modo dicitur terra, quae est mixta,
+      in qua seri potest quid et nasci, ut argillosa aut lapidosa, sic aliae, cum in hac species
+      non minus sint multae quam in illa communi propter admixtiones.
+In illa enim cum sint dissimili vi ac potestate partes permultae, in quis lapis, marmor,
+      rudus, harena, sabulo, argilla, rubrica, pulvis, creta, cinis, carbunculus, id est quae sole
+      perferve ita fit, ut radices satorum comburat, ab iis quae proprio nomine dicitur terra, cum
+      est admixta ex iis generibus aliqua re, dicitur aut cretosa * * * sic ab aliis generum
+      discriminibus mixta.
+Horum varietatis ita genera haec, ut praeterea subtiliora sint alia, minimum in singula facie
+      terna, quod alia terra est valde lapidosa, alia mediocriter, alia prope pura. Sic de aliis
+      generibus reliquis admixtae terrae tres gradus ascendunt eosdem. Praeterea hae ipsae ternae
+      species ternas in se habent alias, quod partim sunt umidiores, partim aridiores, partim
+      mediocres. Neque non haec discrimina pertinent ad fructus vehementer.
+Itaque periti in loco umidiore
+      <name type="plant" xml:lang="la">far adoreum</name>
+      potius serunt quam
+      <name type="plant" xml:lang="la">triticum</name>,
+      contra in aridiore
+      <name type="plant" xml:lang="la">hordeum</name>
+      potius quam
+      <name type="plant" xml:lang="la">far</name>,
+      in mediocri utrumque. Praeterea etiam discrimina omnium horum generum subtiliora alia, ut in
+      sabulosa terra, quod ibi refert sabulo albus sit an rubicundus, quod subalbus ad serendos
+      surculos alienus, contra rubicundior appositus.
+Sic magna tria discrimina terrae, quod refert utrum sit macra an pinguis an mediocris, quod
+      ad culturam pinguis fecundior ad multa, macra contra. Itaque in tenui, ut in
+      <placeName>Pupinia</placeName>, neque
+      <name type="plant" xml:lang="la">arbores</name>
+      prolixae neque
+      <name type="plant" xml:lang="la">vites</name>
+      feraces, neque stramenta videre crassa possis neque
+      <name type="plant" xml:lang="la">ficum mariscam</name>
+      et arbores plerasque ac prata retorrida muscosa.
+Contra in agro pingui, ut in
+      <placeName>Etruria</placeName>,
+      licet videre et segetes fructuosas ac restibilis et arbores prolixas et omnia sine musco.
+      In mediocri autem terra, ut in
+      <placeName>Tiburti</placeName>,
+      quo propius accedit ut non sit macra, quam ut sit ieiuna, eo ad omnes res commodior, quam si
+      inclinabit ad illud quod deterius.
+<persName>Stolo</persName>, Non male, inquit, quae sit idonea terra ad colendum aut non,
+      <persName>Diophanes</persName>
+      <placeName>Bithynos</placeName>
+      scribit signa sumi posse aut ex ipsa aut quae nascuntur ex iis: ex ipsa, si sit terra alba,
+      si nigra, si levis, quae cum fodiatur, facile frietur, natura quae non sit cineracia neve
+      vehementer densa: ex iis autem quae enata sunt fera, si sunt prolixa atque quae ex iis nasci
+      debent earum rerum feracia. Sed quod sequitur, tertium illut de modis dic.
+    </p>
+  </div>
+  <div type="chapter" n="10">
+  </div>
+</div>
+<div type="chapter" n="10">
+  <p>
+Ille, Modos, quibus metirentur rura, alius alios constituit. Nam in
+    <placeName>Hispania ulteriore</placeName> metiuntur iugis, in
+    <placeName>Campania</placeName> versibus, apud nos in agro
+    <placeName>Romano</placeName> ac
+    <placeName>Latino</placeName> iugeris. Iugum vocant, quod iuncti
+    <name type="animal" xml:lang="la">boves</name> uno die exarare possint.
+    Versum dicunt centum pedes quoquo versum quadratum. Iugerum, quod quadratos
+    duos actus habeat. Actus quadratus, qui et latus est pedes CXX et longus
+    totidem: is modus acnua latine appellatur. Iugeri pars minima dicitur
+    scripulum, id est decem pedes et longitudine et latitudine quadratum. Ab hoc
+    principio mensores non numquam dicunt in subsicivum esse unciam agri aut
+    sextantem, sic quid aliud, cum ad iugerum pervenerunt, quod habet iugerum
+    scripula CCLXXXVIII, quantum as antiquos noster ante bellum punicum pendebat.
+    Bina iugera quod a
+    <persName>Romulo</persName> primum divisa dicebantur viritim, quae heredem
+    sequerentur, heredium appellarunt. Haec postea centum centuria. Centuria est
+    quadrata, in omnes quattuor partes ut habeat latera longa pedum **CD. Hae
+    porro quattuor, centuriae coniunctae ut sint in utramque partem binae,
+    appellantur in agris divisis viritim publice saltus.
+  </p>
+</div>
+
+<div type="chapter" n="11">
+  <p>
+In modo fundi non animadverso lapsi multi, quod alii villam minus magnam
+    fecerunt, quam modus postulavit, alii maiorem, cum utrumque sit contra rem
+    familiarem ac fructum. Maiora enim tecta et aedificamus pluris et tuemur
+    sumptu maiore. Minora cum sunt, quam postulat fundus, fructus solent
+    disperire. Dubium enim non est quin cella vinaria maior sit facienda in eo
+    agro, ubi vineta sint, ampliora ut horrea, si frumentarius ager est. Villa
+    aedificanda potissimum ut intra saepta villae habeat aquam, si non, quam
+    proxime: primum quae ibi sit nata, secundum quae influat perennis. Si omnino
+    aqua non est viva, cisternae faciendae sub tectis et lacus sub dio, ex altero
+    loco ut homines, ex altero ut
+    <name type="animal" xml:lang="la">pecus</name> uti possit.
+  </p>
+</div>
+<div type="book" n="1">
+  <div type="chapter" n="12">
+    <p>
+      Danda opera ut potissimum sub radicibus montis silvestris villam ponat, ubi pastiones sint laxae, item ut contra ventos, qui saluberrimi in agro flabunt. Quae posita est ad exortos aequinoctiales, aptissima, quod aestate habet umbram, hieme solem. Sin cogare secundum flumen aedificare, curandum ne adversum eam ponas; hieme enim fiet vehementer frigida et aestate non salubris. Advertendum etiam, siqua erunt loca palustria, et propter easdem causas, et quod crescunt <name type="animal" xml:lang="la">animalia</name> quaedam minuta, quae non possunt oculi consequi, et per aera intus in corpus per os ac nares perveniunt atque efficiunt difficilis morbos. <persName>Fundanius</persName>, Quid potero, inquit, facere, si istius modi mi fundus hereditati obvenerit, quo minus pestilentia noceat? Istuc vel ego possum respondere, inquit <persName>Agrius</persName>; vendas, quot assibus possis, aut si nequeas, relinquas. At <persName>Scrofa</persName>, Vitandum, inquit, ne in eas partes spectet villa, e quibus ventus gravior afflare soleat, neve in convalli cava et ut potius in sublimi loco aedifices, qui quod perflatur, siquid est quod adversarium inferatur, facilius discutitur. Praeterea quod a sole toto die inlustratur, salubrior est, quod et <name type="animal" xml:lang="la">bestiolae</name>, siquae prope nascuntur et inferuntur, aut efflantur aut aritudine cito pereunt. Nimbi repentini ac torrentes fluvii periculosi illis, qui in humilibus ac cavis locis aedificia habent, et repentinae praedonum manus quod improvisos facilius opprimere possunt, ab hac utraque re superiora loca tutiora.
+    </p>
+  </div>
+  <div type="chapter" n="13">
+  </div>
+</div>
+    </body>
+  </text>
+</TEI>

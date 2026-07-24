@@ -1,0 +1,827 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="it">Hippiatrica Cantabrigiensia</title>
+        <title type="alt" xml:lang="fr">Hippiatrica Cantabrigiensia</title>
+        <title type="alt" xml:lang="en">Hippiatrica Cantabrigiensia</title>
+        <author>
+          <persName>HIPPIATRICA</persName>
+          <idno type="zoomathia">tlg0738</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-02">2026-07-02</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-02">2026-07-02</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">tlg0738</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="it">italien</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>tardo-antique (300 - 700 ap. J.-C.)</term>
+          <term>italien</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le morceau 1/21 des *Hippiatrica Cantabrigiensia* :
+
+
+<div type="book" n="1">
+  <div type="chapter" n="21">
+    <p>Additamenta Londinensia ad <name type="work" xml:lang="la">hippiatrica</name> <name type="work" xml:lang="it">Cantabrigiensia</name></p>
+    <p>&amp;1<name type="work" xml:lang="la">Hippiatrica</name>&amp;1</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni, en respectant la structure demandée et en priorisant l'encodage des entités zoologiques :
+
+
+<div type="section" n="109.1.1">
+  <p><foreign xml:lang="grc">Τιβερίου</foreign> εἰς τὸ αὐτὸ πάθος τοῦ <name type="animal" xml:lang="it">πυρετοῦ</name>. Τοῦ
+  <name type="animal" xml:lang="it">πυρετοῦ</name> ὄντος σημεῖα τάδε· τὸ σῶμα γίνεται ἔξιδρον καὶ τὰ
+  ἄκρα τῶν <name type="animal" xml:lang="it">ποδῶν</name> ψυχρά. τὰ ὦτα καὶ ἡ καρδία σϕάλλει, μυ-
+  κτῆρες κατατεταμένοι καὶ οἱ κρεμαστῆρες μετέωροι. ἐὰν δὲ τρίτη
+  ἡμέρα διέλθῃ, μὴ κολλῶ τῷ τοιούτῳ, παραυτὰ γὰρ τελευτᾷ.
+  εἰ δὲ οἱ <name type="animal" xml:lang="it">πόδες</name> μόνοι ψυχροί εἰσι, κολλῶ ἐλπίζων θεραπεῦσαι.
+  θεραπείᾳ δὲ δεῖ χρῆσθαι τοιαύτῃ· λαβὼν τῆλιν βεβρεγμένην
+  καὶ <name type="plant" xml:lang="it">σταϕίδας</name> δὸς ϕαγεῖν, καὶ μετὰ τὸ ϕαγεῖν περίβαλλε σαγίοις
+  καὶ δὸς περιπάτῳ ὥραν μίαν, καὶ <name type="plant" xml:lang="it">χλωρὸν</name> ϕαγεῖν, ἵνα κατα-
+  ψύξῃ αὑτὸν καὶ παρηγορηθῇ. καὶ γὰρ καίεται αὐτοῦ τὰ ἔσω-
+  θεν. τοῦτο ποίει ἔστ' ἂν ὑγιάνῃ.</p>
+</div>
+
+<div type="section" n="109.2.1">
+  <p><persName><foreign xml:lang="grc">’Αρ[ρ]άβων</foreign> <persName><foreign xml:lang="grc">ἄρχων</foreign></persName></persName> <persName><foreign xml:lang="grc">Τεῦθρις</foreign></persName> <persName><foreign xml:lang="grc">Τιβερίῳ</foreign></persName> <persName><foreign xml:lang="la">Καίσαρι</foreign></persName>
+  <quote><foreign xml:lang="grc">‘Ρωμαίων</foreign> περὶ ἀνατομῆς <name type="animal" xml:lang="it">γυπός</name> [καὶ ὅτι γένεσεις <name type="animal" xml:lang="it">πυρε-
+  τῶν</name> τέσσαρες]</quote>. ῎Ελαβον πολυτελῆ δῶρα διὰ κεντηρίωνος
+  <persName><foreign xml:lang="la">Μοντανίου Φρόντωνος</foreign></persName>, ἃ ἔπεμψάς μοι ἄξια ὑπὸ σοῦ <persName><foreign xml:lang="la">βα-
+  σιλέως</foreign></persName> πεμϕθῆναί μοι. ἔπεμψα δέ σοι καὶ αὐτός, ἃ ἐδόκει
+  πολυτελῆ ϕέρειν <name type="animal" xml:lang="it">τιμὴν</name> τῇ ἡμετέρᾳ τέχνῃ πολυτελέστερα, οἷς
+  οἱ πρόγονοί μου ἐχρήσαντο πρὸς σωτηρίαν καὶ χρείαν
+  ἀνθρώπων, ἃ μέχρι τῆς δεῦρο ἡμέρας τῇ ὑμετέρᾳ οὐκ ἐξε-
+  δόθη. μάταιοι δέ εἰσιν ῞Ελληνες οἱ <name type="animal" xml:lang="it">γύπα</name> διώκοντες καὶ ὡς
+  ἐχθρῷ προσέχοντες, μὴ ἐπιστάμενοι τὰς ἐξ αὐτοῦ ὠϕελείας.</p>
+</div>
+
+<div type="section" n="109.3.1">
+  <p>πρῶτον μὲν γάρ ἐστιν ἴαμα τὸ ἐκ τῆς κεϕαλῆς αὐτοῦ
+  <name type="animal" xml:lang="it">ὀστέον</name>, ὃ κεϕαλαλγίαν ἰᾶται περιαπτόμενον τῷ πάσχοντι. ὁ
+  δὲ ἐγκέϕαλος ἰᾶται τὴν λεγομένην ὑπὸ τῶν <name type="deity">ἰατρῶν</name> κεϕα-
+  λαίαν, χριόμενος μετὰ <name type="plant" xml:lang="it">ἐλαίου</name> παλαιοῦ καὶ <name type="plant" xml:lang="it">κεδρίας</name> βραχείας</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="section" n="3/21">
+<p><foreign xml:lang="grc">ψαυόμενος</foreign> εἰς τοὺς μυκτῆρας. τίνι μὲν γὰρ ἐνεργεῖ, οὐκ ἔχοιμι
+  εἰπεῖν, τὸ δὲ <foreign xml:lang="grc">ὅ</foreign>τι ἰᾶται, ἡ κατάληψις μαρτυρεῖ. <name type="animal" xml:lang="it">ἧπαρ</name> δὲ
+  αὐτοῦ τριβόμενον μετὰ τοῦ ἰδίου αἵματος καὶ διδόμενον μετὰ
+  <name type="plant" xml:lang="it">ὀξυμέλιτος</name> ἐπὶ ἡμέρας τρεῖς ἢ καὶ ἑπτά, ὃς ἂν πίῃ <name type="animal" xml:lang="it">αἱμαπτο-
+  κὸς</name> ἰᾶται.</p>
+  <p>τὸ δὲ αἷμα καὶ ἄλλην ἔχει δύναμιν. μετὰ γὰρ <name type="plant" xml:lang="it">χα-
+  μαιλέοντος</name> <name type="plant" xml:lang="it">μέλανος</name> <name type="plant" xml:lang="it">ῥίζης</name> τριβόμενον καὶ ἐπιτιθέμενον <name type="animal" xml:lang="it">λέπραν</name>
+  θεραπεύει, ἐπάνω <name type="plant" xml:lang="it">κράμβης</name> ἢ <name type="plant" xml:lang="it">σεύτλων</name> <foreign xml:lang="grc">ϕύλλων</foreign> κολλωμένων.</p>
+<p><name type="animal" xml:lang="it">χολὴ</name> δὲ αὐτοῦ μετὰ <name type="plant" xml:lang="it">πρασίου</name> <foreign xml:lang="grc">χυλοῦ</foreign> καὶ <name type="plant" xml:lang="it">μέλιτος</name>
+  <foreign xml:lang="grc">’Αττικοῦ</foreign> ὀλίγου πᾶσαν <foreign xml:lang="grc">ἀμαύρωσιν</foreign> καὶ <foreign xml:lang="grc">ἀχλὺν</foreign> <foreign xml:lang="grc">ὀμμά-
+  των</foreign> περιαιρεῖ καὶ τὰς ἀρχομένας <foreign xml:lang="grc">ὑποχύσεις</foreign> οὐ<foreign xml:lang="grc">κ</foreign> ἐᾷ
+  συστῆναι. <name type="animal" xml:lang="it">στόμα</name> δὲ αὐτοῦ καὶ ἡ <name type="animal" xml:lang="it">γαστὴρ</name> ξηρανθεῖσα καὶ
+  μιγεῖσα <name type="plant" xml:lang="it">ἐλαίῳ</name> <name type="plant" xml:lang="it">δαϕνίνῳ</name> ἰᾶται τοὺς ὑπὸ <foreign xml:lang="grc">ψύχους</foreign> κακωθέντας.</p>
+  <p><name type="animal" xml:lang="it">ὁ πνεύμων</name> δὲ αὐτοῦ <foreign xml:lang="grc">κα<foreign xml:lang="grc">υ</foreign></foreign>θεὶς ἐπὶ <name type="plant" xml:lang="it">ἀνθράκων</name> <name type="plant" xml:lang="it">ἀμπελίνων</name>
+  μετὰ <name type="plant" xml:lang="it">ῥοᾶς</name> <name type="animal" xml:lang="it">λέπους</name> ἢ <name type="plant" xml:lang="it">μίσεος</name> καὶ <name type="plant" xml:lang="it">κρόκου</name> ὁμοίως τοὺς <name type="animal" xml:lang="it">αἷμα</name>
+  ἀναδόντας ἰᾶται πινόμενος <foreign xml:lang="grc">νυκτὸς</foreign> καὶ <foreign xml:lang="grc">ὄρθρου</foreign>. εἰ μέντοι <foreign xml:lang="grc">ὑπο-
+  πυρετός</foreign> ἐστι, μετὰ <name type="plant" xml:lang="it">οἴνου</name> <name type="plant" xml:lang="it">μέλανος</name> ἰᾶται. ἔπειτα περιαπτόμενος
+<name type="animal" xml:lang="it">παιδίοις</name> ἀπὸ παντὸς <foreign xml:lang="grc">ϕαντάσματος</foreign> καὶ <name type="animal" xml:lang="it">πνεύματος</name> αὐτὰ
+  <foreign xml:lang="grc">ϕυλάσσει</foreign>. <name type="animal" xml:lang="it">γλῶσσα</name> δὲ αὐτοῦ περιαϕθεῖσα περὶ τὸν <name type="animal" xml:lang="it">τράχηλον</name>
+  τοὺς τὴν <name type="plant" xml:lang="it">σταϕυλὴν</name> πάσχοντας ἰᾶται. τὸ δὲ <name type="animal" xml:lang="it">ῥύγχος</name> αὐτοῦ περι-
+  αϕθὲν περὶ τὸν <name type="animal" xml:lang="it">τράχηλον</name> <foreign xml:lang="grc">ἀρτηριακοὺς</foreign> καὶ <foreign xml:lang="grc">δυσεντερικοὺς</foreign>
+  ἰᾶται.</p>
+<p><name type="animal" xml:lang="it">ὀϕθαλμὸς</name> δὲ αὐτοῦ οὐκ ἐᾷ <foreign xml:lang="grc">ὀϕθαλμιᾶσαι</foreign>. πρὸς
+  δὲ τὰς <foreign xml:lang="grc">ὑποχύσεις</foreign> καὶ σϕοδρὰς <foreign xml:lang="grc">ἀμαυρώσεις</foreign> καὶ <foreign xml:lang="grc">ἀμβλυωπίας</foreign>
+  τοὺς <name type="animal" xml:lang="it">ὀϕθαλμοὺς</name> περὶ τὸν <name type="animal" xml:lang="it">τράχηλον</name> περίαπτε. ἔστωσαν δὲ εἰς
+  <name type="plant" xml:lang="it">ὀθόνην</name> καθαρὰν ἐνδεδεμένοι. καὶ ἐὰν ἄλλως πάθῃ καὶ περι-
+  άψηται, οὐ μὴ ὀδυνηθῇ περὶ τοὺς <name type="animal" xml:lang="it">ὀϕθαλμούς</name>. <name type="animal" xml:lang="it">καρδία</name> δὲ</p>
+</div>
+<div type="book" n="4">
+  <div type="chapter" n="21">
+<p>
+      αὐτοῦ τοῦ <name type="animal" xml:lang="grc">ζῴου</name> ξηρανθεῖσα καὶ καεῖσα ἔμβα<am>μ</am>μα γίνεται
+      μετὰ <name type="plant" xml:lang="grc">κυμίνου</name> καὶ <name type="plant" xml:lang="grc">πεπέρεος</name> ἢ <name type="plant" xml:lang="grc">ϕύλλου</name> καὶ <name type="plant" xml:lang="grc">νάρδου</name> καὶ <foreign xml:lang="grc">ὄξους</foreign>
+      δριμυτάτου καὶ <foreign xml:lang="grc">γάρου</foreign>. ὅταν δειπνήσῃς καὶ μέλλῃς καθεύδειν,
+      εἰ ψωμὸν ἐμβάψεις εἰς τὸ ἔμβαμμα, μίξας ἐκ τῆς <name type="animal" xml:lang="grc">κοιλίας</name> τὸ
+      αὔταρκες, εἶτα ϕάγῃς, οὐ μὴ ἀπεπτήσῃς. τὸ δὲ ἀϕόδευμα
+      τοῦ <name type="animal" xml:lang="grc">ζῴου</name> ὑποθυμιώμενον <persName>γυναικὶ</persName> τικτούσῃ οὐκ ἐᾷ κατασχε-
+      θῆναι τὸ <name type="animal" xml:lang="grc">βρέϕος</name> πολλὴν ὥραν.
+    </p>
+    <p>
+      σκευάσεις δὲ ὀϕθαλμικὸν
+      <name type="animal" xml:lang="grc">ἵπποις</name> καὶ λοιποῖς <name type="animal" xml:lang="grc">ζῴοις</name> <name type="animal" xml:lang="grc">χολὴν</name> τοῦ <name type="animal" xml:lang="grc">γυπὸς</name> καὶ <name type="animal" xml:lang="grc">λαγωοῦ</name>
+      <name type="plant" xml:lang="grc">πιτύαν</name> καὶ <name type="plant" xml:lang="grc">μαράθου</name> τὸν <foreign xml:lang="grc">χυλὸν</foreign> καὶ <name type="plant" xml:lang="grc">κρόκον</name> μίξας ὁμοῦ· χρῶ
+      κατὰ παντὸς <foreign xml:lang="grc">λευκώματος</foreign>. σκευάσεις δὲ καὶ ἄλλως· τοῦ αὐτοῦ
+      <name type="animal" xml:lang="grc">ζῴου</name> <name type="animal" xml:lang="grc">χολήν</name>, <name type="animal" xml:lang="grc">λαγωοῦ</name> <name type="plant" xml:lang="grc">πιτύαν</name>, <name type="animal" xml:lang="grc">κυνὸς</name> <foreign xml:lang="grc">θηλείας</foreign> <foreign xml:lang="grc">γάλα</foreign>, <name type="plant" xml:lang="grc">πρασίου</name>
+      τὸν <foreign xml:lang="grc">χυλόν</foreign>, <foreign xml:lang="grc">μέλιτος</foreign> <foreign xml:lang="grc">’Αττικοῦ</foreign>, λειώσας ὁμοῦ χρῶ.
+    </p>
+<p>
+      <foreign xml:lang="grc">Πυρετῶν</foreign> εἰσι γενέσεις τέσσαρες. <quote>‘Ο μὲν ἀπὸ <foreign xml:lang="grc">πυ-</foreign>
+      ρός</quote>, ὁ δὲ ἀπὸ <foreign xml:lang="grc">ἀέρος</foreign>, ὁ δὲ ἀπὸ <foreign xml:lang="grc">ὑγροῦ</foreign>, ὁ δὲ ἀπὸ <foreign xml:lang="grc">ψυχροῦ</foreign>. καὶ
+      τὸν μὲν ἀπὸ <foreign xml:lang="grc">πυρὸς</foreign> συνεχῆ εἶναι, τὸν δὲ ἀπὸ <foreign xml:lang="grc">ἀέρος</foreign> μὴ
+      συνεχῆ, <quote>τὸν δὲ ἀπὸ ὑγροῦ * *</quote>, τὸν δὲ ἀπὸ <foreign xml:lang="grc">ψυχροῦ</foreign> <foreign xml:lang="grc">τεταρ-</foreign>
+      ταῖον. [<foreign xml:lang="grc">ἀπεδοκιμάσθη</foreign>.]
+    </p>
+<p>
+      <persName>Τιβερίου</persName> βοήθημα πρὸς τοὺς <foreign xml:lang="grc">μαλίζοντας</foreign> <name type="animal" xml:lang="grc">ἵπ-</name>
+      <name type="animal" xml:lang="grc">πους</name>. <quote>῞Ιππῳ μᾶλις ἐὰν ἐνοχλῇ</quote>, <name type="plant" xml:lang="grc">σικύου</name> <foreign xml:lang="grc">ἀγρίου</foreign> <foreign xml:lang="grc">ῥίζαν</foreign> ὑλισθεῖ-
+      σαν ἐγχυμάτιζε καὶ θεραπεύσεις, ἢ <name type="plant" xml:lang="grc">βύσσον</name> περίαπτε.
+    </p>
+<p>
+      Τοῦ αὐτοῦ. <quote>’Αγρίου <name type="plant" xml:lang="grc">σικύου</name> τῆς <foreign xml:lang="grc">ῥίζης</foreign> <foreign xml:lang="grc">χυλὸν</foreign> ᾠὸν ἕν</quote>,
+      <foreign xml:lang="grc">γάρου</foreign> τοῦ ἐξ <name type="animal" xml:lang="grc">ἰχθύων</name> δύο ᾠά, <foreign xml:lang="grc">ἐλαίου</foreign> <foreign xml:lang="grc">χρηστοῦ</foreign> δύο ᾠὰ διὰ
+      <foreign xml:lang="grc">ῥινῶν</foreign> ἐγχυμάτιζε <foreign xml:lang="grc">ἀέρος</foreign> ὄντος <foreign xml:lang="grc">θερμοῦ</foreign>. πρῶτον δὲ ἄλειϕε τὰς
+      <foreign xml:lang="grc">ψόας</foreign> καὶ τὸ <foreign xml:lang="grc">μέτωπον</foreign>.
+    </p>
+<p>
+      <quote><foreign xml:lang="grc">’Οϕθαλμικόν</foreign>.</quote> * * * <foreign xml:lang="grc">πτερῷ</foreign> τοῦ <foreign xml:lang="grc">αἵματος</foreign> καταχρίειν
+      τὸν <foreign xml:lang="grc">τόπον</foreign>. ἢ <name type="plant" xml:lang="grc">ϕοίνικας</name> ἢ <name type="plant" xml:lang="grc">ῥόδου</name> <foreign xml:lang="grc">ϕύλλα</foreign>, ᾠὰ <foreign xml:lang="grc">ἑϕθὰ</foreign> δύο, τοὺς
+      <name type="plant" xml:lang="grc">ϕοίνικας</name> ἐκτὸς τῶν <foreign xml:lang="grc">ὀστέων</foreign> μετὰ τῶν λοιπῶν συλλειώσας ἐπί-
+    </p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte selon les règles du projet Zoomathia :
+
+
+<div type="section" n="5">
+  <p><foreign xml:lang="grc">πλαττε</foreign>. <foreign xml:lang="grc">περιαπτείτω</foreign> δὲ ὀλίγα.</p>
+<div type="chapter" n="10">
+    <p><foreign xml:lang="grc">Τοῦ αὐτοῦ περὶ ὑποχύματος</foreign>. <foreign xml:lang="grc">’Εὰν</foreign> <name type="animal" xml:lang="it">ἵππῳ</name> ἢ ἄλλῳ
+      τινὶ <name type="animal" xml:lang="it">ὑποζυγίῳ</name> <name type="animal" xml:lang="it">ὀϕθαλμὸς</name> <foreign xml:lang="grc">ὑποχυθῇ</foreign>, ἔστι μὲν τὸ πάθος πονη-
+      ρόν, σημεῖα δέ ἐστι τούτου τοιάδε· <name type="animal" xml:lang="it">ὁ ὀϕθαλμὸς</name> τῇ πρώτῃ
+      <foreign xml:lang="grc">ἡμέρᾳ</foreign> <foreign xml:lang="grc">ϕαίνεται</foreign> καθαρός, <foreign xml:lang="grc">βλέπει</foreign> δὲ οὐδέν. <foreign xml:lang="grc">θεραπεία</foreign> δὲ ὡς
+      <foreign xml:lang="grc">ἄνωθεν</foreign> <foreign xml:lang="grc">εἴρηται</foreign> πρὸς τὰ <foreign xml:lang="grc">γλαυκώματα</foreign>. <foreign xml:lang="grc">ἐὰν</foreign> δὲ ἐν τῷ
+      <foreign xml:lang="grc">ὑποχρίεσθαι</foreign> <name type="animal" xml:lang="it">ὁ ὀϕθαλμὸς</name> <foreign xml:lang="grc">ὕϕαιμος</foreign> γένηται καὶ <foreign xml:lang="grc">δακρύσῃ</foreign>, ἔσται
+      <foreign xml:lang="grc">ὑγιής</foreign>. <foreign xml:lang="grc">ἐὰν</foreign> δὲ <foreign xml:lang="grc">ὑπολάμπῃ</foreign> ὥσπερ <foreign xml:lang="grc">χροιὰ</foreign> <foreign xml:lang="grc">μέλιτος</foreign> ’<foreign xml:lang="grc">Αττικοῦ</foreign> ἐν τῷ
+      <foreign xml:lang="grc">μέσῳ</foreign>, οἱ τοιοῦτοι οὐ <foreign xml:lang="grc">θεραπεύονται</foreign> διὰ τὸ ἤδη <foreign xml:lang="grc">πεπηγέναι</foreign> εἰς
+      ἕνα <foreign xml:lang="grc">τόπον</foreign>. <foreign xml:lang="grc">συμβαίνει</foreign> δὲ αὐτοῖς <foreign xml:lang="grc">γίνεσθαι</foreign> τὰ <foreign xml:lang="grc">γλαυκώματα</foreign> καὶ
+      τὰς <foreign xml:lang="grc">ὑποχύσεις</foreign> ἀπὸ τοῦ <foreign xml:lang="grc">ἐγκεϕάλου</foreign> καὶ τῆς <foreign xml:lang="grc">διατρήσεως</foreign>
+      τῆς ἐπὶ τὸν <name type="animal" xml:lang="it">ὀϕθαλμόν</name>, <foreign xml:lang="grc">ὅταν</foreign> <foreign xml:lang="grc">ὁ ἰχὼρ</foreign> <foreign xml:lang="grc">παραρρυῇ</foreign> <foreign xml:lang="grc">δριμὺς</foreign> καὶ
+      <foreign xml:lang="grc">χολώδης</foreign>.</p>
+  </div>
+<div type="chapter" n="11">
+    <p><foreign xml:lang="grc">Πελαγωνίου</foreign> <foreign xml:lang="grc">πρὸς</foreign> <foreign xml:lang="grc">σιμβλίασιν</foreign>. <foreign xml:lang="grc">Σμύρνης</foreign> γο τὸ <foreign xml:lang="grc">ć</foreign>,
+      <foreign xml:lang="grc">λιβάνου</foreign> <foreign xml:lang="grc">ἀρσενικοῦ</foreign> γο <foreign xml:lang="grc">β́</foreign>, <foreign xml:lang="grc">κρόκου</foreign> <foreign xml:lang="grc">Σικελικοῦ</foreign> γο <foreign xml:lang="grc">β́</foreign> <foreign xml:lang="grc">λειώσας</foreign> καὶ
+      <foreign xml:lang="grc">σήσας</foreign> <foreign xml:lang="grc">ἐπίβαλε</foreign> <foreign xml:lang="grc">οἶνον</foreign> <foreign xml:lang="grc">Φαλιήρινον</foreign> καὶ <foreign xml:lang="grc">ὕδωρ</foreign> <foreign xml:lang="grc">ὄμβριον</foreign> καὶ <foreign xml:lang="grc">μέλι-</foreign>
+      <foreign xml:lang="grc">τος</foreign> ’<foreign xml:lang="grc">Αττικοῦ</foreign> τὸ <foreign xml:lang="grc">ἀρκοῦν</foreign> καὶ <foreign xml:lang="grc">ἐν</foreign> <foreign xml:lang="grc">ἀγγείῳ</foreign> <foreign xml:lang="grc">ὑελίνῳ</foreign> <foreign xml:lang="grc">ἀποθέμενος</foreign> <foreign xml:lang="grc">χρῶ</foreign>.</p>
+  </div>
+  <div type="chapter" n="12">
+    <p><foreign xml:lang="grc">Θεραπεία</foreign> <foreign xml:lang="grc">πρὸς</foreign> <foreign xml:lang="grc">ἐπιϕοράς</foreign>. ’<foreign xml:lang="grc">Απὸ</foreign> τῶν <foreign xml:lang="grc">δεξιῶν</foreign> <foreign xml:lang="grc">μερῶν</foreign>
+      τοῦ <name type="animal" xml:lang="it">ὀϕθαλμοῦ</name> <foreign xml:lang="grc">αἷμα</foreign> <foreign xml:lang="grc">λάμβανε</foreign> καὶ <foreign xml:lang="grc">μέλιτι</foreign> <foreign xml:lang="grc">πρωτείῳ</foreign> <foreign xml:lang="grc">μέχρι</foreign> <foreign xml:lang="grc">παν-</foreign>
+      <foreign xml:lang="grc">τελοῦς</foreign> <foreign xml:lang="grc">ὑγείας</foreign> <foreign xml:lang="grc">ἔγχριε</foreign>.</p>
+  </div>
+  <div type="chapter" n="13">
+    <p><foreign xml:lang="grc">Εἰς</foreign> [<foreign xml:lang="grc">γ</foreign>]<foreign xml:lang="grc">λεύκωμα</foreign> <foreign xml:lang="grc">χρόνιον</foreign>. <foreign xml:lang="grc">Μέλανος</foreign> <name type="animal" xml:lang="it">ὄρνιθος</name> τῆς
+      <foreign xml:lang="grc">κοιλίας</foreign> τὸν <foreign xml:lang="grc">λεπτώδη</foreign> <foreign xml:lang="grc">ὑμένα</foreign> <foreign xml:lang="grc">ϕρύξας</foreign> <foreign xml:lang="grc">ἐν</foreign> <foreign xml:lang="grc">ἡλίῳ</foreign> ἢ <foreign xml:lang="grc">ἐν</foreign> <foreign xml:lang="grc">καπνῷ</foreign> <foreign xml:lang="grc">μῖ-</foreign>
+      <foreign xml:lang="grc">ξον</foreign> <foreign xml:lang="grc">πεπέρεος</foreign>, <foreign xml:lang="grc">ἅλατος</foreign> <foreign xml:lang="grc">Γαγγρηνοῦ</foreign> καὶ <foreign xml:lang="grc">ὄστρακον</foreign> <foreign xml:lang="grc">σηπίας</foreign>, καὶ
+      <foreign xml:lang="grc">τρίψας</foreign> ὡς <foreign xml:lang="grc">χνοῶδες</foreign> <foreign xml:lang="grc">ἐμϕύσσα</foreign> <foreign xml:lang="grc">διὰ</foreign> <foreign xml:lang="grc">καλαμίσκου</foreign>, ἢ <foreign xml:lang="grc">χρυσολαχάνου</foreign>
+      <foreign xml:lang="grc">σπέρμα</foreign> <foreign xml:lang="grc">τρίψας</foreign> <foreign xml:lang="grc">χρῶ</foreign>.</p>
+  </div>
+  <div type="chapter" n="14">
+    <p><foreign xml:lang="grc">Εἰς</foreign> <foreign xml:lang="grc">λεύκωμα</foreign> <foreign xml:lang="grc">τραχύ</foreign>. Τὸ <foreign xml:lang="grc">ζωύϕιον</foreign> ὃ <foreign xml:lang="grc">καλεῖται</foreign> <foreign xml:lang="grc">μυριό-</foreign>
+      <foreign xml:lang="grc">πους</foreign>, <foreign xml:lang="grc">κόψας</foreign> <foreign xml:lang="grc">ἐπίπασσε</foreign> τὸν <name type="animal" xml:lang="it">ὀϕθαλμόν</name>.</p>
+  </div>
+  <div type="chapter" n="15">
+    <p><foreign xml:lang="grc">Θεραπεία</foreign>, <foreign xml:lang="grc">ὅταν</foreign> <foreign xml:lang="grc">μύῃ</foreign> <name type="animal" xml:lang="it">ὁ ὀϕθαλμός</name>. ’<foreign xml:lang="grc">Ανθρώπου</foreign>
+      <foreign xml:lang="grc">κόπρον</foreign> <foreign xml:lang="grc">ξηρὰν</foreign> <foreign xml:lang="grc">τρίψας</foreign> <foreign xml:lang="grc">ἐπίπασσε</foreign>.</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 du texte demandé, respectant strictement les règles du projet Zoomathia :
+
+
+<div type="section" n="16.1">
+   <p><foreign xml:lang="grc">’Εκ κοίλου βάθους ἀνάγον τὰς σύριγγας.</foreign> <name type="animal" xml:lang="it">Χαλκίτεως</name> ὀπτῆς γο β́ κτλ. ἀπόθες εἰς ἄγγος ὑέλινον, ἢ μέλιτι πρωτείῳ λιβανωτὸν λελειωμένον μίξας χρῶ, ἢ ἰὸν καὶ <name type="animal" xml:lang="it">χαλκίτην</name> μέλιτι μίξας χρῶ.</p>
+</div>
+
+<div type="section" n="17.1">
+   <p><foreign xml:lang="grc">Κολλούριον τὸ διὰ μελαντηρίας ποιοῦν οὐλὰς ὁμοχρόους.</foreign> <name type="plant" xml:lang="it">Στυπτηρίας</name> σχιστῆς, <name type="plant" xml:lang="it">ἀκάνθης</name> <placeName>Aἰγυπτίας</placeName>, <name type="plant" xml:lang="it">μελαντηρίας</name>, ἅμα λειώσας ἄλειϕε προπυριῶν, ἢ <name type="plant" xml:lang="it">μύρτων</name> <name type="animal" xml:lang="it">μελάνων</name> τῶν <name type="animal" xml:lang="it">σαρκῶν</name> γο ά, <name type="plant" xml:lang="it">ἀκακίας</name>, <name type="plant" xml:lang="it">κόμεως</name> ἀνὰ γο ά βρέξας ἐπίρ- ραινε.</p>
+</div>
+
+<div type="section" n="18.1">
+   <p><foreign xml:lang="grc">Πρὸς γλαυκώσεις καὶ ὑποχύσεις καὶ πάσας τὰς ἀπηλπισμένας διαθέσεις.</foreign> ’<persName>Οποπάνακος</persName> ἑξαγ. αć, <name type="animal" xml:lang="it">λυκίου</name> ’<placeName>Ινδικοῦ</placeName> ἑξαγ. γ́ <name type="animal" xml:lang="it">κερατ.</name> ιή, <name type="plant" xml:lang="it">λίθου</name> <name type="animal" xml:lang="it">αἱματίτου</name> ἑξαγ. αć, μέλιτος ’<placeName>Αττικοῦ</placeName> γο ϛ́, <name type="plant" xml:lang="it">περιστερεῶνος</name> χυλοῦ ἑξαγ. αć, <name type="plant" xml:lang="it">ὀποβαλσάμου</name> ἑξαγ. β́ <name type="animal" xml:lang="it">κερατ.</name> ϛ́, <name type="animal" xml:lang="it">χολῆς</name> <name type="animal" xml:lang="it">αἰγείας</name> ἑξαγ. δć, τὰ ξηρὰ τοῖς ὑγροῖς συλλεάνας χρῶ.</p>
+</div>
+
+<div type="section" n="19.1">
+   <p><foreign xml:lang="grc">῞Ετερον πρὸς λευκώματα.</foreign> <name type="plant" xml:lang="it">Χάρτην</name> καύσας καὶ μέλι καὶ <name type="plant" xml:lang="it">πέπερι</name>, ἢ <name type="animal" xml:lang="it">παιδίου</name> κόπρον μετὰ μέλιτος ἔγχριε, ἢ <name type="plant" xml:lang="it">κισσοῦ</name> ϕύλλα ἁπαλὰ λεάνας τὸν χυλὸν ἄλειϕε πτερῷ <quote>ἢ</quote> κλύσον νή- στει διὰ τοῦ στόματος, καὶ εὐθὺς διάκλυζε οἴνῳ, ἵνα μὴ ἀδι- κήσῃς τοὺς <name type="animal" xml:lang="it">ὀδόντας</name>. ἢ <name type="animal" xml:lang="it">χελώνην</name> <name type="animal" xml:lang="it">ὀρεινὴν</name> ἔμβαλλε εἰς χύτραν καινὴν καὶ καύσας ποίει ξηρίον καὶ διὰ καλάμου τῷ <name type="animal" xml:lang="it">ὀϕθαλμῷ</name> ἐμϕύσσα, ἢ <name type="animal" xml:lang="it">κέϕαλον</name> τὸν <name type="animal" xml:lang="it">ἰχθὺν</name> ἐν μηνὶ Μαΐῳ ἀγρεύσας καὶ ἀνατεμών, τούτου τὴν <name type="animal" xml:lang="it">χολὴν</name> ἔμβαλε τῷ <name type="animal" xml:lang="it">ὀϕθαλμῷ</name>.</p>
+</div>
+
+<div type="section" n="20.1">
+   <p><foreign xml:lang="grc"><quote>Εἰς</quote> ὑπονύγματα πρὸς ὀϕθαλμὸν ὑπερσαρ- κοῦντα.</foreign> <name type="animal" xml:lang="it">Χαλκοῦ</name> κεκαυμένου, <name type="plant" xml:lang="it">σμύρνης</name> ἀνὰ γο ά, μέλιτος γο ϛ́ λεῖα τρίψας ἔγχριε.</p>
+</div>
+
+<div type="section" n="21.1">
+   <p><foreign xml:lang="grc">Πρὸς ὑποχύσεις πάνυ δόκιμον.</foreign> <name type="animal" xml:lang="it">Τράγου</name> <name type="animal" xml:lang="it">χολήν</name>, <name type="plant" xml:lang="it">κρόκου</name>, μέλιτος ’<placeName>Αττικοῦ</placeName> ἶσα ἑνώσας χρῶ.</p>
+</div>
+
+<div type="section" n="22.1">
+   <p><foreign xml:lang="grc">.</foreign></p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte des *Hippiatrica Cantabrigiensia* (7/21), avec une attention particulière aux entités zoologiques et botaniques :
+
+
+<div type="section" n="7">
+   <p>
+      <foreign xml:lang="grc">Ὑγρὰ ὀϕθαλμική</foreign>. <foreign xml:lang="grc">Κρομμύου</foreign> δριμυτάτου
+      <foreign xml:lang="grc">καὶ μάλιστα Κυπρίου</foreign> τὸν χυλόν, μέλιτος <foreign xml:lang="grc">’Αττικοῦ</foreign> ἶσα μίξας βάλε
+      εἰς ἀγγεῖον <foreign xml:lang="grc">ὑέλινον</foreign> καὶ κρεμάσας εἰς καπνὸν χρῶ.
+   </p>
+<p>
+      <foreign xml:lang="grc">῎Αλλη</foreign> <foreign xml:lang="grc">ἡ διὰ χολῶν</foreign>. <foreign xml:lang="grc">Χολῆς</foreign>
+      <name type="animal" xml:lang="it">ἱέρακος</name> γο τὸ <foreign xml:lang="grc">ć</foreign>, <foreign xml:lang="grc">χολῆς</foreign>
+      <name type="animal" xml:lang="it">σκάρου</name>, <name type="animal" xml:lang="it">πέρδικος</name>,
+      <name type="animal" xml:lang="it">ἀλεκτρυόνος</name>, <name type="animal" xml:lang="it">γυπός</name>,
+      <name type="animal" xml:lang="it">ὑαίνης</name>, <foreign xml:lang="grc">χλωρίωνος</foreign> καὶ
+      <name type="animal" xml:lang="it">βάτράχου</name> καὶ χυλὸν <name type="plant" xml:lang="it">μάραθρου</name> ἀνὰ γο τὸ
+      <foreign xml:lang="grc">ć</foreign>, μέλιτος <foreign xml:lang="grc">’Αττικοῦ</foreign> γο <foreign xml:lang="grc">ϛ́</foreign>,
+      <foreign xml:lang="grc">ὀποβαλσάμου</foreign> γο <foreign xml:lang="grc">ά</foreign>, πάντα ἑνώσας χρῶ, ἢ
+      <foreign xml:lang="grc">ἐρίφου γαλαθηνοῦ</foreign> χολὴν μετὰ μέλιτος ἄλειφε.
+   </p>
+<p>
+      <foreign xml:lang="grc">Πρὸς ὑποχύσεις</foreign>. <foreign xml:lang="grc">Ἄρτον κρίθινον</foreign> καύσας ἰσχυρῶς
+      μετὰ μέλιτος λειώσας χρῶ.
+   </p>
+<p>
+      <foreign xml:lang="grc">Πρὸς αἰγίλωπα</foreign>. Τούτους ἰᾶται κτλ. <foreign xml:lang="grc">τζύπαν</foreign>
+      ἐπιτίθει. ἢ <name type="plant" xml:lang="it">πράσιον</name> καὶ <name type="plant" xml:lang="it">λάπαθον</name>
+      <foreign xml:lang="grc">ἀξουγγίῳ χοιρείῳ παλαιῷ</foreign> συγκόψας ἐπιτίθει, ἢ <foreign xml:lang="grc">φύλλα
+      ἀνθεμίδος</foreign>, τουτέστι <foreign xml:lang="grc">χαμαιμήλου</foreign>, λελειωμένα ἐπιτίθει.
+      ἀλλὰ καὶ αὐτὸς ὁ χυλὸς τῆς <foreign xml:lang="grc">πόας</foreign> μετὰ <foreign xml:lang="grc">ἀλεύρου</foreign>
+      <foreign xml:lang="grc">πυρίνου</foreign> ἀναφυραθεὶς οὐ μικρῶς βοηθεῖ, ἢ <foreign xml:lang="grc">ἀρνογλώσσου</foreign>
+      <foreign xml:lang="grc">φύλλα</foreign> λελειωμένα. ἀλλὰ καὶ <foreign xml:lang="grc">ἡ θηριακή</foreign> μετὰ
+      μέλιτος καὶ <foreign xml:lang="grc">βαλσάμου</foreign> λελειωμένη. ἀλλὰ καὶ οἱ <foreign xml:lang="grc">θηριακοὶ
+      ἅλες</foreign>. τῆς δὲ <name type="animal" xml:lang="it">τρυγόνος</name> τοῦ <foreign xml:lang="grc">πτηνοῦ</foreign>
+      θάκος μετὰ μέλιτος ἐπαλειφόμενος <foreign xml:lang="grc">λευκώματα</foreign> ἰᾶται.
+   </p>
+<p>
+      <foreign xml:lang="grc">᾿Εκ τῶν Διοσκορίδου</foreign> πρὸς <foreign xml:lang="grc">ῥεῦμα ὀφθαλμῶν</foreign>.
+      <foreign xml:lang="grc">Ἔστι φυτόν</foreign>, <foreign xml:lang="grc">ἔριν[ε]ος</foreign> καλούμενον,
+      <foreign xml:lang="grc">φύεται</foreign> δὲ παρὰ <placeName>ποταμούς</placeName>,
+      <foreign xml:lang="grc">φύλλα</foreign> ἔχει <foreign xml:lang="grc">ὠκύμῳ</foreign> ὅμοια. τούτου τοῦ
+      <foreign xml:lang="grc">καρποῦ</foreign> λαβὼν <foreign xml:lang="grc">ἑξαγ</foreign>. <foreign xml:lang="grc">άć</foreign>
+      καὶ μετὰ μέλιτος <foreign xml:lang="grc">γο γ́</foreign> τοὺς <foreign xml:lang="grc">ὀφθαλμοὺς</foreign>
+      ἐγχρίσας ἰάσῃ τὰ <foreign xml:lang="grc">ρεύματα</foreign>. ὁ δὲ <foreign xml:lang="grc">χυλὸς</foreign> αὐτοῦ
+      μετὰ <foreign xml:lang="grc">θείου</foreign> καὶ <foreign xml:lang="grc">νίτρου</foreign> ἐνσταζόμενος
+      πόνον παύει <foreign xml:lang="grc">ὀφθαλμοῦ</foreign>.
+   </p>
+<p>
+      <foreign xml:lang="grc">Κολλούριον</foreign> τὸ καλούμενον <foreign xml:lang="grc">φῶς</foreign> ἢ
+      <foreign xml:lang="grc">ἀκτὶς</foreign> <foreign xml:lang="grc">ἀποκρουστικὸν</foreign> μονοήμερον,
+      ποιοῦν πρὸς <foreign xml:lang="grc">σταφυλώματα</foreign> καὶ <foreign xml:lang="grc">λευκώματα</foreign>
+      καὶ <foreign xml:lang="grc">οὐλὰς</foreign> καὶ <foreign xml:lang="grc">τραχώματα</foreign> καὶ
+      <foreign xml:lang="grc">παλαιὰς</foreign>
+   </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="section" n="8">
+<p><name type="animal" xml:lang="grc">χοῖρος</name> <foreign xml:lang="grc">διαθέσεις</foreign>. <name type="mineral" xml:lang="grc">Χαλκοῦ</name> κεκαυμένου γο ϛ́, <name type="mineral" xml:lang="grc">καδμείας</name> κεκαυμένης πεπλυμένης, <name type="plant" xml:lang="grc">ναρδοστάχυος</name>, <name type="mineral" xml:lang="grc">λίθου αἱματίτου</name>, <name type="plant" xml:lang="grc">λυκίου</name> ’Ινδικοῦ, <name type="plant" xml:lang="grc">κρόκου</name> ἀνὰ ἑξαγ. δć, <name type="plant" xml:lang="grc">πεπέρεος</name> λευκοῦ κοκκία λγ́, <name type="plant" xml:lang="grc">ἀκακίας</name> κιρρᾶς γο δć, <name type="plant" xml:lang="grc">κόμεως</name> γο δć, <name type="plant" xml:lang="grc">οἴνου</name> τὸ ἀρκοῦν.</p>
+
+<p><name type="substance" xml:lang="grc">Ξηροκολλούριον</name> πρὸς τραχώματα καὶ πτερύγια. Λαβὼν <name type="mineral" xml:lang="grc">χαλκὸν</name> ἐκπύρωσον αὐτὸν εὐτόνως καὶ κατάσβεσον εἰς οὖρον ἀϕθόρου παιδός. ὅταν δὲ ὁ <name type="mineral" xml:lang="grc">χαλκὸς</name> ἐν τῷ οὔρῳ λυόμενος γένηται γλοιώδης, ἀπόθου τοῦτον ἡλίῳ ξηραίνεσθαι. εἶτα σήσας λεπτῷ κοσκίνῳ λάβε ἐξ αὐτοῦ μέρη τρία, <name type="plant" xml:lang="grc">πεπέρεος</name> μέλανος λείου μέρος ά, καὶ <name type="substance" xml:lang="grc">ἅλατος</name> Καππαδοκικοῦ ὀλίγον προστίθει καὶ ἔγχριε τῆς ἡμέρας ἅπαξ.</p>
+
+<p><persName>Τιβερίου</persName> <name type="substance" xml:lang="grc">ἀνακόλλημα</name> ποιοῦν πρὸς παρακερκίδας καὶ σκληρώματα. Τὰς ἐν <name type="animal" xml:lang="grc">ὀστέοις</name> γινομένας παρακερκίδας ἐὰν θέλῃς θεραπεῦσαι ἄνευ καυτῆρος, θεράπευε οὕτως· <name type="plant" xml:lang="grc">λιβάνου</name> γο ά, <name type="plant" xml:lang="grc">ἀμμωνιακοῦ</name> γο ά, <name type="plant" xml:lang="grc">σμύρνης</name> καὶ <name type="plant" xml:lang="grc">γύρεως</name> ἀνὰ γο ά, <name type="mineral" xml:lang="grc">χαλκοῦ</name> γο ά, ταῦτα κόψας ὁμοῦ καὶ προσβαλὼν <name type="substance" xml:lang="grc">ὄξους</name> καλοῦ τὸ ἀρκοῦν καὶ ἐπ' ὀθονίου πυκνοῦ ἁπλώσας ἐπίθες, καὶ ἐπίδησον ἐπὶ ἡμέραις ζ́. μετὰ δὲ τοῦτο λύσας πυρίασον ὕδατι θερμῷ, καὶ ἆρον τὸ ῥάκος καὶ ἔασον διαπνεῦσαι τὸν τόπον, καὶ τῇ ἑξῆς χρῆσαι τῇ ἀγωγῇ ταύτῃ. χωρὶς δὲ <name type="substance" xml:lang="grc">αἵματος</name> οὐχ ἁρμόζει.</p>
+
+<p><persName>’Αϕρικανοῦ</persName>. <quote><name type="animal" xml:lang="grc">Ἵππος</name> <foreign xml:lang="grc">καρδιακῷ</foreign> κατεσχημένος πρῶτον τὴν καρδίαν * * ἕστηκε, καὶ τὴν κεϕαλὴν κάτω βρίθει καὶ ἱδροῖ πολὺ καὶ οὐ θέλει ἐσθίειν τῶν προσϕερομένων, οὐδὲ πίνει ὡσαύτως. οὐδὲ τοῦτον οὖν ἐλπὶς πολλὴ περιγίνεσθαι.</quote> ἔγχει τοίνυν τούτῳ τὰ προειρημένα ἐγχύματα καὶ τὴν ἄλλην θεραπείαν πρόσϕερε.</p>
+
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni, en respectant la structure demandée et en identifiant les entités nommées zoologiques :
+
+
+<div type="section" n="9">
+   <p><foreign xml:lang="grc">Εὐμήλου</foreign> πρόγνωσις. <name type="animal" xml:lang="it">ἵππου</name> πρόγνωσις,
+   εἰ τὰ τῶν ὀπισθίων <name type="animal" xml:lang="it">σκελῶν</name> βήματα οὐκ ἐμβαίνει τοῖς ἐμπρο-
+   σθίοις, ἀλλ' ὅσον παλαιστὴν ἀπολείπει, καὶ ἐπισύρει τὰς ὁπλὰς
+   καὶ τροχάζων καὶ πηδῶν ἀπολείπει τὰ σκέλη. ἐὰν οὖν <name type="animal" xml:lang="it">ἵππος</name> κτλ.</p>
+
+   <div type="section" n="32">
+      <p>Εἰς στρόϕον ἐκ δυσπεψίας. Λαβὼν <name type="plant" xml:lang="it">ἄκορον</name> καὶ
+      <name type="plant" xml:lang="it">πέπερι</name> καὶ <name type="plant" xml:lang="it">νίτρον</name> καὶ <name type="plant" xml:lang="it">ἄνισον</name> καὶ <name type="plant" xml:lang="it">ὀποπάνακος</name> τὸ ἶσον, μετὰ
+      <foreign xml:lang="grc">οἴνου</foreign> παλαιοῦ δίδου. δεῖ γὰρ μὴ μόνον πεπτικὰς εἶναι τὰς
+      δυνάμεις τῶν προσϕερομένων, ἀλλὰ καὶ θερμαντικάς, ἵνα δυ-
+      νατῶς ἔχωσι τὴν τῶν <name type="plant" xml:lang="it">σιτίων</name> ἀπεψίαν ἀποδιώκειν καὶ ποιεῖν
+      διαπνέειν καὶ ἐξωθεῖσθαι τὸν ὄγκον τὸν ἐξ αὐτῆς προσγινό-
+      μενον. ἐὰν δὲ τὴν <name type="animal" xml:lang="it">κοιλίαν</name> ἀλγῇ, <name type="animal" xml:lang="it">ὑείους</name> <name type="animal" xml:lang="it">ἀστραγ[γ]άλους</name> μετὰ
+      <foreign xml:lang="grc">οἴνου</foreign> λειώσας ἐγχυμάτιζε.</p>
+   </div>
+
+   <div type="section" n="33">
+      <p><persName>Τιβέριος</persName>. ’Εὰν <name type="animal" xml:lang="it">βοῦς</name> τοὺς <name type="animal" xml:lang="it">νεϕροὺς</name> πονέσῃ, ση-
+      μεῖον· διὰ τῶν <foreign xml:lang="grc">οὔρων</foreign> ϕέρεται <name type="animal" xml:lang="it">αἷμα</name> καὶ διὰ <foreign xml:lang="grc">στόματος</foreign> διαρεώ-
+      τερον, ὁμοίως δὲ καὶ διὰ τῶν <foreign xml:lang="grc">ἀϕοδευμάτων</foreign>. τὸ δὲ κύριον· ἐκ
+      τῶν <foreign xml:lang="grc">ὀμμάτων</foreign> ῥύεται τὸ <name type="animal" xml:lang="it">αἷμα</name>, καὶ διασκελίζων περιπατεῖ, τήν
+      τε <name type="plant" xml:lang="it">τροϕὴν</name> δέχεται πᾶσαν. τηλικαύτην οὖν ἔχει τὸ πάθος ἐνέρ-
+      γειαν. <name type="plant" xml:lang="it">ὀποπάνακος</name> οὖν γο ά, <name type="plant" xml:lang="it">πεπέρεος</name> γο ά, τὸν <name type="plant" xml:lang="it">ὀποπάνακα</name>
+      βρέξας εἰς <foreign xml:lang="grc">οἶνον</foreign> παλαιόν, καὶ <name type="plant" xml:lang="it">δαϕνίδας</name> ἑψήσας ὁμοίως ἐν
+      <foreign xml:lang="grc">οἴνῳ</foreign>, τὰ λοιπὰ τρίψας καὶ σήσας πρόσμιξον τῷ ἀϕεψήματι
+      τῆς <name type="plant" xml:lang="it">δαϕνίδος</name> σὺν τῷ <name type="plant" xml:lang="it">ὀποπάνακι</name> καὶ ἐγχυμάτιζε, χρίων τὸ
+      <foreign xml:lang="grc">στόμα</foreign> καὶ τὴν <foreign xml:lang="grc">ἕδραν</foreign>. καλὸν μέν, ἐὰν δυνατόν, καὶ ὅλον τὸν
+      <name type="animal" xml:lang="it">βοῦν</name> χρίειν.</p>
+
+      <p><persName>Τιβερίου</persName>. <name type="plant" xml:lang="it">Σκορόδων</name> κόψας κεϕαλὰς δύο ἐπιμελῶς
+      εἰς <foreign xml:lang="grc">θυείαν</foreign>, καὶ <foreign xml:lang="grc">ὕδωρ</foreign> <foreign xml:lang="grc">ψυχρὸν</foreign> ἐμβαλὼν ὡσεὶ <foreign xml:lang="grc">ἡμῖναν</foreign>, καὶ <foreign xml:lang="grc">ἀνή</foreign>
+      θου <foreign xml:lang="grc">χυλὸν</foreign> συμμίξας αὐτοῖς ἐγχυμάτιζε διὰ <foreign xml:lang="grc">στόματος</foreign>. εἰ δὲ</p>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="chapter" n="35">
+  <p><quote>ὁ στρόϕος ἐπικρατὴς γένηται</quote> κτλ.</p>
+<p>Τιβερίου πρὸς μαρκούριον ἀνακόλλημα ἤτοι πρὸς πόδα, ἐὰν ἐξ ὁποιασδήποτε αἰτίας παραθλιβῇ καὶ ὑγρὸν συλλέξῃ.</p>
+  <p>Γύρεως γο β́, λιβάνου γο ά, <name type="plant" xml:lang="la">ῥητίνης</name> Κολοϕωνίας γο β́, <name type="plant" xml:lang="la">ἀμμωνιακοῦ</name> γο ά, <name type="plant" xml:lang="la">σμύρνης</name> γο ά, <name type="plant" xml:lang="la">πίσσης</name> ξηρᾶς γο β́, ταῦτα πάντα κόψας καὶ ϕυράσας ὄξει μετὰ ὀθονίου ἐπίθες κατὰ τοῦ μαρκουρίου καὶ ἐπάνω σπόγγον ὀξυκράτου πλήρη, καὶ ἐπίστρεψον ἐπὶ ἡμέραις δυσίν, ἕως ἂν κολληθῇ τὸ ϕάρμακον.</p>
+  <p>τῇ δὲ τρίτῃ ἆρον τὰ καταστρώματα, ἐάσας τὸ ϕάρμακον κεκολλημένον.</p>
+</div>
+
+<div type="chapter" n="36">
+<p>Τιβέριος πρὸς νεύρων ἀγανάκτησιν.</p>
+  <p>’<foreign xml:lang="grc">Αλεύρου</foreign> σιτινοῦ καὶ ἀσβέστου τὸ ἶσον μέλιτι συμμίξας κατάπλασσε, καὶ τῇ τρίτῃ λύσας κατάντλησον <name type="plant" xml:lang="la">λινοσπέρματος</name> καὶ <name type="plant" xml:lang="la">τήλεως</name> χυλῷ, ἕως οὗ ἀπολεπτύνῃ, προϕλεβοτομήσας τὸν <name type="animal" xml:lang="la">ἵππον</name>, καὶ ὑγιὴς ἀποκατασταθήσεται.</p>
+  <p>ἢ ἐλαίου, οἴνου καὶ ἁλῶν κοινῶν ἕψε, ἕως τὸ ἅλας λυθῇ καὶ χρῶ.</p>
+</div>
+
+<div type="chapter" n="37">
+<p>Περὶ διακοπῆς γλώσσης.</p>
+  <p>’Εὰν γλῶσσα διακοπῇ ὑπὸ σχοινίου ἢ σιδήρου ἢ ἐκ τρώσεως ἢ ὑπὸ τραυμάτων, οἴνῳ παλαιῷ στύϕοντι ταύτην κλύζε.</p>
+  <p>ἢ <name type="plant" xml:lang="la">ἀλόην</name> <foreign xml:lang="grc">ἡπατικήν</foreign>, <name type="plant" xml:lang="la">σμύρναν</name>, <name type="plant" xml:lang="la">λίβανον</name>, <name type="plant" xml:lang="la">μαστίχην</name> τρίψας, συμϕύτου χυλῷ ἄλειϕε τὴν πληγὴν καὶ ταῦτα ἐπίπαττε. ταχέως γὰρ ἀπουλοῖ.</p>
+</div>
+
+<div type="chapter" n="38">
+<p><persName>Τιβερίου</persName> <quote><foreign xml:lang="grc">πρὸς μελικηρίδας</foreign>.</quote></p>
+  <p><name type="plant" xml:lang="la">Σινήπεος</name> γο δ́, <name type="plant" xml:lang="la">χαλκοῦ</name> κεκαυμένου γο ϛ́, <name type="plant" xml:lang="la">ἀσϕάλτου</name> <foreign xml:lang="grc">’Ιουδαϊκῆς</foreign> ά, <name type="plant" xml:lang="la">στυπτηρίας</name> σχιστῆς γο β́, <name type="plant" xml:lang="la">θείου</name> ἀπύρου γο β́, <name type="plant" xml:lang="la">νίτρου</name> <foreign xml:lang="grc">’Αλεξανδρηνοῦ</foreign> γο γ́, <name type="plant" xml:lang="la">μίσυος</name> γο ϛ́, <name type="plant" xml:lang="la">ῥοδοδάϕνης</name> ϕύλλων τὸ ἀρκοῦν.</p>
+</div>
+
+<div type="chapter" n="39">
+<p><persName>Τιβερίου</persName> <quote><foreign xml:lang="grc">εἰς καρίδας.</foreign></quote></p>
+  <p>Θεραπεύσεις δὲ τοὺς ἔχοντας ἐπὶ τῶν χαλεπῶν τόπων τὰς <name type="animal" xml:lang="la">καρίδας</name> ὡς τῷ <persName>’Ιεροκλεῖ</persName></p>
+</div>
+Voici l'encodage TEI P5 du texte selon les règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="11">
+  <p>δοκεῖ.</p>
+<p><persName>’Αψύρτου</persName> περὶ νευριτικῶν καὶ πρὸς τὰ κατὰ νεύρων τραύματα. Τὸν νευριτικὸν συμβαίνει τὸν <name type="animal" xml:lang="grc">αὐχένα</name> πονεῖν κτλ. ὁ δὲ τοιοῦτος ζῆν οὐ δύναται. πλὴν ὅπερ παρ' ἡμῶν ἐπενοήθη πρὸς τὰ τοιαῦτα κρεῖττον τραύματα· ἀμόργης παλαιᾶς κτλ. ἆρον συντόμως καὶ χρῶ.</p>
+<p><persName>Τιβερίου</persName> κατάπλασμα πρὸς νεύρων παχύτητα. Κυπαρίσου <name type="plant" xml:lang="grc">ἀκρέμονας</name> ἑψηθέντας, γύρεως μέρος, λίβανον μετὰ οἴνου παλαιοῦ ἀναλάμβανε καὶ ἐπιδέσμει.</p>
+<p><foreign xml:lang="grc">Ἔμπλαστρος</foreign>· ἡ διὰ πέρνης ποιοῦσα πρὸς ἀγκυ- λώσεις καὶ συστροϕὰς ἀγκυλῶν καὶ ἄρθρων πάντων καὶ ὅπου δ' ἂν πεπάχυνταί τι ἢ ἐκ μαλάξεως ἀποκα- θίσταται. Λιθαργύρου #117 γ́, ζωμοῦ πέρνης #117 γ́, χαλβάνης γο γ́, ἀμμωνιακοῦ θυμιάματος #117 ά, σικύου <name type="plant" xml:lang="grc">ἀγρίου</name> <name type="plant" xml:lang="grc">ῥίζης</name> #117 ά, ἀποβρέξας τὰς ῥίζας τοῦ σικύου ἐπὶ ἡμέρας τρεῖς ἐπίβαλλε τὴν θάλασσαν καὶ ἕψει μετὰ τοῦ ἀγριελαίου τῆς πέρνης, ἕως ἂν ποθῇ ἡ θάλασσα. εἶτα διηθήσας ῥῖπτε τὰς ῥίζας καὶ ἔα ψυγῆναι. εἶτα ἔμπ[λ]ασσε λιθάργυρον καὶ ἕψει ἕως ἀμολύντου.</p>
+<p>ἔχε δὲ τοῦ μέτρου τοῦ ζωμοῦ ἄρας ἀπ' αὐτοῦ γο ϛ́, ἵνα, ὅταν προςπλασθῇ[ς] τοῖς τοίχοις τοῦ κακκάβου ἡ λιθάργυρος ἐγγὺς ἀμολύντου οὖσα, οὕτως ἐπεμβάλλῃς τὰς ϛ́ γο, καὶ οὕτως συν- έψῃς. εἶτα ἐπέμβαλε τὸ ἀμμωνιακόν, καὶ ἐπὶ τέλει πρόσδος χαλβάνην καὶ κατέρα εἰς θυείαν.</p>
+<p><foreign xml:lang="grc">Μάλαγμα</foreign> λευκὸν πρὸς ἐκβολάς. Κηροῦ γο ϛ́, στέατος ταυρείου γο ϛ́ καὶ νίτρου ὁμοίως.</p>
+<p><foreign xml:lang="grc">Μάλαγμα</foreign> πυκνωτικόν. ‘Ρητίνης Κολοϕωνίας #117 β́, πίσσης #117 ά, τερεβινθίνης γο ά, νίτρου γο ϛ́, κηροῦ #117 ά σὺν ὄξει χρῶ.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte des *Hippiatrica Cantabrigiensia* (fragment 12/21) :
+
+
+<div type="section" n="46">
+<p><foreign xml:lang="grc">Πρόχρισμα μαλακτικόν</foreign>. Στέατος <name type="animal" xml:lang="it">αἰγείου</name> νεαροῦ γο β́, χαλβάνης γο β́, ὀποπάνακος δραχμὰς δ́, κυπρίνου δραχμὰς δ́. τοῦτο τὸ σύγχρισμα συγχριόμενον οὔτε συγκαῦσαι οἶδεν οὔτε τρίχας ἀπολ<λ>ύειν.</λ>
+</p>
+
+<div type="section" n="46.2">
+<p><foreign xml:lang="grc">Πῶς δεῖ σημειοῦσθαι τὸν στροϕούμενον ἵππον</foreign>.</p>
+  <p><foreign xml:lang="grc">Στροϕουμένου σημεῖα ταῦτά ἐστι</foreign>. πολλὰ κυλίεται, ἐγείρεσθαι οὐ θέλει, γίνεται λαυρόποτος. ἐξεγείρας οὖν αὐτὸν καὶ περιθεὶς <foreign xml:lang="grc">σάγον</foreign>, <foreign xml:lang="grc">ἐπιθεὶς</foreign> <persName>ἀναβάτην</persName> ποίησον ἐλαύνειν, ἕως ἐξι- δρώσῃ. εἶτα εἰσαγαγὼν αὐτὸν εἰς τὴν στάσιν καὶ μαλάξας ἐπιμε- λῶς ἔασον οὐρῆσαι.</p>
+</div>
+
+<div type="section" n="46.3">
+<p>ἢ <name type="plant" xml:lang="it">κύμινον</name> κόψας καὶ ϕρύξας μετὰ <name type="plant" xml:lang="it">ἐλαίου</name> χλιαροῦ ἐγχυμάτισον, καὶ δὸς περιπάτοις· εἶτα οὕτως οὐρήσει.</p>
+  <p>καὶ μετὰ τὸ οὐρῆσαι <name type="plant" xml:lang="it">χόρτον</name> ὕδατι βρέξας δὸς αὐτῷ διδακεῖν καὶ ἔασον διαστῆσαι. εἶτα τῇ συντάξει χρῶ ***</p>
+</div>
+
+<div type="section" n="47">
+<p><foreign xml:lang="grc">Πρὸς τὸ μὴ ὑποτρίβειν ζῷον</foreign>. ῎Οστρακον θερμάνας, ἕως ὅτε γένηται διάπυρον, ἐπίβαλλε κηροῦ, ἀξουγγίου καὶ πίσσης ἶσον, καὶ ποίησον περιπατεῖν. ἔστω δὲ κοῖλον τὸ ὄστρα- κον, ὅπου τίθησι τὸν πόδα τὸ κτῆνος· τοῦτο ποίει πυκνότερον, καὶ στερεοποιεῖ τοὺς πόδας.</p>
+</div>
+
+<div type="section" n="48">
+<p><foreign xml:lang="grc">Πρὸς τὸ εἴ τι τῶν ζῴων τεκὸν μὴ στέργει ὃ ἔτε- κεν</foreign>. ’Οξάλμῃ σύγχριε τὰς θηλὰς αὐτοῦ. θηλαζόμενον γὰρ ἡδύ- νεται καὶ στέργει τὸ τεχθέν.</p>
+</div>
+
+<div type="section" n="49">
+<p><foreign xml:lang="grc">Καθαρτικόν</foreign>. ’Αμπέλου κλάδους καύσας καὶ ποιήσας στακτήν, ἐγχυμάτιζε ἐπὶ ἡμέραις τρισίν. τοῦτο ὁμοίως καὶ ἐπ' ἀνθρώπων ποιεῖ.</p>
+</div>
+
+<div type="section" n="50">
+<p><persName>’Ιεροκλέους</persName> <quote><foreign xml:lang="grc">περὶ μανίας καὶ λύσσης</foreign></quote>. Συμβαί- νει κτλ. καὶ ἀνθρώποις ἐπιτρέχει ὀϕθαλμούς τε αἱμωποὺς ἔχει καὶ ἑαυτὸν ἐπὶ τοῦ τείχους καὶ τῆς ϕάτνης ἀράσσει. τοῦτον</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni :
+
+
+<div type="chapter" n="13">
+  <p>δεῖ <foreign xml:lang="grc">ϕλεβοτομεῖν</foreign> κατ' ἀρχὰς ἐκ τῆς σϕαγῆς καὶ ἐᾶν <name type="animal" xml:lang="it">αἷμα</name> ῥεῦ-
+  σαι πολὺ καὶ ἀναστέλλειν ἀπὸ πάσης τροϕῆς. τῇ δὲ ἄλλῃ
+  ἡμέρᾳ τρίψας πάνακα γο <foreign xml:lang="grc">ά</foreign> μετ' ὄξους πότιζε ἐπὶ ἡμέρας δ́
+  καὶ παράβαλλε πράσα καὶ πάλιν <foreign xml:lang="grc">ϕλεβοτόμει</foreign> ἀπὸ τῆς κλειδός.
+  ἐπὰν δὲ καθαρισθῇ, δίδου τροϕὴν καὶ ἐπιμελοῦ ὡς δεῖ. <foreign xml:lang="grc">ϕασὶ</foreign>
+  δέ τινες κτλ.</p>
+<p>’<persName>Αψύρτου</persName> <foreign xml:lang="grc">ἐγχυματισμῶν</foreign> σκευασίαι πρὸς ὑπο-
+  ζύγια πεπειραμέναι. ‘<persName>Υσσώπου</persName> <foreign xml:lang="grc">χυλοῦ</foreign> πόσεις β́, στά-
+  χυος, στύρακος, ἀνήσου, <name type="plant" xml:lang="it">σελίνου</name> τὸ αὔταρκες, <name type="plant" xml:lang="it">πράσου</name> δεσμίον,
+  ὕδατος ξέστην ά, ταῦτα εἰς χύτραν καινὴν βαλὼν καθέψησον
+  εἰς τὸ τρίτον καὶ οὕτως <foreign xml:lang="grc">ἐγχυμάτιζε</foreign>.</p>
+<p>῎Αλλος πεπειραμένος πρὸς <name type="animal" xml:lang="it">μᾶλιν</name> καὶ ἐπὶ <foreign xml:lang="grc">ψυγ-
+  μόν</foreign>. <name type="plant" xml:lang="it">Γάλακτος</name> <name type="animal" xml:lang="it">αἰγείου</name>, <name type="plant" xml:lang="it">σησάμου</name> λευκοῦ ὀξύβαϕον λεῖον
+  ποιήσας καὶ ὑποϕώξας ἐλαϕρῶς χρῶ.</p>
+<p><persName>Τιβερίου</persName> <foreign xml:lang="grc">ἐγχυματισμὸς</foreign> ἐπὶ <name type="plant" xml:lang="it">χλόης</name>. <name type="plant" xml:lang="it">Κρόκου</name> ὁλκὰς
+  δ́, <name type="plant" xml:lang="it">τραγακάνθης</name> γο δ́, <name type="plant" xml:lang="it">ἴρεως</name> ’<placeName>Ιλλυρικῆς</placeName> γο ά, <name type="plant" xml:lang="it">ἀμμωνιακοῦ</name>
+  γο ά, <name type="plant" xml:lang="it">οἴνου</name> γλυκεός ξέστας δ́, <name type="plant" xml:lang="it">ἐλαίου</name> ξε. ά, <name type="animal" xml:lang="it">ῳὰ</name> κ́.</p>
+<p>Τοῦ αὐτοῦ <foreign xml:lang="grc">ἐγχυματισμὸς</foreign> ἐπὶ <name type="plant" xml:lang="it">μετοπώρου</name>. <name type="plant" xml:lang="it">Πε-
+  τροσελίνου</name> <name type="placeName">Μακεδονικοῦ</name> γο ά, <name type="plant" xml:lang="it">πεπέρεος</name> ὁλκὰς δ́, <name type="plant" xml:lang="it">ϕύλλου</name>
+  γο ά, <name type="plant" xml:lang="it">ϕοίνικας</name> ξ́, <foreign xml:lang="grc">ἑψηθέντας</foreign> καὶ <foreign xml:lang="grc">λειοτριβηθέντας</foreign>, <name type="plant" xml:lang="it">ὑδρομέλι-
+  τος</name> ξε. ά, <name type="plant" xml:lang="it">ἐλαίου</name> ξε. β́, <name type="plant" xml:lang="it">οἴνου</name> χρηστοῦ τὸ ἀρκοῦν.</p>
+<p>Τοῦ αὐτοῦ <foreign xml:lang="grc">ἐγχυματισμὸς</foreign> <name type="plant" xml:lang="it">θερινός</name>. <name type="plant" xml:lang="it">Κηροῦ</name> ὁλκὰς
+  β́, <name type="plant" xml:lang="it">κόστου</name> ὁλκὴν ά, <name type="plant" xml:lang="it">ἴρεως</name> ’<placeName>Ιλλυρικῆς</placeName> ὁλκὴν ά, <name type="plant" xml:lang="it">ἀμώμου</name> ὁλ-
+  κὴν ά, <name type="plant" xml:lang="it">τραγακάνθης</name> ὁλκὰς β́, <name type="plant" xml:lang="it">μέλιτος</name> ὁλκὴν α<foreign xml:lang="grc">ć</foreign>, <name type="plant" xml:lang="it">ἐλαίου</name> ξέ-
+  στας β́, <name type="animal" xml:lang="it">ῳὰ</name> κ́, <name type="plant" xml:lang="it">οἴνου</name> παλαιοῦ ξέστας δέκα.</p>
+<p><persName>Πελαγωνίου</persName> πρὸς τοὺς ἐκ <name type="animal" xml:lang="it">ῥινῶν</name> <foreign xml:lang="grc">ὑγρὸν</foreign> <foreign xml:lang="grc">ϕέρον-
+  τας</foreign>. ‘<foreign xml:lang="grc">Η</foreign> <foreign xml:lang="grc">ὑγρότης</foreign> τῶν <name type="animal" xml:lang="it">ῥινῶν</name> διά<foreign xml:lang="grc">ϕορός</foreign> <foreign xml:lang="grc">ἐστιν</foreign> κτλ. ταύτας χρὴ</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le morceau 14/21 des *Hippiatrica Cantabrigiensia* :
+
+
+<div type="chapter" n="57">
+  <p><foreign xml:lang="grc">παρατήρειν</foreign> καὶ <foreign xml:lang="grc">θεραπεύειν</foreign> οὕτως· <name type="plant" xml:lang="it">βούτυρον</name> ἢ <name type="plant" xml:lang="it">ἔλαιον</name> <name type="animal" xml:lang="it">γάρῳ</name>
+</p>
+</div>
+
+<div type="chapter" n="58">
+  <p><foreign xml:lang="grc">Παστίλλων</foreign> <name type="plant" xml:lang="it">σκευασία</name> πρὸς <foreign xml:lang="grc">ἐγχυματισμόν</foreign>. <persName>Κόμεως</persName> <foreign xml:lang="grc">Ἀλεξανδρηνῆς</foreign> βαλὼν εἰς <name type="plant" xml:lang="it">οἶνον</name> <foreign xml:lang="grc">παλαιὸν</foreign> καὶ <name type="plant" xml:lang="it">κασσίας</name> <foreign xml:lang="grc">μελαίνης</foreign> γο ϛ́, <name type="plant" xml:lang="it">κόστου</name> γο γ́, <name type="plant" xml:lang="it">κροκομάγματος</name> γο γ́, <name type="plant" xml:lang="it">κασσίας</name> <foreign xml:lang="grc">λευκῆς</foreign> γο ϛ́, <name type="plant" xml:lang="it">σμύρνης</name> <foreign xml:lang="grc">τρωγλίτιδος</foreign> γο γ́, <name type="plant" xml:lang="it">ἀλόης</name> γο β́, <name type="plant" xml:lang="it">σακκιπήνου</name> γο έ.
+</p>
+</div>
+
+<div type="chapter" n="59">
+  <p><foreign xml:lang="grc">Ποῦλβερ</foreign> <foreign xml:lang="grc">κουδριγάριν</foreign>. <name type="plant" xml:lang="it">κασσίας</name> <foreign xml:lang="grc">πυρρᾶς</foreign> γο ϛ́, <name type="plant" xml:lang="it">κασσίας</name> <foreign xml:lang="grc">μελαίνης</foreign> γο ϛ́, <name type="plant" xml:lang="it">κόστου</name> γο γ́, <name type="plant" xml:lang="it">κυπέρου</name> γο γ́, <name type="plant" xml:lang="it">σπικανία</name> <name type="animal" xml:lang="it">λύκου</name> γο ϛ́, <name type="plant" xml:lang="it">κρόκου</name> <foreign xml:lang="grc">Σικελοῦ</foreign> γο ί, <name type="plant" xml:lang="it">κροκομάγματος</name> γο γ́, <name type="plant" xml:lang="it">νίτρου</name> γο ί.
+</p>
+</div>
+
+<div type="chapter" n="60">
+  <p><foreign xml:lang="grc">Καυστική</foreign>. <persName>’Αμμωνιακοῦ</persName> γο ϛ́, <name type="plant" xml:lang="it">κώνης</name>, <name type="plant" xml:lang="it">ἀσϕάλτου</name> γο γ́, <name type="plant" xml:lang="it">ῥητίνης</name> <foreign xml:lang="grc">ἀστλώσης</foreign> γο γ́, <name type="plant" xml:lang="it">ἀξουγγίου</name> γο β́, <name type="plant" xml:lang="it">οἴνου</name> <foreign xml:lang="grc">κυάθους</foreign> γ́.
+</p>
+</div>
+
+<div type="chapter" n="61">
+  <p><foreign xml:lang="grc">’Ανακόλλημα</foreign> πρὸς <foreign xml:lang="grc">χωλάσματα</foreign>. <name type="plant" xml:lang="it">Κόλλης</name> γο ϛ́, <name type="plant" xml:lang="it">κώνης</name> γο ϛ́, <name type="plant" xml:lang="it">ῥητίνης</name> <foreign xml:lang="grc">ὁμοίως</foreign>, <name type="plant" xml:lang="it">γύρεως</name> ξε. ά, <name type="plant" xml:lang="it">ὄξος</name> <foreign xml:lang="grc">δριμὺ</foreign> εἰς <name type="plant" xml:lang="it">κάκκαβον</name> <foreign xml:lang="grc">ἑψήσας</foreign> ἀνὰ <foreign xml:lang="grc">τρίχα</foreign> ἀνάτριψον, καὶ ὅταν πέσῃ, πάλιν χρῶ, ἄχρι καλῶς ἕξει.
+</p>
+</div>
+
+<div type="chapter" n="62">
+  <p><foreign xml:lang="grc">Πρὸς</foreign> <foreign xml:lang="grc">πυρεκτικὸν</foreign> <foreign xml:lang="grc">προπότισμα</foreign>. <name type="plant" xml:lang="it">’Αψινθίου</name> #117 ά, <name type="plant" xml:lang="it">ἀβροτόνου</name> #117 ά, <name type="plant" xml:lang="it">ὑσσώπου</name> #117 ά, <name type="plant" xml:lang="it">κενταυρίου</name> #117 ά, <name type="plant" xml:lang="it">καλαμίνθης</name> #117 ά, <name type="plant" xml:lang="it">οἰνοκιέας</name> #117 ά εἰς <name type="plant" xml:lang="it">χύτραν</name> μεθ' <name type="plant" xml:lang="it">ὕδατος</name> <foreign xml:lang="grc">ἑψήσας</foreign>, τῇ <foreign xml:lang="grc">ἄλλῃ</foreign> <foreign xml:lang="grc">ἡμέρᾳ</foreign> εἰς <name type="plant" xml:lang="it">κέρας</name> βαλὼν ὅσον <foreign xml:lang="grc">ξέστην</foreign>, ἔγχει διὰ τοῦ <name type="animal" xml:lang="it">στόματος</name>.
+</p>
+</div>
+
+<div type="chapter" n="63">
+  <p><foreign xml:lang="grc">Πρὸς</foreign> <foreign xml:lang="grc">πυρετοὺς</foreign> <foreign xml:lang="grc">μείζονας</foreign> διὰ τοῦ <name type="animal" xml:lang="it">στόματος</name>. <name type="plant" xml:lang="it">Κόστου</name> γο γ́, <name type="plant" xml:lang="it">γεντιανῆς</name> <foreign xml:lang="grc">ὁμοίως</foreign>, <name type="plant" xml:lang="it">ὀποπάνακος</name> <foreign xml:lang="grc">ὁμοίως, πάνακος</foreign> <name type="plant" xml:lang="it">ῥίζης</name> <foreign xml:lang="grc">ὁμοίως</foreign>, <name type="plant" xml:lang="it">ἴρεως</name> <foreign xml:lang="grc">ὁμοίως</foreign>.
+</p>
+</div>
+
+<div type="chapter" n="64">
+  <p><foreign xml:lang="grc">Μάλαγμα</foreign> <foreign xml:lang="grc">πυροῦν</foreign>. <name type="plant" xml:lang="it">Κηροῦ</name> #117 ά, <persName>’Αμμωνιακοῦ</persName> #117 ά, <name type="plant" xml:lang="it">ῥητίνης</name> γο ϛ́, <name type="plant" xml:lang="it">ἀτόμου</name> <name type="plant" xml:lang="it">λιβάνου</name> γο ϛ́, <name type="plant" xml:lang="it">λιθαργύρου</name> γο γ́, <name type="plant" xml:lang="it">στυπτηρίας</name> <foreign xml:lang="grc">σχιστῆς</foreign> γο ϛ́, <name type="plant" xml:lang="it">ἐλαίου</name> <foreign xml:lang="grc">ὀμϕακίνου</foreign> γο ϛ́.
+</p>
+  <p><foreign xml:lang="grc">’Αλλο</foreign>. <name type="plant" xml:lang="it">Κηροῦ</name> #117 β́, <name type="plant" xml:lang="it">κώνης</name> #117 ά, <name type="animal" xml:lang="it">βδέλλης</name> γο ϛ́, <name type="plant" xml:lang="it">σμύρ-</name>
+  </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte des *Hippiatrica Cantabrigiensia* (section 15/21) :
+
+
+<div type="section" n="15">
+  <p><foreign xml:lang="grc">νης γο γ́, χαλβάνης γο ϛ́, ὀποπάνακος, ἀλόης, κροκομά[λα]-</foreign>γματος ἀνὰ γο γ́, ἐλαίου ὀμϕακίνου.</p>
+  <div type="chapter" n="65">
+    <p><foreign xml:lang="grc">῎Αλλο. ’Αξουγγίου λεοντείου γο ϛ́, στέατος βοείου θή-</foreign>
+λεος ὁμοίως, κηροῦ γο ϛ́, ῥητίνης τερεβινθίνης ὡσαύτως,
+    θείου γο γ́, νίτρου ὁμοίως, δαϕνίδωνά, κασσίας γο ϛ́,
+    κροκομάγματος γο γ́, προπόλεως γο ϛ́, ἀλόης γο γ́.</p>
+  </div>
+  <div type="chapter" n="66">
+    <p><foreign xml:lang="grc">Περὶ χηλῆς. ’Εὰν χηλὴ ῥήγματα σχῇ ἄνωθεν ἀπὸ τῆς</foreign>
+    στεϕάνης, ἐπίθες κύκλῳ ὀρόβινον μετ' ὄξους καὶ ἐπάνωθεν
+    σπόγγον. ἀποπυρία δὲ θερμῷ, <quote><foreign xml:lang="grc">κάλλιον μέν,</foreign></quote> ἐὰν ἔχῃς ἀπὸ
+    βαλανείου τῆς ἐμβάσεως, <quote><foreign xml:lang="grc">συλλαμβάνεται γάρ τι. εἰ δὲ μή γε,
+    τὸ παρὸν χρῆσαι·</foreign></quote> ἐὰν δὲ ϕλεγμαίνῃ, τῇ κιμωλίᾳ μετὰ ὄξους
+    ἐπίχριε τὰ ϕλεγμαίνοντα μετὰ καὶ βολβίτου καὶ <name type="plant" xml:lang="it">ἁλὸς</name> λεπτοῦ.
+    τούτοις χρῶ θερμοῖς. <quote><foreign xml:lang="grc">ἐὰν ἐπιμείνῃ ϕλεγμονή, τὴν κιμωλίαν
+    οἴνῳ ἑψῶν χρῶ καθὼς προγέγραπται.</foreign></quote></p>
+  </div>
+  <div type="chapter" n="67">
+    <p><foreign xml:lang="grc">Εἰς ψώραν. ῎Οξους δριμέος ξε. ά, πισσελαίου ὁμοίως,</foreign>
+νίτρου ά, λούσας κατάχριε <quote><foreign xml:lang="grc">ἢ</foreign></quote> τρυγελαίου ξε. ά,
+    θείουἀπύρου γο ά, ἀμόργης ξε. ά.</p>
+  </div>
+  <div type="chapter" n="68">
+    <p><foreign xml:lang="grc">Τραυματικόν. Κηροῦ Τυρρηνικοῦ γο γ́, ἰοῦ γο β́,</foreign>
+    <name type="plant" xml:lang="it">ἀλόης</name> γο β́, <name type="plant" xml:lang="it">ἀξουγγίου</name> παλαιοῦ τὸ ἀρκοῦν ἑψήσας χρῶ. πρὸς
+    γὰρ τοὺς τραχήλους καλῶς ποιεῖ.</p>
+  </div>
+  <div type="chapter" n="69">
+    <p><foreign xml:lang="grc">Μάλαγμα ἐκ σύκων. Σύκων γο γ́, νίτρου γο ϛ́,</foreign>
+    <name type="plant" xml:lang="it">κυπαρίσου</name> γο ά, στέατος <name type="animal" xml:lang="it">ταυρείου</name>ά,
+    <name type="plant" xml:lang="it">μάννης</name>ά, <name type="plant" xml:lang="it">χαλβάνης</name> γο ά.</p>
+  </div>
+  <div type="chapter" n="70">
+    <p><foreign xml:lang="grc">Κυκλίσκων σκευασία. Κρόκου γο γ́, σμύρνης γο γ́,</foreign>
+    <name type="plant" xml:lang="it">κινναμώμου</name> γο ά, <name type="plant" xml:lang="it">κασσίας</name> γο β́, <name type="plant" xml:lang="it">ἀμώμου</name> γο β́,
+    θείου γο δ́, <name type="plant" xml:lang="it">νάρδου Συριακῆς</name> γο γ́, <name type="plant" xml:lang="it">κόστου</name> γο γ́,
+    <name type="plant" xml:lang="it">ἴρεως ’Ιλλυρικῆς</name> γο γ́,</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte fourni :
+
+
+<div type="section" n="16">
+  <p><name type="plant" xml:lang="it">ποντικοῦ</name> γο γ́, <name type="plant" xml:lang="it">λιβάνου</name> ἄρσενος γο β́, <name type="plant" xml:lang="it">πεπέρεος</name> μακροῦ γο γ́, <name type="plant" xml:lang="it">πεπέρεος</name> λευκοῦ γο γ́, σχ<o>ίνου</o> ἄνθους γο γ́, <name type="plant" xml:lang="it">μήου</name> γο δ́, <name type="plant" xml:lang="it">ἀκόρου</name> γο β́, <name type="plant" xml:lang="it">κροκομάγματος</name> γο δ́, <name type="plant" xml:lang="it">πετροσελίνου</name> γο γ́, <name type="plant" xml:lang="it">ὀποπάνακος</name> γο δ́, <name type="plant" xml:lang="it">ἴρεως</name> ἀστραγάλου γο δ́, <name type="plant" xml:lang="it">κυπέρου</name> γο γ́, <name type="plant" xml:lang="it">καλάμου</name> γο έ, <name type="plant" xml:lang="it">γεντιανῆς</name> γο ϛ́, <name type="plant" xml:lang="it">δαύκου</name> γο δ́, <name type="plant" xml:lang="it">στύρακος</name> γο δ́, <name type="plant" xml:lang="it">καρύου</name> γο δ́, <name type="plant" xml:lang="it">ζιγγιβέρεως</name> γο γ́, <name type="plant" xml:lang="it">νάρδου</name> καθαρᾶς γο δ́.</p>
+<p><foreign xml:lang="grc">Ἐγχυματισμός</foreign>. <name type="plant" xml:lang="it">Σελίνου</name> χλωροῦ γο ά, <name type="plant" xml:lang="it">ὑσσώπου</name> γο ϛ́, <name type="plant" xml:lang="it">νάρδου</name> καθαρᾶς γο δ́, <name type="plant" xml:lang="it">σύκων</name> γο β́.</p>
+<p><foreign xml:lang="grc">Σύγχρισμα</foreign>. <name type="plant" xml:lang="it">Κηροῦ</name> #117 ά, <name type="plant" xml:lang="it">στέατος</name> χοιρείου #117 β́, <name type="plant" xml:lang="it">ἐλαίου</name> κυπρίνου #117 ά.</p>
+<p><foreign xml:lang="grc">Καθαρτική</foreign>. <name type="plant" xml:lang="it">Σμύρνης</name> γο β́, <name type="plant" xml:lang="it">ὀποπάνακος</name> γο β́, <foreign xml:lang="grc">ἰοῦ</foreign> <name type="animal" xml:lang="it">σκώληκος</name> γο β́, <name type="plant" xml:lang="it">μέλιτος</name> ὡσαύτως.</p>
+<p><foreign xml:lang="grc">Σύνθεσις</foreign> <foreign xml:lang="grc">ϕαρμάκου</foreign> <foreign xml:lang="grc">συνακτικὴ</foreign> <foreign xml:lang="grc">πρὸς</foreign> <foreign xml:lang="grc">τὰ</foreign> <foreign xml:lang="grc">ἕλκη</foreign>. <name type="plant" xml:lang="it">Λιβάνου</name>, <name type="plant" xml:lang="it">σμύρνης</name>, <name type="plant" xml:lang="it">στυπτηρίας</name> ἀνὰ γο β́.</p>
+<p><foreign xml:lang="grc">Κατάπλασμα</foreign>. <name type="plant" xml:lang="it">Πίσσης</name>, <name type="plant" xml:lang="it">ἀσϕάλτου</name>, <name type="plant" xml:lang="it">μάννης</name> ἶσα, <name type="plant" xml:lang="it">οἴνου</name> παλαιοῦ ξε. ά.</p>
+<p><foreign xml:lang="grc">Καθαρτικῶν</foreign> <foreign xml:lang="grc">σύνθεσις</foreign>. <name type="plant" xml:lang="it">Σμύρνης</name> γο ί, <name type="plant" xml:lang="it">λιβάνου</name> ἄρρενος γο ά, <name type="plant" xml:lang="it">ὀποβαλσάμου</name> γο ά, <foreign xml:lang="grc">ἰοῦ</foreign> <name type="animal" xml:lang="it">σκώληκος</name> γο γ́, <name type="plant" xml:lang="it">μέλιτος</name> γο δ́, <name type="plant" xml:lang="it">ῥοδίνου</name> * ά.</p>
+<p><foreign xml:lang="grc">Καθαρτικὴ</foreign> <foreign xml:lang="grc">ϕθαρτική</foreign>. <name type="plant" xml:lang="it">Κινναμώμου</name>, <name type="plant" xml:lang="it">νάρδου</name> Συριακῆς, σχ<o>ίνου</o> ἄνθους, <name type="plant" xml:lang="it">κολοϕωνίας</name>, <foreign xml:lang="grc">κόκκους</foreign> <foreign xml:lang="grc">ποιήσας</foreign> <foreign xml:lang="grc">κυάμου</foreign> <foreign xml:lang="grc">μέγεθος</foreign> δίδου δι' <name type="plant" xml:lang="it">οἴνου</name>, <name type="plant" xml:lang="it">μέλιτος</name> μίξας γο β́.</p>
+<p><foreign xml:lang="grc">Τραυματικόν</foreign>. <name type="plant" xml:lang="it">Χαλκοῦ</name> κεκαυμένου γο γ́, <name type="plant" xml:lang="it">λεπίδος</name> <name type="plant" xml:lang="it">χαλκοῦ</name> γο γ́, <name type="plant" xml:lang="it">κηκίδος</name> γο γ́, <foreign xml:lang="grc">σιδίων</foreign> ὁμοίως, <name type="plant" xml:lang="it">στυπτηρίας</name> σχιστῆς, <name type="plant" xml:lang="it">σμύρνης</name> ἀνὰ γο β́, <name type="plant" xml:lang="it">στυπτηρίας</name> στρογγύλης, <name type="plant" xml:lang="it">μίσυος</name>, <name type="plant" xml:lang="it">χαλκάνθης</name>, <name type="plant" xml:lang="it">ὑσσώπου</name>, <name type="plant" xml:lang="it">ἀϕονίτρου</name>, <name type="plant" xml:lang="it">λιβάνου</name> ἀνὰ γο γ́ <foreign xml:lang="grc">ὄξει</foreign> διεὶς τὰ ξηρὰ <foreign xml:lang="grc">λέαινε</foreign>. <foreign xml:lang="grc">εἶτα</foreign> <foreign xml:lang="grc">τούτων</foreign> <foreign xml:lang="grc">τὰ</foreign> <foreign xml:lang="grc">ῥυπαρὰ</foreign> <foreign xml:lang="grc">χέων</foreign>, <foreign xml:lang="grc">ὄξος</foreign> <foreign xml:lang="grc">ἐμβαλὼν</foreign> <foreign xml:lang="grc">λέαινε</foreign> <foreign xml:lang="grc">κατ'</foreign> <foreign xml:lang="grc">ἰδίαν</foreign>, <foreign xml:lang="grc">μετὰ</foreign> <foreign xml:lang="grc">δὲ</foreign> <foreign xml:lang="grc">ταῦτα</foreign> <foreign xml:lang="grc">μῖξον</foreign> <foreign xml:lang="grc">εἰς</foreign> <foreign xml:lang="grc">τὸ</foreign> <foreign xml:lang="grc">αὐτὸ</foreign> <foreign xml:lang="grc">καὶ</foreign> <foreign xml:lang="grc">ἕψει</foreign>.</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte des *Hippiatrica Cantabrigiensia* (fragment 17/21) :
+
+
+<div type="section" n="79">
+  <p>
+    <quote>
+      <foreign xml:lang="grc">’Απολλωνίου μάλαγμα</foreign> ποιοῦν εἰς <name type="animal" xml:lang="it">νεῦρα</name> κεχα-
+      λασμένα, ἔτι δὲ καὶ εἰς <name type="animal" xml:lang="it">ποδάγραν</name> <name type="animal" xml:lang="it">ἀνθρώπων</name>.
+    </quote>
+  </p>
+<p>
+    <name type="plant" xml:lang="it">#117 ά</name>, <name type="plant" xml:lang="it">κισσήρεως</name> <name type="plant" xml:lang="it">#117 ά</name>, ἐμβαλὼν εἰς <foreign xml:lang="grc">θυείαν</foreign> διάτριβε ὑπέρῳ
+    <foreign xml:lang="grc">μολιβδίνῳ</foreign>, ἕως οὗ ἀποτριβῶσι <foreign xml:lang="grc">μολίβδου</foreign> γο β́ καὶ ὅταν λεῖον
+    ποιήσῃς, σ[τ]ῆσον, καὶ πάλιν ἐμβαλὼν εἰς <foreign xml:lang="grc">θυείαν</foreign> τρῖβε τῷ
+    <foreign xml:lang="grc">μολίβδῳ</foreign>, παρεπιχέων <foreign xml:lang="grc">μέλιτος</foreign> γο γ́ καὶ <foreign xml:lang="grc">ὄξους</foreign> τὸ ἱκανόν.
+    εἶτα <foreign xml:lang="grc">μαρμάρου</foreign> κεκομμένου <name type="plant" xml:lang="it">#117 ά</name> κόψας <name type="animal" xml:lang="it">σῆθε</name>, καὶ ἐμβαλὼν
+    <name type="plant" xml:lang="it">καρδάμου</name> σπέρμα ϕρῦξον ἐν <foreign xml:lang="grc">ὀστράκῳ</foreign> καὶ τρίψας σῆσον, εἶτα
+    <name type="plant" xml:lang="it">χαλβάνην</name> κόψας, καὶ ἐξελὼν ἐκ τοῦ <foreign xml:lang="grc">ὅλμου</foreign>, λαβὼν <name type="animal" xml:lang="it">μυελὸν</name>
+    <name type="animal" xml:lang="it">ἐλάφειον</name> καὶ <foreign xml:lang="grc">ἐλαίου</foreign> τὸ ἱκανὸν καὶ τούτῳ διεὶς καὶ ἀναμάξας
+    πάντα, ποιῶν <foreign xml:lang="grc">μάλαγμα</foreign> χρῶ.
+  </p>
+</div>
+
+<div type="section" n="80">
+  <p>
+    <foreign xml:lang="grc">Μάλαγμα</foreign> πρὸς <name type="animal" xml:lang="it">νεῦρα</name> κεχαλασμένα.
+    <name type="plant" xml:lang="it">Μίλτου</name> <name type="plant" xml:lang="it">#117 ά</name>, <name type="plant" xml:lang="it">μάννης</name> <name type="plant" xml:lang="it">#117 ά</name>,
+    <name type="plant" xml:lang="it">ἀσϕάλτου</name> <name type="plant" xml:lang="it">#117 ά</name>, <name type="plant" xml:lang="it">σεμιδάλεως</name> ξε. ά,
+    <foreign xml:lang="grc">οἴνου παλαιοῦ</foreign> τὸ ἱκανὸν ἐμβαλὼν εἰς <foreign xml:lang="grc">χύτραν</foreign> καὶ τὰ λοιπὰ
+    προσβαλὼν τετριμ-
+    μένα, εἰς τὸ αὐτὸ ἕψει.
+  </p>
+</div>
+
+<div type="section" n="81">
+  <p>
+    <foreign xml:lang="grc">῎Αλλο δεδοκιμασμένον</foreign>.
+    <name type="plant" xml:lang="it">Κηροῦ</name> <name type="plant" xml:lang="it">#117 ά</name>, <name type="plant" xml:lang="it">ῥητίνης</name> <name type="plant" xml:lang="it">#117 ά</name>,
+    <name type="plant" xml:lang="it">πίσσης</name> γο ϛ́, <name type="plant" xml:lang="it">στυπτηρίας</name> τὸ <foreign xml:lang="grc">ἶσον</foreign>.
+  </p>
+</div>
+
+<div type="section" n="82">
+  <p>
+    <foreign xml:lang="grc">’Αγκύλης</foreign> <name type="animal" xml:lang="it">ἀλγούσης</name> <foreign xml:lang="grc">ϕάρμακον</foreign>.
+    <name type="plant" xml:lang="it">Κρόκου</name> γο β́,
+    <name type="plant" xml:lang="it">χαλβάνης</name> γο β́, <name type="plant" xml:lang="it">ῥητίνης</name> <foreign xml:lang="grc">ϕρυκτῆς</foreign> γο ϛ́,
+    <name type="plant" xml:lang="it">ἀσϕάλτου</name> γο ϛ́, <name type="plant" xml:lang="it">ἀμ-
+    μωνιακοῦ</name> γο ά, <foreign xml:lang="grc">ἐλαίου στυρακίνου</foreign> γο ά <foreign xml:lang="grc">ἐν ὕδατι</foreign> μίξας χρῶ.
+  </p>
+</div>
+
+<div type="section" n="83">
+  <p>
+    <foreign xml:lang="grc">’Αρτηριακή</foreign>.
+    <name type="plant" xml:lang="it">Τραγακάνθης</name> μνᾶς γ́,
+    <name type="plant" xml:lang="it">κρόκου</name> μνᾶν ά,
+    <name type="plant" xml:lang="it">πεπέρεος</name> γραμμάρια ή,
+    <name type="plant" xml:lang="it">μέλιτος</name> μνᾶς γ́,
+    <foreign xml:lang="grc">τὴν τραγάκανθαν</foreign> διεὶς <foreign xml:lang="grc">οἴνῳ γλυκεῖ</foreign>,
+    τὰ δὲ λοιπὰ λεάνας καὶ μίξας χρῶ.
+  </p>
+</div>
+
+<div type="section" n="84">
+  <p>
+    <foreign xml:lang="grc">Τροχίσκος ἀρωματικός</foreign>.
+    <name type="plant" xml:lang="it">Σμύρνης</name> γο ί,
+    <name type="plant" xml:lang="it">κινναμώμου</name> γο γ́,
+    <name type="plant" xml:lang="it">λιβάνου</name> γο γ́,
+    <name type="plant" xml:lang="it">κασσίας</name> δραχμὰς ή,
+    <name type="plant" xml:lang="it">πεπέρεος</name> δραχ-
+    μὰς γ́,
+    <name type="animal" xml:lang="it">βδελλίου</name> δραχμὰς έ,
+    <name type="plant" xml:lang="it">καλάμου</name> δραχμὰς έ,
+    <name type="plant" xml:lang="it">σελίνου</name>
+  </p>
+</div>
+Voici l'encodage TEI P5 du texte demandé, respectant strictement les règles du projet Zoomathia :
+
+
+<div type="section" n="18">
+  <p><foreign xml:lang="grc">σπέρματος</foreign>, <name type="animal" xml:lang="it">ἴρεως</name> <foreign xml:lang="grc">’Ιλλυρικῆς</foreign> ἀνὰ δραχμῶν β́ <foreign xml:lang="grc">οἴνῳ παλαιῷ</foreign>
+  ἀναλύσας χρῶ.</p>
+<p><foreign xml:lang="grc">’Αρρώστων ἀνάληψις</foreign>. <name type="plant" xml:lang="it">Βδελλίου</name>, <name type="plant" xml:lang="it">χαλβάνης</name>, <name type="plant" xml:lang="it">μάννης</name>, <name type="plant" xml:lang="it">ἀμμωνιακοῦ</name>, <name type="plant" xml:lang="it">ῥητίνης</name>, <name type="animal" xml:lang="it">ἴρεως</name> <foreign xml:lang="grc">’Ιλλυρικῆς</foreign>, τούτων ἑκάστου
+  τὸ ἶσον, <name type="plant" xml:lang="it">κηροῦ</name> τὸ διπλάσιον, <name type="plant" xml:lang="it">κυπρίνῳ ἐλαίῳ</name> ἀναλάμβανε.</p>
+<p><foreign xml:lang="grc">Μάλαγμα πρὸς πάντα</foreign>. <name type="plant" xml:lang="it">Πεπέρεος</name> γο ά, <name type="plant" xml:lang="it">χαλβάνης</name>
+  γο ά, <name type="plant" xml:lang="it">σμύρνης</name> γο ά, <name type="plant" xml:lang="it">ἀριστολοχίας</name> <foreign xml:lang="grc">Κρητικῆς</foreign> γο ά, <name type="animal" xml:lang="it">ἴρεως</name> <foreign xml:lang="grc">’Ιλ-
+  λυρικῆς</foreign> γο ά, <name type="plant" xml:lang="it">πευκεδάνου</name> γο γ́, <name type="plant" xml:lang="it">κρόκου</name> γο ά, <name type="plant" xml:lang="it">συκαμίνου</name>
+  ὀποῦ γο ά, <name type="plant" xml:lang="it">πυρέθρου</name> γο ά, <name type="plant" xml:lang="it">κόκκου</name> <foreign xml:lang="grc">Κνιδίου</foreign> γο δ́, <name type="plant" xml:lang="it">ἀμώμου</name>
+  γο ά, <name type="plant" xml:lang="it">ὀποβαλσάμου</name> γο β́, <name type="plant" xml:lang="it">καρδαμώμου</name> γο ά, <name type="plant" xml:lang="it">ἰρίνου</name> ἑξαγ. ά,
+  <name type="plant" xml:lang="it">κηροῦ</name> τὸ ἀρκοῦν.</p>
+<p><foreign xml:lang="grc">Φαβρικιανοῦ κυκλίσκοι</foreign> <foreign xml:lang="grc">πρὸς μᾶλιν</foreign> καὶ <foreign xml:lang="grc">πο-
+  δοκρούσματα</foreign>. <name type="plant" xml:lang="it">Κινναμώμου</name> γο γ́, <name type="plant" xml:lang="it">κασσίας</name> γο γ́, <name type="plant" xml:lang="it">σμύρνης</name>
+  ὡσαύτως, <name type="plant" xml:lang="it">σαγαπηνοῦ</name> γο έ, <name type="plant" xml:lang="it">κρόκου</name> γο β́, <name type="plant" xml:lang="it">λιβάνου</name> γο δ́, <name type="plant" xml:lang="it">νίτρου</name>
+  γο ά, ταῦτα <foreign xml:lang="grc">λεάνας</foreign> καλῶς <foreign xml:lang="grc">μεθ' ὕδατος</foreign> ἀνάπλαττε καὶ <foreign xml:lang="grc">κυκλί-
+  σκους</foreign> εὐμεγέθεις ποίει καὶ χρῶ <foreign xml:lang="grc">μεθ' ὑδρομέλιτος</foreign>.</p>
+<p><foreign xml:lang="grc">Πρὸς διαϕορὰν ὑποζυγίων</foreign>. <name type="animal" xml:lang="it">Κυνορίζης</name> τὸν
+  ϕλοιὸν κόψας δίδου <foreign xml:lang="grc">ϕαγεῖν</foreign> <foreign xml:lang="grc">νήστει</foreign> ἢ πιεῖν ἐκ τοῦ <foreign xml:lang="grc">ζωμοῦ</foreign>
+  αὐτοῦ ὅσον εἰς <foreign xml:lang="grc">κοτύλας</foreign> β́, καὶ <name type="plant" xml:lang="it">μάνναν</name> δὲ τρίψας δὸς μετὰ
+  <foreign xml:lang="grc">οἴνου</foreign>, καὶ λοῦε <foreign xml:lang="grc">θερμῷ ὕδατι</foreign> πλεῖστον.</p>
+<p><foreign xml:lang="grc">῎Αλλο</foreign>. <name type="plant" xml:lang="it">Σανδαράχην</name> διεὶς <foreign xml:lang="grc">ὕδατι</foreign> ἔγχει εἰς τοὺς
+  <foreign xml:lang="grc">μυ-
+  κτῆρας</foreign>.</p>
+<p><foreign xml:lang="grc">῎Αλλο</foreign>. <foreign xml:lang="grc">’Ελλέβορον</foreign> τρίψας διεὶς <foreign xml:lang="grc">ὕδατι</foreign> ἔγχει εἰς τοὺς
+  <foreign xml:lang="grc">μυκτῆρας</foreign>. ἐὰν δὲ καὶ συντρίψας μίξῃς τοῖς <foreign xml:lang="grc">ἀχύροις</foreign>, τὸ αὐτὸ
+  ποιεῖ. ἔστω δὲ ὡς πλεῖστον.</p>
+<p><foreign xml:lang="grc">Γλευκιρίνου σύνθεσις</foreign>. <foreign xml:lang="grc">’Ελαίου</foreign> <name type="plant" xml:lang="it">ἰρίνου</name> #517 γ́,
+  <name type="plant" xml:lang="it">γλεύκους</name> <foreign xml:lang="grc">ὠμοῦ</foreign> #517 ιέ, <name type="plant" xml:lang="it">καλάμου</name> #117 ά, <name type="plant" xml:lang="it">νάρδου</name> δεσμὰς δ́, <name type="plant" xml:lang="it">κυ-
+  πέρου</name> #117 β́, <name type="plant" xml:lang="it">κυπαρίσου</name> <foreign xml:lang="grc">ἀρωματικῆς</foreign> #117 β́, <name type="plant" xml:lang="it">κόστου</name> γο ϛ́, τρω-
+</p>
+Voici l'encodage TEI P5 du texte fourni selon les règles strictes du projet Zoomathia :
+
+
+<div type="section" n="19">
+   <p><foreign xml:lang="grc">γλίτιδος</foreign> γο β́, <name type="plant" xml:lang="it">κασσίας</name> #117 ά, <name type="plant" xml:lang="it">δαϕνίδων</name> περυσινῶν <name type="plant" xml:lang="it">ϕύλλων</name>
+   #517 β́, <name type="plant" xml:lang="it">ἀμώμου</name> γο δ́. ταῦτα πάντα κόψας λεῖα βάλε μετὰ τοῦ
+   <foreign xml:lang="grc">ἐλαίου</foreign> καὶ τοῦ <foreign xml:lang="grc">γλεύκους</foreign> εἰς <foreign xml:lang="grc">χύτραν</foreign> καινὴν καὶ ἕψει.</p>
+<p><foreign xml:lang="grc">’Αψύρτου σκευασία</foreign> <foreign xml:lang="grc">ἐγχυματισμοῦ</foreign> <foreign xml:lang="grc">ἀρωματικοῦ</foreign>.</p>
+   <p><foreign xml:lang="grc">Φύλλου</foreign> γο <foreign xml:lang="grc">ć</foreign>, <name type="plant" xml:lang="it">κόστου</name> γο <foreign xml:lang="grc">γ́</foreign>, <name type="plant" xml:lang="it">ναρδοστάχυος</name>
+   γο <foreign xml:lang="grc">ć</foreign>, <name type="plant" xml:lang="it">μελιλώτου</name> γο <foreign xml:lang="grc">ά</foreign>, <name type="plant" xml:lang="it">νάρδου</name> <name type="placeName">Κρητικῆς</name> γο <foreign xml:lang="grc">ć</foreign>,
+   <name type="plant" xml:lang="it">ἀμώμου</name> γο <foreign xml:lang="grc">ć</foreign>, <name type="plant" xml:lang="it">καρποβαλσάμου</name> γο <foreign xml:lang="grc">ć</foreign>, <name type="plant" xml:lang="it">ἴρεως</name> <name type="placeName">’Ιλλυρικῆς</name>
+   γο <foreign xml:lang="grc">ά</foreign>, <foreign xml:lang="grc">σχ<o>ίνου</o> ἄνθους</foreign> γο <foreign xml:lang="grc">ά</foreign>, <name type="plant" xml:lang="it">σαμψύχου</name> γο <foreign xml:lang="grc">ά</foreign>,
+   <name type="plant" xml:lang="it">κασσίας</name> γο <foreign xml:lang="grc">ά</foreign>.</p>
+<p><foreign xml:lang="grc">Τοῦ αὐτοῦ ἑτέρα σκευασία</foreign> <foreign xml:lang="grc">ἐγχυματισμοῦ</foreign> <foreign xml:lang="grc">διὰ</foreign>
+   <foreign xml:lang="grc">πικρᾶς</foreign>. <name type="plant" xml:lang="it">Πευκεδάνου</name>, <name type="plant" xml:lang="it">γεντιανῆς</name>,
+   <name type="plant" xml:lang="it">κολοκυνθίδος</name> ἀνὰ γο <foreign xml:lang="grc">γ́</foreign>, <name type="plant" xml:lang="it">κενταυρίου</name> γο <foreign xml:lang="grc">δ́</foreign>,
+   <name type="plant" xml:lang="it">ἀλόης</name> γο <foreign xml:lang="grc">β́</foreign>, <name type="plant" xml:lang="it">ἀψινθίου</name> γο <foreign xml:lang="grc">γ́</foreign>.</p>
+<p><foreign xml:lang="grc">’Εγχυματισμὸς</foreign> <foreign xml:lang="grc">πυκνωτικός</foreign>. <foreign xml:lang="grc">Σμύρνης</foreign> <foreign xml:lang="grc">τρωγλίτιδος</foreign>
+   γο <foreign xml:lang="grc">δ́</foreign>, <name type="plant" xml:lang="it">ἀλόης</name>, <name type="plant" xml:lang="it">κασσίας</name> ἀνὰ γο <foreign xml:lang="grc">β́</foreign>,
+   <name type="plant" xml:lang="it">ἴρεως</name> γο <foreign xml:lang="grc">ά</foreign>, <name type="plant" xml:lang="it">συμϕύτου</name> γο <foreign xml:lang="grc">έ</foreign>,
+   <name type="plant" xml:lang="it">καλαμίνθης</name> γο <foreign xml:lang="grc">γ́</foreign>, μετὰ <foreign xml:lang="grc">οἴνου</foreign> καὶ <foreign xml:lang="grc">ἑψήματος</foreign>.</p>
+<p><foreign xml:lang="grc">Εἰς</foreign> <foreign xml:lang="grc">περιπνευμονικούς</foreign>. <foreign xml:lang="grc">Κροκόμαγμα</foreign> εἰς <foreign xml:lang="grc">οἶνον</foreign>
+   <foreign xml:lang="grc">μέλαν<α/> ἐμβρέξας ἰσχυρῶς μετὰ <foreign xml:lang="grc">ϕοινίκων</foreign> <name type="plant" xml:lang="it">εὐσάρκων</name>
+   μεγάλων καὶ <foreign xml:lang="grc">στροβίλων</foreign> <foreign xml:lang="grc">μέλιτι</foreign> λειώσας <foreign xml:lang="grc">οἴνῳ</foreign> ἐγχυμάτιζε.</foreign>
+<p><foreign xml:lang="grc">’Εγχυματισμὸς</foreign> <foreign xml:lang="grc">χαλαστικός</foreign>. <name type="plant" xml:lang="it">Κυμίνου</name>,
+   <name type="plant" xml:lang="it">πετροσελίνου</name>, <name type="plant" xml:lang="it">σελίνου</name>, <name type="plant" xml:lang="it">κοριάνου</name> ἀνὰ γο <foreign xml:lang="grc">ά</foreign>,
+   <name type="plant" xml:lang="it">κράμβης</name> γο <foreign xml:lang="grc">β́</foreign>, <name type="plant" xml:lang="it">καρδαμώμου</name> ὁμοίως.</p>
+<p><foreign xml:lang="grc">῎Αλλο</foreign> <quote><foreign xml:lang="grc">πρὸς πάντα πόνον</foreign></quote>. <foreign xml:lang="grc">Οἴνου</foreign>,
+   <name type="plant" xml:lang="it">κόστου</name> ἀνὰ γο <foreign xml:lang="grc">ά</foreign>, <name type="plant" xml:lang="it">μαράθρου</name>, <name type="plant" xml:lang="it">πεπέρεος</name>
+   <foreign xml:lang="grc">λευκοῦ</foreign>, <name type="plant" xml:lang="it">σμύρνης</name> ἀνὰ γο <foreign xml:lang="grc">ά</foreign>.</p>
+<p><foreign xml:lang="grc">Σύνθεμα</foreign> <foreign xml:lang="grc">καθαρτικόν</foreign>. <name type="plant" xml:lang="it">Σμύρνης</name> γο <foreign xml:lang="grc">ί</foreign>,
+   <name type="plant" xml:lang="it">λιβάνου</name> <foreign xml:lang="grc">ἄρρενος</foreign>, <name type="plant" xml:lang="it">ῥοδίνου</name> ἀνὰ γο <foreign xml:lang="grc">ά</foreign>,
+   <foreign xml:lang="grc">ἰοῦ</foreign> <name type="animal" xml:lang="it">σκώληκος</name> γο <foreign xml:lang="grc">ά</foreign>, <name type="plant" xml:lang="it">μέλιτος</name> γο <foreign xml:lang="grc">δ́</foreign>.</p>
+   <p><foreign xml:lang="grc">Θεοῦ</foreign> <foreign xml:lang="grc">διδόντος</foreign> οὐδὲν ἰσχύει <foreign xml:lang="grc">ϕθόνος</foreign>,</p>
+   <p>καὶ μὴ <foreign xml:lang="grc">διδόντος</foreign> οὐδὲν ἰσχύει <foreign xml:lang="grc">πόνος</foreign>.</p>
+<p><foreign xml:lang="grc">Τιβέριος</foreign> <foreign xml:lang="grc">περὶ</foreign> <name type="animal" xml:lang="it">βοῶν</name>.</p>
+   <p><foreign xml:lang="grc">ά</foreign>. <name type="animal" xml:lang="it">βοῦς</name> ἐὰν νοσήσωσιν ἢ τοὺς <name type="animal" xml:lang="it">πόδας</name> ὑποτρίψωσιν. -</p>
+</p>
+<div type="section" n="20">
+<p><name type="animal" xml:lang="grc">βόας</name> μὴ ἀσθενεῖν.</p>
+  <p><name type="animal" xml:lang="grc">γ́</name>. <name type="animal" xml:lang="grc">βόας</name> ἐὰν λημμώσωσιν.</p>
+  <p><name type="animal" xml:lang="grc">γ́</name>. <name type="animal" xml:lang="grc">βοῦν</name>
+     νοσοῦντα ἰᾶσθαι.</p>
+  <p><name type="animal" xml:lang="grc">έ</name>. <name type="animal" xml:lang="grc">βοῦν</name>
+     αἱμορροοῦντα παῦσαι.</p>
+  <p><name type="animal" xml:lang="grc">ϛ́</name>.. <name type="animal" xml:lang="grc">βόας</name>
+     μὴ ψωριᾶν.</p>
+  <p><name type="animal" xml:lang="grc">ζ́</name>. <name type="animal" xml:lang="grc">βοὸς</name>
+     νέματα ὁρμάσαι καὶ κατεαγμένα.</p>
+  <p><name type="animal" xml:lang="grc">ή</name>. <name type="animal" xml:lang="grc">βοὸς</name>
+     ὄνυχας θεραπεῦσαι.</p>
+  <p><name type="animal" xml:lang="grc">θ́</name>. <name type="animal" xml:lang="grc">βόας</name>
+     ὀστέα μὴ καταπίνειν.</p>
+  <p><name type="animal" xml:lang="grc">ί</name>. <name type="animal" xml:lang="grc">βοῶν</name>
+     ζεῦγος μὴ κοπιᾶν.</p>
+  <p><name type="animal" xml:lang="grc">ιά</name>. ἐὰν θελήσῃς <foreign xml:lang="grc">ϕορβάδα</foreign>
+     ἢ <foreign xml:lang="grc">ὀνάδα</foreign> ἄρρενα συλλαβεῖν.</p>
+  <p><name type="animal" xml:lang="grc">ιβ́</name>. περὶ <name type="animal" xml:lang="grc">βοῶν</name>
+     κατακρα- νίας.</p>
+  <p><name type="animal" xml:lang="grc">ιγ́</name>. περὶ <foreign xml:lang="grc">ϕθειριάσεως</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">ιδ́</name>. περὶ <foreign xml:lang="grc">πυρέσσοντος</foreign>.</p>
+<p><name type="animal" xml:lang="grc">ιέ</name>. περὶ <foreign xml:lang="grc">κεϕαλαίας</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">ιϛ́</name>. περὶ <foreign xml:lang="grc">χολέρας</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">ιζ́</name>. περὶ <foreign xml:lang="grc">χωλείας</foreign>
+     <foreign xml:lang="grc">γονάτων</foreign> <name type="animal" xml:lang="grc">βοῶν</name>.</p>
+  <p><name type="animal" xml:lang="grc">ιή</name>. ἐὰν <name type="animal" xml:lang="grc">βοῦς</name>
+     ἐνκεϕάλησ<supplied reason="omitted">(</supplied>%4<supplied reason="omitted">)</supplied> γένηται.</p>
+  <p><name type="animal" xml:lang="grc">ιθ́</name>. <foreign xml:lang="grc">χολέρας</foreign>
+     ὑγρᾶς ἐν <name type="animal" xml:lang="grc">βουσίν</name>.</p>
+  <p><name type="animal" xml:lang="grc">κ́</name>. <foreign xml:lang="grc">τραύματος</foreign>
+     γενομένου ἐν τοῖς <foreign xml:lang="grc">κοίλοις</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">κά</name>. πρὸς <foreign xml:lang="grc">ἀτονίαν</foreign>
+     <name type="animal" xml:lang="grc">βοῶν</name>.</p>
+  <p><name type="animal" xml:lang="grc">κβ́</name>. πρὸς <foreign xml:lang="grc">θραύματα</foreign>
+     <supplied reason="omitted">(</supplied>%4<supplied reason="omitted">)</supplied> καὶ
+     <foreign xml:lang="grc">ἕλκη</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">κγ́</name>. <foreign xml:lang="grc">ῥέου</foreign>
+     δύναμις.</p>
+  <p><name type="animal" xml:lang="grc">κδ́</name>.. <foreign xml:lang="grc">σκευασία</foreign>
+     <foreign xml:lang="grc">ἁλῶν</foreign> ποιοῦσα πρὸς <foreign xml:lang="grc">κακοχυμίαν</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">κέ</name>. πρὸς <foreign xml:lang="grc">κῶλον</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">κϛ́</name>. <foreign xml:lang="grc">μα-</foreign>
+     σθοὺς ὀρθοὺς ποιῆσαι.</p>
+  <p><name type="animal" xml:lang="grc">κζ́</name>. <foreign xml:lang="grc">μαστοὺς</foreign>
+     <foreign xml:lang="grc">γυναικὸς</foreign> μὴ ἐπαίρε- σθαι εἰς τὸ παντελές.</p>
+  <p><name type="animal" xml:lang="grc">κή</name>. πρὸς <foreign xml:lang="grc">ξηρὰν</foreign>
+     <foreign xml:lang="grc">βῆχα</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">κθ́</name>. τὸ <foreign xml:lang="grc">πάμ-</foreign>
+     μυρον.</p>
+  <p><name type="animal" xml:lang="grc">λ́</name>. <foreign xml:lang="grc">ἀρτυσία</foreign>
+     τοῦ <foreign xml:lang="grc">ὕδατος</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">λά</name>. <foreign xml:lang="grc">ἀρτυσία</foreign>
+     τοῦ <foreign xml:lang="grc">οἰνανθίου</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">λβ́</name>. <foreign xml:lang="grc">σκευασία</foreign>
+     <foreign xml:lang="grc">κοραλλίων</foreign> <foreign xml:lang="grc">θυμίαμα</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">λγ́</name>. <foreign xml:lang="grc">ἀρτυσία</foreign>
+     <foreign xml:lang="grc">θυμιαμάτων</foreign> <foreign xml:lang="grc">πουκταρίων</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">λδ́</name>. ἄλλο.</p>
+  <p><name type="animal" xml:lang="grc">λέ</name>. <foreign xml:lang="grc">σκευασία</foreign>
+     <foreign xml:lang="grc">θυ- μιάματων</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">λϛ́</name>. <foreign xml:lang="grc">σκευασία</foreign>
+     <foreign xml:lang="grc">θυμιαμάτων</foreign> πρὸς <foreign xml:lang="grc">σπλῆνα</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">λζ́</name>. <foreign xml:lang="grc">ἐγχυματισμὸς</foreign>
+     <foreign xml:lang="grc">ἡμερινῆς</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">λή</name>. ἕτερος <foreign xml:lang="grc">ἐγχυματισμὸς</foreign>
+     πάν- τοτε.</p>
+  <p><name type="animal" xml:lang="grc">λθ́</name>. ἕτερος <foreign xml:lang="grc">ἐγχυματισμὸς</foreign>
+     <foreign xml:lang="grc">θερινός</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">μ́</name>. <foreign xml:lang="grc">διάγραϕον</foreign>
+     <foreign xml:lang="grc">πικροῦ</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">μά</name>. <foreign xml:lang="grc">ἐγχυματισμὸς</foreign>
+     πρὸς <foreign xml:lang="grc">πυρετὸν</foreign> <name type="animal" xml:lang="grc">ἵππων</name>
+     τὸ <foreign xml:lang="grc">πη- γάνατον</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">μβ́</name>. <foreign xml:lang="grc">κηρωτὴ</foreign>
+     πρὸς <foreign xml:lang="grc">ἐκβολὰς</foreign> <foreign xml:lang="grc">γονάτων</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">μγ́</name>. πρὸς <foreign xml:lang="grc">λεύκωμα</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">μδ́</name>. πρὸς <foreign xml:lang="grc">σύριγγα</foreign>.</p>
+  <p><name type="animal" xml:lang="grc">μέ</name>. <foreign xml:lang="grc">χαλαστικὸν</foreign>
+     πρὸς τοὺς νεκροπονοῦντας.</p>
+  <p><name type="animal" xml:lang="grc">μϛ́</name>. <foreign xml:lang="grc">σκευασία</foreign>
+     <foreign xml:lang="grc">ἐγχυματισμοῦ</foreign> <foreign xml:lang="grc">θερείας</foreign> καὶ</p>
+</div>
+<div type="section" n="21">
+<p><foreign xml:lang="grc">χειμῶνος.</foreign> -μζ́. πρὸς ὑποτριμμὸν <name type="animal" xml:lang="it">ζῴων</name> καὶ ἁπαλοποδίας.</p>
+  <p>-μή. ἄκοπον θερμαντικὸν ἁρμόζον νεϕριτικοῖς.</p>
+  <p>-μθ́. ἐπὶ <pb n="99"/>
+    <name type="bodyPart">κεϕαλῆς</name> ἐὰν γένηται.</p>
+  <p>-ν́. περὶ <name type="disease">χολέρας</name> ὑγρᾶς.</p>
+  <p>-νά. σκευα- σία χαλαστική.</p>
+  <p>-νβ́. σκευασία μαλάγματος.</p>
+  <p>-νγ́. σκευα- σία μεσοπικρά.</p>
+  <p>-νδ́. σκευασία ἀρωματική.</p>
+  <p>-νέ. σκευασία διὰ πικρίου.</p>
+  <p>-νϛ́. σκευασία ἐγχυματισμοῦ πυκνωτικοῦ.</p>
+  <p>-νζ́. ξηρία καυστικά.</p>
+  <p>-νή. κολλύριον δριμύ.</p>
+  <p>-νθ́. περὶ <name type="animal" xml:lang="it">οἴστρου</name> <name type="animal" xml:lang="it">βοῶν</name>.</p>
+  <p>-ξ́. περὶ χωλειάσεως <name type="animal" xml:lang="it">βοῶν</name> ἐν <name type="bodyPart">γόνατι</name>.</p>
+</div>
+    </div>
+  </div>
+</div></body></text></TEI>

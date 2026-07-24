@@ -1,0 +1,1140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="fr">Περὶ εὑρημάτων</title>
+        <title type="alt" xml:lang="fr">Sur les inventions</title>
+        <title type="alt" xml:lang="en">On Inventions</title>
+        <author>
+          <persName>STRATO LAMPSACENUS</persName>
+          <idno type="zoomathia">tlg1696</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-02">2026-07-02</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-02">2026-07-02</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">tlg1696</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr">francais</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>francais</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le fragment de Straton de Lampsaque :
+
+
+<div type="book" n="1">
+  <div type="chapter" n="1">
+    <div type="section" n="1">
+<p>Fragmenta</p>
+      <p>&amp;1<name type="animal" xml:lang="fr">Straton</name> <foreign xml:lang="grc">Φιλ.</foreign></p>
+    </div>
+  </div>
+</div>
+<div type="chapter" n="18">
+<p><quote><persName>Diogenes Laert.</persName> V 59:</quote> ϕέρεται δ' αὐτοῦ (sc. <persName>Στράτωνος</persName>) βιβλία</p>
+  <p>1. Περὶ βασιλείας τρία·</p>
+  <p>2. Περὶ δικαιοσύνης τρία·</p>
+  <p>3. Περὶ τἀγαθοῦ γ́·</p>
+  <p>4. Περὶ θεῶν γ́·</p>
+  <p>5. Περὶ ἀρχῶν τρία ἢ δύο·</p>
+  <p>6. Περὶ βίων·</p>
+  <p>7. Περὶ εὐδαιμονίας·</p>
+  <p>8. Περὶ βασιλείας·</p>
+  <p>9. <foreign xml:lang="grc">Περὶ</foreign> ϕιλοσοϕίας·</p>
+  <p>10. Περὶ ἀνδρείας·</p>
+  <p>11. Περὶ τοῦ κενοῦ·</p>
+  <p>12. Περὶ τοῦ οὐρανοῦ·</p>
+  <p>13. Περὶ τοῦ πνεύματος·</p>
+  <p>14. Περὶ ϕύσεως ἀνθρωπίνης·</p>
+  <p>15. Περὶ ζῳογονίας·</p>
+  <p>16. Περὶ μίξεως·</p>
+  <p>17. Περὶ ὕπνου·</p>
+  <p>18. Περὶ ἐνυπνίων·</p>
+  <p>19. Περὶ ὄψεως·</p>
+  <p>20. Περὶ αἰσθήσεως·</p>
+  <p>21. Περὶ ἡδονῆς·</p>
+  <p>22. Περὶ χρωμάτων·</p>
+  <p>23. Περὶ νόσων·</p>
+  <p>24. Περὶ κρίσεων·</p>
+  <p>25. Περὶ δυνάμεων·</p>
+  <p>26. Περὶ τῶν μεταλλικῶν·</p>
+  <p>27. Μηχανικόν·</p>
+  <p>28. Περὶ ἰλίγγου καὶ σκοτώσεων·</p>
+<p>29. Περὶ κούϕου καὶ βαρέος·</p>
+  <p>30. Περὶ ἐνθουσιασμοῦ·</p>
+  <p>31. Περὶ χρόνου·</p>
+  <p>32. Περὶ τροϕῆς καὶ αὐξήσεως·</p>
+  <p>33. Περὶ τῶν ἀπορουμένων <name type="animal" xml:lang="fr">ζῴων</name>·</p>
+  <p>34. Περὶ τῶν μυθολογουμένων <name type="animal" xml:lang="fr">ζῴων</name>·</p>
+  <p>35. Περὶ αἰτιῶν·</p>
+  <p>36. Λύσεις ἀπορουμένων·</p>
+  <p>37. Τόπων προοίμια·</p>
+  <p>38. Περὶ τοῦ συμβεβηκότος·</p>
+  <p>39. Περὶ τοῦ ὅρου·</p>
+  <p>40. Περὶ τοῦ μᾶλλον καὶ ἧττον·</p>
+  <p>41. Περὶ ἀδίκου·</p>
+  <p>42. Περὶ τοῦ προτέρου καὶ ὑστέρου·</p>
+  <p>43. Περὶ τοῦ προτέρου γένους·</p>
+  <p>44. Περὶ τοῦ ἰδίου·</p>
+  <p>45. Περὶ τοῦ μέλλοντος·</p>
+  <p>46. Εὑρημάτων ἔλεγχοι δύο·</p>
+  <p>47. ‘Υπομνήματα ἃ διστάζεται·</p>
+  <p>48. ’Επιστολαὶ ὧν ἡ ἀρχή: <persName>Στράτων</persName> ’Αρσινόῃ εὖ πράττειν.</p>
+  <p>αγ</p>
+  <p>μυκ</p>
+</div>
+
+<div type="chapter" n="19">
+<p><quote><persName>Plutarchus</persName> <foreign xml:lang="la">De Stoicorum repugnantiis</foreign> XXIV 1045 f. (St V F II fr. 126):</quote> ἐν τῷ τρίτῳ περὶ τῆς διαλεκτικῆς ὑπειπὼν (sc. <persName>Χρύσιππος</persName>) ὅτι:</p>
+  <p>Πλάτων ἐσπούδασε περὶ τὴν διαλεκτικὴν καὶ ’<foreign xml:lang="grc">Αριστοτέλης</foreign> καὶ <foreign xml:lang="grc">οἱ</foreign> ἀπὸ</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Straton de Lampsaque (extrait du Περὶ εὑρημάτων) :
+
+
+<div type="book" n="3">
+   <div type="chapter" n="36">
+<p>τούτων <persName>οἱ</persName> ἄχρι <persName>Πολέμωνος</persName> καὶ <persName>Στράτωνος</persName>, μάλιστα δὲ <persName>Σωκράτης</persName>· καὶ
+         ἐπιϕωνήσας ὅτι καὶ συνεξαμαρτάνειν ἄν τις ἐθελήσειε τούτοις τοσούτοις καὶ
+         τοιούτοις οὖσιν, ἐπιϕέρει κατὰ λέξιν: εἰ μὲν γὰρ ἐκ παρέργου περὶ αὐτῶν
+         εἰρήκεσαν, τάχ' ἄν τις διέσυρε τὸν τόπον τοῦτον· οὕτω δ' αὐτῶν ἐπιμελῶς
+         εἰρηκότων ὡς ἐν ταῖς μεγίσταις δυνάμεσι καὶ ἀναγκαιοτάταις αὐτῆς οὔσης,
+         οὐ πιθανὸν ἐπὶ τοσοῦτον διαμαρτάνειν αὐτοὺς ἐν τοῖς ὅλοις ὄντας οἵους
+         ὑπονοοῦμεν.</p>
+      <p>τί οὖν σύ, <foreign xml:lang="grc">ϕήσαι</foreign> τις ἄν, αὐτὸς ἀνδράσι τοιούτοις καὶ τοσούτοις
+         οὐδέποτε παύσῃ μαχόμενος οὐδ' ἐλέγχων, ὡς νομίζεις, ἐν τοῖς κυριωτάτοις
+         καὶ μεγίστοις διαμαρτάνοντας; οὐ γὰρ δήπου περὶ μὲν <foreign xml:lang="grc">διαλεκτικῆς</foreign> ἐσπου-
+         δασμένως ἔγραψαν, περὶ δὲ ἀρχῆς καὶ τέλους καὶ <name type="deity">θεῶν</name> καὶ <foreign xml:lang="grc">δικαιοσύνης</foreign> ἐκ
+         παρέργου καὶ παίζοντες, ἐν οἷς τυϕλὸν αὐτῶν ἀποκαλεῖς τὸν λόγον καὶ
+         μαχόμενον αὑτῷ καὶ μυρίας ἄλλας ἁμαρτίας ἔχοντα.</p>
+<quote>
+         <p><persName>Simplicius</persName> In <foreign xml:lang="la">Aristotelis Categorias</foreign> comment. p. 423, 1ff.</p>
+         <p><persName>Kalbfleisch</persName> (cf. <foreign xml:lang="la">Scholia in Aristotelis Categorias</foreign> fr. 89 a 37 <persName>Brandis</persName>):</p>
+         <p>καὶ <persName>Στράτων</persName> δὲ ὁ <placeName>Λαμψακηνὸς</placeName> ἐν τῷ περὶ τοῦ <foreign xml:lang="grc">προτέρου</foreign> καὶ <foreign xml:lang="grc">ὑστέρου</foreign> <foreign xml:lang="grc">μονο-</foreign>
+         βιβλίῳ πολλοὺς ἀπηριθμήσατο τρόπους, οὓς νομίζω δυνατὸν εἶναι ὑπὸ τοὺς
+         πέντε τοὺς ἐνταῦθα λεγομένους ἀναγαγεῖν οἷον μερισμὸν ἐκείνων ὄντας. ὑπὸ
+         μὲν γὰρ τὸ τῷ <foreign xml:lang="grc">χρόνῳ</foreign> πρότερον ταχθήσεται τὸ ἀτελὲς τοῦ τελείου λεγόμενον,
+         διότι ἔσχατον ἐν πᾶσι τὸ τέλος· τὸ δὲ αὐτὸ καὶ ὑπὸ τὴν τάξιν. ἔτι δὲ ὑπ' ἄμϕω
+         ταῦτα καὶ ὑπὸ <foreign xml:lang="grc">τὸ</foreign> τῇ <foreign xml:lang="grc">ἀξίᾳ</foreign> καὶ δυνάμει καὶ τῇ <foreign xml:lang="grc">ϕύσει</foreign> πρότερόν ἐστιν, οὗ</p>
+      </quote>
+   </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en encodant les entités nommées (bien que ce texte ne contienne pas de noms d'animaux, de plantes ou de lieux explicites) :
+
+
+<div type="book" n="4">
+<p>
+    <foreign xml:lang="grc">ἐπιστήμη πρότερον</foreign>, οἷον μονάδος ἢ δυάδος καὶ πλήθους ἢ ἀρτίου καὶ περιττοῦ.
+  </p>
+  <p>
+    <foreign xml:lang="grc">ταῦτα γὰρ οὐδὲ ἀντιστρέϕει</foreign> κατὰ τὴν τοῦ <foreign xml:lang="grc">εἶναι</foreign> ἀκολούθησιν ὥσπερ οὐδὲ ἡ
+    <foreign xml:lang="grc">ἐπιστήμη</foreign> αὐτῶν. πρῶτον δὲ καὶ τῷ <foreign xml:lang="grc">χρόνῳ</foreign> καὶ τῇ <foreign xml:lang="grc">ἀξίᾳ</foreign>, ὧν τὸ ἔργον πρότερον,
+    οἷον τὸ <foreign xml:lang="grc">ἀγαθὸν</foreign> τοῦ <foreign xml:lang="grc">κακοῦ</foreign>. τὸ μὲν γὰρ <foreign xml:lang="grc">σωτηρίας</foreign>, τὸ δὲ <foreign xml:lang="grc">ϕθορᾶς</foreign> αἴτιον,
+    πρῶτον δὲ τὸ <foreign xml:lang="grc">εἶναι</foreign> τοῦ <foreign xml:lang="grc">ϕθείρεσθαι</foreign> καὶ <foreign xml:lang="grc">χρόνῳ</foreign> καὶ <foreign xml:lang="grc">ἀξίᾳ</foreign>. πρῶτον δὲ τῇ <foreign xml:lang="grc">ϕύσει</foreign>
+    ὡς μὴ <foreign xml:lang="grc">ἀντιστρέϕον</foreign> κατὰ τὴν τοῦ <foreign xml:lang="grc">εἶναι</foreign> ἀκολούθησιν, ὅπερ δυνατὸν <foreign xml:lang="grc">εἶναι</foreign>
+    <foreign xml:lang="grc">θατέρου</foreign> μὴ ὄντος, ὡς <foreign xml:lang="grc">τόπος</foreign> <foreign xml:lang="grc">σώματος</foreign> καὶ <foreign xml:lang="grc">σῶμα</foreign> <foreign xml:lang="grc">χρώματος</foreign>, ὁμοίως δὲ καὶ
+    εἰ <foreign xml:lang="grc">θάτερον</foreign> ἐν <foreign xml:lang="grc">θατέρῳ</foreign> <foreign xml:lang="grc">πέϕυκε</foreign> <foreign xml:lang="grc">γίνεσθαι</foreign>, οἷον ἡ <foreign xml:lang="grc">οὐσία</foreign> <foreign xml:lang="grc">ποιοῦ</foreign> καὶ <foreign xml:lang="grc">ποσοῦ</foreign>. οὕτως
+    δὲ καὶ τὸ κατὰ <foreign xml:lang="grc">ϕύσιν</foreign> πρότερον τοῦ παρὰ <foreign xml:lang="grc">ϕύσιν</foreign> καὶ ὁ <foreign xml:lang="grc">νόμος</foreign> τῆς <foreign xml:lang="grc">παρανομίας</foreign>
+    καὶ ἡ <foreign xml:lang="grc">ἕξις</foreign> τῆς <foreign xml:lang="grc">στερήσεως</foreign>. ὑπὸ δὲ τὸ τῇ <foreign xml:lang="grc">ἀξίᾳ</foreign> πρότερον καὶ τὸ δυνάμει τάττοιτο
+    ἂν τὰ τῷ <foreign xml:lang="grc">τιμιωτέρῳ</foreign> <foreign xml:lang="grc">συγγενέστερα</foreign>, ὡς τὸ <foreign xml:lang="grc">ποσὸν</foreign> τοῦ <foreign xml:lang="grc">ποιοῦ</foreign> <foreign xml:lang="grc">προτάττοιτο</foreign> ἄν,
+  </p>
+  <p>
+    διότι τὸ μὲν <foreign xml:lang="grc">ποσὸν</foreign> μέρος τῆς <foreign xml:lang="grc">οὐσίας</foreign>, τὸ δὲ <foreign xml:lang="grc">ποιὸν</foreign> οὔ. καὶ εἰ τὸ μὲν <foreign xml:lang="grc">μετέχει</foreign>
+    <foreign xml:lang="grc">γενέσεως</foreign> καὶ <foreign xml:lang="grc">ϕθορᾶς</foreign>, ὡς ὁ <foreign xml:lang="grc">χρόνος</foreign>, τὸ δὲ οὔ, ὡς ὁ <foreign xml:lang="grc">τόπος</foreign>, καὶ τὸ μὲν <foreign xml:lang="grc">χωριστόν</foreign>,
+    τὸ δὲ οὔ· ἄνευ μὲν γὰρ <foreign xml:lang="grc">αἰσθήσεως</foreign> <foreign xml:lang="grc">εἶναι</foreign> τὴν <foreign xml:lang="grc">ψυχὴν</foreign> <foreign xml:lang="grc">ἀδύνατον</foreign>, ἄνευ δὲ <foreign xml:lang="grc">ἐπι-
+    θυμίας</foreign> <foreign xml:lang="grc">εἶναι</foreign> δυνατόν. καὶ τὸ <foreign xml:lang="grc">ἀμερὲς</foreign> τοῦ <foreign xml:lang="grc">μεριστοῦ</foreign>· <foreign xml:lang="grc">ἀρχῇ</foreign> γὰρ <foreign xml:lang="grc">ὁμοιότερον</foreign>,
+    ὥστε καὶ <foreign xml:lang="grc">κύκλου</foreign> τὸ <foreign xml:lang="grc">κέντρον</foreign>. καὶ τὸ <foreign xml:lang="grc">μᾶλλον</foreign> τοῦ <foreign xml:lang="grc">προτέρου</foreign> <foreign xml:lang="grc">μετέχον</foreign>, ὡς τὸ
+    <foreign xml:lang="grc">ἀίδιον</foreign> μὲν τοῦ <foreign xml:lang="grc">ἀγαθοῦ</foreign>, τὸ δὲ <foreign xml:lang="grc">ϕθαρτὸν</foreign> δὲ τοῦ <foreign xml:lang="grc">κακοῦ</foreign> καὶ τὸ <foreign xml:lang="grc">ἄρτιον</foreign> <foreign xml:lang="grc">δυάδος</foreign>, τὸ
+    δὲ <foreign xml:lang="grc">περιττὸν</foreign> <foreign xml:lang="grc">τριάδος</foreign>. καὶ εἰ τὸ μὲν <foreign xml:lang="grc">μένει</foreign> <foreign xml:lang="grc">χρόνον</foreign> τινά, τὸ δὲ οὐ <foreign xml:lang="grc">μένει</foreign>, οἷον
+    <foreign xml:lang="grc">σῶμα</foreign> <foreign xml:lang="grc">κινήσεως</foreign> καὶ <foreign xml:lang="grc">χρόνου</foreign>. ὑπὸ δὲ τὸ τῇ <foreign xml:lang="grc">τάξει</foreign> πρότερον <foreign xml:lang="grc">εἴη</foreign> ἂν τὸ τοῦ <foreign xml:lang="grc">μεταξὺ</foreign>
+  </p>
+</div>
+Voici l'encodage TEI P5 du texte demandé, conforme aux règles strictes du projet Zoomathia :
+
+
+<div type="chapter" n="5">
+<p>
+      πρότερον, ὕστερον δὲ τὸ τοῦ μεταξὺ ὕστερον. ὑπὸ δὲ <foreign xml:lang="grc">τὸ ἐν</foreign> τοῖς ἀντιστρέ-
+      ϕουσιν ὡς αἰτιῶδες πρότερον ἂν εἴη τὸ στοιχεῖον· καὶ γὰρ αὖ καὶ τὸ μέρος
+   </p>
+   <p>
+      τοῦ ὅλου, ὡς τὸ πεπερασμένον τοῦ ἀπείρου, καὶ εἰ θάτερον ἐκ θατέρου, οἷον
+      <name type="animal" xml:lang="fr">χαλκὸς</name> τοῦ <foreign xml:lang="grc">ἀνδριάντος</foreign>· ὑλικὸν γὰρ καὶ οὗτος αἴτιον.
+   </p>
+   <p>
+      ὅτι δὲ καὶ <foreign xml:lang="grc">τὸ</foreign> αὐτὸ
+      κατ' ἄλλο καὶ ἄλλο καὶ πρότερον καὶ ὕστερον εἶναι δυνατόν, καὶ αὐτὸς ὁ
+      <persName>Στράτων</persName> ἐνεδείξατο, τὸν <name type="animal" xml:lang="fr">χρόνον</name> καὶ τὸν <name type="animal" xml:lang="fr">τόπον</name> πρότερα καὶ ὕστερα ἀλλήλων
+      δεικνύς.
+   </p>
+<p>
+      <quote>
+         <foreign xml:lang="grc">Scholia in Aristotelis Categorias p. 89 a 37 Brandis: διὰ τοῦτο
+         οὖν καὶ τοῦ προτέρου πολλαχῶς λεγομένου τὴν διαίρεσιν ποιεῖ (sc. ’Αριστοτέλης)
+         οὐ πάντας τοὺς τρόπους παραδιδούς-καὶ ἄλλους γοῦν οὐκ ὀλίγους προστίθησι
+         καὶ αὐτὸς ἐν ἄλλοις καὶ ὁ Στράτων ἐν τῇ περὶ προτέρου καὶ ὑστέρου μονο-
+         βίβλῳ-, ἀρκοῦντας δὲ πρὸς εἰσαγωγὴν καὶ τοὺς ἐκτεθέντας οἰόμενος.</foreign>
+      </quote>
+   </p>
+<p>
+      <quote>
+         <foreign xml:lang="grc">Simplicius In Aristotelis Categorias comment. p. 418, 24
+         Kalbfleisch: διὰ τοῦτο οὖν καὶ τοῦ προτέρου πολλαχῶς λεγομένου τὴν
+         διαίρεσιν ποιεῖται (sc. ’Αριστοτέλης), οὐ πάντας τοὺς τρόπους παραδιδούς
+         -καὶ ἄλλους γοῦν οὐκ ὀλίγους προστίθησιν καὶ αὐτὸς ἐν ἄλλοις καὶ ὁ
+         Στράτων ἐν τῷ περὶ τοῦ προτέρου καὶ ὑστέρου μονοβιβλίῳ-, ἀρκοῦντας δὲ
+         πρὸς εἰσαγωγὴν καὶ τοὺς ἐκτεθέντας οἰόμενος.</foreign>
+      </quote>
+   </p>
+<p>
+      <quote>
+         <foreign xml:lang="grc">Alexander Aphrod. In Aristotelis Topica comment.
+         p. 339, 30 Wallies: ὅταν οὖν μὴ ὁμοίως ἔχῃ τὰ ἀντιστρέϕοντα,
+         ἀναιρεθήσεται τὸ τεθὲν ὡς γένος. ἂν γάρ τις θῇ τοῦ μείζονος γένος</foreign>
+      </quote>
+   </p>
+</div>
+Voici l'encodage TEI P5 du texte demandé, conforme aux règles strictes du projet Zoomathia :
+
+
+<div type="book" n="6">
+  <div type="chapter" n="36">
+    <p>
+      <foreign xml:lang="grc">τὸ ὑπερέχον</foreign>, ἐπεὶ τὰ ἀντιστρέϕοντα αὐτοῖς οὐ πρὸς ὁμοίας λέγεται
+      πτώσεις-τὸ μὲν γὰρ ἔλαττον τινός, μείζονος γάρ, τὸ δὲ ὑπερεχόμενον
+      τινί, ὑπερέχοντι γάρ-, ἀναιροῖτ' ἂν τὸ εἶναι τὸ ὑπερέχον γένος τοῦ
+      μείζονος. ὁ μέντοι Στράτων προστίθησί τινα τῷ τόπῳ τούτῳ καὶ
+      ἄλλον· εἰ αὐτὰ μὲν πρὸς ὁμοίας πτώσεις λέγοιτο, τό τε ἀποδοθὲν
+      γένος καὶ τὸ εἶδος, τῶν δὲ πρὸς ἃ ταῦτα λέγεται τὸ μὲν ἀντιστρέϕοι
+τὸ δὲ μή, οὔ ϕησι τὸ τεθὲν ἔσεσθαι γένος. καὶ παραδείγματι χρῆται
+      τοῦ τόπου τῇ τε ἐλλείψει καὶ τῇ ἐνδείᾳ. εἰ γάρ τις γένος τῆς ἐλλείψεως
+      τὴν ἔνδειαν λέγει, ἐπεὶ ἑκάτερον μὲν αὐτῶν πρὸς τὴν αὐτὴν ἀποδίδοται
+      πτῶσιν-ἥ τε γὰρ ἔλλειψις τινός, τῆς ὑπεροχῆς γάρ, καὶ ἡ ἔνδεια
+      ὁμοίως τινός, τοῦ γὰρ ἱκανοῦ-, οὐκέτι δὲ ἀμϕότερα, πρὸς ἃ ἑκάτερον
+      αὐτῶν λέγεται, ἀντιστρέϕει-ἡ μὲν γὰρ ὑπεροχὴ καὶ αὐτὴ τινός,
+      ἐλλείψεως γάρ· τὸ δὲ ἱκανὸν οὐκέτι ἀντιστρέϕει· οὐ γὰρ λέγεται τὸ
+      ἱκανὸν ἐνδείας ἱκανόν-ὥστε οὐκ ἂν εἴη ἡ ἔνδεια τῆς ἐλλείψεως
+γένος. ἀλλ' οὗτος μὲν καινοτομῆσαι βουληθεὶς ὀλίγον ἀναιρεῖ μεῖζόν τι.
+    </p>
+    <p>
+      τὸ γὰρ πάντα <foreign xml:lang="grc">τὰ</foreign> πρός τι πρὸς ἀντιστρέϕοντα λέγεσθαι κινεῖ.
+</p>
+    <quote>
+      <p>
+        Plutarchus <foreign xml:lang="la">Adv. Coloten</foreign> XIV 1115 b:
+        καὶ μὴν τῶν ἄλλων
+        Περιπατητικῶν ὁ κορυϕαιότατος Στράτων οὔτ' ’Αριστοτέλει κατὰ πολλὰ
+        συμϕέρεται καὶ Πλάτωνι τὰς ἐναντίας ἔσχηκε δόξας περὶ κινήσεως περὶ νοῦ
+        καὶ περὶ ψυχῆς καὶ περὶ γενέσεως· καὶ τελευτῶν τὸν κόσμον αὐτὸν οὐ ζῷον
+        εἶναί ϕησι, τὸ δὲ κατὰ ϕύσιν ἕπεσθαι τῷ κατὰ τύχην· ἀρχὴν γὰρ ἐνδιδόναι
+      </p>
+    </quote>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Stratōn de Lampsaque (Peri heurematōn, fragment 7/36) :
+
+
+<div type="section" n="7">
+   <p><foreign xml:lang="grc">τὸ αὐτόματον</foreign>, εἶθ' οὕτω περαίνεσθαι τῶν ϕυσικῶν παθῶν ἕκαστον.</p>
+<p><persName>Maximus Tyrius</persName> XI 5 e: <foreign xml:lang="grc">ἴσασιν γὰρ οὐχ ἑκόντες</foreign> καὶ λέγουσιν
+   <foreign xml:lang="grc">ἄκοντες</foreign> (sc. τὸ <name type="deity">θεῖον</name>)· κἂν ἀϕέλῃς αὐτοῦ τὸ ἀγαθὸν ὡς <persName>Λεύκιππος</persName>, κἂν
+   προσθῇς τὸ ὁμοπαθὲς ὡς <persName>Δημόκριτος</persName>, κἂν ὑπαλλάξῃς τὴν ϕύσιν ὡς <persName>Στράτων</persName>,
+   κἂν δῷς τὴν ἡδονὴν ὡς <persName>’Επίκουρος</persName> κτλ.</p>
+<p><persName>Proclus</persName> <quote>In Platonis Timaeum comment.</quote> IV 242 f.:
+   <foreign xml:lang="grc">ὥστε οὐχὶ τὸ ὄν ἐστιν</foreign>, ὥς <foreign xml:lang="grc">ϕησι</foreign> <persName>Στράτων</persName> <foreign xml:lang="grc">ὁ ϕυσικός</foreign>, τὸ τῆς διαμονῆς
+   αἴτιον, ἀλλ' ὁ <foreign xml:lang="grc">αἰών</foreign>, καὶ διαμονῆς οὐ γιγνομένης ἀεί, ἀλλ' ἐν ἑνὶ οὔσης
+   <foreign xml:lang="grc">ἀνεξαλλάκτως</foreign> ὡς εἶπεν ὁ <persName>Τίμαιος</persName>.</p>
+<p><persName>Proclus</persName> <quote>In Platonis Timaeum comment.</quote> IV 243 b: <foreign xml:lang="grc">ὁ δὲ αἰών</foreign>
+   τῆς ἐν τῷ <foreign xml:lang="grc">εἶναι</foreign> διαμονῆς (sc. αἴτιος). καὶ τοῦτο ἔδει μᾶλλον τὸν <persName>Στράτωνα</persName>
+   λέγειν, ἀλλ' οὐχὶ τὴν διαμονὴν ὁρίζεσθαι τῶν ὄντων τὸ ὄν, ὡς ἐκεῖνος ἐν τῷ
+   περὶ τοῦ <foreign xml:lang="grc">ὄντος</foreign> βιβλίῳ γέγραϕε, τὸ ἴδιον τοῦ <foreign xml:lang="grc">αἰῶνος</foreign> μετάγων ἐπὶ τὸ ὄν.</p>
+.1"/&gt;
+   <p><persName>Damascius</persName> <quote>Dubitationes et solutiones</quote> 62 I p. 135
+   <persName>Ruelle</persName>: <foreign xml:lang="grc">τοιαύτη</foreign> μὲν γὰρ <foreign xml:lang="grc">ἡ δύναμίς</foreign> ἐστιν εἴσω μένουσα, οἵα προελθοῦσα
+   ἤδη πρὸς τὸ ἐκτὸς <foreign xml:lang="grc">ἡ ἐνέργεια</foreign>· <foreign xml:lang="grc">τοιαύτη</foreign> δὲ <foreign xml:lang="grc">ἡ οὐσία</foreign> ἑστῶσα τὸ πάμπαν
+   οἵα παρασκευαζομένη πρὸς κίνησιν <foreign xml:lang="grc">ἡ δύναμις</foreign>. εἰς ὅ μοι δοκεῖ καὶ ὁ
+   <persName>Στράτων</persName> ἀποβλέψας τὸ μὲν μένειν τὸ ὂν ἀποϕήνασθαι, ἐπειδὴ τοῦ
+   <foreign xml:lang="grc">ὄντος</foreign> ἐκτένειαν <foreign xml:lang="grc">ἑώρα</foreign> τὴν <foreign xml:lang="grc">δύναμιν</foreign> οὖσαν. ἔδει δὲ συνιδεῖν ὅτι καὶ εἰ
+   <foreign xml:lang="grc">σύνεστι</foreign> τῷ <foreign xml:lang="grc">εἶναι</foreign> τὸ μένειν, ὅμως οὐκ ἔστι ταὐτόν, ὡς αἱ ἔννοιαι
+   <foreign xml:lang="grc">σαϕῶς διακρίνουσιν</foreign>, ἄλλο τὸ <foreign xml:lang="grc">εἶναι</foreign> γνωρίζουσαι καὶ ἄλλο τὸ μένειν.
+   δεῖ γάρ τι καὶ <foreign xml:lang="grc">εἶναι</foreign> πρότερον, εἴτα μένειν ἢ κινεῖσθαι. καὶ τὸ μὲν</p>
+.10"/&gt;
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles Zoomathia pour le texte de Stratôn de Lampsaque (extraits de Περὶ εὑρημάτων) :
+
+
+<div type="chapter" n="8">
+<p><foreign xml:lang="grc">μένειν ἀντίκειται τῷ κινεῖσθαι·</foreign> τὸ γὰρ μένειν καὶ ἵστασθαι ταὐτόν,
+  τὸ δὲ εἶναι ἢ οὐδὲν ἔχει ἀντίθετον ἢ τὸ μὴ εἶναι, ὡς πολλαχοῦ ὁ
+  <persName>Πλάτων</persName> ἀντιτίθησιν· ὥστε εἴ τις καὶ ὑπόστασιν ὁρίζοιτο εἶναι τὸ ὄν,
+  εἰς ταὐτὸν ἀποϕέρεται τῷ <persName>Στράτωνι</persName> νόημα· τὸ γὰρ ὑϕεστάναι παρώνυ-
+  μόν τι τῆς στάσεως.</p>
+<p><quote><foreign xml:lang="grc">41,2</foreign>.1
+  <persName>Damascius</persName> <foreign xml:lang="la">Dubitationes et solutiones</foreign> 63 I p. 138
+  <persName>Ruelle</persName>: <foreign xml:lang="grc">οὐδὲν γάρ ἐστιν ὃ ἀντίκειται τῇ ἐνεργείᾳ καὶ τῇ δυνάμει πλὴν
+  τῆς οὐσίας</foreign>, κατὰ δή τινα τρόπου· ἡ οὐσία ἄρα στάσις ἔσται, τοῦτό
+  που τὸ τοῦ <persName>Στράτωνος</persName>, ὅπερ οὐκ ἐδόκει εὖ ἔχειν.</quote></p>
+<p><quote><foreign xml:lang="la">42.1</foreign>
+  <persName>Galenus</persName> <foreign xml:lang="la">Historia philos.</foreign> 18 (<foreign xml:lang="la">Diels Doxographi Graeci</foreign> p. 611):
+  <foreign xml:lang="grc">Στράτων δὲ ὁ ϕυσικὸς προσωνομασμένος τὰς ποιότητας</foreign> (sc. ἀρχὰς ὑποτίθεται
+  τῶν ὅλων).</quote></p>
+<p><quote><foreign xml:lang="la">43.1</foreign>
+  <persName>Sextus Empiricus</persName> <foreign xml:lang="la">Pyrrh. Hypotyp.</foreign> III 33 (<foreign xml:lang="la">Περὶ ὑλικῶν ἀρχῶν</foreign>):
+  <foreign xml:lang="grc">Στράτων δὲ ὁ ϕυσικὸς τὰς ποιότητας</foreign> (sc. ἀρχὰς εἶναι εἶπεν).</quote></p>
+<p><quote><foreign xml:lang="la">45.1</foreign>
+  <persName>Stobaeus</persName> <foreign xml:lang="la">Ecl.</foreign> I 10, 12 (<foreign xml:lang="la">Aetius</foreign> I 3, 24 p. 288 <foreign xml:lang="la">Diels</foreign>):
+  <persName>Stobaeus</persName> <foreign xml:lang="grc">στοιχεῖα</foreign> <name type="plant" xml:lang="fr">thermὸν</name> καὶ <name type="plant" xml:lang="fr">ψυχρόν</name>.</quote></p>
+<p><quote><foreign xml:lang="la">48.1</foreign>
+  <persName>Epiphanius</persName> <foreign xml:lang="la">Adv. haereses</foreign> III 33 (<foreign xml:lang="la">Diels Doxographi Graeci</foreign>
+  p. 592): <persName>Στράτων</persName> <foreign xml:lang="grc">ἐκ Λαμψάκου</foreign> <foreign xml:lang="grc">τὴν θερμὴν οὐσίαν</foreign> ἔλεγεν <name type="animal" xml:lang="fr">αἰτίαν</name> πάντων
+  ὑπάρχειν. <foreign xml:lang="grc">ἄπειρα</foreign> δὲ ἔλεγεν εἶναι τὰ μέρη τοῦ <name type="animal" xml:lang="fr">κόσμου</name> καὶ πᾶν <name type="animal" xml:lang="fr">ζῷον</name> ἔλεγε
+  <name type="animal" xml:lang="fr">νοῦ</name> δεκτικὸν εἶναι.</quote></p>
+<p><quote><foreign xml:lang="la">49.1</foreign>
+  <persName>Plutarchus</persName> <foreign xml:lang="la">De primo frigido</foreign> IX 948 c: <foreign xml:lang="grc">οὐ μὴν ἀλλὰ καὶ τὰ
+  αἰσθητὰ ταυτὶ προανακινῆσαι βέλτιόν ἐστιν</foreign>, ἐν οἷς <persName>’Εμπεδοκλῆς</persName> τε καὶ <persName>Στρά-
+  των</persName> καὶ οἱ <persName>Στωικοὶ</persName> τὰς οὐσίας τίθενται τῶν δυνάμεων, οἱ μὲν <persName>Στωικοὶ</persName> τῷ
+  <name type="animal" xml:lang="fr">ἀέρι</name> τὸ πρώτως <name type="plant" xml:lang="fr">ψυχρὸν</name> ἀποδιδόντες, <persName>’Εμπεδοκλῆς</persName> δὲ καὶ <persName>Στράτων</persName> τῷ <name type="animal" xml:lang="fr">ὕδατι</name>·</quote></p>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour ce fragment de Straton de Lampsaque (Strato Lampsacenus) :
+
+
+<div type="section" n="9">
+  <p><foreign xml:lang="grc">τὴν δὲ γῆν ἴσως ἂν ἕτερος ϕανείη ψυχρότητος αἰτίαν ὑποτιθέμενος.</foreign></p>
+<p><quote><persName>Simplicius</persName> In <rs type="work">Aristotelis De caelo</rs> comment. p. 269, 4 <persName>Heiberg</persName>:</quote></p>
+  <p><foreign xml:lang="grc">ἰστέον δέ, ὅτι οὐ Στράτων μόνος οὐδὲ ’Επίκουρος πάντα ἔλεγον εἶναι τὰ σώματα βαρέα καὶ ϕύσει μὲν ἐπὶ τὸ κάτω ϕερόμενα, παρὰ ϕύσιν δὲ ἐπὶ τὸ ἄνω, ἀλλὰ καὶ ὁ Πλάτων κτλ.</foreign></p>
+<p><quote><persName>Stobaeus</persName> <rs type="work">Ecl.</rs> I 14, 1 h (<rs type="work">Aetius</rs> I 12, 7 p. 311 <persName>Diels</persName>): <foreign xml:lang="grc">Στράτων μὲν προσεῖναι τοῖς σώμασι ϕυσικὸν βάρος, τὰ δὲ κουϕότερα τοῖς βαρυτέροις ἐπιπολάζειν, οἷον ἐκπυρηνιζόμενα.</foreign></quote></p>
+<p><quote><persName>Simplicius</persName> In <rs type="work">Aristotelis De caelo</rs> comment. p. 267, 29 <persName>Hei-berg</persName>: <foreign xml:lang="grc">ὅτι δὲ οὐδὲ τῇ ὑπ' ἀλλήλων ἐκθλίψει βιαζόμενα κινεῖται (sc. τὰ στοιχεῖα), δείκνυσιν ἐϕεξῆς (sc. ’Αριστοτέλης). ταύτης δὲ γεγόνασι τῆς δόξης μετ' αὐτὸν Στράτων τε καὶ ’Επίκουρος πᾶν σῶμα βαρύτητα ἔχειν νομίζοντες καὶ πρὸς τὸ μέσον ϕέρεσθαι, τῷ δὲ τὰ βαρύτερα ὑϕιζάνειν τὰ ἧττον βαρέα ὑπ' ἐκείνων ἐκθλίβεσθαι βίᾳ πρὸς τὸ ἄνω, ὥστε, εἴ τις ὑϕείλε τὴν γῆν, ἐλθεῖν ἂν τὸ ὕδωρ εἰς τὸ κέντρον, καὶ εἴ τις τὸ ὕδωρ, τὸν ἀέρα, καὶ εἰ τὸν ἀέρα, τὸ πῦρ.</foreign></quote></p>
+<p><quote><persName>Theodoretus</persName> <rs type="work">Graecarum affectionum curatio</rs> IV 14: <foreign xml:lang="grc">ὁ δὲ Στράτων ἔμπαλιν ἔξωθεν μὲν (sc. τοῦ παντὸς) μηδὲν εἶναι κενόν, ἔνδοθεν δὲ δυνατὸν εἶναι.</foreign></quote></p>
+<p><quote><persName>Stobaeus</persName> <rs type="work">Ecl.</rs> I 18, 1 b (<rs type="work">Aetius</rs> I 18, 4 p. 316 und I 19, 3 p. 317 <persName>Diels</persName>): <foreign xml:lang="grc">Στράτων ἐξωτέρω μὲν ἔϕη τοῦ κόσμου μὴ εἶναι κενόν, ἐνδοτέρω δὲ δυνατὸν γενέσθαι. τόπον δὲ εἶναι τὸ μεταξὺ διάστημα τοῦ περιέχοντος καὶ τοῦ περιεχομένου.</foreign></quote></p>
+</div>
+Voici l'encodage TEI P5 strict du texte demandé, conforme aux règles Zoomathia et aux spécifications fournies :
+
+
+<div type="chapter" n="10">
+<p>
+    <quote>
+      <persName>Hero Alexandrinus</persName>
+      <foreign xml:lang="grc">Πνευματικά</foreign> I p. 6, 11 Schmidt (p. 146 ed. Paris.)
+    </quote>
+    οὐχ ὑποληπτέον οὖν ἐν τοῖς οὖσι κενοῦ τινα ϕύσιν ἀθρόαν αὐτὴν καθ' ἑαυτὴν ὑπάρχειν, παρεσπαρμένην δὲ κατὰ μικρὰ μόρια τῷ τε <name type="animal" xml:lang="fr">ἀέρι</name> καὶ τῷ ὑγρῷ καὶ τοῖς ἄλλοις σώμασιν, εἰ μὴ ἄρα τὸν <foreign xml:lang="grc">ἀδάμαντα</foreign> μόνον μὴ κοινωνεῖν εἴποι τις τῇ τοῦ κενοῦ ϕύσει διὰ τὸ μήτε πύρωσιν ἐπιδέχεσθαι μήτε διακόπτεσθαι, τυπτόμενον δὲ εἰς τοὺς ἄκμονας καὶ τὰς σϕύρας ὅλον ἐνδύεσθαι.
+  </p>
+  <p>
+    τοῦτο δὲ αὐτῷ παρακολουθεῖ διὰ τὴν συνεχῆ πυκνότητα· τὰ γὰρ τοῦ <name type="animal" xml:lang="fr">πυρὸς</name> σώματα παχυμερέστερα ὄντα τῶν ἐν τῷ λίθῳ κενῶν οὐ παρεισέρχεται, ἀλλὰ μόνον ἐπιψαύει τῆς ἐκτὸς ἐπιϕανείας· διόπερ μὴ προκατεισδύνοντα ἐντὸς καθάπερ ἐπὶ τῶν ἄλλων σωμάτων οὐδὲ δέχεται θερμότητα.
+  </p>
+  <p>
+    τὰ δὲ τοῦ <name type="animal" xml:lang="fr">ἀέρος</name> σώματα συνερείδει μὲν πρὸς ἄλληλα, οὐ κατὰ πᾶν δὲ μέρος ἐϕαρμόζει, ἀλλ' ἔχει τινὰ διαστήματα μεταξὺ κενὰ καθάπερ ἡ ἐν τοῖς <name type="animal" xml:lang="fr">αἰγιαλοῖς</name> <name type="plant" xml:lang="fr">ψάμμος</name>. τὰ μὲν οὖν τῆς <name type="plant" xml:lang="fr">ψάμμου</name> μόρια τοῖς τοῦ <name type="animal" xml:lang="fr">ἀέρος</name> σώμασιν ἀποικειοῦσθαι ὑποληπτέον, τὸν δὲ <name type="animal" xml:lang="fr">ἀέρα</name> τὸν μεταξὺ τῶν τῆς <name type="plant" xml:lang="fr">ψάμμου</name> μορίων τοῖς μεταξὺ τοῦ <name type="animal" xml:lang="fr">ἀέρος</name> κενοῖς· διὸ καὶ πιλεῖσθαι τὸν <name type="animal" xml:lang="fr">ἀέρα</name> συμβαίνει ἐκ βίας τινὸς προσελθούσης καὶ συνιζάνειν εἰς τὰς τοῦ κενοῦ χώρας, παρὰ ϕύσιν τῶν σωμάτων πρὸς ἄλληλα θλιβομένων· ἀνέσεως δὲ γενομένης πάλιν εἰς τὴν αὐτὴν τάξιν ἀποκαθίσταται τῇ τῶν σωμάτων εὐτονίᾳ, καθάπερ καὶ τοῖς τῶν <name type="animal" xml:lang="fr">κεράτων</name> συμβαίνει ξέσμασι καὶ τοῖς ξηροῖς <name type="plant" xml:lang="fr">σπόγγοις</name>, ὅταν συμπιληθέντα ἀνεθῇ, πάλιν ἐπὶ τὴν αὐτὴν χώραν ἀποκαθίστασθαι καὶ τὸν αὐτὸν ὄγκον ἀποδιδόναι, ὁμοίως δὲ καὶ ἐάν τινος
+  </p>
+</div>
+Voici l'encodage TEI P5 du texte selon les règles strictes du projet Zoomathia :
+
+
+<div type="book" n="11">
+  <div type="section" n="36">
+    <p>βίας γενομένης ἀπ' ἀλλήλων διαστῇ τὰ τοῦ ἀέρος σώματα καὶ μείζων κενὸς
+    παρὰ ϕύσιν γένηται τόπος, πάλιν πρὸς ἄλληλα συντρέχειν· διὰ γὰρ τοῦ κενοῦ
+    ταχεῖαν γίνεσθαι τὴν ϕορὰν τοῖς σώμασι συμβαίνει, μηδενὸς ἀνθισταμένου
+    μηδὲ ἀντικρούοντος, ἕως ἂν ἀλλήλοις προσερείσῃ τὰ σώματα.</p>
+<p><quote><persName>Hero Alexandrinus</persName> <foreign xml:lang="grc">Pneumatica</foreign> I p. 4, 2 Schmidt (p. 145
+    ed. Paris.): οἱ μὲν γὰρ τὸ καθόλου μηδὲν εἶναι κενὸν διατείνονται, οἱ δὲ
+    ἄθρουν μὲν κατὰ ϕύσιν μηδὲν εἶναι κενόν, παρεσπαρμένον δὲ κατὰ μικρὰ
+    μόρια τῷ ἀέρι καὶ τῷ ὑγρῷ καὶ τῷ πυρὶ καὶ τοῖς ἄλλοις σώμασιν· οἷς μάλιστα
+    συμϕέρεσθαι προσήκει.</quote></p>
+<p><quote><persName>Simplicius</persName> <foreign xml:lang="grc">Corollarium de loco</foreign>, in <persName>Aristotelis Physica</persName> com-
+ment. p. 601, 19 Diels: τῶν δὲ διαστατὸν λεγόντων (sc. τὸν τόπον) οἱ μὲν
+    ἐπὶ δύο διεστὼς ὡς ὁ <persName>’Αριστοτέλης</persName> τε καὶ ὁ <persName>Περίπατος</persName> ἅπας, οἱ δὲ ἐπὶ τρία,
+    καὶ τούτων οἱ μὲν πάντῃ ἀδιάϕορον καί ποτε καὶ ἄνευ σώματος μένον ὡς οἱ
+    περὶ <persName>Δημόκριτον</persName> καὶ <persName>’Επίκουρον</persName>, οἱ δὲ διάστημα καὶ ἀεὶ σῶμα ἔχον καὶ
+    ἐπιτήδειον πρὸς ἕκαστον ὡς οἱ κλεινοὶ τῶν <persName type="deity">Πλατωνικῶν</persName> καὶ ὁ <persName>Λαμψακηνὸς</persName>
+    <persName>Στράτων</persName>.</quote></p>
+<p><quote><persName>Simplicius</persName> <foreign xml:lang="grc">Corollarium de loco</foreign>, in <persName>Aristotelis Physica</persName> com-
+    ment. p. 618, 20 Diels: οἱ δὲ ἰσόμετρον αὐτὸ (sc. τὸ κενὸν) τῷ κοσμικῷ
+    σώματι ποιοῦσι, καὶ διὰ τοῦτο τῇ μὲν ἑαυτοῦ ϕύσει κενὸν εἶναι λέγουσι,
+    πεπληρῶσθαι δὲ αὐτὸ σωμάτων ἀεί, καὶ μόνῃ γε τῇ ἐπινοίᾳ θεωρεῖσθαι ὡς
+    καθ' αὑτὸ ὑϕεστώς, οἷοί τινες οἱ πολλοὶ τῶν <persName type="deity">Πλατωνικῶν</persName> ϕιλοσόϕων γεγόνασι.
+    καὶ <persName>Στράτωνα</persName> δὲ οἶμαι τὸν <placeName>Λαμψακηνὸν</placeName> ταύτης γενέσθαι τῆς δόξης.</quote></p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles et au texte fourni, en respectant la priorité absolue sur les entités nommées Zoomathia :
+
+
+<div type="chapter" n="61">
+<p>Simplicius <foreign xml:lang="grc">In Aristotelis Physica</foreign> IV 6 comment. p. 652, 18</p>
+  <p>Diels: ταῦτα μὲν οὖν τὰ ἐπιχειρήματα τέθεικεν ὁ <persName>’Αριστοτέλης</persName> τῶν λεγόντων εἶναι τὸ <name type="animal" xml:lang="fr">kenos</name>.</p>
+  <p>ὁ δὲ <placeName>Λαμψακηνὸς</placeName> <persName>Στράτων</persName> ταῦτα μὲν εἰς δύο συνήγαγε τὰ τέτταρα εἴς τε τὴν κατὰ τόπον κίνησιν καὶ εἰς τὴν τῶν <name type="animal" xml:lang="fr">sōmatōn</name> πίλησιν, τρίτον δὲ προστίθησι τὸ ἀπὸ τῆς ὁλκῆς.</p>
+  <p>τὴν γὰρ <name type="plant" xml:lang="fr">sidēritin</name> λίθον ἕτερα σιδήρια δι' ἑτέρων ἕλκειν συμβαίνει, ὅταν ἐπισπάσηται τὸ ἐκ τῶν πόρων τοῦ σιδήρου ἡ λίθος, ᾧ σώματι καὶ συνέλκεται ὁ σίδηρος <foreign xml:lang="grc">καὶ</foreign> οὗτος πάλιν τοῦ ἐϕεξῆς ἕλκει καὶ οὗτος ἄλλου, καὶ οὕτως ὁρμαθὸς σιδηρίων ἀποκρεμάννυται τῆς λίθου.</p>
+</div>
+
+<div type="chapter" n="62">
+<p>Simplicius <foreign xml:lang="grc">In Aristotelis Physica</foreign> IV 7 comment. p. 663, 2</p>
+  <p>Diels: ταῦτα μὲν οὖν ὁ <persName>’Αριστοτέλης</persName> πρὸς τοὺς <foreign xml:lang="grc">ὑπ' αὐτοῦ</foreign> τιθέναι τὸ <name type="animal" xml:lang="fr">kenos</name> λόγους ἀντείρηκεν.</p>
+  <p>ὁ δὲ <persName>Στράτων</persName> καὶ τὸν ἀπὸ τῆς ἕλξεως ἀναλύων: οὐδὲ ἡ ἕλξις, ϕησίν, ἀναγκάζει τίθεσθαι τὸ <name type="animal" xml:lang="fr">kenos</name>· οὔτε γὰρ εἰ ἔστιν ὅλως ἕλξις ϕανερόν <foreign xml:lang="grc">ὅτε καὶ Πλάτων αὐτὸς τὴν ἑλκτικὴν δύναμιν ἀναιρεῖν δοκεῖ</foreign>, οὔτε εἰ ἔστιν ἡ ἕλξις, δῆλον, εἰ διὰ τὸ <name type="animal" xml:lang="fr">kenos</name> ἡ λίθος ἕλκει καὶ μὴ δι' ἄλλην αἰτίαν.</p>
+  <p>οὐ γὰρ ἀποδεικνύουσιν ἀλλ' ὑποτίθενται τὸ <name type="animal" xml:lang="fr">kenos</name> οἱ οὕτω λέγοντες.</p>
+</div>
+
+<div type="chapter" n="63">
+<p>Simplicius <foreign xml:lang="grc">In Aristotelis Physica</foreign> IV 7 comment. p. 659, 20</p>
+  <p>Diels: καὶ μέντοι ἐπὶ τούτων μόνων <foreign xml:lang="grc">sc. ὅσα τὸν αὐτὸν ϕυλάττει τόπον κατὰ τὴν ὁλότητα</foreign> δόξει τὸ <name type="animal" xml:lang="fr">kenos</name> μὴ εἶναι αἴτιον τῆς κατὰ τόπον κινήσεως, τῶν κατὰ τὸ ὅλον ἐν τῷ αὐτῷ τόπῳ μενόντων ἀεί.</p>
+  <p>προσϕυέστερον οὖν ἐστι τὸ</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Straton de Lampsaque (Peri heurematon, section 13/36) :
+
+
+<div type="section" n="13">
+  <p>τοῦ Στράτωνος παράδειγμα ταύτας τὰς ὑπονοίας ἐκϕεῦγον· ἐὰν γὰρ εἰς
+    <foreign xml:lang="grc">ἀγγεῖόν</foreign> τις πεπληρωμένον ὕδατος ψηϕῖδα ἐμβαλὼν
+    καταστρέψῃ τὸ <foreign xml:lang="grc">ἀγγεῖον</foreign> ἐπὶ στόμα ἐπέχων τὴν
+    ἔκροιαν, ἡ ψηϕὶς ἐπὶ τὸ στόμα τοῦ <foreign xml:lang="grc">ἀγγείου</foreign>
+    ϕέρεται ἀντιμεθισταμένου τοῦ ὕδατος εἰς τὸν τῆς ψήϕου τόπον. τὸ δὲ αὐτὸ
+    καὶ ἐπὶ τῶν νηχομένων συμβαίνει καὶ <name type="animal" xml:lang="fr">poisson</name>
+    <name type="animal" xml:lang="fr">poisson</name> καὶ οὑτινοσοῦν.</p>
+<p><persName>Hero Alexandrinus</persName> <quote>Pneumatica</quote> I p. 16, 20 Schmidt (p. 149
+    ed. Paris.): ἐὰν μέντοι δειχθῇ ἐπὶ τῶν ϕαινομένων καὶ ὑπὸ τὴν αἴσθησιν
+    πιπτόντων, ὅτι κενὸν ἄθρουν ἐστίν, παρὰ ϕύσιν μέντοι γινόμενον, καὶ κατὰ
+    ϕύσιν μὲν κενόν, κατὰ λεπτὰ δὲ παρεσπαρμένον, καὶ ὅτι κατὰ πίλησιν τὰ
+    σώματα ἀναπληροῖ τὰ παρεσπαρμένα κενά, οὐδεμίαν οὐκέτι παρείσδυσιν ἕξου-
+    σιν οἱ τοὺς πιθανοὺς τῶν λόγων περὶ τούτων προϕερόμενοι. κατασκευάζεται
+    γὰρ σϕαῖρα πάχος ἔχουσα τοῦ ἐλάσματος ὥστε μὴ εὔθλαστος εἶναι, χωροῦσα
+    ὅσον κοτύλας ή. στεγνῆς δὲ οὔσης αὐτῆς πάντοθεν τρυπήσαντα δεῖ σίϕωνα
+    καθεῖναι χαλκοῦν, τουτέστι σωλῆνα λεπτόν, μὴ ψαύοντα τοῦ κατὰ διάμετρον
+    τόπου τοῦ τετρυπημένου σημείου, ὅπως ὕδατι διάρρυσις ὑπάρχῃ, τὸ δὲ ἄλλο
+    μέρος αὐτοῦ ἐκτὸς ὑπερέχειν τῆς σϕαίρας ὅσον δακτύλους τρεῖς· τὴν δὲ τοῦ
+    τρυπήματος περιοχήν, δι' οὗ καθίεται ὁ σίϕων, στεγνοῦν δεῖ κασσιτέρῳ
+    προσλαμβάνοντα πρὸς τε τὸν σίϕωνα καὶ τὴν ἐκτὸς τῆς σϕαίρας ἐπιϕάνειαν,
+    ὥστε ὅταν βουλώμεθα τῷ στόματι διὰ τοῦ σίϕωνος ἐμϕυσᾶν, κατὰ μηδένα
+    τρόπον τὸ πνεῦμα τῆs σϕαίρας διεκπίπτειν. σκοπῶμεν δὴ τὰ συμβαίνοντα·</p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Stratôn de Lampsaque (Strato Lampsacenus) :
+
+
+<div type="book" n="14">
+  <div type="chapter" n="36">
+    <p><foreign xml:lang="grc">ὑπάρχοντος</foreign> γὰρ <name type="animal" xml:lang="fr">air</name> ἐν αὐτῇ, καθάπερ καὶ ἐν τοῖς ἄλλοις ἀγγείοις πᾶσι τοῖς λεγομένοις κενοῖς, τοῦ δὲ <name type="animal" xml:lang="fr">air</name> πεπληρωκότος πάντα τὸν ἐν αὐτῇ τόπον καὶ προσερηρεισμένου κατὰ συνέχειαν πρὸς τὴν τοῦ τεύχους περιοχὴν καὶ μηδενὸς κενοῦ, καθάπερ οἴονται, τὸ παράπαν ὑπάρχοντος τόπου, οὔτ' ἂν <foreign xml:lang="grc">ὕδωρ</foreign> εἰσκρῖναι δυνηθείημεν οὔτε ἄλλον <name type="animal" xml:lang="fr">air</name>, μὴ ὑποχωρήσαντος τοῦ πρότερον ἐν αὐτῇ ὑπάρχοντος <name type="animal" xml:lang="fr">air</name>. καὶ ἐὰν μετὰ πολλῆς βίας τὴν εἴσκρισιν ποιώμεθα, πρότερον διαρραγήσεται τὸ τεῦχος ἢ ἐπιδέξεταί τι πλῆρες ὑπάρχον· οὔτε γὰρ τὰ σώματα τοῦ <name type="animal" xml:lang="fr">air</name> δύναται συσταλῆναι εἰς ἔλασσον μέγεθος· δεήσει γὰρ ἐν αὐτοῖς ἔχειν τινὰ διαστήματα, εἰς ἃ συμπιλούμενα ἐλάσσων αὐτοῖς ὄγκος ἔσται· τοῦτο δὲ οὐ πιθανὸν γίνεται μὴ ὄντος καθόλου κενοῦ· οὔτε συνερηρεισμένων κατὰ πάσας τὰς ἐπιϕανείας τῶν σωμάτων πρὸς ἄλληλα καὶ ὁμοίως πρὸς τὴν τοῦ τεύχους περιοχὴν δύναιτο ἂν διωσθέντα τόπον που ποιῆσαι, μὴ ὑπάρχοντος κενοῦ τινος· ὥστε κατὰ μηδένα τρόπον προσεισκριθῆναί τι τῶν ἐκτὸς εἰς τὴν σϕαῖραν, ἐὰν μὴ ἐκχωρήσῃ τι μέρος τοῦ ἐν αὐτῇ ὑπάρχοντος πρότερον <name type="animal" xml:lang="fr">air</name>, εἴπερ ἐστὶ πεπυκνωμένος καὶ συνεχὴς πᾶς ὁ τόπος, ὡς οἴονται.</p>
+
+    <p>καὶ μὴν ἐάν τις ἐθέλῃ τὸν σίϕωνα λαβὼν εἰς τὸ στόμα ἐμϕυσᾶν εἰς τὴν σϕαῖραν, πολὺ προσεισκρινεῖ πνεῦμα, μὴ ὑποχωρήσαντος τοῦ προυπάρχοντος ἐν αὐτῇ <name type="animal" xml:lang="fr">air</name>. τούτου δὲ ἀεὶ συμβαίνοντος, σαϕῶς δείκνυται συστολὴ γιγνομένη τῶν ὑπαρχόντων ἐν τῇ σϕαίρᾳ σωμάτων εἰς τὰ παρεμπεπλεγμένα</p>
+  </div>
+</div>
+<div type="book" n="15">
+   <div type="section" n="64">
+      <p>κενά. παρὰ ϕύσιν δὲ ἡ συστολὴ γίνεται διὰ τὴν τῆς εἰσκρίσεως βίαν. ἐάν τις
+         οὖν ἐμϕυσήσας καὶ παρ' αὐτὸ τὸ στόμα προσαγαγὼν τὴν χεῖρα συντόμως
+         ἐπιπωμάσῃ τῷ δακτύλῳ τὸν σίϕωνα, μενεῖ πάντα τὸν χρόνον συνεσϕιγμένος
+         ὁ ἀὴρ ἐν τῇ σϕαίρᾳ· ἐάν δὲ τις ἀναπωμάσῃ, πάλιν ἐκτὸς ὁρμήσει μετὰ τε
+         ψόϕου καὶ βοῆς πολλῆς ὁ προσεισκριθεὶς ἀὴρ διὰ τὸ ἐκκρούεσθαι, καθάπερ
+προεθέμεθα, κατὰ τὴν τοῦ προυπάρχοντος ἀέρος διαστολὴν τὴν κατὰ τὴν
+         εὐτονίαν γινομένην.</p>
+   </div>
+   <div type="section" n="65">
+      <p><quote><foreign xml:lang="grc">"65a".1</foreign> Simplicius In Aristotelis Physica IV 9 comment. p. 693, 10
+         Diels: ταῦτα μὲν οὖν ὁ ’Αριστοτέλης περὶ τοῦ κενοῦ διετάξατο. ὁ μέντοι
+         Λαμψακηνὸς Στράτων δεικνύναι πειρᾶται, ὅτι ἔστι τὸ κενὸν διαλαμβάνον τὸ
+         πᾶν σῶμα, ὥστε μὴ εἶναι συνεχές, λέγων ὅτι: οὐκ ἂν δι' ὕδατος ἢ ἀέρος ἢ
+         ἄλλου σώματος ἐδύνατο διεκπίπτειν τὸ ϕῶς οὐδὲ ἡ θερμότης οὐδὲ ἄλλη
+         δύναμις οὐδεμία σωματική. πῶς γὰρ ἂν αἱ τοῦ ἡλίου ἀκτῖνες διεξέπιπτον εἰς
+         τὸ τοῦ ἀγγείου ἔδαϕος; εἰ γὰρ τὸ ὑγρὸν μὴ εἶχε πόρους, ἀλλὰ βίᾳ διέστελλον
+         αὐτὸ αἱ αὐγαί, συνέβαινεν ὑπερεκχεῖσθαι τὰ πλήρη τῶν ἀγγείων, καὶ οὐκ ἂν
+         αἱ μὲν τῶν ἀκτίνων ἀνεκλῶντο πρὸς τὸν ἄνω τόπον, αἱ δὲ κάτω διεξέπιπτον.</quote></p>
+      <p><quote><foreign xml:lang="grc">"65b".1</foreign> Hero Alexandrinus Pneumatica I p. 24, 20 Schmidt (p. 151
+         ed. Paris.): ὅτι δὲ ἔστι κενά, καὶ ἐκ τούτων ἄν τις καταλάβοι. μὴ γὰρ ὄντων
+         αὐτῶν, οὔτ' ἂν διὰ τοῦ ὕδατος οὔτε διὰ τοῦ ἀέρος οὔτε δι' ἄλλου σώματος
+         οὐδενὸς ἠδύνατο ἂν διεκπίπτειν τὸ ϕῶς οὐδὲ ἡ θερμότης οὐδ' ἄλλη δύναμις</quote></p>
+   </div>
+</div>
+Voici l'encodage TEI P5 du texte demandé, conforme aux règles strictes du projet Zoomathia :
+
+
+<div type="section" n="16">
+   <p><foreign xml:lang="grc">οὐδεμία σωματική.</foreign> ἐπεὶ πῶς ἂν αἱ τοῦ <name type="animal" xml:lang="fr">ἡλίου</name> ἀκτῖνες διὰ τοῦ ὕδατος διεξέπιπτον
+   εἰς τὸν τοῦ ἀγγείου πυθμένα; εἰ γὰρ τὸ ὑγρὸν μὴ εἶχε πόρους, ἀλλὰ βίᾳ
+   διέστελλον αἱ αὐγαὶ τὸ ὕδωρ, συνέβαινεν ἂν ὑπερεκχεῖσθαι τὰ πλήρη τῶν
+   ἀγγείων· ὅπερ οὐ ϕαίνεται γινόμενον.</p>
+   <p>ἔτι δὲ καὶ ταύτῃ ϕανερόν· εἰ γὰρ βίᾳ
+   τὸ ὕδωρ διέστελλον, οὐκ ἂν τῶν ἀκτίνων αἱ μὲν ἀνεκλῶντο πρὸς τὸν ἄνω
+   τόπον, αἱ δὲ καὶ κάτω διεξέπιπτον.</p>
+<p>νυνὶ δὲ ὅσαι μὲν προσκόπτουσιν αὐγαὶ
+   τοῖς τοῦ ὕδατος μορίοις, ὥσπερ ἀνακρουόμεναι ἀνακλῶνται πρὸς τὸν ἄνω
+   τόπον· ὅσαι δὲ εἰς τὰ κενὰ τοῦ ὕδατος ἐμπίπτουσιν, ὀλίγοις προσπίπτουσαι
+   μορίοις αὗται διεκπίπτουσιν εἰς τὸ τοῦ ἀγγείου ἔδαϕος.</p>
+<quote><persName>Hero Alexandrinus</persName> <title>Pneumatica</title> I p. 26, 13 Schmidt (p. 152
+   ed. Paris.): ἔτι δὲ καὶ ταύτῃ ϕανερὸν ὡς ἐν τῷ ὕδατι ὑπάρχει κενά, τῷ τὸν
+   ἐμβαλλόμενον οἶνον εἰς τὸ ὕδωρ ὁρᾶσθαι κατὰ χύσιν εἰς πάντα τόπον τοῦ
+   ὕδατος χωροῦντα. τοῦτο δὲ οὐκ ἂν ἐγίνετο μὴ ὄντων ἐν τῷ ὕδατι κενῶν.
+   ϕέρεται δὲ καὶ τὸ ϕῶς τὸ ἕτερον διὰ τοῦ ἑτέρου· ὅταν γάρ τις πλείους ἅψῃ
+   λύχνους ἅπαντα ϕωτίζεται μᾶλλον, τῶν αὐγῶν πάντῃ ϕερομένων δι' ἀλλήλων.</quote>
+   <quote>[<foreign xml:lang="grc">ἀλλὰ μὴν καὶ διὰ χαλκοῦ καὶ σιδήρου καὶ τῶν ἄλλων ἁπάντων διεκπίπτει
+   σωμάτων, καθάπερ καὶ τὸ ἐπὶ τῆς νάρκης τῆs θαλασσίας γινόμενον.</foreign>]</quote>
+<quote><persName>Hero Alexandrinus</persName> <title>Pneumatica</title> I p. 10, 9 Schmidt (p. 147
+   ed. Paris.): ἐμβληθὲν γὰρ ἐν αὐταῖς (sc. ταῖς σικύαις) τὸ πῦρ ϕθείρει καὶ
+   λεπτύνει τὸν ἀπειλημμένον ἐν αὐταῖς ἀέρα, καθάπερ καὶ τὰ ἄλλα σώματα</quote>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Straton de Lampsaque (Strato Lampsacenus) :
+
+
+<div type="chapter" n="17">
+<p>ὑπὸ τοῦ <name type="element">πυρὸς</name> ϕθείρεταί τε καὶ μεταβάλλει εἰς λεπτοτέρας οὐσίας, λέγω δὴ
+   <name type="element">ὕδωρ</name> καὶ <name type="element">ἀέρα</name> καὶ <name type="element">γῆν</name>. ὅτι μὲν γὰρ ϕθείρεται, δῆλον ἐκ τῶν περιλειπομένων
+   <name type="animal">ἀνθράκων</name>· οὗτοι γὰρ τὸν αὐτὸν ὄγκον διαϕυλάττοντες τῷ ἐξ ἀρχῆς πρὸ τοῦ
+   τὴν καῦσιν ἐπιδέξασθαι ἢ ὀλίγῳ ἐλάσσονα, παρὰ πολὺ τῷ βάρει διαλλάσσουσι
+   τοῦ ἐξ ἀρχῆς.</p>
+
+   <p><quote><persName>Simplicius</persName> <foreign xml:lang="la">In Aristotelis Physica</foreign> IV 11 <foreign xml:lang="la">comment.</foreign> p. 711, 9 <foreign xml:lang="de">Diels</foreign>:
+   ὁ δὲ Λαμψακηνὸς <persName>Στράτων</persName> οὐκ ἀπὸ τοῦ μεγέθους μόνον συνεχῆ τὴν
+   κίνησιν εἶναί <foreign xml:lang="grc">ϕησιν</foreign>, ἀλλὰ καὶ καθ' ἑαυτήν, ὡς εἰ διακοπείη, στάσει διαλαμβανο-
+   μένην, καὶ τὸ μεταξὺ δύο στάσεων κίνησιν οὖσαν ἀδιάκοπον. καὶ ποσὸν δέ τι,
+   <foreign xml:lang="grc">ϕησίν</foreign>, ἡ κίνησις καὶ διαιρετὸν εἰς ἀεὶ διαιρετά.</quote></p>
+
+<p><quote><persName>Simplicius</persName> <foreign xml:lang="la">In Aristotelis Physica</foreign> IV 11 <foreign xml:lang="la">comment.</foreign> p. 711, 35 <foreign xml:lang="de">Diels</foreign>:
+   ἀλλ' ὁ μὲν <persName>’Αριστοτέλης</persName> ἔοικεν ἐκ τοῦ σαϕεστέρου ποιήσασθαι τὴν
+   ἐπιβολήν, ὁ δὲ <persName>Στράτων</persName> <foreign xml:lang="grc">ϕιλοκάλως</foreign> καὶ αὐτὴν καθ' αὑτὴν τὴν κίνησιν ἔδειξε
+   τὸ συνεχὲς ἔχουσαν· ἴσως καὶ πρὸς τοῦτο βλέπων, ἵνα μὴ μόνον ἐπὶ τῆς κατὰ
+   τόπον κινήσεως, ἀλλὰ καὶ ἐπὶ τῶν ἄλλων πασῶν συνάγηται τὰ λεγόμενα.</quote></p>
+
+<p><quote><persName>Simplicius</persName> <foreign xml:lang="la">In Aristotelis Physica</foreign> V 1 <foreign xml:lang="la">comment.</foreign> p. 807, 3 <foreign xml:lang="de">Diels</foreign>:
+   καὶ καλῶς γε οἶμαι ὁ <persName>Στράτων</persName> τὴν κίνησιν οὐ μόνον ἐν τῷ κινουμένῳ
+   <foreign xml:lang="grc">ϕησὶν</foreign> εἶναι, ἀλλὰ καὶ ἐν τῷ ἐξ οὗ καὶ ἐν τῷ εἰς ὅ, ἄλλον δὲ τρόπον ἐν ἑκάστῳ·
+   τὸ μὲν γὰρ ὑποκείμενον, <foreign xml:lang="grc">ϕησί</foreign>, κινεῖται ὡς μεταβάλλον, τὸ δὲ ἐξ οὗ καὶ εἰς
+   ὃ τὸ μὲν ὡς <foreign xml:lang="grc">ϕθειρόμενον</foreign> τὸ δὲ ὡς <foreign xml:lang="grc">γινόμενον</foreign>.</quote></p>
+
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="book" n="18">
+  <p>Diels: <quote>ἐπειδὴ- - - - -τὴν δὲ πίστιν τοῦ οὕτως ἔχειν, ὅτι τὰ κατὰ ϕύσιν
+  ϕερόμενα θᾶττον κινεῖται πρὸς τοῖς οἰκείοις τόποις γινόμενα, ὀλίγοι προστι-
+  θέασιν, οὐδὲν ἴσως κωλύει τὰ ὑπὸ τοῦ ϕυσικοῦ <persName>Στράτωνος</persName> εἰρημένα τεκμήρια
+  παραγράψαι.</quote> ἐν γὰρ τῷ περὶ κινήσεως οὕτως εἰπών, ὅτι τὴν ἐσχάτην τοῦ
+  τόπου ἐξαλλαγὴν ἐν ἐλαχίστῳ χρόνῳ ἐξαλλάσσει τὸ κινούμενον, ἐπάγει: ἐν
+  μὲν οὖν τοῖς τῷ βάρει ϕερομένοις διὰ τοῦ <foreign xml:lang="grc">ἀέρος</foreign> ϕανερὸν ἐστιν οὕτω γινόμενον·
+  τό τε γὰρ ἀπὸ τῶν κεράμων καταρρέον <name type="animal" xml:lang="fr">ὕδωρ</name>, ἐάν τις ἀϕ' ὑψηλοῦ τόπου
+  ϕερόμενον αὐτὸ θεωρῇ, ἄνωθεν μὲν συνεχὲς ϕαίνεται ῥέον, ἐν δὲ τῷ κάτω
+διεσπασμένον πίπτει ἐπὶ τὸ ἔδαϕος. εἰ οὖν μὴ ἀεὶ τὸν ὕστερον τόπον θᾶττον
+  ἐϕέρετο, οὐκ ἄν ποτε συνέβαινεν αὐτῷ τοῦτο. λέγει δὲ τοῦτο τὸ ἀποσπᾶσθαι
+  τοῦ συνεχοῦς τὸ πλησιαίτερον τοῦ <name type="animal" xml:lang="fr">ἐδάϕους</name> γινόμενον. ἔτι δὲ καὶ ἄλλο προστίθησι
+  τεκμήριον λέγων: ἐάν τις <name type="animal" xml:lang="fr">λίθον</name> ἢ ἄλλο βάρος ἔχον ἀϕῇ ἀποσχὼν τῆς γῆς ὅσον
+  δακτυλιαῖον ὕψος, οὐ πάνυ ποιήσεται ἔνδηλον πληγὴν ἐν τῷ <name type="animal" xml:lang="fr">ἐδάϕει</name>, ἐὰν δὲ
+  πλέθρον ἢ ἔτι πλέον ἀποσχὼν ἀϕῇ ἄνωθεν, ἰσχυρὰν πληγὴν ποιήσει. καὶ ἄλλο
+  μὲν, ϕησίν, οὐδὲν αἴτιον τῆς πληγῆς ἐστιν· οὔτε γὰρ τὸ βάρος μεῖζον ἔχει,
+  οὔτε μεῖζον τὸ κινούμενον γεγένηται οὔτε πλείω τόπον ἐπωθοῦν οὔτε ὑπὸ
+  πλείονος ὠθούμενον, θᾶττον δὲ ϕερόμενον. καὶ παρὰ τοῦτο καὶ ταῦτα καὶ
+  ἄλλα πολλὰ συμπτώματα συμβαίνει.</p>
+<p>Simplicius In Aristotelis Physica V 4 comment. p. 965, 7</p>
+  <p>Diels: <quote>καὶ <persName>Στράτων</persName> δὲ ὁ <placeName>Λαμψακηνὸς</placeName> ὁ <persName>Θεοϕράστου</persName> γεγονὼς ἀκουστὴς καὶ</quote></p>
+</div>
+Voici l'encodage TEI P5 du texte demandé, conforme aux règles strictes du projet Zoomathia :
+
+
+<div type="book" n="19">
+  <div type="section" n="36">
+    <p><foreign xml:lang="grc">ἐν τοῖς ἀρίστοις Περιπατητικοῖς ἀριθμούμενος τὴν ψυχὴν ὁμολογεῖ κινεῖσθαι</foreign>
+    οὐ μόνον τὴν <foreign xml:lang="grc">ἄλογον</foreign> ἀλλὰ καὶ τὴν <foreign xml:lang="grc">λογικήν</foreign>, κινήσεις λέγων εἶναι τὰς ἐνεργείας
+    καὶ τῆς ψυχῆς. λέγει οὖν ἐν τῷ περὶ κινήσεως πρὸς ἄλλοις πολλοῖς καὶ τάδε:</p>
+    <p><foreign xml:lang="grc">ἀεὶ γὰρ ὁ νοῶν κινεῖται ὥσπερ καὶ ὁ ὁρῶν καὶ ἀκούων καὶ ὀσϕραινόμενος·</foreign>
+    <foreign xml:lang="grc">ἐνέργεια γὰρ ἡ νόησις τῆς διανοίας καθάπερ καὶ ἡ ὅρασις τῆς ὄψεως.</foreign> καὶ πρὸ
+    τούτου δὲ τοῦ ῥητοῦ γέγραϕεν: <foreign xml:lang="grc">ἐπεὶ οὖν εἰσιν αἱ πλεῖσται τῶν κινήσεων αἱ</foreign>
+    <foreign xml:lang="grc">αὐταί</foreign>, <foreign xml:lang="grc">ἃς ἡ ψυχὴ καθ' αὑτὴν τε κινεῖται διανοουμένη</foreign> καὶ <foreign xml:lang="grc">ἃς ὑπὸ τῶν αἰσθήσεων</foreign>
+<foreign xml:lang="grc">ἐκινήθη πρότερον.</foreign> <foreign xml:lang="grc">δῆλον δέ ἐστιν·</foreign> <foreign xml:lang="grc">ὅσα γὰρ μὴ πρότερον ἑώρακε, ταῦτα οὐ</foreign>
+    δύναται νοεῖν, <foreign xml:lang="grc">οἷον</foreign> τόπους ἢ λιμένας ἢ γραϕὰς ἢ <name type="animal" xml:lang="fr">andriantes</name> ἢ <name type="animal" xml:lang="fr">anthrôpous</name> ἢ
+    τῶν ἄλλων τι τῶν τοιούτων.</p>
+<p><quote><persName>Simplicius</persName> <foreign xml:lang="la">Corollarium de tempore</foreign>, <foreign xml:lang="la">in Aristotelis Physica</foreign>
+    <foreign xml:lang="la">comment.</foreign> p. 788, 36 <persName>Diels</persName>:
+    <foreign xml:lang="grc">ὁ μέντοι Λαμψακηνὸς Στράτων αἰτιασάμενος</foreign>
+    τὸν ὑπ' <persName>’Αριστοτέλους</persName> τε καὶ τῶν <persName>’Αριστοτέλους</persName> ἑταίρων ἀποδοθέντα τοῦ
+    <name type="animal" xml:lang="fr">chronou</name> ὁρισμὸν αὐτὸς καίτοι <persName>Θεοϕράστου</persName> μαθητὴς ὢν τοῦ πάντα σχεδὸν
+    ἀκολουθήσαντος τῷ <persName>’Αριστοτέλει</persName> καινοτέραν ἐβάδισεν ὁδόν. <foreign xml:lang="grc">ἀριθμὸν</foreign> μὲν γὰρ
+    κινήσεως εἶναι τὸν <name type="animal" xml:lang="fr">chronon</name> οὐκ ἀποδέχεται, διότι ὁ μὲν <foreign xml:lang="grc">ἀριθμὸς</foreign> διωρισμένον
+    ποσόν, ἡ δὲ κίνησις καὶ ὁ <name type="animal" xml:lang="fr">chronos</name> συνεχής, τὸ δὲ συνεχὲς οὐκ ἀριθμητόν.</quote> εἰ
+    δέ, <foreign xml:lang="grc">ὅτι ἄλλο καὶ ἄλλο τὸ μέρος τῆς κινήσεως</foreign> καὶ τούτων τὸ μὲν πρότερον τὸ
+    δὲ ὕστερον, <foreign xml:lang="grc">κατὰ τοῦτο ἔστι τις τῆς κινήσεως ἀριθμός</foreign>, οὕτω γε ἂν καὶ τὸ
+<foreign xml:lang="grc">μῆκος ἀριθμητὸν εἴη</foreign> (<foreign xml:lang="grc">καὶ γὰρ καὶ τοῦτο ποσὸν ἄλλο καὶ ἄλλο ἐστί</foreign>) καὶ τῶν</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte selon les règles du projet Zoomathia :
+
+
+<div type="chapter" n="20">
+<p>
+    <foreign xml:lang="grc">ἄλλων τῶν κατὰ συνέχειαν γινομένων καὶ τὸ μὲν πρότερον τὸ δὲ ὕστερον</foreign>,
+    <foreign xml:lang="grc">ὥστε καὶ τοῦ χρόνου εἴη ἂν χρόνου χρόνος</foreign>·
+    <foreign xml:lang="grc">ἔτι δὲ ἀριθμοῦ μὲν οὐκ ἔστι γένεσις καὶ ϕθορά</foreign>,
+    <foreign xml:lang="grc">κἂν τὰ ἀριθμητὰ ϕθείρηται</foreign>,
+    <foreign xml:lang="grc">ὁ δὲ χρόνος καὶ γίνεται καὶ ϕθείρεται συνεχῶς</foreign>.
+    <foreign xml:lang="grc">καὶ τοῦ μὲν ἀριθμοῦ ἀναγκαῖον εἶναι πάντα τὰ μέρη</foreign>
+    <foreign xml:lang="grc">(μὴ γὰρ οὐσῶν τῶν τριῶν μονάδων οὐδ' ἂν ἡ τριὰς εἴη)</foreign>,
+    <foreign xml:lang="grc">τοῦ δὲ χρόνου ἀδύνατον</foreign>.
+    <foreign xml:lang="grc">ἔσται γὰρ ὁ πρότερος χρόνος καὶ ὁ ὕστερος ἅμα</foreign>.
+    <foreign xml:lang="grc">ἔτι τὸ αὐτὸ ἔσται μονὰς καὶ νῦν</foreign>,
+    <foreign xml:lang="grc">εἴπερ ὁ χρόνος ἀριθμός</foreign>.
+    <foreign xml:lang="grc">ὁ μὲν γὰρ χρόνος ἐκ τῶν νῦν σύνθετος</foreign>,
+    <foreign xml:lang="grc">ὁ δὲ ἀριθμὸς ἐκ μονάδων</foreign>.
+  </p>
+<p>
+    <quote>
+      <persName>Simplicius</persName>
+      <foreign xml:lang="la">Corollarium de tempore</foreign>,
+      <foreign xml:lang="la">in Aristotelis Physica comment.</foreign>
+      <foreign xml:lang="la">p. 789, 33 Diels</foreign>:
+      <foreign xml:lang="grc">καὶ ἄλλα δὲ πολλὰ ἀντειπὼν πρὸς τὴν ’Αριστοτέλους ἀπόδοσιν</foreign>
+      <persName>ὁ Στράτων</persName>
+      <foreign xml:lang="grc">αὐτὸς τὸν χρόνον τὸ ἐν ταῖς πράξεσι ποσὸν εἶναι τίθεται</foreign>:
+      <foreign xml:lang="grc">πολλὸν γάρ</foreign>,
+      <foreign xml:lang="grc">ϕησί</foreign>,
+      <foreign xml:lang="grc">χρόνον ϕαμὲν ἀποδημεῖν καὶ πλεῖν καὶ στρατεύεσθαι καὶ πολεμεῖν</foreign>
+      <foreign xml:lang="grc">καὶ ὀλίγον χρόνον</foreign>,
+      <foreign xml:lang="grc">ὁμοίως δὲ καθῆσθαι καὶ καθεύδειν</foreign>
+      <foreign xml:lang="grc">καὶ μηδὲν πράττειν</foreign>
+      <foreign xml:lang="grc">καὶ πολὺν χρόνον ϕαμὲν καὶ ὀλίγον</foreign>.
+      <foreign xml:lang="grc">ὧν μὲν ἐστι τὸ ποσὸν πολύ</foreign>,
+      <foreign xml:lang="grc">πολὺν χρόνον</foreign>,
+      <foreign xml:lang="grc">ὧν δὲ ὀλίγον</foreign>,
+      <foreign xml:lang="grc">ὀλίγον</foreign>.
+      <foreign xml:lang="grc">χρόνος γὰρ τὸ ἐν ἑκάστοις τούτων ποσόν</foreign>.
+      <foreign xml:lang="grc">διὸ καί ϕασιν οἱ μὲν βραδέως ἥκειν οἱ δὲ ταχέως τὸν αὐτόν</foreign>,
+      <foreign xml:lang="grc">ὡς ἂν ἑκάστοις ϕαίνηται τὸ ἐν τούτοις ποσόν</foreign>.
+    </quote>
+  </p>
+<p>
+    <foreign xml:lang="grc">ταχὺ μὲν γὰρ εἶναί ϕαμεν</foreign>,
+    <foreign xml:lang="grc">ἐν ᾧ τὸ μὲν ποσὸν ἀϕ' οὗ ἤρξατο καὶ εἰς ὃ ἐπαύσατο ὀλίγον</foreign>,
+    <foreign xml:lang="grc">τὸ δὲ γεγονὸς ἐν αὐτῷ πολύ</foreign>·
+    <foreign xml:lang="grc">τὸ βραδὺ δὲ τοὐναντίον</foreign>,
+    <foreign xml:lang="grc">ὅταν ᾖ τὸ μὲν ποσὸν ἐν αὐτῷ πολύ</foreign>,
+    <foreign xml:lang="grc">τὸ δὲ πεπραγμένον ὀλίγον</foreign>.
+    <foreign xml:lang="grc">διό</foreign>,
+    <foreign xml:lang="grc">ϕησίν</foreign>,
+    <foreign xml:lang="grc">οὐκ ἔστιν ἐν ἠρεμίᾳ τὸ ταχὺ καὶ τὸ βραδύ</foreign>·
+  </p>
+</div>
+Voici l'encodage TEI P5 strict du texte de Straton de Lampsaque (Peri heurematon) selon les règles Zoomathia, en respectant la structure demandée et en priorisant les entités nommées zoologiques (bien que ce passage soit principalement philosophique sur le temps) :
+
+
+<div type="book" n="1">
+  <div type="chapter" n="21">
+<p>
+      <foreign xml:lang="grc">πᾶσα γὰρ ἴση ἐστὶ τῷ ἑαυτῆς ποσῷ</foreign> καὶ οὔτε ἐν ὀλίγῳ τῷ ποσῷ πολλὴ οὔτε
+      ἐν πολλῷ βραχεῖα. διὰ τοῦτο δέ, <persName>ϕησί</persName>, καὶ πλείω μὲν εἶναι καὶ ἐλάττω χρόνον
+      λέγομεν, θάττω δὲ καὶ βραδύτερον χρόνον οὐ λέγομεν. πρᾶξις μὲν γὰρ καὶ
+      κίνησίς ἐστι θάττων καὶ βραδυτέρα, τὸ δὲ ποσὸν τὸ ἐν ᾧ ἡ πρᾶξις οὐκ ἔστι
+      θᾶττον καὶ βραδύτερον, ἀλλὰ πλέον καὶ ἔλαττον ὥσπερ καὶ χρόνος.
+    </p>
+    <p>
+      <foreign xml:lang="grc">ἡμέρα</foreign> δὲ καὶ <foreign xml:lang="grc">νύξ</foreign>, <persName>ϕησί</persName>, καὶ <foreign xml:lang="grc">μὴν</foreign> καὶ <foreign xml:lang="grc">ἐνιαυτὸς</foreign> οὐκ ἔστι χρόνος οὐδὲ χρόνου μέρη, ἀλλὰ
+      τὰ μὲν ὁ <foreign xml:lang="grc">ϕωτισμὸς</foreign> καὶ ἡ <foreign xml:lang="grc">σκίασις</foreign>, τὰ δὲ ἡ τῆς <foreign xml:lang="grc">σελήνης</foreign> καὶ τοῦ <foreign xml:lang="grc">ἡλίου</foreign> <foreign xml:lang="grc">περίοδος</foreign>,
+      ἀλλὰ χρόνος ἐστὶ τὸ ποσὸν ἐν ᾧ ταῦτα.
+    </p>
+<p>
+      <quote>
+        <persName>Simplicius</persName> <foreign xml:lang="la">Corollarium de tempore</foreign>, <foreign xml:lang="la">in Aristotelis Physica comment.</foreign> p. 789, 15 <persName>Diels</persName>:
+        <foreign xml:lang="grc">καὶ τοῦτο δὲ ἀπορεῖ (sc. Στράτων)</foreign>: τί μᾶλλον ἐστὶν ὁ χρόνος ἀριθμὸς τοῦ ἐν κινήσει προτέρου καὶ ὑστέρου ἢ τοῦ ἐν ἠρεμίᾳ;
+        καὶ γὰρ ἐν ταύτῃ ὁμοίως ἐστὶ τὸ πρότερον καὶ ὕστερον.
+      </quote>
+    </p>
+<p>
+      <quote>
+        <persName>Stobaeus</persName> <foreign xml:lang="la">Ecl. I 8, 40 b</foreign> (<foreign xml:lang="la">Aetius I 22, 4 p. 318 Diels</foreign>):
+        <foreign xml:lang="grc">Στράτων τὸ ἐν κινήσει καὶ ἠρεμίᾳ ποσόν (sc. χρόνον εἶναι)</foreign>.
+      </quote>
+    </p>
+<p>
+      <quote>
+        <persName>Sextus Empiricus</persName> <foreign xml:lang="la">Adv. physicos II 177</foreign>:
+        <foreign xml:lang="grc">διόπερ Στράτων ὁ ϕυσικὸς ἀποστὰς τῆσδε τῆς ἐννοίας (sc. quae docet Aristoteles Physica 219 b 2) ἔλεγε χρόνον ὑπάρχειν μέτρον πάσης κινήσεως καὶ μονῆς.</foreign>
+      </quote>
+    </p>
+<p>
+      <quote>
+        <persName>Sextus Empiricus</persName> <foreign xml:lang="la">Pyrrh. Hypotyp. III 137</foreign>:
+        <foreign xml:lang="grc">Στράτων δέ, ἢ ὥς τινες ’Αριστοτέλης, μέτρον κινήσεως καὶ μονῆς (sc. τὸν χρόνον εἶναί ϕησιν)</foreign>.
+      </quote>
+    </p>
+<p>
+      <quote>
+        <persName>Sextus Empiricus</persName> <foreign xml:lang="la">Adv. physicos II 228</foreign>:
+        <foreign xml:lang="grc">Στράτων δὲ ὁ ϕυσικὸς, ὡς δ' ἄλλοι ’Αριστοτέλης, μέτρον κινήσεως καὶ μονῆς (sc. τὸν χρόνον</foreign>
+      </quote>
+    </p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Straton de Lampsaque (Peri eurematon, section 22/36) :
+
+
+<div type="chapter" n="80">
+   <p><quote><persName>Simplicius</persName> <foreign xml:lang="grc">Corollarium de tempore</foreign>, in <persName>Aristotelis Physica</persName> comment. p. 789, 25 <persName>Diels</persName>: πρὸς δὲ τὸ ἐν χρόνῳ εἶναι λεγόμενον καλῶς ἐνίστασθαι δοκεῖ (sc. <persName>Στράτων</persName>): εἰ γὰρ τοῦτό ἐστι, ϕησί, τὸ ἐν χρόνῳ εἶναι τὸ ὑπὸ τοῦ χρόνου περιέχεσθαι, οὐθὲν ἂν δῆλον ὅτι τῶν ἀιδίων ἐν χρόνῳ εἴη.</quote></p>
+</div>
+
+<div type="chapter" n="81">
+   <p><quote><persName>Simplicius</persName> <foreign xml:lang="grc">Corollarium de tempore</foreign>, in <persName>Aristotelis Physica</persName> comment. p. 790, 22: διὰ τοῦτο δέ, ϕησί (sc. <persName>Στράτων</persName>), πάντα ἐν χρόνῳ εἶναί ϕαμεν, ὅτι πᾶσι τὸ ποσὸν ἀκολουθεῖ καὶ τοῖς γινομένοις καὶ οὖσι. πολλὰ δὲ κατὰ τὸ ἐναντίον λέγομεν· τὴν γὰρ πόλιν ἐν ταραχῇ εἶναι καὶ τὸν <name type="animal" xml:lang="fr">ἄνθρωπον</name> ἐν ϕόβῳ καὶ ἡδονῇ, ὅτι ταῦτα ἐν ἐκείνοις.</quote></p>
+</div>
+
+<div type="chapter" n="82">
+   <p><quote><persName>Sextus Empiricus</persName> <foreign xml:lang="la">Adv. physicos</foreign> II 155: λείπεται τοίνυν σκοπεῖν, εἰ δύναται κινεῖσθαί τι, τινῶν μὲν εἰς ἄπειρον τεμνομένων, τινῶν δὲ εἰς ἀμερὲς καταληγόντων. καὶ δὴ οὕτως ἠνέχθησαν οἱ περὶ τὸν <persName>Στράτωνα</persName> τὸν <foreign xml:lang="grc">ϕυσικόν</foreign>: τοὺς μὲν γὰρ <name type="animal" xml:lang="fr">χρόνους</name> εἰς ἀμερὲς ὑπέλαβον καταλήγειν, τὰ δὲ σώματα καὶ τοὺς τόπους εἰς ἄπειρον τέμνεσθαι, κινεῖσθαί τε τὸ κινούμενον ἐν ἀμερεῖ <name type="animal" xml:lang="fr">χρόνῳ</name> ὅλον ἄθρουν μεριστὸν διάστημα καὶ οὐ κατὰ τὸ πρότερον πρότερον.</quote></p>
+   <p>"82,1".1 <quote><persName>Damascius</persName> <foreign xml:lang="grc">Dubitationes et solutiones</foreign> 389 II p. 236 <persName>Ruelle</persName>: ἔστιν γὰρ (sc. <name type="animal" xml:lang="fr">ὁ χρόνος</name>) σύνθετος, ὥς ϕησι <persName>Στράτων</persName>, ἐκ μερῶν μὴ μενόντων.</quote></p>
+</div>
+
+<div type="chapter" n="83">
+   <p><quote><persName>Simplicius</persName> <foreign xml:lang="grc">Corollarium de tempore</foreign>, in <persName>Aristotelis Physica</persName> comment. p. 800, 16 <persName>Diels</persName>: ἐκ δὲ τούτων τῶν λύσεων καὶ τὰς τοῦ <persName>Στράτωνος</persName> ἀπορίας περὶ τοῦ μὴ εἶναι τὸν <name type="animal" xml:lang="fr">χρόνον</name> διαλύειν δυνατόν.</quote></p>
+</div>
+
+<div type="chapter" n="84">
+   <p/>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="section" n="23">
+   <p><quote><persName>Stobaeus</persName> Ecl. I 23, 1 (<persName>Aetius</persName> II 11, 4 p. 340 <persName>Diels</persName>): Παρμε-
+νίδης, <persName>‘Ηράκλειτος</persName>, <persName>Στράτων</persName>, <persName>Ζήνων</persName> πύρινον εἶναι τὸν οὐρανόν.</quote></p>
+<p><quote><persName>Stobaeus</persName> Ecl. I 24, 3 (<persName>Aetius</persName> II 17, 2 p. 346 <persName>Diels</persName>): <persName>Στράτων</persName>
+καὶ αὐτὸς τὰ ἄστρα ὑπὸ τοῦ <name type="animal" xml:lang="fr">ἡλίου</name> ϕωτίζεσθαι.</quote></p>
+<p><quote><persName>Aetius</persName> III 2, 4 p. 366 <persName>Diels</persName>: <persName>Στράτων</persName> ἄστρου ϕῶς περιληϕθὲν
+νέϕει πυκνῷ (sc. τὸν κομήτην εἶναι), καθάπερ ἐπὶ τῶν <foreign xml:lang="grc">λαμπτήρων</foreign> γίνεται.</quote></p>
+<p><quote><persName>Stobaeus</persName> I 29, 1 (<persName>Aetius</persName> III 3, 15 p. 370 <persName>Diels</persName>): <persName>Στράτων</persName>
+θερμοῦ ψυχρῷ παρείξαντος, ὅταν ἐκβιασθὲν τύχῃ, τὰ τοιαῦτα γίνεσθαι, βροντὴν
+μὲν ἀπορρήξει, ϕάει δ' ἀστραπήν, τάχει δὲ κεραυνόν, πρηστῆρας δὲ καὶ
+τυϕῶνας τῷ πλεονασμῷ τῷ τῆς ὕλης, ἣν ἑκάτερος αὐτῶν ἐϕέλκεται, θερμο-
+τέραν μὲν ὁ πρηστήρ, παχυτέραν δὲ ὁ τυϕών.</quote></p>
+<p><quote><persName>Hero Alexandrinus</persName> <foreign xml:lang="grc">Pneumatica</foreign> I p. 10, 17 <persName>Schmidt</persName> (p. 147
+ed. Paris.): χωρεῖ δὲ τὰ διεϕθαρμένα τῶν σωμάτων διὰ τῶν καπνῶν εἴς τε
+πυρώδη οὐσίαν καὶ ἀερώδη καὶ γεώδη· τὰ μὲν γὰρ λεπτότερα τῆs ϕθορᾶs εἰς
+τὸν ἀνωτάτω χωρεῖ τόπον, ἔνθαπερ καὶ τὸ <name type="animal" xml:lang="fr">πῦρ</name>· τὰ δὲ τούτων μικρῷ παχυ-
+μερέστερα εἰς τὸν ἀέρα· τὰ δὲ ἐπὶ τούτων παχύτερα εἰς ποσὸν συνανεχθέντα
+τοῖς εἰρημένοις διὰ τὴν συνεχῆ ϕορὰν πάλιν εἰς τὸν κάτω χωρήσαντα τόπον
+τοῖς γεώδεσι συνάπτει. μεταβάλλει δὲ καὶ τὸ <foreign xml:lang="grc">ὕδωρ</foreign> εἰς ἀέρα ϕθειρόμενον ὑπὸ
+τοῦ πυρός· οἱ γὰρ ἐκ τῶν ὑποκαιομένων <foreign xml:lang="grc">λεβήτων</foreign> ἀτμοὶ οὐκ ἄλλο τί εἰσιν ἢ
+αἱ τοῦ <foreign xml:lang="grc">ὑγροῦ</foreign> λεπτύνσεις εἰς ἀέρα χωροῦσαι. ὅτι μὲν οὖν τὸ <name type="animal" xml:lang="fr">πῦρ</name> διαλύει τὰ
+παχύτερα αὐτοῦ πάντα καὶ μεταβάλλει, ἐκ τούτων δῆλον.</quote></p>
+<p>καὶ ἐκ τῶν ἀνα-</p>
+</div>
+<div type="section" n="24">
+<p>θυμιάσεων δὲ τῶν ἀπὸ τῆς γῆς γινομένων μεταβάλλει τὰ παχύτερα τῶν
+    σωμάτων εἰς λεπτομερεστέρας οὐσίας· αἱ γὰρ δρόσοι οὐκ ἄλλως ἀναϕέρονται
+    ἢ λεπτυνομένου τοῦ ἐν τῇ γῇ ὕδατος ὑπὸ τῆς ἀναθυμιάσεως· αὕτη δὲ ὑπὸ
+    πυρώδους τινὸς οὐσίας γίνεται, τοῦ ἡλίου ὑπὸ γῆν ὄντος καὶ θερμαίνοντος
+    τὸν κατ' ἐκεῖνο τόπον, καὶ μᾶλλον ἤτοι θειώδη ἢ ἀσϕαλτώδη ὄντα, ὃς θερμαινό-
+    μενος ἐπὶ πλεῖον τὴν ἀναθυμίασιν ποιεῖ· καὶ τὰ θερμὰ δὲ τῶν ὑδάτων τὰ ἐν
+    τῇ γῆ εὑρισκόμενα ἐκ τῆς αὐτῆς αἰτίας γίνεται.</p>
+  <p>τῶν οὖν δρόσων τὰ μὲν λεπτό-
+    τερα εἰς ἀέρα μεταβάλλει, τὰ δὲ παχύτερα ἐπὶ ποσὸν συνανενεχθέντα διὰ τὴν
+    τῆς ἀναθυμιάσεως βίαν ταύτης ἀποψυχείσης κατὰ τὴν τοῦ ἡλίου μετατροπὴν
+    <pb n="88.20"/>
+    πάλιν εἰς τὸν κάτω ϕέρεται τόπον. καὶ τὰ πνεύματα δὲ ἐκ σϕοδρᾶς ἀνα-
+    θυμιάσεως γίνεται, τοῦ ἀέρος ἐξωθουμένου καὶ λεπτυνομένου καὶ ἀεὶ τὸν
+    ἑξῆς καὶ συνεχῆ αὐτῷ κινοῦντος· ἡ μέντοι κίνησις τοῦ ἀέρος οὐ κατὰ πάντα
+    τόπον ἰσοταχὴς γίνεται, ἀλλὰ σϕοδροτέρα μὲν παρ' αὐτὴν τὴν ἀναθυμίασιν,
+    ἀμαυροτέρα δὲ μακρυνθεῖσα τοῦ τόπου καθ' ὃν κεκίνηται, καθάπερ καὶ ἐπὶ
+    τῶν ἄνω ϕερομένων βαρῶν. ϕέρεται γὰρ καὶ ταῦτα τάχιον μὲν κατὰ τὸν
+    συνεγγίζοντα τῷ κάτω τόπον, πρὸς ὅν ἐστι καὶ ἡ ἀποστέλλουσα αὐτὰ δύναμις,
+    βράδιον δὲ κατὰ τὸν ἄνω· τὸ παράπαν δὲ μηκέτι παρεπομένης αὐτοῖς τῆς
+    ἐξαποστελλούσης βίας, πάλιν εἰς τὸν κατὰ ϕύσιν ϕέρεται τόπον, λέγω δὴ εἰς
+    τὸν κάτω· εἰ δὲ ἰσοταχῆ αὐτὰ παρέπεμπεν ἡ ἐξαποστέλλουσα βία, οὐκ ἄν
+    <pb n="88.30"/>
+  </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en identifiant les entités zoologiques et autres éléments pertinents :
+
+
+<div type="chapter" n="90">
+  <p>ποτε ἔληξε. νυνὶ δὲ κατὰ βραχὺ ἀποληγούσης αὐτῆς καὶ ὥσπερ δαπανωμένης, καὶ τὸ τάχος λήγει τῆς ϕορᾶς.</p>
+<p><persName>Parmenide</persName> <foreign xml:lang="grc">ὁ Ἐλεάτης</foreign> <persName>Xénophane</persName> <foreign xml:lang="grc">ὁ Κολοϕώνιος</foreign>· <persName>Platon</persName> δὲ αὐτὴν ἰλέσθαι ϕησὶ τὸν διαπαντὸς τεταμένον πόλον ὅπερ ἁνία στρέϕεσθαι. ἀλλὰ μὴν καὶ <persName>Aristote</persName> καὶ οἱ ἀπὸ τῆς Στοᾶς ἀκίνητον ἀπέλιπον τὴν γῆν· τῇ δὲ προκειμένῃ νῦν αἰτιολογίᾳ τῇ περὶ τῆς ἀκ<choice><orig>η</orig><reg>η</reg></choice>σίας τῆς γῆς <persName>Straton</persName> δοκεῖ πρῶτος ὁ φυσικὸς χρήσασθαι.</p>
+</div>
+<div type="chapter" n="91">
+<p><persName>Strabon</persName> <foreign xml:lang="grc">I 3, 4 (49)</foreign>: μάλιστα δέ <persName>Ératosthène</persName> ϕησὶ (sc. <persName>Ératosthène</persName>) ζήτησιν παρασχεῖν, πῶς ἐν δισχιλίοις καὶ τρισχιλίοις ἀπὸ θαλάττης σταδίoις κατὰ τὴν μεσόγαιαν ὁρᾶται πολλαχοῦ <name type="animal" xml:lang="fr">coquillages</name> καὶ <name type="animal" xml:lang="fr">huîtres</name> <foreign xml:lang="grc">κόγχων</foreign> καὶ <foreign xml:lang="grc">ὀστρέων</foreign> καὶ <foreign xml:lang="grc">χηραμύδων</foreign> πλῆθος καὶ <name type="placeName" xml:lang="fr">lacs salés</name> <foreign xml:lang="grc">λιμνοθάλατται</foreign>, καθάπερ ϕησὶ περὶ τὸ <placeName>sanctuaire d'Amon</placeName> <foreign xml:lang="grc">τὸ ἱερὸν τοῦ ῎Αμμωνος</foreign> καὶ τὴν ἐπ' αὐτῷ ὁδὸν τρισχιλίων σταδίων οὖσαν· πολλὴν γὰρ εἶναι χύσιν <name type="animal" xml:lang="fr">huîtres</name>, <name type="plant" xml:lang="fr">sel</name> τε καὶ νῦν ἔτι εὑρίσκεσθαι πολλούς, <name type="animal" xml:lang="fr">souffles</name> <foreign xml:lang="grc">ἀναϕυσήματά</foreign> τε θαλάττης εἰς ὕψος ἀναβάλλειν.</p>
+  <p>πρὸς ᾧ καὶ <name type="animal" xml:lang="fr">épaves</name> <foreign xml:lang="grc">ναυάγια</foreign> <name type="animal" xml:lang="fr">navires</name> <foreign xml:lang="grc">θαλαττίων πλοίων</foreign> δείκνυσθαι, ἃ ἔϕασαν διὰ τοῦ χάσματος ἐκβεβράσθαι, καὶ ἐπὶ στυλιδίων ἀνακεῖσθαι <name type="animal" xml:lang="fr">dauphins</name> <foreign xml:lang="grc">δελϕῖνας</foreign> ἐπιγραφὴν ἔχοντας <placeName>Cyrène</placeName> <foreign xml:lang="grc">Κυρηναίων</foreign> θεωρῶν. ταῦτα δ' εἰπὼν τὴν <persName>Straton</persName> ἐπαινεῖ δόξαν τοῦ φυσικοῦ καὶ ἔτι <persName>Xanthos</persName> <foreign xml:lang="grc">τοῦ Λυδοῦ</foreign>· τοῦ μὲν <persName>Xanthos</persName> λέγoντος κτλ. ...., τοῦ δὲ <persName>Straton</persName> ἔτι μᾶλλον ἁπτομένου τῆς αἰτιολογίας, ὅτι ϕησὶν οἴεσθαι τὸν <placeName>Pont-Euxin</placeName> <foreign xml:lang="grc">Εὔξεινον</foreign> μὴ ἔχειν πρότερον τὸ κατὰ <placeName>Byzance</placeName> <foreign xml:lang="grc">Βυζάντιον</foreign> στόμα, τοὺς δὲ ποταμοὺς</p>
+</div>
+Voici l'encodage TEI P5 strict du texte de Stratōn Lampsakēnos (Straton de Lampsaque) selon les règles du projet Zoomathia :
+
+
+<div type="book" n="26">
+  <div type="section" n="3">
+    <p>βιάσασθαι καὶ ἀνοῖξαι τοὺς εἰς αὐτὸν ἐμβάλλοντας, εἶτ' ἐκπεσεῖν τὸ ὕδωρ εἰς
+    τὴν <placeName>Προποντίδα</placeName> καὶ τὸν <foreign xml:lang="grc">‘Ελλήσποντον</foreign>. τὸ δ' αὐτὸ συμβῆναι καὶ περὶ τὴν
+    καθ' ἡμᾶς θάλατταν· καὶ γὰρ ἐνταῦθα τὸν κατὰ <placeName>Στήλας</placeName> ἐκραγῆναι πόρον,
+    πληρωθείσης ὑπὸ τῶν ποταμῶν τῆς θαλάττης, κατὰ δὲ τὴν ἔκρυσιν ἀνα-
+    καλυϕθῆναι τὰ τεναγώδη πρότερον.</p>
+    <p>ϕέρει δ' αἰτίαν, πρῶτον μὲν ὅτι τῆς ἔξω
+    θαλάττης καὶ τῆς ἐντὸς τοὔδαϕος ἕτερόν ἐστιν, ἔπειθ' ὅτι καὶ νῦν ἔτι ταινία
+    τις ὕϕαλος διατέτακεν ἀπὸ τῆς <placeName>Εὐρώπης</placeName> ἐπὶ τὴν <placeName>Λιβύην</placeName>, ὡς ἂν <foreign xml:lang="grc"></foreign> μὴ
+    οὔσης πρότερον τῆς τε ἐντὸς καὶ τῆς ἐκτός.</p>
+    <p>καὶ βραχύτατα μὲν εἶναι τὰ περὶ
+    τὸν <placeName>Πόντον</placeName>, τὸ δὲ <placeName>Κρητικὸν</placeName> καὶ <placeName>Σικελικὸν</placeName> καὶ <placeName>Σαρδῷον</placeName> πέλαγος σϕόδρα
+    βαθέα. τῶν γὰρ ποταμῶν πλείστων καὶ μεγίστων ῥεόντων ἀπὸ τῆς ἄρκτου
+    καὶ τῆς ἀνατολῆς, ἐκεῖνα μὲν ἰλύος πληροῦσθαι, τὰ ἄλλα δὲ μένειν βαθέα.</p>
+    <p>διὸ καὶ γλυκυτάτην εἶναι τὴν <name type="place">Ποντικὴν θάλατταν</name> τὰς τ' ἐκρύσεις γίνεσθαι
+    εἰς οὓς ἐγκέκλιται τόπους τὰ ἐδάϕη. δοκεῖν δὲ κἂν χωσθῆναι τὸν <placeName>Πόντον</placeName>
+    ὅλον εἰς ὕστερον, ἂν μένωσιν αἱ ἐπιρρύσεις τοιαῦται· καὶ γὰρ νῦν ἤδη τενα-
+    γίζειν τὰ ἐν ἀριστερᾷ τοῦ <placeName>Πόντου</placeName>, τόν τε <placeName>Σαλμυδησσὸν</placeName> καὶ τὰ καλούμενα
+    <placeName>Στήθη</placeName> ὑπὸ τῶν ναυτικῶν τὰ περὶ τὸν <foreign xml:lang="grc">῎Ιστρον</foreign> καὶ τὴν <placeName>Σκυθῶν</placeName> ἐρημίαν.</p>
+<p><quote>πρὸς δὲ τὸν <persName>Στράτωνα</persName> λέγοιτ' ἄν</quote>, ὅτι πολλῶν αἰτίων ὄντων
+    ἀϕεὶς ταῦτα τὰ μὴ ὄντα αἰτιᾶται. πρώτην γὰρ αἰτίαν ϕησίν, ὅτι τῆς ἐντὸς
+    θαλάττης καὶ τῆς ἐκτὸς οὐ ταὐτὸν τὸ ἔδαϕος καὶ ὁ βυθός.</p>
+<p>ὁ δὲ (sc. <persName>Στράτων</persName>) τοῦτο λαμβάνει, νομίζων ὅπερ ἐπὶ τῶν</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Strato de Lampsaque, Περὶ εὑρημάτων (section 27/36) :
+
+
+<div type="book" n="1">
+  <div type="section" n="27">
+    <p>ποταμῶν συμβαίνει, τοῦτο καὶ ἐπὶ τῆς θαλάττης ἀπαντᾶν, τὸ ἀπὸ τῶν μετεώρων
+    τόπων εἶναι τὴν ῥύσιν. οὐδὲ γὰρ ἂν τοῦ κατὰ <placeName>Βυζάντιον</placeName> ῥοῦ τὸ ἔδαϕος ᾐτιᾶτο,
+    λέγων ὑψηλότερον τὸ τοῦ <name type="placeName" xml:lang="fr">Euxin</name> ἢ τὸ τῆς <placeName>Προποντίδος</placeName> καὶ τοῦ ἑξῆς πελά-
+    γους, ἅμα καὶ αἰτίαν προστιθείς· ἀπὸ γὰρ τῆς <name type="plant" xml:lang="fr">boues</name> τῆς ἀπὸ τῶν ποταμῶν
+    καταϕερομένης πληροῦσθαι τὸν βυθὸν καὶ βραχὺν γίνεσθαι, διὰ τοῦτο δὲ καὶ
+    ῥεῖν εἰς τὰ ἐκτός. τὸν δ' αὐτὸν λόγον καὶ ἐπὶ τὴν ἡμετέραν θάλατταν σύμπασαν
+    μεταϕέρει πρὸς τὴν ἐκτός, ὡς καὶ ταύτης μετεωρότερον τοῦ <foreign xml:lang="grc">ὑποκειμένου</foreign> τῷ <foreign xml:lang="grc">'Ατλαντικῷ</foreign> πελάγει·
+    καὶ γὰρ αὕτη ἐκ πολλῶν ποταμῶν πληροῦται, καὶ τὴν ὑποστάθμην τῆς <name type="plant" xml:lang="fr">boues</name> δέχεται τὴν ἀνάλογον.</p>
+<p><quote><persName>Plutarchus</persName> <foreign xml:lang="la">Epitoma</foreign> V 4 (<foreign xml:lang="la">Aetius</foreign> V 4, 3 p. 418 <persName>Diels</persName>): Εἰ σῶμα
+    τὸ σπέρμα. <persName>Στράτων</persName> καὶ <persName>Δημόκριτος</persName> καὶ τὴν δύναμιν σῶμα· πνευματικὴ γάρ.</quote></p>
+<p><quote><persName>Galenus</persName> <foreign xml:lang="la">De semine</foreign> II 5 (IV p. 629 <persName>Kun</persName>): ὥστ' οὐκ ἂν ἀπὸ
+    τρόπου δόξειεν ὁ ϕυσικὸς <persName>Στράτων</persName> ὑπειληϕέναι τὸ μὲν ἄρρεν γίνεσθαι <name type="animal" xml:lang="fr">ζῷον</name>
+    ἐπικρατείᾳ γονῆς ἄρρενος, τὸ δὲ θῆλυ θηλείας. οὕτω μέν γε καὶ ϕλεψὶ καὶ
+    ἀρτηρίαις οἴεται διαϕέρειν αὐτά, καθάπερ γε τοῖς γεννητικοῖς μορίοις, ἀπείρως
+    ἔχων ἀνατομῆς ἀκριβοῦς.</quote></p>
+<p><quote>[<persName>Iamblichus</persName>] <foreign xml:lang="la">Theologumena Arithmeticae</foreign> 46 p. 62, 8 <persName>De Falco</persName>:
+    <persName>Στράτων</persName> δὲ ὁ <foreign xml:lang="grc">Περιπατητικὸς</foreign> καὶ <persName>Διοκλῆς</persName> ὁ <placeName>Καρύστιος</placeName> καὶ πολλοὶ ἕτεροι τῶν
+    ἰατρῶν ἐν μὲν τῇ δευτέρᾳ ἑβδομάδι ῥανίδας αἵματος ἐπιϕαίνεσθαι τῷ λεχθέντι
+    ὑμένι ϕασὶν ἐκ τῆς ἐξωτέρας ἐπιπολῆς, ἐν δὲ τῇ τρίτῃ διϊκνεῖσθαι αὐτὰς μέχρι</quote></p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strict du texte selon les règles du projet Zoomathia, en respectant la structure demandée et en priorisant l'identification des entités zoologiques et autres éléments nommés :
+
+
+<div type="chapter" n="28">
+  <p>τῶν <name type="animal" xml:lang="fr">ὑγρῶν</name>, ἐν δὲ τῇ δ́ θρομβοῦσθαι τὸ ὑγρὸν ϕασι καὶ μέσον ὡς σαρκὸς τι
+  καὶ <name type="animal" xml:lang="fr">αἵματος</name> σύστρεμμα ἴσχειν, δηλονότι τελεσιουργίας τυχὸν διὰ τὴν τοῦ <name type="animal" xml:lang="fr">κή</name>
+  τελείαν ϕύσιν ἢ διὰ τὴν ἐν αὐτῷ τῶν δύο περιττῶν κύβων περαινούσης οὐσίας
+  ὑπαρχόντων σύνθεσιν, ἐν δὲ τῇ έ κατὰ τὴν λ́ μάλιστα καὶ πέμπτην ἡμέραν
+  διαπλάττεσθαι ἐν μέσῳ αὐτοῦ <name type="animal" xml:lang="fr">μελίττης</name> μὲν μεγέθει ἐοικὸς τὸ βρέϕος, δια-
+τετρανωμένον δὲ ὅμως, ὥστε κεϕαλὴν καὶ αὐχένα καὶ θώρακα καὶ κῶλα
+  ὁλοσχερέστερον ϕαντάζεσθαι ἐν αὐτῷ. καὶ τοῦτό ϕασι ζ́ μησὶ γόνιμον εἶναι,
+  εἰ δὲ ἐννέα μέλλει γενήσεσθαι, τῇ ἕκτῃ πάσχει τοῦτο ἑβδομάδι, ἂν <foreign xml:lang="grc">θῆλυ</foreign> ᾖ,
+  ἂν δὲ <foreign xml:lang="grc">ἄρσεν</foreign>, τῇ ἑβδόμῃ.</p>
+<p><persName>Plutarchus</persName> <foreign xml:lang="la">Epitoma</foreign> V 8, 2 (<quote><persName>Aetius</persName> V 8, 2 p. 421 Diels</quote>): Στρά-
+  των παρὰ πρόσθεσιν ἢ ἀϕαίρεσιν ἢ μετάθεσιν ἢ ἐμπνευμάτωσιν (<quote>sc. τέρατα
+  γίνεσθαι</quote>).</p>
+<p><persName>Sextus Empiricus</persName> <foreign xml:lang="la">Adv. logicos</foreign> I 350: καὶ οἱ μὲν διαϕέρειν
+  αὐτὴν (<quote>sc. τὴν διάνοιαν</quote>) τῶν <name type="animal" xml:lang="fr">αἰσθήσεων</name>, ὡς οἱ πλείους, οἱ δὲ αὐτὴν εἶναι τὰς
+  αἰσθήσεις, καθάπερ διὰ τινων ὀπῶν τῶν <name type="animal" xml:lang="fr">αἰσθητηρίων</name> προκύπτουσαν, ἧς
+  στάσεως ἦρξε <persName>Στράτων</persName> τε ὁ <name type="deity">ϕυσικὸς</name> καὶ <persName>Αἰνησίδημος</persName>.</p>
+<p><persName>Plutarchus</persName> <foreign xml:lang="la">Epitoma</foreign> IV 23, 3 (<quote><persName>Aetius</persName> IV 23, 3 p. 415 Diels</quote>):
+  <persName>Στράτων</persName> καὶ τὰ πάθη τῆς <name type="animal" xml:lang="fr">ψυχῆς</name> καὶ τὰς <name type="animal" xml:lang="fr">αἰσθήσεις</name> ἐν τῷ
+  <name type="deity">ἡγεμονικῷ</name>, οὐκ ἐν τοῖς πεπονθόσι τόποις συνίστασθαι. ἐν γὰρ ταύτῃ κεῖσθαι τὴν
+  ὑπομονήν, ὥσπερ ἐπὶ τῶν <name type="animal" xml:lang="fr">δεινῶν</name> καὶ <name type="animal" xml:lang="fr">ἀλγεινῶν</name> [<foreign xml:lang="grc">καὶ ὥσπερ ἐπὶ τῶν ἀνδρείων καὶ δειλῶν</foreign>].</p>
+<p>οἱ μὲν γὰρ</p>
+</div>
+<div type="section" n="29">
+  <p><foreign xml:lang="grc">ἅπαντα συλλήβδην ταῦτα τῇ ψυχῇ ϕέροντες ἀνέθεσαν</foreign>, ὥσπερ <persName>Στράτων</persName> ὁ
+  <foreign xml:lang="grc">ϕυσικὸς</foreign> οὐ μόνον τὰς ἐπιθυμίας ἀλλὰ καὶ τὰς λύπας, οὐδὲ τοὺς ϕόβους καὶ
+  τοὺς ϕθόνους καὶ τὰς ἐπιχαιρεκακίας, ἀλλὰ καὶ πόνους καὶ ἡδονὰς καὶ ἀλγη-
+  δόνας καὶ ὅλως πᾶσαν αἴσθησιν ἐν τῇ ψυχῇ συνίστασθαι ϕάμενος καὶ τῆς
+  ψυχῆς τὰ τοιαῦτα πάντα εἶναι, μὴ τὸν πόδα πονούντων ἡμῶν ὅταν προσκρούσω-
+  μεν, μηδὲ τὴν κεϕαλὴν ὅταν κατάξωμεν, μὴ τὸν δάκτυλον ὅταν ἐκτέμωμεν.
+  ἀναίσθητα γὰρ τὰ λοιπὰ πλὴν τοῦ <foreign xml:lang="grc">ἡγεμονικοῦ</foreign>, πρὸς ὃ τῆς πληγῆς ὀξέως
+  ἀναϕερομένης τὴν αἴσθησιν ἀλγηδόνα καλοῦμεν.</p>
+<p>ὡς δὲ τὴν ϕωνὴν τοῖς ὠσὶν
+  αὐτοῖς ἐνηχοῦσαν ἔξω δοκοῦμεν εἶναι, τὸ ἀπὸ τῆς ἀρχῆς ἐπὶ τὸ <foreign xml:lang="grc">ἡγεμονικὸν</foreign>
+  διάστημα τῇ αἰσθήσει προσλογιζόμενοι, παραπλησίως τὸν ἐκ τοῦ τραύματος
+  πόνον οὐχ' ὅπου τὴν αἴσθησιν εἴληϕεν, ἀλλ' ὅθεν ἔσχε τὴν ἀρχὴν εἶναι δοκοῦ-
+  μεν, ἑλκομένης ἐπ' ἐκεῖνο τῆς ψυχῆς ἀϕ' οὗ πέπονθε. διὸ καὶ προσκόψαντες
+  αὐτίκα τὰς ὀϕρῦς συνάγομεν, τῷ πληγέντι μορίῳ τοῦ <foreign xml:lang="grc">ἡγεμονικοῦ</foreign> τὴν αἴσθησιν
+  ὀξέως ἀποδιδόντος, καὶ παρεγκόπτομεν ἔσθ' ὅτε τὸ πνεῦμα· κἂν τὰ μέρη
+  δεσμοῖς διαλαμβάνηται, <foreign xml:lang="grc">ταῖς</foreign> χερσὶ σϕόδρα πιέζομεν, ἱστάμενοι πρὸς τὴν
+  διάδοσιν τοῦ πάθους, καὶ τὴν πληγὴν ἐν τοῖς ἀναισθήτοις θλίβοντες, ἵνα μὴ
+  συνάψει πρὸς τὸ ϕρονοῦν ἀλγηδὼν γένηται. ταῦτα μὲν οὖν <persName>ὁ Στράτων</persName> ἐπὶ
+  πολλοῖς ὡς εἰκὸς τοιούτοις.</p>
+<p><quote><persName>Plutarchus</persName> <foreign xml:lang="la">De sollertia animalium</foreign> III 961 a (cf. <persName>Porphyrius</persName>
+  <foreign xml:lang="la">De abstinentia</foreign> III 21): καίτοι <persName>Στράτωνός</persName> γε τοῦ <foreign xml:lang="grc">ϕυσικοῦ</foreign> λόγος ἐστὶν</quote></p>
+</div>
+Voici l'encodage TEI P5 strict du texte demandé, conforme aux règles Zoomathia et aux consignes spécifiques :
+
+
+<div type="chapter" n="30">
+  <p><foreign xml:lang="grc">ἀποδεικνύων</foreign> ὡς οὐδ' αἰσθάνεσθαι τὸ παράπαν ἄνευ τοῦ νοεῖν ὑπάρχει· καὶ
+  γὰρ γράμματα πολλάκις ἐπιπορευομένους τῇ ὄψει καὶ λόγοι προσπίπτοντες τῇ
+  ἀκοῇ διαλανθάνουσιν ἡμᾶς καὶ διαϕεύγουσι πρὸς ἑτέροις τὸν νοῦν ἔχοντας·
+  εἶτ' αὖθις ἐπανῆλθεν καὶ μεταθεῖ καὶ διώκει τῶν προιεμένων ἕκαστον ἀνα-
+  λεγόμενος· ᾗ καὶ λέλεκται</p>
+  <quote>
+    <p>νοῦς ὁρῇ καὶ νοῦς ἀκούει, τἄλλα κωϕὰ καὶ τυϕλά·</p>
+  </quote>
+  <p><foreign xml:lang="grc">ὡς τοῦ περὶ τὰ ὄμματα καὶ ὦτα πάθους, ἂν μὴ παρῇ τὸ ϕρονοῦν, αἴσθησιν</foreign>
+  οὐ ποιοῦντος.</p>
+<p><persName>Stobaeus</persName> <quote>Eclogae</quote> I 52, 3 (<persName>Aetius</persName> IV 13, 7 p. 403 <persName>Diels</persName>):</p>
+  <p><foreign xml:lang="grc">Περὶ ὁράσεως. Στράτων χρώματά ϕησιν ἀπὸ τῶν σωμάτων ϕέρεσθαι συγχρῴ-
+  ζοντ' αὐτοῖς τὸν μεταξὺ ἀέρα.</foreign></p>
+<p><persName>Alexander Aphrod.</persName> <quote>In Aristotelis De sensu</quote> 6 comment.
+  p. 126, 19 <persName>Wendland</persName>:
+  <foreign xml:lang="grc">εἴτε δὴ τῷ τὸ σχῆμα ὑπαλλάττεσθαι αὐτῶν (sc. τῶν
+  ψόϕων) ἐν τῇ ϕορᾷ εἴτε τῷ ἐκλύεσθαι τὸν τόνον τῆς πληγῆς, ὡς Στράτων
+  λέγει (οὐ γὰρ ϕησιν ἐν τῷ σχηματίζεσθαι πως τὸν ἀέρα τοὺς διαϕόρους ψόϕους
+  γίγνεσθαι, ἀλλὰ τῇ τῆς πληγῆς ἀνισότητι), ἀλλ' οὖν, ὁποτέρως ἂν γίνηται τὸ
+  μὴ οὕτως ἀκούεσθαι ὡς γίνεται ἡ ϕορά κτλ.</foreign></p>
+<p><persName>Sextus Empiricus</persName> <quote>Adv. Logicos</quote> II 12:
+  <foreign xml:lang="grc">καὶ δὴ τῆς μὲν πρώτης
+  δόξης προεστήκασιν οἱ ἀπὸ τῆς Στοᾶς (St V Fr II fr. 166), τρία ϕάμενοι
+  συζυγεῖν ἀλλήλοις, τό τε σημαινόμενον καὶ τὸ σημαῖνον καὶ τὸ τυγχάνον,
+  ὧν σημαῖνον μὲν εἶναι τὴν ϕωνήν, οἷον τὴν Δίων, σημαινόμενον δὲ αὐτὸ τὸ
+  πρᾶγμα τὸ ὑπ' αὐτῆς δηλούμενον καὶ οὗ ἡμεῖς μὲν ἀντιλαμβανόμεθα τῇ
+  ἡμετέρᾳ παρυϕισταμένου διανοίᾳ, οἱ δὲ βάρβαροι οὐκ ἐπαίουσι καίπερ τῆς</foreign></p>
+</div>
+Voici l'encodage TEI P5 strict du texte selon les règles du projet Zoomathia, en respectant la structure demandée et en priorisant l'encodage des entités zoologiques (bien que ce passage ne contienne pas de noms d'animaux explicites) :
+
+
+<div type="book" n="31">
+  <div type="chapter" n="36">
+    <p>
+      <foreign xml:lang="grc">ϕωνῆς ἀκούοντες</foreign>, τυγχάνον δὲ τὸ ἐκτὸς ὑποκείμενον, ὥσπερ αὐτὸς ὁ <persName>Δίων</persName>.
+    </p>
+    <p>
+      τούτων δὲ δύο μὲν εἶναι σώματα, καθάπερ τὴν <foreign xml:lang="grc">ϕωνὴν</foreign> καὶ τὸ τυγχάνον, ἓν δὲ ἀσώματον, ὥσπερ τὸ σημαινόμενον πρᾶγμα, καὶ λεκτόν, ὅπερ ἀληθές τε γίνεται ἢ ψεῦδος.
+    </p>
+<p>
+      καὶ τοῦτο οὐ κοινῶς πᾶν, ἀλλὰ τὸ μὲν ἐλλιπές, τὸ δὲ αὐτοτελές.
+    </p>
+    <p>
+      καὶ τοῦ αὐτοτελοῦς τὸ καλούμενον ἀξίωμα, ὅπερ καὶ ὑπογράϕοντές ϕασιν: ἀξίωμά ἐστιν ὅ ἐστιν ἀληθὲς ἢ ψεῦδος.
+    </p>
+    <p>
+      οἱ δὲ περὶ τὸν <persName>’Επίκουρον</persName> καὶ <persName>Στράτωνα</persName> τὸν ϕυσικὸν δύο μόνον ἀπολείποντες, σημαῖνόν τε καὶ τυγχάνον, ϕαίνονται τῆς δευτέρας ἔχεσθαι στάσεως καὶ περὶ τῇ <foreign xml:lang="grc">ϕωνῇ</foreign> τὸ ἀληθὲς καὶ ψεῦδος ἀπολείπειν.
+    </p>
+<quote>
+      <foreign xml:lang="grc">Olympiodorus In Platonis Phaedonem comment.</foreign> (II 134 p. 174 Norvin): ὅτι, ὡς ἁρμονία ἁρμονίας ὀξυτέρα καὶ βαρυτέρα, οὕτω καὶ ψυχὴ ψυχῆς, ϕησὶν ὁ <persName>Στράτων</persName>, ὀξυτέρα καὶ νωθεστέρα.
+    </quote>
+<quote>
+      <foreign xml:lang="grc">Theodoretus Graecarum affectionum curatio</foreign> V 22: ὁ δὲ <persName>Στράτων</persName> ἐν μεσοϕρύῳ (<foreign xml:lang="grc">sc. τὸ ἡγεμονικὸν εἶναι</foreign> εἴρηκεν).
+    </quote>
+<quote>
+      <foreign xml:lang="grc">Plutarchus Epitoma</foreign> IV 5, 2 (<foreign xml:lang="grc">Aetius</foreign> IV 5, 2 p. 391 Diels): <persName>Στράτων</persName> ἐν μεσοϕρύῳ (<foreign xml:lang="grc">sc. τὸ ἡγεμονικὸν εἶναι</foreign>).
+    </quote>
+<quote>
+      <foreign xml:lang="grc">Pollux</foreign> II 226: καὶ ὁ μὲν νοῦς καὶ λογισμὸς καὶ ἡγεμονικόν, εἴτε περὶ ἐγκεϕάλῳ κατὰ <persName>Πυθαγόραν</persName> καὶ <persName>Πλάτωνα</persName> ἱδρυμένος, εἴτε <foreign xml:lang="grc">ἐν</foreign> παρεγκεϕαλίδι ἢ μήνιγξιν, ὡς πολλοῖς τῶν ἰατρῶν δοκεῖ, εἴτε κατὰ τὸ μεσόϕρυον, ὡς ἔλεγε <persName>Στράτων</persName>, εἴτε περὶ τὸ αἷμα, ὡς <persName>’Εμπεδοκλῆς</persName> τε καὶ <persName>’Αριστοτέλης</persName>, εἴτε περὶ τὴν καρδίαν, ὡς ἡ Στοά.
+    </quote>
+<quote>
+      <foreign xml:lang="grc">Olympiodorus In Platonis Phaedonem comment.</foreign> D 63 p. 221
+    </quote>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte fourni :
+
+
+<div type="book" n="32">
+  <div type="section" n="32/36">
+    <p><persName>Norvin</persName>: <foreign xml:lang="grc">’Απορίαι Στράτωνος πρὸς τὸν πρῶτον λόγον τὸν ἀπὸ τῶν ἐναντίων</foreign>.</p>
+<p><foreign xml:lang="grc">εἰ μὴ ἐκ τῶν ἐϕθαρμένων τὰ ὄντα, ὡς ἐκ τῶν ὄντων τὰ ἐϕθαρμένα, πῶς ἔχει λόγον πιστεύειν ὡς ἐρρωμένῃ τῇ τοιαύτῃ ἐϕόδῳ;</foreign></p>
+<p><foreign xml:lang="grc">εἰ μὴ μόριον τεθνηκὸς ἀναβιώσκεται, οἷον <name type="animal" xml:lang="fr">doigt</name> ἢ <name type="animal" xml:lang="fr">œil</name> ἐκκοπείς, δῆλον ὡς οὐδὲ τὸ ὅλον.</foreign></p>
+<p><foreign xml:lang="grc">εἰ καὶ τὰ ἐξ ἀλλήλων γιγνόμενα κατ' εἶδος μόνον τὰ αὐτά, οὐ κατὰ ἀριθμόν.</foreign></p>
+<p><foreign xml:lang="grc">εἰ ἐκ μὲν τροϕῆς σάρκες, οὐ μὴν τροϕὴ ἐκ σαρκῶν, καὶ ἰὸς ἐκ <name type="plant" xml:lang="fr">cuivre</name> καὶ ἀπὸ ξύλων <name type="plant" xml:lang="fr">charbon</name>ς, οὐ μὴν ἀνάπαλιν.</foreign></p>
+<p><foreign xml:lang="grc">εἰ ἐκ νέων γέροντες, οὐ μὴν ἀνάπαλιν.</foreign></p>
+<p><foreign xml:lang="grc">εἰ σῳζομένου τοῦ ὑποκειμένου δύναται ἐξ ἀλλήλων γίγνεσθαι τὰ ἐναντία, οὐ μὴν ἐϕθαρμένου.</foreign></p>
+<p><foreign xml:lang="grc">εἰ μὴ ἀπολείπει ἡ γένεσις, κἂν μόνον κατ' εἶδος ἀεὶ γίνηται, ὡς ἔχει καὶ τὰ τεχνητά.</foreign></p>
+    <pb n="122.10"/>
+    <p><persName>Olympiodorus</persName> <quote>In Platonis Phaedonem comment.</quote> <foreign xml:lang="la">C II 178_190</foreign></p>
+    <pb n="123.1"/>
+    <p><persName>Norvin</persName>: <foreign xml:lang="grc">’Απορίαι Στράτωνος γ́ πρὸς τὸν λόγον</foreign>.</p>
+<p><foreign xml:lang="grc">μήποτε καὶ πᾶν <name type="animal" xml:lang="fr">être vivant</name> οὕτω γε ἀθάνατον· θανάτου γὰρ ἄδεκτον· οὐ γὰρ ἔσται <name type="animal" xml:lang="fr">être vivant</name> τεθνηκὸς οὐδὲ ψυχὴ τεθνηκυῖα.</foreign></p>
+    <p><foreign xml:lang="grc">οὕτως οὐδὲ τὸ σύνθετόν ποτε διαλυθήσεται· ἄδεκτον γάρ ἐστι τοῦ ἐναντίου· οὐ γὰρ ἔσται ποτὲ διαλυθὲν μένον γε σύνθετον.</foreign></p>
+    <p><foreign xml:lang="grc">εἰ πολλαχῶς ἡ ἀπόϕασις, ἀθάνατος ἡ ψυχὴ ἂν εἴη, οὐχ ὡς ζωὴ ἄσβεστος ἢ ζωὴν ἄσβεστον ἔχουσα, ἀλλ' ὡς μόνον ἑνὸς δεκτικὴ τῶν ἐναντίων καὶ μετὰ τούτου οὖσα ἢ μὴ οὖσα.</foreign></p>
+<p><foreign xml:lang="grc">μήποτε καὶ αἱ τῶν <name type="animal" xml:lang="fr">animaux</name> ψυχαὶ οὕτως ἀθάνατοι, ὡς ἐπιϕέρουσαι ζωὴν καὶ ἄδεκτοι τοῦ ἐναντίου τῷ ἐπιϕερομένῳ.</foreign></p>
+    <p><foreign xml:lang="grc">μήποτε οὕτω καὶ αἱ τῶν <name type="plant" xml:lang="fr">plantes</name>· ζωοποιοὶ γὰρ καὶ αὗται τῶν σωμάτων.</foreign></p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia, en respectant la structure demandée et en identifiant les entités nommées zoologiques (bien que ce texte philosophique n'en contienne pas explicitement) :
+
+
+<div type="book" n="33">
+<p>
+    <foreign xml:lang="grc">μήποτε οὕτω καὶ ἡ ϕύσις ἑκάστη· τὸ γὰρ κατὰ ϕύσιν παρέχουσα</foreign>
+    πῶς ἂν δέξαιτό γε τὸ παρὰ ϕύσιν; ἄδεκτος δὲ οὖσα τούτου οὐκ ἂν ποτε
+    ϕθαρείη.
+  </p>
+  <p>
+    <foreign xml:lang="grc">μήποτε πᾶσα γένεσις ἄϕθαρτος· ἄδεκτος γὰρ καὶ αὐτὴ τοῦ ἐναντίου·</foreign>
+    οὐ γὰρ ἔσται τι γιγνόμενον ἐϕθαρμένον.
+  </p>
+  <p>
+    <foreign xml:lang="grc">μήποτε προχείρως εἴληπται, ὡς εἰ ἄδεκτος θανάτου καὶ ταύτῃ ἀθάνατος,</foreign>
+    ὅτι καὶ ἀνώλεθρος· ἀθάνατος γὰρ καὶ ὁ λίθος οὕτω γε, ἀλλ' οὐκ ἀνώλεθρος.
+  </p>
+<p>
+    <foreign xml:lang="grc">πόθεν, ὅτι συνεπιϕέρει ζωήν, ἵνα καὶ ἄδεκτος ᾖ τοῦ ἐναντίου τῷ ἐπι-</foreign>
+    ϕερομένῳ· ἐνίοτε γὰρ ἐπιϕερομένη ἐστίν.
+  </p>
+  <p>
+    <foreign xml:lang="grc">μήποτε ζῶν ἐστι καὶ ἐπείσακτον ἔχει τὴν ζωήν, ὥστε ποτὲ καὶ ἀπο-</foreign>
+    βάλλειν αὐτήν.
+  </p>
+  <p>
+    <foreign xml:lang="grc">μήποτε τὸν μὲν ἐναντίον θάνατον τῇ ἐπιϕερομένῃ ζωῇ οὐ δέχεται, ἄλλον</foreign>
+    δὲ τὸν τῇ ἐπιϕερούσῃ.
+  </p>
+  <p>
+    <foreign xml:lang="grc">μήποτε ὡς τὸ πῦρ, ἔστ' ἂν ᾖ, ἄψυκτον, οὕτω καὶ ἡ ψυχή, ἔστ' ἂν ᾖ,</foreign>
+    ἀθάνατος· καὶ γὰρ ἐπιϕέρει ζωήν, ἔστ' ἂν ᾖ.
+  </p>
+  <p>
+    <foreign xml:lang="grc">μήποτε, κἂν πάντα τὰ ἄλλα διαϕύγωμεν, τὸ πεπερασμένην εἶναι καὶ</foreign>
+    δύναμιν ἔχειν πεπερασμένην οὐκ ἂν ἐλέγξαιμεν. ἔστω γὰρ καὶ ἐπιϕέρουσα
+  </p>
+<p>
+    <foreign xml:lang="grc">ζωὴν καὶ χωριστὴ κατ' οὐσίαν καὶ μὴ δεχομένη τὸν ἐναντίον τῇ ἐπιϕερομένῃ</foreign>
+    ζωῇ θάνατον· καθ' ἑαυτὴν δὲ οὖσα καμεῖταί ποτε καὶ ϕθαρήσεται σβεσθεῖσα
+    ἐϕ' ἑαυτῆς, οὐδενὸς ἔξωθεν ἐπιόντος.
+  </p>
+<p>
+    <quote>
+      <persName>Olympiodorus</persName>
+      <foreign xml:lang="la">In Platonis Phaedonem comment.</foreign>
+      <foreign xml:lang="la">D 78 p. 226</foreign>
+      <foreign xml:lang="de">Norvin (es geht voraus ein Syllogismus uer Seele und Tod als sich ausschliessende Begriffe)</foreign>:
+      <foreign xml:lang="grc">ἀλλ' οὕτω γε, ϕησὶν ὁ Στράτων, οὐδὲ ἡ ἐν ὑποκειμένῳ ζωὴ τοῦ ἐναντίου</foreign>
+      δεκτική. οὐ γὰρ μένει, εἶτα δέχεται τὸν θάνατον· οὐδὲ γὰρ ἡ ψυχρότης τὴν
+    </quote>
+  </p>
+</div>
+Voici l'encodage TEI P5 strictement conforme aux règles du projet Zoomathia pour le texte de Straton de Lampsaque (Strato Lampsacenus) :
+
+
+<div type="book" n="34">
+  <div type="section" n="34/36">
+    <p><foreign xml:lang="grc">θερμότητα</foreign>. <name type="animal" xml:lang="fr">ἀθάνατος</name> ἄρα ἡ ἐν ὑποκειμένῳ <name type="animal" xml:lang="fr">ζωὴ</name> ὥσπερ ἄθερμος ἡ <foreign xml:lang="grc">ψυχρότης</foreign>·</p>
+    <p>καὶ μὴν ἀπόλλυται. ἔπειτα, <quote><persName>ϕησίν</persName></quote>, οὐκ ἔστιν ἡ <foreign xml:lang="grc">ϕθορὰ</foreign> <foreign xml:lang="grc">θανάτου</foreign> παραδοχή·</p>
+    <p>οὐδὲ γὰρ <name type="animal" xml:lang="fr">ζῷον</name> οὕτω <foreign xml:lang="grc">ϕθαρήσεται</foreign>· οὐ γὰρ μένει <name type="animal" xml:lang="fr">ζῷον</name> δεδεγμένον <foreign xml:lang="grc">θάνατον</foreign>,</p>
+    <p>ἀλλὰ ἀποβαλὸν τὴν <name type="animal" xml:lang="fr">ζωὴν</name> τέθνηκεν·<foreign xml:lang="grc">ἀποβολὴ</foreign> γὰρ <name type="animal" xml:lang="fr">ζωῆς</name> <foreign xml:lang="grc">ὁ θάνατος</foreign>. ταῦτα μὲν</p>
+<p><persName>ὁ Στράτων</persName>. ......... πρὸς τούτοις <quote><persName>ϕησὶν</persName> <persName>ὁ Πρόκλος</persName></quote>, ὅτι τὸ <foreign xml:lang="grc">ἀπόλλυσθαι</foreign></p>
+    <p>τῇ <name type="animal" xml:lang="fr">ψυχῇ</name> <foreign xml:lang="grc">θανατοῦσθαί</foreign> ἐστιν, τὸ δὲ <foreign xml:lang="grc">θανατοῦσθαι</foreign> <foreign xml:lang="grc">ϕαίνεται</foreign> ὄν, <foreign xml:lang="grc">ὡς</foreign> καὶ αὐτὸς <persName>ὁ Στράτων</persName> <quote><persName>ϕησίν</persName></quote>, τὸ <foreign xml:lang="grc">παθεῖν</foreign> <foreign xml:lang="grc">ἀποβολὴν</foreign> <name type="animal" xml:lang="fr">ζωῆς</name> τὸ ὑποκείμενον.</p>
+<p><persName>Olympiodorus</persName> <foreign xml:lang="la">In Platonis Phaedonem comment.</foreign> D 25 p. 211 <persName>Norvin</persName>: <foreign xml:lang="grc">διὰ τί μὴ ἀναμιμνῄσκεταί</foreign> τις <foreign xml:lang="grc">ἄνευ</foreign> <foreign xml:lang="grc">ἀποδείξεως</foreign>, <foreign xml:lang="grc">ὡς</foreign> <foreign xml:lang="grc">ἀπορεῖ</foreign> <persName>Στράτων</persName>;</p>
+<p><persName>Olympiodorus</persName> <foreign xml:lang="la">In Platonis Phaedonem comment.</foreign> II 41 p. 158 <persName>Norvin</persName> (<quote><persName>cf. Plutarchus</persName> <persName>ed. Bernardakis</persName> VII p. 31</quote>): <foreign xml:lang="grc">ὅτι</foreign> <persName>Στράτων</persName> <foreign xml:lang="grc">ἠπόρει</foreign>,</p>
+    <p><foreign xml:lang="grc">εἰ</foreign> ἔστιν <foreign xml:lang="grc">ἀνάμνησις</foreign>, <foreign xml:lang="grc">πῶς</foreign> <foreign xml:lang="grc">ἄνευ</foreign> <foreign xml:lang="grc">ἀποδείξεων</foreign> οὐ <foreign xml:lang="grc">γιγνόμεθα</foreign> <foreign xml:lang="grc">ἐπιστήμονες</foreign>; <foreign xml:lang="grc">πῶς</foreign> δὲ</p>
+    <p>οὐδεὶς <name type="animal" xml:lang="fr">αὐλητὴς</name> ἢ <name type="animal" xml:lang="fr">κιθαριστὴς</name> γέγονεν <foreign xml:lang="grc">ἄνευ</foreign> <foreign xml:lang="grc">μελέτης</foreign>;</p>
+<p><persName>Olympiodorus</persName> <foreign xml:lang="la">In Platonis Phaedonem comment.</foreign> D 65 p. 223 <persName>Norvin</persName>: <foreign xml:lang="grc">’Απορίαι</foreign> <persName>Στράτωνος</persName> πρὸς τὸν <foreign xml:lang="grc">ἀπὸ</foreign> τῶν <foreign xml:lang="grc">ἀναμνήσεων</foreign> <foreign xml:lang="grc">λόγον</foreign>.</p>
+    <p><foreign xml:lang="grc">ἢ</foreign> πρὸ <name type="animal" xml:lang="fr">χρόνου</name> ἔχουσι τὰς <foreign xml:lang="grc">ἐπιστήμας</foreign>· οὕτω δὲ <foreign xml:lang="grc">ἀεὶ</foreign> <foreign xml:lang="grc">ἐπιστήμονές</foreign> εἰσιν, <foreign xml:lang="grc">ἅτε</foreign></p>
+    <p>μηδὲν <name type="animal" xml:lang="fr">χρόνου</name> προσδεόμεναι μηδὲ <foreign xml:lang="grc">πάσχουσαί</foreign> τι <foreign xml:lang="grc">ὑπ' αὐτοῦ</foreign>· <foreign xml:lang="grc">ἢ</foreign> <foreign xml:lang="grc">ἀπὸ</foreign> <name type="animal" xml:lang="fr">χρόνου</name>, καὶ</p>
+    <p>τότε <foreign xml:lang="grc">ἐπίστανται</foreign> <foreign xml:lang="grc">ἄνευ</foreign> τῆς <foreign xml:lang="grc">ἀναμνήσεως</foreign>, <foreign xml:lang="grc">ἅτε</foreign> <foreign xml:lang="grc">πρῶτον</foreign> <foreign xml:lang="grc">μανθάνουσαι</foreign>. <foreign xml:lang="grc">ἢ</foreign> καὶ τότε</p>
+    <p>τῆς πρὸ <name type="animal" xml:lang="fr">σώματος</name> <foreign xml:lang="grc">ἐνούσης</foreign> <foreign xml:lang="grc">ἐπιστήμης</foreign> <foreign xml:lang="grc">ἀναμιμνῄσκονται</foreign>· <foreign xml:lang="grc">ὁ</foreign> <foreign xml:lang="grc">ποιητὴς</foreign> αὐτῶν</p>
+    <p><foreign xml:lang="grc">τελείας</foreign> <foreign xml:lang="grc">δήπου</foreign> <foreign xml:lang="grc">πεποίηκεν</foreign>· <foreign xml:lang="grc">ἐπιστήμονας</foreign> <foreign xml:lang="grc">ἄρα</foreign>. <foreign xml:lang="grc">ἀλλὰ</foreign> μὴν <foreign xml:lang="grc">ἐλθοῦσαι</foreign> ἐνταῦθα</p>
+    <p><foreign xml:lang="grc">μαθήσεως</foreign> <foreign xml:lang="grc">δέονται</foreign>· <foreign xml:lang="grc">ἀναμνήσεως</foreign> <foreign xml:lang="grc">ἄρα</foreign>. <foreign xml:lang="grc">ἔτι</foreign> δὲ πρὸς τούτοις <persName>ὁ Στράτων</persName> <foreign xml:lang="grc">ἐν</foreign> τῇ</p>
+  </div>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos exigences pour le texte de Straton de Lampsaque (Strato Lampsacenus) :
+
+
+<div type="chapter" n="35">
+  <p>διαιρέσει ἐκκλέπτει τὸν <name type="animal" xml:lang="fr">ἀεί</name> τινα χρόνον· μεταξὺ γὰρ τοῦ τε πρὸ χρόνου ὄντος</p>
+<p>καὶ τοῦ ποτὲ ὄντος ἐστὶ τὸ ἀεὶ ὂν ἐν χρόνῳ.</p>
+  <p>διὰ τί οὖν οὐ πρόχειρος ἡ ἀνάμνησις; ἢ τισὶ μὲν ἡ ἀνάμνησις καὶ πρόχειρος,</p>
+  <p>τοῖς δὲ πολλοῖς χρεία γυμνασίας.</p>
+</div>
+
+<div type="section" n="1">
+  <quote>
+    <p>Plutarchus Epitoma V 24, 4 (Aetius V 24, 4 Diels p. 436):</p>
+    <p><persName>Στράτων</persName> οἱ <name type="deity">Στωικοὶ</name> τὸν μὲν ὕπνον γίνεσθαι ἀνέσει τοῦ αἰσθητικοῦ πνεύματος,</p>
+    <p>οὐ κατὰ ἀναχαλασμὸν καθάπερ <foreign xml:lang="grc">† ἐπὶ τῆς γῆς †</foreign>, ϕερομένου δὲ ὡς ἐπὶ τὸ</p>
+    <p>ἡγεμονικὸν μεσόϕρυον. ὅταν δὲ παντελὴς γένηται ἡ ἄνεσις τοῦ αἰσθητικοῦ</p>
+    <p>πνεύματος, τότε γίγνεσθαι θάνατον.</p>
+  </quote>
+</div>
+
+<div type="section" n="2">
+  <quote>
+    <p>Plutarchus Epitoma V 2, 2 (Aetius V 2, 2 p. 416 Diels):</p>
+    <p><persName>Στράτων</persName> ἀλόγῳ ϕύσει τῆς διανοίας ἐν τοῖς ὕπνοις αἰσθητικωτέρας μὲν πως</p>
+    <p>γινομένης, παρ' αὐτὸ δὲ τοῦτο τῷ γνωστικῷ κινουμένης (sc. τοὺς ὀνείρους</p>
+    <p>γίνεσθαι).</p>
+  </quote>
+</div>
+
+<div type="section" n="3">
+  <quote>
+    <p>Galenus Historia philos. 106 (Diels Doxographi Graeci p. 640):</p>
+<p><persName>Στράτων</persName>· ἄλλη τις ϕύσις τῆς διανοίας ἐν τοῖς ὕπνοις αἰσθητικωτέρας μὲν τῆς</p>
+    <p><name type="animal" xml:lang="fr">ψυχῆς</name> γινομένης, δι' αὐτὸ δὲ τοῦτο γνωστικῆς γινομένης (sc. τοὺς ὀνείρους</p>
+    <p>γίνεσθαι).</p>
+  </quote>
+</div>
+
+<div type="section" n="4">
+  <quote>
+    <p>Stobaeus Ecloga II 7, 4 a:</p>
+    <p>καὶ καθάπερ <persName>Στράτων</persName>, τὸ τελειοῦν</p>
+    <p>τὴν δύναμιν, δι' ἣν τῆς ἐνεργείας τυγχάνομεν (sc. τὸ ἀγαθὸν ἐστιν).</p>
+  </quote>
+</div>
+
+<div type="section" n="5">
+  <quote>
+    <p>Clemens Stromateis I cap. XVI 77, 1 (cf. Eusebius Praeparatio evangelica X 6, 14):</p>
+    <p><persName>Σκάμων</persName> μὲν οὖν ὁ <placeName>Μιτυληναῖος</placeName> καὶ <persName>Θεόϕραστος</persName></p>
+    <p>ὁ <placeName>’Ερέσιος</placeName> <persName>Κύδιππος</persName> τε ὁ <placeName>Μαντινεύς</placeName>, ἔτι τε <persName>’Αντιϕάνης</persName> καὶ <persName>’Αριστόδημος</persName> καὶ</p>
+    <p><persName>’Αριστοτέλης</persName>, πρὸς τούτοις δὲ <persName>Φιλοστέϕανος</persName>, ἀλλὰ καὶ <persName>Στράτων</persName> ὁ <foreign xml:lang="grc">Περι-</foreign></p>
+  </quote>
+</div>
+Voici l'encodage TEI P5 strictement conforme à vos règles pour le texte de Stratôn de Lampsaque (Strato Lampsacenus) :
+
+
+<div type="book" n="1">
+  <div type="section" n="146">
+    <p>πατητικὸς ἐν τοῖς περὶ εὑρημάτων ταῦτα (sc. <name type="animal" xml:lang="fr">barbares</name> εὑρήματα) ἱστόρησαν.   </p>
+    <p>παρεθέμην δὲ αὐτῶν ὀλίγα εἰς σύστασιν τῆς παρὰ <name type="animal" xml:lang="fr">barbares</name> εὑρετικῆς καὶ   </p>
+    <p>βιωϕελοῦς ϕύσεως, παρ' ὧν <foreign xml:lang="grc">῞Ελληνες</foreign> τὰ ἐπιτηδεύματα ὠϕέληνται.</p>
+</div>
+
+  <div type="section" n="146.1">
+    <quote>
+      <p>τὸ μηδὲν  
+      ἄγαν οἱ μὲν <persName>Chilon</persName> τῷ <placeName>Lacédémone</placeName> ἀνατιθέασιν, ὡς <persName>Critias</persName>, οἱ δὲ  
+      <persName>Sodamos</persName>, ὡς τὸ ἐν <placeName>Tégée</placeName> ἐπίγραμμα δηλοῖ·   </p>
+      <p>ταῦτα ἔλεγεν <persName>Sodamos</persName> ’<persName>Épératos</persName>, ὅς μ' ἀνέθηκεν:   </p>
+      <p>μηδὲν ἄγαν, καιρῷ πάντα πρόσεστι καλά.</p>
+    </quote>
+  </div>
+
+  <div type="section" n="147">
+    <p>Clemens <title type="work">Stromateis</title> I cap. XIV 61, 1: πάλιν αὖ <persName>Chilon</persName> τῷ  
+    <placeName>Lacédémone</placeName> ἀναϕέρουσι τὸ μηδὲν ἄγαν, <persName>Straton</persName> δὲ ἐν τῷ περὶ εὑρημάτων  
+    <persName>Sodamos</persName> τῷ <placeName>Tégée</placeName> προσάπτει τὸ ἀπόϕθεγμα.</p>
+</div>
+</div>
+    </body>
+  </text>
+</TEI>

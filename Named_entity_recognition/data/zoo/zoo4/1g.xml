@@ -1,0 +1,2555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="grc">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Ἱστοριῶν παραδόξων συναγωγή</title>
+        <title type="sub" xml:lang="la">Historiarum mirabilium collectio</title>
+        <author>Antigonus Carystius</author>
+        <respStmt>
+          <resp xml:lang="fr">Encodage TEI et extraction depuis le fichier source TLG-E</resp>
+          <persName>Romain Girardi</persName>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition n="tlge-grc1" xml:lang="fr">Édition électronique TEI (EpiDoc) dérivée du
+        texte numérique de la <title>Thesaurus Linguae Graecae</title>. Texte non collationné
+        à nouveau&#8239;; sans apparat critique.</edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority>Romain Girardi</authority>
+        <idno type="urn:cts">urn:cts:greekLit:tlg0568.tlg001.tlge-grc1</idno>
+        <availability status="restricted">
+          <licence target="http://stephanus.tlg.uci.edu/license.php" xml:lang="fr">Le texte grec
+          provient du Thesaurus Linguae Graecae® (TLG®, University of California, Irvine) et reste
+          soumis à sa licence&#8239;: usage de recherche personnel, sans rediffusion publique du texte.
+          Le balisage TEI est l'œuvre de l'encodeur.</licence>
+        </availability>
+        <date when="2026-06-25">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="digital-source">
+          <title>Thesaurus Linguae Graecae® (TLG®)</title>
+          <publisher>University of California, Irvine</publisher>
+          <edition>TLG E (CD-ROM)</edition>
+          <date>1999</date>
+          <idno type="tlg">0568.001</idno>
+          <note xml:lang="fr">Source numérique effective du texte grec encodé ici&#8239;; reproduit
+          le texte (non l'apparat) de l'édition critique imprimée ci-dessous.</note>
+        </bibl>
+        <bibl type="print-edition">
+          <author>Antigonus Carystius</author>
+          <title xml:lang="la">Historiarum mirabilium collectio</title>
+          <editor>A. Giannini, Paradoxographorum Graecorum reliquiae, Milan, 1965, p. 32–106</editor>
+          <note xml:lang="fr">Édition critique imprimée dont la TLG reproduit le texte établi.</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p xml:lang="fr">Fichier TEI produit à des fins de recherche doctorale. Le grec est extrait
+        verbatim du fichier <hi rend="filename">TLG0568.TXT</hi> du TLG-E au moyen de
+        <ref target="https://github.com/cltk/tlgu">tlgu 1.9</ref> (beta code &#8594; Unicode, NFC).</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction>
+          <p xml:lang="fr">Aucune correction ni conjecture de l'encodeur. Le texte est reproduit
+          tel quel depuis la source numérique.</p>
+        </correction>
+        <normalization>
+          <p xml:lang="fr">Aucune normalisation orthographique. Seule transformation&#8239;: la conversion
+          beta code &#8594; Unicode (forme NFC) opérée par tlgu. Sigma final, accents et ponctuation
+          suivent la source.</p>
+        </normalization>
+        <interpretation>
+          <p xml:lang="fr">Les sigles critiques présents dans le texte source (&#8224;…&#8224; cruces,
+          &#10216;…&#10217; suppléments, […] et points de suspension pour les lacunes) sont conservés
+          tels qu'imprimés et ne sont PAS re-balisés en &lt;gap&gt;, &lt;supplied&gt; ou &lt;unclear&gt;.
+          Les rubriques entre accolades de la TLG sont rendues en &lt;head&gt; (titres et lemmes) ou
+          &lt;hi rend="rubric"&gt; (rubriques internes).</p>
+        </interpretation>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\w+)\.(\w+)\.(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']//tei:lb[@n='$1.$2.$3'])">
+          <p>Citation par chapter, section, line.</p>
+        </cRefPattern>
+        <cRefPattern n="section" matchPattern="(\w+)\.(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+          <p>Citation par chapter et section.</p>
+        </cRefPattern>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>Citation par chapter.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">grec ancien</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-06-25" who="#RG">Extraction TLG-E (tlgu 1.9) et encodage TEI/EpiDoc initial.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg0568.tlg001.tlge-grc1" xml:lang="grc">
+          <head>ΑΝΤΙΓΟΝΟΥ ΙΣΤΟΡΙΩΝ ΠΑΡΑΔΟΞΩΝ ΣΥΝΑΓΩΓΗ</head>
+          <div type="textpart" subtype="chapter" n="1">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="1.1.1"/>Τίμαιος ὁ τὰς Σικελικὰς ἱστορίας συγγεγραφὼς ἐν
+                <lb n="1.1.2"/>†Ῥηγίῳ† φησὶ τοὺς Λοκροὺς καὶ τοὺς Ῥηγίνους ὁρίζοντος
+                <lb n="1.1.3"/>Ἄληκος καλουμένου ποταμοῦ τῶν τεττίγων τοὺς μὲν ἐν τῇ
+                <lb n="1.1.4"/>Λοκρικῇ ᾄδειν, τοὺς δὲ ἐν τῇ Ῥηγίνων ἀφώνους εἶναι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="1.2.1"/>λέ-
+                <lb n="1.2.2" break="no"/>γεται δέ τι τούτου μυθωδέστερον· ἀφικομένων γὰρ εἰς Δελ-
+                <lb n="1.2.3" break="no"/>φοὺς κιθαρῳδῶν Ἀρίστωνος μὲν ἐκ Ῥηγίου, παρὰ δὲ Λο-
+                <lb n="1.2.4" break="no"/>κρῶν Εὐνόμου, καὶ περὶ τοῦ κλήρου πρὸς ἑαυτοὺς εἰς ἀν-
+                <lb n="1.2.5" break="no"/>τιλογίαν ἐλθόντων, ὁ μὲν οὐκ ᾤετο δεῖν ἐλαττοῦσθαι, τῆς ὅλης
+                <lb n="1.2.6"/>Ῥηγίνων ἀποικίας ἐκ Δελφῶν καὶ παρὰ τοῦ θεοῦ γεγενημένης,
+                <lb n="1.2.7"/>ὁ δὲ κατέτρεχεν, ὅτι τὸ παράπαν οὐδὲ κιθαρῳδεῖν καθήκει,
+                <lb n="1.2.8"/>παρ' οἷς οὐδ' οἱ τέττιγες ᾄδουσιν. εὐημερήσαντος δ' οὖν τοῦ
+                <lb n="1.2.9"/>Ῥηγίνου ἐν τῷ ἀγῶνι ἐνίκησεν Εὔνομος ὁ Λοκρὸς παρὰ
+                <lb n="1.2.10"/>τοιαύτην αἰτίαν· ᾄδοντος αὐτοῦ μεταξὺ τέττιξ ἐπὶ τὴν λύραν
+                <lb n="1.2.11"/>ἐπιπτὰς ᾖδεν, ἡ δὲ πανήγυρις ἀνεβόησεν ἐπὶ τῷ γεγονότι
+                <lb n="1.2.12"/>καὶ ἐκέλευσεν ἐᾶν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="2">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="2.1.1"/>Καὶ ἄλλο δὲ παρὰ τοῖς Ῥηγίνοις τοιοῦτον ὡς μυθικὸν
+                <lb n="2.1.2"/>ἱστορεῖται, ὅτι Ἡρακλῆς ἔν τινι τόπῳ τῆς χώρας κατακοι-
+                <lb n="2.1.3" break="no"/>μηθεὶς καὶ ἐνοχλούμενος ὑπὸ τῶν τεττίγων ηὔξατο αὐτοὺς
+                <lb n="2.1.4"/>ἀφώνους γενέσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="3">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="3.1.1"/>Καὶ ἐν Κεφαλληνίᾳ δὲ ποταμὸς διείργει, καὶ ἐπίταδε μὲν
+                <lb n="3.1.2"/>γίνονται τέττιγες, ἐπέκεινα δὲ οὔ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="4">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="4.1.1"/>Οὐδ' ἐν Σερίφῳ δὲ οἱ βάτραχοι φθέγγονται· καὶ μυθῶδες
+                <lb n="4.1.2"/>καὶ παρὰ τοῖς Σεριφίοις ἐνίσχυσεν, πλὴν οἱ μὲν περὶ Ἡρα-
+                <lb n="4.1.3" break="no"/>κλέους, οἱ δὲ περὶ Περσέως.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="5">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="5.1.1"/>Ὁ δὲ Μυρσίλος, ὁ τὰ Λεσβιακὰ συγγεγραφώς, φησὶν τῆς
+                <lb n="5.1.2"/>Ἀντισσαίας, ἐν ᾧ τόπῳ μυθολογεῖται καὶ δείκνυται δὲ ὁ
+                <lb n="5.1.3"/>τάφος ὑπὸ τῶν ἐγχωρίων τῆς τοῦ Ὀρφέως κεφαλῆς, τὰς
+                <lb n="5.1.4"/>ἀηδόνας εἶναι εὐφωνοτέρας τῶν ἄλλων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="6">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="6.1.1"/>Πίπτοι δ' ἂν τὸ γένος τῆς ἐκλογῆς εἰς τοὺς λεγομένους
+                <lb n="6.1.2"/>ἐν τῇ Ἀττικῇ καὶ Βοιωτίᾳ πέρδικας, ὧν τοὺς μὲν εὐφώνους,
+                <lb n="6.1.3"/>τοὺς δὲ τελείως ἰσχνοφώνους ὁμολογεῖται γίγνεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="7">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="7.1.1"/>Ἴδιον δὲ καὶ τὸ περὶ τὰ ἔντερα τῶν προβάτων· τὰ μὲν
+                <lb n="7.1.2"/>γὰρ τῶν κριῶν ἐστιν ἄφωνα, τὰ δὲ τῶν θηλέων εὔφωνα.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="7.2.1"/>ὅθεν καὶ τὸν ποιητὴν ὑπολάβοι τις εἰρηκέναι, πολυπράγμονα
+                <lb n="7.2.2"/>πανταχοῦ καὶ περιττὸν ὄντα,
+                <lb n="7.2.3"/>ἑπτὰ δὲ θηλυτέρων ὀΐων ἐτανύσσατο χορδάς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="8">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="8.1.1"/>Οὐχ ἧττον δὲ τούτου θαυμαστόν, καθωμιλημένον δὲ
+                <lb n="8.1.2"/>μᾶλλον τὸ περὶ τὴν ἐν τῇ Σικελίᾳ ἄκανθαν τὴν καλουμένην
+                <lb n="8.1.3"/>κάκτον· εἰς ἣν ὅταν ἔλαφος ἐμβῇ καὶ τραυματισθῇ, τὰ ὀστᾶ
+                <lb n="8.1.4"/>ἄφωνα καὶ ἄχρηστα πρὸς αὐλοὺς ἴσχει.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="8.2.1"/>ὅθεν καὶ ὁ Φιλητᾶς
+                <lb n="8.2.2"/>ἐξηγήσατο περὶ αὐτῆς εἴπας·
+                <lb n="8.2.3"/>γηρύσαιτο δὲ νεβρὸς ἀπὸ ζωὴν ὀλέσασα,
+                <lb n="8.2.4"/>ὀξείης κάκτου τύμμα φυλαξαμένη.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="9">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="9.1.1"/>Ἐν δὲ ταῖς τῶν Λημνίων νήσοις ταῖς καλουμέναις Νέαις
+                <lb n="9.1.2"/>πέρδικες οὐ γίνονται, ἀλλὰ κἂν κομίσῃ τις ἀπόλλυνται.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="9.2.1"/>ἔνιοι δὲ τούτου τερατωδέστερον ἱστοροῦσιν, ὅτι κἂν ἴδωσιν
+                <lb n="9.2.2"/>τὴν χώραν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="10">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="10.1.1"/>Τῆς δὲ Βοιωτίας ἐχούσης πλήθει πολλοὺς ἀσπάλακας,
+                <lb n="10.1.2"/>ἐν τῇ Κορωνικῇ μόνῃ οὐ γίνεσθαι τοῦτο τὸ ζῷον, ἀλλὰ κἂν
+                <lb n="10.1.3"/>εἰσαχθῇ τελευτᾶν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="10.2.1"/>καθάπερ οἱ 〈λύκοι καὶ αἱ〉 γλαῦκες ἐν
+                <lb n="10.2.2"/>Κρήτῃ, ἐν ᾗ λέγουσιν οὐδὲ ζῷον θανάσιμον οὐδὲν τὴν χώραν
+                <lb n="10.2.3"/>φέρειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="11">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="11.1.1"/>Ἐν Ἀστυπαλαίᾳ δὲ ὄφεις οὐ γίνονται, οὐδὲ ἐν Ἰθάκῃ
+                <lb n="11.1.2"/>λαγῶς, οὐδὲ ἐν Λιβύῃ ὗς ἀγρία οὐδὲ ἔλαφοι, οὐδ' ἐν Ῥηνείᾳ
+                <lb n="11.1.3"/>τῇ πρὸς Δήλῳ γαλῆ, οὐδὲ μελεαγρὶς οὐδαμοῦ ἄλλῃ 〈ἢ ἐν
+                <lb n="11.1.4"/>Λέρῳ〉 ὁρᾶται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="12">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="12.1.1"/>Ἀμελησαγόρας δὲ ὁ Ἀθηναῖος, ὁ τὴν Ἀτθίδα συγ-
+                <lb n="12.1.2" break="no"/>γεγραφώς, οὔ φησι κορώνην προσίπτασθαι πρὸς τὴν ἀκρόπολιν,
+                <lb n="12.1.3"/>οὐδ' ἔχοι ἂν εἰπεῖν ἑωρακὼς οὐδείς.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="12.2.1"/>ἀποδίδωσιν δὲ τὴν
+                <lb n="12.2.2"/>αἰτίαν μυθικῶς. φησὶν γάρ, Ἡφαίστῳ δοθείσης τῆς Ἀθηνᾶς,
+                <lb n="12.2.3"/>συγκατακλιθεῖσαν αὐτὴν ἀφανισθῆναι, τὸν δὲ Ἥφαιστον εἰς
+                <lb n="12.2.4"/>γῆν πεσόντα προΐεσθαι τὸ σπέρμα, τὴν δὲ γῆν ὕστερον αὐτῷ
+                <lb n="12.2.5"/>ἀναδοῦναι Ἐριχθόνιον, ὃν τρέφειν τὴν Ἀθηνᾶν καὶ εἰς κίστην
+                <lb n="12.2.6"/>καθεῖρξαι καὶ παραθέσθαι ταῖς Κέκροπος παισίν, Ἀγραύλῳ
+                <lb n="12.2.7"/>καὶ Πανδρόσῳ καὶ Ἕρσῃ, καὶ ἐπιτάξαι μὴ ἀνοίγειν τὴν κίστην,
+                <lb n="12.2.8"/>ἕως ἂν αὐτὴ ἔλθῃ. ἀφικομένην δὲ εἰς Πελλήνην φέρειν ὄρος,
+                <lb n="12.2.9"/>ἵνα ἔρυμα πρὸ τῆς ἀκροπόλεως ποιήσῃ, τὰς δὲ Κέκροπος
+                <lb n="12.2.10"/>θυγατέρας τὰς δύο, Ἄγραυλον καὶ Πάνδροσον, τὴν κίστην
+                <lb n="12.2.11"/>ἀνοῖξαι καὶ ἰδεῖν δράκοντας δύο περὶ τὸν Ἐριχθόνιον· τῇ
+                <lb n="12.2.12"/>δὲ Ἀθηνᾷ φερούσῃ τὸ ὄρος, ὃ νῦν καλεῖται Λυκαβηττός,
+                <lb n="12.2.13"/>κορώνην φησὶν ἀπαντῆσαι καὶ εἰπεῖν ὅτι Ἐριχθόνιος ἐν
+                <lb n="12.2.14"/>φανερῷ, τὴν δὲ ἀκούσασαν ῥίψαι τὸ ὄρος ὅπου νῦν ἐστιν, τῇ
+                <lb n="12.2.15"/>δὲ κορώνῃ διὰ τὴν κακαγγελίαν εἰπεῖν ὡς εἰς ἀκρόπολιν οὐ
+                <lb n="12.2.16"/>θέμις αὐτῇ ἔσται ἀφικέσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="13">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="13.1.1"/>Οὐδὲ κατὰ τὴν Σκυθῶν χώραν, ὁμοίως δὲ οὐδὲ κατὰ
+                <lb n="13.1.2"/>τὴν Ἠλείαν ἡμίονος οὐ γεννᾶται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="14">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="14.1.1"/>Θεόπομπος δέ φησιν κατὰ τοὺς ἐν Θρᾴκῃ Χαλκιδεῖς εἶναί
+                <lb n="14.1.2"/>τινα τόπον τοιοῦτον, εἰς ὃν ὅ τι μὲν ἂν τῶν ἄλλων ζῴων εἰσέλθῃ,
+                <lb n="14.1.3"/>πάλιν ἀπαθὲς ἀπέρχεται, τῶν δὲ κανθάρων οὐδεὶς διαφεύγει,
+                <lb n="14.1.4"/>κύκλῳ δὲ στρεφόμενοι τελευτῶσιν αὐτοῦ· διὸ δὴ καὶ τὸ χωρίον
+                <lb n="14.1.5"/>ὀνομάζεσθαι Κανθαρώλεθρον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="15a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="15a.1.1"/>Ἐν δὲ Κράννωνι τῆς Θετταλίας δύο φασὶν μόνον
+                <lb n="15a.1.2"/>εἶναι κόρακας· διὸ καὶ ἐπὶ τῶν προξενιῶν τῶν ἀναγραφομένων
+                <lb n="15a.1.3"/>τὸ παράσημον τῆς πόλεως, καθάπερ ἐστὶν ἔθιμον πᾶσι προσπα-
+                <lb n="15a.1.4" break="no"/>ρατιθέναι, ὑπογράφονται δύο κόρακες ἐφ' ἁμαξίου χαλκοῦ
+                <lb n="15a.1.5"/>διὰ τὸ μηδέποτε πλείους τούτων ὦφθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="15a.2.1"/>ἡ δὲ ἅμαξα
+                <lb n="15a.2.2"/>προσπαράκειται διὰ τοιαύτην αἰτίαν—ξένον γὰρ ἴσως ἂν καὶ
+                <lb n="15a.2.3"/>τοῦτο φανείη—ἔστιν αὐτοῖς 〈ἡ〉 ἀνακειμένη χαλκῆ, ἥν, ὅταν
+                <lb n="15a.2.4"/>αὐχμὸς ᾖ, σείοντες ὕδωρ αἰτοῦνται τὸν θεόν, καί φασι γίνεσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="15a.3.1"/>τούτου δέ τι ἰδιώτερον ὁ Θεόπομπος λέγει· φησὶν γὰρ
+                <lb n="15a.3.2"/>ἕως τούτου διατρίβειν αὐτοὺς ἐν τῷ Κράννωνι, ἕως ἂν τοὺς
+                <lb n="15a.3.3"/>νεοττοὺς ἐκνεοττεύσωσιν, τοῦτο δὲ ποιήσαντας τοὺς μὲν νεοτ-
+                <lb n="15a.3.4" break="no"/>τοὺς καταλείπειν, αὐτοὺς δὲ ἀνιέναι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="15b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="15b.1.1"/>Καὶ ἐν Ἐκβατάνοις δὲ καὶ ἐν Πέρσαις Κτησίας ἱστορεῖ
+                <lb n="15b.1.2"/>παραπλήσιόν τι τούτοις. διὰ δὲ τὸ αὐτὸν πολλὰ ψεύδεσθαι
+                <lb n="15b.1.3"/>παρελείπομεν τὴν ἐκλογήν· καὶ γὰρ ἐφαίνετο τερατώδης.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="15c">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="15c.1.1"/>Μυρσίλος δὲ ὁ Λέσβιος ἐν τῷ ὄρει φησὶ Λεπετύμνῳ
+                <lb n="15c.1.2"/>ἱερὸν Ἀπόλλωνος εἶναι καὶ ἡρῷον Λεπετύμνου, ἐφ' ᾧ, κα-
+                <lb n="15c.1.3" break="no"/>θάπερ ἐν τῷ Κράννωνι, δύο μόνον εἶναι κόρακας ὄντων οὐκ
+                <lb n="15c.1.4"/>ὀλίγων ἐν τοῖς πλησίον τόποις.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="16a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="16a.1.1"/>Ἐν Λάτμῳ δὲ τῆς Καρίας φησὶν Ἀριστοτέλης
+                <lb n="16a.1.2"/>τοὺς σκορπίους, ἐὰν μὲν τῶν ξένων τινὰ πατάξωσιν, μετρίως
+                <lb n="16a.1.3"/>λυπεῖν, ἐὰν δὲ τῶν ἐγχωρίων, ἕως θανάτου κατατείνειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="16b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="16b.1.1"/>Τῶν δὲ Λιβύων καλοῦνται Ψύλλοι τινές, παρ' οἷς
+                <lb n="16b.1.2"/>ἀνάπαλίν τι γίνεται τούτου· ὑπὸ γὰρ τῶν ἀσπίδων οὗτοι μὲν
+                <lb n="16b.1.3"/>οὐδὲν πάσχουσιν τυπτόμενοι, τῶν δὲ λοιπῶν οὐκ ἔστιν ὅστις
+                <lb n="16b.1.4"/>διαφεύγει δηχθείς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="17">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="17.1.1"/>Ἐν Λυκίᾳ φύεταί τι αἰγόλεθρον, ὃ τῶν μὲν ἐγχωρίων
+                <lb n="17.1.2"/>αἰγῶν οὐδεμία γεύεται, ξένη δ' ὅταν ἐμπέσῃ καὶ διὰ τὴν
+                <lb n="17.1.3"/>ἄγνοιαν φάγῃ τῆς βοτάνης, ἀπόλλυται διαφθαρεῖσα τὸν καλού-
+                <lb n="17.1.4" break="no"/>μενον ἐχῖνον τῆς κοιλίας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="18a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="18a.1.1"/>Τῆς δὲ Καρυστίας καὶ τῆς Ἀνδρίας χώρας
+                <lb n="18a.1.2"/>ἐστὶν πλησίον νῆσος, ἡ καλουμένη Γύαρος· ἐνταῦθα οἱ μύες
+                <lb n="18a.1.3"/>διατρώγουσιν τὸν σίδηρον.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="18a.2.1"/>ἐν Κέῳ τῇ νήσῳ θανάσιμός
+                <lb n="18a.2.2"/>ἐστιν ἡ ἄχερδος· κἂν εἰς ἄλλο δένδρον ἐμπήξῃς, ἀφαυαίνει.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="18b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="18b.1.1"/>Ποιεῖ δὲ αὐτὸ τοῦτο καὶ τὸ τῆς τρυγόνος κέντρον
+                <lb n="18b.1.2"/>τῆς θαλαττίας· καὶ ἐὰν εἰς τοὺς ὀδόντας ἅψῃ, κατασήπει.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="19">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="19.1.1"/>Ἴδια δὲ καὶ περὶ τὰς συγκρίσεις καὶ ἀλλοιώσεις
+                <lb n="19.1.2"/>τῶν ζῴων, ἔτι δὲ γενέσεις, οἷον ἐν Αἰγύπτῳ τὸν βοῦν ἐὰν
+                <lb n="19.1.3"/>κατορύξῃς ἐν τόποις τισίν, ὥστε αὐτὰ τὰ κέρατα τῆς γῆς
+                <lb n="19.1.4"/>ὑπερέχειν, εἶθ' ὕστερον ἀποπρίσῃς, λέγουσιν μελίττας ἐκπέ-
+                <lb n="19.1.5" break="no"/>τεσθαι· σαπέντα γὰρ αὐτὸν εἰς τοῦτο διαλύεσθαι τὸ ζῷον.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="19.2.1"/>ᾧ καὶ φαίνεται Φιλητᾶς προσέχειν, ἱκανῶς ὢν περίεργος·
+                <lb n="19.2.2"/>προσαγορεύει οὖν αὐτὰς βουγενεῖς λέγων·
+                <lb n="19.2.3"/>βουγενέας φάμενος προσεβήσαο μακρὰ μελίσσας.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3a">
+              <p>
+                <lb n="19.3a.1"/>φασὶ δὲ καὶ τὸν κροκόδειλον σκορπίους γεννᾶν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3b">
+              <p>
+                <lb n="19.3b.1"/>καὶ
+                <lb n="19.3b.2"/>ἐκ τῶν ἵππων σφῆκας γεννᾶσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p>
+                <lb n="19.4.1"/>καί τις Ἀρχέλαος Αἰ-
+                <lb n="19.4.2" break="no"/>γύπτιος τῶν ἐν ἐπιγράμμασιν ἐξηγουμένων τὰ παράδοξα τῷ
+                <lb n="19.4.3"/>Πτολεμαίῳ περὶ μὲν τῶν σκορπίων οὕτως εἴρηκεν·
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4a">
+              <p>
+                <lb n="19.4a.1"/>εἰς ὑμᾶς κροκόδειλον ἀποφθίμενον διαλύει,
+                <lb n="19.4a.2"/>σκορπίοι, ἡ πάντα ζῳοθετοῦσα φύσις.
+                <lb n="19.4a.3"/>περὶ δὲ τῶν σφηκῶν·
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4b">
+              <p>
+                <lb n="19.4b.1"/>ἐκ νέκυος ταύτην ἵππου γράψασθε γενέθλην,
+                <lb n="19.4b.2"/>σφῆκας· ἴδ' ἐξ οἵων οἷα τίθησι φύσις.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="5">
+              <p>
+                <lb n="19.5.1"/>ὁ δὲ Ἀριστοτέλης καὶ ἐκ τῶν σισυμβρίων φησὶν σαπέν-
+                <lb n="19.5.2" break="no"/>των σκορπίους γίνεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="20">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="20.1.1"/>Οὐχ ἧττον δὲ τούτων θαυμάσια τὰ φθαρτὰ κατὰ
+                <lb n="20.1.2"/>τῶν ὠφελούντων, οἷον ὁ γαλεώτης, ὅταν ἐκδύῃ τὸ γῆρας,
+                <lb n="20.1.3"/>ἐπιστραφεὶς κατέπιεν· ἐπιληψίας γάρ ἐστιν, φασίν, ὡς ὁ Ἀρι-
+                <lb n="20.1.4" break="no"/>στοτέλης καταγράφει, φάρμακον.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="20.2.1"/>ὡσαύτως δ' ἡ φώκη
+                <lb n="20.2.2"/>λέγεται ἐξεμεῖν τὸν ὀρρόν· καὶ γὰρ τοῦτον πρὸς τὴν αὐτὴν
+                <lb n="20.2.3"/>ἀρρωστίαν χρήσιμον.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="20.3.1"/>τὰς δὲ ἵππους τὸ ἐπιφυόμενον τοῖς
+                <lb n="20.3.2"/>ἐμβρύοις ἱππομανὲς ἀπεσθίειν· γίνεσθαι δὲ τοῦτο ἐπὶ τοῦ
+                <lb n="20.3.3"/>μετώπου καὶ πρὸς πολλὰ ζητεῖσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p>
+                <lb n="20.4.1"/>τὴν δὲ ἔλαφον τὸ
+                <lb n="20.4.2"/>δεξιὸν κέρας κατορύσσειν· εἶναι δὲ καὶ τοῦτο ἐν πολλοῖς χρή-
+                <lb n="20.4.3" break="no"/>σιμον. ταῦτα μὲν οὖν, εἴτε κατὰ προαίρεσιν εἴτε κατὰ τύχην
+                <lb n="20.4.4"/>οὕτως ἔχει, πολλῆς ἐστιν ἐπιστάσεως δεόμενα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="21">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="21.1.1"/>Ὁ δὲ πολύπους ἐν τῷ χειμῶνι τὰς πλεκτάνας
+                <lb n="21.1.2"/>αὐτοῦ κατεσθίει· τοῦτ' ἔστιν
+                <lb n="21.1.3"/>ἤματι χειμερίῳ, ὅτ' ἀνόστεος ὃν πόδα τένδει.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="21.2.1"/>τῶν δὲ γαλεῶν τὰ ἔμβρυα ἐξιόντα ἐκ τῆς κοιλίας νέμεται
+                <lb n="21.2.2"/>καὶ πάλιν εἰσδύεται κατὰ τὸ στόμα.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="21.3.1"/>ἡ δὲ λέαινα δὶς οὐ
+                <lb n="21.3.2"/>κυίσκεται· τοῖς γὰρ ἐμβρύοις, ὥς φησιν Ἡρόδοτος, συνεκβάλλει
+                <lb n="21.3.3"/>τὰς μήτρας.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p>
+                <lb n="21.4.1"/>οὐδὲ ἔχιδνα δίς· ἐσθίει γὰρ αὐτῆς τὴν κοι-
+                <lb n="21.4.2" break="no"/>λίαν τὰ ἔμβρυα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="22">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="22.1.1"/>Ἡ νυκτερὶς δὲ μόνον τῶν ὀρνέων ὀδόντας ἔχει
+                <lb n="22.1.2"/>καὶ μαστοὺς καὶ γάλα.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="22.2.1"/>φησὶν δὲ ὁ Ἀριστοτέλης καὶ φώκην
+                <lb n="22.2.2"/>καὶ φάλαιναν ἴσχειν γάλα.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="22.3.1"/>τούτων δὲ οὐχ ἧττον κατα-
+                <lb n="22.3.2" break="no"/>γράφει τερατῶδες· ἐν Λήμνῳ γάρ φησιν ἀμελχθῆναι γάλα τρά-
+                <lb n="22.3.3" break="no"/>γου τοσοῦτον, ὥστε τροφαλίδας γενέσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="23">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="23.1.1"/>Τῶν δὲ ἀλκυόνων οἱ ἄρσενες κηρύλοι καλοῦνται·
+                <lb n="23.1.2"/>ὅταν οὖν ὑπὸ τοῦ γήρως ἀσθενήσωσιν καὶ μηκέτι δύνωνται
+                <lb n="23.1.3"/>πέτεσθαι, φέρουσιν αὐτοὺς αἱ θήλειαι ἐπὶ τῶν πτερῶν λαβοῦ-
+                <lb n="23.1.4" break="no"/>σαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="23.2.1"/>καὶ ἔστι τὸ ὑπὸ τοῦ Ἀλκμᾶνος λεγόμενον τούτῳ
+                <lb n="23.2.2"/>συνῳκειωμένον· φησὶν γὰρ ἀσθενὴς ὢν διὰ τὸ γῆρας καὶ τοῖς
+                <lb n="23.2.3"/>χοροῖς οὐ δυνάμενος συμπεριφέρεσθαι οὐδὲ τῇ τῶν παρθένων
+                <lb n="23.2.4"/>ὀρχήσει·
+                <lb n="23.2.5"/>οὔ μ' ἔτι, παρθενικαὶ μελιγάρυες, ἱερόφωνοι,
+                <lb n="23.2.6"/>γυῖα φέρειν δύναται· βάλε δὴ βάλε κηρύλος εἴην,
+                <lb n="23.2.7"/>ὅς τ' ἐπὶ κύματος ἄνθος ἅμ' ἀλκυόνεσσι ποτῆται
+                <lb n="23.2.8"/>νηλεὲς ἦτορ ἔχων, ἁλιπόρφυρος ἱερὸς ὄρνις.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="24">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="24.1.1"/>Ἱκανῶς δὲ καὶ ὁ ποιητὴς λέγεται παρὰ πάντων
+                <lb n="24.1.2"/>ἐπιμελὴς καὶ πολυπράγμων εἶναι· ὁ γὰρ Ὀδυσσεὺς ἐπιφερο-
+                <lb n="24.1.3" break="no"/>μένων αὐτῷ τῶν κυνῶν ἐν τῇ πρὸς τὸν συβώτην ἀναβάσει
+                <lb n="24.1.4"/>ἕζετο κερδοσύνῃ, σκῆπτρον δέ οἱ ἔκπεσε χειρός.
+                <lb n="24.1.5"/>οὐ γάρ φασιν, ὅταν διωκόμενός τις συγκαθίσῃ, ἀδικεῖν τοὺς
+                <lb n="24.1.6"/>κύνας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="25a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="25a.1.1"/>Θαυμαστὰ δὲ καὶ τὰ τοῖς τόποις συναφομοιού-
+                <lb n="25a.1.2" break="no"/>μενα, οἷον ὅ τε πολύπους· γίνεται γὰρ ἀδιάγνωστος τῷ χρώ-
+                <lb n="25a.1.3" break="no"/>ματι τοῦ ἐδάφους καὶ παντὸς ᾧ ἂν περιπλακῇ, ὥστε εἶναι
+                <lb n="25a.1.4"/>δύσεργον αὐτοῦ τὴν θήραν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="25a.2.1"/>ὅθεν δῆλον καὶ ὁ ποιητὴς τὸ
+                <lb n="25a.2.2"/>θρυλούμενον ἔγραψεν·
+                <lb n="25a.2.3"/>πουλύποδός μοι, τέκνον, ἔχων ἐν στήθεσι θυμόν,
+                <lb n="25a.2.4"/>τοῖσιν ἐφαρμόζου, ⸤τῶν κεν κατὰ δῆμον ἵκηαι⸥.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="25b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="25b.1.1"/>Γίνεται δὲ ταὐτὸν καὶ περὶ τὸν χαμαιλέοντα· καὶ
+                <lb n="25b.1.2"/>γὰρ τοῖς στελέχεσι τῶν δένδρων καὶ τοῖς φύλλοις καὶ τῇ
+                <lb n="25b.1.3"/>γῇ τὸν αὐτὸν τρόπον ἅπαντι τόπῳ συμμεταβάλλει τὴν χροιάν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="25c">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="25c.1.1"/>Ἀριστοτέλης δέ φησι καὶ τὸν καλούμενον τάρανδον
+                <lb n="25c.1.2"/>τοῦτο πάσχειν, ὄντα τετράπουν καὶ σχεδὸν ἴσον ὄνῳ καὶ πα-
+                <lb n="25c.1.3" break="no"/>χύδερμον καὶ τετριχωμένον, καὶ θαυμαστὸν εἶναι πῶς αἱ τρίχες
+                <lb n="25c.1.4"/>οὕτως ὀξέως ἀλλοιοῦνται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="26">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="26.1.1"/>Γίνεται δὲ καὶ βοτάνη τις, ἣ καλεῖται τριπόλιον·
+                <lb n="26.1.2"/>φύεται δ' ἐν τοῖς ἐπιθαλαττίοις ἐπὶ τῶν πετρῶν, ἀφίησι δὲ
+                <lb n="26.1.3"/>ἄνθος, ὃ τῆς ἡμέρας τρὶς μεταστρέφεται τὸ χρῶμα· γίνεται δὲ
+                <lb n="26.1.4"/>ὁτὲ μὲν λευκόν, ὁτὲ δὲ φοινικοῦν, ὁτὲ δὲ μήλινον.
+                <lb n="26.1.5"/>Καὶ μὴν τάς τε λοιπὰς ἐντρεχείας τῶν ζῴων, οἷον ἐν
+                <lb n="26.1.6"/>μάχαις, ἐν θεραπείαις τραυμάτων, ἐν παρασκευαῖς τῶν πρὸς
+                <lb n="26.1.7"/>τὸν βίον ἀναγκαίων, ἐν φιλοστοργίαις, ἐν μνήμαις, ἀκριβέστα-
+                <lb n="26.1.8" break="no"/>τ' ἄν τις ἐκ τῆς τοῦ Ἀριστοτέλους συναγωγῆς καταμάθοι, ἐξ
+                <lb n="26.1.9"/>ἧς ἡμεῖς πρῶτον ποιησόμεθα τὴν ἐκλογήν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="27">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="27.1.1"/>Φησὶν περὶ Κωνώπιον τῆς Μαιώτιδος λίμνης τοὺς
+                <lb n="27.1.2"/>λύκους παρὰ τῶν ἁλιέων λαμβάνοντας τροφὴν φυλάττειν τὴν
+                <lb n="27.1.3"/>θήραν· ἂν δ' ὑπολάβωσίν τι ἀδικεῖσθαι, λυμαίνεσθαι τὰ λίνα
+                <lb n="27.1.4"/>καὶ τοὺς ἰχθύας αὐτῶν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="28">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="28.1.1"/>Ἐν Θρᾴκῃ δ' ἐν τῇ κληθείσῃ ποτὲ Κεδριπόλει τοὺς
+                <lb n="28.1.2"/>ἀνθρώπους καὶ τοὺς ἱέρακας κοινῇ θηρεύειν τὰ ὀρνιθάρια·
+                <lb n="28.1.3"/>τοὺς μὲν γὰρ σοβεῖν τοῖς ξύλοις, τοὺς δὲ ἱέρακας καταδιώκειν,
+                <lb n="28.1.4"/>τὰ δὲ φεύγοντα εἰς τοὺς ἀνθρώπους ἐμπίπτειν· διὸ καὶ μετα-
+                <lb n="28.1.5" break="no"/>διδόναι τοῖς ἱέραξιν αὐτοὺς τῶν ληφθέντων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="29">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="29.1.1"/>Τὰς δ' ἐλάφους λέγει τίκτειν παρὰ τὰς ὁδούς,
+                <lb n="29.1.2"/>φευγούσας τὰ θηρία· ἥκιστα γὰρ ἐπιτίθεσθαι τοὺς λύκους
+                <lb n="29.1.3"/>ἐνθάδε· ἄγειν δὲ καὶ τὰ τέκνα ἐπὶ τῶν σταθμῶν, ἐθιζούσας
+                <lb n="29.1.4"/>οὗ δεῖ ἀποφεύγειν· εἶναι δὲ τοῦτο πέτραν ἀπορρῶγα, μίαν
+                <lb n="29.1.5"/>ἔχουσαν 〈εἴσ〉οδον.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="29.2.1"/>ἤδη δὲ εἰλῆφθαι ἀχαιΐνην ἔλαφον
+                <lb n="29.2.2"/>κιττὸν ἔχουσαν ἐπὶ τῶν κεράτων ὡς ἂν ἐνύγρων ὄντων.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="29.3.1"/>ἁλίσκεσθαι δὲ ἐλάφους καὶ συριττόντων καὶ ᾀδόντων, ὥστε
+                <lb n="29.3.2"/>καὶ κατακλίνεσθαι ὑπὸ τῆς ἡδονῆς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="30">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="30.1.1"/>Τὰς δ' ἐν Κρήτῃ αἶγας τὰς ἀγρίας, ὅταν τοξευθῶσιν,
+                <lb n="30.1.2"/>ζητεῖν τὴν δίκταμνον· δοκεῖ γὰρ ἐκβλητικὸν εἶναι τῶν βελῶν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="31">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="31.1.1"/>Τὴν δὲ πάρδαλιν φάναι τινὰς κατανενοηκυῖαν, ὅτι
+                <lb n="31.1.2"/>τὰ ζῷα τῇ ὀσμῇ αὐτῆς χαίρει, ἀποκρύπτειν ἑαυτὴν καὶ οὕτως
+                <lb n="31.1.3"/>θηρεύειν τὰ προσπορευόμενα ἐγγύς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="32">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="32.1.1"/>Τὸν δὲ ἰχνεύμονα, ὅταν ἴδῃ ὄφιν τὴν ἀσπίδα, οὐ
+                <lb n="32.1.2"/>πρότερον ἐπιτίθεσθαι πρὶν καλέσαι βοηθοὺς ἄλλους· πρὸς δὲ
+                <lb n="32.1.3"/>τὰ δήγματα καὶ τὰς πληγὰς πηλῷ καταπλάττειν ἑαυτούς·
+                <lb n="32.1.4"/>βρέξαντας γὰρ τὸ σῶμα κυλίεσθαι ἐν τῷ κονιορτῷ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="33">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="33.1.1"/>Τῶν δὲ κροκοδείλων λέγει τοὺς τροχίλους ἐκκαθαί-
+                <lb n="33.1.2" break="no"/>ρειν τοὺς ὀδόντας καὶ ἀπὸ τούτων τρέφεσθαι· τὸν δὲ ὠφελού-
+                <lb n="33.1.3" break="no"/>μενον αἰσθάνεσθαι, καὶ ὅταν ἐξελθεῖν βούληται ὁ τροχίλος,
+                <lb n="33.1.4"/>τὸν αὐχένα κινεῖν, ἵνα μὴ συνδηχθῇ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="34">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="34.1.1"/>Τὴν δὲ χελώνην, ὅταν ὄφεως φάγῃ, ἐπεσθίειν ὀριγάνου.
+                <lb n="34.1.2"/>καί ποτέ τινος παρατηρήσαντος καὶ ἐκτίλαντος τὴν ὀρίγανον
+                <lb n="34.1.3"/>οὐκ ἔχουσαν ἐπιφαγεῖν τελευτῆσαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="35">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="35.1.1"/>Τὴν δὲ γαλῆν, ὅταν μάχηται μετὰ τοῦ ὄφεως, τοῦ
+                <lb n="35.1.2"/>πηγάνου προεσθίειν· πολέμιον γὰρ εἶναι τῷ ὄφει τὴν ὀσμήν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="35.2.1"/>καὶ πρὸς τὰς πληγὰς δὲ τοῦ ὄφεως βοηθεῖ τὸ πήγανον ἐν
+                <lb n="35.2.2"/>ἀκράτῳ διηθηθὲν καὶ ποθέν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="35.3.1"/>καὶ γὰρ ὗς ὅταν ὑπὸ ὄφεως
+                <lb n="35.3.2"/>δηχθῇ, φέρεται εὐθέως ἐπὶ τοὺς ποταμοὺς καὶ ζητεῖ τὸν καρ-
+                <lb n="35.3.3" break="no"/>κίνον· ἔστιν δὲ καὶ τοῦτο τῶν καταγραφομένων καὶ βοηθεῖ
+                <lb n="35.3.4"/>πρὸς τὰς πληγὰς τοῦ ὄφεως ἰσχυρῶς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="36">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="36.1.1"/>Ἡ φάττα δέ, ὅταν πληγῇ, τὴν ὀρίγανον ἔσαξεν εἰς
+                <lb n="36.1.2"/>τὸ ἕλκος καὶ γίνεται τοῦτον τὸν τρόπον ὑγιής.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="37">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="37.1.1"/>Ὁ δ' οὖν Ἀριστοτέλης τὴν χελιδόνα φησὶν ἐν
+                <lb n="37.1.2"/>τῇ σκηνοποιίᾳ συγκαταπλέκειν τοῖς κάρφεσιν τὸν πηλόν, κἂν
+                <lb n="37.1.3"/>ἐλλίπῃ πηλός, βρέχουσαν αὑτὴν κυλίεσθαι καὶ ταῖς πτέρυξιν
+                <lb n="37.1.4"/>ἀναλαμβάνειν, στιβαδοποιεῖσθαί τε καθάπερ ἄνθρωπον κάτω-
+                <lb n="37.1.5" break="no"/>θεν ὑποτιθεῖσαν τὰ σκληρά.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="37.2.1"/>τοῖς τε νεοττοῖς τὴν τροφὴν
+                <lb n="37.2.2"/>διδόναι κατὰ μέρος, παρατηροῦσαν ἵνα μὴ δὶς τοῖς αὐτοῖς
+                <lb n="37.2.3"/>δῷ.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="37.3.1"/>τὴν δὲ κόπρον μικρῶν μὲν ὄντων αὐτὴν ἐκβάλλειν,
+                <lb n="37.3.2"/>αὐξηθέντων δὲ διδάσκειν ἔξω στραφέντα τὰ νεόττια ἀφοδεύειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="38">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="38.1.1"/>Τὰς δὲ περιστερὰς οὐ θέλειν πλείοσιν συνευνά-
+                <lb n="38.1.2" break="no"/>ζεσθαι οὐδὲ προλείπειν τὴν συνουσίαν, ἐὰν μὴ χῆρος ἢ χήρα
+                <lb n="38.1.3"/>γένηται.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="38.2.1"/>τοῖς δὲ νεοττοῖς τῆς ἁλμυριζούσης γῆς διαμα-
+                <lb n="38.2.2" break="no"/>σησαμένας εἰσπτύειν εἰς τὸ στόμα προπαρασκευαζούσας τρο-
+                <lb n="38.2.3" break="no"/>φήν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="39">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="39.1.1"/>Τοὺς δὲ πέρδικας, ὅταν θηρεύῃ τις τοὺς νεοττούς,
+                <lb n="39.1.2"/>προκυλίεσθαι τοῦ θηρεύοντος ὡς ἐπιλήπτους ὄντας καὶ ἐπι-
+                <lb n="39.1.3" break="no"/>σπᾶσθαι, ἕως ἂν διαδρᾷ τὰ νεόττια.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="39.2.1"/>διὰ δὲ τὸ εἶναι ἀφρο-
+                <lb n="39.2.2" break="no"/>δισιαστικοὺς λυμαίνεσθαι τὰ ᾠά, ἵνα μὴ ἐπῳάζῃ ἡ θήλεια,
+                <lb n="39.2.3"/>τὴν δὲ ἀντιμηχανᾶσθαι καὶ διαδρᾶσαν τίκτειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="39.3.1"/>τοὺς δὲ
+                <lb n="39.3.2"/>χήρους μάχεσθαι πρὸς αὑτούς, τὸν δὲ ἡττηθέντα ἀκολουθεῖν
+                <lb n="39.3.3"/>ὀχευόμενον ὑπὸ μόνου τούτου.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="40">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="40.1.1"/>Τὰς δὲ γεράνους εἰς ὕψος πέτεσθαι, ἵνα καθορῶσιν
+                <lb n="40.1.2"/>μακράν, κἂν ἴδωσιν νέφη καὶ συστροφὴν ἡσυχάζειν·
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="40.2.1"/>ἔχειν
+                <lb n="40.2.2"/>δὲ καὶ ἡγεμόνα· τὰς μὲν οὖν ἄλλας καθεύδειν ὑπὸ τὴν πτέρυγα
+                <lb n="40.2.3"/>τὰς κεφαλὰς θείσας, τὸν δὲ ἡγεμόνα γυμνὴν ἔχειν προορώ-
+                <lb n="40.2.4" break="no"/>μενον, κἂν αἴσθηταί 〈τι〉 σημαίνειν ταῖς ἄλλαις βοῶντα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="41">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="41.1.1"/>Τοὺς δὲ πελεκᾶνας τάς τε λείας 〈καὶ μεγάλας〉
+                <lb n="41.1.2"/>κόγχας καταπίνειν ἱστορεῖ, ἔπειτα ὀλίγον κατασχόντας ἐν τῷ
+                <lb n="41.1.3"/>ἄνω τῆς κοιλίας ἐξεμεῖν κεχηνυίας, εἶτα οὕτω τὰ κρέα ἐξαιροῦν-
+                <lb n="41.1.4" break="no"/>τας ἐσθίειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="42">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="42.1.1"/>Γυπὸς δὲ λέγεται ὑπό τινων ὅτι οὐδεὶς ἑώρακε
+                <lb n="42.1.2"/>νεοττὸν οὐδὲ νεοττείαν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="42.2.1"/>διὸ καὶ Ἡρόδωρον τὸν Βρύσωνος
+                <lb n="42.2.2"/>τοῦ σοφιστοῦ πατέρα ἀπό τινος αὐτοὺς ἑτέρας φάναι γῆς
+                <lb n="42.2.3"/>εἶναι μετεώρου. τίκτειν δ' οὖν ἐν ἀπροσβάτοις πέτραις.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="43">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="43.1.1"/>Λέγειν δέ τινας καὶ τὸ κιννάμωμον ὄρνεον εἶναι
+                <lb n="43.1.2"/>καὶ τὰ ἀρώματα φέρειν καὶ τὰς νεοττείας ἐκ τούτου ποιεῖσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="43.2.1"/>νεοττεύειν δ' ἐφ' ὑψηλῶν δένδρων καὶ ἀβάτων, τοὺς δὲ
+                <lb n="43.2.2"/>ἐγχωρίους μόλιβδον τοῖς ὀϊστοῖς προστιθέντας τοξεύειν καὶ
+                <lb n="43.2.3"/>καταρρηγνύειν τὰς νεοττείας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="44">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="44.1.1"/>Τὸν δὲ κόκκυγα δοκεῖν ὑποβολιμαίους τοὺς νεοττοὺς
+                <lb n="44.1.2"/>ποιεῖν διὰ τὸ δειλὸν εἶναι καὶ μὴ δύνασθαι ἀμύνειν· τίλλεσθαι
+                <lb n="44.1.3"/>γὰρ ὑπὸ τῶν ἐλαχίστων. τὰ δὲ ὑποδεξάμενα τῶν ὀρνέων
+                <lb n="44.1.4"/>ἐκβάλλειν τοὺς ἑαυτῶν νεοττοὺς διὰ τὸ καλὸν εἶναι τὸν τοῦ
+                <lb n="44.1.5"/>κόκκυγος.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="45">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="45.1.1"/>Τὸν δ' αἴγιθον αἶγα θηλάζειν προσπετόμενον,
+                <lb n="45.1.2"/>ὅθεν καὶ τὴν προσηγορίαν εἰληφέναι· τὸν δὲ μαστὸν ὅταν θη-
+                <lb n="45.1.3" break="no"/>λάσῃ 〈ἀποσβέννυσθαί τε καὶ τὴν αἶγα〉 ἀποτυφλοῦσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="45.2.1"/>ἔστι δὲ χωλὸν τὸ ὄρνεον, ὅθεν καὶ Καλλίμαχος ὁ ἐκ τῆς
+                <lb n="45.2.2"/>Αἰγύπτου περίτρανος εἶναι βουλόμενος ἔφησεν προείπας ὑπὲρ
+                <lb n="45.2.3"/>ἄλλου τινὸς ὀρνέου· «αἴγιθος ἀμφιγυήεις». οὐ σῴζεται οὖν
+                <lb n="45.2.4"/>αὐτῷ ὁ λόγος· ἔστι γὰρ οὐκ ἀμφότερα χωλόν. τὸ δ' ἀμφιγυήεις
+                <lb n="45.2.5"/>οὐ τοιοῦτον, ἀλλ' ὡς ἐπὶ τοῦ Ἡφαίστου εἴρηται, ὅταν ἑκατέ-
+                <lb n="45.2.6" break="no"/>ρους ᾖ κεχωλωμένος. περὶ μὲν οὖν τοῦ Καλλιμάχου διὰ τὸ
+                <lb n="45.2.7"/>ἀπίθανον προήχθημεν εἰπεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="46">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="46.1.1"/>Ὁ δὲ Ἀριστοτέλης φησὶν τῷ ἀετῷ γηράσκοντι
+                <lb n="46.1.2"/>τὸ ῥύγχος αὐξάνεσθαι καὶ γαμψοῦσθαι καὶ τέλος ἀποθνῄσκειν
+                <lb n="46.1.3"/>λιμῷ.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="46.2.1"/>τὴν φήνην δὲ τοὺς ἐκβληθέντας τῶν νεοττῶν ὑπὸ
+                <lb n="46.2.2"/>τοῦ ἀετοῦ λαμβάνειν καὶ ἐκτρέφειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="46.3.1"/>τὸν δὲ 〈ἁλι〉αίετον
+                <lb n="46.3.2"/>ἐπαναγκάζειν τὰ τέκνα ἔτι ψιλὰ ὄντα πρὸς τὸν ἥλιον βλέπειν,
+                <lb n="46.3.3"/>τὸ δὲ δακρύον αὐτῶν καὶ μὴ θέλον ἀντοφθαλμεῖν ἀποκτείνειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="47">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="47.1.1"/>Τῶν ἰχθύων δὲ τὸν ἁλιέα καλούμενον βάτραχον
+                <lb n="47.1.2"/>θηρεύειν τὰ ἰχθύδια τοῖς ἀπὸ τῶν ὀφθαλμῶν ἀποκρεμαμένοις,
+                <lb n="47.1.3"/>ὧν τὸ μὲν μῆκός ἐστιν τριχοειδές, ἐπ' ἄκρου δὲ προσκείμενον
+                <lb n="47.1.4"/>ὥσπερ δέλεαρ στρογγύλον· τοῦτ' οὖν κρύψαντα ἑαυτὸν προ-
+                <lb n="47.1.5" break="no"/>τείνειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="48">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="48.1.1"/>Τὴν δὲ νάρκην καθαμμίσασαν ἑαυτὴν τὰ μὴ δυνάμενα
+                <lb n="48.1.2"/>τῶν ἰχθύων, ὅταν σύνεγγυς ᾖ, κολυμβᾶν διὰ τὴν νάρκησιν
+                <lb n="48.1.3"/>συλλαμβάνειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="49">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="49.1.1"/>Τὰς δὲ καλουμένας ἀλώπεκας, ὅταν αἴσθωνται ὅτι
+                <lb n="49.1.2"/>τὸ ἄγκιστρον καταπεπώκασιν, ἀναδραμούσας ἄνωθεν τῆς
+                <lb n="49.1.3"/>ὁρμιᾶς ἀποτρώγειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="50">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="50.1.1"/>Τὸν δὲ πολύποδα κατατίθεσθαι τροφὴν εἰς τὰς
+                <lb n="50.1.2"/>θαλάμας, καὶ ὅταν τὰ χρήσιμα ἀναλώσῃ, τὰ ἀχρεῖα ἐκβάλλειν,
+                <lb n="50.1.3"/>καὶ τὰ συνερχόμενα τῶν ἰχθυδίων ἐπὶ τὰ ἐκβεβλημένα θηρεύειν
+                <lb n="50.1.4"/>ποιοῦντα τὸ χρῶμα παραπλήσιον οἷς ἂν ἐγγὺς ᾖ λίθοις·
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="50.2.1"/>καὶ
+                <lb n="50.2.2"/>ὅταν φοβηθῇ δὲ ταὐτὸ ποιεῖν τοῦτο.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="51">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="51.1.1"/>Ἰδὲ καὶ τὸν ναυτίλον πολύποδα οἷς ποιεῖ περιττόν·
+                <lb n="51.1.2"/>ἔχει μὲν γὰρ ὄστρακον, ὃ καταστρέψας ἀναφέρεται, ἵνα ῥᾴδιον
+                <lb n="51.1.3"/>ἀνενεχθῇ κενόν· ἄνωθεν δὲ γενόμενον μεταστρέφειν. ἔχειν
+                <lb n="51.1.4"/>δὲ μεταξὺ τῶν πλεκτανῶν ἔτι τι συνυφὲς οἷον ὑμένα, καὶ
+                <lb n="51.1.5"/>τούτῳ, ὅταν πνευμάτιον ᾖ, ὥσπερ ἱστίῳ χρῆσθαι, ἀντὶ πη-
+                <lb n="51.1.6" break="no"/>δαλίων δὲ 〈δύο〉 παρακαθιέναι τῶν πλεκτανῶν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="52a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="52a.1.1"/>Τὰς δὲ μελίττας θυμιωμένας ὑπὸ τοῦ καπνοῦ
+                <lb n="52a.1.2"/>καὶ κακοπαθούσας τότε μάλιστα μὲν 〈μέλι〉 ἐσθίειν, τὸν δὲ
+                <lb n="52a.1.3"/>λοιπὸν χρόνον φείδεσθαι, ὡς τροφῆς χάριν ἀποτιθεμένας.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="52a.2.1"/>τοῖς ἀπὸ τῶν δένδρων δὲ δακρύοις διαχρίειν τὸ σμῆνος τῶν
+                <lb n="52a.2.2"/>ἄλλων ἕνεκεν θηρίων.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="52a.3.1"/>ἃς δὲ ἂν ἀποκτείνωσιν αἱ χρησταὶ
+                <lb n="52a.3.2"/>μέλιτται, πειρᾶσθαι μὲν αὐτὰς ἔξω τοῦτο ποιεῖν· ἐὰν δὲ ἔσω
+                <lb n="52a.3.3"/>τοῦ σμήνους ἀποκτείνωσιν, ἐκφέρειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p>
+                <lb n="52a.4.1"/>τοὺς δὲ φῶρας καλου-
+                <lb n="52a.4.2" break="no"/>μένους κακουργεῖν, ἐὰν λάθωσιν παρεισελθόντες· εἰσέρχονται
+                <lb n="52a.4.3"/>δὲ σπανίως· τηρεῖσθαι γὰρ αὐτοὺς καὶ ἐπὶ πασῶν φύλακας
+                <lb n="52a.4.4"/>εἶναι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="5">
+              <p>
+                <lb n="52a.5.1"/>εἶναι δὲ αὐτὰς τεταγμένας ἐφ' ἑκάστῳ τῶν ἔργων,
+                <lb n="52a.5.2"/>καὶ τὰς μὲν ἀνθοφορεῖν, τὰς δὲ κατορθοῦν τὰ κηρία.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="6">
+              <p>
+                <lb n="52a.6.1"/>δυσχε-
+                <lb n="52a.6.2" break="no"/>ραίνειν δ' αὐτὰς καὶ τῇ δυσωδίᾳ τῆς τροφῆς καὶ τῷ μύρῳ, καὶ
+                <lb n="52a.6.3"/>τὸ περίττωμα δὲ ἔξω ἀφιέναι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="7">
+              <p>
+                <lb n="52a.7.1"/>καὶ τὰς μὲν πρεσβυτέρας
+                <lb n="52a.7.2"/>εἴσω ἐργάζεσθαι 〈.....〉
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="52b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="52b.1.1"/>Σφῆκα δ' ἂν λάβῃ τις τῶν σκελῶν καὶ τοῖς πτεροῖς
+                <lb n="52b.1.2"/>ἐᾷ βομβεῖν, προσπέτεσθαί φησιν τοὺς ἀκέντρους, τῶν δ' ἐχόν-
+                <lb n="52b.1.3" break="no"/>των τὸ κέντρον οὐδένα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="53">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="53.1.1"/>Τὸν δὲ μόναπον γίνεσθαι μέν φασιν ἐν Παιονίᾳ
+                <lb n="53.1.2"/>ἐν τῷ ὄρει Μαρσάνῳ, ὀδόντας δὲ τοὺς ἄνωθεν οὐκ ἔχειν,
+                <lb n="53.1.3"/>ὥσπερ βοῦν, οὐδ' ἄλλο τῶν δικεράτων οὐδέν, καὶ τἆλλα προ-
+                <lb n="53.1.4" break="no"/>σεμφερὲς εἶναι τῷ ταύρῳ.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="53.2.1"/>διωκόμενον δὲ προσαφοδεύειν
+                <lb n="53.2.2"/>πόρρωθεν, καὶ τὴν κόπρον, ὅταν πεφοβημένος τοῦτο ποιήσῃ,
+                <lb n="53.2.3"/>ἐπικάειν οὕτως ὥστε τὰς τρίχας ἀπορρεῖν τῶν κυνῶν· ἂν
+                <lb n="53.2.4"/>δ' ἄνευ φόβου τοῦτο ποιήσῃ, οὐδὲν πάσχειν οὐδὲ βλάπτεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="54a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="54a.1.1"/>〈.....〉 ὃ δ' ἂν ὀχεύσῃ καὶ ἔγκυον ποιήσῃ,
+                <lb n="54a.1.2"/>τούτου πάλιν οὐχ ἅπτεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="54b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="54b.1.1"/>Τῷ δὲ Σκυθῶν βασιλεῖ ἵππον φασὶ γενναίαν γενέσθαι·
+                <lb n="54b.1.2"/>ταύτῃ τὸν ἐξ αὐτῆς γεννηθέντα πῶλον προσάγειν, ἵνα ὀχεύσῃ,
+                <lb n="54b.1.3"/>τὸν δ' οὐ θέλειν· ὡς δὲ περικαλύψαντες προσήγαγον τὴν ἵππον
+                <lb n="54b.1.4"/>ἀναβῆναι, ἀποκαλυφθείσης δὲ ἰδόντα τὸ πρόσωπον φεύγειν καὶ
+                <lb n="54b.1.5"/>κατακρημνίσαι ἑαυτόν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="55">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="55.1.1"/>Τῶν θαλαττίων δὲ ζῴων ἡμερώτατον εἶναι δελ-
+                <lb n="55.1.2" break="no"/>φῖνα· καὶ γὰρ πρὸς παῖδας ἐρωτικῶς ἔχειν, οἷον περὶ Τάραντα
+                <lb n="55.1.3"/>καὶ Καρίαν καὶ ἄλλους τόπους πολλούς.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="55.2.1"/>ἐν δὲ Καρίᾳ δεθέν-
+                <lb n="55.2.2" break="no"/>τος δελφῖνος καὶ τραύματα λαβόντος πολλὰ παραγενέσθαι
+                <lb n="55.2.3"/>πολλοὺς ἐπὶ βοήθειαν εἰς τὸν λιμένα, ἕως ἀφῆκεν ὁ ἁλιεύς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="56">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="56.1.1"/>Περὶ δὲ τοῦ τόκου τῶν λύκων μυθικόν τι τελείως διεξ-
+                <lb n="56.1.2" break="no"/>έρχεται καὶ ὅμοιός ἐστιν καὶ τῷ συνειδότι. φησὶν γὰρ αὐτοὺς
+                <lb n="56.1.3"/>ἅπαντας ἐν δεκαδύο 〈ἡμέραις〉 τοῦ ἐνιαυτοῦ τίκτειν· εἶναι
+                <lb n="56.1.4"/>δὲ τούτου αἴτιον, ὡς ὁ λόγος, ὅτι ἐν ιβʹ ἡμέραις τὴν Λητὼ
+                <lb n="56.1.5"/>παρεκόμισαν ἐξ Ὑπερβορέων εἰς Δῆλον λύκαιναν φαινομένην.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="57">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="57.1.1"/>Τὴν δὲ γλαῦκα καὶ τὴν κορώνην πολεμίας εἶναι·
+                <lb n="57.1.2"/>τὴν μὲν κορώνην 〈ὑφαρπάζειν τὰ ᾠὰ〉 τῆς γλαυκὸς μεθ' ἡ-
+                <lb n="57.1.3" break="no"/>μέραν διὰ τὸ μὴ βλέπειν τὴν γλαῦκα, τὴν δὲ γλαῦκα τῆς
+                <lb n="57.1.4"/>κορώνης νύκτωρ διὰ τὸ τὴν κορώνην μὴ ὁρᾶν· διὸ καὶ κρατεῖν
+                <lb n="57.1.5"/>αὐτῶν τὴν μὲν νύκτωρ, τὴν δὲ μεθ' ἡμέραν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="58">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="58.1.1"/>Καὶ τὸν ὄνον καὶ τὸν αἴγιθον πολεμεῖν ἑαυτοῖς·
+                <lb n="58.1.2"/>παριόντα γὰρ ξύεσθαι εἰς τὰς ἀκάνθας, διά τε οὖν τοῦτο, καὶ
+                <lb n="58.1.3"/>ὅταν ὀγκήσαιτο, ἐκβάλλειν τὰ ᾠὰ τοῦ αἰγίθου καὶ τοὺς νεοττοὺς
+                <lb n="58.1.4"/>φοβουμένους ἐκπίπτειν· τὸν δὲ διὰ τὴν βλάβην ταύτην κολάπτειν
+                <lb n="58.1.5"/>τὰ ἕλκη αὐτοῦ ἐπιπετόμενον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="59">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="59.1.1"/>Καὶ τὸν αἰσάλωνα δὲ πολέμιον εἶναι τῇ ἀλώπεκι,
+                <lb n="59.1.2"/>τὸν δὲ κόρακα καὶ τὴν ἀλώπεκα φίλους· πολεμεῖν δὲ καὶ τὸν
+                <lb n="59.1.3"/>κόρακα τῷ αἰσάλωνι, διὸ καὶ τυπτομένῃ τῇ ἀλώπεκι βοηθεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="60a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="60a.1.1"/>Τοὺς αἰπόλους δέ φησι λέγειν ὅτι, ὅταν τάχιστα
+                <lb n="60a.1.2"/>ὁ ἥλιος τραπῇ, ἀντιβλέπουσαι αὐτῷ αἱ αἶγες κατάκεινται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="60b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="60b.1.1"/>Τούτῳ τι παραπλήσιον Λύκος ἱστορεῖ· φησὶ γὰρ ἐν
+                <lb n="60b.1.2"/>Λιβύῃ τὰ κτήνη τὸν μὲν ἄλλον χρόνον τὰ μὲν αὐτοῖς ἐναντία,
+                <lb n="60b.1.3"/>τὰ δ' ὡς ἔτυχεν κοιμᾶσθαι, τῇ δὲ νυκτὶ, καθ' ἣν τοῦ Κυνὸς
+                <lb n="60b.1.4"/>ἀνατολὴ γίνεται, πρὸς αὐτὸ τὸ ἄστρον ἐστραμμένα, καὶ
+                <lb n="60b.1.5"/>τούτῳ τεκμηρίῳ τῆς ἐπιτολῆς τοὺς ἐκεῖ χρῆσθαι.
+                <lb n="60b.1.6"/>Πλὴν ὅ γε Ἀριστοτέλης χωρὶς τῆς περὶ τοὺς βίους τῶν
+                <lb n="60b.1.7"/>ζῴων ἐντρεχείας καὶ τοιαῦτά τινα διεξέρχεται, πάνυ πολλὴν
+                <lb n="60b.1.8"/>ἐπιμέλειαν πεποιημένος ἐν τοῖς πλείστοις αὐτῶν καὶ οἷον ἔργῳ,
+                <lb n="60b.1.9"/>οὐ παρέργῳ χρώμενος τῇ περὶ τούτων ἐξηγήσει. τὰ γοῦν
+                <lb n="60b.1.10"/>πάντα σχεδὸν ἑβδομήκοντα περὶ αὐτῶν καταβέβληται βιβλία,
+                <lb n="60b.1.11"/>καὶ πεπείραται ἐξηγητικώτερον ἢ ἱστορικώτερον ἐν ἑκάστοις
+                <lb n="60b.1.12"/>ἀναστρέφεσθαι. πρὸς τὴν ἡμετέραν ἐκλογὴν ἐκποιεῖ 〈τῶν〉
+                <lb n="60b.1.13"/>προῃρημένων αὐτῷ τὸ ξένον καὶ παράδοξον ἔκ τε τούτων καὶ
+                <lb n="60b.1.14"/>τῶν ἄλλων ἐπιδραμεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="61">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="61.1.1"/>Λέγει γοῦν τὰ χερσαῖα πάντα ἀναπνεῖν, ὅσα πνεύμονα
+                <lb n="61.1.2"/>ἔχει, σφῆκας δὲ καὶ μελίσσας οὐκ ἀναπνεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="62">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="62.1.1"/>Ὅσα τε κύστιν ἔχει, πάντα καὶ κοιλίαν, ὅσα τε
+                <lb n="62.1.2"/>κοιλίαν, 〈οὐ〉 πάντα καὶ κύστιν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="63">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="63.1.1"/>Ἄναιμα δὲ εἶναι πολλὰ μὲν τῶν ζῴων, καθόλου
+                <lb n="63.1.2"/>δὲ ὅσα πλείους πόδας ἔχει τεττάρων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="64">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="64.1.1"/>Ὅσα δὲ τρίχας ἔχει, πάντα ζῳοτοκεῖν· οὐκ ἀντι-
+                <lb n="64.1.2" break="no"/>στρέφει δέ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="65">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="65.1.1"/>Πάντα τὰ ζῷα κινεῖν τὴν κάτω σιαγόνα πλὴν τοῦ
+                <lb n="65.1.2"/>ποταμίου κροκοδείλου· τοῦτον δὲ μόνον τὴν ἄνω.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="66">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="66.1.1"/>Ἐν Ἰλλυριοῖς εἶναι καὶ Παιονίᾳ μωνύχους 〈ὗς〉·
+                <lb n="66.1.2"/>μώνυχον δὲ καὶ δίκερων οὐθὲν ἑωρᾶσθαι, μονοκέρατα δὲ
+                <lb n="66.1.3"/>καὶ μώνυχα 〈ὀλίγα〉, οἷον τὸν Ἰνδικὸν ὄνον· τοῦτον δὲ καὶ
+                <lb n="66.1.4"/>ἀστράγαλον τῶν μωνύχων ἔχειν ζῴων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="67">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="67.1.1"/>Τῆς δὲ γαλῆς ὀστοῦν εἶναι τὸ αἰδοῖον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="68">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="68.1.1"/>Τὸ δ' ἄρρεν τοῦ θήλεος πλείους ἔχειν ὀδόντας καὶ
+                <lb n="68.1.2"/>ἐν ἀνθρώποις καὶ [τοῖς] ἄλλοις ζῴοις.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="69">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="69.1.1"/>Τὴν δὲ τῶν ἵππων καρδίαν ὀστοῦν καὶ βοῶν δέ
+                <lb n="69.1.2"/>τινων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="70">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="70.1.1"/>Τῶν δ' ἐλάφων τοὺς ἀχαΐνας καλουμένους δοκεῖν
+                <lb n="70.1.2"/>ἐν τῇ κέρκῳ τὴν χολὴν ἔχειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="71">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="71.1.1"/>Τοὺς δὲ ἰχθῦς οὐκ ἔχειν στόμαχον· διὸ καὶ τῶν
+                <lb n="71.1.2"/>μεγάλων, ἕτερον ὅταν διώκωσιν ἐλάττονα, προσπίπτειν τὴν
+                <lb n="71.1.3"/>κοιλίαν εἰς τὸ στόμα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="72">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="72.1.1"/>Τοὺς δὲ ὄφεις πλευρὰς ἔχειν λʹ.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="72.2.1"/>καὶ ὄμματα
+                <lb n="72.2.2"/>δὲ αὐτῶν ἐάν τις ἐκκεντήσῃ, καθάπερ τὰ τῶν χελιδόνων,
+                <lb n="72.2.3"/>πάλιν γίνεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="73">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="73.1.1"/>Τῶν δ' ἰχθύων τὸν σκάρον μόνον μηρυκάζειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="74">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="74.1.1"/>Τοῦ δὲ λέοντος οὕτως εἶναι τὰ ὀστᾶ στερεά, ὥστε
+                <lb n="74.1.2"/>πολλάκις κοπτομένων πῦρ ἐκλάμπειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="75">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="75.1.1"/>Ἐν Φρυγίᾳ δὲ βοῦς εἶναι, οἳ κινοῦσι τὰ κέρατα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="76">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="76.1.1"/>Τρίχας δὲ ἔχειν τῶν ζῴων ὅσα πεζὰ καὶ ζῳοτόκα,
+                <lb n="76.1.2"/>φολίδας δὲ ὅσα πεζὰ καὶ ᾠοτόκα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="77">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="77.1.1"/>Ἤδη δέ τισιν κάμνουσιν πολιὰς γίγνεσθαι, ὑγιασθεῖ-
+                <lb n="77.1.2" break="no"/>σιν δὲ πάλιν μελαίνας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="78">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="78.1.1"/>Τὸν δὲ ἐν τῇ Χαλκιδικῇ ποταμὸν τὸν ἐπὶ Θρᾴκης,
+                <lb n="78.1.2"/>τὸν καλούμενον Ψυχρόν, ἂν πίωνται τὰ πρόβατα, ἔχειν τὰ
+                <lb n="78.1.3"/>γεννώμενα μέλανα ποιεῖν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="78.2.1"/>καὶ ἐν τῇ Ἀντανδρίᾳ δύο ποτα-
+                <lb n="78.2.2" break="no"/>μοὺς εἶναι, ὧν τὸν μὲν λευκά, τὸν δὲ μέλανα γεννᾶν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="78.3.1"/>δοκεῖν
+                <lb n="78.3.2"/>δὲ καὶ τὸν Σκάμανδρον ξανθὰ ποιεῖν, διὸ καὶ τὸν ποιητὴν ἀν-
+                <lb n="78.3.3" break="no"/>τὶ Σκαμάνδρου Ξάνθον αὐτὸν προσαγορεύειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="4">
+              <p>
+                <lb n="78.4.1"/>καὶ ἐν τῇ
+                <lb n="78.4.2"/>Εὐβοίᾳ δὲ κατὰ τὴν Ἱστιαιώτιδα τὴν συνορίζουσαν τῇ Χαλκίδι
+                <lb n="78.4.3"/>δύο ποταμοί, Κέρων καὶ Νηλεύς, ὧν αἱ μηκάδες ἐὰν περὶ τὸ
+                <lb n="78.4.4"/>συλλαμβάνειν οὖσαι πίωσιν, ἐὰν μὲν ἀπὸ ποταμοῦ Κέρωνος,
+                <lb n="78.4.5"/>μέλανα τίκτουσιν, ἐὰν δὲ ἀπὸ τοῦ Νηλέως, λευκά.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="79">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="79.1.1"/>Τοὺς δὲ μύρμηκάς φησιν ὑπὸ ὀριγάνου καὶ θείου
+                <lb n="79.1.2"/>περιπαττομένους ἐκλείπειν τὰς μυρμηκίας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="80">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="80.1.1"/>Τὴν δ' ἔγχελυν οὔτ' ἄρρεν εἶναι οὔτε θῆλυ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="81">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="81.1.1"/>Τοὺς δὲ πέρδικας, ἐὰν κατ' ἄνεμον στῶσιν αἱ θήλειαι
+                <lb n="81.1.2"/>τῶν ἀρρένων, ἐγκύους γίνεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="82">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="82.1.1"/>Τὸν δὲ καλούμενον ἀστέρα οὕτω διάθερμον εἶναι,
+                <lb n="82.1.2"/>ὥσθ', ὅντινα ἂν λάβῃ τῶν ἰχθύων, παραχρῆμα δίεφθον ποιεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="83">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="83.1.1"/>Ἔχειν δὲ καὶ σπογγίον αἴσθησιν· ἂν γὰρ μέλλοντος
+                <lb n="83.1.2"/>ἀποσπᾶν προαίσθηται, συσπᾶσθαι καὶ ἔργον εἶναι ἀφελεῖν·
+                <lb n="83.1.3"/>ταὐτὸ δ', ἂν ἄνεμος ἢ κλύδων ᾖ, γίνεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="84a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="84a.1.1"/>Εἶναι δὲ καὶ ἐν χιόνι ζῷα σκωληκοειδῆ δασέα.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="84a.2.1"/>ἐν Κύπρῳ δ', οὗ ἡ χαλκῖτις λίθος καίεται, γίνεσθαι θηρίον
+                <lb n="84a.2.2"/>μικρῷ μεῖζον μυιῶν· τὸ αὐτὸ δὲ καὶ ἐν τοῖς Καρυστίων χωνευ-
+                <lb n="84a.2.3" break="no"/>τηρίοις.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="84a.3.1"/>ἀποθνῄσκειν δὲ τὰ μὲν τῆς χιόνος, τὰ δὲ τοῦ
+                <lb n="84a.3.2"/>πυρὸς χωριζόμενα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="84b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="84b.1.1"/>Τὴν δὲ σαλαμάνδραν σβεννύειν τὸ πῦρ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="85">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="85.1.1"/>Περὶ δὲ τὸν Ὕπανιν ποταμὸν τὸν περὶ Βόσπορον
+                <lb n="85.1.2"/>τὸν Κιμμέριον περὶ τροπάς γε θερινὰς καταφέρεσθαί φησιν
+                <lb n="85.1.3"/>οἷον θυλάκους μείζους ῥαγῶν, ἐξ ὧν ῥηγνυμένων ἐξέρχε-
+                <lb n="85.1.4" break="no"/>σθαι ζῷον πτερωτὸν τετράπουν, ζῆν δὲ μίαν ἡμέραν· ἴδιον δὲ
+                <lb n="85.1.5"/>καὶ τὸ πτερωτὸν τετράπουν εἶναι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="86">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="86.1.1"/>Τὰ δὲ σμήνη ἀπόλλυσθαι, ἐάν τε ἡγεμόν〈ες μὴ〉
+                <lb n="86.1.2"/>ὦσιν, ἐάν τε τοὐναντίον πολλοί.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="87">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="87.1.1"/>Τοὺς δὲ σκορπίους τοὺς χερσαίους ὑπὸ τῶν τέ-
+                <lb n="87.1.2" break="no"/>κνων ἀποθνῄσκειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="87.2.1"/>καὶ φαλάγγια δὲ κτείνειν τὴν τεκοῦσαν,
+                <lb n="87.2.2"/>πολλάκις δὲ καὶ τοὺς ἄρρενας· συνεπῳάζειν γάρ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="88">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="88.1.1"/>Ἐν δὲ τῷ σώματι τῶν ἀνθρώπων γίνεσθαι οἷον
+                <lb n="88.1.2"/>ἰόνθους μικρούς· τούτους δὲ ἐάν τις κεντήσῃ, ἐξέρχεσθαι
+                <lb n="88.1.3"/>φθεῖρας, καὶ ἐὰν ὑγράσῃ τις, νόσημα τοῦτο ἐμπίπτειν ὥσπερ
+                <lb n="88.1.4"/>Ἀλκμᾶνι τῷ λυρικῷ καὶ Φερεκύδει τῷ Συρίῳ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="89">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="89.1.1"/>Ἴδιον δὲ καὶ τοῦτο, νεκρῶν τινων τοῦ μυελοῦ
+                <lb n="89.1.2"/>σαπέντος ἐκ τῆς ῥάχεως ὀφίδια γίνεσθαι, ἐὰν πρὸ τοῦ τελευτᾶν
+                <lb n="89.1.3"/>ὄφεως τεθνηκότος ἑλκύσωσι τὴν ὀσμήν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="89.2.1"/>καί τινι καὶ
+                <lb n="89.2.2"/>ἐπιγραμματίῳ περιπεπτώκαμεν Ἀρχελάου, οὗ καὶ πρότερον
+                <lb n="89.2.3"/>ἐμνήσθημεν, ὃς περὶ τῶν θαυμασίων καὶ τοῦτο καταγράφει,
+                <lb n="89.2.4"/>καί φησι·
+                <lb n="89.2.5"/>πάντα δι' ἀλλήλων ὁ πολὺς σφραγίζεται αἰών·
+                <lb n="89.2.6"/>ἀνδρὸς γὰρ κοίλης ἐκ μυελοῦ ῥάχεως
+                <lb n="89.2.7"/>δεινὸς γίνετ' ὄφις, νέκυος δειλοῖο σαπέντος,
+                <lb n="89.2.8"/>ὃς νέον ἐκ τούτου πνεῦμα λάβῃ τέραος,
+                <lb n="89.2.9"/>τεθνεότος ζωὴν ἕλκων φύσιν· εἰ δὲ τόδ' ἐστίν,
+                <lb n="89.2.10"/>οὐ θαῦμα βλαστεῖν τὸν διφυῆ Κέκροπα.
+                <lb n="89.2.11"/>τοῦτο μὲν οὖν ἐν ἀκοῇ τε [καὶ] φερομένῃ τινὶ καὶ παρέργως
+                <lb n="89.2.12"/>〈ἐν〉 τῇ τοῦ ἐπιγράμματος ποιοῦμεν μαρτυρίᾳ κεῖσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="90">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="90.1.1"/>Ὁ δὲ Ἀριστοτέλης [λέγειν] ἐν κηρῷ φησιν γίνεσθαι
+                <lb n="90.1.2"/>ζῷον, ὃ δὴ δοκεῖν ἐλάχιστον εἶναι καὶ καλεῖσθαι ἀκαρί.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="91">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="91.1.1"/>Τὸν δὲ ποτάμιον κροκόδειλον ἐξ ἐλαχίστου γίνεσθαι
+                <lb n="91.1.2"/>μέγιστον· τὸ μὲν γὰρ ᾠὸν 〈οὐ〉 μεῖζον γίνεσθαι χηνείου,
+                <lb n="91.1.3"/>αὐτὸν δὲ γίνεσθαι καὶ ἑπτακαιδεκάπηχυν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="92">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="92.1.1"/>Τῶν δὲ καράβων τοὺς πολύποδας κρατεῖν· οὐθὲν
+                <lb n="92.1.2"/>γὰρ ὑπὸ τῶν ὀστράκων πάσχειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="92.2.1"/>τῶν δὲ πολυπόδων τοὺς
+                <lb n="92.2.2"/>γόγγρους· οὐθὲν γὰρ αὐτοῖς διὰ τὴν λειότητα δύνασθαι τὸν
+                <lb n="92.2.3"/>πολύποδα χρῆσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="92.3.1"/>τοῦ δὲ γόγγρου κάραβον· οὐ γὰρ ἐξο-
+                <lb n="92.3.2" break="no"/>λισθαίνειν αὐτόν, ἀλλὰ κατατέμνεσθαι διὰ τὴν τῶν ὀστράκων
+                <lb n="92.3.3"/>τραχύτητα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="93">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="93.1.1"/>Τὸν δὲ κεστρέα φησίν, ὅταν φοβηθῇ, τὴν κεφαλὴν
+                <lb n="93.1.2"/>κρύπτειν, ὡς ὅλον τὸ σῶμα κρύπτοντα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="94">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="94.1.1"/>Τὰ γαμψὰ πάντ' εἶναι μιμητικά.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="95">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="95.1.1"/>Ὑπὸ κυνὸς λυττώσης λυττᾶν πάντα τὰ δηχθέντα
+                <lb n="95.1.2"/>πλὴν ἀνθρώπου.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="96">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="96.1.1"/>Τῶν ζῴων τὰ μακρὰ ἄρσενα εἶναι, τὰ δ' ὕστερα
+                <lb n="96.1.2"/>θήλεα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="97a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="97a.1.1"/>Καὶ ἐν Αἰγύπτῳ κατορύττοντας εἰς κόπρον νεοτ-
+                <lb n="97a.1.2" break="no"/>τοὺς ποιεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="97b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="97b.1.1"/>Ἐν Συρακούσαις δὲ φιλοπότην τινὰ εἰς τὴν γῆν
+                <lb n="97b.1.2"/>κατορύξαι καὶ ἐπιθέντα τὴν ψίεθον ἕως τούτου πίνειν συνεχῶς,
+                <lb n="97b.1.3"/>ἕως γλυφῆναι τὰ ᾠά.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="97c">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="97c.1.1"/>Ἤδη δὲ 〈καὶ〉 κείμενα ἐν ἀγγείοις ἀλεεινοῖς ἐκτριφθῆναι
+                <lb n="97c.1.2"/>καὶ προελθεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="98">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="98.1.1"/>Τῶν δὲ χελιδόνων τοὺς νεοττοὺς, ἐάν τις ἐκτυ-
+                <lb n="98.1.2" break="no"/>φλώσῃ, πάλιν βλέπειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="99a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="99a.1.1"/>Τὸν δὲ ἱέρακα τρία μὲν τίκτειν 〈ᾠά, δύο δ' ἐκλέ-
+                <lb n="99a.1.2" break="no"/>πειν〉, αὐξανομένων δὲ τῶν νεοττῶν ἐκλέγειν τὸν ἕνα· οὐ γὰρ
+                <lb n="99a.1.3"/>δύνασθαι τρέφειν διὰ τὸ τὸν χρόνον τοῦτον τοὺς ὄνυχας αὐτοῦ
+                <lb n="99a.1.4"/>διαστρέφεσθαι καὶ μηθὲν ἁρπάζειν· τὸν δὲ πλανηθέντα τὴν
+                <lb n="99a.1.5"/>φήνην ὑποβάλλεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="99b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="99b.1.1"/>Καὶ τὸ ὅλως ἐπιεικῶς τοὺς γαμψώνυχας, ὅταν θᾶττον
+                <lb n="99b.1.2"/>οἱ νεοττοὶ δύνωνται πέτεσθαι, ἐκβάλλειν πλὴν τῆς κορώνης·
+                <lb n="99b.1.3"/>ταύτην δὲ καὶ πετομένους ἐπί τινα χρόνον ψωμίζειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="100">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="100.1.1"/>Κόκκυγος δὲ νεοττοὺς οὐδένα ἑωρακέναι· τίκτειν
+                <lb n="100.1.2"/>γὰρ αὐτὸν οὐκ ἐν τῇ ἰδίᾳ νεοττιᾷ, ἀλλ' εἰς τὰς τῶν ὀρνιθίων
+                <lb n="100.1.3"/>ἢ εἰς τὰς τῶν φαβῶν ἢ ὑπολαΐδων εἰσπετόμενον, ὅταν κατα-
+                <lb n="100.1.4" break="no"/>φάγῃ τὰ προυπάρχοντα ᾠά.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="101">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="101.1.1"/>Τοὺς δὲ πέρδικας 〈δύο〉 ποιεῖσθαι σηκοὺς τῶν
+                <lb n="101.1.2"/>ᾠῶν καὶ ἐπῳάζειν καὶ τρέφειν ἑκατέρους, καὶ τοὺς νεοττοὺς
+                <lb n="101.1.3"/>ὅταν πρῶτον ἐξαγάγωσιν ὀχεύειν αὐτούς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="102">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="102.1.1"/>Τοὺς 〈ὗς〉 δὲ πρὸς ἀλλήλους μάχεσθαι θωρα-
+                <lb n="102.1.2" break="no"/>κιζομένους τῷ ἰδίῳ δέρματι, ποιεῖν δὲ τραχὺ ἐκ παρασκευῆς
+                <lb n="102.1.3"/>τρίβοντας πρὸς δένδρα καὶ τῷ πηλῷ μολύνοντας καὶ ξηραίνον-
+                <lb n="102.1.4" break="no"/>τας.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="102.2.1"/>φάναι δέ τινας καταγράφει, ὡς αὐτὸς οὐ πεπειραμένος,
+                <lb n="102.2.2"/>ὅτι, ἂν ὗς τὸν ἕτερον ὀφθαλμὸν ἐκκοπῆ, ἀποθνῄσκει ταχέως.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="103">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="103.1.1"/>Αἶγας δὲ καὶ πρόβατα βορείοις μὲν ὀχευόμενα
+                <lb n="103.1.2"/>ἀρσενοτοκεῖν ὡς τὸ πολύ, νοτίοις δὲ θηλυτοκεῖν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="103.2.1"/>λευκὰ
+                <lb n="103.2.2"/>δὲ τὰ γεννώμενα γίνεσθαι, ἐὰν ὑπὸ τῇ γλώττῃ τοῦ κριοῦ
+                <lb n="103.2.3"/>λευκαὶ φλέβες ὦσιν, μέλανα δὲ ἐὰν μέλαιναι. ὡσαύτως δὲ καὶ
+                <lb n="103.2.4"/>ἐπὶ τῶν πυρρῶν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="103.3.1"/>πρότερον δὲ ὀχεύεσθαι 〈τὰ〉 τὸ ἁλυκὸν
+                <lb n="103.3.2"/>ὕδωρ πίνοντα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="104">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="104.1.1"/>Τοὺς δὲ Λακωνικοὺς κύνας πονήσαντας μᾶλλον
+                <lb n="104.1.2"/>ὀχεύειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="105">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="105.1.1"/>Θαυμασιωτάτην δ' εἶναι τῷ τάχει τὴν τῶν
+                <lb n="105.1.2"/>μυῶν γένεσιν· ἤδη γάρ ποτε τῆς θηλείας κυούσης καὶ ἐναπο-
+                <lb n="105.1.3" break="no"/>ληφθείσης ἐν ἀγγείῳ φανῆναι μετ' οὐ πολὺν χρόνον μῦς εἴκοσιν
+                <lb n="105.1.4"/>καὶ ἑκατόν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="105.2.1"/>τῆς δὲ Περσικῆς ἔν τισι 〈τόποις〉 ἀνασχι-
+                <lb n="105.2.2" break="no"/>ζομένων τῶν θηλείων τῶν μυῶν τὰ ἔμβρυα ἤδη κύοντα εὑρί-
+                <lb n="105.2.3" break="no"/>σκεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="106">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="106.1.1"/>Αἰγίθου δὲ λέγεται καὶ ἀκανθίδος αἷμα μόλις
+                <lb n="106.1.2"/>μίγνυσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="107">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="107.1.1"/>Τῶν δὲ αἰγῶν ὅταν μία τις λάβῃ τὸ ἄκρον τοῦ
+                <lb n="107.1.2"/>ἠρύγγου—ἔστιν δ' οἷον θρίξ—τὰς ἄλλας ἑστάναι οἷον με-
+                <lb n="107.1.3" break="no"/>μωρωμένας ἐμβλεπούσας εἰς ἐκείνην.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="108">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="108.1.1"/>Τὸ δὲ τῆς ἴκτιδος αἰδοῖον εἶναι μὲν ὀστοῦν· δο-
+                <lb n="108.1.2" break="no"/>κεῖν δὲ εἶναι φάρμακον στραγγουρίας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="109a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="109a.1.1"/>Εὐνοῦχον δὲ φαλακρὸν οὐδένα γίνεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="109b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="109b.1.1"/>Τὰς δευτερογονεῖς τρίχας τοὺς μὲν ἐκ παιδὸς διαφθα-
+                <lb n="109b.1.2" break="no"/>ρέντας οὐκ ἴσχειν, τοὺς δὲ ὕστερον ἀποβάλλειν πλὴν ἐπὶ τῆς
+                <lb n="109b.1.3"/>ἥβης.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="110">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="110.1.1"/>Γυναῖκα τίκτειν πλεῖστα πέντε. καὶ μνημονεύε-
+                <lb n="110.1.2" break="no"/>σθαι μίαν ἐν τέτταρσιν τόκοις εἴκοσι τετοκυῖαν καὶ τὰ πλεῖστα
+                <lb n="110.1.3"/>τούτων ἐκτραφέντα.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="110.2.1"/>ἐὰν 〈ἁλὶ〉 δὲ κύουσα δαψιλεστέ-
+                <lb n="110.2.2" break="no"/>ρῳ χρήσηται, οὐκ ἔχοντα ὄνυχας γίνεσθαι τὰ παιδία.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="111">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="111.1.1"/>Εἶναι δὲ καὶ ἄνδρας καὶ γυναῖκας θηλυγόνους
+                <lb n="111.1.2"/>καὶ ἀρρενογόνους, ὃ καὶ περὶ τοῦ Ἡρακλέους ἱστορεῖται·
+                <lb n="111.1.3"/>ἐν δύο γὰρ καὶ ἑβδομήκοντα τέκνοις μίαν αὐτὸν γεννῆσαι
+                <lb n="111.1.4"/>θυγατέρα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="112a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="112a.1.1"/>Γίνεσθαι δέ τινας καὶ ἐκ χωλῶν καὶ ἐκ τυφλῶν
+                <lb n="112a.1.2"/>ὁμοίως τυφλοὺς καὶ χωλούς· ἤδη δέ τινας καὶ στίγματα ἐνηνο-
+                <lb n="112a.1.3" break="no"/>χέναι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="112b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="112b.1.1"/>Ἐν Ἤλιδι δὲ ἐκ τῆς ὑπό του Αἰθίοπος μοιχευθείσης
+                <lb n="112b.1.2"/>θυγατέρα μὲν γενέσθαι λευκήν, τὸν δὲ ἐκ ταύτης Αἰθίοπα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="113">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="113.1.1"/>Τὰ δὲ παιδία, ἄχρι γένηται τετταράκοντα ἡμερῶν,
+                <lb n="113.1.2"/>ἐγρηγορότα μὲν οὐ γελᾶν οὐδὲ δακρύειν, ὑπνοῦντα δὲ ἀμφότερα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="114a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="114a.1.1"/>Καὶ φυσιογνωμονεῖ δέ τινα τοιαῦτα· τοῖς τὸ
+                <lb n="114a.1.2"/>μέτωπον μέγα ἔχουσιν βραδυτέροις γίνεσθαι, μικρὸν δὲ εὐκι-
+                <lb n="114a.1.3" break="no"/>νήτοις—ὡς ἐπὶ τὸ πολὺ προστιθεὶς ἐν ἑκάστοις—οἷς πλατὺ
+                <lb n="114a.1.4"/>ἐκστατικοῖς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="114b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="114b.1.1"/>Ὀφρῦς εὐθείας μαλακοῦ ἤθους, πρὸς τὴν ῥῖνα κε-
+                <lb n="114b.1.2" break="no"/>καμμένας στρυφνοῦ, πρὸς τοὺς κροτάφους μώκου καὶ εἴρωνος.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="114c">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="114c.1.1"/>Κανθοὺς κρεώδεις πονηρίας, ὦτα μέσα βελτίστου
+                <lb n="114c.1.2"/>ἤθους, τὰ δὲ μεγάλα καὶ ἐπανεστηκότα μωρολογίας καὶ ἀδο-
+                <lb n="114c.1.3" break="no"/>λεσχίας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="115">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="115.1.1"/>Τῶν δὲ θηλέων ζῴων ῥοπικώτερόν φησιν εἶναι
+                <lb n="115.1.2"/>πρὸς τὴν συνουσίαν ἵππον, καὶ ἱππομανεῖν ἰσχυρῶς, ὅθεν καὶ
+                <lb n="115.1.3"/>πρὸς τὴν βλασφημίαν ἀπὸ τούτου μεταφέρεσθαι καὶ τὰς
+                <lb n="115.1.4"/>πρὸς τὰ ἀφροδίσια κεκινημένας ὀνειδίζεσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="115.2.1"/>φαίνεται δὲ
+                <lb n="115.2.2"/>καὶ Αἰσχύλος ἱστορικῶς τὸ τοιοῦτον οὕτως πως εἰρηκέναι
+                <lb n="115.2.3"/>πρὸς τὰς παρθένους ἐν ταῖς Τοξότισιν·
+                <lb n="115.2.4"/>ᾄδοντος ἁγναῖς παρθένοις γαμηλίων
+                <lb n="115.2.5"/>λέκτρων ἀτειρὴς βλεμμάτων ῥέπει βολή.
+                <lb n="115.2.6"/>καὶ διαλιπὼν προσέθηκεν
+                <lb n="115.2.7"/>οὔ με μὴ λάθῃ φλέγων
+                <lb n="115.2.8"/>ὀφθαλμός, ἥτις ἀνδρὸς ᾖ γεγευμένη·
+                <lb n="115.2.9"/>ἔχω δὲ τούτων θυμὸν ἱππογνώμονα.
+                <lb n="115.2.10"/>Πολλῶν δὲ ὄντων, ὧν καταγέγραφεν Ἀριστοτέλης, ἐπὶ
+                <lb n="115.2.11"/>τοσοῦτον ἠδυνήθημεν ἡμεῖς ἐπὶ τοῦ παρόντος τὰ μὲν ἐκλέξαι,
+                <lb n="115.2.12"/>τὰ δ' ἀναμνησθῆναι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="116">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="116.1.1"/>〈.....〉 φησὶν δ' ὁ ἱστοριογράφος Ἀρσάμην τὸν
+                <lb n="116.1.2"/>Πέρσην εὐθὺς ἐκ γενετῆς ὀδόντας ἔχειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="117">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="117.1.1"/>Μυρσίλος δὲ ὁ Λέσβιος Λοκροὺς τοὺς Ὀζόλας
+                <lb n="117.1.2"/>τῆς ἐπιδημίου ἐπωνυμίας τετυχηκέναι, ὅτι τῆς χώρας τῆς
+                <lb n="117.1.3"/>αὐτῶν 〈τὸ ὕδωρ〉 ὄζει καὶ μάλιστα τοῦ Ταφίου καλουμένου
+                <lb n="117.1.4"/>ὄρους· καὶ ῥεῖν αὐτόθεν εἰς θάλασσαν ὥσπερ πύον· τεθάφθαι
+                <lb n="117.1.5"/>δ' ἐν τῷ ὄρει τούτῳ Νέσσον τὸν Κένταυρον, ὃν Ἡρακλῆς
+                <lb n="117.1.6"/>ἀπέκτεινεν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="118">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="118.1.1"/>Τὰς δὲ Λημνίας δυσόσμους γενέσθαι Μηδείας
+                <lb n="118.1.2"/>ἀφικομένης μετ' Ἰάσονος καὶ φάρμακα ἐμβαλούσης εἰς τὴν
+                <lb n="118.1.3"/>νῆσον· κατὰ δή τινα χρόνον καὶ μάλιστα ἐν ταύταις ταῖς ἡμέ-
+                <lb n="118.1.4" break="no"/>ραις, ἐν αἷς ἱστοροῦσιν τὴν Μήδειαν παραγενέσθαι, δυσώδεις
+                <lb n="118.1.5"/>αὐτὰς οὕτως γίνεσθαι, ὥστε μηδένα προσιέναι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="119">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="119.1.1"/>Θεόπομπος δέ φησιν ὁ ἱστοριογράφος τὸ κα-
+                <lb n="119.1.2" break="no"/>λούμενον ἀκόνιτον γίνεσθαι ἐν ταῖς περὶ Ἡράκλειαν τὴν ἐν
+                <lb n="119.1.3"/>τῷ Πόντῳ ὀνομαζομέναις Ἀκόναις, ὅθεν καὶ τῆς προσηγο-
+                <lb n="119.1.4" break="no"/>ρίας τετυχηκέναι. δυναμικὸν ἐναργῶς δ' ὂν οὐκ ἐνεργεῖν οὐθέν,
+                <lb n="119.1.5"/>ἂν πίῃ τις πήγανον ταύτην τὴν ἡμέραν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="119.2.1"/>ὥστε Κλεάρχου
+                <lb n="119.2.2"/>τοῦ τυράννου πολλοὺς ἀποκτείναντος φαρμάκῳ καὶ πειρωμένου
+                <lb n="119.2.3"/>λανθάνειν, ὡς ἐγένετο συμφανές, τοὺς πλείστους Ἡρακλεω-
+                <lb n="119.2.4" break="no"/>τῶν οὐ πρότερον ἐξιέναι πρὸ τοῦ φαγεῖν πήγανον. γράφει
+                <lb n="119.2.5"/>δὲ καὶ τὴν πρόφασιν καὶ τὴν ἀρχήν, ἐξ ἧς ὤφθη, σφόδρα
+                <lb n="119.2.6"/>μακρῶς, διὸ καὶ παρελείπομεν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="120">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="120.1.1"/>Ὁ δὲ τοὺς Σαμιακοὺς ὥρους συγγεγραφὼς ἐπὶ
+                <lb n="120.1.2"/>τῶν πρώτων κληθέντων †μαθητῶν τῶν περὶ Ἡρόστρατόν†
+                <lb n="120.1.3"/>φησιν χελιδόνα λευκὴν φανῆναι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="121">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="121.1.1"/>Ἵππυς δὲ ὁ Ῥηγῖνος [περὶ τῶν λεγομένων τόπων
+                <lb n="121.1.2"/>φθείρειν τὰ ἐμπίπτοντα] τοιοῦτόν τι γράφει. φησὶν [ἐν Ἀθή-
+                <lb n="121.1.3" break="no"/>ναις ἐπὶ βασιλέως Ἐπαινέτου ὀλυμπιάδος ἕκτης καὶ τρια-
+                <lb n="121.1.4" break="no"/>κοστῆς, ἐν ᾗ Ἀρυτάμας Λάκων νικᾷ στάδιον] τῆς Σικελίας
+                <lb n="121.1.5"/>ἐν Παλικίοις οἰκοδομηθῆναι τόπον, εἰς ὃν ὅστις ἂν εἰσέλθῃ,
+                <lb n="121.1.6"/>εἰ μὲν κατακλιθείη, ἀποθνῄσκειν, εἰ δὲ περιπατοίη, οὐδὲν
+                <lb n="121.1.7"/>πάσχειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="122">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="122.1.1"/>Ἱστορεῖται δὲ καὶ περὶ τὴν Λευκὴν νῆσον μηθὲν
+                <lb n="122.1.2"/>ὑπεραίρειν δύνασθαι τῶν ὀρνέων τῇ πτήσει τὸν τοῦ Ἀχιλ-
+                <lb n="122.1.3" break="no"/>λέως ναόν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="123">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="123.1.1"/>Καὶ πολλαχοῦ δὲ ἔοικεν τό τε τῶν βαράθρων
+                <lb n="123.1.2"/>καλουμένων καὶ Χαρωνίων εἶναι γένος, οἷον ὅ τε Κίμμερος
+                <lb n="123.1.3"/>καλούμενος ὁ περὶ Φρυγίαν βόθυνος, ὡς Εὔδοξός φησιν, καὶ
+                <lb n="123.1.4"/>τὸ ἐν Λάτμῳ ὄρυγμα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="124a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="124a.1.1"/>Καὶ τὰ τῇ σελήνῃ συναυξανόμενά τε καὶ συμφθί-
+                <lb n="124a.1.2" break="no"/>νοντα, οἷον τὰ τῶν μυῶν ἥπατα, ἴδια· λέγεται γὰρ καὶ συμ-
+                <lb n="124a.1.3" break="no"/>πληροῦσθαι καὶ συμφθίνειν καὶ συναύξεσθαι τῷ μηνί, διὸ καὶ
+                <lb n="124a.1.4"/>παρὰ πολλοῖς ἐν παροιμίας εἰρῆσθαι μέρει ἐπὶ τῶν θαυμαστῶν
+                <lb n="124a.1.5"/>τεράτων «μυῶν ἥπατα».
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="124b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="124b.1.1"/>Καὶ τὰ τῶν θαλαττίων δὲ ἐχίνων ᾠὰ ταὐτὸ πάσχειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="124b.2.1"/>ἴδιον δὲ καὶ τὸ πάντας αὐτοὺς ἔχειν πέντε καὶ ἴσον ἀλλήλων
+                <lb n="124b.2.2"/>διεστηκότα καὶ περὶ τὴν περιφέρειαν τοῦ ὀστρά〈κου .....〉
+                <lb n="124b.2.3"/>κύκλον, ὥστε ἴσας τὰς ἐκ τοῦ κέντρου προσπίπτειν αὐτῇ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="125">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="125.1.1"/>Φασὶν δὲ καὶ [περὶ] τὸν τῆς Ἰταλίας πορθμὸν
+                <lb n="125.1.2"/>φθίνειν καὶ πληροῦσθαι κατὰ τὴν μείωσιν τῆς σελήνης καὶ
+                <lb n="125.1.3"/>αὔξησιν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="126a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="126a.1.1"/>Ἑλλάνικος δ' ὁ Λέσβιος ἐν Θήβαις ταῖς Αἰ-
+                <lb n="126a.1.2" break="no"/>γυπτίαις ἱστορεῖ σπήλαιον 〈εἶναι〉 ἐν ἄστει, καθ' ὃ [εἶναι]
+                <lb n="126a.1.3"/>μόνον τὰς μὲν τριακάδας νηνεμίαν, τὰς δ' ἄλλας ἡμέρας ἄνεμον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="126b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="126b.1.1"/>Δόξαι δ' 〈ἂν〉 ἀνεξέταστόν τι ἔχειν καὶ δυσπα-
+                <lb n="126b.1.2" break="no"/>ρατήρητον ἡ ἐκλογή, καθάπερ ὁ Εὔριπος ταῖς ἑβδόμαις οὐ
+                <lb n="126b.1.3"/>στρέφεται.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="126b.2.1"/>καὶ ὅτι οἱ μύρμηκες ταῖς νουμηνίαις ἀναπαύονται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="127">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="127.1.1"/>Οἱ Δελφοὶ δὲ λέγουσιν ὅτι ἐν τῷ Παρνασ-
+                <lb n="127.1.2" break="no"/>σῷ κατά τινας χρόνους τὸ Κωρύκιον φαίνεσθαι χρυσοειδές.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="127.2.1"/>διὸ καὶ τὸν Φιλόξενον οὐδεὶς ἂν εἰκονολογεῖν εἴποι λέγον-
+                <lb n="127.2.2" break="no"/>θ' οὕτως·
+                <lb n="127.2.3"/>αὐτοὶ γὰρ διὰ Παρνασσοῦ
+                <lb n="127.2.4"/>χρυσορόφων νυμφέων εἴσω θαλάμων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="128a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="128a.1.1"/>Ἐν δὲ τοῖς †Φύλλοις† λέγεται τὰς ποίμνας
+                <lb n="128a.1.2"/>διὰ πέμπτης ἡμέρας ποτίζεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="128b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="128b.1.1"/>Τούτου δὲ τερατωδέστερον ἐν Ζακύνθῳ· ὑπὸ γὰρ
+                <lb n="128b.1.2"/>τοὺς ἐτησίας χαίνοντες ἑστήκασιν οἱ τράγοι πρὸς τὸν βορέαν
+                <lb n="128b.1.3"/>καὶ τοῦτο πράττοντες οὐ προσδέονται ὕδατος οὐδὲ πίνουσιν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="129">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="129.1.1"/>Πεποίηται δέ τινα καὶ ὁ Κυρηναῖος Καλλίμαχος
+                <lb n="129.1.2"/>ἐκλογὴν τῶν παραδόξων, ἧς ἀναγράφομεν ὅσα ποτὲ ἡμῖν
+                <lb n="129.1.3"/>ἐφαίνετο εἶναι ἀκοῆς ἄξια.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="1bis">
+              <p>
+                <lb n="129.1bis.1"/>Φησὶν Εὔδοξον ἱστορεῖν, ὅτι ἐν τῇ κατὰ Ἱερὸν ὄρος θαλάττῃ
+                <lb n="129.1bis.2"/>τῆς Θρᾴκης ἐπιπολάζει κατά τινας χρόνους ἄσφαλτος.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="129.2.1"/>ἡ δὲ κατὰ Χελιδονίας ὅτι ἐπὶ πολὺν τόπον ἔχει γλυκείας
+                <lb n="129.2.2"/>πηγάς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="130">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="130.1.1"/>Θεόφραστον δὲ τὴν περὶ τὰς Αἰόλου νήσους ἀναζεῖν
+                <lb n="130.1.2"/>οὕτως ἐπὶ δύο πλέθρων τὸ μῆκος, ὥστε μὴ δυνατὸν εἶναι
+                <lb n="130.1.3"/>διὰ τὴν θερμασίαν ἐμβαίνειν εἰς ταύτην.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="131">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="131.1.1"/>Ἐκ δὲ τῆς κατὰ Δημόνησον τὴν Καλχηδονίων
+                <lb n="131.1.2"/>τοὺς κολυμβητὰς ἀναφέρειν εἰς δύο ὀργυιὰς χαλκόν, ἐξ οὗ
+                <lb n="131.1.3"/>καὶ τοὺς ἐν Φενεῷ τοὺς ὑπὸ Ἡρακλέους ἀνατεθέντας ἀν-
+                <lb n="131.1.4" break="no"/>δριάντας εἰργάσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="132">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="132.1.1"/>Μεγασθένην δὲ τὸν τὰ Ἰνδικὰ γεγραφότα ἱστο-
+                <lb n="132.1.2" break="no"/>ρεῖν ἐν τῇ κατὰ τὴν Ἰνδικὴν θαλάττῃ δένδρεα φύεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="133">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="133.1.1"/>Περὶ δὲ τῶν ποταμῶν καὶ κρηνῶν Λύκον
+                <lb n="133.1.2"/>μέν φησιν λέγειν, ὅτι ὁ μὲν Κάμικος θαλάττης ζεούσης 〈εἰσ-〉
+                <lb n="133.1.3"/>ῥεῖ·
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="133.2.1"/>ὁ δὲ †Κάπαιος† καὶ Κριμισὸς ὅτι τὰ μὲν ἐπιπολῆς
+                <lb n="133.2.2"/>τῶν ὑδάτων εἰσὶ ψυχροί, τὰ δὲ κάτω θερμοί.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="133.3.1"/>τὸν δ' Ἱμέραν
+                <lb n="133.3.2"/>ἐκ μιᾶς πηγῆς σχιζόμενον τὸ μὲν ἁλυκὸν τῶν ῥείθρων ἔχειν,
+                <lb n="133.3.3"/>τὸ δὲ πότιμον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="134">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="134.1.1"/>Τίμαιον δὲ τῶν ἐν Ἰταλίᾳ ποταμῶν ἱστορεῖν Κρᾶθιν
+                <lb n="134.1.2"/>ξανθίζειν τὰς τρίχας.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="135">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="135.1.1"/>Πολύκριτον δὲ καταγεγραφέναι τὸν μὲν ἐν Σό-
+                <lb n="135.1.2" break="no"/>λοις οὐ ψευδῶς ὠνομάσθαι Λίπαριν, ἀλλ' οὕτως ἀπολιπαίνειν,
+                <lb n="135.1.3"/>ὥστε μὴ προσδεῖσθαι ἀλείμματος.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="135.2.1"/>τὸν δὲ ἐν Παμφυλίᾳ
+                <lb n="135.2.2"/>Μούαβιν ἀπολιθοῦν, ἐάν τις ἐμβάλῃ, στοιβὴν ἢ πλίνθον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="136">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="136.1.1"/>Περὶ δὲ τὴν τῶν Ἀγριέων Θρᾳκῶν χώραν
+                <lb n="136.1.2"/>φησὶν ποταμὸν προσαγορευόμενον Πόντον καταφέρειν λίθους
+                <lb n="136.1.3"/>ἀνθρακώδεις· τούτους δὲ κάεσθαι μέν, πᾶν δὲ τοὐναντίον
+                <lb n="136.1.4"/>πάσχειν τοῖς ἐκ τῶν ξύλων ἀνθρακευομένοις· ὑπὸ μὲν γὰρ
+                <lb n="136.1.5"/>τῶν ῥιπίδων πνευματιζομένους σβέννυσθαι, τῷ δὲ ὕδατι ῥαινο-
+                <lb n="136.1.6" break="no"/>μένους βέλτιον κάεσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="136.2.1"/>τὴν δ' ὀσμὴν αὐτῶν οὐδὲν ὑπομέ-
+                <lb n="136.2.2" break="no"/>νειν ἑρπετόν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="137">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="137.1.1"/>Τὴν δ' ἐν Λούσοις κρήνην, καθάπερ παρὰ τοῖς
+                <lb n="137.1.2"/>Λαμψακηνοῖς, ἔχειν ἐν ἑαυτῇ μῦς ὁμοίους τοῖς κατοικι-
+                <lb n="137.1.3" break="no"/>δίοις. ἱστορεῖν δὲ ταῦτα Θεόπομπον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="138">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="138.1.1"/>Εὔδοξον δὲ τὴν ἐν Ἄλῳ Ὀφιοῦσσαν τὸν ἀλφὸν
+                <lb n="138.1.2"/>παύειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="139">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="139.1.1"/>Λύκον δὲ τὸν Ῥηγῖνον λέγειν τὴν μὲν ἐν τῇ
+                <lb n="139.1.2"/>Σικανῶν χώρᾳ φέρειν ὄξος, ᾧπερ ἐπὶ τῶν ἐδεσμάτων χρῶνται.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="139.2.1"/>τὴν δὲ ἐν Μυτιστράτῳ οἷον ἐλαίῳ ῥεῖν· τοῦτο δ' ἔν τε τοῖς
+                <lb n="139.2.2"/>λύχνοις κάεσθαι καὶ δύνασθαι φύματα καὶ ψώραν ἰᾶσθαι,
+                <lb n="139.2.3"/>προσαγορευόμενον Μυτιστράτιον.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="139.3.1"/>πλησίον δὲ εἶναι τὴν
+                <lb n="139.3.2"/>ἀπὸ μὲν Ἀρκτούρου μέχρι Πλειάδος ἀναβάλλουσαν οὐθενὸς
+                <lb n="139.3.3"/>χεῖρον τῶν ἄλλων ὑδάτων, ἀπὸ δὲ Πλειάδος μέχρι πρὸς Ἀρκτοῦ-
+                <lb n="139.3.4" break="no"/>ρον τῆς μὲν ἡμέρας καπνὸν ἀναφέρουσαν καὶ πνέουσαν θερ-
+                <lb n="139.3.5" break="no"/>μόν, ἐν δὲ τῇ νυκτὶ φλογὸς πληρουμένην.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="140">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="140.1.1"/>Ἀρέθουσαν δὲ τὴν ἐν Συρακούσαις, ὥσπερ οἱ
+                <lb n="140.1.2"/>λοιποί φασιν καὶ Πίνδαρος, τὴν πηγὴν ἔχειν ἐκ τοῦ κατὰ
+                <lb n="140.1.3"/>τὴν Ἠλείαν Ἀλφειοῦ· διὸ καὶ ταῖς Ὀλυμπικαῖς ἡμέραις,
+                <lb n="140.1.4"/>ὅταν ἐν τῷ ποταμῷ ἀποπλύνωσιν τῶν θυμάτων τὰς κοιλίας,
+                <lb n="140.1.5"/>οὐ καθαρὰν εἶναι τὴν ἐν τῇ Σικελίᾳ κρήνην, ἀλλὰ ῥεῖν ὄνθῳ.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="140.2.1"/>φησὶν δὲ καὶ φιάλην ποτ' εἰς τὸν Ἀλφειὸν ἐμβληθεῖσαν
+                <lb n="140.2.2"/>ἐν ἐκείνῃ φανῆναι. τοῦτο δ' ἱστορεῖ καὶ Τίμαιος.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="141">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="141.1.1"/>Θεόπομπον δέ φησιν γράφειν τῆς μὲν ἐν Κίγχρωψιν
+                <lb n="141.1.2"/>τοῖς Θρᾳξὶν τὸν ἀπογευσάμενον τελευτᾶν εὐθύς.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="142">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="142.1.1"/>Ἐν Σκοτούσσῃ δ' εἶναι κρήνην ἰδίαν οὐ μόνον
+                <lb n="142.1.2"/>ἀνθρώπων ἕλκη, ἀλλὰ καὶ βοσκημάτων ὑγιάζειν δυναμένην.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="142.2.1"/>κἂν ξύλον δὲ σχίσας ἢ θραύσας ἐμβάλῃς, συμφύειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="143">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="143.1.1"/>Ἐκ δὲ τῆς περὶ Χαονίαν, ὅταν ἀφεψηθῇ τὸ ὕδωρ,
+                <lb n="143.1.2"/>ἅλας γίνεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="144">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="144.1.1"/>Τῶν δ' ἐν Ἅμμωνι κρηνῶν λέγειν Ἀριστοτέλη,
+                <lb n="144.1.2"/>ὅτι τὴν μὲν Ἡλίου γε νομιζομένην μέσων μὲν νυκτῶν καὶ
+                <lb n="144.1.3"/>μεσημβρίας γίγνεσθαι θερμήν, ἕωθεν δὲ καὶ δείλης καθαπερεὶ
+                <lb n="144.1.4"/>κρύσταλλον, ἡ δ' ἄλλη Διὸς ὅτι καταφαίνοντος μὲν ἡλίου
+                <lb n="144.1.5"/>πιδύει, ἐπὶ δυσμαῖς δ' ἰόντος ἵσταται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="145">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="145.1.1"/>Κτησίαν δὲ τὴν ἐν Αἰθιοπίᾳ τὸ μὲν ὕδωρ ἔχειν
+                <lb n="145.1.2"/>ἐρυθρόν, ὡσανεὶ κιννάβαρι, τοὺς δ' ἀπ' αὐτῆς πιόντας παράφρο-
+                <lb n="145.1.3" break="no"/>νας γίνεσθαι. τοῦτο δ' ἱστορεῖ καὶ Φίλων ὁ τὰ Αἰθιοπικὰ
+                <lb n="145.1.4"/>συγγραψάμενος.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="146">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="146.1.1"/>Τὴν δ' ἐν τοῖς Ἰνδικοῖς κρήνην Σίλαν οὐδὲ τὸ
+                <lb n="146.1.2"/>κουφότατον τῶν βληθέντων ἐᾶν ἐπινεῖν, ἀλλὰ πάντα καθέλκειν.
+                <lb n="146.1.3"/>καὶ ταῦτα δὲ πλείους εἰρήκασιν καὶ ἐπὶ πλειόνων ὑδάτων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="147">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="147.1.1"/>Εὔδοξον δ' ἱστορεῖν τὴν μὲν ἐν Καλχηδόνι κορ-
+                <lb n="147.1.2" break="no"/>κοδείλους ἐνναίειν μικροὺς ὁμοίους τοῖς ἐν Αἰγύπτῳ.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="148">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="148.1.1"/>Περὶ δὲ τὴν Ἀθαμανίαν ἱερὸν εἶναι Νυμφῶν,
+                <lb n="148.1.2"/>ἐν ᾧ τὴν κρήνην τὸ μὲν ὕδωρ ἔχειν ἄφατον ὡς ψυχρόν, ὃ δ'
+                <lb n="148.1.3"/>ἂν ὑπερθῇς αὐτοῦ θερμαίνειν· ἐὰν δέ τις φρύγανον ἢ ἄλλο τι
+                <lb n="148.1.4"/>τῶν τοιούτων προσενέγκῃ, μετὰ φλογὸς καίεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="149">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="149.1.1"/>Κατὰ δὲ τὴν Ἀραβίαν ἐν πόλει Λευκοθέᾳ Ἀμώ-
+                <lb n="149.1.2" break="no"/>μητόν φησιν γράφειν, τὸν πραγματευθέντα τὸν ἐκ Μέμφεως
+                <lb n="149.1.3"/>ἀνάπλουν, εἰς τὴν καλουμένην Ἴσιδος κρήνην ἄν τις οἴνου
+                <lb n="149.1.4"/>ἐπιχέῃ κοτύλην, διότι γίγνεται τὸ ποτὸν εὔκρατον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="150">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="150.1.1"/>Περὶ δὲ λιμνῶν Κτησίαν μὲν ἱστορεῖν λέγει,
+                <lb n="150.1.2"/>τῶν ἐν Ἰνδοῖς λιμνῶν τὴν μὲν τὰ εἰς αὐτὴν ἀφιέμενα κάτω
+                <lb n="150.1.3"/>οὐ δέχεσθαι, καθάπερ τὴν ἐν Σικελίᾳ καὶ Μήδοις, πλὴν χρυσίον
+                <lb n="150.1.4"/>καὶ σίδηρον καὶ χαλκόν, καὶ ἄν τι ἐμπέσῃ πλάγιον, ὀρθὸν
+                <lb n="150.1.5"/>ἐκβάλλειν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="150.2.1"/>ἰᾶσθαι δὲ τὴν καλουμένην λεύκην.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="150.3.1"/>τῇ δ' ἑ-
+                <lb n="150.3.2" break="no"/>τέρᾳ κατὰ τὰς εὐδιαζούσας ἡμέρας ἐπιπολάζειν ἔλαιον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="151">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="151.1.1"/>Ξενόφιλον δὲ ἐν μὲν τῇ πλησίον Ἰόππης οὐ μόνον
+                <lb n="151.1.2"/>ἐπινήχεσθαι πᾶν βάρος, ἀλλὰ καὶ παρὰ τρίτον ἔτος φέρειν
+                <lb n="151.1.3"/>ὑγρὰν ἄσφαλτον· ὅταν δὲ γίγνηται τοῦτο, παρὰ τοῖς ἐντὸς
+                <lb n="151.1.4"/>τριάκοντα σταδίων οἰκοῦσιν κατιοῦσθαι χαλκώματα.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="152a">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="152a.1.1"/>Τὴν δὲ ἐν τοῖς Σαρμάταις λίμνην Ἡρακλείδην
+                <lb n="152a.1.2"/>γράφειν, ὅτι οὐδὲν τῶν ὀρνέων ὑπεραίρειν, τὸ δὲ προσελθὸν
+                <lb n="152a.1.3"/>ὑπὸ τῆς ὀσμῆς τελευτᾶν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="152b">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="152b.1.1"/>Ὃ δὴ καὶ περὶ τὴν Ἄορνίν τι δοκεῖ γίγνεσθαι καὶ κατίσχυ-
+                <lb n="152b.1.2" break="no"/>κεν ἡ φήμη παρὰ τοῖς πλείστοις.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="152b.2.1"/>ὁ δὲ Τίμαιος τοῦτο
+                <lb n="152b.2.2"/>μὲν ψεῦδος ἡγεῖται εἶναι· τὰ πλεῖστα γὰρ κατατυχεῖν τῶν
+                <lb n="152b.2.3"/>εἰθισμένων παρ' αὐτῇ διαιτᾶσθαι· ἐκεῖνο μέντοι λέγει, διότι
+                <lb n="152b.2.4"/>συνδένδρων τόπων ἐπικειμένων αὐτῇ καὶ πολλῶν κλάδων καὶ
+                <lb n="152b.2.5"/>φύλλων διὰ πνεύματα τῶν μὲν κατακλωμένων, τῶν δὲ ἀποσειο-
+                <lb n="152b.2.6" break="no"/>μένων, οὐθέν ἐστιν ἰδεῖν ἐπ' αὐτῇ ἐφεστηκός, ἀλλὰ διαμένειν
+                <lb n="152b.2.7"/>καθαράν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="153">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="153.1.1"/>Ἐκ δὲ τῆς ἐν Ζακύνθῳ λίμνης φησὶν Εὔδοξον
+                <lb n="153.1.2"/>ἱστορεῖν, ὅτι ἀναφέρεται πίσσα, καίτοι παρεχούσης αὐτῆς
+                <lb n="153.1.3"/>ἰχθῦς· ὅ τι δ' ἂν ἐμβάλῃς εἰς ταύτην, ἐπὶ θαλάττης φαίνεσθαι
+                <lb n="153.1.4"/>τεττάρων ὄντων ἀνὰ μέσον σταδίων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="154">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="154.1.1"/>Λύκον δὲ περὶ τὴν ἐν Μύλαις τῆς Σικελίας δένδρα
+                <lb n="154.1.2"/>φύεσθαι, διὰ μέσης δ' αὐτῆς ἀναθεῖν ὕδωρ τὸ μὲν ψυχρόν,
+                <lb n="154.1.3"/>τὸ δὲ τοὐναντίον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="155">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="155.1.1"/>Φανίαν δὲ τὴν τῶν †Πυράκων† λίμνην, ὅταν
+                <lb n="155.1.2"/>ἀναξηρανθῇ, κάεσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="156">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="156.1.1"/>Καὶ τὴν Ἀσκανίαν πότιμον οὖσαν τὸ προσενεχθὲν
+                <lb n="156.1.2"/>αὐτῇ πλύνειν ἄνευ ῥύμματος, ἐὰν ἐαθῇ δ' ἐν αὐτῇ πλείω χρόνον,
+                <lb n="156.1.3"/>διαπίπτειν αὐτόματον.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="157">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="157.1.1"/>Περὶ δὲ τὴν ἐν Κιτίῳ φάσκειν Νικαγόραν, ὅτι
+                <lb n="157.1.2"/>ἀνιμηθείσης ἐπ' ὀλίγον τῆς γῆς ἅλες εὑρίσκονται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="158">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="158.1.1"/>Περὶ τῶν [αὐτῶν] ὑδάτων Θεόφραστόν φησι
+                <lb n="158.1.2"/>τὸ καλούμενον Στυγὸς ὕδωρ λέγειν, ὅτι ἐστὶν ἐν Φενεῷ, στάζει
+                <lb n="158.1.3"/>δ' ἔκ τινος πετριδίου· τοὺς δὲ βουλομένους αὐτοῦ ὑδρεύεσθαι
+                <lb n="158.1.4"/>σπόγγοις πρὸς ξύλοις δεδεμένοις λαμβάνειν
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="158.2.1"/>διακόπτειν δὲ
+                <lb n="158.2.2"/>πάντα τὰ ἀγγεῖα πλὴν τῶν κερατίνων.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="158.3.1"/>τὸν δὲ ἀπογευσάμενον
+                <lb n="158.3.2"/>τελευτᾶν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="159">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="159.1.1"/>Ἐν δὲ τῇ Λεοντίνων ἱστορεῖν Λύκον τοὺς
+                <lb n="159.1.2"/>ὀνομαζομένους 〈Δέλλους〉 ἀναζεῖν μὲν ὡς θερμότατον τῶν
+                <lb n="159.1.3"/>ἑψομένων, τὰς δὲ πηγὰς ἔχειν ψυχράς.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="159.2.1"/>τῶν δὲ πλησιαζόντων
+                <lb n="159.2.2"/>αὐτοῖς τὸ μὲν τῶν ὀρνίθων γένος ἀποθνῄσκειν εὐθύς, τοὺς δὲ
+                <lb n="159.2.3"/>ἀνθρώπους μετὰ τρίτην ἡμέραν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="160">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="160.1.1"/>Ὅμοιον δὲ τούτῳ καὶ τὸ περὶ τὸν Κῷον Χυτρῖνον
+                <lb n="160.1.2"/>γίνεσθαι· καὶ γὰρ ἐκεῖνον ἀτμὸν μὲν ἐκβάλλειν καὶ ποιεῖν
+                <lb n="160.1.3"/>ἔμφασιν τοῦ ζεῖν, τὰ δὲ καθειμένα καθ' ὑπερβολὴν ψύχειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="161">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="161.1.1"/>Εἶναι δὲ παρὰ τοῖς Κῷοις καὶ ἄλλο τι ῥευμάτιον,
+                <lb n="161.1.2"/>ὃ πάντας τοὺς ὀχετούς, ὅθεν διαρρεῖ, λίθους πεποίηκεν.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="161.2.1"/>Τοῦτο δὲ καὶ Εὔδοξος καὶ Καλλίμαχος παραλείπουσιν,
+                <lb n="161.2.2"/>ὅτι ἐκ τοῦδε τοῦ ὕδατος οἱ Κῷοι λίθους λατομήσαντες ᾠκοδό-
+                <lb n="161.2.3" break="no"/>μησαν τὸ θέατρον· οὕτως ἰσχυρῶς ἀπολιθοῦται πᾶν γένος.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="162">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="162.1.1"/>Λέγειν δὲ τὸν Εὔδοξον καὶ περὶ τῶν ἐν τῇ Πυθο-
+                <lb n="162.1.2" break="no"/>πόλει φρεάτων, ὅτι παραπλήσιόν τι τῷ Νείλῳ πάσχουσιν·
+                <lb n="162.1.3"/>τοῦ μὲν γὰρ θέρους ὑπὲρ τὰ χείλη πληροῦσθαι, τοῦ δὲ χειμῶνος
+                <lb n="162.1.4"/>οὕτως ἐκλείπειν, ὥστε μηδὲ βάψαι ῥᾴδιον εἶναι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="163">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="163.1.1"/>Καὶ περὶ τοῦ κατὰ τὴν Κρήτην ὑδατίου, οὗ οἱ
+                <lb n="163.1.2"/>ὑπερκαθίζοντες, ὅταν ὑετὸς ᾖ, διατελοῦσιν ἄβροχοι· παραδε-
+                <lb n="163.1.3" break="no"/>δόσθαι δὴ τοῖς Κρησὶν ἀπ' ἐκείνου λούσασθαι τὴν Εὐρώπην
+                <lb n="163.1.4"/>ἀπὸ τῆς τοῦ Διὸς μίξεως.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="164">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="164.1.1"/>Ἐν δὲ Λυγκήσταις Θεόπομπον φάσκειν τι εἶναι
+                <lb n="164.1.2"/>ὕδωρ ὀξύ· τοὺς δὲ ἐκ τούτου πίνοντας ὥσπερ ἀπὸ τῶν οἴνων
+                <lb n="164.1.3"/>ἀλλοιοῦσθαι. Καὶ τοῦθ' ὑπὸ πλειόνων μαρτυρεῖται.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="165">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="165.1.1"/>Τὸ δ' ἐκ τῆς πέτρας Ἀρμενίων ἐκπίπτον Κτη-
+                <lb n="165.1.2" break="no"/>σίαν ἱστορεῖν, ὅτι συμβάλλει ἰχθῦς μέλανας, ὧν τὸν ἀπογευ-
+                <lb n="165.1.3" break="no"/>σάμενον τελευτᾶν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="166">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="166.1.1"/>Περὶ δὲ πυρὸς Κτησίαν φησὶν ἱστορεῖν, ὅτι περὶ
+                <lb n="166.1.2"/>τὴν τῶν Φασηλιτῶν χώραν ἐπὶ τοῦ τῆς Χιμαίρας ὄρους ἔστιν
+                <lb n="166.1.3"/>τὸ καλούμενον ἀθάνατον πῦρ· τοῦτο δέ, ἐὰν μέν τις ὕδωρ
+                <lb n="166.1.4"/>ἐμβάλῃ, καίεσθαι βελτίον, ἐὰν δὲ φορυτὸν ἐπιβαλὼν πήξῃ τις,
+                <lb n="166.1.5"/>σβέννυσθαι.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="167">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="167.1.1"/>Παραπλήσιον δὲ τούτῳ ὁρᾶται γινόμενον ἐπὶ
+                <lb n="167.1.2"/>ἁλός· ἐδωρήσατο γὰρ ἡμῖν Σικελὸς ξένος τοιοῦτον, ὃς ἐν
+                <lb n="167.1.3"/>μὲν τῷ πυρὶ ἐτήκετο, ἐν δὲ τῷ ὕδατι ἥλλετο.
+                <lb n="167.1.4"/>〈.........〉
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="168">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="168.1.1"/>Περὶ δὲ λίθων τὸν αὐτὸν τοῦτον λέγειν, τὸν παρὰ
+                <lb n="168.1.2"/>τοῖς Βοττιαίοις ἐν Θρᾴκῃ γινόμενον, ὅταν ὁ ἥλιος προσβάλλῃ,
+                <lb n="168.1.3"/>πῦρ ἐξ αὐτοῦ ἐκθυμιᾶσθαι. ἐκεῖ λίθους δ' εἶναι παρεχομένους
+                <lb n="168.1.4"/>μὲν τὴν τῶν ἀνθράκων χρείαν, διαμένοντας 〈δ'〉 ἀφθάρτους,
+                <lb n="168.1.5"/>κἂν σβέσῃ τις πάλιν, 〈ὡς〉 ἐπικεχειρήκασιν, τὴν αὐτὴν ἐνέρ-
+                <lb n="168.1.6" break="no"/>γειαν συντελεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="169">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="169.1.1"/>Περὶ δὲ φυτῶν τῆς ἀκάνθης εἶδος Ἀριστοτέλην
+                <lb n="169.1.2"/>φάσκειν περὶ τὴν Ἐρύθειαν εὑρίσκεσθαι διαποίκιλον τὴν
+                <lb n="169.1.3"/>χρόαν, ἐξ οὗ πλῆκτρα γίνεσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="169.2.1"/>Τίμων δὲ ὁ κιθαρῳδὸς
+                <lb n="169.2.2"/>εἶχεν καὶ ἐπεδείκνυεν πολλοῖς, φάσκων αὐτῷ τὸν διδάσκαλον
+                <lb n="169.2.3"/>Ἀριστοκλῆν δεδωρῆσθαι, εἶναι δ' αὐτῶν τὴν ἁφὴν ἐν τῇ
+                <lb n="169.2.4"/>χρείᾳ σκληράν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="170">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="170.1.1"/>Περὶ δὲ Θεσπρωτοὺς ἐκ τῆς γῆς ἄνθρακας
+                <lb n="170.1.2"/>ὀρύττεσθαι δυναμένους κάεσθαι Θεόπομπόν φησιν καταγράφειν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="171">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="171.1.1"/>Φανίαν δὲ κατά τινας τόπους τῆς Λέσβου καὶ
+                <lb n="171.1.2"/>περὶ τῶν Νεανδριέων τὰς βώλους πρὸς τὰς τῶν ὄψεων παθή-
+                <lb n="171.1.3" break="no"/>σεις γίνεσθαι [καὶ] χρησίμας.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="171.2.1"/>καὶ εἰς ὕδωρ ἐμβληθείσας
+                <lb n="171.2.2"/>οὔτε καταδύνειν οὔτε κατατήκεσθαι.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="3">
+              <p>
+                <lb n="171.3.1"/>ὑπὸ τοῦτο τὸ γένος
+                <lb n="171.3.2"/>πίπτοι ἂν καὶ ἐν Πιτάνῃ πλίνθος ἡ λεγομένη ἐπιπλεῖν.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="172">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="172.1.1"/>Περὶ δὲ τῶν ζῴων Λύκον μὲν ἐν τῇ Διομηδείᾳ
+                <lb n="172.1.2"/>τῇ νήσῳ φησὶν ἱστορεῖν τοὺς ἐρωδιοὺς ὑπὸ μὲν τῶν Ἑλλήνων,
+                <lb n="172.1.3"/>ὅταν παραβάλλῃ τις εἰς τοὺς τόπους, οὐ μόνον ψαυομένους
+                <lb n="172.1.4"/>ὑπομένειν, ἀλλὰ καὶ προσπετομένους εἰς τοὺς κόλπους ἐνδύνειν
+                <lb n="172.1.5"/>καὶ σαίνειν φιλοφρόνως 〈.....〉.
+              </p>
+            </div>
+            <div type="textpart" subtype="section" n="2">
+              <p>
+                <lb n="172.2.1"/>λέγεσθαι δέ τι τοιοῦτον ὑπὸ
+                <lb n="172.2.2"/>τῶν ἐγχωρίων, ὡς τῶν τοῦ Διομήδους ἑταίρων εἰς τὴν τῶν
+                <lb n="172.2.3"/>ὀρνέων τούτων φύσιν μετασχηματισθέντων.
+              </p>
+            </div>
+          </div>
+          <div type="textpart" subtype="chapter" n="173">
+            <div type="textpart" subtype="section" n="1">
+              <p>
+                <lb n="173.1.1"/>Τοὺς δὲ περὶ τὸν Ἀδρίαν ἐνοικοῦντας Ἐνετοὺς
+                <lb n="173.1.2"/>Θεόπομπον φάσκειν κατὰ τὸν σπόρου καιρὸν τοῖς κολοιοῖς
+                <lb n="173.1.3"/>ἀποστέλλειν δῶρα, ταῦτα δ' εἶναι ψαιστὰ καὶ μάζας. προθέντας
+                <lb n="173.1.4"/>δὲ τοὺς ταῦτα κομίζοντας ἀποχωρεῖν, τῶν δὲ ὀρνέων τὸ μὲν
+                <lb n="173.1.5"/>πλῆθος ἐπὶ τοῖς ὁρίοις μένειν τῆς χώρας συνηθροισμένον,
+                <lb n="173.1.6"/>δύο δ' ἢ τρεῖς προσπτάντας καὶ καταμαθόντας ἀφίπτασθαι
+                <lb n="173.1.7"/>πάλιν καθάπερεί τινας πρέσβεις ἢ κατασκόπους. ἐὰν μὲν
+                <lb n="173.1.8"/>οὖν τὸ πλῆ〈θος ....〉.
+              </p>
+            </div>
+          </div>
+      </div>
+    </body>
+  </text>
+</TEI>

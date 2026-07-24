@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-15">2026-07-15</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-15">2026-07-15</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia"></idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>inconnu</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <p><persName>Publius Ovidius Naso</persName></p>
+  <head><title level="m" type="main">Halieutica</title></head>
+
+  <div type="chapter" n="1">
+    <p><quote>© Ovidius, <title level="m" type="sub">Halieutica</title></quote></p>
+    <p><foreign xml:lang="la">E-Text</foreign>: <placeName>IntraText Library</placeName>.</p>
+  </div>
+</div>
+<div type="book" n="2">
+  <p>Accepit mundus legem: dedit arma per omnes
+admonuitque sui: <name type="animal" xml:lang="la">vitulus</name> sic namque minatur,
+qui nondum gerit in tenera iam cornua fronte;
+sic <name type="animal" xml:lang="la">dammae</name> fugiunt, pugnant virtute <name type="animal" xml:lang="la">leones</name>
+et morsu <name type="animal" xml:lang="la">canis</name> et caudae sic <name type="animal" xml:lang="la">scorpius</name> ictu,
+concussisque levis pennis sic evolat <name type="animal" xml:lang="la">ales</name>.</p>
+  <p>omnibus ignotae mortis timor, omnibus hostem
+praesidiumque datum sentire et noscere teli
+vimque modumque sui. sic et <name type="animal" xml:lang="la">scarus</name> arte sub undis
+si n........................................
+decidit adsumptamque dolo tandem pavet escam,
+non audet radiis obnixa occurrere fronte,
+aversus crebro vimen sed verbere caudae
+laxans subsequitur tutumque evadit in aequor.</p>
+  <p>quin etiam, si forte aliquis, dum praenatat, arto
+mitis luctantem <name type="animal" xml:lang="la">scarus</name> hunc in vimine vidit,
+aversi caudam morsu tenet atque ita vellit
+libera ut e nassa quae texit praeda resultet.</p>
+  <p><name type="animal" xml:lang="la">sepia</name> tarda fugae tenui cum forte sub unda
+deprensa est -iam iamque manus timet <foreign xml:lang="la">hilla</foreign> rapacis-,
+inficiens aequor nigrum vomit illa cruorem
+avertitque vias oculos frustrata sequentes.</p>
+  <p>clausus rete <name type="animal" xml:lang="la">lupus</name>, quamvis immitis et acer
+dimotis cauda submissus sidit harenis
+..................................... in auras
+emicat atque dolos saltu deludit inultus.</p>
+  <p>et <name type="animal" xml:lang="la">muraena</name> ferox teretis sibi conscia tergi
+ad laxata magis conixa foramina retis
+tandem per multos evadit lubrica flexus
+exemploque nocet: cunctis iter invenit una.</p>
+  <p>at contra scopulis crinali corpore segnis
+<name type="animal" xml:lang="la">polypus</name> haeret et hac eludit retia fraude
+et sub lege loci sumit mutatque colorem</p>
+</div>
+<div type="book" n="3">
+   <p>semper ei similis quem contigit: atque ubi praedam</p>
+   <p>pendentem saetis avidus rapit, hic quoque fallit,</p>
+   <p>elato calamo cum demum emersus in auras</p>
+   <p><name type="animal" xml:lang="la">brachia</name> dissolvit populatumque exspuit hamum.</p>
+   <p>at <name type="animal" xml:lang="la">mugil</name> cauda pendentem everberat escam</p>
+   <p>excussamque legit; <name type="animal" xml:lang="la">lupus</name> acri concitus ira</p>
+   <p>discursu fertur vario fluctusque ferentes</p>
+   <p>prosequitur quassatque caput, dum vulnere saevus</p>
+   <p>laxato cadat hamus et ora patentia linquat.</p>
+   <p>nec proprias vires nescit <name type="animal" xml:lang="la">muraena</name> nocendi</p>
+   <p>auxilioque sui, morsu nec comminus acri</p>
+   <p>deficit aut animos ponit captiva minacis,</p>
+   <p><name type="animal" xml:lang="la">anthias</name> his tergo quae non videt utitur armis,</p>
+   <p>vim spinae novitque suae versoque supinus</p>
+   <p>corpore lina secat fixumque intercipit hamum.</p>
+   <p>Cetera quae densas habitant <name type="animal" xml:lang="la">animalia</name> silvas</p>
+   <p>aut vani quatiunt semper lymphata timores</p>
+   <p>aut trahit in praeceps non sana ferocia gentis:</p>
+   <p>ipsa sequi natura monet vel comminus ire.</p>
+   <p>impiger ecce <name type="animal" xml:lang="la">leo</name> venantum sternere pergit</p>
+   <p>agmina et adversis infert sua pectora telis,</p>
+   <p>quoque venit fidens magis et sublatior ardet</p>
+   <p>concussitque toros et viribus addidit iram,</p>
+   <p>procidit atque suo properat sibi robore letum.</p>
+   <p><name type="animal" xml:lang="la">foedus</name> Lucanis provolvitur <name type="animal" xml:lang="la">ursus</name> ab antris,</p>
+   <p>quid nisi pondus iners stolidaeque ferocia mentis?</p>
+   <p>actus <name type="animal" xml:lang="la">aper</name> saetis iram denuntiat hirtis:</p>
+   <p>se ruit oppositi nitens in vulnera ferri,</p>
+   <p>pressus et emisso moritur per viscera telo.</p>
+   <p>altera pars fidens pedibus dat terga sequenti,</p>
+   <p>ut pavidi <name type="animal" xml:lang="la">lepores</name>, ut fulvo tergore <name type="animal" xml:lang="la">dammae</name></p>
+   <p>et capto fugiens <name type="animal" xml:lang="la">cervus</name> sine fine timore.</p>
+   <p>hic generosus honos et gloria maior <name type="animal" xml:lang="la">equorum</name>,</p>
+</div>
+<div type="book" n="4">
+   <p>nam capiunt animis palmam gaudentque triumpho:</p>
+   <p>seu septem spatiis circo meruere coronam,</p>
+   <p>nonne vides, victor quanto sublimius altum</p>
+   <p>attollat caput et vulgi se venditet aurae;</p>
+   <p>celsave cum caeso decorantur terga <name type="animal" xml:lang="la">leone</name>,</p>
+   <p>quam tumidus quantoque venit spectabilis actu</p>
+   <p>compescitque solum generoso concita pulsu</p>
+   <p>ungula sub spoliis graviter redeuntis opimis?</p>
+   <p>quid laus prima <name type="animal" xml:lang="la">canum</name>? quibus est audacia praeceps</p>
+   <p>venandique sagax virtus viresque sequendi,</p>
+   <p>quae nunc elatis rimantur naribus auras,</p>
+   <p>et nunc demisso quaerunt vestigia rostro</p>
+   <p>et produnt clamore <name type="animal" xml:lang="la">feram</name> <persName>dominum</persName>que vocando</p>
+   <p>increpitant; quem si collatis effugit armis,</p>
+   <p>insequitur tumulosque <name type="animal" xml:lang="la">canis</name> camposque per omnes.</p>
+   <p><persName>Noster</persName> in arte labor positus, spes omnis in illa.</p>
+   <p>nec tamen in medias <placeName>pelagi</placeName> te pergere sedes</p>
+   <p>admoneam vastique <placeName>maris</placeName> temptare profundum:</p>
+   <p>inter utrumque loci melius moderabere finem.</p>
+   <p>aspera num saxis loca sint -nam talia lentos</p>
+   <p>deposcunt calamos, at purum retia litus</p>
+   <p>num <name type="animal" xml:lang="la">mons</name> horrentes demittat celsior umbras</p>
+   <p>in <placeName>mare</placeName> -nam varie quidam fugiuntque petuntque</p>
+   <p>num vada subnatis imo viridentur ab <name type="plant" xml:lang="la">herbis</name></p>
+   <p>obiectetque moras et molli serviat <name type="plant" xml:lang="la">algae</name>.</p>
+   <p>discripsit sedes varie natura profundi</p>
+   <p>nec cunctos una volvit consistere <name type="animal" xml:lang="la">piscis</name>.</p>
+   <p>Nam gaudent <placeName>pelago</placeName> quales <name type="animal" xml:lang="la">scombrique</name> <name type="animal" xml:lang="la">bovesque</name>,</p>
+   <p><name type="animal" xml:lang="la">hippuri</name> celeres et nigro tergore <name type="animal" xml:lang="la">milvi</name></p>
+   <p>et pretiosus <name type="animal" xml:lang="la">elops</name> nostris incognitus undis</p>
+   <p>ac durus <name type="animal" xml:lang="la">xiphias</name> ictu non mitior ensis</p>
+   <p>et pavidi magno fugientes agmine <name type="animal" xml:lang="la">thynni</name>,</p>
+   <p>parva <name type="animal" xml:lang="la">echeneis</name> -at est, mirum, mora puppibus</p>
+   <p>ingestusque, comes ratium tractique per aequora sulci</p>
+</div>
+<div type="book" n="5">
+   <p>qui semper spumas sequeris, <name type="animal" xml:lang="la">pompile</name>, nitentes,</p>
+   <p><name type="animal" xml:lang="la">cercyros</name>que ferox scopulorum fine moratus,</p>
+   <p><name type="animal" xml:lang="la">cantharus</name> ingratus suco; tum concolor illi</p>
+   <p><name type="animal" xml:lang="la">orphos</name> caeruleaque rubens <name type="animal" xml:lang="la">erythinus</name> in unda,</p>
+   <p>insignis <name type="animal" xml:lang="la">sargus</name>que notis, insignis <name type="animal" xml:lang="la">iulis</name></p>
+   <p>et super aurata <name type="animal" xml:lang="la">sparulus</name> cervice refulgens</p>
+   <p>et rutilus <name type="animal" xml:lang="la">phager</name> et fulvi <name type="animal" xml:lang="la">synodontes</name> et ex se</p>
+   <p>concipiens <name type="animal" xml:lang="la">channe</name> gemino sibi functa parente,</p>
+   <p>tum viridis squamis, parvo saxatilis ore</p>
+   <p>et rarus <name type="animal" xml:lang="la">faber</name> et pictae <name type="animal" xml:lang="la">mormyres</name> et auri</p>
+   <p><name type="animal" xml:lang="la">chrysophrys</name> imitata decus, tum corporis umbrae</p>
+   <p>liventis rapidique <name type="animal" xml:lang="la">lupus</name> percaeque tragique,</p>
+   <p>quin laude insignis caudae <name type="animal" xml:lang="la">melanurus</name> et ardens</p>
+   <p><name type="animal" xml:lang="la">muraena</name> notis merulaeque virentes</p>
+   <p>immitisque suae <name type="animal" xml:lang="la">gonger</name> per vulnera gentis</p>
+   <p>et captus duro nociturus <name type="animal" xml:lang="la">scorpios</name> ictu</p>
+   <p>ac numquam aestivo conspectus sidere <name type="animal" xml:lang="la">glaucus</name>.</p>
+   <p>At contra herbosa pisces laetantur harena</p>
+   <p>ut <name type="animal" xml:lang="la">scarus</name>, <name type="animal" xml:lang="la">epastas</name> solus qui ruminat escas,</p>
+   <p>fecundumque genus <name type="animal" xml:lang="la">maenae</name> lamyrosque <name type="animal" xml:lang="la">smaris</name>que</p>
+   <p>atque immunda <name type="animal" xml:lang="la">chromis</name>, merito vilissima <name type="animal" xml:lang="la">salpa</name></p>
+   <p>atque avium <name type="animal" xml:lang="la">phycis</name> nidos imitata sub undis</p>
+   <p>et squamas tenui suffusus sanguine <name type="animal" xml:lang="la">mullus</name>,</p>
+   <p>fulgentes <name type="animal" xml:lang="la">soleae</name> candore et concolor illis</p>
+   <p><name type="animal" xml:lang="la">passer</name> et <foreign xml:lang="la">Hadriaco</foreign> mirandus litore <name type="animal" xml:lang="la">rhombus</name>;</p>
+   <p>tum lepores lati, tum molles tergore <name type="animal" xml:lang="la">ranae</name></p>
+   <p>extremi pareuc.........................</p>
+   <p>............................</p>
+   <p>............................</p>
+   <p>lubricus et spina nocuus non <name type="animal" xml:lang="la">gobius</name> ulli</p>
+   <p>et nigrum niveo portans in corpore virus</p>
+   <p>............................</p>
+   <p><name type="animal" xml:lang="la">lolligo</name> durique <name type="animal" xml:lang="la">sues</name> sinuosaque <name type="animal" xml:lang="la">caris</name></p>
+   <p>et tam deformi non dignus nomine <name type="animal" xml:lang="la">asellus</name></p>
+   <p>tuque peregrinis <name type="animal" xml:lang="la">acipenser</name> nobilis undis.</p>
+</div>
+    </body>
+  </text>
+</TEI>

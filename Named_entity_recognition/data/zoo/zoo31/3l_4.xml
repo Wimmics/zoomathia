@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <title type="alt" xml:lang="fr">Halieutiques</title>
+        <title type="alt" xml:lang="en">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          <idno type="zoomathia">stoa0216</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-22">2026-07-22</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-22">2026-07-22</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0216</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="poem">
+  <head>
+    <title>Fasti</title>
+    <docTitle>
+      <titlePart type="main">Fasti</titlePart>
+      <titlePart type="sub">Liber secundus</titlePart>
+    </docTitle>
+  </head>
+  <lg type="strophe">
+    <l n="1">P. OVIDI NASONIS</l>
+    <l n="2">FASTORVM LIBER SECVNDVS</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="1">Ianus habet finem. cum carmine crescit et annus:</l>
+  <l n="2">alter ut hic mensis, sic liber alter eat.</l>
+</lg>
+<lg type="strophe">
+  <l n="3">nunc primum velis, elegi, maioribus itis:</l>
+  <l n="4">exiguum, memini, nuper eratis opus.</l>
+</lg>
+<lg type="strophe">
+  <l n="5">ipse ego vos habui faciles in amore ministros,</l>
+  <l n="6">cum lusit numeris prima iuventa suis.</l>
+</lg>
+<lg type="strophe">
+  <l n="7">idem sacra cano signataque tempora fastis:</l>
+  <l n="8">ecquis ad haec illinc crederet esse viam?</l>
+</lg>
+<lg type="strophe">
+  <l n="9">haec mea militia est; ferimus quae possumus arma,</l>
+  <l n="10">dextraque non omni munere nostra vacat.</l>
+</lg>
+<lg type="strophe">
+  <l n="11">si mihi non valido torquentur pila lacerto</l>
+  <l n="12">nec bellatoris terga premuntur equi,</l>
+</lg>
+<lg type="strophe">
+  <l n="13">nec galea tegimur, nec acuto cingimur ense</l>
+  <l n="14">(his habilis telis quilibet esse potest),</l>
+</lg>
+<lg type="strophe">
+  <l n="15">at tua prosequimur studioso pectore, Caesar,</l>
+  <l n="16">nomina, per titulos ingredimurque tuos.</l>
+</lg>
+<lg type="strophe">
+  <l n="17">ergo ades et placido paulum mea munera voltu</l>
+  <l n="18">respice, pacando siquid ab hoste vacat.</l>
+</lg>
+<lg type="strophe">
+  <l n="19">Februa Romani dixere piamina patres:</l>
+  <l n="20">nunc quoque dant verbo plurima signa fidem.</l>
+</lg>
+<lg type="strophe">
+  <l n="21">pontifices ab rege petunt et flamine lanas,</l>
+  <l n="22">quis veterum lingua februa nomen erat;</l>
+</lg>
+<lg type="strophe">
+  <l n="23">quaeque capit lictor domibus purgamina certis,</l>
+  <l n="24">torrida cum mica farra, vocantur idem;</l>
+</lg>
+<lg type="strophe">
+  <l n="25">nomen idem ramo, qui caesus ab arbore pura</l>
+  <l n="26">casta sacerdotum tempora fronde tegit.</l>
+</lg>
+<lg type="strophe">
+  <l n="27">ipse ego flaminicam poscentem februa vidi;</l>
+  <l n="28">februa poscenti pinea virga data est.</l>
+</lg>
+<lg type="strophe">
+  <l n="29">denique quodcumque est quo corpora nostra piantur,</l>
+  <l n="30">hoc apud intonsos nomen habebat avos.</l>
+</lg>
+<lg type="strophe">
+  <l n="31">mensis ab his dictus, secta quia pelle Luperci</l>
+  <l n="32">omne solum lustrant, idque piamen habent;</l>
+</lg>
+<lg type="strophe">
+  <l n="33">aut quia placatis sunt tempora pura sepulcris,</l>
+  <l n="34">tum cum ferales praeteriere dies.</l>
+</lg>
+<lg type="strophe">
+  <l n="35">omne nefas omnemque mali purgamina causam</l>
+  <l n="36">credebant nostri tollere posse senes.</l>
+</lg>
+<lg type="strophe">
+  <l n="37">Graecia principium moris dedit: illa nocentes</l>
+  <l n="38">impia lustratos ponere facta putat.</l>
+</lg>
+<lg type="strophe">
+  <l n="39">Actoriden <name type="person">Peleus</name>, ipsum quoque <name type="person">Pelea</name> <name type="placeName">Phoci</name></l>
+  <l n="40">caede per <name type="placeName">Haemonias</name> solvit <name type="person">Acastus</name> aquas;</l>
+</lg>
+<lg type="strophe">
+  <l n="41">vectam frenatis per inane <name type="animal" xml:lang="la">draconibus</name> <name type="person">Aegeus</name></l>
+  <l n="42">credulus immerita <name type="person">Phasida</name> fovit ope;</l>
+</lg>
+<lg type="strophe">
+  <l n="43"><name type="person">Amphiareiades</name> <name type="placeName">Naupactoo</name> <name type="animal" xml:lang="la">Acheloo</name></l>
+  <l n="44">'solve nefas' dixit, solvit et ille nefas.</l>
+</lg>
+<lg type="strophe">
+  <l n="45">ah nimium faciles, qui tristia crimina caedis</l>
+  <l n="46">fluminea tolli posse putatis aqua!</l>
+</lg>
+<lg type="strophe">
+  <l n="47">Sed tamen, antiqui ne nescius ordinis erres,</l>
+  <l n="48">primus, ut est, <name type="deity">Iani</name> mensis et ante fuit;</l>
+</lg>
+<lg type="strophe">
+  <l n="49">qui sequitur <name type="deity">Ianum</name>, veteris fuit ultimus anni:</l>
+  <l n="50">tu quoque sacrorum, <name type="deity">Termine</name>, finis eras.</l>
+</lg>
+<lg type="strophe">
+  <l n="51">primus enim <name type="deity">Iani</name> mensis, quia ianua prima est:</l>
+  <l n="52">qui sacer est imis manibus, imus erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="53">postmodo creduntur spatio distantia longo</l>
+  <l n="54">tempora bis quini continuasse viri.</l>
+</lg>
+<pb n="54a"/>
+<lg type="strophe">
+  <l n="59">Principio mensis Phrygiae contermina Matri</l>
+  <l n="60">Sospita delubris dicitur aucta novis.</l>
+</lg>
+<lg type="strophe">
+  <l n="61">nunc ubi sunt, illis quae sunt sacrata Kalendis</l>
+  <l n="62">templa deae? longa procubuere die.</l>
+</lg>
+<lg type="strophe">
+  <l n="63">cetera ne simili caderent labefacta ruina</l>
+  <l n="64">cavit sacrati provida cura ducis,</l>
+</lg>
+<lg type="strophe">
+  <l n="65">sub quo delubris sentitur nulla senectus;</l>
+  <l n="66">nec satis est homines, obligat ille deos.</l>
+</lg>
+<lg type="strophe">
+  <l n="67">templorum positor, templorum sancte repostor,</l>
+  <l n="68">sit superis opto mutua cura tui.</l>
+</lg>
+<lg type="strophe">
+  <l n="69">dent tibi caelestes, quos tu caelestibus, annos,</l>
+  <l n="70">proque tua maneant in statione domo.</l>
+</lg>
+<lg type="strophe">
+  <l n="71">tum quoque vicini lucus celebratur Alerni,</l>
+  <l n="72">qua petit aequoreas advena Thybris aquas.</l>
+</lg>
+<lg type="strophe">
+  <l n="73">ad penetrale Numae Capitolinumque Tonantem</l>
+  <l n="74">inque Iovis summa caeditur arce bidens.</l>
+</lg>
+<lg type="strophe">
+  <l n="75">saepe graves pluvias adopertus nubibus aether</l>
+  <l n="76">concitat, aut posita sub nive terra latet.</l>
+</lg>
+<pb n="72a"/>
+<lg type="strophe">
+  <l n="77">Proximus Hesperias Titan abiturus in undas</l>
+  <l n="78">gemmea purpureis cum iuga demet equis,</l>
+</lg>
+<lg type="strophe">
+  <l n="79">illa nocte aliquis, tollens ad sidera voltum,</l>
+  <l n="80">dicet 'ubi est hodie quae Lyra fulsit heri?'</l>
+</lg>
+<lg type="strophe">
+  <l n="81">dumque Lyram quaeret, medii quoque terga Leonis</l>
+  <l n="82">in liquidas subito mersa notabit aquas.</l>
+</lg>
+<pb n="78a"/>
+<lg type="strophe">
+  <l n="81">Quem modo caelatum stellis <name type="animal" xml:lang="la">Delphina</name> videbas,</l>
+  <l n="82">is fugiet visus nocte sequente tuos,</l>
+  <l n="83">seu fuit occultis felix in amoribus index,</l>
+  <l n="84"><persName>Lesbida</persName> cum domino seu tulit ille lyram.</l>
+  <l n="85">quod mare non novit, quae nescit <persName>Ariona</persName> tellus?</l>
+  <l n="86">carmine currentes ille tenebat aquas.</l>
+</lg>
+<lg type="strophe">
+  <l n="87">saepe sequens <name type="animal" xml:lang="la">agnam</name> <name type="animal" xml:lang="la">lupus</name> est a voce retentus,</l>
+  <l n="88">saepe avidum fugiens restitit <name type="animal" xml:lang="la">agna</name> <name type="animal" xml:lang="la">lupum</name>;</l>
+  <l n="89">saepe <name type="animal" xml:lang="la">canes</name> <name type="animal" xml:lang="la">leporesque</name> umbra iacuere sub una,</l>
+  <l n="90">et stetit in saxo proxima <name type="animal" xml:lang="la">cerva</name> <name type="animal" xml:lang="la">leae</name>,</l>
+  <l n="91">et sine lite loquax cum <name type="deity" xml:lang="la">Palladis</name> alite <name type="animal" xml:lang="la">cornix</name></l>
+  <l n="92">sedit, et <name type="animal" xml:lang="la">accipitri</name> iuncta <name type="animal" xml:lang="la">columba</name> fuit.</l>
+</lg>
+<lg type="strophe">
+  <l n="93"><name type="deity" xml:lang="la">Cynthia</name> saepe tuis fertur, vocalis <persName>Arion</persName>,</l>
+  <l n="94">tamquam fraternis obstipuisse modis.</l>
+  <l n="95">nomen <foreign xml:lang="la">Arionium</foreign> <placeName>Siculas</placeName> impleverat urbes</l>
+  <l n="96">captaque erat lyricis <persName>Ausonis</persName> ora sonis;</l>
+  <l n="97">inde domum repetens puppem conscendit <persName>Arion</persName>,</l>
+  <l n="98">atque ita quaesitas arte ferebat opes.</l>
+</lg>
+<lg type="strophe">
+  <l n="99">forsitan, infelix, <name type="animal" xml:lang="la">ventos</name> undasque timebas:</l>
+  <l n="100">at tibi nave tua tutius aequor erat.</l>
+  <l n="101">namque gubernator destricto constitit ense</l>
+  <l n="102">ceteraque armata conscia turba manu.</l>
+  <l n="103">quid tibi cum gladio? dubiam rege, navita, puppem:</l>
+  <l n="104">non haec sunt digitis arma tenenda tuis.</l>
+</lg>
+<lg type="strophe">
+  <l n="105">ille, metu pavidus, 'mortem non deprecor' inquit,</l>
+  <l n="106">'sed liceat sumpta pauca referre lyra.'</l>
+  <l n="107">dant veniam ridentque moram: capit ille coronam,</l>
+  <l n="108">quae possit crines, <name type="deity" xml:lang="la">Phoebe</name>, decere tuos;</l>
+  <l n="109">induerat <name type="plant" xml:lang="la">Tyrio</name> bis tinctam <name type="plant" xml:lang="la">murice</name> pallam:</l>
+  <l n="110">reddidit icta suos pollice chorda sonos,</l>
+</lg>
+<lg type="strophe">
+  <l n="111">flebilibus numeris veluti canentia dura</l>
+  <l n="112">traiectus penna tempora cantat <name type="animal" xml:lang="la">olor</name>.</l>
+  <l n="113">protinus in medias ornatus desilit undas;</l>
+</lg>
+<lg type="strophe">
+  <l n="113">spargitur impulsa caerula <name type="animal" xml:lang="la">puppis</name> <name type="animal" xml:lang="la">aqua</name>.</l>
+  <l n="114">inde <foreign xml:lang="la">(fide maius)</foreign> <name type="animal" xml:lang="la">tergo</name> <name type="animal" xml:lang="la">delphina</name> recurvo</l>
+  <l n="115">se memorant oneri subposuisse novo.</l>
+  <l n="116">ille, sedens <name type="animal" xml:lang="la">citharam</name>que tenens, pretiumque vehendi</l>
+  <l n="117">cantat et aequoreas carmine mulcet <name type="animal" xml:lang="la">aquas</name>.</l>
+  <l n="118">di pia facta vident: astris <name type="animal" xml:lang="la">delphina</name> recepit</l>
+  <l n="119"><name type="deity" xml:lang="la">Iuppiter</name> et stellas iussit habere novem.</l>
+</lg>
+<div type="poem">
+  <head type="main">Halieutica</head>
+  <lg type="strophe">
+    <l n="131">Nunc mihi mille <foreign xml:lang="la">sonos</foreign> quoque est memoratus <persName>Achilles</persName></l>
+    <l n="132">uellem, <persName>Maeonide</persName>, pectus inesse tuum,</l>
+    <l n="133">dum canimus sacras alterno carmine <name type="deity">Nonas</name>.</l>
+    <l n="134">maximus hic fastis accumulatur honor.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="135">deficit ingenium, maioraque uiribus urgent:</l>
+    <l n="136">haec mihi praecipuo est ore canenda dies.</l>
+    <l n="125">quid uolui demens elegis imponere tantum</l>
+    <l n="126">ponderis? heroi res erat ista pedis.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="127">sancte pater patriae, tibi plebs, tibi curia nomen</l>
+    <l n="128">hoc dedit, hoc dedimus nos tibi nomen, eques.</l>
+    <l n="129">res tamen ante dedit: sero quoque uera tulisti</l>
+    <l n="130">nomina, iam pridem tu pater orbis eras.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="131">hoc tu per terras, quod in aethere <name type="deity">Iuppiter</name> alto,</l>
+    <l n="132">nomen habes: hominum tu pater, ille deum.</l>
+    <l n="133"><persName>Romule</persName>, concedes: facit hic tua magna tuendo</l>
+    <l n="134">moenia, tu dederas transilienda <persName>Remo</persName>.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="135">te <persName>Tatius</persName> paruique <placeName>Cures</placeName> <placeName>Caenina</placeName>que sensit,</l>
+    <l n="136">hoc duce Romanum est solis utrumque latus;</l>
+    <l n="137">tu breve nescioquid uictae telluris habebas,</l>
+    <l n="138">quodcumque est alto sub <name type="deity">Ioue</name>, <persName>Caesar</persName> habet.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="139">tu rapis, hic castas duce se iubet esse maritas;</l>
+    <l n="140">tu recipis luco, reppulit ille nefas;</l>
+    <l n="141">uis tibi grata fuit, florent sub <persName>Caesare</persName> leges;</l>
+    <l n="142">tu domini nomen, principis ille tenet;</l>
+  </lg>
+  <lg type="strophe">
+    <l n="143">te <persName>Remus</persName> incusat, ueniam dedit hostibus ille;</l>
+    <l n="144">caelestem fecit te pater, ille patrem.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="145">Iam puer <name type="animal" xml:lang="la">Idaeus</name> media tenus eminet aluo,</l>
+    <l n="146">et liquidas mixto nectare fundit aquas.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="147">en etiam, siquis <name type="animal" xml:lang="la">Borean</name> horrere solebat,</l>
+    <l n="148">gaudeat: a <name type="deity">Zephyris</name> mollior aura uenit.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="1">Quintus ab aequoreis nitidum iubar extulit undis</l>
+  <l n="2"><persName>Lucifer</persName>, et primi tempora veris erunt.</l>
+  <l n="3">ne fallare tamen, restant tibi frigora, restant,</l>
+  <l n="4">magnaque discedens signa reliquit <name type="deity">hiems</name>.</l>
+</lg>
+<pb n="11"/>
+<lg type="strophe">
+  <l n="1">B</l>
+  <l n="2">N</l>
+</lg>
+<pb n="12"/>
+<lg type="strophe">
+  <l n="1">C</l>
+  <l n="2">N</l>
+</lg>
+<pb n="152a"/>
+<lg type="strophe">
+  <l n="153">Tertia nox veniat, Custodem protinus <name type="animal" xml:lang="la">Ursae</name></l>
+  <l n="154">aspicies geminos exseruisse pedes.</l>
+  <l n="155">inter <name type="plant" xml:lang="la">hamadryadas</name> iaculatricemque <name type="deity" xml:lang="la">Dianam</name></l>
+  <l n="156"><name type="animal" xml:lang="la">Callisto</name> sacri pars fuit una <foreign xml:lang="la">chori</foreign>.</l>
+  <l n="157">illa, <name type="deity" xml:lang="la">deae</name> tangens arcus, 'quos tangimus arcus,</l>
+  <l n="158">este meae testes virginitatis' ait.</l>
+  <l n="159"><name type="deity" xml:lang="la">Cynthia</name> laudavit, 'promissa' que 'foedera serva,</l>
+  <l n="160">et comitum princeps tu mihi' dixit 'eris.'</l>
+</lg>
+<lg type="strophe">
+  <l n="161">foedera servasset, si non formosa fuisset:</l>
+  <l n="162">cavit mortales, de <name type="deity" xml:lang="la">Iove</name> crimen habet.</l>
+  <l n="163">mille <name type="animal" xml:lang="la">feras</name> <name type="deity" xml:lang="la">Phoebe</name> silvis venata redibat</l>
+  <l n="164">aut plus aut medium sole tenente diem;</l>
+</lg>
+<lg type="strophe">
+  <l n="165">ut tetigit lucum (densa niger ilice lucus,</l>
+  <l n="166">in medio gelidae fons erat altus aquae),</l>
+  <l n="167">'hic' ait 'in silva, virgo <placeName xml:lang="la">Tegeaea</placeName>, lavemur';</l>
+  <l n="168">erubuit falso virginis illa sono.</l>
+</lg>
+<lg type="strophe">
+  <l n="169">dixerat et nymphis. nymphae velamina ponunt;</l>
+  <l n="170">hanc pudet, et tardae dat mala signa morae.</l>
+  <l n="171">exuerat tunicas; uteri manifesta tumore</l>
+  <l n="172">proditur indicio ponderis ipsa suo.</l>
+</lg>
+<lg type="strophe">
+  <l n="173">cui dea 'virgineos, periura <persName xml:lang="la">Lycaoni</persName>, coetus</l>
+  <l n="174">desere, nec castas pollue' dixit 'aquas.'</l>
+  <l n="175">luna novum decies implerat cornibus orbem:</l>
+  <l n="176">quae fuerat virgo credita, mater erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="177">laesa furit <name type="deity" xml:lang="la">Iuno</name>, formam mutatque puellae:</l>
+  <l n="178">quid facis? invito est pectore passa <name type="deity" xml:lang="la">Iovem</name>.</l>
+  <l n="179">utque ferae vidit turpes in paelice voltus,</l>
+  <l n="180">'huius in amplexus, <name type="deity" xml:lang="la">Iuppiter</name>,' inquit 'eas.'</l>
+</lg>
+<lg type="strophe">
+  <l n="181"><name type="animal" xml:lang="la">ursa</name> per incultos errabat squalida montes</l>
+  <l n="182">quae fuerat summo nuper amata <name type="deity" xml:lang="la">Iovi</name>.</l>
+  <l n="183">iam tria lustra puer furto conceptus agebat,</l>
+  <l n="184">cum mater nato est obvia facta suo.</l>
+  <l n="185">illa quidem, tamquam cognosceret, adstitit amens,</l>
+</lg>
+<lg type="strophe">
+  <l n="190">et gemuit: gemitus verba parentis erant.</l>
+  <l n="191">hanc puer ignarus iaculo fixisset acuto</l>
+  <l n="192">ni foret in superas raptus uterque domos.</l>
+  <l n="193">signa propinqua micant: prior est, quam dicimus <name type="animal" xml:lang="la">Arcton</name>,</l>
+  <l n="194"><name type="animal" xml:lang="la">Arctophylax</name> formam terga sequentis habet.</l>
+  <l n="195">saevit adhuc canamque rogat <name type="deity">Saturnia</name> <name type="deity">Tethyn</name></l>
+  <l n="196"><persName>Maenaliam</persName> tactis ne lavet <name type="animal" xml:lang="la">Arcton</name> aquis.</l>
+</lg>
+<lg type="strophe">
+  <l n="193">Idibus agrestis fumant altaria <name type="deity">Fauni</name></l>
+  <l n="194">hic ubi discretas insula rumpit aquas.</l>
+</lg>
+<lg type="strophe">
+  <l n="195">haec fuit illa dies in qua <placeName>Veientibus</placeName> armis</l>
+  <l n="196">ter centum <persName>Fabii</persName> ter cecidere duo.</l>
+</lg>
+<lg type="strophe">
+  <l n="197">una domus vires et onus susceperat urbis:</l>
+  <l n="198">sumunt gentiles arma professa manus.</l>
+</lg>
+<lg type="strophe">
+  <l n="199">egreditur castris miles generosus ab isdem,</l>
+  <l n="200">e quis dux fieri quilibet aptus erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="201"><persName>Carmentis</persName> portae dextro est via proxima iano:</l>
+  <l n="202">ire per hanc noli, quisquis es; omen habet.</l>
+</lg>
+<lg type="strophe">
+  <l n="203">illa fama refert <persName>Fabios</persName> exisse trecentos:</l>
+  <l n="204">porta vacat culpa, sed tamen omen habet.</l>
+</lg>
+<lg type="strophe">
+  <l n="205">ut celeri passu <placeName>Cremeram</placeName> tetigere rapacem</l>
+  <l n="206">(turbidus hibernis ille fluebat aquis),</l>
+</lg>
+<lg type="strophe">
+  <l n="207">castra loco ponunt: destrictis ensibus ipsi</l>
+  <l n="208"><persName>Tyrrhenum</persName> valido <name type="deity">Marte</name> per agmen eunt;</l>
+</lg>
+<lg type="strophe">
+  <l n="209">non aliter quam cum <foreign xml:lang="la">Libyca</foreign> de gente <name type="animal" xml:lang="la">leones</name></l>
+  <l n="210">invadunt sparsos lata per arva greges.</l>
+</lg>
+<lg type="strophe">
+  <l n="211">diffugiunt hostes inhonestaque volnera tergo</l>
+  <l n="212">accipiunt: <placeName>Tusco</placeName> sanguine terra rubet.</l>
+</lg>
+<lg type="strophe">
+  <l n="213">sic iterum, sic saepe cadunt; ubi vincere aperte</l>
+  <l n="214">non datur, insidias armaque tecta parant.</l>
+</lg>
+<lg type="strophe">
+  <l n="215">campus erat, campi claudebant ultima colles</l>
+  <l n="216">silvaque montanas occulere apta <name type="animal" xml:lang="la">feras</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="217">in medio paucos armentaque rara relinquunt,</l>
+  <l n="218">cetera virgultis abdita turba latet.</l>
+</lg>
+<lg type="strophe">
+  <l n="219">ecce velut torrens undis pluvialibus auctus</l>
+  <l n="220">aut nive, quae <foreign xml:lang="la">Zephyro</foreign> victa tepente fluit,</l>
+</lg>
+<lg type="strophe">
+  <l n="221">per sata perque vias fertur nec, ut ante solebat,</l>
+  <l n="222">riparum clausas margine finit aquas,</l>
+</lg>
+<lg type="strophe">
+  <l n="223">sic <persName>Fabii</persName> vallem latis discursibus implent,</l>
+  <l n="224">quodque vident sternunt, nec metus alter inest.</l>
+</lg>
+<lg type="strophe">
+  <l n="225">quo ruitis, <name type="animal" xml:lang="la">generosa</name> <name type="deity">domus</name>? male creditis hosti:</l>
+  <l n="226">simplex nobilitas, perfida tela cave.</l>
+  <l n="227">fraude perit virtus: in apertos undique campos</l>
+  <l n="228">prosiliunt hostes et latus omne tenent.</l>
+  <l n="229">quid faciant pauci contra tot milia fortes?</l>
+  <l n="230">quidve, quod in misero tempore restet, adest?</l>
+</lg>
+<lg type="strophe">
+  <l n="231">sicut <name type="animal" xml:lang="la">aper</name> longe silvis latratibus actus</l>
+  <l n="232"><foreign xml:lang="la">fulmineo</foreign> celeres dissipat ore <name type="animal" xml:lang="la">canes</name>,</l>
+  <l n="233">mox tamen ipse perit, sic non moriuntur inulti,</l>
+  <l n="234">volneraque alterna dantque feruntque manu.</l>
+</lg>
+<lg type="strophe">
+  <l n="235">una dies <persName>Fabios</persName> ad bellum miserat omnes,</l>
+  <l n="236">ad bellum missos perdidit una dies.</l>
+  <l n="237">ut tamen <name type="deity">Herculeae</name> superessent semina gentis,</l>
+  <l n="238">credibile est ipsos consuluisse deos:</l>
+  <l n="239">nam puer impubes et adhuc non utilis armis</l>
+  <l n="240">unus de <persName>Fabia</persName> gente relictus erat;</l>
+</lg>
+<lg type="strophe">
+  <l n="241">scilicet ut posses olim tu, <persName>Maxime</persName>, nasci,</l>
+  <l n="242">cui res cunctando restituenda foret.</l>
+</lg>
+<pb n="14"/>
+<lg type="strophe">
+  <head>E N</head>
+  <l n="242a"> </l>
+</lg>
+<lg type="strophe">
+  <l n="243">Continuata loco tria <name type="animal" xml:lang="la">Corvus</name> et <name type="animal" xml:lang="la">Anguis</name></l>
+  <l n="244">et medius <name type="object" xml:lang="la">Crater</name> inter utrumque, iacent.</l>
+  <l n="245">Idibus illa latent, oriuntur nocte sequenti;</l>
+  <l n="246">quae, tibi, cur tria sint tam sociata, canam.</l>
+</lg>
+<lg type="strophe">
+  <l n="247">forte <persName>Iovi</persName> <persName>Phoebus</persName> festum sollemne parabat</l>
+  <l n="248">(non faciet longas fabula nostra moras):</l>
+  <l n="249">'i, mea' dixit 'avis, ne quid pia sacra moretur,</l>
+  <l n="250">et tenuem vivis fontibus adfer aquam.'</l>
+</lg>
+<lg type="strophe">
+  <l n="251"><name type="animal" xml:lang="la">corvus</name> inauratum pedibus <name type="object" xml:lang="la">cratera</name> recurvis</l>
+  <l n="252">tollit et aerium pervolat altus iter.</l>
+  <l n="253">stabat adhuc duris ficus densissima pomis:</l>
+  <l n="254">temptat eam rostro, non erat apta legi;</l>
+  <l n="255">immemor imperii sedisse sub arbore fertur,</l>
+  <l n="256">dum fierent tarda dulcia poma mora.</l>
+</lg>
+<lg type="strophe">
+  <l n="257">iamque satur nigris longum rapit unguibus <name type="animal" xml:lang="la">hydrum</name>,</l>
+  <l n="258">ad dominumque redit, fictaque verba refert:</l>
+  <l n="259">'hic mihi causa morae, vivarum obsessor aquarum:</l>
+  <l n="260">hic tenuit fontes officiumque meum.'</l>
+</lg>
+<lg type="strophe">
+  <l n="261">'addis' ait 'culpae mendacia' <persName>Phoebus</persName> 'et audes</l>
+  <l n="262">fatidicum verbis fallere velle deum?</l>
+  <l n="263">at tibi, dum lactens haerebit in arbore ficus,</l>
+  <l n="264">de nullo gelidae fonte bibentur aquae.'</l>
+</lg>
+<lg type="strophe">
+  <l n="265">dixit, et, antiqui monimenta perennia facti,</l>
+  <l n="266"><name type="animal" xml:lang="la">Anguis</name>, avis, <name type="object" xml:lang="la">Crater</name> sidera iuncta micant.</l>
+</lg>
+<pb n="15"/>
+<lg type="strophe">
+  <l n="266a">F LVPER : NP</l>
+</lg>
+<div>
+  <lg type="strophe">
+    <l n="269">Tertia post Idus nudos aurora <name type="deity">Lupercos</name> </l>
+    <l n="270">aspicit, et <name type="deity">Fauni</name> sacra bicornis eunt.</l>
+    <l n="271">dicite, <name type="deity">Pierides</name>, sacrorum quae sit origo,</l>
+    <l n="272">attigerint <name type="placeName">Latias</name> unde petita domos.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="273"><name type="deity">Pana</name> deum pecoris veteres coluisse feruntur</l>
+    <l n="274"><name type="placeName">Arcades</name>; <name type="placeName">Arcadiis</name> plurimus ille iugis.</l>
+    <l n="275">testis erit <name type="placeName">Pholoe</name>, testes <name type="placeName">Stymphalides</name> undae,</l>
+    <l n="276">quique citis <name type="placeName">Ladon</name> in mare currit aquis,</l>
+    <l n="277">cinctaque pinetis nemoris iuga <name type="placeName">Nonacrini</name>,</l>
+    <l n="278">altaque <name type="placeName">Tricrene</name> <name type="placeName">Parrhasiae</name>que nives.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="279"><name type="deity">Pan</name> erat armenti, <name type="deity">Pan</name> illic numen equarum,</l>
+    <l n="280">munus ob incolumes ille ferebat oves.</l>
+    <l n="281">transtulit <persName>Euander</persName> silvestria numina secum:</l>
+    <l n="282">hic, ubi nunc urbs est, tum locus urbis erat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="283">inde deum colimus devectaque sacra <name type="deity">Pelasgis</name>:</l>
+    <l n="284">flamen ad haec prisco more <name type="deity">Dialis</name> erat.</l>
+    <l n="285">cur igitur currant, et cur (sic currere mos est)</l>
+    <l n="286">nuda ferant posita corpora veste, rogas?</l>
+  </lg>
+  <lg type="strophe">
+    <l n="287">ipse deus velox discurrere gaudet in altis</l>
+    <l n="288">montibus, et subitas concipit ipse fugas:</l>
+    <l n="289">ipse deus nudus nudos iubet ire ministros;</l>
+    <l n="290">nec satis ad cursus commoda vestis erit.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="291">ante <name type="deity">Iovem</name> genitum terras habuisse feruntur</l>
+    <l n="292"><name type="placeName">Arcades</name>, et luna gens prior illa fuit.</l>
+    <l n="293">vita feris similis, nullos agitata per usus:</l>
+    <l n="294">artis adhuc expers et rude volgus erat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="295">pro domibus frondes norant, pro frugibus <name type="plant">herbas</name>;</l>
+    <l n="296">nectar erat palmis hausta duabus aqua.</l>
+    <l n="297">nullus anhelabat sub adunco vomere <name type="animal" xml:lang="la">taurus</name>,</l>
+    <l n="298">nulla sub imperio terra colentis erat:</l>
+  </lg>
+  <lg type="strophe">
+    <l n="299">nullus adhuc erat usus <name type="animal" xml:lang="la">equi</name>; se quisque ferebat:</l>
+    <l n="300">ibat ovis lana corpus amicta sua.</l>
+    <l n="301">sub <name type="deity">Iove</name> durabant et corpora nuda gerebant,</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="300">docta graves imbres et tolerare <name type="deity" xml:lang="la">Notos</name>.</l>
+  <l n="301">nunc quoque detecti referunt monimenta vetusti</l>
+  <l n="302">moris, et antiquas testificantur opes.</l>
+</lg>
+<lg type="strophe">
+  <l n="303">Sed cur praecipue fugiat velamina <name type="deity" xml:lang="la">Faunus</name>,</l>
+  <l n="304">traditur antiqui fabula plena ioci.</l>
+</lg>
+<lg type="strophe">
+  <l n="305">forte comes dominae iuvenis <persName>Tirynthius</persName> ibat:</l>
+  <l n="306">vidit ab excelso <name type="deity" xml:lang="la">Faunus</name> utrumque iugo;</l>
+  <l n="307">vidit et incaluit, '<foreign xml:lang="la">montana</foreign>' que '<foreign xml:lang="la">numina</foreign>', dixit</l>
+  <l n="308"><foreign xml:lang="la">nil mihi vobiscum est: hic meus ardor erit.'</foreign></l>
+</lg>
+<lg type="strophe">
+  <l n="309">ibat odoratis umeros perfusa capillis</l>
+  <l n="310"><name type="person" xml:lang="la">Maeonis</name>, aurato conspicienda sinu:</l>
+  <l n="311">aurea pellebant tepidos umbracula soles,</l>
+  <l n="312">quae tamen <persName>Herculeae</persName> sustinuere manus.</l>
+</lg>
+<lg type="strophe">
+  <l n="313">iam <name type="deity" xml:lang="la">Bacchi</name> nemus et <placeName>Tmoli</placeName> vineta tenebat,</l>
+  <l n="314"><name type="deity" xml:lang="la">Hesperos</name> et fusco roscidus ibat equo.</l>
+</lg>
+<lg type="strophe">
+  <l n="315">antra subit tofis laqueata et pumice vivo;</l>
+  <l n="316">garrulus in primo limine rivus erat.</l>
+  <l n="317">dumque parant epulas potandaque vina ministri,</l>
+  <l n="318">cultibus <persName>Alciden</persName> instruit illa suis:</l>
+</lg>
+<lg type="strophe">
+  <l n="319">dat tenues tunicas <name type="placeName" xml:lang="la">Gaetulo</name> murice tinctas,</l>
+  <l n="320">dat teretem zonam, qua modo cincta fuit.</l>
+  <l n="321">ventre minor zona est; tunicarum vincla relaxat,</l>
+  <l n="322">ut posset magnas exseruisse manus.</l>
+</lg>
+<lg type="strophe">
+  <l n="323">fregerat armillas non illa ad bracchia factas,</l>
+  <l n="324">scindebant magni vincula parva pedes.</l>
+  <l n="325">ipsa capit clavamque gravem spoliumque <name type="animal" xml:lang="la">leonis</name></l>
+  <l n="326">conditaque in pharetra tela minora sua.</l>
+</lg>
+<lg type="strophe">
+  <l n="327">sic epulis functi sic dant sua corpora somno,</l>
+  <l n="328">et positis iuxta secubuere toris:</l>
+  <l n="329">causa, repertori <name type="plant" xml:lang="la">vitis</name> quia sacra parabant,</l>
+  <l n="330">quae facerent pure, cum foret orta dies.</l>
+</lg>
+<lg type="strophe">
+  <l n="331">noctis erat medium. quid non amor improbus audet?</l>
+  <l n="332">roscida per tenebras <name type="deity" xml:lang="la">Faunus</name> ad antra venit:</l>
+</lg>
+<lg type="strophe">
+  <l n="333">utque videt comites somno vinoque solutos,</l>
+  <l n="334">spem capit in dominis esse soporis idem.</l>
+</lg>
+<lg type="strophe">
+  <l n="335">intrat et huc illuc temerarius errat adulter,</l>
+  <l n="336">et praefert cautas subsequiturque manus.</l>
+</lg>
+<lg type="strophe">
+  <l n="337">venerat ad strati captata cubilia lecti,</l>
+  <l n="338">et felix prima sorte futurus erat;</l>
+</lg>
+<lg type="strophe">
+  <l n="339">ut tetigit fulvi saetis hirsuta <name type="animal" xml:lang="la">leonis</name></l>
+  <l n="340">vellera, pertimuit sustinuitque manum,</l>
+  <l n="341">attonitusque metu rediit, ut saepe viator</l>
+  <l n="342">turbatum viso rettulit <name type="animal" xml:lang="la">angue</name> pedem.</l>
+</lg>
+<lg type="strophe">
+  <l n="343">inde tori qui iunctus erat velamina tangit</l>
+  <l n="344">mollia, mendaci decipiturque nota.</l>
+  <l n="345">ascendit spondaque sibi propiore recumbit,</l>
+  <l n="346">et tumidum cornu durius inguen erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="347">interea tunicas ora subducit ab ima:</l>
+  <l n="348">horrebant densis aspera crura pilis.</l>
+  <l n="349">cetera temptantem subito Tirynthius heros</l>
+  <l n="350">reppulit: e summo decidit ille toro.</l>
+</lg>
+<lg type="strophe">
+  <l n="351">fit sonus, inclamat comites et lumina poscit</l>
+  <l n="352">Maeonis: inlatis ignibus acta patent.</l>
+  <l n="353">ille gemit lecto graviter deiectus ab alto,</l>
+  <l n="354">membraque de dura vix sua tollit humo.</l>
+</lg>
+<lg type="strophe">
+  <l n="355">ridet et Alcides et qui videre iacentem,</l>
+  <l n="356">ridet amatorem Lyda puella suum.</l>
+  <l n="357">veste deus lusus fallentes lumina vestes</l>
+  <l n="358">non amat, et nudos ad sua sacra vocat.</l>
+</lg>
+<lg type="strophe">
+  <l n="359">Adde peregrinis causas, mea Musa, Latinas,</l>
+  <l n="360">inque suo noster pulvere currat equus.</l>
+</lg>
+<lg type="strophe">
+  <l n="361">cornipedi Fauno caesa de more capella</l>
+  <l n="362">venit ad exiguas turba vocata dapes.</l>
+</lg>
+<lg type="strophe">
+  <l n="363">dumque sacerdotes veribus transuta salignis</l>
+  <l n="364">exta parant, medias sole tenente vias,</l>
+  <l n="365">Romulus et frater pastoralisque iuventus</l>
+  <l n="366">solibus et campo corpora nuda dabant.</l>
+</lg>
+<lg type="strophe">
+  <l n="367">vectibus et iaculis et misso pondere <name type="animal" xml:lang="la">saxi</name></l>
+  <l n="368">bracchia per lusus experienda dabant:</l>
+</lg>
+<lg type="strophe">
+  <l n="369">pastor ab excelso 'per devia rura <name type="animal" xml:lang="la">iuvencos</name>,</l>
+  <l n="370">Romule, praedones, et Reme', dixit 'agunt.'</l>
+</lg>
+<lg type="strophe">
+  <l n="371">longum erat armari: diversis exit uterque</l>
+  <l n="372">partibus, occursu praeda recepta Remi.</l>
+</lg>
+<lg type="strophe">
+  <l n="373">ut rediit, veribus stridentia detrahit exta</l>
+  <l n="374">atque ait 'haec certe non nisi victor edet.'</l>
+</lg>
+<lg type="strophe">
+  <l n="375">dicta facit, Fabiique simul. venit inritus illuc</l>
+  <l n="376">Romulus et mensas ossaque nuda videt.</l>
+</lg>
+<lg type="strophe">
+  <l n="377">risit, et indoluit Fabios potuisse Remumque</l>
+  <l n="378">vincere, Quintilios non potuisse suos.</l>
+</lg>
+<lg type="strophe">
+  <l n="379">forma manet facti: posito velamine currunt,</l>
+  <l n="380">et memorem famam quod bene cessit habet.</l>
+</lg>
+<lg type="strophe">
+  <l n="381">Forsitan et quaeras cur sit locus ille <placeName>Lupercal</placeName>,</l>
+  <l n="382">quaeve diem tali nomine causa notet.</l>
+</lg>
+<lg type="strophe">
+  <l n="383"><persName>Silvia</persName> <name type="deity" xml:lang="la">Vestalis</name> caelestia semina partu</l>
+  <l n="384">ediderat, patruo regna tenente suo;</l>
+</lg>
+<lg type="strophe">
+  <l n="385">is iubet auferri parvos et in amne necari:</l>
+  <l n="386">quid facis? ex istis Romulus alter erit.</l>
+</lg>
+<lg type="strophe">
+  <l n="387">iussa recusantes peragunt lacrimosa ministri</l>
+  <l n="388">(flent tamen) et geminos in loca sola ferunt.</l>
+</lg>
+<lg type="strophe">
+  <l n="389"><placeName>Albula</placeName>, quem <placeName>Tiberim</placeName> mersus <persName>Tiberinus</persName> in undis</l>
+  <l n="390">reddidit, hibernis forte tumebat aquis:</l>
+</lg>
+<lg type="strophe">
+  <l n="391">hic, ubi nunc fora sunt, lintres errare videres,</l>
+  <l n="392">quaque iacent valles, <persName>Maxime</persName> <placeName>Circe</placeName>, tuae.</l>
+</lg>
+<lg type="strophe">
+  <l n="393">huc ubi venerunt (neque enim procedere possunt</l>
+  <l n="394">longius), ex illis unus et alter ait:</l>
+</lg>
+<lg type="strophe">
+  <l n="395">'at quam sunt similes! at quam formosus uterque!</l>
+  <l n="396">plus tamen ex illis iste vigoris habet.</l>
+</lg>
+<lg type="strophe">
+  <l n="397">si genus arguitur voltu, nisi fallit imago,</l>
+  <l n="398">nescioquem in vobis suspicor esse <name type="deity">deum</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="400">at siquis vestrae deus esset originis auctor,</l>
+  <l n="401">in tam praecipiti tempore ferret opem:</l>
+  <l n="402">ferret opem certe, si non ope, <persName>mater</persName>, egeret,</l>
+  <l n="403">quae facta est uno <persName>mater</persName> et orba die.</l>
+  <l n="404">nata simul, moritura simul, simul ite sub undas</l>
+  <l n="405">corpora.’ desierat, deposuitque sinu.</l>
+  <l n="406">vagierunt ambo pariter: sensisse putares;</l>
+  <l n="407">hi redeunt udis in sua tecta genis.</l>
+  <l n="408">sustinet impositos summa cavus alveus unda:</l>
+  <l n="409">heu quantum fati parva tabella tulit!</l>
+  <l n="410">alveus in limo silvis adpulsus opacis</l>
+  <l n="411">paulatim fluvio deficiente sedet.</l>
+  <l n="412">arbor erat: remanent vestigia, quaeque vocatur</l>
+  <l n="413"><name type="plant" xml:lang="la">Rumina</name> nunc ficus <name type="plant" xml:lang="la">Romula</name> ficus erat.</l>
+  <l n="414">venit ad expositos, mirum, <name type="animal" xml:lang="la">lupa</name> feta gemellos:</l>
+  <l n="415">quis credat pueris non nocuisse feram?</l>
+  <l n="416">non nocuisse parum est, prodest quoque. quos <name type="animal" xml:lang="la">lupa</name> nutrit,</l>
+  <l n="417">perdere cognatae sustinuere manus.</l>
+  <l n="418">constitit et cauda teneris blanditur alumnis,</l>
+  <l n="419">et fingit lingua corpora bina sua.</l>
+  <l n="420"><name type="deity">Marte</name> satos scires: timor abfuit. ubera ducunt</l>
+  <l n="421">nec sibi promissi lactis aluntur ope.</l>
+  <l n="422">illa loco nomen fecit, locus ipse <placeName>Lupercis</placeName>;</l>
+  <l n="423">magna dati nutrix praemia lactis habet.</l>
+  <l n="424">Quid vetat <placeName>Arcadio</placeName> dictos a monte <placeName>Lupercos</placeName>?</l>
+  <l n="425"><name type="deity">Faunus</name> in <placeName>Arcadia</placeName> templa <placeName>Lycaeus</placeName> habet.</l>
+  <l n="426"><persName>Nupta</persName>, quid exspectas? non tu pollentibus herbis</l>
+  <l n="427">nec prece nec magico carmine mater eris;</l>
+  <l n="428">excipe fecundae patienter verbera dextrae,</l>
+  <l n="429">iam socer optatum nomen habebit avi.</l>
+  <l n="430">nam fuit illa dies, dura cum sorte maritae</l>
+  <l n="431">reddebant uteri pignora rara sui.</l>
+  <l n="432">'quid mihi' clamabat 'prodest rapuisse <persName>Sabinas</persName>'</l>
+</lg>
+<div>
+  <lg type="strophe">
+    <l n="433">Romulus <persName>hoc</persName> illo sceptra tenente fuit),</l>
+    <l n="434"><quote>'si mea non vires, sed bellum iniuria fecit?</quote></l>
+    <l n="435">utilius fuerat non habuisse nurus.'</l>
+  </lg>
+  <lg type="strophe">
+    <l n="436">monte sub <placeName>Esquilio</placeName> multis incaeduus annis</l>
+    <l n="437"><name type="animal" xml:lang="la">Iunonis</name> magnae nomine lucus erat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="438">huc ubi venerunt, pariter nuptaeque virique</l>
+    <l n="439">suppliciter posito procubuere genu:</l>
+    <l n="440">cum subito motae tremuere cacumina silvae,</l>
+    <l n="441">et dea per lucos mira locuta suos.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="442"><quote>'Italidas matres'</quote> inquit <quote>sacer <name type="animal" xml:lang="la">hircus</name> inito.'</quote></l>
+    <l n="443">obstipuit dubio territa turba sono.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="444">augur erat, nomen longis intercidit annis:</l>
+    <l n="445">nuper ab <placeName>Etrusca</placeName> venerat exul humo;</l>
+    <l n="446">ille <name type="animal" xml:lang="la">caprum</name> mactat: iussae sua terga puellae</l>
+  </lg>
+  <lg type="strophe">
+    <l n="447">pellibus exsectis percutienda dabant.</l>
+    <l n="448"><name type="deity">luna</name> resumebat decimo nova cornua motu,</l>
+    <l n="449">virque pater subito nuptaque mater erat.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="450">gratia <name type="deity">Lucinae</name>: dedit haec tibi nomina lucus,</l>
+    <l n="451">aut quia principium tu, dea, lucis habes.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="432">parce, precor, gravidis, facilis <name type="deity">Lucina</name>, puellis,</l>
+    <l n="453">maturumque utero molliter aufer onus.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="454">Orta dies fuerit, tu desine credere ventis;</l>
+    <l n="455">perdidit illius temporis aura fidem.</l>
+    <l n="456">flamina non constant, et sex reserata diebus</l>
+  </lg>
+  <lg type="strophe">
+    <l n="457">carceris <foreign xml:lang="la">Aeolii</foreign> ianua lata patet.</l>
+    <l n="458">iam levis obliqua subsedit <foreign xml:lang="la">Aquarius</foreign> urna:</l>
+    <l n="459">proximus aetherios excipe, <foreign xml:lang="la">Piscis</foreign>, equos.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="460">te memorant fratremque tuum (nam iuncta micatis</l>
+    <l n="461">signa) duos tergo sustinuisse deos.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="462">terribilem quondam fugiens <name type="deity">Typhona</name> <name type="deity">Dione</name>,</l>
+    <l n="463">tum, cum pro caelo <name type="deity">Iuppiter</name> arma tulit,</l>
+    <l n="464">venit ad <placeName>Euphraten</placeName> comitata <name type="deity">Cupidine</name> parvo,</l>
+    <l n="465">inque <placeName>Palaestinae</placeName> margine sedit aquae.</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="465">populus et <name type="plant" xml:lang="la">canna</name> <name type="plant" xml:lang="la">riparum</name> summa tenebant,</l>
+  <l n="466">spemque dabant <name type="plant" xml:lang="la">salices</name> hos quoque posse tegi.</l>
+  <l n="467">dum latet, insonuit vento <name type="plant" xml:lang="la">nemus</name>: illa timore</l>
+  <l n="468">pallet, et hostiles credit adesse manus,</l>
+  <l n="469">utque sinu tenuit natum, '<persName>succurrite</persName>, <name type="deity">nymphae</name>,</l>
+  <l n="470">et dis auxilium ferte duobus' ait.</l>
+  <l n="471">nec mora, prosiluit. <name type="animal" xml:lang="la">pisces</name> subiere gemelli:</l>
+  <l n="472">pro quo nunc, cernis, sidera nomen habent.</l>
+  <l n="473">inde nefas ducunt genus hoc imponere mensis</l>
+  <l n="474">nec violant timidi <name type="animal" xml:lang="la">piscibus</name> ora <persName>Syri</persName>.</l>
+</lg>
+<lg type="strophe">
+  <l n="476">Proxima lux vacua est; at tertia dicta <name type="deity" xml:lang="la">Quirino</name>,</l>
+  <l n="477">  qui tenet hoc nomen (<persName>Romulus</persName> ante fuit),</l>
+  <l n="478">sive quod hasta <foreign xml:lang="la">'curis'</foreign> priscis est dicta <persName>Sabinis</persName></l>
+  <l n="479">  (bellicus a telo venit in astra <name type="deity">deus</name>);</l>
+  <l n="480">sive suum regi nomen posuere <persName>Quirites</persName>,</l>
+  <l n="481"> seu quia <persName>Romanis</persName> iunxerat ille <placeName>Cures</placeName>.</l>
+</lg>
+<lg type="strophe">
+  <l n="482">nam pater armipotens postquam nova moenia vidit,</l>
+  <l n="483">  multaque <persName>Romulea</persName> bella peracta manu,</l>
+  <l n="484">'<name type="deity" xml:lang="la">Iuppiter</name>', inquit 'habet Romana potentia vires:</l>
+  <l n="485">  sanguinis officio non eget illa mei.</l>
+  <l n="486">redde patri natum: quamvis intercidit alter,</l>
+  <l n="487">  pro se proque <persName>Remo</persName> qui mihi restat erit.</l>
+</lg>
+<lg type="strophe">
+  <l n="488">"unus erit quem tu tolles in caerula caeli"</l>
+  <l n="489">  tu mihi dixisti: sint rata dicta <name type="deity" xml:lang="la">Iovis</name>.'</l>
+  <l n="490">Iuppiter adnuerat: nutu tremefactus uterque</l>
+  <l n="491">  est polus, et caeli pondera novit <name type="deity" xml:lang="la">Atlas</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="492">est locus, antiqui <name type="animal" xml:lang="la">Caprae</name> dixere paludem:</l>
+  <l n="493">  forte tuis illic, <persName>Romule</persName>, iura dabas.</l>
+  <l n="494">sol fugit, et removent subeuntia nubila caelum,</l>
+  <l n="495">  et gravis effusis decidit imber aquis.</l>
+</lg>
+<lg type="strophe">
+  <l n="496">hinc tonat, hinc missis abrumpitur ignibus aether:</l>
+  <l n="497">  fit fuga, rex patriis astra petebat equis.</l>
+  <l n="498">luctus erat, falsaeque patres in crimine caedis,</l>
+  <l n="499">  haesissetque animis forsitan illa fides;</l>
+</lg>
+<lg type="strophe">
+  <l n="500">sed <persName>Proculus</persName> <persName>Longa</persName> veniebat <placeName>Iulia Alba</placeName>,</l>
+  <l n="501">  lunaque fulgebat, nec facis usus erat,</l>
+  <l n="502">cum subito motu saepes tremuere sinistrae:</l>
+  <l n="503">  rettulit ille gradus, horrueruntque comae.</l>
+</lg>
+<lg type="strophe">
+  <l n="504">pulcher et humano maior trabeaque decorus</l>
+  <l n="505">  <persName>Romulus</persName> in media visus adesse via</l>
+  <l n="506">et dixisse simul 'prohibe lugere <persName>Quirites</persName>,</l>
+  <l n="507">  nec violent lacrimis numina nostra suis:</l>
+</lg>
+<lg type="strophe">
+  <l n="509">tura ferant placentque <name type="deity" xml:lang="la">Quirinum</name>,</l>
+  <l n="510">et patrias artes militiamque colant.'</l>
+  <l n="511">iussit et in tenues oculis evanuit auras;</l>
+  <l n="512">convocat hic populos iussaque verba refert.</l>
+</lg>
+<lg type="strophe">
+  <l n="513">templa deo fiunt: collis quoque dictus ab illo est,</l>
+  <l n="514">et referunt certi sacra paterna dies.</l>
+</lg>
+<lg type="strophe">
+  <l n="515">Lux quoque cur eadem <foreign xml:lang="la">Stultorum</foreign> festa vocetur</l>
+  <l n="516">accipe: parva quidem causa, sed apta, subest.</l>
+</lg>
+<lg type="strophe">
+  <l n="517">non habuit doctos tellus antiqua colonos:</l>
+  <l n="518"><name type="animal" xml:lang="la">lassabant</name> agiles aspera bella viros.</l>
+</lg>
+<lg type="strophe">
+  <l n="519">plus erat in gladio quam curvo laudis aratro:</l>
+  <l n="520">neglectus domino pauca ferebat ager.</l>
+</lg>
+<lg type="strophe">
+  <l n="521">farra tamen veteres iaciebant, farra metebant,</l>
+  <l n="522">primitias <name type="deity" xml:lang="la">Cereri</name> farra resecta dabant:</l>
+</lg>
+<lg type="strophe">
+  <l n="523">usibus admoniti flammis torrenda dederunt,</l>
+  <l n="524">multaque peccato damna tulere suo;</l>
+</lg>
+<lg type="strophe">
+  <l n="525">nam modo verrebant nigras pro farre favillas,</l>
+  <l n="526">nunc ipsas ignes corripuere casas.</l>
+</lg>
+<lg type="strophe">
+  <l n="527">facta dea est <name type="deity" xml:lang="la">Fornax</name>: laeti <name type="deity" xml:lang="la">Fornax</name> coloni</l>
+  <l n="528">orant ut fruges temperet illa suas.</l>
+</lg>
+<lg type="strophe">
+  <l n="529">curio legitimis nunc <foreign xml:lang="la">Fornacalia</foreign> verbis</l>
+  <l n="530">maximus indicit nec stata sacra facit:</l>
+</lg>
+<lg type="strophe">
+  <l n="531">inque foro, multa circum pendente tabella,</l>
+  <l n="532">signatur certa curia quaeque nota,</l>
+  <l n="532a">stultaque pars populi quae sit sua curia nescit,</l>
+  <l n="533">sed facit extrema sacra relata die.</l>
+</lg>
+<lg type="strophe">
+  <l n="533">Est honor et tumulis, animas placare <name type="deity">paternas</name>,</l>
+  <l n="534">parvaque in exstructas munera ferre pyras.</l>
+  <l n="535">parva petunt manes: pietas pro divite grata est</l>
+  <l n="536"><name type="deity">munere</name>; non avidos <name type="placeName">Styx</name> habet ima <name type="deity">deos</name>.</l>
+  <l n="537">tegula porrectis satis est velata coronis</l>
+  <l n="538">et sparsae fruges parcaque mica salis,</l>
+  <l n="539">inque mero mollita <name type="plant">Ceres</name> <name type="plant">violaeque</name> solutae:</l>
+  <l n="540">haec habeat media testa relicta via.</l>
+</lg>
+<lg type="strophe">
+  <l n="541">nec maiora veto, sed et his placabilis umbra est:</l>
+  <l n="542">adde preces positis et sua verba focis.</l>
+  <l n="543"><persName>hunc</persName> morem <persName>Aeneas</persName>, pietatis idoneus auctor,</l>
+  <l n="544">attulit in terras, iuste <placeName>Latine</placeName>, tuas.</l>
+  <l n="545">ille patris <name type="deity">Genio</name> sollemnia dona ferebat:</l>
+  <l n="546">hinc populi ritus edidicere pios.</l>
+</lg>
+<lg type="strophe">
+  <l n="547">at quondam, dum longa gerunt pugnacibus armis</l>
+  <l n="548">bella, <placeName>Parentales</placeName> deseruere dies.</l>
+  <l n="549">non impune fuit; nam dicitur omine ab isto</l>
+  <l n="550"><placeName>Roma</placeName> suburbanis incaluisse rogis.</l>
+</lg>
+<lg type="strophe">
+  <l n="531">vix equidem credo: bustis exisse feruntur</l>
+  <l n="532">et tacitae questi tempore noctis avi,</l>
+  <l n="533">perque vias <placeName>Urbis</placeName> latosque ululasse per agros</l>
+  <l n="534">deformes animas, volgus inane, ferunt.</l>
+</lg>
+<lg type="strophe">
+  <l n="555">post ea praeteriti tumulis redduntur honores,</l>
+  <l n="556">prodigiisque venit funeribusque modus.</l>
+  <l n="557">dum tamen haec fiunt, viduae cessate puellae:</l>
+  <l n="558">exspectet puros pinea taeda dies,</l>
+</lg>
+<lg type="strophe">
+  <l n="559">nec tibi, quae cupidae matura videbere matri,</l>
+  <l n="560">comat virgineas hasta recurva comas.</l>
+  <l n="561">conde tuas, <persName>Hymenaee</persName>, faces, et ab ignibus atris</l>
+  <l n="562">aufer: habent alias maesta sepulcra faces.</l>
+</lg>
+<lg type="strophe">
+  <l n="563">di quoque templorum foribus celentur opertis,</l>
+  <l n="564">ture vacent arae stentque sine igne foci.</l>
+</lg>
+<lg type="strophe">
+  <l n="565">nunc <name type="animal" xml:lang="la">animae</name> tenues et corpora functa sepulcris</l>
+  <l n="566">errant, nunc posito pascitur umbra cibo.</l>
+  <l n="567">nec tamen haec ultra, quam tot de mense supersint</l>
+  <l n="568"><name type="deity" xml:lang="la">Luciferi</name>, quot habent carmina nostra pedes.</l>
+  <l n="569">hanc, quia iusta ferunt, dixere Feralia lucem;</l>
+  <l n="570">ultima placandis <name type="animal" xml:lang="la">manibus</name> illa dies.</l>
+</lg>
+<lg type="strophe">
+  <l n="571">Ecce <name type="animal" xml:lang="la">anus</name> in mediis residens annosa puellis</l>
+  <l n="572">sacra facit Tacitae (vix tamen ipsa tacet),</l>
+  <l n="573">et digitis tria tura tribus sub limine ponit,</l>
+  <l n="574">qua brevis occultum <name type="animal" xml:lang="la">mus</name> sibi fecit iter:</l>
+  <l n="575">tum cantata ligat cum fusco <foreign xml:lang="la">licia</foreign> plumbo,</l>
+  <l n="576">et septem nigras versat in ore fabas,</l>
+  <l n="577">quodque pice adstrinxit, quod acu traiecit aena,</l>
+  <l n="578">obsutum <name type="animal" xml:lang="la">maenae</name> torret in igne caput;</l>
+  <l n="579">vina quoque instillat: vini quodcumque relictum est,</l>
+  <l n="580">aut ipsa aut comites, plus tamen ipsa, bibit.</l>
+</lg>
+<lg type="strophe">
+  <l n="581">'hostiles linguas inimicaque vinximus ora'</l>
+  <l n="582">dicit discedens ebriaque exit <name type="animal" xml:lang="la">anus</name>.</l>
+  <l n="583">protinus a nobis quae sit dea Muta requires:</l>
+  <l n="584">disce per antiquos quae mihi nota senes.</l>
+</lg>
+<lg type="strophe">
+  <l n="585"><name type="deity" xml:lang="la">Iuppiter</name>, inmodico <name type="placeName" xml:lang="la">Iuturnae</name> victus amore,</l>
+  <l n="586">multa tulit tanto non patienda deo:</l>
+  <l n="587">illa modo in silvis inter coryleta latebat,</l>
+  <l n="588">nunc in cognatas desiliebat aquas.</l>
+  <l n="589">convocat hic nymphas, <name type="placeName" xml:lang="la">Latium</name> quaecumque tenebant,</l>
+  <l n="590">et iacit in medio talia verba choro:</l>
+</lg>
+<lg type="strophe">
+  <l n="591">'invidet ipsa sibi vitatque quod expedit illi</l>
+  <l n="592">vestra soror, summo iungere membra deo.</l>
+  <l n="593">consulite ambobus: nam quae mea magna voluptas,</l>
+  <l n="594">utilitas vestrae magna sororis erit.</l>
+  <l n="595">vos illi in prima fugienti obsistite ripa,</l>
+  <l n="596">ne sua fluminea corpora mergat aqua.'</l>
+</lg>
+<lg type="strophe">
+  <l n="599">dixerat; adnuerant nymphae <name type="animal" xml:lang="la">Tiberinides</name> omnes</l>
+  <l n="600">quaeque colunt thalamos, <persName>Ilia</persName> <name type="deity">diva</name>, tuos.</l>
+</lg>
+<lg type="strophe">
+  <l n="601">forte fuit <name type="animal" xml:lang="la">Nais</name>, <persName>Lara</persName> nomine; prima sed illi</l>
+  <l n="602">dicta bis antiquum syllaba nomen erat,</l>
+  <l n="603">ex vitio positum. saepe illi dixerat <persName>Almo</persName></l>
+  <l n="604">'nata, tene linguam': nec tamen illa tenet.</l>
+</lg>
+<lg type="strophe">
+  <l n="605">quae simul ac tetigit <persName>Iuturnae</persName> stagna sororis,</l>
+  <l n="606">'effuge' ait 'ripas', dicta refertque <name type="deity">Iovis</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="607">illa etiam <name type="deity">Iunonem</name> adiit, miserataque nuptas</l>
+  <l n="608">'<name type="animal" xml:lang="la">Naida</name> <persName>Iuturnam</persName> vir tuus' inquit 'amat.'</l>
+</lg>
+<lg type="strophe">
+  <l n="609"><name type="deity">Iuppiter</name> intumuit, quaque est non usa modeste</l>
+  <l n="610">eripit huic linguam, <name type="deity">Mercurium</name>que vocat:</l>
+</lg>
+<lg type="strophe">
+  <l n="611">'duc hanc ad manes: locus ille silentibus aptus.</l>
+  <l n="612"><name type="animal" xml:lang="la">nympha</name>, sed infernae <name type="animal" xml:lang="la">nympha</name> paludis erit.'</l>
+</lg>
+<lg type="strophe">
+  <l n="613">iussa <name type="deity">Iovis</name> fiunt. accepit lucus euntes:</l>
+  <l n="614">dicitur illa duci tum placuisse <name type="deity">deo</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="615">vim parat hic, voltu pro verbis illa precatur,</l>
+  <l n="616">et frustra muto nititur ore loqui,</l>
+  <l n="617">fitque gravis geminosque parit, qui compita servant</l>
+  <l n="618">et vigilant nostra semper in urbe <name type="deity">Lares</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="617">Proxima cognati dixere Karistia <name type="animal" xml:lang="la">kari</name>,</l>
+  <l n="618">et venit ad socios turba propinqua deos.</l>
+  <l n="619">scilicet a tumulis et qui periere propinquis</l>
+  <l n="620">protinus ad vivos ora referre iuvat,</l>
+  <l n="621">postque tot amissos quicquid de sanguine restat</l>
+  <l n="622">aspicere et generis dinumerare gradus.</l>
+  <l n="623">innocui veniant: procul hinc, procul impius esto</l>
+  <l n="624">frater et in partus mater acerba suos,</l>
+  <l n="625">cui pater est vivax, qui matris digerit annos,</l>
+  <l n="626">quae premit invisam socrus iniqua nurum.</l>
+  <l n="627">Tantalidae fratres absint et Iasonis uxor,</l>
+  <l n="628">et quae ruricolis semina tosta dedit,</l>
+  <l n="629">et soror et Procne Tereusque duabus iniquus</l>
+  <l n="630">et quicumque suas per scelus auget opes.</l>
+  <l n="631">dis generis date tura boni: Concordia fertur</l>
+  <l n="632">illa praecipue mitis adesse die;</l>
+  <l n="633">et libate dapes, ut, grati pignus honoris,</l>
+  <l n="634">nutriat incinctos missa patella Lares.</l>
+  <l n="635">iamque, ubi suadebit placidos nox umida somnos,</l>
+  <l n="636">larga precaturi sumite vina manu,</l>
+  <l n="637">et 'bene vos, bene te, patriae pater, optime Caesar'</l>
+  <l n="638">dicite; suffuso sint bona verba mero.</l>
+</lg>
+<lg type="strophe">
+  <l n="641">Nox ubi transierit, solito celebretur honore</l>
+  <l n="642">separat indicio qui <name type="deity">deus</name> arva suo.</l>
+  <l n="643"><placeName>Termine</placeName>, sive lapis sive es defossus in agro</l>
+  <l n="644">stipes, ab antiquis tu quoque <name type="deity">numen</name> habes.</l>
+</lg>
+<lg type="strophe">
+  <l n="645">te duo diversa domini de parte coronant,</l>
+  <l n="646">binaque serta tibi binaque liba ferunt.</l>
+  <l n="647">ara fit: huc ignem curto fert rustica testo</l>
+  <l n="648">sumptum de tepidis ipsa colona focis.</l>
+</lg>
+<lg type="strophe">
+  <l n="649">ligna senex minuit concisaque construit arte,</l>
+  <l n="650">et solida ramos figere pugnat humo;</l>
+  <l n="651">tum sicco primas inritat cortice flammas;</l>
+  <l n="652">stat puer et manibus lata canistra tenet.</l>
+</lg>
+<lg type="strophe">
+  <l n="653">inde ubi ter fruges medios immisit in ignes,</l>
+  <l n="654">porrigit incisos filia parva favos.</l>
+  <l n="655">vina tenent alii: libantur singula flammis;</l>
+  <l n="656">spectant, et linguis candida turba favet.</l>
+</lg>
+<lg type="strophe">
+  <l n="657">spargitur et caeso communis <placeName>Terminus</placeName> <name type="animal" xml:lang="la">agno</name>,</l>
+  <l n="658">nec queritur lactans cum sibi <name type="animal" xml:lang="la">porca</name> datur.</l>
+  <l n="659">conveniunt celebrantque dapes vicinia simplex</l>
+  <l n="660">et cantant laudes, <placeName>Termine</placeName> sancte, tuas:</l>
+</lg>
+<lg type="strophe">
+  <l n="661">'tu populos urbesque et regna ingentia finis:</l>
+  <l n="662">omnis erit sine te litigiosus ager.</l>
+  <l n="663">nulla tibi ambitio est, nullo corrumperis auro,</l>
+  <l n="664">legitima servas credita rura fide.</l>
+</lg>
+<lg type="strophe">
+  <l n="665">si tu signasses olim <placeName>Thyreatida</placeName> terram,</l>
+  <l n="666">corpora non leto missa trecenta forent,</l>
+  <l n="667">nec foret <persName>Othryades</persName> congestis lectus in armis.</l>
+  <l n="668">o quantum patriae sanguinis ille dedit!</l>
+</lg>
+<lg type="strophe">
+  <l n="669">quid, nova cum fierent <placeName>Capitolia</placeName>? nempe deorum</l>
+  <l n="670">cuncta <persName>Iovi</persName> cessit turba locumque dedit;</l>
+  <l n="671"><placeName>Terminus</placeName>, ut veteres memorant, inventus in aede</l>
+  <l n="672">restitit et magno cum <persName>Iove</persName> templa tenet.</l>
+</lg>
+<lg type="strophe">
+  <l n="673">nunc quoque, se supra ne quid nisi <name type="deity" xml:lang="la">sidera</name> cernat,</l>
+  <l n="674">exiguum templi tecta foramen habent.</l>
+</lg>
+<lg type="strophe">
+  <l n="675">Termine, post illud levitas tibi libera non est:</l>
+  <l n="676">qua positus fueris in statione, mane;</l>
+  <l n="677">nec tu vicino quicquam concede roganti,</l>
+</lg>
+<lg type="strophe">
+  <l n="678">ne videare hominem praeposuisse <name type="deity" xml:lang="la">Iovi</name>:</l>
+  <l n="679">et seu vomeribus seu tu pulsabere rastris,</l>
+  <l n="680">clamato "tuus est hic <name type="animal" xml:lang="la">ager</name>, ille tuus".'</l>
+</lg>
+<lg type="strophe">
+  <l n="681">est via quae populum <placeName xml:lang="la">Laurentes</placeName> ducit in agros,</l>
+  <l n="682">quondam <persName>Dardanio</persName> regna petita duci:</l>
+</lg>
+<lg type="strophe">
+  <l n="683">illa <name type="animal" xml:lang="la">lanigeri</name> <name type="animal" xml:lang="la">pecoris</name> tibi, <name type="deity" xml:lang="la">Termine</name>, fibris</l>
+  <l n="684">sacra videt fieri sextus ab <placeName xml:lang="la">Urbe</placeName> lapis.</l>
+</lg>
+<lg type="strophe">
+  <l n="685">gentibus est aliis tellus data limite certo:</l>
+  <l n="686"><placeName xml:lang="la">Romanae</placeName> spatium est <placeName xml:lang="la">Urbis</placeName> et orbis idem.</l>
+</lg>
+<lg type="strophe">
+  <l n="689">Nunc mihi dicenda est <name type="animal" xml:lang="la">regis</name> fuga. traxit ab illa</l>
+  <l n="690">sextus ab extremo nomina mense dies.</l>
+</lg>
+<lg type="strophe">
+  <l n="691">ultima <name type="placeName">Tarquinius</name> <name type="deity">Romanae</name> gentis habebat</l>
+  <l n="692"><persName>regna</persName>, vir iniustus, fortis ad arma tamen.</l>
+</lg>
+<lg type="strophe">
+  <l n="693">ceperat hic alias, alias everterat urbes,</l>
+  <l n="694">et <placeName>Gabios</placeName> turpi fecerat arte suos.</l>
+</lg>
+<lg type="strophe">
+  <l n="695">namque trium minimus, proles manifesta <name type="deity">Superbi</name>,</l>
+  <l n="696">in medios hostes nocte silente venit.</l>
+</lg>
+<lg type="strophe">
+  <l n="697">nudarant gladios: 'occidite' dixit 'inermem:</l>
+  <l n="698">hoc cupiant fratres <persName>Tarquinius</persName>que pater,</l>
+</lg>
+<lg type="strophe">
+  <l n="699">qui mea crudeli laceravit verbere terga'</l>
+  <l n="700">(dicere ut hoc posset, verbera passus erat).</l>
+</lg>
+<lg type="strophe">
+  <l n="701">luna fuit: spectant iuvenem, gladiosque recondunt,</l>
+  <l n="702">tergaque, deducta veste, notata vident:</l>
+</lg>
+<lg type="strophe">
+  <l n="703">flent quoque, et ut secum tueatur bella precantur.</l>
+  <l n="704">callidus ignaris adnuit ille viris.</l>
+</lg>
+<lg type="strophe">
+  <l n="705">iamque potens misso genitorem appellat amico,</l>
+  <l n="706">perdendi <placeName>Gabios</placeName> quod sibi monstret iter.</l>
+</lg>
+<lg type="strophe">
+  <l n="707">hortus odoratis suberat cultissimus <name type="plant" xml:lang="la">herbis</name>,</l>
+  <l n="708">sectus humum rivo lene sonantis <name type="animal" xml:lang="la">aquae</name>:</l>
+</lg>
+<lg type="strophe">
+  <l n="709">illic <persName>Tarquinius</persName> mandata latentia nati</l>
+  <l n="710">accipit, et virga <name type="plant" xml:lang="la">lilia</name> summa metit.</l>
+</lg>
+<lg type="strophe">
+  <l n="711">nuntius ut rediit decussaque <name type="plant" xml:lang="la">lilia</name> dixit,</l>
+  <l n="712">filius 'agnosco iussa parentis' ait.</l>
+</lg>
+<lg type="strophe">
+  <l n="713">nec mora, principibus caesis ex urbe <placeName>Gabina</placeName>,</l>
+  <l n="714">traduntur ducibus moenia nuda suis.</l>
+</lg>
+<lg type="strophe">
+  <l n="715">ecce, nefas visu, mediis altaribus <name type="animal" xml:lang="la">anguis</name></l>
+  <l n="716">exit et exstinctis ignibus exta rapit.</l>
+</lg>
+<lg type="strophe">
+  <l n="717">consulitur <name type="deity">Phoebus</name>. sors est ita reddita: 'matri</l>
+  <l n="718">qui dederit princeps oscula, victor erit.'</l>
+</lg>
+<lg type="strophe">
+  <l n="719">oscula quisque suae matri properata tulerunt,</l>
+  <l n="720">non intellecto credula turba deo.</l>
+</lg>
+<lg type="strophe">
+  <l n="721"><persName>Brutus</persName> erat stulti sapiens imitator, ut esset</l>
+</lg>
+<lg type="strophe">
+  <l n="719">tutus ab insidiis, <name type="deity">dire Superbe</name>, tuis.</l>
+  <l n="720">ille iacens pronus matri dedit oscula <name type="deity">Terrae</name>,</l>
+  <l n="721">creditus offenso procubuisse pede.</l>
+</lg>
+<lg type="strophe">
+  <l n="722">cingitur interea Romanis <placeName>Ardea</placeName> signis,</l>
+  <l n="723">et patitur longas obsidione moras.</l>
+</lg>
+<lg type="strophe">
+  <l n="724">dum vacat et metuunt hostes committere pugnam,</l>
+  <l n="725">luditur in castris, otia miles agit.</l>
+</lg>
+<lg type="strophe">
+  <l n="726"><persName>Tarquinius</persName> iuvenis socios dapibusque meroque</l>
+  <l n="727">accipit; ex illis rege creatus ait:</l>
+</lg>
+<lg type="strophe">
+  <l n="728">'dum nos sollicitos pigro tenet <placeName>Ardea</placeName> bello,</l>
+  <l n="729">nec sinit ad patrios arma referre deos,</l>
+  <l n="730">ecquid in officio torus est socialis? et ecquid</l>
+  <l n="731">coniugibus nostris mutua cura sumus?'</l>
+</lg>
+<lg type="strophe">
+  <l n="732">quisque suam laudat: studiis certamina crescunt,</l>
+  <l n="733">et fervet multo linguaque corque mero.</l>
+</lg>
+<lg type="strophe">
+  <l n="734">surgit cui dederat clarum <placeName>Collatia</placeName> nomen:</l>
+  <l n="735">'non opus est verbis, credite rebus' ait.</l>
+</lg>
+<lg type="strophe">
+  <l n="736">'nox superest: tollamur equis <placeName>Urbem</placeName> petamus';</l>
+  <l n="737">dicta placent, frenis impediuntur equi.</l>
+</lg>
+<lg type="strophe">
+  <l n="728">pertulerant dominos. regalia protinus illi</l>
+  <l n="729">tecta petunt: custos in fore nullus erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="740">ecce nurum regis fusis per colla coronis</l>
+  <l n="741">inveniunt posito pervigilare mero.</l>
+</lg>
+<lg type="strophe">
+  <l n="742">inde cito passu petitur <persName>Lucretia</persName>, cuius</l>
+  <l n="743">ante torum calathi lanaque mollis erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="744">lumen ad exiguum famulae data pensa trahebant;</l>
+  <l n="745">inter quas tenui sic ait illa sono:</l>
+</lg>
+<lg type="strophe">
+  <l n="746">'mittenda est domino (nunc, nunc properate, puellae)</l>
+  <l n="747">quamprimum nostra facta lacerna manu.</l>
+</lg>
+<lg type="strophe">
+  <l n="748">quid tamen auditis (nam plura audire potestis)?</l>
+  <l n="749">quantum de bello dicitur esse super?</l>
+</lg>
+<lg type="strophe">
+  <l n="750">postmodo victa cades: melioribus, <placeName>Ardea</placeName>, restas,</l>
+  <l n="751">improba, quae nostros cogis abesse viros.</l>
+</lg>
+<lg type="strophe">
+  <l n="751">sint tantum reduces. sed enim temerarius ille</l>
+  <l n="752">est meus, et stricto qualibet ense ruit.</l>
+  <l n="753">mens abit et morior, quotiens pugnantis imago</l>
+  <l n="754">me subit, et gelidum pectora frigus habet.'</l>
+</lg>
+<lg type="strophe">
+  <l n="755">desinit in lacrimas inceptaque fila remisit,</l>
+  <l n="756">in gremio voltum deposuitque suum.</l>
+  <l n="757">hoc ipsum decuit: lacrimae decuere pudicam,</l>
+  <l n="758">et facies animo dignaque parque fuit.</l>
+</lg>
+<lg type="strophe">
+  <l n="759">'pone metum, veni' coniunx ait; illa revixit,</l>
+  <l n="760">deque viri collo dulce pependit onus.</l>
+</lg>
+<lg type="strophe">
+  <l n="761">interea iuvenis furiales regius ignes</l>
+  <l n="762">concipit, et caeco raptus amore furit.</l>
+  <l n="763">forma placet niveusque color flavique capilli</l>
+  <l n="764">quique aderat nulla factus ab arte decor:</l>
+  <l n="765">verba placent et vox et quod corrumpere non est;</l>
+  <l n="766">quoque minor spes est, hoc magis ille cupit.</l>
+</lg>
+<lg type="strophe">
+  <l n="767">iam dederat cantus lucis praenuntius ales,</l>
+  <l n="768">cum referunt iuvenes in sua castra pedem.</l>
+</lg>
+<lg type="strophe">
+  <l n="769">carpitur attonitos absentis imagine sensus</l>
+  <l n="770">ille; recordanti plura magisque placent.</l>
+</lg>
+<lg type="strophe">
+  <l n="771">sic sedit, sic culta fuit, sic stamina nevit,</l>
+  <l n="772">iniectae collo sic iacuere comae,</l>
+  <l n="773">hos habuit voltus, haec illi verba fuerunt,</l>
+  <l n="774">hic color, haec facies, hic decor oris erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="775">ut solet a magno fluctus languescere flatu,</l>
+  <l n="776">sed tamen a vento, qui fuit, unda tumet,</l>
+  <l n="777">sic, quamvis aberat placitae praesentia formae,</l>
+  <l n="778">quem dederat praesens forma, manebat amor.</l>
+</lg>
+<lg type="strophe">
+  <l n="779">ardet, et iniusti stimulis agitatus amoris</l>
+  <l n="780">comparat indigno vimque metumque toro.</l>
+  <l n="781">'exitus in dubio est: audebimus ultima' dixit:</l>
+  <l n="782">viderit! audentes forsque deusque iuvat.</l>
+</lg>
+<lg type="strophe">
+  <l n="781">cepimus audendo Gabios quoque.' talia fatus</l>
+  <l n="782">ense latus cinxit tergaque pressit equi.</l>
+</lg>
+<lg type="strophe">
+  <l n="783">accipit aerata iuvenem Collatia porta,</l>
+  <l n="784">condere iam voltus sole parante suos.</l>
+</lg>
+<lg type="strophe">
+  <l n="785">hostis ut hospes init penetralia Collatini:</l>
+  <l n="786">comiter excipitur; sanguine iunctus erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="787">quantum animis erroris inest! parat inscia rerum</l>
+  <l n="788">infelix epulas hostibus illa suis.</l>
+</lg>
+<lg type="strophe">
+  <l n="789">functus erat dapibus: poscunt sua tempora somnum;</l>
+  <l n="790">nox erat, et tota lumina nulla domo.</l>
+</lg>
+<lg type="strophe">
+  <l n="791">surgit et aurata vagina liberat ensem</l>
+  <l n="792">et venit in thalamos, nupta pudica, tuos;</l>
+</lg>
+<lg type="strophe">
+  <l n="793">utque torum pressit, 'ferrum, <name type="animal" xml:lang="la">Lucretia</name>, mecum est'</l>
+  <l n="794">natus ait regis, 'Tarquiniusque loquor.'</l>
+</lg>
+<lg type="strophe">
+  <l n="795">illa nihil, neque enim vocem viresque loquendi</l>
+  <l n="796">aut aliquid toto pectore mentis habet;</l>
+</lg>
+<lg type="strophe">
+  <l n="797">sed tremit, ut quondam stabulis deprensa relictis</l>
+  <l n="798">parva sub infesto cum iacet <name type="animal" xml:lang="la">agna</name> <name type="animal" xml:lang="la">lupo</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="799">quid faciat? pugnet? vincetur femina pugnans.</l>
+  <l n="800">clamet? at in dextra, qui vetet, ensis erat.</l>
+</lg>
+<lg type="strophe">
+  <l n="801">effugiat? positis urgentur pectora palmis,</l>
+  <l n="802">tum primum externa pectora tacta manu.</l>
+</lg>
+<lg type="strophe">
+  <l n="803">instat amans hostis precibus pretioque minisque:</l>
+  <l n="804">nec prece nec pretio nec movet ille minis.</l>
+</lg>
+<lg type="strophe">
+  <l n="805">'nil agis: eripiam' dixit 'per crimina vitam:</l>
+  <l n="806">falsus adulterii testis adulter ero:</l>
+</lg>
+<lg type="strophe">
+  <l n="807">interimam famulum, cum quo deprensa fereris.'</l>
+  <l n="808">succubuit famae victa puella metu.</l>
+</lg>
+<lg type="strophe">
+  <l n="809">quid, victor, gaudes? haec te victoria perdet.</l>
+  <l n="810">heu quanto regnis nox stetit una tuis!</l>
+</lg>
+<lg type="strophe">
+  <l n="811">iamque erat orta dies: passis sedet illa capillis,</l>
+  <l n="812">ut solet ad nati mater itura rogum,</l>
+</lg>
+<lg type="strophe">
+  <l n="815">grandaevumque patrem fido cum coniuge <name type="animal" xml:lang="la">castris</name></l>
+  <l n="816">evocat: et posita venit uterque mora.</l>
+  <l n="817">utque vident habitum, quae luctus causa, requirunt,</l>
+  <l n="818">cui paret exsequias, quoque sit icta malo.</l>
+  <l n="819">illa diu reticet pudibundaque celat amictu</l>
+  <l n="820">ora: fluunt lacrimae more perennis <name type="plant" xml:lang="la">aquae</name>.</l>
+  <l n="821">hinc pater, hinc coniunx lacrimas solantur et orant</l>
+  <l n="822">indicet et caeco flentque paventque metu.</l>
+  <l n="823">ter conata loqui ter destitit, ausaque quarto</l>
+  <l n="824">non oculos ideo sustulit illa suos.</l>
+  <l n="825">'hoc quoque Tarquinio debebimus? eloquar' inquit,</l>
+  <l n="826">'eloquar infelix dedecus ipsa meum?'</l>
+  <l n="827">quaeque potest, narrat; restabant ultima: flevit,</l>
+  <l n="828">et matronales erubuere genae.</l>
+  <l n="829">dant veniam facto genitor coniunxque coactae:</l>
+  <l n="830">'quam' dixit 'veniam vos datis, ipsa nego.'</l>
+  <l n="831">nec mora, celato fixit sua pectora ferro,</l>
+  <l n="832">et cadit in patrios sanguinulenta pedes.</l>
+  <l n="833">tum quoque iam moriens ne non procumbat honeste</l>
+  <l n="834">respicit: haec etiam cura cadentis erat.</l>
+  <l n="835">ecce super corpus, communia damna gementes,</l>
+  <l n="836">obliti decoris virque paterque iacent.</l>
+  <l n="837"><persName>Brutus</persName> adest, tandemque animo sua nomina fallit,</l>
+  <l n="838">fixaque semanimi corpore tela rapit,</l>
+  <l n="839">stillantemque tenens generoso sanguine cultrum</l>
+  <l n="840">edidit impavidos ore minante sonos:</l>
+  <l n="815">'per tibi ego hunc iuro fortem castumque cruorem,</l>
+  <l n="842">perque tuos manes, qui mihi numen erunt,</l>
+  <l n="843"><persName>Tarquinium</persName> profuga poenas cum stirpe daturum.</l>
+  <l n="844">iam satis est virtus dissimulata diu.'</l>
+  <l n="845">illa iacens ad verba oculos sine lumine movit,</l>
+  <l n="846">visaque concussa dicta probare coma.</l>
+</lg>
+<lg type="strophe">
+  <l n="847">fertur in exsequias animi matrona virilis</l>
+  <l n="848">et secum lacrimas invidiamque trahit.</l>
+  <l n="849">volnus inane patet: Brutus clamore Quirites</l>
+  <l n="850">concitat et regis facta nefanda refert.</l>
+</lg>
+
+<lg type="strophe">
+  <l n="851">Tarquinius cum prole fugit: capit annua consul</l>
+  <l n="852">iura: dies regnis illa suprema fuit.</l>
+  <l n="853">Fallimur, an veris praenuntia venit hirundo,</l>
+  <l n="854">nec metuit ne qua versa recurrat hiems?</l>
+</lg>
+
+<lg type="strophe">
+  <l n="855">saepe tamen, <name type="person">Procne</name>, nimium properasse quereris,</l>
+  <l n="856">virque tuo <name type="person">Tereus</name> frigore laetus erit.</l>
+</lg>
+
+<pb n="856a"/>
+<lg type="strophe">
+  <l n="857">Iamque duae restant noctes de mense secundo,</l>
+  <l n="858"><name type="deity">Mars</name>que citos iunctis curribus urget equos;</l>
+  <l n="859">ex vero positum permansit <name type="placeName">Equirria</name> nomen,</l>
+  <l n="860">quae deus in campo prospicit ipse suo.</l>
+</lg>
+
+<lg type="strophe">
+  <l n="861">iure venis, <name type="deity">Gradive</name>: locum tua tempora poscunt,</l>
+  <l n="862">signatusque tuo nomine mensis adest.</l>
+  <l n="863">venimus in portum libro cum mense peracto.</l>
+  <l n="864">naviget hinc alia iam mihi linter aqua.</l>
+</lg>
+    </body>
+  </text>
+</TEI>

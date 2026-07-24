@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Cynegetica</title>
+        <title type="alt" xml:lang="fr">Les cynégétiques</title>
+        <title type="alt" xml:lang="en">Cynegetica</title>
+        <author>
+          <persName>NEMESIANUS, MARCUS AURELIUS OLYMPUS</persName>
+          <idno type="zoomathia">stoa0209</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-22">2026-07-22</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-22">2026-07-22</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0209</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<head type="main">Ecloga III</head>
+
+<lg type="strophe">
+  <l n="1">PAN, deus Arcadiae, quem silva nemusque ferebat,</l>
+  <l n="2">cuius et in summis uerticibus nemorisque recessu</l>
+  <l n="3">uox sacra fuit, quem saepe uenatus ad alta</l>
+  <l n="4">siluarum fugiens nemorisque silentia rupit.</l>
+</lg>
+
+<lg type="strophe">
+  <l n="5">hunc ego, quem uolucres ac fera silua uocabat,</l>
+  <l n="6">quem uolucres ac fera silua uocabat,</l>
+  <l n="7">hunc ego, quem uolucres ac fera silua uocabat,</l>
+  <l n="8">hunc ego, quem uolucres ac fera silua uocabat.</l>
+</lg>
+<lg type="strophe">
+  <l n="1">Nyctilus <name type="animal" xml:lang="la">atque</name> <persName>Micon</persName> nec non et pulcher <persName>Amyntas</persName></l>
+  <l n="2">torrentem patula vitabant ilice solem</l>
+  <l n="3">cum <name type="deity">Pan</name> venatu fessus recubare sub <name type="plant" xml:lang="la">ulmo</name></l>
+  <l n="4">coeperat et somno lassatas sumere vires;</l>
+  <l n="5">quem super ex tereti pendebat fistula ramo.</l>
+</lg>
+<lg type="strophe">
+  <l n="6">Hanc pueri, tamquam praedam pro carmine possent</l>
+  <l n="7">sumere fasque esset calamos tractare deorum</l>
+  <l n="8">invadunt furto. Sed nec resonare canorem</l>
+  <l n="9">fistula quem suerat nec vult contexere carmen</l>
+  <l n="10">sed pro carminibus male dissona sibila reddit,</l>
+</lg>
+<lg type="strophe">
+  <l n="11">cum <name type="deity">Pan</name> excussus sonitu stridentis avenae</l>
+  <l n="12">iamque videns: "Pueri, si carmina poscitis, inquit,</l>
+  <l n="13">ipse canam. Nulli fas est inflare <name type="plant" xml:lang="la">cicutas</name></l>
+  <l n="14">quas ego Maenaliis cera coniungo sub antris.</l>
+  <l n="15">Iamque ortus, <name type="deity">Lenaee</name>, tuos et semina <name type="plant" xml:lang="la">vitis</name></l>
+  <l n="16">ordine detexam: debemus carmina <name type="deity">Baccho</name>".</l>
+</lg>
+<lg type="strophe">
+  <l n="17">Haec fatus coepit calamis sic montivagus <name type="deity">Pan</name>:</l>
+  <l n="18">"Te cano, qui gravidis <name type="plant" xml:lang="la">hedera</name>ata fronte corymbis</l>
+  <l n="19">vitea serta plicas quique udo <name type="plant" xml:lang="la">palmite</name> <name type="animal" xml:lang="la">tigres</name></l>
+  <l n="20">ducis odoratis perfusus colla capillis,</l>
+</lg>
+<lg type="strophe">
+  <l n="21">vera <name type="deity">Iovis</name> proles. Nam cum post sidera <foreign xml:lang="la">caeli</foreign></l>
+  <l n="22">sola <name type="deity">Iovis</name> <persName>Semele</persName> vidit <name type="deity">Iovis</name> ora professum,</l>
+  <l n="23">hunc pater omnipotens, venturi providus aevi,</l>
+  <l n="24">pertulit et iusto produxit tempore partus.</l>
+</lg>
+<lg type="strophe">
+  <l n="25">Hunc <persName>Nymphae</persName> <persName>Faunique</persName> senes <persName>Satyrique</persName> procaces</l>
+  <l n="26">nosque etiam <placeName>Nysae</placeName> viridi nutrimus in antro.</l>
+  <l n="27">Quin et <persName>Silenus</persName> parvum veteranus alumnum</l>
+  <l n="28">aut gremio fovet aut resupinis sustinet ulnis,</l>
+  <l n="29">evocat aut risum digito motuve quietem</l>
+  <l n="30">allicit aut tremulis quassat crepitacula palmis.</l>
+</lg>
+<lg type="strophe">
+  <l n="31">Cui deus arridens horrentes pectore saetas</l>
+  <l n="32">vellicat aut digitis aures astringit acutas</l>
+</lg>
+<lg type="strophe">
+  <l n="33">applauditve manu mutilum caput aut breve mentum</l>
+  <l n="34">et simas tenero collidit pollice nares.</l>
+</lg>
+<lg type="strophe">
+  <l n="35">Interea pueri florescit pube iuventus</l>
+  <l n="36">flavaque maturo tumuerunt tempora cornu.</l>
+</lg>
+<lg type="strophe">
+  <l n="37">Tum primum laetas ostendit pampinus <name type="plant" xml:lang="la">uvas</name>:</l>
+  <l n="38">mirantur <name type="deity">Satyri</name> frondes et poma <name type="deity">Lyaei</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="39">Tum deus: "O <name type="deity">Satyri</name>, maturos carpite fetus,</l>
+  <l n="40">dixit, et ignotos primi calcate racemos".</l>
+</lg>
+<lg type="strophe">
+  <l n="41">Vix haec ediderat, decerpunt <name type="plant" xml:lang="la">vitibus</name> <name type="plant" xml:lang="la">uvas</name></l>
+  <l n="42">et portant calathis celerique elidere planta</l>
+  <l n="43">concava saxa super properant: vindemia fervet</l>
+  <l n="44">collibus in summis, crebro pede rumpitur <name type="plant" xml:lang="la">uva</name></l>
+  <l n="45">rubraque purpureo sparguntur pectora musto.</l>
+</lg>
+<lg type="strophe">
+  <l n="46">Tum <name type="deity">Satyri</name>, lasciva cohors, sibi pocula quisque</l>
+  <l n="47">obvia corripiunt: quae fors dedit, arripit usus.</l>
+</lg>
+<lg type="strophe">
+  <l n="48"><name type="deity">Cantharon</name> hic retinet, cornu bibit alter adunco,</l>
+  <l n="49">concavat ille manus palmasque in pocula vertit,</l>
+  <l n="50">pronus at ille lacu bibit et crepitantibus haurit</l>
+  <l n="51">musta labris; alius vocalia cymbala mergit</l>
+</lg>
+<lg type="strophe">
+  <l n="52">atque alius latices pressis resupinus ab <name type="plant" xml:lang="la">uvibus</name></l>
+  <l n="53">excipit; at potus (saliens liquor ore resultat)</l>
+  <l n="54">evomit inque humeros et pectora defluit umor.</l>
+</lg>
+<lg type="strophe">
+  <l n="55">Omnia ludus habet cantusque chorique licentes;</l>
+  <l n="56">et venerem iam <name type="deity">vina</name> movent: raptantur amantes</l>
+  <l n="57">concubitu <name type="deity">Satyri</name> fugientes iungere <name type="deity">Nymphas</name>;</l>
+  <l n="58">iam iamque elapsas, hic crine, hic veste retentat.</l>
+</lg>
+<lg type="strophe">
+  <l n="59">Tum primum roseo <name type="deity">Silenus</name> cymbia musto</l>
+  <l n="60">plena senex avide non aequis viribus hausit:</l>
+  <l n="61">ex illo venas inflatus nectare dulci</l>
+  <l n="62">hesternoque gravis semper ridetur <name type="deity">Iaccho</name>.</l>
+</lg>
+<lg type="strophe">
+  <l n="63">Quin etiam deus ille, deus <name type="deity">Iove</name> prosatus ipso,</l>
+  <l n="64">et plantis <name type="plant" xml:lang="la">uvas</name> premit et de <name type="plant" xml:lang="la">vitibus</name> hastas</l>
+</lg>
+<lg type="strophe">
+   <l n="65">integit et <name type="animal" xml:lang="la">lynci</name> praebet cratera bibenti</l>
+</lg>
+<lg type="strophe">
+   <l>Haec <persName>Pan</persName> <placeName>Maenalia</placeName> pueros in valle docebat</l>
+   <l>sparsas donec <name type="animal" xml:lang="la">oves</name> campo conducere in unum</l>
+   <l><name type="deity">nox</name> iubet, uberibus suadens siccare fluorem</l>
+   <l><name type="plant" xml:lang="la">lactis</name> et in niveas astrictum cogere <name type="plant" xml:lang="la">glaebas</name>.</l>
+</lg>
+    </body>
+  </text>
+</TEI>

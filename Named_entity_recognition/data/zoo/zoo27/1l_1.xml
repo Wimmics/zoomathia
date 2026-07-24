@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Cynegetica</title>
+        <title type="alt" xml:lang="fr">Les cynégétiques</title>
+        <title type="alt" xml:lang="en">Cynegetica</title>
+        <author>
+          <persName>NEMESIANUS, MARCUS AURELIUS OLYMPUS</persName>
+          <idno type="zoomathia">stoa0209</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-22">2026-07-22</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-22">2026-07-22</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0209</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="ecloga" n="1">
+   <p><persName>Nemesianus</persName>: <foreign xml:lang="la">Ecloga</foreign> I</p>
+   <div type="section" n="1">
+      <head>Lusus</head>
+      <head>Thymoethas</head>
+      <p><persName>Tityrus</persName></p>
+      <p><quote>"Dum <name type="plant" xml:lang="la">fiscella</name> tibi <placeName>fluviali</placeName>, <persName>Tityre</persName>, <name type="plant" xml:lang="la">iunco</name></quote></p>
+      <p><quote>texitur et <name type="animal" xml:lang="la">raucis</name> <name type="animal" xml:lang="la">cicadis</name> immunia <placeName>rura</placeName>,</quote></p>
+      <p><quote>incipe, si quod habes <name type="plant" xml:lang="la">gracili</name> sub <name type="plant" xml:lang="la">harundine</name> <name type="animal" xml:lang="la">carmine</name></quote></p>
+      <p><quote>compositum. Nam te <name type="plant" xml:lang="la">calamos</name> inflare <name type="plant" xml:lang="la">labello</name></quote></p>
+      <p><quote><name type="deity" xml:lang="la">Pan</name> docuit <name type="plant" xml:lang="la">versuque</name> bonus tibi favit <name type="deity" xml:lang="la">Apollo</name>.</quote></p>
+      <p><quote>Incipe, dum <name type="plant" xml:lang="la">salices</name>, <name type="animal" xml:lang="la">haedi</name>, dum <name type="plant" xml:lang="la">gramina</name> <name type="animal" xml:lang="la">vaccae</name></quote></p>
+      <p><quote>detondent, <name type="plant" xml:lang="la">viridique</name> <name type="animal" xml:lang="la">greges</name> permittere <placeName>campo</placeName></quote></p>
+      <p><quote>dum <name type="plant" xml:lang="la">ros</name> et <name type="deity" xml:lang="la">primi</name> <name type="deity" xml:lang="la">solis</name> suadet <foreign xml:lang="la">clementia</foreign>.</quote></p>
+   </div>
+   <div type="section" n="2">
+      <head><persName>Tityrus</persName></head>
+      <p><quote>Hos annos <name type="animal" xml:lang="la">canamque</name> <name type="plant" xml:lang="la">comam</name>, <persName>vicine</persName> <persName>Thymoeta</persName>,</quote></p>
+      <p><quote>tu <name type="animal" xml:lang="la">iuvenis</name> carusque <name type="deity" xml:lang="la">deis</name> in <name type="animal" xml:lang="la">carmina</name> cogis?</quote></p>
+      <p><quote>Diximus et <name type="plant" xml:lang="la">calamis</name> <name type="animal" xml:lang="la">versus</name> cantavimus olim,</quote></p>
+      <p><quote>dum <foreign xml:lang="la">secura</foreign> <name type="animal" xml:lang="la">hilares</name> <name type="animal" xml:lang="la">aetas</name> ludebat <name type="animal" xml:lang="la">amores</name>.</quote></p>
+      <p><quote>Nunc <name type="animal" xml:lang="la">album</name> <name type="plant" xml:lang="la">caput</name> et <name type="animal" xml:lang="la">veneres</name> tepuere sub <name type="animal" xml:lang="la">annis</name>;</quote></p>
+      <p><quote>iam mea <persName>ruricolae</persName> dependet <name type="plant" xml:lang="la">fistula</name> <name type="deity" xml:lang="la">Fauno</name>.</quote></p>
+      <p><quote>Te nunc <placeName>rura</placeName> sonant; <foreign xml:lang="la">nuper</foreign> nam <name type="animal" xml:lang="la">carmine</name> <name type="animal" xml:lang="la">victor</name></quote></p>
+      <p><quote>risisti <name type="plant" xml:lang="la">calamos</name> et <foreign xml:lang="la">disona</foreign> <name type="plant" xml:lang="la">flamina</name> <persName>Mopsi</persName></quote></p>
+      <p><quote><name type="deity" xml:lang="la">iudice</name> me: <persName>mecum</persName> <name type="animal" xml:lang="la">senior</name> <persName>Meliboeus</persName> utrumque</quote></p>
+      <p><quote>audierat <name type="animal" xml:lang="la">laudesque</name> tuas <foreign xml:lang="la">sublime</foreign> ferebat.</quote></p>
+      <p><quote>Quem nunc <foreign xml:lang="la">emeritae</foreign> permensum <name type="animal" xml:lang="la">tempora</name> <name type="animal" xml:lang="la">vitae</name></quote></p>
+      <p><quote><foreign xml:lang="la">secreti</foreign> pars <placeName>orbis</placeName> habet <name type="deity" xml:lang="la">mundusque</name> <name type="deity" xml:lang="la">piorum</name>.</quote></p>
+      <p><quote>Quare age, si qua tibi <persName>Meliboei</persName> <foreign xml:lang="la">gratia</foreign> vivit,</quote></p>
+      <p><quote>dicat <foreign xml:lang="la">honoratos</foreign> <foreign xml:lang="la">praedulcis</foreign> <name type="plant" xml:lang="la">tibia</name> <name type="deity" xml:lang="la">manes</name>.</quote></p>
+   </div>
+   <div type="section" n="3">
+      <head><persName>Thymoetas</persName></head>
+      <p><quote>Et parere decet <foreign xml:lang="la">iussis</foreign> et grata iubentur.</quote></p>
+      <p><quote>Namque fuit dignus <name type="animal" xml:lang="la">senior</name>, quem <name type="animal" xml:lang="la">carmine</name> <name type="deity" xml:lang="la">Phoebus</name>,</quote></p>
+      <p><quote><name type="deity" xml:lang="la">Pan</name> <name type="plant" xml:lang="la">calamis</name>, <name type="plant" xml:lang="la">fidibus</name> <persName>Linus</persName> aut <persName>Oeagrius</persName> <name type="deity" xml:lang="la">Orpheus</name></quote></p>
+      <p><quote>concinerent totque acta <name type="animal" xml:lang="la">viri</name> <name type="animal" xml:lang="la">laudesque</name> sonarent.</quote></p>
+      <p><quote>Sed quia tu nostrae <foreign xml:lang="la">laudem</foreign> deposcis <name type="plant" xml:lang="la">avenae</name>,</quote></p>
+      <p><quote>accipe quae super haec <name type="plant" xml:lang="la">cerasus</name>, quam cernis ad <placeName>amnem</placeName></quote></p>
+      <p><quote>continet, inciso servans mea <name type="animal" xml:lang="la">carmina</name> <name type="plant" xml:lang="la">libro</name>.</quote></p>
+   </div>
+   <div type="section" n="4">
+      <head><persName>Tityrus</persName></head>
+   </div>
+</div>
+<div type="book" n="2">
+  <p>Dic age; sed nobis ne vento garrula pinus</p>
+  <p>obstrepat, has ulmos potius fagosque petamus.</p>
+  <div type="section" n="1">
+    <p><persName>THYMOETAS</persName></p>
+  </div>
+</div>
+<div type="book" n="3">
+   <div type="chapter" n="4">
+      <p>Hic cantare libet: <name type="plant" xml:lang="la">virides</name> nam subicit <name type="plant" xml:lang="la">herbas</name></p>
+      <p><name type="plant" xml:lang="la">mollis</name> <placeName>ager</placeName> lateque tacet <name type="plant" xml:lang="la">nemus</name> omne; quieti</p>
+      <p>aspice ut ecce procul decerpant <name type="animal" xml:lang="la">gramina</name> <name type="animal" xml:lang="la">tauri</name></p>
+      <p><name type="deity">Omniparens</name> <foreign xml:lang="la">aether</foreign> et rerum causa, <name type="plant" xml:lang="la">liquores</name>,</p>
+      <p><name type="deity">corporis</name> et genetrix <placeName>tellus</placeName>, <name type="animal" xml:lang="la">vitalis</name> et <name type="plant" xml:lang="la">aer</name>,</p>
+      <p>accipite hos cantus atque haec nostro <persName>Meliboeo</persName></p>
+      <p>mittite, si sentire datur post fata quietis.</p>
+      <p>Nam si sublimes <name type="animal" xml:lang="la">animae</name> <name type="placeName" xml:lang="la">caelestia</name> templa</p>
+      <p><name type="placeName" xml:lang="la">sidereasque</name> colunt sedes mundoque fruuntur,</p>
+      <p>tu nostros adverte modos, quos ipse benigno</p>
+      <p><name type="animal" xml:lang="la">pectore</name> fovisti, quos tu, <persName>Meliboee</persName>, probasti.</p>
+      <p><name type="plant" xml:lang="la">Longa</name> tibi cunctisque diu spectata <name type="plant" xml:lang="la">senectus</name></p>
+      <p><name type="plant" xml:lang="la">felicesque</name> anni nostri <name type="plant" xml:lang="la">novissimus</name> <name type="plant" xml:lang="la">aevi</name></p>
+      <p><name type="placeName" xml:lang="la">circulus</name> <name type="plant" xml:lang="la">innocuae</name> clauserunt <name type="plant" xml:lang="la">tempora</name> <name type="plant" xml:lang="la">vitae</name>.</p>
+      <p>Nec minus hinc nobis <name type="animal" xml:lang="la">gemitus</name> <name type="plant" xml:lang="la">lacrimaeque</name> fuere,</p>
+      <p>quam si <name type="plant" xml:lang="la">florentes</name> <name type="deity">mors</name> invida carperet <name type="plant" xml:lang="la">annos</name>,</p>
+      <p>nec tenuit tales <name type="plant" xml:lang="la">communis</name> causa <name type="plant" xml:lang="la">querelas</name>.</p>
+      <p><foreign xml:lang="la">Heu</foreign>, <persName>Meliboee</persName>, iaces <name type="animal" xml:lang="la">mortali</name> <name type="plant" xml:lang="la">frigore</name> <name type="plant" xml:lang="la">segnis</name></p>
+      <p><name type="placeName" xml:lang="la">lege</name> <name type="animal" xml:lang="la">hominum</name>, <placeName>caelo</placeName> dignus <name type="animal" xml:lang="la">canente</name> <name type="plant" xml:lang="la">senecta</name></p>
+      <p><name type="deity">concilioque</name> <name type="deity">deum</name>. <name type="plant" xml:lang="la">Plenum</name> tibi <name type="plant" xml:lang="la">ponderis</name> <name type="plant" xml:lang="la">aequi</name></p>
+      <p><name type="animal" xml:lang="la">pectus</name> erat. Tu <name type="animal" xml:lang="la">ruricolum</name> discernere <name type="plant" xml:lang="la">lites</name></p>
+      <p>assueras, varias patiens mulcendo <name type="plant" xml:lang="la">querelas</name>.</p>
+      <p>Sub te <name type="plant" xml:lang="la">ruris</name> amor, sub te <name type="plant" xml:lang="la">reverentia</name> <name type="plant" xml:lang="la">iuris</name></p>
+      <p><name type="plant" xml:lang="la">floruit</name>, <name type="plant" xml:lang="la">ambiguos</name> <name type="placeName" xml:lang="la">signavit</name> <name type="placeName" xml:lang="la">terminus</name> <name type="placeName" xml:lang="la">agros</name>.</p>
+      <p><name type="plant" xml:lang="la">Blanda</name> tibi <name type="animal" xml:lang="la">vultu</name> <name type="plant" xml:lang="la">gravitas</name> et <name type="plant" xml:lang="la">mite</name> <name type="plant" xml:lang="la">serena</name></p>
+      <p><name type="plant" xml:lang="la">fronte</name> <name type="animal" xml:lang="la">supercilium</name>, sed <name type="animal" xml:lang="la">pectus</name> <name type="plant" xml:lang="la">mitius</name> <name type="animal" xml:lang="la">ore</name>.</p>
+      <p>Tu, <name type="plant" xml:lang="la">calamos</name> aptare <name type="animal" xml:lang="la">labris</name> et iungere <name type="plant" xml:lang="la">cera</name></p>
+      <p><name type="deity">hortatus</name>, <name type="plant" xml:lang="la">duras</name> docuisti fallere <name type="plant" xml:lang="la">curas</name>.</p>
+      <p>Nec <name type="animal" xml:lang="la">segnem</name> passus nobis <name type="plant" xml:lang="la">marcere</name> <name type="animal" xml:lang="la">iuventam</name></p>
+      <p><name type="deity">saepe</name> dabas <name type="plant" xml:lang="la">meritae</name> non <name type="plant" xml:lang="la">vilia</name> <name type="plant" xml:lang="la">praemia</name> <name type="deity">musae</name>.</p>
+      <p><name type="deity">Saepe</name> etiam <name type="plant" xml:lang="la">senior</name>, ne nos <name type="animal" xml:lang="la">cantare</name> <name type="plant" xml:lang="la">pigeret</name>,</p>
+      <p><name type="deity">laetus</name> <name type="deity">Phoebea</name> dixisti <name type="plant" xml:lang="la">carmen</name> <name type="plant" xml:lang="la">avena</name>.</p>
+      <p><name type="plant" xml:lang="la">Felix</name> o <persName>Meliboee</persName>, <foreign xml:lang="la">vale</foreign>! Tibi <name type="plant" xml:lang="la">frondis</name> <name type="plant" xml:lang="la">odorae</name></p>
+   </div>
+</div>
+<div type="book" n="4">
+   <p>munera dat <name type="plant" xml:lang="la">laurus</name> carpens ruralis <name type="deity">Apollo</name>;</p>
+   <p>dant <name type="deity">Fauni</name> quod quisque valet, de <name type="plant" xml:lang="la">vite</name> <name type="plant" xml:lang="la">racemos</name>,</p>
+   <p>de <foreign xml:lang="la">messi</foreign> <name type="plant" xml:lang="la">culmos</name> omnique ex <name type="plant" xml:lang="la">arbore</name> <name type="plant" xml:lang="la">fruges</name>;</p>
+   <p>dat grandaeva <name type="deity">Pales</name> spumantia <name type="animal" xml:lang="la">cymbia</name> <foreign xml:lang="la">lacte</foreign>,</p>
+   <p><name type="deity">mella</name> ferunt <name type="deity">Nymphae</name>, pictas dat <name type="deity">Flora</name> coronas.</p>
+   <p><persName>Manibus</persName> hic supremus honor: dant <name type="deity">carmina</name> <name type="deity">Musae</name>,</p>
+   <p><name type="deity">carmina</name> dant <name type="deity">Musae</name>, nos et modulamur <name type="plant" xml:lang="la">avena</name>.</p>
+   <p><foreign xml:lang="la">Silvestris</foreign> te nunc <name type="plant" xml:lang="la">platanus</name>, <persName>Meliboee</persName>, susurrat,</p>
+   <p>te <name type="plant" xml:lang="la">pinus</name>; reboat te quidquid <foreign xml:lang="la">carminis</foreign> <foreign xml:lang="la">echo</foreign></p>
+   <p>respondet <name type="plant" xml:lang="la">silvae</name>; te nostra <name type="animal" xml:lang="la">armenta</name> loquuntur.</p>
+   <p>Namque prius <foreign xml:lang="la">siccis</foreign> <name type="animal" xml:lang="la">phocae</name> pascentur in <name type="placeName">arvis</name></p>
+   <p>vestitusque <name type="placeName">freto</name> vivet <name type="animal" xml:lang="la">leo</name>, <foreign xml:lang="la">dulcia</foreign> <name type="plant" xml:lang="la">mella</name></p>
+   <p>sudabunt <name type="plant" xml:lang="la">taxi</name>, confusis <foreign xml:lang="la">legibus</foreign> <foreign xml:lang="la">anni</foreign></p>
+   <p><foreign xml:lang="la">messem</foreign> <foreign xml:lang="la">tristis</foreign> <name type="deity">hiems</name>, <foreign xml:lang="la">aestas</foreign> tractabit <name type="plant" xml:lang="la">olivam</name>,</p>
+   <p>ante dabit <name type="plant" xml:lang="la">flores</name> <foreign xml:lang="la">autumnus</foreign>, <foreign xml:lang="la">ver</foreign> dabit <name type="plant" xml:lang="la">uvas</name>,</p>
+   <p>quam taceat, <persName>Meliboee</persName>, tuas mea <name type="animal" xml:lang="la">fistula</name> laudes.</p>
+</div>
+<div type="chapter" n="1">
+   <p><persName>TITYRVS</persName></p>
+   <p><foreign xml:lang="la">Perge</foreign> <foreign xml:lang="la">puer</foreign>, coeptumque tibi ne desere <name type="deity">carmina</name>.</p>
+   <p><foreign xml:lang="la">Nam</foreign> sic <foreign xml:lang="la">dulce</foreign> <foreign xml:lang="la">sonas</foreign> ut te placatus <name type="deity">Apollo</name></p>
+   <p><foreign xml:lang="la">provehat</foreign> et <foreign xml:lang="la">felix</foreign> <foreign xml:lang="la">dominam</foreign> perducat in <name type="placeName">urbem</name>.</p>
+   <p><foreign xml:lang="la">Iamque</foreign> hic in <name type="plant" xml:lang="la">silvis</name> praesens tibi <name type="deity">Fama</name> benignum</p>
+   <p><foreign xml:lang="la">stravit</foreign> iter, rumpens <foreign xml:lang="la">livoris</foreign> <name type="plant" xml:lang="la">nubila</name> <name type="animal" xml:lang="la">pinnis</name>.</p>
+   <p><foreign xml:lang="la">Sed</foreign> iam <name type="deity">Sol</name> demittit <name type="animal" xml:lang="la">equos</name> de <foreign xml:lang="la">culmine</foreign> <name type="placeName">mundi</name>,</p>
+   <p><foreign xml:lang="la">fulmineos</foreign> suadens <name type="animal" xml:lang="la">gregibus</name> praebere <foreign xml:lang="la">liquores</foreign>".</p>
+</div>
+    </body>
+  </text>
+</TEI>

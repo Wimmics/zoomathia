@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <title type="alt" xml:lang="fr">Halieutiques</title>
+        <title type="alt" xml:lang="en">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          <idno type="zoomathia">stoa0216</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-22">2026-07-22</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-22">2026-07-22</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0216</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="8">
+   <p>P. OVIDI <persName>NASONIS</persName> METAMORPHOSEN LIBER OCTAVVS</p>
+</div>
+<div type="book" n="2">
+  <p>Iam nitidum retegente diem noctisque fugante<br/>
+tempora Lucifero cadit <name type="animal" xml:lang="la">Eurus</name>, et umida surgunt<br/>
+nubila: dant placidi cursum redeuntibus <name type="animal" xml:lang="la">Austri</name><br/>
+<name type="deity" xml:lang="la">Aeacidis</name> <persName>Cephaloque</persName>; quibus feliciter acti<br/>
+ante exspectatum portus tenuere petitos.</p>
+
+  <p>interea <persName>Minos</persName> <placeName>Lelegeia</placeName> litora vastat<br/>
+praetemptatque sui vires <name type="deity" xml:lang="la">Mavortis</name> in urbe<br/>
+<placeName>Alcathoi</placeName>, quam <persName>Nisus</persName> habet, cui splendidus ostro<br/>
+inter honoratos medioque in vertice <name type="animal" xml:lang="la">canos</name><br/>
+crinis inhaerebat, magni fiducia regni.</p>
+
+  <p><persName>Sexta</persName> resurgebant orientis cornua <name type="animal" xml:lang="la">lunae</name>,<br/>
+et pendebat adhuc belli fortuna, diuque<br/>
+inter utrumque volat dubiis <name type="deity" xml:lang="la">Victoria</name> pennis.</p>
+
+  <p>regia turris erat vocalibus addita muris,<br/>
+in quibus auratam proles <name type="deity" xml:lang="la">Letoia</name> fertur<br/>
+deposuisse lyram: saxo sonus eius inhaesit.<br/>
+saepe illuc solita est ascendere filia <persName>Nisi</persName><br/>
+et petere exiguo resonantia saxa lapillo,<br/>
+tum cum pax esset; bello quoque saepe solebat<br/>
+spectare ex illa rigidi certamina <name type="deity" xml:lang="la">Martis</name>,<br/>
+iamque mora belli procerum quoque nomina norat<br/>
+armaque equosque habitusque <foreign xml:lang="la">Cydoneasque</foreign> pharetras;</p>
+
+  <p>noverat ante alios faciem ducis <foreign xml:lang="la">Europaei</foreign>,<br/>
+plus etiam, quam nosse sat est: hac iudice <persName>Minos</persName>,<br/>
+seu caput abdiderat cristata casside pennis,<br/>
+in galea formosus erat; seu sumpserat aere<br/>
+fulgentem clipeum, clipeum sumpsisse decebat;<br/>
+torserat adductis hastilia lenta lacertis:<br/>
+laudabat virgo iunctam cum viribus artem;<br/>
+inposito calamo patulos sinuaverat arcus:<br/>
+sic <name type="deity" xml:lang="la">Phoebum</name> sumptis iurabat stare sagittis;<br/>
+cum vero faciem dempto nudaverat aere</p>
+</div>
+<div type="book" n="3">
+   <p>purpureusque <name type="animal" xml:lang="la">albi</name> stratis insignia pictis</p>
+   <p><name type="animal" xml:lang="la">terga</name> premebat <name type="animal" xml:lang="la">equi</name> spumantiaque ora regebat,</p>
+   <p>vix sua, vix sanae <persName>virgo Niseia</persName> compos</p>
+   <p><name type="deity">mentis</name> erat: felix <name type="animal" xml:lang="la">iaculum</name>, quod tangeret ille,</p>
+   <p>quaeque manu premeret, felicia <name type="animal" xml:lang="la">frena</name> vocabat.</p>
+   <p><name type="deity">impetus</name> est illi, liceat modo, ferre per agmen</p>
+   <p><name type="deity">virgineos</name> hostile gradus, est <name type="deity">impetus</name> illi</p>
+   <p>turribus e summis in <placeName>Cnosia</placeName> mittere <name type="animal" xml:lang="la">corpus</name></p>
+   <p><name type="deity">castra</name> vel aeratas <name type="animal" xml:lang="la">hosti</name> recludere portas,</p>
+   <p>vel siquid <persName>Minos</persName> aliud velit. utque sedebat</p>
+   <p>candida <placeName>Dictaei</placeName> spectans tentoria <persName>regis</persName>,</p>
+   <p>'laeter,' ait 'doleamne geri lacrimabile <name type="deity">bellum</name>,</p>
+   <p>in dubio est; doleo, quod <persName>Minos</persName> <name type="deity">hostis</name> amanti est.</p>
+   <p>sed nisi bella forent, numquam mihi cognitus esset!</p>
+   <p>me tamen accepta poterat deponere <name type="deity">bellum</name></p>
+   <p><name type="deity">obside</name>: me comitem, me <name type="deity">pacis</name> pignus haberet.</p>
+   <p>si quae te peperit, talis, pulcherrime regum,</p>
+   <p>qualis es ipse, fuit, merito <name type="deity">deus</name> arsit in illa.</p>
+   <p>o ego ter felix, si pennis lapsa per auras</p>
+   <p><placeName>Cnosiaci</placeName> possem castris insistere <persName>regis</persName></p>
+   <p>fassaque me flammasque meas, qua dote, rogarem,</p>
+   <p>vellet emi, tantum patrias ne posceret arces!</p>
+   <p>nam pereant potius sperata cubilia, quam sim</p>
+   <p><name type="deity">proditione</name> potens!—quamvis saepe utile vinci</p>
+   <p><name type="deity">victoris</name> placidi fecit clementia multis.</p>
+   <p>iusta gerit certe pro nato <name type="deity">bella</name> perempto:</p>
+   <p>et causaque valet causamque tuentibus armis.</p>
+   <p>at, puto, vincemur; qui si manet exitus <name type="placeName">urbem</name>,</p>
+   <p>cur suus haec illi reseret mea moenia <name type="deity">Mavors</name></p>
+   <p>et non noster amor? melius sine caede moraque</p>
+   <p>inpensaque sui poterit superare cruoris.</p>
+</div>
+<div type="book" n="4">
+   <p>non metuam certe, ne quis tua pectora, <persName>Minos</persName>,</p>
+   <p>vulneret inprudens: quis enim tam durus, ut in te               65</p>
+   <p>derigere inmitem non inscius audeat hastam?</p>
+   <p>coepta placent, et stat sententia tradere mecum</p>
+   <p>dotalem patriam finemque inponere bello;</p>
+   <p>verum velle parum est! aditus custodia servat,</p>
+   <p>claustraque portarum genitor tenet: hunc ego solum               70</p>
+   <p>infelix timeo, solus mea vota moratur.</p>
+   <p>di facerent, sine patre forem! sibi quisque profecto</p>
+   <p>est deus: ignavis precibus <foreign xml:lang="la">Fortuna</foreign> repugnat.</p>
+   <p>altera iamdudum succensa cupidine tanto</p>
+   <p>perdere gauderet, quodcumque obstaret amori.               75</p>
+   <p>et cur ulla foret me fortior? ire per ignes</p>
+   <p>et gladios ausim; nec in hoc tamen ignibus ullis</p>
+   <p>aut gladiis opus est, opus est mihi crine paterno.</p>
+   <p>illa mihi est auro pretiosior, illa beatam</p>
+   <p>purpura me votique mei factura potentem.'</p>
+   <p><quote>Talia dicenti curarum maxima nutrix</quote></p>
+   <p>nox intervenit, tenebrisque audacia crevit.</p>
+   <p>prima quies aderat, qua curis fessa diurnis</p>
+   <p>pectora somnus habet: thalamos taciturna paternos               85</p>
+   <p>intrat et <quote>(heu facinus!)</quote> fatali nata parentem</p>
+   <p><name type="animal" xml:lang="la">crine</name> suum spoliat praedaque potita nefanda</p>
+   <p>per medios hostes <quote>(meriti fiducia tanta est)</quote>               88</p>
+   <p>pervenit ad regem; quem sic adfata paventem est:</p>
+   <p>'suasit amor facinus: proles ego regia <persName>Nisi</persName></p>
+   <p><name type="animal" xml:lang="la">Scylla</name> tibi trado patriaeque meosque penates;</p>
+   <p>praemia nulla peto nisi te: cape pignus amoris</p>
+   <p>purpureum <name type="animal" xml:lang="la">crinem</name> nec me nunc tradere <name type="animal" xml:lang="la">crinem</name>,</p>
+   <p>sed patrium tibi crede caput!' scelerataque dextra</p>
+</div>
+<div type="book" n="5">
+   <div type="chapter" n="30">
+      <p>munera porrexit; <name type="deity" xml:lang="la">Minos</name> porrecta refugit               95</p>
+      <p>turbatusque novi respondit imagine facti:</p>
+      <p>'<name type="deity" xml:lang="la">di</name> te summoveant, o nostri infamia saecli,</p>
+      <p>orbe suo, tellusque tibi pontusque negetur!</p>
+      <p>certe ego non patiar <name type="deity" xml:lang="la">Iovis</name> incunabula, <persName>Creten</persName>,</p>
+      <p>qui meus est orbis, tantum contingere monstrum.'               100</p>
+      <p><persName>Dixit</persName>, et ut leges captis iustissimus auctor</p>
+      <p>hostibus inposuit, classis retinacula solvi</p>
+      <p>iussit et aeratas impelli remige puppes.</p>
+      <p><name type="placeName" xml:lang="la">Scylla</name> freto postquam deductas nare carinas</p>
+      <p>nec praestare ducem sceleris sibi praemia vidit,               105</p>
+      <p>consumptis precibus violentam transit in iram</p>
+      <p>intendensque manus passis furibunda capillis</p>
+      <p>'quo fugis' exclamat 'meritorum auctore relicta,</p>
+      <p>o patriae praelate meae, praelate parenti?</p>
+      <p>quo fugis, inmitis, cuius victoria nostrum               110</p>
+      <p>et scelus et meritum est? nec te data munera, nec te</p>
+      <p>noster amor movit, nec quod spes omnis in unum</p>
+      <p>te mea congesta est? nam quo deserta revertar?</p>
+      <p>in patriam? superata iacet! sed finge manere:</p>
+      <p>proditione mea clausa est mihi! patris ad ora?               115</p>
+      <p>quem tibi donavi? cives odere merentem,</p>
+      <p>finitimi exemplum metuunt: exponimur orbae</p>
+      <p>terrarum, nobis ut <placeName>Crete</placeName> sola pateret.</p>
+      <p>hac quoque si prohibes et nos, ingrate, relinquis,</p>
+      <p>non genetrix <foreign xml:lang="la">Europa</foreign> tibi est, sed inhospita <name type="placeName" xml:lang="la">Syrtis</name>,               120</p>
+      <p><name type="animal" xml:lang="la">Armeniae</name> <name type="animal" xml:lang="la">tigres</name> <foreign xml:lang="la">austroque</foreign> agitata <name type="animal" xml:lang="la">Charybdis</name>.</p>
+      <p><name type="deity" xml:lang="la">Nec</name> <name type="deity" xml:lang="la">Iove</name> tu natus, nec mater imagine tauri</p>
+      <p>ducta tua est: generis falsa est ea fabula! verus,</p>
+      <p>[et ferus et captus nullius amore <name type="animal" xml:lang="la">iuvencae</name>]</p>
+   </div>
+</div>
+<div type="book" n="6">
+  <div type="chapter" n="6">
+    <p>qui te <name type="deity">Iupiter</name> progenuit, <name type="animal" xml:lang="la">taurus</name> fuit. exige poenas,</p>
+    <p><persName>Nise</persName> pater! gaudete malis, modo prodita, nostris,</p>
+    <p><placeName>moenia</placeName>! nam, fateor, merui et sum digna perire.</p>
+    <p>sed tamen ex illis aliquis, quos impia laesi,</p>
+    <p>me perimat! cur, qui vicisti crimine nostro,</p>
+    <p>insequeris crimen? scelus hoc <name type="deity">patriae</name>que <name type="deity">patrique</name> est,</p>
+    <p>officium tibi sit! te vere coniuge digna est,</p>
+    <p>quae <name type="animal" xml:lang="la">taurum</name> decepit <foreign xml:lang="la">adultera</foreign> <name type="plant" xml:lang="la">ligno</name></p>
+    <p>discordemque <foreign xml:lang="la">utero</foreign> <foreign xml:lang="la">fetus</foreign> tulit. ecquid ad aures</p>
+    <p>perveniunt mea dicta tuas, an <foreign xml:lang="la">inania</foreign> venti</p>
+    <p><foreign xml:lang="la">verba</foreign> ferunt idemque tuas, <foreign xml:lang="la">ingrate</foreign>, <name type="animal" xml:lang="la">carinas</name>?</p>
+    <p>iam iam <persName>Pasiphaen</persName> non est mirabile <name type="animal" xml:lang="la">taurum</name></p>
+    <p>praeposuisse tibi: tu plus <foreign xml:lang="la">feritatis</foreign> habebas.</p>
+    <p>me miseram! properare iubet! divulsaque <foreign xml:lang="la">remis</foreign></p>
+    <p>unda sonat, mecumque simul mea terra recedit.</p>
+    <p>nil agis, o frustra meritorum oblite meorum:</p>
+    <p>insequar invitum puppimque amplexa recurvam</p>
+    <p>per freta longa trahar.' Vix dixerat, insilit undis</p>
+    <p>consequiturque <name type="animal" xml:lang="la">rates</name> faciente <foreign xml:lang="la">cupidine</foreign> vires</p>
+    <p><name type="placeName">Cnosiacae</name>que haeret comes invidiosa <name type="animal" xml:lang="la">carinae</name>.</p>
+    <p>quam <persName>pater</persName> ut vidit (nam iam pendebat in aura</p>
+    <p>et modo factus erat fulvis <name type="animal" xml:lang="la">haliaeetus</name> alis),</p>
+    <p>ibat, ut haerentem rostro laceraret adunco;</p>
+    <p>illa metu puppim dimisit, et aura cadentem</p>
+    <p>sustinuisse levis, ne tangeret aequora, visa est.</p>
+    <p><foreign xml:lang="la">pluma</foreign> subit <foreign xml:lang="la">palmis</foreign>: in avem mutata vocatur</p>
+    <p><name type="animal" xml:lang="la">Ciris</name> et a tonso est hoc nomen adepta <foreign xml:lang="la">capillo</foreign>.</p>
+    <p><quote>Vota <name type="deity">Iovi</name> <persName>Minos</persName> <name type="animal" xml:lang="la">taurorum</name> corpora centum</quote></p>
+    <p>solvit, ut egressus <name type="animal" xml:lang="la">ratibus</name> <placeName>Curetida</placeName> terram</p>
+    <p>contigit, et spoliis decorata est regia fixis.</p>
+  </div>
+</div>
+<div type="book" n="7">
+  <p>creverat obprobrium generis, foedumque patebat               155
+matris adulterium monstri novitate biformis;</p>
+  <p>destinat hunc <persName>Minos</persName> thalamo removere pudorem
+multiplicique domo caecisque includere tectis.</p>
+  <p><persName>Daedalus</persName> ingenio fabrae celeberrimus artis
+ponit opus turbatque notas et lumina flexum               160
+ducit in errorem variarum ambage viarum.</p>
+  <p>non secus ac liquidus <foreign xml:lang="la">Phrygiis</foreign> <name type="placeName">Maeandros</name> in arvis
+ludit et ambiguo lapsu refluitque fluitque
+occurrensque sibi venturas aspicit undas
+et nunc ad fontes, nunc ad mare versus apertum               165
+incertas exercet aquas: ita <persName>Daedalus</persName> implet
+innumeras errore vias vixque ipse reverti
+ad limen potuit: tanta est fallacia tecti.</p>
+  <p>Quo postquam geminam <name type="animal" xml:lang="la">tauri</name> iuvenisque figuram
+clausit, et <placeName>Actaeo</placeName> bis pastum sanguine monstrum               170
+tertia sors annis domuit repetita novenis,
+utque ope virginea nullis iterata priorum
+ianua difficilis filo est inventa relecto,</p>
+  <p>protinus <persName>Aegides</persName> rapta <persName>Minoide</persName> <placeName>Diam</placeName>
+vela dedit comitemque suam crudelis in illo               175
+litore destituit; desertae et multa querenti
+amplexus et opem <name type="deity">Liber</name> tulit, utque perenni
+sidere clara foret, sumptam de fronte coronam
+inmisit caelo: tenues volat illa per auras
+dumque volat, gemmae nitidos vertuntur in ignes               180
+consistuntque loco specie remanente coronae,
+qui medius <persName>Nixique</persName> genu est <name type="animal" xml:lang="la">Anguem</name>que tenentis.</p>
+  <p><persName>Daedalus</persName> interea <placeName>Creten</placeName> longumque perosus
+exilium tactusque loci natalis amore</p>
+</div>
+<div type="book" n="8">
+   <div type="chapter" n="30">
+      <p>clausus erat <placeName>pelago</placeName>. <quote>'terras licet' inquit 'et undas
+         obstruat: et <name type="deity">caelum</name> certe patet; ibimus illac:
+         omnia possideat, non possidet <name type="deity">aera</name> <persName>Minos</persName>.'</quote>
+      </p>
+      <p>dixit et ignotas animum dimittit in artes
+         naturamque novat. nam ponit in ordine pennas
+         <name type="animal" xml:lang="la">a minima</name> coeptas, longam breviore sequenti,
+         ut clivo crevisse putes: sic rustica quondam
+         fistula disparibus paulatim surgit avenis;
+         tum lino medias et ceris alligat imas
+         atque ita conpositas parvo curvamine flectit,
+         ut veras imitetur <name type="animal" xml:lang="la">aves</name>. <persName>puer Icarus</persName> una
+         stabat et, ignarus sua se tractare pericla,
+         ore renidenti modo, quas vaga moverat aura,
+         captabat plumas, flavam modo pollice ceram
+         mollibat lusuque suo mirabile patris
+         impediebat opus.</p>
+      <p>postquam manus ultima coepto
+         inposita est, geminas opifex libravit in alas
+         ipse suum corpus motaque pependit in aura;
+         instruit et natum <quote>'medio' que 'ut limite curras,
+         <persName>Icare</persName>,' ait 'moneo, ne, si demissior ibis,
+         unda gravet pennas, si celsior, ignis adurat:
+         inter utrumque vola. nec te spectare <foreign xml:lang="la">Booten</foreign>
+         aut <foreign xml:lang="la">Helicen</foreign> iubeo strictumque <foreign xml:lang="la">Orionis</foreign> ensem:
+         me duce carpe viam!</quote> pariter praecepta volandi
+         tradit et ignotas umeris accommodat alas.</p>
+      <p>inter opus monitusque genae maduere seniles,
+         et patriae tremuere manus; dedit oscula nato
+         non iterum repetenda suo pennisque levatus
+         ante volat comitique timet, velut <name type="animal" xml:lang="la">ales</name>, ab alto
+         quae teneram prolem produxit in aera nido,
+         hortaturque sequi damnosasque erudit artes</p>
+   </div>
+</div>
+<div type="book" n="9">
+   <div type="chapter" n="30">
+      <p>et movet ipse suas et nati respicit alas.</p>
+      <p>hos aliquis tremula dum captat harundine <name type="animal" xml:lang="la">pisces</name>,</p>
+      <p>aut pastor baculo stivave innixus arator</p>
+      <p>vidit et obstipuit, quique aethera carpere possent,</p>
+      <p>credidit esse <name type="deity">deos</name>. et iam <persName>Iunonia</persName> laeva               220</p>
+      <p>parte <placeName>Samos</placeName> (fuerant <placeName>Delosque</placeName> <placeName>Parosque</placeName> relictae)</p>
+      <p>dextra <placeName>Lebinthos</placeName> erat fecundaque melle <placeName>Calymne</placeName>,</p>
+      <p>cum puer audaci coepit gaudere volatu</p>
+      <p>deseruitque ducem caelique cupidine tractus</p>
+      <p>altius egit iter. rapidi vicinia <name type="celestial" xml:lang="la">solis</name>               225</p>
+      <p>mollit odoratas, pennarum vincula, ceras;</p>
+      <p>tabuerant cerae: nudos quatit ille lacertos,</p>
+      <p>remigioque carens non ullas percipit auras,</p>
+      <p>oraque caerulea patrium clamantia nomen</p>
+      <p>excipiuntur aqua, quae nomen traxit ab illo.               230</p>
+      <p>at pater infelix, nec iam pater, 'Icare,' dixit,</p>
+      <p>'Icare,' dixit 'ubi es? qua te regione requiram?'</p>
+      <p>'Icare' dicebat: pennas aspexit in undis</p>
+      <p>devovitque suas artes corpusque sepulcro</p>
+      <p>condidit, et tellus a nomine dicta sepulti.               235</p>
+      <p>Hunc miseri tumulo ponentem corpora nati</p>
+      <p>garrula limoso prospexit ab <name type="plant" xml:lang="la">elice</name> <name type="animal" xml:lang="la">perdix</name></p>
+      <p>et plausit pennis testataque gaudia cantu est,</p>
+      <p>unica tunc <name type="animal" xml:lang="la">volucris</name> nec visa prioribus annis,</p>
+      <p>factaque nuper avis longum tibi, <persName>Daedale</persName>, crimen.               240</p>
+      <p>namque huic tradiderat, fatorum ignara, docendam</p>
+      <p>progeniem germana suam, natalibus actis</p>
+      <p>bis puerum senis, animi ad praecepta capacis;</p>
+      <p>ille etiam medio spinas in <name type="animal" xml:lang="la">pisce</name> notatas</p>
+      <p>traxit in exemplum ferroque incidit acuto               245</p>
+      <p>perpetuos dentes et serrae repperit usum;</p>
+   </div>
+</div>
+<div type="book" n="10">
+   <p>primus et ex uno duo <name type="animal" xml:lang="la">ferrea</name> bracchia nodo</p>
+   <p>vinxit, ut aequali spatio distantibus illis</p>
+   <p>altera pars staret, pars altera duceret orbem.</p>
+   <p><persName>Daedalus</persName> invidit sacraque ex arce <name type="deity">Minervae</name></p>
+   <p>praecipitem misit, lapsum mentitus; at illum,</p>
+   <p>quae favet ingeniis, excepit <name type="deity">Pallas</name> avemque</p>
+   <p>reddidit et medio velavit in aere pennis,</p>
+   <p>sed vigor ingenii quondam velocis in alas</p>
+   <p>inque pedes abiit; nomen, quod et ante, remansit.</p>
+   <p>non tamen haec alte <name type="animal" xml:lang="la">volucris</name> sua corpora tollit,</p>
+   <p>nec facit in ramis altoque cacumine nidos:</p>
+   <p>propter humum volitat ponitque in saepibus ova</p>
+   <p>antiquique memor metuit sublimia casus.</p>
+   <p>Iamque fatigatum tellus <placeName>Aetnaea</placeName> tenebat</p>
+   <p><persName>Daedalon</persName>, et sumptis pro supplice <persName>Cocalus</persName> armis</p>
+   <p>mitis habebatur; iam lamentabile <placeName>Athenae</placeName></p>
+   <p>pendere desierant <persName>Thesea</persName> laude tributum:</p>
+   <p>templa coronantur, bellatricemque <name type="deity">Minervam</name></p>
+   <p>cum <persName>Iove</persName> disque vocant aliis, quos sanguine voto</p>
+   <p>muneribusque datis et acerris turis honorant;</p>
+   <p>sparserat <placeName>Argolicas</placeName> nomen vaga fama per urbes</p>
+   <p><persName>Theseos</persName>, et populi, quos dives <placeName>Achaia</placeName> cepit,</p>
+   <p>huius opem magnis inploravere periclis,</p>
+   <p>huius opem <placeName>Calydon</placeName>, quamvis <persName>Meleagron</persName> haberet,</p>
+   <p>sollicita supplex petiit prece: causa petendi</p>
+   <p>sus erat, infestae famulus vindexque <name type="deity">Dianae</name>.</p>
+   <p><persName>Oenea</persName> namque ferunt pleni successibus anni</p>
+   <p>primitias frugum <name type="deity">Cereri</name>, sua vina <persName>Lyaeo</persName>,</p>
+   <p><name type="deity">Palladios</name> flavae latices libasse <name type="deity">Minervae</name>;</p>
+   <p>coeptus ab agricolis superos pervenit ad omnes</p>
+   <p>ambitiosus honor: solas sine ture relictas</p>
+</div>
+<div type="book" n="1">
+  <div type="section" n="11">
+    <p>praeteritae cessasse ferunt <name type="deity" xml:lang="la">Latoidos</name> aras.</p>
+    <p>tangit et ira <name type="deity">deos</name>. 'at non inpune feremus,</p>
+    <p>quaeque inhonoratae, non et dicemur inultae'</p>
+    <p>inquit, et <persName>Olenios</persName> ultorem spreta per agros</p>
+    <p>misit <name type="animal" xml:lang="la">aprum</name>, quanto maiores <name type="plant" xml:lang="la">herbida</name> <name type="animal" xml:lang="la">tauros</name></p>
+    <p>non habet <placeName>Epiros</placeName>, sed habent <placeName>Sicula</placeName> arva minores:</p>
+    <p>sanguine et igne micant oculi, riget horrida cervix,</p>
+    <p>et setae similes rigidis hastilibus horrent:</p>
+    <p>fervida cum rauco latos stridore per armos</p>
+    <p><name type="plant" xml:lang="la">spuma</name> fluit, dentes aequantur dentibus <foreign xml:lang="la">Indis</foreign>,</p>
+    <p>fulmen ab ore venit, frondes afflatibus ardent.</p>
+    <p>is modo crescentes <name type="plant" xml:lang="la">segetes</name> proculcat in <name type="plant" xml:lang="la">herba</name>,</p>
+    <p>nunc matura metit fleturi vota <persName>coloni</persName></p>
+    <p>et <name type="deity">Cererem</name> in <name type="plant" xml:lang="la">spicis</name> intercipit: <name type="plant" xml:lang="la">area</name> frustra</p>
+    <p>et frustra exspectant promissas <name type="plant" xml:lang="la">horrea</name> <name type="plant" xml:lang="la">messis</name>.</p>
+    <p>sternuntur gravidi longo cum <name type="plant" xml:lang="la">palmite</name> fetus</p>
+    <p>et <name type="plant" xml:lang="la">baca</name> cum ramis semper frondentis <name type="plant" xml:lang="la">olivae</name>.</p>
+    <p>saevit et in <name type="animal" xml:lang="la">pecudes</name>: non has <persName>pastor</persName>ve <name type="animal" xml:lang="la">canis</name>ve,</p>
+    <p>non <name type="animal" xml:lang="la">armenta</name> truces possunt defendere <name type="animal" xml:lang="la">tauri</name>.</p>
+    <p>diffugiunt populi nec se nisi <name type="placeName" xml:lang="la">moenibus</name> <name type="placeName">urbis</name></p>
+    <p>esse putant tutos, donec <persName>Meleagros</persName> et una</p>
+    <p>lecta manus iuvenum coiere cupidine laudis:</p>
+    <p><persName>Tyndaridae</persName> gemini, praestantes <foreign xml:lang="la">caestibus</foreign> alter,</p>
+    <p>alter <name type="animal" xml:lang="la">equo</name>, primaeque <name type="animal" xml:lang="la">ratis</name> molitor <persName>Iason</persName>,</p>
+    <p>et cum <persName>Pirithoo</persName>, felix concordia, <persName>Theseus</persName>,</p>
+    <p>et duo <persName>Thestiadae</persName> prolesque <persName>Aphareia</persName>, <persName>Lynceus</persName></p>
+    <p>et velox <persName>Idas</persName>, et iam non <persName>femina</persName> <persName>Caeneus</persName>,</p>
+    <p><persName>Leucippusque</persName> ferox iaculoque insignis <persName>Acastus</persName></p>
+    <p><persName>Hippothous</persName>que <persName>Dryas</persName>que et cretus <persName>Amyntore</persName> <persName>Phoenix</persName></p>
+    <p><persName>Actoridae</persName>que pares et missus ab <placeName>Elide</placeName> <persName>Phyleus</persName>.</p>
+  </div>
+</div>
+<div type="book" n="12">
+   <p>nec <name type="person" xml:lang="la">Telamon</name> aberat magnique creator <name type="person" xml:lang="la">Achillis</name></p>
+   <p>cumque <name type="person" xml:lang="la">Pheretiade</name> et <name type="person" xml:lang="la">Hyanteo</name> <name type="person" xml:lang="la">Iolao</name></p>
+   <p><name type="person" xml:lang="la">inpiger</name> <name type="person" xml:lang="la">Eurytion</name> et cursu invictus <name type="person" xml:lang="la">Echion</name></p>
+   <p><name type="person" xml:lang="la">Naryciusque</name> <name type="person" xml:lang="la">Lelex</name> <name type="person" xml:lang="la">Panopeusque</name> <name type="person" xml:lang="la">Hyleusque</name> <name type="person" xml:lang="la">feroxque</name></p>
+   <p><name type="person" xml:lang="la">Hippasus</name> et primis etiamnum <name type="person" xml:lang="la">Nestor</name> in annis,</p>
+   <p>et quos <name type="person" xml:lang="la">Hippocoon</name> antiquis misit <placeName>Amyclis</placeName>,</p>
+   <p><name type="person" xml:lang="la">Penelopaeque</name> socer cum <placeName>Parrhasio</placeName> <name type="person" xml:lang="la">Ancaeo</name>,</p>
+   <p><name type="person" xml:lang="la">Ampycidesque</name> sagax et adhuc a coniuge tutus</p>
+   <p><name type="person" xml:lang="la">Oeclides</name> nemorisque decus <placeName>Tegeaea</placeName> <placeName>Lycaei</placeName>:</p>
+   <p>rasilis huic summam mordebat fibula vestem,</p>
+   <p>crinis erat simplex, nodum conlectus in unum,</p>
+   <p>ex umero pendens resonabat eburnea laevo</p>
+   <p>telorum custos, arcum quoque laeva tenebat;</p>
+   <p>talis erat cultu, facies, quam dicere vere</p>
+   <p>virgineam in puero, puerilem in virgine possis.</p>
+   <p>hanc pariter vidit, pariter <name type="person" xml:lang="la">Calydonius</name> heros</p>
+   <p>optavit renuente deo flammasque latentes</p>
+   <p>hausit et 'o felix, siquem dignabitur' inquit</p>
+   <p>'ista virum!' nec plura sinit tempusque pudorque</p>
+   <p>dicere: maius opus magni certaminis urguet.</p>
+   <div type="section" n="1">
+      <p><placeName>Silva</placeName> frequens trabibus, quam nulla ceciderat aetas,</p>
+      <p>incipit a plano devexaque prospicit arva:</p>
+      <p>quo postquam venere viri, pars retia tendunt,</p>
+      <p>vincula pars adimunt <name type="animal" xml:lang="la">canibus</name>, pars pressa sequuntur</p>
+      <p>signa pedum, cupiuntque suum reperire periclum.</p>
+      <p>concava vallis erat, quo se demittere rivi</p>
+      <p>adsuerant pluvialis aquae; tenet ima lacunae</p>
+      <p>lenta <name type="plant" xml:lang="la">salix</name> <name type="plant" xml:lang="la">ulvaeque</name> leves <name type="plant" xml:lang="la">iuncique</name> palustres</p>
+      <p><name type="plant" xml:lang="la">viminaque</name> et longa parvae sub <name type="plant" xml:lang="la">harundine</name> <name type="animal" xml:lang="la">cannae</name>:</p>
+      <p>hinc <name type="animal" xml:lang="la">aper</name> excitus medios violentus in hostes</p>
+      <p>fertur, ut excussis elisi nubibus ignes.</p>
+   </div>
+</div>
+<div type="book" n="13">
+   <p>sternitur incursu nemus, et propulsa fragorem</p>
+   <p>silva dat: exclamant <persName>iuvenes</persName> praetentaque forti</p>
+   <p>tela tenent dextra lato vibrantia ferro.</p>
+   <p>ille ruit spargitque <name type="animal" xml:lang="la">canes</name>, ut quisque furenti</p>
+   <p>obstat, et obliquo latrantes dissipat ictu.</p>
+   <p>cuspis <persName>Echionio</persName> primum contorta lacerto</p>
+   <p>vana fuit truncoque dedit leve vulnus <foreign xml:lang="la">acerno</foreign>;</p>
+   <p>proxima, si nimiis mittentis viribus usa</p>
+   <p>non foret, in tergo visa est haesura petito:</p>
+   <p>longius it; auctor teli <persName>Pagasaeus Iason</persName>.</p>
+   <p>'<persName>Phoebe</persName>,' ait <persName>Ampycides</persName>, 'si te coluique coloque,</p>
+   <p>da mihi, quod petitur, certo contingere telo!'</p>
+   <p>qua potuit, precibus deus adnuit: ictus ab illo est,</p>
+   <p>sed sine vulnere <name type="animal" xml:lang="la">aper</name>: ferrum <name type="deity">Diana</name> volanti</p>
+   <p>abstulerat iaculo; lignum sine acumine venit.</p>
+   <p>ira feri mota est, nec fulmine lenius arsit:</p>
+   <p>emicat ex oculis, spirat quoque pectore flamma,</p>
+   <p>utque volat moles adducto concita nervo,</p>
+   <p>cum petit aut muros aut plenas milite turres,</p>
+   <p>in <persName>iuvenes</persName> certo sic impete vulnificus <name type="animal" xml:lang="la">sus</name></p>
+   <p>fertur et <persName>Hippalmon</persName> <persName>Pelagonaque</persName>, dextra tuentes</p>
+   <p>cornua, prosternit: socii rapuere iacentes;</p>
+   <p>at non letiferos effugit <persName>Enaesimus</persName> ictus</p>
+   <p><persName>Hippocoonte</persName> satus: trepidantem et terga parantem</p>
+   <p>vertere succiso liquerunt poplite nervi.</p>
+   <p>forsitan et <persName>Pylius</persName> citra <placeName>Troiana</placeName> perisset</p>
+   <p>tempora, sed sumpto posita conamine ab hasta</p>
+   <p>arboris insiluit, quae stabat proxima, ramis</p>
+   <p>despexitque, loco tutus, quem fugerat, hostem.</p>
+   <p>dentibus ille ferox in <foreign xml:lang="la">querno</foreign> stipite tritis</p>
+</div>
+<div type="book" n="14">
+   <div type="section" n="370">
+      <p>inminet exitio fidensque recentibus armis               370
+      <name type="animal" xml:lang="la">Eurytidae</name> magni rostro femur hausit adunco.</p>
+      <p>at gemini, nondum caelestia sidera, fratres,
+      ambo conspicui, nive candidioribus ambo
+      vectabantur equis, ambo vibrata per auras
+      hastarum tremulo quatiebant spicula motu.               375</p>
+      <p>vulnera fecissent, nisi <name type="animal" xml:lang="la">saetiger</name> inter opacas
+      nec iaculis isset nec equo loca pervia silvas.</p>
+      <p>persequitur <persName>Telamon</persName> studioque incautus eundi
+      pronus ab arborea cecidit radice retentus.</p>
+      <p>dum levat hunc <persName>Peleus</persName>, celerem <foreign xml:lang="la">Tegeaea</foreign> sagittam               380
+      inposuit nervo sinuatoque expulit arcu:
+      fixa sub aure feri summum destrinxit harundo
+      corpus et exiguo rubefecit sanguine saetas;</p>
+      <p>nec tamen illa sui successu laetior ictus
+      quam <persName>Meleagros</persName> erat: primus vidisse putatur               385
+      et primus sociis visum ostendisse cruorem
+      et 'meritum' dixisse 'feres virtutis honorem.'</p>
+      <p>erubuere viri seque exhortantur et addunt
+      cum clamore animos iaciuntque sine ordine tela:
+      turba nocet iactis et, quos petit, impedit ictus.               390</p>
+      <p>ecce furens contra sua fata bipennifer <name type="deity">Arcas</name>
+      'discite, femineis quid tela virilia praestent,
+      o iuvenes, operique meo concedite!' dixit.
+      'ipsa suis licet hunc <name type="deity">Latonia</name> protegat armis,               395
+      invita tamen hunc perimet mea dextra <name type="deity">Diana</name>.'</p>
+      <p>talia magniloquo tumidus memoraverat ore
+      ancipitemque manu tollens utraque securim
+      institerat digitis pronos suspensus in ictus:
+      occupat audentem, quaque est via proxima leto,</p>
+   </div>
+</div>
+<div type="book" n="1">
+   <div type="section" n="15">
+      <p>summa <name type="animal" xml:lang="la">ferus</name> geminos derexit ad inguina dentes.</p>
+      <p>concidit <persName>Ancaeus</persName> glomerataque sanguine multo</p>
+      <p>viscera lapsa fluunt: madefacta est terra cruore.</p>
+      <p>ibat in adversum proles <persName>Ixionis</persName> hostem</p>
+      <p><persName>Pirithous</persName> valida quatiens venabula dextra;</p>
+      <p>cui 'procul' <persName>Aegides</persName> 'o me mihi carior' inquit               405</p>
+      <p>'pars animae consiste meae! licet eminus esse</p>
+      <p>fortibus: <persName>Ancaeo</persName> nocuit temeraria virtus.'</p>
+      <p>dixit et aerata torsit grave cuspide <name type="animal" xml:lang="la">cornum</name>;</p>
+      <p>quo bene librato votique potente futuro</p>
+      <p>obstitit <foreign xml:lang="la">aesculea</foreign> frondosus ab <name type="plant" xml:lang="la">arbore</name> ramus.               410</p>
+      <p>misit et <persName>Aesonides</persName> iaculum: quod casus ab illo</p>
+      <p>vertit in inmeriti fatum <name type="animal" xml:lang="la">latrantis</name> et inter</p>
+      <p>ilia coniectum tellure per ilia fixum est.</p>
+      <p>at manus <persName>Oenidae</persName> variat, missisque duabus</p>
+      <p>hasta prior terra, medio stetit altera tergo.               415</p>
+      <p>nec mora, dum saevit, dum corpora versat in orbem</p>
+      <p>stridentemque novo spumam cum sanguine fundit,</p>
+      <p>vulneris auctor adest hostemque inritat ad iram</p>
+      <p>splendidaque adversos venabula condit in armos.</p>
+      <p>gaudia testantur socii clamore secundo               420</p>
+      <p>victricemque petunt dextrae coniungere dextram</p>
+      <p>inmanemque <name type="animal" xml:lang="la">ferum</name> multa tellure iacentem</p>
+      <p>mirantes spectant neque adhuc contingere tutum</p>
+      <p>esse putant, sed tela tamen sua quisque cruentat.</p>
+      <p><persName>Ipse</persName> pede inposito caput exitiabile pressit               425</p>
+      <p>atque ita 'sume mei spolium, <placeName>Nonacria</placeName>, iuris,'</p>
+      <p>dixit 'et in partem veniat mea gloria tecum.'</p>
+      <p>protinus exuvias rigidis horrentia saetis</p>
+      <p>terga dat et magnis insignia dentibus ora.</p>
+   </div>
+</div>
+<div type="book" n="16">
+   <p>illi laetitiae est cum munere <name type="animal" xml:lang="la">muneris</name> auctor;</p>
+   <p>invidere alii, totoque erat agmine murmur.</p>
+   <p>e quibus ingenti tendentes bracchia voce</p>
+   <p>'pone age nec titulos intercipe, <persName>femina</persName>, nostros,'</p>
+   <p><persName>Thestiadae</persName> clamant, 'nec te fiducia formae</p>
+   <p>decipiat, ne sit longe tibi captus <name type="deity">amore</name></p>
+   <p><persName>auctor</persName>,' et huic adimunt munus, ius muneris illi.</p>
+   <p>non tulit et tumida frendens <name type="deity">Mavortius</name> ira</p>
+   <p>'discite, raptores alieni' dixit 'honoris,</p>
+   <p>facta minis quantum distent,' hausitque nefando</p>
+   <p>pectora <persName>Plexippi</persName> nil tale timentia <name type="animal" xml:lang="la">ferro</name>.</p>
+   <p><persName>Toxea</persName>, quid faciat, dubium pariterque volentem</p>
+   <p>ulcisci fratrem fraternaque fata timentem</p>
+   <p>haud patitur dubitare diu calidumque priori</p>
+   <p>caede recalfecit consorti <name type="animal" xml:lang="la">sanguine</name> <name type="animal" xml:lang="la">telum</name>.</p>
+   <p>Dona deum templis nato victore ferebat,</p>
+   <p>cum videt exstinctos fratres <persName>Althaea</persName> referri.</p>
+   <p>quae plangore dato maestis clamoribus urbem</p>
+   <p>inplet et auratis mutavit vestibus atras;</p>
+   <p>at simul est auctor necis editus, excidit omnis</p>
+   <p>luctus et a lacrimis in poenae versus <name type="deity">amorem</name> est.</p>
+   <p><name type="plant" xml:lang="la">Stipes</name> erat, quem, cum partus enixa iaceret</p>
+   <p><persName>Thestias</persName>, in flammam triplices posuere sorores</p>
+   <p>staminaque inpresso fatalia pollice nentes</p>
+   <p>'tempora' dixerunt 'eadem lignoque tibique,</p>
+   <p>o modo nate, damus.' quo postquam carmine dicto</p>
+   <p>excessere deae, flagrantem mater ab igne</p>
+   <p>eripuit ramum sparsitque liquentibus undis.</p>
+   <p>ille diu fuerat penetralibus abditus imis</p>
+   <p>servatusque tuos, <persName>iuvenis</persName>, servaverat annos.</p>
+</div>
+<div type="book" n="17">
+   <p>protulit hunc <name type="deity" xml:lang="la">genetrix</name> taedasque et fragmina poni               460</p>
+   <p><persName>imperat</persName> et positis inimicos admovet ignes.</p>
+   <p>tum conata quater flammis inponere ramum</p>
+   <p>coepta quater tenuit: pugnat <persName>mater</persName>que <persName>sororque</persName>,</p>
+   <p>et diversa trahunt unum duo nomina pectus.</p>
+   <p>saepe metu sceleris pallebant ora futuri,               465</p>
+   <p>saepe suum fervens oculis dabat <persName>ira</persName> ruborem,</p>
+   <p>et modo nescio quid similis crudele minanti</p>
+   <p>vultus erat, modo quem misereri credere posses;</p>
+   <p>cumque ferus lacrimas <persName>animi</persName> siccaverat ardor,</p>
+   <p>inveniebantur lacrimae tamen, utque carina,               470</p>
+   <p>quam ventus ventoque rapit contrarius aestus,</p>
+   <p>vim geminam sentit paretque incerta duobus,</p>
+   <p><persName>Thestias</persName> haud aliter dubiis affectibus errat</p>
+   <p>inque vices ponit positamque resuscitat <persName>iram</persName>.</p>
+   <p>incipit esse tamen melior <persName>germana</persName> <persName>parente</persName>               475</p>
+   <p>et consanguineas ut sanguine leniat umbras,</p>
+   <p><persName>inpietate</persName> pia est. nam postquam pestifer ignis</p>
+   <p>convaluit, 'rogus iste cremet mea viscera' dixit,</p>
+   <p>utque manu dira lignum fatale tenebat,</p>
+   <p>ante sepulcrales infelix adstitit aras               480</p>
+   <p>'poenarum' que 'deae triplices, furialibus,' inquit</p>
+   <p><persName>Eumenides</persName>, sacris vultus advertite vestros!</p>
+   <p>ulciscor facioque nefas; mors morte pianda est,</p>
+   <p>in scelus addendum scelus est, in funera funus:</p>
+   <p>per coacervatos pereat domus inpia luctus!               485</p>
+   <p>an felix <persName>Oeneus</persName> nato victore fruetur,</p>
+   <p><persName>Thestius</persName> orbus erit? melius lugebitis ambo.</p>
+   <p>vos modo, fraterni manes animaeque recentes,</p>
+   <p>officium sentite meum magnoque paratas</p>
+</div>
+<div type="book" n="1">
+  <p>accipite inferias, uteri mala pignora nostri!</p>
+  <p>ei mihi! quo rapior? fratres, ignoscite matri!</p>
+  <p>deficiunt ad coepta manus: meruisse fatemur</p>
+  <p>illum, cur <name type="animal" xml:lang="la">pereat</name>; mortis mihi displicet auctor.</p>
+  <p>ergo inpune feret vivusque et victor et ipso</p>
+  <p>successu tumidus regnum <placeName>Calydonis</placeName> habebit,</p>
+  <p>vos cinis exiguus gelidaeque iacebitis umbrae?</p>
+  <p>haud equidem patiar: pereat sceleratus et ille</p>
+  <p>spemque patris regnumque trahat patriaeque ruinam!</p>
+  <p>mens ubi materna est? ubi sunt pia iura parentum</p>
+  <p>et quos sustinui bis mensum quinque labores?</p>
+  <p>o utinam primis arsisses ignibus infans,</p>
+  <p>idque ego passa forem! vixisti munere nostro;</p>
+  <p>nunc merito moriere tuo! cape praemia facti</p>
+  <p>bisque datam, primum partu, mox stipite rapto,</p>
+  <p>redde animam vel me fraternis adde sepulcris!</p>
+  <p>et cupio et nequeo. quid agam? modo vulnera fratrum</p>
+  <p>ante oculos mihi sunt et tantae caedis imago,</p>
+  <p>nunc animum pietas maternaque nomina frangunt.</p>
+  <p>me miseram! male vincetis, sed vincite, fratres,</p>
+  <p>dummodo, quae dedero vobis, solacia vosque</p>
+  <p>ipsa sequar!' dixit dextraque aversa trementi</p>
+  <p>funereum torrem medios coniecit in ignes:</p>
+  <p>aut dedit aut visus gemitus est ipse dedisse</p>
+  <p>stipes, ut invitis conreptus ab ignibus arsit.</p>
+  <p><persName>Inscius</persName> atque absens flamma <persName>Meleagros</persName> ab illa</p>
+  <p>uritur et caecis torreri viscera sentit</p>
+  <p>ignibus ac magnos superat virtute dolores.</p>
+  <p>quod tamen ignavo cadat et sine sanguine leto,</p>
+  <p>maeret et <persName>Ancaei</persName> felicia vulnera dicit</p>
+</div>
+<div type="book" n="19">
+   <p>grandaevumque patrem fratresque piasque sorores</p>
+   <p>cum gemitu sociamque tori vocat ore supremo,</p>
+   <p>forsitan et matrem. crescunt ignisque dolorque</p>
+   <p>languescuntque iterum; simul est exstinctus uterque,</p>
+   <p>inque leves abiit paulatim spiritus auras</p>
+   <p>paulatim cana prunam velante favilla.</p>
+   <p>Alta iacet <placeName>Calydon</placeName>: lugent iuvenesque senesque,</p>
+   <p>vulgusque proceresque gemunt, scissaeque capillos</p>
+   <p>planguntur matres <name type="animal" xml:lang="la">Calydonides</name> <name type="deity">Eueninae</name>;</p>
+   <p>pulvere canitiem genitor vultusque seniles</p>
+   <p>foedat humi fusus spatiosumque increpat aevum.</p>
+   <p>nam de matre manus diri sibi conscia facti</p>
+   <p>exegit poenas acto per viscera ferro.</p>
+   <p>non mihi si centum deus ora sonantia linguis</p>
+   <p>ingeniumque capax totumque <foreign xml:lang="grc">Helicona</foreign> dedisset,</p>
+   <p>tristia persequerer miserarum fata sororum.</p>
+   <p>inmemores decoris liventia pectora tundunt,</p>
+   <p>dumque manet corpus, corpus refoventque foventque,</p>
+   <p>oscula dant ipsi, posito dant oscula lecto.</p>
+   <p>post cinerem cineres haustos ad pectora pressant</p>
+   <p>adfusaeque iacent tumulo signataque saxo</p>
+   <p>nomina conplexae lacrimas in nomina fundunt.</p>
+   <p>quas <persName>Parthaoniae</persName> tandem <name type="deity">Latonia</name> clade</p>
+   <p>exsatiata domus praeter <persName>Gorgen</persName>que nurumque</p>
+   <p>nobilis <persName>Alcmenae</persName> natis in corpore pennis</p>
+   <p>adlevat et longas per bracchia porrigit alas</p>
+   <p>corneaque ora facit versasque per aera mittit.</p>
+   <p><persName>Interea Theseus</persName> sociati parte laboris</p>
+   <p>functus <persName>Erectheas</persName> <name type="deity">Tritonidos</name> ibat ad arces.</p>
+   <p>clausit iter fecitque moras <name type="animal" xml:lang="la">Achelous</name> eunti</p>
+</div>
+<div type="book" n="20">
+  <p>imbre tumens: <quote>'succede meis,' ait 'inclite, tectis,</quote>               550</p>
+  <p>Cecropide, nec te committe rapacibus undis:</p>
+  <p>ferre trabes solidas obliquaque volvere magno</p>
+  <p>murmure saxa solent. vidi contermina ripae</p>
+  <p>cum gregibus stabula alta trahi; nec fortibus illic</p>
+  <p>profuit armentis nec equis velocibus esse.               555</p>
+  <p>multa quoque hic torrens nivibus de monte solutis</p>
+  <p>corpora turbineo iuvenalia vertice mersit.</p>
+  <p>tutior est requies, solito dum flumina currant</p>
+  <p>limite, dum tenues capiat suus alveus undas.'</p>
+  <p>adnuit Aegides <quote>'utar,' que 'Acheloe, domoque               560</quote></p>
+  <p>consilioque tuo' respondit; et usus utroque est.</p>
+  <p>pumice multicavo nec levibus atria tophis</p>
+  <p>structa subit: molli tellus erat umida musco,</p>
+  <p>summa lacunabant alterno murice conchae.</p>
+  <p>iamque duas lucis partes Hyperione menso               565</p>
+  <p>discubuere toris Theseus comitesque laborum,</p>
+  <p>hac Ixionides, illa Troezenius heros</p>
+  <p>parte Lelex, raris iam sparsus tempora canis,</p>
+  <p>quosque alios parili fuerat dignatus honore</p>
+  <p><name type="deity">Amnis</name> Acarnanum, laetissimus hospite tanto.               570</p>
+  <p>protinus adpositas nudae vestigia nymphae</p>
+  <p>instruxere epulis mensas dapibusque remotis</p>
+  <p>in gemma posuere merum. tum maximus heros,</p>
+  <p>aequora prospiciens oculis subiecta, <quote>'quis' inquit               575</quote></p>
+  <p><quote>'ille locus?'</quote> (digitoque ostendit) <quote>'et insula nomen               </quote></p>
+  <p><quote>quod gerit illa, doce, quamquam non una videtur!'</quote></p>
+  <p><name type="deity">Amnis</name> ad haec <quote>'non est'</quote> inquit <quote>'quod cernitis unum:               580</quote></p>
+  <p>quinque iacent terrae; spatium discrimina fallit.</p>
+  <p>quoque minus spretae factum mirere <name type="deity">Dianae</name>,</p>
+</div>
+<div type="book" n="21">
+   <p>naides hae fuerant, quae cum bis quinque <name type="animal" xml:lang="la">iuvencos</name>               580</p>
+   <p>mactassent rurisque deos ad sacra vocassent,</p>
+   <p>inmemores nostri festas duxere <foreign xml:lang="la">choreas</foreign>.</p>
+   <p>intumui, quantusque feror, cum plurimus umquam,</p>
+   <p>tantus eram, pariterque animis inmanis et undis</p>
+   <p>a silvis silvas et ab arvis arva revelli               585</p>
+   <p>cumque loco <name type="animal" xml:lang="la">nymphas</name>, memores tum denique nostri,</p>
+   <p>in freta provolvi. fluctus nosterque marisque</p>
+   <p>continuam diduxit humum partesque resolvit</p>
+   <p>in totidem, mediis quot cernis <placeName>Echinadas</placeName> undis.</p>
+   <p>ut tamen ipse vides, procul, en procul una recessit               590</p>
+   <p><placeName>insula</placeName>, grata mihi; <persName>Perimelen</persName> navita dicit:</p>
+   <p>huic ego virgineum dilectae nomen ademi;</p>
+   <p>quod pater <persName>Hippodamas</persName> aegre tulit inque profundum</p>
+   <p>propulit e scopulo periturae corpora natae.</p>
+   <p>excepi nantemque ferens "o proxima mundi               595</p>
+   <p>regna vagae" dixi "sortite, <name type="deity">Tridentifer</name>, undae,</p>
+   <p>adfer opem, mersaeque, precor, feritate paterna               601</p>
+   <p>da, <persName>Neptune</persName>, locum, vel sit locus ipsa licebit!"</p>
+   <p>dum loquor, amplexa est artus nova terra natantes               609</p>
+   <p>et gravis increvit mutatis insula membris.'</p>
+   <p><name type="animal" xml:lang="la">Amnis</name> ab his tacuit. factum mirabile cunctos</p>
+   <p>moverat: inridet credentes, utque deorum</p>
+   <p>spretor erat mentisque ferox, <persName>Ixione</persName> natus</p>
+   <p>'ficta refers nimiumque putas, <persName>Acheloe</persName>, potentes               615</p>
+   <p>esse deos,' dixit 'si dant adimuntque figuras.'</p>
+   <p>obstipuere omnes nec talia dicta probarunt,</p>
+   <p>ante omnesque <persName>Lelex</persName> animo maturus et aevo,</p>
+   <p>sic ait: 'inmensa est finemque potentia caeli</p>
+</div>
+<div type="book" n="22">
+  <p>non habet, et quicquid superi voluere, peractum est,</p>
+  <p>quoque minus dubites, <name type="plant" xml:lang="la">tiliae</name> contermina <name type="plant" xml:lang="la">quercus</name>               620
+collibus est Phrygiis modico circumdata muro;</p>
+  <p>ipse locum vidi; nam me Pelopeia <placeName>Pittheus</placeName>
+misit in arva suo quondam regnata parenti.</p>
+  <p>haud procul hinc stagnum est, tellus habitabilis olim,</p>
+  <p>nunc celebres <name type="animal" xml:lang="la">mergis</name> <name type="animal" xml:lang="la">fulicisque</name> palustribus undae;               625</p>
+  <p><name type="deity">Iuppiter</name> huc specie mortali cumque parente
+venit Atlantiades positis caducifer alis.</p>
+  <p>mille domos adiere locum requiemque petentes,</p>
+  <p>mille domos clausere serae; tamen una recepit,</p>
+  <p>parva quidem, stipulis et <name type="plant" xml:lang="la">canna</name> tecta palustri,               630</p>
+  <p>sed pia <persName>Baucis</persName> anus parilique aetate <persName>Philemon</persName>
+illa sunt annis iuncti iuvenalibus, illa
+consenuere casa paupertatemque fatendo
+effecere levem nec iniqua mente ferendo;</p>
+  <p>nec refert, dominos illic famulosne requiras:               635
+tota domus duo sunt, idem parentque iubentque.</p>
+  <p>ergo ubi caelicolae parvos tetigere penates
+summissoque humiles intrarunt vertice postes,</p>
+  <p>membra senex posito iussit relevare sedili;</p>
+  <p>cui superiniecit textum rude sedula <persName>Baucis</persName>               640
+inque foco tepidum cinerem dimovit et ignes
+suscitat hesternos foliisque et cortice sicco
+nutrit et ad flammas anima producit anili
+multifidasque faces ramaliaque arida tecto
+detulit et minuit parvoque admovit aeno,               645</p>
+  <p>quodque suus coniunx riguo conlegerat horto,
+truncat holus foliis; furca levat ille bicorni
+sordida terga <name type="animal" xml:lang="la">suis</name> nigro pendentia tigno
+servatoque diu resecat de tergore partem</p>
+</div>
+<div type="book" n="23">
+   <p>exiguam sectamque domat ferventibus undis.</p>
+   <p>interea medias fallunt sermonibus horas</p>
+   <p>concutiuntque torum de molli fluminis <name type="plant" xml:lang="la">ulva</name>               655</p>
+   <p>inpositum lecto sponda pedibusque <name type="plant" xml:lang="la">salignis</name>.</p>
+   <p>vestibus hunc velant, quas non nisi tempore festo</p>
+   <p>sternere consuerant, sed et haec vilisque vetusque</p>
+   <p>vestis erat, lecto non indignanda <name type="plant" xml:lang="la">saligno</name>.</p>
+   <p>adcubuere dei. mensam succincta tremensque                660</p>
+   <p>ponit anus, mensae sed erat pes tertius inpar:</p>
+   <p>testa parem fecit; quae postquam subdita clivum</p>
+   <p>sustulit, aequatam <name type="plant" xml:lang="la">mentae</name> tersere virentes.</p>
+   <p>ponitur hic bicolor sincerae baca <name type="deity">Minervae</name>               665</p>
+   <p>conditaque in liquida <name type="plant" xml:lang="la">corna</name> autumnalia faece</p>
+   <p><name type="plant" xml:lang="la">intibaque</name> et <name type="plant" xml:lang="la">radix</name> et <name type="plant" xml:lang="la">lactis</name> massa coacti</p>
+   <p><name type="animal" xml:lang="la">ovaque</name> non acri leviter versata favilla,</p>
+   <p>omnia fictilibus. post haec caelatus eodem</p>
+   <p>sistitur argento crater fabricataque <name type="plant" xml:lang="la">fago</name>               670</p>
+   <p>pocula, qua cava sunt, flaventibus inlita <name type="plant" xml:lang="la">ceris</name>;</p>
+   <p>parva mora est, epulasque foci misere calentes,</p>
+   <p>nec longae rursus referuntur vina senectae</p>
+   <p>dantque locum mensis paulum seducta secundis:</p>
+   <p>hic <name type="plant" xml:lang="la">nux</name>, hic mixta est rugosis <name type="plant" xml:lang="la">carica</name> <name type="plant" xml:lang="la">palmis</name>               675</p>
+   <p>et <name type="plant" xml:lang="la">prunaque</name> et in patulis redolentia <name type="plant" xml:lang="la">mala</name> <name type="plant" xml:lang="la">canistris</name></p>
+   <p>et de purpureis conlectae <name type="plant" xml:lang="la">vitibus</name> <name type="animal" xml:lang="la">uvae</name>,</p>
+   <p><name type="animal" xml:lang="la">candidus</name> in medio <name type="plant" xml:lang="la">favus</name> est; super omnia vultus</p>
+   <p>accessere boni nec iners pauperque voluntas.</p>
+   <p>'Interea totiens haustum cratera repleri               680</p>
+   <p>sponte sua per seque vident succrescere vina:</p>
+   <p>attoniti novitate pavent manibusque supinis</p>
+   <p>concipiunt Baucisque preces timidusque Philemon</p>
+</div>
+<div type="book" n="24">
+   <div type="chapter" n="30">
+      <p>et veniam dapibus nullisque paratibus orant.</p>
+      <p>unicus <name type="animal" xml:lang="la">anser</name> erat, minimae custodia villae:</p>
+      <p>quem <name type="deity">dis</name> hospitibus domini mactare parabant;</p>
+      <p>ille celer penna tardos aetate fatigat</p>
+      <p>eluditque diu tandemque est visus ad ipsos</p>
+      <p>confugisse <name type="deity">deos</name>: superi vetuere necari</p>
+      <p>"<name type="deity">di</name>" que "sumus, meritasque luet vicinia poenas</p>
+      <p>inpia" dixerunt; "vobis inmunibus huius               690</p>
+      <p>esse mali dabitur; modo vestra relinquite tecta</p>
+      <p>ac nostros comitate gradus et in ardua montis</p>
+      <p>ite simul!" parent ambo baculisque levati</p>
+      <p>nituntur longo vestigia ponere clivo.</p>
+      <p>tantum aberant summo, quantum semel ire sagitta               695</p>
+      <p>missa potest: flexere oculos et mersa palude</p>
+      <p>cetera prospiciunt, tantum sua tecta manere,</p>
+      <p>dumque ea mirantur, dum deflent fata suorum,</p>
+      <p>illa vetus dominis etiam casa parva duobus</p>
+      <p>vertitur in templum: furcas subiere columnae,               700</p>
+      <p>stramina flavescunt aurataque tecta videntur</p>
+      <p>caelataeque fores adopertaque <foreign xml:lang="la">marmore</foreign> tellus.</p>
+      <p>talia tum placido <name type="deity">Saturnius</name> edidit ore:</p>
+      <p>"dicite, iuste senex et <persName>femina</persName> coniuge iusto</p>
+      <p>digna, quid optetis." cum <persName>Baucide</persName> pauca locutus               705</p>
+      <p>iudicium superis aperit commune <persName>Philemon</persName>:</p>
+      <p>"esse sacerdotes delubraque vestra tueri</p>
+      <p>poscimus, et quoniam concordes egimus annos,</p>
+      <p>auferat hora duos eadem, nec coniugis umquam</p>
+      <p>busta meae videam, neu sim tumulandus ab illa."               710</p>
+      <p>vota fides sequitur: templi tutela fuere,</p>
+      <p>donec vita data est; annis aevoque soluti</p>
+      <p>ante gradus sacros cum starent forte locique</p>
+   </div>
+</div>
+<div type="book" n="1">
+   <div type="chapter" n="25">
+      <p>narrarent casus, frondere <name type="animal" xml:lang="la">Philemona</name> <name type="animal" xml:lang="la">Baucis</name>,</p>
+      <p><name type="animal" xml:lang="la">Baucida</name> conspexit senior frondere <name type="animal" xml:lang="la">Philemon</name>.</p>
+      <p>iamque super geminos crescente cacumine vultus</p>
+      <p>mutua, dum licuit, reddebant dicta "vale" que</p>
+      <p>"o coniunx" dixere simul, simul abdita texit</p>
+      <p>ora frutex: ostendit adhuc <placeName>Thyneius</placeName> illic</p>
+      <p>incola de gemino vicinos corpore truncos.</p>
+      <p>haec mihi non vani (neque erat, cur fallere vellent)</p>
+      <p>narravere senes; equidem pendentia vidi</p>
+      <p>serta super ramos ponensque recentia dixi</p>
+      <p>"cura deum di sint, et, qui coluere, colantur."'</p>
+      <p>Desierat, cunctosque et res et moverat auctor,</p>
+      <p><persName>Thesea</persName> praecipue; quem facta audire volentem</p>
+      <p><placeName>Calydonius</placeName> amnis</p>
+      <p>talibus adloquitur: 'sunt, o fortissime, quorum</p>
+      <p>forma semel mota est et in hoc renovamine mansit;</p>
+      <p>sunt, quibus in plures ius est transire figuras,</p>
+      <p>ut tibi, conplexi terram maris incola, <name type="deity">Proteu</name>.</p>
+      <p>nam modo te iuvenem, modo te videre <name type="animal" xml:lang="la">leonem</name>,</p>
+      <p>nunc violentus <name type="animal" xml:lang="la">aper</name>, nunc, quem tetigisse timerent,</p>
+      <p><name type="animal" xml:lang="la">anguis</name> eras, modo te faciebant cornua <name type="animal" xml:lang="la">taurum</name>;</p>
+      <p>saepe <name type="plant" xml:lang="la">lapis</name> poteras, <name type="plant" xml:lang="la">arbor</name> quoque saepe videri,</p>
+      <p>interdum, faciem liquidarum imitatus <name type="plant" xml:lang="la">aquarum</name>,</p>
+      <p><name type="plant" xml:lang="la">flumen</name> eras, interdum undis contrarius <name type="plant" xml:lang="la">ignis</name>.</p>
+      <p>'Nec minus <persName>Autolyci</persName> coniunx, <persName>Erysicthone</persName> nata,</p>
+      <p>iuris habet: pater huius erat, qui numina <name type="deity">divum</name></p>
+      <p>sperneret et nullos aris adoleret odores;</p>
+      <p>ille etiam <name type="plant" xml:lang="la">Cereale</name> <name type="plant" xml:lang="la">nemus</name> violasse securi</p>
+      <p>dicitur et <name type="plant" xml:lang="la">lucos</name> ferro temerasse vetustos.</p>
+      <p>stabat in his ingens annoso robore <name type="plant" xml:lang="la">quercus</name>,</p>
+   </div>
+</div>
+<div type="book" n="26">
+   <p>una nemus; <name type="plant" xml:lang="la">vittae</name> mediam memoresque <name type="plant" xml:lang="la">tabellae</name>               745</p>
+   <p><name type="plant" xml:lang="la">sertaque</name> cingebant, <name type="deity" xml:lang="la">voti</name> argumenta potentum.</p>
+   <p>saepe sub hac <name type="deity" xml:lang="la">dryades</name> festas duxere <foreign xml:lang="la">choreas</foreign>,</p>
+   <p>saepe etiam <persName>manibus</persName> nexis ex ordine <name type="plant" xml:lang="la">trunci</name></p>
+   <p>circuiere modum, mensuraque <name type="plant" xml:lang="la">roboris</name> <foreign xml:lang="la">ulnas</foreign></p>
+   <p>quinque ter inplebat, nec non et cetera tantum               750</p>
+   <p><name type="plant" xml:lang="la">silva</name> sub hac, <name type="plant" xml:lang="la">silva</name> quantum fuit <name type="plant" xml:lang="la">herba</name> sub omni.</p>
+   <p>non tamen idcirco <name type="animal" xml:lang="la">ferrum</name> <name type="placeName" xml:lang="la">Triopeius</name> illa</p>
+   <p>abstinuit famulosque iubet succidere sacrum</p>
+   <p><name type="plant" xml:lang="la">robur</name>, et ut iussos cunctari vidit, ab uno</p>
+   <p>edidit haec rapta sceleratus verba <name type="animal" xml:lang="la">securi</name>:</p>
+   <p>"non dilecta <name type="deity" xml:lang="la">deae</name> solum, sed et ipsa licebit               755</p>
+   <p>sit <name type="deity" xml:lang="la">dea</name>, iam tanget frondente cacumine terram."</p>
+   <p>dixit, et obliquos dum telum librat in ictus,</p>
+   <p>contremuit gemitumque dedit <name type="deity" xml:lang="la">Deoia</name> <name type="plant" xml:lang="la">quercus</name>,</p>
+   <p>et pariter frondes, pariter pallescere <name type="plant" xml:lang="la">glandes</name></p>
+   <p>coepere ac longi pallorem ducere rami.               760</p>
+   <p>cuius ut in trunco fecit manus inpia vulnus,</p>
+   <p>haud aliter fluxit discusso cortice <name type="animal" xml:lang="la">sanguis</name>,</p>
+   <p>quam solet, ante aras ingens ubi victima <name type="animal" xml:lang="la">taurus</name></p>
+   <p>concidit, abrupta cruor e cervice profundi.</p>
+   <p>obstipuere omnes, aliquisque ex omnibus audet               765</p>
+   <p>deterrere nefas saevamque inhibere <name type="animal" xml:lang="la">bipennem</name>:</p>
+   <p>aspicit hunc "mentis" que "piae cape praemia!" dixit</p>
+   <p><persName>Thessalus</persName> inque virum convertit ab arbore ferrum</p>
+   <p>detruncatque caput repetitaque <name type="plant" xml:lang="la">robor</name>a caedit,</p>
+   <p>redditus e medio sonus est cum robore talis:               770</p>
+   <p>"<name type="deity" xml:lang="la">nympha</name> sub hoc ego sum <name type="deity" xml:lang="la">Cereri</name> gratissima <name type="plant" xml:lang="la">ligno</name>,</p>
+   <p>quae tibi factorum poenas instare tuorum</p>
+   <p>vaticinor moriens, nostri solacia leti."</p>
+</div>
+<div type="book" n="27">
+   <p>persequitur scelus ille suum, labefactaque tandem<br/>
+   ictibus innumeris adductaque funibus <name type="plant" xml:lang="la">arbor</name><pb n="775"/>
+   corruit et multam prostravit pondere <name type="plant" xml:lang="la">silvam</name>.</p>
+   <p><quote>'Attonitae <name type="animal" xml:lang="la">dryades</name> damno <name type="plant" xml:lang="la">nemorum</name>que suoque,<br/>
+   omnes germanae, <name type="deity">Cererem</name> cum vestibus atris<br/>
+   maerentes adeunt poenamque <persName>Erysicthonis</persName> orant.</quote></p>
+   <p>adnuit his capitisque sui pulcherrima motu<br/>
+   concussit gravidis oneratos messibus agros,<br/>
+   moliturque genus poenae miserabile, si non<br/>
+   ille suis esset nulli miserabilis actis,<br/>
+   pestifera lacerare <name type="deity">Fame</name>: quae quatenus ipsi<br/>
+   non adeunda deae est (neque enim <name type="deity">Cererem</name>que <name type="deity">Famem</name>que<br/>
+   fata coire sinunt), montani numinis unam<br/>
+   talibus agrestem conpellat <name type="deity">oreada</name> dictis:</p>
+   <p><quote>"est locus extremis <placeName>Scythiae</placeName> glacialis in oris,<br/>
+   triste solum, sterilis, sine fruge, sine <name type="plant" xml:lang="la">arbore</name> <name type="plant" xml:lang="la">tellus</name>;<br/>
+   Frigus iners illic habitant Pallorque Tremorque<br/>
+   et ieiuna <name type="deity">Fames</name>: ea se in praecordia condat<br/>
+   sacrilegi scelerata, iube, nec copia rerum<br/>
+   vincat eam superetque meas certamine vires,<br/>
+   neve viae spatium te terreat, accipe currus,<br/>
+   accipe, quos frenis alte moderere, <name type="animal" xml:lang="la">dracones</name>!"</quote></p>
+   <p>et dedit; illa dato subvecta per aera curru<br/>
+   devenit in <placeName>Scythiam</placeName>: rigidique cacumine montis<br/>
+   (<foreign xml:lang="la">Caucason</foreign> appellant) <name type="animal" xml:lang="la">serpentum</name> colla levavit<br/>
+   quaesitamque <name type="deity">Famem</name> lapidoso vidit in agro<br/>
+   unguibus et raras vellentem dentibus <name type="plant" xml:lang="la">herbas</name>.</p>
+   <p>hirtus erat crinis, cava lumina, pallor in ore,<br/>
+   labra incana situ, scabrae rubigine fauces,<br/>
+   dura cutis, per quam spectari viscera possent;</p>
+</div>
+<div type="book" n="28">
+   <p>ossa sub incurvis exstabant arida <name type="animal" xml:lang="la">lumbis</name>,</p>
+   <p><name type="animal" xml:lang="la">ventris</name> erat pro <name type="animal" xml:lang="la">ventre</name> locus; pendere putares               805
+pectus et a <foreign xml:lang="la">spinae</foreign> tantummodo <foreign xml:lang="la">crate</foreign> teneri.</p>
+   <p>auxerat articulos <foreign xml:lang="la">macies</foreign>, genuumque tumebat
+orbis, et inmodico prodibant <foreign xml:lang="la">tubere</foreign> <name type="animal" xml:lang="la">tali</name>.</p>
+   <p>'<name type="deity">Hanc</name> procul ut vidit, (neque enim est accedere iuxta
+ausa) refert mandata <name type="deity">deae</name> paulumque morata,               810
+quamquam aberat longe, quamquam modo venerat illuc,
+visa tamen sensisse <name type="animal" xml:lang="la">fame</name> est, retroque <name type="animal" xml:lang="la">dracones</name>
+egit in <placeName>Haemoniam</placeName> versis sublimis <foreign xml:lang="la">habenis</foreign>.</p>
+   <p>'<quote>Dicta <name type="deity">Fames</name> <name type="deity">Cereris</name>, quamvis contraria semper
+illius est operi</quote>, peragit perque <name type="animal" xml:lang="la">aera</name> <foreign xml:lang="la">vento</foreign>               815
+ad iussam delata domum est, et protinus intrat
+sacrilegi <foreign xml:lang="la">thalamos</foreign> altoque <name type="animal" xml:lang="la">sopore</name> solutum
+(<foreign xml:lang="la">noctis</foreign> enim <foreign xml:lang="la">tempus</foreign>) geminis amplectitur <foreign xml:lang="la">ulnis</foreign>,</p>
+   <p>seque viro inspirat, faucesque et pectus et ora
+adflat et in vacuis spargit <name type="animal" xml:lang="la">ieiunia</name> <foreign xml:lang="la">venis</foreign>;               820
+functaque mandato fecundum deserit orbem
+inque domos inopes adsueta revertitur antra.</p>
+   <p>'<name type="deity">Lenis</name> adhuc <name type="animal" xml:lang="la">Somnus</name> placidis <name type="deity">Erysicthona</name> <foreign xml:lang="la">pennis</foreign>
+mulcebat: petit ille dapes sub imagine <name type="animal" xml:lang="la">somni</name>,</p>
+   <p>oraque vana movet dentemque in <foreign xml:lang="la">dente</foreign> fatigat,               825
+exercetque <foreign xml:lang="la">cibo</foreign> delusum <foreign xml:lang="la">guttur</foreign> inani
+proque epulis tenues nequiquam devorat <foreign xml:lang="la">auras</foreign>;</p>
+   <p>ut vero est expulsa quies, furit ardor edendi
+perque avidas fauces incensaque viscera regnat.</p>
+   <p>nec mora; quod <name type="animal" xml:lang="la">pontus</name>, quod <name type="animal" xml:lang="la">terra</name>, quod educat <name type="animal" xml:lang="la">aer</name>,               830
+poscit et adpositis queritur <name type="animal" xml:lang="la">ieiunia</name> <foreign xml:lang="la">mensis</foreign>
+inque epulis epulas quaerit; quodque <foreign xml:lang="la">urbibus</foreign> esse,
+quodque satis poterat populo, non sufficit uni,</p>
+</div>
+<div type="book" n="29">
+  <p>plusque cupit, quo plura suam demittit in <name type="animal" xml:lang="la">alvum</name>.</p>
+  <p>utque <name type="animal" xml:lang="la">fretum</name> recipit de tota <name type="plant" xml:lang="la">flumina</name> <placeName>terra</placeName></p>
+  <p>nec satiatur <name type="animal" xml:lang="la">aquis</name> peregrinosque ebibit <name type="animal" xml:lang="la">amnes</name>,</p>
+  <p>utque rapax <name type="animal" xml:lang="la">ignis</name> non umquam <foreign xml:lang="la">alimenta</foreign> recusat</p>
+  <p>innumerasque <name type="plant" xml:lang="la">trabes</name> cremat et, quo copia maior</p>
+  <p>est data, plura petit turbaque voracior ipsa est:</p>
+  <p>sic <name type="animal" xml:lang="la">epulas</name> omnes <persName>Erysicthonis</persName> ora profani</p>
+  <p>accipiunt poscuntque simul. <name type="animal" xml:lang="la">cibus</name> omnis in illo</p>
+  <p><name type="animal" xml:lang="la">causa</name> <name type="animal" xml:lang="la">cibi</name> est, semperque locus fit inanis edendo.</p>
+  <p>'Iamque <name type="animal" xml:lang="la">fame</name> patrias altique <name type="animal" xml:lang="la">voragine</name> <name type="animal" xml:lang="la">ventris</name></p>
+  <p>attenuarat opes, sed inattenuata manebat</p>
+  <p>tum quoque dira <name type="animal" xml:lang="la">fames</name>, inplacataeque vigebat</p>
+  <p><foreign xml:lang="la">flamma</foreign> <name type="animal" xml:lang="la">gulae</name>. tandem, demisso in <name type="animal" xml:lang="la">viscera</name> censu,</p>
+  <p><persName>filia</persName> restabat, non illo digna <persName>parente</persName>.</p>
+  <p>hanc quoque vendit inops: dominum generosa recusat</p>
+  <p>et vicina suas tendens super <name type="animal" xml:lang="la">aequora</name> <name type="plant" xml:lang="la">palmas</name></p>
+  <p>"eripe me domino, qui raptae praemia nobis</p>
+  <p><name type="animal" xml:lang="la">virginitatis</name> habes!" ait: haec <name type="deity">Neptunus</name> habebat;</p>
+  <p>qui prece non spreta, quamvis modo visa sequenti</p>
+  <p>esset ero, formamque novat vultumque virilem</p>
+  <p>induit et cultus <name type="animal" xml:lang="la">piscem</name> capientibus aptos.</p>
+  <p>hanc dominus spectans "o qui pendentia parvo</p>
+  <p><foreign xml:lang="la">aera</foreign> <name type="animal" xml:lang="la">cibo</name> celas, moderator <name type="plant" xml:lang="la">harundinis</name>," inquit</p>
+  <p>"sic <name type="animal" xml:lang="la">mare</name> conpositum, sic sit tibi <name type="animal" xml:lang="la">piscis</name> in <name type="animal" xml:lang="la">unda</name></p>
+  <p>credulus et nullos, nisi fixus, sentiat <name type="animal" xml:lang="la">hamos</name>:</p>
+  <p>quae modo cum vili turbatis veste <name type="plant" xml:lang="la">capillis</name></p>
+  <p><name type="placeName">litore</name> in hoc steterat (nam stantem in <name type="placeName">litore</name> vidi),</p>
+  <p>dic, ubi sit: neque enim <name type="animal" xml:lang="la">vestigia</name> longius exstant."</p>
+  <p>illa dei munus bene cedere sensit et a se</p>
+  <p>se quaeri gaudens his est resecuta rogantem:</p>
+</div>
+<div type="book" n="30">
+   <div type="chapter" n="30">
+      <p>quisquis es, ignoscas; in nullam lumina partem</p>
+      <p>gurgite ab hoc flexi studioque operatus inhaesi,               865</p>
+      <p>quoque minus dubites, sic has deus <name type="animal" xml:lang="la">aequoris</name> artes</p>
+      <p>adiuvet, ut nemo iamdudum litore in isto,</p>
+      <p>me tamen excepto, nec <persName>femina</persName> constitit ulla."</p>
+      <p>credidit et verso <persName>dominus</persName> pede pressit harenam</p>
+      <p>elususque abiit: illi sua reddita forma est.               870</p>
+      <p>ast ubi habere suam transformia corpora sensit,</p>
+      <p>saepe <persName>pater</persName> <persName>dominis</persName> <placeName>Triopeida</placeName> tradit, at illa</p>
+      <p>nunc <name type="animal" xml:lang="la">equa</name>, nunc <name type="animal" xml:lang="la">ales</name>, modo <name type="animal" xml:lang="la">bos</name>, modo <name type="animal" xml:lang="la">cervus</name> abibat</p>
+      <p>praebebatque avido non iusta alimenta parenti.</p>
+      <p>vis tamen illa mali postquam consumpserat omnem               875</p>
+      <p>materiam derantque gravi nova pabula morbo,</p>
+      <p>ipse suos artus lacerans divellere morsu</p>
+      <p>coepit et infelix minuendo corpus alebat.—</p>
+      <p>'Quid moror externis? etiam mihi nempe novandi est</p>
+      <p>corporis, o <persName>iuvenis</persName>, numero finita, potestas.               880</p>
+      <p>nam modo, qui nunc sum, videor, modo flector in <name type="animal" xml:lang="la">angvem</name>,</p>
+      <p><name type="animal" xml:lang="la">armenti</name> modo dux vires in cornua sumo,—</p>
+      <p>cornua, dum potui. nunc pars caret altera telo</p>
+      <p>frontis, ut ipse vides.' gemitus sunt verba secuti.</p>
+   </div>
+</div>
+    </body>
+  </text>
+</TEI>

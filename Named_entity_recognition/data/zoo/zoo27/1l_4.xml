@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Cynegetica</title>
+        <title type="alt" xml:lang="fr">Les cynégétiques</title>
+        <title type="alt" xml:lang="en">Cynegetica</title>
+        <author>
+          <persName>NEMESIANUS, MARCUS AURELIUS OLYMPUS</persName>
+          <idno type="zoomathia">stoa0209</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-22">2026-07-22</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-22">2026-07-22</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0209</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="2">
+  <div type="section" n="1">
+    <p><persName>NEMESIANUS</persName>: <foreign xml:lang="la">Ecloga II</foreign></p>
+    <p><placeName>IDAS</placeName> <persName>ALCON</persName></p>
+    <p><persName>Formosam</persName> <name type="animal" xml:lang="la">Donacen</name> <persName>Idas</persName> <persName>puer</persName> et <persName>puer</persName> <persName>Alcon</persName></p>
+    <p><persName>ardebant</persName> rudibusque annis incensus uterque</p>
+    <p>in <name type="animal" xml:lang="la">Donaces</name> venerem furiosa mente ruebant.</p>
+    <p>Hanc, cum vicini flores in vallibus horti</p>
+    <p>carperet et molli gremium compleret <name type="plant" xml:lang="la">acantho</name></p>
+    <p>invasere simul venerisque imbutus uterque</p>
+    <p>tum primum dulci carpebant gaudia furto.</p>
+    <p>Hinc amor et pueris iam non puerilia vota</p>
+    <p>quis anni ter quinque, et mens et cura iuventae.</p>
+    <p>Sed postquam <name type="animal" xml:lang="la">Donacen</name> duri clausere parentes,</p>
+    <p>quod non tam tenui filo de voce sonaret</p>
+    <p>sollicitumque foret pinguis sonus, improba cervix</p>
+    <p>suffususque rubor crebro venaeque tumentes,</p>
+    <p>tam vero ardentes flammati pectoris aestus</p>
+    <p>carminibus dulci parant relevare querela;</p>
+    <p>ambo aevo cantuque pares nec dispare forma,</p>
+    <p>ambo genas leves, intonsi crinibus ambo.</p>
+    <p>Atque haec sub <name type="plant" xml:lang="la">platano</name> maesti solacia casus</p>
+    <p>alternant, <persName>Idas</persName> calamis et versibus <persName>Alcon</persName>:</p>
+  </div>
+</div>
+<div type="book" n="2">
+  <div type="section" n="1">
+    <p>Quae colitis silvas, <name type="deity" xml:lang="la">Dryades</name>, quaeque antra,</p>
+    <p><name type="deity" xml:lang="la">Napaeae</name>,</p>
+    <p>et quae marmoreo pede, <name type="deity" xml:lang="la">Naides</name>, uda secatis</p>
+    <p>litora purpureosque alitis per <name type="plant" xml:lang="la">gramina</name> <name type="animal" xml:lang="la">flores</name>,</p>
+    <p>dicite quo <persName>Donacen</persName> prato, qua forte sub umbra</p>
+    <p>inveniam, roseis stringentem <name type="plant" xml:lang="la">lilia</name> <name type="animal" xml:lang="la">palmis</name>?</p>
+    <p>Nam mihi iam trini perierunt ordine <name type="animal" xml:lang="la">soles</name></p>
+    <p>ex quo consueto <persName>Donacen</persName> exspecto sub antro.</p>
+    <p>Interea, tamquam nostri solamen amoris</p>
+    <p>hoc foret aut nostros posset medicare furores,</p>
+    <p>nulla meae trinis tetigerunt <name type="plant" xml:lang="la">gramina</name> <name type="animal" xml:lang="la">vaccae</name></p>
+    <p><name type="animal" xml:lang="la">luciferis</name>, nullo libarunt <name type="animal" xml:lang="la">amne</name> <name type="animal" xml:lang="la">liquores</name>;</p>
+    <p>siccaque fetarum lambentes <name type="animal" xml:lang="la">ubera</name> <name type="animal" xml:lang="la">matrum</name></p>
+    <p>stant <name type="animal" xml:lang="la">vituli</name> et teneris <foreign xml:lang="la">mugitibus</foreign> <name type="animal" xml:lang="la">aera</name> complent.</p>
+    <p>Ipse ego nec <name type="plant" xml:lang="la">iunco</name> molli nec <name type="plant" xml:lang="la">vimine</name> lento</p>
+    <p>perfeci <name type="animal" xml:lang="la">calathos</name> cogendi <name type="animal" xml:lang="la">lactis</name> in usus.</p>
+    <p>Quid tibi quae nosti referam? Scis mille <name type="animal" xml:lang="la">iuvencas</name></p>
+    <p>esse mihi, nosti numquam mea <name type="animal" xml:lang="la">mulctra</name> vacare.</p>
+    <p>Ille ego sum, <persName>Donace</persName>, cui dulcia saepe dedisti</p>
+    <p><name type="animal" xml:lang="la">oscula</name> nec medios dubitasti rumpere <foreign xml:lang="la">cantus</foreign></p>
+    <p>atque inter <name type="animal" xml:lang="la">calamos</name> errantia <name type="animal" xml:lang="la">labra</name> petisti.</p>
+    <p>Heu heu! Nulla meae tangit te cura <name type="animal" xml:lang="la">salutis</name>?</p>
+    <p>Pallidior <name type="plant" xml:lang="la">buxo</name> <name type="plant" xml:lang="la">villaeque</name> simillimus erro.</p>
+    <p>Omnes ecce <name type="animal" xml:lang="la">cibos</name> et nostri <name type="deity" xml:lang="la">Bacchi</name></p>
+    <p><name type="animal" xml:lang="la">pucula</name> horreo nec placido memini concedere <name type="animal" xml:lang="la">somno</name>.</p>
+    <p>Te sine, vae, misero mihi <name type="plant" xml:lang="la">lilia</name> fusca videntur</p>
+    <p>pallentesque <name type="plant" xml:lang="la">rosae</name> nec dulce <name type="plant" xml:lang="la">rubens</name> <name type="plant" xml:lang="la">hyacinthus</name>,</p>
+    <p>nullos nec <name type="plant" xml:lang="la">myrtus</name> nec <name type="plant" xml:lang="la">laurus</name> spirat <name type="animal" xml:lang="la">odores</name>.</p>
+    <p>At, si tu venias, et candida <name type="plant" xml:lang="la">lilia</name> fient</p>
+    <p>purpureaeque <name type="plant" xml:lang="la">rosae</name> et dulce rubens <name type="plant" xml:lang="la">hyacinthus</name>;</p>
+    <p>tunc mihi cum <name type="plant" xml:lang="la">myrto</name> <name type="plant" xml:lang="la">laurus</name> spirabit <name type="animal" xml:lang="la">odores</name>.</p>
+    <p>Nam dum <persName>Pallas</persName> amat turgentes unguine <name type="plant" xml:lang="la">bacas</name>,</p>
+    <p>dum <persName>Bacchus</persName> <name type="plant" xml:lang="la">vites</name>, <foreign xml:lang="la">Deo</foreign> sata, <name type="plant" xml:lang="la">poma</name> <name type="deity" xml:lang="la">Priapus</name>,</p>
+    <p><name type="deity" xml:lang="la">Pales</name> <name type="animal" xml:lang="la">pascua</name> laeta, <placeName>Idas</placeName> te diligit unam</p>
+  </div>
+</div>
+<div type="book" n="3">
+   <p>Haec Idas <name type="animal" xml:lang="la">calamis</name>. Tu, quae responderit <persName>Alcon</persName> versu, <name type="deity">Phoebe</name>, refer: sunt aurea carmina <name type="deity">Phoebo</name>.</p>
+</div>
+<div type="book" n="4">
+   <div type="section" n="1">
+      <p>O <name type="deity" xml:lang="la">Pales</name> montana, o <persName>Apollo</persName> pastoralis,</p>
+      <p>et <name type="deity" xml:lang="la">Silvane</name> potens nemorum, et <persName>Dione</persName> nostra,</p>
+      <p>quae iuga celsa tenes <placeName>Erycis</placeName>, cui cura iugales</p>
+      <p>concubitus hominum totis concedere saeclis,</p>
+      <p>quid merui? Cur me <persName>Donace</persName> formosa reliquit?</p>
+      <p>Munera namque dedi noster quae non dedit <persName>Idas</persName>,</p>
+      <p>vocalem longos quae ducit <name type="animal" xml:lang="la">aedona</name> cantus;</p>
+      <p>quae, licet interdum, contexto vimine clausa,</p>
+      <p>cum parvae patuere fores, ceu libera ferri</p>
+      <p>norit et agrestes inter volitare volucres,</p>
+      <p>scit rursus remeare domum tectumque subire</p>
+      <p>viminis et caveam totis praeponere silvis.</p>
+      <p>Praeterea tenerum <name type="animal" xml:lang="la">leporem</name> geminasque <name type="animal" xml:lang="la">palumbes</name></p>
+      <p>nuper, quae potui silvarum praemia, misi.</p>
+      <p>Et post haec, <persName>Donace</persName>, nostros contemnis amores?</p>
+      <p>Forsitan indignum ducis quod rusticus <persName>Alcon</persName></p>
+      <p>te peream, qui mane boves in pascua duco!</p>
+      <p><name type="deity" xml:lang="la">Di</name> pecorum pavere greges, formosus <persName>Apollo</persName>,</p>
+      <p><persName>Pan</persName> doctus, <persName>Fauni</persName> vates et pulcher <persName>Adonis</persName>.</p>
+      <p>Quin etiam fontis speculo me mane notavi,</p>
+      <p>nondum purpureos <persName>Phoebus</persName> cum tolleret ortus</p>
+      <p>nec tremulum liquidis lumen splenderet in undis:</p>
+      <p>quod vidi, nulla tegimur lanugine malas,</p>
+      <p>pascimus et crinem; nostro formosior <persName>Ida</persName></p>
+      <p>dicor, et hoc ipsum mihi tu iurare solebas,</p>
+      <p>purpureas laudando genas et lactea colla</p>
+      <p>atque hilares oculos et formam puberis aevi.</p>
+      <p>Nec sumus indocti calamis: cantamus <name type="plant" xml:lang="la">avena</name></p>
+      <p>qua divi cecinere prius, qua dulce locutus</p>
+      <p><persName>Tityrus</persName> e silvis dominam pervenit in urbem.</p>
+      <p>Nos quoque te propter, <persName>Donace</persName>, cantabimus urbi</p>
+      <p>si modo coniferas inter <name type="plant" xml:lang="la">viburna</name> <name type="plant" xml:lang="la">cupressos</name></p>
+      <p>atque inter <name type="plant" xml:lang="la">pinos</name> <name type="plant" xml:lang="la">corylum</name> frondescere fas est.</p>
+   </div>
+</div>
+<div type="book" n="5">
+   <p>Sic <persName>pueri</persName> <name type="animal" xml:lang="la">Donacen</name> toto sub sole canebant,</p>
+   <p><foreign xml:lang="la">frigidus</foreign> e <name type="plant" xml:lang="la">silvis</name> donec descendere suasit</p>
+   <p><foreign xml:lang="la">Hesperus</foreign> et <name type="animal" xml:lang="la">stabulis</name> pastos inducere <name type="animal" xml:lang="la">tauros</name>.</p>
+</div>
+    </body>
+  </text>
+</TEI>
