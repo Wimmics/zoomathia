@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <title type="alt" xml:lang="fr">Halieutiques</title>
+        <title type="alt" xml:lang="en">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          <idno type="zoomathia">stoa0216</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-27">2026-07-27</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-27">2026-07-27</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0216</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="1">
+  <div type="chapter" n="18">
+    <p><persName>P. Ovidius Naso</persName> epistulae Heroidum</p>
+    <p>XVIII. <persName>Leander</persName> <persName>Hero</persName></p>
+  </div>
+</div>
+<div type="book" n="2">
+  <p>Quam cuperem solitas, <persName>Hero</persName>, tibi ferre per undas</p>
+  <p>accipere <name type="deity">Leandri</name>, dum venit ipse, manum.</p>
+  <p>Mittit <placeName>Abydenus</placeName>, quam mallet ferre, salutem,</p>
+  <p>si cadat unda maris, <placeName>Sesti</placeName> puella, tibi.</p>
+  <p>si mihi di faciles si sunt in amore secundi,</p>
+  <p>invitis oculis haec mea verba leges.</p>
+  <p>sed non sunt faciles; nam cur mea vota morantur</p>
+  <p>currere me nota nec patiuntur aqua?</p>
+  <p>ipsa vides caelum pice nigrius et freta ventis</p>
+  <p>turbida perque cavas vix adeunda <name type="animal" xml:lang="la">rates</name>.</p>
+  <p>unus, et hic audax, a quo tibi littera nostra</p>
+  <p>redditur, e portu navita movit iter;</p>
+  <p>adscensurus eram, nisi quod cum vincula prorae</p>
+  <p>solveret, in speculis omnis <placeName>Abydos</placeName> erat.</p>
+  <p>non poteram celare meos, velut ante, parentes,</p>
+  <p>quemque tegi volumus, non latuisset amor.</p>
+  <p>protinus haec scribens, 'felix, i, littera!' dixi,</p>
+  <p>'iam tibi formosam porriget illa manum.</p>
+  <p>forsitan admotis etiam tangere labellis,</p>
+  <p>rumpere dum niveo <name type="animal" xml:lang="la">dente</name> volet.'</p>
+  <p>talibus exiguo dictis mihi murmure verbis,</p>
+  <p>cetera cum charta dextra locuta mea est.</p>
+  <p>at quanto mallem, quam scriberet, illa nataret,</p>
+  <p>meque per adsuetas sedula ferret aquas!</p>
+  <p>aptior illa quidem placido dare verbera <name type="animal" xml:lang="la">ponto</name>;</p>
+  <p>est tamen et sensus apta ministra mei.</p>
+  <p>septima nox agitur, spatium mihi longius anno,</p>
+  <p>sollicitum raucis ut mare fervet aquis.</p>
+  <p>his ego si vidi mulcentem pectora somnum</p>
+  <p>noctibus, insani sit mora longa freti.</p>
+  <p>rupe sedens aliqua specto tua litora tristis</p>
+  <p>et, quo non possum corpore, mente feror.</p>
+  <p>lumina quin etiam summa vigilantia turre</p>
+</div>
+<div type="book" n="3">
+  <div type="section" n="8">
+    <p>aut videt aut acies nostra videre putat.</p>
+    <p>ter mihi deposita est in sicca vestis harena;</p>
+    <p>ter grave temptavi carpere nudus iter:</p>
+    <p>obstitit inceptis tumidum iuvenalibus <name type="animal" xml:lang="la">aequor</name></p>
+    <p>mersit et adversis ora natantis <name type="animal" xml:lang="la">aquis</name>.</p>
+    <p>at tu, de rapidis inmansuetissime <name type="animal" xml:lang="la">ventis</name>,</p>
+    <p>quid mecum certa proelia mente geris?</p>
+    <p>in me, si nescis, <name type="deity">Borea</name>, non <name type="animal" xml:lang="la">aequora</name>, saevis.</p>
+    <p>quid faceres, esset ni tibi notus <name type="deity">amor</name>?</p>
+    <p>tam gelidus quod sis, num te tamen, improbe, quondam</p>
+    <p>ignibus <foreign xml:lang="la">Actaeis</foreign> incaluisse negas?</p>
+    <p>gaudia rapturo siquis tibi claudere vellet</p>
+    <p>aerios aditus, quo paterere modo?</p>
+    <p>parce, precor, facilemque move moderatius <name type="animal" xml:lang="la">auram</name>!</p>
+    <p><name type="deity">imperet</name> <persName>Hippotades</persName> sic tibi triste nihil!</p>
+    <p>vana peto; precibusque meis obmurmurat ipse</p>
+    <p>quasque quatit, nulla parte coercet <name type="animal" xml:lang="la">aquas</name>.</p>
+    <p>nunc daret audaces utinam mihi <persName>Daedalus</persName> <name type="animal" xml:lang="la">alas</name>!</p>
+    <p><foreign xml:lang="la">Icarium</foreign> quamvis hinc prope <placeName>litus</placeName> abest.</p>
+    <p>quidquid erit, patiar, liceat modo corpus in auras</p>
+    <p>tollere, quod dubia saepe pependit <name type="animal" xml:lang="la">aqua</name>.</p>
+    <p>interea, dum cuncta negant <name type="animal" xml:lang="la">ventique</name> <name type="animal" xml:lang="la">freta</name>,</p>
+    <p>mente agito furti tempora prima mei.</p>
+    <p>nox erat incipiens—namque est meminisse voluptas—</p>
+    <p>cum foribus patriis egrediebar amans.</p>
+    <p>nec mora, deposito pariter cum veste timore</p>
+    <p>iactabam liquido <name type="animal" xml:lang="la">bracchia</name> lenta <name type="animal" xml:lang="la">mari</name>.</p>
+    <p><name type="deity">luna</name> fere tremulum praebebat lumen eunti</p>
+    <p>ut comes in nostras officiosa vias.</p>
+    <p>hanc ego suspiciens, 'faveas, <name type="deity">dea</name> candida,' dixi,</p>
+    <p>'et subeant animo <placeName>Latmia</placeName> saxa tuo.</p>
+    <p>non sinit <persName>Endymion</persName> te pectoris esse severi;</p>
+    <p>flecte, precor, vultus ad mea furta tuos!</p>
+  </div>
+</div>
+<div type="book" n="4">
+  <div type="chapter" n="8">
+    <p>tu <name type="deity" xml:lang="la">dea</name> mortalem <foreign xml:lang="la">caelo</foreign> delapsa petebas;</p>
+    <p>vera loqui liceat!—<name type="deity" xml:lang="la">dea</name> est.</p>
+    <p>neu referam mores caelesti pectore dignos,</p>
+    <p>forma nisi in veras non cadit illa <name type="deity" xml:lang="la">deas</name>.</p>
+    <p>a <name type="deity" xml:lang="la">Veneris</name> facie non est prior ulla tuaque;</p>
+    <p>neve meis credas vocibus, ipsa vide!</p>
+    <p>quantum, cum fulges radiis argentea puris,</p>
+    <p>concedunt flammis sidera cuncta tuis,</p>
+    <p>tanto formosis formosior omnibus illa est;</p>
+    <p>si dubitas, <name type="deity" xml:lang="la">Cynthia</name>, lumen habes.'</p>
+    <p>haec ego vel certe non his diversa locutus</p>
+    <p>per mihi cedentes sponte ferebar aquas.</p>
+    <p>unda repercussae radiabat imagine <name type="deity" xml:lang="la">lunae</name></p>
+    <p>et nitor in tacita nocte diurnus erat.</p>
+    <p>nullaque vox usquam, nullum veniebat ad aures</p>
+    <p>praeter dimotae corpore murmur <name type="animal" xml:lang="la">aquae</name>.</p>
+    <p><name type="animal" xml:lang="la">Alcyones</name> solae memores <persName>Ceycis</persName> amati</p>
+    <p>nescio quid visae sunt mihi dulce queri.</p>
+    <p>iamque fatigatis umero sub utroque lacertis</p>
+    <p>fortiter in summas erigor altus aquas.</p>
+    <p>ut procul adspexi lumen, 'meus ignis in illo est:</p>
+    <p>illa meum,' dixi, '<placeName>litora</placeName> lumen habent.'</p>
+    <p>et subito lassis vires rediere lacertis,</p>
+    <p>visaque quam fuerat mollior unda mihi.</p>
+    <p>frigora ne possim gelidi sentire profundi,</p>
+    <p>qui calet in cupido pectore, praestat amor.</p>
+    <p>quo magis accedo propioraque <placeName>litora</placeName> fiunt,</p>
+    <p>quoque minus restat, plus libet ire mihi.</p>
+    <p>cum vero possum cerni quoque, protinus addis</p>
+    <p>spectatrix animos, ut valeamque facis.</p>
+    <p>nunc etiam nando dominae placuisse laboro,</p>
+    <p>atque oculis iacto bracchia nostra tuis.</p>
+    <p>te tua vix prohibet nutrix descendere in altum;</p>
+    <p>hoc quoque enim vidi, nec mihi verba dabas.</p>
+  </div>
+</div>
+<div type="book" n="5">
+  <div type="chapter" n="8">
+    <p>nec tamen effecit, quamvis retinebat euntem,</p>
+    <p>ne fieret prima <name type="animal" xml:lang="la">pes</name> tuus udus aqua.</p>
+    <p>excipis amplexu feliciaque oscula iungis—</p>
+    <p>oscula, <name type="deity">di magni</name>, trans mare digna peti!</p>
+    <p>eque tuis demptos <name type="animal" xml:lang="la">umeris</name> mihi tradis amictus</p>
+    <p>et madidam siccas aequoris imbre <name type="animal" xml:lang="la">comam</name>.</p>
+    <p><name type="animal" xml:lang="la">cetera</name> nox et nos et turris conscia novit</p>
+    <p>quodque mihi lumen per vada monstrat iter.</p>
+    <p>non magis illius numerari gaudia noctis</p>
+    <p><name type="placeName">Hellespontiaci</name> quam <name type="animal" xml:lang="la">maris alga</name> potest;</p>
+    <p>quo brevius spatium nobis ad furta dabatur,</p>
+    <p>hoc magis est cautum, ne foret illud iners.</p>
+    <p>iamque fugatura <name type="deity">Tithoni coniuge</name> noctem</p>
+    <p>praevius <name type="deity">Aurorae</name> <name type="deity">Lucifer</name> ortus erat;</p>
+    <p>oscula congerimus properata sine ordine raptim</p>
+    <p>et querimur parvas noctibus esse moras.</p>
+    <p>atque ita cunctatus monitu <name type="animal" xml:lang="la">nutricis</name> amaro</p>
+    <p>frigida deserta litora turre peto.</p>
+    <p>digredimur flentes repetoque ego <name type="animal" xml:lang="la">virginis</name> aequor</p>
+    <p>respiciens dominam, dum licet, usque meam.</p>
+    <p>siqua fides vero est, veniens hinc esse <name type="animal" xml:lang="la">natator</name>,</p>
+    <p>cum redeo, videor <name type="animal" xml:lang="la">naufragus</name> esse mihi.</p>
+    <p>hoc quoque, si credes: ad te via prona videtur;</p>
+    <p>a te cum redeo, clivus inertis aquae.</p>
+    <p>invitus repeto patriam; quis credere possit?</p>
+    <p>invitus certe nunc moror urbe mea.</p>
+    <p>ei mihi! cur animis iuncti secernimur undis</p>
+    <p>unaque mens, tellus non habet una duos?</p>
+    <p>vel tua me <name type="placeName">Sestus</name>, vel te mea sumat <name type="placeName">Abydos</name>;</p>
+    <p>tam tua terra mihi, quam tibi nostra placet.</p>
+    <p>cur ego confundor, quotiens confunditur aequor?</p>
+    <p>cur mihi causa levis, <name type="animal" xml:lang="la">ventus</name>, obesse potest?</p>
+    <p>iam nostros curvi norunt <name type="animal" xml:lang="la">delphines</name> amores</p>
+    <p><name type="animal" xml:lang="la">ignotum</name> nec me <name type="animal" xml:lang="la">piscibus</name> esse reor.</p>
+  </div>
+</div>
+<div type="book" n="6">
+   <p>iam patet attritus solitarum <name type="animal" xml:lang="la">limes</name> aquarum,</p>
+   <p>non aliter multa quam via pressa rota.</p>
+   <p>quod mihi non esset nisi sic iter, ante querebar;</p>
+   <p>at nunc per <name type="animal" xml:lang="la">ventos</name> hoc quoque deesse queror.</p>
+   <p><name type="animal" xml:lang="la">fluctibus</name> immodicis Athamantidos aequora canent</p>
+   <p>vixque manet portu tuta <name type="animal" xml:lang="la">carina</name> suo;</p>
+   <p>hoc <name type="animal" xml:lang="la">mare</name>, cum primum de virgine nomina mersa,</p>
+   <p>quae tenet, est nanctum, tale fuisse puto.</p>
+   <p>est satis amissa locus hic infamis ab Helle est,</p>
+   <p>utque mihi parcat, nomine crimen habet.</p>
+   <p>invideo <persName>Phrixo</persName>, quem per freta tristia tutum</p>
+   <p>aurea lanigero vellere vexit <name type="animal" xml:lang="la">ovis</name>;</p>
+   <p>nec tamen officium pecoris navisve requiro,</p>
+   <p>dummodo, quas findam corpore, dentur aquae.</p>
+   <p>arte egeo nulla; fiat modo copia nandi,</p>
+   <p>idem navigium, navita, vector ero</p>
+   <p>nec sequor aut <placeName>Helicen</placeName> aut qua <placeName>Tyros</placeName> utitur <name type="deity">Arcton</name>;</p>
+   <p>publica non curat sidera noster amor.</p>
+   <p><persName>Andromedan</persName> alius spectet claramque Coronam</p>
+   <p>quaeque micat gelido Parrhasis <name type="deity">Ursa</name> polo;</p>
+   <p>at mihi quod <persName>Perseus</persName> et cum <name type="deity">Iove</name> <persName>Liber</persName> amarunt,</p>
+   <p>indicium dubiae non placet esse viae.</p>
+   <p>est aliud lumen, multo mihi certius istis,</p>
+   <p>non errat tenebris quo duce noster amor;</p>
+   <p>hoc ego dum spectem, <placeName>Colchos</placeName> et in ultima <placeName>Ponti</placeName></p>
+   <p>quaque viam fecit <placeName>Thessala</placeName> <name type="animal" xml:lang="la">pinus</name> eam</p>
+   <p>et <persName>iuvenem</persName> possim <persName>Palaemona</persName> nando</p>
+   <p>morsaque quem subito reddidit herba <name type="deity">deum</name>.</p>
+   <p>saepe per adsiduos languent mea bracchia motus,</p>
+   <p>vixque per immensas fessa trahuntur aquas.</p>
+   <p>his ego cum dixi: 'pretium non vile laboris,</p>
+   <p>iam dominae vobis colla tenenda dabo,'</p>
+   <p>protinus illa valent, atque ad sua praemia tendunt,</p>
+</div>
+<div type="book" n="7">
+  <div type="chapter" n="8">
+    <p>ut celer <name type="animal" xml:lang="la">Eleo</name> carcere missus <name type="animal" xml:lang="la">equus</name>.</p>
+    <p>ipse meos igitur servo, quibus uror, amores</p>
+    <p>teque, magis caelo digna <persName>puella</persName>, sequor.</p>
+    <p>digna quidem caelo, sed adhuc tellure morare,</p>
+    <p>aut dic, ad superos et mihi qua sit iter!</p>
+    <p>hic es et exigue misero contingis amanti,</p>
+    <p>cumque mea fiunt turbida mente freta.</p>
+    <p>quid mihi, quod lato non separor aequore, prodest?</p>
+    <p>num minus haec nobis tam brevis obstat aqua?</p>
+    <p>an malim, dubito, toto procul orbe remotus</p>
+    <p>cum domina longe spem quoque habere meam.</p>
+    <p>quo propius nunc es, flamma propiore calesco</p>
+    <p>et res non semper, spes mihi semper adest.</p>
+    <p>paene manu quod amo, tanta est vicinia, tango;</p>
+    <p>saepe sed, heu, lacrimas hoc mihi 'paene' movet!</p>
+    <p>velle quid est aliud fugientia prendere <name type="plant" xml:lang="la">poma</name></p>
+    <p>spemque suo refugi fluminis ore sequi?</p>
+    <p>ergo ego te numquam, nisi cum volet unda, tenebo</p>
+    <p>et me felicem nulla videbit hiems,</p>
+    <p>cumque minus firmum nil sit quam ventus et unda,</p>
+    <p>in ventis et aqua spes mea semper erit?</p>
+    <p>aestus adhuc tamen est. quid, cum mihi laeserit aequor</p>
+    <p><name type="deity">Plias</name> et <name type="deity">Arctophylax</name> <name type="placeName">Oleniumque</name> pecus?</p>
+    <p>aut ego non novi, quam sim temerarius, aut me</p>
+    <p>in freta non cautus tum quoque mittet <name type="deity">Amor</name>;</p>
+    <p>neve putes id me, quod abest, promittere, tempus,</p>
+    <p>pignora polliciti non tibi tarda dabo.</p>
+    <p>sit tumidum paucis etiam nunc noctibus aequor;</p>
+    <p>ire per invitas experiemur aquas.</p>
+    <p>aut mihi continget felix audacia salvo</p>
+    <p>aut mors solliciti finis amoris erit.</p>
+    <p>optabo tamen ut partis expellar in illas</p>
+    <p>et teneant portus naufraga membra tuos.</p>
+  </div>
+</div>
+<div type="book" n="8">
+  <p>flebis enim tactuque meum dignabere corpus</p>
+  <p>et <quote>'mortis,' dices, 'huic ego causa fui!'</quote></p>
+  <p>scilicet interitus offenderis omine nostri,</p>
+  <p>litteraque invisa est hac mea parte tibi.</p>
+  <p>desino; parce queri. sed ut et mare finiat iram,</p>
+  <p>accedant, quaeso, fac tua vota meis.</p>
+  <p>pace brevi nobis opus est, dum transferor isto;</p>
+  <p>cum tua contigero litora, perstet hiems!</p>
+  <p>istic est aptum nostrae navale carinae</p>
+  <p>et melius nulla stat mea puppis aqua.</p>
+  <p>illic me claudat Boreas, ubi dulce morari est;</p>
+  <p>tunc piger ad nandum, tunc ego cautus ero</p>
+  <p>nec faciam surdis convicia fluctibus ulla</p>
+  <p>triste nataturo nec querar esse fretum.</p>
+  <p>me pariter venti teneant tenerique lacerti,</p>
+  <p>per causas istic impediarque duas</p>
+  <p>cum patietur hiems, remis ego corporis utar;</p>
+  <p>lumen in adspectu tu modo semper habe.</p>
+  <p>interea pro me pernoctet epistula tecum,</p>
+  <p>quam precor ut minima prosequar ipse mora.</p>
+</div>    </body>
+  </text>
+</TEI>

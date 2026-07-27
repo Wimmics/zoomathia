@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <title type="alt" xml:lang="fr">Halieutiques</title>
+        <title type="alt" xml:lang="en">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          <idno type="zoomathia">stoa0216</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-27">2026-07-27</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-27">2026-07-27</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0216</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="poem">
+  <head type="title">Heroides</head>
+  <head type="sub">XI. Canace Macareo</head>
+  <lg type="strophe">
+    <l n="1">Aeolis Aeolidae quam non habet ipsa salutem</l>
+    <l n="2">mittit et armata verba notata manu.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="3">Si qua tamen caecis errabunt scripta lituris,</l>
+    <l n="4">oblitus a dominae caede libellus erit.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="5">dextra tenet calamum, strictum tenet altera ferrum</l>
+    <l n="6">et iacet in gremio charta soluta meo.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="7">haec est Aeolidos fratri scribentis imago;</l>
+    <l n="8">sic videor duro posse placere patri.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="9">Ipse necis cuperem nostrae spectator adesset</l>
+    <l n="10">auctorisque oculis exigeretur opus</l>
+  </lg>
+  <lg type="strophe">
+    <l n="11">ut ferus est multoque suis truculentior Euris,</l>
+    <l n="12">spectasset siccis vulnera nostra genis.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="13">scilicet est aliquid cum saevis vivere ventis;</l>
+    <l n="14">ingenio populi convenit ille sui.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="15">ille Noto Zephyroque et Sithonio Aquiloni</l>
+    <l n="16">imperat et pinnis, Eure proterve, tuis.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="17">imperat heu! ventis; tumidae non imperat irae</l>
+    <l n="18">possidet et vitiis regna minora suis.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="19">quid iuvat admotam per avorum nomina caelo</l>
+    <l n="20">inter cognatos posse referre Iovem?</l>
+  </lg>
+  <lg type="strophe">
+    <l n="21">num minus infestum, funebria munera, ferrum</l>
+    <l n="22">feminea teneo, non mea tela, manu?</l>
+  </lg>
+  <lg type="strophe">
+    <l n="23">O utinam, <persName>Macareu</persName>, quae nos commisit in unum,</l>
+    <l n="24">venisset leto serior hora meo!</l>
+  </lg>
+  <lg type="strophe">
+    <l n="25">cur umquam plus me, <persName>frater</persName>, quam <persName>frater</persName> amasti</l>
+    <l n="26">et tibi, non debet quod soror esse, fui?</l>
+  </lg>
+  <lg type="strophe">
+    <l n="27">ipsa quoque incalui, qualemque audire solebam,</l>
+    <l n="28">nescio quem sensi corde tepente deum.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="29">fugerat ore color, macies adduxerat artus,</l>
+    <l n="30">sumebant minimos ora coacta cibos;</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="1">nec somni faciles et nox erat annua nobis</l>
+  <l n="2">et gemitum nullo laesa dolore dabam.</l>
+  <l n="3">nec cur haec facerem, poteram mihi reddere causam</l>
+  <l n="4">nec noram quid amans esset; at illud eram.</l>
+</lg>
+<lg type="strophe">
+  <l n="5">Prima malum nutrix animo praesensit anili;</l>
+  <l n="6"><persName>Aeoli</persName>,</l>
+  <l n="7">dixit, "amas!"</l>
+  <l n="8">erubui gremioque pudor deiecit ocellos;</l>
+  <l n="9">haec satis in tacita signa fatentis erant.</l>
+</lg>
+<lg type="strophe">
+  <l n="10">iamque tumescebant vitiati pondera ventris</l>
+  <l n="11">aegraque furtivum membra gravabat onus.</l>
+  <l n="12">quas mihi non <name type="plant" xml:lang="la">herbas</name>, quae non <name type="plant" xml:lang="la">medicamina</name> nutrix</l>
+  <l n="13">attulit audaci supposuitque manu,</l>
+  <l n="14">ut penitus nostris—hoc te celavimus unum—</l>
+  <l n="15">visceribus crescens excuteretur onus!</l>
+</lg>
+<lg type="strophe">
+  <l n="16">a! nimium vivax admotis restitit infans</l>
+  <l n="17">artibus et tecto tutus ab hoste fuit.</l>
+  <l n="18">iam noviens erat orta soror pulcherrima <name type="deity">Phoebi</name></l>
+  <l n="19">et nova <name type="deity">Lucina</name> movebat luciferos equos;</l>
+  <l n="20">nescia, quae faceret subitos mihi causa dolores,</l>
+  <l n="21">et rudis ad partus et nova miles eram.</l>
+</lg>
+<lg type="strophe">
+  <l n="22">nec tenui vocem. "quid" ait "tua crimina prodis?"</l>
+  <l n="23">oraque clamantis conscia pressit anus.</l>
+  <l n="24">quid faciam infelix? gemitus dolor edere cogit,</l>
+  <l n="25">sed timor et nutrix et pudor ipse vetant.</l>
+  <l n="26">contineo gemitus elapsaque verba reprendo</l>
+  <l n="27">et cogor lacrimas combibere ipsa meas.</l>
+</lg>
+<lg type="strophe">
+  <l n="28">mors erat ante oculos et opem <name type="deity">Lucina</name> negabat</l>
+  <l n="29">et grave si morerer mors quoque crimen erat;</l>
+  <l n="30">cum super incumbens scissa tunicaque comaque</l>
+  <l n="31">pressa refovisti pectora nostra tuis,</l>
+  <l n="32">et mihi "vive, soror, soror o carissima," aisti</l>
+  <l n="33">"vive nec unius corpore perde duos.</l>
+  <l n="34">spes bona det vires; fratri nam nupta futura es.</l>
+</lg>
+<lg type="strophe">
+  <l n="1">illius de quo mater et uxor eris."</l>
+  <l n="2">Mortua, crede mihi, tamen ad tua verba revixi</l>
+  <l n="3">  et positum est uteri crimen onusque mei.</l>
+  <l n="4">quid tibi grataris? media sedet Aeolus aula;</l>
+  <l n="5">  crimina sunt oculis subripienda patris.</l>
+  <l n="6">frugibus infantem ramisque albentis olivae</l>
+  <l n="7">  et levibus vittis sedula celat anus</l>
+  <l n="8">fictaque sacra facit dicitque precantia verba;</l>
+  <l n="9">  dat populus sacris, dat pater ipse viam.</l>
+  <l n="10">iam prope limen erat. patrias vagitus ad aures</l>
+  <l n="11">  venit et indicio proditur ille suo.</l>
+  <l n="12">eripit infantem mentitaque sacra revelat</l>
+  <l n="13">  Aeolus. insana regia voce sonat.</l>
+  <l n="14">ut mare fit tremulum, tenui cum stringitur aura,</l>
+  <l n="15">  ut quatitur tepido fraxina virga Noto,</l>
+  <l n="16">sic mea vibrari pallentia membra videres;</l>
+  <l n="17">  quassus ab imposito corpore lectus erat.</l>
+  <l n="18">inruit et nostrum vulgat clamore pudorem</l>
+  <l n="19">  et vix a misero continet ore manus.</l>
+  <l n="20">ipsa nihil praeter lacrimas pudibunda profudi.</l>
+  <l n="21">  torpuerat gelido lingua retenta metu.</l>
+</lg>
+<lg type="strophe">
+  <l n="22">Iamque dari parvum canibusque <name type="animal" xml:lang="la">avibusque</name> nepotem</l>
+  <l n="23">  iusserat in solis destituique locis.</l>
+  <l n="24">vagitus dedit ille miser—sensisse putares—</l>
+  <l n="25">  quaque suum poterat voce rogabat <name type="deity">avum</name>.</l>
+  <l n="26">quid mihi tunc animi credis, <persName>germane</persName>, fuisse</l>
+  <l n="27">  (nam potes ex animo colligere ipse tuo)</l>
+  <l n="28">cum mea me coram silvas inimicus in altas</l>
+  <l n="29">  viscera montanis ferret edenda <name type="animal" xml:lang="la">lupis</name>?</l>
+  <l n="30">exierat thalamo. tunc demum pectora plangi</l>
+  <l n="31">  contigit inque meas unguibus ire comas.</l>
+</lg>
+<lg type="strophe">
+  <l n="32">Interea patrius vultu maerente satelles</l>
+  <l n="33">  venit et indignos edidit ore sonos:</l>
+  <l n="34">‘<persName>Aeolus</persName> hunc ensem mittit tibi’—tradidit ensem—</l>
+</lg>
+<lg type="strophe">
+  <l n="1">et iubet ex merito scire, quid iste velit.'</l>
+  <l n="2">scimus et utemur violento fortiter ense;</l>
+  <l n="3">pectoribus condam dona paterna meis.</l>
+  <l n="4">his mea muneribus, genitor, conubia donas?</l>
+  <l n="5">hac tua dote, pater, filia dives erit?</l>
+  <l n="6">tolle procul, decepte, faces, <name type="deity">Hymenaee</name>, maritas</l>
+  <l n="7">et fuge turbato tecta nefanda pede!</l>
+  <l n="8">ferte faces in me quas fertis, <name type="deity">Erinyes</name> atrae,</l>
+  <l n="9">et meus ex isto luceat igne rogus!</l>
+  <l n="10">nubite felices <name type="deity">Parca</name> meliore sorores;</l>
+  <l n="11">amissae memores sed tamen este mei!</l>
+</lg>
+<lg type="strophe">
+  <l n="12"><persName>Quid</persName> puer admisit tam paucis editus horis?</l>
+  <l n="13">quo laesit facto vix bene natus avum?</l>
+  <l n="14">si potuit meruisse necem, meruisse putetur;</l>
+  <l n="15">a! miser admisso plectitur ille meo!</l>
+  <l n="16">nate, dolor matris, rapidarum praeda ferarum,</l>
+  <l n="17">ei mihi! natali dilacerate tuo,</l>
+  <l n="18">nate, parum fausti miserabile pignus amoris,</l>
+  <l n="19">haec tibi prima dies, haec tibi summa fuit.</l>
+</lg>
+<lg type="strophe">
+  <l n="20">non mihi te licuit lacrimis perfundere iustis,</l>
+  <l n="21">in tua non tonsas ferre sepulcra comas;</l>
+  <l n="22">non super incubui, non oscula frigida carpsi;</l>
+  <l n="23">diripiunt avidae viscera nostra ferae.</l>
+  <l n="24">Ipsa quoque infantis cum vulnere prosequar umbras;</l>
+  <l n="25">nec mater fuero dicta nec orba diu.</l>
+</lg>
+<lg type="strophe">
+  <l n="26">tu tamen, o frustra miserae sperate sorori,</l>
+  <l n="27">sparsa, precor, nati collige membra tui</l>
+  <l n="28">et refer ad matrem socioque impone sepulcro</l>
+  <l n="29">urnaque nos habeat quamlibet arta duos!</l>
+  <l n="30">vive memor nostri lacrimasque in vulnera funde,</l>
+  <l n="31">neve reformida corpus amantis amans.</l>
+  <l n="32">tu, rogo, dilectae nimium mandata sororis</l>
+  <l n="33">perfer! mandatum persequar ipsa patris.</l>
+</lg>    </body>
+  </text>
+</TEI>

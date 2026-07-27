@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <title type="alt" xml:lang="fr">Halieutiques</title>
+        <title type="alt" xml:lang="en">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          <idno type="zoomathia">stoa0216</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-27">2026-07-27</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-27">2026-07-27</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0216</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="6">
+  <div type="chapter" n="1">
+    <p>Lemnias <name type="animal" xml:lang="la">Hypsipyle</name> <persName>Bacchi</persName> genus <persName>Aesone</persName> nato</p>
+    <p>dicit: et in verbis pars quota <name type="animal" xml:lang="la">mentis</name> erat?</p>
+  </div>
+</div>
+<div type="book" n="2">
+  <p>Litora Thessaliae reduci tetigisse <name type="animal" xml:lang="la">carina</name> </p>
+  <p>diceris auratae vellere dives <name type="animal" xml:lang="la">ovis</name>. </p>
+  <p>gratulor incolumi quantum sinis; hoc tamen ipso </p>
+  <p>debueram scripto certior esse tuo. </p>
+  <p>nam ne pacta tibi praeter mea regna redires, </p>
+  <p>cum cuperes, <name type="animal" xml:lang="la">ventos</name> non habuisse potes: </p>
+  <p>quamlibet adverso signatur epistula <name type="animal" xml:lang="la">vento</name>, </p>
+  <p><name type="deity">Hypsipyle</name> missa digna salute fui! </p>
+  <p>Cur mihi fama prior quam littera nuntia venit: </p>
+  <p>isse sacros <name type="deity">Martis</name> sub iuga panda <name type="animal" xml:lang="la">boves</name>, </p>
+  <p>seminibus iactis segetes adolesse virorum </p>
+  <p>inque necem dextra non eguisse tua, </p>
+  <p>pervigilem spolium <name type="animal" xml:lang="la">pecudis</name> servasse <name type="animal" xml:lang="la">draconem</name>, </p>
+  <p>rapta tamen forti vellera fulva manu? </p>
+  <p>hoc ego si possem timide credentibus "ista </p>
+  <p>ipse mihi scripsit" dicere, quanta forem! </p>
+  <p>Quid queror officium lenti cessasse <name type="deity">mariti</name>? </p>
+  <p>obsequium, maneo si tua, grande tuli. </p>
+  <p>barbara narratur venisse <name type="animal" xml:lang="la">venefica</name> tecum </p>
+  <p>in mihi promissi parte recepta tori. </p>
+  <p>credula res <name type="deity">amor</name> est. utinam temeraria dicar </p>
+  <p>criminibus falsis insimulasse virum! </p>
+  <p>nuper ab <placeName>Haemoniis</placeName> hospes mihi <placeName>Thessalus</placeName> oris </p>
+  <p>venerat et tactum vix bene limen erat, </p>
+  <p>"<persName>Aesonides</persName>," dixi, "quid agit meus?" ille pudore </p>
+  <p>haesit in opposita lumina fixus humo. </p>
+  <p>protinus exilui tunicisque a pectore ruptis </p>
+  <p>"vivit? an," exclamo, "me quoque <name type="deity">fata</name> vocant?" </p>
+  <p>"vivit," ait timidus; timidum iurare coegi. </p>
+  <p>vix mihi teste deo credita vita tua est. </p>
+  <p>Utque animus rediit, tua facta requirere coepi: </p>
+  <p>narrat aeripedes <name type="deity">Martis</name> arasse <name type="animal" xml:lang="la">boves</name>, </p>
+  <p><name type="animal" xml:lang="la">vipereos</name> dentes in humum pro semine iactos </p>
+  <p>et subito natos arma tulisse viros, </p>
+</div>
+<div type="book" n="3">
+  <div type="section" n="1">
+    <p>terrigenas populos <name type="animal" xml:lang="la">civili</name> Marte peremptos
+    inplesse aetatis fata diurna suae.</p>
+    <p><name type="animal" xml:lang="la">serpens</name> devictus. iterum, si vivat <persName>Iason</persName>,
+    quaerimus; alternant spesque timorque fidem.</p>
+    <p>Singula dum narrat, studio cursuque loquendi
+    detegit ingenio vulnera nostra suo.</p>
+    <p>heus, ubi pacta fides? ubi conubialia iura
+    faxque sub arsuros dignior ire rogos?</p>
+    <p>non ego sum furto tibi cognita. pronuba <name type="deity">Iuno</name>
+    affuit et sertis tempora vinctus <name type="deity">Hymen</name>.</p>
+    <p>at mihi nec <name type="deity">Iuno</name> nec <name type="deity">Hymen</name>, sed tristis <name type="deity">Erinys</name>
+    praetulit infaustas sanguinolenta faces.</p>
+  </div>
+  <div type="section" n="2">
+    <p>Quid mihi cum <persName>Minyis</persName>? quid cum <persName>Tritonide</persName> <name type="plant" xml:lang="la">pinu</name>?
+    quid tibi cum patria, navita <persName>Tiphy</persName>, mea?</p>
+    <p>non erat hic <name type="animal" xml:lang="la">aries</name> villo spectabilis aureo,
+    nec senis <persName>Aeetae</persName> regia <placeName>Lemnos</placeName> erat.</p>
+    <p>certa fui primo—sed me mala fata trahebant—
+    hospita feminea pellere castra manu</p>
+    <p><name type="deity">Lemniades</name>que viros—nimium quoque!—vincere norunt:
+    milite tam forti vita tuenda fuit!</p>
+    <p>Urbe virum vidi tectoque animoque recepi.
+    hic tibi bisque aestas bisque cucurrit hiems.</p>
+    <p>tertia messis erat, cum tu dare vela coactus
+    inplesti lacrimis talia verba tuis:</p>
+    <p>"abstrahor, <persName>Hypsipyle</persName>. sed dent modo fata recursus;
+    vir tuus hinc abeo, vir tibi semper ero.</p>
+    <p>quod tamen e nobis gravida celatur in alvo,
+    vivat et eiusdem simus uterque parens!"</p>
+  </div>
+  <div type="section" n="3">
+    <p>Hactenus. et lacrimis in falsa cadentibus ora
+    cetera te memini non potuisse loqui.</p>
+    <p>Ultimus e sociis sacram conscendis in <placeName>Argon</placeName>;
+    illa volat, ventus concava vela tenet.</p>
+    <p>caerula propulsae subducitur unda carinae:
+    terra tibi, nobis adspiciuntur aquae.</p>
+  </div>
+</div>
+<div type="book" n="4">
+  <p>in latus omne patens turris circumspicit undas;</p>
+  <p>huc feror et lacrimis osque sinusque madent.</p>
+  <p>per lacrimas specto cupidaeque faventia menti</p>
+  <p>longius adsueto lumina nostra vident.</p>
+  <p>adde preces castas inmixtaque vota timori</p>
+  <p>nunc quoque te salvo persoluenda mihi!</p>
+  <p>Vota ego persolvam? votis Medea fruetur!</p>
+  <p>cor dolet atque ira mixtus abundat amor.</p>
+  <p>dona feram templis, vivum quod <name type="animal" xml:lang="la">Iasona</name> perdo?</p>
+  <p>hostia pro damnis concidat icta meis?</p>
+  <p>Non equidem secura fui semperque verebar,</p>
+  <p>ne pater Argolica sumeret urbe nurum.</p>
+  <p><placeName>Argolidas</placeName> timui—nocuit mihi barbara paelex!</p>
+  <p>non expectato vulnus ab hoste tuli.</p>
+  <p>nec facie meritisque placet, sed carmina novit</p>
+  <p>diraque cantata pabula falce metit.</p>
+  <p>illa reluctantem cursu deducere <name type="deity">Lunam</name></p>
+  <p>nititur et tenebris abdere <name type="deity">Solis</name> equos;</p>
+  <p>illa refrenat aquas obliquaque flumina sistit,</p>
+  <p>illa loco silvas vivaque saxa movet.</p>
+  <p>per tumulos errat passis discincta capillis</p>
+  <p>certaque de tepidis colligit ossa rogis.</p>
+  <p>devovet absentis simulacraque cerea figit</p>
+  <p>et miserum tenues in iecur urget acus.</p>
+  <p>et quae nescierim melius: male quaeritur <name type="plant" xml:lang="la">herbis</name></p>
+  <p>moribus et forma conciliandus amor.</p>
+  <p>Hanc potes amplecti thalamoque relictus in uno</p>
+  <p>inpavidus somno nocte silente frui?</p>
+  <p>scilicet ut <name type="animal" xml:lang="la">tauros</name>, ita te iuga ferre coegit:</p>
+  <p>quaque feros <name type="animal" xml:lang="la">angues</name>, te quoque mulcet ope.</p>
+  <p>adde quod adscribi factis procerumque tuisque</p>
+  <p>se favet et titulo coniugis uxor obest.</p>
+  <p>atque aliquis <persName>Peliae</persName> de partibus acta venenis</p>
+  <p>inputat et populum qui sibi credat habet:</p>
+</div>
+<div type="book" n="5">
+  <p>non haec <name type="animal" xml:lang="la">Aesonides</name>, sed <persName>Phasias</persName> <persName>Aeetine</persName> </p>
+  <p>aurea <name type="animal" xml:lang="la">Phrixeae</name> terga revellit <name type="animal" xml:lang="la">ovis</name>.</p>
+  <p>non probat <persName>Alcimede</persName> mater tua—consule matrem!— </p>
+  <p>non pater, a gelido cui venit axe nurus.</p>
+  <p>illa sibi a <placeName>Tanai</placeName> <placeName>Scythiae</placeName>que paludibus udae </p>
+  <p>quaerat et a patria <placeName>Phasidis</placeName> usque virum.</p>
+  <p><persName>Aesonide</persName> vernaque incertior aura, </p>
+  <p>cur tua polliciti pondere verba carent?</p>
+  <p>vir meus hinc ieras, vir non meus inde redisti— </p>
+  <p>sim reducis coniunx, sicut euntis eram.</p>
+  <p>si te nobilitas generosaque nomina tangunt: </p>
+  <p>en ego <persName>Minoo</persName> nata <persName>Thoante</persName> feror.</p>
+  <p><name type="deity">Bacchus</name> avus: <name type="deity">Bacchi</name> coniunx redimita corona </p>
+  <p>praeradiat stellis signa minora suis.</p>
+  <p>dos tibi <placeName>Lemnos</placeName> erit, terra ingeniosa colenti; </p>
+  <p>me quoque dotalis inter habere potes.</p>
+  <p>Nunc etiam peperi. gratare ambobus, <persName>Iason</persName>— </p>
+  <p>dulce mihi gravidae fecerat auctor onus.</p>
+  <p>felix in numero quoque sum prolemque gemellam </p>
+  <p>pignora <name type="deity">Lucina</name> bina favente dedi.</p>
+  <p>si quaeris, cui sint similes, cognosceris illis: </p>
+  <p>fallere non norunt, cetera patris habent;</p>
+  <p>legatos quos paene dedi pro matre ferendos; </p>
+  <p>sed tenuit coeptas saeva noverca vias.</p>
+  <p><persName>Medeam</persName> timui—plus est <persName>Medea</persName> noverca— </p>
+  <p><persName>Medeae</persName> faciunt ad scelus omne manus.</p>
+  <p>Spargere quae fratris potuit lacerata per agros </p>
+  <p>corpora, pignoribus parceret illa meis?</p>
+  <p>hanc, tamen o demens <placeName>Colchis</placeName>que ablate venenis, </p>
+  <p>diceris <persName>Hypsipyles</persName> praeposuisse toro?</p>
+  <p>turpiter illa virum cognovit adultera virgo, </p>
+  <p>me tibi teque mihi taeda pudica dedit.</p>
+  <p>prodidit illa patrem—rapui de caede <persName>Thoanta</persName>. </p>
+  <p>deseruit <placeName>Colchos</placeName>—me mea <placeName>Lemnos</placeName> habet.</p>
+</div>
+<div type="book" n="6">
+   <p>Quid refert, <name type="animal" xml:lang="la">scelerata</name> piam si vincit? et ipso</p>
+   <p>crimine dotata est emeruitque <persName>virum</persName>.</p>
+   <p><placeName>Lemniadum</placeName> facinus culpo, non miror, <persName>Iason</persName>!</p>
+   <p>quamlibet ignavis ipse dat arma dolor.</p>
+   <p>dic age, si ventis ut oportuit actus iniquis</p>
+   <p>intrasses portus tuque comesque meos</p>
+   <p>obviaque exissem fetu comitante gemello—</p>
+   <p>hiscere nempe tibi terra roganda fuit!—</p>
+   <p>quo vultu natos, quo me <name type="animal" xml:lang="la">scelerate</name> videres?</p>
+   <p>perfidiae pretio qua nece dignus eras?</p>
+   <p>ipse quidem per me tutus sospesque fuisses,</p>
+   <p>non quia tu dignus, sed quia mitis ego.</p>
+   <p>paelicis ipsa meos implessem sanguine vultus,</p>
+   <p>quosque veneficiis abstulit illa suis.</p>
+   <p><name type="deity">Medeae</name> <name type="deity">Medea</name> forem. quod si quid ab alto</p>
+   <p>iustus adest votis <name type="deity">Iuppiter</name> ipse meis,</p>
+   <p>quod gemit <persName>Hypsipyle</persName>, lecti quoque subnuba nostri</p>
+   <p>maereat et leges sentiat ipsa suas</p>
+   <p>utque ego destituor coniunx materque duorum,</p>
+   <p>a totidem natis orba sit <foreign xml:lang="la">aque</foreign> <persName>viro</persName>!</p>
+   <p>nec male parta diu teneat peiusque relinquat:</p>
+   <p>exulet et toto quaerat in orbe fugam.</p>
+   <p>quam fratri germana fuit miseroque parenti</p>
+   <p>filia tam natis, tam sit acerba <persName>viro</persName>!</p>
+   <p>cum mare, cum terras consumpserit, aera temptet;</p>
+   <p>erret inops, exspes, caede cruenta sua.</p>
+   <p>haec ego, coniugio fraudata <persName>Thoantias</persName>, oro.</p>
+   <p>vivite devoto nuptaque <persName>vir</persName> toro!</p>
+</div>    </body>
+  </text>
+</TEI>

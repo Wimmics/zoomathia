@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <title type="alt" xml:lang="fr">Halieutiques</title>
+        <title type="alt" xml:lang="en">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          <idno type="zoomathia">stoa0216</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-27">2026-07-27</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-27">2026-07-27</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0216</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="poem">
+  <head>
+    <title type="main">Heroides</title>
+    <title type="sub">XVII. Helene Paridi</title>
+  </head>
+  <lg type="strophe">
+    <l n="1">P. OVIDI NASONIS</l>
+    <l n="2">EPISTVLAE HEROIDVM</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="1">Si mihi quae legi, <persName>Pari</persName>, non legisse liceret,</l>
+  <l n="2">servarem numeros sicut et ante <foreign xml:lang="la">probae</foreign>.</l>
+  <l n="3">Nunc oculos tua cum violarit epistula nostros,</l>
+  <l n="4">non rescribendi gloria visa levis.</l>
+</lg>
+<lg type="strophe">
+  <l n="5">ausus es hospitii temeratis advena sacris</l>
+  <l n="6">legitimam nuptae sollicitare fidem!</l>
+  <l n="7">scilicet idcirco ventosa per aequora vectum</l>
+  <l n="8">excepit portu <placeName>Taenaris</placeName> ora suo</l>
+</lg>
+<lg type="strophe">
+  <l n="9">nec tibi, diversa quamvis e gente venires,</l>
+  <l n="10">oppositas habuit regia nostra fores,</l>
+  <l n="11">esset ut officii merces iniuria tanti?</l>
+  <l n="12">qui sic intrabas, hospes an hostis eras?</l>
+</lg>
+<lg type="strophe">
+  <l n="13">nec dubito quin haec, cum sit tam iusta, vocetur</l>
+  <l n="14">rustica iudicio nostra querela tuo.</l>
+  <l n="15">rustica sim sane, dum non oblita pudoris</l>
+  <l n="16">dumque tenor vitae sit sine labe meae.</l>
+</lg>
+<lg type="strophe">
+  <l n="17">si non est ficto tristis mihi vultus in ore</l>
+  <l n="18">nec sedeo duris torva superciliis,</l>
+  <l n="19">fama tamen clara est, et adhuc sine crimine lusi</l>
+  <l n="20">et laudem de me nullus adulter habet.</l>
+</lg>
+<lg type="strophe">
+  <l n="21">quo magis admiror, quae sit fiducia coepti</l>
+  <l n="22">spemque tori dederit quae tibi causa mei.</l>
+  <l n="23">an quia vim nobis <name type="deity">Neptunius</name> attulit <name type="animal" xml:lang="la">heros</name>,</l>
+  <l n="24">rapta semel videor bis quoque digna rapi?</l>
+</lg>
+<lg type="strophe">
+  <l n="25">crimen erat nostrum, si delenita fuissem;</l>
+  <l n="26">cum sim rapta, meum quid nisi nolle fuit?</l>
+  <l n="27">non tamen e facto fructum tulit ille petitum;</l>
+  <l n="28">excepto redii passa timore nihil.</l>
+</lg>
+<lg type="strophe">
+  <l n="29">oscula luctanti tantummodo pauca protervus</l>
+  <l n="30">abstulit: ulterius nil habet ille mei.</l>
+  <l n="31">quae tua nequitia est, non his contenta fuisset.</l>
+  <l n="32">di melius! similis non fuit ille tui.</l>
+</lg>
+<lg type="strophe">
+  <l n="33">reddidit intactam minuitque modestia crimen</l>
+  <l n="34">et iuvenem facti paenituisse patet.</l>
+</lg>
+<lg type="strophe">
+  <l n="1">Thesea <persName>paenituit</persName>, <persName>Paris</persName> ut succederet illi,</l>
+  <l n="2">ne quando nomen non sit in ore meum?</l>
+  <l n="3">nec tamen irascor—quis enim succenset amanti?—</l>
+  <l n="4">si modo, quem praefers, non simulatur amor.</l>
+  <l n="5">hoc quoque enim dubito, non quod fiducia desit,</l>
+  <l n="6">aut mea sit facies non bene nota mihi,</l>
+  <l n="7">sed quia credulitas damno solet esse puellis</l>
+  <l n="8">verbaque dicuntur vestra carere fide.</l>
+  <l n="9">at peccant aliae, matronaque rara pudica est.</l>
+  <l n="10">quis prohibet raris nomen inesse meum?</l>
+  <l n="11">nam mea quod visa est tibi mater idonea, cuius</l>
+  <l n="12">exemplo flecti me quoque posse putes,</l>
+  <l n="13">matris in admisso falsa sub imagine lusae</l>
+  <l n="14">error inest; pluma tectus adulter erat.</l>
+  <l n="15">nil ego, si peccem, possum nescisse; nec ullus</l>
+  <l n="16">error qui facti crimen obumbret erit.</l>
+  <l n="17">illa bene erravit vitiumque auctore redemit.</l>
+  <l n="18">felix in culpa quo <name type="deity">Iove</name> dicar ego?</l>
+  <l n="19">et genus et proavos et regia nomina iactas;</l>
+  <l n="20">clara satis domus haec nobilitate sua est.</l>
+</lg>
+<lg type="strophe">
+  <l n="21"><name type="deity">Iuppiter</name> ut soceri proavus taceatur et omne</l>
+  <l n="22"><name type="deity">Tantalidae</name> <persName>Pelopis</persName> <persName>Tyndareique</persName> decus;</l>
+  <l n="23">dat mihi <persName>Leda</persName> <name type="deity">Iovem</name> cygno decepta parentem,</l>
+  <l n="24">quae falsam gremio credula fovit avem.</l>
+  <l n="25">i nunc et <placeName>Phrygiae</placeName> late primordia gentis</l>
+  <l n="26">cumque suo <persName>Priamum</persName> <persName>Laumedonte</persName> refer!</l>
+  <l n="27">quos ego suspicio; sed qui tibi gloria magna est</l>
+  <l n="28">quintus, is a nostro nomine primus erit.</l>
+  <l n="29">sceptra tuae quamvis rear esse potentia terrae,</l>
+  <l n="30">non tamen haec illis esse minora puto.</l>
+</lg>
+<lg type="strophe">
+  <l n="31">si iam divitiis locus hic numeroque virorum</l>
+  <l n="32">vincitur, at certe barbara terra tua est.</l>
+  <l n="33">munera tanta quidem promittit epistula dives</l>
+  <l n="34">ut possint ipsas illa movere deas.</l>
+</lg>
+<lg type="strophe">
+  <l n="1">sed si iam vellem fines transire pudoris,</l>
+  <l n="2">  tu melior culpae causa futurus eras.</l>
+  <l n="3">aut ego perpetuo famam sine labe tenebo</l>
+  <l n="4">  aut ego te potius quam tua dona sequar.</l>
+</lg>
+<lg type="strophe">
+  <l n="5">utque ea non sperno, sic acceptissima semper</l>
+  <l n="6">  munera sunt, auctor quae pretiosa facit.</l>
+  <l n="7">plus multo est, quod amas, quod sum tibi causa laboris,</l>
+  <l n="8">  quod per tam longas spes tua venit aquas.</l>
+</lg>
+<lg type="strophe">
+  <l n="9">illa quoque, adposita quae nunc facis, improbe, mensa,</l>
+  <l n="10">  quamvis experiar dissimulare, noto—</l>
+  <l n="11">cum modo me spectas oculis, lascive, protervis,</l>
+  <l n="12">  quos vix instantes lumina nostra ferunt,</l>
+  <l n="13">et modo suspiras, modo pocula proxima nobis</l>
+  <l n="14">  sumis, quaque bibi, tu quoque parte bibis.</l>
+</lg>
+<lg type="strophe">
+  <l n="15">a, quotiens digitis, quotiens ego tecta notavi</l>
+  <l n="16">  signa supercilio paene loquente dari!</l>
+  <l n="17">et saepe extimui ne vir meus illa videret,</l>
+  <l n="18">  non satis occultis erubuique notis.</l>
+  <l n="19">saepe vel exiguo vel nullo murmure dixi:</l>
+  <l n="20">  'nil pudet hunc!' nec vox haec mea falsa fuit.</l>
+</lg>
+<lg type="strophe">
+  <l n="21">orbe quoque in mensae legi sub nomine nostro,</l>
+  <l n="22">  quod deducta mero littera fecit, 'amo.'</l>
+  <l n="23">credere me tamen hoc oculo renuente negavi.</l>
+  <l n="24">  ei mihi, iam didici sic ego posse loqui!</l>
+</lg>
+<lg type="strophe">
+  <l n="25">his ego blanditiis, si peccatura fuissem,</l>
+  <l n="26">  flecterer; his poterant pectora nostra capi.</l>
+  <l n="27">est quoque, confiteor, facies tibi rara potestque</l>
+  <l n="28">  velle sub amplexus ire puella tuos.</l>
+</lg>
+<lg type="strophe">
+  <l n="29">altera sed potius felix sine crimine fiat,</l>
+  <l n="30">  quam cadat externo noster amore pudor.</l>
+  <l n="31">disce modo exemplo formosis posse carere;</l>
+  <l n="32">  est virtus placitis abstinuisse bonis.</l>
+  <l n="33">quam multos credis iuvenes optare, quod optas?</l>
+</lg>
+<lg type="strophe">
+  <l n="1">qui sapiant, oculos an <name type="animal" xml:lang="la">Paris</name> unus habes?</l>
+  <l n="2">non tu plus cernis, sed plus temerarius audes;</l>
+  <l n="3">nec tibi plus cordis sed minus oris, adest.</l>
+</lg>
+<lg type="strophe">
+  <l n="4">tunc ego te vellem celeri venisse carina,</l>
+  <l n="5">cum mea virginitas mille petita procis.</l>
+  <l n="6">si te vidissem, primus de mille fuisses;</l>
+  <l n="7">iudicio veniam vir dabit ipse meo.</l>
+</lg>
+<lg type="strophe">
+  <l n="8">ad possessa venis praeceptaque gaudia serus;</l>
+  <l n="9">spes tua lenta fuit; quod petis, alter habet.</l>
+  <l n="10">ut tamen optarim fieri tua <foreign xml:lang="la">Troica</foreign> coniunx,</l>
+  <l n="11">invitam sic me nec <persName>Menelaus</persName> habet.</l>
+</lg>
+<lg type="strophe">
+  <l n="12">desine molle, precor, verbis convellere pectus</l>
+  <l n="13">neve mihi, quam te dicis amare, noce;</l>
+  <l n="14">sed sine quam tribuit sortem fortuna tueri</l>
+  <l n="15">nec spolium nostri turpe pudoris habe.</l>
+</lg>
+<lg type="strophe">
+  <l n="16">at <name type="deity">Venus</name> hoc pacta est, et in altae vallibus <placeName>Idae</placeName></l>
+  <l n="17">tres tibi se nudas exhibuere deae;</l>
+  <l n="18">unaque cum regnum, belli daret altera laudem</l>
+  <l n="19">'<persName>Tyndaridis</persName> coniunx,' tertia dixit, 'eris!'</l>
+</lg>
+<lg type="strophe">
+  <l n="20">credere vix equidem caelestia corpora possum</l>
+  <l n="21">arbitrio formam supposuisse tuo;</l>
+  <l n="22">utque sit hoc verum, certe pars altera ficta est,</l>
+  <l n="23">iudicii pretium qua data dicor ego.</l>
+</lg>
+<lg type="strophe">
+  <l n="24">non est tanta mihi fiducia corporis, ut me</l>
+  <l n="25">maxima teste dea dona fuisse putem.</l>
+  <l n="26">contenta est oculis hominum mea forma probari;</l>
+  <l n="27">laudatrix <name type="deity">Venus</name> est invidiosa mihi.</l>
+</lg>
+<lg type="strophe">
+  <l n="28">sed nihil infirmo; faveo quoque laudibus istis;</l>
+  <l n="29">nam, mens, vox quare, quod cupit esse, neget?</l>
+  <l n="30">nec tu succense nimium mihi creditus aegre;</l>
+  <l n="31">tarda solet magnis rebus inesse fides.</l>
+</lg>
+<lg type="strophe">
+  <l n="32">prima mea est igitur <name type="deity">Veneri</name> placuisse voluptas;</l>
+  <l n="33">proxima, me visam praemia summa tibi,</l>
+  <l n="34">nec te <name type="deity">Palladios</name> nec te <name type="deity">Iunonis</name> honores</l>
+</lg>
+<div type="poem">
+  <lg type="strophe">
+    <l n="1">auditis Helenae praeposuisse bonis.</l>
+    <l n="2">ergo ego sum virtus, ego sum tibi nobile regnum?</l>
+    <l n="3">ferrea sim, si non hoc ego pectus amem.</l>
+    <l n="4">ferrea, crede mihi, non sum; sed amare repugno</l>
+    <l n="5">illum, quem fieri vix puto posse meum.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="6">quid bibulum curvo proscindere litus aratro</l>
+    <l n="7">spemque sequi coner quam locus ipse negat?</l>
+    <l n="8">sum rudis ad Veneris furtum nullaque fidelem —</l>
+    <l n="9">di mihi sunt testes!—lusimus arte virum!</l>
+  </lg>
+  <lg type="strophe">
+    <l n="10">nunc quoque, quod tacito mando mea verba libello,</l>
+    <l n="11">fungitur officio littera nostra novo.</l>
+    <l n="12">felices, quibus usus adest! ego nescia rerum</l>
+    <l n="13">difficilem culpae suspicor esse viam.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="14">ipse malo metus est; iam nunc confundor et omnes</l>
+    <l n="15">in nostris oculos vultibus esse reor.</l>
+    <l n="16">nec reor hoc falso; sensi mala murmura vulgi</l>
+    <l n="17">et quasdam voces rettulit Aethra mihi.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="18">at tu dissimula, nisi si desistere mavis.</l>
+    <l n="19">sed cur desistas? dissimulare potes.</l>
+    <l n="20">lude, sed occulte! maior, non maxima, nobis</l>
+    <l n="21">est data libertas, quod Menelaus abest.</l>
+  </lg>
+  <lg type="strophe">
+    <l n="22">ille quidem procul est, ita re cogente, profectus;</l>
+    <l n="23">magna fuit subitae iustaque causa viae;</l>
+    <l n="24">aut mihi sic visum est. ego, cum dubitaret an iret,</l>
+    <l n="25">'quam primum,' dixi, 'fac rediturus eas!'</l>
+  </lg>
+  <lg type="strophe">
+    <l n="26">omine laetatus dedit oscula, 'resque domusque</l>
+    <l n="27">et tibi sit curae Troicus hospes,' ait.</l>
+    <l n="28">vix tenui risum, quem dum conpescere luctor,</l>
+    <l n="29">nil illi potui dicere praeter 'erit.'</l>
+  </lg>
+  <lg type="strophe">
+    <l n="30">uela quidem Creten ventis dedit ille secundis;</l>
+    <l n="31">sed tu non ideo cuncta licere puta!</l>
+    <l n="32">sic meus hinc vir abest ut me custodiat absens.</l>
+    <l n="33">an nescis longas regibus esse manus?</l>
+  </lg>
+</div>
+<lg type="strophe">
+  <l n="1">forma quoque est oneri; nam quo constantius ore</l>
+  <l n="2">laudamur vestro, iustius ille timet.</l>
+</lg>
+<lg type="strophe">
+  <l n="3">quae iuvat, ut nunc est, eadem mihi gloria damno est,</l>
+  <l n="4">et melius famae verba dedisse fuit.</l>
+</lg>
+<lg type="strophe">
+  <l n="5">nec quod abest hic me tecum mirare relictam;</l>
+  <l n="6">moribus et vitae credidit ille meae.</l>
+</lg>
+<lg type="strophe">
+  <l n="7">de facie metuit, vitae confidit, et illum</l>
+  <l n="8">securum probitas, forma timere facit.</l>
+</lg>
+<lg type="strophe">
+  <l n="9">tempora ne pereant ultro data praecipis, utque</l>
+  <l n="10">simplicis utamur commoditate viri.</l>
+</lg>
+<lg type="strophe">
+  <l n="11">et libet et timeo, nec adhuc exacta voluntas</l>
+  <l n="12">est satis; in dubio pectora nostra labant.</l>
+</lg>
+<lg type="strophe">
+  <l n="13">et vir abest nobis et tu sine coniuge dormis,</l>
+  <l n="14">inque vicem tua me, te mea forma capit;</l>
+</lg>
+<lg type="strophe">
+  <l n="15">et longae noctes et iam sermone coimus</l>
+  <l n="16">et tu, me miseram! blandus, et una domus.</l>
+</lg>
+<lg type="strophe">
+  <l n="17">et peream, si non invitant omnia culpam;</l>
+  <l n="18">nescio quo tardor sed tamen ipsa metu.</l>
+</lg>
+<lg type="strophe">
+  <l n="19">quod male persuades, utinam bene cogere posses!</l>
+  <l n="20">vi mea rusticitas excutienda fuit.</l>
+</lg>
+<lg type="strophe">
+  <l n="21">utilis interdum est ipsis iniuria passis.</l>
+  <l n="22">sic certe felix esse coacta forem.</l>
+</lg>
+<lg type="strophe">
+  <l n="23">dum novus est, potius coepto pugnemus amori!</l>
+  <l n="24">flamma recens parva sparsa resedit aqua.</l>
+</lg>
+<lg type="strophe">
+  <l n="25">certus in hospitibus non est amor; errat, ut ipsi,</l>
+  <l n="26">cumque nihil speres firmius esse, fugit.</l>
+</lg>
+<lg type="strophe">
+  <l n="27">Hypsipyle testis, testis Minoia virgo est;</l>
+  <l n="28">in non exhibitis utraque lusa toris.</l>
+</lg>
+<lg type="strophe">
+  <l n="29">tu quoque dilectam multos, infide, per annos</l>
+  <l n="30">diceris Oenonen destituisse tuam.</l>
+</lg>
+<lg type="strophe">
+  <l n="31">nec tamen ipse negas; et nobis omnia de te</l>
+  <l n="32">quaerere, si nescis, maxima cura fuit.</l>
+</lg>
+<lg type="strophe">
+  <l n="33">adde quod, ut cupias constans in amore manere,</l>
+  <l n="34">non potes. expediunt iam tua vela Phryges;</l>
+</lg>
+<lg type="strophe">
+  <l n="1">dum loqueris mecum, dum nox sperata paratur,</l>
+  <l n="2">qui ferat in patriam, iam tibi ventus erit.</l>
+</lg>
+<lg type="strophe">
+  <l n="3">cursibus in mediis novitatis plena relinques</l>
+  <l n="4">gaudia; cum ventis noster abibit amor.</l>
+</lg>
+<lg type="strophe">
+  <l n="5">an sequar, ut suades, laudataque <name type="placeName">Pergama</name> visam</l>
+  <l n="6"><persName>pronurus</persName> et magni <name type="person">Laumedontis</name> ero?</l>
+</lg>
+<lg type="strophe">
+  <l n="7">non ita contemno <name type="animal" xml:lang="la">volucris</name> praeconia famae,</l>
+  <l n="8">ut probris terras impleat illa meis.</l>
+</lg>
+<lg type="strophe">
+  <l n="9">quid de me poterit <name type="placeName">Sparte</name>, quid <name type="placeName">Achaia</name> tota,</l>
+  <l n="10">quid gentes <name type="placeName">Asia</name>e, quid tua <name type="placeName">Troia</name> loqui?</l>
+</lg>
+<lg type="strophe">
+  <l n="11">quid <name type="person">Priamus</name> de me, <name type="person">Priami</name> quid sentiet uxor</l>
+  <l n="12">totque tui fratres <name type="placeName">Dardanides</name>que nurus?</l>
+</lg>
+<lg type="strophe">
+  <l n="13">tu quoque qui poteris fore me sperare fidelem</l>
+  <l n="14">et non exemplis anxius esse tuis?</l>
+</lg>
+<lg type="strophe">
+  <l n="15">quicumque <name type="placeName">Iliacos</name> intraverit advena portus,</l>
+  <l n="16">is tibi solliciti causa timoris erit.</l>
+</lg>
+<lg type="strophe">
+  <l n="17">ipse mihi quotiens iratus 'adultera!' dices,</l>
+  <l n="18">oblitus nostro crimen inesse tuum!</l>
+</lg>
+<lg type="strophe">
+  <l n="19">delicti fies idem reprehensor et auctor.</l>
+  <l n="20">terra, precor, vultus obruat ante meos!</l>
+</lg>
+<lg type="strophe">
+  <l n="21">at fruar <name type="placeName">Iliacis</name> opibus cultuque beato</l>
+  <l n="22">donaque promissis uberiora feram:</l>
+</lg>
+<lg type="strophe">
+  <l n="23">purpura nempe mihi pretiosaque texta dabuntur,</l>
+  <l n="24">congestoque auri pondere dives ero!</l>
+</lg>
+<lg type="strophe">
+  <l n="25">da veniam fassae! non sunt tua munera tanti;</l>
+  <l n="26">nescio quo tellus me tenet ista modo.</l>
+</lg>
+<lg type="strophe">
+  <l n="27">quis mihi, si laedar, <name type="placeName">Phrygiis</name> succurret in oris?</l>
+  <l n="28">unde petam fratres, unde parentis opem?</l>
+</lg>
+<lg type="strophe">
+  <l n="29">omnia <name type="person">Medeae</name> fallax promisit <name type="person">Iason</name>:</l>
+  <l n="30">pulsa est <foreign xml:lang="la">Aesonia</foreign> num minus illa domo?</l>
+</lg>
+<lg type="strophe">
+  <l n="31">non erat <name type="person">Aeetes</name>, ad quem despecta rediret,</l>
+  <l n="32">non <name type="person">Idyia</name> parens <name type="person">Chalciopeve</name> soror.</l>
+</lg>
+<lg type="strophe">
+  <l n="33">tale nihil timeo, sed nec <name type="person">Medea</name> timebat;</l>
+  <l n="34">fallitur augurio spes bona saepe suo.</l>
+</lg>
+<lg type="strophe">
+  <l n="1">omnibus invenies, quae nunc iactantur in alto,</l>
+  <l n="2">navibus a portu lene fuisse fretum.</l>
+  <l n="3">fax quoque me terret, quam se peperisse cruentam</l>
+  <l n="4">ante diem partus est tua visa parens;</l>
+  <l n="5">et vatum timeo monitus, quos igne Pelasgo</l>
+  <l n="6">Ilion arsurum praemonuisse ferunt.</l>
+  <l n="7">utque favet Cytherea tibi, quia vicit habetque</l>
+  <l n="8">parta per arbitrium bina tropaea tuum,</l>
+  <l n="9">sic illas vereor, quae, si tua gloria vera est,</l>
+  <l n="10">iudice te causam non tenuere duae;</l>
+  <l n="11">nec dubito, quin te si prosequar arma parentur.</l>
+  <l n="12">ibit per gladios, <persName>ei mihi!</persName> noster amor.</l>
+</lg>
+<lg type="strophe">
+  <l n="13">an fera Centauris indicere bella coegit</l>
+  <l n="14"><name type="animal" xml:lang="la">Atracis</name> Haemonios <name type="animal" xml:lang="la">viris</name>:</l>
+  <l n="15">tu fore tam iusta lentum <persName>Menelaon</persName> in ira</l>
+  <l n="16">et geminos fratres Tyndareumque putas?</l>
+  <l n="17">quod bene te iactes et fortia facta loquaris,</l>
+  <l n="18">a verbis facies dissidet ista suis.</l>
+  <l n="19">apta magis <name type="deity" xml:lang="la">Veneri</name> quam sunt tua corpora <name type="deity" xml:lang="la">Marti</name>.</l>
+  <l n="20">bella gerant fortes, tu, <persName>Pari</persName>, semper ama!</l>
+</lg>
+<lg type="strophe">
+  <l n="21"><name type="animal" xml:lang="la">Hectora</name>, quem laudas, pro te pugnare iubeto;</l>
+  <l n="22">militia est operis altera digna tuis.</l>
+  <l n="23">his ego, si saperem pauloque audacior essem,</l>
+  <l n="24">uterer; utetur, siqua puella sapit.</l>
+  <l n="25">aut ego deposito sapiam fortasse pudore</l>
+  <l n="26">et dabo cunctatas tempore victa manus.</l>
+</lg>
+<lg type="strophe">
+  <l n="27">quod petis, ut furtim praesentes ista loquamur,</l>
+  <l n="28">scimus, quid captes conloquiumque voces;</l>
+  <l n="29">sed nimium properas, et adhuc tua messis in herba est.</l>
+  <l n="30">haec mora sit voto forsan amica tuo.</l>
+</lg>
+<lg type="strophe">
+  <l n="31">hactenus; arcanum furtivae conscia mentis</l>
+  <l n="32">littera iam lasso pollice sistat opus.</l>
+  <l n="33">cetera per socias <persName>Clymenen</persName> <persName>Aethramque</persName> loquamur,</l>
+  <l n="34">quae mihi sunt comites consiliumque duae.</l>
+</lg>
+<head>Halieutica</head>
+<lg type="strophe">
+<l n="1">Quis deus, en quicumque est, qui praebet in aera pennas</l>
+<l n="2">et volucres hominum ducere in astra solet,</l>
+<l n="3">hunc mihi, quem docta cepit sollertia rerum,</l>
+<l n="4"><name type="animal" xml:lang="la">piscis</name> ut arte regat!</l>
+</lg>
+<lg type="strophe">
+<l n="5">Non ego cuncta meis amplectere conor habenis,</l>
+<l n="6">nec nova praeteritis Musa reperta iuvat:</l>
+<l n="7">sed quae nunc artesque modo coepta novique laboris</l>
+<l n="8">excutiam, docto carmine digna, <name type="animal" xml:lang="la">piscis</name>.</l>
+</lg>
+<lg type="strophe">
+<l n="9">Tu licet, ut perhibent, <name type="deity">Neptunus</name> regna teneres,</l>
+<l n="10">et tibi <foreign xml:lang="grc">πόντος</foreign> serviat <name type="deity">Oceanus</name>,</l>
+<l n="11">et procul a nostris <name type="animal" xml:lang="la">piscis</name> habitet in undis,</l>
+<l n="12">at tibi, <persName>Caesar</persName>, piscis inest.</l>
+</lg>    </body>
+  </text>
+</TEI>

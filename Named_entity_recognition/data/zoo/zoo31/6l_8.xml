@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+    type="application/xml"
+    schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="la">Halieutica</title>
+        <title type="alt" xml:lang="fr">Halieutiques</title>
+        <title type="alt" xml:lang="en">Halieutica</title>
+        <author>
+          <persName>OVIDIUS</persName>
+          <idno type="zoomathia">stoa0216</idno>
+        </author>
+        <respStmt>
+          <resp>Encodage automatique TEI P5</resp>
+          <name>zoomathia_encoder.py v3.0</name>
+          <date when="2026-07-27">2026-07-27</date>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Projet Zoomathia (ANR-21-CE27-0012)</publisher>
+        <pubPlace>Universite Cote d'Azur, Nice, France</pubPlace>
+        <date when="2026-07-27">2026-07-27</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+        </availability>
+        <idno type="zoomathia">stoa0216</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="la">latin</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="zoomathia">
+          <term>Zoomathia</term>
+          <term>animaux</term>
+          <term>antique (800 av. J.-C. - 300 ap. J.-C.)</term>
+          <term>latin</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
+        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Balisage automatique des structures textuelles et des entites nommees
+        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
+        <correction status="unknown">
+          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
+        </correction>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+<div type="book" n="8">
+  <div type="chapter" n="1">
+    <p>Alloquor <persName>Hermione</persName> nuper <persName>fratrem</persName>que <persName>virumque</persName></p>
+    <p>nunc <persName>fratrem</persName>. <persName>nomen</persName> <persName>coniugis</persName> alter habet.</p>
+  </div>
+</div>
+<div type="book" n="2">
+  <p>Pyrrhus <persName>Achillides</persName>, animosus imagine patris,</p>
+  <p>inclusam contra iusque piumque tenet.</p>
+  <p>quod potui renui, ne non invita tenerer,</p>
+  <p>cetera femineae non valuere manus.</p>
+  <p>"quid facis, <persName>Aeacidae</persName>? non sum sine vindice!" dixi</p>
+  <p>"haec tibi sub domino est, <persName>Pyrrhe</persName>, puella suo!"</p>
+  <p>surdior ille freto clamantem nomen <persName>Orestis</persName></p>
+  <p>traxit inornatis in sua tecta comis.</p>
+  <p>quid gravius capta <placeName>Lacedaemone</placeName> serva tulissem,</p>
+  <p>si raperet Graias barbara turba nurus?</p>
+  <p>parcius <persName>Andromachen</persName> vexavit <placeName>Achaia</placeName> victrix,</p>
+  <p>cum <persName>Danaus</persName> <placeName>Phrygias</placeName> ureret ignis opes.</p>
+  <p>At tu, cura mei si te pia tangit, <persName>Oreste</persName>,</p>
+  <p>inice non timidas in tua iura manus!</p>
+  <p>an si quis rapiat stabulis <name type="animal" xml:lang="la">armenta</name> reclusis,</p>
+  <p>arma feras, rapta coniuge lentus eris?</p>
+  <p>sit socer exemplo nuptae repetitor ademptae,</p>
+  <p>cui pia militiae causa puella fuit;</p>
+  <p>si pater ignavus vidua plorasset in aula,</p>
+  <p>nupta foret <persName>Paridi</persName> mater, ut ante fuit.</p>
+  <p>Nec tu mille rates sinuosaque vela pararis</p>
+  <p>nec numeros <persName>Danai</persName> militis: ipse veni!</p>
+  <p>sic quoque eram repetenda tamen, nec turpe marito</p>
+  <p>aspera pro caro bella tulisse toro.</p>
+  <p>quid, quod avus nobis idem <persName>Pelopeius</persName> <persName>Atreus</persName>,</p>
+  <p>et si non esses vir mihi, frater eras.</p>
+  <p>vir, precor, uxori, frater succurre sorori;</p>
+  <p>instant officio nomina bina tuo.</p>
+  <p>Me tibi <persName>Tyndareus</persName>, vita gravis auctor et annis</p>
+  <p>tradidit; arbitrium neptis habebat avus.</p>
+</div>
+<div type="book" n="3">
+  <p>at <persName>pater</persName> <name type="deity">Aeacidae</name> promiserat inscius acti;</p>
+  <p>plus patre, quo prior est ordine, posset <name type="deity">avus</name>.</p>
+  <p>cum tibi nubebam, nulli mea taeda nocebat;</p>
+  <p>si iungar <persName>Pyrrho</persName>, tu mihi laesus eris.</p>
+  <p>et <persName>pater</persName> ignoscet nostro <persName>Menelai</persName> amori;</p>
+  <p>succubuit telis praepetis ipse dei.</p>
+  <p>quem sibi permisit, genero concedet amorem.</p>
+  <p>proderit exemplo mater amata suo.</p>
+  <p>tu mihi, quod matri <persName>pater</persName> est. quas egerat olim</p>
+  <p><name type="deity">Dardanius</name> partes advena, <persName>Pyrrhus</persName> agit.</p>
+  <p>ille licet patriis sine fine superbiat actis;</p>
+  <p>et tu quae referas facta parentis habes.</p>
+  <p><name type="deity">Tantalides</name> omnes ipsumque regebat <name type="deity">Achillem</name>;</p>
+  <p>hic pars militiae, dux erat ille ducum.</p>
+  <p>tu quoque habes proavum <persName>Pelopem</persName> <persName>Pelopisque</persName> parentem;</p>
+  <p>si melius numeres, a <name type="deity">Iove</name> quintus eris.</p>
+  <p>Nec virtute cares. arma invidiosa tulisti;</p>
+  <p>sed tu quid faceres? induit illa <persName>pater</persName>.</p>
+  <p>materia vellem fortis meliore fuisses;</p>
+  <p>non lecta est operi, sed data causa tuo.</p>
+  <p>hanc tamen implesti; iuguloque <persName>Aegisthus</persName> aperto</p>
+  <p>tecta cruentavit, quae <persName>pater</persName> ante tuus.</p>
+  <p>increpat <name type="deity">Aeacides</name> laudemque in crimina vertit;</p>
+  <p>et tamen aspectus sustinet ille meos.</p>
+  <p>rumpor et ora mihi pariter cum mente tumescunt</p>
+  <p>pectoraque inclusis ignibus usta dolent.</p>
+  <p><persName>Hermione</persName> coram quisquamne obiecit <persName>Oresti</persName>,</p>
+  <p>nec mihi sunt vires, nec ferus ensis adest!</p>
+  <p>flere licet certe; flendo diffundimus iram,</p>
+  <p>perque sinum lacrimae fluminis instar eunt.</p>
+  <p>has semper solas habeo semperque profundo;</p>
+  <p>ument incultae fonte perenne genae.</p>
+  <p>Num generis fato, quod nostros errat in annos,</p>
+</div>
+<div type="book" n="4">
+  <p>Tantalides matres apta rapina sumus?</p>
+  <p>non ego fluminei referam mendacia <name type="animal" xml:lang="la">cygni</name> nec querar in plumis delituisse <name type="deity">Iovem</name>.</p>
+  <p>qua duo porrectus longe freta distinet Isthmos, vecta peregrinis <persName>Hippodamia</persName> rotis.</p>
+  <p><persName>Castori</persName> Amyclaeo et Amyclaeo <persName>Polluci</persName> reddita Moposia <placeName>Taenaris</placeName> urbe soror;</p>
+  <p><placeName>Taenaris</placeName> <name type="deity">Idaeo</name> trans aequor ab hospite rapta Argolicas pro se vertit in arma manus.</p>
+  <p>vix equidem memini. memini tamen: omnia luctus, omnia solliciti plena timoris erant.</p>
+  <p>flebat avus <persName>Phoebe</persName>que soror fratresque gemelli, orabat superos <persName>Leda</persName> suumque <name type="deity">Iovem</name>.</p>
+  <p>ipsa ego non longos etiam tunc scissa capillos clamabam "sine me, me sine, mater abis?"</p>
+  <p>nam coniunx aberat. ne non Pelopeia credar, ecce <persName>Neoptolemo</persName> praeda parata fui.</p>
+  <p><persName>Pelides</persName> utinam vitasset <name type="deity">Apollinis</name> arcus! damnaret nati facta proterva pater.</p>
+  <p>nec quondam placuit nec nunc placuisset <persName>Achilli</persName> abducta viduum coniuge flere virum.</p>
+  <p>quae mea caelestes iniuria fecit iniquos? quodve mihi miserae sidus obesse querar?</p>
+  <p>parva mea sine matre fui; pater arma ferebat; et duo cum vivant, orba duobus eram.</p>
+  <p>non tibi blanditias primis, mea mater, in annis incerto dictas ore puella tuli.</p>
+  <p>non ego captavi brevibus tua colla lacertis, nec gremio sedi sarcina grata tuo.</p>
+  <p>non cultus tibi cura mei, nec pacta marito intravi thalamos matre parante novos.</p>
+  <p>obvia prodieram reduci tibi—vera fatebor—nec facies nobis nota parentis erat!</p>
+  <p>te tamen esse <persName>Helenen</persName>, quod eras pulcherrima, sensi; ipsa requirebas quae tua nata foret.</p>
+</div>
+<div type="book" n="5">
+  <p>Pars haec una mihi, coniunx bene cessit Orestes;</p>
+  <p>is quoque, ni pro se pugnet, ademptus erit.</p>
+  <p>Pyrrhus habet captam reduce et victore parente;</p>
+  <p>munus et hoc nobis diruta Troia dedit!</p>
+  <p>cum tamen altus <name type="animal" xml:lang="la">equis</name> Titan radiantibus instant,</p>
+  <p>perfruor infelix liberiore malo;</p>
+  <p>nox ubi me thalamis ululantem et acerba gementem</p>
+  <p>condidit in maesto procubuique toro,</p>
+  <p>pro somno lacrimis oculi funguntur obortis</p>
+  <p>quaque licet fugio sicut ab hoste viro.</p>
+  <p>saepe malis stupeo rerumque oblita locique</p>
+  <p>ignara tetigi Scyria membra manu;</p>
+  <p>utque nefas sensi, male corpora tacta relinquo</p>
+  <p>et mihi pollutas credor habere manus.</p>
+  <p>saepe <persName>Neoptolemi</persName> pro nomine nomen <persName>Orestis</persName></p>
+  <p>exit, et errorem vocis ut omen amo.</p>
+  <p>Per genus infelix iuro generisque parentem,</p>
+  <p>qui freta, qui terras et sua regna quatit;</p>
+  <p>per patris ossa tui, patrui mihi, quae tibi debent,</p>
+  <p>quod se sub tumulo fortiter ulta iacent:</p>
+  <p>aut ego praemoriar primoque exstinguar in aevo,</p>
+  <p>aut ego <name type="deity">Tantalidae</name> <name type="deity">Tantalis</name> uxor ero!</p>
+</div>    </body>
+  </text>
+</TEI>
