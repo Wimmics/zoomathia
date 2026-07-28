@@ -14,7 +14,8 @@ import atexit
 import ujson as json
 
 from ollama import chat
-
+from sentence_transformers import SentenceTransformer, util
+import torch
 
 java_process = subprocess.Popen(
     ['java', '-jar', '-Dfile.encoding=UTF-8', '../corese-library-python-4.4.1.jar'])
@@ -39,7 +40,12 @@ ANNOTATION_AUTO = True
 TRANSLATION_AUTO = True
 
 MODEL = "qwen2.5:32b-instruct"
-PROMPT_PATH = os.path.join(os.path.dirname(__file__), "qwen-prompt.txt")
+PROMPT_PATH = os.path.join(os.path.dirname(__file__), "./prompts/qwen-prompt.txt")
+K = 40
+
+embedder = SentenceTransformer('all-MiniLM-L6-v2')
+thesaurus_embeddings = None
+thesaurus = []
 
 if not os.path.exists(PROMPT_PATH):
     raise FileNotFoundError(f"\n[ERROR] The prompt file hasn't been found at : '{PROMPT_PATH}'")
@@ -90,11 +96,24 @@ def split_and_translate(text, lang_target, max_chunk_length=1000):
     return translated_text
 
 
+def get_top_k_concepts(text, thesaurus_list, k=K):
+    if thesaurus_embeddings is None or not thesaurus_list:
+        return []
+
+    text_embedding = embedder.encode(text, convert_to_tensor=True)
+    cos_scores = util.cos_sim(text_embedding, thesaurus_embeddings)[0]
+    top_results = torch.topk(cos_scores, k=min(k, len(thesaurus_list)))
+    return [thesaurus_list[idx] for idx in top_results[1]]
+
+
 def get_LLM_entities(element):
     if not element or element.strip() == "":
         return {}
 
-    full_input = f"{PROMPT}\nText to analyse :\n{element}"
+    relevant_concepts = get_top_k_concepts(element, thesaurus, k=40)
+    concepts_str = ", ".join(relevant_concepts)
+
+    full_input = f"{PROMPT}\n\nHere is a list of thesaurus concepts that might be relevant for this text: [{concepts_str}].\n\nText to analyse :\n{element}"
 
     try:
         response = chat(
