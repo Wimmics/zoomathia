@@ -391,13 +391,13 @@ def extraction_data(FILE,CSV):
 
         extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0)
 
-        pd.DataFrame(link_data, columns=link_labels).to_csv('../output/' + CSV + "_link.csv", index=False,
+        pd.DataFrame(link_data, columns=link_labels).to_csv('../LLM_output/' + CSV + "_link.csv", index=False,
                                                             encoding='UTF-8')
-        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv('../output/' + CSV + "_paragraph.csv", index=False,
+        pd.DataFrame(paragraph_data, columns=paragraph_labels).to_csv('../LLM_output/' + CSV + "_paragraph.csv", index=False,
                                                                       encoding='UTF-8')
-        pd.DataFrame(metadata, columns=metadata_labels).to_csv('../output/' + CSV + "_metadata.csv", index=False,
+        pd.DataFrame(metadata, columns=metadata_labels).to_csv('../LLM_output/' + CSV + "_metadata.csv", index=False,
                                                      encoding='UTF-8')
-        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('../output/' + CSV + "_annotations.csv",index=False)
+        pd.DataFrame(annotation_data, columns=annotation_labels).to_csv('../LLM_output/' + CSV + "_annotations.csv",index=False)
 
 
 def get_all_thesaurus_concepts(g):
