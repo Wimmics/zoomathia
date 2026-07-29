@@ -23,7 +23,12 @@ const CompetencyQuestionComponent = () => {
 
     const [options, setOptions] = useState([])
     const [iframe, setIframe] = useState(<></>)
-    const [table, setTable] = useState(null)
+    const [table, setTable] = useState(
+    <div className={styles["empty-state"]}>
+        <p className={styles["empty-state-title"]}>No question selected</p>
+        <p className={styles["empty-state-subtitle"]}>Select a competency question above to see the results</p>
+    </div>
+)
     const [titleVizu, setTitleVizu] = useState('')
 
     const updateTable = useCallback((e) => {
@@ -170,13 +175,12 @@ const CompetencyQuestionComponent = () => {
             <Select className={styles["input-select"]} placeholder={"Select a competency question"} onChange={updateTable} options={options} />
         </header>
         <section className={styles["box-question"]}>
-            {table}
-            <h3>{titleVizu}</h3>
-            <div>
-                <mge-dashboard id="mge-dashboard" className={styles["mge-dashboard"]}></mge-dashboard>
-            </div>
-            
-        </section>
+    {table}
+    {titleVizu && <h3>{titleVizu}</h3>}
+    <div style={{display: table ? 'block' : 'none'}}>
+        <mge-dashboard id="mge-dashboard" className={styles["mge-dashboard"]}></mge-dashboard>
+    </div>
+</section>
 
     </div>
 }

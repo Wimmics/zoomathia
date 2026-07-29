@@ -12,6 +12,7 @@ const Navbar = () => {
                 <NavLink to='/ExploreTheCorpus' className={({ isActive }) => isActive ? 'active' : ''}>Explore the corpus</NavLink>
                 <NavLink to='/ExploreAWork' className={({ isActive }) => isActive ? 'active' : ''}>Explore a work</NavLink>
                 <NavLink to='/CompetencyQuestion' className={({ isActive }) => isActive ? 'active' : ''}>Competency questions</NavLink>
+                <NavLink to='/About' className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink>
             </div>
         </nav>
 

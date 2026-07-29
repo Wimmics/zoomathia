@@ -1,0 +1,148 @@
+.box-content {
+    margin: auto;
+    width: 70%;
+    padding: 40px;
+    background-color: #fdf8f2;
+    min-height: calc(100svh - 7svh);
+    border-left: 1px solid #e8ddd0;
+    border-right: 1px solid #e8ddd0;
+}
+
+.home-project h2 {
+    background-color: #9A653026;
+    color: #3d2b1f;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 28px;
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+}
+
+.home-project p {
+    text-align: justify;
+    margin-bottom: 16px;
+    line-height: 1.9;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #2d2d2d;
+}
+
+.home-project a {
+    color: #9A6530;
+    text-decoration: underline;
+}
+
+.home-project a:hover {
+    color: #7a4f25;
+}
+
+.list-items {
+    list-style: disc;
+    padding-left: 28px;
+    line-height: 2;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #2d2d2d;
+    margin-bottom: 16px;
+}
+.section-title {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    color: #3d2b1f;
+    margin: 28px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8ddd0;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 16px 0;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border: 1px solid #e8ddd0;
+    border-left: 4px solid #9A6530;
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: #9A6530;
+    box-shadow: 0 2px 8px rgba(154, 101, 48, 0.15);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-family: Georgia, serif;
+    color: #3d2b1f;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.links-section a {
+    color: #9A6530;
+    text-decoration: underline;
+    font-family: Verdana, sans-serif;
+    font-size: 0.95rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border: 1px solid #e8ddd0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.contact-card:hover {
+    border-color: #9A6530;
+}
+
+.contact-name {
+    font-weight: 500;
+    color: #3d2b1f;
+    font-family: Georgia, serif;
+    margin-bottom: 4px;
+}
+
+.contact-email {
+    font-size: 0.85rem;
+    color: #9A6530;
+    font-family: Verdana, sans-serif;
+}

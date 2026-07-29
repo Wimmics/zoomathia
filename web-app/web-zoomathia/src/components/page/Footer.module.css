@@ -1,20 +1,28 @@
 .footer {
     display: flex;
     flex-direction: row;
-    background-color: white;
-    box-shadow: 0 0 5px;
-    padding: 0.5svw;
-    max-height: 3svw;
-    bottom: 0;
-    position: sticky;
+    background-color: #fdf8f2;
+    border-top: 1px solid #e8ddd0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    padding: 12px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
 .footer a {
-    display: block;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.footer a:hover {
+    opacity: 1;
 }
 
 .img-styles {
-    max-width: 3svw;
-    max-height: 3svw;
+    max-width: 80px;
+    max-height: 40px;
+    object-fit: contain;
 }
