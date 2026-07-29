@@ -240,14 +240,15 @@ const SearchComponent = () => {
                     {workSelect}
                 </div>
                 <div className={styles["search-input-border"]}>
-                    <label>Filter on concept(s):
-                        <Tooltip title={logicConceptTooltip}>
-                            <IconButton><InfoIcon /></IconButton>
-                        </Tooltip>
-                    </label>
-                    <div className={styles["search-concept"]}>
-                        {conceptsSelect}
-                        <FormControl sx={{ m: 1, minWidth: 80 }}>
+    <label className={styles["concept-label"]}>
+        Filter on concept(s):
+        <Tooltip title={logicConceptTooltip}>
+            <IconButton size="small" className={styles["info-icon"]}><InfoIcon fontSize="small" /></IconButton>
+        </Tooltip>
+    </label>
+    <div className={styles["search-concept"]}>
+        {conceptsSelect}
+        <FormControl sx={{ m: 1, minWidth: 80 }}>
                             <InputLabel id="lang-label">Lang</InputLabel>
                             <Select
                                 labelId="lang-label"
