@@ -27,18 +27,15 @@ p {
     display:flex;
     flex-direction: row;
     padding: 1rem 0;
-}
-
-.search-input, .search-input-border {
+}.search-input, .search-input-border {
     margin: 0 auto;
     width: 30%;
     padding: 5px;
+    box-sizing: border-box;
 }
-
 .search-input-border {
     box-shadow: 0 0 1px;
     border-radius: 5px;
-    padding: 5px;
 }
 
 .search-input > label, .search-input-border > label {
@@ -53,12 +50,10 @@ p {
     display: flex;
     flex-direction: row;
 }
-
 .search-concept > div:first-child {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    flex: 1;
 }
-
 .search-concept > div:nth-child(2) {
     margin: 0 auto;
 }
