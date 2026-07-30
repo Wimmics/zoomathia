@@ -129,7 +129,7 @@ def get_LLM_entities(element):
         return {}
 
 def extract_LLM(entities, annotations, paragraph):
-    if not entities or "entities" not in entities:
+    if not entities or "extracted_entities" not in entities:
         return
 
     ent_list = entities.get("extracted_entities", [])
@@ -137,14 +137,19 @@ def extract_LLM(entities, annotations, paragraph):
         return
 
     try:
-        for ent in ent_list:
+        for item in ent_list:
+            if not isinstance(item, dict) or "entity" not in item:
+                continue
+
+            ent = item["entity"]
+
             if not isinstance(ent, str) or not ent.strip():
                 continue
 
             mention = ent.strip()
             thesaurus_url = ""
 
-            if mention and thesaurus_url:
+            if mention:
                 annotations.append([paragraph,
                                     thesaurus_url,
                                     mention,
