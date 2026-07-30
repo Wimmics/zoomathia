@@ -1,0 +1,4 @@
+I want you to perform a Named Entity Recognition (NER) on the followinng text. Find entities in the text that are similar to those in the thesaurus. Then put the found entities in the following json. You must respond ONLY with a valid JSON object that has the exact following structure:
+{
+  "entities": ["entity1", "entity2"]
+}
