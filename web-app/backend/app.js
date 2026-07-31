@@ -5,7 +5,6 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 let cors = require('cors')
 const bodyParser = require("body-parser");
-const port = 3001;
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
@@ -21,7 +20,6 @@ let app = express();
 app.use(cors())
 app.use(allowCrossDomain)
 app.use(bodyParser.json())
-app.listen(port, () => console.log(`server start on ${port}`))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -2,8 +2,7 @@ import { useState, useEffect, useRef } from "react"
 import styles from "./css_modules/SearchComponent.module.css"
 import AsyncSelect from 'react-select/async'
 import Tooltip from "@mui/material/Tooltip"
-import InfoIcon from '@mui/icons-material/Info';
-import { Checkbox, FormControlLabel, IconButton } from "@mui/material"
+import { Checkbox, FormControlLabel } from "@mui/material"
 import Grid from '@mui/material/Grid2';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { styled } from '@mui/material/styles';
@@ -12,7 +11,6 @@ import DisplaySearch from "./DisplaySearch"
 import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
@@ -75,7 +73,7 @@ const SearchComponent = () => {
     const [searchResult, setSearchResult] = useState(
     <div className={styles["empty-state"]}>
         <p className={styles["empty-state-title"]}>No results yet</p>
-        <p className={styles["empty-state-subtitle"]}>Select one or more filters and click Search to explore the corpus</p>
+        <p className={styles["empty-state-subtitle"]}>Select one or more filters and click Search.</p>
     </div>
 )
     const [currentWorkLoading, setCurrentWorkLoading] = useState("")
@@ -90,7 +88,7 @@ const SearchComponent = () => {
     }
 
     const authorSelect = <AsyncSelect key={"author-select"} className={styles["selection-input"]}
-        placeholder="Select author(s)"
+        placeholder="Author(s)"
         defaultOptions={authorList}
         loadOptions={(input) => filterList(input, authorList)}
         isMulti
@@ -98,7 +96,7 @@ const SearchComponent = () => {
     />
 
     const workSelect = <AsyncSelect key={"work-select"} className={styles["selection-input"]}
-        placeholder="Select work(s)"
+        placeholder="Work(s)"
         defaultOptions={workList}
         loadOptions={(input) => filterList(input, workList)}
         isMulti
@@ -106,7 +104,7 @@ const SearchComponent = () => {
     />
 
     const conceptsSelect = <AsyncSelect key={"concepts-select"} className={styles["selection-input"]}
-        placeholder="Select concept(s)"
+        placeholder="Concept(s)"
         defaultOptions={conceptList}
         loadOptions={(input) => filterList(input, conceptList)}
         isMulti
@@ -201,7 +199,7 @@ const SearchComponent = () => {
         const getAuthors = async () => {
             const author_response = []
             const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
-            ).then(response => response.json()).catch(e => { console.log(e) })
+            ).then(response => response.json()).catch(e => { console.log(e); return [] })
             for (const author of data_author) {
                 author_response.push({ value: author.author, label: author.author })
             }
@@ -211,7 +209,7 @@ const SearchComponent = () => {
         const getWorks = async () => {
             const work_response = []
             const data_works = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
-            ).then(response => response.json()).catch(e => { console.log(e) })
+            ).then(response => response.json()).catch(e => { console.log(e); return [] })
             for (const work of data_works) {
                 work_response.push({ value: work.uri, label: work.title, author: work.author })
             }
@@ -228,37 +226,25 @@ const SearchComponent = () => {
 
     return <div className={styles["box-content"]}>
         <section className={styles["section-form"]}>
-            <h2>Define a custom filter</h2>
-            <p className={styles["note-text"]}>Select one or more filters below and click Search to explore the corpus.</p>
+            <p className={styles["filter-by-label"]}>Filter by</p>
             <div className={styles["block-input"]}>
                 <div className={styles["search-input"]}>
-                    <label>Filter on author(s):</label>
                     {authorSelect}
                 </div>
                 <div className={styles["search-input"]}>
-                    <label>Filter on work(s):</label>
                     {workSelect}
                 </div>
                 <div className={styles["search-input-border"]}>
-    <label className={styles["concept-label"]}>
-        Filter on concept(s):
-        <Tooltip title={logicConceptTooltip}>
-            <IconButton size="small" className={styles["info-icon"]}><InfoIcon fontSize="small" /></IconButton>
-        </Tooltip>
-    </label>
     <div className={styles["search-concept"]}>
         {conceptsSelect}
-        <FormControl sx={{ m: 1, minWidth: 80 }}>
-                            <InputLabel id="lang-label">Lang</InputLabel>
+        <FormControl size="small" sx={{ m: 1, minWidth: 70 }}>
                             <Select
-                                labelId="lang-label"
+                                size="small"
                                 value={lang}
-                                onChange={changeLang}
-                                autoWidth
-                                label="lang">
-                                <MenuItem value="en">English</MenuItem>
-                                <MenuItem value="fr">Français</MenuItem>
-                                <MenuItem value="it">Italiano</MenuItem>
+                                onChange={changeLang}>
+                                <MenuItem value="en">EN</MenuItem>
+                                <MenuItem value="fr">FR</MenuItem>
+                                <MenuItem value="it">IT</MenuItem>
                             </Select>
                         </FormControl>
                     </div>
@@ -269,16 +255,13 @@ const SearchComponent = () => {
                     </button>
                     {showAdvanced && (
                         <div className={styles["logic-selector"]}>
-                            <label className={styles["radio-label"]}>
-                                <input type="radio" name="logic" value="or" defaultChecked onChange={() => setChecked(false)} />
-                                <span>OR</span>
-                                <small>At least one concept</small>
-                            </label>
-                            <label className={styles["radio-label"]}>
-                                <input type="radio" name="logic" value="and" onChange={() => setChecked(true)} />
-                                <span>AND</span>
-                                <small>All concepts required</small>
-                            </label>
+                            <Tooltip title={logicConceptTooltip}>
+                                <Stack direction="row" spacing={1} alignItems="center">
+                                    <Typography>OR</Typography>
+                                    <AntSwitch checked={checked} onChange={(e) => setChecked(e.target.checked)} />
+                                    <Typography>AND</Typography>
+                                </Stack>
+                            </Tooltip>
                             <FormControlLabel
                                 className={styles["concept-checkbox"]}
                                 control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>}
@@ -286,7 +269,9 @@ const SearchComponent = () => {
                         </div>
                     )}
                 </div>
-                <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
+                <div className={styles["search-btn-section"]}>
+                    <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>
+                </div>
             </div>
         </section>
         <Grid container spacing={2}>

@@ -5,7 +5,7 @@ const Navbar = () => {
     return <>
         <nav id={"navbar"} className={styles['navbar']}>
             <div className={styles["logo-box"]}>
-
+                <img className={styles["logo-img"]} src="/zoomathia.png" alt="Zoomathia logo" />
             </div>
             <div className={styles["menu-box"]}>
                 <NavLink to='/' className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>

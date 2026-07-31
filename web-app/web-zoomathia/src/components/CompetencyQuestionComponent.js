@@ -22,6 +22,7 @@ const CompetencyQuestionComponent = () => {
     }, [])
 
     const [options, setOptions] = useState([])
+    const [selectedQuestion, setSelectedQuestion] = useState(null)
     const [iframe, setIframe] = useState(<></>)
     const [table, setTable] = useState(
     <div className={styles["empty-state"]}>
@@ -32,6 +33,7 @@ const CompetencyQuestionComponent = () => {
     const [titleVizu, setTitleVizu] = useState('')
 
     const updateTable = useCallback((e) => {
+        setSelectedQuestion(e)
         const file = e.value
         setTable(LOADING_STATE)
         setIframe(LOADING_STATE)
@@ -134,6 +136,7 @@ const CompetencyQuestionComponent = () => {
                 </>)
 
             const mgeDashboard = document.querySelector("#mge-dashboard")
+            if (!mgeDashboard) { return }
             mgeDashboard.resetDashboard()
             mgeDashboard.disableInitialQueryPanel()
             mgeDashboard.disableView("mge-glyph-matrix")
@@ -164,15 +167,18 @@ const CompetencyQuestionComponent = () => {
                 optionsList.push({ value: row.id, label: row.title })
             }
             setOptions(optionsList)
+            if (optionsList.length > 0) {
+                updateTable(optionsList[0])
+            }
         }
         callForData()
 
-    }, [setOptions])
+    }, [setOptions, updateTable])
 
     return <div className={styles["box-content"]}>
         <header className={styles["box-header"]}>
             <h2 key="titre_competence">Select a competency question</h2>
-            <Select className={styles["input-select"]} placeholder={"Select a competency question"} onChange={updateTable} options={options} />
+            <Select className={styles["input-select"]} placeholder={"Select a competency question"} onChange={updateTable} options={options} value={selectedQuestion} />
         </header>
         <section className={styles["box-question"]}>
     {table}

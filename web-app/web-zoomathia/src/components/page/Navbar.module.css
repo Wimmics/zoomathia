@@ -12,12 +12,15 @@
 }
 
 .logo-box {
-    background-image: url("../../../public/zoomathia.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    align-items: center;
     width: 10%;
     padding: 1.5svh;
+}
+
+.logo-img {
+    height: 44px;
+    width: auto;
 }
 .menu-box {
     display: flex;

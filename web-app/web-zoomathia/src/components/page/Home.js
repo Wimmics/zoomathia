@@ -6,7 +6,8 @@ const Home = () => {
         <section className={styles["hero"]}>
             <h1 className={styles["hero-title"]}>Explore Zoological Knowledge</h1>
             <p className={styles["hero-subtitle"]}>
-         Study the transmission of zoological knowledge from Antiquity to the Middle&nbsp;Ages
+                Study the transmission of zoological knowledge<br />
+                from Antiquity to the Middle&nbsp;Ages
             </p>
             <div className={styles["hero-buttons"]}>
                 <NavLink to='/ExploreTheCorpus' className={styles["btn-primary"]}>Explore the corpus</NavLink>

@@ -13,8 +13,8 @@ const ExplorerComponent = () => {
 
     const [displayTextComponent, setDisplayTextComponent] = useState(
         <div className={styles["empty-state"]}>
-            <p className={styles["empty-state-title"]}>No text selected</p>
-            <p className={styles["empty-state-subtitle"]}>Select an author and a work to start exploring</p>
+            <p className={styles["empty-state-title"]}>No results yet</p>
+            <p className={styles["empty-state-subtitle"]}>Select an author and a work</p>
         </div>)
     const [searchParams, setSearchParams] = useSearchParams();
     const [authorList, setAuthorList] = useState([])
@@ -60,11 +60,15 @@ const ExplorerComponent = () => {
 
     const loadText = useCallback((e) => {
         setSearchParams("")
-        setDisplayTextComponent([])
-        if(!author && !work){
-            console.log("nothing selected")
+        if(!work){
+            setDisplayTextComponent(
+                <div className={styles["empty-state"]}>
+                    <p className={styles["empty-state-title"]}>No work selected</p>
+                    <p className={styles["empty-state-subtitle"]}>Select a work to start exploring</p>
+                </div>)
             return
         }
+        setDisplayTextComponent([])
 
         const callForData = async () => {
 
@@ -122,7 +126,7 @@ const ExplorerComponent = () => {
 
             const data = await fetch(urlRequest, {signal})
                 .then(response => response.json())
-                .catch(e => { console.log(e) })
+                .catch(e => { console.log(e); return [] })
             for (const work of data) {
                 workList.push({ value: work.uri, label: work.title, author: work.author })
             }
@@ -142,7 +146,7 @@ const ExplorerComponent = () => {
         const callForData = async () => {
 
             const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getAuthors`
-            ).then(response => response.json()).catch(e => { console.log(e) })
+            ).then(response => response.json()).catch(e => { console.log(e); return [] })
             for (const author of data_author) {
                 author_response.push({ value: author.name, label: author.name })
             }
@@ -150,7 +154,7 @@ const ExplorerComponent = () => {
 
             const data_works = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
             ).then(response => response.json())
-                .catch(e => { console.log(e) })
+                .catch(e => { console.log(e); return [] })
             for (const work of data_works) {
                 work_response.push({ value: work.uri, label: work.title, author: work.author })
             }
@@ -177,32 +181,16 @@ const ExplorerComponent = () => {
 
     }, [uri])
 
-    const clearInputField = (e) => {
-        setSearchParams("")
-        if (controller.current) {
-            controller.current.abort("Clear input select field and cancel current request")
-        }
-
-        controller.current = new AbortController()
-        setAuthor(null)
-        setWork(null)
-        setDisplayTextComponent(
-            <div className={styles["empty-state"]}>
-                <p className={styles["empty-state-title"]}>No text selected</p>
-                <p className={styles["empty-state-subtitle"]}>Select an author and a work to start exploring</p>
-            </div>)
-    }
-
     return <div id={"box-content"} className={styles["box-content"]}>
+        <p className={styles["filter-by-label"]}>Filter by</p>
         <header className={styles["selection-section"]}>
             <section key="author" className={styles["select-field-section"]}>
-                <Select id="author-select" className={styles["select-field"]} placeholder="Select or type an author" onChange={setAuthorAndFilter} options={authorList} value={author} selectedValue={author} />
+                <Select id="author-select" className={styles["select-field"]} placeholder="Author(s)" onChange={setAuthorAndFilter} options={authorList} value={author} selectedValue={author} />
             </section>
             <section key="work" className={styles["select-field-section"]}>
-                <Select id="work-select" className={styles["select-field"]} placeholder="Select or type a work" onChange={setWorkAndFilter} options={worksList} value={work} selectedValue={work} />
+                <Select id="work-select" className={styles["select-field"]} placeholder="Work(s)" onChange={setWorkAndFilter} options={worksList} value={work} selectedValue={work} />
             </section>
             <section key="send" className={styles["select-field-section"]}>
-                <button className={styles["btn-submit-search"]} onClick={clearInputField}>clear</button>
                 <button className={styles["btn-submit-search"]} onClick={loadText}>search</button>
             </section>
         </header>
