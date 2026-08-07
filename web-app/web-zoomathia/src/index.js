@@ -4,9 +4,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import {defineCustomElements} from 'mgexplorer/loader'
-
-defineCustomElements(window)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 document.title = "Explore the Zoomathia corpus"

@@ -1,0 +1,28 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?p ?s ?o (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?p)) as ?url) ("fst" as ?style1) ("snd" as ?style2) WHERE {
+  ?annotation2 oa:hasBody ?authority;
+        oa:hasTarget [oa:hasSource ?p;
+                      oa:hasSelector [oa:exact ?mention_authority]].
+
+  ?authority skos:prefLabel ?o;
+             skos:broader ?authority_cat.
+  VALUES ?authority_cat {
+    <https://opentheso.huma-num.fr/?idc=105302&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=105305&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=105304&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=107918&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=105306&idt=th310>
+  }
+
+  ?annotation1 oa:hasBody ?animal;
+               oa:hasTarget [oa:hasSource ?p;
+                             oa:hasSelector [oa:exact ?mention_animal]].
+
+  ?animal a skos:Concept; skos:prefLabel ?s.
+  <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
+
+  FILTER (lang(?s) = "en").
+  FILTER (lang(?o) = "en")
+}

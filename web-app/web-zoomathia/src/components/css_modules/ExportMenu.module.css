@@ -1,0 +1,55 @@
+.export-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.export-toggle {
+    background: none;
+    border: 1px solid #9A6530;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: #9A6530;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Verdana, sans-serif;
+}
+
+.export-toggle:hover {
+    background-color: #9A653026;
+}
+
+.arrow {
+    font-size: 0.65rem;
+}
+
+.export-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 4px 0 0 0;
+    padding: 4px 0;
+    list-style: none;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    min-width: 130px;
+    z-index: 10;
+}
+
+.export-list li a {
+    display: block;
+    padding: 6px 14px;
+    color: #3d2b1f;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: Verdana, sans-serif;
+    white-space: nowrap;
+}
+
+.export-list li a:hover {
+    background-color: #9A653015;
+}

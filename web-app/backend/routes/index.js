@@ -94,19 +94,27 @@ router.get("/getSummary", async (req, res) => {
   }
 
   for (const elt of result.results.bindings) {
-    if ((elt?.current.value === elt?.parent.value) && (!idInSet.has(elt?.current.value))) {
-      tree.push(response[elt?.current.value])
-      idInSet.add(elt?.current.value)
+    const current = elt?.current.value
+    const parent = elt?.parent.value
+    if (idInSet.has(current)) continue
+    // Un noeud n'est rattache qu'a un seul parent (le premier rencontre) :
+    // certains oeuvres a plusieurs temoins/langues partagent la meme
+    // numerotation de chapitre, ce qui peut produire des liens parent/enfant
+    // contradictoires entre temoins et donc un cycle si on les autorisait tous.
+    if (current === parent) {
+      tree.push(response[current])
+      idInSet.add(current)
     } else {
-      response[elt?.parent.value].children.push(response[elt?.current.value])
+      response[parent].children.push(response[current])
+      idInSet.add(current)
     }
   }
 
   try {
     res.status(200).json(tree)
   } catch (e) {
-    console.log(tree)
-    res.status(200).end(JSON.stringify(tree))
+    console.log(`Failed to serialize tree for /getSummary: ${e.message}`)
+    res.status(500).json({ error: "Failed to build summary tree", details: e.message })
   }
 
 })
@@ -606,7 +614,9 @@ router.get("/getQCspo", async (req, res) => {
   const query = fs.readFileSync(`queries/qc${req.query.id}_spo.rq`, 'utf8')
   const result = await executeSPARQLRequest(endpoint, query)
 
-  res.status(200).json(result.results.bindings)
+  // Renvoie le resultat SPARQL complet (head + results), format attendu tel
+  // quel par la propriete `sparqlResult` de VENUS (qui remplace mgexplorer).
+  res.status(200).json(result)
 })
 
 /**
@@ -847,15 +857,20 @@ router.post("/customSearch", async (req, res) => {
     }
   }
 
+  const placedInSet = new Set()
   for (const elt of result.results.bindings) {
 
     if ((!idInSet.has(elt?.work.value))) {
       tree.push(response[elt?.work.value])
       idInSet.add(elt?.work.value)
     }
-    
-    if(response[elt?.parent.value].children.indexOf(response[elt?.current.value]) < 0){
+
+    // Comme dans /getSummary : un noeud ne doit avoir qu'un seul parent,
+    // sinon une oeuvre a plusieurs temoins/langues avec une numerotation de
+    // chapitre qui se recoupe peut produire un cycle parent/enfant.
+    if (!placedInSet.has(elt?.current.value)) {
       response[elt?.parent.value].children.push(response[elt?.current.value])
+      placedInSet.add(elt?.current.value)
     }
 
   }
@@ -876,8 +891,8 @@ router.post("/customSearch", async (req, res) => {
   try {
     res.status(200).json({sparql: buildRequest, tree: tree})
   } catch (e) {
-    console.log(tree)
-    res.status(200).end(JSON.stringify(tree))
+    console.log(`Failed to serialize tree for /customSearch: ${e.message}`)
+    res.status(500).json({ error: "Failed to build search tree", details: e.message })
   }
 })
 

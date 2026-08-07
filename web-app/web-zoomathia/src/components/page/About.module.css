@@ -114,15 +114,20 @@
 }
 
 .contact-section {
+    list-style: disc;
+    padding-left: 20px;
     display: flex;
-    flex-direction: row;
-    gap: 32px;
+    flex-direction: column;
+    gap: 8px;
     margin: 12px 0;
-    flex-wrap: wrap;
+}
+
+.contact-section li::marker {
+    color: #9A6530;
 }
 
 .contact-section .contact-card {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 12px;
     text-decoration: none;
@@ -131,10 +136,6 @@
 
 .contact-section .contact-card:hover {
     transform: translateX(2px);
-}
-
-.contact-section .contact-card:nth-child(2) {
-    margin-left: auto;
 }
 
 .contact-details {

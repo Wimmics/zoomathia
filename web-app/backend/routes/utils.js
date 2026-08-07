@@ -51,6 +51,9 @@ const executeSPARQLRequest = async (endpoint, query) => {
             console.log(e.cause)
         }
         return {
+            head: {
+                vars: []
+            },
             results: {
                 bindings: []
             }

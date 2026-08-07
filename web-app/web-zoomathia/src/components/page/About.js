@@ -21,20 +21,24 @@ const About = () => {
             <p>The corpus of texts was compiled in relation with the <a href="https://www.cepam.cnrs.fr/sites/zoomathia/presentation-generale-du-gdri-zoomathia/" target="_blank" rel="noreferrer">Zoomathia international research network</a> funded by CNRS.</p>
 
             <h3 className={styles["section-title"]}>Contact</h3>
-            <div className={styles["contact-section"]}>
-                <a href="mailto:catherine.faron@univ-cotedazur.fr" className={styles["contact-card"]}>
-                    <span className={styles["contact-details"]}>
-                        <p className={styles["contact-name"]}>Catherine Faron</p>
-                        <p className={styles["contact-email"]}>catherine.faron@univ-cotedazur.fr</p>
-                    </span>
-                </a>
-                <a href="mailto:Arnaud.Zucker@univ-cotedazur.fr" className={styles["contact-card"]}>
-                    <span className={styles["contact-details"]}>
-                        <p className={styles["contact-name"]}>Arnaud Zucker</p>
-                        <p className={styles["contact-email"]}>Arnaud.Zucker@univ-cotedazur.fr</p>
-                    </span>
-                </a>
-            </div>
+            <ul className={styles["contact-section"]}>
+                <li>
+                    <a href="mailto:catherine.faron@univ-cotedazur.fr" className={styles["contact-card"]}>
+                        <span className={styles["contact-details"]}>
+                            <p className={styles["contact-name"]}>Catherine Faron</p>
+                            <p className={styles["contact-email"]}>catherine.faron@univ-cotedazur.fr</p>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:Arnaud.Zucker@univ-cotedazur.fr" className={styles["contact-card"]}>
+                        <span className={styles["contact-details"]}>
+                            <p className={styles["contact-name"]}>Arnaud Zucker</p>
+                            <p className={styles["contact-email"]}>Arnaud.Zucker@univ-cotedazur.fr</p>
+                        </span>
+                    </a>
+                </li>
+            </ul>
 
         </section>
     </section>

@@ -27,9 +27,25 @@ p {
     display:flex;
     flex-direction: row;
     padding: 1rem 0;
-}.search-input, .search-input-border {
+}.search-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
     margin: 0 auto;
     width: 18%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.search-input > .selection-input {
+    flex: 1;
+    min-width: 0;
+}
+
+.search-input-border {
+    margin: 0 auto;
+    width: 26%;
     padding: 5px;
     box-sizing: border-box;
 }
@@ -49,6 +65,8 @@ p {
 .search-concept {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 6px;
 }
 .search-concept > div:first-child {
     width: 100%;
@@ -169,8 +187,8 @@ p {
     flex-direction: row;
     gap: 12px;
     align-items: center;
-    justify-content: center;
-    margin: 8px 0;
+    justify-content: flex-start;
+    margin: 4px 0 0 0;
     flex-wrap: wrap;
 }
 
@@ -186,25 +204,21 @@ p {
     font-weight: 600;
     color: #3d2b1f;
     font-family: Georgia, serif;
-    margin-bottom: 8px;
     text-align: left;
+    white-space: nowrap;
+    align-self: flex-start;
+    margin-top: 16px;
 }
 
-.btn-advanced {
-    background: none;
-    border: none;
-    color: #9A6530;
+.field-label {
     font-size: 0.85rem;
-    cursor: pointer;
-    padding: 4px 0;
-    text-decoration: underline;
-    font-family: Verdana, sans-serif;
-    margin-top: 8px;
+    font-weight: 600;
+    color: #3d2b1f;
+    font-family: Georgia, serif;
+    text-align: left;
+    white-space: nowrap;
 }
 
-.btn-advanced:hover {
-    color: #7a4f25;
-}
 
 .block-input {
     display: flex;

@@ -182,13 +182,15 @@ const ExplorerComponent = () => {
     }, [uri])
 
     return <div id={"box-content"} className={styles["box-content"]}>
-        <p className={styles["filter-by-label"]}>Filter by</p>
         <header className={styles["selection-section"]}>
+            <p className={styles["filter-by-label"]}>Filter by:</p>
             <section key="author" className={styles["select-field-section"]}>
-                <Select id="author-select" className={styles["select-field"]} placeholder="Author(s)" onChange={setAuthorAndFilter} options={authorList} value={author} selectedValue={author} />
+                <span className={styles["field-label"]}>Author</span>
+                <Select id="author-select" className={styles["select-field"]} placeholder="select an author" onChange={setAuthorAndFilter} options={authorList} value={author} selectedValue={author} />
             </section>
             <section key="work" className={styles["select-field-section"]}>
-                <Select id="work-select" className={styles["select-field"]} placeholder="Work(s)" onChange={setWorkAndFilter} options={worksList} value={work} selectedValue={work} />
+                <span className={styles["field-label"]}>Work</span>
+                <Select id="work-select" className={styles["select-field"]} placeholder="select a work" onChange={setWorkAndFilter} options={worksList} value={work} selectedValue={work} />
             </section>
             <section key="send" className={styles["select-field-section"]}>
                 <button className={styles["btn-submit-search"]} onClick={loadText}>search</button>

@@ -1,0 +1,29 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?paragraph ?name_animal ?name_authority WHERE {
+  ?annotation2 oa:hasBody ?authority;
+        oa:hasTarget [oa:hasSource ?paragraph;
+                      oa:hasSelector [oa:exact ?mention_authority]].
+
+  ?authority skos:prefLabel ?name_authority;
+             skos:broader ?authority_cat.
+  VALUES ?authority_cat {
+    <https://opentheso.huma-num.fr/?idc=105302&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=105305&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=105304&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=107918&idt=th310>
+    <https://opentheso.huma-num.fr/?idc=105306&idt=th310>
+  }
+
+  ?annotation1 oa:hasBody ?animal;
+               oa:hasTarget [oa:hasSource ?paragraph;
+                             oa:hasSelector [oa:exact ?mention_animal]].
+
+  ?animal a skos:Concept; skos:prefLabel ?name_animal.
+  <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
+
+  FILTER (lang(?name_animal) = "en").
+  FILTER (lang(?name_authority) = "en")
+}
+ORDER BY ?paragraph

@@ -34,7 +34,15 @@ button {
     font-weight: 600;
     color: #3d2b1f;
     font-family: Georgia, serif;
-    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+.field-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #3d2b1f;
+    font-family: Georgia, serif;
+    white-space: nowrap;
 }
 
 .selection-section {
@@ -47,7 +55,11 @@ button {
 }
 
 .select-field-section {
-    width: 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    width: 22%;
     margin: 0 auto;
     padding: 0 8px;
 }
@@ -66,7 +78,7 @@ button {
     margin-bottom: 5px;
 }
 
-.select-field-section > * {
+.select-field-section > *:not(.field-label) {
     width: 100%;
 }
 
@@ -163,10 +175,24 @@ select option {
     background-color: #fdf8f2;
     border: 1px solid #e8ddd0;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 12px 0;
     padding: 0.8rem 1rem;
     font-size: 1rem;
     gap: 24px;
+}
+
+.work-info {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.interface-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .input-search {
@@ -217,6 +243,9 @@ select option {
 .sticky-title {
     position: sticky;
     text-align: center;
+    /* Centre le titre sur la colonne de texte, pas sur toute la largeur
+       (qui inclut aussi la colonne des concepts a droite). */
+    margin-right: 30%;
 }
 
 .p-start {

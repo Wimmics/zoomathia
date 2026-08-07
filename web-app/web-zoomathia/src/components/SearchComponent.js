@@ -79,7 +79,6 @@ const SearchComponent = () => {
     const [currentWorkLoading, setCurrentWorkLoading] = useState("")
     const [summary, setSummary] = useState([])
     const [stats, setStats] = useState(null)
-    const [showAdvanced, setShowAdvanced] = useState(false)
 
     const controller = useRef(new AbortController())
 
@@ -88,7 +87,7 @@ const SearchComponent = () => {
     }
 
     const authorSelect = <AsyncSelect key={"author-select"} className={styles["selection-input"]}
-        placeholder="Author(s)"
+        placeholder="select an author"
         defaultOptions={authorList}
         loadOptions={(input) => filterList(input, authorList)}
         isMulti
@@ -96,7 +95,7 @@ const SearchComponent = () => {
     />
 
     const workSelect = <AsyncSelect key={"work-select"} className={styles["selection-input"]}
-        placeholder="Work(s)"
+        placeholder="select a work"
         defaultOptions={workList}
         loadOptions={(input) => filterList(input, workList)}
         isMulti
@@ -104,7 +103,7 @@ const SearchComponent = () => {
     />
 
     const conceptsSelect = <AsyncSelect key={"concepts-select"} className={styles["selection-input"]}
-        placeholder="Concept(s)"
+        placeholder="select one or more concepts"
         defaultOptions={conceptList}
         loadOptions={(input) => filterList(input, conceptList)}
         isMulti
@@ -197,11 +196,15 @@ const SearchComponent = () => {
 
     useEffect(() => {
         const getAuthors = async () => {
-            const author_response = []
             const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
             ).then(response => response.json()).catch(e => { console.log(e); return [] })
+            const seen = new Set()
+            const author_response = []
             for (const author of data_author) {
-                author_response.push({ value: author.author, label: author.author })
+                if (!seen.has(author.author)) {
+                    seen.add(author.author)
+                    author_response.push({ value: author.author, label: author.author })
+                }
             }
             return author_response
         }
@@ -226,48 +229,45 @@ const SearchComponent = () => {
 
     return <div className={styles["box-content"]}>
         <section className={styles["section-form"]}>
-            <p className={styles["filter-by-label"]}>Filter by</p>
             <div className={styles["block-input"]}>
+                <p className={styles["filter-by-label"]}>Filter by:</p>
                 <div className={styles["search-input"]}>
+                    <span className={styles["field-label"]}>Author</span>
                     {authorSelect}
                 </div>
                 <div className={styles["search-input"]}>
+                    <span className={styles["field-label"]}>Work</span>
                     {workSelect}
                 </div>
                 <div className={styles["search-input-border"]}>
     <div className={styles["search-concept"]}>
+        <span className={styles["field-label"]}>Concepts</span>
         {conceptsSelect}
         <FormControl size="small" sx={{ m: 1, minWidth: 70 }}>
                             <Select
                                 size="small"
                                 value={lang}
-                                onChange={changeLang}>
-                                <MenuItem value="en">EN</MenuItem>
-                                <MenuItem value="fr">FR</MenuItem>
-                                <MenuItem value="it">IT</MenuItem>
+                                onChange={changeLang}
+                                sx={{ '& .MuiSelect-select': { textAlign: 'center' } }}>
+                                <MenuItem value="en" sx={{ justifyContent: 'center' }}>EN</MenuItem>
+                                <MenuItem value="fr" sx={{ justifyContent: 'center' }}>FR</MenuItem>
+                                <MenuItem value="it" sx={{ justifyContent: 'center' }}>IT</MenuItem>
                             </Select>
                         </FormControl>
                     </div>
-                    <button
-                        className={styles["btn-advanced"]}
-                        onClick={() => setShowAdvanced(!showAdvanced)}>
-                        {showAdvanced ? '▲ Hide advanced options' : '▼ Advanced options'}
-                    </button>
-                    {showAdvanced && (
-                        <div className={styles["logic-selector"]}>
-                            <Tooltip title={logicConceptTooltip}>
-                                <Stack direction="row" spacing={1} alignItems="center">
-                                    <Typography>OR</Typography>
-                                    <AntSwitch checked={checked} onChange={(e) => setChecked(e.target.checked)} />
-                                    <Typography>AND</Typography>
-                                </Stack>
-                            </Tooltip>
-                            <FormControlLabel
-                                className={styles["concept-checkbox"]}
-                                control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>}
-                                label="Include sub-concepts" />
-                        </div>
-                    )}
+                    <div className={styles["logic-selector"]}>
+                        <Tooltip title={logicConceptTooltip}>
+                            <Stack direction="row" spacing={1} alignItems="center">
+                                <Typography>OR</Typography>
+                                <AntSwitch checked={checked} onChange={(e) => setChecked(e.target.checked)} />
+                                <Typography>AND</Typography>
+                            </Stack>
+                        </Tooltip>
+                        <FormControlLabel
+                            className={styles["concept-checkbox"]}
+                            control={<Checkbox color="secondary" onChange={e => setSubConcepts(!subConcepts)}/>}
+                            label="Include sub-concepts" />
+                    </div>
                 </div>
                 <div className={styles["search-btn-section"]}>
                     <button className={styles["btn-submit-search"]} onClick={sendRequestedForm}>Search</button>

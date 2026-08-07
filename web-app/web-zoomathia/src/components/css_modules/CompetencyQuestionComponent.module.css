@@ -27,6 +27,14 @@
     margin: auto;
 }
 
+.field-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3d2b1f;
+    font-family: Georgia, serif;
+    white-space: nowrap;
+}
+
 th {
     padding: 0 !important;
     text-align: center;
@@ -74,7 +82,11 @@ section > h3 {
 }
 
 .box-header {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -97,27 +109,14 @@ section > h3 {
     border: 1px solid #e8ddd0;
     border-radius: 8px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px 0;
     padding: 1rem;
 }
 
 .selected-book-metadata > p {
-    margin: auto;
-}
-
-.button-export {
-    background-color: transparent;
-    border: 1px solid #9A6530;
-    border-radius: 5px;
-    padding: 6px 14px;
-    margin: 0 8px;
-    text-decoration: none;
-    color: #9A6530;
-    font-size: 0.9rem;
-}
-
-.button-export:hover {
-    background-color: #9A653026;
+    margin: 0;
 }
 
 .mge-dashboard {
@@ -146,4 +145,18 @@ section > h3 {
     font-size: 1rem;
     color: #888;
     font-family: Verdana, sans-serif;
+}
+
+:global(.gridjs-search) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+:global(.gridjs-search)::before {
+    content: "Search by:";
+    font-weight: 600;
+    color: #3d2b1f;
+    font-family: Georgia, serif;
+    white-space: nowrap;
 }

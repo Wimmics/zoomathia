@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import SectionComponent from './SectionComponent'
 import styles from "./css_modules/BookComponents.module.css"
 import Summary from "./Summary.js"
+import ExportMenu from "./ExportMenu"
 import { SimpleTreeView } from "@mui/x-tree-view";
 import Grid from '@mui/material/Grid2';
 
@@ -72,21 +73,19 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
     return <section>
         <section className={styles["selected-book-metadata"]}>
-            <div className={styles["metadata-div"]}>
-                <p><b>Editor</b>: {metadata.editor}</p>
+            <div className={styles["work-info"]}>
+                <div className={styles["metadata-div"]}>
+                    <p><b>Editor</b>: {metadata.editor}</p>
+                </div>
+                <div className={styles["metadata-div"]}>
+                    <p><b>Year</b>: {metadata.date}</p>
+                </div>
             </div>
-            <div className={styles["metadata-div"]}>
-                <p><b>Year</b>: {metadata.date}</p>
-            </div>
-            <div className={styles["metadata-div"]}>
-                <p><b>Export</b>: 
-                    <a className={styles["button-export"]} 
-                        href={`${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`} 
-                        download={metadata.file} target="_blank" rel="noreferrer">XML-TEI</a>
-                    <a className={styles["button-export"]} 
-                        href={`${process.env.REACT_APP_BACKEND_URL}download-turtle?uri=${uri}`}  
-                        download target="_blank" rel="noreferrer">Turtle</a>
-                </p>
+            <div className={styles["interface-actions"]}>
+                <ExportMenu options={[
+                    { label: "XML-TEI", href: `${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`, download: metadata.file },
+                    { label: "Turtle", href: `${process.env.REACT_APP_BACKEND_URL}download-turtle?uri=${uri}` }
+                ]} />
             </div>
         </section>
         <Grid container spacing={2}>

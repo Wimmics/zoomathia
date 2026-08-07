@@ -1,0 +1,22 @@
+PREFIX oa:     <http://www.w3.org/ns/oa#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?paragraph ?name_animal ?name_period WHERE {
+  ?annotation2 oa:hasBody ?period;
+        oa:hasTarget [oa:hasSource ?paragraph;
+                      oa:hasSelector [oa:exact ?mention_period]].
+
+  ?period skos:prefLabel ?name_period.
+  <https://opentheso.huma-num.fr/?idg=MT_3&idt=th310> skos:member ?period.
+
+  ?annotation1 oa:hasBody ?animal;
+               oa:hasTarget [oa:hasSource ?paragraph;
+                             oa:hasSelector [oa:exact ?mention_animal]].
+
+  ?animal a skos:Concept; skos:prefLabel ?name_animal.
+  <https://opentheso.huma-num.fr/?idg=MT_7&idt=th310> skos:member ?animal.
+
+  FILTER (lang(?name_animal) = "en").
+  FILTER (lang(?name_period) = "en")
+}
+ORDER BY ?paragraph

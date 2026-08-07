@@ -5,6 +5,8 @@ import styles from "./css_modules/CompetencyQuestionComponent.module.css"
 import { Grid } from "gridjs-react"
 import { html } from 'gridjs'
 import Select from 'react-select'
+import ExportMenu from "./ExportMenu"
+import "@wimmics/venus"
 
 const LOADING_STATE = <>
     <div className={styles["loader"]}></div>
@@ -41,50 +43,15 @@ const CompetencyQuestionComponent = () => {
         const callForData = async () => {
             const generatedCol = []
             if (file === null) { return }
-            const styleSheet = {
-                "appli": {
-                    "name": "ldviz",
-                    "debug": true
-                },
-                "node": {
-                    "default": {
-                        "color": "steelblue"
-                    },
-                    "mix": {
-                        "color": "yellow"
-                    },
-                    "member": {
-                        "color": "purple"
-                    },
-                    "other": {
-                        "color": "green"
-                    },
-                    "fst": {
-                        "color": "red",
-                        "priority": 1
-                    },
-                    "snd": {
-                        "color": "orange",
-                        "priority": 2
-                    },
-                    "rst": {
-                        "color": "green",
-                        "priority": 3
-                    }
-                },
-                "edge": {
-                    "color": "green"
-                }
-            }
             const spo_data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQCspo?id=${file}`).then(response => response.json())
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
-            
+
             for (const elt of data.table.columns) {
                 switch(elt){
                     case "paragraph":
                         generatedCol.push({
                             name: elt,
-                            formatter: (cell) => { 
+                            formatter: (cell) => {
                                 return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
                         })
                         break;
@@ -117,37 +84,72 @@ const CompetencyQuestionComponent = () => {
 
             setTable(<>
                 <section className={styles["selected-book-metadata"]}>
-                <p><b>Export SPARQL Result</b>: 
-                        <a className={styles["button-export"]} 
-                        href={`${process.env.REACT_APP_BACKEND_URL}download-qc-json?id=${file}`}  
-                        download target="_blank" rel="noreferrer">JSON</a>
-
-                        <a className={styles["button-export"]} 
-                        href={`${process.env.REACT_APP_BACKEND_URL}download-qc-csv?id=${file}`}  
-                        download target="_blank" rel="noreferrer">CSV</a>
-                    </p>
+                    <p><b>Export SPARQL Result</b></p>
+                    <ExportMenu options={[
+                        { label: "JSON", href: `${process.env.REACT_APP_BACKEND_URL}download-qc-json?id=${file}` },
+                        { label: "CSV", href: `${process.env.REACT_APP_BACKEND_URL}download-qc-csv?id=${file}` }
+                    ]} />
                 </section>
                 <Grid data={data.table.data}
                 columns={generatedCol}
                 pagination={{ limit: 10 }}
                 resizable={true}
-                search={true} style={styleGrid} sort={true} 
-                language={ { search:{placeholder: "filter row by keyword..."} }} />
+                search={true} style={styleGrid} sort={true}
+                language={ { search:{placeholder: "enter a keyword..."} }} />
                 </>)
 
-            const mgeDashboard = document.querySelector("#mge-dashboard")
-            if (!mgeDashboard) { return }
-            mgeDashboard.resetDashboard()
-            mgeDashboard.disableInitialQueryPanel()
-            mgeDashboard.disableView("mge-glyph-matrix")
-            mgeDashboard.disableView("mge-clustervis")
-            mgeDashboard.disableView("mge-annotation")
-            mgeDashboard.disableView("mge-query")
-            
+            const venusGraph = document.querySelector("#venus-graph")
+            if (!venusGraph) { return }
 
-            mgeDashboard.setData(spo_data, styleSheet)
-            mgeDashboard.setDashboard()
+            // Les requetes *_spo.rq n'utilisent pas toutes les memes noms de
+            // variable (la plupart ont ?s/?o, mais qc1 par ex. utilise
+            // ?author/?date a la place) : on choisit les champs source/cible
+            // en fonction de ce qui existe reellement dans le resultat.
+            const vars = spo_data?.head?.vars || []
+            const pick = (candidates) => candidates.find((v) => vars.includes(v))
+            const sourceField = pick(["s"]) || vars[0]
+            const targetField = pick(["o", "date", "type"]) || vars[1]
 
+            // Le champ animal (sourceField) a souvent des centaines de
+            // valeurs distinctes (illisible d'un coup dans un graphe) : on
+            // ne garde que les MAX_SOURCE_NODES animaux les plus frequents
+            // avant de transmettre le resultat a VENUS, qui n'a pas de
+            // notion de "top N" integree.
+            const MAX_SOURCE_NODES = 20
+            const sourceCounts = {}
+            for (const b of spo_data?.results?.bindings || []) {
+                const s = b[sourceField]?.value
+                if (!s) continue
+                sourceCounts[s] = (sourceCounts[s] || 0) + 1
+            }
+            const topSources = new Set(
+                Object.entries(sourceCounts)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, MAX_SOURCE_NODES)
+                    .map(([name]) => name)
+            )
+            const filteredResult = {
+                head: spo_data.head,
+                results: {
+                    bindings: (spo_data?.results?.bindings || [])
+                        .filter((b) => topSources.has(b[sourceField]?.value))
+                }
+            }
+
+            venusGraph.sparqlResult = filteredResult
+            venusGraph.encoding = {
+                nodes: {
+                    source: { field: sourceField, color: { value: '#4a6fa5' } },
+                    target: { field: targetField, color: { value: '#9A6530' } }
+                },
+                links: { color: { value: '#ddccae' } },
+                interactions: { drag: true, zoom: true, tooltip: true }
+            }
+            try {
+                await venusGraph.launch()
+            } catch (e) {
+                console.error("VENUS: failed to render graph for this question", e)
+            }
 
             /*setIframe(<iframe className={styles["iframe-box"]}
                 title="Query visualisation"
@@ -177,14 +179,14 @@ const CompetencyQuestionComponent = () => {
 
     return <div className={styles["box-content"]}>
         <header className={styles["box-header"]}>
-            <h2 key="titre_competence">Select a competency question</h2>
-            <Select className={styles["input-select"]} placeholder={"Select a competency question"} onChange={updateTable} options={options} value={selectedQuestion} />
+            <span className={styles["field-label"]}>Competency question</span>
+            <Select className={styles["input-select"]} placeholder={"select a competency question"} onChange={updateTable} options={options} value={selectedQuestion} />
         </header>
         <section className={styles["box-question"]}>
     {table}
     {titleVizu && <h3>{titleVizu}</h3>}
     <div style={{display: table ? 'block' : 'none'}}>
-        <mge-dashboard id="mge-dashboard" className={styles["mge-dashboard"]}></mge-dashboard>
+        <venus-graph id="venus-graph" className={styles["mge-dashboard"]} width="100%" height="600"></venus-graph>
     </div>
 </section>
 
