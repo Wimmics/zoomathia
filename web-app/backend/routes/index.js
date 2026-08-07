@@ -12,6 +12,29 @@ const endpoint = process.env.SPARQL_ENDPOINT
 console.log(endpoint)
 const __dirForDOwnload__ = "./files/"
 
+// Deux temoins (langues/editions differentes) d'une meme oeuvre partagent le
+// meme titre : cette etiquette permet de les distinguer dans les listes.
+const ZOO_LANG_LABELS = { e: 'EN', g: 'GR', l: 'LA', f: 'FR' }
+
+const deriveLanguageLabel = (filePath) => {
+  if (!filePath) return null
+  const basename = filePath.split('/').pop()
+
+  const perseusMatch = basename.match(/perseus-([a-z]+)\d*\.xml$/i)
+  if (perseusMatch) {
+    const code = perseusMatch[1].toLowerCase()
+    if (code.startsWith('eng')) return 'EN'
+    if (code.startsWith('grc')) return 'GR'
+    if (code.startsWith('lat')) return 'LA'
+  }
+  if (filePath.includes('data_translated')) return 'EN'
+
+  const zooMatch = basename.match(/^\d+([a-z])(_\d+)?\.xml$/)
+  if (zooMatch && ZOO_LANG_LABELS[zooMatch[1]]) return ZOO_LANG_LABELS[zooMatch[1]]
+
+  return null
+}
+
 
 router.get('/download-xml', (req, res) => {
   const fileName = req.query.file
@@ -172,13 +195,14 @@ const getWorksFromAuthor = (author) => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
-  SELECT ?oeuvre ?title WHERE {
+  SELECT ?oeuvre ?title (SAMPLE(?file) AS ?file) WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
       zoo:editor ?editor;
     (schema:title|zoo:title) ?title.
+    OPTIONAL { ?oeuvre zoo:file ?file. }
 
     filter(str(?author) = "${author}")
-  }ORDER BY ?title`
+  } GROUP BY ?oeuvre ?title ORDER BY ?title`
 }
 
 router.get('/getWorksFromAuthors', async (req, res) => {
@@ -189,7 +213,8 @@ router.get('/getWorksFromAuthors', async (req, res) => {
     response.push({
       uri: elt?.oeuvre.value,
       title: elt?.title.value,
-      author: req.query.author
+      author: req.query.author,
+      language: deriveLanguageLabel(elt?.file?.value)
     })
   }
   res.status(200).json(response)
@@ -199,10 +224,11 @@ const getWorks = () => {
   return `prefix schema: <http://schema.org/>
   prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
-  SELECT ?oeuvre ?title ?author WHERE {
+  SELECT ?oeuvre ?title ?author (SAMPLE(?file) AS ?file) WHERE {
     ?oeuvre (zoo:author|schema:author) ?author;
     (schema:title|zoo:title) ?title.
-  }ORDER BY ?title`
+    OPTIONAL { ?oeuvre zoo:file ?file. }
+  } GROUP BY ?oeuvre ?title ?author ORDER BY ?title`
 }
 
 router.get('/getWorks', async (req, res) => {
@@ -213,7 +239,8 @@ router.get('/getWorks', async (req, res) => {
     response.push({
       uri: elt?.oeuvre.value,
       title: elt?.title.value,
-      author: elt?.author.value
+      author: elt?.author.value,
+      language: deriveLanguageLabel(elt?.file?.value)
     })
   }
   res.status(200).json(response)

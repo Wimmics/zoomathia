@@ -214,7 +214,7 @@ const SearchComponent = () => {
             const data_works = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
             ).then(response => response.json()).catch(e => { console.log(e); return [] })
             for (const work of data_works) {
-                work_response.push({ value: work.uri, label: work.title, author: work.author })
+                work_response.push({ value: work.uri, label: work.language ? `${work.title} (${work.language})` : work.title, author: work.author })
             }
             return work_response
         }

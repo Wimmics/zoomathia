@@ -128,7 +128,7 @@ const ExplorerComponent = () => {
                 .then(response => response.json())
                 .catch(e => { console.log(e); return [] })
             for (const work of data) {
-                workList.push({ value: work.uri, label: work.title, author: work.author })
+                workList.push({ value: work.uri, label: work.language ? `${work.title} (${work.language})` : work.title, author: work.author })
             }
             setWorks(workList)
             setWork(null)
@@ -156,7 +156,7 @@ const ExplorerComponent = () => {
             ).then(response => response.json())
                 .catch(e => { console.log(e); return [] })
             for (const work of data_works) {
-                work_response.push({ value: work.uri, label: work.title, author: work.author })
+                work_response.push({ value: work.uri, label: work.language ? `${work.title} (${work.language})` : work.title, author: work.author })
             }
             setWorks(work_response)
         }
