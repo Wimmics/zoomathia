@@ -7,6 +7,7 @@ from tqdm import tqdm
 from deep_translator import GoogleTranslator
 
 from py4j.java_gateway import JavaGateway
+import time
 from time import sleep
 import subprocess
 import atexit
@@ -18,7 +19,7 @@ from spacy.lang.en.stop_words import STOP_WORDS
 
 java_process = subprocess.Popen(
     ['java', '-jar', '-Dfile.encoding=UTF-8', 'corese-library-python-4.4.1.jar'])
-sleep(1)
+sleep(6)
 gateway = JavaGateway()
 
 def exit_handler():
@@ -191,6 +192,39 @@ def extract_wikidata(entities, annotations, paragraph):
                                 "wikidata"])
 
 
+AUTHOR_CONCORDANCE_PATHS = [
+    "../../repertoire_zoo/repertoire_codes_zoo.csv",
+    "../../repertoire_codes_zoo.csv",
+]
+
+
+def load_canonical_authors(paths=AUTHOR_CONCORDANCE_PATHS):
+    """Table zooN -> nom canonique de l'auteur.
+    Chaque fichier XML ecrit le nom d'auteur a sa maniere (ex: 'Aristotle' vs
+    'ARISTOTELES'), ce qui fragmente le meme auteur en plusieurs valeurs dans
+    le graphe. repertoire_zoo/repertoire_codes_zoo.csv associe un seul nom
+    canonique par dossier zooN : on l'utilise comme source de verite plutot
+    que le texte brut du XML. Le second fichier ne sert qu'a completer les
+    quelques dossiers absents du premier (ex: zoo1)."""
+    mapping = {}
+    # Ordre: les fichiers suivants ne comblent que les trous, sans ecraser
+    # une entree deja trouvee dans un fichier precedent (priorite au premier).
+    for path in paths:
+        if not os.path.exists(path):
+            continue
+        df = pd.read_csv(path)
+        for _, row in df.iterrows():
+            code = str(row["code_zoo"]).strip()
+            if "/" not in code:
+                continue
+            folder = code.split("/", 1)[0]
+            mapping.setdefault(folder, str(row["nom_canonique"]).strip())
+    return mapping
+
+
+CANONICAL_AUTHORS = load_canonical_authors()
+
+
 def extract_sourcedesc_data(source):
     """
         Extract metadata from XML-TEI header
@@ -201,10 +235,42 @@ def extract_sourcedesc_data(source):
         else strip_text(source.titleStmt.date.text) if source.titleStmt and source.titleStmt.date else strip_text(
         source.publicationStmt.date.text) if source.publicationStmt and source.publicationStmt.date else "date not found"
     editor = strip_text(source.titleStmt.editor.text) if source.titleStmt and source.titleStmt.editor else "Unknown editor"
-    author = strip_text(source.titleStmt.author.text) if source.titleStmt and source.titleStmt.author else \
-        strip_text(
-            source.sourceDesc.author.text) if source.sourceDesc and source.sourceDesc.author else 'Author not found'
-    oeuvre_title = clean_uri(source.titleStmt.title.text) if source.titleStmt and source.titleStmt.title else "title not found"
+
+    author_tag = (source.titleStmt.author if source.titleStmt and source.titleStmt.author
+                  else source.sourceDesc.author if source.sourceDesc and source.sourceDesc.author else None)
+    if author_tag and author_tag.persName:
+        author = strip_text(author_tag.persName.text)
+    elif author_tag:
+        author = strip_text(author_tag.text)
+    else:
+        author = 'Author not found'
+
+    # Choix du titre: prefere un <title type="alt"> deja dans la bonne langue
+    # (evite de traduire via Google Translate un titre deja correct) avant de
+    # retomber sur le <head> direct de <text>, puis sur le titre principal traduit.
+    title_tag = None
+    if source.titleStmt:
+        primary_title_tag = source.titleStmt.find("title")
+        file_lang = primary_title_tag.get("xml:lang") if primary_title_tag else None
+        for lang in filter(None, [file_lang, "en"]):
+            title_tag = source.titleStmt.find("title", attrs={"type": "alt", "xml:lang": lang})
+            if title_tag:
+                break
+
+    if title_tag:
+        oeuvre_title = strip_text(title_tag.text)
+    else:
+        text_tag = source.find("text")
+        direct_head = text_tag.find("head", recursive=False) if text_tag else None
+        if direct_head and strip_text(direct_head.text):
+            oeuvre_title = strip_text(direct_head.text)
+        elif source.titleStmt and source.titleStmt.title:
+            # Titre classique (latin/grec) garde tel quel: pas de traduction automatique,
+            # qui peut faire coincider par erreur des oeuvres differentes (bug constate).
+            oeuvre_title = strip_text(source.titleStmt.title.text)
+        else:
+            oeuvre_title = "title not found"
+
     oeuvre_id = oeuvre_title.replace(" ", "_").lower() if oeuvre_title != "title not found" else "id_not_found"
 
     return oeuvre_id, oeuvre_title, author, date, editor
@@ -245,6 +311,22 @@ def find_xml_files(directory):
     return xml_files
 
 
+def get_witness_lang(file_path):
+    """Zoo naming convention: <n><lang letter>[_<n>].xml, e.g. 1e.xml, 1g_3.xml.
+    Renvoie la lettre de langue (e=anglais, g=grec, l=latin, f=francais...),
+    ou "" si le nom de fichier ne suit pas la convention. Fiable a 100% sur
+    les 263 fichiers du corpus (verifie), contrairement a l'attribut XML
+    xml:lang qui est souvent absent."""
+    basename = os.path.basename(file_path)
+    match = re.match(r"^\d+([a-z])(_\d+)?\.xml$", basename)
+    return match.group(1) if match else ""
+
+
+def is_english_file(file_path):
+    """Zoo naming convention: <n><lang letter>[_<n>].xml, e.g. 1e.xml, 1e_3.xml. 'e' = anglais."""
+    return get_witness_lang(file_path) == "e"
+
+
 def extract_paragraph(parent_division, parent_data, parent_uri, link_data, paragraph_data, annotation_data):
 
     paragraph_author = ""
@@ -266,7 +348,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_title = ""
 
                 if ANNOTATION_AUTO:
-                    if "eng" in FILE.split("\\")[-1]:
+                    if is_english_file(FILE):
                         translated_paragraph = paragraph_text
                     else:
                         translated_paragraph = split_and_translate(paragraph_text, "en")
@@ -291,7 +373,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 
             if ANNOTATION_AUTO:
 
-                if "eng" in FILE.split("\\")[-1]:
+                if is_english_file(FILE):
                     translated_paragraph = paragraph_text
                 else:
                     translated_paragraph = split_and_translate(paragraph_text, "en")
@@ -326,7 +408,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_id = 0 if "a" in parent_data[3] else 1
                     paragraph_text = strip_paragraph_text(p.text)
                     if ANNOTATION_AUTO:
-                        if "eng" in FILE.split("\\")[-1]:
+                        if is_english_file(FILE):
                             translated_paragraph = paragraph_text
                         else:
                             translated_paragraph = split_and_translate(paragraph_text, "en")
@@ -347,7 +429,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     paragraph_text = strip_paragraph_text(p.text)
 
                     if ANNOTATION_AUTO:
-                        if "eng" in FILE.split("\\")[-1]:
+                        if is_english_file(FILE):
                             translated_paragraph = paragraph_text
                         else:
                             translated_paragraph = split_and_translate(paragraph_text, "en")
@@ -370,9 +452,12 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 
 def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annotation_data, depth):
     for tag_id, tag_div in tqdm(enumerate(div.find_all(re.compile("^div"), recursive=False), 1)):
-        tag_div_type = tag_div["type"].title().replace(" ", "") if (
-                ("textpart" not in tag_div["type"]) and not any(c.isnumeric() for c in tag_div["type"])
-        ) else tag_div["subtype"].title().replace(" ", "")
+        div_type_attr = tag_div.get("type", "")
+        if div_type_attr and "textpart" not in div_type_attr and not any(c.isnumeric() for c in div_type_attr):
+            tag_div_type = div_type_attr.title().replace(" ", "")
+        else:
+            fallback_attr = tag_div.get("subtype", "") or div_type_attr or tag_div.name
+            tag_div_type = fallback_attr.title().replace(" ", "")
 
         if tag_div_type == "BekkerPage":
             # extract number from the title
@@ -415,11 +500,21 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
             extract_paragraph(tag_div,[parent_uri, tag_div_type, tag_div_id, tag_div_title],current_uri, link_data, paragraph_data, annotation_data)
 
 
+def sanitize_iri_component(text):
+    """Retire les caracteres invalides ou problematiques dans une IRI (RFC 3987
+    + caracteres qui font echouer silencieusement la generation RDF en aval,
+    ex: apostrophe dans "De l'equitation"), ex: < > " { } | \\ ^ ` '
+    Le titre affiche (champ 'title') n'est pas touche, seul le segment d'URI l'est."""
+    return re.sub(r'[<>"{}|\\^`\']', '', text)
+
+
 def extraction_data(FILE,CSV):
     with (open(FILE, 'r', encoding="UTF-8") as xml_file):
 
         xml_parser = bs(xml_file, "lxml-xml")
         oeuvre_id, oeuvre_title, author, date, editor = extract_sourcedesc_data(xml_parser)
+        zoo_folder = os.path.basename(os.path.dirname(FILE))
+        author = CANONICAL_AUTHORS.get(zoo_folder, author)
         body_parser = xml_parser.body
         # translate author and oeuvre_id
         link_data = []
@@ -431,8 +526,19 @@ def extraction_data(FILE,CSV):
         annotation_labels = ["paragraph_uri", "concept_uri", "mention", "score", "origin"]
 
         text_tag = xml_parser.find("text")
-        lang_suffix = text_tag.get("xml:lang", "") if text_tag else ""
-        uri = f"http://ns.inria.fr/zoomathia/{clean_uri(author).replace(' ', '_')}/{oeuvre_id}/{lang_suffix}"
+        # Derive de la convention de nommage (fiable) plutot que de l'attribut
+        # xml:lang du XML (souvent absent). Sans ca, deux temoins d'une meme
+        # oeuvre dans des langues differentes (ex: grec + traduction anglaise)
+        # peuvent finir avec la meme URI si xml:lang est absent des deux cotes,
+        # ce qui fusionne a tort leurs structures internes (chapitres, etc.)
+        # et peut creer un cycle parent/enfant cote appli web.
+        lang_suffix = get_witness_lang(FILE)
+        # Le nom canonique (CANONICAL_AUTHORS) est deja propre: pas besoin de le
+        # faire passer par Google Translate (meme risque de corruption que le
+        # Bug 6 sur les titres). On ne traduit que si aucune forme canonique
+        # n'a ete trouvee (repli sur le texte brut extrait du XML).
+        author_uri_segment = author if zoo_folder in CANONICAL_AUTHORS else clean_uri(author)
+        uri = f"http://ns.inria.fr/zoomathia/{sanitize_iri_component(author_uri_segment.replace(' ', '_'))}/{sanitize_iri_component(oeuvre_id)}/{lang_suffix}"
 
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
@@ -479,13 +585,20 @@ if __name__ == "__main__":
     for concept_name in thesaurus_dict.keys():
         matcher.add(concept_name, [nlp_model(concept_name)])
 
-    directory_path = ('./texts/')
+    directory_path = ('./zoo/')
     xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
 
-        print(xml_file)
         FILE = xml_file
-        CSV = ".".join(FILE.split("\\")[-1].split(".")[0:-1])
+        zoo_folder = os.path.basename(os.path.dirname(FILE))
+        CSV = zoo_folder + "_" + ".".join(os.path.basename(FILE).split(".")[0:-1])
+
+        meta_path = './output/' + CSV + "_metadata.csv"
+        if os.path.exists(meta_path) and os.path.getmtime(meta_path) >= os.path.getmtime(FILE):
+            print(f"Skip (deja traite, a jour): {xml_file}")
+            continue
+
+        print(xml_file)
         extraction_data(FILE, CSV)
 
     print("End of CSV generation")

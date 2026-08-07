@@ -1,5 +1,6 @@
 from time import sleep
 import time
+import re
 import requests
 
 import pandas as pd
@@ -15,7 +16,7 @@ from py4j.java_gateway import JavaGateway
 
 java_process = subprocess.Popen(
     ['java', '-jar', '-Dfile.encoding=UTF-8', 'corese-library-python-4.4.1.jar'])
-sleep(1)
+sleep(6)
 gateway = JavaGateway()
 
 
@@ -225,8 +226,24 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
 
         df = df.drop_duplicates(subset=['paragraph_uri', 'concept_uri'], keep='first')
 
-    collection.insert_many(df.to_dict('records'))
+    records = df.to_dict('records')
+    if not records:
+        print(f"Ignore (vide) {csv_file} pour la collection {collection_name}")
+        return
+    collection.insert_many(records)
     print(f"Chargé {csv_file} dans la collection {collection_name} de la base de données {db_name}")
+
+
+def clear_work_data(work_uri, db_name, mongo_uri="mongodb://localhost:27017/"):
+    """Supprime les anciennes donnees d'une oeuvre (avant rechargement suite a une modification)."""
+    client = MongoClient(mongo_uri)
+    db = client[db_name]
+    pattern = re.compile("^" + re.escape(work_uri))
+
+    db["Metadata"].delete_many({"uri": work_uri})
+    db["Paragraph"].delete_many({"parent_uri": pattern})
+    db["Link"].delete_many({"parent_uri": pattern})
+    db["Annotation"].delete_many({"paragraph_uri": pattern})
 
 
 def clear_mongo_collection(db_name, collection_name, mongo_uri="mongodb://localhost:27017/"):
@@ -253,25 +270,65 @@ if __name__ == "__main__":
     with open("filter_class.json", "r") as filter_file:
         filtered_class_list = json.load(filter_file)["class"]
 
-    csv_files = glob.glob("./output/*.csv")
+    csv_files = glob.glob("./output/zoo*_*.csv")
 
     db_name = "Ner"
-    clear_mongo_collection(db_name, "Annotation")
-    clear_mongo_collection(db_name, "Paragraph")
-    clear_mongo_collection(db_name, "Link")
-    clear_mongo_collection(db_name, "Metadata")
 
+    MARKER_DIR = "./mongo_loaded"
+    os.makedirs(MARKER_DIR, exist_ok=True)
+
+    if not os.listdir(MARKER_DIR):
+        # Premier chargement: on part d'une base vide
+        clear_mongo_collection(db_name, "Annotation")
+        clear_mongo_collection(db_name, "Paragraph")
+        clear_mongo_collection(db_name, "Link")
+        clear_mongo_collection(db_name, "Metadata")
+
+    # Regroupe les 4 CSV (metadata/link/paragraph/annotations) par oeuvre
+    works = {}
+    suffixes = {
+        "_link.csv": "Link",
+        "_paragraph.csv": "Paragraph",
+        "_annotations.csv": "Annotation",
+        "_metadata.csv": "Metadata",
+    }
     for csv in csv_files:
-        print(csv)
-        if "link" in csv:
-            print("link loading on mongodb ...")
-            load_csv_to_mongodb(csv, db_name, "Link")
-        elif "paragraph" in csv:
-            print("Paragraph loading on mongodb ...")
-            load_csv_to_mongodb(csv, db_name, "Paragraph")
-        elif "annotations" in csv:
-            print("Annotation loading on mongodb ...")
-            load_csv_to_mongodb(csv, db_name, "Annotation")
-        else:
-            print("Metadata loading on mongodb ...")
-            load_csv_to_mongodb(csv, db_name, "Metadata")
+        for suffix, collection_name in suffixes.items():
+            if csv.endswith(suffix):
+                prefix = os.path.basename(csv)[:-len(suffix)]
+                works.setdefault(prefix, {})[collection_name] = csv
+                break
+
+    skipped = 0
+    for prefix, files in works.items():
+        marker = os.path.join(MARKER_DIR, prefix + ".done")
+        latest_csv_mtime = max(os.path.getmtime(csv) for csv in files.values())
+
+        already_loaded = os.path.exists(marker)
+        if already_loaded and os.path.getmtime(marker) >= latest_csv_mtime:
+            skipped += 1
+            continue
+
+        if already_loaded and "Metadata" in files:
+            meta_df = pd.read_csv(files["Metadata"])
+            if not meta_df.empty:
+                # L'URI peut avoir change depuis le dernier chargement (ex: titre corrige).
+                # On retrouve l'ancienne URI stockee en base via 'prov' (chemin source),
+                # qui lui ne change pas, pour purger les bonnes anciennes donnees.
+                prov = meta_df.iloc[0]["prov"]
+                client_tmp = MongoClient("mongodb://localhost:27017/")
+                old_doc = client_tmp[db_name]["Metadata"].find_one({"prov": prov})
+                print(f"Fichier modifie detecte, purge des anciennes donnees pour: {prefix}")
+                if old_doc:
+                    clear_work_data(old_doc["uri"], db_name)
+                clear_work_data(meta_df.iloc[0]["uri"], db_name)
+
+        for collection_name, csv in files.items():
+            print(csv)
+            print(f"{collection_name} loading on mongodb ...")
+            load_csv_to_mongodb(csv, db_name, collection_name)
+
+        with open(marker, "w") as f:
+            f.write("done")
+
+    print(f"Oeuvres deja chargees (ignorees): {skipped} / {len(works)}")

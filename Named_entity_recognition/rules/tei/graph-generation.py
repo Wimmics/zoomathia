@@ -50,8 +50,10 @@ def get_texts():
             logging.warning(f"Texte ignoré (aucun attribut 'prov' trouvé) pour l'id: {raw_id}")
             continue
 
-        prov_filename = os.path.basename(prov_raw.replace("\\", "/"))
-        prov_clean = os.path.splitext(prov_filename)[0]
+        prov_normalized = prov_raw.replace("\\", "/")
+        prov_filename = os.path.basename(prov_normalized)
+        prov_folder = os.path.basename(os.path.dirname(prov_normalized))
+        prov_clean = f"{prov_folder}_{os.path.splitext(prov_filename)[0]}" if prov_folder else os.path.splitext(prov_filename)[0]
 
         if raw_id not in texts:
             texts[raw_id] = {
