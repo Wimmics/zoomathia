@@ -3,9 +3,9 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 
 SELECT DISTINCT ?p ?s ?o (?label_animal as ?date) (?s as ?type)
-  (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?paragraph))  as ?url) 
+  (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?paragraph))  as ?url)
   ("snd" as ?style1) ?style2 WHERE {
-  
+
   ?annotation2 oa:hasBody ?relation;
           oa:hasTarget [oa:hasSource ?p;
             oa:hasSelector [ oa:exact ?mention_relation]].
@@ -13,9 +13,18 @@ SELECT DISTINCT ?p ?s ?o (?label_animal as ?date) (?s as ?type)
                 skos:broader+ ?relation_generique.
       ?relation_generique skos:prefLabel  "special relationship"@en.
       FILTER (lang(?s) = "en")
+      FILTER NOT EXISTS {
+        ?relation skos:prefLabel ?s2.
+        FILTER (lang(?s2) = "en")
+        FILTER (
+          STRLEN(?s2) < STRLEN(?s) ||
+          (STRLEN(?s2) = STRLEN(?s) && LCASE(STR(?s2)) < LCASE(STR(?s))) ||
+          (STRLEN(?s2) = STRLEN(?s) && LCASE(STR(?s2)) = LCASE(STR(?s)) && STR(?s2) > STR(?s))
+        )
+      }
 
   ?p zoo:hasAnnotation ?annotation1, ?annotation2, ?annotation3.
-  
+
   {
       BIND("fst" as ?style2)
 
@@ -28,6 +37,15 @@ SELECT DISTINCT ?p ?s ?o (?label_animal as ?date) (?s as ?type)
        skos:prefLabel "Zoonyms"@en;
        skos:member ?animal.
     FILTER (lang(?o) = "en")
+    FILTER NOT EXISTS {
+      ?animal skos:prefLabel ?o2.
+      FILTER (lang(?o2) = "en")
+      FILTER (
+        STRLEN(?o2) < STRLEN(?o) ||
+        (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) < LCASE(STR(?o))) ||
+        (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) = LCASE(STR(?o)) && STR(?o2) > STR(?o))
+      )
+    }
     BIND(?o as ?label_animal)
 
     ?annotation3 oa:hasBody ?anthro;
@@ -45,6 +63,15 @@ SELECT DISTINCT ?p ?s ?o (?label_animal as ?date) (?s as ?type)
                         skos:member ?anthro.
       BIND("rst" as ?style2)
       FILTER (lang(?o) = "en")
+      FILTER NOT EXISTS {
+        ?anthro skos:prefLabel ?o2.
+        FILTER (lang(?o2) = "en")
+        FILTER (
+          STRLEN(?o2) < STRLEN(?o) ||
+          (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) < LCASE(STR(?o))) ||
+          (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) = LCASE(STR(?o)) && STR(?o2) > STR(?o))
+        )
+      }
 
       ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?p;

@@ -2,7 +2,7 @@ PREFIX oa:     <http://www.w3.org/ns/oa#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema:  <http://schema.org/>
 
-SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_conso 
+SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_conso
 (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri=",str(?paragraph)) as ?url) (?animal as ?date) (?animal_generique as ?type)
 (?paragraph as ?p) (?name_animal as ?s) (?name_conso as ?o) WHERE {
      ?annotation2 oa:hasBody ?conso;
@@ -11,7 +11,7 @@ SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_con
   ?conso skos:prefLabel ?name_conso;
      	            skos:broader+ ?conso_generique.
   ?conso_generique skos:prefLabel "animal in human nourishing"@en.
-  
+
   ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;
                             oa:hasSelector [oa:exact ?mention_animal]].
@@ -21,10 +21,28 @@ SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_con
   ?animal_generique a skos:Concept;
        skos:prefLabel ?name_animal_generique.
 
-  
+
 
   FILTER (str(?name_animal_generique) in ("BIRD","BIRD WITH CLAW","BIRD WITH TOES","WATERBIRD","NIGHT BIRD","MIGRATORY BIRD", "PALMIPED BIRD")).
   FILTER (lang(?name_animal) = "en").
   FILTER (lang(?name_conso) = "en")
+  FILTER NOT EXISTS {
+    ?animal skos:prefLabel ?name_animal2.
+    FILTER (lang(?name_animal2) = "en")
+    FILTER (
+      STRLEN(?name_animal2) < STRLEN(?name_animal) ||
+      (STRLEN(?name_animal2) = STRLEN(?name_animal) && LCASE(STR(?name_animal2)) < LCASE(STR(?name_animal))) ||
+      (STRLEN(?name_animal2) = STRLEN(?name_animal) && LCASE(STR(?name_animal2)) = LCASE(STR(?name_animal)) && STR(?name_animal2) > STR(?name_animal))
+    )
+  }
+  FILTER NOT EXISTS {
+    ?conso skos:prefLabel ?name_conso2.
+    FILTER (lang(?name_conso2) = "en")
+    FILTER (
+      STRLEN(?name_conso2) < STRLEN(?name_conso) ||
+      (STRLEN(?name_conso2) = STRLEN(?name_conso) && LCASE(STR(?name_conso2)) < LCASE(STR(?name_conso))) ||
+      (STRLEN(?name_conso2) = STRLEN(?name_conso) && LCASE(STR(?name_conso2)) = LCASE(STR(?name_conso)) && STR(?name_conso2) > STR(?name_conso))
+    )
+  }
 }
 ORDER BY ?paragraph

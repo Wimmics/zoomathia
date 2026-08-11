@@ -16,4 +16,13 @@ SELECT DISTINCT ?s ?o ("speech" as ?p) (?o as ?date) (CONCAT("http://zoomathia.i
                        oa:hasSelector [ oa:exact ?mention_social]].
 
   FILTER (lang(?o) = "en")
+  FILTER NOT EXISTS {
+    ?animal skos:prefLabel ?o2.
+    FILTER (lang(?o2) = "en")
+    FILTER (
+      STRLEN(?o2) < STRLEN(?o) ||
+      (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) < LCASE(STR(?o))) ||
+      (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) = LCASE(STR(?o)) && STR(?o2) > STR(?o))
+    )
+  }
 }

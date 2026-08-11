@@ -18,4 +18,23 @@ SELECT DISTINCT ?p ?s ?o (CONCAT("http://zoomathia.i3s.unice.fr/ExploreAWork?uri
 
   FILTER (lang(?s) = "en").
   FILTER (lang(?o) = "en")
+
+  FILTER NOT EXISTS {
+    ?animal skos:prefLabel ?s2.
+    FILTER (lang(?s2) = "en")
+    FILTER (
+      STRLEN(?s2) < STRLEN(?s) ||
+      (STRLEN(?s2) = STRLEN(?s) && LCASE(STR(?s2)) < LCASE(STR(?s))) ||
+      (STRLEN(?s2) = STRLEN(?s) && LCASE(STR(?s2)) = LCASE(STR(?s)) && STR(?s2) > STR(?s))
+    )
+  }
+  FILTER NOT EXISTS {
+    ?place skos:prefLabel ?o2.
+    FILTER (lang(?o2) = "en")
+    FILTER (
+      STRLEN(?o2) < STRLEN(?o) ||
+      (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) < LCASE(STR(?o))) ||
+      (STRLEN(?o2) = STRLEN(?o) && LCASE(STR(?o2)) = LCASE(STR(?o)) && STR(?o2) > STR(?o))
+    )
+  }
 }
