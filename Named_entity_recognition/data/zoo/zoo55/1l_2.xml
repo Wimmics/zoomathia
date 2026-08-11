@@ -131,24 +131,11 @@
   </div>
 </div>
 
-En attendant, voici la structure que j'utiliserai dès que vous me fournirez le texte :
-
-
-<div type="book" n="[N]">
-  <div type="chapter" n="[N]">
-    <div type="section" n="[N]">
-<p>
-        <!-- texte avec balises zoomathia -->
-        <name type="animal" xml:lang="la">...</name>
-        <persName>...</persName>
-        <placeName>...</placeName>
-      </p>
-    </div>
-  </div>
-</div>
-
-
-**Merci de coller le texte latin** que vous souhaitez encoder et je produirai immédiatement l'encodage TEI P5 complet et conforme aux règles Zoomathia.
+<!-- ATTENTION revision manuelle requise : l'encodage automatique a echoue a cet endroit
+     (reponse IA vide/hors sujet retiree le 2026-08-11). Le texte latin de Varron entre
+     la fin du Livre 2 chapitre 2 ci-dessus et la reprise au Livre 1 chapitre 2 ci-dessous
+     n'a peut-etre jamais ete encode : verifier contre l'edition source avant de considerer
+     ce fichier complet. -->
 <div type="book" n="1">
   <div type="chapter" n="2">
     <div type="section" n="1">
@@ -246,8 +233,6 @@ En attendant, voici la structure que j'utiliserai dès que vous me fournirez le 
     <name type="plant" xml:lang="la">poma</name> veneunt contra aurum, imago.
   </p>
 </div>
-
-Une fois que vous me fournirez le passage, je produirai l'encodage TEI P5 complet selon les règles Zoomathia, avec notamment :
 
 <div type="book" n="1">
   <div type="chapter" n="1">
