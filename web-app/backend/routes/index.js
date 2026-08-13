@@ -631,6 +631,19 @@ router.get('/getTheso', async (req, res) => {
   res.status(200).json(response)
 })
 
+const TOP_CONCEPTS_PATH = path.join(__dirname, "..", "data", "top_concepts.json")
+
+router.get('/getTopConcepts', (req, res) => {
+  fs.readFile(TOP_CONCEPTS_PATH, "utf-8", (err, data) => {
+    if (err) {
+      console.log(`Failed to read top_concepts.json: ${err.message}`)
+      return res.status(200).json([])
+    }
+    const topConcepts = JSON.parse(data)
+    res.status(200).json(topConcepts[req.query.lang] || [])
+  })
+})
+
 router.get("/qcList", (req, res) => {
   console.log(qcs)
   res.status(200).json(qcs)

@@ -67,6 +67,7 @@ const SearchComponent = () => {
     const [authorList, setAuthorList] = useState([])
     const [workList, setWorkList] = useState([])
     const [conceptList, setConceptList] = useState([])
+    const [topConcepts, setTopConcepts] = useState([])
     const [lang, setLang] = useState('en')
     const [checked, setChecked] = useState(false)
     const [subConcepts, setSubConcepts] = useState(false)
@@ -104,16 +105,17 @@ const SearchComponent = () => {
         onChange={(e) => setWork(e || [])}
     />
 
-    const conceptsSelect = <AsyncSelect key={`concepts-select-${conceptList.length}`} className={styles["selection-input"]}
+    const conceptsSelect = <AsyncSelect key={`concepts-select-${topConcepts.length}`} className={styles["selection-input"]}
         placeholder="select one or more concepts"
-        defaultOptions={conceptList.slice(0, MAX_OPTIONS)}
+        defaultOptions={topConcepts}
         loadOptions={(input) => filterList(input, conceptList)}
         isMulti
         onChange={(e) => setConcepts(e || [])}
     />
 
-    const changeLang = async (e) => {
-        setConceptList(await getConcepts(e.target.value))
+    const changeLang = (e) => {
+        getConcepts(e.target.value).then(setConceptList)
+        getTopConcepts(e.target.value).then(setTopConcepts)
         setLang(e.target.value)
     }
 
@@ -196,6 +198,13 @@ const SearchComponent = () => {
         return data_concepts
     }
 
+    const getTopConcepts = async (language="en") => {
+        const data_concepts = await fetch(`${process.env.REACT_APP_BACKEND_URL}getTopConcepts?lang=${language}`
+        ).then(response => response.json())
+            .catch(e => { console.log(e); return [] })
+        return data_concepts
+    }
+
     useEffect(() => {
         const getAuthors = async () => {
             const data_author = await fetch(`${process.env.REACT_APP_BACKEND_URL}getWorks`
@@ -221,13 +230,10 @@ const SearchComponent = () => {
             return work_response
         }
 
-        const loadData = async () => {
-            const [authors, works, concepts] = await Promise.all([getAuthors(), getWorks(), getConcepts()])
-            setAuthorList(authors)
-            setWorkList(works)
-            setConceptList(concepts)
-        }
-        loadData()
+        getAuthors().then(setAuthorList)
+        getWorks().then(setWorkList)
+        getConcepts().then(setConceptList)
+        getTopConcepts().then(setTopConcepts)
     }, [])
 
     return <div className={styles["box-content"]}>
