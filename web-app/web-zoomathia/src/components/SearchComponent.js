@@ -88,7 +88,7 @@ const SearchComponent = () => {
         return listOptions.filter(e => e.label.toLowerCase().includes(input.toLowerCase())).slice(0, MAX_OPTIONS)
     }
 
-    const authorSelect = <AsyncSelect key={"author-select"} className={styles["selection-input"]}
+    const authorSelect = <AsyncSelect key={`author-select-${authorList.length}`} className={styles["selection-input"]}
         placeholder="select an author"
         defaultOptions={authorList}
         loadOptions={(input) => filterList(input, authorList)}
@@ -96,7 +96,7 @@ const SearchComponent = () => {
         onChange={(e) => setAuthor(e || [])}
     />
 
-    const workSelect = <AsyncSelect key={"work-select"} className={styles["selection-input"]}
+    const workSelect = <AsyncSelect key={`work-select-${workList.length}`} className={styles["selection-input"]}
         placeholder="select a work"
         defaultOptions={workList}
         loadOptions={(input) => filterList(input, workList)}
@@ -104,7 +104,7 @@ const SearchComponent = () => {
         onChange={(e) => setWork(e || [])}
     />
 
-    const conceptsSelect = <AsyncSelect key={"concepts-select"} className={styles["selection-input"]}
+    const conceptsSelect = <AsyncSelect key={`concepts-select-${conceptList.length}`} className={styles["selection-input"]}
         placeholder="select one or more concepts"
         defaultOptions={conceptList.slice(0, MAX_OPTIONS)}
         loadOptions={(input) => filterList(input, conceptList)}
@@ -222,9 +222,10 @@ const SearchComponent = () => {
         }
 
         const loadData = async () => {
-            setAuthorList(await getAuthors())
-            setWorkList(await getWorks())
-            setConceptList(await getConcepts())
+            const [authors, works, concepts] = await Promise.all([getAuthors(), getWorks(), getConcepts()])
+            setAuthorList(authors)
+            setWorkList(works)
+            setConceptList(concepts)
         }
         loadData()
     }, [])
