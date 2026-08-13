@@ -82,8 +82,10 @@ const SearchComponent = () => {
 
     const controller = useRef(new AbortController())
 
+    const MAX_OPTIONS = 100
+
     const filterList = async (input, listOptions) => {
-        return listOptions.filter(e => e.label.toLowerCase().includes(input.toLowerCase()))
+        return listOptions.filter(e => e.label.toLowerCase().includes(input.toLowerCase())).slice(0, MAX_OPTIONS)
     }
 
     const authorSelect = <AsyncSelect key={"author-select"} className={styles["selection-input"]}
@@ -104,7 +106,7 @@ const SearchComponent = () => {
 
     const conceptsSelect = <AsyncSelect key={"concepts-select"} className={styles["selection-input"]}
         placeholder="select one or more concepts"
-        defaultOptions={conceptList}
+        defaultOptions={conceptList.slice(0, MAX_OPTIONS)}
         loadOptions={(input) => filterList(input, conceptList)}
         isMulti
         onChange={(e) => setConcepts(e || [])}
