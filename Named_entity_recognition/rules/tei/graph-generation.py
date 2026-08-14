@@ -256,17 +256,43 @@ def merge_ttl_files(filepaths, output_path):
             outfile.write("\n")
 
 
+DATA_ZOO_DIR = "../../data/zoo"
+
+
+def get_source_xml_path(prov_id):
+    """Reconstruit le chemin du fichier XML source a partir de prov
+    (ex. "zoo7_14g" -> data/zoo/zoo7/14g.xml). Les dossiers zoo<N> ne
+    contiennent jamais de underscore, seul le nom de fichier peut en avoir
+    (ex. "1e_2"), d'ou le split sur le premier underscore uniquement."""
+    if "_" not in prov_id:
+        return None
+    folder, filestem = prov_id.split("_", 1)
+    path = os.path.join(DATA_ZOO_DIR, folder, f"{filestem}.xml")
+    return path if os.path.exists(path) else None
+
+
 def process_text(text):
     raw_id = text["id"]
     prov_id = text["prov"]
     title = text["title"]
+
+    # Le .ttl d'une oeuvre n'est regenere que si son XML source a change
+    # depuis la derniere generation (comme xml_to_csv.py et morph_mongo.py) :
+    # regenerer les 233 oeuvres a chaque fois, meme quand une seule a
+    # change, coute plus d'une heure pour rien.
+    text_out_dir = os.path.join(OUTPUT_DIR, prov_id)
+    text_combined_ttl = os.path.join(text_out_dir, f"{prov_id}.ttl")
+    source_xml = get_source_xml_path(prov_id)
+    if source_xml and os.path.exists(text_combined_ttl):
+        if os.path.getmtime(text_combined_ttl) >= os.path.getmtime(source_xml):
+            logging.info(f"Skip (deja a jour) : {prov_id}")
+            return
 
     logging.info("--------------------------------")
     logging.info(f"Processing Text : {title}")
     logging.info(f"ID (DB) : {raw_id} | Prov : {prov_id}")
 
     # Création du dossier spécifique pour ce texte avec l'attribut prov
-    text_out_dir = os.path.join(OUTPUT_DIR, prov_id)
     os.makedirs(text_out_dir, exist_ok=True)
 
     files_to_merge = []
@@ -291,7 +317,6 @@ def process_text(text):
         return
 
     # Fusionne les graphes du texte dans le fichier local nommé d'après prov
-    text_combined_ttl = os.path.join(text_out_dir, f"{prov_id}.ttl")
     logging.info(f"Merging {len(files_to_merge)} partial graphs into {text_combined_ttl}")
     merge_ttl_files(files_to_merge, text_combined_ttl)
 
