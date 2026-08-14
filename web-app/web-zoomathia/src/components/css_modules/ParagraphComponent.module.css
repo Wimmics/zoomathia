@@ -24,12 +24,26 @@
 .text-paragraph {
     min-height: 100%;
     padding: 5px 25px;
-    width: 75%;
+    flex: 1;
 }
 
 .text-paragraph>p {
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.translation-paragraph {
+    min-height: 100%;
+    padding: 5px 25px;
+    flex: 1;
+    border-left: 1px solid #e8ddd0;
+}
+
+.translation-paragraph>p {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: #4a3826;
 }
 
 .concept-list {

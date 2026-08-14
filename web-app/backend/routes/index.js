@@ -267,7 +267,7 @@ router.get("/getWorkByUri", async (req, res) =>  {
   const response = []
   const result = await executeSPARQLRequest(endpoint, getWorksByUri(req.query.uri))
 
-  for(elt of result.results.bindings){ 
+  for(elt of result.results.bindings){
     response.push({
       uri: elt.work.value,
       title: elt.title.value,
@@ -276,6 +276,42 @@ router.get("/getWorkByUri", async (req, res) =>  {
   }
 
   res.status(200).json(response)
+})
+
+const getWorkFile = (uri) => {
+  return `prefix zoo: <http://ns.inria.fr/zoomathia/zoo#>
+SELECT ?file WHERE {
+  <${uri}> zoo:file ?file.
+}`
+}
+
+const findWorkByFile = (file) => {
+  return `prefix zoo: <http://ns.inria.fr/zoomathia/zoo#>
+SELECT ?work ?title WHERE {
+  ?work zoo:file "${file}";
+        zoo:title ?title.
+}`
+}
+
+// Deux temoins (langues differentes) d'une meme oeuvre partagent le meme
+// dossier/numero dans leur chemin source (ex. ./zoo/zoo7/13g.xml et
+// ./zoo/zoo7/13e.xml) : seule la lettre de langue change. On s'appuie sur
+// ce chemin pour retrouver la traduction anglaise d'une oeuvre, sans la
+// gerer pour les oeuvres decoupees en plusieurs fichiers (suffixe _N).
+router.get("/getTranslation", async (req, res) => {
+  const fileResult = await executeSPARQLRequest(endpoint, getWorkFile(req.query.uri))
+  const fileBinding = fileResult.results.bindings[0]
+  if (!fileBinding) { return res.status(200).json(null) }
+
+  const match = fileBinding.file.value.match(/^(.*\/)(\d+)([a-z])(\.xml)$/)
+  if (!match || match[3] === 'e') { return res.status(200).json(null) }
+
+  const targetFile = `${match[1]}${match[2]}e${match[4]}`
+  const translationResult = await executeSPARQLRequest(endpoint, findWorkByFile(targetFile))
+  const translationBinding = translationResult.results.bindings[0]
+  if (!translationBinding) { return res.status(200).json(null) }
+
+  res.status(200).json({ uri: translationBinding.work.value, title: translationBinding.title.value })
 })
 
 const getChildrenTypeQuery = (uri) => {

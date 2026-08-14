@@ -8,23 +8,25 @@ import { SimpleTreeView } from "@mui/x-tree-view";
 import Grid from '@mui/material/Grid2';
 
 const DisplayTextComponent = ({ controller, uri, options, type }) => {
-    const [sections, setSections] = useState([])
+    const [currentSection, setCurrentSection] = useState(null)
     const [metadata, setMetadata] = useState({})
     const [summary, setSummary] = useState(null)
     const [currentBook, setCurrentBook] = useState(null)
+    const [translation, setTranslation] = useState(null)
+    const [showTranslation, setShowTranslation] = useState(false)
 
     const [searchParams, setSearchParams] = useSearchParams();
     const paramsUri = searchParams.get('uri');
 
-    const handleToc = async (uri, nodeTitle) => {
-        setSections([])
+    const handleToc = async (sectionUri, nodeTitle) => {
+        setCurrentSection(null)
         setSearchParams("")
         /*if (controllerRef.current) {
             controllerRef.current.abort("Changing work from table of content")
         }
         controllerRef.current = new AbortController()*/
 
-        setSections(<SectionComponent sectionTitle={nodeTitle} uri={uri} controller={controller} />)
+        setCurrentSection({ uri: sectionUri, title: nodeTitle })
 
     }
 
@@ -33,15 +35,22 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             setCurrentBook(e)
             handleToc(e, title)
         }
-        
+
     }
-    
+
     useEffect(() => {
 
         const getMetadata = async () => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getMetadata?uri=${uri}`)
                 .then(response => response.json())
             setMetadata(data)
+        }
+
+        const getTranslation = async () => {
+            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getTranslation?uri=${uri}`)
+                .then(response => response.json())
+                .catch(() => null)
+            setTranslation(data)
         }
 
         const getSummary = async () => {
@@ -51,23 +60,25 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             setSummary(data)
 
             /* This part is called only if searchParams is given
-             * Get the book that include the given URI, if the URI is a Work, set to the first child 
+             * Get the book that include the given URI, if the URI is a Work, set to the first child
              */
             if(searchParams && (data[0].uri.length <= paramsUri?.length)){
                 for(const book of data){
                     if( paramsUri.includes(book.uri)){
-                        setSections(<SectionComponent sectionTitle={book.title} uri={book.uri} controller={controller} />)
+                        setCurrentSection({ uri: book.uri, title: book.title })
                         setCurrentBook(book.uri)
                     }
-                }                
+                }
             }else{
-                setSections(<SectionComponent sectionTitle={data[0].title} uri={data[0].uri} controller={controller} />)
+                setCurrentSection({ uri: data[0].uri, title: data[0].title })
                 setCurrentBook(data[0].uri)
             }
-            
+
         }
 
+        setShowTranslation(false)
         getMetadata()
+        getTranslation()
         getSummary()
     }, [options, type, uri, controller, paramsUri, searchParams, setSearchParams])
 
@@ -82,6 +93,10 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 </div>
             </div>
             <div className={styles["interface-actions"]}>
+                {translation && <label className={styles["translation-toggle"]}>
+                    <input type="checkbox" checked={showTranslation} onChange={(e) => setShowTranslation(e.target.checked)} />
+                    Show English translation ({translation.title})
+                </label>}
                 <ExportMenu options={[
                     { label: "XML-TEI", href: `${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`, download: metadata.file },
                     { label: "Turtle", href: `${process.env.REACT_APP_BACKEND_URL}download-turtle?uri=${uri}` }
@@ -104,7 +119,13 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 </section>
             </Grid>
             <Grid size={10}>
-                {sections}
+                {currentSection && <SectionComponent
+                    key={`${currentSection.uri}-${showTranslation}`}
+                    sectionTitle={currentSection.title}
+                    uri={currentSection.uri}
+                    workUri={uri}
+                    translationWorkUri={showTranslation ? translation?.uri : null}
+                    controller={controller} />}
             </Grid>
         </Grid>
     </section>

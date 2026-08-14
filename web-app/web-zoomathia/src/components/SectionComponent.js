@@ -49,6 +49,23 @@ const SectionComponent = (props) => {
                         `${process.env.REACT_APP_BACKEND_URL}getParagraphs?uri=${props.uri}`,
                         {signal: controllerRef.current.signal}
                     ).then(response => response.json())
+
+                    // La traduction du chapitre courant est recuperee en un
+                    // seul appel (pas paragraphe par paragraphe, pour ne pas
+                    // multiplier les requetes deja nombreuses de cette page),
+                    // puis appariee par identifiant de paragraphe.
+                    const translationByI = {}
+                    if (props.translationWorkUri) {
+                        const translatedUri = props.uri.replace(props.workUri, props.translationWorkUri)
+                        const translationData = await fetch(
+                            `${process.env.REACT_APP_BACKEND_URL}getParagraphs?uri=${translatedUri}`,
+                            {signal: controllerRef.current.signal}
+                        ).then(response => response.json()).catch(() => [])
+                        for (const elt of translationData) {
+                            translationByI[elt.id] = elt.text
+                        }
+                    }
+
                     for (const elt of data) {
                         setSectionParagraph(LOADING_STATE(elt.uri))
                         const concepts_list = await fetch(
@@ -67,6 +84,7 @@ const SectionComponent = (props) => {
                             displayId={data.length > 1 ? true : false}
                             concepts={concepts_list}
                             controller={props.controller}
+                            translationText={translationByI[elt.id]}
                             bekker={bekker} />)
                     }
                     setSectionParagraph(paragraphs)
@@ -78,7 +96,13 @@ const SectionComponent = (props) => {
                         {signal: controllerRef.current.signal}
                     ).then(response => response.json())
                     for (const elt of children) {
-                        sections.push(<SectionComponent key={elt.uri} uri={elt.uri} sectionTitle={elt.title} controller={props.controller} />)
+                        sections.push(<SectionComponent
+                            key={elt.uri}
+                            uri={elt.uri}
+                            sectionTitle={elt.title}
+                            workUri={props.workUri}
+                            translationWorkUri={props.translationWorkUri}
+                            controller={props.controller} />)
                     }
                     setSectionParagraph(sections)
                 }
