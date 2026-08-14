@@ -13,7 +13,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [summary, setSummary] = useState(null)
     const [currentBook, setCurrentBook] = useState(null)
     const [translation, setTranslation] = useState(null)
-    const [showTranslation, setShowTranslation] = useState(false)
 
     const [searchParams, setSearchParams] = useSearchParams();
     const paramsUri = searchParams.get('uri');
@@ -51,7 +50,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 .then(response => response.json())
                 .catch(() => null)
             setTranslation(data)
-            if (data) { setShowTranslation(true) }
         }
 
         const getSummary = async () => {
@@ -77,7 +75,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
         }
 
-        setShowTranslation(false)
         getMetadata()
         getTranslation()
         getSummary()
@@ -94,10 +91,6 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 </div>
             </div>
             <div className={styles["interface-actions"]}>
-                {translation && <label className={styles["translation-toggle"]}>
-                    <input type="checkbox" checked={showTranslation} onChange={(e) => setShowTranslation(e.target.checked)} />
-                    Show English translation ({translation.title})
-                </label>}
                 <ExportMenu options={[
                     { label: "XML-TEI", href: `${process.env.REACT_APP_BACKEND_URL}download-xml?file=${metadata.file}`, download: metadata.file },
                     { label: "Turtle", href: `${process.env.REACT_APP_BACKEND_URL}download-turtle?uri=${uri}` }
@@ -121,11 +114,11 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             </Grid>
             <Grid size={10}>
                 {currentSection && <SectionComponent
-                    key={`${currentSection.uri}-${showTranslation}`}
+                    key={currentSection.uri}
                     sectionTitle={currentSection.title}
                     uri={currentSection.uri}
                     workUri={uri}
-                    translationWorkUri={showTranslation ? translation?.uri : null}
+                    translationWorkUri={translation?.uri}
                     controller={controller} />}
             </Grid>
         </Grid>
