@@ -51,6 +51,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                 .then(response => response.json())
                 .catch(() => null)
             setTranslation(data)
+            if (data) { setShowTranslation(true) }
         }
 
         const getSummary = async () => {
