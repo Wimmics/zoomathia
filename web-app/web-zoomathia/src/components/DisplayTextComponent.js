@@ -34,6 +34,37 @@ const collectLeaves = (nodes, path = []) => {
     return leaves
 }
 
+// Comme collectLeaves, mais indexe TOUS les noeuds (pas seulement les
+// feuilles) par leur chemin de reference. Sert a retrouver la traduction
+// d'une oeuvre qui ne descend pas aussi finement que l'original (ex. pas
+// de sections savantes dans la traduction, seulement des chapitres) : la
+// feuille originale la plus profonde n'a pas d'equivalent exact, mais un
+// de ses ancetres (le chapitre qui la contient) si.
+const indexAllNodes = (nodes, path = [], index = {}) => {
+    for (const node of nodes || []) {
+        const nodeType = node.type?.split('#').pop()
+        const nextPath = MEANINGLESS_TYPES.has(nodeType) ? path : [...path, `${nodeType}:${node.id}`]
+        const key = nextPath.join('/')
+        if (!(key in index)) { index[key] = node.uri }
+        if (node.children && node.children.length > 0) {
+            indexAllNodes(node.children, nextPath, index)
+        }
+    }
+    return index
+}
+
+// Cherche le chemin exact de la feuille originale dans l'index de la
+// traduction ; a defaut, remonte vers ses ancetres (chapitre, puis livre...)
+// jusqu'a trouver une correspondance.
+const findTranslationUri = (leafKey, translationIndex) => {
+    const parts = leafKey.split('/')
+    for (let i = parts.length; i > 0; i--) {
+        const candidate = parts.slice(0, i).join('/')
+        if (translationIndex[candidate]) { return translationIndex[candidate] }
+    }
+    return null
+}
+
 const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [currentSection, setCurrentSection] = useState(null)
     const [metadata, setMetadata] = useState({})
@@ -131,15 +162,13 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
         if (!summary || !translationSummary) { return }
 
         const originalLeaves = collectLeaves(summary)
-        const translationByKey = {}
-        for (const leaf of collectLeaves(translationSummary)) {
-            translationByKey[leaf.key] = leaf.uri
-        }
+        const translationIndex = indexAllNodes(translationSummary)
 
         const map = {}
         for (const leaf of originalLeaves) {
-            if (translationByKey[leaf.key]) {
-                map[leaf.uri] = translationByKey[leaf.key]
+            const translationUri = findTranslationUri(leaf.key, translationIndex)
+            if (translationUri) {
+                map[leaf.uri] = translationUri
             }
         }
         setTranslationMap(map)
