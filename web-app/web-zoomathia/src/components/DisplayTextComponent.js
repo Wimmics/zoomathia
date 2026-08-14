@@ -7,17 +7,28 @@ import ExportMenu from "./ExportMenu"
 import { SimpleTreeView } from "@mui/x-tree-view";
 import Grid from '@mui/material/Grid2';
 
-// Reduit un sommaire imbrique (livres/chapitres/sections) a la liste, dans
-// l'ordre du texte, de ses feuilles (les noeuds sans enfants - les
-// paragraphes en sont deja exclus par /getSummary). C'est a ce niveau que
-// vivent les paragraphes.
-const flattenLeaves = (nodes) => {
+// Certains temoins ajoutent un niveau d'enveloppe qui n'est pas une vraie
+// reference (juste un artefact d'encodage, ex. le div racine d'un fichier
+// sans structure propre) : on l'ignore pour ne comparer que les vrais
+// niveaux de citation.
+const MEANINGLESS_TYPES = new Set(["UnidentifiedPart"])
+
+// Reduit un sommaire imbrique (livres/chapitres/sections) a la liste de ses
+// feuilles (les noeuds sans enfants - les paragraphes en sont deja exclus
+// par /getSummary), chacune associee a son chemin de reference reel (type
+// + numero a chaque niveau, ex. Chapter 3 > Section 9). Ce chemin sert a
+// apparier deux temoins par ce qu'ils designent reellement, plutot que par
+// leur position ou leur profondeur d'imbrication qui peuvent differer d'une
+// edition a l'autre.
+const collectLeaves = (nodes, path = []) => {
     const leaves = []
     for (const node of nodes || []) {
+        const nodeType = node.type?.split('#').pop()
+        const nextPath = MEANINGLESS_TYPES.has(nodeType) ? path : [...path, `${nodeType}:${node.id}`]
         if (!node.children || node.children.length === 0) {
-            leaves.push(node.uri)
+            leaves.push({ uri: node.uri, key: nextPath.join('/') })
         } else {
-            leaves.push(...flattenLeaves(node.children))
+            leaves.push(...collectLeaves(node.children, nextPath))
         }
     }
     return leaves
@@ -109,28 +120,27 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
     }, [options, type, uri, controller, paramsUri, searchParams, setSearchParams])
 
     useEffect(() => {
-        // Les editions dans differentes langues d'une meme oeuvre n'ont pas
-        // toujours exactement la meme profondeur de structure (ex. un niveau
-        // de regroupement en plus cote grec) : on apparie donc les chapitres
-        // par leur position dans l'ordre du texte plutot que par leur URI,
-        // ce qui reste correct meme si l'imbrication differe.
+        // Les editions dans differentes langues d'une meme oeuvre ne se
+        // decoupent pas toujours en autant de sections, ni au meme niveau
+        // d'imbrication (edition differente, granularite differente...).
+        // On apparie donc chaque section par ce qu'elle designe vraiment
+        // (son chemin de reference : Chapter 3 > Section 9, par exemple),
+        // pas par sa position dans le texte. Une section sans equivalent
+        // exact de l'autre cote n'affiche simplement pas de traduction,
+        // plutot que d'en afficher une qui ne correspond pas au bon passage.
         if (!summary || !translationSummary) { return }
 
-        const originalLeaves = flattenLeaves(summary)
-        const translationLeaves = flattenLeaves(translationSummary)
-
-        // Sur environ deux tiers des oeuvres du corpus, l'original et sa
-        // traduction ne se decoupent pas dans le meme nombre de sections
-        // (edition differente, granularite d'annotation differente...).
-        // Un appariement par position deviendrait alors faux au-dela du
-        // point de divergence : preferable de ne pas afficher de
-        // traduction du tout plutot qu'une traduction qui ne correspond
-        // plus au bon passage.
-        if (originalLeaves.length !== translationLeaves.length) { return }
+        const originalLeaves = collectLeaves(summary)
+        const translationByKey = {}
+        for (const leaf of collectLeaves(translationSummary)) {
+            translationByKey[leaf.key] = leaf.uri
+        }
 
         const map = {}
-        for (let i = 0; i < originalLeaves.length; i++) {
-            map[originalLeaves[i]] = translationLeaves[i]
+        for (const leaf of originalLeaves) {
+            if (translationByKey[leaf.key]) {
+                map[leaf.uri] = translationByKey[leaf.key]
+            }
         }
         setTranslationMap(map)
     }, [summary, translationSummary])
