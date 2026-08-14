@@ -118,8 +118,18 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
         const originalLeaves = flattenLeaves(summary)
         const translationLeaves = flattenLeaves(translationSummary)
+
+        // Sur environ deux tiers des oeuvres du corpus, l'original et sa
+        // traduction ne se decoupent pas dans le meme nombre de sections
+        // (edition differente, granularite d'annotation differente...).
+        // Un appariement par position deviendrait alors faux au-dela du
+        // point de divergence : preferable de ne pas afficher de
+        // traduction du tout plutot qu'une traduction qui ne correspond
+        // plus au bon passage.
+        if (originalLeaves.length !== translationLeaves.length) { return }
+
         const map = {}
-        for (let i = 0; i < Math.min(originalLeaves.length, translationLeaves.length); i++) {
+        for (let i = 0; i < originalLeaves.length; i++) {
             map[originalLeaves[i]] = translationLeaves[i]
         }
         setTranslationMap(map)
