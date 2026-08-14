@@ -7,12 +7,29 @@ import ExportMenu from "./ExportMenu"
 import { SimpleTreeView } from "@mui/x-tree-view";
 import Grid from '@mui/material/Grid2';
 
+// Reduit un sommaire imbrique (livres/chapitres/sections) a la liste, dans
+// l'ordre du texte, de ses feuilles (les noeuds sans enfants - les
+// paragraphes en sont deja exclus par /getSummary). C'est a ce niveau que
+// vivent les paragraphes.
+const flattenLeaves = (nodes) => {
+    const leaves = []
+    for (const node of nodes || []) {
+        if (!node.children || node.children.length === 0) {
+            leaves.push(node.uri)
+        } else {
+            leaves.push(...flattenLeaves(node.children))
+        }
+    }
+    return leaves
+}
+
 const DisplayTextComponent = ({ controller, uri, options, type }) => {
     const [currentSection, setCurrentSection] = useState(null)
     const [metadata, setMetadata] = useState({})
     const [summary, setSummary] = useState(null)
     const [currentBook, setCurrentBook] = useState(null)
-    const [translation, setTranslation] = useState(null)
+    const [translationSummary, setTranslationSummary] = useState(null)
+    const [translationMap, setTranslationMap] = useState(null)
 
     const [searchParams, setSearchParams] = useSearchParams();
     const paramsUri = searchParams.get('uri');
@@ -49,7 +66,16 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
             const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getTranslation?uri=${uri}`)
                 .then(response => response.json())
                 .catch(() => null)
-            setTranslation(data)
+            if (data) {
+                // Lance tout de suite le sommaire de la traduction, en
+                // parallele de celui de l'oeuvre originale (pas apres),
+                // pour ne pas doubler le temps d'attente deja eleve de
+                // /getSummary.
+                fetch(`${process.env.REACT_APP_BACKEND_URL}getSummary?uri=${data.uri}`)
+                    .then(response => response.json())
+                    .then(setTranslationSummary)
+                    .catch(() => null)
+            }
         }
 
         const getSummary = async () => {
@@ -75,10 +101,29 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
 
         }
 
+        setTranslationSummary(null)
+        setTranslationMap(null)
         getMetadata()
         getTranslation()
         getSummary()
     }, [options, type, uri, controller, paramsUri, searchParams, setSearchParams])
+
+    useEffect(() => {
+        // Les editions dans differentes langues d'une meme oeuvre n'ont pas
+        // toujours exactement la meme profondeur de structure (ex. un niveau
+        // de regroupement en plus cote grec) : on apparie donc les chapitres
+        // par leur position dans l'ordre du texte plutot que par leur URI,
+        // ce qui reste correct meme si l'imbrication differe.
+        if (!summary || !translationSummary) { return }
+
+        const originalLeaves = flattenLeaves(summary)
+        const translationLeaves = flattenLeaves(translationSummary)
+        const map = {}
+        for (let i = 0; i < Math.min(originalLeaves.length, translationLeaves.length); i++) {
+            map[originalLeaves[i]] = translationLeaves[i]
+        }
+        setTranslationMap(map)
+    }, [summary, translationSummary])
 
     return <section>
         <section className={styles["selected-book-metadata"]}>
@@ -117,8 +162,7 @@ const DisplayTextComponent = ({ controller, uri, options, type }) => {
                     key={currentSection.uri}
                     sectionTitle={currentSection.title}
                     uri={currentSection.uri}
-                    workUri={uri}
-                    translationWorkUri={translation?.uri}
+                    translationMap={translationMap}
                     controller={controller} />}
             </Grid>
         </Grid>

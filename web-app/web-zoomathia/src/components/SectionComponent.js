@@ -53,10 +53,14 @@ const SectionComponent = (props) => {
                     // La traduction du chapitre courant est recuperee en un
                     // seul appel (pas paragraphe par paragraphe, pour ne pas
                     // multiplier les requetes deja nombreuses de cette page),
-                    // puis appariee par identifiant de paragraphe.
+                    // puis appariee par identifiant de paragraphe. Le chapitre
+                    // correspondant est retrouve via translationMap (les
+                    // chapitres sont apparies par position dans le texte, pas
+                    // par URI : les deux editions n'ont pas toujours la meme
+                    // profondeur de structure).
                     const translationByI = {}
-                    if (props.translationWorkUri) {
-                        const translatedUri = props.uri.replace(props.workUri, props.translationWorkUri)
+                    const translatedUri = props.translationMap?.[props.uri]
+                    if (translatedUri) {
                         const translationData = await fetch(
                             `${process.env.REACT_APP_BACKEND_URL}getParagraphs?uri=${translatedUri}`,
                             {signal: controllerRef.current.signal}
@@ -100,8 +104,7 @@ const SectionComponent = (props) => {
                             key={elt.uri}
                             uri={elt.uri}
                             sectionTitle={elt.title}
-                            workUri={props.workUri}
-                            translationWorkUri={props.translationWorkUri}
+                            translationMap={props.translationMap}
                             controller={props.controller} />)
                     }
                     setSectionParagraph(sections)
