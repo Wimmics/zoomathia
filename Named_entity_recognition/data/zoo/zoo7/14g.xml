@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
    <teiHeader><fileDesc>
          <titleStmt>
@@ -75,10 +76,9 @@
             </change></revisionDesc></teiHeader>
    <text>
    <body>
-      <div n="1343a" type="bekker_page">
+      <div type="book" n="1"><div n="1343a" type="bekker_page">
          <p>
-            <milestone unit="Book" n="1"/>
-               <milestone ed="Bekker" unit="Line" n="1"/>ἡ οἰκονομικὴ
+            <milestone ed="Bekker" unit="Line" n="1"/>ἡ οἰκονομικὴ
             καὶ πολιτικὴ διαφέρει οὐ μόνον τοσοῦτον ὅσον οἰκία καὶ πόλις ʽταῦτα μὲν γὰρ αὐταῖς ἐστι
             τὰ ὑποκείμενἀ, ἀλλὰ καὶ ὅτι ἡ μὲν πολιτικὴ ἐκ πολλῶν ἀρχόντων ἐστίν, ἡ οἰκονομικὴ δὲ
             μοναρχία. <milestone ed="P" unit="para"/>ἔνιαι μὲν οὖν τῶν τεχνῶν διῄρηνται, καὶ οὐ τῆς
@@ -222,9 +222,8 @@
             <milestone ed="Bekker" unit="Line" n="1"/>πρὸς εὐχρηστίαν δὲ σκευῶν τὸ Λακωνικόν· χρὴ
             γὰρ ἓν ἕκαστον ἐν τῇ αὑτοῦ χώρᾳ κεῖσθαι· οὕτω γὰρ ἂν ἕτοιμον ὂν οὐ ζητοῖτο.</p>
 
-         <milestone unit="Book" n="2"/>
-      </div>
-      <div n="1345b" type="bekker_page">
+         </div>
+      </div><div type="book" n="2"><div n="1345b" type="bekker_page">
          <p>
             <milestone ed="Bekker" unit="Line" n="7"/>
                <milestone ed="P" unit="para"/>τὸν
@@ -655,6 +654,6 @@
                <gap/> περιῄρει τῶν ἀγαλμάτων φάσκων αὐτὸς καὶ κουφότερα καὶ εὐωδέστερα
             δοῦναι· εἶτα ἱμάτια μὲν λευκά, στεφάνους δὲ λευκοΐνους περιετίθει.</p>
       </div>
-   </body>
+   </div></body>
    </text>
 </TEI>
