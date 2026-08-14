@@ -13,6 +13,16 @@ import Grid from '@mui/material/Grid2';
 // niveaux de citation.
 const MEANINGLESS_TYPES = new Set(["UnidentifiedPart"])
 
+// "title" porte le vrai numero de reference (attribut "n" source) sauf
+// quand le div a un <head> : dans ce cas le pipeline y met le texte du
+// titre (ex. "liber i", ou le titre grec d'un livre), qui differe d'une
+// langue a l'autre et ne peut donc jamais s'apparier. "id" est toujours
+// la position du div parmi ses freres (fiable seulement si aucun div
+// supplementaire n'est intercale d'un cote et pas l'autre). On prend le
+// numero de reference quand il est exploitable (purement numerique),
+// sinon on retombe sur la position.
+const nodeKey = (node) => /^\d+$/.test(node.title) ? node.title : node.id
+
 // Reduit un sommaire imbrique (livres/chapitres/sections) a la liste de ses
 // feuilles (les noeuds sans enfants - les paragraphes en sont deja exclus
 // par /getSummary), chacune associee a son chemin de reference reel (type
@@ -24,7 +34,7 @@ const collectLeaves = (nodes, path = []) => {
     const leaves = []
     for (const node of nodes || []) {
         const nodeType = node.type?.split('#').pop()
-        const nextPath = MEANINGLESS_TYPES.has(nodeType) ? path : [...path, `${nodeType}:${node.id}`]
+        const nextPath = MEANINGLESS_TYPES.has(nodeType) ? path : [...path, `${nodeType}:${nodeKey(node)}`]
         if (!node.children || node.children.length === 0) {
             leaves.push({ uri: node.uri, key: nextPath.join('/') })
         } else {
@@ -43,7 +53,7 @@ const collectLeaves = (nodes, path = []) => {
 const indexAllNodes = (nodes, path = [], index = {}) => {
     for (const node of nodes || []) {
         const nodeType = node.type?.split('#').pop()
-        const nextPath = MEANINGLESS_TYPES.has(nodeType) ? path : [...path, `${nodeType}:${node.id}`]
+        const nextPath = MEANINGLESS_TYPES.has(nodeType) ? path : [...path, `${nodeType}:${nodeKey(node)}`]
         const key = nextPath.join('/')
         if (!(key in index)) { index[key] = node.uri }
         if (node.children && node.children.length > 0) {
