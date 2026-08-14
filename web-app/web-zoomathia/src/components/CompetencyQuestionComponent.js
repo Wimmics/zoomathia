@@ -43,13 +43,16 @@ const CompetencyQuestionComponent = () => {
         const callForData = async () => {
             const generatedCol = []
             if (file === null) { return }
-            const spo_data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQCspo?id=${file}`).then(response => response.json())
-            const data = await fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
+            const [spo_data, data] = await Promise.all([
+                fetch(`${process.env.REACT_APP_BACKEND_URL}getQCspo?id=${file}`).then(response => response.json()),
+                fetch(`${process.env.REACT_APP_BACKEND_URL}getQC?id=${file}`).then(response => response.json())
+            ])
 
             for (const elt of data.table.columns) {
                 switch(elt){
                     case "paragraph":
                         generatedCol.push({
+                            id: elt,
                             name: elt,
                             formatter: (cell) => {
                                 return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
@@ -57,16 +60,19 @@ const CompetencyQuestionComponent = () => {
                         break;
                     case "name_anthroponym":
                         generatedCol.push({
+                            id: elt,
                             name: html(`<span class="${styles["anthroponym-variable"]}">${elt}</span>`),
                         })
                         break;
                     case "name_animal":
                         generatedCol.push({
+                            id: elt,
                             name: html(`<span class="${styles["animal-variable"]}">${elt}</span>`),
                         })
                         break;
                     case "animal_name":
                         generatedCol.push({
+                            id: elt,
                             name: html(`<span class="${styles["animal-variable"]}">${elt}</span>`),
                         })
                         break;
@@ -75,6 +81,7 @@ const CompetencyQuestionComponent = () => {
                             generatedCol.push(elt)
                         }else{
                             generatedCol.push({
+                                id: elt,
                                 name: html(`<span class="${styles["other-variable"]}">${elt}</span>`),
                             })
                         }
