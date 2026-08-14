@@ -90,6 +90,7 @@ SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?title ?file 
           zoo:isPartOf+ <${uri}>;
           zoo:isPartOf ?parent_t;
           zoo:identifier ?id_t.
+      FILTER(?type != zoo:Paragraph)
         BIND(IF(?parent_t = <${uri}>, ?current, ?parent_t) AS ?parent)
       Optional {
         ?current zoo:title ?title_t.
