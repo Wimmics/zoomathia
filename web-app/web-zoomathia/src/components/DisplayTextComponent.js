@@ -19,9 +19,16 @@ const MEANINGLESS_TYPES = new Set(["UnidentifiedPart"])
 // langue a l'autre et ne peut donc jamais s'apparier. "id" est toujours
 // la position du div parmi ses freres (fiable seulement si aucun div
 // supplementaire n'est intercale d'un cote et pas l'autre). On prend le
-// numero de reference quand il est exploitable (purement numerique),
+// numero de reference quand il est exploitable (purement numerique, ou
+// numerique avec un prefixe constant comme "app_20" - le prefixe est
+// alors juste une etiquette de section, le numero reste le vrai reperage),
 // sinon on retombe sur la position.
-const nodeKey = (node) => /^\d+$/.test(node.title) ? node.title : node.id
+const nodeKey = (node) => {
+    const title = String(node.title ?? "")
+    if (/^\d+$/.test(title)) { return title }
+    const trailingDigits = title.match(/(\d+)$/)
+    return trailingDigits ? trailingDigits[1] : node.id
+}
 
 // Reduit un sommaire imbrique (livres/chapitres/sections) a la liste de ses
 // feuilles (les noeuds sans enfants - les paragraphes en sont deja exclus
