@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
     type="application/xml"
-    schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -24,7 +23,7 @@
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
         </availability>
-        <idno type="zoomathia"></idno>
+        <idno type="zoomathia"/>
       </publicationStmt>
       <sourceDesc>
         <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
@@ -59,10 +58,8 @@
   </teiHeader>
   <text>
     <body>
-<div type="chapter" n="1">
-   <p>§ 1 The signs of rain, wind, storm and fair weather we have described so far as was attainable, partly from our own observation, partly from the information of <persName>persons of credit</persName>.</p>
+<div type="chapter" n="1"><p>§ 1 The signs of rain, wind, storm and fair weather we have described so far as was attainable, partly from our own observation, partly from the information of <persName>persons of credit</persName>.</p>
    <p>Now those signs which belong to the setting or rising of the heavenly bodies must be learnt from astronomy.</p>
-</div>
 <div type="section" n="2">
    <p>§ 2 Their settings are twofold, since they may be said to have set when they become invisible.</p>
    <p>And this occurs when the star sets along with the sun, and also when it sets at sunrise.</p>
@@ -145,7 +142,13 @@
 <div type="section" n="25">
    <p>Some say that, if in the embers there is an appearance as of shining <name type="animal" xml:lang="en">hail-stones</name>, it generally prognosticates <name type="animal" xml:lang="en">hail</name>; while, if the appearance is like a number of small shining <name type="plant" xml:lang="en">millet-seeds</name>, it portends fair weather, if there is wind at the time, but, if there is no wind, rain or wind. It is better both for <name type="plant" xml:lang="en">plants</name> and for <name type="animal" xml:lang="en">animals</name> that rain should come from the north before it comes from the south; it must however be fresh and not briny to the taste. And in general a season in which a north wind prevails is better and healthier than one in which southerly winds prevail. It is a sign of a long winter when <name type="animal" xml:lang="en">sheep</name> or <name type="animal" xml:lang="en">goats</name> have a second breeding season.</p>
 </div>
-<div type="section" n="26">
+<div type="section" n="17">
+   <p>If, while a <name type="animal" xml:lang="en">south wind</name> is blowing, there comes lightning from the north, the wind ceases. If there is lightning at dawn, the wind generally ceases on the third day: other winds than a <name type="animal" xml:lang="en">south wind</name> however do not cease till the fifth seventh or ninth day, though a wind which got up in the afternoon will cease sooner. A <name type="animal" xml:lang="en">north wind</name> generally ceases in an odd, a <name type="animal" xml:lang="en">south wind</name> in an even number of days. Winds get up at sunrise or moonrise. If the rising sun or moon have caused the wind to cease, presently it gets up again with more force, and winds which begin to blow in the day-time last longer and are stronger than those which begin at night.</p>
+</div>
+<div type="section" n="18">
+   <p>If periodic winds have been blowing for a long time, and a windy autumn follows, the winter is windless: if however the contrary happens, the character of winter is also reversed. From whatever quarter cloud streams out from a mountain peak, wind will blow in the direction thus indicated. Clouds which cling to the back of the mountain will also produce wind from the back of it. If there is a girdle of cloud halfway up <placeName>Mount Athos</placeName>, and if mountains in general wear such a girdle, there will generally follow a <name type="animal" xml:lang="en">southerly wind</name>. <name type="animal" xml:lang="en">Comets</name> usually indicate wind, and, if there are many of them, drought is also indicated. After snow a <name type="animal" xml:lang="en">south wind</name>, after hoar-frost a <name type="animal" xml:lang="en">north wind</name> generally blows. Snuff in a lamp indicates wind or rain from the south.</p>
+</div>
+</div><div type="chapter" n="2"><div type="section" n="26">
    <p>The following are signs of wind and breezes. If the sun rises with a burning heat but does not shine brilliantly, it is a sign of wind. If the sun has a hollow appearance, it is a sign of wind or rain. If it blazes with a burning heat for several days, it portends long-continued drought or wind. If at dawn its rays are parted, some pointing to the north and some to the south, while the orb itself is clearly seen between, it is a sign of rain and wind.</p>
 </div>
 <div type="section" n="27">
@@ -157,7 +160,7 @@
 <div type="section" n="29">
    <p>A <name type="animal" xml:lang="en">dog</name> rolling on the ground is a sign of violent wind. A number of <name type="animal" xml:lang="en">cobwebs</name> in motion portends wind or storm. The ebb-tide indicates a north wind, the flowing tide a wind from the south. For, if the flowing tide sets from the north, there is a change to the south, and if an ebb-tide comes from the south, there is a change to the north. It is a sign of wind when the sea has a swell or promontories moan or there is loud noise on the beach. Now the north wind has less force as it ceases to blow, the south wind as it begins. A mock sun, in whatever quarter it appears, indicates rain or wind.</p>
 </div>
-<div type="chapter" n="15">
+<div type="section" n="30">
    <p>§ 30 The fifteenth day after the winter solstice is generally marked by southerly winds. If there is a northerly wind, everything gets dried up, if a southerly, there is abundant moisture.</p>
    <p>If, while a south wind is blowing, glued articles make a crackling sound, it indicates a change to a <name type="wind">south wind</name>.</p>
    <p>If the feet swell, there will be a change to a <name type="wind">south wind</name>. This also sometimes indicates a hurricane.</p>
@@ -170,12 +173,6 @@
 <div type="section" n="32">
    <p>If lightning comes from all sides, it indicates rain, and from any quarter from which the flashes come in quick succession there will be wind. In summer from whatever quarter light and thunder come, there will be violent winds: if the flashes are brilliant and startling, the wind will come sooner and be more violent; if they are of gentler character and come at longer intervals, the wind will get up gradually. In winter and autumn however the reverse happens, for the lightning causes the wind to cease: and, the more violent the lightning and thunder are, the more will the wind be reduced. In spring I consider that the indications would not so invariably have the same meaning, — and this is also true of winter.</p>
 </div>
-<div type="section" n="17">
-   <p>If, while a <name type="animal" xml:lang="en">south wind</name> is blowing, there comes lightning from the north, the wind ceases. If there is lightning at dawn, the wind generally ceases on the third day: other winds than a <name type="animal" xml:lang="en">south wind</name> however do not cease till the fifth seventh or ninth day, though a wind which got up in the afternoon will cease sooner. A <name type="animal" xml:lang="en">north wind</name> generally ceases in an odd, a <name type="animal" xml:lang="en">south wind</name> in an even number of days. Winds get up at sunrise or moonrise. If the rising sun or moon have caused the wind to cease, presently it gets up again with more force, and winds which begin to blow in the day-time last longer and are stronger than those which begin at night.</p>
-</div>
-<div type="section" n="18">
-   <p>If periodic winds have been blowing for a long time, and a windy autumn follows, the winter is windless: if however the contrary happens, the character of winter is also reversed. From whatever quarter cloud streams out from a mountain peak, wind will blow in the direction thus indicated. Clouds which cling to the back of the mountain will also produce wind from the back of it. If there is a girdle of cloud halfway up <placeName>Mount Athos</placeName>, and if mountains in general wear such a girdle, there will generally follow a <name type="animal" xml:lang="en">southerly wind</name>. <name type="animal" xml:lang="en">Comets</name> usually indicate wind, and, if there are many of them, drought is also indicated. After snow a <name type="animal" xml:lang="en">south wind</name>, after hoar-frost a <name type="animal" xml:lang="en">north wind</name> generally blows. Snuff in a lamp indicates wind or rain from the south.</p>
-</div>
 <div type="section" n="35">
    <p>The points from which the winds come are as they are given in the figure. The winds which most often come on the top of other winds while these are still blowing are the <name type="animal" xml:lang="en">north wind</name> (<foreign xml:lang="grc">aparktias</foreign>),<pb n="74"/> the <name type="animal" xml:lang="en">north-north-east</name> and the <name type="animal" xml:lang="en">north-west</name>. When however the winds are not dispersed by one another but die down of their own accord, they change to the next winds on the figure, reckoning from left to right according to the course of the sun. When the <name type="animal" xml:lang="en">south wind</name> begins to blow, it is dry, but it becomes wet before it ceases: so too does the <name type="animal" xml:lang="en">south-east wind</name>. The <name type="animal" xml:lang="en">east wind</name>, coming from the quarter where the sun rises at the equinox, is wet: but it brings the rain in light showers.</p>
 </div>
@@ -185,7 +182,7 @@
 <div type="section" n="37">
    <p>They acquire this character when they fall upon one another as they blow, especially in <name type="season">autumn</name>, but to some extent in <name type="season">spring</name>. Those which are accompanied by <name type="phenomenon">lightning</name> are the <name type="wind">north-north-west</name> the <name type="wind">north-west</name> the <name type="wind">north</name> and the <name type="wind">north-north-east</name>. If at <name type="water">sea</name> a quantity of <name type="plant">down</name> is seen blown along, which has come from <name type="plant">thistles</name>, it indicates that there will be a great <name type="wind">wind</name>. <name type="wind">Wind</name> may be expected from any quarter in which a number of <name type="phenomenon">shooting stars</name> are seen. If these appear in every quarter alike, it indicates many <name type="wind">winds</name>. Such then are the signs of <name type="wind">winds</name>.</p>
 </div>
-<div type="section" n="38">
+</div><div type="chapter" n="3"><div type="section" n="38">
    <p>The following are signs of storm. The <name type="animal" xml:lang="en">sun</name> becoming obscured as it sinks indicates storm. And, according as its orb is divided as it sets, so the succeeding days turn out; for instance, a third or a half of the orb may remain visible. If the horns of the <name type="animal" xml:lang="en">moon</name> point straight up till the fourth day, and if it rounds to a circle, it will be stormy till the middle of the month. If <name type="animal" xml:lang="en">cranes</name> fly early and in flocks, it will be an early winter; if they fly late and for a long time, it will be a late winter; and, if they wheel as they fly, it indicates stormy weather.</p>
 </div>
 <div type="section" n="39">
@@ -227,7 +224,7 @@
 <div type="section" n="49">
    <p>When the <name type="plant" xml:lang="en">kermes-oak</name> fruits exceedingly well, it generally indicates a severe winter, and sometimes they say that this sign is followed by droughts. If one takes a <name type="animal" xml:lang="en">mole</name> and puts it in a tub, the bottom of which has been covered with clay, it indicates by the sounds which it utters wind or fine weather. There is also the sign of storm which is popularly recognized everywhere, namely when <name type="animal" xml:lang="en">mice</name> fight for the possession of chaff and carry it about.</p>
 </div>
-<div type="section" n="50">
+</div><div type="chapter" n="4"><div type="section" n="50">
    <p><persName>The SIGNS OF FAIR WEATHER</persName> The following are signs of fair weather. If the <name type="animal" xml:lang="en">sun</name> rises brilliant but without scorching heat and without showing any special sign in his orb, it indicates fair weather. The same may be said of the <name type="animal" xml:lang="en">moon</name> when it is full. If in winter that part of the sky into which the <name type="animal" xml:lang="en">sun</name> goes down is clear, it is a sign of fair weather, unless on the preceding days that part has not been clear, though it was clear above the horizon: in that case the prospect is uncertain. It is also a sign of fair weather, if during stormy conditions that part of the sky into which the <name type="animal" xml:lang="en">sun</name> sets is clear; and also if, in winter at the time of setting, the <name type="animal" xml:lang="en">sun</name> has a pale colour.</p>
 </div>
 <div type="section" n="51">
@@ -259,6 +256,6 @@
 <div type="section" n="57">
    <p>Also the winds which accompany the falling of the mists are significant: if the breezes come from the east or south, <name type="animal" xml:lang="en">rain</name> is indicated; if from the west or north, breezes and cold weather. And the stars which the Egyptians call <foreign xml:lang="en">'comets'</foreign> indicate not only the conditions just mentioned but also cold weather. In the case of the rising of the stars the indication, as in the case of also of the equinoxes and solstices, is given not at the actual time but a little earlier or later.</p>
 </div>
-    </body>
+    </div></body>
   </text>
 </TEI>
