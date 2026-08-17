@@ -10,7 +10,7 @@ let router = express.Router();
 
 const endpoint = process.env.SPARQL_ENDPOINT
 console.log(endpoint)
-const __dirForDOwnload__ = "./files/"
+const __dirForDOwnload__ = path.join(__dirname, "../../../Named_entity_recognition/data/")
 
 // Deux temoins (langues/editions differentes) d'une meme oeuvre partagent le
 // meme titre : cette etiquette permet de les distinguer dans les listes.
@@ -40,7 +40,7 @@ router.get('/download-xml', (req, res) => {
   const fileName = req.query.file
   const filePath = path.join(__dirForDOwnload__, fileName);
 
-  res.download(filePath, fileName.split("/")[-1], (err) => {
+  res.download(filePath, path.basename(fileName), (err) => {
       if (err) {
         console.log(err)
         res.status(500).send('Error file not found.');
