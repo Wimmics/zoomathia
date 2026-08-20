@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="grc">
   <teiHeader>
@@ -6,7 +6,7 @@
       <titleStmt>
         <title xml:lang="grc">Παράφρασις τῶν τοῦ Διονυσίου Ἰξευτικῶν</title>
         <title type="sub" xml:lang="la">Ixeuticon sive De aucupio (paraphrasis)</title>
-        <author>Dionysius</author>
+        <author>PSEUDO-DENYS</author>
         <respStmt>
           <resp xml:lang="fr">Encodage TEI et extraction depuis le fichier source TLG-E</resp>
           <persName>Romain Girardi</persName>
@@ -15,7 +15,7 @@
       <editionStmt>
         <edition n="tlge-grc1" xml:lang="fr">Édition électronique TEI (EpiDoc) dérivée du
         texte numérique de la <title>Thesaurus Linguae Graecae</title>. Texte non collationné
-        à nouveau&#8239;; sans apparat critique.</edition>
+        à nouveau ; sans apparat critique.</edition>
       </editionStmt>
       <publicationStmt>
         <authority>Romain Girardi</authority>
@@ -23,7 +23,7 @@
         <availability status="restricted">
           <licence target="http://stephanus.tlg.uci.edu/license.php" xml:lang="fr">Le texte grec
           provient du Thesaurus Linguae Graecae® (TLG®, University of California, Irvine) et reste
-          soumis à sa licence&#8239;: usage de recherche personnel, sans rediffusion publique du texte.
+          soumis à sa licence : usage de recherche personnel, sans rediffusion publique du texte.
           Le balisage TEI est l'œuvre de l'encodeur.</licence>
         </availability>
         <date when="2026-06-25">2026</date>
@@ -35,7 +35,7 @@
           <edition>TLG E (CD-ROM)</edition>
           <date>1999</date>
           <idno type="tlg">0084.003</idno>
-          <note xml:lang="fr">Source numérique effective du texte grec encodé ici&#8239;; reproduit
+          <note xml:lang="fr">Source numérique effective du texte grec encodé ici ; reproduit
           le texte (non l'apparat) de l'édition critique imprimée ci-dessous.</note>
         </bibl>
         <bibl type="print-edition">
@@ -50,7 +50,7 @@
       <projectDesc>
         <p xml:lang="fr">Fichier TEI produit à des fins de recherche doctorale. Le grec est extrait
         verbatim du fichier <hi rend="filename">TLG0084.TXT</hi> du TLG-E au moyen de
-        <ref target="https://github.com/cltk/tlgu">tlgu 1.9</ref> (beta code &#8594; Unicode, NFC).</p>
+        <ref target="https://github.com/cltk/tlgu">tlgu 1.9</ref> (beta code → Unicode, NFC).</p>
       </projectDesc>
       <editorialDecl>
         <correction>
@@ -58,13 +58,13 @@
           tel quel depuis la source numérique.</p>
         </correction>
         <normalization>
-          <p xml:lang="fr">Aucune normalisation orthographique. Seule transformation&#8239;: la conversion
-          beta code &#8594; Unicode (forme NFC) opérée par tlgu. Sigma final, accents et ponctuation
+          <p xml:lang="fr">Aucune normalisation orthographique. Seule transformation : la conversion
+          beta code → Unicode (forme NFC) opérée par tlgu. Sigma final, accents et ponctuation
           suivent la source.</p>
         </normalization>
         <interpretation>
-          <p xml:lang="fr">Les sigles critiques présents dans le texte source (&#8224;…&#8224; cruces,
-          &#10216;…&#10217; suppléments, […] et points de suspension pour les lacunes) sont conservés
+          <p xml:lang="fr">Les sigles critiques présents dans le texte source (†…† cruces,
+          ⟨…⟩ suppléments, […] et points de suspension pour les lacunes) sont conservés
           tels qu'imprimés et ne sont PAS re-balisés en &lt;gap&gt;, &lt;supplied&gt; ou &lt;unclear&gt;.
           Les rubriques entre accolades de la TLG sont rendues en &lt;head&gt; (titres et lemmes) ou
           &lt;hi rend="rubric"&gt; (rubriques internes).</p>

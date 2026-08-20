@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
     type="application/xml"
-    schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,9 +11,8 @@
           
         </author>
         <respStmt>
-          <resp>Encodage automatique TEI P5</resp>
-          <name>zoomathia_encoder.py v3.0</name>
-          <date when="2026-07-15">2026-07-15</date>
+          <persName>Kossi Zangbe</persName>
+          <resp>transformation en XML-TEI</resp>
         </respStmt>
       </titleStmt>
       <publicationStmt>
@@ -24,10 +22,10 @@
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
         </availability>
-        <idno type="zoomathia"></idno>
+        <idno type="zoomathia"/>
       </publicationStmt>
       <sourceDesc>
-        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+        <p>Texte fourni par A. Zucker (IntraText Library) - encodage complet Mistral</p>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -43,19 +41,6 @@
         </keywords>
       </textClass>
     </profileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
-        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p>Balisage automatique des structures textuelles et des entites nommees
-        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
-        <correction status="unknown">
-          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
-        </correction>
-      </editorialDecl>
-    </encodingDesc>
   </teiHeader>
   <text>
     <body>

@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
     type="application/xml"
-    schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -12,9 +11,8 @@
           
         </author>
         <respStmt>
-          <resp>Encodage automatique TEI P5</resp>
-          <name>zoomathia_encoder.py v3.0</name>
-          <date when="2026-07-16">2026-07-16</date>
+          <persName>Kossi Zangbe</persName>
+          <resp>transformation en XML-TEI</resp>
         </respStmt>
       </titleStmt>
       <publicationStmt>
@@ -24,10 +22,10 @@
         <availability>
           <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
         </availability>
-        <idno type="zoomathia"></idno>
+        <idno type="zoomathia"/>
       </publicationStmt>
       <sourceDesc>
-        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+        <p>Traduction Loeb 1935, domaine public, via LacusCurtius - encodage complet Mistral</p>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -43,19 +41,6 @@
         </keywords>
       </textClass>
     </profileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
-        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p>Balisage automatique des structures textuelles et des entites nommees
-        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
-        <correction status="unknown">
-          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
-        </correction>
-      </editorialDecl>
-    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -424,7 +409,7 @@
 <pb n="91"/>
 <pb n="92"/>
 <pb n="93"/>
-<p>26 Lines 91‑93 are discussed in a special excursus by Wernsdorf. With <foreign xml:lang="la">lusa</foreign> cf. of the <persName>Georgics</persName>’+<foreign xml:lang="la">Lat2+LatSearch</foreign>+<foreign xml:lang="la">inlusasque</foreign> (note spelling)')" onMouseOut="nd();"><quote><persName>Virg.</persName> <title type="work">G.</title> II .464</quote>, <foreign xml:lang="la">illusasque auro vestes</foreign>, "garments fancifully embroidered with gold." ❦</p>
+<p>26 Lines 91‑93 are discussed in a special excursus by Wernsdorf. With <foreign xml:lang="la">lusa</foreign> cf. of the <persName>Georgics</persName>’+<foreign xml:lang="la">Lat2+LatSearch</foreign>+<foreign xml:lang="la">inlusasque</foreign> (note spelling)')" onMouseOut="nd();"&gt;<quote><persName>Virg.</persName> <title type="work">G.</title> II .464</quote>, <foreign xml:lang="la">illusasque auro vestes</foreign>, "garments fancifully embroidered with gold." ❦</p>
 <p>27 i.e. the surroundings should reverberate to the voices of the attendant mountain-<name type="deity">nymphs</name>. ❦</p>
 <p>28 On <name type="animal" xml:lang="en">dogs</name> generally see note on <persName>Grattius</persName>, <title type="work">Cyneg.</title> 151. ❦</p>
 <p>29 Cf. <persName>Grattius</persName>, <title type="work">Cyneg.</title> 181, 197, 211‑212. ❦</p>

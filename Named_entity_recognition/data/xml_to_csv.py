@@ -590,6 +590,9 @@ if __name__ == "__main__":
     for xml_file in xml_files:
 
         FILE = xml_file
+        if not os.path.exists(FILE):
+            print(f"Skip (fichier supprime depuis le lancement): {xml_file}")
+            continue
         zoo_folder = os.path.basename(os.path.dirname(FILE))
         CSV = zoo_folder + "_" + ".".join(os.path.basename(FILE).split(".")[0:-1])
 

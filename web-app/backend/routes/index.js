@@ -285,31 +285,42 @@ SELECT ?file WHERE {
 }`
 }
 
-const findWorkByFile = (file) => {
+const findTranslationCandidates = (dir, number) => {
+  const dirPattern = dir.replace(/\./g, '\\\\.')
   return `prefix zoo: <http://ns.inria.fr/zoomathia/zoo#>
-SELECT ?work ?title WHERE {
-  ?work zoo:file "${file}";
+SELECT ?work ?title ?file WHERE {
+  ?work zoo:file ?file;
         zoo:title ?title.
+  FILTER(REGEX(STR(?file), "^${dirPattern}${number}e(_[0-9]+)?\\\\.xml$"))
 }`
 }
 
 // Deux temoins (langues differentes) d'une meme oeuvre partagent le meme
 // dossier/numero dans leur chemin source (ex. ./zoo/zoo7/13g.xml et
 // ./zoo/zoo7/13e.xml) : seule la lettre de langue change. On s'appuie sur
-// ce chemin pour retrouver la traduction anglaise d'une oeuvre, sans la
-// gerer pour les oeuvres decoupees en plusieurs fichiers (suffixe _N).
+// ce chemin pour retrouver la traduction anglaise d'une oeuvre. Certaines
+// oeuvres ont plusieurs temoins par langue (suffixe _N, ex. 1e_1.xml,
+// 1e_2.xml) : on cherche alors tous les fichiers anglais du meme
+// dossier/numero et on prefere le meme suffixe que le temoin d'origine,
+// puis le fichier sans suffixe, puis le premier disponible.
 router.get("/getTranslation", async (req, res) => {
   const fileResult = await executeSPARQLRequest(endpoint, getWorkFile(req.query.uri))
   const fileBinding = fileResult.results.bindings[0]
   if (!fileBinding) { return res.status(200).json(null) }
 
-  const match = fileBinding.file.value.match(/^(.*\/)(\d+)([a-z])(\.xml)$/)
+  const match = fileBinding.file.value.match(/^(.*\/)(\d+)([a-z])(?:_(\d+))?\.xml$/)
   if (!match || match[3] === 'e') { return res.status(200).json(null) }
 
-  const targetFile = `${match[1]}${match[2]}e${match[4]}`
-  const translationResult = await executeSPARQLRequest(endpoint, findWorkByFile(targetFile))
-  const translationBinding = translationResult.results.bindings[0]
-  if (!translationBinding) { return res.status(200).json(null) }
+  const [, dir, number, , suffix] = match
+  const candidatesResult = await executeSPARQLRequest(endpoint, findTranslationCandidates(dir, number))
+  const candidates = candidatesResult.results.bindings
+  if (candidates.length === 0) { return res.status(200).json(null) }
+
+  const findBySuffix = (s) => candidates.find((c) => {
+    const m = c.file.value.match(/_(\d+)\.xml$/)
+    return s ? (m && m[1] === s) : !m
+  })
+  const translationBinding = (suffix && findBySuffix(suffix)) || findBySuffix(undefined) || candidates[0]
 
   res.status(200).json({ uri: translationBinding.work.value, title: translationBinding.title.value })
 })

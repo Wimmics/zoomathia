@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
     type="application/xml"
     schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -11,9 +11,8 @@
           
         </author>
         <respStmt>
-          <resp>Encodage automatique TEI P5</resp>
-          <name>zoomathia_encoder.py v3.0</name>
-          <date when="2026-07-15">2026-07-15</date>
+          <persName>Kossi Zangbe</persName>
+          <resp>transformation en XML-TEI</resp>
         </respStmt>
       </titleStmt>
       <publicationStmt>
@@ -26,7 +25,7 @@
         <idno type="zoomathia"/>
       </publicationStmt>
       <sourceDesc>
-        <p>Encode automatiquement par zoomathia_encoder.py v3.0 - Projet Zoomathia</p>
+        <p>Edition Haupt 1838 (domaine public), via Google Books - encodage complet Mistral</p>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -42,19 +41,6 @@
         </keywords>
       </textClass>
     </profileDesc>
-    <encodingDesc>
-      <projectDesc>
-        <p>Fichier encode automatiquement dans le cadre du projet Zoomathia (ANR).
-        Encodage produit par zoomathia_encoder.py v3.0. Verification humaine recommandee.</p>
-      </projectDesc>
-      <editorialDecl>
-        <p>Balisage automatique des structures textuelles et des entites nommees
-        pertinentes pour Zoomathia (animaux, plantes, personnes, lieux).</p>
-        <correction status="unknown">
-          <p>Encodage automatique - erreurs possibles, revision manuelle recommandee.</p>
-        </correction>
-      </editorialDecl>
-    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -1551,16 +1537,7 @@ contritus est.</p>
    <div type="section" n="5">
       <p>in euangelio '<quote>quod si sal euanuerit. et hos sales potest dici.</quote></p>
    </div>
-   <div type="section" n="5">
-      <p><name type="animal" xml:lang="la">Squalor</name> generis masculini, ut Auitus '<quote>squalore uicino.</quote></p>
    </div>
-   <div type="section" n="5">
-      <p><name type="animal" xml:lang="la">Silex</name> generis feminini, ut Virgilius '<quote>stabat acuta silex.</quote> sed dicunt alii genere masculino, ut Prudentius '<quote>incusso silice.</quote>'</p>
-   </div>
-   <div type="section" n="5">
-      <p><name type="animal" xml:lang="la">Simia</name> generis feminini, ut in regum uolumine '<quote>simias et pauos : quamuis Cicero <name type="animal" xml:lang="la">simiolum</name> di10xerit.</quote></p>
-   </div>
-</div>
 <div type="section" n="79">
    <p>Sagus <name type="animal" xml:lang="la">generis</name> masculini , ut Afranius quia quadrati sunt <name type="animal" xml:lang="la">sagi</name>.</p>
    <p><name type="animal" xml:lang="la">Stimulus</name> <name type="animal" xml:lang="la">generis</name> masculini, ut Terentius 'nam quae inscitia est, aduersus <name type="animal" xml:lang="la">stimulos</name> calces.'</p>
