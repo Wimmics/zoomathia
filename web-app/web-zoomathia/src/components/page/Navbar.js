@@ -1,10 +1,9 @@
 import styles from './Navbar.module.css'
-import { Outlet, NavLink, Link } from 'react-router-dom'
+import { Outlet, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return <>
         <nav id={"navbar"} className={styles['navbar']}>
-            <Link to='/' className={styles["wordmark"]}><span className={styles["accent"]}>Z</span>OOMATHIA</Link>
             <div className={styles["menu-box"]}>
                 <NavLink to='/' className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
                 <NavLink to='/ExploreTheCorpus' className={({ isActive }) => isActive ? 'active' : ''}>Explore the corpus</NavLink>
