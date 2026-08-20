@@ -1,50 +1,66 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc>
-            <titleStmt>
-                <title>Fabulae Aesopiae ENG</title>
-                <author>Phaedrus</author>
-                <editor role="editor">L. Mueller</editor>
-                <sponsor>Perseus Project, Tufts University</sponsor>
-                <principal>Gregory Crane</principal>
-                <respStmt>
-                    <resp>Prepared under the supervision of</resp>
-                    <name>Lisa Cerrato</name>
-                    <name>William Merrill</name>
-                    <name>Elli Mylonas</name>
-                    <name>David Smith</name>
-                    <name/>
-                <name/></respStmt>
-            </titleStmt>
-            <publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <title>Fabulae Aesopiae</title>
-                        <author>Phaedrus, Augusti libertus</author>
-                        <editor role="editor">L. Mueller</editor>
-                        <imprint>
-                            <pubPlace>Leipzig</pubPlace>
-                            <publisher>B. G. Teubner</publisher>
-                            <date>1876</date>
-                        </imprint>
-                    </monogr>
-                </biblStruct>
-            <p>Traduction Christopher Smart 1913 (edition Loeb / anthologie), via Perseus Digital Library (edition TEI officielle phi0975.phi001.perseus-eng1). Remplace une premiere reconstruction au niveau du livre entier (Project Gutenberg) par ce decoupage fable par fable, correspondant exactement a la structure du latin : 5 livres, 32/10/21/27/11 fables (prologue inclus dans le decompte du livre 1). L'appendice de 31 fables supplementaires (Appendix Perottina) presente cote latin n'a pas d'equivalent dans cette source et reste donc uniquement en latin.</p></sourceDesc>
-        </fileDesc><encodingDesc>
-            <refsDecl>
-                <refState unit="book"/>
-                <refState n="chunk" unit="poem"/>
-                <refState unit="line"/>
-            </refsDecl>
-        </encodingDesc><profileDesc>
-            <langUsage>
-                <language>Latin
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Fabulae Aesopiae ENG</title>
+        <author>Phaedrus</author>
+        <editor role="editor">L. Mueller</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Lisa Cerrato</name>
+          <name>William Merrill</name>
+          <name>Elli Mylonas</name>
+          <name>David Smith</name>
+          <name/>
+          <name/>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title>Fabulae Aesopiae</title>
+            <author>Phaedrus, Augusti libertus</author>
+            <editor role="editor">L. Mueller</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>B. G. Teubner</publisher>
+              <date>1876</date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+        <p>Traduction Christopher Smart 1913 (edition Loeb / anthologie), via Perseus Digital Library (edition TEI officielle phi0975.phi001.perseus-eng1). Remplace une premiere reconstruction au niveau du livre entier (Project Gutenberg) par ce decoupage fable par fable, correspondant exactement a la structure du latin : 5 livres, 32/10/21/27/11 fables (prologue inclus dans le decompte du livre 1). L'appendice de 31 fables supplementaires (Appendix Perottina) presente cote latin n'a pas d'equivalent dans cette source et reste donc uniquement en latin.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl>
+        <refState unit="book"/>
+        <refState n="chunk" unit="poem"/>
+        <refState unit="line"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language>Latin
                 </language>
-                <language>Greek
+        <language>Greek
                 </language>
-            </langUsage>
-        </profileDesc></teiHeader>
-    <text><body><div type="book" n="1"><div type="poem" n="prologus"><head>Prologue.</head><p>WHAT from the founder
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="book" n="1">
+        <div type="poem" n="prologus">
+          <head>Prologue.</head>
+          <p>WHAT from the founder
 In neat familiar verse I tell:
 Twofold's the genius of the page,
 To make you smile and make you sage.
@@ -53,7 +69,11 @@ By wrangling brutes and talking trees,
 Let them remember, ere they blame,
 We're working neither sin nor shame;
 'Tis but a play to form the youth
-By fiction, in the cause of truth.</p></div><div type="poem" n="1"><head>The Wolf and the Lamb</head><p>BY thirst incited; to the brook
+By fiction, in the cause of truth.</p>
+        </div>
+        <div type="poem" n="1">
+          <head>The Wolf and the Lamb</head>
+          <p>BY thirst incited; to the brook
 The Wolf and Lamb themselves betook.
 The Wolf high up the current drank,
 The Lamb far lower down the bank.
@@ -74,7 +94,11 @@ And so he tore him, till he died.
 To those this fable I address
 Who are determined to oppress,
 And trump up any false pretence,
-But they will injure innocence.</p></div><div type="poem" n="2"><head>The Frogs Desiring a King</head><p>With equal laws when
+But they will injure innocence.</p>
+        </div>
+        <div type="poem" n="2">
+          <head>The Frogs Desiring a King</head>
+          <p>With equal laws when
 The petulance of freedom drove
 Their state to license, which overthrew
 Those just restraints of old they knew.
@@ -117,7 +141,11 @@ And therefore you shall bear the bad."
 Ye likewise, 0 Athenian friends,
 Convinced to what impatience tends,
 Though slavery be no common curse,
-Be still, for fear of worse and worse.</p></div><div type="poem" n="3"><head>The Vain Jackdaw</head><p>Lest any one himself should plume,
+Be still, for fear of worse and worse.</p>
+        </div>
+        <div type="poem" n="3">
+          <head>The Vain Jackdaw</head>
+          <p>Lest any one himself should plume,
 And on his neighbour's worth presume;
 But still let Nature's garb prevail-
 A Daw, ambitious and absurd,
@@ -135,7 +163,11 @@ Then one he formerly disdain'd,
 Content with Nature's ways and will,
 You had not felt the peacock's bill;
 Nor 'mongst the birds of your own dress
-Had been deserted in distress."</p></div><div type="poem" n="4"><head>The Dog in the River.</head><p>The churl that wants another's fare
+Had been deserted in distress."</p>
+        </div>
+        <div type="poem" n="4">
+          <head>The Dog in the River.</head>
+          <p>The churl that wants another's fare
 Deserves at least to lose his share.
 As through the stream a Dog convey'd
 A piece of meat, he spied his shade
@@ -144,7 +176,11 @@ And thinking it was flesh and blood,
 Snapp'd to deprive him of the treat:-
 But mark the glutton's self-defeat,
 Miss'd both another's and his own,
-Both shade and substance, beef and bone.</p></div><div type="poem" n="5"><head>The Heifer, Goat, Sheep, and Lion.</head><p>A partnership with men in power
+Both shade and substance, beef and bone.</p>
+        </div>
+        <div type="poem" n="5">
+          <head>The Heifer, Goat, Sheep, and Lion.</head>
+          <p>A partnership with men in power
 We cannot build upon an hour.
 This Fable proves the fact too true:
 An Heifer, Goat, and harmless Ewe,
@@ -161,7 +197,11 @@ As being stronger far than you;
 The fourth you likewise will renounce,
 For him that touches, I shall trounce."
 Thus rank unrighteousness and force
-Seized all the prey without remorse.</p></div><div type="poem" n="6"><head>The Frogs and Sun</head><p>When
+Seized all the prey without remorse.</p>
+        </div>
+        <div type="poem" n="6">
+          <head>The Frogs and Sun</head>
+          <p>When
 The nuptials of a neighboring thief,
 He thus his narrative begun:
 Of old 'twas rumor'd that the Sun
@@ -176,10 +216,18 @@ And dries up all the pools around,
 Till we thy creatures perish here;
 But oh, how dreadfully severe,
 Should he at length be made a sire,
-And propagate a race of fire !"</p></div><div type="poem" n="7"><head>The Fox and the Tragic Mask</head><p>A Fox beheld a Mask- "0 rare
+And propagate a race of fire !"</p>
+        </div>
+        <div type="poem" n="7">
+          <head>The Fox and the Tragic Mask</head>
+          <p>A Fox beheld a Mask- "0 rare
 The headpiece, if but brains were there !"
 This holds-whene'er the Fates dispense
-Pomp, pow'r, and everything but sense.</p></div><div type="poem" n="8"><head>The Wolf and Crane</head><p>Who for his merit seeks a price
+Pomp, pow'r, and everything but sense.</p>
+        </div>
+        <div type="poem" n="8">
+          <head>The Wolf and Crane</head>
+          <p>Who for his merit seeks a price
 From men of violence and vice,
 Is twice a fool-first so declared,
 As for the worthless he has cared;
@@ -198,7 +246,11 @@ And so perform'd a desp'rate cure.
 At which, when she desired her fee,
 "You base, ungrateful minx," says he,
 "Whom I so kind forbore to kill,
-And now, forsooth, you'd bring your bill!"</p></div><div type="poem" n="9"><head>The Hare and the Sparrow</head><p>Still to give cautions, as a friend,
+And now, forsooth, you'd bring your bill!"</p>
+        </div>
+        <div type="poem" n="9">
+          <head>The Hare and the Sparrow</head>
+          <p>Still to give cautions, as a friend,
 And not one's own affairs attend,
 Is but impertinent and vain,
 As these few verses will explain.
@@ -213,7 +265,11 @@ Nor could her cries avail at all.
 The Hare, with its expiring breath,
 Thus said: " See comfort ev'n in death!
 She that derided my distress
-Must now deplore her own no less."</p></div><div type="poem" n="10"><head>The Wolf and Fox, with the Ape for Judge</head><p>Whoe'er by practice indiscreet
+Must now deplore her own no less."</p>
+        </div>
+        <div type="poem" n="10">
+          <head>The Wolf and Fox, with the Ape for Judge</head>
+          <p>Whoe'er by practice indiscreet
 Has pass'd for a notorious cheat,
 Will shortly find his credit fail,
 Though he speak truth, says
@@ -226,7 +282,11 @@ The sentence from the hustings gave:
 "For you, Sir Wolf, I do descry
 That all your losses are a lie-
 And you, with negatives so stout,
-0 Fox! have stolen the goods no doubt."</p></div><div type="poem" n="11"><head>The Ass and the Lion Hunting</head><p>A coward, full of pompous speech,
+0 Fox! have stolen the goods no doubt."</p>
+        </div>
+        <div type="poem" n="11">
+          <head>The Ass and the Lion Hunting</head>
+          <p>A coward, full of pompous speech,
 The ignorant may overreach;
 But is the laughing-stock of those
 Who know how far his valor goes.
@@ -249,7 +309,11 @@ The Ass, parading from the copse,
 Cried out with most conceited scoff,
 "How did my music-piece go off?
 So well-were not thy courage known,
-Their terror had been all my own!"</p></div><div type="poem" n="12"><head>The Stag at the Fountain</head><p>FULL often what you now despise
+Their terror had been all my own!"</p>
+        </div>
+        <div type="poem" n="12">
+          <head>The Stag at the Fountain</head>
+          <p>FULL often what you now despise
 Proves better than the things you prize;
 Let
 A Stag beheld, with conscious pride,
@@ -266,7 +330,11 @@ The pack began his flesh to tear:
 Then dying thus he wail'd his fate:
 "Unhappy me! and wise too late!
 How useful what I did disdain!
-How grievous that which made me vain!</p></div><div type="poem" n="13"><head>The Fox and the Crow</head><p>His folly in repentance ends,
+How grievous that which made me vain!</p>
+        </div>
+        <div type="poem" n="13">
+          <head>The Fox and the Crow</head>
+          <p>His folly in repentance ends,
 Who, to a flatt'ring knave attends.
 A Crow, her hanger to appease,
 Had from a window stolen some cheese,
@@ -285,7 +353,11 @@ Her talents in the vocal way,
 Let go the cheese of luscious taste,
 Which Renard seized with greedy haste.
 The grudging dupe now sees at last
-That for her folly she must fast.</p></div><div type="poem" n="14"><head>The Cobbler Turned Doctor</head><p>A bankrupt Cobbler, poor and lean,
+That for her folly she must fast.</p>
+        </div>
+        <div type="poem" n="14">
+          <head>The Cobbler Turned Doctor</head>
+          <p>A bankrupt Cobbler, poor and lean,
 (No bungler e'er was half so mean)
 Went to a foreign place, and there
 Began his med'cines to prepare;
@@ -312,7 +384,11 @@ Your folly as inordinate,
 Who trust your heads into his hand,
 Where no one had his heels japann'd."—
 This story their attention craves
-Whose weakness is the prey of knaves.</p></div><div type="poem" n="15"><head>The Sapient Ass</head><p>In all the changes of a state,
+Whose weakness is the prey of knaves.</p>
+        </div>
+        <div type="poem" n="15">
+          <head>The Sapient Ass</head>
+          <p>In all the changes of a state,
 The poor are the most fortunate,
 Who, save the name of him they call
 Their king, can find no odds at all.
@@ -327,7 +403,11 @@ But loth at all to mend his pace,
 "Pray, will the conqueror," quoth Jack,
 "With double panniers load my back ?"
 "No," says the man. "If that's the thing,"
-Cries he, "I care not who is king."</p></div><div type="poem" n="16"><head>The Sheep, the Stag, and the Wolf</head><p>When one rogue would another get
+Cries he, "I care not who is king."</p>
+        </div>
+        <div type="poem" n="16">
+          <head>The Sheep, the Stag, and the Wolf</head>
+          <p>When one rogue would another get
 For surety in a case of debt,
 'Tis not the thing t' accept the terms,
 But dread th' event-the tale affirms.
@@ -338,7 +418,11 @@ At which, beginning to despond,
 "The Wolf (cries she) 's a vagrant bite,
 And you are quickly out of sight;
 Where shall I find or him or you
-Upon the day the debt is due ?"</p></div><div type="poem" n="17"><head>The Sheep, the Dog, and the Wolf.</head><p>Liars are liable to rue
+Upon the day the debt is due ?"</p>
+        </div>
+        <div type="poem" n="17">
+          <head>The Sheep, the Dog, and the Wolf.</head>
+          <p>Liars are liable to rue
 The mischief they 're so prone to do.
 The Sheep a Dog unjustly dunn'd
 One loaf directly to refund,
@@ -351,8 +435,16 @@ To pay for things she never saw.
 But, lo! ere many days ensued,
 Dead in a ditch the Wolf she view'd:
 "This, this," she cried, "is Heaven's decree
-Of justice on a wretch like thee."</p></div><div type="poem" n="18"><head>(mulier Parturiens)</head><p>(mulier Parturiens)
-Not here translated.</p></div><div type="poem" n="19"><head>The Bitch and Her Puppies</head><p>Bad men have speeches smooth and fair,
+Of justice on a wretch like thee."</p>
+        </div>
+        <div type="poem" n="18">
+          <head>(mulier Parturiens)</head>
+          <p>(mulier Parturiens)
+Not here translated.</p>
+        </div>
+        <div type="poem" n="19">
+          <head>The Bitch and Her Puppies</head>
+          <p>Bad men have speeches smooth and fair,
 Of which, that we should be aware,
 And such designing villains thwart,
 The underwritten lines exhort.
@@ -367,7 +459,11 @@ Which second lease expired at length;
 And when, abused at such a rate,
 The lender grew importunate,
 "The place," quoth she, " I will resign
-When you 're a match for me and mine.'</p></div><div type="poem" n="20"><head>The Hungry Dogs</head><p>A stupid plan that fools project,
+When you 're a match for me and mine.'</p>
+        </div>
+        <div type="poem" n="20">
+          <head>The Hungry Dogs</head>
+          <p>A stupid plan that fools project,
 Not only will not take effect,
 ut proves destructive in the end
 To those that bungle and pretend.
@@ -376,7 +472,11 @@ Deep sunk beneath the crystal tide,
 Which, that they might extract for food,
 They strove to drink up all the flood;
 But bursten in the desp'rate deed,
-They perish'd, ere they could succeed.</p></div><div type="poem" n="21"><head>The Old Lion</head><p>Whoever, to his honor's cost,
+They perish'd, ere they could succeed.</p>
+        </div>
+        <div type="poem" n="21">
+          <head>The Old Lion</head>
+          <p>Whoever, to his honor's cost,
 His pristine dignity has lost,
 Is the fool's jest and coward's scorn,
 When once deserted and forlorn.
@@ -395,7 +495,11 @@ Then thus the Lion, as he died:
 But to be trampled on by thee
 Is Nature's last indignity;
 And thou, 0 despicable thing,
-Giv'st death at least a double sting."</p></div><div type="poem" n="22"><head>The Man and the Weasel</head><p>A Weasel, by a person caught,
+Giv'st death at least a double sting."</p>
+        </div>
+        <div type="poem" n="22">
+          <head>The Man and the Weasel</head>
+          <p>A Weasel, by a person caught,
 And willing to get off; besought
 The man to spare. "Be not severe
 On him that keeps your pantry clear
@@ -412,7 +516,11 @@ This said, the miscreant was slain.
 The satire here those chaps will own,
 Who, useful to themselves alone,
 And bustling for a private end,
-Would boast the merit of a friend.</p></div><div type="poem" n="23"><head>The Faithful House-dog</head><p>A Man that's gen'rous all at once
+Would boast the merit of a friend.</p>
+        </div>
+        <div type="poem" n="23">
+          <head>The Faithful House-dog</head>
+          <p>A Man that's gen'rous all at once
 May dupe a novice or a dunce;
 But to no purpose are the snares
 He for the knowing ones prepares.
@@ -423,7 +531,11 @@ The mouth of him that guards the shop?
 You're mightily mistaken, sir,
 For this strange kindness is a spur,
 To make me double all my din,
-Lest such a scoundrel should come in."</p></div><div type="poem" n="24"><head>The Proud Frog</head><p>When poor men to expenses run,
+Lest such a scoundrel should come in."</p>
+        </div>
+        <div type="poem" n="24">
+          <head>The Proud Frog</head>
+          <p>When poor men to expenses run,
 And ape their betters, they 're undone.
 An Ox the Frog a-grazing view'd,
 And envying his magnitude,
@@ -436,7 +548,11 @@ She swells and strains, and swells again.
 "Now for it, who has got the day ?"
 The Ox is larger still, they say.
 At length, with more and more ado,
-She raged and puffed, and burst in two.</p></div><div type="poem" n="25"><head>The Dog and the Crocodile</head><p>Who give bad precepts to the wise,
+She raged and puffed, and burst in two.</p>
+        </div>
+        <div type="poem" n="25">
+          <head>The Dog and the Crocodile</head>
+          <p>Who give bad precepts to the wise,
 And cautious men with guile advise,
 Not only lose their toil and time,
 But slip into sarcastic rhyme.
@@ -451,7 +567,11 @@ The least design or treach'ry here."
 "That," says the Dog, "ma'm, would I do
 With all my heart, and thank you too,
 But as you can on dog's flesh dine,
-You shall not taste a bit of mine."</p></div><div type="poem" n="26"><head>The Fox and the Stork</head><p>One should do injury to none;
+You shall not taste a bit of mine."</p>
+        </div>
+        <div type="poem" n="26">
+          <head>The Fox and the Stork</head>
+          <p>One should do injury to none;
 But he that has th' assault begun,
 Ought, says the fabulist, to find
 The dread of being served in kind,
@@ -470,7 +590,11 @@ While she enjoy'd the rich repast.
 Then, as in vain he lick'd the neck,
 The Stork was heard her guest to check,       -
 ' That every one the fruits should bear
-Of their example, is but fair."</p></div><div type="poem" n="27"><head>The Dog, Treasure, and Vulture.</head><p>A Dog, while scratching up the ground,
+Of their example, is but fair."</p>
+        </div>
+        <div type="poem" n="27">
+          <head>The Dog, Treasure, and Vulture.</head>
+          <p>A Dog, while scratching up the ground,
 'Mongst human bones a treasure found;
 But as his sacrilege was great,
 To covet riches was his fate,
@@ -485,7 +609,11 @@ And thus descanted :-" It is good,
 O Dog, that there thou liest bereaved
 Who in the highway wast conceived,
 And on a scurvy dunghill bred,
-Hadst royal riches in thy head."</p></div><div type="poem" n="28"><head>The Fox and Eagle</head><p>Howe'er exalted in your sphere,
+Hadst royal riches in thy head."</p>
+        </div>
+        <div type="poem" n="28">
+          <head>The Fox and Eagle</head>
+          <p>Howe'er exalted in your sphere,
 There's something from the mean to fear
 For, if their property you wrong,
 The poor's revenge is quick and strong
@@ -502,8 +630,16 @@ An altar, whence she snatched a brand,
 And compassing with flames the wood,
 Put her in terror for her brood.
 She therefore, lest her house should burn,
-Submissive did the cubs return.</p></div><div type="poem" n="29"><head>The Donkey and the Boar</head><p>The Donkey and the Boar
-Not here translated</p></div><div type="poem" n="30"><head>The Frogs and Bulls</head><p>Men of low life are in distress
+Submissive did the cubs return.</p>
+        </div>
+        <div type="poem" n="29">
+          <head>The Donkey and the Boar</head>
+          <p>The Donkey and the Boar
+Not here translated</p>
+        </div>
+        <div type="poem" n="30">
+          <head>The Frogs and Bulls</head>
+          <p>Men of low life are in distress
 When great ones enmity profess.
 There was a Bull-fight in the fen,
 A Frog cried out in trouble then,
@@ -516,7 +652,11 @@ Of sep'rate station, diverse kind."-
 " But he, who worsted shall retire,
 Will come into this lowland mire,
 And with his hoof dash out our brains
-Wherefore their rage to us pertains."</p></div><div type="poem" n="31"><head>The Kite and the Doves</head><p>He that would have the wicked reign,
+Wherefore their rage to us pertains."</p>
+        </div>
+        <div type="poem" n="31">
+          <head>The Kite and the Doves</head>
+          <p>He that would have the wicked reign,
 Instead of help will find his bane.
 The Doves had oft escaped the Kite,
 By their celerity of flight;
@@ -531,7 +671,13 @@ Who having now the pow'r received,
 Began upon the Doves to prey,
 And exercise tyrannic sway.
 "Justly," says one who yet remain'd,
-" We die the death ourselves ordained."</p></div></div><div type="book" n="2"><div type="poem" n="prologus"><head>Prologue</head><p>THE way of writing
+" We die the death ourselves ordained."</p>
+        </div>
+      </div>
+      <div type="book" n="2">
+        <div type="poem" n="prologus">
+          <head>Prologue</head>
+          <p>THE way of writing
 Sound doctrine by example shows;
 For nothing by these tales is meant
 So much as that the bad repent;
@@ -554,7 +700,11 @@ Which grace I purpose to repay
 By this consciousness of my song;
 Whose praises, lest they be too long,
 Attend, why you should stint the sneak,
-But give the modest, ere they seek.</p></div><div type="poem" n="1"><head>The Judicious Lion</head><p>A Lion on the carcass stood
+But give the modest, ere they seek.</p>
+        </div>
+        <div type="poem" n="1">
+          <head>The Judicious Lion</head>
+          <p>A Lion on the carcass stood
 Of a young heifer in the wood;
 A robber that was passing there,
 Came up, and ask'd him for a share.
@@ -573,7 +723,11 @@ To favour his approach withdrew.
 A great example, worthy praise,
 But not much copied now-a-days!
 For churls have coffers that o'erflow,
-And sheepish worth is poor and low.</p></div><div type="poem" n="2"><head>The Bald-pate Dupe</head><p>Fondling or fondled-any how-
+And sheepish worth is poor and low.</p>
+        </div>
+        <div type="poem" n="2">
+          <head>The Bald-pate Dupe</head>
+          <p>Fondling or fondled-any how-
 (Examples of all times allow)
 That men by women must be fleeced.
 A dame, whose years were well increased,
@@ -588,7 +742,11 @@ He, pleased with their officious care,
 Was on a sudden made a coot;
 For the young strumpet, branch and root,
 Stripp'd of the hoary hairs his crown,
-E'en as th' old cat grubb'd up the brown.</p></div><div type="poem" n="3"><head>The Man and the Dog</head><p>Torn by a Cur, a man was led
+E'en as th' old cat grubb'd up the brown.</p>
+        </div>
+        <div type="poem" n="3">
+          <head>The Man and the Dog</head>
+          <p>Torn by a Cur, a man was led
 To throw the snappish thief some bread
 Dipt in the blood, which, he was told,
 Had been a remedy of old.
@@ -597,7 +755,11 @@ A pack of dogs the thing you do,
 Lest they should soon devour us quite,
 When thus rewarded as they bite."
 One wicked miscreant's success
-Makes many more the trade profess.</p></div><div type="poem" n="4"><head>The Eagle, the Cat, and the Sow.</head><p>An Eagle built upon an oak
+Makes many more the trade profess.</p>
+        </div>
+        <div type="poem" n="4">
+          <head>The Eagle, the Cat, and the Sow.</head>
+          <p>An Eagle built upon an oak
 A Cat and kittens had bespoke
 A hole about the middle bough;
 And underneath a woodland Sow
@@ -632,7 +794,11 @@ The Sow is loth to quit her place.
 In short, they and their young ones starve
 And leave a prey for Puss to carve.
 Hence warn'd ye credulous and young,
-Be cautious of a double tongue.</p></div><div type="poem" n="5"><head>Caesar and His Slave</head><p>There is in town a certain set
+Be cautious of a double tongue.</p>
+        </div>
+        <div type="poem" n="5">
+          <head>Caesar and His Slave</head>
+          <p>There is in town a certain set
 Of mortals, ever in a sweat,
 Who idly bustling here and there,
 Have never any time to spare,
@@ -671,7 +837,11 @@ Thus the poor jackanapes address'd
 "As here is no great matter done,
 Small is the premium you have won:
 The cuffs that make a servant free,
-Are for a better man than thee."</p></div><div type="poem" n="6"><head>The Eagle, Carrion Crow, and Tortoise.</head><p>No soul can warrant life or right,
+Are for a better man than thee."</p>
+        </div>
+        <div type="poem" n="6">
+          <head>The Eagle, Carrion Crow, and Tortoise.</head>
+          <p>No soul can warrant life or right,
 Secure from men of lawless might;
 But if a knave's advice assist,
 'Gainst fraud and force what can exist ?
@@ -692,7 +862,11 @@ Then feasts on turtle with his guest.
 Thus she, whom Nature made so strong,
 And safe against external wrong,
 No match for force, and its allies,
-To cruel death a victim dies.</p></div><div type="poem" n="7"><head>The Mules and Robbers</head><p>Two laden Mules were on the road-
+To cruel death a victim dies.</p>
+        </div>
+        <div type="poem" n="7">
+          <head>The Mules and Robbers</head>
+          <p>Two laden Mules were on the road-
 A charge of money was bestowed
 Upon the one, the other bore
 Some sacks of barley. He before.
@@ -711,7 +885,11 @@ The other thank'd them for their scorn:
 " 'Tis now my turn the head to toss,
 Sustaining neither wound nor loss."
 The low estate's from peril clear,
-But wealthy men have much to fear.</p></div><div type="poem" n="8"><head>The Stag and the Oxen</head><p>A Stag unharbour'd by the hounds
+But wealthy men have much to fear.</p>
+        </div>
+        <div type="poem" n="8">
+          <head>The Stag and the Oxen</head>
+          <p>A Stag unharbour'd by the hounds
 Forth from his woodland covert bounds,
 And blind with terror, at th' alarm
 Of death, makes to a neighboring farm;
@@ -754,7 +932,11 @@ The Stag's exalted horns he sees:
 Then calling all his folks around,
 He lays him breathless on the ground.
 The master, as the tale declares,
-Looks sharpest to his own affairs</p></div><div type="poem" n="epilogus"><head>Epilogue</head><p>A STATUE of great cost and fame
+Looks sharpest to his own affairs</p>
+        </div>
+        <div type="poem" n="epilogus">
+          <head>Epilogue</head>
+          <p>A STATUE of great cost and fame
 Th' Athenians raised to
 Him setting on th' the eternal base,
 Whom servile rank could not disgrace;
@@ -787,7 +969,13 @@ And when they carp do all they can;
 Yet must this fatal cause to mourn
 With all its bitterness be borne,
 Till fortune be ashamed of days,
-When genius fails, and int'rest sways.</p></div></div><div type="book" n="3"><div type="poem" n="prologus"><head>Prologue, To Eutychus.</head><p>THE tales of Phaedrus would you read,
+When genius fails, and int'rest sways.</p>
+        </div>
+      </div>
+      <div type="book" n="3">
+        <div type="poem" n="prologus">
+          <head>Prologue, To Eutychus.</head>
+          <p>THE tales of Phaedrus would you read,
 O Eutychus, you must be freed
 From business, that the mind unbent
 May take the author's full intent.
@@ -886,7 +1074,11 @@ Th' attack, for glory is my due.
 Thus having wrought upon your ear,
 I beg that you would be sincere,
 And in the poet's cause avow
-That candor, all the world allow.</p></div><div type="poem" n="1"><head>The Old Woman and Empty Cask</head><p>An ancient dame a firkin sees,
+That candor, all the world allow.</p>
+        </div>
+        <div type="poem" n="1">
+          <head>The Old Woman and Empty Cask</head>
+          <p>An ancient dame a firkin sees,
 In which the rich Falernian lees
 Send from the nobly tinctured shell
 A rare and most delicious smell!
@@ -897,7 +1089,11 @@ She cried, "how perfectly complete
 Were you of old, and at the best,
 When ev'n your dregs have such a zest !"
 They'll see the drift of this my rhyme,
-Who knew the author in his prime.</p></div><div type="poem" n="2"><head>The Panther and Shepherds</head><p>Their scorn comes home to them again
+Who knew the author in his prime.</p>
+        </div>
+        <div type="poem" n="2">
+          <head>The Panther and Shepherds</head>
+          <p>Their scorn comes home to them again
 Who treat the wretched with disdain.
 A careless Panther long ago
 Fell in a pit, which overthrow
@@ -922,8 +1118,16 @@ Their pray'r for life, when thus she spake:
 "I well remember them that threw
 The stones, and well remember you
 Who gave me bread—desist to fear,
-For 'twas the oppressor brought me here."</p></div><div type="poem" n="3"><head>Aesop and the Country Man</head><p>Aesop and the Country Man
-Not here translated.</p></div><div type="poem" n="4"><head>The Ape's Head.</head><p>A certain person, as he stood
+For 'twas the oppressor brought me here."</p>
+        </div>
+        <div type="poem" n="3">
+          <head>Aesop and the Country Man</head>
+          <p>Aesop and the Country Man
+Not here translated.</p>
+        </div>
+        <div type="poem" n="4">
+          <head>The Ape's Head.</head>
+          <p>A certain person, as he stood
 Within the shambles buying food,
 Amongst the other kitchen fare
 Beheld an Ape suspended there;
@@ -934,7 +1138,10 @@ Judge of the flavour by the phiz."
 This speech was not so true as keen,
 For I in life have often seen
 Good features with a wicked heart,
-And plainness acting virtue's part.</p></div><div type="poem" n="5"><p>Fools from success perdition meet.
+And plainness acting virtue's part.</p>
+        </div>
+        <div type="poem" n="5">
+          <p>Fools from success perdition meet.
 An idle wretch about the street
 At
 " So much the better," quoth the sage,
@@ -949,7 +1156,11 @@ And you shall have a sure reward!"
 The fellow did as he was told;
 But mark the downfall of the bold;
 His hopes are baulk'd, and, lo! he gains
-A rope and gibbet for his pains.'</p></div><div type="poem" n="6"><head>The Fly and the Mule</head><p>A Fly that sat upon the beam
+A rope and gibbet for his pains.'</p>
+        </div>
+        <div type="poem" n="6">
+          <head>The Fly and the Mule</head>
+          <p>A Fly that sat upon the beam
 Rated the Mule: " Why, sure you dream ?
 " Pray get on faster with the cart
 Or I shall sting you till you smart!"
@@ -960,7 +1171,11 @@ The pliant whip, and holds the reins.
 Cease then your pertness-for I know
 When to give back, and when to go."
 This tale derides the talking crew,
-Whose empty threats are all they do.</p></div><div type="poem" n="7"><head>The Dog and the Wolf</head><p>I will, as briefly as I may,
+Whose empty threats are all they do.</p>
+        </div>
+        <div type="poem" n="7">
+          <head>The Dog and the Wolf</head>
+          <p>I will, as briefly as I may,
 The sweets of liberty display.
 A Wolf half famish'd, chanced to see
 A Dog, as fat as dog could be:
@@ -999,7 +1214,11 @@ So, I've my bellyful, you find."
 "Not always, to be flat and plain."
 "Then, Dog, enjoy your post again,
 For to remain this servile thing,
-Old Isgrim would not be a king."</p></div><div type="poem" n="8"><head>The Brother and Sister</head><p>Warn'd by our council, oft beware,
+Old Isgrim would not be a king."</p>
+        </div>
+        <div type="poem" n="8">
+          <head>The Brother and Sister</head>
+          <p>Warn'd by our council, oft beware,
 And look into yourself with care.
 There was a certain father had
 A homely girl and comely lad.
@@ -1022,7 +1241,11 @@ A day without this useful glass;
 You, lest you spoil a pretty face,
 By doing things to your disgrace;
 You, by good conduct to correct
-Your form, and beautify defect."</p></div><div type="poem" n="9"><head>A Saying of Socrates</head><p>Though common be the name of friend,
+Your form, and beautify defect."</p>
+        </div>
+        <div type="poem" n="9">
+          <head>A Saying of Socrates</head>
+          <p>Though common be the name of friend,
 Few can to faithfulness pretend,
 That Socrates (whose cruel case,
 I'd freely for his fame embrace,
@@ -1035,7 +1258,11 @@ Ask'd, as the folks are apt to do,
 Content with such a little hole ?"-
 "I wish," says he, "with all my soul
 That this same little house I build
-Was with true friends completely fill'd."</p></div><div type="poem" n="10"><head>Of Doubt and Credulity</head><p>'Tis frequently of bad event
+Was with true friends completely fill'd."</p>
+        </div>
+        <div type="poem" n="10">
+          <head>Of Doubt and Credulity</head>
+          <p>'Tis frequently of bad event
 To give or to withhold assent.
 Two cases will th' affair explain-
 The good Hippolytus was slain;
@@ -1128,8 +1355,16 @@ As int'rest or ambition sways.
 Them you may know, in them confide,
 Whom by experience you have tried.
 Thus have I made a long amends
-For that brief style which some offends.</p></div><div type="poem" n="11"><head>(eunuchus Ad Improbum)</head><p>(eunuchus Ad Improbum)
-Not here translated.</p></div><div type="poem" n="12"><head>The Cock and the Pearl</head><p>A Cock, while scratching all around,
+For that brief style which some offends.</p>
+        </div>
+        <div type="poem" n="11">
+          <head>(eunuchus Ad Improbum)</head>
+          <p>(eunuchus Ad Improbum)
+Not here translated.</p>
+        </div>
+        <div type="poem" n="12">
+          <head>The Cock and the Pearl</head>
+          <p>A Cock, while scratching all around,
 A Pearl upon the dunghill found:
 "O splendid thing in foul disgrace,
 Had there been any in the place
@@ -1140,7 +1375,11 @@ A corn of barley, heed thee not;
 No service can there render'd be
 From me to you, and you to me."
 I write this tale to them alone
-To whom in vain my pearls are thrown.</p></div><div type="poem" n="13"><head>The Bees and the Drone</head><p>Up in a lofty oak the Bees
+To whom in vain my pearls are thrown.</p>
+        </div>
+        <div type="poem" n="13">
+          <head>The Bees and the Drone</head>
+          <p>Up in a lofty oak the Bees
 Had made their honey-combs: but these
 The Drones asserted they had wrought.
 Then to the bar the cause was brought
@@ -1161,7 +1400,10 @@ Then thus did Justice Wasp decree:
 " Who can, and who cannot, is plain,
 So take, ye Bees, your combs again."
 This narrative had been suppress'd
-Had not the Drones refused the test.</p></div><div type="poem" n="14"><p>As Esop was with boys at play,
+Had not the Drones refused the test.</p>
+        </div>
+        <div type="poem" n="14">
+          <p>As Esop was with boys at play,
 And had his nuts as well as they,
 A grave Athenian, passing by,
 Cast on the sage a scornful eye,
@@ -1184,7 +1426,11 @@ You may depend upon its use."
 Thus recreative sports and play
 Are good upon a holiday,
 And with more spirit they'll pursue
-The studies which they shall renew.</p></div><div type="poem" n="15"><head>The Dog and the Lamb</head><p>A Dog bespoke a sucking Lamb,
+The studies which they shall renew.</p>
+        </div>
+        <div type="poem" n="15">
+          <head>The Dog and the Lamb</head>
+          <p>A Dog bespoke a sucking Lamb,
 That used a she-goat as her dam,
 " You little fool, why, how you baa!
 This goat is not your own mamma :"
@@ -1211,7 +1457,10 @@ To her so ready to relieve,
 When she beheld me left alone,
 And has such sweet indulgence shown ?"
 Kind deeds parental love proclaim
-Not mere necessity and name.</p></div><div type="poem" n="16"><p>Those who will not the forms obey
+Not mere necessity and name.</p>
+        </div>
+        <div type="poem" n="16">
+          <p>Those who will not the forms obey
 To be obliging in their way,
 Must often punishment abide
 For their ill-nature, and their pride.
@@ -1241,7 +1490,11 @@ That gain'd applause, approach'd with glee;
 At which the Owl upon her flew,
 And quick the trembling vixen slew.
 Thus by her death she was adjudged
-To give what in her life she grudged.</p></div><div type="poem" n="17"><head>The Trees Protected</head><p>The gods took certain trees (th' affair
+To give what in her life she grudged.</p>
+        </div>
+        <div type="poem" n="17">
+          <head>The Trees Protected</head>
+          <p>The gods took certain trees (th' affair
 Was some time since) into their care.
 The oak was best approved by Jove,
 The myrtle by the queen of love;
@@ -1261,7 +1514,10 @@ For whatsover things we do,
 If not a life of useful days,
 How vain is all pretence to praise !"
 Whate'er experiments you try,
-Have some advantage in your eye.</p></div><div type="poem" n="18"><p>Her favorite bird to Juno came,
+Have some advantage in your eye.</p>
+        </div>
+        <div type="poem" n="18">
+          <p>Her favorite bird to Juno came,
 And was in dudgeon at the dame,
 That she had not attuned her throat
 With Philomela's matchless note;
@@ -1286,7 +1542,10 @@ No other voice than Nature gave."
 By affectation be not sway'd,
 Where Nature has not lent her aid;
 Nor to that flattering hope attend,
-Which must in disappointment end.</p></div><div type="poem" n="19"><p>Received himself his lord's command
+Which must in disappointment end.</p>
+        </div>
+        <div type="poem" n="19">
+          <p>Received himself his lord's command
 An early supper to provide.
 From house to house he therefore tried
 To beg the favor of a light;
@@ -1302,9 +1561,23 @@ He answer'd briefly, as he ran,
 Now if this jackanapes had weighed
 The true intent of what was said,
 He'd found that
-Of manhood in impertinence.</p></div><div type="poem" n="epilogus"><head>The Poet</head><p>The Poet
-Not here translated</p></div></div><div type="book" n="4"><div type="poem" n="prologus"><head>Prologue: To Particulo</head><p>Prologue: To Particulo
-Not here translated</p></div><div type="poem" n="1"><head>The Ass and Priests of Cybele</head><p>The luckless wretch that's born to woe
+Of manhood in impertinence.</p>
+        </div>
+        <div type="poem" n="epilogus">
+          <head>The Poet</head>
+          <p>The Poet
+Not here translated</p>
+        </div>
+      </div>
+      <div type="book" n="4">
+        <div type="poem" n="prologus">
+          <head>Prologue: To Particulo</head>
+          <p>Prologue: To Particulo
+Not here translated</p>
+        </div>
+        <div type="poem" n="1">
+          <head>The Ass and Priests of Cybele</head>
+          <p>The luckless wretch that's born to woe
 Must all his life affliction know-
 And harder still, his cruel fate
 Will on his very ashes wait,
@@ -1319,7 +1592,11 @@ They thus could serve ther darling Ass ?"
 The answer was, " He thought of peace
 In death, and that his toils would cease;
 But see his mis'ry knows no bounds,
-Still with our blows his back resounds."</p></div><div type="poem" n="2"><head>The Poet</head><p>To you, who 've graver things bespoke,
+Still with our blows his back resounds."</p>
+        </div>
+        <div type="poem" n="2">
+          <head>The Poet</head>
+          <p>To you, who 've graver things bespoke,
 This seems no better than a joke,
 And light for mere amusement made;
 Yet still we drive the scribbling trade,
@@ -1350,7 +1627,11 @@ That oft escaped both snare and trap,
 And seeing how the trick was played,
 Thus to his crafty foe he said:-
 "So may'st thou prosper day and night,
-As thou art not an errant bite."</p></div><div type="poem" n="3"><head>The Fox and the Grapes</head><p>An hungry Fox with fierce attack
+As thou art not an errant bite."</p>
+        </div>
+        <div type="poem" n="3">
+          <head>The Fox and the Grapes</head>
+          <p>An hungry Fox with fierce attack
 Sprang on a Vine, but tumbled back,
 Nor could attain the point in view,
 So near the sky the bunches grew.
@@ -1359,7 +1640,11 @@ Says he, "and not half ripe enough—
 And I 've more rev'rence for my tripes
 Than to torment them with the gripes."
 For those this tale is very pat
-Who lessen what they can't come at.</p></div><div type="poem" n="4"><head>The Horse and Boar</head><p>A Wild-Boar wallow'd in the flood,
+Who lessen what they can't come at.</p>
+        </div>
+        <div type="poem" n="4">
+          <head>The Horse and Boar</head>
+          <p>A Wild-Boar wallow'd in the flood,
 And troubled all the stream with mud,
 Just where a horse to drink repair'd-
 He therefore having war declared,
@@ -1380,7 +1665,10 @@ Must all my life become a drudge."
 This tale the passionate may warn,
 To bear with any kind of scorn;
 And rather all complaint withdraw
-Than either go to war or law.</p></div><div type="poem" n="5"><p>That one man sometimes is more shrewd
+Than either go to war or law.</p>
+        </div>
+        <div type="poem" n="5">
+          <p>That one man sometimes is more shrewd
 Than a stupendous multitude,
 To after-times I shall rehearse
 In my concise familiar verse.
@@ -1456,7 +1744,11 @@ Thus none their portions shall enjoy,
 And from the money each has made
 Their mother shall be duly paid."
 Thus one man by his wit disclosed
-The point that had so many posed.</p></div><div type="poem" n="6"><head>The Battle of the Mice and Weasels</head><p>The routed Mice upon a day
+The point that had so many posed.</p>
+        </div>
+        <div type="poem" n="6">
+          <head>The Battle of the Mice and Weasels</head>
+          <p>The routed Mice upon a day
 Fled from the Weasels in array;
 But in the hurry of the flight,
 What with their weakness and their fright
@@ -1473,7 +1765,11 @@ With mouse-flesh his ungodly guts.
 Each great and national distress
 Must chiefly mighty men oppress;
 While folks subordinate and poor
-Are by their littleness secure.</p></div><div type="poem" n="7"><head>Phaedrus To the Cavillers</head><p>Thou that against my tales inveigh'st,
+Are by their littleness secure.</p>
+        </div>
+        <div type="poem" n="7">
+          <head>Phaedrus To the Cavillers</head>
+          <p>Thou that against my tales inveigh'st,
 As much too pleasant for thy taste;
 Egregious critic, cease to scoff
 While for a time I play you off,
@@ -1514,7 +1810,11 @@ For he that does it surely smarts.-
 This threat is to the fools, that squeam
 At every thing of good esteem;
 And that they may to taste pretend,
-Ev'n heaven itself will discommend.</p></div><div type="poem" n="8"><head>The Viper and the File</head><p>He that a greater biter bites,
+Ev'n heaven itself will discommend.</p>
+        </div>
+        <div type="poem" n="8">
+          <head>The Viper and the File</head>
+          <p>He that a greater biter bites,
 His folly on himself requites,
 As we shall manifest forthwith.-
 There was a hovel of a smith,
@@ -1525,7 +1825,11 @@ Was answer'd in this rugged style:
 " Why do you think, 0 stupid snake!
 On me your usual meal to make,
 Who've sharper teeth than thine by far,
-And can corrode an iron bar ?"</p></div><div type="poem" n="9"><head>The Fox and the Goat</head><p>A crafty knave will make escape,
+And can corrode an iron bar ?"</p>
+        </div>
+        <div type="poem" n="9">
+          <head>The Fox and the Goat</head>
+          <p>A crafty knave will make escape,
 When once he gets into a scrape,
 Still meditating self-defence,
 At any other man's expense.
@@ -1542,7 +1846,11 @@ This said, the silly Goat comes down.
 The subtle Fox herself avails,
 And by his horns the mound she scales,
 And leaves the Goat in all the mire,
-To gratify his heart's desire.</p></div><div type="poem" n="10"><head>The Two Bags</head><p>Great Jove, in his paternal care,
+To gratify his heart's desire.</p>
+        </div>
+        <div type="poem" n="10">
+          <head>The Two Bags</head>
+          <p>Great Jove, in his paternal care,
 Has giv'n a man two Bags to bear;
 That which his own default contains
 Behind his back unseen remains;
@@ -1551,7 +1859,11 @@ Swags full in view before our breasts.
 Hence we're inevitably blind,
 Relating to the Bag behind;
 But when our neighbours misdemean,
-Our censures are exceeding keen.</p></div><div type="poem" n="11"><head>The Sacrilegious Thief</head><p>A villain to Jove's altar came
+Our censures are exceeding keen.</p>
+        </div>
+        <div type="poem" n="11">
+          <head>The Sacrilegious Thief</head>
+          <p>A villain to Jove's altar came
 To light his candle in the flame,
 And robb'd the god in dead of night,
 By his own consecrated light:
@@ -1582,7 +1894,11 @@ Is not from wrath precipitate,
 But rather at a destined hour.
 Lastly, we're charg'd with all our pow'r,
 To keep ourselves, by care intense,
-From all connexions with offence.</p></div><div type="poem" n="12"><head>Hercules and Plutus</head><p>Wealth by the brave is justly scorn'd,
+From all connexions with offence.</p>
+        </div>
+        <div type="poem" n="12">
+          <head>Hercules and Plutus</head>
+          <p>Wealth by the brave is justly scorn'd,
 Since men are from the truth suborn'd,
 And a full chest perverts their ways
 From giving or deserving praise.
@@ -1595,10 +1911,26 @@ He from his face averts his eyes.
 Jove ask'd the cause of this disgust:
 "I hate him, as he is unjust,
 To wicked men the most inclined,
-And grand corrupter of mankind."</p></div><div type="poem" n="13"><head>The Lion King</head><p>The Lion King
-Not here translated</p></div><div type="poem" n="14"><head>Prometheus</head><p>Prometheus
-Not here translated</p></div><div type="poem" n="15"><head>Prometheus</head><p>Prometheus
-Not here translated</p></div><div type="poem" n="16"><head>The He-goats and She-goats</head><p>When the She-Goats from Jove obtain'd
+And grand corrupter of mankind."</p>
+        </div>
+        <div type="poem" n="13">
+          <head>The Lion King</head>
+          <p>The Lion King
+Not here translated</p>
+        </div>
+        <div type="poem" n="14">
+          <head>Prometheus</head>
+          <p>Prometheus
+Not here translated</p>
+        </div>
+        <div type="poem" n="15">
+          <head>Prometheus</head>
+          <p>Prometheus
+Not here translated</p>
+        </div>
+        <div type="poem" n="16">
+          <head>The He-goats and She-goats</head>
+          <p>When the She-Goats from Jove obtain'd
 A beard, th' indignant Males complain'd,
 That females by this near approach
 Would on their gravity encroach.
@@ -1609,7 +1941,11 @@ As they can never have your strength."
 Warn'd by this little tale, agree
 With men in gen'ral form'd like thee
 While you by virtue still exceed,
-And in the spirit take the lead.</p></div><div type="poem" n="17"><head>The Pilot and Sailors</head><p>On hearing a poor man lament
+And in the spirit take the lead.</p>
+        </div>
+        <div type="poem" n="17">
+          <head>The Pilot and Sailors</head>
+          <p>On hearing a poor man lament
 His worldly thoughts in discontent,
 For consolation and delight.
 The ship by furious tempests tossed,
@@ -1623,8 +1959,16 @@ Was prompted to philosophise.
 "'Tis right to put a due restraint
 On joy, and to retard complaint,
 Because alternate hope and fright
-Make up our lives of black and white."</p></div><div type="poem" n="18"><head>The Dogs' Ambassador To Jove</head><p>The Dogs' Ambassador To Jove
-Not here translated</p></div><div type="poem" n="19"><head>The Man and the Adder</head><p>He, that malicious men relieves,
+Make up our lives of black and white."</p>
+        </div>
+        <div type="poem" n="18">
+          <head>The Dogs' Ambassador To Jove</head>
+          <p>The Dogs' Ambassador To Jove
+Not here translated</p>
+        </div>
+        <div type="poem" n="19">
+          <head>The Man and the Adder</head>
+          <p>He, that malicious men relieves,
 His folly in a season grieves.
 A Man, against himself humane,
 Took up an Adder, that had lain
@@ -1635,7 +1979,11 @@ Her benefactor stung to death.
 Another Adder near the place,
 On asking why she was so base,
 Was told, " 'Tis others to dissuade
-From giving wickedness their aid."</p></div><div type="poem" n="20"><head>The Fox and the Dragon</head><p>A Fox was throwing up the soil,
+From giving wickedness their aid."</p>
+        </div>
+        <div type="poem" n="20">
+          <head>The Fox and the Dragon</head>
+          <p>A Fox was throwing up the soil,
 And while with his assiduous toil
 He burrow'd deep into the ground,
 A Dragon in his den he found,
@@ -1674,7 +2022,11 @@ When in their price provisions rise;
 Who with thy frauds heaven's patience tire
 To make thy heap a little higher,
 And, lest death thank thee, in thy will
-Hast tax'd the undertaker's bill.</p></div><div type="poem" n="21"><head>Phaedrus, On His Fables.</head><p>What certain envious hearts intend
+Hast tax'd the undertaker's bill.</p>
+        </div>
+        <div type="poem" n="21">
+          <head>Phaedrus, On His Fables.</head>
+          <p>What certain envious hearts intend
 I very clearly comprehend,
 Let them dissemble e'er so much.-.
 When they perceive the master's touch,
@@ -1687,7 +2039,11 @@ Whether of great or no repute,
 What sprung from
 This hand has to perfection brought;
 But waiving things to our distaste,
-Let's to the destined period haste.</p></div><div type="poem" n="22"><head>The Shipwreck of Simonides</head><p>A man, whose learned worth is known,
+Let's to the destined period haste.</p>
+        </div>
+        <div type="poem" n="22">
+          <head>The Shipwreck of Simonides</head>
+          <p>A man, whose learned worth is known,
 Has always riches of his own.
 Simonides, who was the head
 Of lyric bards, yet wrote for bread,
@@ -1730,14 +2086,22 @@ Which when Simonides espied,
 "That all my wealth was in myself;
 As for your chattels and your pelf.
 On which ye did so much depend,
-They're come to nothing in the end."</p></div><div type="poem" n="23"><head>The Mountain in Labor</head><p>The Mountain labor'd, groaning loud,
+They're come to nothing in the end."</p>
+        </div>
+        <div type="poem" n="23">
+          <head>The Mountain in Labor</head>
+          <p>The Mountain labor'd, groaning loud,
 On which a num'rous gaping crowd
 Of noodles came to see the sight,
 When, lo ! a mouse was brought to light!
 This tale 's for men of swagg'ring cast,
 Whose threats, voluminous and vast,
 With all their verse and all their prose,
-Can make but little on 't, God knows.</p></div><div type="poem" n="24"><head>The Ant and the Fly</head><p>An Ant and Fly had sharp dispute
+Can make but little on 't, God knows.</p>
+        </div>
+        <div type="poem" n="24">
+          <head>The Ant and the Fly</head>
+          <p>An Ant and Fly had sharp dispute
 Which creature was of most repute;
 When thus began the flaunting Fly:
 "Are you so laudible as I ?
@@ -1774,7 +2138,11 @@ To cure you of your arrogance."
 The tenor of this tale infers
 Two very diff'rent characters;
 Of men self-praised and falsely vain,
-And men of real worth in grain.</p></div><div type="poem" n="25"><head>The Escape of Simonides</head><p>Th' attention letters can engage,
+And men of real worth in grain.</p>
+        </div>
+        <div type="poem" n="25">
+          <head>The Escape of Simonides</head>
+          <p>Th' attention letters can engage,
 Ev'n from a base degenerate age,
 I've shown before; and now shall show
 Their lustre in another view,
@@ -1825,7 +2193,11 @@ The thing soon spread the country round;
 And when each circumstance was weighed,
 They knew the gods that visit made,
 And saved the poet's life in lieu
-Of those two-thirds which yet were due.</p></div><div type="poem" n="epilogus"><head>Epilogue To Eutychus.</head><p>I yet have stock in hand to spare,
+Of those two-thirds which yet were due.</p>
+        </div>
+        <div type="poem" n="epilogus">
+          <head>Epilogue To Eutychus.</head>
+          <p>I yet have stock in hand to spare,
 And could write on-but will forbear-
 First, lest I tire a friend, whose state
 And avocations are so great:
@@ -1880,7 +2252,13 @@ I met with in my boyish days.
 "'Tis dangerous for the mean and low
 Too plain their grievances to show."
 This is advice I shall retain
-While life and sanity remain.</p></div></div><div type="book" n="5"><div type="poem" n="prologus"><head>Prologue, To Particulo</head><p>WHEN I resolved my hand to stay
+While life and sanity remain.</p>
+        </div>
+      </div>
+      <div type="book" n="5">
+        <div type="poem" n="prologus">
+          <head>Prologue, To Particulo</head>
+          <p>WHEN I resolved my hand to stay
 For this, that others might have play,
 On reconsidering of my part
 I soon recanted in my heart:
@@ -1911,7 +2289,11 @@ How men of eminence like you
 My little book transcribe and quote,
 As like to live of classic note.
 It is th' ambition of my pen
-To win th' applause of learned men.</p></div><div type="poem" n="1"><head>Demetrius and Menander</head><p>If
+To win th' applause of learned men.</p>
+        </div>
+        <div type="poem" n="1">
+          <head>Demetrius and Menander</head>
+          <p>If
 I bring into this measured rhyme,
 To whom I've paid whate'er I owe,
 Let all men by these presents know.
@@ -1956,7 +2338,11 @@ When Phalereus beheld, he said:
 In this our presence ?" he was told-
 " It is Menander you behold."
 Then, changed at once from fierce to bland,
-He call'd, and took him by the hand.</p></div><div type="poem" n="2"><head>The Thief and the Travellrs</head><p>Two men equipp'd were on their way;
+He call'd, and took him by the hand.</p>
+        </div>
+        <div type="poem" n="2">
+          <head>The Thief and the Travellrs</head>
+          <p>Two men equipp'd were on their way;
 One fearful; one without dismay,
 An able fencer. As they went,
 A robber came with black intent;
@@ -1985,7 +2371,11 @@ How far your resolution goes."
 This narrative to those I tell
 Who stand their ground when all is well;
 But in the hour of pressing need
-Abash'd, most shamefully recede.</p></div><div type="poem" n="3"><head>The Bald Man and the Fly</head><p>As on his head she chanced to sit,
+Abash'd, most shamefully recede.</p>
+        </div>
+        <div type="poem" n="3">
+          <head>The Bald Man and the Fly</head>
+          <p>As on his head she chanced to sit,
 A Man's bald pate a Gadfly bit;
 He, prompt to crush the little foe,
 Dealt on himself a grievous blow:
@@ -2004,7 +2394,11 @@ More would I gladly have endured."
 What by this moral tale is meant
 Is-those who wrong not with intent
 Are venial; but to those that do
-Severity, I think, is due.</p></div><div type="poem" n="4"><head>The Man and the Ass</head><p>A certain Man, when he had made
+Severity, I think, is due.</p>
+        </div>
+        <div type="poem" n="4">
+          <head>The Man and the Ass</head>
+          <p>A certain Man, when he had made
 A sacrifice, for special aid
 To Hercules, and killed a swine,
 Did for his Ass's share assign
@@ -2025,7 +2419,11 @@ Why, if we reckon up the list,
 You'll find by far the major part
 Have been conducted in the cart:
 Temerity for some may do,
-But many more their rashness rue.</p></div><div type="poem" n="5"><head>The Buffoon and Country-fellow</head><p>In ev'ry age, in each profession,
+But many more their rashness rue.</p>
+        </div>
+        <div type="poem" n="5">
+          <head>The Buffoon and Country-fellow</head>
+          <p>In ev'ry age, in each profession,
 Men err the most by prepossession;
 But when the thing is clearly shown,
 Is fairly urged, and fully known,
@@ -2104,7 +2502,11 @@ Cannot your approbation gain,
 Yet, yet my brevity admire,
 Which may the more to praise aspire,
 The more our poets now-a-days
-Are tedious in their lifeless lays.</p></div><div type="poem" n="6"><head>The Two Bald Men</head><p>As on his way a Bald-pate went,
+Are tedious in their lifeless lays.</p>
+        </div>
+        <div type="poem" n="6">
+          <head>The Two Bald Men</head>
+          <p>As on his way a Bald-pate went,
 He found a comb by accident;
 Another, with a head as bare,
 Pursued, and hollow'd for a share.
@@ -2115,7 +2517,11 @@ We 're to no purpose fortunate;
 And, as the proverb says, have found
 A hobnail, for a hundred pound."
 They by this tale may be relieved
-Whose sanguine hopes have been deceived.</p></div><div type="poem" n="7"><head>Prince the Piper</head><p>A little, friv'lous, abject mind,
+Whose sanguine hopes have been deceived.</p>
+        </div>
+        <div type="poem" n="7">
+          <head>Prince the Piper</head>
+          <p>A little, friv'lous, abject mind,
 Pleased with the rabble, puff'd with wind,
 When once, as fast as pride presumes,
 Itself with vanity it plumes,
@@ -2178,7 +2584,11 @@ White frock, white pumps, a perfect beauty
 Proud of the feats he had achieved,
 And these high honours he received,
 With one unanimous huzza,
-Poor Prince was kick'd out of the play.</p></div><div type="poem" n="8"><head>Opportunity</head><p>Bald, naked, of a human shape,
+Poor Prince was kick'd out of the play.</p>
+        </div>
+        <div type="poem" n="8">
+          <head>Opportunity</head>
+          <p>Bald, naked, of a human shape,
 With fleet wings ready to escape,
 Upon a razor's edge his toes,
 And lock that on his forehead grows-
@@ -2191,7 +2601,11 @@ The ancients, in a bas-relief,
 Thus made an effigy of Time,
 That every one might use their prime;
 Nor e'er impede, by dull delay,
-Th' effectual business of to-day.</p></div><div type="poem" n="9"><head>The Bull and the Calf</head><p>A Bull was struggling to secure
+Th' effectual business of to-day.</p>
+        </div>
+        <div type="poem" n="9">
+          <head>The Bull and the Calf</head>
+          <p>A Bull was struggling to secure
 His passage at a narrow door,
 And scarce could reach the rack of hay,
 His horns so much were in his way.
@@ -2200,7 +2614,11 @@ How he might twist himself and go.
 "Hold thou thy prate; all this," says he,
 Ere thou wert calved was known to me."
 He, that a wiser man by half
-Would teach, may think himself this Calf.</p></div><div type="poem" n="10"><head>The Old Dog and the Huntsman</head><p>A Dog, that time and often tried,
+Would teach, may think himself this Calf.</p>
+        </div>
+        <div type="poem" n="10">
+          <head>The Old Dog and the Huntsman</head>
+          <p>A Dog, that time and often tried,
 His master always satisfied;
 And whensoever he assail'd,
 Against the forest-beasts prevail'd
@@ -2217,4 +2635,9 @@ Though not my strength, are still the same;
 For what I am if I am chid,
 Praise what I was, and what I did."
 Philetus, you the drift perceive
-Of this, with which I take my leave.</p></div></div></body></text></TEI>
+Of this, with which I take my leave.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
