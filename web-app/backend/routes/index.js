@@ -1,4 +1,4 @@
-let { executeSPARQLRequest, jsonToCsv, getCompetenciesQuestion, checkParagraph, executeDescribeRequest, getTypeFromURI } = require('./utils.js')
+let { executeSPARQLRequest, executeAnnotationJoinQuery, jsonToCsv, getCompetenciesQuestion, checkParagraph, executeDescribeRequest, getTypeFromURI } = require('./utils.js')
 let express = require('express');
 const path = require('path');
 const { qcs } = require("../queries/qcs.js")
@@ -757,6 +757,9 @@ router.get("/qcList", (req, res) => {
 
 
 router.get("/getQCspo", async (req, res) => {
+  if (!qcs.find(e => e.id === parseInt(req.query.id))) {
+    return res.status(404).json({ error: `Unknown competency question id: ${req.query.id}` })
+  }
   const query = fs.readFileSync(`queries/qc${req.query.id}_spo.rq`, 'utf8')
   const result = await executeSPARQLRequest(endpoint, query)
 
@@ -770,8 +773,12 @@ router.get("/getQCspo", async (req, res) => {
  */
 router.get("/getQC", async (req, res) => {
   console.log("Recieved query for QC ", req.query.id)
+  const qc = qcs.find(e => e.id === parseInt(req.query.id))
+  if (!qc) {
+    return res.status(404).json({ error: `Unknown competency question id: ${req.query.id}` })
+  }
   const query = getCompetenciesQuestion(`${req.query.id}`)
-  const result = await executeSPARQLRequest(endpoint, query)
+  const result = await executeAnnotationJoinQuery(endpoint, query)
   const data = []
   for (const row of result.results.bindings) {
     const temp_row = []
@@ -784,7 +791,7 @@ router.get("/getQC", async (req, res) => {
   const response = {
     query: query,
     results: result,
-    titleVizu: qcs.find(e => e.id === parseInt(req.query.id)).vizuTitle,
+    titleVizu: qc.vizuTitle,
     spo: fs.readFileSync(`queries/qc${req.query.id}_spo.rq`, 'utf8'),
     table: {
       columns: result.head.vars,
