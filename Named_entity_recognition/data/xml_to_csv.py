@@ -14,6 +14,8 @@ import atexit
 import ujson as json
 
 import spacy
+import sys
+import traceback
 from spacy.matcher import PhraseMatcher
 from spacy.lang.en.stop_words import STOP_WORDS
 
@@ -193,8 +195,7 @@ def extract_wikidata(entities, annotations, paragraph):
 
 
 AUTHOR_CONCORDANCE_PATHS = [
-    "../../repertoire_zoo/repertoire_codes_zoo.csv",
-    "../../repertoire_codes_zoo.csv",
+    "repertoire_zoo/repertoire_codes_zoo.csv",
 ]
 
 
@@ -585,9 +586,32 @@ if __name__ == "__main__":
     for concept_name in thesaurus_dict.keys():
         matcher.add(concept_name, [nlp_model(concept_name)])
 
-    directory_path = ('./zoo/')
-    xml_files = find_xml_files(directory_path)
+    # Argument optionnel : soit un entier (nombre max de fichiers a traiter
+    # dans cet appel, pour faire passer le corpus par lots et verifier le
+    # resultat entre deux lots), soit le chemin d'un fichier texte listant
+    # des chemins XML precis a traiter (un par ligne, relatifs a ce dossier),
+    # pour cibler un sous-ensemble plutot que tout ./zoo/. Dans les deux cas
+    # les fichiers deja a jour sont sautes via le test de mtime ci-dessous.
+    batch_limit = None
+    xml_files = None
+    if len(sys.argv) > 1:
+        arg = sys.argv[1]
+        if os.path.isfile(arg):
+            with open(arg, encoding="utf-8") as f:
+                xml_files = [line.strip() for line in f if line.strip()]
+        else:
+            batch_limit = int(arg)
+
+    if xml_files is None:
+        directory_path = ('./zoo/')
+        xml_files = sorted(find_xml_files(directory_path))
+    processed = 0
+    failed = []
     for xml_file in xml_files:
+
+        if batch_limit is not None and processed >= batch_limit:
+            print(f"Limite de lot atteinte ({batch_limit} fichiers) ; arret.")
+            break
 
         FILE = xml_file
         if not os.path.exists(FILE):
@@ -602,6 +626,17 @@ if __name__ == "__main__":
             continue
 
         print(xml_file)
-        extraction_data(FILE, CSV)
+        try:
+            extraction_data(FILE, CSV)
+        except Exception:
+            print(f"ECHEC sur {xml_file}, fichier saute, lot poursuivi :")
+            traceback.print_exc()
+            failed.append(xml_file)
+        else:
+            processed += 1
 
     print("End of CSV generation")
+    if failed:
+        print(f"{len(failed)} fichier(s) en echec :")
+        for f in failed:
+            print(f"  - {f}")
