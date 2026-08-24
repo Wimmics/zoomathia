@@ -35,6 +35,70 @@ const deriveLanguageLabel = (filePath) => {
   return null
 }
 
+// Meme convention de nommage que /getTranslation : <dossier><numero><lettre
+// de langue>[_suffixe].xml. Les temoins d'une meme oeuvre partagent
+// <dossier><numero> ; seule la lettre change. On s'appuie sur ce chemin
+// (pas le titre, qui differe d'une langue a l'autre, ex. "The Histories" vs
+// "Ἱστορία") pour regrouper de facon fiable.
+const ZOO_FILE_PATTERN = /^(.*\/zoo\/zoo\d+\/)(\d+)([a-z])(?:_\d+)?\.xml$/
+
+const zooWitnessMatch = (filePath) => filePath ? filePath.match(ZOO_FILE_PATTERN) : null
+
+const zooWitnessGroupKey = (filePath) => {
+  const match = zooWitnessMatch(filePath)
+  if (!match) return null
+  const [, dir, number] = match
+  return `${dir}${number}`
+}
+
+// Dans le corpus zoo, on ne garde que le temoin original (pas la traduction
+// anglaise "e", deja retrouvee automatiquement par /getTranslation une fois
+// l'oeuvre ouverte) pour eviter les doublons dans les listes "Work", et on
+// ne leur attribue plus de sigle de langue. Le corpus hors zoo (Perseus,
+// TLG...) n'a pas cet appariement automatique : il garde son comportement
+// actuel (un temoin par ligne, sigle affiche).
+const dedupeZooWitnesses = (rows) => {
+  const groups = new Map()
+  for (const row of rows) {
+    const key = zooWitnessGroupKey(row.file)
+    if (!key) continue
+    if (!groups.has(key)) groups.set(key, [])
+    groups.get(key).push(row)
+  }
+
+  // Un seul temoin, ou une vraie paire original + traduction anglaise : pas
+  // de sigle necessaire (fusionne en une seule entree pour la paire).
+  // Certaines oeuvres ont plusieurs temoins non-anglais (original decoupe
+  // en plusieurs fichiers, ex. 1g_1, 1g_2, 1g_3) : les fusionner en garderait
+  // un seul et ferait disparaitre les autres, donc ce cas garde un temoin
+  // par ligne avec son sigle, comme le corpus hors zoo.
+  const chosenUris = new Set()
+  const ambiguousKeys = new Set()
+  for (const [key, group] of groups) {
+    const nonEnglish = group.filter(r => zooWitnessMatch(r.file)[3] !== 'e')
+    if (nonEnglish.length === 1) {
+      chosenUris.add(nonEnglish[0].uri)
+    } else if (nonEnglish.length !== 1 && group.length > 1) {
+      // 0 ou plusieurs temoins non-anglais dans un groupe a plusieurs fichiers :
+      // aucun candidat sur/unique a choisir comme original, on ne fusionne pas.
+      ambiguousKeys.add(key)
+    }
+  }
+
+  const result = []
+  for (const row of rows) {
+    const key = zooWitnessGroupKey(row.file)
+    if (!key || ambiguousKeys.has(key)) {
+      result.push({ uri: row.uri, title: row.title, author: row.author, language: deriveLanguageLabel(row.file) })
+      continue
+    }
+    const group = groups.get(key)
+    if (group.length > 1 && !chosenUris.has(row.uri)) continue
+    result.push({ uri: row.uri, title: row.title, author: row.author, language: null })
+  }
+  return result
+}
+
 
 router.get('/download-xml', (req, res) => {
   const fileName = req.query.file
@@ -208,17 +272,14 @@ const getWorksFromAuthor = (author) => {
 
 router.get('/getWorksFromAuthors', async (req, res) => {
   console.log("Get works from author")
-  const response = []
   const result = await executeSPARQLRequest(endpoint, getWorksFromAuthor(req.query.author))
-  for (const elt of result.results.bindings) {
-    response.push({
-      uri: elt?.oeuvre.value,
-      title: elt?.title.value,
-      author: req.query.author,
-      language: deriveLanguageLabel(elt?.file?.value)
-    })
-  }
-  res.status(200).json(response)
+  const rows = result.results.bindings.map(elt => ({
+    uri: elt?.oeuvre.value,
+    title: elt?.title.value,
+    author: req.query.author,
+    file: elt?.file?.value
+  }))
+  res.status(200).json(dedupeZooWitnesses(rows))
 })
 
 const getWorks = () => {
@@ -234,17 +295,14 @@ const getWorks = () => {
 
 router.get('/getWorks', async (req, res) => {
   console.log("Get works from author")
-  const response = []
   const result = await executeSPARQLRequest(endpoint, getWorks())
-  for (const elt of result.results.bindings) {
-    response.push({
-      uri: elt?.oeuvre.value,
-      title: elt?.title.value,
-      author: elt?.author.value,
-      language: deriveLanguageLabel(elt?.file?.value)
-    })
-  }
-  res.status(200).json(response)
+  const rows = result.results.bindings.map(elt => ({
+    uri: elt?.oeuvre.value,
+    title: elt?.title.value,
+    author: elt?.author.value,
+    file: elt?.file?.value
+  }))
+  res.status(200).json(dedupeZooWitnesses(rows))
 })
 
 const getWorksByUri = (uri) => {
