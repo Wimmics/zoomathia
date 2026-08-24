@@ -328,6 +328,30 @@ def is_english_file(file_path):
     return get_witness_lang(file_path) == "e"
 
 
+def get_witness_suffix(file_path):
+    """Suffixe numerique du fichier (ex. "_2" pour "1l_2.xml"), ou "" s'il n'y
+    en a pas. Deux temoins d'une meme langue peuvent partager le meme titre
+    (ex. zoo20/1l_1.xml et zoo20/1l_2.xml, deux editions de Cynegetica :
+    Haupt 1838 vs The Latin Library), ce qui leur donnerait sinon la meme
+    URI (auteur+titre+langue) et ferait fusionner a tort leurs paragraphes
+    dans le graphe. On ajoute donc ce suffixe a l'URI uniquement quand un
+    autre fichier du meme dossier partage la meme lettre de langue -
+    inutile (mais inoffensif) pour les cas ou les titres different deja."""
+    basename = os.path.basename(file_path)
+    match = re.match(r"^(\d+)([a-z])(_\d+)?\.xml$", basename)
+    if not match:
+        return ""
+    number, lang, suffix = match.groups()
+    if not suffix:
+        return ""
+    folder = os.path.dirname(file_path)
+    siblings = [
+        f for f in os.listdir(folder)
+        if re.match(rf"^{re.escape(number)}{re.escape(lang)}(_\d+)?\.xml$", f)
+    ]
+    return suffix if len(siblings) > 1 else ""
+
+
 def extract_paragraph(parent_division, parent_data, parent_uri, link_data, paragraph_data, annotation_data):
 
     paragraph_author = ""
@@ -533,13 +557,24 @@ def extraction_data(FILE,CSV):
         # peuvent finir avec la meme URI si xml:lang est absent des deux cotes,
         # ce qui fusionne a tort leurs structures internes (chapitres, etc.)
         # et peut creer un cycle parent/enfant cote appli web.
-        lang_suffix = get_witness_lang(FILE)
+        lang_suffix = get_witness_lang(FILE) + get_witness_suffix(FILE)
         # Le nom canonique (CANONICAL_AUTHORS) est deja propre: pas besoin de le
         # faire passer par Google Translate (meme risque de corruption que le
         # Bug 6 sur les titres). On ne traduit que si aucune forme canonique
         # n'a ete trouvee (repli sur le texte brut extrait du XML).
         author_uri_segment = author if zoo_folder in CANONICAL_AUTHORS else clean_uri(author)
         uri = f"http://ns.inria.fr/zoomathia/{sanitize_iri_component(author_uri_segment.replace(' ', '_'))}/{sanitize_iri_component(oeuvre_id)}/{lang_suffix}"
+
+        # zoo20/1l_1 et 1l_2 sont deux editions de Cynegetica (Grattius) au
+        # titre identique : sans ca, elles seraient indiscernables dans les
+        # menus "Work" de l'appli (voir aussi get_witness_suffix ci-dessus,
+        # qui evite deja qu'elles partagent la meme URI).
+        EDITION_LABELS = {
+            "1l_1.xml": " (ed. Haupt 1838)",
+            "1l_2.xml": " (ed. The Latin Library)",
+        }
+        if zoo_folder == "zoo20" and os.path.basename(FILE) in EDITION_LABELS:
+            oeuvre_title += EDITION_LABELS[os.path.basename(FILE)]
 
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
