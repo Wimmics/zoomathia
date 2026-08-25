@@ -1,6 +1,7 @@
 from time import sleep
 import time
 import re
+import sys
 import requests
 
 import pandas as pd
@@ -259,6 +260,11 @@ def clear_mongo_collection(db_name, collection_name, mongo_uri="mongodb://localh
 
 
 if __name__ == "__main__":
+    only_prefixes = None
+    if len(sys.argv) > 1:
+        with open(sys.argv[1], "r", encoding="utf-8") as f:
+            only_prefixes = set(line.strip() for line in f if line.strip())
+
     g = Graph()
     g = load(g, "th310.ttl")
     g = load(g, "zoomathia.ttl")
@@ -298,6 +304,9 @@ if __name__ == "__main__":
                 prefix = os.path.basename(csv)[:-len(suffix)]
                 works.setdefault(prefix, {})[collection_name] = csv
                 break
+
+    if only_prefixes is not None:
+        works = {prefix: files for prefix, files in works.items() if prefix in only_prefixes}
 
     skipped = 0
     for prefix, files in works.items():

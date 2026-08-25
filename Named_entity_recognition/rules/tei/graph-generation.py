@@ -1,4 +1,5 @@
 import os
+import sys
 import shutil
 import subprocess
 from pymongo import MongoClient
@@ -358,7 +359,13 @@ def main():
 
     texts = get_texts()
 
-    for text in texts:
+    to_process = texts
+    if len(sys.argv) > 1:
+        with open(sys.argv[1], "r", encoding="utf-8") as f:
+            only_prov = set(line.strip() for line in f if line.strip())
+        to_process = [t for t in texts if t["prov"] in only_prov]
+
+    for text in to_process:
         process_text(text)
 
     merge_all_graphs(texts)
