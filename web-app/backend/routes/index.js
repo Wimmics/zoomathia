@@ -88,7 +88,15 @@ const dedupeZooWitnesses = (rows) => {
   const result = []
   for (const row of rows) {
     const key = zooWitnessGroupKey(row.file)
-    if (!key || ambiguousKeys.has(key)) {
+    if (ambiguousKeys.has(key)) {
+      // Cas ambigus (zoo20, zoo54) : chaque temoin se distingue deja par son
+      // titre (edition/traducteur/annee, ou contenu different pour zoo54) -
+      // le sigle de langue n'ajoute rien, meme pour l'anglais (voir
+      // EDITION_LABELS dans xml_to_csv.py pour zoo20).
+      result.push({ uri: row.uri, title: row.title, author: row.author, language: null })
+      continue
+    }
+    if (!key) {
       result.push({ uri: row.uri, title: row.title, author: row.author, language: deriveLanguageLabel(row.file) })
       continue
     }
