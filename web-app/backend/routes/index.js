@@ -272,13 +272,16 @@ const getWorksFromAuthor = (author) => {
 
 router.get('/getWorksFromAuthors', async (req, res) => {
   console.log("Get works from author")
+  if (!req.query.author) return res.status(400).json({ error: "author query param is required" })
   const result = await executeSPARQLRequest(endpoint, getWorksFromAuthor(req.query.author))
-  const rows = result.results.bindings.map(elt => ({
-    uri: elt?.oeuvre.value,
-    title: elt?.title.value,
-    author: req.query.author,
-    file: elt?.file?.value
-  }))
+  const rows = result.results.bindings
+    .filter(elt => elt?.oeuvre && elt?.title)
+    .map(elt => ({
+      uri: elt.oeuvre.value,
+      title: elt.title.value,
+      author: req.query.author,
+      file: elt?.file?.value
+    }))
   res.status(200).json(dedupeZooWitnesses(rows))
 })
 
@@ -296,12 +299,14 @@ const getWorks = () => {
 router.get('/getWorks', async (req, res) => {
   console.log("Get works from author")
   const result = await executeSPARQLRequest(endpoint, getWorks())
-  const rows = result.results.bindings.map(elt => ({
-    uri: elt?.oeuvre.value,
-    title: elt?.title.value,
-    author: elt?.author.value,
-    file: elt?.file?.value
-  }))
+  const rows = result.results.bindings
+    .filter(elt => elt?.oeuvre && elt?.title && elt?.author)
+    .map(elt => ({
+      uri: elt.oeuvre.value,
+      title: elt.title.value,
+      author: elt.author.value,
+      file: elt?.file?.value
+    }))
   res.status(200).json(dedupeZooWitnesses(rows))
 })
 
@@ -326,6 +331,7 @@ router.get("/getWorkByUri", async (req, res) =>  {
   const result = await executeSPARQLRequest(endpoint, getWorksByUri(req.query.uri))
 
   for(elt of result.results.bindings){
+    if (!elt?.work || !elt?.title || !elt?.author) continue
     response.push({
       uri: elt.work.value,
       title: elt.title.value,
