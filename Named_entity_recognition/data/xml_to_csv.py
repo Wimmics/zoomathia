@@ -352,6 +352,103 @@ def get_witness_suffix(file_path):
     return suffix if len(siblings) > 1 else ""
 
 
+# Oeuvres dont le temoin anglais est suffisamment bien aligne (livre/chapitre)
+# avec l'original pour etre reutilise a la place de Google Translate - voir
+# DOCUMENTATION_SYSTEME_ZOO.md section 20.7/20.9 pour la methode de mesure
+# (similarite de Jaccard sur les couples (livre, chapitre)) et les chiffres
+# par oeuvre. Limite volontairement aux oeuvres a temoin unique en prose
+# (pas de vers <l>/<cit>) les plus fiables pour une premiere version.
+ENGLISH_ALIGNED_WORKS = {
+    "zoo10": "1e.xml",  # Athenaeus, Deipnosophistes - 98%
+    "zoo85": "1e.xml",  # Solinus - 95%
+    "zoo16": "1e.xml",  # Diodore, Bibliotheca Historica - 82%
+    "zoo15": "1e.xml",  # Columella, De re rustica - 47%
+    "zoo20": "1e.xml",  # Grattius, Cynegetica - 100%
+    "zoo22": "1e_1.xml",  # Hesiode, Works and Days - 100%
+}
+
+_english_alignment_cache = {}
+
+
+def _walk_english_paragraphs(div, path, out_map):
+    """Parcourt recursivement les div type=book/chapter... d'un temoin anglais
+    deja traduit par un humain, avec la meme logique positionnelle que
+    extract_division_metadata, et associe a chaque chemin (ex: (1,1) pour
+    livre 1 chapitre 1) le texte concatene de ses paragraphes <p>."""
+    for tag_id, tag_div in enumerate(div.find_all(re.compile("^div"), recursive=False), 1):
+        current_path = path + (tag_id,)
+        if does_it_have_children_div(tag_div):
+            _walk_english_paragraphs(tag_div, current_path, out_map)
+        else:
+            texts = []
+            for p in tag_div.find_all(["p"]):
+                if not p.find_parent('p') and strip_text(p.text) != "":
+                    texts.append(strip_paragraph_text(p.text))
+            if texts:
+                out_map[current_path] = " ".join(texts)
+
+
+def get_english_alignment_map(non_english_file_path):
+    """Retourne (et met en cache par dossier zooN) la correspondance chemin
+    (livre, chapitre, ...) -> texte anglais deja traduit humainement, pour
+    l'oeuvre donnee, si elle beneficie d'un temoin anglais suffisamment bien
+    aligne (ENGLISH_ALIGNED_WORKS ci-dessus). None si l'oeuvre n'y figure pas
+    ou si le fichier anglais correspondant est introuvable/illisible."""
+    zoo_folder = os.path.basename(os.path.dirname(non_english_file_path))
+    if zoo_folder not in ENGLISH_ALIGNED_WORKS:
+        return None
+    if zoo_folder in _english_alignment_cache:
+        return _english_alignment_cache[zoo_folder]
+
+    en_path = os.path.join(os.path.dirname(non_english_file_path), ENGLISH_ALIGNED_WORKS[zoo_folder])
+    out_map = None
+    if os.path.exists(en_path):
+        try:
+            with open(en_path, "r", encoding="UTF-8") as f:
+                soup = bs(f, "lxml-xml")
+            out_map = {}
+            _walk_english_paragraphs(soup.body, (), out_map)
+        except Exception as e:
+            print(f"[WARNING] Echec de la construction de la carte d'alignement anglais pour {en_path}: {e}")
+            out_map = None
+
+    _english_alignment_cache[zoo_folder] = out_map
+    return out_map
+
+
+def get_aligned_translation(file_path, parent_uri):
+    """Cherche, pour un chemin de division non-anglais (ex: '.../g/1/1'), le
+    texte anglais deja traduit humainement correspondant, en repliant les
+    sous-niveaux supplementaires d'un cote ou de l'autre sur le niveau commun
+    le moins profond (cas Strabon, documente section 20.4/20.6 : un temoin
+    peut avoir un niveau de decoupage de plus que l'autre)."""
+    align_map = get_english_alignment_map(file_path)
+    if not align_map:
+        return None
+
+    numeric_segments = tuple(int(seg) for seg in parent_uri.split("/") if seg.isdigit())
+    if not numeric_segments:
+        return None
+
+    if numeric_segments in align_map:
+        return align_map[numeric_segments]
+
+    # Notre chemin est moins profond que l'anglais (ex: grec 1/1/5 ->
+    # anglais 1/1/5/1, 1/1/5/2... regroupes en un seul texte).
+    matches = [text for path, text in align_map.items() if path[:len(numeric_segments)] == numeric_segments]
+    if matches:
+        return " ".join(matches)
+
+    # Notre chemin est plus profond que l'anglais (ex: 1/1/5/2 -> chercher
+    # le prefixe anglais 1/1/5 puis 1/1).
+    for depth in range(len(numeric_segments) - 1, 0, -1):
+        prefix = numeric_segments[:depth]
+        if prefix in align_map:
+            return align_map[prefix]
+
+    return None
+
+
 def extract_paragraph(parent_division, parent_data, parent_uri, link_data, paragraph_data, annotation_data):
 
     paragraph_author = ""
@@ -436,7 +533,8 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                         if is_english_file(FILE):
                             translated_paragraph = paragraph_text
                         else:
-                            translated_paragraph = split_and_translate(paragraph_text, "en")
+                            aligned = get_aligned_translation(FILE, parent_uri)
+                            translated_paragraph = aligned if aligned else split_and_translate(paragraph_text, "en")
 
                         find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                         wikidata_entities = get_NER_from_wikidata(translated_paragraph)
@@ -457,7 +555,8 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                         if is_english_file(FILE):
                             translated_paragraph = paragraph_text
                         else:
-                            translated_paragraph = split_and_translate(paragraph_text, "en")
+                            aligned = get_aligned_translation(FILE, parent_uri)
+                            translated_paragraph = aligned if aligned else split_and_translate(paragraph_text, "en")
 
                         find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                         wikidata_entities = get_NER_from_wikidata(translated_paragraph)
