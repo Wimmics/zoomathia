@@ -365,6 +365,7 @@ ENGLISH_ALIGNED_WORKS = {
     "zoo15": "1e.xml",  # Columella, De re rustica - 47%
     "zoo20": "1e.xml",  # Grattius, Cynegetica - 100%
     "zoo22": "1e_1.xml",  # Hesiode, Works and Days - 100%
+    "zoo31": "1e.xml",  # Ovide, Halieuticon - fragment continu unique des deux cotes (100% apres correction de la fausse division en 5 livres)
 }
 
 _english_alignment_cache = {}
@@ -671,6 +672,7 @@ def extraction_data(FILE,CSV):
         EDITION_LABELS = {
             "1l_1.xml": " (ed. Haupt 1838)",
             "1l_2.xml": " (ed. The Latin Library)",
+            "1e.xml": " (trad. Duff & Duff, Loeb 1935)",
         }
         if zoo_folder == "zoo20" and os.path.basename(FILE) in EDITION_LABELS:
             oeuvre_title += EDITION_LABELS[os.path.basename(FILE)]
