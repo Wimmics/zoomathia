@@ -366,6 +366,10 @@ ENGLISH_ALIGNED_WORKS = {
     "zoo20": "1e.xml",  # Grattius, Cynegetica - 100%
     "zoo22": "1e_1.xml",  # Hesiode, Works and Days - 100%
     "zoo31": "1e.xml",  # Ovide, Halieuticon - fragment continu unique des deux cotes (100% apres correction de la fausse division en 5 livres)
+    "zoo4": "2e.xml",  # Antigonus - grec (Keller 1877, zoo4/2g) et anglais (Hardiman,
+                        # paradoxography.org, CC BY-SA) encodes avec la meme numerotation
+                        # de chapitre par construction - ne s'applique qu'au temoin 2g ;
+                        # zoo4/1g (TLG, licence restreinte) n'est pas traite par le pipeline.
 }
 
 _english_alignment_cache = {}
@@ -658,6 +662,17 @@ def extraction_data(FILE,CSV):
         # ce qui fusionne a tort leurs structures internes (chapitres, etc.)
         # et peut creer un cycle parent/enfant cote appli web.
         lang_suffix = get_witness_lang(FILE) + get_witness_suffix(FILE)
+        # zoo4/1g.xml (TLG, licence restreinte, EN ATTENTE) et zoo4/2g.xml
+        # (Keller 1877, domaine public) sont deux temoins grecs distincts du
+        # meme titre - meme probleme de collision d'URI que Grattius/zoo20
+        # ci-dessous, mais avec des numeros de temoin differents (1 vs 2)
+        # plutot qu'un suffixe _N partage : get_witness_suffix() ne les
+        # detecte donc pas comme "siblings". Fix cible plutot que d'elargir
+        # cette fonction a tout le corpus (trop de risque de deplacer des
+        # URI deja publiees ailleurs).
+        ZOO4_WITNESS_SUFFIXES = {"1g.xml": "_1", "2g.xml": "_2"}
+        if zoo_folder == "zoo4" and os.path.basename(FILE) in ZOO4_WITNESS_SUFFIXES:
+            lang_suffix += ZOO4_WITNESS_SUFFIXES[os.path.basename(FILE)]
         # Le nom canonique (CANONICAL_AUTHORS) est deja propre: pas besoin de le
         # faire passer par Google Translate (meme risque de corruption que le
         # Bug 6 sur les titres). On ne traduit que si aucune forme canonique
@@ -676,6 +691,13 @@ def extraction_data(FILE,CSV):
         }
         if zoo_folder == "zoo20" and os.path.basename(FILE) in EDITION_LABELS:
             oeuvre_title += EDITION_LABELS[os.path.basename(FILE)]
+
+        ZOO4_EDITION_LABELS = {
+            "1g.xml": " (TLG - EN ATTENTE, licence restreinte)",
+            "2g.xml": " (ed. Keller 1877)",
+        }
+        if zoo_folder == "zoo4" and os.path.basename(FILE) in ZOO4_EDITION_LABELS:
+            oeuvre_title += ZOO4_EDITION_LABELS[os.path.basename(FILE)]
 
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
