@@ -594,7 +594,7 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 # numero de chapitre depuis l'URI serait silencieusement faux). Fix cible
 # a ces deux dossiers plutot qu'une bascule generale sur n= pour tout le
 # corpus, qui changerait l'URI de chaque chapitre deja publie ailleurs.
-GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89"}
+GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89", "zoo14"}
 
 
 def compute_div_id(tag_div, tag_id, tag_div_type, zoo_folder=None):
