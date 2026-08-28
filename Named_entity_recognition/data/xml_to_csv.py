@@ -370,6 +370,9 @@ ENGLISH_ALIGNED_WORKS = {
                         # paradoxography.org, CC BY-SA) encodes avec la meme numerotation
                         # de chapitre par construction - ne s'applique qu'au temoin 2g ;
                         # zoo4/1g (TLG, licence restreinte) n'est pas traite par le pipeline.
+    "zoo89": "1e.xml",  # Pseudo-Aristote, Peri thaumasion akousmaton - grec (Loeb/Hett
+                         # 1936, domaine public) et anglais (Hett 1936 via paradoxography.org,
+                         # CC BY-SA) encodes avec la meme numerotation de chapitre.
 }
 
 _english_alignment_cache = {}
@@ -579,20 +582,47 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
     except UnboundLocalError:
         print("Paragraph_id and paragraph_text is not defined")
 
-def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annotation_data, depth):
-    for tag_id, tag_div in tqdm(enumerate(div.find_all(re.compile("^div"), recursive=False), 1)):
-        div_type_attr = tag_div.get("type", "")
-        if div_type_attr and "textpart" not in div_type_attr and not any(c.isnumeric() for c in div_type_attr):
-            tag_div_type = div_type_attr.title().replace(" ", "")
-        else:
-            fallback_attr = tag_div.get("subtype", "") or div_type_attr or tag_div.name
-            tag_div_type = fallback_attr.title().replace(" ", "")
+# zoo4 (Antigonus) et zoo89 (Pseudo-Aristote) ne retiennent que le sous-ensemble
+# zoologique de chapitres de leur oeuvre source (98/173 et 72/178) : leurs n=
+# ont donc des trous (1,2,3,4,6,7...). extract_division_metadata utilise par
+# defaut la position (1er, 2e, 3e div...) plutot que n= pour construire l'URI
+# (cf. tag_div_id ci-dessous) - sans consequence tant que n= suit la position
+# sans trou, ce qui etait toujours le cas jusqu'a ces deux oeuvres. Avec des
+# trous, position et n= divergent : l'URI d'un chapitre ne correspond plus a
+# son vrai numero (le champ 'title' reste correct, lui, donc rien de faux ne
+# s'affichait cote appli, mais toute recherche/lien futur qui deduirait le
+# numero de chapitre depuis l'URI serait silencieusement faux). Fix cible
+# a ces deux dossiers plutot qu'une bascule generale sur n= pour tout le
+# corpus, qui changerait l'URI de chaque chapitre deja publie ailleurs.
+GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89", "zoo14"}
 
-        if tag_div_type == "BekkerPage":
-            # extract number from the title
-            tag_div_id = int(re.search(r"\d+", tag_div["n"]).group())
-        else:
-            tag_div_id = tag_id
+
+def compute_div_id(tag_div, tag_id, tag_div_type, zoo_folder=None):
+    """Identifiant utilise dans l'URI pour ce div : le numero de page Bekker
+    s'il y en a un, sinon n= pour les dossiers a numerotation trouee
+    (GAPPED_CHAPTER_NUMBERING_FOLDERS), sinon la position (comportement
+    d'origine). Factorise pour rester coherent entre le calcul de l'id du
+    div courant et les URI enfants pre-listees avant la recursion."""
+    if tag_div_type == "BekkerPage":
+        return int(re.search(r"\d+", tag_div["n"]).group())
+    if (zoo_folder in GAPPED_CHAPTER_NUMBERING_FOLDERS and tag_div.has_attr("n")
+            and tag_div["n"].isdigit()):
+        return int(tag_div["n"])
+    return tag_id
+
+
+def get_div_type(tag_div):
+    div_type_attr = tag_div.get("type", "")
+    if div_type_attr and "textpart" not in div_type_attr and not any(c.isnumeric() for c in div_type_attr):
+        return div_type_attr.title().replace(" ", "")
+    fallback_attr = tag_div.get("subtype", "") or div_type_attr or tag_div.name
+    return fallback_attr.title().replace(" ", "")
+
+
+def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annotation_data, depth, zoo_folder=None):
+    for tag_id, tag_div in tqdm(enumerate(div.find_all(re.compile("^div"), recursive=False), 1)):
+        tag_div_type = get_div_type(tag_div)
+        tag_div_id = compute_div_id(tag_div, tag_id, tag_div_type, zoo_folder)
 
         if tag_div.find_all("head", recursive=False):
             tag_div_title = strip_text(tag_div.head.text)
@@ -604,9 +634,10 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
         # if still div remaining
         if does_it_have_children_div(tag_div):
             if tag_div_type == "Oeuvre":
-                for child_id, _ in enumerate(tag_div.find_all(re.compile("^div"), recursive=False), 1):
+                for child_tag_id, child_div in enumerate(tag_div.find_all(re.compile("^div"), recursive=False), 1):
+                    child_id = compute_div_id(child_div, child_tag_id, get_div_type(child_div), zoo_folder)
                     link_data.append([parent_uri, tag_div_type, tag_div_id, tag_div_title, f"{parent_uri}/{child_id}"])
-                extract_division_metadata(tag_div, parent_uri, link_data, paragraph_data, annotation_data, depth + 1)
+                extract_division_metadata(tag_div, parent_uri, link_data, paragraph_data, annotation_data, depth + 1, zoo_folder)
                 continue
 
             if depth == 0:
@@ -619,10 +650,11 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
                                    tag_div_type, tag_id, tag_div_title],
                                   current_uri, link_data, paragraph_data, annotation_data)
 
-            for child_id, _ in enumerate(tag_div.find_all(re.compile("^div"), recursive=False),1):
+            for child_tag_id, child_div in enumerate(tag_div.find_all(re.compile("^div"), recursive=False),1):
                 # ["parent_uri", "type", "id", "title", "child"]
+                child_id = compute_div_id(child_div, child_tag_id, get_div_type(child_div), zoo_folder)
                 link_data.append([parent_uri, tag_div_type, tag_div_id, tag_div_title, f"{current_uri}/{child_id}"])
-            extract_division_metadata(tag_div, current_uri, link_data, paragraph_data, annotation_data, depth + 1)
+            extract_division_metadata(tag_div, current_uri, link_data, paragraph_data, annotation_data, depth + 1, zoo_folder)
         else:
             if depth == 0:
                 link_data.append([parent_uri, "Oeuvre", tag_div_id, tag_div_title, f"{parent_uri}/{tag_div_id}"])
@@ -701,7 +733,7 @@ def extraction_data(FILE,CSV):
 
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
-        extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0)
+        extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0, zoo_folder)
 
         pd.DataFrame(link_data, columns=link_labels).to_csv('./output/' + CSV + "_link.csv", index=False,
                                                             encoding='UTF-8')
