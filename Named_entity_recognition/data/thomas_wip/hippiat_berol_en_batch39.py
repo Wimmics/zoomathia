@@ -1,0 +1,83 @@
+# Hippiatrica Berolinensia - English translation, batch 39
+# global indices 2411-2475 (65 items)
+# Section: end of "On a bruise of the hoof" (Hippocrates, Pelagonius, and
+# further remedies) -> "On madness and rabies" (Apsyrtus to Gaius of
+# Alexandria - causes, remedies, the striking claim that castration alone
+# reliably stops an onset of madness; Hierocles/anonymous parallels;
+# Eumelus; Pelagonius; Hippocrates - binding, bleeding, isolation in the
+# dark, gradual refeeding) -> "On mismatched pairs suited to the yoke"
+# (Apsyrtus to Apollophanes - physical traits for good team-horses) ->
+# "On flux (rheum) in the head" (Apsyrtus to Pasicrates of Alexandria -
+# signs, exercise, purgative drenches, a troche remedy; Eumelus twice;
+# "On clearing the head"; "On katakrania," Apsyrtus).
+#
+# NOTE: item 2439 has a short lacuna in the source (marked "...." before
+# "and it refuses food"), rendered as [lacuna].
+
+BATCH39 = [
+"occur more easily in the hooves of horses.",
+"If you notice a bruise has occurred - and it is recognized both by the affected hoof being hotter, and by the horse stepping on the tip of the toe of the foot that pains it - boil barley, wrap it around and bind it on, then, pouring hot water onto the barley, foment for a long time, twice or even three times. And, above all, from extensive fomenting, the bruise will be dispersed. And if this does not happen, it will at any rate be brought to a head.",
+"Or boil barley-flour in mixed wine and apply it, and add dove-dung as a poultice. And if this happens and it comes to a head, open it as is customary at the place where the bruise occurs, so that all the fluid may come out. And thus, having anointed with the remedy compounded of blue vitriol, plug the scraped place with a sponge, and do this, until it is healed. Or, if you cannot procure this remedy, take a wick and soak it in vinegar-oil, and apply it to the opened place. And do this, until it is healed.",
+"And if it happens that the bruise bursts upward, that is, near the growth-point of the hoof, which happens especially to hard-hoofed animals, at first use the vinegar-oil and the wick. And if the pain, as far as possible, ceases, use the hoof-ointment applied over the whole hoof, compounded from lizards, for the strengthening of the hoof, and thus you will drive out what seems to have caused",
+"the bursting. This is the remedy: into a new pot, put three pints of oil, and put in fresh green lizards, about two or even three, and, covering the pot, boil it, so that the lizards are thoroughly cooked in the oil. And after this, remove their bones, and add in six ounces of ground bitumen and half a pint of liquid pitch and two pounds of old pig-fat; boil all these together well, and use it, anointing the hoof. This will make the foot of the animal firmer, as far as possible, and harder.",
+"For never letting an animal develop a bruise.",
+"When the animal comes in from green fodder, take a date, remove its pit, and fill the date with white-lead, and give it through the mouth, sending it off healthy. Do this from time to time.",
+"By Hippocrates, for the same.",
+"If a bruise occurs inside the foot, you will treat the horse thus: scrape around the hoof, and apply as a poultice barley boiled in water. Or knead hot bran and mix in a little old dung, and apply as a poultice. And if the little bone in the frog becomes visible, use honey and vinegar with a wick as a plug for some days. Then apply an astringent: grind cypress-leaves with vinegar, or likewise apply tamarisk-leaves. Or boil pomegranate-rind husks in vinegar and grind and apply, or pound them dry and sprinkle on. Or use a portion of blue vitriol or pounded gall-nuts, doing the same, first washing the place with vinegar.",
+"Another, by Pelagonius.",
+"If the bruise has already been opened, mix grains of salt with vinegar and apply to the opened place at the toe. Warm the toe also with hot bran. And after three days, if the humor stops flowing, mix split alum with red ochre and vinegar, and store it. And when the heat has stopped, drain off pig-fat through the opened place. And when it no longer goes lame, undo it and seal with bitumen.",
+"Another.",
+"If the bruise has pus, scrape the whole hoof deeply, and, having opened the place well, douse it with vinegar-water, and treat the wound with the liquid remedy, and, having melted goat- and sheep-fat together, anoint with a sponge-on-a-stick, and place dry horse-dung on top and bind it. For it will do well.",
+"On madness and rabies.",
+"By Apsyrtus.",
+"Apsyrtus to Gaius, horse-doctor of Alexandria, greetings. You wrote to me asking what remedies one must use against those that go mad and become rabid. They are helped by being drenched through the nostrils with four cotylae of dry, dark wine, being restrained with a rope and a halter. Or by boiling wild-cucumber root in two cotylae of wine and mixing in soda, and drenching. And by boiling black hellebore once in vinegar, and anointing the whole body with it, especially the head, and by using more vigorous rubbing, and exercising it more, and by drawing blood from the legs and forelegs. One must not offer them barley, until they become calm again.",
+"It is also said that they must stand at rest, in a dark place; but we, doing this, found them rather more agitated and dying. The only remedy that has real power, whenever one perceives it beginning to become excited, is to lay it down and castrate it; for it stops its madness this way. This affliction happens to it either from excessive heat, or from an excessive quantity of vetch fed, or from an inflow of blood to the meninges, or from bile leaking into the blood-carrying veins, or from the poor quality of water.",
+"The affliction of madness and rabies happens to horses especially either from excessive heat, or from an excessive quantity of vetch fed, or when more blood has been carried to the meninges, or from bile leaking into the blood-carrying veins, or from the poor quality of water. It whinnies, then, inopportunely and bites, and runs at people too. They are helped by being drenched through the nostrils with four cotylae of dry, dark wine, and restrained securely with a rope, or with wild-cucumber root boiled in two cotylae of wine, mixed with soda, or with rue pounded together with mint.",
+"Let them be anointed all over the body with black hellebore boiled once in vinegar, especially the head, using more vigorous rubbing. Let them be exercised more, and let blood be drawn from the legs and forelegs. Do not offer barley, until they become calm.",
+"Some say that they must be made to stand in a darker, quieter place, which Apsyrtus says does not help; that,",
+"above all, he praises: that, whenever one perceives the horse beginning to go mad, one should lay it down and castrate it; for thus it stops its madness.",
+"Another.",
+"The horse has its eyes more hollow, and its nostrils more upright, and its ears upright. If, then, it begins to bite, treat it thus: draw blood from its legs and forelegs, and on that same day let it remain without food; on the following day give it a little, and, after three days, give it, while fasting, one ounce of hemlock mixed with water.",
+"By Eumelus, for the same.",
+"The animal, often - it is recognized thus: it gnaws at the manger, chews on itself with bites, attacks people, moves its ears continually, has fixed, gleaming eyes, and also sends forth froth. Bind this one carefully, and take blood from the legs and the spine, and rub the body with this same blood mixed with wine, and cauterize the belly and the temples with many small cautery-pricks. And if it is a stallion, geld it. And keep it shut up in a darker place, until it develops an appetite for food. And gradually, once it has become gentle, you will treat it thus: drench through the mouth with an oxybaphon of ground hemlock-seed in half a pint of water. Also loosen its belly, and anoint the head with hot vinegar mixed with ground black hellebore, and cover it with sheepskins. Then grind rue, and likewise anoint its head with it, and let it stand in a",
+"warm place.",
+"Another.",
+"Another, by Hippocrates.",
+"These signs accompany a rabid horse: the eyes protrude, bloodshot, and the veins stand out prominently, and the body [lacuna], and it refuses food and is in distress. One must treat it thus: cover its face with a cloth, so that it cannot see those approaching, and, tying the middle of its neck, open the broad veins, and let it bleed, until it faints. Then, having tied off the neck and stanched the blood, make it stand in a dark place, and let it rest, with neither noise nor disturbance occurring there. In the evening, give it a jugful of water to drink, and likewise on the following day, reducing both feed and drink for up to three days, then give the customary amounts.",
+"Another.",
+"Another, by Pelagonius.",
+"Before all else, such a horse ought to stand in a darker place, and be fed gentler food, and be treated with this preliminary drench: a bundle of fresh celery, ground, four ounces of good honey, one cyathus of ground cardamom, two cyathi of white wine; grind all these with the wine and pour it down the throat. And if it is not cured this way, singe the head lightly, and anoint it with warm ointments, as we said for those with opisthotonos. Anoint the eyes too with an eye-salve.",
+"Another.",
+"Another.",
+"First bleed it from the temples, then offer a drink of celery-seed, spikenard, Macedonian parsley, lettuce-seed, and poppy-seed, mixed in equal parts with honey-water, for five days. Cover its head with a woolen cloth, anointed with oil.",
+"Another.",
+"Dissolve cleaned bay-berries in oil, and, adding hot wine, pour it in through the nostrils.",
+"Another.",
+"Its gaze is fierce and bright, the veins that are reddish against the white of the eye stand out, and it turns this frequently, and its jaws move, and it bites itself, whether standing or rolling about, and it runs at whoever stands nearby to bite, and it sweats. Draw off, then, about six cotylae of blood from the legs of such a horse, and bind up the wound, and offer it nothing, so that the blood does not flow. And when the sun sets, bring it about a choenix of raw vetch, pouring on about four cotylae of lukewarm water. Offer nothing else. On the second day, best of all soft fodder, or, if not, about two bundles of dry fodder, and an equal drink of raw vetch. Then let it walk about a little, wrapped in a blanket. Then let it stand under shelter, and one must offer more fodder, but less drink, and offer the barley sparingly and little by little, so that it does not fall into the same affliction again. And salt its mouth, and let it walk about, and, if it does not settle down, then also castrate it, and close off the veins of the testicles,",
+"pouring on pitch and salt and oil, and sprinkling on ash, then foment daily, and you will cure it.",
+"On mismatched pairs, and those suited to the yoke.",
+"By Apsyrtus.",
+"Apsyrtus to Apollophanes, friend, greetings. It is useful for you, as a horse-keeper earnestly concerned with the composition of mismatched teams, to know, from bodily signs, which animals are well-suited for yoking together. They must, then, have a broad chest, likewise a broad neck, nostrils drawn back, shoulders set rather high, straight forelegs with the pastern-joints in them not overly large, feet not turned outward, a belly not small, and a back not humped. For from such animals one will find ones capable and vigorous in their work.",
+"On flux (rheum) in the head.",
+"On flux (rheum) in the head.",
+"By Apsyrtus.",
+"Apsyrtus to Pasicrates, horse-doctor of Alexandria, greetings. I wish you to know that, when a flux arises in the head, if a discharge occurs spontaneously, or while the horse is being exercised, no harm results. But if not, it becomes suppurative and catarrhal. These are the signs: from its nostril flows a thick, white discharge, with a putrid smell, and, though eager to cough, it cannot, and it wastes away, having no appetite, and, when rolling about, does not turn itself all the way over, nor does it shake its head. For it feels heavy, and its veins in the head are swollen, and likewise in the face. It is treated by exercise, a moderate canter-run, and dousing the head",
+"with hot water, and fumigating the mouth and nostrils over coals with bay-fruit, and rubbing the body, excluding the head, so that the pores are not sealed shut.",
+"One must use purgative drenches, especially birthwort through the nostrils with wine, or likewise soda with water, or two weights of soft alum and an equal amount of salt with a cotyla of wine, drenched. And if, with these, the pus does not break open, use also this compound: bull's blood, or, failing that, that of a young ox, two oxybapha, and one oxybaphon of frankincense, and half an oxybaphon of salt; grind each of these separately, and again together, pour on very sharp vinegar, grind, and dry in the sun. And when it sets, shape it into troches the size of a walnut, and, once dried, store them, and drench with one of these into the mouth daily, grinding it in vinegar. And if the horse is weak, grind it in wine instead. Before giving the remedies, wash it with plenty of hot water. After this, fumigate it, and open its mouth. And when it has drawn in the smoke, one must hold the mouth shut.",
+"Another, by Eumelus, against pain of the head.",
+"These will be the signs for a horse suffering pain in the head: its eyes become inflamed, it discharges fluid through the mouth. One must, then, douse its head with hot water, and use gentle rest. Also draw blood from the eyebrows, and grind clover-leaves and give them to drink. And if it holds its eyes stretched wide, you will need to draw blood",
+"from the neck and the skull. Then take three ounces of salt, dissolve it in water, and drench. And if you do not have this, take earthworms and about two pints of old urine, and, grinding them together, pour it in through the left nostril.",
+"Another, for the same. By Eumelus.",
+"Watering eyes and twisted, that is, bent-down ears, and a head drooping downward, indicate pain of the head. One must, then, treat it thus: open the vein below the eye, and foment the mouth with hot water, and make it abstain from food, and on the following day use green fodder and lukewarm water. On the third day, make it eat barley with vetch-fodder, and let it be watered little by little, so that it recovers its natural health by gradual stages.",
+"Another, for the same.",
+"Two ounces of castoreum, six ounces of bay-berries, two ounces each of soda, Brittany pitch, and frankincense-manna, six ounces of old oil, six ounces of bitter almonds; grind and mix these, and, first washing with urine, anoint.",
+"Another, for clearing the head.",
+"Half a pint of fish-sauce, poured in through the nostrils, clears the head.",
+"Another: a fomentation against headaches of horses.",
+"Soak twelve staters of white-lead a night and a day in water, in a new vessel, and, straining off the water, grind the white-lead in a mortar, so that it becomes as fine as possible. Then, mixing in wax, grind it thoroughly, and, when it becomes very fine, mix in a shell's-measure of honey, and, grinding these together, take oil into",
+"the hand, and apply it to the temples of the horses and the anus. This also works on humans, against every kind of fatigue. Let the wax-salve be five staters.",
+"Another, against catarrh.",
+"If blood rushes into the head from riding or some other exertion, these are the signs: the ears are upright and cold, and the eyes discharge fluid through the nostrils, and the mouth is cold inside. One must, then, douse the head with hot water, covering the head with blankets, and fumigate with dry alum. Give it also wheat soaked in wine to eat. And if it is not helped, draw blood from the mouth or the neck.",
+"By Apsyrtus, on 'katakrania' (a head-heaviness ailment).",
+"The signs of 'katakrania' are these: it droops its ears, and its head feels heavy, and it cannot eat. It is treated thus: pound and sift black hellebore, grind it with wine, oil, and soda, and anoint the head and the inside of the nostrils and ears, using the remedy warm. Or take twenty bay-berries, and a handful of the tender tips of bay-leaves, and an equal amount of pomegranate-rind, about three beans'-weight of myrrh, and about two beans'-weight of Cyrenaic laser-sap; grind these fine, and, dissolving them in four cotylae of fragrant dark wine, pour it into the right nostril. Also draw blood from the nostrils. Barley-gruel, well boiled and poured in through the mouth, is also suitable.",
+]

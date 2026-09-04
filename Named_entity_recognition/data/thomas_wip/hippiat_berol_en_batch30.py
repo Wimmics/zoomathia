@@ -1,0 +1,81 @@
+# Hippiatrica Berolinensia - English translation, batch 30
+# global indices 1885-1949 (65 items)
+# Section: close of Hierocles' body-cavity-wound passage -> "On a horse that
+# has fallen down a cliff or into a ditch" (Apsyrtus, Hierocles) -> "On a
+# horse that has been kicked" (rupture of the peritoneum with intestines
+# falling into the scrotal sac; Apsyrtus, Hierocles - also covering bite
+# wounds) -> "On fractures" (Apsyrtus to Fronto of Ephesus - detailed
+# splinting/bandaging technique with the "wolf-knot," the forty-day
+# regimen, and prognosis by location: below vs above the knee, thigh,
+# shoulder, rib, skull) -> a fracture of the skull (Hippocrates) -> a long
+# series of plaster ("emplastron") recipes for fractures, including the
+# plaster called "barbara" -> opening of "On wet and dry cholera" (Apsyrtus
+# to Julius Fronto - the signs of the dry form).
+
+BATCH30 = [
+"And if, however, the horse is wounded, and no prolapse occurs, but it holds its foreleg forward, and looks gloomy, and strains, plucking out something",
+"blood-like, one must recognize that something internal has been wounded, and that it is unlikely to be saved. And if some part of the deep flesh is wounded, one must apply tent-dressings, holding them in place with clasps, soaking the dressings in oil and binding them, then undoing the clasps, and dousing with hot water, and then applying vetch-flour as a poultice. And a horse wounded in the hind legs, below, at the groins, easily falls into opisthotonos and perishes.",
+"On a horse that has fallen down a cliff or into a ditch.",
+"By Apsyrtus.",
+"If it ever happens that a horse falls from some height, or falls into a large ditch - which happens in military camps - and none of its joints or legs is hurt, but there is suspicion that something internal has been injured, use this drench: dissolve twice a bean's-weight of Cyrenaic laser-sap in vinegar-water, in equal parts up to two cotylae each, and give it through the nostrils. Or dissolve lye from the hearth in four cotylae of water, straining it through a linen cloth (let the lye be from oak or holm-oak), or dissolve one ounce of the juice of tawny acacia in two cotylae of wine. Or pound edible pomegranate and give it with two cotylae of wine through the mouth. And if, after falling, it passes dung or plucks out bloody fluid, drenching is superfluous, for it cannot live.",
+"By Hierocles, for the same.",
+"If it ever happens that a horse falls from a height, or falls into a deep place, and none of its joints is hurt, yet it is suspected that something internal has been injured: dissolve twice a cyathus'-measure of Cyrenaic",
+"laser-sap in two cotylae of water, and drench through the nostrils. Or one must dissolve lye from the hearth in four cotylae of wine, and strain it through a linen cloth; let the lye be from oak or holm-oak. Or dissolve one ounce of the juice of tawny acacia or of edible pomegranate in three cotylae of wine, and give it through the mouth. And if, having fallen, it immediately plucks out bloody fluid, drenching is superfluous, since it cannot live.",
+"Another, for the same.",
+"One pint each of vetch-flour, fenugreek-flour, and lupine-flour; grind these and sift them finely, add one pint of Italian wine and half a pint of honey, and, kneading them together, make one loaf, and give it for six days.",
+"On a horse that has been kicked.",
+"By Apsyrtus.",
+"When it happens, as horses fight one another, that both kick each other with their hind legs into the flank, a rupture of the peritoneum occurs at the suspensory ligament of the testicles, and the intestines fall into the scrotal sac, or 'pouch' as it is called, and the horse cannot live. These are the signs: the scrotal sac swells, and, while walking, it stops still, and does not eat, nor can it stand, but throws itself down, and rolls about, throwing its head back toward its spine. It survives one or two days, but on the third day it dies. The intestines do not fall in on the same day, but on the following day.",
+"Another, for the same.",
+"Make a brine, and mix it with oil, and drench, also mixing in sea-water and enough wine.",
+"By Hierocles, for the same.",
+"A horse kicked by another horse in the flank, with the peritoneum violently ruptured at the suspensory ligament of the testicles, is in danger. For, while walking, it stops still and does not eat, and, unable to stand, throws itself down and rolls about, throwing its head back toward its spine. It dies on the third day; for it is then that its intestines fall into the so-called 'pouch,' and not on the same day. And if a horse is bitten by another, one must soak the bite-wounds with vinegar-and-brine. Bite-wounds occurring on the sinews easily cause lameness. It is treated, however, with marsh-mallow, as written above.",
+"On fractures.",
+"Apsyrtus to Fronto of Ephesus, horse-doctor, greetings.",
+"As many fractures as occur below the knee, in the hind or fore legs, are treated thus: one must set the fracture back into alignment, and bind it so, first placing dirty wool wrapped in linen bandages soaked in vinegar and oil, as many as are sufficient, evenly, not twisted, loosely spaced and not overlapping, and likewise throw on soaked wool and secure it. And add three splints, and bind it on each side with the knot called the 'wolf-knot,' and keep the horse standing upright for forty days, during the first twenty of which one must undo it three times and bind it again, and soak it daily with vinegar-oil, and after this undo it, then bind it again, likewise applying the splints too. And when the forty days have passed, if",
+"it has set firm and the horse is walking, undo it and use the fat-based emollient, and let it walk about gradually.",
+"But fractures occurring above the knee - do not touch these; for they do not heal. And if the thigh is broken, give up hope. If the shoulder is broken, there is no treatment; for opisthotonos results. And if it ever happens that a fracture occurs along with a wound, and the hide is cut through, do not touch it, nor bind the parts beneath; for putrefaction creeps in. And if a rib is broken, the horse becomes healthy again. Never apply cauterization to a fracture that has already formed a callus; for, as the scabs are thrown off, the callus is undone, and you will have to treat it",
+"all over again.",
+"If a fracture occurs below the knee in the forelegs, it is treated thus: having set the joint back into alignment, then wrapping dirty wool around it, bind it with knots soaked in vinegar and oil, exactly even and joined together. And, applying likewise soaked wool, and adding splints, as is customary, bind it on each side with the knot called the 'wolf-knot,' and keep it standing upright for forty days, during the first twenty of which undo it three times, and bind it again, soaking it daily with vinegar-oil, and adding the splints after twenty days. And when the forty days have passed, if the callus has set firm, use the fat-based emollient, and let it walk about gradually.",
+"But if the break occurs above the knee, or the thigh is broken, it is hard to treat. And if it happens that the fracture occurs along with a wound and a cut, it is likewise",
+"risky. But if a horse's rib is broken, the cure is easy.",
+"Never apply cauterization to a fracture that has formed a callus. For, once the callus is undone, the place becomes hard to treat. One must know, indeed, that the shin-bone of a hind leg, once broken, does not knit together, since it has no marrow but blood, especially in the donkey and the mule.",
+"Another, for the same.",
+"When a leg is broken, and the hide is stripped off, and the joint is dislocated, wrap the hide back around it and set the joint, and anoint it with the remedy, not too hot, and bind it, and, suspending the animal, anoint the surrounding area with wine-and-oil. This is the remedy: twenty weights of pitch, ten pounds each of opopanax, turpentine-resin, oak-mistletoe glue, and wax, five pounds of bitumen, six pounds each of ammoniac incense, pine-resin, and galbanum, four pounds each of frankincense-manna and bdellium, two pounds of myrrh,",
+"melt the bitumen, resin, pitch, and wax together, and, warming the ammoniac gum by the fire and flattening it, add it in. Grind the myrrh and bdellium and mix them in last, then put the opopanax into the pot, and the mistletoe-glue, then the galbanum, and last, spreading the ground ingredients onto a linen cloth, use it.",
+"Another, by Hippocrates, on a fracture of the skull.",
+"When a fracture of the skull occurs, if the bone or the membrane (meninx) is cut through, the eyes become bloodshot and full of blood, and the horse coughs, and its legs become swollen. Such a horse cannot be saved.",
+"A plaster by Hierocles, for the same.",
+"One pound each of litharge and vinegar, one and a half pounds of oil,",
+"three ounces of ammoniac gum, two ounces of wax, two ounces of resin, three ounces of",
+"turpentine, six ounces each of bitumen, pitch, and verdigris; boil the vinegar and the",
+"oil and the litharge. Then, when they are about to",
+"thicken together, add the pitch, until it too is thoroughly dissolved. And,",
+"taking the pot from the fire, add the bitumen, without",
+"stirring it. And when it too has dissolved, add also the rest,",
+"and boil. Then, once it has thickened, strain it into a mortar.",
+"The plaster called 'barbara' (the barbarian plaster),",
+"effective against fractures.",
+"One pound each of sharp vinegar, common oil, and litharge,",
+"six ounces of dry pitch, six ounces of wax, four ounces of Judaean bitumen,",
+"two ounces of ammoniac gum; grind the litharge with the oil,",
+"and boil it for a long time. And when it has boiled sufficiently, add the meltable ingredients:",
+"first the ground pitch, and when it has dissolved,",
+"take the pot from the fire, and add also the",
+"bitumen, and let it dissolve. Then, putting it back on the fire,",
+"when it boils up, add also the rest.",
+"A yellow plaster, for the same.",
+"One pound of dry pitch, two ounces of wax, one ounce of frankincense-",
+"manna, four ounces of ammoniac incense, one ounce of dry resin,",
+"one ounce of galbanum, two cotylae of vinegar. Boil the pitch and",
+"the vinegar, add the ammoniac, spreading it out over the fire, or",
+"pounding and sifting it. It is better to let it melt in the vinegar and",
+"empty it into the pot. Then add the resin, the frankincense-manna,",
+"and the galbanum.",
+"Another.",
+"One pint of old oil, one pound each of lard and litharge; boil these together, until bubbles rise up, and anoint with the remedy while it is lukewarm.",
+"On wet and dry cholera (a severe digestive ailment).",
+"Apsyrtus to Julius Fronto, centurion, greetings.",
+"You wrote to me asking what the signs of dry cholera are; they are these:",
+"The horse becomes hot all over its body, especially in the belly, and, when it passes dung, discharges it with force (hence it is also called 'dry'), and it avoids lying down, and is in great pain, and its mouth is hot and quite dry.",
+]

@@ -1,0 +1,81 @@
+# Hippiatrica Berolinensia - English translation, batch 15
+# global indices 910-974 (65 items)
+# Section: spine/back ulcer and injury remedies -> Theomnestus' cauterizing
+# emollients -> saddle-sore remedies -> "On orthopnea" (Apsyrtus to Secundus,
+# Cleomenes the Libyan, Mago, Pelagonius) -> "On dyspnea" (Tiberius) ->
+# "Against gangrenous sores in the jaw" (Apsyrtus).
+#
+# NOTE: item 916's heading carries two bare apparatus/section-numbering
+# fragments ("t1"/"t2") embedded mid-sentence in the source, dropped here as
+# noise (per the convention in earlier batches). Item 931 opens with a
+# fragment of the word "τονωτικόν" ("-otic [remedy]") left over from a running
+# section header merged into the paragraph stream; rendered as a bracketed
+# heading before the real sentence.
+
+BATCH15 = [
+"Burn dry fig-tree branches, and, taking their clean ash, sift it, and after this put it into a mortar together with",
+"the ash, and mix in enough wine, an equal amount of oil, and the whites of two eggs, and, stirring it all together, use it when needed.",
+"Against broken vertebrae or backs.",
+"Boil together with oil one pound of wax, four ounces of roasted resin, two ounces of verdigris, and use. And so that mules' necks do not suffer a rupture, do this: boil two pounds of fresh pig-fat and two pints of vinegar down to a third, and, straining it, use.",
+"Against pain of a vertebra.",
+"One must draw blood, and use warm anointments, that is, mix wax, oil, old lard, soda, liquid pitch, bitumen, and bay-berries in wine, and rub the whole body; and, if need calls for it, take it into a bath and bathe it. After this treatment, drench it beforehand thus: mix enough ginger, parsley, cumin, poppy-juice, and bay-berries with good wine and honey, and give it warm.",
+"Against pains of the vertebrae and spasms of the sinews in them.",
+"Cauterize the vertebra cleanly on both sides, and after this anoint with lard, and after seven days rinse with hot water, and, after it has cooled, anoint with warming ointments, and bind it round with a hide together with wool.",
+"By Hierocles, against an ulcer on the spine and the side.",
+"If the ulcer is superficial and the part is bare of hair, burn a dog's head, and sprinkle on the ash; for besides curing it, it will also grow hair back. And if it is deep, or has a callus,",
+"bind vetch-flour with honey, and, having filled a wick with it, apply it and pack it in, and it draws out the callus and heals the scar.",
+"Another, for the spine.",
+"Ulpius Phoebus, the prefect's man: put fig leaves into an oven, until they dry, to the point where they can be pounded; pound and sift them, and apply as a plaster. For this same remedy cleans and heals the scar.",
+"Another.",
+"Grind fresh spurge together with its root, and sift it, and apply as a plaster; and if the wound is small, pound in enough salt with it.",
+"Six ounces of resin-dust, six ounces of pine-resin, three ounces of bull's-hide glue, six ounces of frankincense-manna, one pint of fine wheat-flour, and enough old wine; put them into a small pan and boil, and anoint against the grain of the hair.",
+"Another, against the shoulder.",
+"One ounce of balm-of-Gilead sap, one ounce of saffron, two ounces of Cyrenaic silphium-juice, one ounce of numicium, one ounce of antimony, four ounces of cinnamon, one ounce each of male frankincense, Syrian nard, trogline myrrh, white pepper, opopanax, and pine-resin, one pound of Attic honey; mix these and use.",
+"Theomnestus' cauterizing and strengthening emollient",
+"A cauterizing and strengthening emollient, not only for beasts of burden being treated for ulcers on the spine or the double shoulders, or at a joint, or over the kidneys, when they remain unstrengthened after treatment. For with only a slight cause it returns them again to the same condition. One must also be mindful",
+"of the preceding treatment. The strengthening remedy for all such cases, then, is the one set out below: one pound each of dregs-of-oil, roasted resin, Judaean bitumen, pitch, wax, and verdigris, six ounces of ammoniac incense, four ounces of frankincense, nine ounces of galbanum, two ounces of opopanax; melt the meltable ingredients, and, stirring with a spatula, anoint while still warm. And if it becomes too hard, add pounded old lard, and thus make it softer, and use it. Add ammoniac incense too. It also works well without the verdigris. When it is hot weather, so that the ointment does not dissolve, add four ounces of ship-scrapings and old caulking-tow, and use this marvelous remedy.",
+"[Another strengthening remedy.] Not faulting the weakness of the previous one do we write this second remedy, but we shall set forth one from our abundance, one more easily obtained and possible for poorer people to prepare: six ounces each of Judaean bitumen and split alum, one pound of old lard, three ounces of litharge, one ounce of galbanum, one ounce of opopanax, one pint of squill-vinegar, and half a pint of oil; boil them, and anoint well.",
+"Knead barley-meal with wine and oil, and plaster it all around the wounded place. And if it forms proud flesh ('lung-tissue'), cut this away with iron, and apply horse dung with oil, vinegar, and roasted salt.",
+"If a horse feels pain in the spine, bleed it, and",
+"treat it with these warm ointments: mix bay-berries, sulfur, oil, lard, and soda with cedar-resin and wine, and rub the horse's whole body with it, having stood it in the sun or in the warmest place.",
+"Another: if it develops wounds on the back.",
+"Grind oyster-shells, and, making a powder from them, sprinkle it on the affected place; or sprinkle on one pound of burnt crabs.",
+"Another, for the back.",
+"Mix one ounce of iron-slag and one ounce of copper verdigris, and make a powder; and, first having rinsed the horse's back with wine, sprinkle on some of this powder.",
+"Another: if it has a wound on the back.",
+"Grind Syrian galls, and, mixing them with honey, apply to the wound.",
+"Against a wound on the back arising from a rider's inexperience:",
+"take a bundle of onions - that is, of the withered leaves that happened to hang from them - and put them into hot water and boil them, and apply them, still hot, over the animal's inflammation, and bind it with a bandage; or, if you wish, put the saddle itself on the horse, so that it remains this way for one day and night.",
+"On orthopnea (labored upright breathing).",
+"By Apsyrtus.",
+"Apsyrtus to Secundus, horse-doctor, greetings. When orthopnea occurs, these are the signs: while walking, the horse falls behind, and breathes heavily throughout, and cannot walk uphill, but leans to one side, so as even to fall. And once fallen, it does not stretch itself out or lie flat, but rather wishes",
+"to rise again. It is treated thus: one must grind very fine two drachms of frankincense and one drachm of sulfur, and, dissolving them in fragrant white wine and honey, drench through the nostrils. Or mix pitch-serum and fine roasted soda with honey and wine, and pour it in, until the labored breathing stops. And let it not be exposed to cold, nor take exercise. Put soda into its drinking-water too, and sprinkle its fodder with it; and if it does not stop with these, use the purgative.",
+"These are the signs of orthopnea: it breathes with difficulty, and its nostrils are swollen wide, and it is drawn in from the flanks. One must, then, offer it warming feed, as Cleomenes the Libyan says: soaked vetch, chickpeas, oats, barley, and mix flour into its drinking-water, and drench it with a little tragacanth and unfired sulfur in sweet wine.",
+"Slaughter a puppy, and pour the blood, still warm, in through the mouth, sprinkling on two spoonfuls of ground Ethiopian cumin, for nine days.",
+"Bruise comfrey, which they call 'horse-tail,' and press out its juice to two cotylae, and add two spoonfuls of Ethiopian cumin, and, dissolving it in a cotyla of wine, drench; and grind frankincense and sulfur, and, dissolving them in honey and wine, pour it in through the left nostril.",
+"On dyspnea (difficult breathing).",
+"These are the signs of a horse suffering from dyspnea: it has a yellowish right eye, and from each nostril it emits a foul",
+"smell, it drags its flanks, and small knots form under its jaws. Observe, then, its gait: and if it tends more toward the right side, it is not easily cured. But if the affliction is recent, use this method: draw its blood for three days, then drench it beforehand thus: one pint of old wine, half a pint of bay-oil, one ounce of saffron, one pound of rose-oil, half a pint of mastic-oil, one ounce of trogline myrrh, three pints of honey-water; put all these into a new bronze vessel, and, boiling a cockerel together with them, reduce it by a third, and give half a pint of it with honey-water and one egg, through the nostrils, for six days. Of this preliminary drench, if you wish, also apply some to the head, and bandage it down to the foot, and you will effect a cure.",
+"Another, by Mago.",
+"If a horse is gripped by severe dyspnea, its flanks hang down, and it has either both eyes, or the right one, discolored, and its jaw likewise inflamed, and its gait is not straight. This affliction, at the outset, is easily treated, though with much care. Examine its posture carefully, then: and if it is bent toward the right side, it will be cured; if toward the left, it will live only with great difficulty. Nevertheless, one must apply these remedies: open the horse's twelve veins, in such a way that over three days you open four veins each day; after this give this preliminary drench:",
+"One ounce each of saffron, trogline myrrh, spikenard, and white pepper, three pints of honey-water, one pint of old oil, half a pound of rose-oil, half a pint of lentils; put all these into a new vessel, and boil together with a puppy about ten days old, adding honey or honey-water and one egg, and drench for many consecutive days.",
+"Another, by Pelagonius.",
+"One pint of Cretan boiled must, one ounce each of Illyrian iris, pepper, saffron, trogline myrrh, frankincense-powder, and tragacanth, and enough raisins. Mix all these and give, and afterward massage its throat with honey, butter, lard, and salt.",
+"Another.",
+"This too the Greeks called 'orthopnea.' It is recognized when the animal holds its ears erect, and discharges a purulent fluid, and continually draws in its flanks, and holds its eyes wide open. Its treatment is this: take blood from the vertebra, and, mixing it with vinegar and oil, anoint the animal. Let it also abstain from food as much as possible, or use warming feeds, vetch or chickpeas or wheat-flour in winter, barley in summer. Put in tragacanth, boiled must, and bitumen, and add also",
+"dog's blood, and as much ground cumin as you can hold with three fingers, and, adding wine, give it. Or egg-white with honey and ground pine-nuts, for twenty days or more, until the lung is healed.",
+"And if this does not help, apply black hellebore root to the",
+"chest, or to the roots of the ears, or to the nostrils, through which the whole disease will be expelled. Give also pastilles with honey-water and bitter almonds and wild-cucumber root, bound with honey. Or grind about three obols' weight of mulberry root, and pour it into the nostrils with warm wine. And for animals with difficult breathing, first wipe the head with one cyathus of oil and one pint of wine, by which means a cure is promised even for otherwise helpless afflictions.",
+"Another.",
+"Dyspnea arises from excessive sweating, and from fatigue and panting. And the horse gripped by this affliction discharges through the nostrils a humor tinged with pus. Most useful against this affliction is this preliminary drench: one and a half pints of Cretan boiled must, three ounces of costus, two ounces each of hyssop-flower, cassia-fistula, and tragacanth, three ounces of southernwood, two ounces of dry male frankincense; pound all these carefully, and, mixing them with the boiled must, drench through the throat.",
+"By Tiberius, for the same.",
+"These are the signs of dyspnea: the horse's flanks heave violently, its nostrils flare, and distress comes upon it, troubled by the affliction. Treat it, then, thus: soak eggs in vinegar - three on the first day, five on the second, and seven on the third - and give them in its mouth, squeezing out through their shells.",
+"Against gangrenous sores in the jaw.",
+"By Apsyrtus. An affliction occurs at the bit-ring of the jaw. Roast copper ore in the fire, then, until it becomes glowing, and grind it with honey, so as to",
+"make it fine; put it into a box, and use it against gangrenous sores and spreading ulcers in the mouth, and everywhere else.",
+"If a gangrenous sore occurs, open it up and expose it, and cauterize it, taking care not to touch the tendon. And if it is on the spine, quickly incise the tunic, and cauterize. And if it is on the flank, cut down to the bone, taking careful precaution. Then apply a poultice of cypress, finely pounded, mixed with an equal amount of barley-meal, and, kneading it with vinegar, first anoint the place with oil. Do not wash around the ulcer, however, for three days. On the fourth day, wash around it, without bringing the hand close. Or pound cabbage-leaves, and, adding barley-meal, knead with water and apply as a poultice.",
+"Or pound wild and cultivated leeks, and, adding barley-flour and grinding, apply as a poultice.",
+"And when the scabs fall off, and the gangrenous sore becomes exposed, first anoint with the wound-remedy, then apply pounded birthwort or raw pitch onto the gangrenous sore, or alkanet, or ground copper ore, or mullein leaves, or ironwort. You have, against gangrenous sores, further compositions in my second book, among the preparations of remedies.",
+"Another.",
+"Pound a sour pomegranate and sprinkle it on with barley-meal, and, kneading it with vinegar, anoint. Or pound cypress, and, soaking it in barley-meal and vinegar, sprinkle it on.",
+]

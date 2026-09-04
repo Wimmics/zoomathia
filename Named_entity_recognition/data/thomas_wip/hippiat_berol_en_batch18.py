@@ -1,0 +1,82 @@
+# Hippiatrica Berolinensia - English translation, batch 18
+# global indices 1105-1169 (65 items)
+# Section: continued colic/worm-cause discussion -> extensive remedies against
+# dysuria/strangury/ischuria (Mago the Carthaginian's Georgics, Sarmatian
+# fumigation method, Apsyrtus' warning against manual "bladder correction",
+# citing Aristotle) -> long catalogue of individual anonymous drenches -> "If
+# the bladder becomes blocked".
+#
+# NOTE: item 1121/1122 preserves a source-text word-break oddity: the source
+# splits "φύλλοις" (leaves) across the paragraph boundary as "φύλ-" / "λοις",
+# but the extracted item 1122 also carries a stray, ungrammatical "ἵπποις"
+# fragment (likely OCR bleed-through from elsewhere) that does not fit the
+# sentence; it is dropped from the translation as noise, per the same
+# treatment given to other isolated OCR artifacts in this text.
+
+BATCH18 = [
+"It happens that the belly suffers pain from indigestion, that is, when it passes whole undigested barley grains in its dung, or when even more of these remain within. For, filled up with drink, it suffers pain in the belly and writhes. Or when, in the fodder offered, a feather of soapwort happens to fall in while it is eating, this too brings on bloating and colic. There also occurs what they call a 'bouprestis' (blister-beetle), resembling a tarantula, which is born in fodder. If it takes this in while grazing, it will likewise swell up and be in danger. It also happens from bad water and unfamiliar surroundings.",
+"Sometimes, too, if it has grubs or intestinal worms, it suffers pain in the belly for this reason. And from worms it is not so much in danger, since they are in the intestines and easily pass out; but from grubs it is, because of the roughness of the belly, since they are not easily purged out. You will recognize such a horse when it happens to throw itself down and bite the ground from the pain.",
+"One must use this remedy: grind cabbage-leaves very fine, and, pouring on about four cotylae of wine and one of oil, drench through the left nostril,",
+"and, grinding sulfur with oil, anoint the belly with it. Wormwood too is fitting for this, boiled in wine. It also helps to offer barley coated with oil, especially to the horse with intestinal worms. This too helps the dysuric horse: dissolve about an oxybaphon-measure of pellitory in a cotyla of wine, and drench.",
+"Dissolve a bean's-weight of Syrian sap and a drachm's weight of roasted soda in wine, and drench, as written above.",
+"Coax it and lead it to urinate, to a place where beasts have made a wet patch from their urine; and if it comes upon this, it will urinate very quickly. And if there is none nearby, one must lead it into mud, and it will urinate likewise.",
+"This too has been found in the Georgics of Mago the Carthaginian. For he says that, scraping the underside of the dysuric horse's forefeet from the hoof-wall, one must grind the scrapings of the very hoof in about a cotyla of wine, and drench through the nostril, and it will urinate.",
+"I have also learned this among the Sarmatians: one must stand the horse and drape a cloth over it from the neck to the hips, and fumigate castoreum on coals beneath the belly and the testicles, then, taking away the vessel in which it is fumigated, make the animal move about, and it will urinate very quickly. One must also make a suppository of salt and boiled honey, the size of an egg, and insert it into the anus. For this helps both the horse suffering abdominal pain and swollen, and the dysuric one; for it will make it urinate.",
+"There are three kinds of urinary pain, and the name applied depends on which occurs. It is called 'dysuria' when the horse urinates with difficulty; 'strangury,' when it passes urine drop by drop; and 'ischuria,' when it cannot urinate at all. Of these, the first two are helped, as has been written. But the one that cannot urinate at all is not easily helped, and is in danger. And when sharp, acrid diuretics are administered, the affliction is aggravated, the passage becoming irritated. For such a horse, one must apply fomentations of hot water with a sponge around the so-called region, and use sweet drenches, mixed in hot water, equal parts of each, not more than two cotylae. Do the same with honey-water too, and drench likewise through the left nostril.",
+"It is also fitting for such a horse to drench with a decoction of beet and mallow together with sweet wine, and to give green fodder; and if there is none, sprinkle the dry fodder with honey-water, and likewise offer the rest of the feed sprinkled as well. For, with such things offered, relief comes to the irritation, and the member is not raised. One must also sprinkle the barley, making it into a gruel, with honey-water, and give it thus. And if it should ever happen that a mare suffers dysuria, one must bring up to her a stallion as lustful as possible, and, being aroused, she will urinate very quickly. To sum up, this is my exposition and treatment of these afflictions for you.",
+"Another, on preventing a beast of burden from developing strangury when crossing a",
+"river.",
+"When it happens, in winter, that beasts of burden on a journey come to a river with a great, deep current, so that their backs are submerged, one must unyoke them and make them urinate, and only then bring them in. For if this is not done, it readily happens that, in some of the waters, ischuria and colic occur.",
+"By Hierocles, for the same.",
+"There are three kinds of dysuria: dysuria proper, when it urinates with difficulty; strangury, when drop by drop; and the third, when it does not urinate at all. And the affliction arises when, journeying and running for a whole day, it fails to urinate. For then the passage leading from the bladder to the urethra becomes inflamed, and does not readily let the urine pass, from which the pain intensifies. And from standing for some time without exercise, acrid humors, carried to the bladder, corrode the passages of urination.",
+"Sometimes strangury also arises from excessive cold in winter. For such a horse, then, a fire burning nearby helps. And a horse is not harmed by eating oleander in the same way as a donkey or mule, since its blood has a warmer constitution. You would see these same signs both in this horse and in one suffering abdominal pain. For the horse gripped by dysuria wants to run, and swishes its tail beneath its thighs, and, rolling about, sinks down onto its haunches, thrusting out its member little by little, giving the appearance of being about to urinate.",
+"It is treated, then, thus: boil a bundle of leeks together with their",
+"leaves, and pressing out the juice to about two cotylae,",
+"and, mixing in a cotyla of fragrant wine and an oxybaphon of oil, drench through the right nostril. Then let it walk about gently, trotting, and it will urinate. Likewise boil wormwood in a cotyla of wine and drench. Or grind a finger's-breadth measure of opopanax in the aforesaid measure of wine, and drench. Or pound a cyathus of celery seed, and do likewise with a cotyla of fragrant wine. Better still, if you boil alexanders and give it, along with the roots of horse-fennel.",
+"This too works: peel and bruise about five pungent long onions, and insert them into the anus. Then let it walk about, trotting, and it will urinate. Dousing the hips with hot water also helps.",
+"Or thus: grind white or black chickpeas and boil them, then, pouring on water and adding two small bundles of wild thyme, and making up three cotylae, pour it in through the mouth.",
+"Apsyrtus does not approve of those who insert their hands through the anus as though to correct the bladder; for as far as the anus, they do no harm, but pushing further in, they sometimes do some harm, since a severe inflammation arises in the intestine, so that the animal cannot bear the pain, and dies immediately or shortly after.",
+"For there are three most acute afflictions in horses and other solid-hoofed animals: the bladder-ailment, and twisting of the intestines, which is called 'ileus,' and the cardiac ailment. The other afflictions persist for days. And barley-surfeit, choking, and abdominal",
+"pain also are wont to kill a horse quickly, if help is not given swiftly. This too is useful for the dysuric horse: dissolve about an oxybaphon-measure of pepper in a cotyla of wine and drench, leading it into mud, or better, to where other beasts have urinated, and encourage it to urinate. Or boil ivy leaves in two cotylae of sweet white wine, and,",
+"adding white soda, and, warming it and pouring it in through the left nostril, make it walk about.",
+"Mago of Carthage says, in his Georgics, that, scraping the underside of the horse's forefeet from the hoof-wall, one must grind these very scrapings of the hoof in wine, and drench through the nostril, for it will urinate. This too is good, which the Sarmatians use: covering the horse from the neck to the hips with a cloth, they fumigate castoreum on coals beneath the belly and the testicles; then they make it walk about, and it urinates. And when it does not urinate at all, one must apply fomentations of hot water, and drench with sweet wine mixed in hot water, not more than two cotylae, and likewise drench with honey-water through the left nostril. Above all, drench with a decoction of beet and mallow together with sweet wine, and give green fodder; and if there is none, sprinkle the dry fodder with honey-water, and likewise the rest of the feed, making the barley into a gruel. For these will relax the animal. And when a mare is brought up to it, sometimes, being aroused, it urinates. One must, indeed, trust Ari-",
+"stotle, who says that only the horse is subject to the affliction of dysuria.",
+"Another.",
+"Boil small bundles of cabbage with their leaves in a pint of water, then squeeze out the leaves and discard them, and, mixing the water in which the cabbage was boiled with half a pint of wine and one oxybaphon of oil, drench through the right nostril, and it will urinate.",
+"Another.",
+"Boil wormwood with one pound of wine, and drench through the nostril.",
+"Another.",
+"Mix a piece of opopanax the size of the last joint of the little finger with wine, and drench.",
+"Another.",
+"Grind radish seed, and give through the nostril.",
+"Another.",
+"Peel five long onions, being rather pungent, and insert them into the horse's anus, and make it walk about. It also helps, after this, to douse the animal's loins with hot water. Some are mistaken who say one must insert the hand into the intestine and twist its passage about; for they do the greatest harm by scratching it with their nails. If it urinates slowly, give it dog's dung mixed with salt, ammoniac gum, and wine.",
+"Another.",
+"Mix two peeled and ground garlic heads with wine, and drench, then make the horse run.",
+"Another.",
+"Grind the root of dwarf-elder, which the Greeks call 'chamaiakte,' with old wine, and press it out and strain it through linen,",
+"and pour this in through both nostrils. Give also water to drink together with pennyroyal.",
+"Another.",
+"Boil the herb savin, and, from this itself while hot, douse the horse's genitals. And if it still urinates slowly, put a living bedbug into its ear, and crush another over the genitals, where it urinates from, and it will pass urine immediately.",
+"Another.",
+"Boil leeks and press out about one pint of the juice, and, mixing it with old wine and an oxybaphon of oil, drench through the nostril, and make it move about. Do this for three days.",
+"Another.",
+"Pour into the nostrils mud formed from the urine of any horse, mixed with wine and strained. And mud formed from such urine, even if it has dried, has the same effect when mixed with wine.",
+"Another.",
+"Grind celery root with somewhat sweet wine or honey-water, and drench through the mouth.",
+"Another.",
+"Two ounces of cassia, two ounces of costus, one ounce of spikenard, one ounce of cyperus, six ounces of Cretan hyssop, six ounces of Pontic wormwood, one ounce of myrrh; boil these in water, and drench for three days. This also works against expelling venomous creatures, against tetanus, coughing, and for stimulating the whole body. On the fourth day give oil, so that it may cleanse thoroughly.",
+"Another.",
+"Grind a spider, and drench with wine.",
+"Another, against strangury.",
+"Take four ounces of pig dung, one pint of wine, and, mixing them into one and straining, give it to drink, and it will urinate immediately.",
+"Another.",
+"One ounce of celandine, three ounces of lizard dung, six ounces of persea juice, three ounces of balm-of-Gilead sap, three ounces of aloe, four ounces of Attic honey, three ounces of male frankincense, three ounces of burnt quicklime, three ounces of white pepper, four ounces of reptile fat, two ounces of sheep's-trotter marrow, three ounces of goose-fat, three ounces of dove's blood; grind all these in a mortar, and give.",
+"A preliminary drench for the same.",
+"Grind three obols' weight of sweet-flag and an oxybaphon-measure of carrot seed with two cotylae of sweet wine, and pour it in through the nostril, and after this, by the customary encouragement, prompt the animal to urinate in a softer spot. The root of sweet-flag has the same effect, or its seed, ground and given with wine, or about an oxybaphon-measure of cultivated cucumber, and a bedbug put into the ear - into the left ear for a male, the right for a female. Pounded asparagus root, boiled in old wine and poured into the nostrils, also cures it;",
+"or wheat-flour with sheep-fat, adding water and boiling it down to about two pints, and pour in through the mouth. Or mix four pints of cumin seed with old wine, and give through a horn for three days. Or about six cyathi of leek juice, and three cyathi of squill-vinegar, and an equal amount of honey, mixed, and give through a horn into the mouth; or opopanax,",
+"five pints, mixed with wine and honey, for five days. Let it be fed on barley well soaked in water, and on cut fodder.",
+"If the bladder becomes blocked, mix fennel juice and parsley and anise, and eggs and somewhat sweet wine with warmed water, and pour it into the bladder-passage, and it will open.",
+"Another.",
+"Grind the herb horsetail with wine, and drench; or anoint the belly with mud made from old urine.",
+]
