@@ -524,7 +524,13 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
             paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text, paragraph_author, paragraph_work])
     else:
         p_id = 1
-        for p in tqdm(parent_division.find_all(["p"])):
+        # recursive=False: ce div peut lui-meme avoir des div enfants (voir le
+        # nouvel appel a extract_paragraph() pour les div "mixtes" dans
+        # extract_division_metadata) ; sans ca, find_all(["p"]) redescend dans
+        # ces div enfants et retraite leurs <p>, qui seront de toute facon
+        # correctement extraits par le prochain appel recursif sur ce div
+        # enfant - doublon silencieux sinon.
+        for p in tqdm(parent_division.find_all(["p"], recursive=False)):
             if not p.find_parent('p'):
                 if strip_text(p.text) == "":
                     continue
@@ -645,6 +651,21 @@ def extract_division_metadata(div, parent_uri, link_data, paragraph_data, annota
 
             # extract quote if there are quotes
             if len(tag_div.find_all(["cit"], recursive=False)) > 1:
+                extract_paragraph(tag_div,
+                                  [parent_uri,
+                                   tag_div_type, tag_id, tag_div_title],
+                                  current_uri, link_data, paragraph_data, annotation_data)
+
+            # ce div a des div enfants (branche does_it_have_children_div), mais
+            # peut aussi porter ses propres <p> directs (ex: une ligne
+            # d'attribution "Par Apsyrtus." posee directement dans un div
+            # "chapter" juste avant ses div "section" enfants). Sans cet appel,
+            # extract_paragraph() n'etait jamais invoque pour ce div (seule la
+            # recursion sur les div enfants ci-dessous l'etait), et ces <p>
+            # directs disparaissaient silencieusement de l'extraction - bug
+            # decouvert sur zoo80/2e (Hippiatrica Berolinensia, structure
+            # imbriquee jusqu'a 7 niveaux), 285 paragraphes concernes sur 3047.
+            elif tag_div.find_all(["p"], recursive=False):
                 extract_paragraph(tag_div,
                                   [parent_uri,
                                    tag_div_type, tag_id, tag_div_title],
