@@ -5,7 +5,19 @@ Usage: python3 ajouter_fichier.py
 import os
 import shutil
 import subprocess
+from dotenv import load_dotenv
 from supabase import create_client
+
+# Identifiants Supabase charges depuis le .env local a ce dossier (non suivi
+# par git, voir .gitignore). Ne jamais commiter ce fichier .env.
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+
+if not os.environ.get("SUPABASE_URL") or not os.environ.get("SUPABASE_KEY"):
+    raise SystemExit(
+        "SUPABASE_URL / SUPABASE_KEY manquants. Cree un fichier .env a cote de ce "
+        "script (repertoire_zoo/.env) avec ces deux variables, ou exporte-les "
+        "toi-meme avant de lancer le script."
+    )
 
 sb = create_client(os.environ["SUPABASE_URL"], os.environ["SUPABASE_KEY"])
 
