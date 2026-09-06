@@ -4,12 +4,14 @@ Usage: python3 ajouter_fichier.py
 """
 import os
 import shutil
+import subprocess
 from supabase import create_client
 
 sb = create_client(os.environ["SUPABASE_URL"], os.environ["SUPABASE_KEY"])
 
 LANGUE_CODE = {"grec": "g", "latin": "l", "anglais": "e", "francais": "f", "italien": "i"}
-DATA_DIR = os.path.expanduser("~/Projets/zoomathia/Named_entity_recognition/data")
+REPO_DIR = os.path.expanduser("~/Projets/zoomathia")
+DATA_DIR = os.path.join(REPO_DIR, "Named_entity_recognition", "data")
 
 def chercher_auteur(nom):
     res = sb.table("auteurs").select("id, nom_canonique").ilike("nom_canonique", f"%{nom}%").execute()
@@ -77,6 +79,7 @@ def main():
         print(f"Nouvelle oeuvre creee, id={oeuvre_id}")
     else:
         oeuvre_id = int(oeuvre_id)
+        titre = next((o["titre_original"] for o in oeuvres if o["id"] == oeuvre_id), "")
 
     nom_fichier = input("\nNom du fichier (ex: mon_texte_tei.xml): ").strip()
     langue = input("Langue de ce fichier (grec/latin/anglais/francais/italien): ").strip()
@@ -106,9 +109,33 @@ def main():
     if chemin_source and os.path.exists(chemin_source):
         shutil.copy(chemin_source, chemin_cible)
         print(f"Fichier copie vers: {chemin_cible}")
-        print("N'oublie pas de faire 'git add' dessus ensuite.")
+        proposer_commit_et_push(code_zoo, nom_auteur, titre, langue, chemin_cible)
     else:
         print(f"Pense a placer le fichier manuellement vers: {chemin_cible}")
+        reponse = input("Fichier place ? Lancer git add/commit maintenant ? (o/n) ").strip().lower()
+        if reponse == "o":
+            proposer_commit_et_push(code_zoo, nom_auteur, titre, langue, chemin_cible)
+
+
+def proposer_commit_et_push(code_zoo, nom_auteur, titre, langue, chemin_fichier):
+    """Fait git add + git commit (message genere automatiquement) sur le
+    fichier ajoute, puis propose (avec confirmation) de faire git push."""
+    message = (
+        f"Ajoute {code_zoo} ({nom_auteur}, {titre}) - temoin {langue}\n\n"
+        f"Fichier : {os.path.relpath(chemin_fichier, REPO_DIR)}"
+    )
+
+    subprocess.run(["git", "add", chemin_fichier], cwd=REPO_DIR, check=True)
+    subprocess.run(["git", "commit", "-m", message], cwd=REPO_DIR, check=True)
+    print(f"\nCommit effectue :\n{message}\n")
+
+    reponse = input("Faire 'git push' maintenant ? (o/n) ").strip().lower()
+    if reponse == "o":
+        subprocess.run(["git", "push"], cwd=REPO_DIR, check=True)
+        print("Pousse sur le depot distant.")
+    else:
+        print("Commit local uniquement, pas de push. Tu peux le faire toi-meme plus tard.")
+
 
 if __name__ == "__main__":
     main()
