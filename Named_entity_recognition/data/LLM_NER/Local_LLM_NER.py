@@ -18,7 +18,7 @@ from sentence_transformers import SentenceTransformer, util
 import torch
 
 java_process = subprocess.Popen(
-    ['java', '-jar', '-Dfile.encoding=UTF-8', '../corese-library-python-4.4.1.jar'])
+    ['java', '-jar', '-Dfile.encoding=UTF-8', '../pipeline_scripts/corese-library-python-4.4.1.jar'])
 sleep(1)
 gateway = JavaGateway()
 
@@ -423,9 +423,10 @@ def get_all_thesaurus_concepts(g):
 if __name__ == "__main__":
 
     g = Graph()
-    g = load(g, "../th310.ttl")
+    g = load(g, "../pipeline_scripts/th310.ttl")
 
     thesaurus = get_all_thesaurus_concepts(g)
+    thesaurus_embeddings = embedder.encode(thesaurus, convert_to_tensor=True)
 
     try:
         gateway.shutdown()
@@ -437,7 +438,7 @@ if __name__ == "__main__":
         pass
 
 
-    directory_path = ('../test/')
+    directory_path = ('./test/')
     xml_files = find_xml_files(directory_path)
     for xml_file in xml_files:
 
