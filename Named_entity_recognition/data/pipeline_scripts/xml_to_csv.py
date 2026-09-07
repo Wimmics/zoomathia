@@ -352,30 +352,73 @@ def get_witness_suffix(file_path):
     return suffix if len(siblings) > 1 else ""
 
 
-# Oeuvres dont le temoin anglais est suffisamment bien aligne (livre/chapitre)
-# avec l'original pour etre reutilise a la place de Google Translate - voir
-# DOCUMENTATION_SYSTEME_ZOO.md section 20.7/20.9 pour la methode de mesure
-# (similarite de Jaccard sur les couples (livre, chapitre)) et les chiffres
-# par oeuvre. Limite volontairement aux oeuvres a temoin unique en prose
-# (pas de vers <l>/<cit>) les plus fiables pour une premiere version.
-ENGLISH_ALIGNED_WORKS = {
-    "zoo10": "1e.xml",  # Athenaeus, Deipnosophistes - 98%
-    "zoo85": "1e.xml",  # Solinus - 95%
-    "zoo16": "1e.xml",  # Diodore, Bibliotheca Historica - 82%
-    "zoo15": "1e.xml",  # Columella, De re rustica - 47%
-    "zoo20": "1e.xml",  # Grattius, Cynegetica - 100%
-    "zoo22": "1e_1.xml",  # Hesiode, Works and Days - 100%
-    "zoo31": "1e.xml",  # Ovide, Halieuticon - fragment continu unique des deux cotes (100% apres correction de la fausse division en 5 livres)
-    "zoo4": "2e.xml",  # Antigonus - grec (Keller 1877, zoo4/2g) et anglais (Hardiman,
-                        # paradoxography.org, CC BY-SA) encodes avec la meme numerotation
-                        # de chapitre par construction - ne s'applique qu'au temoin 2g ;
-                        # zoo4/1g (TLG, licence restreinte) n'est pas traite par le pipeline.
-    "zoo89": "1e.xml",  # Pseudo-Aristote, Peri thaumasion akousmaton - grec (Loeb/Hett
-                         # 1936, domaine public) et anglais (Hett 1936 via paradoxography.org,
-                         # CC BY-SA) encodes avec la meme numerotation de chapitre.
+# Oeuvres dont le temoin anglais n'est PAS bon a reutiliser malgre un pairage
+# automatique trouve par le nom de fichier (voir find_english_witness_file
+# ci-dessous) - typiquement une anomalie deja identifiee et pas encore
+# elucidee (cf. Strabon, DOCUMENTATION_SYSTEME_ZOO.md section 20.4/20.6/20.7 :
+# seulement 4% de concordance de chemins livre/chapitre alors que grec et
+# anglais proviennent officiellement de la meme edition Perseus, suspicion de
+# bug d'extraction plutot que de vraie incompatibilite de source - a
+# investiguer separement avant de faire confiance a ce pairage). Cle =
+# "zooN/numero" (ex. "zoo49/1").
+ENGLISH_WITNESS_EXCLUDE = {
+    "zoo49/1",  # Strabon - alignement anormalement bas, cause non elucidee
+    # zoo26/2 (Lucien, De sacrificiis) : le temoin anglais (encodage
+    # automatique Mistral, 2026-07-12) est mal balise - tout le corps est
+    # entrecoupe de div type="poem"/<l> (vers) alors que le texte est en prose
+    # (artefact d'un OCR ligne par ligne d'une edition imprimee, pas un vrai
+    # decoupage poetique : la numerotation des <l> se reinitialise de facon
+    # incoherente et ne correspond a aucun systeme de reference), et surtout
+    # le fichier melange DEUX oeuvres differentes de Lucien a la suite (De
+    # sacrificiis, puis Vitarum Auctio / "Sale of Creeds" a partir de la ligne
+    # ~287, sans separation). Necessite une reprise complete (separation des
+    # deux oeuvres, conversion des lignes OCR en paragraphes, correction des
+    # coquilles OCR) plutot qu'un correctif ponctuel. Voir section 21.
+    "zoo26/2",
 }
 
 _english_alignment_cache = {}
+# Compteurs de diagnostic (paragraphes ou une traduction alignee a ete
+# trouvee vs. non trouvee/repli sur Google Translate), par fichier non-anglais
+# traite - permet de reperer apres coup une oeuvre au taux de succes anormalement
+# bas (meme logique que le cas Strabon ci-dessus) sans avoir a mesurer un score
+# de concordance a l'avance sur un texte qu'on n'a pas encore reellement traite.
+_alignment_stats = {}
+
+
+def get_witness_number(file_path):
+    """Numero d'oeuvre du fichier (convention <numero><lettre>[_variante].xml,
+    ex: "5g_2.xml" -> "5"), ou "" si le nom ne suit pas la convention."""
+    basename = os.path.basename(file_path)
+    match = re.match(r"^(\d+)[a-z](_\d+)?\.xml$", basename)
+    return match.group(1) if match else ""
+
+
+def find_english_witness_file(non_english_file_path):
+    """Trouve automatiquement, dans le meme dossier zooN, le fichier temoin
+    anglais correspondant au meme numero d'oeuvre que non_english_file_path
+    (convention de nommage <numero><lettre>[_variante].xml : le temoin
+    anglais de "5g.xml" est "5e.xml"). Prefere le fichier sans variante
+    ("5e.xml") ; a defaut prend le premier "5e_N.xml" trouve par ordre
+    alphabetique. Retourne None si aucun numero n'est detecte ou si aucun
+    fichier anglais correspondant n'existe (l'oeuvre n'a alors simplement pas
+    de traduction humaine a reutiliser, ce qui est le cas normal pour la
+    majorite du corpus)."""
+    num = get_witness_number(non_english_file_path)
+    if not num:
+        return None
+    folder = os.path.dirname(non_english_file_path)
+    exact = f"{num}e.xml"
+    if os.path.exists(os.path.join(folder, exact)):
+        return exact
+    try:
+        candidates = sorted(
+            f for f in os.listdir(folder)
+            if re.match(rf"^{re.escape(num)}e_\d+\.xml$", f)
+        )
+    except OSError:
+        return None
+    return candidates[0] if candidates else None
 
 
 def _walk_english_paragraphs(div, path, out_map):
@@ -384,6 +427,17 @@ def _walk_english_paragraphs(div, path, out_map):
     extract_division_metadata, et associe a chaque chemin (ex: (1,1) pour
     livre 1 chapitre 1) le texte concatene de ses paragraphes <p>."""
     for tag_id, tag_div in enumerate(div.find_all(re.compile("^div"), recursive=False), 1):
+        # Certains temoins anglais Perseus (ex: zoo24/1e, zoo26/1e/2e) enveloppent
+        # tout le texte dans un div type="translation" que le cote non-anglais
+        # n'a pas - meme principe que le type="Oeuvre" deja rendu transparent
+        # dans extract_division_metadata (ne compte pas comme un niveau de
+        # chemin), sans quoi tout l'alignement est decale d'un cran (chapitre 1
+        # grec se retrouverait compare a l'enveloppe entiere plutot qu'au
+        # chapitre 1 anglais) - decouvert via un taux d'alignement anormalement
+        # bas sur ces 3 fichiers, DOCUMENTATION_SYSTEME_ZOO.md section 21.
+        if get_div_type(tag_div) in ("Oeuvre", "Translation"):
+            _walk_english_paragraphs(tag_div, path, out_map)
+            continue
         current_path = path + (tag_id,)
         if does_it_have_children_div(tag_div):
             _walk_english_paragraphs(tag_div, current_path, out_map)
@@ -397,20 +451,24 @@ def _walk_english_paragraphs(div, path, out_map):
 
 
 def get_english_alignment_map(non_english_file_path):
-    """Retourne (et met en cache par dossier zooN) la correspondance chemin
+    """Retourne (et met en cache par "zooN/numero") la correspondance chemin
     (livre, chapitre, ...) -> texte anglais deja traduit humainement, pour
-    l'oeuvre donnee, si elle beneficie d'un temoin anglais suffisamment bien
-    aligne (ENGLISH_ALIGNED_WORKS ci-dessus). None si l'oeuvre n'y figure pas
-    ou si le fichier anglais correspondant est introuvable/illisible."""
+    l'oeuvre donnee, si un temoin anglais correspondant est trouve (voir
+    find_english_witness_file) et n'est pas explicitement exclu
+    (ENGLISH_WITNESS_EXCLUDE). None si aucun temoin anglais correspondant
+    n'existe, si l'oeuvre est exclue, ou si le fichier est introuvable/illisible."""
     zoo_folder = os.path.basename(os.path.dirname(non_english_file_path))
-    if zoo_folder not in ENGLISH_ALIGNED_WORKS:
+    num = get_witness_number(non_english_file_path)
+    cache_key = f"{zoo_folder}/{num}"
+    if cache_key in ENGLISH_WITNESS_EXCLUDE:
         return None
-    if zoo_folder in _english_alignment_cache:
-        return _english_alignment_cache[zoo_folder]
+    if cache_key in _english_alignment_cache:
+        return _english_alignment_cache[cache_key]
 
-    en_path = os.path.join(os.path.dirname(non_english_file_path), ENGLISH_ALIGNED_WORKS[zoo_folder])
+    eng_filename = find_english_witness_file(non_english_file_path)
     out_map = None
-    if os.path.exists(en_path):
+    if eng_filename:
+        en_path = os.path.join(os.path.dirname(non_english_file_path), eng_filename)
         try:
             with open(en_path, "r", encoding="UTF-8") as f:
                 soup = bs(f, "lxml-xml")
@@ -420,8 +478,23 @@ def get_english_alignment_map(non_english_file_path):
             print(f"[WARNING] Echec de la construction de la carte d'alignement anglais pour {en_path}: {e}")
             out_map = None
 
-    _english_alignment_cache[zoo_folder] = out_map
+    _english_alignment_cache[cache_key] = out_map
     return out_map
+
+
+def report_alignment_stats(file_path):
+    """Affiche, pour un fichier non-anglais qui vient d'etre traite, le taux
+    de paragraphes ayant effectivement trouve une traduction alignee (vs.
+    repli sur Google Translate) - permet de reperer une oeuvre au taux
+    anormalement bas (meme diagnostic que le cas Strabon, voir
+    ENGLISH_WITNESS_EXCLUDE) sans avoir eu besoin de le mesurer a l'avance."""
+    stats = _alignment_stats.get(file_path)
+    if not stats or (stats["hits"] + stats["misses"]) == 0:
+        return
+    total = stats["hits"] + stats["misses"]
+    rate = stats["hits"] / total
+    flag = " <-- taux bas, a verifier" if 0 < rate < 0.15 else ""
+    print(f"[ALIGNEMENT] {file_path} : {stats['hits']}/{total} paragraphes ({rate:.0%}) via traduction humaine alignee{flag}")
 
 
 def get_aligned_translation(file_path, parent_uri):
@@ -434,17 +507,22 @@ def get_aligned_translation(file_path, parent_uri):
     if not align_map:
         return None
 
+    stats = _alignment_stats.setdefault(file_path, {"hits": 0, "misses": 0})
+
     numeric_segments = tuple(int(seg) for seg in parent_uri.split("/") if seg.isdigit())
     if not numeric_segments:
+        stats["misses"] += 1
         return None
 
     if numeric_segments in align_map:
+        stats["hits"] += 1
         return align_map[numeric_segments]
 
     # Notre chemin est moins profond que l'anglais (ex: grec 1/1/5 ->
     # anglais 1/1/5/1, 1/1/5/2... regroupes en un seul texte).
     matches = [text for path, text in align_map.items() if path[:len(numeric_segments)] == numeric_segments]
     if matches:
+        stats["hits"] += 1
         return " ".join(matches)
 
     # Notre chemin est plus profond que l'anglais (ex: 1/1/5/2 -> chercher
@@ -452,8 +530,10 @@ def get_aligned_translation(file_path, parent_uri):
     for depth in range(len(numeric_segments) - 1, 0, -1):
         prefix = numeric_segments[:depth]
         if prefix in align_map:
+            stats["hits"] += 1
             return align_map[prefix]
 
+    stats["misses"] += 1
     return None
 
 
@@ -755,6 +835,7 @@ def extraction_data(FILE,CSV):
         metadata = [[uri, oeuvre_id, "Oeuvre", oeuvre_title, author, date, editor, FILE]]
 
         extract_division_metadata(body_parser, uri, link_data, paragraph_data,annotation_data, 0, zoo_folder)
+        report_alignment_stats(FILE)
 
         pd.DataFrame(link_data, columns=link_labels).to_csv('./output/' + CSV + "_link.csv", index=False,
                                                             encoding='UTF-8')
