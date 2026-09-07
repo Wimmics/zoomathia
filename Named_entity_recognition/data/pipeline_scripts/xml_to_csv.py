@@ -354,28 +354,14 @@ def get_witness_suffix(file_path):
 
 # Oeuvres dont le temoin anglais n'est PAS bon a reutiliser malgre un pairage
 # automatique trouve par le nom de fichier (voir find_english_witness_file
-# ci-dessous) - typiquement une anomalie deja identifiee et pas encore
-# elucidee (cf. Strabon, DOCUMENTATION_SYSTEME_ZOO.md section 20.4/20.6/20.7 :
-# seulement 4% de concordance de chemins livre/chapitre alors que grec et
-# anglais proviennent officiellement de la meme edition Perseus, suspicion de
-# bug d'extraction plutot que de vraie incompatibilite de source - a
-# investiguer separement avant de faire confiance a ce pairage). Cle =
-# "zooN/numero" (ex. "zoo49/1").
-ENGLISH_WITNESS_EXCLUDE = {
-    "zoo49/1",  # Strabon - alignement anormalement bas, cause non elucidee
-    # zoo26/2 (Lucien, De sacrificiis) : le temoin anglais (encodage
-    # automatique Mistral, 2026-07-12) est mal balise - tout le corps est
-    # entrecoupe de div type="poem"/<l> (vers) alors que le texte est en prose
-    # (artefact d'un OCR ligne par ligne d'une edition imprimee, pas un vrai
-    # decoupage poetique : la numerotation des <l> se reinitialise de facon
-    # incoherente et ne correspond a aucun systeme de reference), et surtout
-    # le fichier melange DEUX oeuvres differentes de Lucien a la suite (De
-    # sacrificiis, puis Vitarum Auctio / "Sale of Creeds" a partir de la ligne
-    # ~287, sans separation). Necessite une reprise complete (separation des
-    # deux oeuvres, conversion des lignes OCR en paragraphes, correction des
-    # coquilles OCR) plutot qu'un correctif ponctuel. Voir section 21.
-    "zoo26/2",
-}
+# ci-dessous) - typiquement une anomalie qui necessite une reprise du fichier
+# lui-meme, pas seulement un ajustement de l'algorithme d'alignement. Cle =
+# "zooN/numero" (ex. "zoo26/2"). Vide pour l'instant : les deux cas identifies
+# a ce jour (Strabon zoo49/1, decalage de position du a des divisions
+# paratextuelles non numerotees ; Lucien zoo26/2, encodage en vers errone +
+# oeuvre parasite + page manquante) ont ete corriges a la source plutot que
+# contournes ici. Voir DOCUMENTATION_SYSTEME_ZOO.md section 21.
+ENGLISH_WITNESS_EXCLUDE = {}
 
 _english_alignment_cache = {}
 # Compteurs de diagnostic (paragraphes ou une traduction alignee a ete
@@ -426,7 +412,8 @@ def _walk_english_paragraphs(div, path, out_map):
     deja traduit par un humain, avec la meme logique positionnelle que
     extract_division_metadata, et associe a chaque chemin (ex: (1,1) pour
     livre 1 chapitre 1) le texte concatene de ses paragraphes <p>."""
-    for tag_id, tag_div in enumerate(div.find_all(re.compile("^div"), recursive=False), 1):
+    position = 0
+    for tag_div in div.find_all(re.compile("^div"), recursive=False):
         # Certains temoins anglais Perseus (ex: zoo24/1e, zoo26/1e/2e) enveloppent
         # tout le texte dans un div type="translation" que le cote non-anglais
         # n'a pas - meme principe que le type="Oeuvre" deja rendu transparent
@@ -438,7 +425,20 @@ def _walk_english_paragraphs(div, path, out_map):
         if get_div_type(tag_div) in ("Oeuvre", "Translation"):
             _walk_english_paragraphs(tag_div, path, out_map)
             continue
-        current_path = path + (tag_id,)
+        # Paratexte non numerote (ex: Strabon zoo49/1e - un "book" n="front"
+        # avant le livre 1, un "chapter" n="argument" avant le chapitre 1 de
+        # chaque livre) sans equivalent cote grec, qui decale sinon la
+        # position de toutes les divisions numerotees suivantes (le livre 1
+        # grec se retrouverait compare au "front" anglais). Cote non-anglais,
+        # une division de contenu reel porte toujours un n= purement
+        # numerique - on ignore donc (sans consommer de position) toute div
+        # dont le n= ne l'est pas, plutot que de compter sa position comme les
+        # autres. Voir DOCUMENTATION_SYSTEME_ZOO.md section 21.
+        div_n = tag_div.get("n", "")
+        if div_n and not div_n.isdigit():
+            continue
+        position += 1
+        current_path = path + (position,)
         if does_it_have_children_div(tag_div):
             _walk_english_paragraphs(tag_div, current_path, out_map)
         else:
