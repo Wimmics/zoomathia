@@ -412,28 +412,38 @@ def _walk_english_paragraphs(div, path, out_map):
     deja traduit par un humain, avec la meme logique positionnelle que
     extract_division_metadata, et associe a chaque chemin (ex: (1,1) pour
     livre 1 chapitre 1) le texte concatene de ses paragraphes <p>."""
+    children = div.find_all(re.compile("^div"), recursive=False)
+
+    # Enveloppe transparente (ex: <div type="translation">/"edition" autour de
+    # tout le texte, zoo24/1e, zoo26/1e/2e, zoo47/1e) : seul enfant a ce niveau,
+    # sans numero reel (n= absent ou non numerique) - ne compte pas comme un
+    # niveau de chemin, sans quoi tout l'alignement est decale d'un cran
+    # (chapitre 1 grec compare a l'enveloppe entiere plutot qu'au chapitre 1
+    # anglais). Le n= numerique est le signal qui evite de confondre ceci avec
+    # une vraie division unique legitime (ex: zoo85 Solinus, un seul livre
+    # n="1" - celui-la doit rester compte normalement, cote grec ayant la
+    # meme unique division). Teste sur le nombre d'ENFANTS de tag_div, pas
+    # sur len(children) du niveau courant (un seul type="poem" a cote d'un
+    # type="book" numerique n'est pas une enveloppe, juste une div en trop -
+    # gere plus bas par le filtre n= non numerique). DOCUMENTATION_SYSTEME_ZOO.md
+    # section 21.
+    if len(children) == 1:
+        only = children[0]
+        only_n = only.get("n", "")
+        if (not only_n or not only_n.isdigit()) and does_it_have_children_div(only):
+            _walk_english_paragraphs(only, path, out_map)
+            return
+
     position = 0
-    for tag_div in div.find_all(re.compile("^div"), recursive=False):
-        # Certains temoins anglais Perseus (ex: zoo24/1e, zoo26/1e/2e) enveloppent
-        # tout le texte dans un div type="translation" que le cote non-anglais
-        # n'a pas - meme principe que le type="Oeuvre" deja rendu transparent
-        # dans extract_division_metadata (ne compte pas comme un niveau de
-        # chemin), sans quoi tout l'alignement est decale d'un cran (chapitre 1
-        # grec se retrouverait compare a l'enveloppe entiere plutot qu'au
-        # chapitre 1 anglais) - decouvert via un taux d'alignement anormalement
-        # bas sur ces 3 fichiers, DOCUMENTATION_SYSTEME_ZOO.md section 21.
-        if get_div_type(tag_div) in ("Oeuvre", "Translation"):
-            _walk_english_paragraphs(tag_div, path, out_map)
-            continue
-        # Paratexte non numerote (ex: Strabon zoo49/1e - un "book" n="front"
-        # avant le livre 1, un "chapter" n="argument" avant le chapitre 1 de
-        # chaque livre) sans equivalent cote grec, qui decale sinon la
-        # position de toutes les divisions numerotees suivantes (le livre 1
-        # grec se retrouverait compare au "front" anglais). Cote non-anglais,
-        # une division de contenu reel porte toujours un n= purement
-        # numerique - on ignore donc (sans consommer de position) toute div
-        # dont le n= ne l'est pas, plutot que de compter sa position comme les
-        # autres. Voir DOCUMENTATION_SYSTEME_ZOO.md section 21.
+    for tag_div in children:
+        # Paratexte non numerote au milieu de vraies divisions numerotees
+        # (ex: Strabon zoo49/1e - un "book" n="front" avant le livre 1, un
+        # "chapter" n="argument" avant le chapitre 1 de chaque livre) sans
+        # equivalent cote grec, qui decale sinon la position de toutes les
+        # divisions numerotees suivantes. Cote non-anglais, une division de
+        # contenu reel porte toujours un n= purement numerique - on ignore
+        # donc (sans consommer de position, sans y descendre) toute div dont
+        # le n= ne l'est pas. Voir DOCUMENTATION_SYSTEME_ZOO.md section 21.
         div_n = tag_div.get("n", "")
         if div_n and not div_n.isdigit():
             continue
@@ -514,24 +524,49 @@ def get_aligned_translation(file_path, parent_uri):
         stats["misses"] += 1
         return None
 
+    # Toute traduction alignee candidate passe par ce filtre avant d'etre
+    # acceptee comme un "hit" : au-dela d'une longueur raisonnable pour UN
+    # paragraphe, ce n'est plus un texte correspondant a la bonne granularite
+    # mais le signe d'un decalage de structure trop grossier pour etre
+    # fiable - ex. zoo80/3g (Hippiatrica Parisina, 1719 paragraphes tous
+    # directement sous un seul chapitre "plat", cote grec ET anglais) : le
+    # chemin grec et le chemin anglais tombent tous deux sur la MEME division
+    # unique (correspondance exacte, donc jamais filtree par le plafond sur
+    # le nombre d'entrees regroupees ci-dessous), dont le texte anglais fait
+    # a lui seul 114 000 caracteres (le chapitre entier) - colle identique
+    # sur chacun des 1719 paragraphes, gonflant le fichier d'annotations a
+    # 874 Mo. Mieux vaut aucune traduction alignee (repli sur Google
+    # Translate) qu'une traduction fausse dupliquee massivement, quelle que
+    # soit la branche qui l'a trouvee. Voir DOCUMENTATION_SYSTEME_ZOO.md
+    # section 21.
+    MAX_ALIGNED_TEXT_LENGTH = 6000
+
+    def accept(text):
+        if text and len(text) <= MAX_ALIGNED_TEXT_LENGTH:
+            stats["hits"] += 1
+            return text
+        stats["misses"] += 1
+        return None
+
     if numeric_segments in align_map:
-        stats["hits"] += 1
-        return align_map[numeric_segments]
+        return accept(align_map[numeric_segments])
 
     # Notre chemin est moins profond que l'anglais (ex: grec 1/1/5 ->
-    # anglais 1/1/5/1, 1/1/5/2... regroupes en un seul texte).
+    # anglais 1/1/5/1, 1/1/5/2... regroupes en un seul texte). Plafonne aussi
+    # le nombre d'entrees regroupees : au-dela, ce n'est plus l'anglais qui
+    # subdivise un peu plus finement une meme division (cas legitime, une
+    # poignee de sous-parties), mais un vrai decalage de structure.
+    MAX_BROADEN_MATCHES = 30
     matches = [text for path, text in align_map.items() if path[:len(numeric_segments)] == numeric_segments]
-    if matches:
-        stats["hits"] += 1
-        return " ".join(matches)
+    if matches and len(matches) <= MAX_BROADEN_MATCHES:
+        return accept(" ".join(matches))
 
     # Notre chemin est plus profond que l'anglais (ex: 1/1/5/2 -> chercher
     # le prefixe anglais 1/1/5 puis 1/1).
     for depth in range(len(numeric_segments) - 1, 0, -1):
         prefix = numeric_segments[:depth]
         if prefix in align_map:
-            stats["hits"] += 1
-            return align_map[prefix]
+            return accept(align_map[prefix])
 
     stats["misses"] += 1
     return None
