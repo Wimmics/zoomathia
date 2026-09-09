@@ -540,33 +540,61 @@ def get_aligned_translation(file_path, parent_uri):
     # soit la branche qui l'a trouvee. Voir DOCUMENTATION_SYSTEME_ZOO.md
     # section 21.
     MAX_ALIGNED_TEXT_LENGTH = 6000
+    MAX_BROADEN_MATCHES = 30
 
-    def accept(text):
+    def candidate_texts():
+        """Genere, dans l'ordre de priorite, chaque texte anglais candidat
+        pour ce chemin - une strategie qui echoue (aucune entree trouvee)
+        passe silencieusement a la suivante, mais une strategie qui TROUVE
+        une entree trop longue (rejetee plus loin par le plafond de
+        longueur) ne doit pas empecher d'essayer les strategies restantes:
+        avant le correctif de la section 22, un premier essai trouve mais
+        rejete pour longueur (ex. zoo25, chapitre 1 anglais de 17 000
+        caracteres trouve par repli de profondeur avant meme que le
+        contournement d'enveloppe de tete ait sa chance) faisait abandonner
+        la recherche au lieu de continuer."""
+        if numeric_segments in align_map:
+            yield align_map[numeric_segments]
+
+        # Notre chemin est moins profond que l'anglais (ex: grec 1/1/5 ->
+        # anglais 1/1/5/1, 1/1/5/2... regroupes en un seul texte). Plafonne
+        # aussi le nombre d'entrees regroupees : au-dela, ce n'est plus
+        # l'anglais qui subdivise un peu plus finement une meme division
+        # (cas legitime, une poignee de sous-parties), mais un vrai
+        # decalage de structure.
+        matches = [text for path, text in align_map.items() if path[:len(numeric_segments)] == numeric_segments]
+        if matches and len(matches) <= MAX_BROADEN_MATCHES:
+            yield " ".join(matches)
+
+        # Notre chemin est plus profond que l'anglais (ex: 1/1/5/2 ->
+        # chercher le prefixe anglais 1/1/5 puis 1/1).
+        for depth in range(len(numeric_segments) - 1, 0, -1):
+            prefix = numeric_segments[:depth]
+            if prefix in align_map:
+                yield align_map[prefix]
+
+        # Notre chemin a un ou plusieurs niveaux de TETE en trop que
+        # l'anglais n'a pas (ex: zoo25, Isidore - le latin garde le vrai
+        # numero de livre "12/3" quand ce fichier ne represente qu'un seul
+        # livre extrait d'une oeuvre qui en compte 20, alors que le temoin
+        # anglais, extrait comme fichier autonome pour ce seul livre, ne
+        # repete pas ce numero et numerote directement ses chapitres "3").
+        # On ne peut pas retirer ce numero de livre cote original (c'est
+        # une vraie information, utile si d'autres livres de la meme
+        # oeuvre sont ajoutes un jour - contrairement a une enveloppe
+        # purement structurelle), donc on tente ici, en dernier recours,
+        # de retrouver une correspondance en ignorant un ou plusieurs
+        # segments de tete du chemin original. Voir
+        # DOCUMENTATION_SYSTEME_ZOO.md section 22.
+        for start in range(1, len(numeric_segments)):
+            suffix = numeric_segments[start:]
+            if suffix in align_map:
+                yield align_map[suffix]
+
+    for text in candidate_texts():
         if text and len(text) <= MAX_ALIGNED_TEXT_LENGTH:
             stats["hits"] += 1
             return text
-        stats["misses"] += 1
-        return None
-
-    if numeric_segments in align_map:
-        return accept(align_map[numeric_segments])
-
-    # Notre chemin est moins profond que l'anglais (ex: grec 1/1/5 ->
-    # anglais 1/1/5/1, 1/1/5/2... regroupes en un seul texte). Plafonne aussi
-    # le nombre d'entrees regroupees : au-dela, ce n'est plus l'anglais qui
-    # subdivise un peu plus finement une meme division (cas legitime, une
-    # poignee de sous-parties), mais un vrai decalage de structure.
-    MAX_BROADEN_MATCHES = 30
-    matches = [text for path, text in align_map.items() if path[:len(numeric_segments)] == numeric_segments]
-    if matches and len(matches) <= MAX_BROADEN_MATCHES:
-        return accept(" ".join(matches))
-
-    # Notre chemin est plus profond que l'anglais (ex: 1/1/5/2 -> chercher
-    # le prefixe anglais 1/1/5 puis 1/1).
-    for depth in range(len(numeric_segments) - 1, 0, -1):
-        prefix = numeric_segments[:depth]
-        if prefix in align_map:
-            return accept(align_map[prefix])
 
     stats["misses"] += 1
     return None
