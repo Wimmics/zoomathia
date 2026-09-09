@@ -12,7 +12,7 @@ const ListElement = ({uri, label, type, offsets, onMouseEnter, onMouseLeave, onC
 }
 
 const ParagraphDisplay = ({ id, text, uri, lang, concepts, controller, displayId, redirect, bekker, translationText }) => {
-    const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}{redirect ? <a href={`${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${uri}`} rel="noreferrer" target="_blank">
+    const [text_content, setTextContent] = useState(<p key={`content-${id}`}>{text}{redirect ? <a href={`${process.env.REACT_APP_FRONTEND_URL}Work?uri=${uri}`} rel="noreferrer" target="_blank">
         <img className={styles["logo-redirect"]} src={redirection} alt=""/>
         </a> : ""}</p>)
     const [conceptsDiv, setConceptsDiv] = useState([])

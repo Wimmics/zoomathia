@@ -55,7 +55,7 @@ const CompetencyQuestionComponent = () => {
                             id: elt,
                             name: elt,
                             formatter: (cell) => {
-                                return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}ExploreAWork?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
+                                return html(`<a href='${process.env.REACT_APP_FRONTEND_URL}Work?uri=${cell}' target='_blank'>${cell.replace("http://www.zoomathia.com/", '')}</a>`) }
                         })
                         break;
                     case "name_anthroponym":
@@ -117,33 +117,13 @@ const CompetencyQuestionComponent = () => {
             const sourceField = pick(["s"]) || vars[0]
             const targetField = pick(["o", "date", "type"]) || vars[1]
 
-            // Le champ animal (sourceField) a souvent des centaines de
-            // valeurs distinctes (illisible d'un coup dans un graphe) : on
-            // ne garde que les MAX_SOURCE_NODES animaux les plus frequents
-            // avant de transmettre le resultat a VENUS, qui n'a pas de
-            // notion de "top N" integree.
-            const MAX_SOURCE_NODES = 20
-            const sourceCounts = {}
-            for (const b of spo_data?.results?.bindings || []) {
-                const s = b[sourceField]?.value
-                if (!s) continue
-                sourceCounts[s] = (sourceCounts[s] || 0) + 1
-            }
-            const topSources = new Set(
-                Object.entries(sourceCounts)
-                    .sort((a, b) => b[1] - a[1])
-                    .slice(0, MAX_SOURCE_NODES)
-                    .map(([name]) => name)
-            )
-            const filteredResult = {
-                head: spo_data.head,
-                results: {
-                    bindings: (spo_data?.results?.bindings || [])
-                        .filter((b) => topSources.has(b[sourceField]?.value))
-                }
-            }
-
-            venusGraph.sparqlResult = filteredResult
+            // Affiche l'integralite du resultat dans le graphe, comme dans le
+            // tableau (choix explicite de l'utilisateur malgre le risque
+            // qu'un graphe a plusieurs centaines de noeuds devienne difficile
+            // a lire ou plus lent a charger sur les questions les plus
+            // fournies). Auparavant limite aux MAX_SOURCE_NODES animaux les
+            // plus frequents, VENUS n'ayant pas de notion de "top N" integree.
+            venusGraph.sparqlResult = spo_data
             venusGraph.encoding = {
                 nodes: {
                     source: { field: sourceField, color: { value: '#4a6fa5' } },
