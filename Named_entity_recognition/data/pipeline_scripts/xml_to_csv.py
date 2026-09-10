@@ -15,6 +15,7 @@ import ujson as json
 
 import spacy
 import sys
+import signal
 import traceback
 from spacy.matcher import PhraseMatcher
 from spacy.lang.en.stop_words import STOP_WORDS
@@ -66,6 +67,63 @@ nlp_model = spacy.load("en_core_web_lg")
 SUPPORTED_DIV = ["poem", "book", "chapter", "section", "edition"]
 ANNOTATION_AUTO = True
 
+class _TranslateTimeout(Exception):
+    pass
+
+
+def _on_translate_alarm(signum, frame):
+    raise _TranslateTimeout()
+
+
+def _translate_with_timeout(text, lang_target, seconds=45):
+    """GoogleTranslator().translate() borne dans le temps. deep_translator
+    n'expose pas de timeout et s'appuie sur requests sans delai : une seule
+    requete qui reste silencieusement bloquee (cote Google) fige tout le
+    pipeline indefiniment (cas rencontre plusieurs fois - zoo87, zoo7/1g).
+    SIGALRM interrompt l'appel au bout de `seconds` ; si le signal n'est pas
+    disponible (thread secondaire), on retombe sur l'appel nu."""
+    try:
+        previous = signal.signal(signal.SIGALRM, _on_translate_alarm)
+    except (ValueError, AttributeError):
+        return GoogleTranslator(source='auto', target=lang_target).translate(text)
+    signal.alarm(seconds)
+    try:
+        return GoogleTranslator(source='auto', target=lang_target).translate(text)
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, previous)
+
+
+# Reponses que deep_translator renvoie SANS lever d'exception quand Google
+# sert une page d'erreur HTTP 200 (typiquement sous limitation de debit apres
+# quelques centaines d'appels rapides) : la chaine passe alors pour une
+# "traduction" et son texte ("Server Error (500)"...) est annote a la place du
+# vrai contenu - meme jeu d'annotations colle sur des centaines de paragraphes
+# (bug decouvert sur zoo7/5g, 560/889 paragraphes, et zoo7/6g). A traiter
+# comme un echec (backoff long : la limitation Google se leve en dizaines de
+# secondes, pas en 5).
+_TRANSLATE_ERROR_MARKERS = (
+    "server error", "bad gateway", "service unavailable", "too many requests",
+    "error 500", "error 502", "error 503", "http error", "<html", "gateway timeout",
+)
+
+
+def _looks_like_translate_error(result, source):
+    if result is None:
+        return True
+    stripped = result.strip()
+    if stripped == "":
+        return True
+    low = stripped.lower()
+    if any(marker in low for marker in _TRANSLATE_ERROR_MARKERS):
+        return True
+    # Reponse anormalement courte pour une entree substantielle (une page
+    # d'erreur laconique la ou on attend une vraie traduction).
+    if len(source) > 60 and len(stripped) < max(12, 0.12 * len(source)):
+        return True
+    return False
+
+
 def split_and_translate(text, lang_target, max_chunk_length=1000):
     chunks = [text[i:i + max_chunk_length] for i in range(0, len(text), max_chunk_length)]
     translated_chunks = []
@@ -75,17 +133,31 @@ def split_and_translate(text, lang_target, max_chunk_length=1000):
         success = False
         while not success:
             try:
-                translated_chunk = GoogleTranslator(source='auto', target=lang_target).translate(chunk)
-                if translated_chunk is not None:
-                    translated_chunks.append(translated_chunk)
-
+                translated_chunk = _translate_with_timeout(chunk, lang_target)
+                if _looks_like_translate_error(translated_chunk, chunk):
+                    raise RuntimeError("reponse Google Translate invalide (page d'erreur)")
+                translated_chunks.append(translated_chunk)
                 success = True
 
             except Exception as e:
                 tries += 1
-                wait = min(5 * tries, 60)
-                print(f" Echec connexion à Google Translate (Tentative {tries}). Reessai dans {wait}s...")
+                if tries >= 8:
+                    # Google ne repond plus correctement pour ce segment : on le
+                    # laisse en langue source (le NER y trouvera moins d'entites,
+                    # mais pas de fausses annotations "Server Error") plutot que
+                    # de bloquer tout le corpus.
+                    print(f" Google Translate injoignable apres {tries} tentatives ; segment laisse en langue source.")
+                    translated_chunks.append(chunk)
+                    success = True
+                    continue
+                wait = min(15 * tries, 120)
+                print(f" Echec/blocage Google Translate (tentative {tries}: {e}). Reessai dans {wait}s...")
                 time.sleep(wait)
+
+        # Pacing leger entre segments : evite de declencher la limitation de
+        # debit de Google sur les oeuvres a plusieurs centaines de paragraphes
+        # entierement traduites par machine (zoo7/5g, zoo81...).
+        time.sleep(0.4)
 
     translated_text = ' '.join(translated_chunks)
     return translated_text
@@ -294,7 +366,7 @@ def clean_uri(txt):
     if not txt or txt.strip() == "":
         return ""
     try:
-        translated_txt = GoogleTranslator(source='auto', target="en").translate(txt)
+        translated_txt = _translate_with_timeout(txt, "en")
     except Exception as e:
         print(f"[WARNING] Erreur de traduction du titre/auteur pour: '{txt}' : {e}")
         translated_txt = txt
@@ -507,12 +579,26 @@ def report_alignment_stats(file_path):
     print(f"[ALIGNEMENT] {file_path} : {stats['hits']}/{total} paragraphes ({rate:.0%}) via traduction humaine alignee{flag}")
 
 
-def get_aligned_translation(file_path, parent_uri):
+def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_coarser=True):
     """Cherche, pour un chemin de division non-anglais (ex: '.../g/1/1'), le
     texte anglais deja traduit humainement correspondant, en repliant les
     sous-niveaux supplementaires d'un cote ou de l'autre sur le niveau commun
     le moins profond (cas Strabon, documente section 20.4/20.6 : un temoin
-    peut avoir un niveau de decoupage de plus que l'autre)."""
+    peut avoir un niveau de decoupage de plus que l'autre).
+
+    paragraph_index / allow_coarser : quand une division originale contient
+    PLUSIEURS <p> (donc plusieurs paragraphes distincts sous un meme
+    parent_uri), l'appelant passe l'index 1-base du paragraphe courant et
+    allow_coarser=False. On cherche alors uniquement une correspondance a la
+    bonne granularite (le meme paragraphe cote anglais, ou l'anglais encore
+    plus fin) : le repli vers une division anglaise PLUS GROSSIERE est
+    interdit, car il collerait le texte anglais du chapitre entier sur
+    chacun de ses paragraphes - c'est exactement le bug de gonflage
+    (section 22 : cap de 6000 caracteres qui ne protege que les tres longs
+    chapitres ; ici zoo81/1g, zoo71/*, zoo7/*... ont des chapitres courts
+    dupliques a l'identique sur 100+ paragraphes). Sans correspondance fine,
+    on renvoie None et l'appelant retombe sur Google Translate paragraphe
+    par paragraphe."""
     align_map = get_english_alignment_map(file_path)
     if not align_map:
         return None
@@ -520,6 +606,8 @@ def get_aligned_translation(file_path, parent_uri):
     stats = _alignment_stats.setdefault(file_path, {"hits": 0, "misses": 0})
 
     numeric_segments = tuple(int(seg) for seg in parent_uri.split("/") if seg.isdigit())
+    if paragraph_index is not None:
+        numeric_segments = numeric_segments + (int(paragraph_index),)
     if not numeric_segments:
         stats["misses"] += 1
         return None
@@ -544,15 +632,15 @@ def get_aligned_translation(file_path, parent_uri):
 
     def candidate_texts():
         """Genere, dans l'ordre de priorite, chaque texte anglais candidat
-        pour ce chemin - une strategie qui echoue (aucune entree trouvee)
-        passe silencieusement a la suivante, mais une strategie qui TROUVE
-        une entree trop longue (rejetee plus loin par le plafond de
-        longueur) ne doit pas empecher d'essayer les strategies restantes:
-        avant le correctif de la section 22, un premier essai trouve mais
-        rejete pour longueur (ex. zoo25, chapitre 1 anglais de 17 000
-        caracteres trouve par repli de profondeur avant meme que le
-        contournement d'enveloppe de tete ait sa chance) faisait abandonner
-        la recherche au lieu de continuer."""
+        pour ce chemin (correspondance exacte, puis regroupement d'entrees
+        anglaises plus fines, puis realignement par retrait d'un segment de
+        tete). Une strategie qui echoue (aucune entree trouvee) passe
+        silencieusement a la suivante, et une strategie qui TROUVE une entree
+        trop longue (rejetee plus loin par le plafond de longueur) ne doit
+        pas non plus empecher d'essayer les strategies restantes : avant le
+        correctif de la section 22, un premier essai trouve mais rejete pour
+        longueur (ex. zoo25, chapitre anglais de 17 000 caracteres) faisait
+        abandonner la recherche au lieu de continuer."""
         if numeric_segments in align_map:
             yield align_map[numeric_segments]
 
@@ -562,32 +650,42 @@ def get_aligned_translation(file_path, parent_uri):
         # l'anglais qui subdivise un peu plus finement une meme division
         # (cas legitime, une poignee de sous-parties), mais un vrai
         # decalage de structure.
-        matches = [text for path, text in align_map.items() if path[:len(numeric_segments)] == numeric_segments]
+        matches = [text for path, text in align_map.items()
+                   if len(path) > len(numeric_segments)
+                   and path[:len(numeric_segments)] == numeric_segments]
         if matches and len(matches) <= MAX_BROADEN_MATCHES:
             yield " ".join(matches)
 
-        # Notre chemin est plus profond que l'anglais (ex: 1/1/5/2 ->
-        # chercher le prefixe anglais 1/1/5 puis 1/1).
-        for depth in range(len(numeric_segments) - 1, 0, -1):
-            prefix = numeric_segments[:depth]
-            if prefix in align_map:
-                yield align_map[prefix]
+        # A partir d'ici, on realigne le chemin en retirant UN segment de tete.
+        # Interdit quand la division originale porte plusieurs paragraphes
+        # (allow_coarser=False) : chaque <p> du chapitre serait sinon associe
+        # a une division anglaise sans rapport (bug de gonflage - meme jeu
+        # d'annotations sur tous les paragraphes).
+        if not allow_coarser:
+            return
 
-        # Notre chemin a un ou plusieurs niveaux de TETE en trop que
-        # l'anglais n'a pas (ex: zoo25, Isidore - le latin garde le vrai
-        # numero de livre "12/3" quand ce fichier ne represente qu'un seul
-        # livre extrait d'une oeuvre qui en compte 20, alors que le temoin
-        # anglais, extrait comme fichier autonome pour ce seul livre, ne
-        # repete pas ce numero et numerote directement ses chapitres "3").
-        # On ne peut pas retirer ce numero de livre cote original (c'est
-        # une vraie information, utile si d'autres livres de la meme
-        # oeuvre sont ajoutes un jour - contrairement a une enveloppe
-        # purement structurelle), donc on tente ici, en dernier recours,
-        # de retrouver une correspondance en ignorant un ou plusieurs
-        # segments de tete du chemin original. Voir
-        # DOCUMENTATION_SYSTEME_ZOO.md section 22.
-        for start in range(1, len(numeric_segments)):
-            suffix = numeric_segments[start:]
+        # Notre chemin a UN segment de tete que l'anglais n'a pas : soit un
+        # vrai numero de livre (zoo25, Isidore - le latin garde "12/3" alors
+        # que le temoin anglais, extrait pour ce seul livre, numerote
+        # directement ses chapitres "3"), soit une enveloppe structurelle
+        # jamais comptee cote anglais mais encore presente cote original
+        # (zoo42, Platon Timee - chapitre (1, N) ou le "1" de tete est le
+        # <div type="edition" n="urn:cts:..."> ; cf. _walk_english_paragraphs
+        # qui, lui, ne le compte pas). On retire donc exactement un segment de
+        # tete et on exige une correspondance EXACTE sur le reste : c'est un
+        # realignement 1:1 (toujours une division precise), pas un repli.
+        #
+        # On ne retire volontairement qu'UN seul segment, et on ne replie
+        # PLUS sur un prefixe moins profond (ancien "repli de profondeur",
+        # retire section 23) : ces deux strategies, sur un chemin a 3 niveaux
+        # + enveloppe (ex. zoo8 Oppien, zoo7/1g,5g,6g Aristote), faisaient
+        # correspondre la section s de chaque chapitre au chapitre anglais s
+        # (ou pire, au tout premier chapitre anglais via (1,)), collant le
+        # meme jeu d'annotations sur des dizaines de paragraphes. En l'absence
+        # de correspondance fiable ici, mieux vaut le repli sur Google
+        # Translate paragraphe par paragraphe. Voir sections 22 et 23.
+        if len(numeric_segments) >= 2:
+            suffix = numeric_segments[1:]
             if suffix in align_map:
                 yield align_map[suffix]
 
@@ -673,6 +771,13 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
         # ces div enfants et retraite leurs <p>, qui seront de toute facon
         # correctement extraits par le prochain appel recursif sur ce div
         # enfant - doublon silencieux sinon.
+        direct_ps = [pp for pp in parent_division.find_all(["p"], recursive=False)
+                     if not pp.find_parent('p') and strip_text(pp.text) != ""]
+        # Cette division a-t-elle plusieurs paragraphes distincts ? Si oui, la
+        # traduction alignee doit se faire paragraphe par paragraphe (jamais
+        # coller le texte anglais de toute la division sur chacun) - voir
+        # get_aligned_translation().
+        multi_paragraph_division = len(direct_ps) > 1
         for p in tqdm(parent_division.find_all(["p"], recursive=False)):
             if not p.find_parent('p'):
                 if strip_text(p.text) == "":
@@ -712,7 +817,11 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                         if is_english_file(FILE):
                             translated_paragraph = paragraph_text
                         else:
-                            aligned = get_aligned_translation(FILE, parent_uri)
+                            aligned = get_aligned_translation(
+                                FILE, parent_uri,
+                                paragraph_index=paragraph_id if multi_paragraph_division else None,
+                                allow_coarser=not multi_paragraph_division,
+                            )
                             translated_paragraph = aligned if aligned else split_and_translate(paragraph_text, "en")
 
                         find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
