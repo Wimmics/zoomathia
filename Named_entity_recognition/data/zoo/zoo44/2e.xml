@@ -19,32 +19,29 @@
 						<title>Quaestiones Naturales</title>
 						<author>Plutarch</author>
 				<editor role="editor">William W. Goodwin</editor>
+						<respStmt><resp>translation</resp><name>Translated from the Greek by several hands</name></respStmt>
+						<respStmt><resp>correction and revision</resp><name>William W. Goodwin</name></respStmt>
 						<imprint>
 							<publisher>Little, Brown and company</publisher>
-							<place>Boston</place>
+							<pubPlace>Boston</pubPlace>
 							<publisher>Press Of John Wilson and son</publisher>
-							<place>Cambridge</place>
+							<pubPlace>Cambridge</pubPlace>
 							<date>1874</date>
 						</imprint>
-						<respStmt>
-							<name>Translated from the Greek by several hands</name>
-							<resp>translation</resp>
-							<name>William W. Goodwin</name>
-							<resp>correction and revision</resp>
-						</respStmt>
+
 					</monogr>
 				</biblStruct>
 				<p>Keyboarding. Source XML recupere depuis Named_entity_recognition/data_translated/ (ancien dossier de travail du pipeline), retague au format zoo44 (div type="section" au lieu de div1 type="chapter") pour alignement avec zoo44/2g.xml (meme decoupage en 39 chapitres, n=1 a 39).</p>
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<refsDecl doctype="TEI.2">
-				<state unit="chapter"/>
+			<refsDecl>
+				<refState unit="chapter"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
 			<langUsage>
-				<language id="english">English</language>
+				<language ident="en">English</language>
 			</langUsage>
 		</profileDesc>
 	</teiHeader>
