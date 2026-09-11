@@ -23,7 +23,7 @@ Contains all the texts that have been catalogued and encoded in TEI-P5, reorgani
 Each file is named following the pattern:
 - `author_number`: sequential number assigned to the author (corresponds to the `id` in the `auteurs` table in Supabase)
 - `work_number`: sequential number assigned to the work, specific to each author (position among that author's works, ordered by their `id` in the `oeuvres` table)
-- `language_code`: `g` (Greek), `l` (Latin), `e` (English), `f` (French), `i` (Italian)
+- `language_code`: `g` (Greek), `l` (Latin), `e` (English).
 
 Example: `zoo1/1e.xml` is the English translation of the first work of author #1.
 
