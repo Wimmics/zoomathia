@@ -670,6 +670,9 @@ def report_alignment_stats(file_path):
     print(f"[ALIGNEMENT] {file_path} : {stats['hits']}/{total} paragraphes ({rate:.0%}) via traduction humaine alignee{flag}")
 
 
+_suffix_realignment_usage = {}
+
+
 def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_coarser=True):
     """Cherche, pour un chemin de division non-anglais (ex: '.../g/1/1'), le
     texte anglais deja traduit humainement correspondant, en repliant les
@@ -782,10 +785,31 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
         # meme jeu d'annotations sur des dizaines de paragraphes. En l'absence
         # de correspondance fiable ici, mieux vaut le repli sur Google
         # Translate paragraphe par paragraphe. Voir sections 22 et 23.
+        #
+        # Un vrai retrait d'enveloppe est une BIJECTION par fichier : chaque
+        # chemin original distinct, une fois l'enveloppe retiree, doit tomber
+        # sur une cle DIFFERENTE de align_map (une correspondance 1:1, jamais
+        # partagee). Si le meme suffixe sert deja une deuxieme fois pour ce
+        # fichier, ce n'est plus une enveloppe mais une collision entre deux
+        # branches sans rapport (ex. zoo17, Esope : chemin (fable=1, p=2),
+        # une fois le "1" retire, devient (2,) - qui coincide par hasard avec
+        # le "poeme 2" anglais - colle IDENTIQUEMENT le meme texte anglais sur
+        # le 2e paragraphe de plusieurs dizaines de fables sans rapport,
+        # jusqu'a x440 sur ce seul fichier ; meme phenomene mesure sur
+        # zoo50, zoo80, zoo7/10g, zoo15, zoo20, zoo27, zoo7/8g - taux de
+        # duplication de 50 a 86% des "traductions alignees" trouvees par
+        # cette branche avant ce correctif). On plafonne donc l'usage d'un
+        # meme suffixe a UNE seule fois par fichier ; au-dela, mieux vaut
+        # aucune traduction alignee (repli sur Google Translate) qu'une
+        # traduction dupliquee sans rapport avec le contenu reel.
         if len(numeric_segments) >= 2:
             suffix = numeric_segments[1:]
             if suffix in align_map:
-                yield align_map[suffix]
+                usage_key = (file_path, suffix)
+                usage_count = _suffix_realignment_usage.get(usage_key, 0) + 1
+                _suffix_realignment_usage[usage_key] = usage_count
+                if usage_count == 1:
+                    yield align_map[suffix]
 
         if not allow_coarser:
             return
