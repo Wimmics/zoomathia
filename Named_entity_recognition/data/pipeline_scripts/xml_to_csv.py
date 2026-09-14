@@ -734,13 +734,6 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
             yield " ".join(matches)
 
         # A partir d'ici, on realigne le chemin en retirant UN segment de tete.
-        # Interdit quand la division originale porte plusieurs paragraphes
-        # (allow_coarser=False) : chaque <p> du chapitre serait sinon associe
-        # a une division anglaise sans rapport (bug de gonflage - meme jeu
-        # d'annotations sur tous les paragraphes).
-        if not allow_coarser:
-            return
-
         # Notre chemin a UN segment de tete que l'anglais n'a pas : soit un
         # vrai numero de livre (zoo25, Isidore - le latin garde "12/3" alors
         # que le temoin anglais, extrait pour ce seul livre, numerote
@@ -751,6 +744,20 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
         # qui, lui, ne le compte pas). On retire donc exactement un segment de
         # tete et on exige une correspondance EXACTE sur le reste : c'est un
         # realignement 1:1 (toujours une division precise), pas un repli.
+        #
+        # Volontairement PAS gardee par allow_coarser, contrairement au
+        # regroupement ci-dessus : quand la division originale porte
+        # plusieurs paragraphes, le paragraph_index fait deja partie de
+        # numeric_segments et reste donc a la fin du chemin une fois
+        # l'enveloppe retiree (ex: (1, 4, 6) -> (4, 6), PAS (4,)) - la
+        # correspondance EXACTE exigee sur ce reste empeche toute confusion
+        # entre paragraphes d'une meme division (bug de gonflage vise par
+        # allow_coarser=False, section 22). Constate manquant sur zoo44/4g
+        # (Plutarque, Gryllus) : 37 paragraphes, correspondance anglaise
+        # 1 pour 1 exacte a chaque position, mais chemin original decale
+        # d'une enveloppe - aucune traduction alignee trouvee avant ce
+        # correctif faute de retrait de ce segment de tete pour les divisions
+        # a plusieurs paragraphes.
         #
         # On ne retire volontairement qu'UN seul segment, et on ne replie
         # PLUS sur un prefixe moins profond (ancien "repli de profondeur",
@@ -765,6 +772,9 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
             suffix = numeric_segments[1:]
             if suffix in align_map:
                 yield align_map[suffix]
+
+        if not allow_coarser:
+            return
 
     for text in candidate_texts():
         if text and len(text) <= MAX_ALIGNED_TEXT_LENGTH:
