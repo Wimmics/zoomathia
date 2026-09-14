@@ -19,6 +19,7 @@ import signal
 import traceback
 from spacy.matcher import PhraseMatcher
 from spacy.lang.en.stop_words import STOP_WORDS
+from tei_validator import validate_tei_file
 
 java_process = subprocess.Popen(
     ['java', '-jar', '-Dfile.encoding=UTF-8', 'corese-library-python-4.4.1.jar'])
@@ -1071,6 +1072,7 @@ if __name__ == "__main__":
         xml_files = sorted(find_xml_files(directory_path))
     processed = 0
     failed = []
+    invalid_tei = []
     for xml_file in xml_files:
 
         if batch_limit is not None and processed >= batch_limit:
@@ -1090,6 +1092,19 @@ if __name__ == "__main__":
             continue
 
         print(xml_file)
+
+        # Validation TEI P5 en amont (point 1 "amelioration du pipeline") :
+        # rejeter un XML mal forme ou non conforme AVANT extraction/
+        # traduction/NER, plutot que de decouvrir le probleme au bout de
+        # plusieurs heures de traitement.
+        tei_ok, tei_errors = validate_tei_file(FILE)
+        if not tei_ok:
+            print(f"INVALIDE (non conforme TEI P5) sur {xml_file}, fichier saute :")
+            for err in tei_errors[:5]:
+                print(f"    {err}")
+            invalid_tei.append(xml_file)
+            continue
+
         try:
             extraction_data(FILE, CSV)
         except Exception:
@@ -1100,6 +1115,10 @@ if __name__ == "__main__":
             processed += 1
 
     print("End of CSV generation")
+    if invalid_tei:
+        print(f"{len(invalid_tei)} fichier(s) rejete(s) pour non-conformite TEI P5 :")
+        for f in invalid_tei:
+            print(f"  - {f}")
     if failed:
         print(f"{len(failed)} fichier(s) en echec :")
         for f in failed:
