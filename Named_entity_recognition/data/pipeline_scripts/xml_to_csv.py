@@ -517,7 +517,7 @@ def find_english_witness_file(non_english_file_path):
     return candidates[0] if candidates else None
 
 
-def _walk_english_paragraphs(div, path, out_map):
+def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
     """Parcourt recursivement les div type=book/chapter... d'un temoin anglais
     deja traduit par un humain, avec la meme logique positionnelle que
     extract_division_metadata, et associe a chaque chemin (ex: (1,1) pour
@@ -541,7 +541,7 @@ def _walk_english_paragraphs(div, path, out_map):
         only = children[0]
         only_n = only.get("n", "")
         if (not only_n or not only_n.isdigit()) and does_it_have_children_div(only):
-            _walk_english_paragraphs(only, path, out_map)
+            _walk_english_paragraphs(only, path, out_map, zoo_folder)
             return
 
     position = 0
@@ -557,10 +557,24 @@ def _walk_english_paragraphs(div, path, out_map):
         div_n = tag_div.get("n", "")
         if div_n and not div_n.isdigit():
             continue
-        position += 1
+        # Numerotation trouee (ex: zoo14, Geoponica - le temoin anglais ne
+        # traduit que les livres 13 a 20, en sautant le 18) : la POSITION
+        # (1, 2, 3...) ne correspond alors plus du tout au numero reel du
+        # livre, et un chemin positionnel comme (1,) finit par pointer sur
+        # le contenu du livre 13 au lieu du livre 1 - un faux-positif de
+        # traduction alignee, pire qu'une absence de correspondance (texte
+        # anglais sur les rongeurs/serpents colle sur la preface du livre 1
+        # de l'original, constate sur zoo14/1g). GAPPED_CHAPTER_NUMBERING_FOLDERS
+        # est deja le mecanisme utilise cote original (compute_div_id) pour
+        # cette meme situation - on l'applique ici a l'identique pour garder
+        # les deux cotes sur la meme cle (le numero reel, pas la position).
+        if zoo_folder in GAPPED_CHAPTER_NUMBERING_FOLDERS and div_n.isdigit():
+            position = int(div_n)
+        else:
+            position += 1
         current_path = path + (position,)
         if does_it_have_children_div(tag_div):
-            _walk_english_paragraphs(tag_div, current_path, out_map)
+            _walk_english_paragraphs(tag_div, current_path, out_map, zoo_folder)
         else:
             texts = []
             for p in tag_div.find_all(["p"]):
@@ -632,7 +646,7 @@ def get_english_alignment_map(non_english_file_path):
             with open(en_path, "r", encoding="UTF-8") as f:
                 soup = bs(f, "lxml-xml")
             out_map = {}
-            _walk_english_paragraphs(soup.body, (), out_map)
+            _walk_english_paragraphs(soup.body, (), out_map, zoo_folder)
         except Exception as e:
             print(f"[WARNING] Echec de la construction de la carte d'alignement anglais pour {en_path}: {e}")
             out_map = None
