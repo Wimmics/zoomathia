@@ -69,56 +69,91 @@ def load(graph ,path):
     return graph
 
 
+DBPEDIA_BLACKLIST_WORDS = ["album", "film"]
+
+
+def _is_type_kept(uri, types_found):
+    """True = URI conservee (pas filtree), False = filtree. Reproduit
+    exactement la logique d'origine, unitaire, de dbpediaClassFiltered :
+    aucun type renvoye => conservee ; un type dans filtered_class_list, ou
+    "album"/"film" dans l'URI => filtree."""
+    if not types_found:
+        return True
+    if any(t in filtered_class_list for t in types_found):
+        return False
+    if any(word in uri for word in DBPEDIA_BLACKLIST_WORDS):
+        return False
+    return True
+
+
+def _query_dbpedia_types_batch(uris, batch_size=50):
+    """Resout les types rdf:type de plusieurs URI DBpedia EN UNE SEULE
+    requete SPARQL groupee (VALUES), plutot qu'une requete par URI
+    (dbpediaClassFiltered avant ce correctif) - jusqu'a `batch_size` URI
+    par appel HTTP. Mesure empiriquement responsable de plusieurs heures
+    de traitement a elle seule sur un fichier avec 704 URI non cachees
+    (~1 seconde par requete individuelle * 704). Retourne {uri: [types]}
+    (liste vide si aucun type trouve)."""
+    url = "https://dbpedia.org/sparql"
+    types_by_uri = {u: [] for u in uris}
+
+    for i in range(0, len(uris), batch_size):
+        batch = uris[i:i + batch_size]
+        values_clause = " ".join(f"<{u}>" for u in batch)
+        q = f"""
+        SELECT ?uri ?type WHERE {{
+            VALUES ?uri {{ {values_clause} }}
+            ?uri a ?type
+        }}
+        """
+        tentatives = 0
+        for _ in range(MAX_TRIES):
+            try:
+                # POST plutot que GET : une VALUES de 50 URI depasse vite
+                # la longueur d'URL raisonnable pour une requete GET.
+                response = requests.post(url, data={"query": q, "format": "application/json"}, timeout=60)
+                response.raise_for_status()
+                result = response.json()
+                for elt in result.get("results", {}).get("bindings", []):
+                    types_by_uri[elt["uri"]["value"]].append(elt["type"]["value"])
+                break
+            except requests.exceptions.RequestException as e:
+                tentatives += 1
+                attente = min(5 * tentatives, 60)
+                print(f"[lot DBpedia {len(batch)} URI] Echec connexion (Tentative {tentatives}). Reessai dans {attente}s...")
+                time.sleep(attente)
+
+    return types_by_uri
+
+
+def dbpediaClassFilteredBatch(uris, filtered_already_found):
+    """Pre-resout en une poignee de requetes groupees toutes les URI de
+    `uris` pas encore en cache, plutot que de laisser chaque appel
+    ulterieur a dbpediaClassFiltered() faire sa propre requete
+    individuelle. A appeler une fois avant la boucle qui traite les
+    annotations d'un fichier. Sauvegarde le cache une seule fois a la
+    fin (l'ancienne version le sauvegardait a CHAQUE URI individuelle -
+    une reecriture complete du fichier cache, deja ~4 Mo, gaspillee des
+    centaines de fois par fichier)."""
+    todo = sorted({u for u in uris if u not in filtered_already_found})
+    if not todo:
+        return
+    types_by_uri = _query_dbpedia_types_batch(todo)
+    for uri, types_found in types_by_uri.items():
+        filtered_already_found[uri] = _is_type_kept(uri, types_found)
+    save_cache(filtered_already_found)
+
+
 def dbpediaClassFiltered(uri, filtered_already_found):
-    if uri in filtered_already_found.keys():
-        # print(f"{uri} already in cache and : {filtered_already_found[uri]}")
+    """Repli pour un URI isole (hors du pre-passage groupe). Ne
+    sauvegarde le cache qu'ici, pas a chaque etape intermediaire."""
+    if uri in filtered_already_found:
         return filtered_already_found[uri]
 
-    q = f"""
-    SELECT * WHERE {{
-        <{uri}> a ?type
-    }}
-    """
-    
-    url = "https://dbpedia.org/sparql"
-    params = {"query": q, "format": "application/json"}
-    tentatives = 0
-    
-    for i in range (MAX_TRIES):
-        try:
-            response = requests.get(url, params=params, timeout=30)
-            response.raise_for_status() 
-            
-            result = response.json()
-
-            if not result or "results" not in result or not result["results"]["bindings"]:
-                filtered_already_found[uri] = True
-                save_cache(filtered_already_found)
-                return True
-
-            for elt in result["results"]["bindings"]:
-                if elt["type"]["value"] in filtered_class_list:
-                    filtered_already_found[uri] = False
-                    # print(f"elt: {elt["type"]["value"]}, uri: {uri} is False")
-                    save_cache(filtered_already_found)
-                    return False
-                blacklist = ["album", "film"]
-                for word in blacklist:
-                    if word in uri:
-                        filtered_already_found[uri] = False
-                        save_cache(filtered_already_found)
-                        return False
-            
-            filtered_already_found[uri] = True
-            # print(f"elt:{elt["type"]["value"]}, uri: {uri} is True")
-            save_cache(filtered_already_found)
-            return True
-
-        except requests.exceptions.RequestException as e:
-            tentatives += 1
-            attente = min(5 * tentatives, 60)
-            print(f"[{uri}] Echec connexion (Tentative {tentatives}). Reessai dans {attente}s...")
-            time.sleep(attente)
+    types_found = _query_dbpedia_types_batch([uri]).get(uri, [])
+    filtered_already_found[uri] = _is_type_kept(uri, types_found)
+    save_cache(filtered_already_found)
+    return filtered_already_found[uri]
 
 
 def linkClassToOntology(name, class_link):
@@ -199,6 +234,13 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
         new_columns.append("label")
 
         seen_annotations = set()
+
+        # Pre-passage : resout en quelques requetes DBpedia groupees toutes
+        # les concept_uri de ce fichier qui en auront besoin (origin ni
+        # "zoomathia_match" ni "wikidata"), au lieu de laisser la boucle
+        # ci-dessous faire une requete individuelle par URI non cachee.
+        to_resolve = df.loc[~df["origin"].isin(["zoomathia_match", "wikidata"]), "concept_uri"].unique().tolist()
+        dbpediaClassFilteredBatch(to_resolve, filtered_already_found)
 
         for row in df.index:
             paragraph_uri = df["paragraph_uri"][row]
