@@ -566,8 +566,47 @@ def _walk_english_paragraphs(div, path, out_map):
             for p in tag_div.find_all(["p"]):
                 if not p.find_parent('p') and strip_text(p.text) != "":
                     texts.append(strip_paragraph_text(p.text))
-            if texts:
+            if not texts:
+                continue
+            if len(texts) == 1:
+                # Comportement historique inchange : plusieurs oeuvres deja
+                # bien alignees s'appuient sur cette entree "au niveau du
+                # chapitre" pour un chapitre a un seul <p>.
+                out_map[current_path] = texts[0]
+                # En plus (jamais a la place) : certains originaux ont un
+                # niveau de sous-division numerique meme pour un chapitre a
+                # une seule section (ex. zoo7/7g, chaque chapitre grec a
+                # toujours au moins une <div type="section" n="1">, meme
+                # quand il n'y en a qu'une) - sans cette entree
+                # supplementaire, le chemin cote original ((chapitre, 1))
+                # ne trouve jamais sa correspondance anglaise (qui n'existe
+                # qu'au niveau (chapitre,)).
+                out_map[current_path + (1,)] = texts[0]
+            else:
+                # Plusieurs <p> directement sous ce chapitre. Deux cas
+                # coexistent dans le corpus, indiscernables a ce niveau
+                # (aucun ne sait, ici, si le cote non-anglais a une
+                # subdivision correspondante) :
+                #  - correspondance un a un avec des sections numerotees de
+                #    l'original (verifie : 178/178 chapitres de zoo7/7g ont
+                #    exactement le meme nombre de parts des deux cotes) : le
+                #    chemin fin (chapitre, position) est necessaire, sinon
+                #    tout repli sur la traduction automatique.
+                #  - simple decoupage typographique sans equivalent cote
+                #    original (ex. zoo57/5g, book 1 section 6 : un seul <p>
+                #    grec, deux <p> anglais) : c'est alors l'ancienne entree
+                #    "au niveau de la division" (chapitre,) qui est necessaire
+                #    (deja utilisee via get_aligned_translation - correspondance
+                #    exacte, ou repli par retrait d'un segment de tete pour les
+                #    enveloppes). Sans elle, regression constatee sur 5 oeuvres
+                #    (zoo52/1g, zoo57/5g,6g,7g,8g) : le texte anglais existe
+                #    mais n'est plus trouvable, faisant croire a une absence
+                #    de traduction alignee.
+                # On garde donc les deux, de facon purement additive - comme
+                # pour le cas len(texts)==1 ci-dessus.
                 out_map[current_path] = " ".join(texts)
+                for idx, t in enumerate(texts, start=1):
+                    out_map[current_path + (idx,)] = t
 
 
 def get_english_alignment_map(non_english_file_path):
