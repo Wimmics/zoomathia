@@ -197,25 +197,40 @@ def is_stop_word(word):
                    for token in word)
 
 
+def _ensure_ner_pipes_ready():
+    """Ajoute UNE SEULE FOIS, au premier appel, les deux composants NER
+    externes (dbpedia_spotlight, entityfishing) au pipeline partage -
+    avant ce correctif, get_NER_from_dbpedia()/get_NER_from_wikidata()
+    detruisaient et reconstruisaient (remove_pipe/add_pipe) le composant
+    de l'autre a CHAQUE appel, soit deux fois par paragraphe : sur une
+    oeuvre de plusieurs milliers de paragraphes (Hippiatrica Berolinensia
+    en a plus de 3000), ca reconstruit ces composants des milliers de
+    fois pour rien. Les deux restent maintenant enregistres en
+    permanence ; select_pipes() (deja utilise par find_thesaurus_entities
+    plus bas) se contente de desactiver temporairement celui dont on n'a
+    pas besoin pour cet appel precis - une simple bascule, pas une
+    reconstruction."""
+    if "dbpedia_spotlight" not in nlp_model.pipe_names:
+        nlp_model.add_pipe('dbpedia_spotlight',
+                           config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.3})
+    if "entityfishing" not in nlp_model.pipe_names:
+        nlp_model.add_pipe("entityfishing", config={"language": "en", "api_ef_base": API_ENDPOINT_URL})
+
+
 def get_NER_from_dbpedia(element,lg="en"):
     if not element or element.strip() == "":
         return []
-    if "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
-        nlp_model.remove_pipe("entityfishing")
-    if not "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
-        nlp_model.add_pipe('dbpedia_spotlight',
-                           config={'dbpedia_rest_endpoint': DBPEDIA_LOCAL, 'confidence': 0.3})
-    return process_nlp(element, nlp_model)
+    _ensure_ner_pipes_ready()
+    with nlp_model.select_pipes(disable=["entityfishing"]):
+        return process_nlp(element, nlp_model)
 
 
 def get_NER_from_wikidata(element, lg="en"):
     if not element or element.strip() == "":
         return []
-    if "dbpedia_spotlight" in list(map(lambda x: x[0], nlp_model.pipeline)):
-        nlp_model.remove_pipe("dbpedia_spotlight")
-    if not "entityfishing" in list(map(lambda x: x[0], nlp_model.pipeline)):
-        nlp_model.add_pipe("entityfishing", config={"language": "en", "api_ef_base": API_ENDPOINT_URL})
-    return process_nlp(element,nlp_model)
+    _ensure_ner_pipes_ready()
+    with nlp_model.select_pipes(disable=["dbpedia_spotlight"]):
+        return process_nlp(element, nlp_model)
 
 
 def process_nlp(element,nlp_model):
