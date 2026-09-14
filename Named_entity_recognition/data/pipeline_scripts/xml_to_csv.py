@@ -517,6 +517,46 @@ def find_english_witness_file(non_english_file_path):
     return candidates[0] if candidates else None
 
 
+def _split_bekker_pages(tag_div):
+    """Pour un temoin anglais dont les pages Bekker sont deja marquees en
+    ligne par des <pb type="Bekker" n="1343a"/> a l'interieur d'un texte par
+    ailleurs plat (ex. zoo7/13e, zoo7/14e - editions Loeb), decoupe ce texte
+    en un segment par demi-page Bekker (une page "a" et sa page "b" restent
+    deux segments SEPARES : cote original, ces oeuvres ne portent pas
+    type="BekkerPage" mais type="chapter" ordinaire - "1343a" et "1343b" sont
+    donc deux div-soeurs distinctes qui consomment chacune leur propre
+    position 1, 2, 3... comme n'importe quel autre chapitre ; il ne faut donc
+    PAS les fusionner ici, seulement retrouver la meme segmentation
+    sequentielle). Retourne la liste ordonnee des textes, exploitable
+    exactement comme le decoupage par <p> ci-dessous ; [] si aucun marqueur
+    Bekker n'est present (cas normal, immense majorite des fichiers)."""
+    ps = [p for p in tag_div.find_all(["p"]) if not p.find_parent("p")]
+    has_bekker_pb = any(
+        getattr(c, "name", None) == "pb" and c.get("type") == "Bekker"
+        for p in ps for c in p.descendants
+    )
+    if not has_bekker_pb:
+        return []
+
+    segments = []
+    current_chunks = []
+    seen_first_pb = False
+    for p in ps:
+        for child in p.contents:
+            if getattr(child, "name", None) == "pb" and child.get("type") == "Bekker":
+                seen_first_pb = True
+                text = strip_paragraph_text(" ".join(current_chunks))
+                if text:
+                    segments.append(text)
+                current_chunks = []
+            else:
+                current_chunks.append(child.get_text() if hasattr(child, "get_text") else str(child))
+    text = strip_paragraph_text(" ".join(current_chunks))
+    if text:
+        segments.append(text)
+    return segments if seen_first_pb else []
+
+
 def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
     """Parcourt recursivement les div type=book/chapter... d'un temoin anglais
     deja traduit par un humain, avec la meme logique positionnelle que
@@ -576,10 +616,11 @@ def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
         if does_it_have_children_div(tag_div):
             _walk_english_paragraphs(tag_div, current_path, out_map, zoo_folder)
         else:
-            texts = []
-            for p in tag_div.find_all(["p"]):
-                if not p.find_parent('p') and strip_text(p.text) != "":
-                    texts.append(strip_paragraph_text(p.text))
+            texts = _split_bekker_pages(tag_div)
+            if not texts:
+                for p in tag_div.find_all(["p"]):
+                    if not p.find_parent('p') and strip_text(p.text) != "":
+                        texts.append(strip_paragraph_text(p.text))
             if not texts:
                 continue
             if len(texts) == 1:
