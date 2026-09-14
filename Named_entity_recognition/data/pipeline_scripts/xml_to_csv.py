@@ -17,6 +17,7 @@ import spacy
 import sys
 import signal
 import traceback
+import multiprocessing
 from spacy.matcher import PhraseMatcher
 from spacy.lang.en.stop_words import STOP_WORDS
 from tei_validator import validate_tei_file
@@ -26,8 +27,18 @@ java_process = subprocess.Popen(
 sleep(6)
 gateway = JavaGateway()
 
+_gateway_stopped = False
+
+
 def exit_handler():
-    gateway.shutdown()
+    global _gateway_stopped
+    if _gateway_stopped:
+        return
+    _gateway_stopped = True
+    try:
+        gateway.shutdown()
+    except Exception:
+        pass
     print('\n' * 2)
     print('Gateway Server Stop!')
 
@@ -125,7 +136,18 @@ def _looks_like_translate_error(result, source):
     return False
 
 
-def split_and_translate(text, lang_target, max_chunk_length=1000):
+def split_and_translate(text, lang_target, max_chunk_length=4500):
+    # 4500 plutot que 1000 (valeur d'origine) : l'endpoint gratuit de Google
+    # Translate tolere generalement jusqu'a ~5000 caracteres par requete (non
+    # documente officiellement, mais constate empiriquement). deep_translator
+    # n'offre aucun vrai regroupement de requetes (translate_batch() n'est
+    # qu'une boucle interne appelant translate() un par un, verifie dans son
+    # code source) - le seul levier reel pour reduire le nombre de requetes
+    # est donc de MOINS decouper : un paragraphe de 4000 caracteres faisait
+    # 4 requetes separees avec l'ancienne limite de 1000, contre 1 seule ici.
+    # Moins de requetes = moins de risque de declencher la limitation de
+    # debit externe qui domine le temps de traitement (voir sections 22-23
+    # de la doc pour l'historique de ce probleme).
     chunks = [text[i:i + max_chunk_length] for i in range(0, len(text), max_chunk_length)]
     translated_chunks = []
 
@@ -1040,6 +1062,76 @@ def get_all_thesaurus_concepts(g):
 
     return thesaurus_dict
 
+def _worker_init():
+    """Prepare chaque processus worker du Pool. Le gateway JVM (Corese)
+    n'est en fait utilise qu'une seule fois, au demarrage du script
+    principal, pour charger le thesaurus (th310.ttl) et construire
+    matcher/thesaurus_dict AVANT la creation du Pool - extraction_data()
+    et tout ce qu'elle appelle (traduction, NER, ecriture CSV) ne s'en
+    servent jamais. Sur Linux, fork() copie ces objets deja construits
+    (nlp_model, matcher, thesaurus_dict) dans chaque worker sans cout
+    de rechargement - mais il copie aussi l'etat `atexit` du parent, y
+    compris l'arret du gateway JVM partage. Sans ce correctif, le
+    PREMIER worker a se terminer eteindrait le gateway pour tout le
+    monde (y compris le processus principal, si jamais il en avait
+    encore besoin) : on desenregistre donc cet arret dans les workers,
+    seul le processus principal doit l'executer."""
+    atexit.unregister(exit_handler)
+
+
+def process_one_file(xml_file):
+    """Traite un fichier XML de bout en bout (validation TEI, extraction,
+    traduction, NER, ecriture CSV) et retourne un statut plutot que de
+    modifier des listes partagees - necessaire pour tourner dans un
+    processus separe du Pool (point 2 "amelioration du pipeline" :
+    paralleliser xml_to_csv.py). Statuts : "skip", "invalid", "failed",
+    "ok".
+
+    `global FILE` : extract_paragraph() (et d'autres fonctions plus bas
+    dans la chaine d'appel) lisent FILE comme variable GLOBALE du module
+    plutot que de la recevoir en parametre - c'etait deja le cas avant
+    la parallelisation (FILE = xml_file etait affecte directement dans
+    la boucle du bloc __main__, donc au niveau module). Sans ce `global`
+    ici, cette affectation resterait locale a process_one_file() et le
+    reste de la chaine d'appel leverait un NameError. Sans danger avec
+    des processus separes (multiprocessing) : chaque worker a son propre
+    espace memoire issu du fork, aucun partage ni race condition entre
+    eux - ce serait different avec des threads."""
+    global FILE
+    FILE = xml_file
+    if not os.path.exists(FILE):
+        return ("skip", xml_file, "fichier supprime depuis le lancement")
+
+    zoo_folder = os.path.basename(os.path.dirname(FILE))
+    CSV = zoo_folder + "_" + ".".join(os.path.basename(FILE).split(".")[0:-1])
+
+    meta_path = './output/' + CSV + "_metadata.csv"
+    if os.path.exists(meta_path) and os.path.getmtime(meta_path) >= os.path.getmtime(FILE):
+        return ("skip", xml_file, "deja traite, a jour")
+
+    print(xml_file, flush=True)
+
+    # Validation TEI P5 en amont (point 1 "amelioration du pipeline") :
+    # rejeter un XML mal forme ou non conforme AVANT extraction/
+    # traduction/NER, plutot que de decouvrir le probleme au bout de
+    # plusieurs heures de traitement.
+    tei_ok, tei_errors = validate_tei_file(FILE)
+    if not tei_ok:
+        print(f"INVALIDE (non conforme TEI P5) sur {xml_file}, fichier saute :", flush=True)
+        for err in tei_errors[:5]:
+            print(f"    {err}", flush=True)
+        return ("invalid", xml_file, tei_errors[:5])
+
+    try:
+        extraction_data(FILE, CSV)
+    except Exception:
+        print(f"ECHEC sur {xml_file}, fichier saute, lot poursuivi :", flush=True)
+        traceback.print_exc()
+        return ("failed", xml_file, traceback.format_exc())
+
+    return ("ok", xml_file, None)
+
+
 if __name__ == "__main__":
 
     g = Graph()
@@ -1056,7 +1148,8 @@ if __name__ == "__main__":
     # resultat entre deux lots), soit le chemin d'un fichier texte listant
     # des chemins XML precis a traiter (un par ligne, relatifs a ce dossier),
     # pour cibler un sous-ensemble plutot que tout ./zoo/. Dans les deux cas
-    # les fichiers deja a jour sont sautes via le test de mtime ci-dessous.
+    # les fichiers deja a jour sont sautes via le test de mtime dans
+    # process_one_file().
     batch_limit = None
     xml_files = None
     if len(sys.argv) > 1:
@@ -1070,49 +1163,60 @@ if __name__ == "__main__":
     if xml_files is None:
         directory_path = ('./zoo/')
         xml_files = sorted(find_xml_files(directory_path))
+
+    if batch_limit is not None:
+        xml_files = xml_files[:batch_limit]
+
+    # Parallelisme borne (point 2 "amelioration du pipeline") : le
+    # goulot d'etranglement reel n'est pas le CPU mais Google Translate,
+    # dont la limitation de debit se declenche cote serveur externe,
+    # independamment du nombre de coeurs locaux - au-dela de quelques
+    # traductions simultanees, on risque surtout de declencher le
+    # blocage plus vite sans gagner de temps. D'ou un pool volontairement
+    # petit (3-4, pas "un par coeur") plutot qu'un plafond ambitieux.
+    # Reglable via la variable d'environnement ZOO_XML2CSV_WORKERS pour
+    # experimenter sans modifier le code.
+    n_workers = int(os.environ.get("ZOO_XML2CSV_WORKERS", "4"))
+
+    if n_workers > 1:
+        # Le gateway JVM (py4j) n'est plus necessaire a partir d'ici -
+        # extraction_data() et tout ce qu'elle appelle ne s'en servent
+        # jamais (seul le chargement du thesaurus ci-dessus en avait
+        # besoin). Le fermer AVANT de forker les workers du Pool est
+        # imperatif : py4j maintient une connexion/thread en arriere-plan,
+        # et fork() ne duplique que le thread appelant - un thread interne
+        # py4j resterait dans un etat incoherent dans chaque worker,
+        # source de blocages silencieux observes empiriquement (un
+        # fichier de 7 paragraphes reste bloque plus de 30 min sans
+        # jamais lever d'exception, alors que le pire cas attendu avec
+        # les reessais de traduction est de l'ordre de 7 minutes).
+        exit_handler()
+
     processed = 0
     failed = []
     invalid_tei = []
-    for xml_file in xml_files:
+    skipped = 0
 
-        if batch_limit is not None and processed >= batch_limit:
-            print(f"Limite de lot atteinte ({batch_limit} fichiers) ; arret.")
-            break
+    if n_workers <= 1:
+        results = (process_one_file(f) for f in xml_files)
+    else:
+        pool = multiprocessing.Pool(processes=n_workers, initializer=_worker_init)
+        results = pool.imap_unordered(process_one_file, xml_files)
 
-        FILE = xml_file
-        if not os.path.exists(FILE):
-            print(f"Skip (fichier supprime depuis le lancement): {xml_file}")
-            continue
-        zoo_folder = os.path.basename(os.path.dirname(FILE))
-        CSV = zoo_folder + "_" + ".".join(os.path.basename(FILE).split(".")[0:-1])
-
-        meta_path = './output/' + CSV + "_metadata.csv"
-        if os.path.exists(meta_path) and os.path.getmtime(meta_path) >= os.path.getmtime(FILE):
-            print(f"Skip (deja traite, a jour): {xml_file}")
-            continue
-
-        print(xml_file)
-
-        # Validation TEI P5 en amont (point 1 "amelioration du pipeline") :
-        # rejeter un XML mal forme ou non conforme AVANT extraction/
-        # traduction/NER, plutot que de decouvrir le probleme au bout de
-        # plusieurs heures de traitement.
-        tei_ok, tei_errors = validate_tei_file(FILE)
-        if not tei_ok:
-            print(f"INVALIDE (non conforme TEI P5) sur {xml_file}, fichier saute :")
-            for err in tei_errors[:5]:
-                print(f"    {err}")
+    for status, xml_file, detail in results:
+        if status == "skip":
+            print(f"Skip ({detail}): {xml_file}")
+            skipped += 1
+        elif status == "invalid":
             invalid_tei.append(xml_file)
-            continue
-
-        try:
-            extraction_data(FILE, CSV)
-        except Exception:
-            print(f"ECHEC sur {xml_file}, fichier saute, lot poursuivi :")
-            traceback.print_exc()
+        elif status == "failed":
             failed.append(xml_file)
         else:
             processed += 1
+
+    if n_workers > 1:
+        pool.close()
+        pool.join()
 
     print("End of CSV generation")
     if invalid_tei:
