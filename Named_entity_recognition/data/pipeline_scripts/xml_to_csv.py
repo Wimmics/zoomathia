@@ -594,8 +594,19 @@ def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
         # contenu reel porte toujours un n= purement numerique - on ignore
         # donc (sans consommer de position, sans y descendre) toute div dont
         # le n= ne l'est pas. Voir DOCUMENTATION_SYSTEME_ZOO.md section 21.
+        #
+        # Exception : zoo80 (Hippiatrica, compilation d'excerpta veterinaires)
+        # porte des reperes composes ("1.8.1", "2.4"...) sur 80% de ses
+        # divisions de premier niveau - ce ne sont PAS des paratextes sans
+        # equivalent grec, mais la numerotation normale de CHAQUE entree
+        # (identique des deux cotes, meme sequence, meme nombre total).  Les
+        # traiter comme paratexte a ignorer cassait la correspondance de
+        # position sur 639 divisions/795 (l'anglais ne comptait plus que les
+        # 20% a n= simple, l'original les comptant toutes) - la quasi-
+        # totalite de l'alignement disponible etait perdue avant ce
+        # correctif.
         div_n = tag_div.get("n", "")
-        if div_n and not div_n.isdigit():
+        if div_n and not div_n.isdigit() and zoo_folder not in ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS:
             continue
         # Numerotation trouee (ex: zoo14, Geoponica - le temoin anglais ne
         # traduit que les livres 13 a 20, en sautant le 18) : la POSITION
@@ -608,7 +619,17 @@ def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
         # est deja le mecanisme utilise cote original (compute_div_id) pour
         # cette meme situation - on l'applique ici a l'identique pour garder
         # les deux cotes sur la meme cle (le numero reel, pas la position).
-        if zoo_folder in GAPPED_CHAPTER_NUMBERING_FOLDERS and div_n.isdigit():
+        # Meme situation, mais localisee au seul TEMOIN ANGLAIS (ex: zoo7/5e,
+        # Aristote Problemata - traduction Claude non relue qui ne couvre
+        # que le Livre 10 sur 38, dont l'unique div de premier niveau porte
+        # n="10" alors que l'original a 38 livres numerotes 1-38 - voir
+        # ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS). Volontairement separee
+        # de GAPPED_CHAPTER_NUMBERING_FOLDERS : ce cas ne concerne QUE la
+        # construction de la carte d'alignement (ce fichier), jamais l'URI
+        # de l'original cote compute_div_id.
+        if ((zoo_folder in GAPPED_CHAPTER_NUMBERING_FOLDERS
+                or zoo_folder in ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS)
+                and div_n.isdigit()):
             position = int(div_n)
         else:
             position += 1
@@ -1019,6 +1040,34 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 # a ces deux dossiers plutot qu'une bascule generale sur n= pour tout le
 # corpus, qui changerait l'URI de chaque chapitre deja publie ailleurs.
 GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89", "zoo14"}
+
+# Meme probleme que ci-dessus (position != n= reel), mais cote TEMOIN ANGLAIS
+# uniquement - n'affecte QUE _walk_english_paragraphs/get_english_alignment_map
+# (jamais compute_div_id, jamais l'URI de l'original deja publiee ailleurs).
+# Deux cas types, meme mecanisme : le temoin anglais ne couvre qu'un SOUS-
+# ENSEMBLE des livres de l'original, numerotes a leur vraie valeur (pas
+# renumerotes a partir de 1) :
+#  - zoo7/5e (Aristote, Problemata) - traduction Claude non relue qui ne
+#    couvre que le Livre 10 sur 38 ("les 37 autres livres restent a
+#    traduire", precise sa sourceDesc) ;
+#  - zoo43/1e (Pline, Naturalis Historia) - traduction Bostock/Riley 1855
+#    (domaine public, via Perseus) qui ne couvre que les livres VIII-XI
+#    (animaux) sur 37.
+# Sans ce correctif, la POSITION (1er, 2e... div rencontre) colle a tort le
+# premier livre disponible sur le chemin (1,) de l'original, c'est-a-dire
+# sur le Livre 1 - un faux-positif du meme type que celui corrige pour
+# zoo14 (voir plus haut) mais localise a un seul fichier plutot qu'a tout
+# un dossier.
+ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS = {"zoo7", "zoo43"}
+
+# Dossiers ou le filtre "paratexte non numerote" de _walk_english_paragraphs
+# (n= non purement numerique => ignore sans consommer de position) ne doit
+# PAS s'appliquer : zoo80 (Hippiatrica) porte des reperes composes
+# ("1.8.1", "2.4"...) sur la majorite de ses divisions de premier niveau,
+# qui sont de la VRAIE numerotation d'entree (identique et dans le meme
+# ordre des deux cotes), pas du paratexte sans equivalent grec. Les traiter
+# comme paratexte cassait la parite de position sur 639 divisions/795.
+ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS = {"zoo80"}
 
 
 def compute_div_id(tag_div, tag_id, tag_div_type, zoo_folder=None):
