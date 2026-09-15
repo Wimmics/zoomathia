@@ -155,13 +155,59 @@ router.get("/getMetadata", async (req, res) => {
   res.status(200).json(response)
 })
 
+// Profondeur maximale mesuree de la hierarchie de containment
+// (oeuvre > livre > ... > paragraphe) dans le graphe de production : au
+// plus 8 sauts zoo:isPartOf entre un paragraphe et son oeuvre racine
+// (verifie par tatonnement via des ASK a profondeur fixe croissante).
+// Marge volontaire au-dela de ce qui est mesure, sans etre non bornee.
+const SUMMARY_MAX_DEPTH = 10
+
+// Une branche par profondeur possible de ?current sous <uri> (1 a
+// maxDepth sauts zoo:isPartOf), chacune ENTIEREMENT ancree sur la
+// constante <uri> - jamais sur un motif ouvert comme "?current a ?type".
+// C'est ce qui rend chaque branche rapide : Corese peut demarrer directement
+// depuis l'IRI concrete (recherche indexee "qui pointe vers <uri>?"),
+// plutot que d'abord enumerer TOUS les noeuds structurels du graphe entier
+// (toutes oeuvres confondues) avant de les filtrer sur <uri> - ce qui reste
+// couteux quel que soit l'ordre d'evaluation des jointures, meme avec un
+// filtre bornant la profondeur (cause de la lenteur restante d'une
+// premiere version de ce correctif qui gardait "?current a ?type;
+// zoo:isPartOf ?parent_t" comme motif de depart). Remplace aussi
+// l'ancien zoo:isPartOf+ (chemin de propriete non borne, qui forcait
+// Corese a explorer toute la fermeture transitive - donc a descendre
+// jusque dans les milliers de paragraphes de l'oeuvre - avant que
+// FILTER(?type != zoo:Paragraph) ne puisse en exclure le moindre).
+// Mesure (voir DOCUMENTATION_SYSTEME_ZOO.md) : 118s -> <1s sur une requete
+// sans resultat, 7-20s -> <1s sur une requete normale.
+const buildSummaryUnion = (uri, maxDepth) => {
+  const branches = []
+  for (let depth = 1; depth <= maxDepth; depth++) {
+    const nodes = ['?current']
+    for (let hop = 1; hop < depth; hop++) {
+      nodes.push(`?mid_${depth}_${hop}`)
+    }
+    nodes.push(`<${uri}>`)
+
+    let chain = ''
+    for (let i = 0; i < nodes.length - 1; i++) {
+      chain += `${nodes[i]} zoo:isPartOf ${nodes[i + 1]} . `
+    }
+    const parentT = depth === 1 ? `<${uri}>` : nodes[1]
+
+    branches.push(`{
+      ${chain}
+      BIND(${parentT} AS ?parent_t)
+      ?current a ?type;
+        zoo:identifier ?id_t.
+    }`)
+  }
+  return branches.join('\n      UNION\n      ')
+}
+
 const getSummary = (uri) => {
   return `prefix zoo:     <http://ns.inria.fr/zoomathia/zoo#>
 SELECT DISTINCT ?parent ?current ?type (xsd:integer(?id_t) as ?id) ?title ?file WHERE {
-      ?current a ?type;
-          zoo:isPartOf+ <${uri}>;
-          zoo:isPartOf ?parent_t;
-          zoo:identifier ?id_t.
+      ${buildSummaryUnion(uri, SUMMARY_MAX_DEPTH)}
       FILTER(?type != zoo:Paragraph)
         BIND(IF(?parent_t = <${uri}>, ?current, ?parent_t) AS ?parent)
       Optional {
