@@ -557,6 +557,127 @@ def _split_bekker_pages(tag_div):
     return segments if seen_first_pb else []
 
 
+_english_bekker_page_cache = {}
+
+
+def _english_bekker_page_map(en_path):
+    """Comme _split_bekker_pages, mais applique a TOUT le temoin anglais
+    d'un coup (tous ses <p>, dans l'ordre du document, tous chapitres
+    confondus) et regroupe par PAGE Bekker complete (fusion des moities a
+    et b) plutot que par demi-page separee. Sert de pont quand l'original
+    est decoupe BEAUCOUP plus fin que la page Bekker (ex. zoo7/8g : 12 a 32
+    paragraphes grecs par chapitre, mais seulement 1 a 4 demi-pages Bekker)
+    - _split_bekker_pages seul ne peut alors fournir qu'une poignee
+    d'entrees par chapitre, tres en dessous du nombre reel de paragraphes
+    grecs a aligner. Mise en cache par fichier (source statique, jamais
+    invalidee en cours de run). Retourne {"436": "texte fusionne a+b", ...},
+    ou {} si le temoin ne porte aucun marqueur Bekker (cas normal, immense
+    majorite des fichiers)."""
+    if en_path in _english_bekker_page_cache:
+        return _english_bekker_page_cache[en_path]
+
+    pages = {}
+    try:
+        with open(en_path, "r", encoding="UTF-8") as f:
+            soup = bs(f, "lxml-xml")
+        if soup.body is None:
+            _english_bekker_page_cache[en_path] = {}
+            return {}
+        ps = [p for p in soup.body.find_all("p") if not p.find_parent("p")]
+        has_bekker_pb = any(
+            getattr(c, "name", None) == "pb" and c.get("type") == "Bekker"
+            for p in ps for c in p.descendants
+        )
+        if has_bekker_pb:
+            current_chunks = []
+            current_page = None
+            for p in ps:
+                for child in p.contents:
+                    if getattr(child, "name", None) == "pb" and child.get("type") == "Bekker":
+                        if current_page is not None:
+                            text = strip_paragraph_text(" ".join(current_chunks))
+                            if text:
+                                pages.setdefault(current_page, []).append(text)
+                        current_chunks = []
+                        m = re.match(r"(\d+)", child.get("n", ""))
+                        current_page = m.group(1) if m else None
+                    else:
+                        current_chunks.append(child.get_text() if hasattr(child, "get_text") else str(child))
+            if current_page is not None:
+                text = strip_paragraph_text(" ".join(current_chunks))
+                if text:
+                    pages.setdefault(current_page, []).append(text)
+    except Exception:
+        pages = {}
+
+    merged = {num: strip_paragraph_text(" ".join(chunks)) for num, chunks in pages.items()}
+    _english_bekker_page_cache[en_path] = merged
+    return merged
+
+
+_greek_bekker_paragraph_labels_cache = {}
+
+
+def _greek_bekker_paragraph_labels(file_path):
+    """Pour un fichier original portant des <milestone unit="bekker"
+    n="436a17"...> a l'interieur de ses paragraphes (Aristote et consorts,
+    numerotation Bekker de reference), calcule pour chaque division feuille
+    - identifiee par son chemin numerique (position du chapitre[, position
+    de la section]), EXACTEMENT comme extract_division_metadata/
+    extract_paragraph les numerotent - la page Bekker (juste le numero,
+    "436", sans a/b ni numero de ligne) a laquelle elle appartient, par
+    report en avant du dernier milestone rencontre (une division sans
+    milestone a elle garde celui de la precedente). Gere deux formes :
+    chapitre > paragraphe(s) directement (ex. zoo7/13g/14g), et chapitre >
+    section > paragraphe (ex. zoo7/8g, chaque section un seul <p>) - mais
+    pas plus profond, ni d'enveloppe de tete, pour rester fiable. Retourne
+    {} si la structure est plus complexe que ca, ou si le fichier n'a aucun
+    milestone bekker (cas normal, immense majorite des fichiers)."""
+    if file_path in _greek_bekker_paragraph_labels_cache:
+        return _greek_bekker_paragraph_labels_cache[file_path]
+
+    labels = {}
+    try:
+        with open(file_path, "r", encoding="UTF-8") as f:
+            soup = bs(f, "lxml-xml")
+        if soup.body is None or not soup.find_all("milestone", attrs={"unit": "bekker"}):
+            _greek_bekker_paragraph_labels_cache[file_path] = {}
+            return {}
+
+        def page_from_paragraphs(ps, current_page):
+            for p in ps:
+                ms = p.find_all("milestone", attrs={"unit": "bekker"})
+                if ms:
+                    m = re.match(r"(\d+)", ms[-1].get("n", ""))
+                    if m:
+                        current_page = m.group(1)
+            return current_page
+
+        top_level = soup.body.find_all(re.compile("^div"), recursive=False)
+        for chapter_pos, chapter_div in enumerate(top_level, 1):
+            sub_divs = chapter_div.find_all(re.compile("^div"), recursive=False)
+            current_page = None
+            if sub_divs:
+                for section_pos, section_div in enumerate(sub_divs, 1):
+                    if section_div.find_all(re.compile("^div"), recursive=False):
+                        continue  # encore un niveau de plus, hors scope
+                    ps = [p for p in section_div.find_all("p", recursive=False) if not p.find_parent("p")]
+                    current_page = page_from_paragraphs(ps, current_page)
+                    if current_page is not None:
+                        labels[(chapter_pos, section_pos)] = current_page
+            else:
+                direct_ps = [p for p in chapter_div.find_all("p", recursive=False) if not p.find_parent("p")]
+                for p_idx, p in enumerate(direct_ps, 1):
+                    current_page = page_from_paragraphs([p], current_page)
+                    if current_page is not None:
+                        labels[(chapter_pos, p_idx)] = current_page
+    except Exception:
+        labels = {}
+
+    _greek_bekker_paragraph_labels_cache[file_path] = labels
+    return labels
+
+
 def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
     """Parcourt recursivement les div type=book/chapter... d'un temoin anglais
     deja traduit par un humain, avec la meme logique positionnelle que
@@ -605,8 +726,17 @@ def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
         # 20% a n= simple, l'original les comptant toutes) - la quasi-
         # totalite de l'alignement disponible etait perdue avant ce
         # correctif.
+        # NB : couvre aussi bien un n= present mais non numerique (n="front",
+        # n="argument"...) qu'un n= carrement ABSENT (pas d'attribut du tout,
+        # ex. zoo19/1e : <div type="front"> sans n=, avant book n="1") - les
+        # deux cas doivent etre ignores de la meme facon, seul "" .isdigit()
+        # est deja False naturellement. Bug distinct trouve sur zoo19
+        # (Galien) : un <div type="front"> sans n= consommait quand meme la
+        # position 1, decalant tout le Livre 1 (et donc 2 et 3) d'un cran -
+        # ses deux <p> ("ON THE NATURAL FACULTIES", "Book I") se retrouvaient
+        # stockes a la place du vrai chapitre 1.
         div_n = tag_div.get("n", "")
-        if div_n and not div_n.isdigit() and zoo_folder not in ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS:
+        if not div_n.isdigit() and zoo_folder not in ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS:
             continue
         # Numerotation trouee (ex: zoo14, Geoponica - le temoin anglais ne
         # traduit que les livres 13 a 20, en sautant le 18) : la POSITION
@@ -872,6 +1002,39 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
                 _suffix_realignment_usage[usage_key] = usage_count
                 if usage_count == 1:
                     yield align_map[suffix]
+
+        # Pont par pagination Bekker partagee : quand l'original porte des
+        # <milestone unit="bekker"> (Aristote et consorts) beaucoup plus
+        # fins que le decoupage par <pb> Bekker du temoin anglais (ex.
+        # zoo7/8g : jusqu'a 32 sections grecques par chapitre, mais
+        # seulement 1 a 4 demi-pages Bekker cote anglais -
+        # _split_bekker_pages seul ne fournit alors qu'une poignee
+        # d'entrees par chapitre, tres en dessous du nombre reel de
+        # sections grecques). Les deux temoins se referent au MEME systeme
+        # de citation Bekker, independant de tout decoupage editorial en
+        # chapitres/sections : on l'utilise comme repere commun plutot que
+        # la position. Volontairement PAS gardee par allow_coarser : que la
+        # division originale ait un seul paragraphe (numeric_segments =
+        # (chapitre, section)) ou plusieurs (numeric_segments = (chapitre,
+        # section, idx) une fois paragraph_index ajoute), ce sont toujours
+        # ses DEUX derniers elements qui identifient la division consultee
+        # dans _greek_bekker_paragraph_labels - le nombre de divisions
+        # distinctes partageant une meme page Bekker reste petit (quelques
+        # unes, jamais des dizaines) - contrairement au bug de gonflage vise
+        # par allow_coarser, cette reutilisation est bornee et justifiee par
+        # une metadonnee de citation externe fiable, pas une supposition de
+        # structure.
+        bekker_labels = _greek_bekker_paragraph_labels(file_path)
+        division_path = numeric_segments[:-1] if paragraph_index is not None else numeric_segments
+        if bekker_labels and len(division_path) >= 2:
+            label = bekker_labels.get(division_path[-2:])
+            if label:
+                eng_filename = find_english_witness_file(file_path)
+                if eng_filename:
+                    en_path = os.path.join(os.path.dirname(file_path), eng_filename)
+                    english_pages = _english_bekker_page_map(en_path)
+                    if label in english_pages:
+                        yield english_pages[label]
 
         if not allow_coarser:
             return
