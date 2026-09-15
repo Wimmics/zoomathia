@@ -1202,7 +1202,14 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
 # numero de chapitre depuis l'URI serait silencieusement faux). Fix cible
 # a ces deux dossiers plutot qu'une bascule generale sur n= pour tout le
 # corpus, qui changerait l'URI de chaque chapitre deja publie ailleurs.
-GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89", "zoo14"}
+GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89", "zoo14", "zoo15"}
+# zoo15 (Columelle, "Res Rustica, Books V-IX" - le titre le dit explicitement)
+# ne couvre qu'un extrait de 5 livres sur les 12 de l'oeuvre complete, numerotes
+# a leur vraie valeur (n=5..9). Le temoin anglais, lui, couvre les livres 1-9
+# en continu : sans ce correctif, le premier livre latin (n=5, position 1)
+# se serait vu comparer au VRAI livre 1 anglais (position 1 aussi) - un
+# faux-positif du meme type que zoo14 (Geoponica), decouvert en reprenant la
+# revue systematique des oeuvres a faible taux d'alignement.
 
 # Meme probleme que ci-dessus (position != n= reel), mais cote TEMOIN ANGLAIS
 # uniquement - n'affecte QUE _walk_english_paragraphs/get_english_alignment_map
