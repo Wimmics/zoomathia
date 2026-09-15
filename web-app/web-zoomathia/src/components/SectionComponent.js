@@ -70,15 +70,18 @@ const SectionComponent = (props) => {
                         }
                     }
 
+                    // Le texte de chaque paragraphe est deja disponible ici (via
+                    // /getParagraphs, independant des annotations) : on l'affiche
+                    // tout de suite plutot que d'attendre sequentiellement la
+                    // requete d'annotations de chaque paragraphe un par un avant
+                    // d'afficher quoi que ce soit. ParagraphDisplay recupere
+                    // lui-meme ses concepts en arriere-plan (voir son useEffect,
+                    // declenche quand concepts.length <= 0), independamment des
+                    // autres paragraphes - un paragraphe sans annotation, ou dont
+                    // la requete d'annotations est lente/en echec, n'empeche plus
+                    // les autres (ni son propre texte) de s'afficher.
+                    const bekker = sectionType.includes("Bekker") ? true : false
                     for (const elt of data) {
-                        setSectionParagraph(LOADING_STATE(elt.uri))
-                        const concepts_list = await fetch(
-                            `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${elt.uri}&lang=${"en"}`,
-                            {signal: controllerRef.current.signal}
-                        ).then(response => response.json())
-                        console.log(sectionType)
-                        const bekker = sectionType.includes("Bekker") ? true : false
-
                         paragraphs.push(<ParagraphDisplay
                             key={elt.uri}
                             id={elt.id}
@@ -86,7 +89,7 @@ const SectionComponent = (props) => {
                             uri={elt.uri}
                             lang={"en"}
                             displayId={data.length > 1 ? true : false}
-                            concepts={concepts_list}
+                            concepts={[]}
                             controller={props.controller}
                             translationText={translationByI[elt.id]}
                             bekker={bekker} />)

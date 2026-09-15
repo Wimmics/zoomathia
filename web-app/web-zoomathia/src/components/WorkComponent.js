@@ -37,19 +37,18 @@ const Work = () => {
                 `${process.env.REACT_APP_BACKEND_URL}getParagraphAlone?uri=${uri}`,
                 { signal }
             ).then(response => response.json())
+            // Le texte est deja disponible ici (getParagraphAlone, independant des
+            // annotations) : on l'affiche tout de suite, ParagraphDisplay se
+            // chargeant lui-meme de recuperer ses concepts en arriere-plan (voir
+            // SectionComponent pour le meme correctif et son explication).
             for (const elt of data) {
-                const concepts_list = await fetch(
-                    `${process.env.REACT_APP_BACKEND_URL}getConcepts?uri=${elt.uri}&lang=${"en"}`,
-                    { signal }
-                ).then(response => response.json())
-
                 paragraphs.push(<ParagraphDisplay
                     key={elt.uri}
                     id={elt.id}
                     text={elt.text}
                     uri={elt.uri}
                     lang={"en"}
-                    concepts={concepts_list}
+                    concepts={[]}
                     controller={controllerRef} />)
             }
             setParagraph(paragraphs)
