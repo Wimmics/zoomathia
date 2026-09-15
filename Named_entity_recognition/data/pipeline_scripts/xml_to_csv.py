@@ -898,6 +898,35 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
         stats["misses"] += 1
         return None
 
+    # Dossiers ou l'ORIGINAL (pas le temoin anglais) porte une preface non
+    # numerotee AU DEBUT DE CHAQUE LIVRE (zoo9, Artemidore, Onirocriticon :
+    # <div type="chapter" n="prooimion"> avant le chapitre "1", dans chacun
+    # des 5 livres). extract_division_metadata/compute_div_id ne sautent
+    # JAMAIS un n= non numerique cote original (contrairement au temoin
+    # anglais, qui lui n'a pas cette preface) : elle consomme quand meme la
+    # position 1, decalant de +1 la position de TOUS les vrais chapitres
+    # suivants DANS CE LIVRE - le numero de livre (premier element), lui,
+    # n'est pas affecte. Volontairement PAS un ajout a
+    # GAPPED_CHAPTER_NUMBERING_FOLDERS (qui changerait l'URI de production,
+    # deja construite avec cette position) : correctif limite a la carte
+    # d'alignement, comme ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS pour le
+    # meme type de probleme mais cote anglais.
+    #
+    # Sur ce fichier, le taux global ne bouge presque pas (38.0% -> 37.5%,
+    # -3 sur 571) malgre le correctif : ce nombre brut masque un vrai gain de
+    # qualite, meme phenomene que la section 14 (zoo14/zoo7). Les 8 "hits"
+    # perdus sont TOUS les prooimions des 5 livres (.../g/N/1) qui, avant ce
+    # correctif, collaient a tort le texte anglais du VRAI chapitre 1 (faux
+    # positif : la preface n'a pas de contrepartie anglaise et ne doit
+    # matcher personne) ; les 5 "hits" gagnes sont de vrais chapitres plus
+    # loin dans chaque livre, correctement realignes par le decalage.
+    # Verifie en tracant individuellement les 13 appels dont le resultat
+    # change (avec/sans le correctif) sur ce fichier - voir
+    # DOCUMENTATION_SYSTEME_ZOO.md.
+    zoo_folder_for_shift = os.path.basename(os.path.dirname(file_path))
+    if zoo_folder_for_shift in ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS and len(numeric_segments) >= 2:
+        numeric_segments = (numeric_segments[0], numeric_segments[1] - 1) + numeric_segments[2:]
+
     # Toute traduction alignee candidate passe par ce filtre avant d'etre
     # acceptee comme un "hit" : au-dela d'une longueur raisonnable pour UN
     # paragraphe, ce n'est plus un texte correspondant a la bonne granularite
@@ -1229,6 +1258,13 @@ GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89", "zoo14", "zoo15"}
 # zoo14 (voir plus haut) mais localise a un seul fichier plutot qu'a tout
 # un dossier.
 ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS = {"zoo7", "zoo43"}
+
+# Voir le commentaire dans get_aligned_translation : dossiers ou l'ORIGINAL
+# porte une preface non numerotee (type="chapter" n="prooimion"...) au
+# debut de CHAQUE livre, decalant de +1 la position de tous les vrais
+# chapitres suivants - trouve sur zoo9 en reprenant la revue systematique
+# des oeuvres a faible taux d'alignement.
+ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS = {"zoo9"}
 
 # Dossiers ou le filtre "paratexte non numerote" de _walk_english_paragraphs
 # (n= non purement numerique => ignore sans consommer de position) ne doit
