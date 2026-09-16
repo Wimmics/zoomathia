@@ -747,6 +747,54 @@ def _flat_paragraph_position_map(file_path):
     return result
 
 
+_original_no_n_top_level_position_cache = {}
+
+
+def _original_no_n_top_level_position_map(file_path):
+    """Pour ORIGINAL_EMPTY_N_PARATEXT_FOLDERS : l'ORIGINAL (pas le temoin
+    anglais) interpole, au milieu de sa sequence de premier niveau, des
+    divisions completement depourvues de n= (ex. zoo80/1g, Hippiatrica
+    Cantabrigiensia : 8 <div type="poem"/"treatise"> sans aucun n=, jamais
+    repris dans le temoin anglais - confirme en comparant les sequences de
+    n= des deux temoins autour de ces positions, l'anglais etant exactement
+    la sequence grecque privee de ces entrees). compute_div_id ne les saute
+    jamais (numerotation purement positionnelle pour ce dossier, hors
+    GAPPED_CHAPTER_NUMBERING_FOLDERS) : elles consomment donc quand meme une
+    position de premier niveau, decalant de +1 (cumulatif) toutes les
+    entrees suivantes dans la carte d'alignement - le meme n= totalement
+    absent est desormais aussi ignore cote temoin anglais par
+    _walk_english_paragraphs. Associe, uniquement au premier niveau, la
+    position REELLE (celle recue par numeric_segments) a la position
+    qu'aurait cette meme entree une fois les divisions sans n= retirees."""
+    if file_path in _original_no_n_top_level_position_cache:
+        return _original_no_n_top_level_position_cache[file_path]
+
+    zoo_folder = os.path.basename(os.path.dirname(file_path))
+    result = {}
+    if zoo_folder not in ORIGINAL_EMPTY_N_PARATEXT_FOLDERS:
+        _original_no_n_top_level_position_cache[file_path] = result
+        return result
+
+    try:
+        with open(file_path, "r", encoding="UTF-8") as f:
+            soup = bs(f, "lxml-xml")
+        if soup.body is None:
+            _original_no_n_top_level_position_cache[file_path] = {}
+            return {}
+        top_level = soup.body.find_all(re.compile("^div"), recursive=False)
+        corrected = 0
+        for real_pos, tag_div in enumerate(top_level, 1):
+            if not tag_div.get("n", ""):
+                continue
+            corrected += 1
+            result[real_pos] = corrected
+    except Exception:
+        result = {}
+
+    _original_no_n_top_level_position_cache[file_path] = result
+    return result
+
+
 def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
     """Parcourt recursivement les div type=book/chapter... d'un temoin anglais
     deja traduit par un humain, avec la meme logique positionnelle que
@@ -805,6 +853,25 @@ def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
         # ses deux <p> ("ON THE NATURAL FACULTIES", "Book I") se retrouvaient
         # stockes a la place du vrai chapitre 1.
         div_n = tag_div.get("n", "")
+        # Un n= CARREMENT ABSENT reste toujours du paratexte AU PREMIER
+        # NIVEAU, meme dans un dossier de ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS
+        # (zoo80) : cette exception ne sert qu'a admettre les references
+        # composees reelles ("1.8.1", "2.4"...), jamais a compter une
+        # division qui n'a litteralement aucun identifiant. Trouve en
+        # reprenant zoo80/1g : le temoin anglais lui-meme interpole 9 div
+        # "treatise"/"section" DE PREMIER NIVEAU sans n= (probablement des
+        # notes structurelles ajoutees par l'editeur anglais, sans existence
+        # numerotee), qui consommaient chacune une position sans equivalent
+        # cote grec. Limite au premier niveau (path vide) : zoo80/2e a, LUI,
+        # 32 div sans n= mais imbriquees plus profond (dans des "section"
+        # deja numerotees) - la, au contraire, le cote grec compte deja ces
+        # memes div a la meme position (compute_div_id restant purement
+        # positionnel a ce niveau aussi) ; les sauter cote anglais y cree un
+        # decalage la ou il n'y en avait pas (regression mesuree sur
+        # zoo80/2g : 64.9% -> 63.8%), contrairement au premier niveau de
+        # zoo80/1e ou l'asymetrie est reelle.
+        if not div_n and not path:
+            continue
         if not div_n.isdigit() and zoo_folder not in ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS:
             continue
         # Numerotation trouee (ex: zoo14, Geoponica - le temoin anglais ne
@@ -1146,6 +1213,17 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
             if flat_key in align_map:
                 yield align_map[flat_key]
 
+        # Decalage de premier niveau du a des divisions originales sans n=
+        # (ex. zoo80/1g, voir ORIGINAL_EMPTY_N_PARATEXT_FOLDERS et
+        # _original_no_n_top_level_position_map). Comme le repli precedent,
+        # une correspondance 1 pour 1 exacte, jamais gardee par
+        # allow_coarser.
+        no_n_map = _original_no_n_top_level_position_map(file_path)
+        if no_n_map and numeric_segments and numeric_segments[0] in no_n_map:
+            remapped = (no_n_map[numeric_segments[0]],) + numeric_segments[1:]
+            if remapped in align_map:
+                yield align_map[remapped]
+
         if not allow_coarser:
             return
 
@@ -1356,6 +1434,13 @@ ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS = {"zoo9"}
 # garde toujours une liste plate de <p> directement sous le chapitre. Cle =
 # dossier, valeur = ensemble des type= de div a traverser sans les compter.
 TRANSPARENT_WRAPPER_DIV_TYPES = {"zoo71": {"part"}}
+
+# Voir _original_no_n_top_level_position_map : dossiers ou l'ORIGINAL
+# interpole, au milieu de sa sequence de premier niveau, des divisions
+# completement depourvues de n= (zoo80/1g, Hippiatrica Cantabrigiensia :
+# poemes/traites sans aucun identifiant, jamais repris dans le temoin
+# anglais), qui consomment quand meme une position dans compute_div_id.
+ORIGINAL_EMPTY_N_PARATEXT_FOLDERS = {"zoo80"}
 
 # Dossiers ou le filtre "paratexte non numerote" de _walk_english_paragraphs
 # (n= non purement numerique => ignore sans consommer de position) ne doit
