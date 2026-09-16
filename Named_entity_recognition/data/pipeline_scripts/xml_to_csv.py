@@ -1473,12 +1473,25 @@ def compute_div_id(tag_div, tag_id, tag_div_type, zoo_folder=None):
     s'il y en a un, sinon n= pour les dossiers a numerotation trouee
     (GAPPED_CHAPTER_NUMBERING_FOLDERS), sinon la position (comportement
     d'origine). Factorise pour rester coherent entre le calcul de l'id du
-    div courant et les URI enfants pre-listees avant la recursion."""
+    div courant et les URI enfants pre-listees avant la recursion.
+
+    Collision trouvee sur zoo15 (Columelle, Res Rustica) en reprenant la
+    revue systematique des prefaces sans numero : les livres 6 et 9 du latin
+    (et 1, 6, 9 de l'anglais) portent un <div type="chapter" n="pr"/"praef">
+    avant le chapitre "1". Pour un dossier GAPPED, ce "pr" (n= non
+    numerique) retombe sur son tag_id positionnel - qui, etant premier
+    enfant, vaut 1 - alors que le VRAI chapitre "1" juste apres obtient
+    aussi 1 via son propre n=. Les deux div distinctes produisent alors la
+    MEME URI de production (".../6/1"), l'une ecrasant l'autre dans les
+    donnees. Un id negatif (jamais pris par un vrai numero de chapitre,
+    toujours positif) elimine la collision sans changer l'id d'aucune
+    division deja correctement numerotee."""
     if tag_div_type == "BekkerPage":
         return int(re.search(r"\d+", tag_div["n"]).group())
-    if (zoo_folder in GAPPED_CHAPTER_NUMBERING_FOLDERS and tag_div.has_attr("n")
-            and tag_div["n"].isdigit()):
-        return int(tag_div["n"])
+    if zoo_folder in GAPPED_CHAPTER_NUMBERING_FOLDERS and tag_div.has_attr("n"):
+        if tag_div["n"].isdigit():
+            return int(tag_div["n"])
+        return -tag_id
     return tag_id
 
 
