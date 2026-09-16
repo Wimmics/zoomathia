@@ -1428,12 +1428,19 @@ ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS = {"zoo9"}
 # Voir _flat_paragraph_position_map : dossiers ou l'ORIGINAL imbrique, a
 # certains endroits seulement, un div purement structurel qui consomme quand
 # meme une position dans compute_div_id/l'URI de production - zoo71
-# (Physiologus) : <div type="part"> regroupe une paire nature/interpretation
-# uniquement quand un animal a plusieurs "natures" (present pour certains
-# chapitres du fichier, absent pour d'autres), alors que le temoin anglais
-# garde toujours une liste plate de <p> directement sous le chapitre. Cle =
-# dossier, valeur = ensemble des type= de div a traverser sans les compter.
-TRANSPARENT_WRAPPER_DIV_TYPES = {"zoo71": {"part"}}
+# (Physiologus grec) : <div type="part"> regroupe une paire
+# nature/interpretation uniquement quand un animal a plusieurs "natures"
+# (present pour certains chapitres du fichier, absent pour d'autres), alors
+# que le temoin anglais garde toujours une liste plate de <p> directement
+# sous le chapitre. Meme "part" retrouve sur les recensions latines du meme
+# Physiologus (zoo84, zoo75, zoo83), la ou tantot il enveloppe tout le
+# chapitre (present pour chaque animal, pas seulement les multi-natures) -
+# sans consequence pour le mecanisme, transparent quel que soit le nombre
+# de "part" traverses par chapitre. Cle = dossier, valeur = ensemble des
+# type= de div a traverser sans les compter.
+TRANSPARENT_WRAPPER_DIV_TYPES = {
+    "zoo71": {"part"}, "zoo84": {"part"}, "zoo75": {"part"}, "zoo83": {"part"},
+}
 
 # Voir _original_no_n_top_level_position_map : dossiers ou l'ORIGINAL
 # interpole, au milieu de sa sequence de premier niveau, des divisions
