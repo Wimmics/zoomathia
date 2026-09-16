@@ -678,6 +678,75 @@ def _greek_bekker_paragraph_labels(file_path):
     return labels
 
 
+_flat_paragraph_position_cache = {}
+
+
+def _flat_paragraph_position_map(file_path):
+    """Pour les dossiers de TRANSPARENT_WRAPPER_DIV_TYPES : l'original imbrique,
+    A CERTAINS ENDROITS SEULEMENT, un div purement structurel qui consomme
+    quand meme une position dans compute_div_id/l'URI de production (ex.
+    zoo71, Physiologus : <div type="part"> ne regroupe une paire
+    nature/interpretation QUE quand un animal a plusieurs "natures" - present
+    pour certains chapitres du fichier, absent pour d'autres), alors que le
+    temoin anglais garde toujours une liste plate de <p> directement sous le
+    chapitre. Contrairement au retrait de tete de get_aligned_translation
+    (une seule enveloppe, une seule fois, en tete de TOUT le chemin), ce
+    niveau n'apparait que par endroits A L'INTERIEUR d'un meme chapitre -
+    pas corrigeable par un decalage arithmetique constant. Rejoue donc le
+    meme parcours DFS que _walk_english_paragraphs (compteur plat, remis a
+    zero a chaque chapitre) mais sur l'ORIGINAL, en traversant les div dont
+    le type est marque "transparent" sans leur faire consommer de position,
+    pour retrouver la meme cle (chapitre, position_a_plat) que celle utilisee
+    cote anglais. Associe a chaque chemin REEL (position exacte telle que
+    numeric_segments la recoit, avec le/les niveau(x) transparent(s) comptes)
+    ce couple (chapitre, position_a_plat)."""
+    if file_path in _flat_paragraph_position_cache:
+        return _flat_paragraph_position_cache[file_path]
+
+    zoo_folder = os.path.basename(os.path.dirname(file_path))
+    transparent_types = TRANSPARENT_WRAPPER_DIV_TYPES.get(zoo_folder)
+    result = {}
+    if not transparent_types:
+        _flat_paragraph_position_cache[file_path] = result
+        return result
+
+    try:
+        with open(file_path, "r", encoding="UTF-8") as f:
+            soup = bs(f, "lxml-xml")
+        if soup.body is None:
+            _flat_paragraph_position_cache[file_path] = {}
+            return {}
+
+        def walk(node, real_path, chapter_number, counter):
+            for tag_id, child in enumerate(node.find_all(re.compile("^div"), recursive=False), 1):
+                child_real_path = real_path + (tag_id,)
+                child_type = child.get("type", "")
+                is_chapter = child_type == "chapter"
+                child_chapter_number = tag_id if is_chapter else chapter_number
+                child_counter = [0] if is_chapter else counter
+                if child_type in transparent_types or does_it_have_children_div(child):
+                    walk(child, child_real_path, child_chapter_number, child_counter)
+                    continue
+                direct_ps = [p for p in child.find_all("p", recursive=False)
+                             if not p.find_parent("p") and strip_text(p.text) != ""]
+                if not direct_ps or child_chapter_number is None:
+                    continue
+                if len(direct_ps) == 1:
+                    child_counter[0] += 1
+                    result[child_real_path] = (child_chapter_number, child_counter[0])
+                else:
+                    for p_idx in range(1, len(direct_ps) + 1):
+                        child_counter[0] += 1
+                        result[child_real_path + (p_idx,)] = (child_chapter_number, child_counter[0])
+
+        walk(soup.body, (), None, [0])
+    except Exception:
+        result = {}
+
+    _flat_paragraph_position_cache[file_path] = result
+    return result
+
+
 def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
     """Parcourt recursivement les div type=book/chapter... d'un temoin anglais
     deja traduit par un humain, avec la meme logique positionnelle que
@@ -1065,6 +1134,18 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
                     if label in english_pages:
                         yield english_pages[label]
 
+        # Aplatissement d'un div structurel present par endroits seulement
+        # (ex. zoo71, Physiologus : voir TRANSPARENT_WRAPPER_DIV_TYPES et
+        # _flat_paragraph_position_map). Volontairement PAS gardee par
+        # allow_coarser : comme le pont Bekker ci-dessus, c'est une
+        # correspondance 1 pour 1 exacte a une feuille precise, jamais un
+        # chapitre entier colle sur plusieurs paragraphes.
+        flat_map = _flat_paragraph_position_map(file_path)
+        if numeric_segments in flat_map:
+            flat_key = flat_map[numeric_segments]
+            if flat_key in align_map:
+                yield align_map[flat_key]
+
         if not allow_coarser:
             return
 
@@ -1265,6 +1346,16 @@ ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS = {"zoo7", "zoo43"}
 # chapitres suivants - trouve sur zoo9 en reprenant la revue systematique
 # des oeuvres a faible taux d'alignement.
 ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS = {"zoo9"}
+
+# Voir _flat_paragraph_position_map : dossiers ou l'ORIGINAL imbrique, a
+# certains endroits seulement, un div purement structurel qui consomme quand
+# meme une position dans compute_div_id/l'URI de production - zoo71
+# (Physiologus) : <div type="part"> regroupe une paire nature/interpretation
+# uniquement quand un animal a plusieurs "natures" (present pour certains
+# chapitres du fichier, absent pour d'autres), alors que le temoin anglais
+# garde toujours une liste plate de <p> directement sous le chapitre. Cle =
+# dossier, valeur = ensemble des type= de div a traverser sans les compter.
+TRANSPARENT_WRAPPER_DIV_TYPES = {"zoo71": {"part"}}
 
 # Dossiers ou le filtre "paratexte non numerote" de _walk_english_paragraphs
 # (n= non purement numerique => ignore sans consommer de position) ne doit
