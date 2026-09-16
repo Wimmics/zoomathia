@@ -909,6 +909,20 @@ def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
                     if not p.find_parent('p') and strip_text(p.text) != "":
                         texts.append(strip_paragraph_text(p.text))
             if not texts:
+                # Temoin anglais lui-meme structure en citations (<cit>/
+                # <quote>) plutot qu'en <p>, comme l'original (ex. zoo63,
+                # zoo64, zoo65, zoo66, zoo68 : compilations de citations
+                # d'auteurs anciens, ou les deux cotes gardent la meme
+                # structure). Une entree par <cit>, dans l'ordre - meme
+                # granularite que le cit_id 1-base utilise cote original
+                # par extract_paragraph.
+                for cit_tag in tag_div.find_all(["cit"], recursive=False):
+                    quote_texts = [strip_paragraph_text(q.text)
+                                   for q in cit_tag.find_all(["quote"], recursive=False)
+                                   if strip_text(q.text) != ""]
+                    if quote_texts:
+                        texts.append(" ".join(quote_texts))
+            if not texts:
                 continue
             if len(texts) == 1:
                 # Comportement historique inchange : plusieurs oeuvres deja
@@ -1242,7 +1256,20 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
     paragraph_work = ""
 
     if len(parent_division.find_all(["cit"], recursive=False)) >= 1:
-        for cit_id, cit_tag in enumerate(parent_division.find_all(["cit"], recursive=False), 1):
+        # Jusqu'ici cette branche ne tentait jamais get_aligned_translation
+        # (contrairement a la branche <p> ci-dessous) : elle traduisait
+        # systematiquement via Google Translate, meme quand un temoin
+        # anglais deja traduit humainement existe et couvre exactement ces
+        # memes citations (ex. zoo60, Konrad de Halberstadt : 346 <cit> cote
+        # latin pour 345 <p> cote anglais, quasi 1 pour 1). Meme garde-fou
+        # allow_coarser que pour les <p> : plusieurs citations dans la meme
+        # division (ex. zoo61, ~3 citations groupees par paragraphe anglais)
+        # n'acceptent qu'une correspondance precise, jamais un repli
+        # grossier qui collerait le meme texte sur plusieurs citations
+        # distinctes (meme risque de gonflage que section 22).
+        direct_cits = parent_division.find_all(["cit"], recursive=False)
+        multi_cit_division = len(direct_cits) > 1
+        for cit_id, cit_tag in enumerate(direct_cits, 1):
             paragraph_id = cit_id
 
             paragraph_author = cit_tag.bibl.author.text if cit_tag.bibl and cit_tag.bibl.author else "Missing author"
@@ -1260,7 +1287,12 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                     if is_english_file(FILE):
                         translated_paragraph = paragraph_text
                     else:
-                        translated_paragraph = split_and_translate(paragraph_text, "en")
+                        aligned = get_aligned_translation(
+                            FILE, parent_uri,
+                            paragraph_index=paragraph_id if multi_cit_division else None,
+                            allow_coarser=not multi_cit_division,
+                        )
+                        translated_paragraph = aligned if aligned else split_and_translate(paragraph_text, "en")
 
                     find_thesaurus_entities(translated_paragraph, annotation_data, f"{parent_uri}/text/{paragraph_id}")
                     wikidata_entities = get_NER_from_wikidata(translated_paragraph)
