@@ -1416,14 +1416,23 @@ GAPPED_CHAPTER_NUMBERING_FOLDERS = {"zoo4", "zoo89", "zoo14", "zoo15"}
 # sur le Livre 1 - un faux-positif du meme type que celui corrige pour
 # zoo14 (voir plus haut) mais localise a un seul fichier plutot qu'a tout
 # un dossier.
-ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS = {"zoo7", "zoo43"}
+ENGLISH_WITNESS_GAPPED_NUMBERING_FOLDERS = {"zoo7", "zoo43", "zoo8"}
+# zoo8/1e (Oppien, Cynegetica) : traduction humaine complete sauf le
+# chapitre 11, absent (saute directement de "10" a "12") - meme mecanisme
+# que ci-dessus mais pour un trou AU MILIEU d'un temoin par ailleurs
+# complet, pas une simple couverture partielle en debut/fin.
 
 # Voir le commentaire dans get_aligned_translation : dossiers ou l'ORIGINAL
 # porte une preface non numerotee (type="chapter" n="prooimion"...) au
 # debut de CHAQUE livre, decalant de +1 la position de tous les vrais
 # chapitres suivants - trouve sur zoo9 en reprenant la revue systematique
 # des oeuvres a faible taux d'alignement.
-ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS = {"zoo9"}
+ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS = {"zoo9", "zoo8"}
+# zoo8/1g (Oppien, Cynegetica) : un unique <div type="chapter" n="pr">
+# (preface) precede le chapitre "1", une seule fois pour tout le fichier
+# (pas de sous-division en livres ici - le "livre" de la formule
+# generique n'est alors que la position, toujours 1, de l'enveloppe de
+# tete deja retiree par le retrait de segment de tete).
 
 # Voir _flat_paragraph_position_map : dossiers ou l'ORIGINAL imbrique, a
 # certains endroits seulement, un div purement structurel qui consomme quand
