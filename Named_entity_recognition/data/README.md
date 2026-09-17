@@ -58,30 +58,11 @@ Le résultat du pipeline : pour chaque fichier traité, quatre fichiers CSV
 sur l'œuvre, le texte de chaque paragraphe, les liens entre divisions, et les
 entités reconnues automatiquement dans chaque paragraphe.
 
-### `mongo_loaded/`
-
-Un fichier vide `.done` par texte déjà chargé dans MongoDB — sert juste de
-pense-bête pour ne pas recharger deux fois le même texte.
 
 ### `TEI-P5/`
 
 Des feuilles de style XSLT pour convertir d'anciens fichiers de l'ancien
 format TEI P4 vers le format TEI P5 actuel.
-
-## Les textes bruts, avant leur passage dans `zoo/`
-
-**`texts/`** (la plus grande collection, organisée par identifiant `tlg`
-pour le grec ou `phi` pour le latin) et **`animaux_encyclopedies/`** (des
-encyclopédies médiévales sur les animaux) contiennent des textes sous leur
-forme d'origine, avant d'être renommés selon la convention `zooN`.
-
-(Le 2026-09-17, quatorze autres dossiers de ce type — `zoo24/`, `zoo42/`,
-`zoo57/`, `zoo80/`, `phi0978/`, `tlg0059/`, `tlg0060/`, `tlg0074/`,
-`tlg0084/`, `tlg0086/`, `tlg0093/`, `tlg0752/`, `stoa0216/` et
-`a_verifier_7/` — ont été supprimés : une vérification antérieure, le
-29/08, avait déjà confirmé que leur contenu était entièrement dupliqué dans
-`zoo/`, et ils n'étaient de toute façon jamais suivis par Git.)
-
 
 
 ## Le reste
