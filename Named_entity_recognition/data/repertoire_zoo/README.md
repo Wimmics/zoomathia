@@ -29,10 +29,18 @@ fichier n'a jamais de suffixe.
 
 ## Les fichiers de ce dossier
 
-**`auteurs_rows.csv`**, **`oeuvres_rows.csv`**, **`fichiers_rows.csv`** — les
-trois tables de données elles-mêmes, une ligne par auteur / par œuvre / par
-fichier. Chaque ligne a un identifiant numérique (colonne `id`), qui sert de
-base au calcul du code `zooN`.
+### Les données (les vrais fichiers de référence)
+
+**`auteurs_rows.csv`** — la liste de tous les auteurs anciens du projet
+(Aristote, Xénophon, etc.), un par ligne, avec son numéro.
+
+**`oeuvres_rows.csv`** — la liste de toutes les œuvres, reliées à leur
+auteur (chaque ligne dit "cette œuvre appartient à cet auteur-là").
+
+**`fichiers_rows.csv`** — la liste de tous les fichiers XML concrets (un
+texte grec, sa traduction anglaise...), reliés à leur œuvre. Chaque ligne de
+ces trois tables a un identifiant numérique (colonne `id`), qui sert de base
+au calcul du code `zooN`.
 
 **`alignement_zoo.csv`** — un quatrième fichier, à part, qui garde une note
 sur la qualité de la correspondance entre chaque texte original et sa
@@ -42,22 +50,27 @@ parce que cette information n'a rien à voir avec l'identité d'un auteur ou
 d'une œuvre — c'est une observation qu'on a faite après coup en comparant
 les textes entre eux.
 
-**`repertoire_codes_zoo.csv`** — le résultat final, calculé automatiquement :
-une ligne par fichier, avec son code `zooN/Xy`, le nom de l'auteur, le titre
-de l'œuvre, et l'état d'alignement repris depuis `alignement_zoo.csv`. C'est
-ce fichier qu'utilisent les autres scripts du projet
-(`Named_entity_recognition/data/xml_to_csv.py`, `preparer_renommage.py`) —
-**il ne faut jamais le modifier à la main**, puisqu'il est entièrement
-recalculé à chaque fois qu'on relance `generer_codes_zoo.py`, et toute
-modification manuelle serait alors perdue.
+### Le résultat calculé automatiquement
 
-**`generer_codes_zoo.py`** — le script qui recalcule `repertoire_codes_zoo.csv`
-à partir des trois tables plus `alignement_zoo.csv`. On peut le relancer à
-tout moment sans risque (`python3 generer_codes_zoo.py`) : il ne fait que
-lire les CSV et réécrire le résultat.
+**`repertoire_codes_zoo.csv`** — le tableau final, obtenu en combinant les
+quatre fichiers ci-dessus : une ligne par fichier, avec son code `zooN/Xy`,
+le nom de l'auteur, le titre de l'œuvre, et l'état d'alignement repris
+depuis `alignement_zoo.csv`. C'est ce fichier qu'utilisent les autres
+scripts du projet (`Named_entity_recognition/data/xml_to_csv.py`,
+`preparer_renommage.py`) — **il ne faut jamais le modifier à la main**,
+puisqu'il est entièrement recalculé à chaque fois qu'on relance
+`generer_codes_zoo.py`, et toute modification manuelle serait alors perdue.
 
-**`ajouter_fichier.py`** — le script à utiliser pour ajouter un nouveau texte
-au projet. Voir la section suivante pour le détail de ce qu'il fait.
+### Les scripts (les programmes)
+
+**`generer_codes_zoo.py`** — calcule `repertoire_codes_zoo.csv` à partir des
+quatre fichiers de données. On peut le relancer à tout moment sans risque
+(`python3 generer_codes_zoo.py`) : il ne fait que lire les CSV et réécrire
+le résultat.
+
+**`ajouter_fichier.py`** — le programme à lancer pour ajouter un nouveau
+texte au projet (auteur, œuvre, fichier). Voir la section suivante pour le
+détail de ce qu'il fait.
 
 ## Ajouter un nouveau fichier, étape par étape
 
