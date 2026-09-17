@@ -33,7 +33,7 @@ qualité du dossier `zoo/`. Même convention de nommage.
 
 Le système qui répertorie tous les auteurs, œuvres et fichiers, et qui
 attribue à chacun son code `zooN/Xy`. Voir son propre
-['README.md'](repertoire_zoo/README.md). 
+[README.md](repertoire_zoo/README.md). 
 
 ### `pipeline_scripts/`
 
