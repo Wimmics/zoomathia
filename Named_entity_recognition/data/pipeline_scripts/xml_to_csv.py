@@ -747,6 +747,79 @@ def _flat_paragraph_position_map(file_path):
     return result
 
 
+_original_paratext_adjusted_position_cache = {}
+
+
+def _original_paratext_adjusted_position_map(file_path):
+    """Pour ORIGINAL_MULTILEVEL_PARATEXT_FOLDERS : generalise
+    ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS (decale UNE fois, au niveau
+    du livre) au cas ou une preface non numerotee (n= absent ou non
+    numerique, ex. "Pr") precede des divisions numerotees a PLUSIEURS
+    niveaux imbriques a la fois (ex. zoo63/64/65/66/68, compilations de
+    citations : section2 "Pr" avant section2 "1", ET section3 "Pr" avant
+    section3 "1" A L'INTERIEUR de chaque section2 numerotee - constate sur
+    zoo63, structure identique aux deux niveaux cote latin ET anglais).
+    _walk_english_paragraphs saute deja ces "Pr" sans consommer de
+    position, a chaque niveau ; compute_div_id, lui, ne saute jamais rien
+    (numerotation purement positionnelle hors GAPPED_CHAPTER_NUMBERING_FOLDERS)
+    - la preface consomme donc quand meme une position REELLE a chaque
+    niveau ou elle apparait, decalant les divisions numerotees suivantes
+    du meme cran a CHAQUE niveau concerne (compose si plusieurs niveaux
+    sont touches, contrairement au decalage a un seul niveau de
+    ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS). Rejoue le meme parcours
+    que _walk_english_paragraphs (comptage uniquement des enfants a n=
+    numerique, "Pr" traverse sans consommer de position a aucun niveau)
+    mais sur l'ORIGINAL, et associe a chaque chemin REEL (tel que
+    numeric_segments le recoit, compute_div_id inclus) son equivalent
+    corrige (celui utilise par la carte d'alignement anglaise)."""
+    if file_path in _original_paratext_adjusted_position_cache:
+        return _original_paratext_adjusted_position_cache[file_path]
+
+    zoo_folder = os.path.basename(os.path.dirname(file_path))
+    result = {}
+    if zoo_folder not in ORIGINAL_MULTILEVEL_PARATEXT_FOLDERS:
+        _original_paratext_adjusted_position_cache[file_path] = result
+        return result
+
+    try:
+        with open(file_path, "r", encoding="UTF-8") as f:
+            soup = bs(f, "lxml-xml")
+        if soup.body is None:
+            _original_paratext_adjusted_position_cache[file_path] = {}
+            return {}
+
+        def walk(node, real_path, corrected_path):
+            position = 0
+            for tag_id, child in enumerate(node.find_all(re.compile("^div"), recursive=False), 1):
+                child_type = get_div_type(child)
+                # type="oeuvre" (envelope de tete, ex. zoo63) est totalement
+                # transparent cote URI de production : extract_division_metadata
+                # recurse avec le MEME parent_uri (jamais current_uri) pour ce
+                # type precis, contrairement a toute autre division (meme sans
+                # n= exploitable) qui, elle, obtient quand meme un vrai segment
+                # d'URI. Sans ce cas particulier ici, real_path aurait un
+                # niveau de trop et ne correspondrait jamais a numeric_segments.
+                if child_type == "Oeuvre":
+                    walk(child, real_path, corrected_path)
+                    continue
+                child_real_path = real_path + (compute_div_id(child, tag_id, child_type, zoo_folder),)
+                child_n = child.get("n", "")
+                if not child_n.isdigit():
+                    walk(child, child_real_path, corrected_path)
+                    continue
+                position += 1
+                child_corrected_path = corrected_path + (position,)
+                result[child_real_path] = child_corrected_path
+                walk(child, child_real_path, child_corrected_path)
+
+        walk(soup.body, (), ())
+    except Exception:
+        result = {}
+
+    _original_paratext_adjusted_position_cache[file_path] = result
+    return result
+
+
 _original_no_n_top_level_position_cache = {}
 
 
@@ -1238,6 +1311,22 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
             if remapped in align_map:
                 yield align_map[remapped]
 
+        # Decalage a plusieurs niveaux imbriques du a des prefaces non
+        # numerotees repetees (ex. zoo63/64/65/66/68, voir
+        # ORIGINAL_MULTILEVEL_PARATEXT_FOLDERS et
+        # _original_paratext_adjusted_position_map). Comme les deux replis
+        # precedents, une correspondance 1 pour 1 exacte, jamais gardee par
+        # allow_coarser.
+        adj_map = _original_paratext_adjusted_position_map(file_path)
+        if adj_map:
+            division_path = numeric_segments[:-1] if paragraph_index is not None else numeric_segments
+            if division_path in adj_map:
+                corrected = adj_map[division_path]
+                if paragraph_index is not None:
+                    corrected = corrected + (numeric_segments[-1],)
+                if corrected in align_map:
+                    yield align_map[corrected]
+
         if not allow_coarser:
             return
 
@@ -1489,6 +1578,14 @@ TRANSPARENT_WRAPPER_DIV_TYPES = {
 # poemes/traites sans aucun identifiant, jamais repris dans le temoin
 # anglais), qui consomment quand meme une position dans compute_div_id.
 ORIGINAL_EMPTY_N_PARATEXT_FOLDERS = {"zoo80"}
+
+# Voir _original_paratext_adjusted_position_map : dossiers ou une preface
+# non numerotee ("Pr"...) precede des divisions numerotees a PLUSIEURS
+# niveaux imbriques a la fois (contrairement a
+# ORIGINAL_LEADING_PARATEXT_CHAPTER_FOLDERS, un seul niveau) - compilations
+# de citations d'auteurs anciens ou chaque grande section ET chaque
+# sous-section porte sa propre preface "Pr" avant le "1".
+ORIGINAL_MULTILEVEL_PARATEXT_FOLDERS = {"zoo63", "zoo64", "zoo65", "zoo66", "zoo68"}
 
 # Dossiers ou le filtre "paratexte non numerote" de _walk_english_paragraphs
 # (n= non purement numerique => ignore sans consommer de position) ne doit
