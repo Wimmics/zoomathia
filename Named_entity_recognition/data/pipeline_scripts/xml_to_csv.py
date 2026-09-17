@@ -1396,12 +1396,41 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text, paragraph_author, paragraph_work])
 
     elif len(parent_division.find_all(["p"])) == 0:
+        # Vers (<l>) : jusqu'ici cette branche traduisait systematiquement
+        # chaque ligne via Google Translate, meme quand un temoin anglais
+        # deja traduit humainement existe pour toute l'oeuvre (ex. zoo30,
+        # Cynegetica d'Oppien, "Complet"). Contrairement aux <p> ou <cit>,
+        # une ligne de vers ne correspond a aucune unite du temoin anglais :
+        # les traductions de poesie (Loeb, Bohn...) sont en prose et ne
+        # suivent pas le decoupage vers par vers. On cherche donc UNE SEULE
+        # fois la traduction alignee grossiere (allow_coarser, toute la
+        # division) et on la reutilise pour le NER de chaque ligne - un seul
+        # appel a get_aligned_translation par division, pas un par ligne,
+        # pour ne pas gonfler artificiellement les statistiques d'alignement
+        # (report_alignment_stats) d'autant de "hits" qu'il y a de lignes.
+        aligned_division_text = None
+        if ANNOTATION_AUTO and not is_english_file(FILE):
+            aligned_division_text = get_aligned_translation(
+                FILE, parent_uri, paragraph_index=None, allow_coarser=True,
+            )
+            if aligned_division_text:
+                # NER lance UNE FOIS sur tout le texte de la division (pas par
+                # ligne) : on ne sait pas a quelle ligne precise appartient
+                # chaque entite trouvee dans cette traduction grossiere, donc
+                # on l'attache a la division elle-meme plutot que de repeter
+                # le meme appel NLP (couteux) et les memes entites sur chaque
+                # ligne individuelle.
+                find_thesaurus_entities(aligned_division_text, annotation_data, f"{parent_uri}/text")
+                wikidata_entities = get_NER_from_wikidata(aligned_division_text)
+                extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text")
+                dbpedia_entities = get_NER_from_dbpedia(aligned_division_text)
+                extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text")
         for p_id, p in tqdm(enumerate(parent_division.find_all(["l"], recursive=False), 1)):
 
             paragraph_id = p_id
             paragraph_text = strip_paragraph_text(p.text)
 
-            if ANNOTATION_AUTO:
+            if ANNOTATION_AUTO and not aligned_division_text:
 
                 if is_english_file(FILE):
                     translated_paragraph = paragraph_text
