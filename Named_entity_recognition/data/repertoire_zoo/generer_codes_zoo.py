@@ -28,8 +28,22 @@ suffixe = rang.apply(lambda n: "" if n == 1 else f"_{n}")
 df["code_zoo"] = "zoo" + df["auteur_id"].astype(str) + "/" + df["numero_oeuvre"].astype(str) + df["lettre_langue"] + suffixe
 
 resultat = df[["nom_fichier", "code_zoo", "nom_canonique", "titre_original", "langue", "statut", "identifiant"]]
-resultat = resultat.rename(columns={"identifiant": "ancien_code", "statut": "etat"})
+resultat = resultat.rename(columns={"identifiant": "ancien_code"})
 resultat = resultat.sort_values("code_zoo")
+
+# La colonne "etat" ne vient pas de Supabase (qui ne sait rien de la qualite
+# de l'alignement original/traduction) : elle est fusionnee depuis
+# alignement_zoo.csv, un fichier tenu a part et suivi par git, justement
+# pour survivre a chaque regeneration de ce script. Un code_zoo absent de
+# alignement_zoo.csv (fichier jamais audite, ou pas encore ajoute) obtient
+# une case vide plutot qu'une erreur.
+try:
+    alignement = pd.read_csv("alignement_zoo.csv")
+    resultat = resultat.merge(alignement, on="code_zoo", how="left")
+except FileNotFoundError:
+    resultat["etat"] = ""
+
+resultat = resultat[["nom_fichier", "code_zoo", "nom_canonique", "titre_original", "etat", "statut", "langue", "ancien_code"]]
 
 resultat.to_csv("repertoire_codes_zoo.csv", index=False)
 print(f"{len(resultat)} fichiers traites")
