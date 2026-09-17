@@ -1,75 +1,70 @@
-# Le dossier `data`
+# The `data` folder
 
-Ce dossier contient tout ce qui touche au corpus de textes anciens du projet
-Zoomathia : les textes eux-mêmes, le pipeline qui les traite, et le registre
-qui les répertorie.
+This folder contains everything related to the Zoomathia project's corpus of
+ancient texts: the texts themselves, the pipeline that processes them, and
+the registry that catalogs them.
 
-## Les dossiers essentiels
+## The essential folders
 
 ### `zoo/`
 
-Le corpus de référence, actuellement composé des textes dont l'original et
-la traduction anglaise se correspondent parfaitement.
-Chaque œuvre a son propre sous-dossier `zooN/`, contenant un
-fichier par témoin (l'original et sa traduction).
+The reference corpus, currently made up of texts whose original and English
+translation correspond perfectly. Each work has its own `zooN/` subfolder,
+containing one file per witness (the original and its translation).
 
-Le nom de chaque fichier suit une convention fixe : `zooN/Xy.xml`, où `N` est
-le numéro de l'auteur, `X` le numéro de l'œuvre parmi celles de cet auteur,
-et `y` une lettre de langue (`g` grec, `l` latin, `e` anglais,).
-Un chiffre en plus (`zoo16/1g_2.xml`) indique un deuxième
-témoin dans la même langue pour la même œuvre. Cette convention, et le
-registre qui l'attribue, sont documentés en détail dans
-[`repertoire_zoo/README.md`](repertoire_zoo/README.md).
+Each file name follows a fixed convention: `zooN/Xy.xml`, where `N` is the
+author's number, `X` the number of the work among that author's works, and
+`y` a language letter (`g` Greek, `l` Latin, `e` English). An extra digit
+(`zoo16/1g_2.xml`) indicates a second witness in the same language for the
+same work. This convention, and the registry that assigns it, are documented
+in detail in [`repertoire_zoo/README.md`](repertoire_zoo/README.md).
 
 ### `zoo_archive/`
 
-Les autres textes du projet, ceux dont la traduction est incomplète,
-générée par IA, ou dont le découpage ne correspond pas assez à
-l'original pour un alignement fiable. Rien n'y est cassé ou à corriger
-d'urgence : c'est juste un contenu qui n'atteint pas encore le niveau de
-qualité du dossier `zoo/`. Même convention de nommage.
+The rest of the project's texts: those whose translation is incomplete,
+AI-generated, or whose segmentation doesn't match the original closely
+enough for reliable alignment. Nothing here is broken or in urgent need of
+fixing — it's simply content that hasn't yet reached the quality level of
+the `zoo/` folder. Same naming convention.
 
 ### `repertoire_zoo/`
 
-Le système qui répertorie tous les auteurs, œuvres et fichiers, et qui
-attribue à chacun son code `zooN/Xy`. Voir son propre
-[README.md](repertoire_zoo/README.md). 
+The system that catalogs every author, work, and file, and assigns each one
+its `zooN/Xy` code. See its own [README.md](repertoire_zoo/README.md).
 
 ### `pipeline_scripts/`
 
-Les scripts qui transforment un fichier TEI du dossier `zoo/` en données
-exploitables : reconnaissance d'entités nommées, alignement avec la
-traduction humaine quand elle existe, génération des fichiers CSV de sortie.
+The scripts that turn a TEI file from the `zoo/` folder into usable data:
+named entity recognition, alignment with the human translation when one
+exists, and generation of the output CSV files.
 
-- **`xml_to_csv.py`** — le script principal, celui qui fait tout le travail
-  décrit ci-dessus. C'est le fichier le plus important du pipeline.
-- **`tei_validator.py`** — vérifie qu'un fichier respecte bien le format TEI
-  P5 avant de le traiter.
-- **`morph_mongo.py`** — charge les résultats dans la base MongoDB du projet.
-- **`beta-to-unicode.py`** — convertit le grec ancien saisi en notation
-  "beta code" (une transcription en caractères latins, historiquement
-  utilisée faute de clavier grec) vers de vrais caractères Unicode grecs.
+- **`xml_to_csv.py`** — the main script, the one that does all the work
+  described above. It's the most important file in the pipeline.
+- **`tei_validator.py`** — checks that a file properly conforms to the TEI
+  P5 format before processing it.
+- **`morph_mongo.py`** — loads the results into the project's MongoDB
+  database.
+- **`beta-to-unicode.py`** — converts ancient Greek entered in "beta code"
+  notation (a transliteration into Latin characters, historically used for
+  lack of a Greek keyboard) into actual Unicode Greek characters.
 
 ### `output/`
 
-Le résultat du pipeline : pour chaque fichier traité, quatre fichiers CSV
+The pipeline's output: for each processed file, four CSV files
 (`..._metadata.csv`, `..._paragraph.csv`, `..._link.csv`,
-`..._annotations.csv`) contenant respectivement les informations générales
-sur l'œuvre, le texte de chaque paragraphe, les liens entre divisions, et les
-entités reconnues automatiquement dans chaque paragraphe.
-
+`..._annotations.csv`) containing, respectively, general information about
+the work, the text of each paragraph, the links between divisions, and the
+entities automatically recognized in each paragraph.
 
 ### `TEI-P5/`
 
-Des feuilles de style XSLT pour convertir d'anciens fichiers de l'ancien
-format TEI P4 vers le format TEI P5 actuel.
+XSLT stylesheets for converting old files from the former TEI P4 format to
+the current TEI P5 format.
 
+## The rest
 
-## Le reste
-
-De nombreux autres fichiers à la racine sont des restes de travail ponctuel
-: des journaux d'exécution du pipeline (`*.log`), des listes de
-correspondance utilisées pour des renommages en masse à un moment donné
-(`*_prefix.txt`, `*_target.txt`), et quelques scripts ou dossiers de test
-(`test/`, `LLM_NER/` une approche alternative de reconnaissance d'entités
-via un modèle de langage local).
+Many other files at the root are leftovers from one-off work: pipeline
+execution logs (`*.log`), correspondence lists used for mass renamings at
+some point (`*_prefix.txt`, `*_target.txt`), and a few test scripts or
+folders (`test/`, `LLM_NER/`, an alternative entity-recognition approach
+using a local language model).

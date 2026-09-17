@@ -1,129 +1,108 @@
-# Le registre repertoire_zoo
+# The repertoire_zoo registry
 
-Ce dossier tient à jour la liste de tous les auteurs, œuvres et fichiers du
-corpus Zoomathia, et attribue à chacun un code court et unique du genre
-`zoo57/9g` — ce code sert ensuite de nom de dossier et de fichier partout
-ailleurs dans le projet (`Named_entity_recognition/data/zoo/zoo57/9g.xml`).
+This folder keeps an up-to-date list of every author, work, and file in the
+Zoomathia corpus, and assigns each one a short, unique code such as
+`zoo57/9g`. This code is then used as the folder and file name everywhere
+else in the project (`Named_entity_recognition/data/zoo/zoo57/9g.xml`).
 
-Tout repose entièrement sur Git : il n'y a plus de base de données en ligne
-séparée à laquelle se connecter. Les fichiers de ce dossier *sont* la
-référence — pas une copie d'autre chose.
 
-## Comment lire le code `zoo57/9g`
+## How to read the code `zoo57/9g`
 
-Chaque code se décompose en trois informations :
+Each code breaks down into three pieces of information:
 
-- **`57`** : le numéro de l'auteur (Xénophon, par exemple, porte le numéro 57
-  dans ce système — un numéro purement interne au projet, sans rapport avec
-  un quelconque classement officiel).
-- **`9`** : le numéro d'ordre de l'œuvre parmi celles de cet auteur déjà
-  enregistrées (sa 9ᵉ œuvre ajoutée au système, pas forcément la 9ᵉ dans
-  l'ordre chronologique de composition).
-- **`g`** : la langue du fichier — `g` pour grec, `l` pour latin, `e` pour
-  anglais, `f` pour français, `i` pour italien.
+- **`57`**: the author's number (Xenophon, for instance, is number 57 in
+  this system, a number purely internal to the project, unrelated to any
+  official classification).
+- **`9`**: the ordinal number of the work among those already registered for
+  this author (the 9th work added to the system, not necessarily the 9th in
+  chronological order of composition).
+- **`g`**: the file's language `g` for Greek, `l` for Latin, `e` for
+  English.
 
-Si plusieurs fichiers existent dans la même langue pour la même œuvre (par
-exemple deux manuscrits grecs différents du même texte), le deuxième reçoit
-un suffixe `_2`, le troisième `_3`, et ainsi de suite. Le tout premier
-fichier n'a jamais de suffixe.
+If several files exist in the same language for the same work (for example
+two different Greek manuscripts of the same text), the second one gets a
+`_2` suffix, the third a `_3`, and so on. The very first file never has a
+suffix.
 
-## Les fichiers de ce dossier
+## The files in this folder
 
-### Les données (les vrais fichiers de référence)
+### The data (the actual reference files)
 
-**`auteurs_rows.csv`** — la liste de tous les auteurs anciens du projet
-(Aristote, Xénophon, etc.), un par ligne, avec son numéro.
+**`auteurs_rows.csv`**: the list of every ancient author in the project
+(Aristotle, Xenophon, etc.), one per line, with their number.
 
-**`oeuvres_rows.csv`** — la liste de toutes les œuvres, reliées à leur
-auteur (chaque ligne dit "cette œuvre appartient à cet auteur-là").
+**`oeuvres_rows.csv`**: the list of every work, linked to its author (each
+line says "this work belongs to that author").
 
-**`fichiers_rows.csv`** — la liste de tous les fichiers XML concrets (un
-texte grec, sa traduction anglaise...), reliés à leur œuvre. Chaque ligne de
-ces trois tables a un identifiant numérique (colonne `id`), qui sert de base
-au calcul du code `zooN`.
+**`fichiers_rows.csv`**: the list of every concrete XML file (a Greek text,
+its English translation...), linked to its work. Each row in these three
+tables has a numeric identifier (the `id` column), which is used as the
+basis for computing the `zooN` code.
 
-**`alignement_zoo.csv`** — un quatrième fichier, à part, qui garde une note
-sur la qualité de la correspondance entre chaque texte original et sa
-traduction anglaise (`Complet`, `Partiel (XX%)`, `IA non relue`, `Sans
-traduction anglaise`...). Il est tenu séparément des trois tables ci-dessus
-parce que cette information n'a rien à voir avec l'identité d'un auteur ou
-d'une œuvre — c'est une observation qu'on a faite après coup en comparant
-les textes entre eux.
+**`alignement_zoo.csv`**: a fourth, separate file that keeps a note on the
+quality of the match between each original text and its English translation
+(`Complet`, `Partiel (XX%)`, `IA non relue`, `Sans traduction anglaise`).
 
-### Le résultat calculé automatiquement
+### The automatically computed result
 
-**`repertoire_codes_zoo.csv`** — le tableau final, obtenu en combinant les
-quatre fichiers ci-dessus : une ligne par fichier, avec son code `zooN/Xy`,
-le nom de l'auteur, le titre de l'œuvre, et l'état d'alignement repris
-depuis `alignement_zoo.csv`. C'est ce fichier qu'utilisent les autres
-scripts du projet (`Named_entity_recognition/data/xml_to_csv.py`,
-`preparer_renommage.py`) — **il ne faut jamais le modifier à la main**,
-puisqu'il est entièrement recalculé à chaque fois qu'on relance
-`generer_codes_zoo.py`, et toute modification manuelle serait alors perdue.
+**`repertoire_codes_zoo.csv`**: the final table, obtained by combining the
+four files above: one row per file, with its `zooN/Xy` code, the author's
+name, the work's title, and the alignment status taken from
+`alignement_zoo.csv`. This is the file used by the project's other scripts
+(`Named_entity_recognition/data/xml_to_csv.py`, `preparer_renommage.py`)
+**it should never be edited by hand**, since it's entirely recomputed every
+time `generer_codes_zoo.py` is run, and any manual edit would then be lost.
 
-### Les scripts (les programmes)
+### The scripts (the programs)
 
-**`generer_codes_zoo.py`** — calcule `repertoire_codes_zoo.csv` à partir des
-quatre fichiers de données. On peut le relancer à tout moment sans risque
-(`python3 generer_codes_zoo.py`) : il ne fait que lire les CSV et réécrire
-le résultat.
+**`generer_codes_zoo.py`**: computes `repertoire_codes_zoo.csv` from the
+four data files. It can be re-run at any time without risk
+(`python3 generer_codes_zoo.py`): it only reads the CSVs and rewrites the
+result.
 
-**`ajouter_fichier.py`** — le programme à lancer pour ajouter un nouveau
-texte au projet (auteur, œuvre, fichier). Voir la section suivante pour le
-détail de ce qu'il fait.
+**`ajouter_fichier.py`**: the program to run to add a new text to the
+project (author, work, file). See the next section for the detail of what
+it does.
 
-## Ajouter un nouveau fichier, étape par étape
+## Adding a new file, step by step
 
-On lance le script depuis ce dossier :
+The script is run from this folder:
 
 ```
 cd Named_entity_recognition/data/repertoire_zoo
-git pull                     # important, voir la mise en garde plus bas
+git pull                     # important, see the warning below
 python3 ajouter_fichier.py
 ```
 
-**Étape 1 — l'auteur.** Le script demande le nom de l'auteur (par exemple
-"ARISTOTELES"). Il cherche ce nom dans `auteurs_rows.csv` :
+**Step 1 — the author.** The script asks for the author's name (e.g.
+"ARISTOTELES"). It looks up this name in `auteurs_rows.csv`:
 
-- S'il le trouve, il affiche son numéro existant et demande de le
-  confirmer — rien n'est créé, on réutilise l'auteur déjà là.
-- S'il ne le trouve pas, il demande deux informations pour créer sa fiche :
-  un **identifiant de référence** comme `tlg0086` (un code utilisé par les
-  spécialistes pour désigner un auteur ancien de façon unique — un peu comme
-  un ISBN pour un livre ; on peut laisser vide si l'auteur n'en a pas), et
-  une **période historique** approximative ("antique", "tardo-antique",
-  "médiéval"). Le script attribue alors à cet auteur un numéro tout seul :
-  il regarde le plus grand numéro déjà utilisé dans `auteurs_rows.csv` (89,
-  par exemple) et donne au nouvel auteur ce nombre plus un (90) — pour être
-  certain de ne jamais réutiliser un numéro déjà pris.
+- If it finds it, it shows the existing number and asks for confirmation —
+  nothing is created, the existing author is reused.
+- If it doesn't find it, it asks for two pieces of information to create
+  their entry: a **reference identifier** such as `tlg0086` (a code used by
+  specialists to uniquely designate an ancient author a bit like an ISBN
+  for a book; it can be left blank if the author doesn't have one), and an
+  approximate **historical period** ("antique", "late antique",
+  "medieval"). The script then assigns this author a number on its own: it
+  looks at the highest number already used in `auteurs_rows.csv` (89, for
+  instance) and gives the new author that number plus one (90) to make
+  sure a number already taken is never reused.
 
-**Étape 2 — l'œuvre.** Même logique : le script montre les œuvres déjà
-enregistrées pour cet auteur, et on choisit soit une existante, soit on en
-crée une nouvelle (titre original, langue d'origine) — avec, là aussi, un
-numéro d'ordre attribué automatiquement.
+**Step 2 — the work.** Same logic: the script shows the works already
+registered for this author, and you either pick an existing one or create a
+new one (original title, original language) with, again, an ordinal number
+assigned automatically.
 
-**Étape 3 — le fichier.** On indique son nom, sa langue, et sa source (d'où
-vient le texte : Perseus, First1KGreek, une édition imprimée...).
+**Step 3 — the file.** You indicate its name, its language, and its source
+(where the text comes from: Perseus, First1KGreek, a printed edition...).
 
-**Étape 4 — le code final.** Le script assemble tout ça en un code
-`zooN/Xy` et régénère immédiatement `repertoire_codes_zoo.csv` pour que le
-registre reflète ce changement sans délai.
+**Step 4 — the final code.** The script assembles all this into a
+`zooN/Xy` code and immediately regenerates `repertoire_codes_zoo.csv` so the
+registry reflects this change without delay.
 
-**Étape 5 — placer le fichier et partager.** Le script demande où se trouve
-le fichier XML à ajouter, le copie au bon endroit
-(`Named_entity_recognition/data/zoo/zooN/Xy.xml`), puis propose de faire le
-commit (avec un message rédigé automatiquement) et, si on confirme, de le
-pousser sur GitHub. Tant que ce push n'est pas fait, le reste de l'équipe ne
-voit rien de ce changement.
-
-## Une mise en garde importante pour le travail en équipe
-
-Comme il n'y a plus de base de données centrale pour gérer les numéros, deux
-personnes qui ajouteraient un auteur ou une œuvre exactement en même temps,
-sans avoir récupéré les derniers changements (`git pull`), pourraient
-chacune calculer le même "prochain numéro disponible" et se retrouver en
-conflit (deux auteurs différents avec le même numéro). C'est pour ça qu'il
-faut toujours faire un `git pull` juste avant de lancer `ajouter_fichier.py`
-— avec le rythme d'ajout actuel du projet (quelques textes de temps en
-temps, pas des dizaines par jour), ce risque reste faible mais reste bon à
-connaître.
+**Step 5 — placing the file and sharing it.** The script asks where the XML
+file to add is located, copies it to the right place
+(`Named_entity_recognition/data/zoo/zooN/Xy.xml`), then offers to make the
+commit (with an automatically written message) and, if confirmed, to push it
+to GitHub.
