@@ -2,9 +2,7 @@
 
 Ce dossier contient tout ce qui touche au corpus de textes anciens du projet
 Zoomathia : les textes eux-mêmes, le pipeline qui les traite, et le registre
-qui les répertorie. Beaucoup d'autres fichiers présents ici sont des restes
-de travail (brouillons, journaux d'exécution, scripts ponctuels) — ce README
-distingue ce qui est important à comprendre de ce qui peut être ignoré.
+qui les répertorie.
 
 ## Les dossiers essentiels
 
@@ -26,7 +24,7 @@ registre qui l'attribue, sont documentés en détail dans
 
 ### `zoo_archive/`
 
-Les autres textes du projet — ceux dont la traduction est incomplète,
+Les autres textes du projet, ceux dont la traduction est incomplète,
 générée par IA et non relue, ou dont le découpage ne correspond pas assez à
 l'original pour un alignement fiable. Rien n'y est cassé ou à corriger
 d'urgence : c'est juste un contenu qui n'atteint pas encore le niveau de
@@ -36,9 +34,7 @@ qualité du dossier `zoo/`. Même convention de nommage.
 
 Le système qui répertorie tous les auteurs, œuvres et fichiers, et qui
 attribue à chacun son code `zooN/Xy`. Voir son propre
-[README](repertoire_zoo/README.md) pour le détail complet — c'est le dossier
-à lire en premier pour comprendre comment un texte est ajouté au projet.
-
+[README](repertoire_zoo/README.md. 
 ### `pipeline_scripts/`
 
 Les scripts qui transforment un fichier TEI du dossier `zoo/` en données
