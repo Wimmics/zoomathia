@@ -1,33 +1,103 @@
-## TEI-P5
+# Le dossier `data`
 
-This directory contains xsl stylesheet to convert xml files from TEI-P4 to TEI-P5 format.
+Ce dossier contient tout ce qui touche au corpus de textes anciens du projet
+Zoomathia : les textes eux-mêmes, le pipeline qui les traite, et le registre
+qui les répertorie. Beaucoup d'autres fichiers présents ici sont des restes
+de travail (brouillons, journaux d'exécution, scripts ponctuels) — ce README
+distingue ce qui est important à comprendre de ce qui peut être ignoré.
 
-## thesaurus
+## Les dossiers essentiels
 
-Contains concepts intended to be added to the thesaurus later.
+### `zoo/`
 
-## metrics
+Le corpus de référence, actuellement composé des textes dont l'original et
+la traduction anglaise se correspondent parfaitement (voir
+`repertoire_zoo/README.md` pour le détail de ce que ça veut dire et comment
+c'est mesuré). Chaque œuvre a son propre sous-dossier `zooN/`, contenant un
+fichier par témoin (l'original, sa traduction...).
 
-Contains different statistics on the results of the pipeline.
+Le nom de chaque fichier suit une convention fixe : `zooN/Xy.xml`, où `N` est
+le numéro de l'auteur, `X` le numéro de l'œuvre parmi celles de cet auteur,
+et `y` une lettre de langue (`g` grec, `l` latin, `e` anglais, `f` français,
+`i` italien). Un chiffre en plus (`zoo16/1g_2.xml`) indique un deuxième
+témoin dans la même langue pour la même œuvre. Cette convention, et le
+registre qui l'attribue, sont documentés en détail dans
+[`repertoire_zoo/README.md`](repertoire_zoo/README.md).
 
+### `zoo_archive/`
 
-## Data
+Les autres textes du projet — ceux dont la traduction est incomplète,
+générée par IA et non relue, ou dont le découpage ne correspond pas assez à
+l'original pour un alignement fiable. Rien n'y est cassé ou à corriger
+d'urgence : c'est juste un contenu qui n'atteint pas encore le niveau de
+qualité du dossier `zoo/`. Même convention de nommage.
 
-The ancient texts are in the directories that begins with `phi` for latin texts and `tlg` for greek texts. The greek texts must be and are currently encoded in Unicode to be translated automaticly with Google Translate.
-The texts mainly comes from the [Perseus](https://github.com/PerseusDL/canonical-greekLit) project.
+### `repertoire_zoo/`
 
+Le système qui répertorie tous les auteurs, œuvres et fichiers, et qui
+attribue à chacun son code `zooN/Xy`. Voir son propre
+[README](repertoire_zoo/README.md) pour le détail complet — c'est le dossier
+à lire en premier pour comprendre comment un texte est ajouté au projet.
 
-## zoo
-Contains all the texts that have been catalogued and encoded in TEI-P5, reorganized under a new internal identification system, in addition to the existing `tlg-`/`phi-`/`sto-` identifiers.
+### `pipeline_scripts/`
 
-Each file is named following the pattern:
-- `author_number`: sequential number assigned to the author (corresponds to the `id` in the `auteurs` table in Supabase)
-- `work_number`: sequential number assigned to the work, specific to each author (position among that author's works, ordered by their `id` in the `oeuvres` table)
-- `language_code`: `g` (Greek), `l` (Latin), `e` (English).
+Les scripts qui transforment un fichier TEI du dossier `zoo/` en données
+exploitables : reconnaissance d'entités nommées, alignement avec la
+traduction humaine quand elle existe, génération des fichiers CSV de sortie.
 
-Example: `zoo1/1e.xml` is the English translation of the first work of author #1.
+- **`xml_to_csv.py`** — le script principal, celui qui fait tout le travail
+  décrit ci-dessus. C'est le fichier le plus important du pipeline.
+- **`tei_validator.py`** — vérifie qu'un fichier respecte bien le format TEI
+  P5 avant de le traiter.
+- **`morph_mongo.py`** — charge les résultats dans la base MongoDB du projet.
+- **`beta-to-unicode.py`** — convertit le grec ancien saisi en notation
+  "beta code" (une transcription en caractères latins, historiquement
+  utilisée faute de clavier grec) vers de vrais caractères Unicode grecs.
 
-When several files share the same code (multiple editions or translations in the same language for the same work), a numeric suffix is added: `zoo16/1g_1.xml`, `zoo16/1g_2.xml`, etc.
+### `output/`
 
-The correspondence table between the new `zoo` codes, the file names, and the original `tlg`/`phi` identifiers is maintained in the `auteurs`, `oeuvres` and `fichiers` tables on Supabase, and can be regenerated as a CSV file (`repertoire_codes_zoo.csv`) using the scripts in `repertoire_zoo/`.
+Le résultat du pipeline : pour chaque fichier traité, quatre fichiers CSV
+(`..._metadata.csv`, `..._paragraph.csv`, `..._link.csv`,
+`..._annotations.csv`) contenant respectivement les informations générales
+sur l'œuvre, le texte de chaque paragraphe, les liens entre divisions, et les
+entités reconnues automatiquement dans chaque paragraphe.
 
+### `mongo_loaded/`
+
+Un fichier vide `.done` par texte déjà chargé dans MongoDB — sert juste de
+pense-bête pour ne pas recharger deux fois le même texte.
+
+### `TEI-P5/`
+
+Des feuilles de style XSLT pour convertir d'anciens fichiers de l'ancien
+format TEI P4 vers le format TEI P5 actuel.
+
+## Les textes bruts, avant leur passage dans `zoo/`
+
+**`texts/`** (la plus grande collection, organisée par identifiant `tlg`
+pour le grec ou `phi` pour le latin) et **`animaux_encyclopedies/`** (des
+encyclopédies médiévales sur les animaux) contiennent des textes sous leur
+forme d'origine, avant d'être renommés selon la convention `zooN`.
+
+(Le 2026-09-17, quatorze autres dossiers de ce type — `zoo24/`, `zoo42/`,
+`zoo57/`, `zoo80/`, `phi0978/`, `tlg0059/`, `tlg0060/`, `tlg0074/`,
+`tlg0084/`, `tlg0086/`, `tlg0093/`, `tlg0752/`, `stoa0216/` et
+`a_verifier_7/` — ont été supprimés : une vérification antérieure, le
+29/08, avait déjà confirmé que leur contenu était entièrement dupliqué dans
+`zoo/`, et ils n'étaient de toute façon jamais suivis par Git.)
+
+## Travaux en cours, pas encore finalisés
+
+**`aelian_wip/`**, **`liber_animalibus_wip/`**, **`thomas_wip/`** — des
+textes en cours de préparation, pas encore prêts à recevoir un code `zooN`
+définitif.
+
+## Le reste
+
+De nombreux autres fichiers à la racine sont des restes de travail ponctuel
+: des journaux d'exécution du pipeline (`*.log`), des listes de
+correspondance utilisées pour des renommages en masse à un moment donné
+(`*_prefix.txt`, `*_target.txt`), et quelques scripts ou dossiers de test
+(`test/`, `LLM_NER/` — une approche alternative de reconnaissance d'entités
+via un modèle de langage local). Rien de tout ça n'est nécessaire pour
+comprendre ou faire fonctionner le projet au quotidien.
