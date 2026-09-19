@@ -173,7 +173,7 @@ def split_and_translate(text, lang_target, max_chunk_length=4500):
                     translated_chunks.append(chunk)
                     success = True
                     continue
-                wait = min(15 * tries, 120)
+                wait = 5 * (2 ** (tries - 1))
                 print(f" Echec/blocage Google Translate (tentative {tries}: {e}). Reessai dans {wait}s...")
                 time.sleep(wait)
 
@@ -1395,7 +1395,15 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 # ["parent_uri", "type", "id", "title", "text"]
                 paragraph_data.append([parent_uri, "Paragraph", paragraph_id, paragraph_title, paragraph_text, paragraph_author, paragraph_work])
 
-    elif len(parent_division.find_all(["p"])) == 0:
+    elif (not parent_division.find_all("div", recursive=False)
+          and len(parent_division.find_all(["l"])) > 0):
+        # Vers detecte des qu'il y a au moins un <l> quelque part dans cette
+        # division sans sous-division (auparavant : seulement si ZERO <p>,
+        # ce qui ratait entierement les divisions ou vers et citations en
+        # prose sont melanges cote a cote, ex. zoo48 Semonides : chaque
+        # <p> present faisait sauter toute la branche vers et perdait
+        # silencieusement les <l> - fragments entiers absents de la base
+        # bien que presents dans le XML).
         # Vers (<l>) : jusqu'ici cette branche traduisait systematiquement
         # chaque ligne via Google Translate, meme quand un temoin anglais
         # deja traduit humainement existe pour toute l'oeuvre (ex. zoo30,
@@ -1425,7 +1433,16 @@ def extract_paragraph(parent_division, parent_data, parent_uri, link_data, parag
                 extract_wikidata(wikidata_entities, annotation_data, f"{parent_uri}/text")
                 dbpedia_entities = get_NER_from_dbpedia(aligned_division_text)
                 extract_dbpedia(dbpedia_entities, annotation_data, f"{parent_uri}/text")
-        for p_id, p in tqdm(enumerate(parent_division.find_all(["l"], recursive=False), 1)):
+        # Enfants directs <l> et <p> ensemble, dans l'ordre du document (ex.
+        # zoo48 Semonides : vers cites suivis d'une note en prose, repetes en
+        # alternance) ; si aucun des deux n'est un enfant direct (ex.
+        # zoo20/1l_2, ou les <l> sont dans un <lg> plutot qu'enfants directs
+        # de la division), on redescend une fois en recursif sur <l> seul -
+        # ces temoins-la n'ont jamais de <p> a entrelacer.
+        items = parent_division.find_all(["l", "p"], recursive=False)
+        if not items:
+            items = parent_division.find_all(["l"])
+        for p_id, p in tqdm(enumerate(items, 1)):
 
             paragraph_id = p_id
             paragraph_text = strip_paragraph_text(p.text)
