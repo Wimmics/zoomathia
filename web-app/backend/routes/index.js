@@ -122,7 +122,7 @@ router.get('/download-xml', (req, res) => {
 
 /* GET home page. */
 router.get('/', async (req, res) => {
-  res.status(200);
+  res.status(200).send();
 });
 
 const getMetadata = (uri) => {
