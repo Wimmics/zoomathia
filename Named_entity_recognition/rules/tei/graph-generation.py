@@ -325,6 +325,25 @@ def process_text(text):
     for f in files_to_merge:
         os.remove(f)
 
+    # Synchronisation automatique vers Corese (point 5 de la feuille de
+    # route "amelioration du pipeline") : desactivee par defaut (variable
+    # d'environnement ZOO_CORESE_AUTOSYNC=1 pour l'activer), pour ne rien
+    # changer au comportement d'un run complet sur tout le corpus.
+    # L'oeuvre doit avoir ete migree au prealable vers son graphe nomme
+    # (corese_sync.py migrate <prov>, puis un redemarrage) - sinon la
+    # synchro est refusee proprement (voir corese_sync.sync_prov) plutot
+    # que de risquer un DELETE couteux sur le graphe par defaut.
+    if os.environ.get("ZOO_CORESE_AUTOSYNC") == "1":
+        try:
+            import corese_sync
+            sync_result = corese_sync.sync_prov(prov_id)
+            if sync_result.get("ok"):
+                logging.info(f"Synchronise vers Corese (graphe nomme) : {prov_id}")
+            else:
+                logging.warning(f"Synchro Corese non appliquee pour {prov_id} : {sync_result.get('error')}")
+        except Exception as e:
+            logging.warning(f"Synchro Corese echouee pour {prov_id} (pipeline non bloque) : {e}")
+
 
 def merge_all_graphs(texts):
     logging.info("===================================")
