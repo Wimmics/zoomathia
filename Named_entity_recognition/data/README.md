@@ -25,7 +25,8 @@ The rest of the project's texts: those whose translation is incomplete,
 AI-generated, or whose segmentation doesn't match the original closely
 enough for reliable alignment. Nothing here is broken or in urgent need of
 fixing — it's simply content that hasn't yet reached the quality level of
-the `zoo/` folder. Same naming convention.
+the `zoo/` folder. Same naming convention. Kept in the repository for reference,
+but never read by the pipeline, which processes `zoo/` alone.
 
 ### `repertoire_zoo/`
 
