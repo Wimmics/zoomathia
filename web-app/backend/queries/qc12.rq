@@ -9,8 +9,7 @@ SELECT DISTINCT ?paragraph ?name_animal ?mention_animal ?name_conso ?mention_con
      	            skos:broader+ ?conso_generique.
   ?conso_generique skos:prefLabel "animal in human nourishing"@en.
   
-  ?annotation1 a oa:Annotation;
-              oa:hasBody ?animal;
+  ?annotation1 oa:hasBody ?animal;
               oa:hasTarget [oa:hasSource ?paragraph;
                             oa:hasSelector [oa:exact ?mention_animal]].
   ?animal a skos:Concept;

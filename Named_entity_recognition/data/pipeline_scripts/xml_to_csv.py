@@ -148,6 +148,12 @@ def split_and_translate(text, lang_target, max_chunk_length=4500):
     # Moins de requetes = moins de risque de declencher la limitation de
     # debit externe qui domine le temps de traitement (voir sections 22-23
     # de la doc pour l'historique de ce probleme).
+    # Fragment de quelques signes (ex. un mot grec isole en fin de chapitre) :
+    # rien a annoter, et ne vaut pas un appel a Google Translate (qui peut
+    # bloquer plusieurs heures quand l'adresse est limitee).
+    if len(text.strip()) < 15:
+        return text
+
     chunks = [text[i:i + max_chunk_length] for i in range(0, len(text), max_chunk_length)]
     translated_chunks = []
 
@@ -164,16 +170,12 @@ def split_and_translate(text, lang_target, max_chunk_length=4500):
 
             except Exception as e:
                 tries += 1
-                if tries >= 8:
-                    # Google ne repond plus correctement pour ce segment : on le
-                    # laisse en langue source (le NER y trouvera moins d'entites,
-                    # mais pas de fausses annotations "Server Error") plutot que
-                    # de bloquer tout le corpus.
-                    print(f" Google Translate injoignable apres {tries} tentatives ; segment laisse en langue source.")
-                    translated_chunks.append(chunk)
-                    success = True
-                    continue
-                wait = 5 * (2 ** (tries - 1))
+                # On ne renonce plus : abandonner un segment le laissait en
+                # langue source (annotations appauvries). L'attente double a
+                # chaque echec (5 s, 10 s, 20 s...) jusqu'a ce que Google
+                # reponde, plafonnee a 30 min pour ne pas depasser de
+                # beaucoup la fin d'un blocage d'adresse.
+                wait = min(5 * (2 ** (tries - 1)), 1800)
                 print(f" Echec/blocage Google Translate (tentative {tries}: {e}). Reessai dans {wait}s...")
                 time.sleep(wait)
 
@@ -1166,6 +1168,11 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
     # soit la branche qui l'a trouvee. Voir DOCUMENTATION_SYSTEME_ZOO.md
     # section 21.
     MAX_ALIGNED_TEXT_LENGTH = 6000
+    # zoo10 (Athenee) : alignement 1:1 chapitre par chapitre verifie a la
+    # main ; deux chapitres (4/12 et 6/105) depassent 6000 signes en anglais
+    # (7400 et 8500) sans etre un signe de decalage de structure.
+    if zoo_folder_for_shift == "zoo10":
+        MAX_ALIGNED_TEXT_LENGTH = 9000
     MAX_BROADEN_MATCHES = 30
 
     def candidate_texts():
