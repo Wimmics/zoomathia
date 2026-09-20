@@ -1,4 +1,4 @@
-let { executeSPARQLRequest, executeAnnotationJoinQuery, jsonToCsv, getCompetenciesQuestion, checkParagraph, executeDescribeRequest, getTypeFromURI } = require('./utils.js')
+let { executeSPARQLRequest, executeAnnotationJoinQuery, getQC2Graph, jsonToCsv, getCompetenciesQuestion, checkParagraph, executeDescribeRequest, getTypeFromURI } = require('./utils.js')
 let express = require('express');
 const path = require('path');
 const { qcs } = require("../queries/qcs.js")
@@ -819,6 +819,11 @@ router.get("/qcList", (req, res) => {
 router.get("/getQCspo", async (req, res) => {
   if (!qcs.find(e => e.id === parseInt(req.query.id))) {
     return res.status(404).json({ error: `Unknown competency question id: ${req.query.id}` })
+  }
+  // La question 2 a une requete _spo trop lourde pour Corese (> 5 min) : son
+  // graphe est calcule a partir de la jointure rapide du tableau (voir utils.js).
+  if (parseInt(req.query.id) === 2) {
+    return res.status(200).json(await getQC2Graph(endpoint))
   }
   const query = fs.readFileSync(`queries/qc${req.query.id}_spo.rq`, 'utf8')
   const result = await executeSPARQLRequest(endpoint, query)

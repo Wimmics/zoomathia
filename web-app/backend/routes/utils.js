@@ -286,6 +286,82 @@ const executeAnnotationJoinQuery = async (endpoint, queryText) => {
     }
 }
 
+// Vue graphe de la question de competence 2 (relation speciale entre un
+// animal et un anthroponyme dans un meme passage). La requete SPARQL d'origine
+// (qc2_spo.rq) reevalue, pour chaque combinaison possible, un FILTER NOT EXISTS
+// qui garde le libelle le plus court d'un concept : trop lourde pour Corese
+// (plus de 5 min, donc timeout du backend et graphe vide, pendant que Corese
+// continue de saturer le processeur). On reutilise ici la jointure rapide du
+// tableau (qc2.rq, ~10 s) en recuperant aussi l'URI de chaque concept, puis on
+// choisit le libelle une seule fois par concept, avec la meme regle de
+// depart que qc2_spo.rq : longueur croissante, puis ordre alphabetique
+// (casse ignoree), puis a egalite la chaine la plus grande.
+const QC2_GRAPH_VARS = ['p', 's', 'o', 'date', 'type', 'url', 'style1', 'style2']
+
+const isPreferredLabel = (a, b) => {
+    const la = [...a].length, lb = [...b].length
+    if (la !== lb) return la < lb
+    const a2 = a.toLowerCase(), b2 = b.toLowerCase()
+    if (a2 !== b2) return a2 < b2
+    return a > b
+}
+
+const preferredLabelByConcept = (rows, uriVar, nameVar) => {
+    const best = new Map()
+    for (const row of rows) {
+        const uri = row[uriVar].value, name = row[nameVar].value
+        const current = best.get(uri)
+        if (current === undefined || isPreferredLabel(name, current)) best.set(uri, name)
+    }
+    return best
+}
+
+const getQC2Graph = async (endpoint) => {
+    const template = fs.readFileSync('queries/qc2.rq', 'utf8')
+    const query = template.replace(
+        /select\s+distinct[\s\S]*?\s+where/i,
+        'SELECT DISTINCT ?paragraph ?relation ?animal ?anthro ?name_relation ?name_animal ?name_anthroponym WHERE'
+    )
+    const joined = await executeAnnotationJoinQuery(endpoint, query)
+    const rows = joined.results.bindings
+
+    const relationLabel = preferredLabelByConcept(rows, 'relation', 'name_relation')
+    const animalLabel = preferredLabelByConcept(rows, 'animal', 'name_animal')
+    const anthroLabel = preferredLabelByConcept(rows, 'anthro', 'name_anthroponym')
+
+    const literal = (value) => ({ type: 'literal', 'xml:lang': 'en', value })
+    const text = (value) => ({ type: 'typed-literal', datatype: 'http://www.w3.org/2001/XMLSchema#string', value })
+
+    const seen = new Set()
+    const bindings = []
+    const add = (paragraph, relation, target, style2, withDate) => {
+        const key = `${paragraph}\u0000${relation}\u0000${target}\u0000${style2}`
+        if (seen.has(key)) return
+        seen.add(key)
+        const binding = {
+            p: { type: 'uri', value: paragraph },
+            s: literal(relation),
+            o: literal(target),
+            type: literal(relation),
+            style1: text('snd'),
+            style2: text(style2)
+        }
+        if (withDate) binding.date = literal(target)
+        bindings.push(binding)
+    }
+
+    for (const row of rows) {
+        const paragraph = row.paragraph.value
+        const relation = relationLabel.get(row.relation.value)
+        add(paragraph, relation, animalLabel.get(row.animal.value), 'fst', true)
+        add(paragraph, relation, anthroLabel.get(row.anthro.value), 'rst', false)
+    }
+
+    bindings.sort((a, b) => a.p.value < b.p.value ? -1 : a.p.value > b.p.value ? 1 : 0)
+    return { head: { vars: QC2_GRAPH_VARS }, results: { bindings } }
+}
+
+exports.getQC2Graph = getQC2Graph;
 exports.executeSPARQLRequest = executeSPARQLRequest;
 exports.executeAnnotationJoinQuery = executeAnnotationJoinQuery;
 exports.readTemplate = readTemplate;
