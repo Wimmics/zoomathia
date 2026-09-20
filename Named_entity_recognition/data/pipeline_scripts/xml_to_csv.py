@@ -1174,6 +1174,13 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
     if zoo_folder_for_shift == "zoo10":
         MAX_ALIGNED_TEXT_LENGTH = 9000
     MAX_BROADEN_MATCHES = 30
+    # zoo48 (Semonide, elegies) : trois poemes grecs en vers alignes sur un
+    # temoin anglais decoupe en 69 a 97 <p> par poeme (10 000 a 14 000 signes) ;
+    # l'alignement grossier ne sert qu'a annoter la division entiere une fois
+    # (branche vers), pas a coller le texte sur chaque ligne.
+    if zoo_folder_for_shift == "zoo48":
+        MAX_ALIGNED_TEXT_LENGTH = 20000
+        MAX_BROADEN_MATCHES = 100
 
     def candidate_texts():
         """Genere, dans l'ordre de priorite, chaque texte anglais candidat
