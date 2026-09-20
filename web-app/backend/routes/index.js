@@ -91,8 +91,14 @@ const dedupeZooWitnesses = (rows) => {
     if (ambiguousKeys.has(key)) {
       // Cas ambigus (zoo20, zoo54) : chaque temoin se distingue deja par son
       // titre (edition/traducteur/annee, ou contenu different pour zoo54) -
-      // le sigle de langue n'ajoute rien, meme pour l'anglais (voir
-      // EDITION_LABELS dans xml_to_csv.py pour zoo20).
+      // le sigle de langue n'ajoute rien (voir EDITION_LABELS dans
+      // xml_to_csv.py pour zoo20). La traduction anglaise n'a pas sa propre
+      // ligne quand le groupe a plusieurs originaux : elle est retrouvee
+      // automatiquement (/getTranslation) une fois l'oeuvre ouverte, comme
+      // pour les autres oeuvres ; la lister en plus doublait le titre
+      // (ex. trois "Cynegetica" pour Grattius).
+      const groupNonEnglish = groups.get(key).filter(r => zooWitnessMatch(r.file)[3] !== 'e')
+      if (zooWitnessMatch(row.file)[3] === 'e' && groupNonEnglish.length > 1) { continue }
       result.push({ uri: row.uri, title: row.title, author: row.author, language: null })
       continue
     }
