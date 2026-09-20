@@ -69,17 +69,6 @@
       zoo:text "Τοῦ λέοντος τὰ ὀστὰ οὕτως εἰσὶ στερεά, ὥστε πολλάκις κοπτομένων πῦρ ἐκλάμπειν." .
 
 
-<http://ns.inria.fr/zoomathia/annotation/739fc45e70a624a5eed5539b748233edacd747b2>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Rib_cage> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "ribs"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/6/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/bf97176092b23d7d15f3ac33a20b2dcb5688731e>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://www.wikidata.org/wiki/Q5089> ;
@@ -124,17 +113,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/7d1d9c7ec14d921327d820854bf1114ca7a6556e>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Adhan> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "called"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/a4510c85a75f5b633c5e6cff62c76feee195ed5b>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtqsNPWjGG9u&idt=th310> ;
@@ -144,6 +122,17 @@
                           oa:exact "huts"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
+              ] .
+
+<http://ns.inria.fr/zoomathia/annotation/9baf3942dc93d2759d4516a80d62638fe90b9219>
+      a       zoo:AutomaticAnnotation ;
+      oa:hasBody <http://dbpedia.org/resource/Rib_cage> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "ribs"
+                        ] ;
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/6/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/5c1e3825e9e1a5863f92878bd8d7f410ae04ac33>
@@ -159,7 +148,7 @@
 
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/7/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/d20f3e6a41e8a7b4e8e799430a226739c1db231b> , <http://ns.inria.fr/zoomathia/annotation/1fdea0f6ac7ac80f6883d51780325eb96033457d> , <http://ns.inria.fr/zoomathia/annotation/1ef61db8b1184a43b1cd81b0243ec73312bde4c7> , <http://ns.inria.fr/zoomathia/annotation/e89ee5c4ca2330e20e1317cd25bfc69fc86e4d7e> , <http://ns.inria.fr/zoomathia/annotation/ea9104218009ee57b00a5ad9e2f914ed4e2f37c0> , <http://ns.inria.fr/zoomathia/annotation/5a5ae095a4ba5b6b4f38f864c104f4325bef5425> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/d20f3e6a41e8a7b4e8e799430a226739c1db231b> , <http://ns.inria.fr/zoomathia/annotation/1fdea0f6ac7ac80f6883d51780325eb96033457d> , <http://ns.inria.fr/zoomathia/annotation/1ef61db8b1184a43b1cd81b0243ec73312bde4c7> , <http://ns.inria.fr/zoomathia/annotation/ea9104218009ee57b00a5ad9e2f914ed4e2f37c0> , <http://ns.inria.fr/zoomathia/annotation/5a5ae095a4ba5b6b4f38f864c104f4325bef5425> .
 
 <http://ns.inria.fr/zoomathia/annotation/5a2e65761c278ead1c5981d0874be998ef33cf6a>
       a       zoo:AutomaticAnnotation ;
@@ -172,17 +161,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/1c397f655ec1f25156f75c4af0dbc71280d862bc>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Medimnos> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "medimnoi"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/2620c6ca711aa1f01712b047e266c2aa0cabb6b7>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrtK3Ric1GReJ&idt=th310> ;
@@ -192,6 +170,17 @@
                           oa:exact "Book"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
+              ] .
+
+<http://ns.inria.fr/zoomathia/annotation/ba39578da1f6dca170309aba90e75f808e5453cc>
+      a       zoo:AutomaticAnnotation ;
+      oa:hasBody <http://dbpedia.org/resource/Crying> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "cries"
+                        ] ;
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/f13b2b84a2f394266cbc3034dc746defd56bceaf>
@@ -216,6 +205,17 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
               ] .
 
+<http://ns.inria.fr/zoomathia/annotation/8bf62253c285bcf96ef2680588469debae1d2705>
+      a       zoo:AutomaticAnnotation ;
+      oa:hasBody <http://dbpedia.org/resource/Esophagus> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "gullet"
+                        ] ;
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
+              ] .
+
 <http://ns.inria.fr/zoomathia/annotation/81a44793a03934f95a51c75861059c1b126b1763>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://opentheso.huma-num.fr/?idc=105218&idt=th310> ;
@@ -225,28 +225,6 @@
                           oa:exact "stomach"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/a43a3a7e66ebd1b16a1d83ac266638cb259cc183>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Polykleitos> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "Polycleitus"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/6e57e0850a1a87b7e41c92e342f70da48b2838f0>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Command_and_control> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "command"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/4dfd7d64500e621a6aaeb3ea71ca7744f3c155ff>
@@ -271,17 +249,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/94f07fea6b08dd060562b46380df6f4d3e7a7bad>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Gastrointestinal_tract> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "intestines"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/ed144a898812e6abab801e32b84b4a03cbf04a6a>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://opentheso.huma-num.fr/?idc=105128&idt=th310> ;
@@ -304,28 +271,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/4360489888811b8ecc33fa17d1fa9ba96cf985a2>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Ritual_purification> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "purification"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/7b6ac5af6111e0ae727b088e444ab488339a6347>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Cadaver> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "remains"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/b3d8c67d70f7267a59115b9cc766c33d8372d5f9>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://opentheso.huma-num.fr/?idc=107519&idt=th310> ;
@@ -335,39 +280,6 @@
                           oa:exact "works"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/c9a012228cda8169ba75de7e1703e731b167b670>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Terrestrial_animal> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "land animals"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/78aadaf734fa859eb03950d8c259a1de0ede422e>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Urinary_bladder> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "bladders"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/844eb90b8d1a035ae64512485394b522459fee1f>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Gastropod_shell> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "shells"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/90fbc399318adca79a1c05c6d00dc368a9969b16>
@@ -381,17 +293,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/1822810947a0c57a59562f6e36230dee471e5070>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Professional_wrestling_holds> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "hold"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/77fc8a4214b08e9c4a631d2f0cc11d101db53502>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://opentheso.huma-num.fr/?idc=105121&idt=th310> ;
@@ -401,6 +302,28 @@
                           oa:exact "fly"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
+              ] .
+
+<http://ns.inria.fr/zoomathia/annotation/639c3cdb781417122a17066ef101371219c8e3a7>
+      a       zoo:AutomaticAnnotation ;
+      oa:hasBody <http://dbpedia.org/resource/Medimnos> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "medimnoi"
+                        ] ;
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
+              ] .
+
+<http://ns.inria.fr/zoomathia/annotation/dad7783b17a789ba7ab0c1a40bc1f7a91c139e12>
+      a       zoo:AutomaticAnnotation ;
+      oa:hasBody <http://dbpedia.org/resource/Terrestrial_animal> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "land animals"
+                        ] ;
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/b2db262d96c03efda68b232a50e530528f05a6ae>
@@ -425,28 +348,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/6afa0b80806d7a797aa2c2c5af61776281ae25a4>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Insect_wing> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "wings"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/b4119585bbea623e384b20610021241a60fe7dcb>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/River_mouth> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "mouths"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/d98b87f3a725f569f3c9c421634c6014247f19dd>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <http://dbpedia.org/resource/Boatswain> ;
@@ -456,17 +357,6 @@
                           oa:exact "boatswain"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/e7baa26b05d410834dc322025e0fca7413ddd5f7>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Chase_gun> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "chase"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/1178e682536522b2d8dc11e84e539ed15d99d870>
@@ -487,17 +377,6 @@
               [ oa:hasSelector
                         [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
                           oa:exact "Fish"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/1c4978053990083aa3c5ae0ce7eb68191e7d2563>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Esophagus> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "gullet"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
               ] .
@@ -526,7 +405,7 @@
 
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/6afa0b80806d7a797aa2c2c5af61776281ae25a4> , <http://ns.inria.fr/zoomathia/annotation/460eac0b6f5f2b055b1b7dc10eba64be38617c93> , <http://ns.inria.fr/zoomathia/annotation/cf5941384c73edbc915765345c0762997c597f30> , <http://ns.inria.fr/zoomathia/annotation/f13b2b84a2f394266cbc3034dc746defd56bceaf> , <http://ns.inria.fr/zoomathia/annotation/10efb558fd9d44a53dcc8b46ae0e3390be9a6aeb> , <http://ns.inria.fr/zoomathia/annotation/d98b87f3a725f569f3c9c421634c6014247f19dd> , <http://ns.inria.fr/zoomathia/annotation/174ae8b7f1e3daaca48f42a1973a76abc574fa28> , <http://ns.inria.fr/zoomathia/annotation/da8eca9b55c5650e537d962c6684c40238e3d029> , <http://ns.inria.fr/zoomathia/annotation/90fbc399318adca79a1c05c6d00dc368a9969b16> , <http://ns.inria.fr/zoomathia/annotation/12115eeec66538a947c3de05870158fcccc9bc3d> , <http://ns.inria.fr/zoomathia/annotation/35c867d225412788e71161fdf0bc2268aeb18c45> , <http://ns.inria.fr/zoomathia/annotation/d94ae680095172a50579e8519298289390042d72> , <http://ns.inria.fr/zoomathia/annotation/42787ef404489c2333e748f1672d5d33a12b8ee9> , <http://ns.inria.fr/zoomathia/annotation/3fb0ebdd796158531c09a0676b04ef8db571f25a> , <http://ns.inria.fr/zoomathia/annotation/6e57e0850a1a87b7e41c92e342f70da48b2838f0> , <http://ns.inria.fr/zoomathia/annotation/86cd68388f46fa4c98bb7df36777bc3dc422098e> , <http://ns.inria.fr/zoomathia/annotation/c7c2796437dbbb7687b32c7ab867424251c69f8d> , <http://ns.inria.fr/zoomathia/annotation/99e68ba510a9e86b0f189a071be3dd2edf00e46f> , <http://ns.inria.fr/zoomathia/annotation/77fc8a4214b08e9c4a631d2f0cc11d101db53502> , <http://ns.inria.fr/zoomathia/annotation/157e41e35088de9195bdeb8b7834dbfd8d0003f5> , <http://ns.inria.fr/zoomathia/annotation/38e82c79bf3d707508b2f27664da39ae52b88a34> , <http://ns.inria.fr/zoomathia/annotation/cab8596ff1c7236b6b14a0a57d5318a0da07cd7a> , <http://ns.inria.fr/zoomathia/annotation/da604f256fa1a0f0b46bfb12d1a1a8b7f2c94ecd> , <http://ns.inria.fr/zoomathia/annotation/f24b7086d3f38e88dc4da8f11b25b9db3d040d86> , <http://ns.inria.fr/zoomathia/annotation/4360489888811b8ecc33fa17d1fa9ba96cf985a2> , <http://ns.inria.fr/zoomathia/annotation/7b6ac5af6111e0ae727b088e444ab488339a6347> , <http://ns.inria.fr/zoomathia/annotation/17451994fc6b6fc8359d090c987edc76c20fa799> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/42787ef404489c2333e748f1672d5d33a12b8ee9> , <http://ns.inria.fr/zoomathia/annotation/3fb0ebdd796158531c09a0676b04ef8db571f25a> , <http://ns.inria.fr/zoomathia/annotation/460eac0b6f5f2b055b1b7dc10eba64be38617c93> , <http://ns.inria.fr/zoomathia/annotation/ba39578da1f6dca170309aba90e75f808e5453cc> , <http://ns.inria.fr/zoomathia/annotation/99e68ba510a9e86b0f189a071be3dd2edf00e46f> , <http://ns.inria.fr/zoomathia/annotation/77fc8a4214b08e9c4a631d2f0cc11d101db53502> , <http://ns.inria.fr/zoomathia/annotation/157e41e35088de9195bdeb8b7834dbfd8d0003f5> , <http://ns.inria.fr/zoomathia/annotation/38e82c79bf3d707508b2f27664da39ae52b88a34> , <http://ns.inria.fr/zoomathia/annotation/cab8596ff1c7236b6b14a0a57d5318a0da07cd7a> , <http://ns.inria.fr/zoomathia/annotation/f13b2b84a2f394266cbc3034dc746defd56bceaf> , <http://ns.inria.fr/zoomathia/annotation/10efb558fd9d44a53dcc8b46ae0e3390be9a6aeb> , <http://ns.inria.fr/zoomathia/annotation/da604f256fa1a0f0b46bfb12d1a1a8b7f2c94ecd> , <http://ns.inria.fr/zoomathia/annotation/d98b87f3a725f569f3c9c421634c6014247f19dd> , <http://ns.inria.fr/zoomathia/annotation/f24b7086d3f38e88dc4da8f11b25b9db3d040d86> , <http://ns.inria.fr/zoomathia/annotation/174ae8b7f1e3daaca48f42a1973a76abc574fa28> , <http://ns.inria.fr/zoomathia/annotation/90fbc399318adca79a1c05c6d00dc368a9969b16> , <http://ns.inria.fr/zoomathia/annotation/12115eeec66538a947c3de05870158fcccc9bc3d> , <http://ns.inria.fr/zoomathia/annotation/17451994fc6b6fc8359d090c987edc76c20fa799> .
 
 <http://ns.inria.fr/zoomathia/annotation/3704d1a53d2a29e23651ee4a9d42591abd24186e>
       a       zoo:AutomaticAnnotation ;
@@ -552,7 +431,7 @@
 
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/4/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/8dce7182ebabbf2e276672f94457bea039b08333> , <http://ns.inria.fr/zoomathia/annotation/c62c5f374d3dcbcf996be39d7e446107a1545fb5> , <http://ns.inria.fr/zoomathia/annotation/2a437695652aec1f9931593c5c525a83cbf64d08> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/c62c5f374d3dcbcf996be39d7e446107a1545fb5> , <http://ns.inria.fr/zoomathia/annotation/2a437695652aec1f9931593c5c525a83cbf64d08> , <http://ns.inria.fr/zoomathia/annotation/1f7a02d9fecb774f65e1acb127155dca7feeb2c6> .
 
 <http://ns.inria.fr/zoomathia/annotation/aca61273384450b13348523308117251894b606c>
       a       zoo:AutomaticAnnotation ;
@@ -598,26 +477,26 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/9f7de00059329ff13ba4f421700f2c1c5c89d0bf>
+<http://ns.inria.fr/zoomathia/annotation/af85e24a48956d2457884876695c2f717bb33a75>
       a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Laryngitis> ;
+      oa:hasBody <http://dbpedia.org/resource/Gastrointestinal_tract> ;
       oa:hasTarget
               [ oa:hasSelector
                         [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "speaks"
+                          oa:exact "intestines"
                         ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/cf5941384c73edbc915765345c0762997c597f30>
+<http://ns.inria.fr/zoomathia/annotation/e3ddfaa4270406803d214c050500aaa92fd10d38>
       a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Groundwater> ;
+      oa:hasBody <http://dbpedia.org/resource/Farm> ;
       oa:hasTarget
               [ oa:hasSelector
                         [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "ground"
+                          oa:exact "farmsteads"
                         ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/d20f3e6a41e8a7b4e8e799430a226739c1db231b>
@@ -653,39 +532,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/da8eca9b55c5650e537d962c6684c40238e3d029>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Expansion_of_Macedonia_under_Philip_II> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "rise"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/7405ed767ebb04de267404c3d3c5aa86f07c82e8>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Online_chat> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "chatting"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/35c867d225412788e71161fdf0bc2268aeb18c45>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Common_crane> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "cranes"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/1fdea0f6ac7ac80f6883d51780325eb96033457d>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <https://opentheso.huma-num.fr/?idc=pcrt448yYmVDuT&idt=th310> ;
@@ -697,17 +543,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/7/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/86cd68388f46fa4c98bb7df36777bc3dc422098e>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Crying> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "cries"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/157e41e35088de9195bdeb8b7834dbfd8d0003f5>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <http://dbpedia.org/resource/Circle> ;
@@ -717,50 +552,6 @@
                           oa:exact "circle"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/f4a3bdfc9d68e8d67ba3015ebf4d34533e63d682>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Farm> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "farmsteads"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/20df1bbbf15a8bcff0baf8b9313c7fcdcd2b5f92>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Beauty_and_the_Beast> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "beast"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/6cb2089d3900082a9ea838166f1695f991ca8759>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Waterfall> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "falls"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/82f3a567c2d6f36417094c0f07514ec565703122>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Eavesdropping> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "eavesdrops"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/9f963421d005662d2e3f103ff50c1d58e3cd7147>
@@ -785,17 +576,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/991c66ba43d63f8b78047456d3f74f74f05b0ed5>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Ossification> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "grow"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/6/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/507ae60c635f5c43dd75c220cd0bb3e12b3ca1d3>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <http://dbpedia.org/resource/Hut> ;
@@ -809,7 +589,7 @@
 
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/3/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/5a2e65761c278ead1c5981d0874be998ef33cf6a> , <http://ns.inria.fr/zoomathia/annotation/78aadaf734fa859eb03950d8c259a1de0ede422e> , <http://ns.inria.fr/zoomathia/annotation/3704d1a53d2a29e23651ee4a9d42591abd24186e> , <http://ns.inria.fr/zoomathia/annotation/887914d68db2f443ea8d2219fe1c9efa7613732a> , <http://ns.inria.fr/zoomathia/annotation/52fe431aa562c6a1bdc33f039aba597fb5bc07fb> , <http://ns.inria.fr/zoomathia/annotation/0f1b399572fdb03a7f7a87c9bfe789b0fbea1254> , <http://ns.inria.fr/zoomathia/annotation/ffb2c5ea8f174908add4b3a86145dc63c5699d01> , <http://ns.inria.fr/zoomathia/annotation/a5bb81f3a2dd42cc6be64734dd526a3ac306684b> , <http://ns.inria.fr/zoomathia/annotation/ff2cb27e19e796e01a9ece4f2eddea6e30123e07> , <http://ns.inria.fr/zoomathia/annotation/94f07fea6b08dd060562b46380df6f4d3e7a7bad> , <http://ns.inria.fr/zoomathia/annotation/8cbda8190d71b45a703fef5fe4df6dddadf5d3c1> , <http://ns.inria.fr/zoomathia/annotation/b2db262d96c03efda68b232a50e530528f05a6ae> , <http://ns.inria.fr/zoomathia/annotation/90ce05c42720f82aefb519a2b38782721db7acbe> , <http://ns.inria.fr/zoomathia/annotation/b3d8c67d70f7267a59115b9cc766c33d8372d5f9> , <http://ns.inria.fr/zoomathia/annotation/5f1a2fb00e90ae3c2cb3daaed993e67111ac8c90> , <http://ns.inria.fr/zoomathia/annotation/c9a012228cda8169ba75de7e1703e731b167b670> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/5a2e65761c278ead1c5981d0874be998ef33cf6a> , <http://ns.inria.fr/zoomathia/annotation/3704d1a53d2a29e23651ee4a9d42591abd24186e> , <http://ns.inria.fr/zoomathia/annotation/af85e24a48956d2457884876695c2f717bb33a75> , <http://ns.inria.fr/zoomathia/annotation/887914d68db2f443ea8d2219fe1c9efa7613732a> , <http://ns.inria.fr/zoomathia/annotation/52fe431aa562c6a1bdc33f039aba597fb5bc07fb> , <http://ns.inria.fr/zoomathia/annotation/0f1b399572fdb03a7f7a87c9bfe789b0fbea1254> , <http://ns.inria.fr/zoomathia/annotation/ffb2c5ea8f174908add4b3a86145dc63c5699d01> , <http://ns.inria.fr/zoomathia/annotation/a5bb81f3a2dd42cc6be64734dd526a3ac306684b> , <http://ns.inria.fr/zoomathia/annotation/ff2cb27e19e796e01a9ece4f2eddea6e30123e07> , <http://ns.inria.fr/zoomathia/annotation/dad7783b17a789ba7ab0c1a40bc1f7a91c139e12> , <http://ns.inria.fr/zoomathia/annotation/8cbda8190d71b45a703fef5fe4df6dddadf5d3c1> , <http://ns.inria.fr/zoomathia/annotation/b2db262d96c03efda68b232a50e530528f05a6ae> , <http://ns.inria.fr/zoomathia/annotation/90ce05c42720f82aefb519a2b38782721db7acbe> , <http://ns.inria.fr/zoomathia/annotation/b3d8c67d70f7267a59115b9cc766c33d8372d5f9> , <http://ns.inria.fr/zoomathia/annotation/5f1a2fb00e90ae3c2cb3daaed993e67111ac8c90> .
 
 <http://ns.inria.fr/zoomathia/annotation/e675d800f75f2e60d8509cef81e27815ba75fb47>
       a       zoo:AutomaticAnnotation ;
@@ -820,6 +600,17 @@
                           oa:exact "night"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
+              ] .
+
+<http://ns.inria.fr/zoomathia/annotation/1f7a02d9fecb774f65e1acb127155dca7feeb2c6>
+      a       zoo:AutomaticAnnotation ;
+      oa:hasBody <http://dbpedia.org/resource/General_officer> ;
+      oa:hasTarget
+              [ oa:hasSelector
+                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
+                          oa:exact "general"
+                        ] ;
+                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/4/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/3fb0ebdd796158531c09a0676b04ef8db571f25a>
@@ -835,7 +626,7 @@
 
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/6/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/991c66ba43d63f8b78047456d3f74f74f05b0ed5> , <http://ns.inria.fr/zoomathia/annotation/c1f7e637fff6e516cef00933728f8fbc967da473> , <http://ns.inria.fr/zoomathia/annotation/ed144a898812e6abab801e32b84b4a03cbf04a6a> , <http://ns.inria.fr/zoomathia/annotation/a835ac425900b2718c892ee6222639f5337dc46d> , <http://ns.inria.fr/zoomathia/annotation/1178e682536522b2d8dc11e84e539ed15d99d870> , <http://ns.inria.fr/zoomathia/annotation/739fc45e70a624a5eed5539b748233edacd747b2> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/9baf3942dc93d2759d4516a80d62638fe90b9219> , <http://ns.inria.fr/zoomathia/annotation/c1f7e637fff6e516cef00933728f8fbc967da473> , <http://ns.inria.fr/zoomathia/annotation/ed144a898812e6abab801e32b84b4a03cbf04a6a> , <http://ns.inria.fr/zoomathia/annotation/a835ac425900b2718c892ee6222639f5337dc46d> , <http://ns.inria.fr/zoomathia/annotation/1178e682536522b2d8dc11e84e539ed15d99d870> .
 
 <http://ns.inria.fr/zoomathia/annotation/a835ac425900b2718c892ee6222639f5337dc46d>
       a       zoo:AutomaticAnnotation ;
@@ -857,17 +648,6 @@
                           oa:exact "lions"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/7/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/c7c2796437dbbb7687b32c7ab867424251c69f8d>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Leisure> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "rests"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/99e68ba510a9e86b0f189a071be3dd2edf00e46f>
@@ -971,7 +751,7 @@
 
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/9f7de00059329ff13ba4f421700f2c1c5c89d0bf> , <http://ns.inria.fr/zoomathia/annotation/aca61273384450b13348523308117251894b606c> , <http://ns.inria.fr/zoomathia/annotation/2620c6ca711aa1f01712b047e266c2aa0cabb6b7> , <http://ns.inria.fr/zoomathia/annotation/7d1d9c7ec14d921327d820854bf1114ca7a6556e> , <http://ns.inria.fr/zoomathia/annotation/f4a3bdfc9d68e8d67ba3015ebf4d34533e63d682> , <http://ns.inria.fr/zoomathia/annotation/20df1bbbf15a8bcff0baf8b9313c7fcdcd2b5f92> , <http://ns.inria.fr/zoomathia/annotation/b74d42170db3691aa70e2c83a4950bd5a49923ef> , <http://ns.inria.fr/zoomathia/annotation/987f09bcd486f56cae7fc963aec89b6199880b67> , <http://ns.inria.fr/zoomathia/annotation/c4ebc83864305e644f754f766f82b0ef223dbc32> , <http://ns.inria.fr/zoomathia/annotation/e675d800f75f2e60d8509cef81e27815ba75fb47> , <http://ns.inria.fr/zoomathia/annotation/5c1e3825e9e1a5863f92878bd8d7f410ae04ac33> , <http://ns.inria.fr/zoomathia/annotation/7405ed767ebb04de267404c3d3c5aa86f07c82e8> , <http://ns.inria.fr/zoomathia/annotation/82f3a567c2d6f36417094c0f07514ec565703122> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/b74d42170db3691aa70e2c83a4950bd5a49923ef> , <http://ns.inria.fr/zoomathia/annotation/e3ddfaa4270406803d214c050500aaa92fd10d38> , <http://ns.inria.fr/zoomathia/annotation/987f09bcd486f56cae7fc963aec89b6199880b67> , <http://ns.inria.fr/zoomathia/annotation/c4ebc83864305e644f754f766f82b0ef223dbc32> , <http://ns.inria.fr/zoomathia/annotation/e675d800f75f2e60d8509cef81e27815ba75fb47> , <http://ns.inria.fr/zoomathia/annotation/aca61273384450b13348523308117251894b606c> , <http://ns.inria.fr/zoomathia/annotation/2620c6ca711aa1f01712b047e266c2aa0cabb6b7> , <http://ns.inria.fr/zoomathia/annotation/5c1e3825e9e1a5863f92878bd8d7f410ae04ac33> .
 
 <http://ns.inria.fr/zoomathia/annotation/90ce05c42720f82aefb519a2b38782721db7acbe>
       a       zoo:AutomaticAnnotation ;
@@ -997,7 +777,7 @@
 
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/5/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/48ffb7303e24d6b92ce832eda267a69783aef66f> , <http://ns.inria.fr/zoomathia/annotation/3978b1c500805679e67063b0da0748e99eaa5b9e> , <http://ns.inria.fr/zoomathia/annotation/b4119585bbea623e384b20610021241a60fe7dcb> , <http://ns.inria.fr/zoomathia/annotation/e7baa26b05d410834dc322025e0fca7413ddd5f7> , <http://ns.inria.fr/zoomathia/annotation/2a6705f8b9b04c62db33e507efb79fa2f7ac1467> , <http://ns.inria.fr/zoomathia/annotation/1c4978053990083aa3c5ae0ce7eb68191e7d2563> , <http://ns.inria.fr/zoomathia/annotation/81a44793a03934f95a51c75861059c1b126b1763> , <http://ns.inria.fr/zoomathia/annotation/ea44aebc926ebaf4a13e0cd3b8b5841e0aa285b0> , <http://ns.inria.fr/zoomathia/annotation/6cb2089d3900082a9ea838166f1695f991ca8759> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/48ffb7303e24d6b92ce832eda267a69783aef66f> , <http://ns.inria.fr/zoomathia/annotation/3978b1c500805679e67063b0da0748e99eaa5b9e> , <http://ns.inria.fr/zoomathia/annotation/2a6705f8b9b04c62db33e507efb79fa2f7ac1467> , <http://ns.inria.fr/zoomathia/annotation/8bf62253c285bcf96ef2680588469debae1d2705> , <http://ns.inria.fr/zoomathia/annotation/81a44793a03934f95a51c75861059c1b126b1763> , <http://ns.inria.fr/zoomathia/annotation/ea44aebc926ebaf4a13e0cd3b8b5841e0aa285b0> .
 
 <http://ns.inria.fr/zoomathia/annotation/38e82c79bf3d707508b2f27664da39ae52b88a34>
       a       zoo:AutomaticAnnotation ;
@@ -1030,17 +810,6 @@
                           oa:exact "Ganges"
                         ] ;
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
-              ] .
-
-<http://ns.inria.fr/zoomathia/annotation/e89ee5c4ca2330e20e1317cd25bfc69fc86e4d7e>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Amazon_Fire_tablet> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "kindle fire"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/7/text/1>
               ] .
 
 <http://ns.inria.fr/zoomathia/annotation/48ffb7303e24d6b92ce832eda267a69783aef66f>
@@ -1076,17 +845,6 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/4/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/d94ae680095172a50579e8519298289390042d72>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/Major_depressive_disorder> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "tired"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/1/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/annotation/3978b1c500805679e67063b0da0748e99eaa5b9e>
       a       zoo:AutomaticAnnotation ;
       oa:hasBody <http://dbpedia.org/resource/Stomach> ;
@@ -1109,20 +867,9 @@
                 oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/2/text/1>
               ] .
 
-<http://ns.inria.fr/zoomathia/annotation/8dce7182ebabbf2e276672f94457bea039b08333>
-      a       zoo:AutomaticAnnotation ;
-      oa:hasBody <http://dbpedia.org/resource/General_officer> ;
-      oa:hasTarget
-              [ oa:hasSelector
-                        [ a       oa:TextPositionSelector , oa:TextQuoteSelector ;
-                          oa:exact "general"
-                        ] ;
-                oa:hasSource <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/4/text/1>
-              ] .
-
 <http://ns.inria.fr/zoomathia/ANONYME_-_Paradoxographus_Vaticanus/paradoxographus_vaticanus_extraits_zoologiques/g/1/8/text/1>
       a       zoo:Paragraph ;
-      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/a43a3a7e66ebd1b16a1d83ac266638cb259cc183> , <http://ns.inria.fr/zoomathia/annotation/1c397f655ec1f25156f75c4af0dbc71280d862bc> , <http://ns.inria.fr/zoomathia/annotation/7a70b2e575bfb60f9c33032afe0835a67ea70edc> , <http://ns.inria.fr/zoomathia/annotation/1822810947a0c57a59562f6e36230dee471e5070> , <http://ns.inria.fr/zoomathia/annotation/9f963421d005662d2e3f103ff50c1d58e3cd7147> , <http://ns.inria.fr/zoomathia/annotation/4dfd7d64500e621a6aaeb3ea71ca7744f3c155ff> , <http://ns.inria.fr/zoomathia/annotation/aba19f60512fcb8febaf7049ce69dee2b4f39e1f> , <http://ns.inria.fr/zoomathia/annotation/a4510c85a75f5b633c5e6cff62c76feee195ed5b> , <http://ns.inria.fr/zoomathia/annotation/844eb90b8d1a035ae64512485394b522459fee1f> , <http://ns.inria.fr/zoomathia/annotation/507ae60c635f5c43dd75c220cd0bb3e12b3ca1d3> , <http://ns.inria.fr/zoomathia/annotation/7383f4d624e4405652a4987096e6183681b35569> , <http://ns.inria.fr/zoomathia/annotation/bf97176092b23d7d15f3ac33a20b2dcb5688731e> , <http://ns.inria.fr/zoomathia/annotation/37ec9247f1a5acc545c98f46393589bf320ab181> , <http://ns.inria.fr/zoomathia/annotation/55785bcdb71e8e49be6d1d34ff3243eafa8ac2de> .
+      zoo:hasAnnotation <http://ns.inria.fr/zoomathia/annotation/a4510c85a75f5b633c5e6cff62c76feee195ed5b> , <http://ns.inria.fr/zoomathia/annotation/507ae60c635f5c43dd75c220cd0bb3e12b3ca1d3> , <http://ns.inria.fr/zoomathia/annotation/7a70b2e575bfb60f9c33032afe0835a67ea70edc> , <http://ns.inria.fr/zoomathia/annotation/9f963421d005662d2e3f103ff50c1d58e3cd7147> , <http://ns.inria.fr/zoomathia/annotation/4dfd7d64500e621a6aaeb3ea71ca7744f3c155ff> , <http://ns.inria.fr/zoomathia/annotation/7383f4d624e4405652a4987096e6183681b35569> , <http://ns.inria.fr/zoomathia/annotation/bf97176092b23d7d15f3ac33a20b2dcb5688731e> , <http://ns.inria.fr/zoomathia/annotation/37ec9247f1a5acc545c98f46393589bf320ab181> , <http://ns.inria.fr/zoomathia/annotation/55785bcdb71e8e49be6d1d34ff3243eafa8ac2de> , <http://ns.inria.fr/zoomathia/annotation/639c3cdb781417122a17066ef101371219c8e3a7> , <http://ns.inria.fr/zoomathia/annotation/aba19f60512fcb8febaf7049ce69dee2b4f39e1f> .
 
 <http://ns.inria.fr/zoomathia/annotation/17451994fc6b6fc8359d090c987edc76c20fa799>
       a       zoo:AutomaticAnnotation ;
@@ -1208,10 +955,6 @@
       a       skos:Concept ;
       skos:prefLabel "cries"@en .
 
-<http://dbpedia.org/resource/Expansion_of_Macedonia_under_Philip_II>
-      a       skos:Concept ;
-      skos:prefLabel "rise"@en .
-
 <https://opentheso.huma-num.fr/?idc=106259&idt=th310>
       a       skos:Concept ;
       skos:prefLabel "Snakes"@en .
@@ -1224,14 +967,6 @@
       a       skos:Concept ;
       skos:prefLabel "Thrace"@en .
 
-<http://dbpedia.org/resource/Groundwater>
-      a       skos:Concept ;
-      skos:prefLabel "ground"@en .
-
-<http://dbpedia.org/resource/Eavesdropping>
-      a       skos:Concept ;
-      skos:prefLabel "eavesdrops"@en .
-
 <https://opentheso.huma-num.fr/?idc=105121&idt=th310>
       a       skos:Concept ;
       skos:prefLabel "fly"@en .
@@ -1239,14 +974,6 @@
 <https://opentheso.huma-num.fr/?idc=105131&idt=th310>
       a       skos:Concept ;
       skos:prefLabel "mouths"@en .
-
-<http://dbpedia.org/resource/Major_depressive_disorder>
-      a       skos:Concept ;
-      skos:prefLabel "tired"@en .
-
-<http://dbpedia.org/resource/Waterfall>
-      a       skos:Concept ;
-      skos:prefLabel "falls"@en .
 
 <https://opentheso.huma-num.fr/?idc=pcrt5TAeZsO7W4&idt=th310>
       a       skos:Concept ;
@@ -1272,21 +999,9 @@
       a       skos:Concept ;
       skos:prefLabel "lungs"@en .
 
-<http://dbpedia.org/resource/Insect_wing>
-      a       skos:Concept ;
-      skos:prefLabel "wings"@en .
-
-<http://dbpedia.org/resource/Cadaver>
-      a       skos:Concept ;
-      skos:prefLabel "remains"@en .
-
 <http://dbpedia.org/resource/Hut>
       a       skos:Concept ;
       skos:prefLabel "huts"@en .
-
-<http://dbpedia.org/resource/Gastropod_shell>
-      a       skos:Concept ;
-      skos:prefLabel "shells"@en .
 
 <http://dbpedia.org/resource/Settling>
       a       skos:Concept ;
@@ -1308,17 +1023,9 @@
       a       skos:Concept ;
       skos:prefLabel "Fish"@en .
 
-<http://dbpedia.org/resource/Polykleitos>
-      a       skos:Concept ;
-      skos:prefLabel "Polycleitus"@en .
-
 <https://opentheso.huma-num.fr/?idc=105691&idt=th310>
       a       skos:Concept ;
       skos:prefLabel "land"@en .
-
-<http://dbpedia.org/resource/Amazon_Fire_tablet>
-      a       skos:Concept ;
-      skos:prefLabel "kindle fire"@en .
 
 <http://dbpedia.org/resource/Tortoise>
       a       skos:Concept ;
@@ -1336,10 +1043,6 @@
       a       skos:Concept ;
       skos:prefLabel "fly"@en .
 
-<http://dbpedia.org/resource/Urinary_bladder>
-      a       skos:Concept ;
-      skos:prefLabel "bladders"@en .
-
 <http://dbpedia.org/resource/General_officer>
       a       skos:Concept ;
       skos:prefLabel "general"@en .
@@ -1348,17 +1051,9 @@
       a       skos:Concept ;
       skos:prefLabel "works"@en .
 
-<http://dbpedia.org/resource/Ossification>
-      a       skos:Concept ;
-      skos:prefLabel "grow"@en .
-
 <http://dbpedia.org/resource/Night>
       a       skos:Concept ;
       skos:prefLabel "night"@en .
-
-<http://dbpedia.org/resource/Common_crane>
-      a       skos:Concept ;
-      skos:prefLabel "cranes"@en .
 
 <https://opentheso.huma-num.fr/?idc=pcrtad1LcS5QBZ&idt=th310>
       a       skos:Concept ;
@@ -1368,25 +1063,9 @@
       a       skos:Concept ;
       skos:prefLabel "intestines"@en .
 
-<http://dbpedia.org/resource/Ritual_purification>
-      a       skos:Concept ;
-      skos:prefLabel "purification"@en .
-
 <https://opentheso.huma-num.fr/?idc=107660&idt=th310>
       a       skos:Concept ;
       skos:prefLabel "wasp"@en .
-
-<http://dbpedia.org/resource/Command_and_control>
-      a       skos:Concept ;
-      skos:prefLabel "command"@en .
-
-<http://dbpedia.org/resource/Professional_wrestling_holds>
-      a       skos:Concept ;
-      skos:prefLabel "hold"@en .
-
-<http://dbpedia.org/resource/River_mouth>
-      a       skos:Concept ;
-      skos:prefLabel "mouths"@en .
 
 <https://opentheso.huma-num.fr/?idc=105692&idt=th310>
       a       skos:Concept ;
@@ -1395,10 +1074,6 @@
 <https://opentheso.huma-num.fr/?idc=pcrtqsNPWjGG9u&idt=th310>
       a       skos:Concept ;
       skos:prefLabel "huts"@en .
-
-<http://dbpedia.org/resource/Laryngitis>
-      a       skos:Concept ;
-      skos:prefLabel "speaks"@en .
 
 <http://dbpedia.org/resource/Breathing>
       a       skos:Concept ;
@@ -1424,10 +1099,6 @@
       a       skos:Concept ;
       skos:prefLabel "fire"@en .
 
-<http://dbpedia.org/resource/Chase_gun>
-      a       skos:Concept ;
-      skos:prefLabel "chase"@en .
-
 <http://dbpedia.org/resource/Lion>
       a       skos:Concept ;
       skos:prefLabel "lions"@en .
@@ -1452,10 +1123,6 @@
       a       skos:Concept ;
       skos:prefLabel "fly"@en .
 
-<http://dbpedia.org/resource/Online_chat>
-      a       skos:Concept ;
-      skos:prefLabel "chatting"@en .
-
 <http://dbpedia.org/resource/Rib_cage>
       a       skos:Concept ;
       skos:prefLabel "ribs"@en .
@@ -1475,10 +1142,6 @@
 <https://opentheso.huma-num.fr/?idc=105155&idt=th310>
       a       skos:Concept ;
       skos:prefLabel "feet"@en .
-
-<http://dbpedia.org/resource/Beauty_and_the_Beast>
-      a       skos:Concept ;
-      skos:prefLabel "beast"@en .
 
 <http://dbpedia.org/resource/Gastrointestinal_tract>
       a       skos:Concept ;
@@ -1504,10 +1167,6 @@
       a       skos:Concept ;
       skos:prefLabel "medimnoi"@en .
 
-<http://dbpedia.org/resource/Leisure>
-      a       skos:Concept ;
-      skos:prefLabel "rests"@en .
-
 <http://dbpedia.org/resource/Book>
       a       skos:Concept ;
       skos:prefLabel "Book"@en .
@@ -1519,10 +1178,6 @@
 <https://www.wikidata.org/wiki/Q5089>
       a       skos:Concept ;
       skos:prefLabel "Ganges"@en .
-
-<http://dbpedia.org/resource/Adhan>
-      a       skos:Concept ;
-      skos:prefLabel "called"@en .
 
 <https://opentheso.huma-num.fr/?idc=105218&idt=th310>
       a       skos:Concept ;

@@ -947,7 +947,8 @@ def _walk_english_paragraphs(div, path, out_map, zoo_folder=None):
         # zoo80/1e ou l'asymetrie est reelle.
         if not div_n and not path:
             continue
-        if not div_n.isdigit() and zoo_folder not in ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS:
+        if (not div_n.isdigit() and zoo_folder not in ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS
+                and _CURRENT_WORK_KEY not in ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS):
             continue
         # Numerotation trouee (ex: zoo14, Geoponica - le temoin anglais ne
         # traduit que les livres 13 a 20, en sautant le 18) : la POSITION
@@ -1063,7 +1064,12 @@ def get_english_alignment_map(non_english_file_path):
             with open(en_path, "r", encoding="UTF-8") as f:
                 soup = bs(f, "lxml-xml")
             out_map = {}
-            _walk_english_paragraphs(soup.body, (), out_map, zoo_folder)
+            global _CURRENT_WORK_KEY
+            _CURRENT_WORK_KEY = f"{zoo_folder}/{num}"
+            try:
+                _walk_english_paragraphs(soup.body, (), out_map, zoo_folder)
+            finally:
+                _CURRENT_WORK_KEY = None
         except Exception as e:
             print(f"[WARNING] Echec de la construction de la carte d'alignement anglais pour {en_path}: {e}")
             out_map = None
@@ -1178,9 +1184,15 @@ def get_aligned_translation(file_path, parent_uri, paragraph_index=None, allow_c
     # temoin anglais decoupe en 69 a 97 <p> par poeme (10 000 a 14 000 signes) ;
     # l'alignement grossier ne sert qu'a annoter la division entiere une fois
     # (branche vers), pas a coller le texte sur chaque ligne.
-    if zoo_folder_for_shift == "zoo48":
-        MAX_ALIGNED_TEXT_LENGTH = 20000
+    if zoo_folder_for_shift in ("zoo48", "zoo30"):
+        MAX_ALIGNED_TEXT_LENGTH = 40000 if zoo_folder_for_shift == "zoo30" else 20000
         MAX_BROADEN_MATCHES = 100
+    # zoo55 (Varron) : chapitres latins et anglais alignes un pour un a la main ;
+    # plusieurs depassent 6000 signes en anglais sans etre un decalage.
+    # zoo13 (Basile) et zoo24 (Hippocrate) : traduction humaine alignee chapitre par
+    # chapitre, verifiee ; quelques chapitres depassent 6000 signes en anglais.
+    if zoo_folder_for_shift in ("zoo55", "zoo13", "zoo24"):
+        MAX_ALIGNED_TEXT_LENGTH = 20000
 
     def candidate_texts():
         """Genere, dans l'ordre de priorite, chaque texte anglais candidat
@@ -1654,7 +1666,11 @@ ORIGINAL_MULTILEVEL_PARATEXT_FOLDERS = {"zoo63", "zoo64", "zoo65", "zoo66", "zoo
 # qui sont de la VRAIE numerotation d'entree (identique et dans le meme
 # ordre des deux cotes), pas du paratexte sans equivalent grec. Les traiter
 # comme paratexte cassait la parite de position sur 639 divisions/795.
-ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS = {"zoo80"}
+# Entrees "zooN" (dossier entier) ou "zooN/numero" (une seule oeuvre du dossier).
+# zoo7/14 (Aristote, Oeconomica) : les chapitres portent les pages de Bekker
+# ("1343a", "1343b"...) des deux cotes, ce ne sont pas des paratextes.
+ENGLISH_WITNESS_NO_PARATEXT_SKIP_FOLDERS = {"zoo80", "zoo7/14"}
+_CURRENT_WORK_KEY = None
 
 
 def compute_div_id(tag_div, tag_id, tag_div_type, zoo_folder=None):

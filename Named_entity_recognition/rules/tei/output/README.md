@@ -26,7 +26,7 @@ rules/tei/output/               one graph per work + all.ttl.gz   <- this folder
 | Path | What it is |
 |------|------------|
 | `zooN_Xy/zooN_Xy.ttl` (89 folders) | Graph of one file, named after `data/zoo/zooN/Xy.xml` (e.g. `zoo55_1e` is Varro's English translation). It merges five partial graphs: paragraphs, metadata, links (the book/chapter/section tree), concept labels and annotations. |
-| `all.ttl.gz` | All 89 graphs merged into one file, gzip-compressed (54 MB). Uncompressed it is 425 MB, above GitHub's 100 MB limit, which is why only the compressed file is versioned. |
+| `all.ttl.gz` | All 89 graphs merged into one file, gzip-compressed (34 MB). Uncompressed it is 265 MB, above GitHub's 100 MB limit, which is why only the compressed file is versioned. |
 | `th310.ttl` | The Zoomathia thesaurus (OpenTheso `th310`). The annotations point to its concepts; their labels and hierarchy (`skos:prefLabel`, `skos:member`, `skos:broader`) exist only here. |
 | `vocab.ttl` | Static file of DBpedia/Wikidata concept labels (older run). The per-work graphs also carry the labels of the concepts they use. |
 | `zoomathia.ttl` | The Zoomathia ontology (`zoo:` classes and properties). |
@@ -46,7 +46,7 @@ cd ../../rules/tei
 python3 graph-generation.py ../../data/pipeline_scripts/prefixes.txt
 ```
 
-To force a re-run, first delete the file's CSVs in
+**`graph-generation.py` skips every work whose folder already exists here**, so after changing the data in MongoDB (for example after `apply_annotation_filters.py` or `reconcile_annotations.py`) the folders must be moved away first, otherwise `all.ttl` is rebuilt from stale graphs. To force a re-run, first delete the file's CSVs in
 `data/pipeline_scripts/output/`, its marker in `data/mongo_loaded/*.done`, its
 documents in the four MongoDB collections, and its folder here; otherwise the
 steps skip it as already up to date. `graph-generation.py` only regenerates
@@ -58,7 +58,7 @@ Compress the result before committing:
 gzip -9 -n -c all.ttl > all.ttl.gz
 ```
 
-Every new commit of `all.ttl.gz` adds about 54 MB to the repository history
+Every new commit of `all.ttl.gz` adds about 34 MB to the repository history
 (compressed files do not diff). If the file is regenerated often, Git LFS is
 worth considering.
 
@@ -95,3 +95,14 @@ finish, then check that a thesaurus query returns results.
 - **Annotations depend on external services** (DBpedia Spotlight, Entity-Fishing,
   Google Translate). Reruns can differ slightly, and an unreachable service
   makes `xml_to_csv.py` retry for a long time.
+
+## Annotation quality filters
+
+Before annotations are loaded into MongoDB (`morph_mongo.py`), `data/pipeline_scripts/annotation_filters.py`
+drops mentions that are only a number or a roman numeral, DBpedia pages unrelated to the
+annotated word (the page title must match the word, or be a known redirect alias), thesaurus
+concepts listed in `annotation_exclusions.json` (polysemous words such as "saw" or "lead"), and
+Wikidata entities whose description is a film, band, brand, modern town, etc. The two reference
+caches (`dbpedia_aliases.json`, `wikidata_descriptions.json`) are filled by
+`refresh_annotation_caches.py`. `reconcile_annotations.py` applies the current filters to an
+already loaded MongoDB. Tests: `python3 -m unittest test_annotation_filters`.

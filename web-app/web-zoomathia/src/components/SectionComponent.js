@@ -59,14 +59,25 @@ const SectionComponent = (props) => {
                     // par URI : les deux editions n'ont pas toujours la meme
                     // profondeur de structure).
                     const translationByI = {}
+                    // Traduction qui ne suit pas le decoupage de l'original
+                    // (ex. un poeme en vers de 31 lignes traduit en un seul
+                    // paragraphe de prose) : l'apparier par identifiant collerait
+                    // toute la traduction sous la premiere ligne. Elle est alors
+                    // affichee une fois, en bloc, apres les lignes de l'original,
+                    // avec ses propres concepts.
+                    let translationBlock = []
                     const translatedUri = props.translationMap?.[props.uri]
                     if (translatedUri) {
                         const translationData = await fetch(
                             `${process.env.REACT_APP_BACKEND_URL}getParagraphs?uri=${translatedUri}`,
                             {signal: controllerRef.current.signal}
                         ).then(response => response.json()).catch(() => [])
-                        for (const elt of translationData) {
-                            translationByI[elt.id] = elt.text
+                        if (data.length > 1 && translationData.length !== data.length) {
+                            translationBlock = translationData
+                        } else {
+                            for (const elt of translationData) {
+                                translationByI[elt.id] = elt.text
+                            }
                         }
                     }
 
@@ -93,6 +104,21 @@ const SectionComponent = (props) => {
                             controller={props.controller}
                             translationText={translationByI[elt.id]}
                             bekker={bekker} />)
+                    }
+                    if (translationBlock.length > 0) {
+                        paragraphs.push(<section key={`translation-block-${props.uri}`} className={styles["translation-block"]}>
+                            <h3>Translation</h3>
+                            {translationBlock.map(elt => <ParagraphDisplay
+                                key={elt.uri}
+                                id={elt.id}
+                                text={elt.text}
+                                uri={elt.uri}
+                                lang={"en"}
+                                displayId={false}
+                                concepts={[]}
+                                controller={props.controller}
+                                bekker={false} />)}
+                        </section>)
                     }
                     setSectionParagraph(paragraphs)
 

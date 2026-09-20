@@ -10,6 +10,7 @@ import os
 import glob
 
 import ujson as json
+from annotation_filters import keep_annotation
 import atexit
 import subprocess
 from py4j.java_gateway import JavaGateway
@@ -246,13 +247,20 @@ def load_csv_to_mongodb(csv_file, db_name, collection_name, mongo_uri="mongodb:/
             paragraph_uri = df["paragraph_uri"][row]
             concept_uri = df["concept_uri"][row]
 
-            if (paragraph_uri, concept_uri) in seen_annotations:
-                continue
-            seen_annotations.add((paragraph_uri, concept_uri))
-
             mention = df["mention"][row]
             score = df["score"][row]
             origin = df["origin"][row]
+
+            # Filtres de qualite (annotation_filters.py) : nombres, pages
+            # DBpedia sans rapport avec le mot, concepts polysemiques du
+            # thesaurus. Une annotation ecartee ne declenche pas non plus la
+            # recherche de concepts du thesaurus a partir de son libelle.
+            if not keep_annotation(concept_uri, mention, origin):
+                continue
+
+            if (paragraph_uri, concept_uri) in seen_annotations:
+                continue
+            seen_annotations.add((paragraph_uri, concept_uri))
 
             if origin == "zoomathia_match":
                 data.append([paragraph_uri, concept_uri, mention, score, origin, mention])
