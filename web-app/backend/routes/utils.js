@@ -1,17 +1,24 @@
 let fs = require('fs');
 
 const executeDescribeRequest = async (endpoint, query) => {
-    const url = `${endpoint}?query=${encodeURIComponent(query)}&format=turtle`;
-
     /**
      * TODO:  Catch unexpected error during fetch (fetchControler)
      */
     try {
-        let result_data = await fetch(url, {
+        // POST plutot que GET+query en parametre d'URL : certaines requetes
+        // (ex. /getSummary sur une oeuvre au titre long/non-ASCII, repete
+        // plusieurs fois dans les branches UNION) depassent, une fois
+        // URL-encodees, la limite de taille de ligne de requete de Jetty
+        // (~8 Ko), qui repond alors une page d'erreur HTML au lieu du JSON
+        // attendu - echec silencieux cote client (resultat vide). Le corps
+        // POST n'a pas cette limite.
+        let result_data = await fetch(endpoint, {
+            method: 'POST',
             headers: {
-                'Content-Type': 'text/plain',
+                'Content-Type': 'application/x-www-form-urlencoded',
                 'Accept': `text/turtle`
-            }
+            },
+            body: new URLSearchParams({ query, format: 'turtle' })
         })
         return await result_data.text()
     }
@@ -28,17 +35,20 @@ const executeDescribeRequest = async (endpoint, query) => {
 }
 
 const executeSPARQLRequest = async (endpoint, query) => {
-    const url = `${endpoint}?query=${encodeURIComponent(query)}&format=json`;
-
     /**
      * TODO:  Catch unexpected error during fetch (fetchControler)
      */
     try {
-        let result_data = await fetch(url, {
+        // POST plutot que GET+query en parametre d'URL : voir le commentaire
+        // equivalent dans executeDescribeRequest ci-dessus (meme limite
+        // Jetty ~8 Ko sur la ligne de requete GET).
+        let result_data = await fetch(endpoint, {
+            method: 'POST',
             headers: {
-                'Content-Type': 'text/plain',
+                'Content-Type': 'application/x-www-form-urlencoded',
                 'Accept': `application/sparql-results+json`
-            }
+            },
+            body: new URLSearchParams({ query, format: 'json' })
         })
         return await result_data.json()
     }
