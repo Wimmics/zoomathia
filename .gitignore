@@ -28,4 +28,6 @@ Named_entity_recognition/rules/tei/__pycache__/
 # repertoire_codes_zoo.csv (Disponible) et le commit correspondant.
 Named_entity_recognition/data/zoo/zoo54/1e.xml
 Named_entity_recognition/data/output/zoo54_1e_*.csv
-Named_entity_recognition/rules/tei/output/zoo54_1e/
+Named_entity_recognition/rules/tei/output/zoo54_1e/# Sortie brute du pipeline (~265 Mo, au-dela de la limite GitHub de 100 Mo) : seule la
+# version compressee all.ttl.gz est versionnee. Regenerable avec graph-generation.py.
+Named_entity_recognition/rules/tei/output/all.ttl
