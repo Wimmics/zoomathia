@@ -20,8 +20,6 @@ MongoDB, database "Ner"         collections Metadata, Paragraph, Link, Annotatio
 rules/tei/output/               one graph per work + all.ttl.gz   <- this folder
 ```
 
-`data/zoo_archive/` is kept in the repository for reference but is never read
-by the pipeline.
 
 ## Content of this folder
 
@@ -33,29 +31,8 @@ by the pipeline.
 | `vocab.ttl` | Static file of DBpedia/Wikidata concept labels (older run). The per-work graphs also carry the labels of the concepts they use. |
 | `zoomathia.ttl` | The Zoomathia ontology (`zoo:` classes and properties). |
 
-The mapping templates read by `graph-generation.py` (`paragraph.ttl`,
-`metadata.ttl`, `link.ttl`, `vocab.ttl`, `annotation.ttl`) live in
-`rules/tei/`, not here. `all.ttl` (uncompressed) is ignored by git.
 
-## Graphs regenerated during the last run
-
-The 89 graphs were generated together, then the following ones were
-regenerated individually after corrections to their sources:
-
-| Graph | Why it was regenerated |
-|-------|------------------------|
-| `zoo55_1e` (Varro, De re rustica, English) | Rebuilt from the LacusCurtius source: the dedication and the opening of book 1, chapter 2 had been swallowed by the notes section. |
-| `zoo30_1e` (Oppian, Cynegetica, English) | Editorial notes were mixed into the body text (all of book 1, and the last section of books 2–4). |
-| `zoo13_1e` (Basil, Hexaemeron, English) | Sections realigned on the Greek edition (11/8/10/7/10/11/6/8/6 per homily). |
-| `zoo22_1e` (Hesiod, Works and Days, English) | Fragments 93–100, absent from the Greek, moved out of the numbered sections (1–92 on both sides). |
-| `zoo86_1e`, `zoo86_1g` (Paradoxographus Vaticanus) | One extra English chapter moved out of the numbering; parentheses removed from author and title. |
-| `zoo24_3e`, `zoo24_3g` (Hippocrates, spurious appendix) | English sections 7 and 8 merged to match the Greek (1–7, 9–39); parentheses removed from the title. |
-| `zoo24_1e`, `zoo24_1g` (Hippocrates, Regimen in Acute Diseases, book 1) | New: human translation, 18 sections identical on both sides. |
-
-The same run also regenerated, before the first commit of these graphs:
-Semonides (`zoo48`), the second Grattius witness (`zoo20_1l_2`), Aristotle's
-Oikonomika (`zoo7_14e`) and Plutarch (`zoo44_5e`, `zoo44_6e`, `zoo44_6g`).
-
+ 
 ## Regenerating
 
 From `data/pipeline_scripts/` (paths are relative to it), for one file:
