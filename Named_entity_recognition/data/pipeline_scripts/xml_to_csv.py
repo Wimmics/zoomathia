@@ -308,6 +308,7 @@ def extract_wikidata(entities, annotations, paragraph):
 
 AUTHOR_CONCORDANCE_PATHS = [
     "repertoire_zoo/repertoire_codes_zoo.csv",
+    "repertoire_zoo/repertoire_codes_archive.csv",
 ]
 
 

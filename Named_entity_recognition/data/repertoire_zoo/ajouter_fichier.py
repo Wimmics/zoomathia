@@ -192,7 +192,8 @@ def proposer_commit_et_push(code_zoo, nom_auteur, oeuvres, oeuvre_id, langue, ch
 
     subprocess.run(["git", "add", chemin_fichier], cwd=REPO_DIR, check=True)
     subprocess.run(["git", "add", AUTEURS_CSV, OEUVRES_CSV, FICHIERS_CSV,
-                     os.path.join(DOSSIER, "repertoire_codes_zoo.csv")], cwd=REPO_DIR, check=True)
+                     os.path.join(DOSSIER, "repertoire_codes_zoo.csv"),
+                     os.path.join(DOSSIER, "repertoire_codes_archive.csv")], cwd=REPO_DIR, check=True)
     subprocess.run(["git", "commit", "-m", message], cwd=REPO_DIR, check=True)
     print(f"\nCommit effectue :\n{message}\n")
 

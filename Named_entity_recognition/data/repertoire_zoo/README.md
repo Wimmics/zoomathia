@@ -46,12 +46,23 @@ quality of the match between each original text and its English translation
 ### The automatically computed result
 
 **`repertoire_codes_zoo.csv`**: the final table, obtained by combining the
-four files above: one row per file, with its `zooN/Xy` code, the author's
-name, the work's title, and the alignment status taken from
-`alignement_zoo.csv`. This is the file used by the project's other scripts
+four files above: one row per file **of the active corpus** (the files
+present in `data/zoo/`), with its `zooN/Xy` code, the author's name, the
+work's title, and the alignment status taken from `alignement_zoo.csv`.
+This is the file used by the project's other scripts
 (`Named_entity_recognition/data/xml_to_csv.py`, `preparer_renommage.py`)
 **it should never be edited by hand**, since it's entirely recomputed every
 time `generer_codes_zoo.py` is run, and any manual edit would then be lost.
+
+**`repertoire_codes_archive.csv`**: same columns plus `corpus`, for the
+files that are **not** in the active corpus: `archive` (present in
+`data/zoo_archive/`) or `absent` (registered but found on neither side).
+It keeps their codes and rights status so a file can be brought back
+without being registered again. Codes are computed over all files before
+the split, so a file keeps the same code whichever table it is in. Which
+table a file lands in depends only on where its XML file is on disk:
+moving a folder between `zoo/` and `zoo_archive/` and re-running
+`generer_codes_zoo.py` is enough.
 
 ### The scripts (the programs)
 

@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 auteurs = pd.read_csv("auteurs_rows.csv")
@@ -45,6 +46,30 @@ except FileNotFoundError:
 
 resultat = resultat[["nom_fichier", "code_zoo", "nom_canonique", "titre_original", "etat", "statut", "langue", "ancien_code"]]
 
-resultat.to_csv("repertoire_codes_zoo.csv", index=False)
-print(f"{len(resultat)} fichiers traites")
-print(resultat.head(20).to_string())
+# Corpus actif / archive : determine par la presence reelle du fichier sur
+# disque (data/zoo/ ou data/zoo_archive/), pas par une colonne a maintenir a
+# la main. Les codes restent calcules sur l'ensemble des fichiers (ci-dessus),
+# donc filtrer ici ne change aucun code_zoo.
+DATA_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def emplacement(code_zoo):
+    dossier, fichier = code_zoo.split("/", 1)
+    if os.path.exists(os.path.join(DATA_DIR, "zoo", dossier, fichier + ".xml")):
+        return "actif"
+    if os.path.exists(os.path.join(DATA_DIR, "zoo_archive", dossier, fichier + ".xml")):
+        return "archive"
+    return "absent"
+
+resultat["corpus"] = resultat["code_zoo"].apply(emplacement)
+
+# repertoire_codes_zoo.csv : uniquement le corpus actif (celui que traite la
+# pipeline). repertoire_codes_archive.csv : les fichiers archives ou absents du
+# disque, gardes pour conserver leur code et leur statut de droits.
+actif = resultat[resultat["corpus"] == "actif"].drop(columns="corpus")
+archive = resultat[resultat["corpus"] != "actif"].copy()
+archive["etat"] = archive["etat"].fillna("non audite")
+
+actif.to_csv("repertoire_codes_zoo.csv", index=False)
+archive.to_csv("repertoire_codes_archive.csv", index=False)
+print(f"{len(actif)} fichiers du corpus actif, {len(archive)} archives ou absents")
+print(actif.head(20).to_string())
