@@ -24,7 +24,7 @@ in detail in [`repertoire_zoo/README.md`](repertoire_zoo/README.md).
 The rest of the project's texts: those whose translation is incomplete,
 AI-generated, or whose segmentation doesn't match the original closely
 enough for reliable alignment. Nothing here is broken or in urgent need of
-fixing — it's simply content that hasn't yet reached the quality level of
+fixing, it's simply content that hasn't yet reached the quality level of
 the `zoo/` folder. Same naming convention. Kept in the repository for reference,
 but never read by the pipeline, which processes `zoo/` alone.
 
@@ -39,13 +39,13 @@ The scripts that turn a TEI file from the `zoo/` folder into usable data:
 named entity recognition, alignment with the human translation when one
 exists, and generation of the output CSV files.
 
-- **`xml_to_csv.py`** — the main script, the one that does all the work
+- **`xml_to_csv.py`** : the main script, the one that does all the work
   described above. It's the most important file in the pipeline.
-- **`tei_validator.py`** — checks that a file properly conforms to the TEI
+- **`tei_validator.py`** :checks that a file properly conforms to the TEI
   P5 format before processing it.
-- **`morph_mongo.py`** — loads the results into the project's MongoDB
+- **`morph_mongo.py`** : loads the results into the project's MongoDB
   database.
-- **`beta-to-unicode.py`** — converts ancient Greek entered in "beta code"
+- **`beta-to-unicode.py`** : converts ancient Greek entered in "beta code"
   notation (a transliteration into Latin characters, historically used for
   lack of a Greek keyboard) into actual Unicode Greek characters.
 
