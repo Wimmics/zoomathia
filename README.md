@@ -117,5 +117,24 @@ output.file.path=output/paragraph.ttl
 #output.file.path=output/annotation.ttl
 #output.file.path=output/vocab.ttl
 ```
-You can produce the graph for all texts in database by only launching graph-generation.py. The mongoDB instance must be running.
+You can produce the graph for all texts in database by only launching `graph-generation.py`. The mongoDB instance must be running.
 The produced graph will be formed of 1 turtle file for each file in the Metadata table. The vocab part contains all the DBpedia alignments with TheZoo thesaurus and is located at the end of the ttl file. Then a single ttl file all.ttl contains all the concatenated ttl files and can be loaded in a SPARQL endpoint to empower the web app. 
+
+
+### DevOps
+
+To update the code on the distant machine:
+
+```shell
+git pull
+rsync -av --delete build/ /var/www/html/
+docker restart backend
+```
+
+To load new annotations
+
+```shell
+cp [.ttl files] Corese/
+cd Corese/
+java -jar corese-server-4.5.0.jar -l [.ttl files]
+```
